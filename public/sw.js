@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v1.0
-const CACHE_NAME = 'linguaflash-v1';
+// LinguaFlash Service Worker v1.1
+const CACHE_NAME = 'linguaflash-v1.1';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -13,7 +13,6 @@ const STATIC_ASSETS = [
     '/src/css/responsive.css',
     '/src/js/app.js',
     '/src/js/router.js',
-    '/src/js/firebase-config.js',
     '/src/js/utils/helpers.js',
     '/src/js/ui/toast.js',
     '/src/js/ui/theme.js',
@@ -29,6 +28,11 @@ const STATIC_ASSETS = [
     '/src/js/pages/review.js',
     '/src/js/pages/settings.js',
     '/src/js/pages/auth-page.js'
+];
+
+// Files that should always use network-first (contain sensitive config)
+const NETWORK_FIRST_FILES = [
+    '/src/js/firebase-config.js'
 ];
 
 // Install - Cache static assets
@@ -72,12 +76,29 @@ self.addEventListener('fetch', (event) => {
     // Skip non-GET requests
     if (request.method !== 'GET') return;
 
+    // Skip non-http(s) schemes (chrome-extension, etc.)
+    if (!url.protocol.startsWith('http')) return;
+
     // Skip Firebase/Google API calls - let them go to network
     if (url.hostname.includes('googleapis.com') ||
         url.hostname.includes('gstatic.com') ||
         url.hostname.includes('firebaseio.com') ||
         url.hostname.includes('firestore.googleapis.com') ||
         url.hostname.includes('generativelanguage.googleapis.com')) {
+        return;
+    }
+
+    // Network-first for config files (should not be cached long-term)
+    if (NETWORK_FIRST_FILES.some(f => url.pathname.endsWith(f))) {
+        event.respondWith(
+            fetch(request)
+                .then((response) => {
+                    const clone = response.clone();
+                    caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+                    return response;
+                })
+                .catch(() => caches.match(request))
+        );
         return;
     }
 

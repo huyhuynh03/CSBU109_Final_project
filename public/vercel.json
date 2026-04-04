@@ -16,6 +16,12 @@
             ]
         },
         {
+            "source": "/src/js/firebase-config.js",
+            "headers": [
+                { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+            ]
+        },
+        {
             "source": "/src/(.*)",
             "headers": [
                 { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
