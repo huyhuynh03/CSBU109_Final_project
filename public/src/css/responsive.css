@@ -1,0 +1,128 @@
+/* ============================================
+   Responsive Design - Mobile / Tablet / Desktop
+   ============================================ */
+
+/* ---- Mobile First (< 640px) ---- */
+@media (max-width: 639px) {
+    .main-content {
+        padding: var(--spacing-md);
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .toast-container {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        bottom: var(--spacing-md);
+    }
+
+    .toast {
+        min-width: auto;
+        max-width: none;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        min-width: auto;
+    }
+
+    .glass-modal {
+        margin: var(--spacing-md);
+        padding: var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-2xl); }
+    h2 { font-size: var(--font-size-xl); }
+}
+
+/* ---- Tablet (640px - 1023px) ---- */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .main-content {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* ---- Desktop (>= 1024px) ---- */
+@media (min-width: 1024px) {
+    .main-content {
+        padding: var(--spacing-xl);
+    }
+}
+
+/* ---- Large Desktop (>= 1440px) ---- */
+@media (min-width: 1440px) {
+    :root {
+        --max-content-width: 1400px;
+    }
+}
+
+/* ---- Touch device optimizations ---- */
+@media (hover: none) and (pointer: coarse) {
+    .icon-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu-item {
+        padding: var(--spacing-md);
+    }
+
+    .btn {
+        min-height: 44px;
+    }
+
+    .form-input {
+        min-height: 48px;
+        font-size: 16px; /* Prevent iOS zoom on focus */
+    }
+}
+
+/* ---- Safe area (notch devices) ---- */
+@supports (padding: env(safe-area-inset-top)) {
+    .app-header {
+        padding-top: env(safe-area-inset-top);
+        height: calc(var(--header-height) + env(safe-area-inset-top));
+    }
+
+    .main-content {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .toast-container {
+        bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom));
+    }
+}
+
+/* ---- Landscape phone ---- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .app-header {
+        height: 48px;
+    }
+
+    .main-content {
+        margin-top: 48px;
+    }
+}
+
+/* ---- Print ---- */
+@media print {
+    .app-header,
+    .floating-bg,
+    .toast-container,
+    #loading-screen {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-top: 0;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}

@@ -1,0 +1,55 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ============================================
+    // Firestore Security Rules - LinguaFlash
+    // Đảm bảo mỗi user chỉ truy cập được dữ liệu của chính mình
+    // ============================================
+
+    // Users collection - mỗi user chỉ đọc/ghi document của mình
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Folders subcollection - thuộc về user
+      match /folders/{folderId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Card Types subcollection - thuộc về user
+      match /cardTypes/{cardTypeId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        
+        // Fields subcollection - thuộc về card type của user
+        match /fields/{fieldId} {
+          allow read, write: if request.auth != null && request.auth.uid == userId;
+        }
+      }
+      
+      // Cards subcollection - thuộc về user
+      match /cards/{cardId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        
+        // Field values subcollection
+        match /fieldValues/{valueId} {
+          allow read, write: if request.auth != null && request.auth.uid == userId;
+        }
+        
+        // Review logs subcollection
+        match /reviewLogs/{logId} {
+          allow read, write: if request.auth != null && request.auth.uid == userId;
+        }
+      }
+      
+      // Settings subcollection
+      match /settings/{settingId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+    
+    // Deny all other access by default
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

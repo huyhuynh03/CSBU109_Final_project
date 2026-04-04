@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Ứng dụng học từ vựng ngoại ngữ với Spaced Repetition">
+    <meta name="theme-color" content="#6C63FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="LinguaFlash">
+    
+    <title>LinguaFlash - Học Từ Vựng Thông Minh</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/variables.css">
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/themes.css">
+    <link rel="stylesheet" href="/src/css/glassmorphism.css">
+    <link rel="stylesheet" href="/src/css/components.css">
+    <link rel="stylesheet" href="/src/css/animations.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-logo">
+            <span class="material-icons-round loading-icon">school</span>
+            <h1>LinguaFlash</h1>
+            <p>Đang tải...</p>
+        </div>
+    </div>
+
+    <!-- Floating Background Icons -->
+    <div id="floating-bg" class="floating-bg" aria-hidden="true"></div>
+
+    <!-- App Container -->
+    <div id="app" class="app-container">
+        <!-- Header -->
+        <header id="app-header" class="app-header glass-panel">
+            <div class="header-left">
+                <button id="btn-menu" class="icon-btn" aria-label="Menu">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <a href="#/" class="logo-link">
+                    <span class="material-icons-round logo-icon">school</span>
+                    <span class="logo-text">LinguaFlash</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <button id="btn-review-badge" class="icon-btn review-badge-btn" aria-label="Ôn tập" style="display:none;">
+                    <span class="material-icons-round">replay</span>
+                    <span id="review-count" class="badge">0</span>
+                </button>
+                <button id="btn-auth" class="icon-btn auth-btn" aria-label="Đăng nhập">
+                    <span class="material-icons-round">person</span>
+                </button>
+                <div id="user-avatar" class="user-avatar" style="display:none;">
+                    <img id="avatar-img" src="" alt="Avatar" class="avatar-img">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <!-- Pages will be rendered here by the router -->
+        </main>
+
+        <!-- Toast Notifications -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+
+    <!-- User Menu Dropdown (hidden by default) -->
+    <div id="user-menu" class="dropdown-menu glass-panel" style="display:none;">
+        <div class="menu-header">
+            <img id="menu-avatar" src="" alt="" class="menu-avatar-img">
+            <div class="menu-user-info">
+                <p id="menu-user-name" class="menu-user-name">Người dùng</p>
+                <p id="menu-user-email" class="menu-user-email">email@example.com</p>
+            </div>
+        </div>
+        <div class="menu-divider"></div>
+        <button class="menu-item" data-action="settings">
+            <span class="material-icons-round">settings</span>
+            <span>Cài đặt</span>
+        </button>
+        <button class="menu-item" data-action="change-password">
+            <span class="material-icons-round">lock</span>
+            <span>Đổi mật khẩu</span>
+        </button>
+        <button class="menu-item" data-action="delete-account">
+            <span class="material-icons-round">delete_forever</span>
+            <span>Xóa tài khoản</span>
+        </button>
+        <div class="menu-divider"></div>
+        <button class="menu-item menu-item-danger" data-action="logout">
+            <span class="material-icons-round">logout</span>
+            <span>Đăng xuất</span>
+        </button>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+    <!-- App Scripts -->
+    <script src="/src/js/firebase-config.js"></script>
+    <script src="/src/js/utils/helpers.js"></script>
+    <script src="/src/js/ui/toast.js"></script>
+    <script src="/src/js/ui/theme.js"></script>
+    <script src="/src/js/ui/background.js"></script>
+    <script src="/src/js/ui/components.js"></script>
+    <script src="/src/js/auth/auth.js"></script>
+    <script src="/src/js/auth/auth-ui.js"></script>
+    <script src="/src/js/db/firestore.js"></script>
+    <script src="/src/js/db/sync.js"></script>
+    <script src="/src/js/fsrs/fsrs.js"></script>
+    <script src="/src/js/router.js"></script>
+    <script src="/src/js/pages/home.js"></script>
+    <script src="/src/js/pages/study.js"></script>
+    <script src="/src/js/pages/review.js"></script>
+    <script src="/src/js/pages/settings.js"></script>
+    <script src="/src/js/pages/auth-page.js"></script>
+    <script src="/src/js/app.js"></script>
+
+    <!-- Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('[SW] Registered:', reg.scope))
+                    .catch(err => console.error('[SW] Registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

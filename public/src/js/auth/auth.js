@@ -1,0 +1,238 @@
+// ============================================
+// Auth Module - Firebase Authentication
+// ============================================
+
+const Auth = {
+    currentUser: null,
+
+    /**
+     * Initialize auth listener
+     */
+    init() {
+        auth.onAuthStateChanged((user) => {
+            this.currentUser = user;
+            this._updateUI(user);
+            console.log('[Auth] State changed:', user ? user.email : 'signed out');
+        });
+    },
+
+    /**
+     * Sign up with email and password
+     * @param {string} email
+     * @param {string} password
+     * @param {string} displayName
+     */
+    async signUp(email, password, displayName) {
+        try {
+            const result = await auth.createUserWithEmailAndPassword(email, password);
+            await result.user.updateProfile({ displayName });
+            await result.user.sendEmailVerification();
+            Toast.success('Đăng ký thành công!', 'Vui lòng kiểm tra email để xác thực tài khoản.');
+            return result.user;
+        } catch (error) {
+            this._handleError(error);
+            throw error;
+        }
+    },
+
+    /**
+     * Sign in with email and password
+     * @param {string} email
+     * @param {string} password
+     */
+    async signIn(email, password) {
+        try {
+            const result = await auth.signInWithEmailAndPassword(email, password);
+            Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName || result.user.email}`);
+            return result.user;
+        } catch (error) {
+            this._handleError(error);
+            throw error;
+        }
+    },
+
+    /**
+     * Sign in with Google
+     */
+    async signInWithGoogle() {
+        try {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            const result = await auth.signInWithPopup(provider);
+            Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName}`);
+            return result.user;
+        } catch (error) {
+            this._handleError(error);
+            throw error;
+        }
+    },
+
+    /**
+     * Sign out
+     */
+    async signOut() {
+        try {
+            await auth.signOut();
+            Toast.info('Đã đăng xuất');
+            Router.navigate('/');
+        } catch (error) {
+            Toast.error('Lỗi đăng xuất', error.message);
+        }
+    },
+
+    /**
+     * Send password reset email
+     * @param {string} email
+     */
+    async resetPassword(email) {
+        try {
+            await auth.sendPasswordResetEmail(email);
+            Toast.success('Đã gửi email', 'Kiểm tra hộp thư để đặt lại mật khẩu.');
+        } catch (error) {
+            this._handleError(error);
+            throw error;
+        }
+    },
+
+    /**
+     * Change password (requires recent sign-in)
+     * @param {string} currentPassword
+     * @param {string} newPassword
+     */
+    async changePassword(currentPassword, newPassword) {
+        try {
+            const user = auth.currentUser;
+            if (!user || !user.email) throw new Error('Chưa đăng nhập');
+
+            // Re-authenticate
+            const credential = firebase.auth.EmailAuthProvider.credential(user.email, currentPassword);
+            await user.reauthenticateWithCredential(credential);
+
+            // Update password
+            await user.updatePassword(newPassword);
+            Toast.success('Đổi mật khẩu thành công!');
+        } catch (error) {
+            this._handleError(error);
+            throw error;
+        }
+    },
+
+    /**
+     * Delete account (requires verification code via email)
+     */
+    async deleteAccount() {
+        try {
+            const user = auth.currentUser;
+            if (!user) throw new Error('Chưa đăng nhập');
+
+            // Delete user data from Firestore first
+            await FirestoreDB.deleteUserData(user.uid);
+
+            // Delete Firebase auth account
+            await user.delete();
+            Toast.info('Tài khoản đã bị xóa');
+            Router.navigate('/');
+        } catch (error) {
+            if (error.code === 'auth/requires-recent-login') {
+                Toast.error('Cần đăng nhập lại', 'Vui lòng đăng nhập lại trước khi xóa tài khoản.');
+            } else {
+                this._handleError(error);
+            }
+            throw error;
+        }
+    },
+
+    /**
+     * Check if user is signed in
+     * @returns {boolean}
+     */
+    isSignedIn() {
+        return !!this.currentUser;
+    },
+
+    /**
+     * Get current user ID
+     * @returns {string|null}
+     */
+    getUserId() {
+        return this.currentUser ? this.currentUser.uid : null;
+    },
+
+    /**
+     * Update header UI based on auth state
+     * @private
+     */
+    _updateUI(user) {
+        const btnAuth = document.getElementById('btn-auth');
+        const userAvatar = document.getElementById('user-avatar');
+        const avatarImg = document.getElementById('avatar-img');
+        const reviewBadge = document.getElementById('btn-review-badge');
+
+        if (user) {
+            // Signed in
+            if (btnAuth) btnAuth.style.display = 'none';
+            if (userAvatar) {
+                userAvatar.style.display = 'block';
+                if (avatarImg) {
+                    avatarImg.src = user.photoURL || this._generateAvatarUrl(user.displayName || user.email);
+                }
+            }
+            if (reviewBadge) reviewBadge.style.display = 'flex';
+
+            // Update menu info
+            const menuAvatar = document.getElementById('menu-avatar');
+            const menuName = document.getElementById('menu-user-name');
+            const menuEmail = document.getElementById('menu-user-email');
+            if (menuAvatar) menuAvatar.src = user.photoURL || this._generateAvatarUrl(user.displayName || user.email);
+            if (menuName) menuName.textContent = user.displayName || 'Người dùng';
+            if (menuEmail) menuEmail.textContent = user.email;
+        } else {
+            // Signed out
+            if (btnAuth) btnAuth.style.display = 'flex';
+            if (userAvatar) userAvatar.style.display = 'none';
+            if (reviewBadge) reviewBadge.style.display = 'none';
+        }
+    },
+
+    /**
+     * Generate avatar URL from name
+     * @private
+     */
+    _generateAvatarUrl(name) {
+        const initial = (name || '?').charAt(0).toUpperCase();
+        const canvas = document.createElement('canvas');
+        canvas.width = 64;
+        canvas.height = 64;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#6C63FF';
+        ctx.fillRect(0, 0, 64, 64);
+        ctx.fillStyle = 'white';
+        ctx.font = 'bold 32px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(initial, 32, 32);
+        return canvas.toDataURL();
+    },
+
+    /**
+     * Handle Firebase auth errors with Vietnamese messages
+     * @private
+     */
+    _handleError(error) {
+        const messages = {
+            'auth/email-already-in-use': 'Email này đã được sử dụng.',
+            'auth/invalid-email': 'Email không hợp lệ.',
+            'auth/operation-not-allowed': 'Phương thức đăng nhập chưa được bật.',
+            'auth/weak-password': 'Mật khẩu quá yếu (tối thiểu 6 ký tự).',
+            'auth/user-disabled': 'Tài khoản đã bị vô hiệu hóa.',
+            'auth/user-not-found': 'Không tìm thấy tài khoản với email này.',
+            'auth/wrong-password': 'Sai mật khẩu.',
+            'auth/too-many-requests': 'Quá nhiều lần thử. Vui lòng thử lại sau.',
+            'auth/popup-closed-by-user': 'Cửa sổ đăng nhập đã bị đóng.',
+            'auth/requires-recent-login': 'Cần đăng nhập lại để thực hiện thao tác này.',
+            'auth/invalid-credential': 'Thông tin đăng nhập không hợp lệ.'
+        };
+
+        const msg = messages[error.code] || error.message;
+        Toast.error('Lỗi xác thực', msg);
+    }
+};
