@@ -1,7 +1,7 @@
 {
     "name": "LinguaFlash - Học Từ Vựng Thông Minh",
     "short_name": "LinguaFlash",
-    "description": "Ứng dụng học từ vựng ngoại ngữ với Spaced Repetition thông minh",
+    "description": "Ứng dụng học và ôn tập thông minh với Spaced Repetition",
     "start_url": "/",
     "display": "standalone",
     "orientation": "portrait-primary",

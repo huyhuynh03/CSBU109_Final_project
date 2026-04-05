@@ -8,7 +8,7 @@ const HomePage = {
             <div class="home-page page-enter">
                 <div class="home-welcome">
                     <h2>Chào mừng đến với LinguaFlash! 👋</h2>
-                    <p>Ứng dụng học từ vựng ngoại ngữ thông minh với Spaced Repetition</p>
+                    <p>Ứng dụng học và ôn tập thông minh với Spaced Repetition</p>
                 </div>
 
                 <div class="home-stats" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--spacing-md);margin:var(--spacing-xl) 0;">

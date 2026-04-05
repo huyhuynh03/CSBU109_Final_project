@@ -12,7 +12,7 @@ const AuthPage = {
                     <div style="text-align:center;margin-bottom:var(--spacing-xl);">
                         <span class="material-icons-round" style="font-size:48px;color:var(--color-primary);">school</span>
                         <h2 style="margin-top:var(--spacing-sm);">LinguaFlash</h2>
-                        <p style="color:var(--color-text-muted);font-size:var(--font-size-sm);">Học từ vựng thông minh</p>
+                        <p style="color:var(--color-text-muted);font-size:var(--font-size-sm);">Học và ôn tập thông minh</p>
                     </div>
 
                     <!-- Tab switch -->
