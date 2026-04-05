@@ -32,15 +32,7 @@ const App = {
             // 6. Initialize router (will render first page)
             Router.init();
 
-            // 7. Setup review badge click
-            const reviewBadge = document.getElementById('btn-review-badge');
-            if (reviewBadge) {
-                reviewBadge.addEventListener('click', () => {
-                    Router.navigate('/review');
-                });
-            }
-
-            // 8. Hide loading screen
+            // 7. Hide loading screen
             await Helpers.sleep(500); // Minimum loading time for smooth UX
             const loadingScreen = document.getElementById('loading-screen');
             if (loadingScreen) {

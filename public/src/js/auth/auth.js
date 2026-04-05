@@ -165,7 +165,6 @@ const Auth = {
         const btnAuth = document.getElementById('btn-auth');
         const userAvatar = document.getElementById('user-avatar');
         const avatarImg = document.getElementById('avatar-img');
-        const reviewBadge = document.getElementById('btn-review-badge');
 
         if (user) {
             // Signed in
@@ -176,7 +175,6 @@ const Auth = {
                     avatarImg.src = user.photoURL || this._generateAvatarUrl(user.displayName || user.email);
                 }
             }
-            if (reviewBadge) reviewBadge.style.display = 'flex';
 
             // Update menu info
             const menuAvatar = document.getElementById('menu-avatar');
@@ -189,7 +187,6 @@ const Auth = {
             // Signed out
             if (btnAuth) btnAuth.style.display = 'flex';
             if (userAvatar) userAvatar.style.display = 'none';
-            if (reviewBadge) reviewBadge.style.display = 'none';
         }
     },
 
