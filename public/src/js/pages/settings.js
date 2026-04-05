@@ -65,24 +65,6 @@ const SettingsPage = {
                     </button>
                 </div>
 
-                <!-- Account Settings -->
-                ${Auth.isSignedIn() ? `
-                <div class="glass-card">
-                    <h4 style="margin-bottom:var(--spacing-md);">Tài khoản</h4>
-                    <p style="font-size:var(--font-size-sm);color:var(--color-text-secondary);margin-bottom:var(--spacing-md);">
-                        Đăng nhập với: ${Auth.currentUser.email}
-                    </p>
-                    <div style="display:flex;flex-wrap:wrap;gap:var(--spacing-sm);">
-                        <button class="btn btn-secondary btn-sm" onclick="AuthUI._showChangePasswordModal()">
-                            <span class="material-icons-round" style="font-size:16px;">lock</span> Đổi mật khẩu
-                        </button>
-                        <button class="btn btn-danger btn-sm" onclick="AuthUI._showDeleteAccountModal()">
-                            <span class="material-icons-round" style="font-size:16px;">delete_forever</span> Xóa tài khoản
-                        </button>
-                    </div>
-                </div>
-                ` : ''}
-
                 <div style="margin-top:var(--spacing-xl);">
                     <button class="btn btn-ghost" onclick="Router.navigate('/')">
                         <span class="material-icons-round">arrow_back</span>

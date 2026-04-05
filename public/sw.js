@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v1.1
-const CACHE_NAME = 'linguaflash-v1.1';
+// LinguaFlash Service Worker v1.2
+const CACHE_NAME = 'linguaflash-v1.2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -27,7 +27,8 @@ const STATIC_ASSETS = [
     '/src/js/pages/study.js',
     '/src/js/pages/review.js',
     '/src/js/pages/settings.js',
-    '/src/js/pages/auth-page.js'
+    '/src/js/pages/auth-page.js',
+    '/src/js/pages/account.js'
 ];
 
 // Files that should always use network-first (contain sensitive config)

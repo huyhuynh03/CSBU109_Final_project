@@ -53,14 +53,11 @@ const AuthUI = {
      */
     _handleMenuAction(action) {
         switch (action) {
+            case 'account':
+                Router.navigate('/account');
+                break;
             case 'settings':
                 Router.navigate('/settings');
-                break;
-            case 'change-password':
-                this._showChangePasswordModal();
-                break;
-            case 'delete-account':
-                this._showDeleteAccountModal();
                 break;
             case 'logout':
                 Auth.signOut();

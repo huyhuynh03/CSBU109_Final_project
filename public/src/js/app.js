@@ -86,6 +86,11 @@ const App = {
             onEnter: () => SettingsPage.onEnter && SettingsPage.onEnter()
         });
 
+        Router.register('/account', {
+            render: () => AccountPage.render(),
+            onEnter: () => AccountPage.onEnter && AccountPage.onEnter()
+        });
+
         console.log('[App] Routes registered');
     }
 };
