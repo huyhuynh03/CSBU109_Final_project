@@ -124,10 +124,19 @@ const AccountPage = {
         `;
     },
 
-    onEnter() {
+    async onEnter() {
         if (!Auth.isSignedIn()) {
             Router.navigate('/auth');
             return;
+        }
+        // Reload user to get latest emailVerified status
+        try {
+            await auth.currentUser.reload();
+            Auth.currentUser = auth.currentUser;
+            // Re-render to reflect updated verification status
+            document.getElementById('main-content').innerHTML = this.render();
+        } catch (e) {
+            console.warn('[AccountPage] Could not reload user:', e.message);
         }
         console.log('[AccountPage] Entered');
     },
@@ -163,16 +172,22 @@ const AccountPage = {
     async resendVerification() {
         try {
             const user = auth.currentUser;
-            if (user && !user.emailVerified) {
+            if (!user) {
+                Toast.warning('Chưa đăng nhập');
+                return;
+            }
+
+            // Reload user to check latest emailVerified status
+            await user.reload();
+            Auth.currentUser = auth.currentUser;
+
+            if (user.emailVerified) {
+                Toast.info('Email đã được xác thực rồi.');
+                // Re-render to update the UI (remove warning badge and resend button)
+                document.getElementById('main-content').innerHTML = this.render();
+            } else {
                 await user.sendEmailVerification();
                 Toast.success('Đã gửi email xác thực!', 'Vui lòng kiểm tra hộp thư (bao gồm cả thư rác).');
-            } else if (user && user.emailVerified) {
-                Toast.info('Email đã được xác thực rồi.');
-                // Refresh the page to update the UI
-                const content = this.render();
-                document.getElementById('main-content').innerHTML = content;
-            } else {
-                Toast.warning('Chưa đăng nhập');
             }
         } catch (error) {
             if (error.code === 'auth/too-many-requests') {
