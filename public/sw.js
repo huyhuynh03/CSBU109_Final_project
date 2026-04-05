@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v1.5
-const CACHE_NAME = 'linguaflash-v1.5';
+// LinguaFlash Service Worker v1.6
+const CACHE_NAME = 'linguaflash-v1.6';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -16,7 +16,7 @@ const STATIC_ASSETS = [
     '/src/js/utils/helpers.js?v=2',
     '/src/js/ui/toast.js?v=2',
     '/src/js/ui/theme.js?v=2',
-    '/src/js/ui/background.js?v=2',
+    '/src/js/ui/background.js?v=3',
     '/src/js/ui/components.js?v=2',
     '/src/js/auth/auth.js?v=2',
     '/src/js/auth/auth-ui.js?v=2',

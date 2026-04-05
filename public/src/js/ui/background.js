@@ -7,6 +7,19 @@ const FloatingBackground = {
     icons: ['school', 'translate', 'auto_stories', 'psychology', 'language', 'quiz',
             'menu_book', 'spellcheck', 'record_voice_over', 'abc', 'edit_note',
             'lightbulb', 'star', 'emoji_objects', 'workspace_premium'],
+    // Vibrant color palette for floating icons
+    colors: [
+        'rgba(108, 99, 255, 0.4)',   // Purple (primary)
+        'rgba(168, 85, 247, 0.4)',   // Violet
+        'rgba(236, 72, 153, 0.35)',  // Pink
+        'rgba(59, 130, 246, 0.4)',   // Blue
+        'rgba(14, 165, 233, 0.35)',  // Sky blue
+        'rgba(20, 184, 166, 0.35)',  // Teal
+        'rgba(16, 185, 129, 0.35)', // Emerald
+        'rgba(245, 158, 11, 0.3)',  // Amber
+        'rgba(239, 68, 68, 0.3)',   // Red
+        'rgba(249, 115, 22, 0.3)',  // Orange
+    ],
     maxIcons: 15,
     intervalId: null,
 
@@ -52,11 +65,15 @@ const FloatingBackground = {
         const duration = 15 + Math.random() * 25; // 15-40s float duration
         const delay = Math.random() * 5;        // 0-5s delay
 
+        // Pick random color from palette
+        const color = this.colors[Math.floor(Math.random() * this.colors.length)];
+
         icon.style.cssText = `
             font-size: ${size}px;
             left: ${left}%;
             animation-duration: ${duration}s;
             animation-delay: ${delay}s;
+            color: ${color};
         `;
 
         // Remove icon after animation completes
