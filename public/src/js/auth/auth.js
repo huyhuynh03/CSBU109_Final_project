@@ -117,12 +117,26 @@ const Auth = {
     },
 
     /**
-     * Delete account (requires verification code via email)
+     * Delete account with re-authentication
+     * @param {string} [password] - Required for email/password users
      */
-    async deleteAccount() {
+    async deleteAccount(password) {
         try {
             const user = auth.currentUser;
             if (!user) throw new Error('Chưa đăng nhập');
+
+            const isEmailUser = user.providerData.some(p => p.providerId === 'password');
+            const isGoogleUser = user.providerData.some(p => p.providerId === 'google.com');
+
+            // Re-authenticate before deletion
+            if (isEmailUser) {
+                if (!password) throw new Error('Cần nhập mật khẩu để xác thực');
+                const credential = firebase.auth.EmailAuthProvider.credential(user.email, password);
+                await user.reauthenticateWithCredential(credential);
+            } else if (isGoogleUser) {
+                const provider = new firebase.auth.GoogleAuthProvider();
+                await user.reauthenticateWithPopup(provider);
+            }
 
             // Delete user data from Firestore first
             await FirestoreDB.deleteUserData(user.uid);
@@ -132,8 +146,12 @@ const Auth = {
             Toast.info('Tài khoản đã bị xóa');
             Router.navigate('/');
         } catch (error) {
-            if (error.code === 'auth/requires-recent-login') {
+            if (error.code === 'auth/wrong-password') {
+                Toast.error('Sai mật khẩu', 'Mật khẩu xác thực không đúng.');
+            } else if (error.code === 'auth/requires-recent-login') {
                 Toast.error('Cần đăng nhập lại', 'Vui lòng đăng nhập lại trước khi xóa tài khoản.');
+            } else if (error.code === 'auth/popup-closed-by-user') {
+                Toast.warning('Đã hủy', 'Bạn đã đóng cửa sổ xác thực Google.');
             } else {
                 this._handleError(error);
             }

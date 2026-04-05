@@ -58,6 +58,13 @@ const AccountPage = {
                             <span>Email ${user.emailVerified ? 'đã xác thực ✅' : 'chưa xác thực ⚠️'}</span>
                         </div>
                     </div>
+                    ${!user.emailVerified ? `
+                    <div style="margin-top:var(--spacing-md);">
+                        <button class="btn btn-outline btn-sm" onclick="AccountPage.resendVerification()">
+                            <span class="material-icons-round" style="font-size:16px;">send</span> Gửi lại email xác thực
+                        </button>
+                    </div>
+                    ` : ''}
                 </div>
 
                 <!-- Đổi mật khẩu -->
@@ -153,18 +160,82 @@ const AccountPage = {
         }
     },
 
-    async deleteAccount() {
-        const confirmed = await Components.confirm(
-            'Xóa tài khoản',
-            'Bạn có chắc chắn muốn xóa tài khoản? Tất cả dữ liệu học tập sẽ bị mất vĩnh viễn và không thể khôi phục.',
-            { confirmText: 'Xóa tài khoản', cancelText: 'Hủy', danger: true }
-        );
+    async resendVerification() {
+        try {
+            const user = auth.currentUser;
+            if (user && !user.emailVerified) {
+                await user.sendEmailVerification();
+                Toast.success('Đã gửi email xác thực!', 'Vui lòng kiểm tra hộp thư (bao gồm cả thư rác).');
+            } else if (user && user.emailVerified) {
+                Toast.info('Email đã được xác thực rồi.');
+                // Refresh the page to update the UI
+                const content = this.render();
+                document.getElementById('main-content').innerHTML = content;
+            } else {
+                Toast.warning('Chưa đăng nhập');
+            }
+        } catch (error) {
+            if (error.code === 'auth/too-many-requests') {
+                Toast.warning('Quá nhiều yêu cầu', 'Vui lòng đợi một lát trước khi gửi lại.');
+            } else {
+                Toast.error('Lỗi', error.message);
+            }
+        }
+    },
 
-        if (confirmed) {
-            try {
-                await Auth.deleteAccount();
-            } catch (e) {
-                // Error already handled
+    async deleteAccount() {
+        const user = Auth.currentUser;
+        if (!user) return;
+
+        const isEmailUser = user.providerData.some(p => p.providerId === 'password');
+
+        if (isEmailUser) {
+            // Show modal with password input for email users
+            Components.createModal({
+                title: '⚠️ Xóa tài khoản',
+                content: `
+                    <p style="color:var(--color-text-secondary);margin-bottom:var(--spacing-md);">
+                        Hành động này sẽ <strong style="color:var(--color-danger);">xóa vĩnh viễn</strong> tài khoản và toàn bộ dữ liệu học tập.
+                        Không thể hoàn tác.
+                    </p>
+                    <div class="form-group">
+                        <label class="form-label">Nhập mật khẩu để xác nhận</label>
+                        <input type="password" id="delete-acc-password" class="form-input" placeholder="Nhập mật khẩu hiện tại" autofocus>
+                    </div>
+                `,
+                actions: [
+                    { label: 'Hủy', type: 'secondary', onClick: () => {} },
+                    {
+                        label: 'Xóa tài khoản',
+                        type: 'danger',
+                        onClick: async () => {
+                            const password = document.getElementById('delete-acc-password').value;
+                            if (!password) {
+                                Toast.warning('Vui lòng nhập mật khẩu để xác nhận');
+                                return;
+                            }
+                            try {
+                                await Auth.deleteAccount(password);
+                            } catch (e) {
+                                // Error already handled in Auth module
+                            }
+                        }
+                    }
+                ]
+            });
+        } else {
+            // Google users: show confirm dialog then re-auth via popup
+            const confirmed = await Components.confirm(
+                '⚠️ Xóa tài khoản',
+                'Hành động này sẽ xóa vĩnh viễn tài khoản và toàn bộ dữ liệu học tập. Bạn sẽ cần xác thực lại bằng Google để xác nhận.',
+                { confirmText: 'Xác thực & Xóa', cancelText: 'Hủy', danger: true }
+            );
+            if (confirmed) {
+                try {
+                    await Auth.deleteAccount();
+                } catch (e) {
+                    // Error already handled
+                }
             }
         }
     }

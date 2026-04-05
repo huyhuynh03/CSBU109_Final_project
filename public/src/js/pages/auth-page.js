@@ -160,7 +160,10 @@ const AuthPage = {
 
                 const user = await Auth.signUp(email, password, name);
                 await FirestoreDB.saveUserProfile(user);
-                Router.navigate('/');
+                
+                // Show email verification notice instead of navigating home
+                this._showVerificationNotice(email);
+                return;
 
             } else if (this.mode === 'reset') {
                 const email = document.getElementById('auth-email').value.trim();
@@ -181,6 +184,56 @@ const AuthPage = {
             Router.navigate('/');
         } catch (error) {
             // Error already handled
+        }
+    },
+
+    /**
+     * Show email verification notice after registration
+     * @param {string} email
+     * @private
+     */
+    _showVerificationNotice(email) {
+        const content = document.getElementById('main-content');
+        content.innerHTML = `
+            <div class="auth-page page-enter" style="max-width:440px;margin:var(--spacing-2xl) auto;">
+                <div class="glass-card" style="padding:var(--spacing-xl);text-align:center;">
+                    <span class="material-icons-round" style="font-size:64px;color:var(--color-primary);">mark_email_read</span>
+                    <h2 style="margin-top:var(--spacing-md);margin-bottom:var(--spacing-sm);">Xác thực email</h2>
+                    <p style="color:var(--color-text-secondary);margin-bottom:var(--spacing-lg);">
+                        Chúng tôi đã gửi email xác thực đến <strong style="color:var(--color-text);">${Helpers.escapeHtml(email)}</strong>.
+                        Vui lòng kiểm tra hộp thư (bao gồm cả thư rác) và nhấn vào liên kết xác thực.
+                    </p>
+                    <div style="display:flex;flex-direction:column;gap:var(--spacing-sm);">
+                        <button class="btn btn-primary btn-full" onclick="AuthPage.switchMode('login')">
+                            <span class="material-icons-round">login</span> Đăng nhập
+                        </button>
+                        <button class="btn btn-secondary btn-full" onclick="AuthPage.resendVerification()">
+                            <span class="material-icons-round">send</span> Gửi lại email xác thực
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+    },
+
+    /**
+     * Resend email verification
+     */
+    async resendVerification() {
+        try {
+            const user = auth.currentUser;
+            if (user && !user.emailVerified) {
+                await user.sendEmailVerification();
+                Toast.success('Đã gửi lại email xác thực!', 'Vui lòng kiểm tra hộp thư.');
+            } else {
+                Toast.info('Email đã được xác thực hoặc chưa đăng nhập.');
+            }
+        } catch (error) {
+            if (error.code === 'auth/too-many-requests') {
+                Toast.warning('Quá nhiều yêu cầu', 'Vui lòng đợi một lát trước khi gửi lại.');
+            } else {
+                Toast.error('Lỗi', error.message);
+            }
         }
     }
 };
