@@ -47,7 +47,7 @@ const FloatingBackground = {
         icon.textContent = this.icons[Math.floor(Math.random() * this.icons.length)];
 
         // Random properties
-        const size = 24 + Math.random() * 40; // 24-64px
+        const size = 36 + Math.random() * 52; // 36-88px
         const left = Math.random() * 100;      // 0-100% horizontal position
         const duration = 15 + Math.random() * 25; // 15-40s float duration
         const delay = Math.random() * 5;        // 0-5s delay
@@ -57,7 +57,6 @@ const FloatingBackground = {
             left: ${left}%;
             animation-duration: ${duration}s;
             animation-delay: ${delay}s;
-            opacity: ${0.3 + Math.random() * 0.4};
         `;
 
         // Remove icon after animation completes

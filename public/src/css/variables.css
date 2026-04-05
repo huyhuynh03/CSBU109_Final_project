@@ -113,7 +113,7 @@
     --color-easy: #3B82F6;
 
     /* Floating icons */
-    --floating-icon-color: rgba(108, 99, 255, 0.08);
+    --floating-icon-color: rgba(139, 131, 255, 0.35);
 
     /* Shadows for dark */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -174,7 +174,7 @@
     --color-easy: #2563EB;
 
     /* Floating icons */
-    --floating-icon-color: rgba(108, 99, 255, 0.06);
+    --floating-icon-color: rgba(108, 99, 255, 0.18);
 
     /* Shadows for light */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
