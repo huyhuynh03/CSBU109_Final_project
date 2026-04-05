@@ -37,7 +37,7 @@ const HomePage = {
                 <div class="home-actions stagger-children" style="display:flex;flex-wrap:wrap;gap:var(--spacing-md);margin-top:var(--spacing-lg);">
                     ${Auth.isSignedIn() ? `
                         <button class="btn btn-primary btn-lg" onclick="Router.navigate('/study')">
-                            <span class="material-icons-round">school</span>
+                            <img src="/icons/icon-72.png" alt="" style="width:24px;height:24px;border-radius:4px;">
                             Học mới
                         </button>
                         <button class="btn btn-secondary btn-lg" onclick="Router.navigate('/review')">
