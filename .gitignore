@@ -31,3 +31,6 @@ build/
 
 # Logs
 *.log
+
+# Source assets (not for deployment)
+avatar_app.png
