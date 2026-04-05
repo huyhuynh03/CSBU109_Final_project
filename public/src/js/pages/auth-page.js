@@ -199,10 +199,24 @@ const AuthPage = {
                 <div class="glass-card" style="padding:var(--spacing-xl);text-align:center;">
                     <span class="material-icons-round" style="font-size:64px;color:var(--color-primary);">mark_email_read</span>
                     <h2 style="margin-top:var(--spacing-md);margin-bottom:var(--spacing-sm);">Xác thực email</h2>
-                    <p style="color:var(--color-text-secondary);margin-bottom:var(--spacing-lg);">
+                    <p style="color:var(--color-text-secondary);margin-bottom:var(--spacing-md);">
                         Chúng tôi đã gửi email xác thực đến <strong style="color:var(--color-text);">${Helpers.escapeHtml(email)}</strong>.
-                        Vui lòng kiểm tra hộp thư (bao gồm cả thư rác) và nhấn vào liên kết xác thực.
+                        Vui lòng nhấn vào liên kết trong email để hoàn tất đăng ký.
                     </p>
+                    
+                    <!-- Cảnh báo kiểm tra spam -->
+                    <div style="background:rgba(255,193,7,0.1);border:1px solid rgba(255,193,7,0.3);border-radius:var(--radius-md);padding:var(--spacing-md);margin-bottom:var(--spacing-lg);text-align:left;">
+                        <div style="display:flex;align-items:flex-start;gap:var(--spacing-sm);">
+                            <span class="material-icons-round" style="color:#FFC107;font-size:20px;flex-shrink:0;margin-top:2px;">warning</span>
+                            <div style="font-size:var(--font-size-sm);color:var(--color-text-secondary);">
+                                <strong style="color:var(--color-text);">Không thấy email?</strong><br>
+                                • Kiểm tra thư mục <strong>Spam / Thư rác</strong><br>
+                                • Email gửi từ <em>noreply@linguaflash-f5591.firebaseapp.com</em><br>
+                                • Nếu email nằm trong Spam, hãy đánh dấu <strong>"Không phải thư rác"</strong>
+                            </div>
+                        </div>
+                    </div>
+
                     <div style="display:flex;flex-direction:column;gap:var(--spacing-sm);">
                         <button class="btn btn-primary btn-full" onclick="AuthPage.switchMode('login')">
                             <span class="material-icons-round">login</span> Đăng nhập
@@ -224,7 +238,7 @@ const AuthPage = {
             const user = auth.currentUser;
             if (user && !user.emailVerified) {
                 await user.sendEmailVerification();
-                Toast.success('Đã gửi lại email xác thực!', 'Vui lòng kiểm tra hộp thư.');
+                Toast.success('Đã gửi lại email xác thực!', 'Vui lòng kiểm tra hộp thư, kể cả thư mục Spam.');
             } else {
                 Toast.info('Email đã được xác thực hoặc chưa đăng nhập.');
             }

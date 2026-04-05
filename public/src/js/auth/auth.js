@@ -27,7 +27,7 @@ const Auth = {
             const result = await auth.createUserWithEmailAndPassword(email, password);
             await result.user.updateProfile({ displayName });
             await result.user.sendEmailVerification();
-            Toast.success('Đăng ký thành công!', 'Vui lòng kiểm tra email để xác thực tài khoản.');
+            Toast.success('Đăng ký thành công!', 'Vui lòng kiểm tra email (kể cả thư mục Spam) để xác thực tài khoản.');
             return result.user;
         } catch (error) {
             this._handleError(error);
