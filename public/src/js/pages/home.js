@@ -38,7 +38,7 @@ const HomePage = {
                     ${Auth.isSignedIn() ? `
                         <button class="btn btn-primary btn-lg" onclick="Router.navigate('/study')">
                             <span class="material-icons-round">school</span>
-                            Học từ mới
+                            Học mới
                         </button>
                         <button class="btn btn-secondary btn-lg" onclick="Router.navigate('/review')">
                             <span class="material-icons-round">replay</span>

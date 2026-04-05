@@ -34,7 +34,12 @@
 .btn-primary:hover {
     background: var(--gradient-primary-hover);
     box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3);
 }
 
 /* Secondary button */
@@ -47,6 +52,13 @@
 .btn-secondary:hover {
     background: var(--color-surface-hover);
     border-color: var(--color-border-hover);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Outline button */

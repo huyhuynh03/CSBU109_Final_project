@@ -2,7 +2,7 @@
 
 ## 1. Tổng quan dự án
 
-**Mục tiêu**: Xây dựng PWA học từ vựng ngoại ngữ đa ngôn ngữ, tập trung vào học từ mới và ôn tập, hỗ trợ cả online lẫn offline.
+**Mục tiêu**: Xây dựng PWA học từ vựng ngoại ngữ đa ngôn ngữ, tập trung vào học mới và ôn tập, hỗ trợ cả online lẫn offline.
 
 **Stack công nghệ**:
 - Frontend: Vanilla HTML/CSS/JS (PWA)
@@ -49,64 +49,55 @@ graph TB
 ## 3. Cấu trúc thư mục dự án
 
 ```
-ngoai_ngu/
+linguaflash/
 ├── public/
 │   ├── index.html              # Entry point
 │   ├── manifest.json           # PWA manifest
 │   ├── sw.js                   # Service Worker
-│   ├── favicon.ico
-│   └── icons/                  # PWA icons các kích thước
-│       ├── icon-192.png
-│       └── icon-512.png
-├── src/
-│   ├── css/
-│   │   ├── variables.css       # CSS variables cho theme
-│   │   ├── base.css            # Reset, typography
-│   │   ├── themes.css          # Dark/Light mode styles
-│   │   ├── components.css      # UI components
-│   │   ├── glassmorphism.css   # Hiệu ứng kiểu Apple
-│   │   ├── animations.css      # Hiệu ứng, transitions
-│   │   └── responsive.css      # Media queries
-│   ├── js/
-│   │   ├── app.js              # Main app initialization
-│   │   ├── router.js           # SPA routing
-│   │   ├── firebase-config.js  # Firebase initialization
-│   │   ├── auth/
-│   │   │   ├── auth.js         # Auth logic
-│   │   │   └── auth-ui.js      # Auth UI components
-│   │   ├── db/
-│   │   │   ├── firestore.js    # Firestore operations
-│   │   │   └── sync.js         # Online/Offline sync
-│   │   ├── fsrs/
-│   │   │   └── fsrs.js         # FSRS algorithm implementation
-│   │   ├── features/
-│   │   │   ├── folders.js      # Quản lý thư mục cây
-│   │   │   ├── cards.js        # Flashcard logic
-│   │   │   ├── fields.js       # Card fields management
-│   │   │   ├── cloze.js        # Cloze deletion
-│   │   │   ├── study.js        # Study session - học mới
-│   │   │   ├── review.js       # Review session - ôn tập
-│   │   │   └── export-import.js # Export/Import decks
-│   │   ├── ai/
-│   │   │   └── gemini.js       # Gemini AI integration
-│   │   ├── ui/
-│   │   │   ├── theme.js        # Theme switching logic
-│   │   │   ├── background.js   # Floating icons animation
-│   │   │   ├── components.js   # Reusable UI components
-│   │   │   └── toast.js        # Notification system
-│   │   └── utils/
-│   │       └── helpers.js      # Utility functions
-│   └── pages/
-│       ├── home.js             # Trang chính - thư mục cây
-│       ├── study.js            # Trang học từ mới
-│       ├── review.js           # Trang ôn tập
-│       ├── settings.js         # Trang cài đặt
-│       └── auth.js             # Trang đăng nhập/đăng ký
-├── data/
-│   └── sample-ielts-deck.json  # Bộ từ mẫu IELTS
+│   ├── icons/                  # PWA icons các kích thước
+│   │   └── icon-192.png
+│   └── src/
+│       ├── css/
+│       │   ├── variables.css       # CSS variables cho theme
+│       │   ├── base.css            # Reset, typography
+│       │   ├── themes.css          # Dark/Light mode styles
+│       │   ├── components.css      # UI components
+│       │   ├── glassmorphism.css   # Hiệu ứng kiểu Apple
+│       │   ├── animations.css      # Hiệu ứng, transitions
+│       │   └── responsive.css      # Media queries
+│       └── js/
+│           ├── app.js              # Main app initialization
+│           ├── router.js           # SPA routing
+│           ├── firebase-config.js  # Firebase initialization
+│           ├── auth/
+│           │   ├── auth.js         # Auth logic
+│           │   └── auth-ui.js      # Auth UI components
+│           ├── db/
+│           │   ├── firestore.js    # Firestore operations
+│           │   └── sync.js         # Online/Offline sync
+│           ├── fsrs/
+│           │   └── fsrs.js         # FSRS algorithm implementation
+│           ├── pages/
+│           │   ├── home.js         # Trang chính - thư mục cây
+│           │   ├── study.js        # Trang học mới
+│           │   ├── review.js       # Trang ôn tập
+│           │   ├── settings.js     # Trang cài đặt
+│           │   ├── account.js      # Trang tài khoản
+│           │   └── auth-page.js    # Trang đăng nhập/đăng ký
+│           ├── ui/
+│           │   ├── theme.js        # Theme switching logic
+│           │   ├── background.js   # Floating icons animation
+│           │   ├── components.js   # Reusable UI components
+│           │   └── toast.js        # Notification system
+│           └── utils/
+│               └── helpers.js      # Utility functions
+├── plans/
+│   └── plan.md                 # Kế hoạch triển khai
 ├── firebase.json               # Firebase config
+├── firestore.rules             # Firestore security rules
 ├── .firebaserc                 # Firebase project config
-└── README.md
+├── vercel.json                 # Vercel deployment config
+└── .gitignore
 ```
 
 ---
@@ -302,7 +293,7 @@ flowchart LR
 22. Quản lý Card Types và Fields (tạo template thẻ)
 23. Tạo/sửa/xóa Flashcard với nhiều fields
 24. Implement FSRS algorithm (ôn tập tự động)
-25. Chế độ học từ mới (Study session)
+25. Chế độ học mới (Study session)
 26. Chế độ ôn tập tự động (Review session + badge thông báo)
 27. Cloze deletion (đục lỗ điền từ, case-insensitive)
 28. **Deploy & test Core Features** trên production
