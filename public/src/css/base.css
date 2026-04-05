@@ -204,9 +204,11 @@ p {
 }
 
 .loading-icon {
-    font-size: 64px;
-    color: var(--color-primary);
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
     animation: pulse 1.5s ease-in-out infinite;
+    margin: 0 auto;
 }
 
 .loading-logo h1 {

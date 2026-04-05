@@ -1,11 +1,11 @@
-// LinguaFlash Service Worker v2.7
-const CACHE_NAME = 'linguaflash-v2.7';
+// LinguaFlash Service Worker v2.8
+const CACHE_NAME = 'linguaflash-v2.8';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/manifest.json',
     '/src/css/variables.css?v=2',
-    '/src/css/base.css?v=2',
+    '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
     '/src/css/components.css?v=3',
