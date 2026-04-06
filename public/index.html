@@ -80,6 +80,22 @@
         <div id="toast-container" class="toast-container"></div>
     </div>
 
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Sidebar Menu -->
+    <nav id="sidebar" class="sidebar glass-panel">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Menu</span>
+            <button class="icon-btn" onclick="Sidebar.close()" aria-label="Đóng menu">
+                <span class="material-icons-round">close</span>
+            </button>
+        </div>
+        <div id="sidebar-content" class="sidebar-content">
+            <!-- Content rendered by Sidebar.js -->
+        </div>
+    </nav>
+
     <!-- User Menu Dropdown (hidden by default) -->
     <div id="user-menu" class="dropdown-menu glass-panel" style="display:none;">
         <div class="menu-header">
@@ -117,6 +133,7 @@
     <script src="/src/js/ui/theme.js?v=2"></script>
     <script src="/src/js/ui/background.js?v=3"></script>
     <script src="/src/js/ui/components.js?v=2"></script>
+    <script src="/src/js/ui/sidebar.js?v=1"></script>
     <script src="/src/js/ui/folder-tree.js?v=1"></script>
     <script src="/src/js/auth/auth.js?v=5"></script>
     <script src="/src/js/auth/auth-ui.js?v=3"></script>
@@ -131,7 +148,7 @@
     <script src="/src/js/pages/account.js?v=4"></script>
     <script src="/src/js/pages/folder-view.js?v=1"></script>
     <script src="/src/js/pages/auth-page.js?v=8"></script>
-    <script src="/src/js/app.js?v=4"></script>
+    <script src="/src/js/app.js?v=5"></script>
 
     <!-- Register Service Worker -->
     <script>

@@ -26,6 +26,9 @@ const App = {
             // 4. Initialize Auth UI (menu, avatar clicks)
             AuthUI.init();
 
+            // 4.5 Initialize Sidebar
+            Sidebar.init();
+
             // 5. Register routes
             this._registerRoutes();
 
