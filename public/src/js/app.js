@@ -91,6 +91,11 @@ const App = {
             onEnter: (params) => FolderViewPage.onEnter && FolderViewPage.onEnter(params)
         });
 
+        Router.register('/folders', {
+            render: () => FolderExplorerPage.render(),
+            onEnter: () => {}
+        });
+
         console.log('[App] Routes registered');
     }
 };

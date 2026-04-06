@@ -4,10 +4,21 @@
 
 const Sidebar = {
     isOpen: false,
-    expandedFolders: new Set(),
-    folders: [],
     _initialized: false,
-    _closeOnOutsideClick: null,
+
+    /**
+     * Menu items configuration
+     */
+    menuItems: [
+        {
+            id: 'folder-tree',
+            icon: 'account_tree',
+            label: 'Cây thư mục',
+            route: '/folders',
+            requireAuth: true
+        }
+        // Thêm menu items khác ở đây sau này
+    ],
 
     /**
      * Initialize sidebar - setup event listeners
@@ -24,14 +35,12 @@ const Sidebar = {
         }
 
         // Close on overlay click
-        this._closeOnOutsideClick = (e) => {
-            const sidebar = document.getElementById('sidebar');
-            const btnMenu = document.getElementById('btn-menu');
-            if (this.isOpen && sidebar && !sidebar.contains(e.target) && !btnMenu.contains(e.target)) {
+        const overlay = document.getElementById('sidebar-overlay');
+        if (overlay) {
+            overlay.addEventListener('click', () => {
                 this.close();
-            }
-        };
-        document.addEventListener('click', this._closeOnOutsideClick);
+            });
+        }
 
         // Close on Escape key
         document.addEventListener('keydown', (e) => {
@@ -58,15 +67,10 @@ const Sidebar = {
     /**
      * Open sidebar
      */
-    async open() {
+    open() {
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('sidebar-overlay');
         if (!sidebar || !overlay) return;
-
-        // Load folders if signed in
-        if (Auth.isSignedIn()) {
-            await this._loadFolders();
-        }
 
         this._renderContent();
         this.isOpen = true;
@@ -90,192 +94,48 @@ const Sidebar = {
     },
 
     /**
-     * Load folders from Firestore
-     * @private
-     */
-    async _loadFolders() {
-        try {
-            this.folders = await FirestoreDB.getFolders();
-        } catch (error) {
-            console.error('[Sidebar] Error loading folders:', error);
-            this.folders = [];
-        }
-    },
-
-    /**
-     * Build tree structure from flat folder list
-     * @private
-     * @returns {Array}
-     */
-    _buildTree() {
-        const map = {};
-        const roots = [];
-
-        this.folders.forEach(f => {
-            map[f.id] = { ...f, children: [] };
-        });
-
-        this.folders.forEach(f => {
-            if (f.parentId && map[f.parentId]) {
-                map[f.parentId].children.push(map[f.id]);
-            } else {
-                roots.push(map[f.id]);
-            }
-        });
-
-        const sortByOrder = (arr) => {
-            arr.sort((a, b) => (a.order || 0) - (b.order || 0));
-            arr.forEach(item => sortByOrder(item.children));
-        };
-        sortByOrder(roots);
-
-        return roots;
-    },
-
-    /**
-     * Count cards in a folder (placeholder - will be enhanced later)
-     * @private
-     * @param {string} folderId
-     * @returns {number}
-     */
-    _getCardCount(folderId) {
-        // TODO: Implement actual card count when cards are implemented
-        return 0;
-    },
-
-    /**
-     * Render a single tree node for sidebar
-     * @private
-     * @param {Object} folder
-     * @param {number} depth
-     * @returns {string} HTML
-     */
-    _renderTreeNode(folder, depth = 0) {
-        const hasChildren = folder.children && folder.children.length > 0;
-        const isExpanded = this.expandedFolders.has(folder.id);
-        const indent = depth * 16 + 12;
-
-        // Expand arrow (right side, only if has children)
-        const expandArrow = hasChildren
-            ? `<button class="sidebar-expand-btn" 
-                       onclick="event.stopPropagation();Sidebar.toggleExpand('${folder.id}')"
-                       aria-label="${isExpanded ? 'Thu gọn' : 'Mở rộng'}">
-                   <span class="material-icons-round sidebar-expand-icon ${isExpanded ? 'expanded' : ''}">
-                       expand_more
-                   </span>
-               </button>`
-            : '';
-
-        // Children HTML (recursive)
-        const childrenHtml = hasChildren && isExpanded
-            ? `<div class="sidebar-tree-children">${folder.children.map(child => this._renderTreeNode(child, depth + 1)).join('')}</div>`
-            : '';
-
-        return `
-            <div class="sidebar-tree-node" data-folder-id="${folder.id}">
-                <div class="sidebar-tree-row" style="padding-left:${indent}px;"
-                     onclick="Sidebar.navigateToFolder('${folder.id}')">
-                    <span class="material-icons-round sidebar-folder-icon">
-                        ${isExpanded && hasChildren ? 'folder_open' : 'folder'}
-                    </span>
-                    <span class="sidebar-folder-name">${Helpers.escapeHtml(folder.name)}</span>
-                    ${expandArrow}
-                </div>
-                ${childrenHtml}
-            </div>
-        `;
-    },
-
-    /**
-     * Render sidebar content
+     * Render sidebar menu content
      * @private
      */
     _renderContent() {
         const content = document.getElementById('sidebar-content');
         if (!content) return;
 
-        if (!Auth.isSignedIn()) {
+        const isSignedIn = Auth.isSignedIn();
+
+        const menuHtml = this.menuItems
+            .filter(item => !item.requireAuth || isSignedIn)
+            .map(item => `
+                <button class="sidebar-menu-item" onclick="Sidebar._onMenuItemClick('${item.route}')">
+                    <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
+                    <span class="sidebar-menu-label">${item.label}</span>
+                    <span class="material-icons-round sidebar-menu-arrow">chevron_right</span>
+                </button>
+            `).join('');
+
+        if (!menuHtml) {
             content.innerHTML = `
-                <div class="sidebar-section">
-                    <div class="sidebar-section-header">
-                        <span class="material-icons-round">account_tree</span>
-                        <span>Cây thư mục</span>
-                    </div>
-                    <div class="sidebar-empty">
-                        <span class="material-icons-round">login</span>
-                        <p>Đăng nhập để xem thư mục</p>
-                    </div>
+                <div class="sidebar-empty">
+                    <span class="material-icons-round">login</span>
+                    <p>Đăng nhập để sử dụng menu</p>
                 </div>
             `;
             return;
         }
 
-        const tree = this._buildTree();
-
-        let treeHtml;
-        if (tree.length === 0) {
-            treeHtml = `
-                <div class="sidebar-empty">
-                    <span class="material-icons-round">folder_off</span>
-                    <p>Chưa có thư mục nào</p>
-                    <button class="btn btn-primary btn-sm" onclick="Sidebar.close();FolderTree.showCreateModal();" style="margin-top:var(--spacing-sm);">
-                        <span class="material-icons-round">create_new_folder</span>
-                        Tạo thư mục
-                    </button>
-                </div>
-            `;
-        } else {
-            treeHtml = `
-                <div class="sidebar-tree">
-                    ${tree.map(folder => this._renderTreeNode(folder, 0)).join('')}
-                </div>
-            `;
-        }
-
         content.innerHTML = `
-            <div class="sidebar-section">
-                <div class="sidebar-section-header">
-                    <span class="material-icons-round">account_tree</span>
-                    <span>Cây thư mục</span>
-                    <button class="icon-btn sidebar-section-action" 
-                            onclick="event.stopPropagation();Sidebar.close();FolderTree.showCreateModal();" 
-                            title="Tạo thư mục mới">
-                        <span class="material-icons-round" style="font-size:20px;">create_new_folder</span>
-                    </button>
-                </div>
-                ${treeHtml}
+            <div class="sidebar-menu-list">
+                ${menuHtml}
             </div>
         `;
     },
 
     /**
-     * Toggle expand/collapse a folder in sidebar
-     * @param {string} folderId
+     * Handle menu item click
+     * @param {string} route
      */
-    toggleExpand(folderId) {
-        if (this.expandedFolders.has(folderId)) {
-            this.expandedFolders.delete(folderId);
-        } else {
-            this.expandedFolders.add(folderId);
-        }
-        this._renderContent();
-    },
-
-    /**
-     * Navigate to a folder and close sidebar
-     * @param {string} folderId
-     */
-    navigateToFolder(folderId) {
+    _onMenuItemClick(route) {
         this.close();
-        Router.navigate(`/folder/${folderId}`);
-    },
-
-    /**
-     * Refresh sidebar content (e.g., after folder changes)
-     */
-    async refresh() {
-        if (!this.isOpen) return;
-        await this._loadFolders();
-        this._renderContent();
+        Router.navigate(route);
     }
 };
