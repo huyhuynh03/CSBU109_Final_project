@@ -58,7 +58,7 @@ const FolderExplorerPage = {
             `;
         } else {
             treeContent = `
-                <div class="explorer-tree">
+                <div class="explorer-tree explorer-grid">
                     ${tree.map(folder => this._renderNode(folder, 0)).join('')}
                 </div>
             `;
@@ -129,33 +129,34 @@ const FolderExplorerPage = {
     _renderNode(folder, depth = 0) {
         const hasChildren = folder.children && folder.children.length > 0;
         const isExpanded = this.expandedFolders.has(folder.id);
-        const indent = depth * 20 + 12;
 
         // Expand/collapse arrow
-        const expandArrow = hasChildren
-            ? `<button class="explorer-expand-btn" 
+        const expandIndicator = hasChildren
+            ? `<button class="explorer-expand-btn"
                        onclick="event.stopPropagation();FolderExplorerPage.toggleExpand('${folder.id}')"
                        aria-label="${isExpanded ? 'Thu gọn' : 'Mở rộng'}">
                    <span class="material-icons-round explorer-expand-icon ${isExpanded ? 'expanded' : ''}">
-                       chevron_right
+                       expand_more
                    </span>
                </button>`
-            : `<span class="explorer-expand-placeholder"></span>`;
+            : '';
 
-        // Children HTML (recursive)
+        // Children HTML (recursive) - also a grid
         const childrenHtml = hasChildren && isExpanded
-            ? `<div class="explorer-tree-children">${folder.children.map(child => this._renderNode(child, depth + 1)).join('')}</div>`
+            ? `<div class="explorer-tree-children explorer-grid">
+                   ${folder.children.map(child => this._renderNode(child, depth + 1)).join('')}
+               </div>`
             : '';
 
         return `
-            <div class="explorer-tree-node" data-folder-id="${folder.id}">
-                <div class="explorer-tree-row" style="padding-left:${indent}px;"
+            <div class="explorer-tree-node ${isExpanded ? 'node-expanded' : ''}" data-folder-id="${folder.id}" data-depth="${depth}">
+                <div class="explorer-folder-card glass-card"
                      onclick="FolderExplorerPage.navigateToFolder('${folder.id}')">
-                    ${expandArrow}
                     <span class="material-icons-round explorer-folder-icon">
                         ${isExpanded && hasChildren ? 'folder_open' : 'folder'}
                     </span>
                     <span class="explorer-folder-name">${Helpers.escapeHtml(folder.name)}</span>
+                    ${expandIndicator}
                 </div>
                 ${childrenHtml}
             </div>
@@ -201,7 +202,7 @@ const FolderExplorerPage = {
             `;
         } else {
             body.innerHTML = `
-                <div class="explorer-tree">
+                <div class="explorer-tree explorer-grid">
                     ${tree.map(folder => this._renderNode(folder, 0)).join('')}
                 </div>
             `;
