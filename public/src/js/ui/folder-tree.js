@@ -281,7 +281,8 @@ const FolderTree = {
                 if (parentId) {
                     this.expandedFolders.add(parentId);
                 }
-                this.refresh();
+                // Re-render current page to show new folder
+                Router._handleRoute();
             }
         } catch (error) {
             console.error('[FolderTree] Error creating folder:', error);
@@ -335,7 +336,7 @@ const FolderTree = {
             await FirestoreDB.updateFolder(folderId, { name: newName });
             Toast.success('Đã đổi tên', `Thư mục đã được đổi thành "${newName}".`);
             await this.loadFolders();
-            this.refresh();
+            Router._handleRoute();
         } catch (error) {
             console.error('[FolderTree] Error renaming folder:', error);
             Toast.error('Lỗi', 'Không thể đổi tên thư mục.');
@@ -425,7 +426,14 @@ const FolderTree = {
             this.closeModal();
             this.expandedFolders.delete(folderId);
             await this.loadFolders();
-            this.refresh();
+            
+            // If viewing the deleted folder, go home
+            const currentPath = Router.getPath();
+            if (currentPath.includes(`/folder/${folderId}`)) {
+                Router.navigate('/');
+            } else {
+                Router._handleRoute();
+            }
         } catch (error) {
             console.error('[FolderTree] Error deleting folder:', error);
             Toast.error('Lỗi', 'Không thể xóa thư mục.');

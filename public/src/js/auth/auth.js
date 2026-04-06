@@ -201,6 +201,12 @@ const Auth = {
             if (menuAvatar) menuAvatar.src = user.photoURL || this._generateAvatarUrl(user.displayName || user.email);
             if (menuName) menuName.textContent = user.displayName || 'Người dùng';
             if (menuEmail) menuEmail.textContent = user.email;
+
+            // Re-render current page if it requires auth data (e.g., folder view)
+            const currentPath = Router.getPath();
+            if (currentPath.startsWith('/folder/') || currentPath === '/folders') {
+                Router._handleRoute();
+            }
         } else {
             // Signed out
             if (btnAuth) btnAuth.style.display = 'flex';
