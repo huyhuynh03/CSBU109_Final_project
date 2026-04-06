@@ -158,6 +158,40 @@ const FirestoreDB = {
         }
     },
 
+    /**
+     * Update a folder
+     * @param {string} folderId
+     * @param {Object} updates - { name, parentId, order, ... }
+     */
+    async updateFolder(folderId, updates) {
+        const ref = this._userCollection('folders');
+        if (!ref) return;
+        try {
+            await ref.doc(folderId).update({
+                ...updates,
+                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+            });
+        } catch (error) {
+            console.error('[Firestore] Error updating folder:', error);
+            throw error;
+        }
+    },
+
+    /**
+     * Delete a folder
+     * @param {string} folderId
+     */
+    async deleteFolder(folderId) {
+        const ref = this._userCollection('folders');
+        if (!ref) return;
+        try {
+            await ref.doc(folderId).delete();
+        } catch (error) {
+            console.error('[Firestore] Error deleting folder:', error);
+            throw error;
+        }
+    },
+
     // ==========================================
     // Cards (thuộc về từng user riêng)
     // ==========================================

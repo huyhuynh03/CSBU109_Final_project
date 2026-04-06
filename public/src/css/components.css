@@ -355,3 +355,273 @@
 .page-exit {
     animation: fadeOutDown var(--transition-fast);
 }
+
+/* ============================================
+   Folder Tree
+   ============================================ */
+
+.folder-tree-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+}
+
+.folder-tree-header h3 {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-lg);
+}
+
+.folder-tree-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.folder-tree-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.folder-node {
+    display: flex;
+    flex-direction: column;
+}
+
+.folder-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    min-height: 40px;
+}
+
+.folder-row:hover {
+    background: var(--color-surface-hover);
+}
+
+.folder-expand-icon {
+    font-size: 20px;
+    color: var(--color-text-muted);
+    transition: transform var(--transition-fast);
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.folder-expand-icon.expanded {
+    transform: rotate(90deg);
+}
+
+.folder-expand-placeholder {
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.folder-icon {
+    font-size: 22px;
+    color: var(--color-primary-light);
+    flex-shrink: 0;
+}
+
+.folder-name {
+    flex: 1;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.folder-rename-input {
+    flex: 1;
+    padding: 4px 8px !important;
+    font-size: var(--font-size-sm) !important;
+    min-width: 0;
+    border: 1px solid var(--color-primary) !important;
+}
+
+.folder-menu-btn {
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.folder-row:hover .folder-menu-btn {
+    opacity: 1;
+}
+
+/* Folder Context Menu */
+.folder-context-menu {
+    min-width: 180px;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   Modal Overlay
+   ============================================ */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-modal);
+    padding: var(--spacing-md);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    width: 100%;
+    animation: scaleIn var(--transition-base);
+}
+
+/* ============================================
+   Breadcrumb
+   ============================================ */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+}
+
+.breadcrumb-item {
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-item:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb-current {
+    color: var(--color-text);
+    font-weight: 600;
+    cursor: default;
+}
+
+.breadcrumb-current:hover {
+    color: var(--color-text);
+}
+
+.breadcrumb-separator {
+    font-size: 16px;
+    color: var(--color-text-muted);
+}
+
+/* ============================================
+   Folder View Page
+   ============================================ */
+
+.folder-view-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.folder-view-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.folder-view-title h2 {
+    font-size: var(--font-size-xl);
+}
+
+.folder-view-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.folder-view-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.folder-view-section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.subfolder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.subfolder-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.subfolder-card:hover {
+    border-color: var(--color-primary);
+}
+
+.subfolder-icon {
+    font-size: 24px;
+    color: var(--color-primary-light);
+    flex-shrink: 0;
+}
+
+.subfolder-name {
+    flex: 1;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subfolder-arrow {
+    font-size: 20px;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   Stat Card (Home)
+   ============================================ */
+
+.stat-card {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.stat-card h3 {
+    font-size: var(--font-size-xl);
+}
+
+.stat-card p {
+    font-size: var(--font-size-xs);
+}
