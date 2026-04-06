@@ -158,13 +158,20 @@ p {
     color: var(--color-primary);
 }
 
-.logo-text {
+.logo-text,
+.brand-text {
     font-size: var(--font-size-lg);
     font-weight: 700;
-    background: var(--gradient-primary);
+    background: linear-gradient(270deg, #6C63FF, #A855F7, #EC4899, #A855F7, #6C63FF);
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 4s ease infinite;
+}
+
+.brand-text {
+    font-size: var(--font-size-2xl);
 }
 
 /* Main Content */
@@ -213,10 +220,12 @@ p {
 
 .loading-logo h1 {
     margin-top: var(--spacing-md);
-    background: var(--gradient-primary);
+    background: linear-gradient(270deg, #6C63FF, #A855F7, #EC4899, #A855F7, #6C63FF);
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: gradientShift 4s ease infinite;
 }
 
 .loading-logo p {

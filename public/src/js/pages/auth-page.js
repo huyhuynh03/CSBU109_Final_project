@@ -11,7 +11,7 @@ const AuthPage = {
                 <div class="glass-card" style="padding:var(--spacing-xl);">
                     <div style="text-align:center;margin-bottom:var(--spacing-xl);display:flex;flex-direction:column;align-items:center;">
                         <img src="/icons/icon-192.png" alt="LinguaFlash" style="width:96px;height:96px;max-width:none;border-radius:16px;">
-                        <h2 style="margin-top:var(--spacing-sm);">LinguaFlash</h2>
+                        <h2 class="brand-text" style="margin-top:var(--spacing-sm);">LinguaFlash</h2>
                         <p style="color:var(--color-text-muted);font-size:var(--font-size-sm);">Học và ôn tập thông minh</p>
                     </div>
 
