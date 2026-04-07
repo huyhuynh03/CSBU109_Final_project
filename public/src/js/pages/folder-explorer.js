@@ -148,13 +148,13 @@ const FolderExplorerPage = {
                </div>`
             : '';
 
+        const folderIcon = FolderTree._renderFolderIcon(folder, isExpanded && hasChildren, 'explorer-folder-icon', 32);
+
         return `
             <div class="explorer-tree-node ${isExpanded ? 'node-expanded' : ''}" data-folder-id="${folder.id}" data-depth="${depth}">
                 <div class="explorer-folder-card glass-card"
                      onclick="FolderExplorerPage.navigateToFolder('${folder.id}')">
-                    <span class="material-icons-round explorer-folder-icon">
-                        ${isExpanded && hasChildren ? 'folder_open' : 'folder'}
-                    </span>
+                    ${folderIcon}
                     <span class="explorer-folder-name">${Helpers.escapeHtml(folder.name)}</span>
                     ${expandIndicator}
                 </div>

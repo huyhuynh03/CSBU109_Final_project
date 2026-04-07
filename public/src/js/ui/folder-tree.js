@@ -88,13 +88,15 @@ const FolderTree = {
                       autofocus>`
             : `<span class="folder-name">${Helpers.escapeHtml(folder.name)}</span>`;
 
+        const folderIcon = this._renderFolderIcon(folder, isExpanded, 'folder-icon');
+
         return `
             <div class="folder-node" data-folder-id="${folder.id}">
-                <div class="folder-row hover-lift" style="padding-left:${indent + 8}px;" 
+                <div class="folder-row hover-lift" style="padding-left:${indent + 8}px;"
                      onclick="FolderTree.onFolderClick('${folder.id}')"
                      oncontextmenu="event.preventDefault();FolderTree.showContextMenu(event,'${folder.id}')">
                     ${expandIcon}
-                    <span class="material-icons-round folder-icon">${isExpanded ? 'folder_open' : 'folder'}</span>
+                    ${folderIcon}
                     ${folderName}
                     <button class="folder-menu-btn icon-btn" 
                             onclick="event.stopPropagation();FolderTree.showContextMenu(event,'${folder.id}')"
@@ -457,6 +459,7 @@ const FolderTree = {
         const folder = this.folders.find(f => f.id === folderId);
         if (!folder) return;
 
+        const hasCover = folder.coverImage ? true : false;
         const menuHtml = `
             <div id="folder-context-menu" class="folder-context-menu glass-panel animate-scale-in"
                  style="position:fixed;top:${event.clientY}px;left:${event.clientX}px;z-index:var(--z-dropdown);">
@@ -468,6 +471,16 @@ const FolderTree = {
                     <span class="material-icons-round">edit</span>
                     <span>Đổi tên</span>
                 </button>
+                <button class="menu-item" onclick="FolderTree.showCoverImageModal('${folderId}')">
+                    <span class="material-icons-round">image</span>
+                    <span>Đổi ảnh bìa</span>
+                </button>
+                ${hasCover ? `
+                <button class="menu-item" onclick="FolderTree.removeCoverImage('${folderId}')">
+                    <span class="material-icons-round">hide_image</span>
+                    <span>Xóa ảnh bìa</span>
+                </button>
+                ` : ''}
                 <div class="menu-divider"></div>
                 <button class="menu-item menu-item-danger" onclick="FolderTree.showDeleteConfirm('${folderId}')">
                     <span class="material-icons-round">delete</span>
@@ -549,5 +562,248 @@ const FolderTree = {
         return this.folders
             .filter(f => (parentId ? f.parentId === parentId : !f.parentId))
             .sort((a, b) => (a.order || 0) - (b.order || 0));
+    },
+
+    // ==========================================
+    // Cover Image (Ảnh bìa thư mục)
+    // ==========================================
+
+    /**
+     * Render folder icon - show cover image if available, else Material Icon
+     * @param {Object} folder
+     * @param {boolean} isExpanded
+     * @param {string} cssClass - CSS class for the icon element
+     * @param {number} [size=24] - Size in px for cover image
+     * @returns {string} HTML
+     */
+    _renderFolderIcon(folder, isExpanded, cssClass, size = 24) {
+        if (folder.coverImage) {
+            return `<img src="${Helpers.escapeHtml(folder.coverImage)}"
+                         alt="" class="${cssClass} folder-cover-img"
+                         style="width:${size}px;height:${size}px;max-width:none;object-fit:cover;border-radius:4px;flex-shrink:0;">`;
+        }
+        return `<span class="material-icons-round ${cssClass}">${isExpanded ? 'folder_open' : 'folder'}</span>`;
+    },
+
+    /**
+     * Show modal to set cover image (upload or URL)
+     * @param {string} folderId
+     */
+    showCoverImageModal(folderId) {
+        this.closeContextMenu();
+        const folder = this.folders.find(f => f.id === folderId);
+        if (!folder) return;
+
+        const currentPreview = folder.coverImage
+            ? `<img src="${Helpers.escapeHtml(folder.coverImage)}" alt="Ảnh bìa hiện tại"
+                    style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">`
+            : `<span class="material-icons-round" style="font-size:48px;color:var(--color-text-muted);">image</span>`;
+
+        const modalHtml = `
+            <div id="cover-image-modal" class="modal-overlay" onclick="if(event.target===this)FolderTree.closeModal()">
+                <div class="modal-content glass-card animate-scale-in" style="max-width:440px;padding:var(--spacing-xl);">
+                    <h3 style="margin-bottom:var(--spacing-lg);">
+                        <span class="material-icons-round" style="vertical-align:middle;margin-right:var(--spacing-xs);">image</span>
+                        Ảnh bìa: ${Helpers.escapeHtml(folder.name)}
+                    </h3>
+                    
+                    <!-- Preview -->
+                    <div style="text-align:center;margin-bottom:var(--spacing-lg);">
+                        <div id="cover-preview">${currentPreview}</div>
+                    </div>
+
+                    <!-- Tab: Upload -->
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="material-icons-round" style="font-size:16px;vertical-align:middle;">upload_file</span>
+                            Tải lên từ máy tính
+                        </label>
+                        <input type="file" id="cover-file-input" accept="image/*"
+                               onchange="FolderTree._handleCoverFileUpload('${folderId}', this)"
+                               style="width:100%;font-size:var(--font-size-sm);">
+                        <p style="font-size:var(--font-size-xs);color:var(--color-text-muted);margin-top:4px;">
+                            Ảnh sẽ được resize về tối đa 200×200px và lưu dạng base64.
+                        </p>
+                    </div>
+
+                    <!-- Tab: URL -->
+                    <div class="form-group" style="margin-top:var(--spacing-md);">
+                        <label class="form-label">
+                            <span class="material-icons-round" style="font-size:16px;vertical-align:middle;">link</span>
+                            Hoặc nhập URL ảnh
+                        </label>
+                        <div style="display:flex;gap:var(--spacing-xs);">
+                            <input type="url" id="cover-url-input" class="form-input"
+                                   placeholder="https://example.com/image.png"
+                                   style="flex:1;">
+                            <button class="btn btn-primary btn-sm" onclick="FolderTree._setCoverFromUrl('${folderId}')">
+                                <span class="material-icons-round">check</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;gap:var(--spacing-sm);margin-top:var(--spacing-lg);">
+                        <button class="btn btn-secondary btn-full" onclick="FolderTree.closeModal()">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+    },
+
+    /**
+     * Handle file upload for cover image - resize to max 200x200 and convert to base64
+     * @param {string} folderId
+     * @param {HTMLInputElement} input
+     */
+    async _handleCoverFileUpload(folderId, input) {
+        const file = input.files?.[0];
+        if (!file) return;
+
+        if (!file.type.startsWith('image/')) {
+            Toast.warning('Sai định dạng', 'Vui lòng chọn file ảnh (PNG, JPG, GIF...).');
+            return;
+        }
+
+        // Max 5MB raw file
+        if (file.size > 5 * 1024 * 1024) {
+            Toast.warning('File quá lớn', 'Vui lòng chọn file ảnh dưới 5MB.');
+            return;
+        }
+
+        try {
+            const dataUrl = await this._resizeImageToBase64(file, 200, 200);
+            await this._saveCoverImage(folderId, dataUrl);
+        } catch (error) {
+            console.error('[FolderTree] Cover upload error:', error);
+            Toast.error('Lỗi', 'Không thể tải ảnh lên.');
+        }
+    },
+
+    /**
+     * Set cover from external URL
+     * @param {string} folderId
+     */
+    async _setCoverFromUrl(folderId) {
+        const urlInput = document.getElementById('cover-url-input');
+        const url = urlInput?.value.trim();
+
+        if (!url) {
+            Toast.warning('Thiếu URL', 'Vui lòng nhập URL ảnh.');
+            urlInput?.focus();
+            return;
+        }
+
+        // Basic URL validation
+        try {
+            new URL(url);
+        } catch {
+            Toast.warning('URL không hợp lệ', 'Vui lòng nhập URL đúng định dạng.');
+            urlInput?.focus();
+            return;
+        }
+
+        try {
+            await this._saveCoverImage(folderId, url);
+        } catch (error) {
+            console.error('[FolderTree] Cover URL error:', error);
+            Toast.error('Lỗi', 'Không thể lưu ảnh bìa.');
+        }
+    },
+
+    /**
+     * Save cover image to Firestore and refresh UI
+     * @param {string} folderId
+     * @param {string} imageUrl - base64 data URL or external URL
+     */
+    async _saveCoverImage(folderId, imageUrl) {
+        await FirestoreDB.updateFolder(folderId, { coverImage: imageUrl });
+        Toast.success('Đã cập nhật', 'Ảnh bìa thư mục đã được thay đổi.');
+
+        // Update preview in modal
+        const preview = document.getElementById('cover-preview');
+        if (preview) {
+            preview.innerHTML = `<img src="${Helpers.escapeHtml(imageUrl)}" alt="Ảnh bìa"
+                style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">`;
+        }
+
+        // Reload and refresh
+        await this.loadFolders();
+        this.refresh();
+
+        // Also refresh explorer if visible
+        if (typeof FolderExplorerPage !== 'undefined') {
+            const explorerGrid = document.querySelector('.explorer-grid');
+            if (explorerGrid) {
+                FolderExplorerPage.folders = this.folders;
+                Router._handleRoute();
+            }
+        }
+    },
+
+    /**
+     * Remove cover image from folder
+     * @param {string} folderId
+     */
+    async removeCoverImage(folderId) {
+        this.closeContextMenu();
+        try {
+            await FirestoreDB.updateFolder(folderId, { coverImage: null });
+            Toast.success('Đã xóa', 'Ảnh bìa đã được gỡ bỏ.');
+            await this.loadFolders();
+            this.refresh();
+
+            if (typeof FolderExplorerPage !== 'undefined') {
+                const explorerGrid = document.querySelector('.explorer-grid');
+                if (explorerGrid) {
+                    FolderExplorerPage.folders = this.folders;
+                    Router._handleRoute();
+                }
+            }
+        } catch (error) {
+            console.error('[FolderTree] Remove cover error:', error);
+            Toast.error('Lỗi', 'Không thể xóa ảnh bìa.');
+        }
+    },
+
+    /**
+     * Resize an image file to max dimensions and return base64 data URL
+     * @param {File} file
+     * @param {number} maxWidth
+     * @param {number} maxHeight
+     * @returns {Promise<string>} base64 data URL
+     */
+    _resizeImageToBase64(file, maxWidth, maxHeight) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    let { width, height } = img;
+
+                    // Scale down proportionally
+                    if (width > maxWidth || height > maxHeight) {
+                        const ratio = Math.min(maxWidth / width, maxHeight / height);
+                        width = Math.round(width * ratio);
+                        height = Math.round(height * ratio);
+                    }
+
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    // Convert to base64 (JPEG for smaller size, 0.85 quality)
+                    const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+                    resolve(dataUrl);
+                };
+                img.onerror = reject;
+                img.src = e.target.result;
+            };
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+        });
     }
 };

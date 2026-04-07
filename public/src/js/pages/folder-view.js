@@ -67,7 +67,11 @@ const FolderViewPage = {
                 <!-- Folder Header -->
                 <div class="folder-view-header">
                     <div class="folder-view-title">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-primary);">folder_open</span>
+                        ${this.currentFolder.coverImage
+                            ? `<img src="${Helpers.escapeHtml(this.currentFolder.coverImage)}" alt=""
+                                    style="width:40px;height:40px;max-width:none;object-fit:cover;border-radius:8px;flex-shrink:0;">`
+                            : `<span class="material-icons-round" style="font-size:32px;color:var(--color-primary);">folder_open</span>`
+                        }
                         <h2>${Helpers.escapeHtml(this.currentFolder.name)}</h2>
                     </div>
                     <div class="folder-view-actions">
@@ -94,7 +98,7 @@ const FolderViewPage = {
                         <div class="subfolder-grid">
                             ${subfolders.map(sub => `
                                 <div class="subfolder-card glass-card hover-lift" onclick="Router.navigate('/folder/${sub.id}')">
-                                    <span class="material-icons-round subfolder-icon">folder</span>
+                                    ${FolderTree._renderFolderIcon(sub, false, 'subfolder-icon', 28)}
                                     <span class="subfolder-name">${Helpers.escapeHtml(sub.name)}</span>
                                     <span class="material-icons-round subfolder-arrow">chevron_right</span>
                                 </div>

@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v2.9
-const CACHE_NAME = 'linguaflash-v2.9';
+// LinguaFlash Service Worker v3.0
+const CACHE_NAME = 'linguaflash-v3.0';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -18,7 +18,9 @@ const STATIC_ASSETS = [
     '/src/js/ui/theme.js?v=2',
     '/src/js/ui/background.js?v=3',
     '/src/js/ui/components.js?v=2',
-    '/src/js/auth/auth.js?v=5',
+    '/src/js/ui/sidebar.js?v=1',
+    '/src/js/ui/folder-tree.js?v=3',
+    '/src/js/auth/auth.js?v=6',
     '/src/js/auth/auth-ui.js?v=3',
     '/src/js/db/firestore.js?v=2',
     '/src/js/db/sync.js?v=2',
@@ -28,7 +30,9 @@ const STATIC_ASSETS = [
     '/src/js/pages/review.js?v=2',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',
-    '/src/js/pages/account.js?v=4'
+    '/src/js/pages/account.js?v=4',
+    '/src/js/pages/folder-view.js?v=2',
+    '/src/js/pages/folder-explorer.js?v=3'
 ];
 
 // Files that should always use network-first (contain sensitive config)
