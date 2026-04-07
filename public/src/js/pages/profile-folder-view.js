@@ -2,7 +2,7 @@
 // Profile Folder View Page - Xem chi tiết thư mục hồ sơ
 // ============================================
 // Giống FolderViewPage nhưng dùng ProfileFolderTree + cardTypes
-// v1: Initial
+// v2: Dùng _renderFolderIcon() cho cover image support
 
 const ProfileFolderViewPage = {
     currentFolderId: null,
@@ -67,7 +67,7 @@ const ProfileFolderViewPage = {
                 <!-- Folder Header -->
                 <div class="folder-view-header">
                     <div class="folder-view-title">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-primary);">folder_open</span>
+                        ${ProfileFolderTree._renderFolderIcon(this.currentFolder, true, 'folder-header-icon', 32)}
                         <h2>${Helpers.escapeHtml(this.currentFolder.name)}</h2>
                     </div>
                     <div class="folder-view-actions">
@@ -98,7 +98,7 @@ const ProfileFolderViewPage = {
                         <div class="subfolder-grid">
                             ${subfolders.map(sub => `
                                 <div class="subfolder-card glass-card hover-lift" onclick="Router.navigate('/profiles/folder/${sub.id}')">
-                                    <span class="material-icons-round subfolder-icon" style="font-size:28px;color:var(--color-primary);">folder</span>
+                                    ${ProfileFolderTree._renderFolderIcon(sub, false, 'subfolder-icon', 28)}
                                     <span class="subfolder-name">${Helpers.escapeHtml(sub.name)}</span>
                                     <span class="material-icons-round subfolder-arrow">chevron_right</span>
                                 </div>
