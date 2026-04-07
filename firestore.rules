@@ -15,6 +15,11 @@ service cloud.firestore {
       match /folders/{folderId} {
         allow read, write: if request.auth != null && request.auth.uid == userId;
       }
+
+      // Profile Folders subcollection - thư mục hồ sơ cấu hình (riêng biệt khỏi folders)
+      match /profileFolders/{folderId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
       
       // Card Types subcollection - thuộc về user
       match /cardTypes/{cardTypeId} {

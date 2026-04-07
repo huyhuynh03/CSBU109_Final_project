@@ -103,6 +103,12 @@ const App = {
 
         Router.register('/profiles', {
             render: () => ProfilesPage.render(),
+            onEnter: () => ProfilesPage.onEnter && ProfilesPage.onEnter(),
+            onLeave: () => ProfilesPage.onLeave && ProfilesPage.onLeave()
+        });
+
+        Router.register('/profiles/:id', {
+            render: (params) => ProfileEditorPage.render(params),
             onEnter: () => {}
         });
 
