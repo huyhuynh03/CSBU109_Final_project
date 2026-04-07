@@ -1,16 +1,16 @@
-// LinguaFlash Service Worker v3.1
-const CACHE_NAME = 'linguaflash-v3.1';
+// LinguaFlash Service Worker v3.2
+const CACHE_NAME = 'linguaflash-v3.2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/manifest.json',
-    '/src/css/variables.css?v=2',
+    '/src/css/variables.css?v=3',
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=3',
+    '/src/css/components.css?v=5',
     '/src/css/animations.css?v=2',
-    '/src/css/responsive.css?v=2',
+    '/src/css/responsive.css?v=3',
     '/src/js/app.js?v=6',
     '/src/js/router.js?v=2',
     '/src/js/utils/helpers.js?v=2',
@@ -24,7 +24,7 @@ const STATIC_ASSETS = [
     '/src/js/db/firestore.js?v=2',
     '/src/js/db/sync.js?v=2',
     '/src/js/fsrs/fsrs.js?v=2',
-    '/src/js/pages/home.js?v=7',
+    '/src/js/pages/home.js?v=8',
     '/src/js/pages/study.js?v=7',
     '/src/js/pages/review.js?v=2',
     '/src/js/pages/settings.js?v=2',
