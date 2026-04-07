@@ -459,7 +459,6 @@ const FolderTree = {
         const folder = this.folders.find(f => f.id === folderId);
         if (!folder) return;
 
-        const hasCover = folder.coverImage ? true : false;
         const menuHtml = `
             <div id="folder-context-menu" class="folder-context-menu glass-panel animate-scale-in"
                  style="position:fixed;top:${event.clientY}px;left:${event.clientX}px;z-index:var(--z-dropdown);">
@@ -473,14 +472,8 @@ const FolderTree = {
                 </button>
                 <button class="menu-item" onclick="FolderTree.showCoverImageModal('${folderId}')">
                     <span class="material-icons-round">image</span>
-                    <span>Đổi ảnh bìa</span>
+                    <span>Ảnh bìa</span>
                 </button>
-                ${hasCover ? `
-                <button class="menu-item" onclick="FolderTree.removeCoverImage('${folderId}')">
-                    <span class="material-icons-round">hide_image</span>
-                    <span>Xóa ảnh bìa</span>
-                </button>
-                ` : ''}
                 <div class="menu-divider"></div>
                 <button class="menu-item menu-item-danger" onclick="FolderTree.showDeleteConfirm('${folderId}')">
                     <span class="material-icons-round">delete</span>
@@ -595,8 +588,17 @@ const FolderTree = {
         if (!folder) return;
 
         const currentPreview = folder.coverImage
-            ? `<img src="${Helpers.escapeHtml(folder.coverImage)}" alt="Ảnh bìa hiện tại"
-                    style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">`
+            ? `<div style="position:relative;display:inline-block;">
+                    <img src="${Helpers.escapeHtml(folder.coverImage)}" alt="Ảnh bìa hiện tại"
+                         style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">
+                    <button onclick="FolderTree.removeCoverImage('${folderId}')" title="Xóa ảnh bìa"
+                            style="position:absolute;top:-8px;right:-8px;width:22px;height:22px;border-radius:50%;
+                                   background:var(--color-error, #e53935);color:#fff;border:2px solid var(--color-bg);
+                                   display:flex;align-items:center;justify-content:center;cursor:pointer;
+                                   font-size:14px;line-height:1;padding:0;">
+                        <span class="material-icons-round" style="font-size:14px;">close</span>
+                    </button>
+               </div>`
             : `<span class="material-icons-round" style="font-size:48px;color:var(--color-text-muted);">image</span>`;
 
         const modalHtml = `
@@ -760,6 +762,7 @@ const FolderTree = {
      */
     async removeCoverImage(folderId) {
         this.closeContextMenu();
+        this.closeModal();
         try {
             await FirestoreDB.updateFolder(folderId, { coverImage: null });
             Toast.success('Đã xóa', 'Ảnh bìa đã được gỡ bỏ.');
