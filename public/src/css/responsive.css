@@ -38,14 +38,6 @@
     h1 { font-size: var(--font-size-2xl); }
     h2 { font-size: var(--font-size-xl); }
 
-    /* Profiles page - single column on mobile */
-    .profiles-layout {
-        grid-template-columns: 1fr !important;
-    }
-
-    .profiles-sidebar {
-        order: -1;
-    }
 
     /* Explorer grid - smaller cards on mobile */
     .explorer-grid {

@@ -103,8 +103,12 @@ const App = {
 
         Router.register('/profiles', {
             render: () => ProfilesPage.render(),
-            onEnter: () => ProfilesPage.onEnter && ProfilesPage.onEnter(),
-            onLeave: () => ProfilesPage.onLeave && ProfilesPage.onLeave()
+            onEnter: () => {}
+        });
+
+        Router.register('/profiles/folder/:id', {
+            render: (params) => ProfileFolderViewPage.render(params),
+            onEnter: () => {}
         });
 
         Router.register('/profiles/:id', {

@@ -1,6 +1,7 @@
 // ============================================
 // Profile Editor Page - Chi tiết hồ sơ cấu hình
 // ============================================
+// v2: Back button thông minh - navigate về folder cha nếu có
 
 const ProfileEditorPage = {
     cardType: null,
@@ -58,7 +59,7 @@ const ProfileEditorPage = {
                 <!-- Header -->
                 <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-lg);">
                     <div style="display:flex;align-items:center;gap:var(--spacing-sm);">
-                        <button class="icon-btn" onclick="Router.navigate('/profiles')" title="Quay lại">
+                        <button class="icon-btn" onclick="ProfileEditorPage._goBack()" title="Quay lại">
                             <span class="material-icons-round">arrow_back</span>
                         </button>
                         <h2 style="margin:0;font-size:var(--font-size-xl);">${Helpers.escapeHtml(ct.name)}</h2>
@@ -360,14 +361,28 @@ const ProfileEditorPage = {
                 confirmClass: 'btn-danger',
                 onConfirm: async () => {
                     try {
+                        const folderId = this.cardType.folderId;
                         await FirestoreDB.deleteCardType(this.cardType.id);
                         Toast.success('Đã xóa hồ sơ');
-                        Router.navigate('/profiles');
+                        this._goBack(folderId);
                     } catch (error) {
                         Toast.error('Lỗi xóa hồ sơ', error.message);
                     }
                 }
             }
         );
+    },
+
+    /**
+     * Navigate back to parent folder or profiles list
+     * @param {string} [folderId] - Optional override folderId
+     */
+    _goBack(folderId) {
+        const targetFolderId = folderId !== undefined ? folderId : (this.cardType ? this.cardType.folderId : null);
+        if (targetFolderId) {
+            Router.navigate(`/profiles/folder/${targetFolderId}`);
+        } else {
+            Router.navigate('/profiles');
+        }
     }
 };

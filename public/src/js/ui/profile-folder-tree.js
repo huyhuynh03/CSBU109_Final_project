@@ -2,19 +2,24 @@
 // Profile Folder Tree - Cây thư mục hồ sơ cấu hình
 // ============================================
 // Tách biệt khỏi FolderTree (lobby), dùng collection profileFolders
+// v3: Refactor - navigate vào folder thay vì filter sidebar
 
 const ProfileFolderTree = {
     folders: [],
     tree: [],
     expandedFolders: new Set(),
-    selectedFolderId: null,
-    renamingFolderId: null,
+    editingFolderId: null,
 
     /**
      * Load profile folders from Firestore
      */
     async loadFolders() {
-        this.folders = await FirestoreDB.getProfileFolders();
+        try {
+            this.folders = await FirestoreDB.getProfileFolders();
+        } catch (error) {
+            console.error('[ProfileFolderTree] Error loading folders:', error);
+            this.folders = [];
+        }
         this.buildTree();
     },
 
@@ -51,8 +56,7 @@ const ProfileFolderTree = {
     renderNode(folder, depth = 0) {
         const hasChildren = folder.children && folder.children.length > 0;
         const isExpanded = this.expandedFolders.has(folder.id);
-        const isSelected = this.selectedFolderId === folder.id;
-        const isRenaming = this.renamingFolderId === folder.id;
+        const isEditing = this.editingFolderId === folder.id;
 
         const indent = depth * 20;
         const expandIcon = hasChildren
@@ -60,12 +64,12 @@ const ProfileFolderTree = {
                     onclick="event.stopPropagation();ProfileFolderTree.toggleExpand('${folder.id}')">chevron_right</span>`
             : `<span style="width:18px;display:inline-block;"></span>`;
 
-        const nameHtml = isRenaming
-            ? `<input type="text" class="tree-rename-input" value="${Helpers.escapeHtml(folder.name)}"
+        const nameHtml = isEditing
+            ? `<input type="text" class="folder-rename-input form-input" value="${Helpers.escapeHtml(folder.name)}"
                     onblur="ProfileFolderTree.finishRename('${folder.id}', this.value)"
                     onkeydown="if(event.key==='Enter')this.blur();if(event.key==='Escape')ProfileFolderTree.cancelRename();"
-                    style="flex:1;padding:2px 6px;font-size:var(--font-size-sm);border:1px solid var(--color-primary);border-radius:var(--radius-sm);background:var(--color-surface);color:var(--color-text);">`
-            : `<span class="tree-name" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${Helpers.escapeHtml(folder.name)}</span>`;
+                    onclick="event.stopPropagation()" autofocus>`
+            : `<span class="folder-name">${Helpers.escapeHtml(folder.name)}</span>`;
 
         let childrenHtml = '';
         if (hasChildren && isExpanded) {
@@ -73,14 +77,18 @@ const ProfileFolderTree = {
         }
 
         return `
-            <div class="tree-node" data-folder-id="${folder.id}">
-                <div class="tree-item ${isSelected ? 'tree-item-selected' : ''}"
-                     style="padding-left:${indent + 8}px;display:flex;align-items:center;gap:4px;padding-top:6px;padding-bottom:6px;padding-right:8px;border-radius:var(--radius-sm);cursor:pointer;"
+            <div class="folder-node" data-folder-id="${folder.id}">
+                <div class="folder-row hover-lift" style="padding-left:${indent + 8}px;"
                      onclick="ProfileFolderTree.onFolderClick('${folder.id}')"
                      oncontextmenu="event.preventDefault();ProfileFolderTree.showContextMenu(event,'${folder.id}')">
                     ${expandIcon}
-                    <span class="material-icons-round" style="font-size:20px;color:var(--color-primary);">folder</span>
+                    <span class="material-icons-round folder-icon" style="font-size:20px;color:var(--color-primary);">folder</span>
                     ${nameHtml}
+                    <button class="folder-menu-btn icon-btn"
+                            onclick="event.stopPropagation();ProfileFolderTree.showContextMenu(event,'${folder.id}')"
+                            aria-label="Menu thư mục">
+                        <span class="material-icons-round" style="font-size:18px;">more_vert</span>
+                    </button>
                 </div>
                 ${childrenHtml}
             </div>
@@ -94,10 +102,20 @@ const ProfileFolderTree = {
     render() {
         if (this.folders.length === 0) {
             return `
-                <div class="profile-folder-tree" style="padding:var(--spacing-sm);">
-                    <div style="text-align:center;padding:var(--spacing-lg) 0;color:var(--color-text-muted);">
-                        <span class="material-icons-round" style="font-size:36px;">create_new_folder</span>
-                        <p style="font-size:var(--font-size-sm);margin-top:var(--spacing-xs);">Chưa có thư mục</p>
+                <div class="folder-tree">
+                    <div class="folder-tree-header">
+                        <h3><span class="material-icons-round" style="vertical-align:middle;margin-right:var(--spacing-xs);">folder</span>Thư mục hồ sơ</h3>
+                        <button class="icon-btn" onclick="ProfileFolderTree.showCreateModal()" aria-label="Tạo thư mục mới" title="Tạo thư mục mới">
+                            <span class="material-icons-round">create_new_folder</span>
+                        </button>
+                    </div>
+                    <div class="folder-tree-empty">
+                        <span class="material-icons-round" style="font-size:48px;color:var(--color-text-muted);margin-bottom:var(--spacing-sm);">folder_off</span>
+                        <p style="color:var(--color-text-muted);font-size:var(--font-size-sm);">Chưa có thư mục nào</p>
+                        <button class="btn btn-primary btn-sm" onclick="ProfileFolderTree.showCreateModal()" style="margin-top:var(--spacing-md);">
+                            <span class="material-icons-round">create_new_folder</span>
+                            Tạo thư mục đầu tiên
+                        </button>
                     </div>
                 </div>
             `;
@@ -105,11 +123,23 @@ const ProfileFolderTree = {
 
         const nodesHtml = this.tree.map(node => this.renderNode(node, 0)).join('');
         return `
-            <div class="profile-folder-tree" style="padding:var(--spacing-xs) 0;">
-                ${nodesHtml}
+            <div class="folder-tree">
+                <div class="folder-tree-header">
+                    <h3><span class="material-icons-round" style="vertical-align:middle;margin-right:var(--spacing-xs);">folder</span>Thư mục hồ sơ</h3>
+                    <button class="icon-btn" onclick="ProfileFolderTree.showCreateModal()" aria-label="Tạo thư mục mới" title="Tạo thư mục mới">
+                        <span class="material-icons-round">create_new_folder</span>
+                    </button>
+                </div>
+                <div class="folder-tree-content">
+                    ${nodesHtml}
+                </div>
             </div>
         `;
     },
+
+    // ==========================================
+    // Navigation
+    // ==========================================
 
     /**
      * Toggle folder expand/collapse
@@ -124,23 +154,57 @@ const ProfileFolderTree = {
     },
 
     /**
-     * Handle folder click (select)
+     * Handle folder click - navigate to folder view (like lobby)
      */
     onFolderClick(folderId) {
-        this.selectedFolderId = (this.selectedFolderId === folderId) ? null : folderId;
-        this.refresh();
-        // Dispatch event so ProfilesPage can react
-        window.dispatchEvent(new CustomEvent('profile-folder-selected', { detail: { folderId: this.selectedFolderId } }));
+        // Auto expand if has children
+        const folder = this.folders.find(f => f.id === folderId);
+        if (folder) {
+            const hasChildren = this.folders.some(f => f.parentId === folderId);
+            if (hasChildren && !this.expandedFolders.has(folderId)) {
+                this.expandedFolders.add(folderId);
+                this.refresh();
+            }
+        }
+        Router.navigate(`/profiles/folder/${folderId}`);
     },
 
     /**
      * Refresh tree in DOM
      */
     refresh() {
-        const container = document.querySelector('.profile-folder-tree');
+        const container = document.querySelector('.folder-tree');
         if (container) {
             container.outerHTML = this.render();
         }
+    },
+
+    /**
+     * Get breadcrumb path from root to given folder
+     * @param {string} folderId
+     * @returns {Array} [{id, name}, ...] from root to current
+     */
+    getBreadcrumb(folderId) {
+        const path = [];
+        let current = this.folders.find(f => f.id === folderId);
+        while (current) {
+            path.unshift({ id: current.id, name: current.name });
+            current = current.parentId
+                ? this.folders.find(f => f.id === current.parentId)
+                : null;
+        }
+        return path;
+    },
+
+    /**
+     * Get direct children of a folder
+     * @param {string} parentId
+     * @returns {Array}
+     */
+    getChildren(parentId) {
+        return this.folders
+            .filter(f => f.parentId === parentId)
+            .sort((a, b) => (a.order || 0) - (b.order || 0));
     },
 
     // ==========================================
@@ -211,12 +275,12 @@ const ProfileFolderTree = {
      * Start renaming a folder
      */
     startRename(folderId) {
-        this.renamingFolderId = folderId;
+        this.editingFolderId = folderId;
         this.closeContextMenu();
         this.refresh();
 
         setTimeout(() => {
-            const input = document.querySelector('.tree-rename-input');
+            const input = document.querySelector('.folder-rename-input');
             if (input) {
                 input.focus();
                 input.select();
@@ -228,7 +292,7 @@ const ProfileFolderTree = {
      * Finish renaming
      */
     async finishRename(folderId, newName) {
-        this.renamingFolderId = null;
+        this.editingFolderId = null;
         newName = newName.trim();
 
         const folder = this.folders.find(f => f.id === folderId);
@@ -252,7 +316,7 @@ const ProfileFolderTree = {
      * Cancel renaming
      */
     cancelRename() {
-        this.renamingFolderId = null;
+        this.editingFolderId = null;
         this.refresh();
     },
 
@@ -297,7 +361,7 @@ const ProfileFolderTree = {
 
             const idsToDelete = collectDescendants(folderId);
 
-            // Also move cardTypes in these folders to unfiled
+            // Move cardTypes in these folders to unfiled
             const allCardTypes = await FirestoreDB.getCardTypes();
             for (const ct of allCardTypes) {
                 if (idsToDelete.includes(ct.folderId)) {
@@ -310,14 +374,18 @@ const ProfileFolderTree = {
                 await FirestoreDB.deleteProfileFolder(id);
             }
 
-            if (this.selectedFolderId && idsToDelete.includes(this.selectedFolderId)) {
-                this.selectedFolderId = null;
-                window.dispatchEvent(new CustomEvent('profile-folder-selected', { detail: { folderId: null } }));
-            }
-
             Toast.success('Đã xóa thư mục');
             await this.loadFolders();
             this.refresh();
+
+            // If currently viewing this folder, navigate back to profiles
+            const currentPath = Router.getPath();
+            if (currentPath.startsWith('/profiles/folder/')) {
+                const viewingFolderId = currentPath.replace('/profiles/folder/', '');
+                if (idsToDelete.includes(viewingFolderId)) {
+                    Router.navigate('/profiles');
+                }
+            }
         } catch (error) {
             Toast.error('Lỗi xóa thư mục', error.message);
         }
@@ -380,12 +448,5 @@ const ProfileFolderTree = {
     closeModal() {
         const overlay = document.querySelector('.modal-overlay');
         if (overlay) overlay.remove();
-    },
-
-    /**
-     * Get children of a folder
-     */
-    getChildren(parentId) {
-        return this.folders.filter(f => f.parentId === parentId);
     }
 };

@@ -1,10 +1,11 @@
 // ============================================
 // Profiles Page - Hồ sơ cấu hình thẻ học tập
 // ============================================
+// v4: Refactor - bỏ layout 2 cột, dùng mô hình giống lobby
+// Hiển thị cây thư mục + card types chưa phân loại (folderId=null)
 
 const ProfilesPage = {
     cardTypes: [],
-    _folderListener: null,
 
     async render() {
         if (!Auth.isSignedIn()) {
@@ -21,13 +22,13 @@ const ProfilesPage = {
         await ProfileFolderTree.loadFolders();
         this.cardTypes = await FirestoreDB.getCardTypes();
 
-        const selectedFolderId = ProfileFolderTree.selectedFolderId;
-        const filteredTypes = this._getFilteredCardTypes(selectedFolderId);
+        // Card types chưa phân loại (folderId = null)
+        const unfiledTypes = this.cardTypes.filter(ct => !ct.folderId);
 
         return `
             <div class="profiles-page page-enter">
                 <!-- Header -->
-                <div class="profiles-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-lg);">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-lg);">
                     <div style="display:flex;align-items:center;gap:var(--spacing-sm);">
                         <button class="icon-btn" onclick="Router.navigate('/')" title="Quay lại">
                             <span class="material-icons-round">arrow_back</span>
@@ -40,132 +41,66 @@ const ProfilesPage = {
                     </button>
                 </div>
 
-                <!-- 2-column layout -->
-                <div class="profiles-layout" style="display:grid;grid-template-columns:260px 1fr;gap:var(--spacing-lg);align-items:start;">
-                    <!-- Left: Folder Tree -->
-                    <div class="profiles-sidebar glass-card" style="padding:var(--spacing-md);">
-                        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-sm);">
-                            <h4 style="margin:0;font-size:var(--font-size-sm);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.5px;">Thư mục</h4>
-                            <button class="icon-btn" onclick="ProfileFolderTree.showCreateModal()" title="Tạo thư mục" style="width:28px;height:28px;">
-                                <span class="material-icons-round" style="font-size:18px;">create_new_folder</span>
-                            </button>
-                        </div>
-                        <!-- "All" button -->
-                        <div class="tree-item ${!selectedFolderId ? 'tree-item-selected' : ''}"
-                             style="display:flex;align-items:center;gap:4px;padding:6px 8px;border-radius:var(--radius-sm);cursor:pointer;margin-bottom:var(--spacing-xs);"
-                             onclick="ProfileFolderTree.selectedFolderId=null;ProfileFolderTree.refresh();window.dispatchEvent(new CustomEvent('profile-folder-selected',{detail:{folderId:null}}));">
-                            <span class="material-icons-round" style="font-size:20px;color:var(--color-text-muted);">folder_open</span>
-                            <span style="flex:1;font-size:var(--font-size-sm);">Tất cả</span>
-                            <span style="font-size:var(--font-size-xs);color:var(--color-text-muted);">${this.cardTypes.length}</span>
-                        </div>
-                        ${ProfileFolderTree.render()}
-                    </div>
-
-                    <!-- Right: Card Types List -->
-                    <div class="profiles-content">
-                        ${this._renderCardTypesList(filteredTypes, selectedFolderId)}
-                    </div>
+                <!-- Folder Tree -->
+                <div class="glass-card" style="padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);">
+                    ${ProfileFolderTree.render()}
                 </div>
+
+                <!-- Unfiled Card Types -->
+                ${unfiledTypes.length > 0 ? `
+                    <div class="glass-card" style="padding:var(--spacing-lg);">
+                        <h3 style="margin:0 0 var(--spacing-md) 0;font-size:var(--font-size-md);display:flex;align-items:center;gap:var(--spacing-xs);">
+                            <span class="material-icons-round" style="font-size:20px;color:var(--color-text-muted);">description</span>
+                            Hồ sơ chưa phân loại
+                            <span style="font-size:var(--font-size-xs);color:var(--color-text-muted);margin-left:var(--spacing-xs);">(${unfiledTypes.length})</span>
+                        </h3>
+                        <div class="card-types-list" style="display:flex;flex-direction:column;gap:var(--spacing-sm);">
+                            ${unfiledTypes.map(ct => this._renderCardTypeItem(ct)).join('')}
+                        </div>
+                    </div>
+                ` : this.cardTypes.length === 0 && ProfileFolderTree.folders.length === 0 ? `
+                    <div class="empty-state glass-card" style="padding:var(--spacing-2xl) var(--spacing-lg);text-align:center;">
+                        <span class="material-icons-round empty-state-icon" style="font-size:48px;">description</span>
+                        <h3 class="empty-state-title">Chưa có hồ sơ cấu hình</h3>
+                        <p class="empty-state-desc">Nhấn nút "Tạo mới" ở góc trên bên phải để tạo hồ sơ đầu tiên.</p>
+                    </div>
+                ` : ''}
             </div>
         `;
     },
 
-    onEnter() {
-        // Listen for folder selection changes
-        this._folderListener = (e) => {
-            this._refreshContent(e.detail.folderId);
-        };
-        window.addEventListener('profile-folder-selected', this._folderListener);
-    },
-
-    onLeave() {
-        if (this._folderListener) {
-            window.removeEventListener('profile-folder-selected', this._folderListener);
-            this._folderListener = null;
-        }
-    },
-
     /**
-     * Get card types filtered by folder
+     * Render a single card type item
      */
-    _getFilteredCardTypes(folderId) {
-        if (!folderId) return this.cardTypes;
-        return this.cardTypes.filter(ct => ct.folderId === folderId);
-    },
-
-    /**
-     * Render card types list
-     */
-    _renderCardTypesList(types, selectedFolderId) {
-        if (types.length === 0) {
-            const folderName = selectedFolderId
-                ? ProfileFolderTree.folders.find(f => f.id === selectedFolderId)?.name || 'thư mục này'
-                : '';
-            return `
-                <div class="empty-state" style="padding:var(--spacing-2xl) var(--spacing-lg);text-align:center;">
-                    <span class="material-icons-round empty-state-icon" style="font-size:48px;">description</span>
-                    <h3 class="empty-state-title">Chưa có hồ sơ cấu hình</h3>
-                    <p class="empty-state-desc">${selectedFolderId ? `Thư mục "${folderName}" chưa có hồ sơ nào.` : 'Nhấn nút "Tạo mới" ở góc trên bên phải để bắt đầu.'}</p>
-                </div>
-            `;
-        }
-
-        const cardsHtml = types.map(ct => {
-            const fieldCount = ct.fields ? ct.fields.length : 0;
-            const folderInfo = ct.folderId
-                ? ProfileFolderTree.folders.find(f => f.id === ct.folderId)?.name || ''
-                : '';
-            return `
-                <div class="glass-card hover-lift" 
-                     style="padding:var(--spacing-md);cursor:pointer;display:flex;align-items:center;gap:var(--spacing-md);"
-                     onclick="Router.navigate('/profiles/${ct.id}')">
-                    <div style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-primary-alpha, rgba(108,99,255,0.15));display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                        <span class="material-icons-round" style="color:var(--color-primary);font-size:24px;">description</span>
-                    </div>
-                    <div style="flex:1;min-width:0;">
-                        <h4 style="margin:0;font-size:var(--font-size-md);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${Helpers.escapeHtml(ct.name)}</h4>
-                        <div style="display:flex;align-items:center;gap:var(--spacing-sm);margin-top:2px;">
-                            <span style="font-size:var(--font-size-xs);color:var(--color-text-muted);">${fieldCount} trường</span>
-                            ${folderInfo ? `<span style="font-size:var(--font-size-xs);color:var(--color-text-muted);">• ${Helpers.escapeHtml(folderInfo)}</span>` : ''}
-                        </div>
-                    </div>
-                    <button class="icon-btn" onclick="event.stopPropagation();ProfilesPage.showDeleteTypeConfirm('${ct.id}')" title="Xóa" style="width:32px;height:32px;">
-                        <span class="material-icons-round" style="font-size:18px;color:var(--color-error);">delete</span>
-                    </button>
-                </div>
-            `;
-        }).join('');
-
+    _renderCardTypeItem(ct) {
+        const fieldCount = ct.fields ? ct.fields.length : 0;
         return `
-            <div class="card-types-list" style="display:flex;flex-direction:column;gap:var(--spacing-sm);">
-                ${cardsHtml}
+            <div class="glass-card hover-lift"
+                 style="padding:var(--spacing-md);cursor:pointer;display:flex;align-items:center;gap:var(--spacing-md);"
+                 onclick="Router.navigate('/profiles/${ct.id}')">
+                <div style="width:44px;height:44px;border-radius:var(--radius-md);background:var(--color-primary-alpha, rgba(108,99,255,0.15));display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <span class="material-icons-round" style="color:var(--color-primary);font-size:24px;">description</span>
+                </div>
+                <div style="flex:1;min-width:0;">
+                    <h4 style="margin:0;font-size:var(--font-size-md);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${Helpers.escapeHtml(ct.name)}</h4>
+                    <span style="font-size:var(--font-size-xs);color:var(--color-text-muted);">${fieldCount} trường</span>
+                </div>
+                <button class="icon-btn" onclick="event.stopPropagation();ProfilesPage.showDeleteTypeConfirm('${ct.id}')" title="Xóa" style="width:32px;height:32px;">
+                    <span class="material-icons-round" style="font-size:18px;color:var(--color-error);">delete</span>
+                </button>
             </div>
         `;
-    },
-
-    /**
-     * Refresh only the content area when folder changes
-     */
-    async _refreshContent(folderId) {
-        this.cardTypes = await FirestoreDB.getCardTypes();
-        const filteredTypes = this._getFilteredCardTypes(folderId);
-        const contentEl = document.querySelector('.profiles-content');
-        if (contentEl) {
-            contentEl.innerHTML = this._renderCardTypesList(filteredTypes, folderId);
-        }
     },
 
     // ==========================================
     // Create Card Type
     // ==========================================
 
-    showCreateTypeModal() {
-        const selectedFolderId = ProfileFolderTree.selectedFolderId;
-
+    showCreateTypeModal(preselectedFolderId = null) {
         // Build folder options
         let folderOptions = '<option value="">-- Không phân loại --</option>';
         ProfileFolderTree.folders.forEach(f => {
-            const selected = f.id === selectedFolderId ? 'selected' : '';
+            const selected = f.id === preselectedFolderId ? 'selected' : '';
             folderOptions += `<option value="${f.id}" ${selected}>${Helpers.escapeHtml(f.name)}</option>`;
         });
 
@@ -252,7 +187,8 @@ const ProfilesPage = {
         try {
             await FirestoreDB.deleteCardType(typeId);
             Toast.success('Đã xóa hồ sơ');
-            await this._refreshContent(ProfileFolderTree.selectedFolderId);
+            // Reload page
+            Router._handleRoute();
         } catch (error) {
             Toast.error('Lỗi xóa hồ sơ', error.message);
         }
