@@ -732,8 +732,8 @@ const FolderTree = {
                 style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">`;
         }
 
-        // Refresh folder tree in sidebar (lightweight)
-        this.render();
+        // Refresh folder tree in DOM
+        this.refresh();
 
         // Also refresh explorer grid if visible (without full page re-render)
         if (typeof FolderExplorerPage !== 'undefined') {
@@ -768,8 +768,8 @@ const FolderTree = {
             const folder = this.folders.find(f => f.id === folderId);
             if (folder) folder.coverImage = null;
 
-            // Refresh folder tree (lightweight)
-            this.render();
+            // Refresh folder tree in DOM
+            this.refresh();
 
             // Also refresh explorer grid if visible
             if (typeof FolderExplorerPage !== 'undefined') {
