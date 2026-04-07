@@ -26,13 +26,16 @@ const App = {
             // 4. Initialize Auth UI (menu, avatar clicks)
             AuthUI.init();
 
-            // 5. Register routes
+            // 5. Initialize Sidebar
+            Sidebar.init();
+
+            // 6. Register routes
             this._registerRoutes();
 
-            // 6. Initialize router (will render first page)
+            // 7. Initialize router (will render first page)
             Router.init();
 
-            // 7. Hide loading screen
+            // 8. Hide loading screen
             await Helpers.sleep(500); // Minimum loading time for smooth UX
             const loadingScreen = document.getElementById('loading-screen');
             if (loadingScreen) {
