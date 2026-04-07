@@ -96,6 +96,16 @@ const App = {
             onEnter: () => {}
         });
 
+        Router.register('/fields', {
+            render: () => FieldsPage.render(),
+            onEnter: () => {}
+        });
+
+        Router.register('/profiles', {
+            render: () => ProfilesPage.render(),
+            onEnter: () => {}
+        });
+
         console.log('[App] Routes registered');
     }
 };

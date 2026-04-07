@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v3.6
-const CACHE_NAME = 'linguaflash-v3.6';
+// LinguaFlash Service Worker v3.7
+const CACHE_NAME = 'linguaflash-v3.7';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -11,14 +11,14 @@ const STATIC_ASSETS = [
     '/src/css/components.css?v=6',
     '/src/css/animations.css?v=2',
     '/src/css/responsive.css?v=3',
-    '/src/js/app.js?v=7',
+    '/src/js/app.js?v=8',
     '/src/js/router.js?v=2',
     '/src/js/utils/helpers.js?v=2',
     '/src/js/ui/toast.js?v=2',
     '/src/js/ui/theme.js?v=2',
     '/src/js/ui/background.js?v=3',
     '/src/js/ui/components.js?v=2',
-    '/src/js/ui/sidebar.js?v=1',
+    '/src/js/ui/sidebar.js?v=2',
     '/src/js/ui/folder-tree.js?v=6',
     '/src/js/auth/auth.js?v=6',
     '/src/js/auth/auth-ui.js?v=3',
@@ -32,7 +32,9 @@ const STATIC_ASSETS = [
     '/src/js/pages/auth-page.js?v=8',
     '/src/js/pages/account.js?v=4',
     '/src/js/pages/folder-view.js?v=2',
-    '/src/js/pages/folder-explorer.js?v=3'
+    '/src/js/pages/folder-explorer.js?v=3',
+    '/src/js/pages/fields.js?v=1',
+    '/src/js/pages/profiles.js?v=1'
 ];
 
 // Files that should always use network-first (contain sensitive config)

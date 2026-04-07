@@ -16,8 +16,21 @@ const Sidebar = {
             label: 'Cây thư mục',
             route: '/folders',
             requireAuth: true
+        },
+        {
+            id: 'fields',
+            icon: 'text_fields',
+            label: 'Trường',
+            route: '/fields',
+            requireAuth: true
+        },
+        {
+            id: 'profiles',
+            icon: 'tune',
+            label: 'Hồ sơ cấu hình',
+            route: '/profiles',
+            requireAuth: true
         }
-        // Thêm menu items khác ở đây sau này
     ],
 
     /**
