@@ -202,9 +202,10 @@ const Auth = {
             if (menuName) menuName.textContent = user.displayName || 'Người dùng';
             if (menuEmail) menuEmail.textContent = user.email;
 
-            // Re-render current page if it requires auth data (e.g., folder view)
+            // Re-render current page when auth state changes
+            // (skip /auth page to avoid redirect loop)
             const currentPath = Router.getPath();
-            if (currentPath.startsWith('/folder/') || currentPath === '/folders') {
+            if (currentPath !== '/auth') {
                 Router._handleRoute();
             }
         } else {
