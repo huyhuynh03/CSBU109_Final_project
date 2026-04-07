@@ -156,13 +156,15 @@ const ProfileFolderTree = {
             content: `
                 <div class="form-group">
                     <label class="form-label">Tên thư mục</label>
-                    <input type="text" id="pf-folder-name" class="form-input" placeholder="Nhập tên thư mục" autofocus>
+                    <input type="text" id="pf-folder-name" class="form-input" placeholder="Nhập tên thư mục"
+                           onkeydown="if(event.key==='Enter'){event.preventDefault();ProfileFolderTree.createFolder(${parentId ? `'${parentId}'` : 'null'});}" autofocus>
                 </div>
             `,
             actions: [
                 {
-                    text: 'Tạo',
-                    class: 'btn-primary',
+                    label: 'Tạo',
+                    type: 'primary',
+                    closeOnClick: false,
                     onClick: () => this.createFolder(parentId)
                 }
             ]

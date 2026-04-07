@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v4.0
-const CACHE_NAME = 'linguaflash-v4.0';
+// LinguaFlash Service Worker v4.1
+const CACHE_NAME = 'linguaflash-v4.1';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -20,7 +20,7 @@ const STATIC_ASSETS = [
     '/src/js/ui/components.js?v=2',
     '/src/js/ui/sidebar.js?v=2',
     '/src/js/ui/folder-tree.js?v=6',
-    '/src/js/ui/profile-folder-tree.js?v=1',
+    '/src/js/ui/profile-folder-tree.js?v=2',
     '/src/js/auth/auth.js?v=7',
     '/src/js/auth/auth-ui.js?v=3',
     '/src/js/db/firestore.js?v=3',
@@ -35,7 +35,7 @@ const STATIC_ASSETS = [
     '/src/js/pages/folder-view.js?v=2',
     '/src/js/pages/folder-explorer.js?v=3',
     '/src/js/pages/fields.js?v=2',
-    '/src/js/pages/profiles.js?v=2',
+    '/src/js/pages/profiles.js?v=3',
     '/src/js/pages/profile-editor.js?v=1'
 ];
 

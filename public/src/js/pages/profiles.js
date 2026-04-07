@@ -105,11 +105,7 @@ const ProfilesPage = {
                 <div class="empty-state" style="padding:var(--spacing-2xl) var(--spacing-lg);text-align:center;">
                     <span class="material-icons-round empty-state-icon" style="font-size:48px;">description</span>
                     <h3 class="empty-state-title">Chưa có hồ sơ cấu hình</h3>
-                    <p class="empty-state-desc">${selectedFolderId ? `Thư mục "${folderName}" chưa có hồ sơ nào.` : 'Tạo hồ sơ cấu hình để định nghĩa các loại thẻ học tập.'}</p>
-                    <button class="btn btn-primary" onclick="ProfilesPage.showCreateTypeModal()">
-                        <span class="material-icons-round">add</span>
-                        Tạo hồ sơ mới
-                    </button>
+                    <p class="empty-state-desc">${selectedFolderId ? `Thư mục "${folderName}" chưa có hồ sơ nào.` : 'Nhấn nút "Tạo mới" ở góc trên bên phải để bắt đầu.'}</p>
                 </div>
             `;
         }
@@ -178,7 +174,8 @@ const ProfilesPage = {
             content: `
                 <div class="form-group">
                     <label class="form-label">Tên hồ sơ</label>
-                    <input type="text" id="ct-name" class="form-input" placeholder="VD: Từ vựng N5, Ngữ pháp..." autofocus>
+                    <input type="text" id="ct-name" class="form-input" placeholder="VD: Từ vựng N5, Ngữ pháp..."
+                           onkeydown="if(event.key==='Enter'){event.preventDefault();ProfilesPage._createCardType();}" autofocus>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Thư mục</label>
@@ -187,8 +184,9 @@ const ProfilesPage = {
             `,
             actions: [
                 {
-                    text: 'Tạo',
-                    class: 'btn-primary',
+                    label: 'Tạo',
+                    type: 'primary',
+                    closeOnClick: false,
                     onClick: () => this._createCardType()
                 }
             ]
