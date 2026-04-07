@@ -528,7 +528,7 @@ const FolderTree = {
      * Close modal
      */
     closeModal() {
-        const modal = document.getElementById('folder-modal');
+        const modal = document.getElementById('folder-modal') || document.getElementById('cover-image-modal');
         if (modal) modal.remove();
     },
 
@@ -721,6 +721,10 @@ const FolderTree = {
         await FirestoreDB.updateFolder(folderId, { coverImage: imageUrl });
         Toast.success('Đã cập nhật', 'Ảnh bìa thư mục đã được thay đổi.');
 
+        // Update local folder data immediately
+        const folder = this.folders.find(f => f.id === folderId);
+        if (folder) folder.coverImage = imageUrl;
+
         // Update preview in modal
         const preview = document.getElementById('cover-preview');
         if (preview) {
@@ -728,16 +732,24 @@ const FolderTree = {
                 style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--color-border);">`;
         }
 
-        // Reload and refresh
-        await this.loadFolders();
-        this.refresh();
+        // Refresh folder tree in sidebar (lightweight)
+        this.render();
 
-        // Also refresh explorer if visible
+        // Also refresh explorer grid if visible (without full page re-render)
         if (typeof FolderExplorerPage !== 'undefined') {
             const explorerGrid = document.querySelector('.explorer-grid');
             if (explorerGrid) {
                 FolderExplorerPage.folders = this.folders;
-                Router._handleRoute();
+                FolderExplorerPage._refreshTree();
+            }
+        }
+
+        // Also refresh folder-view if visible
+        const folderHeader = document.querySelector('.folder-view-header');
+        if (folderHeader) {
+            const iconEl = folderHeader.querySelector('.folder-header-icon, .material-icons-round');
+            if (iconEl && folder) {
+                iconEl.outerHTML = this._renderFolderIcon(folder, true, 'folder-header-icon', 40);
             }
         }
     },
@@ -751,14 +763,20 @@ const FolderTree = {
         try {
             await FirestoreDB.updateFolder(folderId, { coverImage: null });
             Toast.success('Đã xóa', 'Ảnh bìa đã được gỡ bỏ.');
-            await this.loadFolders();
-            this.refresh();
 
+            // Update local folder data immediately
+            const folder = this.folders.find(f => f.id === folderId);
+            if (folder) folder.coverImage = null;
+
+            // Refresh folder tree (lightweight)
+            this.render();
+
+            // Also refresh explorer grid if visible
             if (typeof FolderExplorerPage !== 'undefined') {
                 const explorerGrid = document.querySelector('.explorer-grid');
                 if (explorerGrid) {
                     FolderExplorerPage.folders = this.folders;
-                    Router._handleRoute();
+                    FolderExplorerPage._refreshTree();
                 }
             }
         } catch (error) {
