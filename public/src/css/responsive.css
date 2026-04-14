@@ -79,6 +79,7 @@
 @media (min-width: 1024px) {
     .main-content {
         padding: var(--spacing-xl);
+        transition: margin-left var(--transition-base);
     }
 }
 

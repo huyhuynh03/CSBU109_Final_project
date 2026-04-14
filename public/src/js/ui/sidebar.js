@@ -1,9 +1,9 @@
 // ============================================
-// Sidebar Menu - Thanh menu bên trái
+// Sidebar Menu - Navigation Rail (expand/collapse)
 // ============================================
 
 const Sidebar = {
-    isOpen: false,
+    isExpanded: false,
     _initialized: false,
 
     /**
@@ -11,20 +11,25 @@ const Sidebar = {
      */
     menuItems: [
         {
+            id: 'home',
+            icon: 'home',
+            label: 'Trang chủ',
+            route: '/',
+            requireAuth: false
+        },
+        {
             id: 'study',
             icon: 'auto_stories',
             label: 'Học mới',
             route: '/study',
-            requireAuth: true,
-            group: 'learn'
+            requireAuth: true
         },
         {
             id: 'review',
             icon: 'replay',
             label: 'Ôn tập',
             route: '/review',
-            requireAuth: true,
-            group: 'learn'
+            requireAuth: true
         },
         {
             id: 'dictation',
@@ -32,7 +37,6 @@ const Sidebar = {
             label: 'Luyện chính tả',
             route: null,
             requireAuth: true,
-            group: 'learn',
             comingSoon: true
         },
         {
@@ -40,33 +44,31 @@ const Sidebar = {
             icon: 'account_tree',
             label: 'Cây thư mục',
             route: '/folders',
-            requireAuth: true,
-            group: 'manage'
+            requireAuth: true
         },
         {
             id: 'fields',
             icon: 'text_fields',
             label: 'Trường',
             route: '/fields',
-            requireAuth: true,
-            group: 'manage'
+            requireAuth: true
         },
         {
             id: 'profiles',
             icon: 'tune',
             label: 'Hồ sơ cấu hình',
             route: '/profiles',
-            requireAuth: true,
-            group: 'manage'
+            requireAuth: true
         }
     ],
 
     /**
-     * Initialize sidebar - setup event listeners
+     * Initialize sidebar
      */
     init() {
         if (this._initialized) return;
 
+        // Toggle button in header
         const btnMenu = document.getElementById('btn-menu');
         if (btnMenu) {
             btnMenu.addEventListener('click', (e) => {
@@ -75,63 +77,96 @@ const Sidebar = {
             });
         }
 
-        // Close on overlay click
+        // Close on overlay click (mobile)
         const overlay = document.getElementById('sidebar-overlay');
         if (overlay) {
             overlay.addEventListener('click', () => {
-                this.close();
+                this.collapse();
             });
         }
 
         // Close on Escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.isOpen) {
-                this.close();
+            if (e.key === 'Escape' && this.isExpanded) {
+                this.collapse();
             }
         });
+
+        // Render initial content
+        this._renderContent();
+
+        // Show sidebar by default on desktop
+        this._updateVisibility();
+        window.addEventListener('resize', () => this._updateVisibility());
 
         this._initialized = true;
         console.log('[Sidebar] Initialized');
     },
 
     /**
-     * Toggle sidebar open/close
+     * Toggle sidebar expand/collapse
      */
     toggle() {
-        if (this.isOpen) {
-            this.close();
+        if (this.isExpanded) {
+            this.collapse();
         } else {
-            this.open();
+            this.expand();
         }
     },
 
     /**
-     * Open sidebar
+     * Expand sidebar - show icon + label
      */
-    open() {
+    expand() {
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('sidebar-overlay');
-        if (!sidebar || !overlay) return;
+        if (!sidebar) return;
 
-        this._renderContent();
-        this.isOpen = true;
-        sidebar.classList.add('sidebar-open');
-        overlay.classList.add('sidebar-overlay-visible');
-        document.body.style.overflow = 'hidden';
+        this.isExpanded = true;
+        sidebar.classList.add('sidebar-expanded');
+        document.body.classList.add('sidebar-is-expanded');
+
+        // Show overlay on mobile
+        if (window.innerWidth < 1024 && overlay) {
+            overlay.classList.add('sidebar-overlay-visible');
+        }
     },
 
     /**
-     * Close sidebar
+     * Collapse sidebar - show only icons
      */
-    close() {
+    collapse() {
         const sidebar = document.getElementById('sidebar');
         const overlay = document.getElementById('sidebar-overlay');
-        if (!sidebar || !overlay) return;
+        if (!sidebar) return;
 
-        this.isOpen = false;
-        sidebar.classList.remove('sidebar-open');
-        overlay.classList.remove('sidebar-overlay-visible');
-        document.body.style.overflow = '';
+        this.isExpanded = false;
+        sidebar.classList.remove('sidebar-expanded');
+        document.body.classList.remove('sidebar-is-expanded');
+
+        if (overlay) {
+            overlay.classList.remove('sidebar-overlay-visible');
+        }
+    },
+
+    /**
+     * Update sidebar visibility based on screen size
+     * @private
+     */
+    _updateVisibility() {
+        const sidebar = document.getElementById('sidebar');
+        if (!sidebar) return;
+
+        if (window.innerWidth >= 1024) {
+            // Desktop: always show sidebar (collapsed by default)
+            sidebar.classList.add('sidebar-visible');
+        } else {
+            // Mobile: hide sidebar rail, only show when expanded
+            sidebar.classList.remove('sidebar-visible');
+            if (this.isExpanded) {
+                this.collapse();
+            }
+        }
     },
 
     /**
@@ -143,62 +178,42 @@ const Sidebar = {
         if (!content) return;
 
         const isSignedIn = Auth.isSignedIn();
+        const currentPath = Router.getPath();
 
         const visibleItems = this.menuItems
             .filter(item => !item.requireAuth || isSignedIn);
 
-        if (!visibleItems.length) {
-            content.innerHTML = `
-                <div class="sidebar-empty">
-                    <span class="material-icons-round">login</span>
-                    <p>Đăng nhập để sử dụng menu</p>
-                </div>
-            `;
-            return;
-        }
+        const menuHtml = visibleItems.map(item => {
+            const isActive = item.route === currentPath ||
+                (item.route && item.route !== '/' && currentPath.startsWith(item.route));
+            const activeClass = isActive ? 'sidebar-nav-item--active' : '';
+            const disabledClass = item.comingSoon ? 'sidebar-nav-item--disabled' : '';
 
-        // Nhóm menu items theo group
-        const groups = {};
-        visibleItems.forEach(item => {
-            const group = item.group || 'other';
-            if (!groups[group]) groups[group] = [];
-            groups[group].push(item);
-        });
-
-        const groupLabels = {
-            learn: 'Học tập',
-            manage: 'Quản lý'
-        };
-
-        let menuHtml = '';
-        for (const [groupKey, items] of Object.entries(groups)) {
-            if (groupLabels[groupKey]) {
-                menuHtml += `<div class="sidebar-group-label">${groupLabels[groupKey]}</div>`;
-            }
-            menuHtml += items.map(item => {
-                if (item.comingSoon) {
-                    return `
-                        <button class="sidebar-menu-item sidebar-menu-item--disabled" onclick="Toast.info('Sắp ra mắt', 'Tính năng ${item.label} đang được phát triển!')">
-                            <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
-                            <span class="sidebar-menu-label">${item.label}</span>
-                            <span class="sidebar-coming-soon-badge">Sắp ra mắt</span>
-                        </button>
-                    `;
-                }
+            if (item.comingSoon) {
                 return `
-                    <button class="sidebar-menu-item" onclick="Sidebar._onMenuItemClick('${item.route}')">
-                        <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
-                        <span class="sidebar-menu-label">${item.label}</span>
-                        <span class="material-icons-round sidebar-menu-arrow">chevron_right</span>
+                    <button class="sidebar-nav-item ${disabledClass}" 
+                            onclick="Toast.info('Sắp ra mắt', 'Tính năng ${item.label} đang được phát triển!')"
+                            title="${item.label}">
+                        <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
+                        <span class="sidebar-nav-label">${item.label}</span>
                     </button>
                 `;
-            }).join('');
-        }
+            }
+
+            return `
+                <button class="sidebar-nav-item ${activeClass}" 
+                        onclick="Sidebar._onItemClick('${item.route}')"
+                        title="${item.label}">
+                    <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
+                    <span class="sidebar-nav-label">${item.label}</span>
+                </button>
+            `;
+        }).join('');
 
         content.innerHTML = `
-            <div class="sidebar-menu-list">
+            <nav class="sidebar-nav">
                 ${menuHtml}
-            </div>
+            </nav>
         `;
     },
 
@@ -206,8 +221,18 @@ const Sidebar = {
      * Handle menu item click
      * @param {string} route
      */
-    _onMenuItemClick(route) {
-        this.close();
+    _onItemClick(route) {
+        // Collapse on mobile after navigation
+        if (window.innerWidth < 1024) {
+            this.collapse();
+        }
         Router.navigate(route);
+    },
+
+    /**
+     * Refresh sidebar content (e.g., after auth state change)
+     */
+    refresh() {
+        this._renderContent();
     }
 };
