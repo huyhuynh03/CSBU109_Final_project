@@ -11,25 +11,53 @@ const Sidebar = {
      */
     menuItems: [
         {
+            id: 'study',
+            icon: 'auto_stories',
+            label: 'Học mới',
+            route: '/study',
+            requireAuth: true,
+            group: 'learn'
+        },
+        {
+            id: 'review',
+            icon: 'replay',
+            label: 'Ôn tập',
+            route: '/review',
+            requireAuth: true,
+            group: 'learn'
+        },
+        {
+            id: 'dictation',
+            icon: 'hearing',
+            label: 'Luyện chính tả',
+            route: null,
+            requireAuth: true,
+            group: 'learn',
+            comingSoon: true
+        },
+        {
             id: 'folder-tree',
             icon: 'account_tree',
             label: 'Cây thư mục',
             route: '/folders',
-            requireAuth: true
+            requireAuth: true,
+            group: 'manage'
         },
         {
             id: 'fields',
             icon: 'text_fields',
             label: 'Trường',
             route: '/fields',
-            requireAuth: true
+            requireAuth: true,
+            group: 'manage'
         },
         {
             id: 'profiles',
             icon: 'tune',
             label: 'Hồ sơ cấu hình',
             route: '/profiles',
-            requireAuth: true
+            requireAuth: true,
+            group: 'manage'
         }
     ],
 
@@ -116,17 +144,10 @@ const Sidebar = {
 
         const isSignedIn = Auth.isSignedIn();
 
-        const menuHtml = this.menuItems
-            .filter(item => !item.requireAuth || isSignedIn)
-            .map(item => `
-                <button class="sidebar-menu-item" onclick="Sidebar._onMenuItemClick('${item.route}')">
-                    <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
-                    <span class="sidebar-menu-label">${item.label}</span>
-                    <span class="material-icons-round sidebar-menu-arrow">chevron_right</span>
-                </button>
-            `).join('');
+        const visibleItems = this.menuItems
+            .filter(item => !item.requireAuth || isSignedIn);
 
-        if (!menuHtml) {
+        if (!visibleItems.length) {
             content.innerHTML = `
                 <div class="sidebar-empty">
                     <span class="material-icons-round">login</span>
@@ -134,6 +155,44 @@ const Sidebar = {
                 </div>
             `;
             return;
+        }
+
+        // Nhóm menu items theo group
+        const groups = {};
+        visibleItems.forEach(item => {
+            const group = item.group || 'other';
+            if (!groups[group]) groups[group] = [];
+            groups[group].push(item);
+        });
+
+        const groupLabels = {
+            learn: 'Học tập',
+            manage: 'Quản lý'
+        };
+
+        let menuHtml = '';
+        for (const [groupKey, items] of Object.entries(groups)) {
+            if (groupLabels[groupKey]) {
+                menuHtml += `<div class="sidebar-group-label">${groupLabels[groupKey]}</div>`;
+            }
+            menuHtml += items.map(item => {
+                if (item.comingSoon) {
+                    return `
+                        <button class="sidebar-menu-item sidebar-menu-item--disabled" onclick="Toast.info('Sắp ra mắt', 'Tính năng ${item.label} đang được phát triển!')">
+                            <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
+                            <span class="sidebar-menu-label">${item.label}</span>
+                            <span class="sidebar-coming-soon-badge">Sắp ra mắt</span>
+                        </button>
+                    `;
+                }
+                return `
+                    <button class="sidebar-menu-item" onclick="Sidebar._onMenuItemClick('${item.route}')">
+                        <span class="material-icons-round sidebar-menu-icon">${item.icon}</span>
+                        <span class="sidebar-menu-label">${item.label}</span>
+                        <span class="material-icons-round sidebar-menu-arrow">chevron_right</span>
+                    </button>
+                `;
+            }).join('');
         }
 
         content.innerHTML = `

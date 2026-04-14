@@ -773,6 +773,41 @@
     color: var(--color-text-muted);
 }
 
+/* Sidebar group label */
+.sidebar-group-label {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+}
+
+.sidebar-group-label:first-child {
+    margin-top: 0;
+}
+
+/* Sidebar coming soon badge */
+.sidebar-coming-soon-badge {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+/* Sidebar disabled item */
+.sidebar-menu-item--disabled {
+    opacity: 0.6;
+}
+
+.sidebar-menu-item--disabled:hover {
+    background: var(--color-surface-hover);
+}
+
 /* ============================================
    Folder Explorer Page - Grid Layout
    ============================================ */
