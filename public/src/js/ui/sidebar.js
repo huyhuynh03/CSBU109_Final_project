@@ -92,6 +92,12 @@ const Sidebar = {
             }
         });
 
+        // Listen for route changes to update active state & visibility
+        window.addEventListener('hashchange', () => {
+            this._renderContent();
+            this._updateVisibility();
+        });
+
         // Render initial content
         this._renderContent();
 
@@ -155,7 +161,22 @@ const Sidebar = {
      */
     _updateVisibility() {
         const sidebar = document.getElementById('sidebar');
+        const btnMenu = document.getElementById('btn-menu');
         if (!sidebar) return;
+
+        // Hide sidebar completely on auth page
+        const currentPath = (window.location.hash.slice(1) || '/');
+        if (currentPath === '/auth') {
+            sidebar.classList.remove('sidebar-visible');
+            sidebar.style.display = 'none';
+            if (btnMenu) btnMenu.style.display = 'none';
+            if (this.isExpanded) this.collapse();
+            return;
+        }
+
+        // Show sidebar & menu button on non-auth pages
+        sidebar.style.display = '';
+        if (btnMenu) btnMenu.style.display = '';
 
         if (window.innerWidth >= 1024) {
             // Desktop: always show sidebar (collapsed by default)

@@ -202,6 +202,11 @@ const Auth = {
             if (menuName) menuName.textContent = user.displayName || 'Người dùng';
             if (menuEmail) menuEmail.textContent = user.email;
 
+            // Refresh sidebar to show auth-required items
+            if (typeof Sidebar !== 'undefined') {
+                Sidebar.refresh();
+            }
+
             // Re-render current page when auth state changes
             // (skip /auth page to avoid redirect loop)
             const currentPath = Router.getPath();
@@ -212,6 +217,11 @@ const Auth = {
             // Signed out
             if (btnAuth) btnAuth.style.display = 'flex';
             if (userAvatar) userAvatar.style.display = 'none';
+
+            // Refresh sidebar to hide auth-required items
+            if (typeof Sidebar !== 'undefined') {
+                Sidebar.refresh();
+            }
         }
     },
 
@@ -251,7 +261,8 @@ const Auth = {
             'auth/too-many-requests': 'Quá nhiều lần thử. Vui lòng thử lại sau.',
             'auth/popup-closed-by-user': 'Cửa sổ đăng nhập đã bị đóng.',
             'auth/requires-recent-login': 'Cần đăng nhập lại để thực hiện thao tác này.',
-            'auth/invalid-credential': 'Thông tin đăng nhập không hợp lệ.'
+            'auth/invalid-credential': 'Thông tin đăng nhập không hợp lệ.',
+            'auth/network-request-failed': 'Lỗi kết nối mạng. Vui lòng kiểm tra kết nối internet và thử lại.'
         };
 
         const msg = messages[error.code] || error.message;
