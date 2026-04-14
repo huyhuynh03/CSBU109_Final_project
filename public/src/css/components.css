@@ -941,3 +941,192 @@
     margin-top: var(--spacing-xs);
     border-left: 2px solid var(--color-border);
 }
+
+/* ============================================
+   Language Domain Cards
+   ============================================ */
+
+/* Grid layout */
+.lang-domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+/* Domain card */
+.lang-domain-card {
+    position: relative;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Gradient accent line at top */
+.lang-domain-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--domain-gradient);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.lang-domain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2), 0 0 0 1px var(--domain-color);
+    border-color: var(--domain-color);
+}
+
+.lang-domain-card:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+/* Locked state */
+.lang-domain-card--locked {
+    cursor: not-allowed;
+    opacity: 0.5;
+    filter: grayscale(0.3);
+}
+
+.lang-domain-card--locked:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--color-border);
+}
+
+/* Flag emoji */
+.lang-domain-card__flag {
+    font-size: 48px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+/* Content */
+.lang-domain-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.lang-domain-card__name {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.lang-domain-card__native {
+    font-size: var(--font-size-sm);
+    color: var(--domain-color);
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.lang-domain-card__desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-top: var(--spacing-xs);
+}
+
+/* Footer */
+.lang-domain-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.lang-domain-card__stats {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.lang-domain-card__stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.lang-domain-card__stat .material-icons-round {
+    font-size: 16px;
+    color: var(--domain-color);
+}
+
+.lang-domain-card__arrow {
+    font-size: 24px;
+    color: var(--domain-color);
+    transition: transform var(--transition-fast);
+}
+
+.lang-domain-card:hover .lang-domain-card__arrow {
+    transform: translateX(4px);
+}
+
+/* Coming soon badge */
+.lang-domain-card__coming-soon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+}
+
+.lang-domain-card__coming-soon .material-icons-round {
+    font-size: 14px;
+}
+
+/* ============================================
+   Domain Page Header (English, Japanese, etc.)
+   ============================================ */
+
+.domain-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.domain-header__info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.domain-header__flag {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.domain-header__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.domain-header__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+}

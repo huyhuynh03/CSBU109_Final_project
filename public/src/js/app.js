@@ -101,6 +101,11 @@ const App = {
             onEnter: () => {}
         });
 
+        Router.register('/english', {
+            render: () => EnglishPage.render(),
+            onEnter: () => EnglishPage.onEnter && EnglishPage.onEnter()
+        });
+
         Router.register('/profiles', {
             render: () => ProfilesPage.render(),
             onEnter: () => {}

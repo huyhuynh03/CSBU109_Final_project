@@ -1,8 +1,72 @@
 // ============================================
-// Home Page - Main dashboard with folder tree
+// Home Page - Language Domain Selection
 // ============================================
 
 const HomePage = {
+    /**
+     * Danh sách các miền ngôn ngữ
+     * Sau này sẽ mở rộng thêm các ngôn ngữ khác
+     */
+    languageDomains: [
+        {
+            id: 'english',
+            name: 'Tiếng Anh',
+            nameNative: 'English',
+            flag: '🇬🇧',
+            icon: 'translate',
+            color: '#3B82F6',
+            colorGradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+            description: 'Học từ vựng, ngữ pháp và giao tiếp tiếng Anh',
+            route: '/english',
+            available: true,
+            cardCount: 0,
+            streakDays: 0
+        },
+        // Các ngôn ngữ sẽ thêm trong tương lai
+        // {
+        //     id: 'japanese',
+        //     name: 'Tiếng Nhật',
+        //     nameNative: '日本語',
+        //     flag: '🇯🇵',
+        //     icon: 'translate',
+        //     color: '#EF4444',
+        //     colorGradient: 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)',
+        //     description: 'Học Hiragana, Katakana, Kanji và hội thoại',
+        //     route: '/japanese',
+        //     available: false,
+        //     cardCount: 0,
+        //     streakDays: 0
+        // },
+        // {
+        //     id: 'korean',
+        //     name: 'Tiếng Hàn',
+        //     nameNative: '한국어',
+        //     flag: '🇰🇷',
+        //     icon: 'translate',
+        //     color: '#8B5CF6',
+        //     colorGradient: 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)',
+        //     description: 'Học Hangul, từ vựng và giao tiếp tiếng Hàn',
+        //     route: '/korean',
+        //     available: false,
+        //     cardCount: 0,
+        //     streakDays: 0
+        // },
+        // {
+        //     id: 'chinese',
+        //     name: 'Tiếng Trung',
+        //     nameNative: '中文',
+        //     flag: '🇨🇳',
+        //     icon: 'translate',
+        //     color: '#F59E0B',
+        //     colorGradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
+        //     description: 'Học Pinyin, chữ Hán và giao tiếp tiếng Trung',
+        //     route: '/chinese',
+        //     available: false,
+        //     cardCount: 0,
+        //     streakDays: 0
+        // }
+    ],
+
     async render() {
         const isSignedIn = Auth.isSignedIn();
 
@@ -28,59 +92,65 @@ const HomePage = {
             `;
         }
 
-        // Load folders for tree
-        await FolderTree.loadFolders();
-
         return `
             <div class="home-page page-enter">
                 <!-- Welcome -->
                 <div class="home-welcome">
                     <h2>Chào mừng trở lại! 👋</h2>
-                    <p>Tiếp tục hành trình học tập của bạn</p>
+                    <p>Chọn ngôn ngữ bạn muốn học</p>
                 </div>
 
-                <!-- Stats -->
-                <div class="home-stats" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--spacing-md);margin:var(--spacing-lg) 0;">
-                    <div class="glass-card hover-lift stat-card">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-primary);">style</span>
-                        <h3 style="margin-top:var(--spacing-xs);">0</h3>
-                        <p style="font-size:var(--font-size-xs);">Tổng số thẻ</p>
-                    </div>
-                    <div class="glass-card hover-lift stat-card">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-success);">check_circle</span>
-                        <h3 style="margin-top:var(--spacing-xs);">0</h3>
-                        <p style="font-size:var(--font-size-xs);">Đã học hôm nay</p>
-                    </div>
-                    <div class="glass-card hover-lift stat-card">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-warning);">schedule</span>
-                        <h3 style="margin-top:var(--spacing-xs);">0</h3>
-                        <p style="font-size:var(--font-size-xs);">Cần ôn tập</p>
-                    </div>
-                    <div class="glass-card hover-lift stat-card">
-                        <span class="material-icons-round" style="font-size:32px;color:var(--color-info);">local_fire_department</span>
-                        <h3 style="margin-top:var(--spacing-xs);">0</h3>
-                        <p style="font-size:var(--font-size-xs);">Streak ngày</p>
-                    </div>
-                </div>
-
-                <!-- Quick Actions -->
-                <div class="home-quick-actions" style="display:flex;gap:var(--spacing-md);margin-bottom:var(--spacing-lg);">
-                    <button class="btn btn-primary btn-lg btn-full" onclick="Router.navigate('/study')" style="flex:1;">
-                        <span class="material-icons-round">auto_stories</span>
-                        Học mới
-                    </button>
-                    <button class="btn btn-secondary btn-lg btn-full" onclick="Router.navigate('/review')" style="flex:1;">
-                        <span class="material-icons-round">replay</span>
-                        Ôn tập
-                    </button>
-                </div>
-
-                <!-- Folder Tree -->
-                <div class="home-folders glass-card" style="padding:var(--spacing-lg);">
-                    ${FolderTree.render()}
+                <!-- Language Domains Grid -->
+                <div class="lang-domains-grid">
+                    ${this._renderDomainCards()}
                 </div>
             </div>
         `;
+    },
+
+    /**
+     * Render các thẻ ngôn ngữ
+     * @private
+     */
+    _renderDomainCards() {
+        return this.languageDomains.map(domain => {
+            const isAvailable = domain.available;
+            const cardClass = isAvailable ? 'lang-domain-card' : 'lang-domain-card lang-domain-card--locked';
+            const clickHandler = isAvailable
+                ? `onclick="Router.navigate('${domain.route}')"`
+                : '';
+
+            return `
+                <div class="${cardClass}" ${clickHandler} style="--domain-color: ${domain.color}; --domain-gradient: ${domain.colorGradient};">
+                    <div class="lang-domain-card__flag">${domain.flag}</div>
+                    <div class="lang-domain-card__content">
+                        <h3 class="lang-domain-card__name">${domain.name}</h3>
+                        <span class="lang-domain-card__native">${domain.nameNative}</span>
+                        <p class="lang-domain-card__desc">${domain.description}</p>
+                    </div>
+                    <div class="lang-domain-card__footer">
+                        ${isAvailable ? `
+                            <div class="lang-domain-card__stats">
+                                <span class="lang-domain-card__stat">
+                                    <span class="material-icons-round">style</span>
+                                    ${domain.cardCount} thẻ
+                                </span>
+                                <span class="lang-domain-card__stat">
+                                    <span class="material-icons-round">local_fire_department</span>
+                                    ${domain.streakDays} ngày
+                                </span>
+                            </div>
+                            <span class="lang-domain-card__arrow material-icons-round">arrow_forward</span>
+                        ` : `
+                            <div class="lang-domain-card__coming-soon">
+                                <span class="material-icons-round">lock</span>
+                                <span>Sắp ra mắt</span>
+                            </div>
+                        `}
+                    </div>
+                </div>
+            `;
+        }).join('');
     },
 
     async onEnter() {
