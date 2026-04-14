@@ -1006,11 +1006,19 @@
     border-color: var(--color-border);
 }
 
-/* Flag emoji */
+/* Flag badge */
 .lang-domain-card__flag {
-    font-size: 48px;
-    line-height: 1;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Content */
@@ -1114,8 +1122,18 @@
 }
 
 .domain-header__flag {
-    font-size: 40px;
-    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    font-size: var(--font-size-md);
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .domain-header__title {

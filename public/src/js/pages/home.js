@@ -12,7 +12,7 @@ const HomePage = {
             id: 'english',
             name: 'Tiếng Anh',
             nameNative: 'English',
-            flag: '🇬🇧',
+            flagLabel: 'EN',
             icon: 'translate',
             color: '#3B82F6',
             colorGradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
@@ -27,7 +27,7 @@ const HomePage = {
         //     id: 'japanese',
         //     name: 'Tiếng Nhật',
         //     nameNative: '日本語',
-        //     flag: '🇯🇵',
+        //     flagLabel: 'JP',
         //     icon: 'translate',
         //     color: '#EF4444',
         //     colorGradient: 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)',
@@ -41,7 +41,7 @@ const HomePage = {
         //     id: 'korean',
         //     name: 'Tiếng Hàn',
         //     nameNative: '한국어',
-        //     flag: '🇰🇷',
+        //     flagLabel: 'KR',
         //     icon: 'translate',
         //     color: '#8B5CF6',
         //     colorGradient: 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)',
@@ -55,7 +55,7 @@ const HomePage = {
         //     id: 'chinese',
         //     name: 'Tiếng Trung',
         //     nameNative: '中文',
-        //     flag: '🇨🇳',
+        //     flagLabel: 'CN',
         //     icon: 'translate',
         //     color: '#F59E0B',
         //     colorGradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
@@ -122,7 +122,7 @@ const HomePage = {
 
             return `
                 <div class="${cardClass}" ${clickHandler} style="--domain-color: ${domain.color}; --domain-gradient: ${domain.colorGradient};">
-                    <div class="lang-domain-card__flag">${domain.flag}</div>
+                    <div class="lang-domain-card__flag" style="background: ${domain.colorGradient};">${domain.flagLabel}</div>
                     <div class="lang-domain-card__content">
                         <h3 class="lang-domain-card__name">${domain.name}</h3>
                         <span class="lang-domain-card__native">${domain.nameNative}</span>

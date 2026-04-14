@@ -23,7 +23,7 @@ const EnglishPage = {
                         Trở về
                     </button>
                     <div class="domain-header__info">
-                        <span class="domain-header__flag">🇬🇧</span>
+                        <span class="domain-header__flag">EN</span>
                         <div>
                             <h2 class="domain-header__title">Tiếng Anh</h2>
                             <p class="domain-header__subtitle">English</p>
