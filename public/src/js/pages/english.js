@@ -56,14 +56,18 @@ const EnglishPage = {
                 </div>
 
                 <!-- Quick Actions -->
-                <div class="home-quick-actions" style="display:flex;gap:var(--spacing-md);margin-bottom:var(--spacing-lg);">
-                    <button class="btn btn-primary btn-lg btn-full" onclick="Router.navigate('/study')" style="flex:1;">
+                <div class="home-quick-actions" style="display:flex;gap:var(--spacing-md);margin-bottom:var(--spacing-lg);flex-wrap:wrap;">
+                    <button class="btn btn-primary btn-lg btn-full" onclick="Router.navigate('/study')" style="flex:1;min-width:140px;">
                         <span class="material-icons-round">auto_stories</span>
                         Học mới
                     </button>
-                    <button class="btn btn-secondary btn-lg btn-full" onclick="Router.navigate('/review')" style="flex:1;">
+                    <button class="btn btn-secondary btn-lg btn-full" onclick="Router.navigate('/review')" style="flex:1;min-width:140px;">
                         <span class="material-icons-round">replay</span>
                         Ôn tập
+                    </button>
+                    <button class="btn btn-secondary btn-lg btn-full" onclick="Toast.info('Sắp ra mắt', 'Tính năng luyện chính tả đang được phát triển!')" style="flex:1;min-width:140px;">
+                        <span class="material-icons-round">hearing</span>
+                        Luyện chính tả
                     </button>
                 </div>
 
