@@ -16,12 +16,8 @@ const EnglishPage = {
 
         return `
             <div class="english-page page-enter">
-                <!-- Header with back button -->
+                <!-- Domain Header -->
                 <div class="domain-header">
-                    <button class="btn btn-ghost" onclick="Router.navigate('/')">
-                        <span class="material-icons-round">arrow_back</span>
-                        Trở về
-                    </button>
                     <div class="domain-header__info">
                         <span class="domain-header__flag">EN</span>
                         <div>

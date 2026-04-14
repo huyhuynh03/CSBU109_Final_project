@@ -7,6 +7,21 @@ const Sidebar = {
     _initialized: false,
 
     /**
+     * Current language domain context (e.g., 'english')
+     * Sidebar only shows when inside a language domain
+     */
+    currentDomain: null,
+
+    /**
+     * Routes that belong to a language domain context
+     * When user is on these routes, sidebar should be visible
+     */
+    _domainRoutes: [
+        '/english', '/study', '/review', '/folders', '/folder/',
+        '/fields', '/profiles', '/profiles/', '/account', '/settings'
+    ],
+
+    /**
      * Menu items configuration
      */
     menuItems: [
@@ -14,7 +29,7 @@ const Sidebar = {
             id: 'home',
             icon: 'home',
             label: 'Trang chủ',
-            route: '/',
+            route: 'domain-home', // Special: navigates to current domain dashboard
             requireAuth: false
         },
         {
@@ -94,19 +109,72 @@ const Sidebar = {
 
         // Listen for route changes to update active state & visibility
         window.addEventListener('hashchange', () => {
+            this._detectDomain();
             this._renderContent();
             this._updateVisibility();
         });
 
+        // Detect initial domain from current route
+        this._detectDomain();
+
         // Render initial content
         this._renderContent();
 
-        // Show sidebar by default on desktop
+        // Update visibility based on current context
         this._updateVisibility();
         window.addEventListener('resize', () => this._updateVisibility());
 
         this._initialized = true;
         console.log('[Sidebar] Initialized');
+    },
+
+    /**
+     * Detect current language domain from route
+     * @private
+     */
+    _detectDomain() {
+        const currentPath = (window.location.hash.slice(1) || '/');
+
+        // Check if current route is inside a language domain
+        if (currentPath === '/english' || this._isDomainRoute(currentPath)) {
+            // If navigating to /english, set domain
+            if (currentPath === '/english') {
+                this.currentDomain = 'english';
+            }
+            // For other domain routes, keep current domain if set
+            // (user navigated from english dashboard to study/review/etc.)
+            if (!this.currentDomain) {
+                this.currentDomain = 'english'; // Default to english for now
+            }
+        } else {
+            // Outside domain context (home page, auth page, etc.)
+            this.currentDomain = null;
+        }
+
+        console.log('[Sidebar] Domain:', this.currentDomain, 'Path:', currentPath);
+    },
+
+    /**
+     * Check if a path belongs to domain context
+     * @param {string} path
+     * @returns {boolean}
+     * @private
+     */
+    _isDomainRoute(path) {
+        return this._domainRoutes.some(route => {
+            if (route.endsWith('/')) {
+                return path.startsWith(route);
+            }
+            return path === route || path.startsWith(route + '/');
+        });
+    },
+
+    /**
+     * Get the home route for current domain
+     * @returns {string}
+     */
+    getDomainHome() {
+        return this.currentDomain ? `/${this.currentDomain}` : '/';
     },
 
     /**
@@ -156,7 +224,7 @@ const Sidebar = {
     },
 
     /**
-     * Update sidebar visibility based on screen size
+     * Update sidebar visibility based on screen size and domain context
      * @private
      */
     _updateVisibility() {
@@ -164,19 +232,20 @@ const Sidebar = {
         const btnMenu = document.getElementById('btn-menu');
         if (!sidebar) return;
 
-        // Hide sidebar completely on auth page
-        const currentPath = (window.location.hash.slice(1) || '/');
-        if (currentPath === '/auth') {
+        // Hide sidebar when NOT inside a language domain
+        if (!this.currentDomain) {
             sidebar.classList.remove('sidebar-visible');
             sidebar.style.display = 'none';
             if (btnMenu) btnMenu.style.display = 'none';
+            document.body.classList.remove('has-sidebar');
             if (this.isExpanded) this.collapse();
             return;
         }
 
-        // Show sidebar & menu button on non-auth pages
+        // Inside a language domain - show sidebar
         sidebar.style.display = '';
         if (btnMenu) btnMenu.style.display = '';
+        document.body.classList.add('has-sidebar');
 
         if (window.innerWidth >= 1024) {
             // Desktop: always show sidebar (collapsed by default)
@@ -200,14 +269,21 @@ const Sidebar = {
 
         const isSignedIn = Auth.isSignedIn();
         const currentPath = Router.getPath();
+        const domainHome = this.getDomainHome();
 
         const visibleItems = this.menuItems
             .filter(item => !item.requireAuth || isSignedIn);
 
         const menuHtml = visibleItems.map(item => {
-            const isActive = item.route === currentPath ||
-                (item.route && item.route !== '/' && currentPath.startsWith(item.route));
-            const activeClass = isActive ? 'sidebar-nav-item--active' : '';
+            // Resolve domain-home route
+            const itemRoute = item.route === 'domain-home' ? domainHome : item.route;
+
+            const isActive = itemRoute === currentPath ||
+                (itemRoute && itemRoute !== domainHome && currentPath.startsWith(itemRoute));
+            // Special: home is active when on domain home
+            const isHomeActive = item.route === 'domain-home' && currentPath === domainHome;
+
+            const activeClass = (isActive || isHomeActive) ? 'sidebar-nav-item--active' : '';
             const disabledClass = item.comingSoon ? 'sidebar-nav-item--disabled' : '';
 
             if (item.comingSoon) {
@@ -223,7 +299,7 @@ const Sidebar = {
 
             return `
                 <button class="sidebar-nav-item ${activeClass}" 
-                        onclick="Sidebar._onItemClick('${item.route}')"
+                        onclick="Sidebar._onItemClick('${itemRoute}')"
                         title="${item.label}">
                     <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
                     <span class="sidebar-nav-label">${item.label}</span>
@@ -231,10 +307,23 @@ const Sidebar = {
             `;
         }).join('');
 
+        // "Switch language" button at bottom
+        const switchLangHtml = `
+            <button class="sidebar-nav-item sidebar-nav-item--switch" 
+                    onclick="Sidebar._onItemClick('/')"
+                    title="Chọn ngôn ngữ">
+                <span class="material-icons-round sidebar-nav-icon">language</span>
+                <span class="sidebar-nav-label">Chọn ngôn ngữ</span>
+            </button>
+        `;
+
         content.innerHTML = `
             <nav class="sidebar-nav">
                 ${menuHtml}
             </nav>
+            <div class="sidebar-footer">
+                ${switchLangHtml}
+            </div>
         `;
     },
 
@@ -254,6 +343,8 @@ const Sidebar = {
      * Refresh sidebar content (e.g., after auth state change)
      */
     refresh() {
+        this._detectDomain();
         this._renderContent();
+        this._updateVisibility();
     }
 };

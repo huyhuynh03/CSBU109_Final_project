@@ -771,13 +771,28 @@
     width: auto;
 }
 
+/* Sidebar footer - bottom section */
+.sidebar-footer {
+    margin-top: auto;
+    padding: var(--spacing-xs);
+    border-top: 1px solid var(--color-border);
+}
+
+.sidebar-nav-item--switch {
+    color: var(--color-text-muted);
+}
+
+.sidebar-nav-item--switch:hover {
+    color: var(--color-primary-light);
+}
+
 /* Main content shift on desktop when sidebar is visible */
 @media (min-width: 1024px) {
-    .main-content {
+    body.has-sidebar .main-content {
         margin-left: var(--sidebar-collapsed-width);
     }
 
-    .sidebar-is-expanded .main-content {
+    body.has-sidebar.sidebar-is-expanded .main-content {
         margin-left: var(--sidebar-expanded-width);
     }
 }
