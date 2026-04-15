@@ -36,35 +36,6 @@ const HomePage = {
                     <p>Hôm nay bạn muốn làm gì?</p>
                 </div>
 
-                <!-- Study / Review Action Cards -->
-                <div class="dashboard-actions" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin:var(--spacing-xl) 0;">
-                    <!-- Học mới -->
-                    <div class="glass-card hover-lift dashboard-action-card dashboard-action-card--study" 
-                         onclick="Router.navigate('/study')" style="cursor:pointer;padding:var(--spacing-xl);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
-                        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg, #10B981 0%, #059669 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-md);">
-                            <span class="material-icons-round" style="font-size:32px;color:#fff;">auto_stories</span>
-                        </div>
-                        <h3 style="margin:0 0 var(--spacing-xs);font-size:var(--font-size-lg);">Học mới</h3>
-                        <p id="dashboard-new-count" style="font-size:var(--font-size-sm);color:var(--color-text-muted);margin:0;">
-                            <span class="material-icons-round" style="font-size:16px;vertical-align:middle;">hourglass_empty</span>
-                            Đang tải...
-                        </p>
-                    </div>
-
-                    <!-- Ôn tập -->
-                    <div class="glass-card hover-lift dashboard-action-card dashboard-action-card--review" 
-                         onclick="Router.navigate('/review')" style="cursor:pointer;padding:var(--spacing-xl);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
-                        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-md);">
-                            <span class="material-icons-round" style="font-size:32px;color:#fff;">replay</span>
-                        </div>
-                        <h3 style="margin:0 0 var(--spacing-xs);font-size:var(--font-size-lg);">Ôn tập</h3>
-                        <p id="dashboard-due-count" style="font-size:var(--font-size-sm);color:var(--color-text-muted);margin:0;">
-                            <span class="material-icons-round" style="font-size:16px;vertical-align:middle;">hourglass_empty</span>
-                            Đang tải...
-                        </p>
-                    </div>
-                </div>
-
                 <!-- Streak & Practice Time -->
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin-bottom:var(--spacing-lg);">
                     <!-- Streak -->
@@ -113,42 +84,7 @@ const HomePage = {
         console.log('[HomePage] Entered - Dashboard');
         if (!Auth.isSignedIn()) return;
 
-        this._loadDashboardStats();
         this._loadStudyChart();
-    },
-
-    /**
-     * Load card counts for study/review buttons
-     * @private
-     */
-    async _loadDashboardStats() {
-        try {
-            const allCards = await FirestoreDB.getCards({});
-            const newCount = allCards.filter(c => c.state === 'new').length;
-            const now = new Date();
-            const dueCount = allCards.filter(c => {
-                if (!c.dueDate) return false;
-                const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
-                return dueDate <= now;
-            }).length;
-
-            const newEl = document.getElementById('dashboard-new-count');
-            const dueEl = document.getElementById('dashboard-due-count');
-
-            if (newEl) {
-                newEl.innerHTML = newCount > 0
-                    ? `<span style="font-size:var(--font-size-lg);font-weight:700;color:var(--color-success);">${newCount}</span> thẻ chưa học`
-                    : `<span style="color:var(--color-text-muted);">Không có thẻ mới</span>`;
-            }
-
-            if (dueEl) {
-                dueEl.innerHTML = dueCount > 0
-                    ? `<span style="font-size:var(--font-size-lg);font-weight:700;color:var(--color-warning);">${dueCount}</span> thẻ đến hạn`
-                    : `<span style="color:var(--color-text-muted);">Không có thẻ cần ôn</span>`;
-            }
-        } catch (error) {
-            console.error('[HomePage] Error loading card stats:', error);
-        }
     },
 
     /**

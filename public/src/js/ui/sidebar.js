@@ -19,6 +19,13 @@ const Sidebar = {
      */
     menuItems: [
         {
+            id: 'home',
+            icon: 'home',
+            label: 'Trang chủ',
+            route: '/',
+            requireAuth: true
+        },
+        {
             id: 'vocabulary',
             icon: 'menu_book',
             label: 'Từ vựng',
