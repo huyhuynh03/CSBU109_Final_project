@@ -66,15 +66,9 @@ const HomePage = {
                     </div>
                 </div>
 
-                <!-- Practice Chart (7 days) -->
-                <div class="glass-card" style="padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);">
-                    <div id="dashboard-chart" style="position:relative;height:200px;"></div>
-                </div>
-
-                <!-- This Week -->
+                <!-- Unified Chart: bars + date labels + day abbreviations -->
                 <div class="glass-card" style="padding:var(--spacing-lg);">
-                    <h3 style="margin:0 0 var(--spacing-md);font-size:var(--font-size-md);font-style:italic;">Tuần này</h3>
-                    <div id="dashboard-week" style="display:flex;justify-content:space-between;gap:var(--spacing-sm);"></div>
+                    <div id="dashboard-chart" style="position:relative;"></div>
                 </div>
             </div>
         `;
@@ -88,7 +82,7 @@ const HomePage = {
     },
 
     /**
-     * Load study chart, streak, practice time, week view
+     * Load study chart, streak, practice time
      * @private
      */
     async _loadStudyChart() {
@@ -120,17 +114,19 @@ const HomePage = {
                 const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
                 const dayNum = d.getDate();
                 const monthNum = d.getMonth() + 1;
+                const dayOfWeek = d.getDay(); // 0=Sun, 1=Mon...
+                const dayAbbrs = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
                 chartData.push({
                     date: d,
                     dateKey: key,
-                    label: `${dayNum} thg ${monthNum}`,
+                    dateLabel: `${dayNum} thg ${monthNum}`,
+                    dayAbbr: dayAbbrs[dayOfWeek],
                     minutes: sessionMap[key] || 0,
                     isToday: i === 0
                 });
             }
 
-            this._renderChart(chartData);
-            this._renderWeekView(sessions);
+            this._renderUnifiedChart(chartData);
 
         } catch (error) {
             console.error('[HomePage] Error loading study chart:', error);
@@ -138,60 +134,71 @@ const HomePage = {
     },
 
     /**
-     * Render bar chart with 7 days
+     * Render unified chart: Y-axis + bars on top, date labels in middle, day abbreviations at bottom
+     * All vertically aligned per column
      * @private
      */
-    _renderChart(chartData) {
+    _renderUnifiedChart(chartData) {
         const container = document.getElementById('dashboard-chart');
         if (!container) return;
 
         const maxMinutes = Math.max(...chartData.map(d => d.minutes), 1);
-        // Round up to nice number for Y axis
         const maxHours = Math.ceil(maxMinutes / 60) || 1;
         const ySteps = this._getYSteps(maxHours);
-
         const chartHeight = 160;
-        const barColor = '#E91E90'; // Pink/magenta like the screenshot
+        const barColor = '#E91E90';
 
-        // Y axis labels
+        // Y axis labels (positioned absolute)
         const yLabelsHtml = ySteps.map(step => {
             const bottom = (step / maxHours) * chartHeight;
             return `
-                <div style="position:absolute;left:0;bottom:${bottom}px;transform:translateY(50%);font-size:11px;color:var(--color-text-muted);">${step}</div>
-                <div style="position:absolute;left:28px;right:0;bottom:${bottom}px;border-bottom:1px dashed rgba(255,255,255,0.1);"></div>
+                <div style="position:absolute;left:0;bottom:${bottom}px;transform:translateY(50%);font-size:11px;color:var(--color-text-muted);width:24px;text-align:right;">${step}</div>
+                <div style="position:absolute;left:32px;right:0;bottom:${bottom}px;border-bottom:1px dashed rgba(255,255,255,0.1);"></div>
             `;
         }).join('');
 
-        // Bars
-        const barWidth = `calc((100% - 28px) / ${chartData.length})`;
-        const barsHtml = chartData.map((d, i) => {
+        // Columns: each column contains bar area + date label + day abbreviation
+        const columnsHtml = chartData.map((d) => {
             const heightPct = maxHours > 0 ? (d.minutes / 60 / maxHours) * 100 : 0;
-            const barH = Math.max(heightPct, 1); // min 1% for visibility
-            const dotColor = d.isToday ? barColor : 'transparent';
-            const tooltipText = `${d.label}\\nLuyện tập: ${d.minutes}m`;
+            const barH = Math.max(heightPct, 1);
+
+            // Day circle style
+            let circleStyle;
+            const hasActivity = d.minutes > 0;
+            if (hasActivity) {
+                circleStyle = 'background:linear-gradient(135deg, #6C63FF 0%, #4F46E5 100%);color:#fff;';
+            } else if (d.isToday) {
+                circleStyle = 'background:rgba(108,99,255,0.2);color:var(--color-primary);border:2px solid var(--color-primary);';
+            } else {
+                circleStyle = 'background:rgba(255,255,255,0.08);color:var(--color-text-muted);';
+            }
 
             return `
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;position:relative;" title="${d.label} - Luyện tập: ${d.minutes}m">
-                    <div style="flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center;">
+                <div style="flex:1;display:flex;flex-direction:column;align-items:center;min-width:0;" title="${d.dateLabel} - ${d.minutes} phút">
+                    <!-- Bar area -->
+                    <div style="width:100%;height:${chartHeight}px;display:flex;align-items:flex-end;justify-content:center;">
                         <div style="width:60%;max-width:24px;height:${barH}%;background:${barColor};border-radius:4px 4px 0 0;min-height:2px;transition:height 0.5s ease;"></div>
                     </div>
-                    <div style="margin-top:4px;position:relative;">
-                        <div style="width:8px;height:8px;border-radius:50%;background:${d.isToday ? barColor : 'rgba(255,255,255,0.2)'};border:2px solid ${d.isToday ? barColor : 'rgba(255,255,255,0.1)'};"></div>
+                    <!-- Date label -->
+                    <div style="font-size:10px;color:var(--color-text-muted);margin-top:8px;white-space:nowrap;text-align:center;">${d.dateLabel}</div>
+                    <!-- Day circle -->
+                    <div style="width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:var(--font-size-xs);margin-top:6px;${circleStyle}">
+                        ${d.dayAbbr}
                     </div>
-                    <div style="font-size:10px;color:var(--color-text-muted);margin-top:4px;white-space:nowrap;">${d.label}</div>
                 </div>
             `;
         }).join('');
 
-        // Line connecting dots
         container.innerHTML = `
-            <div style="position:relative;height:100%;padding-left:28px;">
+            <!-- Chart area with Y axis -->
+            <div style="position:relative;padding-left:32px;">
                 ${yLabelsHtml}
-                <div style="position:absolute;left:28px;right:0;bottom:0;top:0;display:flex;align-items:stretch;gap:0;padding-bottom:36px;">
-                    ${barsHtml}
-                </div>
                 <!-- Baseline -->
-                <div style="position:absolute;left:28px;right:0;bottom:36px;height:2px;background:${barColor};opacity:0.6;"></div>
+                <div style="position:absolute;left:32px;right:0;bottom:0;height:2px;background:${barColor};opacity:0.6;"></div>
+                <!-- Columns -->
+                <div style="display:flex;gap:0;">
+                    ${columnsHtml}
+                </div>
             </div>
         `;
     },
@@ -211,58 +218,5 @@ const HomePage = {
             steps.push(i);
         }
         return steps;
-    },
-
-    /**
-     * Render week view (M T W T F S S circles)
-     * @private
-     */
-    _renderWeekView(sessions) {
-        const container = document.getElementById('dashboard-week');
-        if (!container) return;
-
-        const sessionMap = {};
-        sessions.forEach(s => { sessionMap[s.date] = s.minutes || 0; });
-
-        const dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-        const dayNames = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-
-        // Get Monday of current week
-        const today = new Date();
-        const dayOfWeek = today.getDay(); // 0=Sun, 1=Mon...
-        const monday = new Date(today);
-        monday.setDate(today.getDate() - ((dayOfWeek + 6) % 7));
-
-        let html = '';
-        for (let i = 0; i < 7; i++) {
-            const d = new Date(monday);
-            d.setDate(monday.getDate() + i);
-            const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-            const hasActivity = (sessionMap[key] || 0) > 0;
-            const isToday = d.toDateString() === today.toDateString();
-            const isFuture = d > today;
-
-            let circleStyle;
-            if (hasActivity) {
-                circleStyle = 'background:linear-gradient(135deg, #6C63FF 0%, #4F46E5 100%);color:#fff;';
-            } else if (isToday) {
-                circleStyle = 'background:rgba(108,99,255,0.2);color:var(--color-primary);border:2px solid var(--color-primary);';
-            } else if (isFuture) {
-                circleStyle = 'background:rgba(255,255,255,0.05);color:var(--color-text-muted);';
-            } else {
-                circleStyle = 'background:rgba(255,255,255,0.08);color:var(--color-text-muted);';
-            }
-
-            html += `
-                <div style="display:flex;flex-direction:column;align-items:center;gap:var(--spacing-xs);">
-                    <div style="width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:var(--font-size-sm);${circleStyle}">
-                        ${dayLabels[i]}
-                    </div>
-                    <span style="font-size:10px;color:var(--color-text-muted);">${dayNames[i]}</span>
-                </div>
-            `;
-        }
-
-        container.innerHTML = html;
     }
 };
