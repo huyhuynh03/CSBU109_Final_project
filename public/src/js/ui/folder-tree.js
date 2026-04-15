@@ -7,17 +7,25 @@ const FolderTree = {
     expandedFolders: new Set(),
     editingFolderId: null,
     contextMenuFolderId: null,
+    /**
+     * Current folder type filter ('vocabulary', 'grammar', or null for all)
+     */
+    currentType: null,
 
     /**
      * Load folders from Firestore
+     * @param {string} [type] - Optional: filter by type ('vocabulary' | 'grammar')
      */
-    async loadFolders() {
+    async loadFolders(type) {
+        if (type !== undefined) {
+            this.currentType = type;
+        }
         if (!Auth.isSignedIn()) {
             this.folders = [];
             return;
         }
         try {
-            this.folders = await FirestoreDB.getFolders();
+            this.folders = await FirestoreDB.getFolders(this.currentType);
         } catch (error) {
             console.error('[FolderTree] Error loading folders:', error);
             this.folders = [];
@@ -272,7 +280,8 @@ const FolderTree = {
             const folderId = await FirestoreDB.createFolder({
                 name,
                 parentId: parentId || null,
-                order: maxOrder + 1
+                order: maxOrder + 1,
+                type: this.currentType || 'vocabulary'
             });
 
             if (folderId) {

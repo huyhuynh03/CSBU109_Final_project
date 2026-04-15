@@ -1,9 +1,11 @@
 // ============================================
-// Folder Explorer Page - Cây thư mục dạng Windows Explorer
+// Folder Explorer Page - Cây thư mục dạng tổng quan
+// Hiển thị tất cả thư mục (Từ vựng + Ngữ pháp) phân nhóm
 // ============================================
 
 const FolderExplorerPage = {
-    folders: [],
+    vocabFolders: [],
+    grammarFolders: [],
     expandedFolders: new Set(),
 
     /**
@@ -25,12 +27,18 @@ const FolderExplorerPage = {
             `;
         }
 
-        // Load folders
+        // Load both folder types
         try {
-            this.folders = await FirestoreDB.getFolders();
+            const [vocab, grammar] = await Promise.all([
+                FirestoreDB.getFolders('vocabulary'),
+                FirestoreDB.getFolders('grammar')
+            ]);
+            this.vocabFolders = vocab;
+            this.grammarFolders = grammar;
         } catch (error) {
             console.error('[FolderExplorer] Error loading folders:', error);
-            this.folders = [];
+            this.vocabFolders = [];
+            this.grammarFolders = [];
         }
 
         return this._renderPage();
@@ -42,34 +50,18 @@ const FolderExplorerPage = {
      * @returns {string}
      */
     _renderPage() {
-        const tree = this._buildTree();
+        const vocabTree = this._buildTree(this.vocabFolders);
+        const grammarTree = this._buildTree(this.grammarFolders);
 
-        let treeContent;
-        if (tree.length === 0) {
-            treeContent = `
-                <div class="explorer-empty">
-                    <span class="material-icons-round">folder_off</span>
-                    <p>Chưa có thư mục nào</p>
-                    <button class="btn btn-primary" onclick="FolderTree.showCreateModal()" style="margin-top:var(--spacing-md);">
-                        <span class="material-icons-round">create_new_folder</span>
-                        Tạo thư mục đầu tiên
-                    </button>
-                </div>
-            `;
-        } else {
-            treeContent = `
-                <div class="explorer-tree explorer-grid">
-                    ${tree.map(folder => this._renderNode(folder, 0)).join('')}
-                </div>
-            `;
-        }
+        const totalVocab = this.vocabFolders.length;
+        const totalGrammar = this.grammarFolders.length;
 
         return `
             <div class="page-container animate-fade-in">
                 <div class="explorer-page">
                     <div class="explorer-header">
                         <div class="explorer-header-left">
-                            <button class="icon-btn" onclick="history.back()" aria-label="Quay lại" title="Quay lại">
+                            <button class="icon-btn" onclick="Router.navigate('/')" aria-label="Quay lại" title="Quay lại">
                                 <span class="material-icons-round">arrow_back</span>
                             </button>
                             <h2>
@@ -77,14 +69,64 @@ const FolderExplorerPage = {
                                 Cây thư mục
                             </h2>
                         </div>
-                        <button class="icon-btn" onclick="FolderTree.showCreateModal()" aria-label="Tạo thư mục mới" title="Tạo thư mục mới">
-                            <span class="material-icons-round">create_new_folder</span>
-                        </button>
                     </div>
-                    <div class="explorer-body glass-card">
-                        ${treeContent}
+
+                    <!-- Vocabulary Section -->
+                    <div class="explorer-section">
+                        <div class="explorer-section-header" style="display:flex;align-items:center;gap:var(--spacing-sm);margin-bottom:var(--spacing-md);">
+                            <span class="material-icons-round" style="color:#3B82F6;font-size:28px;">menu_book</span>
+                            <h3 style="margin:0;flex:1;">Từ vựng</h3>
+                            <span class="badge" style="background:rgba(59,130,246,0.15);color:#3B82F6;">${totalVocab} thư mục</span>
+                            <button class="icon-btn" onclick="FolderExplorerPage._createFolder('vocabulary')" aria-label="Tạo thư mục từ vựng" title="Tạo thư mục từ vựng">
+                                <span class="material-icons-round">create_new_folder</span>
+                            </button>
+                        </div>
+                        <div class="explorer-body glass-card">
+                            ${this._renderTreeContent(vocabTree, 'vocabulary')}
+                        </div>
+                    </div>
+
+                    <!-- Grammar Section -->
+                    <div class="explorer-section" style="margin-top:var(--spacing-xl);">
+                        <div class="explorer-section-header" style="display:flex;align-items:center;gap:var(--spacing-sm);margin-bottom:var(--spacing-md);">
+                            <span class="material-icons-round" style="color:#10B981;font-size:28px;">school</span>
+                            <h3 style="margin:0;flex:1;">Ngữ pháp</h3>
+                            <span class="badge" style="background:rgba(16,185,129,0.15);color:#10B981;">${totalGrammar} thư mục</span>
+                            <button class="icon-btn" onclick="FolderExplorerPage._createFolder('grammar')" aria-label="Tạo thư mục ngữ pháp" title="Tạo thư mục ngữ pháp">
+                                <span class="material-icons-round">create_new_folder</span>
+                            </button>
+                        </div>
+                        <div class="explorer-body glass-card">
+                            ${this._renderTreeContent(grammarTree, 'grammar')}
+                        </div>
                     </div>
                 </div>
+            </div>
+        `;
+    },
+
+    /**
+     * Render tree content or empty state
+     * @private
+     */
+    _renderTreeContent(tree, type) {
+        if (tree.length === 0) {
+            const label = type === 'vocabulary' ? 'từ vựng' : 'ngữ pháp';
+            return `
+                <div class="explorer-empty">
+                    <span class="material-icons-round">folder_off</span>
+                    <p>Chưa có thư mục ${label} nào</p>
+                    <button class="btn btn-primary" onclick="FolderExplorerPage._createFolder('${type}')" style="margin-top:var(--spacing-md);">
+                        <span class="material-icons-round">create_new_folder</span>
+                        Tạo thư mục đầu tiên
+                    </button>
+                </div>
+            `;
+        }
+
+        return `
+            <div class="explorer-tree explorer-grid">
+                ${tree.map(folder => this._renderNode(folder, 0, type)).join('')}
             </div>
         `;
     },
@@ -94,15 +136,15 @@ const FolderExplorerPage = {
      * @private
      * @returns {Array}
      */
-    _buildTree() {
+    _buildTree(folders) {
         const map = {};
         const roots = [];
 
-        this.folders.forEach(f => {
+        folders.forEach(f => {
             map[f.id] = { ...f, children: [] };
         });
 
-        this.folders.forEach(f => {
+        folders.forEach(f => {
             if (f.parentId && map[f.parentId]) {
                 map[f.parentId].children.push(map[f.id]);
             } else {
@@ -120,13 +162,10 @@ const FolderExplorerPage = {
     },
 
     /**
-     * Render a single tree node - Windows Explorer style
+     * Render a single tree node - Explorer style
      * @private
-     * @param {Object} folder
-     * @param {number} depth
-     * @returns {string} HTML
      */
-    _renderNode(folder, depth = 0) {
+    _renderNode(folder, depth = 0, type = 'vocabulary') {
         const hasChildren = folder.children && folder.children.length > 0;
         const isExpanded = this.expandedFolders.has(folder.id);
 
@@ -144,16 +183,20 @@ const FolderExplorerPage = {
         // Children HTML (recursive) - also a grid
         const childrenHtml = hasChildren && isExpanded
             ? `<div class="explorer-tree-children explorer-grid">
-                   ${folder.children.map(child => this._renderNode(child, depth + 1)).join('')}
+                   ${folder.children.map(child => this._renderNode(child, depth + 1, type)).join('')}
                </div>`
             : '';
 
         const folderIcon = FolderTree._renderFolderIcon(folder, isExpanded && hasChildren, 'explorer-folder-icon', 32);
 
+        // Type badge color
+        const typeColor = type === 'vocabulary' ? '#3B82F6' : '#10B981';
+
         return `
             <div class="explorer-tree-node ${isExpanded ? 'node-expanded' : ''}" data-folder-id="${folder.id}" data-depth="${depth}">
                 <div class="explorer-folder-card glass-card"
-                     onclick="FolderExplorerPage.navigateToFolder('${folder.id}')">
+                     onclick="FolderExplorerPage.navigateToFolder('${folder.id}')"
+                     style="border-left:3px solid ${typeColor};">
                     ${folderIcon}
                     <span class="explorer-folder-name">${Helpers.escapeHtml(folder.name)}</span>
                     ${expandIndicator}
@@ -185,27 +228,43 @@ const FolderExplorerPage = {
     },
 
     /**
+     * Create folder via FolderTree modal (with type preset)
+     * @param {string} type - 'vocabulary' or 'grammar'
+     */
+    _createFolder(type) {
+        // Set type on FolderTree before showing modal
+        FolderTree.currentType = type;
+        FolderTree.showCreateModal();
+    },
+
+    /**
      * Refresh tree content only (not whole page)
      * @private
      */
-    _refreshTree() {
-        const body = document.querySelector('.explorer-body');
-        if (!body) return;
+    async _refreshTree() {
+        // Re-render both sections
+        try {
+            const [vocab, grammar] = await Promise.all([
+                FirestoreDB.getFolders('vocabulary'),
+                FirestoreDB.getFolders('grammar')
+            ]);
+            this.vocabFolders = vocab;
+            this.grammarFolders = grammar;
+        } catch (error) {
+            console.error('[FolderExplorer] Error refreshing:', error);
+        }
 
-        const tree = this._buildTree();
-        if (tree.length === 0) {
-            body.innerHTML = `
-                <div class="explorer-empty">
-                    <span class="material-icons-round">folder_off</span>
-                    <p>Chưa có thư mục nào</p>
-                </div>
-            `;
-        } else {
-            body.innerHTML = `
-                <div class="explorer-tree explorer-grid">
-                    ${tree.map(folder => this._renderNode(folder, 0)).join('')}
-                </div>
-            `;
+        const vocabBody = document.querySelectorAll('.explorer-body')[0];
+        const grammarBody = document.querySelectorAll('.explorer-body')[1];
+
+        const vocabTree = this._buildTree(this.vocabFolders);
+        const grammarTree = this._buildTree(this.grammarFolders);
+
+        if (vocabBody) {
+            vocabBody.innerHTML = this._renderTreeContent(vocabTree, 'vocabulary');
+        }
+        if (grammarBody) {
+            grammarBody.innerHTML = this._renderTreeContent(grammarTree, 'grammar');
         }
     }
 };

@@ -4,8 +4,6 @@
 // Dữ liệu được tổ chức theo subcollection của mỗi user:
 // users/{userId}/folders/{folderId}
 // users/{userId}/cards/{cardId}
-// users/{userId}/cardTypes/{typeId}
-// users/{userId}/profileFolders/{folderId}
 // → Mỗi user có dữ liệu riêng biệt hoàn toàn
 
 const FirestoreDB = {
@@ -98,7 +96,7 @@ const FirestoreDB = {
     async deleteUserData(userId) {
         try {
             // Delete subcollections first
-            const subcollections = ['folders', 'cards', 'cardTypes', 'profileFolders'];
+            const subcollections = ['folders', 'cards'];
             for (const sub of subcollections) {
                 const snapshot = await db.collection('users').doc(userId).collection(sub).get();
                 const batch = db.batch();
@@ -123,13 +121,18 @@ const FirestoreDB = {
 
     /**
      * Get all folders for current user
+     * @param {string} [type] - Optional: filter by type ('vocabulary' | 'grammar')
      * @returns {Array}
      */
-    async getFolders() {
+    async getFolders(type) {
         const ref = this._userCollection('folders');
         if (!ref) return [];
         try {
-            const snapshot = await ref.orderBy('order').get();
+            let query = ref.orderBy('order');
+            if (type) {
+                query = ref.where('type', '==', type).orderBy('order');
+            }
+            const snapshot = await query.get();
             return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         } catch (error) {
             console.error('[Firestore] Error getting folders:', error);
@@ -139,7 +142,7 @@ const FirestoreDB = {
 
     /**
      * Create a folder
-     * @param {Object} folder - { name, parentId, order }
+     * @param {Object} folder - { name, parentId, order, type }
      * @returns {string} folder ID
      */
     async createFolder(folder) {
@@ -150,6 +153,8 @@ const FirestoreDB = {
                 name: folder.name,
                 parentId: folder.parentId || null,
                 order: folder.order || 0,
+                type: folder.type || 'vocabulary',
+                coverImage: folder.coverImage || null,
                 createdAt: firebase.firestore.FieldValue.serverTimestamp()
             });
             return doc.id;
@@ -198,17 +203,23 @@ const FirestoreDB = {
     // ==========================================
 
     /**
-     * Get all cards for current user in a folder
-     * @param {string} folderId
+     * Get all cards for current user, optionally filtered
+     * @param {Object} [filter] - { folderId, cardType, state }
      * @returns {Array}
      */
-    async getCards(folderId) {
+    async getCards(filter = {}) {
         const ref = this._userCollection('cards');
         if (!ref) return [];
         try {
             let query = ref;
-            if (folderId) {
-                query = ref.where('folderId', '==', folderId);
+            if (filter.folderId) {
+                query = query.where('folderId', '==', filter.folderId);
+            }
+            if (filter.cardType) {
+                query = query.where('cardType', '==', filter.cardType);
+            }
+            if (filter.state) {
+                query = query.where('state', '==', filter.state);
             }
             const snapshot = await query.get();
             return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
@@ -220,21 +231,39 @@ const FirestoreDB = {
 
     /**
      * Get cards due for review (dueDate <= now)
+     * @param {string} [cardType] - Optional: filter by card type
      * @returns {Array}
      */
-    async getDueCards() {
+    async getDueCards(cardType) {
         const ref = this._userCollection('cards');
         if (!ref) return [];
         try {
             const now = new Date();
-            const snapshot = await ref
-                .where('dueDate', '<=', now)
-                .orderBy('dueDate', 'asc')
-                .get();
+            let query = ref.where('dueDate', '<=', now);
+            if (cardType) {
+                query = query.where('cardType', '==', cardType);
+            }
+            const snapshot = await query.orderBy('dueDate', 'asc').get();
             return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         } catch (error) {
             console.error('[Firestore] Error getting due cards:', error);
             return [];
+        }
+    },
+
+    /**
+     * Get count of new cards (state = 'new')
+     * @returns {number}
+     */
+    async getNewCardCount() {
+        const ref = this._userCollection('cards');
+        if (!ref) return 0;
+        try {
+            const snapshot = await ref.where('state', '==', 'new').get();
+            return snapshot.size;
+        } catch (error) {
+            console.error('[Firestore] Error getting new card count:', error);
+            return 0;
         }
     },
 
@@ -258,8 +287,24 @@ const FirestoreDB = {
     },
 
     /**
-     * Create a card
-     * @param {Object} card
+     * Get total card count
+     * @returns {number}
+     */
+    async getTotalCardCount() {
+        const ref = this._userCollection('cards');
+        if (!ref) return 0;
+        try {
+            const snapshot = await ref.get();
+            return snapshot.size;
+        } catch (error) {
+            console.error('[Firestore] Error getting total card count:', error);
+            return 0;
+        }
+    },
+
+    /**
+     * Create a card with fixed schema
+     * @param {Object} card - { folderId, cardType, fieldValues }
      * @returns {string} card ID
      */
     async createCard(card) {
@@ -269,7 +314,7 @@ const FirestoreDB = {
             const fsrsData = FSRS.createCard();
             const doc = await ref.add({
                 folderId: card.folderId,
-                cardTypeId: card.cardTypeId,
+                cardType: card.cardType, // 'vocabulary' or 'grammar'
                 fieldValues: card.fieldValues || {},
                 // FSRS data
                 state: fsrsData.state,
@@ -289,7 +334,7 @@ const FirestoreDB = {
     },
 
     /**
-     * Update a card (e.g., after FSRS review)
+     * Update a card (e.g., after FSRS review or field edit)
      * @param {string} cardId
      * @param {Object} updates
      */
@@ -320,178 +365,22 @@ const FirestoreDB = {
         }
     },
 
-    // ==========================================
-    // Profile Folders (thư mục hồ sơ cấu hình, riêng biệt khỏi folders lobby)
-    // ==========================================
-
     /**
-     * Get all profile folders for current user
-     * @returns {Array}
-     */
-    async getProfileFolders() {
-        const ref = this._userCollection('profileFolders');
-        if (!ref) return [];
-        try {
-            const snapshot = await ref.orderBy('order').get();
-            return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        } catch (error) {
-            console.error('[Firestore] Error getting profile folders:', error);
-            return [];
-        }
-    },
-
-    /**
-     * Create a profile folder
-     * @param {Object} folder - { name, parentId, order }
-     * @returns {string} folder ID
-     */
-    async createProfileFolder(folder) {
-        const ref = this._userCollection('profileFolders');
-        if (!ref) return null;
-        try {
-            const doc = await ref.add({
-                name: folder.name,
-                parentId: folder.parentId || null,
-                order: folder.order || 0,
-                createdAt: firebase.firestore.FieldValue.serverTimestamp()
-            });
-            return doc.id;
-        } catch (error) {
-            console.error('[Firestore] Error creating profile folder:', error);
-            return null;
-        }
-    },
-
-    /**
-     * Update a profile folder
-     * @param {string} folderId
-     * @param {Object} updates
-     */
-    async updateProfileFolder(folderId, updates) {
-        const ref = this._userCollection('profileFolders');
-        if (!ref) return;
-        try {
-            await ref.doc(folderId).update({
-                ...updates,
-                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-            });
-        } catch (error) {
-            console.error('[Firestore] Error updating profile folder:', error);
-            throw error;
-        }
-    },
-
-    /**
-     * Delete a profile folder
+     * Delete all cards in a folder
      * @param {string} folderId
      */
-    async deleteProfileFolder(folderId) {
-        const ref = this._userCollection('profileFolders');
+    async deleteCardsInFolder(folderId) {
+        const ref = this._userCollection('cards');
         if (!ref) return;
         try {
-            await ref.doc(folderId).delete();
+            const snapshot = await ref.where('folderId', '==', folderId).get();
+            if (snapshot.empty) return;
+            const batch = db.batch();
+            snapshot.docs.forEach(doc => batch.delete(doc.ref));
+            await batch.commit();
+            console.log(`[Firestore] Deleted ${snapshot.size} cards in folder ${folderId}`);
         } catch (error) {
-            console.error('[Firestore] Error deleting profile folder:', error);
-            throw error;
-        }
-    },
-
-    // ==========================================
-    // Card Types (hồ sơ cấu hình thẻ)
-    // ==========================================
-
-    /**
-     * Get all card types for current user
-     * @param {string} [folderId] - Optional: filter by profile folder
-     * @returns {Array}
-     */
-    async getCardTypes(folderId) {
-        const ref = this._userCollection('cardTypes');
-        if (!ref) return [];
-        try {
-            let query = ref.orderBy('order');
-            if (folderId) {
-                query = ref.where('folderId', '==', folderId).orderBy('order');
-            }
-            const snapshot = await query.get();
-            return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        } catch (error) {
-            console.error('[Firestore] Error getting card types:', error);
-            return [];
-        }
-    },
-
-    /**
-     * Get a single card type by ID
-     * @param {string} typeId
-     * @returns {Object|null}
-     */
-    async getCardType(typeId) {
-        const ref = this._userCollection('cardTypes');
-        if (!ref) return null;
-        try {
-            const doc = await ref.doc(typeId).get();
-            return doc.exists ? { id: doc.id, ...doc.data() } : null;
-        } catch (error) {
-            console.error('[Firestore] Error getting card type:', error);
-            return null;
-        }
-    },
-
-    /**
-     * Create a card type
-     * @param {Object} cardType - { name, folderId, fields, order }
-     * @returns {string} card type ID
-     */
-    async createCardType(cardType) {
-        const ref = this._userCollection('cardTypes');
-        if (!ref) return null;
-        try {
-            const doc = await ref.add({
-                name: cardType.name,
-                folderId: cardType.folderId || null,
-                fields: cardType.fields || [],
-                order: cardType.order || 0,
-                createdAt: firebase.firestore.FieldValue.serverTimestamp()
-            });
-            return doc.id;
-        } catch (error) {
-            console.error('[Firestore] Error creating card type:', error);
-            return null;
-        }
-    },
-
-    /**
-     * Update a card type
-     * @param {string} typeId
-     * @param {Object} updates - { name, folderId, fields, order }
-     */
-    async updateCardType(typeId, updates) {
-        const ref = this._userCollection('cardTypes');
-        if (!ref) return;
-        try {
-            await ref.doc(typeId).update({
-                ...updates,
-                updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-            });
-        } catch (error) {
-            console.error('[Firestore] Error updating card type:', error);
-            throw error;
-        }
-    },
-
-    /**
-     * Delete a card type
-     * @param {string} typeId
-     */
-    async deleteCardType(typeId) {
-        const ref = this._userCollection('cardTypes');
-        if (!ref) return;
-        try {
-            await ref.doc(typeId).delete();
-        } catch (error) {
-            console.error('[Firestore] Error deleting card type:', error);
-            throw error;
+            console.error('[Firestore] Error deleting cards in folder:', error);
         }
     }
 };

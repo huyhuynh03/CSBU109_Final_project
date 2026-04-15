@@ -56,16 +56,31 @@ const App = {
      * @private
      */
     _registerRoutes() {
+        // Dashboard (home)
         Router.register('/', {
             render: () => HomePage.render(),
             onEnter: () => HomePage.onEnter && HomePage.onEnter()
         });
 
+        // Auth
         Router.register('/auth', {
             render: () => AuthPage.render(),
             onEnter: () => AuthPage.onEnter && AuthPage.onEnter()
         });
 
+        // Vocabulary section
+        Router.register('/vocabulary', {
+            render: () => VocabularyPage.render(),
+            onEnter: () => VocabularyPage.onEnter && VocabularyPage.onEnter()
+        });
+
+        // Grammar section
+        Router.register('/grammar', {
+            render: () => GrammarPage.render(),
+            onEnter: () => GrammarPage.onEnter && GrammarPage.onEnter()
+        });
+
+        // Study & Review
         Router.register('/study', {
             render: () => StudyPage.render(),
             onEnter: () => StudyPage.onEnter && StudyPage.onEnter()
@@ -76,6 +91,7 @@ const App = {
             onEnter: () => ReviewPage.onEnter && ReviewPage.onEnter()
         });
 
+        // Settings & Account
         Router.register('/settings', {
             render: () => SettingsPage.render(),
             onEnter: () => SettingsPage.onEnter && SettingsPage.onEnter()
@@ -86,38 +102,15 @@ const App = {
             onEnter: () => AccountPage.onEnter && AccountPage.onEnter()
         });
 
+        // Folder view (shared for both vocabulary & grammar folders)
         Router.register('/folder/:id', {
             render: (params) => FolderViewPage.render(params),
             onEnter: (params) => FolderViewPage.onEnter && FolderViewPage.onEnter(params)
         });
 
+        // Folder explorer (overview of all folders)
         Router.register('/folders', {
             render: () => FolderExplorerPage.render(),
-            onEnter: () => {}
-        });
-
-        Router.register('/fields', {
-            render: () => FieldsPage.render(),
-            onEnter: () => {}
-        });
-
-        Router.register('/english', {
-            render: () => EnglishPage.render(),
-            onEnter: () => EnglishPage.onEnter && EnglishPage.onEnter()
-        });
-
-        Router.register('/profiles', {
-            render: () => ProfilesPage.render(),
-            onEnter: () => {}
-        });
-
-        Router.register('/profiles/folder/:id', {
-            render: (params) => ProfileFolderViewPage.render(params),
-            onEnter: () => {}
-        });
-
-        Router.register('/profiles/:id', {
-            render: (params) => ProfileEditorPage.render(params),
             onEnter: () => {}
         });
 
