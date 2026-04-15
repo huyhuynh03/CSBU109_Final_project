@@ -89,31 +89,6 @@ const HomePage = {
                     </div>
                 </div>
 
-                <!-- Quick Links -->
-                <div class="glass-card" style="padding:var(--spacing-lg);">
-                    <h3 style="margin:0 0 var(--spacing-md);font-size:var(--font-size-md);display:flex;align-items:center;gap:var(--spacing-xs);">
-                        <span class="material-icons-round" style="font-size:20px;color:var(--color-primary);">bolt</span>
-                        Truy cập nhanh
-                    </h3>
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-sm);">
-                        <button class="btn btn-secondary" onclick="Router.navigate('/vocabulary')" style="justify-content:flex-start;">
-                            <span class="material-icons-round" style="color:#3B82F6;">menu_book</span>
-                            Từ vựng
-                        </button>
-                        <button class="btn btn-secondary" onclick="Router.navigate('/grammar')" style="justify-content:flex-start;">
-                            <span class="material-icons-round" style="color:#10B981;">school</span>
-                            Ngữ pháp
-                        </button>
-                        <button class="btn btn-secondary" onclick="Router.navigate('/folders')" style="justify-content:flex-start;">
-                            <span class="material-icons-round" style="color:var(--color-text-muted);">account_tree</span>
-                            Cây thư mục
-                        </button>
-                        <button class="btn btn-secondary" onclick="Router.navigate('/settings')" style="justify-content:flex-start;">
-                            <span class="material-icons-round" style="color:var(--color-text-muted);">settings</span>
-                            Cài đặt
-                        </button>
-                    </div>
-                </div>
             </div>
         `;
     },
