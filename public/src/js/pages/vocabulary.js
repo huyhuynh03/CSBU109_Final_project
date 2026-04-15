@@ -111,23 +111,12 @@ const VocabularyPage = {
                     <div id="vocab-search-results" class="vocab-search-results" style="display:none;"></div>
                 </div>
 
-                <!-- Topic Tabs (Học mới / Ôn tập filter) -->
+                <!-- Topic Header -->
                 <div class="vocab-topic-header">
                     <h2 class="vocab-topic-header__title">
                         <span class="material-icons-round" style="font-size:22px;margin-right:6px;">topic</span>
                         Chủ đề từ vựng
                     </h2>
-                    <div class="vocab-topic-tabs">
-                        <button class="vocab-topic-tab vocab-topic-tab--active" data-filter="all" onclick="VocabularyPage._filterTopics('all')">
-                            Tất cả
-                        </button>
-                        <button class="vocab-topic-tab" data-filter="learning" onclick="VocabularyPage._filterTopics('learning')">
-                            Đang học
-                        </button>
-                        <button class="vocab-topic-tab" data-filter="completed" onclick="VocabularyPage._filterTopics('completed')">
-                            Hoàn thành
-                        </button>
-                    </div>
                 </div>
 
                 <!-- Topic Grid -->
@@ -271,9 +260,8 @@ const VocabularyPage = {
             const subTopics = topics.filter(t => t.parentId === topic.id);
 
             return `
-                <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}" 
+                <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
                      data-topic-id="${topic.id}"
-                     data-status="${isCompleted ? 'completed' : stats.total > 0 ? 'learning' : 'all'}"
                      onclick="Router.navigate('/folder/${topic.id}')">
                     <div class="vocab-topic-card__cover" style="background:${coverImage ? `url(${coverImage}) center/cover` : gradient}">
                         ${!coverImage ? `<span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>` : ''}
@@ -298,25 +286,6 @@ const VocabularyPage = {
         }).join('');
 
         grid.innerHTML = html;
-    },
-
-    _filterTopics(filter) {
-        // Update tab active state
-        document.querySelectorAll('.vocab-topic-tab').forEach(tab => {
-            tab.classList.toggle('vocab-topic-tab--active', tab.dataset.filter === filter);
-        });
-
-        // Filter topic cards
-        document.querySelectorAll('.vocab-topic-card').forEach(card => {
-            const status = card.dataset.status;
-            if (filter === 'all') {
-                card.style.display = '';
-            } else if (filter === 'completed') {
-                card.style.display = status === 'completed' ? '' : 'none';
-            } else if (filter === 'learning') {
-                card.style.display = status === 'learning' ? '' : 'none';
-            }
-        });
     },
 
     // ---- SEARCH / DICTIONARY ----
