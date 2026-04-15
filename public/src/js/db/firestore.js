@@ -370,17 +370,121 @@ const FirestoreDB = {
      * @param {string} folderId
      */
     async deleteCardsInFolder(folderId) {
-        const ref = this._userCollection('cards');
-        if (!ref) return;
-        try {
-            const snapshot = await ref.where('folderId', '==', folderId).get();
-            if (snapshot.empty) return;
-            const batch = db.batch();
-            snapshot.docs.forEach(doc => batch.delete(doc.ref));
-            await batch.commit();
-            console.log(`[Firestore] Deleted ${snapshot.size} cards in folder ${folderId}`);
-        } catch (error) {
-            console.error('[Firestore] Error deleting cards in folder:', error);
-        }
-    }
+       const ref = this._userCollection('cards');
+       if (!ref) return;
+       try {
+           const snapshot = await ref.where('folderId', '==', folderId).get();
+           if (snapshot.empty) return;
+           const batch = db.batch();
+           snapshot.docs.forEach(doc => batch.delete(doc.ref));
+           await batch.commit();
+           console.log(`[Firestore] Deleted ${snapshot.size} cards in folder ${folderId}`);
+       } catch (error) {
+           console.error('[Firestore] Error deleting cards in folder:', error);
+       }
+   },
+
+   // ============================================
+   // Study Sessions (tracking học tập hàng ngày)
+   // ============================================
+
+   /**
+    * Log study time for today
+    * @param {number} minutes - Minutes studied
+    */
+   async logStudyTime(minutes) {
+       const ref = this._userCollection('studySessions');
+       if (!ref) return;
+
+       const today = new Date();
+       const dateKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+       try {
+           const doc = await ref.doc(dateKey).get();
+           if (doc.exists) {
+               await ref.doc(dateKey).update({
+                   minutes: firebase.firestore.FieldValue.increment(minutes),
+                   updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+               });
+           } else {
+               await ref.doc(dateKey).set({
+                   date: dateKey,
+                   minutes: minutes,
+                   createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                   updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+               });
+           }
+       } catch (error) {
+           console.error('[Firestore] Error logging study time:', error);
+       }
+   },
+
+   /**
+    * Get study sessions for a date range
+    * @param {number} days - Number of past days to fetch
+    * @returns {Array} Array of {date, minutes}
+    */
+   async getStudySessions(days = 7) {
+       const ref = this._userCollection('studySessions');
+       if (!ref) return [];
+
+       try {
+           // Calculate date range
+           const today = new Date();
+           const startDate = new Date(today);
+           startDate.setDate(startDate.getDate() - (days - 1));
+           const startKey = `${startDate.getFullYear()}-${String(startDate.getMonth() + 1).padStart(2, '0')}-${String(startDate.getDate()).padStart(2, '0')}`;
+
+           const snapshot = await ref.where('date', '>=', startKey).orderBy('date', 'asc').get();
+           return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+       } catch (error) {
+           console.error('[Firestore] Error getting study sessions:', error);
+           return [];
+       }
+   },
+
+   /**
+    * Get current streak (consecutive days with study activity)
+    * @returns {Object} {streak, totalMinutesToday}
+    */
+   async getStreakInfo() {
+       const ref = this._userCollection('studySessions');
+       if (!ref) return { streak: 0, totalMinutesToday: 0 };
+
+       try {
+           // Get last 90 days of sessions
+           const sessions = await this.getStudySessions(90);
+           const sessionMap = {};
+           sessions.forEach(s => { sessionMap[s.date] = s.minutes; });
+
+           const today = new Date();
+           const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+           const totalMinutesToday = sessionMap[todayKey] || 0;
+
+           // Calculate streak
+           let streak = 0;
+           let checkDate = new Date(today);
+
+           // If no activity today, start checking from yesterday
+           if (!sessionMap[todayKey]) {
+               checkDate.setDate(checkDate.getDate() - 1);
+           }
+
+           while (true) {
+               const key = `${checkDate.getFullYear()}-${String(checkDate.getMonth() + 1).padStart(2, '0')}-${String(checkDate.getDate()).padStart(2, '0')}`;
+               if (sessionMap[key] && sessionMap[key] > 0) {
+                   streak++;
+                   checkDate.setDate(checkDate.getDate() - 1);
+               } else {
+                   break;
+               }
+           }
+
+           return { streak, totalMinutesToday };
+       } catch (error) {
+           console.error('[Firestore] Error getting streak:', error);
+           return { streak: 0, totalMinutesToday: 0 };
+       }
+   }
 };

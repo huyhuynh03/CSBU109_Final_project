@@ -15,35 +15,20 @@ service cloud.firestore {
       match /folders/{folderId} {
         allow read, write: if request.auth != null && request.auth.uid == userId;
       }
-
-      // Profile Folders subcollection - thư mục hồ sơ cấu hình (riêng biệt khỏi folders)
-      match /profileFolders/{folderId} {
-        allow read, write: if request.auth != null && request.auth.uid == userId;
-      }
-      
-      // Card Types subcollection - thuộc về user
-      match /cardTypes/{cardTypeId} {
-        allow read, write: if request.auth != null && request.auth.uid == userId;
-        
-        // Fields subcollection - thuộc về card type của user
-        match /fields/{fieldId} {
-          allow read, write: if request.auth != null && request.auth.uid == userId;
-        }
-      }
       
       // Cards subcollection - thuộc về user
       match /cards/{cardId} {
         allow read, write: if request.auth != null && request.auth.uid == userId;
         
-        // Field values subcollection
-        match /fieldValues/{valueId} {
-          allow read, write: if request.auth != null && request.auth.uid == userId;
-        }
-        
         // Review logs subcollection
         match /reviewLogs/{logId} {
           allow read, write: if request.auth != null && request.auth.uid == userId;
         }
+      }
+
+      // Study Sessions subcollection - tracking thời gian học hàng ngày
+      match /studySessions/{sessionId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
       }
       
       // Settings subcollection
