@@ -10,7 +10,7 @@ const Sidebar = {
      * Routes that show the sidebar (when user is signed in)
      */
     _sidebarRoutes: [
-        '/', '/vocabulary', '/grammar', '/study', '/review', '/folders', '/folder/',
+        '/', '/vocabulary', '/grammar', '/study', '/review',
         '/account', '/settings'
     ],
 
@@ -37,13 +37,6 @@ const Sidebar = {
             icon: 'school',
             label: 'Ngữ pháp',
             route: '/grammar',
-            requireAuth: true
-        },
-        {
-            id: 'folder-tree',
-            icon: 'account_tree',
-            label: 'Cây thư mục',
-            route: '/folders',
             requireAuth: true
         },
         {

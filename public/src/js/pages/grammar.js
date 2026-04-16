@@ -11,9 +11,6 @@ const GrammarPage = {
             return '<div class="page-enter"></div>';
         }
 
-        // Load folders for tree (only grammar type)
-        await FolderTree.loadFolders('grammar');
-
         return `
             <div class="grammar-page page-enter">
                 <!-- Domain Header -->
@@ -31,8 +28,7 @@ const GrammarPage = {
 
                 <!-- Study / Review Action Cards -->
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin:var(--spacing-lg) 0;">
-                    <!-- Học mới -->
-                    <div class="glass-card hover-lift" 
+                    <div class="glass-card hover-lift"
                          onclick="Router.navigate('/study?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
                         <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #10B981 0%, #059669 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-sm);">
                             <span class="material-icons-round" style="font-size:24px;color:#fff;">auto_stories</span>
@@ -43,9 +39,7 @@ const GrammarPage = {
                             Đang tải...
                         </p>
                     </div>
-
-                    <!-- Ôn tập -->
-                    <div class="glass-card hover-lift" 
+                    <div class="glass-card hover-lift"
                          onclick="Router.navigate('/review?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
                         <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-sm);">
                             <span class="material-icons-round" style="font-size:24px;color:#fff;">replay</span>
@@ -77,9 +71,9 @@ const GrammarPage = {
                     </div>
                 </div>
 
-                <!-- Folder Tree -->
-                <div class="home-folders glass-card" style="padding:var(--spacing-lg);">
-                    ${FolderTree.render()}
+                <div class="glass-card" style="padding:var(--spacing-xl);text-align:center;">
+                    <span class="material-icons-round" style="font-size:48px;color:var(--color-text-muted);">construction</span>
+                    <p style="color:var(--color-text-muted);margin-top:var(--spacing-sm);">Các chủ đề ngữ pháp sẽ sớm được cập nhật.</p>
                 </div>
             </div>
         `;

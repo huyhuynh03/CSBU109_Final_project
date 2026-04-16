@@ -102,18 +102,6 @@ const App = {
             onEnter: () => AccountPage.onEnter && AccountPage.onEnter()
         });
 
-        // Folder view (shared for both vocabulary & grammar folders)
-        Router.register('/folder/:id', {
-            render: (params) => FolderViewPage.render(params),
-            onEnter: (params) => FolderViewPage.onEnter && FolderViewPage.onEnter(params)
-        });
-
-        // Folder explorer (overview of all folders)
-        Router.register('/folders', {
-            render: () => FolderExplorerPage.render(),
-            onEnter: () => {}
-        });
-
         console.log('[App] Routes registered');
     }
 };
