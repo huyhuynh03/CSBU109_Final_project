@@ -1977,6 +1977,38 @@
 
 /* ---- Topic Grid ---- */
 .vocab-topic-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Category Section */
+.vocab-category-section {
+    margin-bottom: var(--spacing-sm);
+}
+
+.vocab-category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.vocab-category-header .material-icons-round {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.vocab-category-header h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.vocab-category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: var(--spacing-md);

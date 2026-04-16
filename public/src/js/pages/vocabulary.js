@@ -183,9 +183,9 @@ const VocabularyPage = {
     // ---- TOPICS ----
     async _loadTopics() {
         try {
-            const folders = await FirestoreDB.getFolders('vocabulary');
-            this._topics = folders;
-            this._renderTopicGrid(folders);
+            // Dùng VocabularyTopics từ config (static data)
+            this._topics = VocabularyTopics;
+            this._renderTopicGrid(VocabularyTopics);
         } catch (error) {
             console.error('[VocabularyPage] Error loading topics:', error);
             this._renderTopicGrid([]);
@@ -209,8 +209,13 @@ const VocabularyPage = {
             return;
         }
 
-        // Group topics: root topics (no parent) 
-        const rootTopics = topics.filter(t => !t.parentId);
+        // Group by category
+        const categories = {};
+        topics.forEach(t => {
+            const cat = t.category || 'other';
+            if (!categories[cat]) categories[cat] = [];
+            categories[cat].push(t);
+        });
 
         // Calculate stats per topic
         const topicCards = {};
@@ -242,44 +247,59 @@ const VocabularyPage = {
             'linear-gradient(135deg, #13547a 0%, #80d0c7 100%)',
         ];
 
-        // Icons for topics
-        const topicIcons = [
-            'school', 'auto_stories', 'psychology', 'lightbulb', 'emoji_objects',
-            'workspace_premium', 'star', 'diamond', 'eco', 'pets'
-        ];
+        // Sort categories by TopicCategories order
+        const sortedCats = Object.keys(categories).sort((a, b) => {
+            const oa = (TopicCategories[a] || {}).order || 99;
+            const ob = (TopicCategories[b] || {}).order || 99;
+            return oa - ob;
+        });
 
-        const html = rootTopics.map((topic, idx) => {
-            const stats = topicCards[topic.id] || { total: 0, new: 0, due: 0, mastered: 0 };
-            const progress = stats.total > 0 ? Math.round((stats.mastered / stats.total) * 100) : 0;
-            const gradient = gradients[idx % gradients.length];
-            const icon = topicIcons[idx % topicIcons.length];
-            const coverImage = topic.coverImage;
-            const isCompleted = progress === 100 && stats.total > 0;
+        let globalIdx = 0;
+        const html = sortedCats.map(catKey => {
+            const catInfo = TopicCategories[catKey] || { label: catKey, icon: 'folder' };
+            const catTopics = categories[catKey];
 
-            // Count sub-topics
-            const subTopics = topics.filter(t => t.parentId === topic.id);
+            const cardsHtml = catTopics.map(topic => {
+                const stats = topicCards[topic.id] || { total: 0, new: 0, due: 0, mastered: 0 };
+                const progress = stats.total > 0 ? Math.round((stats.mastered / stats.total) * 100) : 0;
+                const gradient = gradients[globalIdx % gradients.length];
+                const icon = topic.icon || 'menu_book';
+                const isCompleted = progress === 100 && stats.total > 0;
+                globalIdx++;
+
+                return `
+                    <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
+                         data-topic-id="${topic.id}"
+                         onclick="Router.navigate('/folder/${topic.id}')">
+                        <div class="vocab-topic-card__cover" style="background:${gradient}">
+                            <span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>
+                            ${isCompleted ? '<div class="vocab-topic-card__badge"><span class="material-icons-round">verified</span></div>' : ''}
+                            ${stats.due > 0 ? `<div class="vocab-topic-card__due-badge">${stats.due}</div>` : ''}
+                        </div>
+                        <div class="vocab-topic-card__body">
+                            <h3 class="vocab-topic-card__name">${topic.name}</h3>
+                            <div class="vocab-topic-card__meta">
+                                <span>${stats.total} từ</span>
+                            </div>
+                            <div class="vocab-topic-card__progress">
+                                <div class="vocab-topic-card__progress-bar">
+                                    <div class="vocab-topic-card__progress-fill" style="width:${progress}%"></div>
+                                </div>
+                                <span class="vocab-topic-card__progress-text">${progress}%</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
 
             return `
-                <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
-                     data-topic-id="${topic.id}"
-                     onclick="Router.navigate('/folder/${topic.id}')">
-                    <div class="vocab-topic-card__cover" style="background:${coverImage ? `url(${coverImage}) center/cover` : gradient}">
-                        ${!coverImage ? `<span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>` : ''}
-                        ${isCompleted ? '<div class="vocab-topic-card__badge"><span class="material-icons-round">verified</span></div>' : ''}
-                        ${stats.due > 0 ? `<div class="vocab-topic-card__due-badge">${stats.due}</div>` : ''}
+                <div class="vocab-category-section">
+                    <div class="vocab-category-header">
+                        <span class="material-icons-round">${catInfo.icon}</span>
+                        <h3>${catInfo.label}</h3>
                     </div>
-                    <div class="vocab-topic-card__body">
-                        <h3 class="vocab-topic-card__name">${topic.name}</h3>
-                        <div class="vocab-topic-card__meta">
-                            <span>${stats.total} từ</span>
-                            ${subTopics.length > 0 ? `<span>• ${subTopics.length} nhóm con</span>` : ''}
-                        </div>
-                        <div class="vocab-topic-card__progress">
-                            <div class="vocab-topic-card__progress-bar">
-                                <div class="vocab-topic-card__progress-fill" style="width:${progress}%"></div>
-                            </div>
-                            <span class="vocab-topic-card__progress-text">${progress}%</span>
-                        </div>
+                    <div class="vocab-category-grid">
+                        ${cardsHtml}
                     </div>
                 </div>
             `;
