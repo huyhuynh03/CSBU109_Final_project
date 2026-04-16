@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v4.3
-const CACHE_NAME = 'linguaflash-v4.3';
+// LinguaFlash Service Worker v5.0
+const CACHE_NAME = 'linguaflash-v5.0';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -8,36 +8,33 @@ const STATIC_ASSETS = [
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=6',
+    '/src/css/components.css?v=9',
     '/src/css/animations.css?v=2',
     '/src/css/responsive.css?v=4',
-    '/src/js/app.js?v=10',
+    '/src/js/app.js?v=12',
     '/src/js/router.js?v=2',
     '/src/js/utils/helpers.js?v=2',
+    '/src/js/utils/family-word-manager.js?v=1',
     '/src/js/ui/toast.js?v=2',
     '/src/js/ui/theme.js?v=2',
     '/src/js/ui/background.js?v=3',
     '/src/js/ui/components.js?v=2',
-    '/src/js/ui/sidebar.js?v=2',
-    '/src/js/ui/folder-tree.js?v=6',
-    '/src/js/ui/profile-folder-tree.js?v=4',
-    '/src/js/auth/auth.js?v=7',
+    '/src/js/ui/sidebar.js?v=6',
+    '/src/js/config/card-schemas.js?v=2',
+    '/src/js/config/vocabulary-topics.js?v=1',
+    '/src/js/auth/auth.js?v=8',
     '/src/js/auth/auth-ui.js?v=3',
-    '/src/js/db/firestore.js?v=3',
+    '/src/js/db/firestore.js?v=4',
     '/src/js/db/sync.js?v=2',
     '/src/js/fsrs/fsrs.js?v=2',
-    '/src/js/pages/home.js?v=8',
+    '/src/js/pages/home.js?v=10',
+    '/src/js/pages/vocabulary.js?v=1',
+    '/src/js/pages/grammar.js?v=1',
     '/src/js/pages/study.js?v=7',
     '/src/js/pages/review.js?v=2',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',
-    '/src/js/pages/account.js?v=4',
-    '/src/js/pages/folder-view.js?v=2',
-    '/src/js/pages/folder-explorer.js?v=3',
-    '/src/js/pages/fields.js?v=2',
-    '/src/js/pages/profiles.js?v=4',
-    '/src/js/pages/profile-editor.js?v=2',
-    '/src/js/pages/profile-folder-view.js?v=2'
+    '/src/js/pages/account.js?v=4'
 ];
 
 // Files that should always use network-first (contain sensitive config)
