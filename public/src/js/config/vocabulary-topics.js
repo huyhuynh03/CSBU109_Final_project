@@ -232,6 +232,6 @@ const TopicCategories = {
     society: { label: 'Xã hội & Đời sống', icon: 'groups', order: 1 },
     business: { label: 'Kinh tế & Pháp luật', icon: 'business', order: 2 },
     science: { label: 'Khoa học & Công nghệ', icon: 'biotech', order: 3 },
-    ielts: { label: 'IELTS Topics', icon: 'translate', order: 4 },
+    ielts: { label: 'Văn hóa & Giải trí', icon: 'celebration', order: 4 },
     idiom: { label: 'Idiom', icon: 'format_quote', order: 5 }
 };
