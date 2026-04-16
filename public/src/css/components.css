@@ -3006,3 +3006,78 @@
         justify-content: center;
     }
 }
+
+/* ============================================
+   STUDY PAGE - Intro Card (Bước 1)
+   ============================================ */
+
+.study-intro-card {
+    padding: var(--spacing-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.study-intro-card__word {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.1;
+}
+
+.study-intro-card__ipa {
+    font-size: var(--font-size-lg);
+    font-family: 'Times New Roman', serif;
+    color: #6C63FF;
+}
+
+.study-intro-card__pos {
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    color: var(--color-text-muted);
+    padding: 2px 12px;
+    background: rgba(108,99,255,0.08);
+    border-radius: 20px;
+}
+
+.study-intro-card__divider {
+    width: 60%;
+    height: 1px;
+    background: var(--color-border);
+    margin: var(--spacing-sm) 0;
+}
+
+.study-intro-card__meaning-label,
+.study-intro-card__example-label {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-sm);
+}
+
+.study-intro-card__meaning {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    line-height: 1.4;
+}
+
+.study-intro-card__example {
+    font-size: var(--font-size-base);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+@media (max-width: 600px) {
+    .study-intro-card__word {
+        font-size: 32px;
+    }
+}

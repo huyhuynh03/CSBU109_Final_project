@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.1
-const CACHE_NAME = 'linguaflash-v5.1';
+// LinguaFlash Service Worker v5.2
+const CACHE_NAME = 'linguaflash-v5.2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -8,7 +8,7 @@ const STATIC_ASSETS = [
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=10',
+    '/src/css/components.css?v=11',
     '/src/css/animations.css?v=2',
     '/src/css/responsive.css?v=4',
     '/src/js/app.js?v=12',
@@ -31,7 +31,7 @@ const STATIC_ASSETS = [
     '/src/js/pages/home.js?v=10',
     '/src/js/pages/vocabulary.js?v=1',
     '/src/js/pages/grammar.js?v=1',
-    '/src/js/pages/study.js?v=7',
+    '/src/js/pages/study.js?v=8',
     '/src/js/pages/review.js?v=3',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',
