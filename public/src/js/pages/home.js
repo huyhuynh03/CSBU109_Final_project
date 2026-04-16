@@ -7,25 +7,9 @@ const HomePage = {
         const isSignedIn = Auth.isSignedIn();
 
         if (!isSignedIn) {
-            return `
-                <div class="home-page page-enter">
-                    <div class="home-welcome">
-                        <h2>Chào mừng đến với LinguaFlash! 👋</h2>
-                        <p>Ứng dụng học và ôn tập thông minh với Spaced Repetition</p>
-                    </div>
-                    <div class="home-actions" style="margin-top:var(--spacing-xl);">
-                        <div class="empty-state" style="width:100%;">
-                            <span class="material-icons-round empty-state-icon">login</span>
-                            <h3 class="empty-state-title">Đăng nhập để bắt đầu học</h3>
-                            <p class="empty-state-desc">Đăng nhập hoặc tạo tài khoản để lưu tiến độ học tập và đồng bộ giữa các thiết bị.</p>
-                            <button class="btn btn-primary btn-lg" onclick="Router.navigate('/auth')">
-                                <span class="material-icons-round">person_add</span>
-                                Đăng nhập / Đăng ký
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            `;
+            // Chưa đăng nhập → redirect thẳng tới trang auth, không hiển thị home
+            Router.navigate('/auth');
+            return '<div class="page-enter"></div>';
         }
 
         return `
