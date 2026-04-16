@@ -14,9 +14,19 @@ const CardSchemas = {
         fields: [
             { key: 'word', label: 'Từ vựng', type: 'text', required: true, placeholder: 'VD: abandon' },
             { key: 'ipa', label: 'Phiên âm (IPA)', type: 'text', required: false, placeholder: 'VD: /əˈbæn.dən/' },
+            { key: 'partOfSpeech', label: 'Loại từ', type: 'select', required: false, placeholder: 'VD: noun, verb, adjective',
+                options: ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'conjunction', 'interjection', 'pronoun', 'determiner', 'idiom', 'phrasal verb'] },
             { key: 'meaning', label: 'Nghĩa', type: 'text', required: true, placeholder: 'VD: từ bỏ, bỏ rơi' },
             { key: 'example', label: 'Câu ví dụ', type: 'textarea', required: false, placeholder: 'VD: He abandoned his car in the parking lot.' },
-            { key: 'note', label: 'Ghi chú', type: 'textarea', required: false, placeholder: 'Ghi chú thêm...' }
+            { key: 'note', label: 'Ghi chú', type: 'textarea', required: false, placeholder: 'Ghi chú thêm...' },
+            { key: 'familyId', label: 'Family ID', type: 'text', required: false, placeholder: 'VD: educate (gốc từ chung)', hidden: true },
+            { key: 'familyOrder', label: 'Thứ tự trong family', type: 'number', required: false, placeholder: '1 = gốc, 2,3... = biến thể', hidden: true },
+            { key: 'tags', label: 'Tags', type: 'tags', required: false, placeholder: 'VD: irregular-verb, phrasal-verb',
+                allowedValues: ['idiom', 'phrasal-verb', 'irregular-verb', 'irregular-adjective', 'irregular-adverb'] },
+            { key: 'pastSimple', label: 'Quá khứ đơn (V2)', type: 'text', required: false, placeholder: 'VD: went', hidden: true },
+            { key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', type: 'text', required: false, placeholder: 'VD: gone', hidden: true },
+            { key: 'comparative', label: 'So sánh hơn', type: 'text', required: false, placeholder: 'VD: better', hidden: true },
+            { key: 'superlative', label: 'So sánh nhất', type: 'text', required: false, placeholder: 'VD: best', hidden: true }
         ],
         /**
          * Get display text for a card (used in lists)

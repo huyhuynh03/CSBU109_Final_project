@@ -94,6 +94,16 @@ const VocabularyPage = {
                     </button>
                 </div>
 
+                <!-- Incomplete Tracking Section -->
+                <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
+                    <div class="vocab-incomplete-header">
+                        <span class="material-icons-round">hourglass_bottom</span>
+                        <h2>Nhóm từ chưa hoàn thành</h2>
+                        <span class="vocab-incomplete-count" id="vocab-incomplete-count">0</span>
+                    </div>
+                    <div class="vocab-incomplete-grid" id="vocab-incomplete-grid"></div>
+                </div>
+
                 <!-- Dictionary / Search Section -->
                 <div class="vocab-search-section">
                     <div class="vocab-search-bar">
@@ -134,6 +144,7 @@ const VocabularyPage = {
         console.log('[VocabularyPage] Entered');
         this._loadStats();
         this._loadTopics();
+        this._loadIncompleteTracking();
         this._initSearch();
     },
 
@@ -418,5 +429,75 @@ const VocabularyPage = {
         if (input) { input.value = ''; input.focus(); }
         if (clearBtn) clearBtn.style.display = 'none';
         this._hideSearchResults();
+    },
+
+    // ---- INCOMPLETE TRACKING ----
+    async _loadIncompleteTracking() {
+        try {
+            const families = FamilyWordManager.getIncompleteFamilies();
+            const section = document.getElementById('vocab-incomplete-section');
+            const grid = document.getElementById('vocab-incomplete-grid');
+            const countEl = document.getElementById('vocab-incomplete-count');
+
+            if (!section || !grid) return;
+
+            if (families.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            if (countEl) countEl.textContent = families.length;
+
+            // Fetch all vocab cards to get family details
+            const allCards = this._allCards.length > 0
+                ? this._allCards
+                : await FirestoreDB.getCards({ cardType: 'vocabulary' });
+
+            const html = families.map(family => {
+                const familyCards = allCards.filter(c => c.fieldValues?.familyId === family.familyId);
+                const learnedSet = new Set(family.learnedWords || []);
+                const learnedCount = learnedSet.size;
+                const totalCount = Math.max(family.totalWords, familyCards.length);
+                const progress = totalCount > 0 ? Math.round((learnedCount / totalCount) * 100) : 0;
+
+                const wordsHtml = familyCards
+                    .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99))
+                    .map(c => {
+                        const word = c.fieldValues?.word || '?';
+                        const isLearned = learnedSet.has(word);
+                        return `<span class="vocab-incomplete-word ${isLearned ? 'vocab-incomplete-word--learned' : ''}">
+                            ${isLearned ? '✅' : '🆕'} ${word}
+                        </span>`;
+                    }).join('');
+
+                return `
+                    <div class="vocab-incomplete-card glass-panel">
+                        <div class="vocab-incomplete-card__header">
+                            <span class="vocab-incomplete-card__family-id">${family.familyId}</span>
+                        </div>
+                        <div class="vocab-incomplete-card__progress">
+                            <div class="vocab-incomplete-card__progress-bar">
+                                <div class="vocab-incomplete-card__progress-fill" style="width:${progress}%"></div>
+                            </div>
+                            <span class="vocab-incomplete-card__progress-text">${learnedCount}/${totalCount}</span>
+                        </div>
+                        <div class="vocab-incomplete-card__words">${wordsHtml}</div>
+                        <button class="vocab-incomplete-card__btn" onclick="VocabularyPage._learnFamily('${family.familyId}')">
+                            <span class="material-icons-round">play_arrow</span> Học tiếp
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            grid.innerHTML = html;
+        } catch (error) {
+            console.error('[VocabularyPage] Error loading incomplete tracking:', error);
+        }
+    },
+
+    _learnFamily(familyId) {
+        // Navigate to study page with family filter
+        Router.navigate(`/study?type=vocabulary&familyId=${encodeURIComponent(familyId)}`);
     }
 };
