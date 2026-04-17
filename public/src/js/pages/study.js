@@ -241,12 +241,18 @@ const StudyPage = {
         const total = s.cards.length;
         const progress = (s.currentIndex / total) * 100;
 
+        const difficulty = fv.difficulty || 'intermediate';
+        const diffMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getDifficultyMeta)
+            ? CardSchemas.getDifficultyMeta(difficulty)
+            : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
+
         root.innerHTML = `
-            <div class="review-card-screen">
+            <div class="review-card-screen" data-difficulty="${difficulty}">
                 <div class="review-header">
                     <div class="review-header__info">
                         <span class="review-round-badge" style="background:linear-gradient(135deg,#10B981,#059669);">Bước 1/3 · Giới thiệu</span>
                         <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
+                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
                     </div>
                     <div class="review-progress">
                         <div class="review-progress__fill" style="width:${progress}%"></div>
@@ -325,12 +331,18 @@ const StudyPage = {
             `;
         }
 
+        const difficulty = fv.difficulty || 'intermediate';
+        const diffMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getDifficultyMeta)
+            ? CardSchemas.getDifficultyMeta(difficulty)
+            : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
+
         root.innerHTML = `
-            <div class="review-card-screen">
+            <div class="review-card-screen" data-difficulty="${difficulty}">
                 <div class="review-header">
                     <div class="review-header__info">
                         <span class="review-round-badge" style="background:linear-gradient(135deg,#10B981,#059669);">${stepLabel}</span>
                         <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
+                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
                     </div>
                     <div class="review-progress">
                         <div class="review-progress__fill" style="width:${progress}%"></div>

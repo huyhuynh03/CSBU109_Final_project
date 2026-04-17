@@ -115,6 +115,19 @@
     /* Floating icons */
     --floating-icon-color: rgba(139, 131, 255, 0.35);
 
+    /* Difficulty colors (IELTS) */
+    --difficulty-int: #0984E3;
+    --difficulty-int-light: #74B9FF;
+    --difficulty-int-bg: rgba(9, 132, 227, 0.12);
+    --difficulty-int-border: rgba(116, 185, 255, 0.4);
+    --difficulty-int-gradient: linear-gradient(135deg, #74B9FF 0%, #0984E3 100%);
+
+    --difficulty-adv: #E17055;
+    --difficulty-adv-light: #FDCB6E;
+    --difficulty-adv-bg: rgba(225, 112, 85, 0.14);
+    --difficulty-adv-border: rgba(253, 203, 110, 0.45);
+    --difficulty-adv-gradient: linear-gradient(135deg, #FDCB6E 0%, #E17055 100%);
+
     /* Shadows for dark */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -175,6 +188,19 @@
 
     /* Floating icons */
     --floating-icon-color: rgba(108, 99, 255, 0.18);
+
+    /* Difficulty colors (IELTS) */
+    --difficulty-int: #2563EB;
+    --difficulty-int-light: #60A5FA;
+    --difficulty-int-bg: rgba(37, 99, 235, 0.09);
+    --difficulty-int-border: rgba(37, 99, 235, 0.25);
+    --difficulty-int-gradient: linear-gradient(135deg, #60A5FA 0%, #2563EB 100%);
+
+    --difficulty-adv: #C2410C;
+    --difficulty-adv-light: #F97316;
+    --difficulty-adv-bg: rgba(194, 65, 12, 0.09);
+    --difficulty-adv-border: rgba(194, 65, 12, 0.25);
+    --difficulty-adv-gradient: linear-gradient(135deg, #FB923C 0%, #C2410C 100%);
 
     /* Shadows for light */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);

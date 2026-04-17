@@ -16,6 +16,8 @@ const CardSchemas = {
             { key: 'ipa', label: 'Phiên âm (IPA)', type: 'text', required: false, placeholder: 'VD: /əˈbæn.dən/' },
             { key: 'partOfSpeech', label: 'Loại từ', type: 'select', required: false, placeholder: 'VD: noun, verb, adjective',
                 options: ['noun', 'verb', 'adjective', 'adverb', 'preposition', 'conjunction', 'interjection', 'pronoun', 'determiner', 'idiom', 'phrasal verb'] },
+            { key: 'difficulty', label: 'Độ khó', type: 'select', required: false, default: 'intermediate',
+                options: ['intermediate', 'advanced'] },
             { key: 'meaning', label: 'Nghĩa', type: 'text', required: true, placeholder: 'VD: từ bỏ, bỏ rơi' },
             { key: 'example', label: 'Câu ví dụ', type: 'textarea', required: false, placeholder: 'VD: He abandoned his car in the parking lot.' },
             { key: 'note', label: 'Ghi chú', type: 'textarea', required: false, placeholder: 'Ghi chú thêm...' },
@@ -96,9 +98,26 @@ const CardSchemas = {
         if (!schema) return {};
         const values = {};
         schema.fields.forEach(field => {
-            values[field.key] = '';
+            values[field.key] = field.default !== undefined ? field.default : '';
         });
         return values;
+    },
+
+    /**
+     * Difficulty levels metadata (for vocabulary)
+     */
+    DIFFICULTY_LEVELS: {
+        intermediate: { key: 'intermediate', label: 'Intermediate', short: 'INT', band: '4.0 - 5.5' },
+        advanced: { key: 'advanced', label: 'Advanced', short: 'ADV', band: '6.0 - 7.5+' }
+    },
+
+    /**
+     * Get difficulty metadata
+     * @param {string} difficulty
+     * @returns {Object}
+     */
+    getDifficultyMeta(difficulty) {
+        return this.DIFFICULTY_LEVELS[difficulty] || this.DIFFICULTY_LEVELS.intermediate;
     },
 
     /**

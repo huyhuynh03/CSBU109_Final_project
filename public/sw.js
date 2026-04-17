@@ -1,14 +1,14 @@
-// LinguaFlash Service Worker v5.3
-const CACHE_NAME = 'linguaflash-v5.3';
+// LinguaFlash Service Worker v5.4
+const CACHE_NAME = 'linguaflash-v5.4';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/manifest.json',
-    '/src/css/variables.css?v=4',
+    '/src/css/variables.css?v=5',
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=11',
+    '/src/css/components.css?v=12',
     '/src/css/animations.css?v=2',
     '/src/css/responsive.css?v=4',
     '/src/js/app.js?v=12',
@@ -21,7 +21,7 @@ const STATIC_ASSETS = [
     '/src/js/ui/background.js?v=3',
     '/src/js/ui/components.js?v=2',
     '/src/js/ui/sidebar.js?v=6',
-    '/src/js/config/card-schemas.js?v=2',
+    '/src/js/config/card-schemas.js?v=3',
     '/src/js/config/vocabulary-topics.js?v=1',
     '/src/js/auth/auth.js?v=8',
     '/src/js/auth/auth-ui.js?v=3',
@@ -29,10 +29,10 @@ const STATIC_ASSETS = [
     '/src/js/db/sync.js?v=2',
     '/src/js/fsrs/fsrs.js?v=2',
     '/src/js/pages/home.js?v=11',
-    '/src/js/pages/vocabulary.js?v=1',
+    '/src/js/pages/vocabulary.js?v=2',
     '/src/js/pages/grammar.js?v=1',
-    '/src/js/pages/study.js?v=8',
-    '/src/js/pages/review.js?v=3',
+    '/src/js/pages/study.js?v=9',
+    '/src/js/pages/review.js?v=4',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',
     '/src/js/pages/account.js?v=4'

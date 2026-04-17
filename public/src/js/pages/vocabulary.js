@@ -381,10 +381,13 @@ const VocabularyPage = {
         };
 
         const html = results.map(card => {
-            const word = card.word || card.front || '—';
-            const ipa = card.ipa || '';
-            const meaning = card.meaning || card.back || '';
-            const partOfSpeech = card.partOfSpeech || '';
+            const fv = card.fieldValues || {};
+            const word = fv.word || card.word || card.front || '—';
+            const ipa = fv.ipa || card.ipa || '';
+            const meaning = fv.meaning || card.meaning || card.back || '';
+            const partOfSpeech = fv.partOfSpeech || card.partOfSpeech || '';
+            const difficulty = fv.difficulty || card.difficulty || 'intermediate';
+            const diffMeta = CardSchemas.getDifficultyMeta(difficulty);
             const state = stateLabels[card.state] || stateLabels['new'];
 
             // Highlight match
@@ -392,11 +395,12 @@ const VocabularyPage = {
             const highlightMeaning = this._highlightMatch(meaning, query);
 
             return `
-                <div class="vocab-word-card" onclick="Router.navigate('/folder/${card.folderId}')">
+                <div class="vocab-word-card card-difficulty-${difficulty}" onclick="Router.navigate('/folder/${card.folderId}')">
                     <div class="vocab-word-card__main">
                         <div class="vocab-word-card__word">${highlightWord}</div>
                         ${ipa ? `<span class="vocab-word-card__ipa">${ipa}</span>` : ''}
                         ${partOfSpeech ? `<span class="vocab-word-card__pos">${partOfSpeech}</span>` : ''}
+                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label} (${diffMeta.band})">${diffMeta.short}</span>
                     </div>
                     <div class="vocab-word-card__meaning">${highlightMeaning}</div>
                     <div class="vocab-word-card__state" style="color:${state.color};background:${state.bg}">${state.text}</div>
@@ -461,6 +465,11 @@ const VocabularyPage = {
                 const totalCount = Math.max(family.totalWords, familyCards.length);
                 const progress = totalCount > 0 ? Math.round((learnedCount / totalCount) * 100) : 0;
 
+                // Xác định difficulty của family = difficulty của từ đầu tiên
+                const firstCard = familyCards[0];
+                const familyDifficulty = firstCard?.fieldValues?.difficulty || 'intermediate';
+                const diffMeta = CardSchemas.getDifficultyMeta(familyDifficulty);
+
                 const wordsHtml = familyCards
                     .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99))
                     .map(c => {
@@ -472,9 +481,11 @@ const VocabularyPage = {
                     }).join('');
 
                 return `
-                    <div class="vocab-incomplete-card glass-panel">
+                    <div class="vocab-incomplete-card glass-panel card-difficulty-${familyDifficulty}">
                         <div class="vocab-incomplete-card__header">
+                            <span class="difficulty-dot difficulty-dot--${familyDifficulty}" title="${diffMeta.label}"></span>
                             <span class="vocab-incomplete-card__family-id">${family.familyId}</span>
+                            <span class="difficulty-badge difficulty-badge--${familyDifficulty}">${diffMeta.short}</span>
                         </div>
                         <div class="vocab-incomplete-card__progress">
                             <div class="vocab-incomplete-card__progress-bar">

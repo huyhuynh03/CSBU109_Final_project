@@ -188,13 +188,19 @@ const ReviewPage = {
             `;
         }
 
+        const difficulty = card.fieldValues?.difficulty || 'intermediate';
+        const diffMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getDifficultyMeta)
+            ? CardSchemas.getDifficultyMeta(difficulty)
+            : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
+
         root.innerHTML = `
-            <div class="review-card-screen">
+            <div class="review-card-screen" data-difficulty="${difficulty}">
                 <!-- Progress Header -->
                 <div class="review-header">
                     <div class="review-header__info">
                         <span class="review-round-badge">Vòng ${s.currentRound}/2</span>
                         <span class="review-counter">Câu ${s.currentIndex + 1}/${total}</span>
+                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
                     </div>
                     <div class="review-progress">
                         <div class="review-progress__fill" style="width:${progress}%"></div>

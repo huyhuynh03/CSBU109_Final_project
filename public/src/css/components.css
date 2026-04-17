@@ -3081,3 +3081,99 @@
         font-size: 32px;
     }
 }
+
+/* ============================================
+   DIFFICULTY STYLING (Intermediate / Advanced)
+   ============================================ */
+
+/* Badge dạng pill - hiển thị trên thẻ */
+.difficulty-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+}
+.difficulty-badge--intermediate {
+    background: var(--difficulty-int-bg);
+    color: var(--difficulty-int);
+    border: 1px solid var(--difficulty-int-border);
+}
+.difficulty-badge--advanced {
+    background: var(--difficulty-adv-bg);
+    color: var(--difficulty-adv);
+    border: 1px solid var(--difficulty-adv-border);
+}
+
+/* Dot màu nhỏ */
+.difficulty-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.difficulty-dot--intermediate { background: var(--difficulty-int); box-shadow: 0 0 6px var(--difficulty-int-border); }
+.difficulty-dot--advanced { background: var(--difficulty-adv); box-shadow: 0 0 6px var(--difficulty-adv-border); }
+
+/* Viền trái trên thẻ (vocab word card, incomplete card, ...) */
+.card-difficulty-intermediate {
+    border-left: 4px solid var(--difficulty-int) !important;
+}
+.card-difficulty-advanced {
+    border-left: 4px solid var(--difficulty-adv) !important;
+}
+
+/* Screen accent khi ôn tập/học - đổi màu header badge & progress bar */
+.review-card-screen[data-difficulty="advanced"] .review-round-badge {
+    background: var(--difficulty-adv-gradient) !important;
+}
+.review-card-screen[data-difficulty="advanced"] .review-progress__fill {
+    background: var(--difficulty-adv-gradient) !important;
+}
+.review-card-screen[data-difficulty="intermediate"] .review-progress__fill {
+    background: var(--difficulty-int-gradient) !important;
+}
+
+/* Filter bar cho difficulty */
+.difficulty-filter {
+    display: inline-flex;
+    gap: 6px;
+    padding: 4px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+}
+.difficulty-filter__btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--color-text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.difficulty-filter__btn:hover {
+    background: var(--color-surface-hover);
+    color: var(--color-text);
+}
+.difficulty-filter__btn.active[data-difficulty="all"] {
+    background: var(--gradient-primary);
+    color: white;
+}
+.difficulty-filter__btn.active[data-difficulty="intermediate"] {
+    background: var(--difficulty-int-gradient);
+    color: white;
+}
+.difficulty-filter__btn.active[data-difficulty="advanced"] {
+    background: var(--difficulty-adv-gradient);
+    color: white;
+}
