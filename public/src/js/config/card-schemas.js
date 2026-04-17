@@ -107,8 +107,8 @@ const CardSchemas = {
      * Difficulty levels metadata (for vocabulary)
      */
     DIFFICULTY_LEVELS: {
-        intermediate: { key: 'intermediate', label: 'Intermediate', short: 'INT', band: '4.0 - 5.5' },
-        advanced: { key: 'advanced', label: 'Advanced', short: 'ADV', band: '6.0 - 7.5+' }
+        intermediate: { key: 'intermediate', label: 'Intermediate', short: 'Dễ', band: '4.0 - 5.5' },
+        advanced: { key: 'advanced', label: 'Advanced', short: 'Khó', band: '6.0 - 7.5+' }
     },
 
     /**
