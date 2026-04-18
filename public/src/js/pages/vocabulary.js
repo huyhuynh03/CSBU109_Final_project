@@ -162,14 +162,17 @@ const VocabularyPage = {
             this._allCards = cards;
 
             const total = cards.length;
-            const newCount = cards.filter(c => c.state === 'new').length;
+            const newCount = cards.filter(c => c.state === 'new' || c.state === FSRS.State.NEW).length;
             const now = new Date();
             const dueCount = cards.filter(c => {
+                // Chỉ đếm due cho card đã học (review/relearning), không đếm card mới
+                const st = c.state;
+                if (st === 'new' || st === FSRS.State.NEW) return false;
                 if (!c.dueDate) return false;
                 const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
                 return dueDate <= now;
             }).length;
-            const masteredCount = cards.filter(c => c.state === 'review' && c.stability > 20).length;
+            const masteredCount = cards.filter(c => (c.state === 'review' || c.state === FSRS.State.REVIEW) && c.stability > 20).length;
 
             const totalEl = document.getElementById('vocab-total-count');
             const newEl = document.getElementById('vocab-new-count');
@@ -242,13 +245,14 @@ const VocabularyPage = {
             if (!fId) return;
             if (!topicCards[fId]) topicCards[fId] = { total: 0, new: 0, due: 0, mastered: 0 };
             topicCards[fId].total++;
-            if (card.state === 'new') topicCards[fId].new++;
-            const now = new Date();
-            if (card.dueDate) {
+            if (card.state === 'new' || card.state === FSRS.State.NEW) topicCards[fId].new++;
+            const st = card.state;
+            if (st !== 'new' && st !== FSRS.State.NEW && card.dueDate) {
+                const now = new Date();
                 const dueDate = card.dueDate.toDate ? card.dueDate.toDate() : new Date(card.dueDate);
                 if (dueDate <= now) topicCards[fId].due++;
             }
-            if (card.state === 'review' && card.stability > 20) topicCards[fId].mastered++;
+            if ((card.state === 'review' || card.state === FSRS.State.REVIEW) && card.stability > 20) topicCards[fId].mastered++;
         });
 
         // Predefined cover gradients for topics
