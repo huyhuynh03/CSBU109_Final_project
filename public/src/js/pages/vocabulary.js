@@ -6,6 +6,10 @@ const VocabularyPage = {
     _searchTimeout: null,
     _allCards: [],
     _topics: [],
+    // Map topicId → seed filename cho các topic có dữ liệu mẫu
+    _seedTopics: {
+        'education': 'test-samples.json'
+    },
 
     async render() {
         const isSignedIn = Auth.isSignedIn();
@@ -94,20 +98,6 @@ const VocabularyPage = {
                     </button>
                 </div>
 
-                <!-- Sample Importer (dev/test) -->
-                <div class="vocab-sample-import" id="vocab-sample-import">
-                    <div class="vocab-sample-import__info">
-                        <span class="material-icons-round">science</span>
-                        <div>
-                            <div class="vocab-sample-import__title">Sample test vocabulary</div>
-                            <div class="vocab-sample-import__desc" id="vocab-sample-import-desc">7 thẻ — 4 trường hợp (family đầy đủ + 3 dạng bất quy tắc)</div>
-                        </div>
-                    </div>
-                    <button class="vocab-sample-import__btn" id="vocab-sample-import-btn" onclick="VocabularyPage._importSamples()">
-                        <span class="material-icons-round">download</span>
-                        Nạp mẫu
-                    </button>
-                </div>
 
                 <!-- Incomplete Tracking Section -->
                 <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
@@ -291,7 +281,16 @@ const VocabularyPage = {
                 const gradient = gradients[globalIdx % gradients.length];
                 const icon = topic.icon || 'menu_book';
                 const isCompleted = progress === 100 && stats.total > 0;
+                const hasSeed = VocabularyPage._seedTopics && VocabularyPage._seedTopics[topic.id];
                 globalIdx++;
+
+                // Nút nạp mẫu nếu topic có seed data và chưa có từ nào
+                const seedBtn = (hasSeed && stats.total === 0) ? `
+                    <button class="vocab-topic-card__seed-btn"
+                            onclick="event.stopPropagation(); VocabularyPage._importSamplesForTopic('${topic.id}', this)">
+                        <span class="material-icons-round">download</span> Nạp mẫu
+                    </button>
+                ` : '';
 
                 return `
                     <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
@@ -313,6 +312,7 @@ const VocabularyPage = {
                                 </div>
                                 <span class="vocab-topic-card__progress-text">${progress}%</span>
                             </div>
+                            ${seedBtn}
                         </div>
                     </div>
                 `;
@@ -522,33 +522,29 @@ const VocabularyPage = {
         }
     },
 
-    // ---- SAMPLE IMPORT ----
-    async _importSamples() {
-        const btn = document.getElementById('vocab-sample-import-btn');
-        const desc = document.getElementById('vocab-sample-import-desc');
-        if (!btn) return;
-        const originalHTML = btn.innerHTML;
-        btn.disabled = true;
-        btn.innerHTML = '<span class="material-icons-round" style="animation:spin 1s linear infinite;">hourglass_empty</span> Đang nạp...';
+    // ---- SAMPLE IMPORT (per topic) ----
+    async _importSamplesForTopic(topicId, btnEl) {
+        const filename = this._seedTopics[topicId];
+        if (!filename || !btnEl) return;
+
+        const originalHTML = btnEl.innerHTML;
+        btnEl.disabled = true;
+        btnEl.innerHTML = '<span class="material-icons-round" style="animation:spin 1s linear infinite;">hourglass_empty</span>';
 
         try {
             if (!window.SeedImporter) throw new Error('SeedImporter chưa được tải');
-            const result = await SeedImporter.importFile('test-samples.json', (p) => {
-                if (desc) desc.textContent = `[${p.current}/${p.total}] ${p.word} — ${p.status}`;
-            });
+            const result = await SeedImporter.importFile(filename);
             const msg = `Nạp xong: +${result.created} mới · ${result.skipped} đã có · ${result.failed} lỗi`;
             if (window.Toast) Toast.show(msg, result.failed > 0 ? 'warning' : 'success');
-            if (desc) desc.textContent = msg;
-            // Refresh data
+            // Refresh toàn bộ trang
             await this._loadStats();
+            this._renderTopicGrid(this._topics);
             await this._loadIncompleteTracking();
         } catch (e) {
             console.error('[VocabularyPage] Import samples failed:', e);
             if (window.Toast) Toast.show('Nạp mẫu thất bại: ' + e.message, 'error');
-            if (desc) desc.textContent = 'Lỗi: ' + e.message;
-        } finally {
-            btn.disabled = false;
-            btn.innerHTML = originalHTML;
+            btnEl.disabled = false;
+            btnEl.innerHTML = originalHTML;
         }
     },
 

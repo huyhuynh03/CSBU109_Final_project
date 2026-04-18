@@ -45,7 +45,17 @@ const Router = {
      */
     getPath() {
         const hash = window.location.hash.slice(1) || '/';
-        return hash;
+        // Strip query params for route matching
+        const qIndex = hash.indexOf('?');
+        return qIndex >= 0 ? hash.substring(0, qIndex) : hash;
+    },
+
+    /**
+     * Get full path including query string
+     * @returns {string}
+     */
+    getFullPath() {
+        return window.location.hash.slice(1) || '/';
     },
 
     /**

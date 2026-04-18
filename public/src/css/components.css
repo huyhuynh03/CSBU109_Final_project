@@ -2155,6 +2155,26 @@
     text-align: right;
 }
 
+/* Seed Import Button inside Topic Card */
+.vocab-topic-card__seed-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--color-primary, #6C63FF);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.vocab-topic-card__seed-btn:hover { opacity: 0.85; }
+.vocab-topic-card__seed-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.vocab-topic-card__seed-btn .material-icons-round { font-size: 14px; }
+
 /* Empty Topics State */
 .vocab-empty-topics {
     grid-column: 1 / -1;
@@ -2849,58 +2869,6 @@
     animation: shake 0.3s;
 }
 
-/* ===== Sample Import Section ===== */
-.vocab-sample-import {
-    margin: var(--spacing-md) 0;
-    padding: var(--spacing-md);
-    border-radius: var(--radius-md);
-    background: var(--color-bg-secondary);
-    border: 1px dashed var(--color-border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
-}
-.vocab-sample-import__info {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    flex: 1;
-    min-width: 0;
-}
-.vocab-sample-import__info .material-icons-round {
-    color: var(--difficulty-int, #6C63FF);
-    font-size: 28px;
-}
-.vocab-sample-import__title {
-    font-weight: 600;
-    color: var(--color-text);
-    font-size: 14px;
-}
-.vocab-sample-import__desc {
-    font-size: 12px;
-    color: var(--color-text-muted);
-    margin-top: 2px;
-    word-break: break-word;
-}
-.vocab-sample-import__btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 14px;
-    border-radius: var(--radius-sm);
-    border: none;
-    background: var(--difficulty-int-gradient, linear-gradient(135deg, #6C63FF, #74B9FF));
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 13px;
-    transition: transform 0.15s ease, opacity 0.15s ease;
-}
-.vocab-sample-import__btn:hover:not(:disabled) { transform: translateY(-1px); }
-.vocab-sample-import__btn:disabled { opacity: 0.6; cursor: wait; }
-.vocab-sample-import__btn .material-icons-round { font-size: 18px; }
 
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
