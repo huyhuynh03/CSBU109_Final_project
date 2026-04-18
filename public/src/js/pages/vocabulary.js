@@ -149,8 +149,8 @@ const VocabularyPage = {
         console.log('[VocabularyPage] Entered');
         // Tự động nạp seed data vào các topic chưa có từ
         await this._autoSeedTopics();
-        this._loadStats();
-        this._loadTopics();
+        await this._loadStats();   // Phải await để this._allCards có dữ liệu
+        this._loadTopics();        // Dùng this._allCards → phải chạy sau _loadStats
         this._loadIncompleteTracking();
         this._initSearch();
     },
