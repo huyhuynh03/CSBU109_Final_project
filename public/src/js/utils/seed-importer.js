@@ -66,6 +66,7 @@ const SeedImporter = {
             throw new Error('File seed không hợp lệ (thiếu mảng cards)');
         }
 
+        const defaultFolderId = (seed._meta && seed._meta.topicId) || null;
         const existing = await this._getExistingWords();
         const total = seed.cards.length;
         let created = 0;
@@ -93,8 +94,9 @@ const SeedImporter = {
             }
 
             try {
+                const folderId = entry.folderId || defaultFolderId;
                 const id = await FirestoreDB.createCard({
-                    folderId: null,
+                    folderId,
                     cardType: 'vocabulary',
                     fieldValues
                 });
