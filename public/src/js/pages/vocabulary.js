@@ -94,6 +94,21 @@ const VocabularyPage = {
                     </button>
                 </div>
 
+                <!-- Sample Importer (dev/test) -->
+                <div class="vocab-sample-import" id="vocab-sample-import">
+                    <div class="vocab-sample-import__info">
+                        <span class="material-icons-round">science</span>
+                        <div>
+                            <div class="vocab-sample-import__title">Sample test vocabulary</div>
+                            <div class="vocab-sample-import__desc" id="vocab-sample-import-desc">7 thẻ — 4 trường hợp (family đầy đủ + 3 dạng bất quy tắc)</div>
+                        </div>
+                    </div>
+                    <button class="vocab-sample-import__btn" id="vocab-sample-import-btn" onclick="VocabularyPage._importSamples()">
+                        <span class="material-icons-round">download</span>
+                        Nạp mẫu
+                    </button>
+                </div>
+
                 <!-- Incomplete Tracking Section -->
                 <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
                     <div class="vocab-incomplete-header">
@@ -504,6 +519,36 @@ const VocabularyPage = {
             grid.innerHTML = html;
         } catch (error) {
             console.error('[VocabularyPage] Error loading incomplete tracking:', error);
+        }
+    },
+
+    // ---- SAMPLE IMPORT ----
+    async _importSamples() {
+        const btn = document.getElementById('vocab-sample-import-btn');
+        const desc = document.getElementById('vocab-sample-import-desc');
+        if (!btn) return;
+        const originalHTML = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '<span class="material-icons-round" style="animation:spin 1s linear infinite;">hourglass_empty</span> Đang nạp...';
+
+        try {
+            if (!window.SeedImporter) throw new Error('SeedImporter chưa được tải');
+            const result = await SeedImporter.importFile('test-samples.json', (p) => {
+                if (desc) desc.textContent = `[${p.current}/${p.total}] ${p.word} — ${p.status}`;
+            });
+            const msg = `Nạp xong: +${result.created} mới · ${result.skipped} đã có · ${result.failed} lỗi`;
+            if (window.Toast) Toast.show(msg, result.failed > 0 ? 'warning' : 'success');
+            if (desc) desc.textContent = msg;
+            // Refresh data
+            await this._loadStats();
+            await this._loadIncompleteTracking();
+        } catch (e) {
+            console.error('[VocabularyPage] Import samples failed:', e);
+            if (window.Toast) Toast.show('Nạp mẫu thất bại: ' + e.message, 'error');
+            if (desc) desc.textContent = 'Lỗi: ' + e.message;
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = originalHTML;
         }
     },
 

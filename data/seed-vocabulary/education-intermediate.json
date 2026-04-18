@@ -1,0 +1,455 @@
+{
+  "_meta": {
+    "topicId": "education",
+    "topicName": "Education",
+    "level": "intermediate",
+    "source": "IELTS Vocabulary - Intermediate (B1-B2)",
+    "totalCards": 32,
+    "totalFamilies": 12,
+    "generatedAt": "2026-04-18",
+    "note": "30+ tu vung chu de Education danh cho IELTS band 4.0-5.5. Da gom theo family de hoc theo cum tu lien quan."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "educate",
+        "ipa": "/ˈedʒ.u.keɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giáo dục, dạy dỗ",
+        "example": "It is important to educate children about the dangers of social media.",
+        "note": "Collocation: educate someone about/in/on something",
+        "familyId": "educate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "education",
+        "ipa": "/ˌedʒ.uˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền giáo dục, sự học hành",
+        "example": "Higher education has become more accessible in recent years.",
+        "note": "Collocations: higher/primary/secondary education; receive an education",
+        "familyId": "educate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "educational",
+        "ipa": "/ˌedʒ.uˈkeɪ.ʃən.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về giáo dục, có tính giáo dục",
+        "example": "The museum offers many educational programs for students.",
+        "familyId": "educate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "educator",
+        "ipa": "/ˈedʒ.u.keɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà giáo dục, người dạy học",
+        "example": "She is a respected educator with over 20 years of experience.",
+        "familyId": "educate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "study",
+        "ipa": "/ˈstʌd.i/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "học, nghiên cứu",
+        "example": "He studies medicine at the University of Cambridge.",
+        "familyId": "study",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "student",
+        "ipa": "/ˈstjuː.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "học sinh, sinh viên",
+        "example": "There are over 30,000 students enrolled at this university.",
+        "familyId": "study",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "studious",
+        "ipa": "/ˈstjuː.di.əs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chăm chỉ, hiếu học",
+        "example": "She is a quiet, studious girl who always finishes her homework.",
+        "familyId": "study",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "teach",
+        "ipa": "/tiːtʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dạy, giảng dạy",
+        "example": "My mother taught me how to read when I was four.",
+        "note": "Bat quy tac: teach - taught - taught",
+        "familyId": "teach",
+        "familyOrder": 1,
+        "tags": ["irregular-verb"],
+        "pastSimple": "taught",
+        "pastParticiple": "taught"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "teacher",
+        "ipa": "/ˈtiː.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giáo viên",
+        "example": "Mr. Brown is the best teacher I have ever had.",
+        "familyId": "teach",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "teaching",
+        "ipa": "/ˈtiː.tʃɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc giảng dạy, nghề dạy học",
+        "example": "Teaching is a rewarding but challenging profession.",
+        "familyId": "teach",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "learn",
+        "ipa": "/lɜːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "học, tiếp thu",
+        "example": "Children learn languages much faster than adults.",
+        "familyId": "learn",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "learner",
+        "ipa": "/ˈlɜː.nər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người học",
+        "example": "This app is designed for beginner learners of English.",
+        "familyId": "learn",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "learning",
+        "ipa": "/ˈlɜː.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc học, sự học hỏi",
+        "example": "Online learning has become very popular since the pandemic.",
+        "familyId": "learn",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "knowledge",
+        "ipa": "/ˈnɒl.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiến thức, sự hiểu biết",
+        "example": "Reading widely will improve your general knowledge.",
+        "note": "Khong dem duoc (uncountable). Collocation: gain/acquire knowledge",
+        "familyId": "knowledge",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knowledgeable",
+        "ipa": "/ˈnɒl.ɪ.dʒə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiểu biết, am hiểu",
+        "example": "She is very knowledgeable about Vietnamese history.",
+        "familyId": "knowledge",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "qualify",
+        "ipa": "/ˈkwɒl.ɪ.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đủ tiêu chuẩn, đạt yêu cầu",
+        "example": "He qualified as a doctor at the age of 25.",
+        "familyId": "qualify",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "qualification",
+        "ipa": "/ˌkwɒl.ɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bằng cấp, trình độ chuyên môn",
+        "example": "Most companies require a university qualification.",
+        "familyId": "qualify",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "qualified",
+        "ipa": "/ˈkwɒl.ɪ.faɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có đủ trình độ, có bằng cấp",
+        "example": "Only qualified teachers can apply for this position.",
+        "familyId": "qualify",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "graduate",
+        "ipa": "/ˈɡrædʒ.u.eɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tốt nghiệp",
+        "example": "She graduated from Oxford University last year.",
+        "note": "Phat am khac nhau: verb /ˈɡrædʒ.u.eɪt/ - noun /ˈɡrædʒ.u.ət/",
+        "familyId": "graduate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "graduate",
+        "ipa": "/ˈɡrædʒ.u.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người đã tốt nghiệp đại học, cử nhân",
+        "example": "Many graduates struggle to find jobs after university.",
+        "familyId": "graduate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "graduation",
+        "ipa": "/ˌɡrædʒ.uˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lễ tốt nghiệp, sự tốt nghiệp",
+        "example": "My parents flew to London for my graduation ceremony.",
+        "familyId": "graduate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "undergraduate",
+        "ipa": "/ˌʌn.dəˈɡrædʒ.u.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sinh viên đại học (chưa tốt nghiệp)",
+        "example": "She is a third-year undergraduate studying economics.",
+        "familyId": "graduate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "subject",
+        "ipa": "/ˈsʌb.dʒekt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "môn học, chủ đề",
+        "example": "Maths is my favourite subject at school.",
+        "familyId": "subject",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "curriculum",
+        "ipa": "/kəˈrɪk.jə.ləm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình giảng dạy, chương trình học",
+        "example": "The new curriculum places more emphasis on practical skills.",
+        "note": "So nhieu: curricula hoac curriculums",
+        "familyId": "curriculum",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "lecture",
+        "ipa": "/ˈlek.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài giảng, buổi thuyết trình (ở đại học)",
+        "example": "I have to attend three lectures today.",
+        "familyId": "lecture",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lecturer",
+        "ipa": "/ˈlek.tʃər.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giảng viên đại học",
+        "example": "Dr. Smith is a senior lecturer in psychology.",
+        "familyId": "lecture",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "exam",
+        "ipa": "/ɪɡˈzæm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỳ thi, bài thi",
+        "example": "I have my final exams next week.",
+        "note": "Vie tat cua 'examination'. Collocation: take/sit/pass/fail an exam",
+        "familyId": "exam",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "examination",
+        "ipa": "/ɪɡˌzæm.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỳ thi, sự kiểm tra (trang trọng)",
+        "example": "The university entrance examination is highly competitive.",
+        "familyId": "exam",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "scholarship",
+        "ipa": "/ˈskɒl.ə.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "học bổng",
+        "example": "He won a scholarship to study abroad in Australia.",
+        "note": "Collocation: win/receive/be awarded a scholarship",
+        "familyId": "scholarship",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "tuition",
+        "ipa": "/tjuˈɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "học phí; sự dạy kèm",
+        "example": "Tuition fees at private universities can be very high.",
+        "familyId": "tuition",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "drop out",
+        "ipa": "/drɒp aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bỏ học, nghỉ học giữa chừng",
+        "example": "He dropped out of university in his second year.",
+        "note": "Danh tu: a dropout (nguoi bo hoc)",
+        "familyId": "drop-out",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "hit the books",
+        "ipa": "/hɪt ðə bʊks/",
+        "partOfSpeech": "idiom",
+        "difficulty": "intermediate",
+        "meaning": "học hành chăm chỉ, vùi đầu vào sách vở",
+        "example": "I have to hit the books this weekend before the exam.",
+        "familyId": "hit-the-books",
+        "familyOrder": 1,
+        "tags": ["idiom"]
+      }
+    }
+  ]
+}
