@@ -147,6 +147,8 @@ const VocabularyPage = {
 
     async onEnter() {
         console.log('[VocabularyPage] Entered');
+        // Tự động nạp seed data vào các topic chưa có từ
+        await this._autoSeedTopics();
         this._loadStats();
         this._loadTopics();
         this._loadIncompleteTracking();
@@ -281,16 +283,7 @@ const VocabularyPage = {
                 const gradient = gradients[globalIdx % gradients.length];
                 const icon = topic.icon || 'menu_book';
                 const isCompleted = progress === 100 && stats.total > 0;
-                const hasSeed = VocabularyPage._seedTopics && VocabularyPage._seedTopics[topic.id];
                 globalIdx++;
-
-                // Nút nạp mẫu nếu topic có seed data và chưa có từ nào
-                const seedBtn = (hasSeed && stats.total === 0) ? `
-                    <button class="vocab-topic-card__seed-btn"
-                            onclick="event.stopPropagation(); VocabularyPage._importSamplesForTopic('${topic.id}', this)">
-                        <span class="material-icons-round">download</span> Nạp mẫu
-                    </button>
-                ` : '';
 
                 return `
                     <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
@@ -312,7 +305,6 @@ const VocabularyPage = {
                                 </div>
                                 <span class="vocab-topic-card__progress-text">${progress}%</span>
                             </div>
-                            ${seedBtn}
                         </div>
                     </div>
                 `;
@@ -522,29 +514,22 @@ const VocabularyPage = {
         }
     },
 
-    // ---- SAMPLE IMPORT (per topic) ----
-    async _importSamplesForTopic(topicId, btnEl) {
-        const filename = this._seedTopics[topicId];
-        if (!filename || !btnEl) return;
-
-        const originalHTML = btnEl.innerHTML;
-        btnEl.disabled = true;
-        btnEl.innerHTML = '<span class="material-icons-round" style="animation:spin 1s linear infinite;">hourglass_empty</span>';
-
+    // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
+    async _autoSeedTopics() {
+        if (!window.SeedImporter) return;
         try {
-            if (!window.SeedImporter) throw new Error('SeedImporter chưa được tải');
-            const result = await SeedImporter.importFile(filename);
-            const msg = `Nạp xong: +${result.created} mới · ${result.skipped} đã có · ${result.failed} lỗi`;
-            if (window.Toast) Toast.show(msg, result.failed > 0 ? 'warning' : 'success');
-            // Refresh toàn bộ trang
-            await this._loadStats();
-            this._renderTopicGrid(this._topics);
-            await this._loadIncompleteTracking();
+            // Lấy cards hiện có để check topic nào đã có từ
+            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            const topicsWithCards = new Set(cards.map(c => c.folderId).filter(Boolean));
+
+            for (const [topicId, filename] of Object.entries(this._seedTopics)) {
+                if (topicsWithCards.has(topicId)) continue; // Đã có từ → skip
+                console.log(`[VocabularyPage] Auto-seeding topic "${topicId}" from ${filename}`);
+                const result = await SeedImporter.importFile(filename);
+                console.log(`[VocabularyPage] Seeded: +${result.created} created, ${result.skipped} skipped`);
+            }
         } catch (e) {
-            console.error('[VocabularyPage] Import samples failed:', e);
-            if (window.Toast) Toast.show('Nạp mẫu thất bại: ' + e.message, 'error');
-            btnEl.disabled = false;
-            btnEl.innerHTML = originalHTML;
+            console.error('[VocabularyPage] Auto-seed error:', e);
         }
     },
 
