@@ -74,6 +74,12 @@ const App = {
             onEnter: () => VocabularyPage.onEnter && VocabularyPage.onEnter()
         });
 
+        // Topic detail (vocabulary topic)
+        Router.register('/topic/:id', {
+            render: () => TopicDetailPage.render(),
+            onEnter: (params) => TopicDetailPage.onEnter && TopicDetailPage.onEnter(params)
+        });
+
         // Grammar section
         Router.register('/grammar', {
             render: () => GrammarPage.render(),

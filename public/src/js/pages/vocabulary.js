@@ -292,7 +292,7 @@ const VocabularyPage = {
                 return `
                     <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
                          data-topic-id="${topic.id}"
-                         onclick="Router.navigate('/folder/${topic.id}')">
+                         onclick="Router.navigate('/topic/${topic.id}')">
                         <div class="vocab-topic-card__cover" style="background:${gradient}">
                             <span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>
                             ${isCompleted ? '<div class="vocab-topic-card__badge"><span class="material-icons-round">verified</span></div>' : ''}
@@ -406,7 +406,7 @@ const VocabularyPage = {
             const highlightMeaning = this._highlightMatch(meaning, query);
 
             return `
-                <div class="vocab-word-card card-difficulty-${difficulty}" onclick="Router.navigate('/folder/${card.folderId}')">
+                <div class="vocab-word-card card-difficulty-${difficulty}" onclick="Router.navigate('/topic/${card.folderId}')">
                     <div class="vocab-word-card__main">
                         <div class="vocab-word-card__word">${highlightWord}</div>
                         ${ipa ? `<span class="vocab-word-card__ipa">${ipa}</span>` : ''}

@@ -36,17 +36,25 @@ const StudyPage = {
             const type = params.get('type') || 'vocabulary';
             const topicId = params.get('topicId');
             const familyId = params.get('familyId');
+            const cardId = params.get('cardId');
 
-            // Lấy tất cả cards mới
+            // Lấy tất cả cards mới (state new/learning - chưa hoàn thành học)
             let cards = await FirestoreDB.getCards({ cardType: type });
-            cards = cards.filter(c => c.state === 'new' || c.state === FSRS.State.NEW);
+            cards = cards.filter(c => {
+                const st = c.state;
+                return st === 'new' || st === 'learning'
+                    || st === FSRS.State.NEW || st === FSRS.State.LEARNING;
+            });
 
-            // Filter theo topic / family nếu có
+            // Filter theo topic / family / cardId nếu có
             if (topicId) {
                 cards = cards.filter(c => c.folderId === topicId);
             }
             if (familyId) {
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
+            }
+            if (cardId) {
+                cards = cards.filter(c => c.id === cardId);
             }
 
             if (cards.length === 0) {

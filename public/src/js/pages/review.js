@@ -36,9 +36,16 @@ const ReviewPage = {
             const params = new URLSearchParams(window.location.hash.split('?')[1] || '');
             const type = params.get('type') || 'vocabulary';
             const familyId = params.get('familyId');
+            const cardId = params.get('cardId');
 
-            // Lấy cards due
-            let cards = await FirestoreDB.getDueCards(type);
+            // Nếu có cardId → load trực tiếp 1 card (không cần due check)
+            let cards;
+            if (cardId) {
+                const all = await FirestoreDB.getCards({ cardType: type });
+                cards = all.filter(c => c.id === cardId);
+            } else {
+                cards = await FirestoreDB.getDueCards(type);
+            }
 
             // Filter theo familyId nếu có
             if (familyId) {
