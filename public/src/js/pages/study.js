@@ -229,7 +229,161 @@ const StudyPage = {
             this._renderTypeStep(card, 'vn-to-en');
         } else if (s.currentStep === 3) {
             this._renderTypeStep(card, 'listen-to-en');
+        } else if (s.currentStep === 4) {
+            this._renderVariantIntroStep(card);
+        } else if (s.currentStep === 5) {
+            this._renderVariantTypeStep(card);
         }
+    },
+
+    // ============================================
+    // STEP 4: VARIANT INTRO (irregular word: V2/V3 hoặc comparative/superlative)
+    // ============================================
+    _renderVariantIntroStep(card) {
+        const root = document.getElementById('study-page-root');
+        if (!root) return;
+
+        const s = this._session;
+        const variants = (typeof CardSchemas !== 'undefined') ? CardSchemas.getIrregularVariants(card) : [];
+        const variant = variants[s.currentVariantIndex];
+        if (!variant) {
+            // Không có biến thể → finalize
+            return this._afterAllVariantsDone();
+        }
+
+        const fv = card.fieldValues || {};
+        const word = fv.word || '';
+        const meaning = fv.meaning || '';
+        const partOfSpeech = fv.partOfSpeech || '';
+        const total = s.cards.length;
+        const progress = (s.currentIndex / total) * 100;
+        const totalVariants = variants.length;
+        const stepLabel = `Biến thể ${s.currentVariantIndex + 1}/${totalVariants} · ${variant.shortLabel}`;
+
+        const irrMeta = CardSchemas.getIrregularMeta(card) || { color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' };
+
+        root.innerHTML = `
+            <div class="review-card-screen">
+                <div class="review-header">
+                    <div class="review-header__info">
+                        <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${stepLabel}</span>
+                        <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
+                    </div>
+                    <div class="review-progress">
+                        <div class="review-progress__fill" style="width:${progress}%"></div>
+                    </div>
+                </div>
+
+                <div class="study-intro-card">
+                    <div class="study-intro-card__word" style="color:${irrMeta.color};">${this._escapeHtml(variant.value)}</div>
+                    <div class="study-intro-card__pos">${this._escapeHtml(variant.label)}</div>
+                    <button class="review-audio-btn" onclick="StudyPage._playVariantWord('${this._escapeHtml(variant.value)}')" style="margin:var(--spacing-md) 0;">
+                        <span class="material-icons-round">volume_up</span>
+                        Nghe phát âm
+                    </button>
+                    <div class="study-intro-card__divider"></div>
+                    <div class="study-intro-card__meaning-label">DẠNG GỐC</div>
+                    <div class="study-intro-card__meaning">${this._escapeHtml(word)} ${partOfSpeech ? `(${partOfSpeech})` : ''} — ${this._escapeHtml(meaning)}</div>
+                </div>
+
+                <div class="review-actions">
+                    <button class="review-action-btn--primary review-action-btn" onclick="StudyPage._nextStep()">
+                        Tôi đã hiểu
+                        <span class="material-icons-round">check</span>
+                    </button>
+                </div>
+            </div>
+        `;
+        setTimeout(() => this._playVariantWord(variant.value), 400);
+    },
+
+    // ============================================
+    // STEP 5: VARIANT TYPE (gõ V2/V3/comparative/superlative)
+    // ============================================
+    _renderVariantTypeStep(card) {
+        const root = document.getElementById('study-page-root');
+        if (!root) return;
+
+        const s = this._session;
+        const variants = CardSchemas.getIrregularVariants(card);
+        const variant = variants[s.currentVariantIndex];
+        if (!variant) return this._afterAllVariantsDone();
+
+        const fv = card.fieldValues || {};
+        const word = fv.word || '';
+        const meaning = fv.meaning || '';
+        const total = s.cards.length;
+        const progress = (s.currentIndex / total) * 100;
+        const totalVariants = variants.length;
+        const stepLabel = `Biến thể ${s.currentVariantIndex + 1}/${totalVariants} · Gõ ${variant.shortLabel}`;
+        const irrMeta = CardSchemas.getIrregularMeta(card) || { color: '#8B5CF6' };
+
+        root.innerHTML = `
+            <div class="review-card-screen">
+                <div class="review-header">
+                    <div class="review-header__info">
+                        <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${stepLabel}</span>
+                        <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
+                    </div>
+                    <div class="review-progress">
+                        <div class="review-progress__fill" style="width:${progress}%"></div>
+                    </div>
+                </div>
+
+                <div class="review-question review-question--vn">
+                    <div class="review-question__label">DẠNG GỐC</div>
+                    <div class="review-question__main">${this._escapeHtml(word)}</div>
+                    <div class="review-question__pos">${this._escapeHtml(meaning)}</div>
+                </div>
+
+                <div class="review-input-wrap">
+                    <label class="review-input-label">Gõ dạng <strong>${this._escapeHtml(variant.label)}</strong>:</label>
+                    <input type="text"
+                           class="review-input"
+                           id="study-answer-input"
+                           autocomplete="off" autocapitalize="off" spellcheck="false"
+                           placeholder="${this._escapeHtml(variant.shortLabel)}..."
+                           data-expected="${this._escapeHtml(variant.value)}">
+                    <div class="review-feedback" id="study-feedback"></div>
+                </div>
+
+                <div class="review-actions">
+                    <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
+                        <span class="material-icons-round">lightbulb</span> Gợi ý
+                    </button>
+                    <button class="review-action-btn review-action-btn--reveal" onclick="StudyPage._revealAnswer()">
+                        <span class="material-icons-round">visibility</span> Hiện đáp án
+                    </button>
+                    <button class="review-action-btn review-action-btn--primary" onclick="StudyPage._submitAnswer()">
+                        <span class="material-icons-round">check</span> Kiểm tra
+                    </button>
+                </div>
+            </div>
+        `;
+
+        const input = document.getElementById('study-answer-input');
+        if (input) {
+            input.focus();
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') { e.preventDefault(); this._submitAnswer(); }
+            });
+        }
+        this._currentAttempts = 1;
+        this._currentRevealed = false;
+    },
+
+    _playVariantWord(text) {
+        if (text && TTS.isAvailable()) TTS.speak(text);
+    },
+
+    _afterAllVariantsDone() {
+        // Hoàn tất bundle → finalize card và sang từ tiếp theo
+        return (async () => {
+            await this._finalizeCard();
+            const popupShown = await this._maybeShowFamilyPopup();
+            if (popupShown) return;
+            this._nextCard();
+        })();
     },
 
     // ============================================
@@ -503,21 +657,43 @@ const StudyPage = {
     // ============================================
     async _nextStep() {
         const s = this._session;
+        const card = s.cards[s.currentIndex];
         if (s.currentStep === 1) {
-            // Step 1 → 2
             s.currentStep = 2;
             this._renderStep();
         } else if (s.currentStep === 2) {
-            // Step 2 → 3
             s.currentStep = 3;
             this._renderStep();
-        } else {
-            // Step 3 done → finalize this card
+        } else if (s.currentStep === 3) {
+            // Step 3 xong → kiểm tra irregular bundle
+            const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
+            const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
+            if (variants.length > 0) {
+                // Bắt đầu bundle: variant intro + variant typing cho từng biến thể
+                s.currentVariantIndex = 0;
+                s.currentStep = 4;
+                this._renderStep();
+                return;
+            }
+            // Không phải irregular → finalize ngay
             await this._finalizeCard();
-            // Check family popup
             const popupShown = await this._maybeShowFamilyPopup();
-            if (popupShown) return; // sẽ gọi _nextCard() sau khi user chọn
+            if (popupShown) return;
             this._nextCard();
+        } else if (s.currentStep === 4) {
+            // Variant intro → variant typing
+            s.currentStep = 5;
+            this._renderStep();
+        } else if (s.currentStep === 5) {
+            // Variant typing xong → biến thể tiếp / hoặc finalize
+            const variants = CardSchemas.getIrregularVariants(card);
+            s.currentVariantIndex = (s.currentVariantIndex || 0) + 1;
+            if (s.currentVariantIndex < variants.length) {
+                s.currentStep = 4;
+                this._renderStep();
+            } else {
+                this._afterAllVariantsDone();
+            }
         }
     },
 
@@ -655,6 +831,7 @@ const StudyPage = {
             this._finalizeSession();
         } else {
             s.currentStep = 1;
+            s.currentVariantIndex = 0;
             this._renderStep();
         }
     },

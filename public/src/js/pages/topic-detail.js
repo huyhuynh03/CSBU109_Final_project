@@ -119,6 +119,12 @@ const TopicDetailPage = {
             ? CardSchemas.getDifficultyMeta(difficulty)
             : { short: difficulty === 'advanced' ? 'Khó' : 'Dễ', label: difficulty };
 
+        // Irregular word meta + variants short text (wrote / written)
+        const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+            ? CardSchemas.getIrregularMeta(card) : null;
+        const variantsShort = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularVariantsShort)
+            ? CardSchemas.getIrregularVariantsShort(card) : '';
+
         const isNew = this._isNewLike(card);
         const btnClass = isNew ? 'topic-vocab-btn--study' : 'topic-vocab-btn--review';
         const btnLabel = isNew ? 'Học' : 'Ôn tập';
@@ -127,17 +133,31 @@ const TopicDetailPage = {
             ? `/study?type=vocabulary&cardId=${encodeURIComponent(card.id)}`
             : `/review?type=vocabulary&cardId=${encodeURIComponent(card.id)}`;
 
+        const irregularBadge = irrMeta ? `
+            <span class="topic-vocab-row__irr-badge"
+                  style="background:${irrMeta.bg};color:${irrMeta.color};border:1px solid ${irrMeta.color};"
+                  title="Từ bất quy tắc (${irrMeta.type})">
+                <span class="material-icons-round" style="font-size:14px;">shuffle</span>
+                ${this._escapeHtml(irrMeta.label)}
+            </span>
+        ` : '';
+
+        const meaningText = variantsShort
+            ? `${this._escapeHtml(meaning)} <span class="topic-vocab-row__variants">(${this._escapeHtml(variantsShort)})</span>`
+            : this._escapeHtml(meaning);
+
         return `
-            <div class="topic-vocab-row topic-vocab-row--${difficulty}">
-                <div class="topic-vocab-row__diff-badge topic-vocab-row__diff-badge--${difficulty}">
-                    ${this._escapeHtml(diffMeta.short)}
-                </div>
+            <div class="topic-vocab-row">
                 <div class="topic-vocab-row__main">
                     <div class="topic-vocab-row__top">
                         <span class="topic-vocab-row__word">${this._escapeHtml(word)}</span>
                         ${pos ? `<span class="topic-vocab-row__pos">${this._escapeHtml(pos)}</span>` : ''}
+                        ${irregularBadge}
+                        <span class="topic-vocab-row__diff-badge topic-vocab-row__diff-badge--${difficulty}">
+                            ${this._escapeHtml(diffMeta.short)}
+                        </span>
                     </div>
-                    <div class="topic-vocab-row__meaning">${this._escapeHtml(meaning)}</div>
+                    <div class="topic-vocab-row__meaning">${meaningText}</div>
                 </div>
                 <div class="topic-vocab-row__action">
                     <button class="topic-vocab-btn ${btnClass}" onclick="Router.navigate('${route}')">

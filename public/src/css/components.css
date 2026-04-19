@@ -3274,30 +3274,19 @@
     align-items: center;
     gap: var(--spacing-md);
     padding: var(--spacing-md);
-    padding-right: var(--spacing-lg);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md, 12px);
-    border-left: 4px solid var(--difficulty-int);
     transition: transform .15s ease, box-shadow .15s ease;
 }
 .topic-vocab-row:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
-.topic-vocab-row--intermediate {
-    border-left-color: var(--difficulty-int);
-    background: linear-gradient(90deg, var(--difficulty-int-bg) 0%, var(--color-surface) 30%);
-}
-.topic-vocab-row--advanced {
-    border-left-color: var(--difficulty-adv);
-    background: linear-gradient(90deg, var(--difficulty-adv-bg) 0%, var(--color-surface) 30%);
-}
 
 .topic-vocab-row__diff-badge {
-    position: absolute;
-    top: 8px;
-    right: 12px;
+    display: inline-flex;
+    align-items: center;
     padding: 2px 8px;
     font-size: 10px;
     font-weight: 700;
@@ -3305,6 +3294,7 @@
     letter-spacing: 0.5px;
     border-radius: 8px;
     border: 1px solid transparent;
+    margin-left: auto; /* đẩy sang phải trong flex top row */
 }
 .topic-vocab-row__diff-badge--intermediate {
     background: var(--difficulty-int-bg);
@@ -3317,18 +3307,35 @@
     border-color: var(--difficulty-adv-border);
 }
 
+.topic-vocab-row__irr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 8px;
+    line-height: 1.2;
+}
+
+.topic-vocab-row__variants {
+    color: var(--color-text);
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 4px;
+}
+
 .topic-vocab-row__main {
     flex: 1;
     min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding-top: 12px; /* tránh đè badge */
 }
 
 .topic-vocab-row__top {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 8px;
     flex-wrap: wrap;
 }

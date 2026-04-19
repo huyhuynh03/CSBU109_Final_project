@@ -169,20 +169,47 @@ const ReviewPage = {
         const ipa = card.fieldValues?.ipa || '';
         const word = card.fieldValues?.word || '';
 
+        // Irregular handling: pick một dạng (root | variant) ngẫu nhiên cho mỗi lượt
+        const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
+        const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
+        const irrMeta = isIrr ? CardSchemas.getIrregularMeta(card) : null;
+        // forms: [{ key:'root', label:'Dạng gốc V1', value:word }, ...variants]
+        const forms = isIrr ? [
+            { key: 'root', label: 'Dạng gốc', shortLabel: 'V1', value: word },
+            ...variants
+        ] : [];
+        // Lưu form đã chọn cho lượt này (giữ nguyên khi user thử lại)
+        if (isIrr) {
+            const sessionKey = `${card.id}_r${s.currentRound}_i${s.currentIndex}`;
+            if (!s._chosenForms) s._chosenForms = {};
+            if (!s._chosenForms[sessionKey]) {
+                s._chosenForms[sessionKey] = forms[Math.floor(Math.random() * forms.length)];
+            }
+        }
+        const targetForm = isIrr ? s._chosenForms[`${card.id}_r${s.currentRound}_i${s.currentIndex}`] : { value: word };
+        const expected = targetForm.value;
+
         // Nội dung câu hỏi khác nhau giữa 2 vòng
         let questionHtml;
         if (s.currentRound === 1) {
             // Vòng 1: Hiển thị nghĩa tiếng Việt
+            const irrHint = isIrr
+                ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">Bất quy tắc — gõ dạng <strong>${this._escapeHtml(targetForm.shortLabel || targetForm.label)}</strong></div>`
+                : '';
             questionHtml = `
                 <div class="review-question review-question--vn">
                     <div class="review-question__label">NGHĨA</div>
                     <div class="review-question__main">${this._escapeHtml(meaning)}</div>
                     ${partOfSpeech ? `<div class="review-question__pos">(${partOfSpeech})</div>` : ''}
+                    ${irrHint}
                 </div>
             `;
         } else {
             // Vòng 2: Phát âm
             const fallback = !TTS.isAvailable();
+            const irrHint = isIrr
+                ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">Bất quy tắc — gõ dạng <strong>${this._escapeHtml(targetForm.shortLabel || targetForm.label)}</strong></div>`
+                : '';
             questionHtml = `
                 <div class="review-question review-question--listen">
                     <button class="review-audio-btn" onclick="ReviewPage._playAudio()">
@@ -191,6 +218,7 @@ const ReviewPage = {
                     </button>
                     ${fallback && ipa ? `<div class="review-question__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="review-question__pos">(${partOfSpeech})</div>` : ''}
+                    ${irrHint}
                 </div>
             `;
         }
@@ -227,7 +255,7 @@ const ReviewPage = {
                            autocapitalize="off"
                            spellcheck="false"
                            placeholder="Nhập từ..."
-                           data-expected="${this._escapeHtml(word)}">
+                           data-expected="${this._escapeHtml(expected)}">
                     <div class="review-feedback" id="review-feedback"></div>
                 </div>
 
@@ -274,10 +302,15 @@ const ReviewPage = {
     },
 
     _playAudio() {
-        const card = this._session.cards[this._session.currentIndex];
+        const s = this._session;
+        const card = s.cards[s.currentIndex];
         const word = card.fieldValues?.word || '';
-        if (word && TTS.isAvailable()) {
-            TTS.speak(word);
+        // Nếu là irregular và đã chọn form variant → phát đúng form đó
+        const sessionKey = `${card.id}_r${s.currentRound}_i${s.currentIndex}`;
+        const chosen = s._chosenForms && s._chosenForms[sessionKey];
+        const text = chosen ? chosen.value : word;
+        if (text && TTS.isAvailable()) {
+            TTS.speak(text);
         }
     },
 

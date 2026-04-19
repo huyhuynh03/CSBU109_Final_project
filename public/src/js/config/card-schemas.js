@@ -121,6 +121,71 @@ const CardSchemas = {
     },
 
     /**
+     * Irregular word helpers
+     * ============================================
+     * Tags: 'irregular-verb', 'irregular-adjective', 'irregular-adverb'
+     * Variants được lưu trong fields: pastSimple, pastParticiple, comparative, superlative
+     */
+    IRREGULAR_TAGS: {
+        'irregular-verb':      { type: 'verb',      label: 'V1·V2·V3',      shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
+        'irregular-adjective': { type: 'adjective', label: 'So sánh BQT',   shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
+        'irregular-adverb':    { type: 'adverb',    label: 'Trạng từ BQT', shortLabel: 'BQT', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
+    },
+
+    /**
+     * Check if a card is irregular (has irregular tag + has variants)
+     */
+    isIrregular(card) {
+        if (!card || !card.fieldValues) return false;
+        const tags = card.fieldValues.tags || [];
+        if (!Array.isArray(tags)) return false;
+        return tags.some(t => this.IRREGULAR_TAGS[t]);
+    },
+
+    /**
+     * Get irregular meta { type, label, color, bg } for a card; null if not irregular
+     */
+    getIrregularMeta(card) {
+        if (!card || !card.fieldValues) return null;
+        const tags = card.fieldValues.tags || [];
+        if (!Array.isArray(tags)) return null;
+        for (const t of tags) {
+            if (this.IRREGULAR_TAGS[t]) return { tag: t, ...this.IRREGULAR_TAGS[t] };
+        }
+        return null;
+    },
+
+    /**
+     * Get list of irregular variants for a card.
+     * Returns: [{ key, label, value, hint }] - empty array if no variants found.
+     * Verb: pastSimple (V2), pastParticiple (V3)
+     * Adj/Adv: comparative, superlative
+     */
+    getIrregularVariants(card) {
+        const meta = this.getIrregularMeta(card);
+        if (!meta) return [];
+        const fv = card.fieldValues || {};
+        const variants = [];
+        if (meta.type === 'verb') {
+            if (fv.pastSimple) variants.push({ key: 'pastSimple', label: 'Quá khứ đơn (V2)', shortLabel: 'V2', value: fv.pastSimple });
+            if (fv.pastParticiple) variants.push({ key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', shortLabel: 'V3', value: fv.pastParticiple });
+        } else if (meta.type === 'adjective' || meta.type === 'adverb') {
+            if (fv.comparative) variants.push({ key: 'comparative', label: 'So sánh hơn', shortLabel: 'So sánh hơn', value: fv.comparative });
+            if (fv.superlative) variants.push({ key: 'superlative', label: 'So sánh nhất', shortLabel: 'So sánh nhất', value: fv.superlative });
+        }
+        return variants;
+    },
+
+    /**
+     * Get short text "wrote / written" or "better / best" to show in lists.
+     */
+    getIrregularVariantsShort(card) {
+        const variants = this.getIrregularVariants(card);
+        if (!variants.length) return '';
+        return variants.map(v => v.value).join(' / ');
+    },
+
+    /**
      * Validate field values against schema
      * @param {string} cardType
      * @param {Object} fieldValues
