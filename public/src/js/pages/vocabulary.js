@@ -64,6 +64,13 @@ const VocabularyPage = {
                                 </div>
                             </div>
                             <div class="vocab-stat-pill">
+                                <span class="material-icons-round vocab-stat-pill__icon" style="color:#8B5CF6;">school</span>
+                                <div class="vocab-stat-pill__info">
+                                    <span class="vocab-stat-pill__value" id="vocab-learned-count">—</span>
+                                    <span class="vocab-stat-pill__label">Đã học</span>
+                                </div>
+                            </div>
+                            <div class="vocab-stat-pill">
                                 <span class="material-icons-round vocab-stat-pill__icon" style="color:#3B82F6;">verified</span>
                                 <div class="vocab-stat-pill__info">
                                     <span class="vocab-stat-pill__value" id="vocab-mastered-count">—</span>
@@ -172,15 +179,18 @@ const VocabularyPage = {
                 const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
                 return dueDate <= now;
             }).length;
+            const learnedCount = cards.filter(c => c.state === 'review' || c.state === FSRS.State.REVIEW).length;
             const masteredCount = cards.filter(c => (c.state === 'review' || c.state === FSRS.State.REVIEW) && c.stability > 20).length;
 
             const totalEl = document.getElementById('vocab-total-count');
             const newEl = document.getElementById('vocab-new-count');
             const dueEl = document.getElementById('vocab-due-count');
+            const learnedEl = document.getElementById('vocab-learned-count');
             const masteredEl = document.getElementById('vocab-mastered-count');
             if (totalEl) totalEl.textContent = total;
             if (newEl) newEl.textContent = newCount;
             if (dueEl) dueEl.textContent = dueCount;
+            if (learnedEl) learnedEl.textContent = learnedCount;
             if (masteredEl) masteredEl.textContent = masteredCount;
 
             // Update action button descriptions

@@ -204,6 +204,22 @@ const FirestoreDB = {
     },
 
     /**
+     * Get count of learned cards (state = 'review', regardless of due date)
+     * @returns {number}
+     */
+    async getLearnedCardCount() {
+        const ref = this._userCollection('cards');
+        if (!ref) return 0;
+        try {
+            const snapshot = await ref.where('state', '==', 'review').get();
+            return snapshot.size;
+        } catch (error) {
+            console.error('[Firestore] Error getting learned card count:', error);
+            return 0;
+        }
+    },
+
+    /**
      * Get total card count
      * @returns {number}
      */
