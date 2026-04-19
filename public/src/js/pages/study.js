@@ -83,12 +83,13 @@ const StudyPage = {
             };
             this._startedAt = Date.now();
 
-            // Check pending families → hiện banner nếu có
+            // Check pending families → hiện banner nếu có (không show khi học 1 card cụ thể)
             const pending = FamilyWordManager.getIncompleteFamilies();
-            if (pending.length > 0 && !familyId) {
+            if (pending.length > 0 && !familyId && !cardId) {
                 this._renderPendingBanner(pending);
             } else {
-                this._renderIntro();
+                // Vào thẳng bước học, bỏ qua màn hình intro trung gian
+                this._renderStep();
             }
         } catch (error) {
             console.error('[StudyPage] Init error:', error);
