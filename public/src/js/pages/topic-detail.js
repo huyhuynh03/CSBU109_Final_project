@@ -8,6 +8,7 @@ const TopicDetailPage = {
     _cards: [],
     _selectMode: false,
     _selected: new Set(),
+    _filterState: null,
 
     render() {
         return `<div class="topic-detail-page page-enter" id="topic-detail-root">
@@ -63,12 +64,18 @@ const TopicDetailPage = {
         const reviewCount = this._cards.filter(c => this._isReviewLike(c)).length;
         const masteredCount = this._cards.filter(c => this._isReviewLike(c) && (c.stability || 0) > 20).length;
 
+        // Khởi tạo filter state nếu chưa có
+        if (!this._filterState) this._filterState = CardFilter.createState();
+        const filteredCards = CardFilter.apply(this._cards, this._filterState);
+        const filteredCount = filteredCards.length;
+        const isFiltering = !CardFilter.isEmpty(this._filterState);
+
         let bodyHtml = '';
         if (total === 0) {
             bodyHtml = this._renderEmpty();
         } else {
             // Sort: new trước, review sau; trong từng nhóm theo familyOrder rồi alphabet
-            const sorted = [...this._cards].sort((a, b) => {
+            const sorted = [...filteredCards].sort((a, b) => {
                 const aNew = this._isNewLike(a) ? 0 : 1;
                 const bNew = this._isNewLike(b) ? 0 : 1;
                 if (aNew !== bNew) return aNew - bNew;
@@ -81,11 +88,14 @@ const TopicDetailPage = {
             });
             const selCount = this._selected.size;
             bodyHtml = `
+                <div id="topic-detail-filter-root"></div>
                 <div class="topic-detail-toolbar">
                     <div class="topic-detail-toolbar__info">
                         ${this._selectMode
                             ? `Đã chọn <strong>${selCount}</strong> / ${total} thẻ`
-                            : 'Quản lý chế độ học/ôn tập của thẻ trong chủ đề'}
+                            : (isFiltering
+                                ? `Hiển thị <strong>${filteredCount}</strong> / ${total} thẻ (đang lọc)`
+                                : 'Quản lý chế độ học/ôn tập của thẻ trong chủ đề')}
                     </div>
                     ${this._selectMode ? `
                         <button class="topic-detail-toolbar__btn"
@@ -113,7 +123,15 @@ const TopicDetailPage = {
                     `}
                 </div>
                 <div class="topic-detail-list">
-                    ${sorted.map(c => this._renderRow(c)).join('')}
+                    ${sorted.length === 0
+                        ? `<div class="topic-detail-empty" style="padding:32px 16px;">
+                              <div class="topic-detail-empty__icon">
+                                  <span class="material-icons-round">filter_alt_off</span>
+                              </div>
+                              <h3>Không có thẻ nào khớp bộ lọc</h3>
+                              <p>Thử bỏ bớt điều kiện lọc hoặc xoá bộ lọc.</p>
+                           </div>`
+                        : sorted.map(c => this._renderRow(c)).join('')}
                 </div>
             `;
         }
@@ -141,6 +159,17 @@ const TopicDetailPage = {
             </div>
             ${bodyHtml}
         `;
+
+        // Mount filter sau khi DOM đã render
+        if (total > 0 && document.getElementById('topic-detail-filter-root')) {
+            CardFilter.mount('topic-detail-filter-root', {
+                state: this._filterState,
+                onChange: (s) => {
+                    this._filterState = s;
+                    this._renderPage();
+                }
+            });
+        }
     },
 
     _renderRow(card) {
@@ -292,8 +321,19 @@ const TopicDetailPage = {
     _openModeForAll() {
         if (!this._cards.length) return;
         const topicName = this._topic ? this._topic.name : 'chủ đề';
-        CardModeManager.openModal(this._cards, {
-            scopeLabel: `toàn bộ chủ đề "${topicName}" (${this._cards.length} thẻ)`,
+        const isFiltering = this._filterState && !CardFilter.isEmpty(this._filterState);
+        const targetCards = isFiltering
+            ? CardFilter.apply(this._cards, this._filterState)
+            : this._cards;
+        if (!targetCards.length) {
+            Toast.warning && Toast.warning('Không có thẻ', 'Không có thẻ nào khớp bộ lọc hiện tại.');
+            return;
+        }
+        const scopeLabel = isFiltering
+            ? `${targetCards.length} thẻ đã lọc trong "${topicName}"`
+            : `toàn bộ chủ đề "${topicName}" (${targetCards.length} thẻ)`;
+        CardModeManager.openModal(targetCards, {
+            scopeLabel,
             onDone: () => this._loadCards()
         });
     },

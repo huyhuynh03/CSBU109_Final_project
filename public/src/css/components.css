@@ -3852,3 +3852,190 @@
 @media (max-width: 420px) {
     .vocab-level-cells { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   CARD FILTER COMPONENT
+   ============================================ */
+.card-filter {
+    background: var(--color-surface, rgba(255,255,255,0.04));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    margin: 12px 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.card-filter__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 14px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--color-text, #f3f4f6);
+}
+.card-filter__head:hover { background: rgba(255,255,255,0.04); }
+.card-filter__head .material-icons-round { color: #6366f1; }
+.card-filter__title { font-weight: 600; font-size: 15px; }
+.card-filter__badge {
+    background: #6366f1;
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 22px;
+    text-align: center;
+}
+.card-filter__spacer { flex: 1; }
+.card-filter__reset {
+    background: rgba(239,68,68,0.12);
+    color: #ef4444;
+    border: 1px solid rgba(239,68,68,0.4);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.card-filter__reset:hover { background: rgba(239,68,68,0.2); }
+.card-filter__caret { color: var(--color-text-muted) !important; transition: transform 0.2s ease; }
+
+.card-filter__body {
+    padding: 6px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.card-filter.is-collapsed .card-filter__body { display: none; }
+
+.card-filter__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-filter__group-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-muted, #94a3b8);
+}
+.card-filter__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.card-filter__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+}
+.card-filter__chip:hover { transform: translateY(-1px); filter: brightness(1.15); }
+.card-filter__chip.is-active { box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+
+/* ============================================
+   VOCABULARY FILTER RESULTS LIST
+   ============================================ */
+.vocab-filter-results {
+    background: var(--color-surface, rgba(255,255,255,0.04));
+    border: 1px solid rgba(99,102,241,0.25);
+    border-radius: 14px;
+    padding: 12px;
+    margin: 8px 0 16px;
+}
+.vocab-filter-results__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 4px 10px;
+    border-bottom: 1px dashed rgba(255,255,255,0.08);
+    margin-bottom: 10px;
+    color: var(--color-text, #f3f4f6);
+    font-size: 14px;
+}
+.vocab-filter-results__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 520px;
+    overflow-y: auto;
+}
+.vocab-filter-result {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.vocab-filter-result:hover {
+    background: rgba(99,102,241,0.08);
+    border-color: rgba(99,102,241,0.35);
+    transform: translateX(2px);
+}
+.vocab-filter-result__top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.vocab-filter-result__word {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-text, #f3f4f6);
+}
+.vocab-filter-result__pos {
+    font-size: 12px;
+    color: var(--color-text-muted, #94a3b8);
+    font-style: italic;
+}
+.vocab-filter-result__state {
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: 600;
+}
+.vocab-filter-result__meaning {
+    font-size: 13px;
+    color: var(--color-text-secondary, #cbd5e1);
+}
+.vocab-filter-result__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 4px;
+}
+.vocab-filter-result__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .card-filter__chip { font-size: 12px; padding: 5px 10px; }
+    .vocab-filter-result__top { gap: 6px; }
+    .vocab-filter-result__state { margin-left: 0; }
+}

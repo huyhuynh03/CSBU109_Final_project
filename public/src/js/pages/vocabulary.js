@@ -6,6 +6,7 @@ const VocabularyPage = {
     _searchTimeout: null,
     _allCards: [],
     _topics: [],
+    _filterState: null,
     // Map topicId → seed filename cho các topic có dữ liệu mẫu
     _seedTopics: {
         'education': 'test-samples.json'
@@ -110,9 +111,15 @@ const VocabularyPage = {
                     <button class="topic-detail-toolbar__btn"
                             onclick="VocabularyPage._openModeForAll()">
                         <span class="material-icons-round" style="font-size:18px;">swap_horiz</span>
-                        Đổi mode toàn bộ từ vựng
+                        <span id="vocab-bulk-mode-label">Đổi mode toàn bộ từ vựng</span>
                     </button>
                 </div>
+
+                <!-- Filter panel -->
+                <div id="vocab-filter-root"></div>
+
+                <!-- Filter results (hiển thị khi có filter active) -->
+                <div id="vocab-filter-results" class="vocab-filter-results" style="display:none;"></div>
 
                 <!-- Review level distribution -->
                 <div class="vocab-level-section" id="vocab-level-section">
@@ -181,6 +188,131 @@ const VocabularyPage = {
         this._loadTopics();        // Dùng this._allCards → phải chạy sau _loadStats
         this._loadIncompleteTracking();
         this._initSearch();
+        this._initFilter();
+    },
+
+    // ---- FILTER ----
+    _initFilter() {
+        if (!this._filterState) this._filterState = CardFilter.createState();
+        CardFilter.mount('vocab-filter-root', {
+            state: this._filterState,
+            onChange: (s) => {
+                this._filterState = s;
+                this._renderFilterResults();
+            }
+        });
+        this._renderFilterResults();
+    },
+
+    _renderFilterResults() {
+        const container = document.getElementById('vocab-filter-results');
+        const bulkLabel = document.getElementById('vocab-bulk-mode-label');
+        if (!container) return;
+
+        const isFiltering = !CardFilter.isEmpty(this._filterState);
+        if (!isFiltering) {
+            container.style.display = 'none';
+            container.innerHTML = '';
+            if (bulkLabel) bulkLabel.textContent = 'Đổi mode toàn bộ từ vựng';
+            return;
+        }
+
+        const filtered = CardFilter.apply(this._allCards, this._filterState);
+        if (bulkLabel) bulkLabel.textContent = `Đổi mode ${filtered.length} thẻ đã lọc`;
+        container.style.display = 'block';
+
+        if (filtered.length === 0) {
+            container.innerHTML = `
+                <div class="vocab-filter-results__header">
+                    <span class="material-icons-round" style="color:#ef4444;">filter_alt_off</span>
+                    <span>Không có thẻ nào khớp bộ lọc</span>
+                </div>
+            `;
+            return;
+        }
+
+        // Sort: theo word alphabet
+        const sorted = [...filtered].sort((a, b) => {
+            const wa = (a.fieldValues?.word || '').toLowerCase();
+            const wb = (b.fieldValues?.word || '').toLowerCase();
+            return wa.localeCompare(wb);
+        });
+        // Giới hạn hiển thị 50 thẻ để tránh DOM quá nặng
+        const LIMIT = 50;
+        const displayed = sorted.slice(0, LIMIT);
+
+        const stateLabels = {
+            'new': { text: 'Chưa học', color: 'var(--color-text-muted)' },
+            'learning': { text: 'Đang học', color: '#F59E0B' },
+            'review': { text: 'Ôn tập', color: '#3B82F6' },
+            'relearning': { text: 'Ôn lại', color: '#EF4444' }
+        };
+
+        const rows = displayed.map(card => {
+            const fv = card.fieldValues || {};
+            const word = fv.word || '—';
+            const pos = fv.partOfSpeech || '';
+            const meaning = fv.meaning || '';
+            const lv = CardFilter.getCardLevel(card);
+            const levelOpt = CardFilter.LEVEL_OPTIONS.find(o => o.key === lv) || null;
+            const stLabel = stateLabels[card.state] || stateLabels['new'];
+            const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+                ? CardSchemas.getIrregularMeta(card) : null;
+            const hasFamily = !!fv.familyId;
+
+            const levelBadge = levelOpt
+                ? `<span class="vocab-filter-result__badge" style="background:${levelOpt.color}22;color:${levelOpt.color};border:1px solid ${levelOpt.color}55;">
+                     <span class="material-icons-round" style="font-size:14px;">${levelOpt.icon}</span>
+                     ${levelOpt.label}
+                   </span>`
+                : '';
+            const irrBadge = irrMeta
+                ? `<span class="vocab-filter-result__badge" style="background:${irrMeta.bg};color:${irrMeta.color};border:1px solid ${irrMeta.color};">
+                     <span class="material-icons-round" style="font-size:14px;">shuffle</span>
+                     ${this._esc(irrMeta.label)}
+                   </span>`
+                : '';
+            const familyBadge = hasFamily
+                ? `<span class="vocab-filter-result__badge" style="background:#6366f122;color:#6366f1;border:1px solid #6366f155;">
+                     <span class="material-icons-round" style="font-size:14px;">account_tree</span>
+                     Family: ${this._esc(fv.familyId)}
+                   </span>`
+                : '';
+
+            return `
+                <div class="vocab-filter-result" onclick="Router.navigate('/topic/${this._esc(card.folderId || '')}')">
+                    <div class="vocab-filter-result__top">
+                        <span class="vocab-filter-result__word">${this._esc(word)}</span>
+                        ${pos ? `<span class="vocab-filter-result__pos">${this._esc(pos)}</span>` : ''}
+                        <span class="vocab-filter-result__state" style="color:${stLabel.color};">${stLabel.text}</span>
+                    </div>
+                    <div class="vocab-filter-result__meaning">${this._esc(meaning)}</div>
+                    <div class="vocab-filter-result__badges">
+                        ${levelBadge}
+                        ${irrBadge}
+                        ${familyBadge}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        container.innerHTML = `
+            <div class="vocab-filter-results__header">
+                <span class="material-icons-round" style="color:#6366f1;">filter_alt</span>
+                <span>Kết quả lọc: <strong>${filtered.length}</strong> thẻ${filtered.length > LIMIT ? ` (hiển thị ${LIMIT} đầu)` : ''}</span>
+            </div>
+            <div class="vocab-filter-results__list">${rows}</div>
+        `;
+    },
+
+    _esc(str) {
+        if (str == null) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
     },
 
     // ---- STATS ----
@@ -786,16 +918,28 @@ const VocabularyPage = {
     },
 
     _openModeForAll() {
-        const cards = (this._allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);
+        let cards = (this._allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);
         if (!cards.length) {
             Toast.warning && Toast.warning('Không có từ vựng', 'Bạn chưa có thẻ từ vựng nào.');
             return;
         }
+        // Nếu có bộ lọc đang active → chỉ đổi mode cho các thẻ khớp filter
+        const isFiltering = !CardFilter.isEmpty(this._filterState);
+        let scopeLabel = `toàn bộ từ vựng (${cards.length} thẻ)`;
+        if (isFiltering) {
+            cards = CardFilter.apply(cards, this._filterState);
+            if (!cards.length) {
+                Toast.warning && Toast.warning('Không có thẻ nào', 'Không có thẻ nào khớp bộ lọc hiện tại.');
+                return;
+            }
+            scopeLabel = `${cards.length} thẻ đã lọc`;
+        }
         CardModeManager.openModal(cards, {
-            scopeLabel: `toàn bộ từ vựng (${cards.length} thẻ)`,
+            scopeLabel,
             onDone: async () => {
-                await this._loadStats();   // refresh _allCards trước
-                this._loadTopics();        // sau đó render lại grid topic %
+                await this._loadStats();        // refresh _allCards trước
+                this._loadTopics();             // sau đó render lại grid topic %
+                this._renderFilterResults();    // cập nhật lại list kết quả lọc
             }
         });
     },
