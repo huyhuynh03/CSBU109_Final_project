@@ -383,23 +383,32 @@ const VocabularyPage = {
     },
 
     /**
-     * Subsequence match: kí tự của query xuất hiện theo đúng thứ tự trong text
-     * (không cần liên tiếp). VD: "wrt" match "write", "hsinh" match "hoc sinh".
-     * Trả về điểm: càng nhỏ càng khớp tốt (0 = exact prefix).
-     * Trả về -1 nếu không khớp.
+     * Tách text thành các token (split theo dấu câu/khoảng trắng).
      */
-    _subsequenceScore(text, query) {
-        if (!query) return 0;
-        if (!text) return -1;
-        if (text.includes(query)) {
-            // Bonus: substring trực tiếp
-            const idx = text.indexOf(query);
-            return idx; // càng gần đầu càng tốt
-        }
-        // Fuzzy: kiểm tra từng kí tự query có xuất hiện đúng thứ tự trong text
+    _tokenize(text) {
+        if (!text) return [];
+        return text.split(/[\s,;./()\[\]{}|]+/).filter(Boolean);
+    },
+
+    /**
+     * Cho 1 token, trả về điểm match với query (càng nhỏ càng tốt).
+     *  0  = bằng nhau
+     *  5  = token bắt đầu bằng query (prefix)
+     *  20 + idx = chứa query làm substring
+     *  500 + spread + firstIdx = subsequence (chỉ cho query >= 3 kí tự)
+     *  -1 = không match
+     */
+    _tokenScore(token, query) {
+        if (!token || !query) return -1;
+        if (token === query) return 0;
+        if (token.startsWith(query)) return 5;
+        const idx = token.indexOf(query);
+        if (idx !== -1) return 20 + idx;
+        if (query.length < 3) return -1; // tránh fuzzy với query quá ngắn
+        // Subsequence trong token đơn lẻ
         let ti = 0, qi = 0, firstIdx = -1, lastIdx = -1;
-        while (ti < text.length && qi < query.length) {
-            if (text[ti] === query[qi]) {
+        while (ti < token.length && qi < query.length) {
+            if (token[ti] === query[qi]) {
                 if (firstIdx === -1) firstIdx = ti;
                 lastIdx = ti;
                 qi++;
@@ -407,8 +416,21 @@ const VocabularyPage = {
             ti++;
         }
         if (qi < query.length) return -1;
-        // Điểm: spread (lastIdx - firstIdx) + offset đầu, +1000 để xếp sau substring match
-        return 1000 + (lastIdx - firstIdx) + firstIdx;
+        return 500 + (lastIdx - firstIdx) + firstIdx;
+    },
+
+    /**
+     * Điểm tốt nhất khi match query vào BẤT KỲ token nào trong text.
+     * Trả về -1 nếu không token nào match.
+     */
+    _bestTokenScore(text, query) {
+        const tokens = this._tokenize(text);
+        let best = -1;
+        for (const t of tokens) {
+            const s = this._tokenScore(t, query);
+            if (s !== -1 && (best === -1 || s < best)) best = s;
+        }
+        return best;
     },
 
     _performSearch(query) {
@@ -425,22 +447,30 @@ const VocabularyPage = {
             const meaning = this._normalize(fv.meaning || card.meaning || card.back || '');
             const ipa = this._normalize(fv.ipa || card.ipa || '');
             const pos = this._normalize(fv.partOfSpeech || card.partOfSpeech || '');
-            // Bao gồm cả các dạng bất quy tắc (V2/V3, comparative/superlative)
             const variantsTxt = this._normalize(
                 [fv.pastSimple, fv.pastParticiple, fv.comparative, fv.superlative]
                     .filter(Boolean).join(' ')
             );
 
-            const scores = [
-                this._subsequenceScore(word, qNorm),
-                this._subsequenceScore(meaning, qNorm) + 50,    // Tiếng Việt ưu tiên thấp hơn 1 chút
-                this._subsequenceScore(variantsTxt, qNorm) + 100,
-                this._subsequenceScore(ipa, qNorm) + 200,
-                this._subsequenceScore(pos, qNorm) + 300,
-            ].filter(s => s >= 0 && !isNaN(s));
+            // Tính điểm từng nguồn — chỉ cộng penalty SAU khi xác nhận match
+            const candidates = [];
+            const sWord = this._bestTokenScore(word, qNorm);
+            if (sWord !== -1) candidates.push(sWord);                // EN ưu tiên cao nhất
 
-            if (scores.length > 0) {
-                scored.push({ card, score: Math.min(...scores) });
+            const sMeaning = this._bestTokenScore(meaning, qNorm);
+            if (sMeaning !== -1) candidates.push(sMeaning + 10);     // VI: penalty nhỏ
+
+            const sVar = this._bestTokenScore(variantsTxt, qNorm);
+            if (sVar !== -1) candidates.push(sVar + 30);
+
+            const sIpa = this._bestTokenScore(ipa, qNorm);
+            if (sIpa !== -1) candidates.push(sIpa + 100);
+
+            const sPos = this._bestTokenScore(pos, qNorm);
+            if (sPos !== -1) candidates.push(sPos + 200);
+
+            if (candidates.length > 0) {
+                scored.push({ card, score: Math.min(...candidates) });
             }
         }
 
