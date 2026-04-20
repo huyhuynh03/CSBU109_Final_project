@@ -62,24 +62,10 @@ const ReviewPage = {
             };
             cards = cards.filter(isLearned);
 
-            // Fallback "ôn sớm": nếu không có thẻ tới hạn, load tất cả thẻ đã học
-            if (cards.length === 0 && !cardId) {
-                const all = await FirestoreDB.getCards({ cardType: type });
-                let learned = all.filter(isLearned);
-                if (familyId) {
-                    learned = learned.filter(c => c.fieldValues?.familyId === familyId);
-                }
-                if (learned.length > 0) {
-                    // Sort theo dueDate tăng dần (gần đến hạn nhất trước)
-                    learned.sort((a, b) => {
-                        const da = a.dueDate?.toDate ? a.dueDate.toDate() : new Date(a.dueDate || 0);
-                        const db = b.dueDate?.toDate ? b.dueDate.toDate() : new Date(b.dueDate || 0);
-                        return da - db;
-                    });
-                    cards = learned;
-                    isEarlyReview = true;
-                }
-            }
+            // KHÔNG auto fallback "ôn sớm" — nếu không có thẻ tới hạn thì hiển thị Empty.
+            // (Tránh bug: vừa ôn 1 thẻ xong bấm "Ôn tiếp" lại lặp lại chính thẻ đó
+            //  vì sau khi FSRS cập nhật dueDate về tương lai, nó không còn due
+            //  nhưng vẫn là "learned" → fallback đưa nó trở lại phiên mới.)
 
             if (cards.length === 0) {
                 this._renderEmpty();
@@ -373,8 +359,8 @@ const ReviewPage = {
             // Lưu kết quả
             this._recordResult(true);
 
-            // Chuyển câu tiếp sau 0.8s
-            setTimeout(() => this._nextCard(), 800);
+            // Hiện mặt sau đầy đủ thông tin rồi mới cho sang câu tiếp
+            setTimeout(() => this._renderBackside('correct'), 500);
         } else {
             feedback.innerHTML = `<div class="review-feedback__wrong">
                 <span class="material-icons-round">cancel</span>
@@ -434,7 +420,106 @@ const ReviewPage = {
         this._currentRevealed = true;
 
         this._recordResult(false);
-        setTimeout(() => this._nextCard(), 1500);
+        setTimeout(() => this._renderBackside('revealed'), 800);
+    },
+
+    // ============================================
+    // BACKSIDE (sau khi trả lời) — hiện đầy đủ thông tin thẻ
+    // ============================================
+    _renderBackside(mode) {
+        const root = document.getElementById('review-page-root');
+        if (!root) return;
+
+        const s = this._session;
+        const card = s.cards[s.currentIndex];
+        const fv = card.fieldValues || {};
+        const word = fv.word || '';
+        const ipa = fv.ipa || '';
+        const meaning = fv.meaning || '';
+        const example = fv.example || '';
+        const partOfSpeech = fv.partOfSpeech || '';
+        const total = s.cards.length;
+        const progress = ((s.currentIndex + 1) / total) * 100;
+
+        const difficulty = fv.difficulty || 'intermediate';
+        const diffMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getDifficultyMeta)
+            ? CardSchemas.getDifficultyMeta(difficulty)
+            : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
+
+        // Irregular: hiện đầy đủ các dạng
+        const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
+        const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
+        const irrMeta = isIrr ? CardSchemas.getIrregularMeta(card) : null;
+        const variantsHtml = isIrr ? `
+            <div class="study-intro-card__divider"></div>
+            <div class="study-intro-card__meaning-label" style="color:${irrMeta.color};">
+                ${this._escapeHtml(irrMeta.note || 'Bất quy tắc')} · ${this._escapeHtml(irrMeta.label)}
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+                <span style="padding:6px 12px;border-radius:8px;background:${irrMeta.bg};color:${irrMeta.color};font-weight:700;">
+                    V1: ${this._escapeHtml(word)}
+                </span>
+                ${variants.map(v => `
+                    <span style="padding:6px 12px;border-radius:8px;background:${irrMeta.bg};color:${irrMeta.color};font-weight:700;">
+                        ${this._escapeHtml(v.shortLabel || v.label)}: ${this._escapeHtml(v.value)}
+                    </span>
+                `).join('')}
+            </div>
+        ` : '';
+
+        const headerBadge = mode === 'correct'
+            ? `<span class="review-round-badge" style="background:linear-gradient(135deg,#10B981,#059669);">✓ Chính xác</span>`
+            : `<span class="review-round-badge" style="background:linear-gradient(135deg,#F59E0B,#D97706);">Xem đáp án</span>`;
+
+        root.innerHTML = `
+            <div class="review-card-screen" data-difficulty="${difficulty}">
+                <div class="review-header">
+                    <div class="review-header__info">
+                        ${headerBadge}
+                        <span class="review-counter">Vòng ${s.currentRound}/2 · Câu ${s.currentIndex + 1}/${total}</span>
+                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
+                    </div>
+                    <div class="review-progress">
+                        <div class="review-progress__fill" style="width:${progress}%"></div>
+                    </div>
+                </div>
+
+                <div class="study-intro-card">
+                    <div class="study-intro-card__word">${this._escapeHtml(word)}</div>
+                    ${ipa ? `<div class="study-intro-card__ipa">${this._escapeHtml(ipa)}</div>` : ''}
+                    ${partOfSpeech ? `<div class="study-intro-card__pos">${this._escapeHtml(partOfSpeech)}</div>` : ''}
+                    <button class="review-audio-btn" onclick="ReviewPage._playAudio()" style="margin:var(--spacing-md) 0;">
+                        <span class="material-icons-round">volume_up</span>
+                        Nghe phát âm
+                    </button>
+                    <div class="study-intro-card__divider"></div>
+                    <div class="study-intro-card__meaning-label">NGHĨA</div>
+                    <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
+                    ${example ? `
+                        <div class="study-intro-card__example-label">VÍ DỤ</div>
+                        <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
+                    ` : ''}
+                    ${variantsHtml}
+                </div>
+
+                <div class="review-actions">
+                    <button class="review-action-btn--primary review-action-btn" onclick="ReviewPage._nextCard()">
+                        Tiếp theo
+                        <span class="material-icons-round">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        // Cho phép Enter để next
+        const handler = (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                document.removeEventListener('keydown', handler);
+                this._nextCard();
+            }
+        };
+        document.addEventListener('keydown', handler);
     },
 
     _recordResult(correct) {
@@ -684,8 +769,8 @@ const ReviewPage = {
                 <div class="review-intro__icon">
                     <span class="material-icons-round">check_circle_outline</span>
                 </div>
-                <h1 class="review-intro__title">Không có từ cần ôn</h1>
-                <p class="review-intro__desc">Hiện không có từ nào đến hạn ôn tập. Quay lại sau hoặc học thêm từ mới!</p>
+                <h1 class="review-intro__title">Bạn hiện không có từ cần ôn</h1>
+                <p class="review-intro__desc">Tất cả các thẻ đến hạn đã được ôn xong. Hãy quay lại sau hoặc học thêm từ mới!</p>
                 <button class="review-btn-primary" onclick="Router.navigate('/study?type=vocabulary')">
                     <span class="material-icons-round">auto_stories</span>
                     Học từ mới
