@@ -13,6 +13,11 @@ const Auth = {
             this.currentUser = user;
             this._updateUI(user);
             console.log('[Auth] State changed:', user ? user.email : 'signed out');
+
+            // Chạy migration FSRS một lần (idempotent) khi user đăng nhập
+            if (user && typeof FsrsMigration !== 'undefined') {
+                FsrsMigration.run().catch(e => console.error('[Auth] FsrsMigration error:', e));
+            }
         });
     },
 
