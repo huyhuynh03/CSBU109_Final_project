@@ -105,6 +105,15 @@ const VocabularyPage = {
                     </button>
                 </div>
 
+                <!-- Bulk mode change -->
+                <div style="display:flex;justify-content:flex-end;margin:8px 0 4px;">
+                    <button class="topic-detail-toolbar__btn"
+                            onclick="VocabularyPage._openModeForAll()">
+                        <span class="material-icons-round" style="font-size:18px;">swap_horiz</span>
+                        Đổi mode toàn bộ từ vựng
+                    </button>
+                </div>
+
 
                 <!-- Incomplete Tracking Section -->
                 <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
@@ -684,6 +693,18 @@ const VocabularyPage = {
         } catch (e) {
             console.error('[VocabularyPage] Auto-seed error:', e);
         }
+    },
+
+    _openModeForAll() {
+        const cards = (this._allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);
+        if (!cards.length) {
+            Toast.warning && Toast.warning('Không có từ vựng', 'Bạn chưa có thẻ từ vựng nào.');
+            return;
+        }
+        CardModeManager.openModal(cards, {
+            scopeLabel: `toàn bộ từ vựng (${cards.length} thẻ)`,
+            onDone: () => { this._loadStats(); this._loadTopics(); }
+        });
     },
 
     _learnFamily(familyId) {

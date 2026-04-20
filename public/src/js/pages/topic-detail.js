@@ -6,6 +6,8 @@ const TopicDetailPage = {
     _topicId: null,
     _topic: null,
     _cards: [],
+    _selectMode: false,
+    _selected: new Set(),
 
     render() {
         return `<div class="topic-detail-page page-enter" id="topic-detail-root">
@@ -77,7 +79,39 @@ const TopicDetailPage = {
                 const wb = (b.fieldValues?.word || '').toLowerCase();
                 return wa.localeCompare(wb);
             });
+            const selCount = this._selected.size;
             bodyHtml = `
+                <div class="topic-detail-toolbar">
+                    <div class="topic-detail-toolbar__info">
+                        ${this._selectMode
+                            ? `Đã chọn <strong>${selCount}</strong> / ${total} thẻ`
+                            : 'Quản lý chế độ học/ôn tập của thẻ trong chủ đề'}
+                    </div>
+                    ${this._selectMode ? `
+                        <button class="topic-detail-toolbar__btn"
+                                ${selCount === 0 ? 'disabled' : ''}
+                                onclick="TopicDetailPage._openModeForSelected()">
+                            <span class="material-icons-round" style="font-size:18px;">swap_horiz</span>
+                            Đổi mode (${selCount})
+                        </button>
+                        <button class="topic-detail-toolbar__btn topic-detail-toolbar__btn--ghost"
+                                onclick="TopicDetailPage._toggleSelectMode()">
+                            <span class="material-icons-round" style="font-size:18px;">close</span>
+                            Huỷ chọn
+                        </button>
+                    ` : `
+                        <button class="topic-detail-toolbar__btn topic-detail-toolbar__btn--ghost"
+                                onclick="TopicDetailPage._toggleSelectMode()">
+                            <span class="material-icons-round" style="font-size:18px;">checklist</span>
+                            Chọn nhiều
+                        </button>
+                        <button class="topic-detail-toolbar__btn"
+                                onclick="TopicDetailPage._openModeForAll()">
+                            <span class="material-icons-round" style="font-size:18px;">swap_horiz</span>
+                            Đổi mode toàn bộ chủ đề
+                        </button>
+                    `}
+                </div>
                 <div class="topic-detail-list">
                     ${sorted.map(c => this._renderRow(c)).join('')}
                 </div>
@@ -147,8 +181,15 @@ const TopicDetailPage = {
             ? `${this._escapeHtml(meaning)} <span class="topic-vocab-row__variants">(${this._escapeHtml(variantsShort)})</span>`
             : this._escapeHtml(meaning);
 
+        const checkbox = this._selectMode
+            ? `<input type="checkbox" class="topic-vocab-row__select"
+                      ${this._selected.has(card.id) ? 'checked' : ''}
+                      onchange="TopicDetailPage._toggleSelected('${card.id}', this.checked)">`
+            : '';
+
         return `
             <div class="topic-vocab-row">
+                ${checkbox}
                 <div class="topic-vocab-row__main">
                     <div class="topic-vocab-row__top">
                         <span class="topic-vocab-row__word">${this._escapeHtml(word)}</span>
@@ -164,6 +205,11 @@ const TopicDetailPage = {
                     <button class="topic-vocab-btn ${btnClass}" onclick="Router.navigate('${route}')">
                         <span class="material-icons-round">${btnIcon}</span>
                         <span>${btnLabel}</span>
+                    </button>
+                    <button class="topic-vocab-row__mode-btn"
+                            title="Đổi chế độ học/ôn tập"
+                            onclick="TopicDetailPage._openModeForCard('${card.id}')">
+                        <span class="material-icons-round" style="font-size:20px;">swap_horiz</span>
                     </button>
                 </div>
             </div>
@@ -207,6 +253,49 @@ const TopicDetailPage = {
         const st = card.state;
         return st === 'new' || st === 'learning'
             || st === FSRS.State.NEW || st === FSRS.State.LEARNING;
+    },
+
+    // -------------------------------------------
+    // MODE CHANGER
+    // -------------------------------------------
+    _toggleSelectMode() {
+        this._selectMode = !this._selectMode;
+        if (!this._selectMode) this._selected.clear();
+        this._renderPage();
+    },
+
+    _toggleSelected(cardId, checked) {
+        if (checked) this._selected.add(cardId);
+        else this._selected.delete(cardId);
+        this._renderPage();
+    },
+
+    _openModeForCard(cardId) {
+        const card = this._cards.find(c => c.id === cardId);
+        if (!card) return;
+        const word = card.fieldValues?.word || cardId;
+        CardModeManager.openModal([card], {
+            scopeLabel: `từ "${word}"`,
+            onDone: () => this._loadCards()
+        });
+    },
+
+    _openModeForSelected() {
+        const cards = this._cards.filter(c => this._selected.has(c.id));
+        if (!cards.length) return;
+        CardModeManager.openModal(cards, {
+            scopeLabel: `${cards.length} thẻ đã chọn`,
+            onDone: () => { this._selected.clear(); this._selectMode = false; this._loadCards(); }
+        });
+    },
+
+    _openModeForAll() {
+        if (!this._cards.length) return;
+        const topicName = this._topic ? this._topic.name : 'chủ đề';
+        CardModeManager.openModal(this._cards, {
+            scopeLabel: `toàn bộ chủ đề "${topicName}" (${this._cards.length} thẻ)`,
+            onDone: () => this._loadCards()
+        });
     },
 
     _isReviewLike(card) {
