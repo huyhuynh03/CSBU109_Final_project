@@ -241,13 +241,6 @@ const VocabularyPage = {
         const LIMIT = 50;
         const displayed = sorted.slice(0, LIMIT);
 
-        const stateLabels = {
-            'new': { text: 'Chưa học', color: 'var(--color-text-muted)' },
-            'learning': { text: 'Đang học', color: '#F59E0B' },
-            'review': { text: 'Ôn tập', color: '#3B82F6' },
-            'relearning': { text: 'Ôn lại', color: '#EF4444' }
-        };
-
         const rows = displayed.map(card => {
             const fv = card.fieldValues || {};
             const word = fv.word || '—';
@@ -255,7 +248,6 @@ const VocabularyPage = {
             const meaning = fv.meaning || '';
             const lv = CardFilter.getCardLevel(card);
             const levelOpt = CardFilter.LEVEL_OPTIONS.find(o => o.key === lv) || null;
-            const stLabel = stateLabels[card.state] || stateLabels['new'];
             const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
                 ? CardSchemas.getIrregularMeta(card) : null;
             const hasFamily = !!fv.familyId;
@@ -284,7 +276,6 @@ const VocabularyPage = {
                     <div class="vocab-filter-result__top">
                         <span class="vocab-filter-result__word">${this._esc(word)}</span>
                         ${pos ? `<span class="vocab-filter-result__pos">${this._esc(pos)}</span>` : ''}
-                        <span class="vocab-filter-result__state" style="color:${stLabel.color};">${stLabel.text}</span>
                     </div>
                     <div class="vocab-filter-result__meaning">${this._esc(meaning)}</div>
                     <div class="vocab-filter-result__badges">

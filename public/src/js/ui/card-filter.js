@@ -41,8 +41,9 @@ const CardFilter = {
         { key: 'lv2',        label: 'Cấp độ 2',          color: '#10b981', icon: 'looks_two' },
         { key: 'lv3',        label: 'Cấp độ 3',          color: '#3b82f6', icon: 'looks_3' },
         { key: 'lv4',        label: 'Cấp độ 4',          color: '#8b5cf6', icon: 'looks_4' },
-        { key: 'lv5',        label: 'Cấp độ 5',          color: '#ec4899', icon: 'looks_5' },
-        { key: 'lv-unknown', label: 'Chưa phân bậc',     color: '#ef4444', icon: 'help_outline' }
+        { key: 'lv5',        label: 'Cấp độ 5',          color: '#ec4899', icon: 'looks_5' }
+        // Ghi chú: không expose 'lv-unknown' — các thẻ chưa học đã có key 'new'.
+        // Quy ước: mọi card review/relearning hợp lệ đều phải có stepIndex 0..4.
     ],
 
     SPECIAL_OPTIONS: [
