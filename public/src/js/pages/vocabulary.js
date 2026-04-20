@@ -266,13 +266,13 @@ const VocabularyPage = {
         const colors = ['#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899'];
 
         const cells = buckets.map((count, i) => {
-            const label = (FSRS.getStepLabel ? FSRS.getStepLabel(i) : `Bậc ${i}`);
+            const label = (FSRS.getStepLabel ? FSRS.getStepLabel(i) : `Cấp độ ${i + 1}`);
             const pct = totalReview > 0 ? Math.round((count / totalReview) * 100) : 0;
             const color = colors[i % colors.length];
             return `
                 <div class="vocab-level-cell" style="--lvl-color:${color};">
                     <div class="vocab-level-cell__head">
-                        <span class="vocab-level-cell__idx">Bậc ${i}</span>
+                        <span class="vocab-level-cell__idx">Cấp độ ${i + 1}</span>
                         <span class="vocab-level-cell__lbl">${label}</span>
                     </div>
                     <div class="vocab-level-cell__count">${count}</div>
@@ -793,7 +793,10 @@ const VocabularyPage = {
         }
         CardModeManager.openModal(cards, {
             scopeLabel: `toàn bộ từ vựng (${cards.length} thẻ)`,
-            onDone: () => { this._loadStats(); this._loadTopics(); }
+            onDone: async () => {
+                await this._loadStats();   // refresh _allCards trước
+                this._loadTopics();        // sau đó render lại grid topic %
+            }
         });
     },
 

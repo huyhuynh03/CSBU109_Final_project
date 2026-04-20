@@ -174,13 +174,13 @@ const CardModeManager = {
                   <div class="lf-mode-option-group__steps">
                     ${FSRS.Steps.map((m, i) => `
                       <button class="lf-mode-step-btn" data-act="to-review" data-step="${i}">
-                        <div class="lf-mode-step-btn__idx">Bậc ${i}</div>
+                        <div class="lf-mode-step-btn__idx">Cấp độ ${i + 1}</div>
                         <div class="lf-mode-step-btn__lbl">${FSRS.getStepLabel(i)}</div>
                       </button>
                     `).join('')}
                   </div>
                   <div class="lf-mode-option-group__note">
-                    Bậc 0 = ôn ngay sau 30 phút · Bậc 4 = cần ôn lại sau 90 ngày
+                    Cấp độ 1 = ôn ngay sau 30 phút · Cấp độ 5 = cần ôn lại sau 90 ngày
                   </div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ const CardModeManager = {
                 const stepIdx = Number(btn.dataset.step);
                 const stepLabel = FSRS.getStepLabel(stepIdx);
                 const ok = await this._confirm({
-                    title: `Chuyển sang ôn tập ở bậc ${stepIdx}?`,
+                    title: `Chuyển sang ôn tập ở Cấp độ ${stepIdx + 1}?`,
                     icon: 'replay',
                     iconColor: '#10b981',
                     message: `<strong>${scopeLabel}</strong> sẽ được đặt vào chế độ ôn tập.
@@ -246,7 +246,7 @@ const CardModeManager = {
                 try {
                     const n = await this.setReviewAtStep(cards, stepIdx);
                     Toast.success && Toast.success('Đã đổi chế độ',
-                        `${n} thẻ đã chuyển sang ôn tập (bậc ${stepIdx} · ${stepLabel}).`);
+                        `${n} thẻ đã chuyển sang ôn tập (Cấp độ ${stepIdx + 1} · ${stepLabel}).`);
                     close();
                     opts.onDone && opts.onDone();
                 } catch (err) {
