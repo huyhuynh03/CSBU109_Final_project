@@ -1,8 +1,32 @@
 // ============================================
 // FSRS - Free Spaced Repetition Scheduler
 // ============================================
-// Phiên bản hiện tại: scheduling theo bậc cố định (Anki-style fixed steps)
-// Lịch ôn: 10 phút -> 1 ngày -> 3 ngày -> 1 tuần -> 1 tháng (cap)
+// Phiên bản hiện tại: scheduling theo bậc cố định (Anki-style fixed steps).
+//
+// ⚠ QUY ƯỚC QUAN TRỌNG về đánh số cấp độ:
+//   - Trong DATA / CODE: dùng `stepIndex` 0-based (0..4)
+//   - Trong UI / hiển thị cho user: dùng "Cấp độ N" 1-based (1..5) = stepIndex + 1
+//   Bất cứ chỗ nào cần render ra màn hình hoặc toast, phải dịch `i + 1`.
+//
+// Bảng ánh xạ stepIndex ↔ "Cấp độ N" ↔ khoảng thời gian ôn lại:
+//
+//   stepIndex | UI        | Thời gian chờ ôn | Ghi chú
+//   ----------|-----------|------------------|------------------------------------------
+//     -1      | (n/a)     | —                | NEW, chưa bước vào lịch ôn
+//     0       | Cấp độ 1  | 30 phút          | Lần ôn đầu sau khi học, cũng là điểm reset khi sai
+//     1       | Cấp độ 2  | 24 giờ (1 ngày)  |
+//     2       | Cấp độ 3  | 7 ngày           |
+//     3       | Cấp độ 4  | 30 ngày          |
+//     4       | Cấp độ 5  | 90 ngày (cap)    | Bậc cao nhất
+//
+// Quy tắc chuyển bậc khi ôn:
+//   - AGAIN (sai 1 lần)        → reset về stepIndex = 0 (Cấp độ 1)
+//   - HARD                     → giữ nguyên stepIndex hiện tại
+//   - GOOD                     → stepIndex + 1 (tiến 1 cấp)
+//   - EASY                     → stepIndex + 2 (nhảy 2 cấp)
+//   (Tất cả đều bị cap tại stepIndex = 4 = Cấp độ 5)
+//
+// Xem thêm: plans/review-levels-mapping.md
 
 const FSRS = {
     // Default parameters (FSRS v5) - giữ lại cho tương thích / mở rộng sau
@@ -13,12 +37,13 @@ const FSRS = {
     },
 
     // Bậc ôn tập cố định (đơn vị: phút)
+    // LƯU Ý: stepIndex trong code là 0-based, nhưng UI hiển thị là "Cấp độ N" (1-based).
     Steps: [
-        30,         // bậc 0: 30 phút       (lần ôn đầu sau khi học, cũng là điểm reset khi sai)
-        1440,       // bậc 1: 24 giờ (1 ngày)
-        10080,      // bậc 2: 7 ngày
-        43200,      // bậc 3: 30 ngày
-        129600      // bậc 4: 90 ngày (cap)
+        30,         // stepIndex 0 = UI "Cấp độ 1" → 30 phút  (lần ôn đầu sau khi học, cũng là điểm reset khi sai)
+        1440,       // stepIndex 1 = UI "Cấp độ 2" → 24 giờ (1 ngày)
+        10080,      // stepIndex 2 = UI "Cấp độ 3" → 7 ngày
+        43200,      // stepIndex 3 = UI "Cấp độ 4" → 30 ngày
+        129600      // stepIndex 4 = UI "Cấp độ 5" → 90 ngày (cap - bậc cao nhất)
     ],
 
     // Card states
