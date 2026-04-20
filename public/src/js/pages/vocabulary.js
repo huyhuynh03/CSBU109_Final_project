@@ -345,8 +345,11 @@ const VocabularyPage = {
         const input = document.getElementById('vocab-search-input');
         if (!input) return;
 
-        input.addEventListener('input', (e) => {
-            const query = e.target.value.trim();
+        // Đánh dấu trạng thái IME composition (Tiếng Việt Telex/VNI/...)
+        this._isComposing = false;
+
+        const triggerSearch = () => {
+            const query = input.value.trim();
             const clearBtn = document.getElementById('vocab-search-clear');
             if (clearBtn) clearBtn.style.display = query ? 'flex' : 'none';
 
@@ -358,6 +361,22 @@ const VocabularyPage = {
             this._searchTimeout = setTimeout(() => {
                 this._performSearch(query);
             }, 300);
+        };
+
+        input.addEventListener('compositionstart', () => {
+            this._isComposing = true;
+        });
+
+        input.addEventListener('compositionend', () => {
+            this._isComposing = false;
+            // Sau khi IME flush xong → search ngay (không bị hide bởi input event trống)
+            triggerSearch();
+        });
+
+        input.addEventListener('input', (e) => {
+            // Bỏ qua các input event xảy ra TRONG khi IME đang compose
+            if (this._isComposing) return;
+            triggerSearch();
         });
 
         input.addEventListener('keydown', (e) => {
@@ -436,7 +455,8 @@ const VocabularyPage = {
     _performSearch(query) {
         const qNorm = this._normalize(query);
         if (!qNorm) {
-            this._hideSearchResults();
+            // qNorm rỗng nhưng query có thể còn dấu/ký tự đặc biệt
+            // → giữ nguyên kết quả cũ, KHÔNG ẩn (tránh nhấp nháy khi gõ IME)
             return;
         }
 
