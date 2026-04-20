@@ -140,6 +140,7 @@ const TopicDetailPage = {
                 <span class="material-icons-round" style="font-size:14px;">shuffle</span>
                 ${this._escapeHtml(irrMeta.label)}
             </span>
+            ${irrMeta.note ? `<span class="topic-vocab-row__irr-note" style="color:${irrMeta.color};">${this._escapeHtml(irrMeta.note)}</span>` : ''}
         ` : '';
 
         const meaningText = variantsShort

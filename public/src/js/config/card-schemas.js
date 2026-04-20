@@ -127,9 +127,9 @@ const CardSchemas = {
      * Variants được lưu trong fields: pastSimple, pastParticiple, comparative, superlative
      */
     IRREGULAR_TAGS: {
-        'irregular-verb':      { type: 'verb',      label: 'V1·V2·V3',      shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
-        'irregular-adjective': { type: 'adjective', label: 'So sánh BQT',   shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
-        'irregular-adverb':    { type: 'adverb',    label: 'Trạng từ BQT', shortLabel: 'BQT', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
+        'irregular-verb':      { type: 'verb',      label: 'V1·V2·V3',     note: 'Động từ BQT',  shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
+        'irregular-adjective': { type: 'adjective', label: 'So sánh BQT',  note: 'Tính từ BQT',  shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
+        'irregular-adverb':    { type: 'adverb',    label: 'Trạng từ BQT', note: 'Trạng từ BQT', shortLabel: 'BQT', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
     },
 
     /**

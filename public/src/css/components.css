@@ -3318,6 +3318,14 @@
     line-height: 1.2;
 }
 
+.topic-vocab-row__irr-note {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+    opacity: 0.9;
+    margin-left: 2px;
+}
+
 .topic-vocab-row__variants {
     color: var(--color-text);
     font-weight: 600;
