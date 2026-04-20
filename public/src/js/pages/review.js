@@ -40,6 +40,7 @@ const ReviewPage = {
 
             // Nếu có cardId → load trực tiếp 1 card (không cần due check)
             let cards;
+            let isEarlyReview = false;
             if (cardId) {
                 const all = await FirestoreDB.getCards({ cardType: type });
                 cards = all.filter(c => c.id === cardId);
@@ -52,12 +53,33 @@ const ReviewPage = {
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
             }
 
-            // Chỉ ôn tập những card state = review/relearning (đã học rồi)
-            cards = cards.filter(c => {
+            // Chỉ ôn tập những card đã rời khỏi trạng thái 'new'
+            // (learning / review / relearning đều có dueDate hợp lệ và cần ôn)
+            const isLearned = (c) => {
                 const st = c.state;
-                return st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING ||
-                       st === 'review' || st === 'relearning';
-            });
+                if (st === FSRS.State.NEW || st === 'new') return false;
+                return true;
+            };
+            cards = cards.filter(isLearned);
+
+            // Fallback "ôn sớm": nếu không có thẻ tới hạn, load tất cả thẻ đã học
+            if (cards.length === 0 && !cardId) {
+                const all = await FirestoreDB.getCards({ cardType: type });
+                let learned = all.filter(isLearned);
+                if (familyId) {
+                    learned = learned.filter(c => c.fieldValues?.familyId === familyId);
+                }
+                if (learned.length > 0) {
+                    // Sort theo dueDate tăng dần (gần đến hạn nhất trước)
+                    learned.sort((a, b) => {
+                        const da = a.dueDate?.toDate ? a.dueDate.toDate() : new Date(a.dueDate || 0);
+                        const db = b.dueDate?.toDate ? b.dueDate.toDate() : new Date(b.dueDate || 0);
+                        return da - db;
+                    });
+                    cards = learned;
+                    isEarlyReview = true;
+                }
+            }
 
             if (cards.length === 0) {
                 this._renderEmpty();
@@ -74,7 +96,8 @@ const ReviewPage = {
                 currentIndex: 0,
                 round1Results: {},
                 round2Results: {},
-                startedAt: new Date()
+                startedAt: new Date(),
+                isEarlyReview: isEarlyReview
             };
             this._startedAt = Date.now();
 
@@ -94,12 +117,19 @@ const ReviewPage = {
 
         const count = this._session.cards.length;
         const ttsAvailable = TTS.isAvailable();
+        const earlyBadge = this._session.isEarlyReview
+            ? `<div style="display:inline-flex;align-items:center;gap:6px;background:rgba(139,92,246,0.15);color:#8B5CF6;padding:6px 12px;border-radius:999px;font-size:var(--font-size-sm);font-weight:600;margin-bottom:var(--spacing-sm);">
+                   <span class="material-icons-round" style="font-size:16px;">bolt</span>
+                   Ôn sớm — chưa tới hạn FSRS
+               </div>`
+            : '';
 
         root.innerHTML = `
             <div class="review-intro">
                 <div class="review-intro__icon">
                     <span class="material-icons-round">replay</span>
                 </div>
+                ${earlyBadge}
                 <h1 class="review-intro__title">Ôn tập ${count} từ</h1>
                 <p class="review-intro__desc">Bạn sẽ ôn qua 2 vòng:</p>
                 <div class="review-intro__steps">
