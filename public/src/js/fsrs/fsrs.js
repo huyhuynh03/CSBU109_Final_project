@@ -68,70 +68,70 @@ const FSRS = {
      * @param {number} rating - 1=Again, 2=Hard, 3=Good, 4=Easy
      * @returns {Object} Updated card
      */
+    /**
+     * Tính bậc kế tiếp dựa trên bậc trước và rating.
+     * Hàm thuần (pure) - chỉ phụ thuộc 2 tham số -> không thể "ghi đè" nhau.
+     *   AGAIN -> 0
+     *   HARD  -> giữ nguyên (NEW => 0)
+     *   GOOD  -> tiến +1 bậc (NEW => 0)
+     *   EASY  -> tiến +2 bậc (NEW => 1, nhảy bỏ 10 phút)
+     * Cap ở bậc cuối (Steps.length - 1).
+     */
+    _computeNextStep(prevStep, rating) {
+        const last = this.Steps.length - 1;
+        const cur = (typeof prevStep === 'number' && prevStep >= 0) ? prevStep : -1;
+
+        switch (rating) {
+            case this.Rating.AGAIN: return 0;
+            case this.Rating.HARD:  return cur < 0 ? 0 : cur;
+            case this.Rating.GOOD:  return cur < 0 ? 0 : Math.min(last, cur + 1);
+            case this.Rating.EASY:  return cur < 0 ? 1 : Math.min(last, cur + 2);
+            default:                return cur < 0 ? 0 : cur;
+        }
+    },
+
+    /**
+     * Tính state kế tiếp dựa trên (state trước, bậc sau, rating).
+     * Quy tắc duy nhất, không phân tán theo case rating:
+     *   - bậc sau = 0 (10 phút):
+     *       + nếu trước là REVIEW/RELEARNING  -> RELEARNING (lapse)
+     *       + ngược lại                       -> LEARNING
+     *   - bậc sau >= 1 (>= 1 ngày): luôn REVIEW (đã graduate / đang trưởng thành)
+     */
+    _computeNextState(prevState, nextStep) {
+        const wasMature = (prevState === this.State.REVIEW || prevState === this.State.RELEARNING);
+        if (nextStep >= 1) return this.State.REVIEW;
+        return wasMature ? this.State.RELEARNING : this.State.LEARNING;
+    },
+
+    /**
+     * Process a review rating for a card
+     * @param {Object} card - Card with FSRS parameters
+     * @param {number} rating - 1=Again, 2=Hard, 3=Good, 4=Easy
+     * @returns {Object} Updated card
+     */
     review(card, rating) {
         const now = new Date();
         const updatedCard = { ...card };
 
         const prevState = card.state ?? this.State.NEW;
-        // stepIndex hợp lệ; nếu thiếu thì coi như -1 (chưa vào bậc)
-        const prevStep = (typeof card.stepIndex === 'number') ? card.stepIndex : -1;
-        const lastIdx = this.Steps.length - 1;
+        const prevStep  = (typeof card.stepIndex === 'number') ? card.stepIndex : -1;
 
-        updatedCard.reps = (card.reps || 0) + 1;
+        // 2 hàm thuần -> không thể ghi đè / chồng chéo nhau
+        const nextStep  = this._computeNextStep(prevStep, rating);
+        const nextState = this._computeNextState(prevState, nextStep);
+        const interval  = this._stepMinutes(nextStep);
+
+        updatedCard.reps      = (card.reps || 0) + 1;
         updatedCard.lastReview = now;
-
-        let nextStep;
-        let nextState;
-
-        switch (rating) {
-            case this.Rating.AGAIN:
-                // Quên: reset về bậc 0 (10 phút).
-                // Nếu đã từng REVIEW thì coi là RELEARNING (lapse), còn lại là LEARNING.
-                nextStep = 0;
-                updatedCard.lapses = (card.lapses || 0) + 1;
-                nextState = (prevState === this.State.REVIEW || prevState === this.State.RELEARNING)
-                    ? this.State.RELEARNING
-                    : this.State.LEARNING;
-                break;
-
-            case this.Rating.HARD:
-                // Khó: giữ nguyên bậc hiện tại (không tiến).
-                // Nếu là NEW thì cho vào bậc 0 (10 phút).
-                nextStep = prevStep < 0 ? 0 : prevStep;
-                // State: vào REVIEW khi đã ở bậc >= 1 (>= 1 ngày), ngược lại còn LEARNING/RELEARNING.
-                if (nextStep >= 1) {
-                    nextState = (prevState === this.State.RELEARNING) ? this.State.REVIEW : this.State.REVIEW;
-                } else {
-                    nextState = (prevState === this.State.REVIEW || prevState === this.State.RELEARNING)
-                        ? this.State.RELEARNING
-                        : this.State.LEARNING;
-                }
-                break;
-
-            case this.Rating.GOOD:
-                // Tốt: tiến lên 1 bậc.
-                nextStep = prevStep < 0 ? 0 : Math.min(lastIdx, prevStep + 1);
-                nextState = nextStep >= 1 ? this.State.REVIEW
-                    : (prevState === this.State.REVIEW ? this.State.REVIEW : this.State.LEARNING);
-                break;
-
-            case this.Rating.EASY:
-                // Dễ: nhảy thẳng 2 bậc.
-                nextStep = prevStep < 0 ? 1 : Math.min(lastIdx, prevStep + 2);
-                nextState = this.State.REVIEW;
-                break;
-
-            default:
-                nextStep = prevStep < 0 ? 0 : prevStep;
-                nextState = prevState;
+        if (rating === this.Rating.AGAIN) {
+            updatedCard.lapses = (card.lapses || 0) + 1;
         }
 
-        const interval = this._stepMinutes(nextStep);
-
-        updatedCard.stepIndex = nextStep;
-        updatedCard.state = nextState;
-        updatedCard.stability = interval;       // giữ field cũ (đơn vị phút)
-        updatedCard.dueDate = new Date(now.getTime() + interval * 60 * 1000);
+        updatedCard.stepIndex  = nextStep;
+        updatedCard.state      = nextState;
+        updatedCard.stability  = interval;       // giữ field cũ (đơn vị phút)
+        updatedCard.dueDate    = new Date(now.getTime() + interval * 60 * 1000);
 
         const dDelta = rating < 3 ? 0.1 : -0.05;
         const baseDifficulty = Number(card.difficulty) || 0;
