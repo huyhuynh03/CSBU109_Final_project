@@ -45,55 +45,91 @@ const FSRS = {
     },
 
     /**
-     * Process a review rating for a card
-     * @param {Object} card - Card with FSRS parameters
-     * @param {number} rating - 1=Again, 2=Hard, 3=Good, 4=Easy
-     * @returns {Object} Updated card
+     * Process a review rating for a card.
+     * Anki-style learning steps cho thẻ mới (đảm bảo user sẽ thấy thẻ
+     * tới hạn ôn tập trong vài phút sau khi học, không phải sau 1 ngày).
+     *
+     * NEW (vừa học lần đầu):
+     *   AGAIN → 1 min  (RELEARNING)
+     *   HARD  → 5 min  (LEARNING)
+     *   GOOD  → 10 min (LEARNING) — graduate sau 1 cycle GOOD nữa
+     *   EASY  → 4 giờ (REVIEW)   — graduate ngay nhưng vẫn review trong ngày
+     *
+     * LEARNING (đang trong learning steps):
+     *   AGAIN → 1 min  (LEARNING)
+     *   HARD  → 10 min (LEARNING)
+     *   GOOD  → 1 day  (REVIEW)  — graduate
+     *   EASY  → 4 day  (REVIEW)
+     *
+     * REVIEW (đã graduate):
+     *   AGAIN → 10 min (RELEARNING) + lapse++
+     *   HARD  → stability * 1.2 (min 1 day)
+     *   GOOD  → stability * 2.5
+     *   EASY  → stability * 3.5
+     *
+     * RELEARNING:
+     *   AGAIN → 1 min
+     *   HARD  → 10 min
+     *   GOOD  → 1 day  (REVIEW)
+     *   EASY  → 2 day  (REVIEW)
      */
     review(card, rating) {
-        // Stub implementation - will be replaced with full FSRS v5 algorithm
         const now = new Date();
         const updatedCard = { ...card };
 
         updatedCard.reps++;
         updatedCard.lastReview = now;
 
-        // Simple interval calculation (placeholder)
-        let interval;
-        switch (rating) {
-            case this.Rating.AGAIN:
-                interval = 1; // 1 minute
-                updatedCard.lapses++;
-                updatedCard.state = this.State.RELEARNING;
-                break;
-            case this.Rating.HARD:
-                interval = card.state === this.State.NEW ? 5 : Math.max(1, card.stability * 1.2);
-                updatedCard.state = this.State.LEARNING;
-                break;
-            case this.Rating.GOOD:
-                interval = card.state === this.State.NEW ? 10 : Math.max(1, card.stability * 2.5);
-                updatedCard.state = this.State.REVIEW;
-                break;
-            case this.Rating.EASY:
-                interval = card.state === this.State.NEW ? 1440 : Math.max(1, card.stability * 3.5);
-                updatedCard.state = this.State.REVIEW;
-                break;
-            default:
-                interval = 10;
-        }
+        const ONE_DAY = 1440;
+        const state = (card.state === undefined || card.state === null) ? this.State.NEW : card.state;
+        let interval;       // phút
+        let nextState;
 
-        // Convert interval (minutes) to due date
-        if (interval < 1440) {
-            // Less than a day - use minutes
-            updatedCard.dueDate = new Date(now.getTime() + interval * 60 * 1000);
+        if (state === this.State.NEW || state === 'new') {
+            switch (rating) {
+                case this.Rating.AGAIN: interval = 1;       nextState = this.State.RELEARNING; updatedCard.lapses++; break;
+                case this.Rating.HARD:  interval = 5;       nextState = this.State.LEARNING;   break;
+                case this.Rating.GOOD:  interval = 10;      nextState = this.State.LEARNING;   break;
+                case this.Rating.EASY:  interval = 240;     nextState = this.State.REVIEW;     break; // 4h
+                default:                interval = 10;      nextState = this.State.LEARNING;
+            }
+        } else if (state === this.State.LEARNING || state === 'learning') {
+            switch (rating) {
+                case this.Rating.AGAIN: interval = 1;             nextState = this.State.LEARNING; updatedCard.lapses++; break;
+                case this.Rating.HARD:  interval = 10;            nextState = this.State.LEARNING; break;
+                case this.Rating.GOOD:  interval = ONE_DAY;       nextState = this.State.REVIEW;   break;
+                case this.Rating.EASY:  interval = ONE_DAY * 4;   nextState = this.State.REVIEW;   break;
+                default:                interval = ONE_DAY;       nextState = this.State.REVIEW;
+            }
+        } else if (state === this.State.RELEARNING || state === 'relearning') {
+            switch (rating) {
+                case this.Rating.AGAIN: interval = 1;             nextState = this.State.RELEARNING; updatedCard.lapses++; break;
+                case this.Rating.HARD:  interval = 10;            nextState = this.State.RELEARNING; break;
+                case this.Rating.GOOD:  interval = ONE_DAY;       nextState = this.State.REVIEW;     break;
+                case this.Rating.EASY:  interval = ONE_DAY * 2;   nextState = this.State.REVIEW;     break;
+                default:                interval = ONE_DAY;       nextState = this.State.REVIEW;
+            }
         } else {
-            // Days
-            const days = interval / 1440;
-            updatedCard.dueDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
+            // REVIEW
+            const stab = Math.max(card.stability || ONE_DAY, ONE_DAY); // tối thiểu 1 ngày
+            switch (rating) {
+                case this.Rating.AGAIN: interval = 10;                            nextState = this.State.RELEARNING; updatedCard.lapses++; break;
+                case this.Rating.HARD:  interval = Math.max(ONE_DAY, stab * 1.2); nextState = this.State.REVIEW; break;
+                case this.Rating.GOOD:  interval = stab * 2.5;                    nextState = this.State.REVIEW; break;
+                case this.Rating.EASY:  interval = stab * 3.5;                    nextState = this.State.REVIEW; break;
+                default:                interval = stab * 2;                      nextState = this.State.REVIEW;
+            }
+            // Cap maximumInterval
+            const maxMin = this.params.maximumInterval * ONE_DAY;
+            if (interval > maxMin) interval = maxMin;
         }
 
+        updatedCard.state = nextState;
         updatedCard.stability = interval;
-        updatedCard.difficulty = Math.max(0, Math.min(1, card.difficulty + (rating < 3 ? 0.1 : -0.05)));
+        updatedCard.difficulty = Math.max(0, Math.min(1, (card.difficulty || 0) + (rating < 3 ? 0.1 : -0.05)));
+
+        // Convert interval (minutes) → dueDate
+        updatedCard.dueDate = new Date(now.getTime() + interval * 60 * 1000);
 
         return updatedCard;
     },

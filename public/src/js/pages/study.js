@@ -717,10 +717,13 @@ const StudyPage = {
         const r2 = stepResults.step2 || { correct: false, revealed: true, attempts: 3 };
         const r3 = stepResults.step3 || { correct: false, revealed: true, attempts: 3 };
 
-        // Rating cho từ mới: dựa trên 2 bước gõ
+        // Rating cho từ mới: dựa trên 2 bước gõ.
+        // Dùng GOOD cho trường hợp đúng ngay lần đầu để card bước vào LEARNING
+        // (10 phút → user sẽ thấy lại nhanh), không nhảy thẳng sang REVIEW
+        // (vốn cần stability tối thiểu 1 ngày).
         let rating;
-        if (r2.revealed || r3.revealed) rating = FSRS.Rating.HARD; // từ mới nên nhẹ tay hơn
-        else if (r2.attempts === 1 && r3.attempts === 1) rating = FSRS.Rating.EASY;
+        if (r2.revealed || r3.revealed) rating = FSRS.Rating.HARD;
+        else if (r2.attempts === 1 && r3.attempts === 1) rating = FSRS.Rating.GOOD;
         else if (r2.attempts > 1 && r3.attempts > 1) rating = FSRS.Rating.HARD;
         else rating = FSRS.Rating.GOOD;
 
