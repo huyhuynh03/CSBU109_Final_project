@@ -52,6 +52,18 @@ const StudyPage = {
             }
             if (familyId) {
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
+                // Loại bỏ các từ đã học trong family này (đã có trong learnedWords)
+                // → Tránh học lại từ đã hoàn thành khi user quay lại học các từ còn lại
+                try {
+                    const pending = FamilyWordManager.getPendingFamilies();
+                    const familyState = pending[familyId];
+                    if (familyState && Array.isArray(familyState.learnedWords)) {
+                        const learnedSet = new Set(familyState.learnedWords);
+                        cards = cards.filter(c => !learnedSet.has(c.fieldValues?.word));
+                    }
+                } catch (e) {
+                    console.warn('[StudyPage] Filter learned family words failed:', e);
+                }
             }
             if (cardId) {
                 cards = cards.filter(c => c.id === cardId);
