@@ -367,15 +367,85 @@ const VocabularyPage = {
         });
     },
 
-    _performSearch(query) {
-        const q = query.toLowerCase();
-        const results = this._allCards.filter(card => {
-            const word = (card.word || card.front || '').toLowerCase();
-            const meaning = (card.meaning || card.back || '').toLowerCase();
-            const ipa = (card.ipa || '').toLowerCase();
-            return word.includes(q) || meaning.includes(q) || ipa.includes(q);
-        }).slice(0, 20); // Max 20 results
+    /**
+     * Bỏ dấu tiếng Việt + lowercase để tìm kiếm "viet" ra "việt".
+     */
+    _normalize(str) {
+        return (str || '')
+            .toString()
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/đ/g, 'd')
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    },
 
+    /**
+     * Subsequence match: kí tự của query xuất hiện theo đúng thứ tự trong text
+     * (không cần liên tiếp). VD: "wrt" match "write", "hsinh" match "hoc sinh".
+     * Trả về điểm: càng nhỏ càng khớp tốt (0 = exact prefix).
+     * Trả về -1 nếu không khớp.
+     */
+    _subsequenceScore(text, query) {
+        if (!query) return 0;
+        if (!text) return -1;
+        if (text.includes(query)) {
+            // Bonus: substring trực tiếp
+            const idx = text.indexOf(query);
+            return idx; // càng gần đầu càng tốt
+        }
+        // Fuzzy: kiểm tra từng kí tự query có xuất hiện đúng thứ tự trong text
+        let ti = 0, qi = 0, firstIdx = -1, lastIdx = -1;
+        while (ti < text.length && qi < query.length) {
+            if (text[ti] === query[qi]) {
+                if (firstIdx === -1) firstIdx = ti;
+                lastIdx = ti;
+                qi++;
+            }
+            ti++;
+        }
+        if (qi < query.length) return -1;
+        // Điểm: spread (lastIdx - firstIdx) + offset đầu, +1000 để xếp sau substring match
+        return 1000 + (lastIdx - firstIdx) + firstIdx;
+    },
+
+    _performSearch(query) {
+        const qNorm = this._normalize(query);
+        if (!qNorm) {
+            this._hideSearchResults();
+            return;
+        }
+
+        const scored = [];
+        for (const card of this._allCards) {
+            const fv = card.fieldValues || {};
+            const word = this._normalize(fv.word || card.word || card.front || '');
+            const meaning = this._normalize(fv.meaning || card.meaning || card.back || '');
+            const ipa = this._normalize(fv.ipa || card.ipa || '');
+            const pos = this._normalize(fv.partOfSpeech || card.partOfSpeech || '');
+            // Bao gồm cả các dạng bất quy tắc (V2/V3, comparative/superlative)
+            const variantsTxt = this._normalize(
+                [fv.pastSimple, fv.pastParticiple, fv.comparative, fv.superlative]
+                    .filter(Boolean).join(' ')
+            );
+
+            const scores = [
+                this._subsequenceScore(word, qNorm),
+                this._subsequenceScore(meaning, qNorm) + 50,    // Tiếng Việt ưu tiên thấp hơn 1 chút
+                this._subsequenceScore(variantsTxt, qNorm) + 100,
+                this._subsequenceScore(ipa, qNorm) + 200,
+                this._subsequenceScore(pos, qNorm) + 300,
+            ].filter(s => s >= 0 && !isNaN(s));
+
+            if (scores.length > 0) {
+                scored.push({ card, score: Math.min(...scores) });
+            }
+        }
+
+        scored.sort((a, b) => a.score - b.score);
+        const results = scored.slice(0, 20).map(s => s.card);
         this._renderSearchResults(results, query);
     },
 
@@ -438,9 +508,25 @@ const VocabularyPage = {
     },
 
     _highlightMatch(text, query) {
-        if (!query) return text;
-        const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-        return text.replace(regex, '<mark>$1</mark>');
+        if (!query || !text) return text;
+        // Highlight substring match (không-dấu) bằng cách so sánh trên chuỗi normalized
+        const qNorm = this._normalize(query);
+        const tNorm = this._normalize(text);
+        const idx = tNorm.indexOf(qNorm);
+        if (idx === -1) {
+            // Fallback: highlight theo regex thường (case-insensitive)
+            try {
+                const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                return text.replace(regex, '<mark>$1</mark>');
+            } catch {
+                return text;
+            }
+        }
+        // Map vị trí từ tNorm sang text gốc (xấp xỉ - chỉ dùng nếu lengths khớp)
+        if (tNorm.length === text.toLowerCase().length) {
+            return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + qNorm.length) + '</mark>' + text.slice(idx + qNorm.length);
+        }
+        return text;
     },
 
     _hideSearchResults() {
