@@ -253,11 +253,13 @@ const VocabularyPage = {
         this._allCards.forEach(card => {
             const fId = card.folderId;
             if (!fId) return;
-            if (!topicCards[fId]) topicCards[fId] = { total: 0, new: 0, due: 0, mastered: 0 };
+            if (!topicCards[fId]) topicCards[fId] = { total: 0, new: 0, due: 0, learned: 0, mastered: 0 };
             topicCards[fId].total++;
-            if (card.state === 'new' || card.state === FSRS.State.NEW) topicCards[fId].new++;
             const st = card.state;
-            if (st !== 'new' && st !== FSRS.State.NEW && card.dueDate) {
+            const isNew = (st === 'new' || st === FSRS.State.NEW);
+            if (isNew) topicCards[fId].new++;
+            else topicCards[fId].learned++;
+            if (!isNew && card.dueDate) {
                 const now = new Date();
                 const dueDate = card.dueDate.toDate ? card.dueDate.toDate() : new Date(card.dueDate);
                 if (dueDate <= now) topicCards[fId].due++;
@@ -292,8 +294,9 @@ const VocabularyPage = {
             const catTopics = categories[catKey];
 
             const cardsHtml = catTopics.map(topic => {
-                const stats = topicCards[topic.id] || { total: 0, new: 0, due: 0, mastered: 0 };
-                const progress = stats.total > 0 ? Math.round((stats.mastered / stats.total) * 100) : 0;
+                const stats = topicCards[topic.id] || { total: 0, new: 0, due: 0, learned: 0, mastered: 0 };
+                // % "đã học" = số thẻ đã rời trạng thái 'new' / tổng (gồm cả learning/review/relearning)
+                const progress = stats.total > 0 ? Math.round((stats.learned / stats.total) * 100) : 0;
                 const gradient = gradients[globalIdx % gradients.length];
                 const icon = topic.icon || 'menu_book';
                 const isCompleted = progress === 100 && stats.total > 0;
