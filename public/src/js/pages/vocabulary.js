@@ -114,6 +114,18 @@ const VocabularyPage = {
                     </button>
                 </div>
 
+                <!-- Review level distribution -->
+                <div class="vocab-level-section" id="vocab-level-section">
+                    <div class="vocab-level-section__header">
+                        <span class="material-icons-round" style="color:#10b981;">timeline</span>
+                        <h2>Phân bố cấp độ ôn tập</h2>
+                        <span class="vocab-level-section__hint">Số thẻ ở từng bậc thời gian</span>
+                    </div>
+                    <div class="vocab-level-grid" id="vocab-level-grid">
+                        <div class="vocab-level-grid__loading">Đang tính...</div>
+                    </div>
+                </div>
+
 
                 <!-- Incomplete Tracking Section -->
                 <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
@@ -215,9 +227,87 @@ const VocabularyPage = {
                     ? `${dueCount} từ đến hạn`
                     : 'Không có từ cần ôn';
             }
+
+            // Phân bố theo cấp độ ôn tập
+            this._renderLevelDistribution(cards);
         } catch (error) {
             console.error('[VocabularyPage] Error loading stats:', error);
         }
+    },
+
+    _renderLevelDistribution(cards) {
+        const grid = document.getElementById('vocab-level-grid');
+        if (!grid) return;
+
+        const totalSteps = (typeof FSRS !== 'undefined' && FSRS.Steps) ? FSRS.Steps.length : 5;
+        const buckets = new Array(totalSteps).fill(0);
+        let unknownReview = 0;
+        let newCount = 0;
+        let learningCount = 0;
+
+        cards.forEach(c => {
+            const st = c.state;
+            const isNew = (st === 'new' || st === FSRS.State.NEW || st === undefined);
+            const isLearning = (st === 'learning' || st === FSRS.State.LEARNING);
+            const isReview = (st === 'review' || st === FSRS.State.REVIEW
+                || st === 'relearning' || st === FSRS.State.RELEARNING);
+
+            if (isNew) { newCount++; return; }
+            if (isLearning) { learningCount++; return; }
+
+            if (isReview) {
+                const idx = Number.isInteger(c.stepIndex) ? c.stepIndex : -1;
+                if (idx >= 0 && idx < totalSteps) buckets[idx]++;
+                else unknownReview++;
+            }
+        });
+
+        const totalReview = buckets.reduce((s, n) => s + n, 0) + unknownReview;
+        const colors = ['#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899'];
+
+        const cells = buckets.map((count, i) => {
+            const label = (FSRS.getStepLabel ? FSRS.getStepLabel(i) : `Bậc ${i}`);
+            const pct = totalReview > 0 ? Math.round((count / totalReview) * 100) : 0;
+            const color = colors[i % colors.length];
+            return `
+                <div class="vocab-level-cell" style="--lvl-color:${color};">
+                    <div class="vocab-level-cell__head">
+                        <span class="vocab-level-cell__idx">Bậc ${i}</span>
+                        <span class="vocab-level-cell__lbl">${label}</span>
+                    </div>
+                    <div class="vocab-level-cell__count">${count}</div>
+                    <div class="vocab-level-cell__bar">
+                        <div class="vocab-level-cell__bar-fill" style="width:${pct}%;background:${color};"></div>
+                    </div>
+                    <div class="vocab-level-cell__pct">${pct}% trên ${totalReview} thẻ ôn tập</div>
+                </div>
+            `;
+        }).join('');
+
+        const summary = `
+            <div class="vocab-level-summary">
+                <div class="vocab-level-summary__item">
+                    <span class="material-icons-round" style="color:#10b981;">fiber_new</span>
+                    Học mới: <strong>${newCount}</strong>
+                </div>
+                ${learningCount > 0 ? `
+                    <div class="vocab-level-summary__item">
+                        <span class="material-icons-round" style="color:#f59e0b;">menu_book</span>
+                        Đang học: <strong>${learningCount}</strong>
+                    </div>` : ''}
+                <div class="vocab-level-summary__item">
+                    <span class="material-icons-round" style="color:#6366f1;">replay</span>
+                    Đang ôn tập: <strong>${totalReview}</strong>
+                </div>
+                ${unknownReview > 0 ? `
+                    <div class="vocab-level-summary__item" title="Thẻ ôn tập chưa có stepIndex (cần migration)">
+                        <span class="material-icons-round" style="color:#ef4444;">help_outline</span>
+                        Chưa phân bậc: <strong>${unknownReview}</strong>
+                    </div>` : ''}
+            </div>
+        `;
+
+        grid.innerHTML = summary + `<div class="vocab-level-cells">${cells}</div>`;
     },
 
     // ---- TOPICS ----
