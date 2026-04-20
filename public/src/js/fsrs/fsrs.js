@@ -14,11 +14,11 @@ const FSRS = {
 
     // Bậc ôn tập cố định (đơn vị: phút)
     Steps: [
-        10,        // bậc 0: 10 phút      (lần ôn đầu sau khi học)
-        1440,      // bậc 1: 1 ngày
-        4320,      // bậc 2: 3 ngày
-        10080,     // bậc 3: 1 tuần
-        43200      // bậc 4: 1 tháng (cap)
+        30,         // bậc 0: 30 phút       (lần ôn đầu sau khi học, cũng là điểm reset khi sai)
+        1440,       // bậc 1: 24 giờ (1 ngày)
+        10080,      // bậc 2: 7 ngày
+        43200,      // bậc 3: 30 ngày
+        129600      // bậc 4: 90 ngày (cap)
     ],
 
     // Card states
@@ -166,7 +166,7 @@ const FSRS = {
      * Nhãn bậc hiện tại để debug / UI
      */
     getStepLabel(stepIndex) {
-        const labels = ['10 phút', '1 ngày', '3 ngày', '1 tuần', '1 tháng'];
+        const labels = ['30 phút', '24 giờ', '7 ngày', '30 ngày', '90 ngày'];
         const i = Math.max(0, Math.min(labels.length - 1, stepIndex ?? 0));
         return labels[i];
     },

@@ -717,14 +717,12 @@ const StudyPage = {
         const r2 = stepResults.step2 || { correct: false, revealed: true, attempts: 3 };
         const r3 = stepResults.step3 || { correct: false, revealed: true, attempts: 3 };
 
-        // Rating cho từ mới: dựa trên 2 bước gõ.
-        // Dùng GOOD cho trường hợp đúng ngay lần đầu để card bước vào LEARNING
-        // (10 phút → user sẽ thấy lại nhanh), không nhảy thẳng sang REVIEW
-        // (vốn cần stability tối thiểu 1 ngày).
+        // Rating cho từ mới: chính sách nghiêm ngặt - sai 1 lần => AGAIN (reset 30 phút).
+        // Đúng ngay cả 2 bước, không reveal => GOOD (tiến lên bậc 30 phút -> bậc 1 sau).
         let rating;
-        if (r2.revealed || r3.revealed) rating = FSRS.Rating.HARD;
-        else if (r2.attempts === 1 && r3.attempts === 1) rating = FSRS.Rating.GOOD;
-        else if (r2.attempts > 1 && r3.attempts > 1) rating = FSRS.Rating.HARD;
+        if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
+        else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
+        else if (r2.attempts > 1 || r3.attempts > 1) rating = FSRS.Rating.AGAIN;
         else rating = FSRS.Rating.GOOD;
 
         const updatedCard = FSRS.review(card, rating);

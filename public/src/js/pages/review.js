@@ -691,17 +691,15 @@ const ReviewPage = {
     // COMPUTE FINAL RATING (2 rounds → 1 FSRS rating)
     // ============================================
     _computeFinalRating(r1, r2) {
-        // Nếu bất kỳ vòng nào phải xem đáp án → Again
+        // Chính sách nghiêm ngặt: sai 1 lần = reset ngay về bậc 30 phút.
+        // - Revealed (xem đáp án)        -> AGAIN
+        // - Không correct                -> AGAIN
+        // - Có bất kỳ lần gõ sai nào     -> AGAIN  (attempts > 1)
         if (r1.revealed || r2.revealed) return FSRS.Rating.AGAIN;
         if (!r1.correct || !r2.correct) return FSRS.Rating.AGAIN;
+        if (r1.attempts > 1 || r2.attempts > 1) return FSRS.Rating.AGAIN;
 
-        // Cả 2 vòng đúng ngay lần đầu
-        if (r1.attempts === 1 && r2.attempts === 1) return FSRS.Rating.EASY;
-
-        // Cả 2 vòng cần gợi ý
-        if (r1.attempts > 1 && r2.attempts > 1) return FSRS.Rating.HARD;
-
-        // 1 trong 2 cần gợi ý
+        // Cả 2 vòng đúng ngay lần đầu -> đẩy bậc nhanh
         return FSRS.Rating.GOOD;
     },
 
