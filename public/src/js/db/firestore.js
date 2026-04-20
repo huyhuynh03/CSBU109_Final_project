@@ -253,6 +253,7 @@ const FirestoreDB = {
                 state: fsrsData.state,
                 difficulty: fsrsData.difficulty,
                 stability: fsrsData.stability,
+                stepIndex: fsrsData.stepIndex,
                 dueDate: fsrsData.dueDate,
                 reps: fsrsData.reps,
                 lapses: fsrsData.lapses,

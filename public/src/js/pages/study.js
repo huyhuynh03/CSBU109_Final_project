@@ -741,6 +741,7 @@ const StudyPage = {
                 state: updatedCard.state,
                 difficulty: updatedCard.difficulty,
                 stability: updatedCard.stability,
+                stepIndex: updatedCard.stepIndex,
                 dueDate: updatedCard.dueDate,
                 reps: updatedCard.reps,
                 lapses: updatedCard.lapses,
