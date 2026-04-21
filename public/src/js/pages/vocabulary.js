@@ -375,24 +375,16 @@ const VocabularyPage = {
         const totalSteps = (typeof FSRS !== 'undefined' && FSRS.Steps) ? FSRS.Steps.length : 5;
         const buckets = new Array(totalSteps).fill(0);
         let unknownReview = 0;
-        let newCount = 0;
-        let learningCount = 0;
 
         cards.forEach(c => {
             const st = c.state;
-            const isNew = (st === 'new' || st === FSRS.State.NEW || st === undefined);
-            const isLearning = (st === 'learning' || st === FSRS.State.LEARNING);
             const isReview = (st === 'review' || st === FSRS.State.REVIEW
                 || st === 'relearning' || st === FSRS.State.RELEARNING);
+            if (!isReview) return;
 
-            if (isNew) { newCount++; return; }
-            if (isLearning) { learningCount++; return; }
-
-            if (isReview) {
-                const idx = Number.isInteger(c.stepIndex) ? c.stepIndex : -1;
-                if (idx >= 0 && idx < totalSteps) buckets[idx]++;
-                else unknownReview++;
-            }
+            const idx = Number.isInteger(c.stepIndex) ? c.stepIndex : -1;
+            if (idx >= 0 && idx < totalSteps) buckets[idx]++;
+            else unknownReview++;
         });
 
         const totalReview = buckets.reduce((s, n) => s + n, 0) + unknownReview;
@@ -417,30 +409,7 @@ const VocabularyPage = {
             `;
         }).join('');
 
-        const summary = `
-            <div class="vocab-level-summary">
-                <div class="vocab-level-summary__item">
-                    <span class="material-icons-round" style="color:#10b981;">fiber_new</span>
-                    Học mới: <strong>${newCount}</strong>
-                </div>
-                ${learningCount > 0 ? `
-                    <div class="vocab-level-summary__item">
-                        <span class="material-icons-round" style="color:#f59e0b;">menu_book</span>
-                        Đang học: <strong>${learningCount}</strong>
-                    </div>` : ''}
-                <div class="vocab-level-summary__item">
-                    <span class="material-icons-round" style="color:#6366f1;">replay</span>
-                    Đang ôn tập: <strong>${totalReview}</strong>
-                </div>
-                ${unknownReview > 0 ? `
-                    <div class="vocab-level-summary__item" title="Thẻ ôn tập chưa có stepIndex (cần migration)">
-                        <span class="material-icons-round" style="color:#ef4444;">help_outline</span>
-                        Chưa phân bậc: <strong>${unknownReview}</strong>
-                    </div>` : ''}
-            </div>
-        `;
-
-        grid.innerHTML = summary + `<div class="vocab-level-cells">${cells}</div>`;
+        grid.innerHTML = `<div class="vocab-level-cells">${cells}</div>`;
     },
 
     // ---- TOPICS ----
@@ -489,9 +458,12 @@ const VocabularyPage = {
             topicCards[fId].total++;
             const st = card.state;
             const isNew = (st === 'new' || st === FSRS.State.NEW);
+            const isReviewable = (st === 'review' || st === FSRS.State.REVIEW
+                || st === 'relearning' || st === FSRS.State.RELEARNING);
             if (isNew) topicCards[fId].new++;
             else topicCards[fId].learned++;
-            if (!isNew && card.dueDate) {
+            // "Cần ôn" chỉ tính thẻ thực sự đủ điều kiện vào trang Ôn tập: REVIEW/RELEARNING và tới hạn.
+            if (isReviewable && card.dueDate) {
                 const now = new Date();
                 const dueDate = card.dueDate.toDate ? card.dueDate.toDate() : new Date(card.dueDate);
                 if (dueDate <= now) topicCards[fId].due++;
