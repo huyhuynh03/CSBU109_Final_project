@@ -20,7 +20,8 @@ const CardModeManager = {
      * @param {boolean} [opts.resetStats=false] - có reset reps/lapses/difficulty không
      */
     async resetToNew(cards, opts = {}) {
-        const resetStats = !!opts.resetStats;
+        // Khi cưỡng ép về NEW: phải ĐỒNG BỘ xoá mọi dấu vết review cũ để
+        // các chức năng khác (review/due count/family popup) không dùng lại dữ liệu cũ.
         const now = new Date();
 
         const ids = [];
@@ -29,15 +30,16 @@ const CardModeManager = {
                 state: FSRS.State.NEW,
                 stepIndex: -1,
                 stability: 0,
-                dueDate: now
+                // NEW card KHÔNG nên có dueDate quá khứ (sẽ bị getDueCards kéo về).
+                // Đặt null để loại khỏi pipeline ôn tập.
+                dueDate: null,
+                // Luôn reset các chỉ số review để tránh chồng lấn
+                reps: 0,
+                lapses: 0,
+                difficulty: 0,
+                lastReview: null,
+                lastReviewSession: null
             };
-            if (resetStats) {
-                u.reps = 0;
-                u.lapses = 0;
-                u.difficulty = 0;
-                u.lastReview = null;
-                u.lastReviewSession = null;
-            }
             ids.push(card.id);
             return { id: card.id, data: u };
         });

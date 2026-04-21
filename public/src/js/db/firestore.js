@@ -156,8 +156,6 @@ const FirestoreDB = {
         if (!ref) return [];
         try {
             const now = new Date();
-            // Chỉ dùng 1 where + orderBy trên cùng field 'dueDate' để tránh yêu cầu composite index.
-            // Nếu có cardType, lọc client-side (số lượng card đến hạn thường nhỏ).
             const snapshot = await ref
                 .where('dueDate', '<=', now)
                 .orderBy('dueDate', 'asc')
@@ -166,6 +164,11 @@ const FirestoreDB = {
             if (cardType) {
                 cards = cards.filter(c => c.cardType === cardType);
             }
+            // Loại NEW card (kể cả khi vô tình còn dueDate cũ) — chỉ trả về thẻ thực sự cần ôn.
+            cards = cards.filter(c => {
+                const st = c.state;
+                return !(st === 'new' || st === FSRS.State.NEW || st === undefined);
+            });
             return cards;
         } catch (error) {
             console.error('[Firestore] Error getting due cards:', error);
@@ -201,7 +204,13 @@ const FirestoreDB = {
             const snapshot = await ref
                 .where('dueDate', '<=', now)
                 .get();
-            return snapshot.size;
+            // Loại NEW card khỏi count để badge ôn tập không kẹt vì dueDate cũ.
+            let n = 0;
+            snapshot.forEach(doc => {
+                const st = doc.data().state;
+                if (!(st === 'new' || st === FSRS.State.NEW || st === undefined)) n++;
+            });
+            return n;
         } catch (error) {
             console.error('[Firestore] Error getting due card count:', error);
             return 0;
