@@ -189,9 +189,11 @@ const ReviewPage = {
         const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
         const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
         const irrMeta = isIrr ? CardSchemas.getIrregularMeta(card) : null;
-        // forms: [{ key:'root', label:'Dạng gốc V1', value:word }, ...variants]
+        // forms: [{ key:'root', label:'Dạng gốc', shortLabel:'V1'|'Nguyên mẫu', value:word }, ...variants]
+        // Verb dùng "V1"; adjective/adverb dùng "Nguyên mẫu" (positive degree) — không dùng V1/V2/V3.
+        const rootShort = (irrMeta && irrMeta.type === 'verb') ? 'V1' : 'Nguyên mẫu';
         const forms = isIrr ? [
-            { key: 'root', label: 'Dạng gốc', shortLabel: 'V1', value: word },
+            { key: 'root', label: 'Dạng gốc', shortLabel: rootShort, value: word },
             ...variants
         ] : [];
         // Lưu form đã chọn cho lượt này (giữ nguyên khi user thử lại)
