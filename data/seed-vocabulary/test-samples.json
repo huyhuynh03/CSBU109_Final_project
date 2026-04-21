@@ -101,13 +101,15 @@
         "partOfSpeech": "verb",
         "difficulty": "intermediate",
         "meaning": "viết, sáng tác",
-        "example": "She has written three novels in the past five years.",
+        "example": "I write in my diary every night before bed.",
         "note": "Bat quy tac: write - wrote - written",
         "familyId": "write",
         "familyOrder": 1,
         "tags": ["irregular-verb"],
         "pastSimple": "wrote",
-        "pastParticiple": "written"
+        "pastParticiple": "written",
+        "examplePastSimple": "She wrote a long letter to her grandmother yesterday.",
+        "examplePastParticiple": "She has written three novels in the past five years."
       }
     },
 
@@ -125,7 +127,9 @@
         "familyOrder": 1,
         "tags": ["irregular-adjective"],
         "comparative": "better",
-        "superlative": "best"
+        "superlative": "best",
+        "exampleComparative": "This book is better than the one I read last week.",
+        "exampleSuperlative": "This is the best book I have ever read."
       }
     },
 
@@ -143,7 +147,9 @@
         "familyOrder": 1,
         "tags": ["irregular-adverb"],
         "comparative": "better",
-        "superlative": "best"
+        "superlative": "best",
+        "exampleComparative": "She speaks English better than her older brother.",
+        "exampleSuperlative": "Of all the students, she performs the best in oral exams."
       }
     }
   ]

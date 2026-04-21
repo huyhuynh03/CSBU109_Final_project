@@ -28,7 +28,12 @@ const CardSchemas = {
             { key: 'pastSimple', label: 'Quá khứ đơn (V2)', type: 'text', required: false, placeholder: 'VD: went', hidden: true },
             { key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', type: 'text', required: false, placeholder: 'VD: gone', hidden: true },
             { key: 'comparative', label: 'So sánh hơn', type: 'text', required: false, placeholder: 'VD: better', hidden: true },
-            { key: 'superlative', label: 'So sánh nhất', type: 'text', required: false, placeholder: 'VD: best', hidden: true }
+            { key: 'superlative', label: 'So sánh nhất', type: 'text', required: false, placeholder: 'VD: best', hidden: true },
+            // Ví dụ riêng cho từng dạng biến thể (giúp đảm bảo ngữ pháp chính xác khi test biến thể)
+            { key: 'examplePastSimple', label: 'Ví dụ (V2)', type: 'textarea', required: false, placeholder: 'VD: She went to school yesterday.', hidden: true },
+            { key: 'examplePastParticiple', label: 'Ví dụ (V3)', type: 'textarea', required: false, placeholder: 'VD: She has gone to school.', hidden: true },
+            { key: 'exampleComparative', label: 'Ví dụ (so sánh hơn)', type: 'textarea', required: false, placeholder: 'VD: This book is better than that one.', hidden: true },
+            { key: 'exampleSuperlative', label: 'Ví dụ (so sánh nhất)', type: 'textarea', required: false, placeholder: 'VD: This is the best book I have ever read.', hidden: true }
         ],
         /**
          * Get display text for a card (used in lists)
@@ -167,11 +172,11 @@ const CardSchemas = {
         const fv = card.fieldValues || {};
         const variants = [];
         if (meta.type === 'verb') {
-            if (fv.pastSimple) variants.push({ key: 'pastSimple', label: 'Quá khứ đơn (V2)', shortLabel: 'V2', value: fv.pastSimple });
-            if (fv.pastParticiple) variants.push({ key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', shortLabel: 'V3', value: fv.pastParticiple });
+            if (fv.pastSimple) variants.push({ key: 'pastSimple', label: 'Quá khứ đơn (V2)', shortLabel: 'V2', value: fv.pastSimple, example: fv.examplePastSimple || '' });
+            if (fv.pastParticiple) variants.push({ key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', shortLabel: 'V3', value: fv.pastParticiple, example: fv.examplePastParticiple || '' });
         } else if (meta.type === 'adjective' || meta.type === 'adverb') {
-            if (fv.comparative) variants.push({ key: 'comparative', label: 'So sánh hơn', shortLabel: 'So sánh hơn', value: fv.comparative });
-            if (fv.superlative) variants.push({ key: 'superlative', label: 'So sánh nhất', shortLabel: 'So sánh nhất', value: fv.superlative });
+            if (fv.comparative) variants.push({ key: 'comparative', label: 'So sánh hơn', shortLabel: 'So sánh hơn', value: fv.comparative, example: fv.exampleComparative || '' });
+            if (fv.superlative) variants.push({ key: 'superlative', label: 'So sánh nhất', shortLabel: 'So sánh nhất', value: fv.superlative, example: fv.exampleSuperlative || '' });
         }
         return variants;
     },

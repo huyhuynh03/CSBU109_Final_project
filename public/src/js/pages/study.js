@@ -260,15 +260,14 @@ const StudyPage = {
         }
 
         const fv = card.fieldValues || {};
-        const word = fv.word || '';
         const meaning = fv.meaning || '';
-        const partOfSpeech = fv.partOfSpeech || '';
         const total = s.cards.length;
         const progress = (s.currentIndex / total) * 100;
         const totalVariants = variants.length;
         const stepLabel = `Biến thể ${s.currentVariantIndex + 1}/${totalVariants} · ${variant.shortLabel}`;
 
         const irrMeta = CardSchemas.getIrregularMeta(card) || { color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' };
+        const variantExample = variant.example || '';
 
         root.innerHTML = `
             <div class="review-card-screen">
@@ -290,8 +289,12 @@ const StudyPage = {
                         Nghe phát âm
                     </button>
                     <div class="study-intro-card__divider"></div>
-                    <div class="study-intro-card__meaning-label">DẠNG GỐC</div>
-                    <div class="study-intro-card__meaning">${this._escapeHtml(word)} ${partOfSpeech ? `(${partOfSpeech})` : ''} — ${this._escapeHtml(meaning)}</div>
+                    <div class="study-intro-card__meaning-label">NGHĨA</div>
+                    <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
+                    ${variantExample ? `
+                        <div class="study-intro-card__example-label">VÍ DỤ</div>
+                        <div class="study-intro-card__example">${this._escapeHtml(variantExample)}</div>
+                    ` : ''}
                 </div>
 
                 <div class="review-actions">

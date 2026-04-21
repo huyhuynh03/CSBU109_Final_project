@@ -112,13 +112,15 @@
         "partOfSpeech": "verb",
         "difficulty": "intermediate",
         "meaning": "dạy, giảng dạy",
-        "example": "My mother taught me how to read when I was four.",
+        "example": "Experienced professors teach advanced students every semester.",
         "note": "Bat quy tac: teach - taught - taught",
         "familyId": "teach",
         "familyOrder": 1,
         "tags": ["irregular-verb"],
         "pastSimple": "taught",
-        "pastParticiple": "taught"
+        "pastParticiple": "taught",
+        "examplePastSimple": "My mother taught me how to read when I was four.",
+        "examplePastParticiple": "He has taught English at this school for over ten years."
       }
     },
     {
