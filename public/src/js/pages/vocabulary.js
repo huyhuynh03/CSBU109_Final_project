@@ -321,10 +321,14 @@ const VocabularyPage = {
             const total = cards.length;
             const newCount = cards.filter(c => c.state === 'new' || c.state === FSRS.State.NEW).length;
             const now = new Date();
-            const dueCount = cards.filter(c => {
-                // Chỉ đếm due cho card đã học (review/relearning), không đếm card mới
+            const isReviewable = (c) => {
                 const st = c.state;
-                if (st === 'new' || st === FSRS.State.NEW) return false;
+                return st === 'review' || st === FSRS.State.REVIEW
+                    || st === 'relearning' || st === FSRS.State.RELEARNING;
+            };
+            const dueCount = cards.filter(c => {
+                // Phải đồng bộ với ReviewPage._init: chỉ REVIEW/RELEARNING và due.
+                if (!isReviewable(c)) return false;
                 if (!c.dueDate) return false;
                 const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
                 return dueDate <= now;
