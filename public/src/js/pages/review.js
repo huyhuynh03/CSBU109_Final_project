@@ -53,14 +53,14 @@ const ReviewPage = {
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
             }
 
-            // Chỉ ôn tập những card đã rời khỏi trạng thái 'new'
-            // (learning / review / relearning đều có dueDate hợp lệ và cần ôn)
-            const isLearned = (c) => {
+            // Chỉ ôn tập những card thực sự ở trạng thái REVIEW / RELEARNING.
+            // NEW và LEARNING đều thuộc pipeline "học mới" — không được đưa vào ôn tập.
+            const isReviewable = (c) => {
                 const st = c.state;
-                if (st === FSRS.State.NEW || st === 'new') return false;
-                return true;
+                return st === FSRS.State.REVIEW || st === 'review'
+                    || st === FSRS.State.RELEARNING || st === 'relearning';
             };
-            cards = cards.filter(isLearned);
+            cards = cards.filter(isReviewable);
 
             // KHÔNG auto fallback "ôn sớm" — nếu không có thẻ tới hạn thì hiển thị Empty.
             // (Tránh bug: vừa ôn 1 thẻ xong bấm "Ôn tiếp" lại lặp lại chính thẻ đó
