@@ -1,66 +1,90 @@
-# Irregular Word Learning - Cơ chế học từ bất quy tắc
+# Học từ bất quy tắc — Schema v2
 
-## Quyết định kiến trúc (chốt 2026-04-19)
+> **Lịch sử:** Phiên bản trước (v1) gộp 3 biến thể (V1/V2/V3 hoặc nguyên mẫu/so sánh hơn/so sánh nhất) vào **một thẻ duy nhất**, ép user học cả 3 dạng trong 1 lượt. Cách này gây quá nhiều lỗi (ví dụ sai ngữ pháp giữa các biến thể, FSRS không phân biệt được dạng nào đã thuộc, popup family rối, code review/study phức tạp với `_chosenForms`/`variantIndex`/`_renderVariantIntroStep`...).
+> **v2:** Tách thành **6 topic độc lập**, mỗi thẻ chỉ chứa **1 dạng duy nhất**. Nguyên mẫu (`baseForm`) chỉ là chú thích, không kiểm tra.
 
-Khác biệt rõ giữa Family Word và Irregular Word:
+## 1. Sáu topic mới
 
-| | Family Word | Irregular Word |
-|---|---|---|
-| Số thẻ trong DB | N thẻ (mỗi biến thể 1 thẻ độc lập, có nghĩa riêng) | **1 thẻ duy nhất** chứa cả bundle |
-| Pop-up gợi ý | Có, user chọn "Học ngay" hoặc "Để sau" | KHÔNG, chạy tuần tự bắt buộc |
-| Thoát giữa chừng | Được, lưu pendingFamilies | KHÔNG, phải hoàn thành cả bundle |
-| Lưu trong DB | Mỗi biến thể có state/dueDate riêng | Cả bundle dùng chung 1 state/dueDate |
-| Ôn tập | Mỗi biến thể ôn theo lịch riêng | Random 1 dạng (V1/V2/V3) mỗi lần ôn |
+| Topic ID | Tên hiển thị | Ghi chú |
+|----------|-------------|---------|
+| `irregular-verb-v2` | Động từ BQT – V2 (Quá khứ đơn) | thẻ test `wrote`, `went`, ... — `baseForm = write/go` |
+| `irregular-verb-v3` | Động từ BQT – V3 (Quá khứ phân từ) | thẻ test `written`, `gone`, ... |
+| `irregular-adj-comparative` | Tính từ BQT – So sánh hơn | `better`, `worse`, ... — `baseForm = good/bad` |
+| `irregular-adj-superlative` | Tính từ BQT – So sánh nhất | `best`, `worst`, ... |
+| `irregular-adv-comparative` | Trạng từ BQT – So sánh hơn | `better`, `worse`, ... — `baseForm = well/badly` |
+| `irregular-adv-superlative` | Trạng từ BQT – So sánh nhất | `best`, `worst`, ... |
 
-## Data model (KHÔNG đổi schema)
+Cả 6 topic nằm trong category mới `irregular` (`Bất quy tắc`), order 30-35.
 
-Tận dụng các field sẵn có trong `vocabulary` schema:
-- `tags`: chứa `'irregular-verb' | 'irregular-adjective' | 'irregular-adverb'`
-- `pastSimple`, `pastParticiple`: cho irregular verb
-- `comparative`, `superlative`: cho irregular adj/adv
+## 2. Schema thẻ (vocabulary v2)
 
-Helper mới trong `CardSchemas`:
-- `isIrregular(card)` → boolean
-- `getIrregularType(card)` → `'verb' | 'adjective' | 'adverb' | null`
-- `getIrregularVariants(card)` → `[{ key, label, value }]`
-  - verb: `[{ key:'pastSimple', label:'V2', value:'wrote' }, { key:'pastParticiple', label:'V3', value:'written' }]`
-  - adj/adv: `[{ key:'comparative', label:'So sánh hơn', value:'better' }, { key:'superlative', label:'So sánh nhất', value:'best' }]`
+Thẻ BQT giữ nguyên schema vocabulary cơ bản + thêm **3 field ẩn**:
 
-## UI - Topic Detail
+```js
+{
+  word:          "wrote",                         // dạng được kiểm tra
+  ipa:           "/roʊt/",
+  partOfSpeech:  "verb",
+  meaning:       "đã viết (quá khứ đơn của write)",
+  example:       "He wrote a long email last night.",
+  tags:          ["irregular-verb"],
+  irregularRole: "pastSimple",                    // pastSimple|pastParticiple|comparative|superlative
+  baseForm:      "write",                         // CHÚ THÍCH (không test)
+  baseMeaning:   "viết"                           // CHÚ THÍCH
+}
+```
 
-Mỗi thẻ irregular hiển thị:
-- Badge `🔀 V1·V2·V3` (verb tím) / `🔀 So sánh BQT` (adj cam) / `🔀 Trạng từ BQT` (adv hồng)
-- Secondary text show kèm các dạng: `viết (wrote / written)`, `tốt (better / best)`
+**Hợp lệ là BQT v2 ⇔** có tag `irregular-*` **và** có `irregularRole`. Nếu thiếu `irregularRole` → coi như thẻ thường (hoặc legacy → bị cleanup xoá).
 
-## Luồng học (Study)
+## 3. Luồng học mới (study.js)
 
-Sau khi user hoàn thành Step 1-3 chuẩn của 1 thẻ:
-- Nếu thẻ có `isIrregular === true` → đẩy thêm các step phụ vào session cho chính thẻ này:
-  - Step 4: Học V2 (intro biến thể) → gõ V2
-  - Step 5: Học V3 (intro biến thể) → gõ V3
-  - (adj/adv: tương tự cho comparative/superlative)
-- User KHÔNG thể "Hủy" hay "Skip" giữa các step phụ
-- Khi hoàn thành tất cả → thẻ mới chuyển state `review`
+Bỏ hoàn toàn `_renderVariantIntroStep` và `_renderVariantTypeStep`. Mỗi thẻ chỉ qua đúng **3 bước cũ**:
 
-Implementation: thêm field `bundleSteps` vào session để liệt kê các step phụ, render chung pattern `_renderTypeStep()` nhưng `data-expected` là variant value, instruction được điều chỉnh.
+1. **Bước 1 – Giới thiệu**: Hiển thị `word`, IPA, nghĩa, ví dụ.
+   - Nếu là BQT v2: thêm badge vai trò (`Động từ BQT · V2`) và khối chú thích **`Nguyên mẫu: write — viết`**.
+2. **Bước 2 – Tập viết** (VN→EN): gõ chính xác `word`.
+3. **Bước 3 – Tập nghe** (Listen→EN): gõ chính xác `word`.
 
-## Luồng ôn (Review)
+Sau bước 3 → finalize FSRS như thẻ thường, không còn step 4/5.
 
-Khi tới thẻ irregular trong vòng ôn:
-- Random chọn 1 dạng (V1, V2, hoặc V3) làm câu hỏi
-- Hỏi pattern: "Cho `wrote` (V2), gõ V1?" hoặc "Cho `viết` (V1), gõ V2?"
-- Đáp án và prompt thay đổi theo dạng được random
+## 4. Luồng ôn tập mới (review.js)
 
-## Test sample (đã có)
+Bỏ hoàn toàn `_chosenForms`. Mỗi thẻ chỉ test đúng **`word`** ở cả 2 vòng:
 
-7 thẻ trong `test-samples.json`:
-- 4 thẻ family `beauty/beautify/beautiful/beautifully` (không irregular, test family popup)
-- 1 thẻ `write` (irregular verb, bundle 3 step: V1/V2/V3)
-- 1 thẻ `good` (irregular adj, bundle 3 step: positive/comparative/superlative)
-- 1 thẻ `well` (irregular adv, bundle 3 step)
+- **Vòng 1**: hiện nghĩa → gõ `word`.
+- **Vòng 2**: phát âm → gõ `word`.
+- BQT v2 hiển thị badge vai trò + chú thích `(nguyên mẫu: write)` ở khu vực hint.
+- **Backside**: hiển thị `word` (màu theo loại BQT), ví dụ, và khối chú thích **`Nguyên mẫu: write — viết`** ở dưới cùng.
 
-→ Tổng "dạng từ" user phải học = 4 + 3 + 3 + 3 = 13 dạng, dù chỉ có 7 thẻ.
+## 5. Cleanup dữ liệu cũ (Firestore)
 
-## Note phụ
+[`public/src/js/fsrs/bqt-v2-cleanup.js`](public/src/js/fsrs/bqt-v2-cleanup.js:1) chạy 1 lần/user (flag `lf_bqt_v2_cleanup_v1` trong localStorage), được gọi đầu hàm [`VocabularyPage._autoSeedTopics()`](public/src/js/pages/vocabulary.js:964) trước khi seed 6 topic v2.
 
-User đã quyết: **KHÔNG tô màu nền thẻ theo độ khó** (gây loạn). Chỉ giữ badge text "Dễ"/"Khó" ở góc.
+Điều kiện xoá:
+- Thẻ có bất kỳ field legacy nào: `pastSimple`, `pastParticiple`, `comparative`, `superlative`, **HOẶC**
+- Thẻ có tag `irregular-*` nhưng thiếu `irregularRole`.
+
+Sau khi cleanup, seed importer tự đổ 6 topic v2 từ [`public/seed-vocabulary/irregular-*.json`](public/seed-vocabulary/irregular-verb-v2.json:1).
+
+## 6. Các API CardSchemas còn dùng
+
+- `CardSchemas.isIrregular(card)` — chỉ true khi v2 hợp lệ.
+- `CardSchemas.isLegacyIrregular(card)` — phát hiện thẻ cũ.
+- `CardSchemas.getIrregularMeta(card)` → `{ tag, type, label, color, bg, role, roleLabel, roleShort }`.
+- `CardSchemas.IRREGULAR_ROLE_LABELS` — map role → nhãn hiển thị.
+- `CardSchemas.getIrregularVariants()` / `getIrregularVariantsShort()` — **deprecated**, luôn trả `[]`/`''`.
+
+## 7. Family popup
+
+Luồng mới: 6 topic BQT không share `familyId` (mỗi card BQT độc lập). `_maybeShowFamilyPopup` tự động bỏ qua khi `familyId` không tồn tại — không cần gỡ.
+
+## 8. Checklist refactor (đã hoàn thành)
+
+- [x] Schema v2: `irregularRole` + `baseForm` + `baseMeaning` (hidden).
+- [x] 6 topic config + category `irregular`.
+- [x] 6 seed JSON (data/ + public/seed-vocabulary/).
+- [x] Auto-seed map.
+- [x] [`StudyPage`](public/src/js/pages/study.js:8): xoá variant flow, intro step hiển thị baseForm.
+- [x] [`ReviewPage`](public/src/js/pages/review.js:7): xoá `_chosenForms`, backside hiển thị baseForm.
+- [x] Cleanup Firestore legacy (`BqtV2Cleanup`).
+- [x] Bump cache + sw.

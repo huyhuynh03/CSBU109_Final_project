@@ -1,0 +1,90 @@
+// ============================================
+// BQT v2 Cleanup - Xoá toàn bộ thẻ BQT legacy (schema v1)
+// ============================================
+// Lý do: Schema BQT v2 tách mỗi dạng thành 1 thẻ riêng (V2/V3/so sánh hơn/so sánh nhất).
+// Các thẻ cũ gộp nhiều biến thể trong 1 thẻ (field pastSimple/pastParticiple/comparative/superlative)
+// sẽ gây mâu thuẫn logic — luồng mới không thể xử lý. User đã cho phép xoá.
+//
+// Cleanup này idempotent: chỉ chạy 1 lần/user, flag lưu trong localStorage.
+// Seed importer sẽ tự đổ 6 topic BQT mới (v2) sau khi cleanup.
+
+const BqtV2Cleanup = {
+    VERSION_KEY: 'lf_bqt_v2_cleanup_v1',
+
+    _hasRun(userId) {
+        try {
+            const data = JSON.parse(localStorage.getItem(this.VERSION_KEY) || '{}');
+            return !!data[userId];
+        } catch {
+            return false;
+        }
+    },
+
+    _markDone(userId) {
+        try {
+            const data = JSON.parse(localStorage.getItem(this.VERSION_KEY) || '{}');
+            data[userId] = new Date().toISOString();
+            localStorage.setItem(this.VERSION_KEY, JSON.stringify(data));
+        } catch (e) {
+            console.warn('[BqtV2Cleanup] Cannot persist cleanup flag:', e);
+        }
+    },
+
+    _isLegacyBqt(card) {
+        const fv = card.fieldValues || card || {};
+        return !!(fv.pastSimple || fv.pastParticiple || fv.comparative || fv.superlative);
+    },
+
+    /**
+     * Xoá toàn bộ thẻ BQT legacy + xoá các folder BQT cũ (topicId cũ không thuộc 6 topic v2).
+     */
+    async run() {
+        const userId = (typeof Auth !== 'undefined') ? Auth.getUserId() : null;
+        if (!userId) return;
+        if (this._hasRun(userId)) {
+            console.log('[BqtV2Cleanup] Already cleaned for user', userId);
+            return;
+        }
+
+        const ref = FirestoreDB._userCollection('cards');
+        if (!ref) return;
+
+        try {
+            const snapshot = await ref.get();
+            let deleted = 0;
+            const batchSize = 400;
+            let batch = db.batch();
+            let inBatch = 0;
+
+            snapshot.forEach((doc) => {
+                const c = doc.data();
+                const fv = c.fieldValues || {};
+                // Điều kiện xoá: thẻ có field biến thể cũ (legacy) HOẶC
+                // thẻ có tag irregular-* nhưng không có irregularRole (schema v2 mới yêu cầu role).
+                const hasLegacyFields = !!(fv.pastSimple || fv.pastParticiple || fv.comparative || fv.superlative);
+                const tags = Array.isArray(fv.tags) ? fv.tags : [];
+                const hasIrrTag = tags.some(t => t === 'irregular-verb' || t === 'irregular-adjective' || t === 'irregular-adverb');
+                const missingRole = hasIrrTag && !fv.irregularRole;
+
+                if (!hasLegacyFields && !missingRole) return;
+
+                batch.delete(doc.ref);
+                deleted++;
+                inBatch++;
+
+                if (inBatch >= batchSize) {
+                    batch.commit().catch(e => console.error('[BqtV2Cleanup] batch commit failed:', e));
+                    batch = db.batch();
+                    inBatch = 0;
+                }
+            });
+
+            if (inBatch > 0) await batch.commit();
+
+            console.log(`[BqtV2Cleanup] ✅ Deleted ${deleted} legacy BQT cards for user ${userId}`);
+            this._markDone(userId);
+        } catch (e) {
+            console.error('[BqtV2Cleanup] Cleanup failed:', e);
+        }
+    }
+};

@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-adv-comparative",
+    "description": "Trạng từ bất quy tắc – dạng so sánh hơn.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "better",
+        "ipa": "/ˈbɛtər/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tốt hơn – bổ nghĩa cho động từ (so sánh hơn của well)",
+        "example": "She sings better than anyone else in the choir.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "well",
+        "baseMeaning": "khoẻ, tốt (trạng từ)"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worse",
+        "ipa": "/wɜːrs/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tệ hơn – bổ nghĩa cho động từ (so sánh hơn của badly)",
+        "example": "He performed worse in today's match than in last week's.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "badly",
+        "baseMeaning": "tệ, kém (trạng từ)"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "farther",
+        "ipa": "/ˈfɑːrðər/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "xa hơn – khoảng cách vật lý (so sánh hơn của far)",
+        "example": "You can throw the ball farther than I can.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "far",
+        "baseMeaning": "xa"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "further",
+        "ipa": "/ˈfɜːrðər/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "hơn nữa, sâu hơn – trừu tượng (so sánh hơn của far)",
+        "example": "Let's discuss this topic further at tomorrow's meeting.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "far",
+        "baseMeaning": "xa, thêm"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "less",
+        "ipa": "/lɛs/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "ít hơn – bổ nghĩa cho động từ/tính từ (so sánh hơn của little)",
+        "example": "He talks less than his sister in family gatherings.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "little",
+        "baseMeaning": "ít"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "more",
+        "ipa": "/mɔːr/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "nhiều hơn – bổ nghĩa cho động từ/tính từ (so sánh hơn của much)",
+        "example": "You should study more if you want to pass the exam.",
+        "tags": ["irregular-adverb"],
+        "irregularRole": "comparative",
+        "baseForm": "much",
+        "baseMeaning": "nhiều"
+      }
+    }
+  ]
+}

@@ -185,35 +185,22 @@ const ReviewPage = {
         const ipa = card.fieldValues?.ipa || '';
         const word = card.fieldValues?.word || '';
 
-        // Irregular handling: pick một dạng (root | variant) ngẫu nhiên cho mỗi lượt
+        // BQT schema v2: mỗi thẻ = 1 dạng độc lập → chỉ test `word`, hiển thị badge vai trò + nguyên mẫu.
         const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
-        const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
         const irrMeta = isIrr ? CardSchemas.getIrregularMeta(card) : null;
-        // forms: [{ key:'root', label:'Dạng gốc', shortLabel:'V1'|'Nguyên mẫu', value:word }, ...variants]
-        // Verb dùng "V1"; adjective/adverb dùng "Nguyên mẫu" (positive degree) — không dùng V1/V2/V3.
-        const rootShort = (irrMeta && irrMeta.type === 'verb') ? 'V1' : 'Nguyên mẫu';
-        const forms = isIrr ? [
-            { key: 'root', label: 'Dạng gốc', shortLabel: rootShort, value: word },
-            ...variants
-        ] : [];
-        // Lưu form đã chọn cho lượt này (giữ nguyên khi user thử lại)
-        if (isIrr) {
-            const sessionKey = `${card.id}_r${s.currentRound}_i${s.currentIndex}`;
-            if (!s._chosenForms) s._chosenForms = {};
-            if (!s._chosenForms[sessionKey]) {
-                s._chosenForms[sessionKey] = forms[Math.floor(Math.random() * forms.length)];
-            }
-        }
-        const targetForm = isIrr ? s._chosenForms[`${card.id}_r${s.currentRound}_i${s.currentIndex}`] : { value: word };
-        const expected = targetForm.value;
+        const baseForm = card.fieldValues?.baseForm || '';
+        const expected = word;
+
+        const irrHint = isIrr
+            ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">
+                  ${this._escapeHtml(irrMeta.label)} · <strong>${this._escapeHtml(irrMeta.roleShort)}</strong>${baseForm ? ` (nguyên mẫu: <em>${this._escapeHtml(baseForm)}</em>)` : ''}
+               </div>`
+            : '';
 
         // Nội dung câu hỏi khác nhau giữa 2 vòng
         let questionHtml;
         if (s.currentRound === 1) {
             // Vòng 1: Hiển thị nghĩa tiếng Việt
-            const irrHint = isIrr
-                ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">Bất quy tắc — gõ dạng <strong>${this._escapeHtml(targetForm.shortLabel || targetForm.label)}</strong></div>`
-                : '';
             questionHtml = `
                 <div class="review-question review-question--vn">
                     <div class="review-question__label">NGHĨA</div>
@@ -225,9 +212,6 @@ const ReviewPage = {
         } else {
             // Vòng 2: Phát âm
             const fallback = !TTS.isAvailable();
-            const irrHint = isIrr
-                ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">Bất quy tắc — gõ dạng <strong>${this._escapeHtml(targetForm.shortLabel || targetForm.label)}</strong></div>`
-                : '';
             questionHtml = `
                 <div class="review-question review-question--listen">
                     <button class="review-audio-btn" onclick="ReviewPage._playAudio()">
@@ -323,12 +307,8 @@ const ReviewPage = {
         const s = this._session;
         const card = s.cards[s.currentIndex];
         const word = card.fieldValues?.word || '';
-        // Nếu là irregular và đã chọn form variant → phát đúng form đó
-        const sessionKey = `${card.id}_r${s.currentRound}_i${s.currentIndex}`;
-        const chosen = s._chosenForms && s._chosenForms[sessionKey];
-        const text = chosen ? chosen.value : word;
-        if (text && TTS.isAvailable()) {
-            TTS.speak(text);
+        if (word && TTS.isAvailable()) {
+            TTS.speak(word);
         }
     },
 
@@ -439,7 +419,7 @@ const ReviewPage = {
         }
         const card = s.cards[s.currentIndex];
         const fv = card.fieldValues || {};
-        const rootWord = fv.word || '';
+        const word = fv.word || '';
         const ipa = fv.ipa || '';
         const meaning = fv.meaning || '';
         const example = fv.example || '';
@@ -452,32 +432,25 @@ const ReviewPage = {
             ? CardSchemas.getDifficultyMeta(difficulty)
             : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
 
-        // Irregular: lấy đúng dạng đã được test ở vòng này (root | variant)
+        // BQT v2: badge vai trò + chú thích nguyên mẫu (không kiểm tra)
         const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
         const irrMeta = isIrr ? CardSchemas.getIrregularMeta(card) : null;
-        const sessionKey = `${card.id}_r${s.currentRound}_i${s.currentIndex}`;
-        const chosenForm = (isIrr && s._chosenForms && s._chosenForms[sessionKey])
-            ? s._chosenForms[sessionKey]
-            : null;
+        const baseForm = fv.baseForm || '';
+        const baseMeaning = fv.baseMeaning || '';
 
-        // Mặt sau LUÔN hiển thị đúng dạng vừa được test (không hiện dạng gốc/dạng khác)
-        const displayWord = chosenForm ? chosenForm.value : rootWord;
-        // IPA chỉ áp dụng cho dạng gốc → nếu đang test biến thể thì ẩn IPA
-        const displayIpa  = (chosenForm && chosenForm.key !== 'root') ? '' : ipa;
-        // Ví dụ: nếu đang test biến thể thì dùng ví dụ riêng của biến thể đó (nếu có),
-        // còn không thì ẩn (vì ví dụ của V1 sẽ chứa V1 → lộ đáp án / sai ngữ pháp biến thể).
-        const displayExample = (chosenForm && chosenForm.key !== 'root')
-            ? (chosenForm.example || '')
-            : example;
-
-        const irrFormBadge = (isIrr && chosenForm) ? `
+        const irrFormBadge = isIrr ? `
             <div style="display:flex;justify-content:center;margin-top:6px;">
                 <span style="padding:4px 10px;border-radius:999px;background:${irrMeta.bg};color:${irrMeta.color};font-size:var(--font-size-sm);font-weight:700;">
-                    ${this._escapeHtml(irrMeta.shortLabel || 'BQT')} · ${this._escapeHtml(chosenForm.label || chosenForm.shortLabel || 'Dạng gốc')}
+                    ${this._escapeHtml(irrMeta.label)} · ${this._escapeHtml(irrMeta.roleShort)}
                 </span>
             </div>
         ` : '';
-        const variantsHtml = '';
+        const baseFormHtml = (isIrr && baseForm) ? `
+            <div style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:var(--color-text-secondary);text-align:center;">
+                <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">info</span>
+                Nguyên mẫu: <strong style="color:${irrMeta.color};">${this._escapeHtml(baseForm)}</strong>${baseMeaning ? ` — ${this._escapeHtml(baseMeaning)}` : ''}
+            </div>
+        ` : '';
 
         const headerBadge = mode === 'correct'
             ? `<span class="review-round-badge" style="background:linear-gradient(135deg,#10B981,#059669);">✓ Chính xác</span>`
@@ -497,8 +470,8 @@ const ReviewPage = {
                 </div>
 
                 <div class="study-intro-card">
-                    <div class="study-intro-card__word"${isIrr && chosenForm ? ` style="color:${irrMeta.color};"` : ''}>${this._escapeHtml(displayWord)}</div>
-                    ${displayIpa ? `<div class="study-intro-card__ipa">${this._escapeHtml(displayIpa)}</div>` : ''}
+                    <div class="study-intro-card__word"${isIrr ? ` style="color:${irrMeta.color};"` : ''}>${this._escapeHtml(word)}</div>
+                    ${ipa ? `<div class="study-intro-card__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="study-intro-card__pos">${this._escapeHtml(partOfSpeech)}</div>` : ''}
                     ${irrFormBadge}
                     <button class="review-audio-btn" onclick="ReviewPage._playAudio()" style="margin:var(--spacing-md) 0;">
@@ -508,10 +481,11 @@ const ReviewPage = {
                     <div class="study-intro-card__divider"></div>
                     <div class="study-intro-card__meaning-label">NGHĨA</div>
                     <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
-                    ${displayExample ? `
+                    ${example ? `
                         <div class="study-intro-card__example-label">VÍ DỤ</div>
-                        <div class="study-intro-card__example">${this._escapeHtml(displayExample)}</div>
+                        <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
                     ` : ''}
+                    ${baseFormHtml}
                 </div>
 
                 <div class="review-actions">

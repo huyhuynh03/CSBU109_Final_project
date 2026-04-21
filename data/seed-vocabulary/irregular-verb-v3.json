@@ -1,0 +1,179 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-verb-v3",
+    "description": "Động từ bất quy tắc – dạng V3 (Quá khứ phân từ). Dùng trong thì hoàn thành hoặc thể bị động.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "gone",
+        "ipa": "/ɡɒn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đi (quá khứ phân từ của go)",
+        "example": "She has gone to the library since early morning.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "go",
+        "baseMeaning": "đi"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "written",
+        "ipa": "/ˈrɪtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được viết (quá khứ phân từ của write)",
+        "example": "This report has been written by our senior analyst.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "write",
+        "baseMeaning": "viết"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taught",
+        "ipa": "/tɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã dạy (quá khứ phân từ của teach)",
+        "example": "Mathematics has been taught at this school for over fifty years.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "teach",
+        "baseMeaning": "dạy"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taken",
+        "ipa": "/ˈteɪkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được lấy (quá khứ phân từ của take)",
+        "example": "All the available seats have been taken by the audience.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "given",
+        "ipa": "/ˈɡɪvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được cho (quá khứ phân từ của give)",
+        "example": "Each student has been given a free textbook this semester.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seen",
+        "ipa": "/siːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được nhìn thấy (quá khứ phân từ của see)",
+        "example": "I have seen that movie three times already.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "made",
+        "ipa": "/meɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được làm (quá khứ phân từ của make)",
+        "example": "This chair has been made from recycled plastic bottles.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "make",
+        "baseMeaning": "làm, chế tạo"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoken",
+        "ipa": "/ˈspoʊkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được nói (quá khứ phân từ của speak)",
+        "example": "English is spoken in over sixty countries around the world.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "speak",
+        "baseMeaning": "nói"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brought",
+        "ipa": "/brɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được mang (quá khứ phân từ của bring)",
+        "example": "All the documents have been brought to the meeting room.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "bring",
+        "baseMeaning": "mang, đem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bought",
+        "ipa": "/bɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được mua (quá khứ phân từ của buy)",
+        "example": "Hundreds of tickets have been bought for tonight's concert.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "buy",
+        "baseMeaning": "mua"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thought",
+        "ipa": "/θɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được nghĩ (quá khứ phân từ của think)",
+        "example": "The new policy has been thought about carefully by the whole board.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "think",
+        "baseMeaning": "nghĩ"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "known",
+        "ipa": "/noʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được biết đến (quá khứ phân từ của know)",
+        "example": "This traditional recipe has been known in our family for generations.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastParticiple",
+        "baseForm": "know",
+        "baseMeaning": "biết"
+      }
+    }
+  ]
+}

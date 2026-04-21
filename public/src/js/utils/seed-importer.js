@@ -93,8 +93,10 @@ const SeedImporter = {
         let failed = 0;
         const errors = [];
 
-        // Các field example có thể cần đồng bộ lại với seed (do seed được sửa ngữ pháp).
-        const SYNC_FIELDS = ['example', 'examplePastSimple', 'examplePastParticiple', 'exampleComparative', 'exampleSuperlative'];
+        // Các field cần đồng bộ lại với seed khi card đã tồn tại.
+        // - example*: seed được sửa ngữ pháp.
+        // - irregularRole/baseForm/baseMeaning: schema BQT v2 — thẻ mới seed cần có role/baseForm đúng.
+        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'tags'];
 
         for (let i = 0; i < total; i++) {
             const entry = seed.cards[i];

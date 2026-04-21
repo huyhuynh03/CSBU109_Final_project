@@ -25,15 +25,13 @@ const CardSchemas = {
             { key: 'familyOrder', label: 'Thứ tự trong family', type: 'number', required: false, placeholder: '1 = gốc, 2,3... = biến thể', hidden: true },
             { key: 'tags', label: 'Tags', type: 'tags', required: false, placeholder: 'VD: irregular-verb, phrasal-verb',
                 allowedValues: ['idiom', 'phrasal-verb', 'irregular-verb', 'irregular-adjective', 'irregular-adverb'] },
-            { key: 'pastSimple', label: 'Quá khứ đơn (V2)', type: 'text', required: false, placeholder: 'VD: went', hidden: true },
-            { key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', type: 'text', required: false, placeholder: 'VD: gone', hidden: true },
-            { key: 'comparative', label: 'So sánh hơn', type: 'text', required: false, placeholder: 'VD: better', hidden: true },
-            { key: 'superlative', label: 'So sánh nhất', type: 'text', required: false, placeholder: 'VD: best', hidden: true },
-            // Ví dụ riêng cho từng dạng biến thể (giúp đảm bảo ngữ pháp chính xác khi test biến thể)
-            { key: 'examplePastSimple', label: 'Ví dụ (V2)', type: 'textarea', required: false, placeholder: 'VD: She went to school yesterday.', hidden: true },
-            { key: 'examplePastParticiple', label: 'Ví dụ (V3)', type: 'textarea', required: false, placeholder: 'VD: She has gone to school.', hidden: true },
-            { key: 'exampleComparative', label: 'Ví dụ (so sánh hơn)', type: 'textarea', required: false, placeholder: 'VD: This book is better than that one.', hidden: true },
-            { key: 'exampleSuperlative', label: 'Ví dụ (so sánh nhất)', type: 'textarea', required: false, placeholder: 'VD: This is the best book I have ever read.', hidden: true }
+            // ==== BQT (v2 schema): mỗi thẻ = 1 dạng độc lập ====
+            // irregularRole: pastSimple | pastParticiple | comparative | superlative
+            // baseForm: nguyên mẫu tham chiếu (hiển thị chú thích, không kiểm tra)
+            { key: 'irregularRole', label: 'Vai trò BQT', type: 'select', required: false, hidden: true,
+                options: ['', 'pastSimple', 'pastParticiple', 'comparative', 'superlative'] },
+            { key: 'baseForm', label: 'Nguyên mẫu', type: 'text', required: false, placeholder: 'VD: well (trạng từ nguyên mẫu của best)', hidden: true },
+            { key: 'baseMeaning', label: 'Nghĩa nguyên mẫu', type: 'text', required: false, hidden: true }
         ],
         /**
          * Get display text for a card (used in lists)
@@ -126,68 +124,77 @@ const CardSchemas = {
     },
 
     /**
-     * Irregular word helpers
+     * Irregular word helpers (SCHEMA v2 — mỗi thẻ = 1 dạng độc lập)
      * ============================================
-     * Tags: 'irregular-verb', 'irregular-adjective', 'irregular-adverb'
-     * Variants được lưu trong fields: pastSimple, pastParticiple, comparative, superlative
+     * Tags: 'irregular-verb', 'irregular-adjective', 'irregular-adverb' — dùng để chọn màu/nhãn nhóm.
+     * Thẻ mới có: irregularRole (pastSimple|pastParticiple|comparative|superlative) + baseForm (nguyên mẫu).
      */
     IRREGULAR_TAGS: {
-        'irregular-verb':      { type: 'verb',      label: 'V1·V2·V3',     note: 'Động từ BQT',  shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
-        'irregular-adjective': { type: 'adjective', label: 'So sánh BQT',  note: 'Tính từ BQT',  shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
+        'irregular-verb':      { type: 'verb',      label: 'Động từ BQT',  note: 'Động từ BQT',  shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
+        'irregular-adjective': { type: 'adjective', label: 'Tính từ BQT',  note: 'Tính từ BQT',  shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
         'irregular-adverb':    { type: 'adverb',    label: 'Trạng từ BQT', note: 'Trạng từ BQT', shortLabel: 'BQT', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
     },
 
+    IRREGULAR_ROLE_LABELS: {
+        pastSimple:     { label: 'V2 (Quá khứ đơn)',         short: 'V2' },
+        pastParticiple: { label: 'V3 (Quá khứ phân từ)',     short: 'V3' },
+        comparative:    { label: 'So sánh hơn',              short: 'So sánh hơn' },
+        superlative:    { label: 'So sánh nhất',             short: 'So sánh nhất' }
+    },
+
     /**
-     * Check if a card is irregular (has irregular tag + has variants)
+     * Check if a card is irregular variant (schema v2).
+     * LEGACY cards (có pastSimple/pastParticiple/comparative/superlative trên cùng 1 thẻ) KHÔNG còn được nhận diện là irregular
+     * → user sẽ bị bắt xoá/migrate qua module tách thẻ.
      */
     isIrregular(card) {
         if (!card || !card.fieldValues) return false;
-        const tags = card.fieldValues.tags || [];
+        const fv = card.fieldValues;
+        const tags = fv.tags || [];
         if (!Array.isArray(tags)) return false;
-        return tags.some(t => this.IRREGULAR_TAGS[t]);
+        const hasIrrTag = tags.some(t => this.IRREGULAR_TAGS[t]);
+        return hasIrrTag && !!fv.irregularRole;
     },
 
     /**
-     * Get irregular meta { type, label, color, bg } for a card; null if not irregular
+     * Check if card is legacy BQT (cấu trúc cũ gộp nhiều biến thể vào 1 thẻ). Trả true nếu phát hiện field biến thể cũ.
+     */
+    isLegacyIrregular(card) {
+        if (!card || !card.fieldValues) return false;
+        const fv = card.fieldValues;
+        return !!(fv.pastSimple || fv.pastParticiple || fv.comparative || fv.superlative);
+    },
+
+    /**
+     * Get irregular meta { type, label, color, bg, role, roleLabel, roleShort } for a card; null if not irregular v2.
      */
     getIrregularMeta(card) {
-        if (!card || !card.fieldValues) return null;
-        const tags = card.fieldValues.tags || [];
-        if (!Array.isArray(tags)) return null;
+        if (!this.isIrregular(card)) return null;
+        const fv = card.fieldValues;
+        const tags = fv.tags || [];
+        let base = null;
         for (const t of tags) {
-            if (this.IRREGULAR_TAGS[t]) return { tag: t, ...this.IRREGULAR_TAGS[t] };
+            if (this.IRREGULAR_TAGS[t]) { base = { tag: t, ...this.IRREGULAR_TAGS[t] }; break; }
         }
-        return null;
+        if (!base) return null;
+        const roleMeta = this.IRREGULAR_ROLE_LABELS[fv.irregularRole] || null;
+        return {
+            ...base,
+            role: fv.irregularRole,
+            roleLabel: roleMeta ? roleMeta.label : '',
+            roleShort: roleMeta ? roleMeta.short : ''
+        };
     },
 
     /**
-     * Get list of irregular variants for a card.
-     * Returns: [{ key, label, value, hint }] - empty array if no variants found.
-     * Verb: pastSimple (V2), pastParticiple (V3)
-     * Adj/Adv: comparative, superlative
+     * Luồng mới: thẻ chỉ có 1 dạng → không còn variants → luôn trả []. Giữ hàm để tương thích các chỗ gọi cũ.
      */
     getIrregularVariants(card) {
-        const meta = this.getIrregularMeta(card);
-        if (!meta) return [];
-        const fv = card.fieldValues || {};
-        const variants = [];
-        if (meta.type === 'verb') {
-            if (fv.pastSimple) variants.push({ key: 'pastSimple', label: 'Quá khứ đơn (V2)', shortLabel: 'V2', value: fv.pastSimple, example: fv.examplePastSimple || '' });
-            if (fv.pastParticiple) variants.push({ key: 'pastParticiple', label: 'Quá khứ phân từ (V3)', shortLabel: 'V3', value: fv.pastParticiple, example: fv.examplePastParticiple || '' });
-        } else if (meta.type === 'adjective' || meta.type === 'adverb') {
-            if (fv.comparative) variants.push({ key: 'comparative', label: 'So sánh hơn', shortLabel: 'So sánh hơn', value: fv.comparative, example: fv.exampleComparative || '' });
-            if (fv.superlative) variants.push({ key: 'superlative', label: 'So sánh nhất', shortLabel: 'So sánh nhất', value: fv.superlative, example: fv.exampleSuperlative || '' });
-        }
-        return variants;
+        return [];
     },
 
-    /**
-     * Get short text "wrote / written" or "better / best" to show in lists.
-     */
     getIrregularVariantsShort(card) {
-        const variants = this.getIrregularVariants(card);
-        if (!variants.length) return '';
-        return variants.map(v => v.value).join(' / ');
+        return '';
     },
 
     /**

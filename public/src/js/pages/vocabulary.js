@@ -9,7 +9,13 @@ const VocabularyPage = {
     _filterState: null,
     // Map topicId → seed filename cho các topic có dữ liệu mẫu
     _seedTopics: {
-        'education': 'test-samples.json'
+        'education': 'test-samples.json',
+        'irregular-verb-v2': 'irregular-verb-v2.json',
+        'irregular-verb-v3': 'irregular-verb-v3.json',
+        'irregular-adj-comparative': 'irregular-adj-comparative.json',
+        'irregular-adj-superlative': 'irregular-adj-superlative.json',
+        'irregular-adv-comparative': 'irregular-adv-comparative.json',
+        'irregular-adv-superlative': 'irregular-adv-superlative.json'
     },
 
     async render() {
@@ -963,6 +969,12 @@ const VocabularyPage = {
             try { return localStorage.getItem(EXAMPLES_SYNC_KEY) !== '1'; }
             catch { return false; }
         })();
+
+        // [BQT v2] Clean up legacy BQT cards TRƯỚC khi seed 6 topic mới, tránh data cũ đè lên data mới.
+        if (typeof BqtV2Cleanup !== 'undefined') {
+            try { await BqtV2Cleanup.run(); } catch (e) { console.warn('[VocabularyPage] BqtV2Cleanup error:', e); }
+        }
+
         try {
             // Lấy cards hiện có để check topic nào đã có từ
             const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });

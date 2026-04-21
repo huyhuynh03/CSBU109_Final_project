@@ -237,17 +237,15 @@ const StudyPage = {
             this._renderTypeStep(card, 'vn-to-en');
         } else if (s.currentStep === 3) {
             this._renderTypeStep(card, 'listen-to-en');
-        } else if (s.currentStep === 4) {
-            this._renderVariantIntroStep(card);
-        } else if (s.currentStep === 5) {
-            this._renderVariantTypeStep(card);
         }
     },
 
     // ============================================
-    // STEP 4: VARIANT INTRO (irregular word: V2/V3 hoặc comparative/superlative)
+    // [LEGACY] Variant flow đã bị loại bỏ trong schema v2.
+    // Mỗi thẻ BQT giờ = 1 dạng độc lập, học qua luồng 3 bước thông thường
+    // + hiển thị baseForm (nguyên mẫu) như chú thích ở bước 1.
     // ============================================
-    _renderVariantIntroStep(card) {
+    _renderVariantIntroStep_DEPRECATED(card) {
         const root = document.getElementById('study-page-root');
         if (!root) return;
 
@@ -419,6 +417,20 @@ const StudyPage = {
             ? CardSchemas.getDifficultyMeta(difficulty)
             : { short: difficulty === 'advanced' ? 'ADV' : 'INT', label: difficulty };
 
+        // BQT v2: badge vai trò (V2/V3/So sánh hơn/So sánh nhất) + chú thích nguyên mẫu (baseForm)
+        const irrMeta = (typeof CardSchemas !== 'undefined') ? CardSchemas.getIrregularMeta(card) : null;
+        const baseForm = fv.baseForm || '';
+        const baseMeaning = fv.baseMeaning || '';
+        const roleBadgeHtml = irrMeta ? `
+            <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${this._escapeHtml(irrMeta.label)} · ${this._escapeHtml(irrMeta.roleShort)}</span>
+        ` : '';
+        const baseFormHtml = (irrMeta && baseForm) ? `
+            <div class="study-intro-card__base-note" style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:var(--color-text-secondary);">
+                <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">info</span>
+                Nguyên mẫu: <strong style="color:${irrMeta.color};">${this._escapeHtml(baseForm)}</strong>${baseMeaning ? ` — ${this._escapeHtml(baseMeaning)}` : ''}
+            </div>
+        ` : '';
+
         root.innerHTML = `
             <div class="review-card-screen" data-difficulty="${difficulty}">
                 <div class="review-header">
@@ -426,6 +438,7 @@ const StudyPage = {
                         <span class="review-round-badge" style="background:linear-gradient(135deg,#10B981,#059669);">Bước 1/3 · Giới thiệu</span>
                         <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
                         <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
+                        ${roleBadgeHtml}
                     </div>
                     <div class="review-progress">
                         <div class="review-progress__fill" style="width:${progress}%"></div>
@@ -447,6 +460,7 @@ const StudyPage = {
                         <div class="study-intro-card__example-label">VÍ DỤ</div>
                         <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
                     ` : ''}
+                    ${baseFormHtml}
                 </div>
 
                 <div class="review-actions">
@@ -668,7 +682,6 @@ const StudyPage = {
     // ============================================
     async _nextStep() {
         const s = this._session;
-        const card = s.cards[s.currentIndex];
         if (s.currentStep === 1) {
             s.currentStep = 2;
             this._renderStep();
@@ -676,35 +689,13 @@ const StudyPage = {
             s.currentStep = 3;
             this._renderStep();
         } else if (s.currentStep === 3) {
-            // Step 3 xong → kiểm tra irregular bundle
-            const isIrr = (typeof CardSchemas !== 'undefined') && CardSchemas.isIrregular(card);
-            const variants = isIrr ? CardSchemas.getIrregularVariants(card) : [];
-            if (variants.length > 0) {
-                // Bắt đầu bundle: variant intro + variant typing cho từng biến thể
-                s.currentVariantIndex = 0;
-                s.currentStep = 4;
-                this._renderStep();
-                return;
-            }
-            // Không phải irregular → finalize ngay
+            // Step 3 xong → finalize card ngay (schema v2: không còn variant flow)
             await this._finalizeCard();
+            // Luồng mới: không còn family popup (6 topic BQT tách rời, không share familyId).
+            // Giữ an toàn: chỉ gọi khi card có familyId hợp lệ.
             const popupShown = await this._maybeShowFamilyPopup();
             if (popupShown) return;
             this._nextCard();
-        } else if (s.currentStep === 4) {
-            // Variant intro → variant typing
-            s.currentStep = 5;
-            this._renderStep();
-        } else if (s.currentStep === 5) {
-            // Variant typing xong → biến thể tiếp / hoặc finalize
-            const variants = CardSchemas.getIrregularVariants(card);
-            s.currentVariantIndex = (s.currentVariantIndex || 0) + 1;
-            if (s.currentVariantIndex < variants.length) {
-                s.currentStep = 4;
-                this._renderStep();
-            } else {
-                this._afterAllVariantsDone();
-            }
         }
     },
 

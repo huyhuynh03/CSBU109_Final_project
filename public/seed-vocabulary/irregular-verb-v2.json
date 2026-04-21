@@ -1,0 +1,179 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-verb-v2",
+    "description": "Động từ bất quy tắc – dạng V2 (Quá khứ đơn). Mỗi thẻ là 1 dạng V2 độc lập; baseForm ghi chú nguyên mẫu V1.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "went",
+        "ipa": "/wɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đi (quá khứ đơn của go)",
+        "example": "She went to the market yesterday morning.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "go",
+        "baseMeaning": "đi"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wrote",
+        "ipa": "/roʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã viết (quá khứ đơn của write)",
+        "example": "He wrote a long email to his manager last night.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "write",
+        "baseMeaning": "viết"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taught",
+        "ipa": "/tɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã dạy (quá khứ đơn của teach)",
+        "example": "My grandmother taught me how to bake bread when I was young.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "teach",
+        "baseMeaning": "dạy"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "took",
+        "ipa": "/tʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lấy, đã cầm (quá khứ đơn của take)",
+        "example": "She took the last seat on the bus this morning.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gave",
+        "ipa": "/ɡeɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho (quá khứ đơn của give)",
+        "example": "He gave his sister a beautiful watch for her birthday.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "saw",
+        "ipa": "/sɔː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhìn thấy (quá khứ đơn của see)",
+        "example": "I saw my old classmate at the coffee shop yesterday.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "made",
+        "ipa": "/meɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm, đã chế tạo (quá khứ đơn của make)",
+        "example": "They made a delicious dinner for the guests last Saturday.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "make",
+        "baseMeaning": "làm, chế tạo"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoke",
+        "ipa": "/spoʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nói (quá khứ đơn của speak)",
+        "example": "The director spoke to the whole team about the new project yesterday.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "speak",
+        "baseMeaning": "nói"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brought",
+        "ipa": "/brɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mang, đã đem (quá khứ đơn của bring)",
+        "example": "She brought her own lunch to the office this morning.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "bring",
+        "baseMeaning": "mang, đem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bought",
+        "ipa": "/bɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mua (quá khứ đơn của buy)",
+        "example": "We bought a new refrigerator last weekend.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "buy",
+        "baseMeaning": "mua"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thought",
+        "ipa": "/θɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nghĩ (quá khứ đơn của think)",
+        "example": "I thought about your suggestion for a long time yesterday.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "think",
+        "baseMeaning": "nghĩ"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knew",
+        "ipa": "/njuː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã biết (quá khứ đơn của know)",
+        "example": "He knew the answer long before the teacher finished the question.",
+        "tags": ["irregular-verb"],
+        "irregularRole": "pastSimple",
+        "baseForm": "know",
+        "baseMeaning": "biết"
+      }
+    }
+  ]
+}
