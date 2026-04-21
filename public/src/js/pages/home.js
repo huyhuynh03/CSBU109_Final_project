@@ -104,7 +104,7 @@ const HomePage = {
                 desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
             } else {
                 badge.style.display = 'none';
-                desc.textContent = 'Tất cả các nhóm từ đã hoàn thành 🎉';
+                desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
             }
         } catch (e) {
             console.error('[HomePage] Load incomplete families error:', e);

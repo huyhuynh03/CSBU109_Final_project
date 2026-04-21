@@ -134,14 +134,20 @@ const VocabularyPage = {
                 </div>
 
 
-                <!-- Incomplete Tracking Section -->
-                <div id="vocab-incomplete-section" class="vocab-incomplete-section" style="display:none;">
-                    <div class="vocab-incomplete-header">
-                        <span class="material-icons-round">hourglass_bottom</span>
-                        <h2>Nhóm từ chưa hoàn thành</h2>
-                        <span class="vocab-incomplete-count" id="vocab-incomplete-count">0</span>
+                <!-- Incomplete Tracking Card (always visible, click to open modal) -->
+                <div id="vocab-incomplete-card" class="glass-card vocab-incomplete-card-trigger"
+                     onclick="VocabularyPage._openIncompleteModal()"
+                     style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);cursor:pointer;transition:transform 0.15s ease;"
+                     onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+                    <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:rgba(245,158,11,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;">
+                        <span class="material-icons-round" style="font-size:28px;color:#F59E0B;">hourglass_bottom</span>
+                        <span id="vocab-incomplete-badge" style="display:none;position:absolute;top:-6px;right:-6px;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:#EF4444;color:#fff;font-size:12px;font-weight:700;align-items:center;justify-content:center;border:2px solid var(--color-bg, #0f0f1a);">0</span>
                     </div>
-                    <div class="vocab-incomplete-grid" id="vocab-incomplete-grid"></div>
+                    <div style="flex:1;min-width:0;">
+                        <div style="font-size:var(--font-size-base);font-weight:600;color:var(--color-text);">Nhóm từ chưa hoàn thành</div>
+                        <p id="vocab-incomplete-desc" style="margin:4px 0 0;font-size:var(--font-size-xs);color:var(--color-text-muted);">Đang tải...</p>
+                    </div>
+                    <span class="material-icons-round" style="color:var(--color-text-muted);">chevron_right</span>
                 </div>
 
                 <!-- Dictionary / Search Section -->
@@ -818,77 +824,127 @@ const VocabularyPage = {
     },
 
     // ---- INCOMPLETE TRACKING ----
+    _incompleteCache: null,
+
     async _loadIncompleteTracking() {
         try {
-            const section = document.getElementById('vocab-incomplete-section');
-            const grid = document.getElementById('vocab-incomplete-grid');
-            const countEl = document.getElementById('vocab-incomplete-count');
+            const card = document.getElementById('vocab-incomplete-card');
+            const badge = document.getElementById('vocab-incomplete-badge');
+            const desc = document.getElementById('vocab-incomplete-desc');
+            if (!card || !badge || !desc) return;
 
-            if (!section || !grid) return;
-
-            // Fetch all vocab cards — là nguồn duy nhất để tính family pending.
             const allCards = this._allCards.length > 0
                 ? this._allCards
                 : await FirestoreDB.getCards({ cardType: 'vocabulary' });
 
             const families = await FamilyWordManager.getIncompleteFamilies(allCards);
+            this._incompleteCache = { families, allCards };
 
-            if (families.length === 0) {
-                section.style.display = 'none';
-                return;
+            const n = families.length;
+            if (n > 0) {
+                badge.style.display = 'flex';
+                badge.textContent = n > 99 ? '99+' : String(n);
+                desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
+            } else {
+                badge.style.display = 'none';
+                desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
             }
+        } catch (error) {
+            console.error('[VocabularyPage] Error loading incomplete tracking:', error);
+            const desc = document.getElementById('vocab-incomplete-desc');
+            if (desc) desc.textContent = 'Không tải được dữ liệu';
+        }
+    },
 
-            section.style.display = 'block';
-            if (countEl) countEl.textContent = families.length;
+    _openIncompleteModal() {
+        const cache = this._incompleteCache || { families: [], allCards: [] };
+        const families = cache.families;
+        const allCards = cache.allCards;
 
+        document.querySelector('.lf-incomplete-modal-overlay')?.remove();
+
+        const escape = (s) => String(s || '')
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+
+        let bodyHtml;
+        if (families.length === 0) {
+            bodyHtml = `
+                <div style="padding:var(--spacing-xl);text-align:center;">
+                    <span class="material-icons-round" style="font-size:48px;color:#10B981;">check_circle</span>
+                    <p style="margin:var(--spacing-md) 0 0;color:var(--color-text-secondary);">
+                        Không có nhóm từ nào đang bị học ngắt quãng.
+                    </p>
+                </div>
+            `;
+        } else {
             const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
-
-            const html = families.map(family => {
-                const familyCards = allCards.filter(c => c.fieldValues?.familyId === family.familyId);
-                const learnedCount = family.learnedCount;
-                const totalCount = family.totalCount;
-                const progress = totalCount > 0 ? Math.round((learnedCount / totalCount) * 100) : 0;
-
-                // Xác định difficulty của family = difficulty của từ đầu tiên
+            bodyHtml = families.map(family => {
+                const familyCards = allCards
+                    .filter(c => c.fieldValues?.familyId === family.familyId)
+                    .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99));
+                const total = family.totalCount;
+                const learned = family.learnedCount;
+                const progress = total > 0 ? Math.round((learned / total) * 100) : 0;
                 const firstCard = familyCards[0];
                 const familyDifficulty = firstCard?.fieldValues?.difficulty || 'intermediate';
                 const diffMeta = CardSchemas.getDifficultyMeta(familyDifficulty);
 
-                const wordsHtml = familyCards
-                    .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99))
-                    .map(c => {
-                        const word = c.fieldValues?.word || '?';
-                        const isLearned = !isNew(c);
-                        return `<span class="vocab-incomplete-word ${isLearned ? 'vocab-incomplete-word--learned' : ''}">
-                            ${isLearned ? '✅' : '🆕'} ${word}
-                        </span>`;
-                    }).join('');
+                const wordsHtml = familyCards.map(c => {
+                    const word = c.fieldValues?.word || '?';
+                    const learnedCard = !isNew(c);
+                    const icon = learnedCard ? '✅' : '🆕';
+                    const cls = learnedCard ? 'lf-fam-word lf-fam-word--learned' : 'lf-fam-word lf-fam-word--new';
+                    return `<span class="${cls}">${icon} ${escape(word)}</span>`;
+                }).join('');
 
                 return `
-                    <div class="vocab-incomplete-card glass-panel card-difficulty-${familyDifficulty}">
-                        <div class="vocab-incomplete-card__header">
-                            <span class="difficulty-dot difficulty-dot--${familyDifficulty}" title="${diffMeta.label}"></span>
-                            <span class="vocab-incomplete-card__family-id">${family.familyId}</span>
+                    <div class="lf-incomplete-item glass-panel">
+                        <div class="lf-incomplete-item__head">
+                            <strong>${escape(family.familyId)}</strong>
                             <span class="difficulty-badge difficulty-badge--${familyDifficulty}">${diffMeta.short}</span>
+                            <span class="lf-incomplete-item__count">${learned}/${total}</span>
                         </div>
-                        <div class="vocab-incomplete-card__progress">
-                            <div class="vocab-incomplete-card__progress-bar">
-                                <div class="vocab-incomplete-card__progress-fill" style="width:${progress}%"></div>
-                            </div>
-                            <span class="vocab-incomplete-card__progress-text">${learnedCount}/${totalCount}</span>
+                        <div class="lf-incomplete-item__bar">
+                            <div class="lf-incomplete-item__fill" style="width:${progress}%"></div>
                         </div>
-                        <div class="vocab-incomplete-card__words">${wordsHtml}</div>
-                        <button class="vocab-incomplete-card__btn" onclick="VocabularyPage._learnFamily('${family.familyId}')">
+                        <div class="lf-incomplete-item__words">${wordsHtml}</div>
+                        <button class="lf-incomplete-item__btn"
+                                onclick="VocabularyPage._closeIncompleteModalAndLearn('${escape(family.familyId)}')">
                             <span class="material-icons-round">play_arrow</span> Học tiếp
                         </button>
                     </div>
                 `;
             }).join('');
-
-            grid.innerHTML = html;
-        } catch (error) {
-            console.error('[VocabularyPage] Error loading incomplete tracking:', error);
         }
+
+        const overlay = document.createElement('div');
+        overlay.className = 'lf-incomplete-modal-overlay';
+        overlay.innerHTML = `
+            <div class="lf-incomplete-modal glass-panel">
+                <div class="lf-incomplete-modal__header">
+                    <span class="material-icons-round" style="color:#F59E0B;">hourglass_bottom</span>
+                    <span>Nhóm từ chưa hoàn thành (${families.length})</span>
+                    <button class="lf-incomplete-modal__close" onclick="VocabularyPage._closeIncompleteModal()" aria-label="Đóng">
+                        <span class="material-icons-round">close</span>
+                    </button>
+                </div>
+                <div class="lf-incomplete-modal__body">${bodyHtml}</div>
+            </div>
+        `;
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) VocabularyPage._closeIncompleteModal();
+        });
+        document.body.appendChild(overlay);
+    },
+
+    _closeIncompleteModal() {
+        document.querySelector('.lf-incomplete-modal-overlay')?.remove();
+    },
+
+    _closeIncompleteModalAndLearn(familyId) {
+        this._closeIncompleteModal();
+        this._learnFamily(familyId);
     },
 
     // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
