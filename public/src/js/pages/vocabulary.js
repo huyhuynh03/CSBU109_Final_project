@@ -856,12 +856,33 @@ const VocabularyPage = {
         }
     },
 
-    _openIncompleteModal() {
-        const cache = this._incompleteCache || { families: [], allCards: [] };
-        const families = cache.families;
-        const allCards = cache.allCards;
-
+    async _openIncompleteModal() {
+        // LUÔN fetch lại fresh từ Firestore để tránh stale sau khi đổi mode card
         document.querySelector('.lf-incomplete-modal-overlay')?.remove();
+
+        let families = [];
+        let allCards = [];
+        try {
+            allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            families = await FamilyWordManager.getIncompleteFamilies(allCards);
+            this._incompleteCache = { families, allCards };
+            // Đồng thời cập nhật badge bên ngoài
+            const badge = document.getElementById('vocab-incomplete-badge');
+            const desc = document.getElementById('vocab-incomplete-desc');
+            if (badge && desc) {
+                const n = families.length;
+                if (n > 0) {
+                    badge.style.display = 'flex';
+                    badge.textContent = n > 99 ? '99+' : String(n);
+                    desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
+                } else {
+                    badge.style.display = 'none';
+                    desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
+                }
+            }
+        } catch (e) {
+            console.error('[VocabularyPage] Open incomplete modal error:', e);
+        }
 
         const escape = (s) => String(s || '')
             .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -878,7 +899,7 @@ const VocabularyPage = {
                 </div>
             `;
         } else {
-            const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
+            const isNew = (c) => FamilyWordManager._isNewCard(c);
             bodyHtml = families.map(family => {
                 const familyCards = allCards
                     .filter(c => c.fieldValues?.familyId === family.familyId)
@@ -989,6 +1010,7 @@ const VocabularyPage = {
                 await this._loadStats();        // refresh _allCards trước
                 this._loadTopics();             // sau đó render lại grid topic %
                 this._renderFilterResults();    // cập nhật lại list kết quả lọc
+                this._loadIncompleteTracking(); // refresh badge nhóm chưa hoàn thành
             }
         });
     },

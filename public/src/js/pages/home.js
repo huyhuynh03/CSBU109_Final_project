@@ -112,13 +112,34 @@ const HomePage = {
         }
     },
 
-    _openIncompleteFamiliesModal() {
-        const cache = this._incompleteCache;
-        const families = cache?.families || [];
-        const allCards = cache?.allCards || [];
-
+    async _openIncompleteFamiliesModal() {
         const existing = document.querySelector('.lf-incomplete-modal-overlay');
         if (existing) existing.remove();
+
+        // Luôn refetch fresh từ Firestore để tránh cache stale
+        let families = [];
+        let allCards = [];
+        try {
+            allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            families = await FamilyWordManager.getIncompleteFamilies(allCards);
+            this._incompleteCache = { families, allCards };
+            // Cập nhật badge
+            const badge = document.getElementById('home-incomplete-badge');
+            const desc = document.getElementById('home-incomplete-desc');
+            if (badge && desc) {
+                const n = families.length;
+                if (n > 0) {
+                    badge.style.display = 'flex';
+                    badge.textContent = n > 99 ? '99+' : String(n);
+                    desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
+                } else {
+                    badge.style.display = 'none';
+                    desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
+                }
+            }
+        } catch (e) {
+            console.error('[HomePage] Open incomplete modal error:', e);
+        }
 
         let bodyHtml;
         if (families.length === 0) {
@@ -131,7 +152,7 @@ const HomePage = {
                 </div>
             `;
         } else {
-            const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
+            const isNew = (c) => FamilyWordManager._isNewCard(c);
             const escape = (s) => String(s || '')
                 .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
                 .replace(/"/g, '&quot;').replace(/'/g, '&#039;');

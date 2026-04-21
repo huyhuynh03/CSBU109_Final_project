@@ -15,11 +15,15 @@ const FamilyWordManager = {
 
     // ---- Internals ----------------------------------------------------------
     _isNewCard(card) {
+        // "new-like" = chưa hoàn thành giai đoạn học mới.
+        // Bao gồm: state NEW, LEARNING, hoặc undefined.
+        // Phải đồng bộ với topic-detail._isNewLike và study flow.
         const st = card?.state;
+        if (st === undefined) return true;
         if (typeof FSRS !== 'undefined' && FSRS.State) {
-            if (st === FSRS.State.NEW) return true;
+            if (st === FSRS.State.NEW || st === FSRS.State.LEARNING) return true;
         }
-        return st === 'new' || st === undefined;
+        return st === 'new' || st === 'learning';
     },
 
     _getDismissed() {
