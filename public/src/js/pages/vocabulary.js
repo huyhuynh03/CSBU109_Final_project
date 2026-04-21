@@ -820,12 +820,18 @@ const VocabularyPage = {
     // ---- INCOMPLETE TRACKING ----
     async _loadIncompleteTracking() {
         try {
-            const families = FamilyWordManager.getIncompleteFamilies();
             const section = document.getElementById('vocab-incomplete-section');
             const grid = document.getElementById('vocab-incomplete-grid');
             const countEl = document.getElementById('vocab-incomplete-count');
 
             if (!section || !grid) return;
+
+            // Fetch all vocab cards — là nguồn duy nhất để tính family pending.
+            const allCards = this._allCards.length > 0
+                ? this._allCards
+                : await FirestoreDB.getCards({ cardType: 'vocabulary' });
+
+            const families = await FamilyWordManager.getIncompleteFamilies(allCards);
 
             if (families.length === 0) {
                 section.style.display = 'none';
@@ -835,16 +841,12 @@ const VocabularyPage = {
             section.style.display = 'block';
             if (countEl) countEl.textContent = families.length;
 
-            // Fetch all vocab cards to get family details
-            const allCards = this._allCards.length > 0
-                ? this._allCards
-                : await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
 
             const html = families.map(family => {
                 const familyCards = allCards.filter(c => c.fieldValues?.familyId === family.familyId);
-                const learnedSet = new Set(family.learnedWords || []);
-                const learnedCount = learnedSet.size;
-                const totalCount = Math.max(family.totalWords, familyCards.length);
+                const learnedCount = family.learnedCount;
+                const totalCount = family.totalCount;
                 const progress = totalCount > 0 ? Math.round((learnedCount / totalCount) * 100) : 0;
 
                 // Xác định difficulty của family = difficulty của từ đầu tiên
@@ -856,7 +858,7 @@ const VocabularyPage = {
                     .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99))
                     .map(c => {
                         const word = c.fieldValues?.word || '?';
-                        const isLearned = learnedSet.has(word);
+                        const isLearned = !isNew(c);
                         return `<span class="vocab-incomplete-word ${isLearned ? 'vocab-incomplete-word--learned' : ''}">
                             ${isLearned ? '✅' : '🆕'} ${word}
                         </span>`;

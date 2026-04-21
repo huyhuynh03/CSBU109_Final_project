@@ -431,6 +431,10 @@ const ReviewPage = {
         if (!root) return;
 
         const s = this._session;
+        if (!s || !s.cards || !s.cards[s.currentIndex]) {
+            // Session đã reset / index out-of-range → không render backside
+            return;
+        }
         const card = s.cards[s.currentIndex];
         const fv = card.fieldValues || {};
         const word = fv.word || '';
@@ -651,29 +655,8 @@ const ReviewPage = {
 
         await Promise.all(updatePromises);
 
-        // Cập nhật FamilyWordManager cho từ có familyId (khi không phải Again)
-        try {
-            const familyCards = s.cards.filter(c => c.fieldValues?.familyId);
-            const familyGroups = {};
-            familyCards.forEach(c => {
-                const fid = c.fieldValues.familyId;
-                if (!familyGroups[fid]) familyGroups[fid] = [];
-                familyGroups[fid].push(c);
-            });
-            for (const fid of Object.keys(familyGroups)) {
-                const allInFamily = await FamilyWordManager.getFamilyCards(fid);
-                for (const card of familyGroups[fid]) {
-                    const r1 = s.round1Results[card.id];
-                    const r2 = s.round2Results[card.id];
-                    const rating = this._computeFinalRating(r1, r2);
-                    if (rating !== FSRS.Rating.AGAIN) {
-                        await FamilyWordManager.onWordLearned(card, allInFamily);
-                    }
-                }
-            }
-        } catch (e) {
-            console.error('[ReviewPage] Family update error:', e);
-        }
+        // (FamilyWordManager schema mới: state từ vựng đã nằm trong Firestore card.state,
+        //  không cần đồng bộ localStorage ở đây nữa.)
 
         // Log study time
         const durationMs = Date.now() - this._startedAt;

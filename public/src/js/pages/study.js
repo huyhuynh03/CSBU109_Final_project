@@ -38,32 +38,24 @@ const StudyPage = {
             const familyId = params.get('familyId');
             const cardId = params.get('cardId');
 
-            // Lấy tất cả cards mới (state new/learning - chưa hoàn thành học)
-            let cards = await FirestoreDB.getCards({ cardType: type });
-            cards = cards.filter(c => {
+            // Lấy TOÀN BỘ cards (một query) rồi filter client-side.
+            // Lưu lại để tính pending families mà không phải query lại.
+            const allTypeCards = await FirestoreDB.getCards({ cardType: type });
+            const isNewOrLearning = (c) => {
                 const st = c.state;
                 return st === 'new' || st === 'learning'
                     || st === FSRS.State.NEW || st === FSRS.State.LEARNING;
-            });
+            };
+            let cards = allTypeCards.filter(isNewOrLearning);
 
             // Filter theo topic / family / cardId nếu có
             if (topicId) {
                 cards = cards.filter(c => c.folderId === topicId);
             }
             if (familyId) {
+                // Chỉ còn từ mới/learning của family là đủ — state Firestore là nguồn truth,
+                // không cần đối chiếu localStorage.
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
-                // Loại bỏ các từ đã học trong family này (đã có trong learnedWords)
-                // → Tránh học lại từ đã hoàn thành khi user quay lại học các từ còn lại
-                try {
-                    const pending = FamilyWordManager.getPendingFamilies();
-                    const familyState = pending[familyId];
-                    if (familyState && Array.isArray(familyState.learnedWords)) {
-                        const learnedSet = new Set(familyState.learnedWords);
-                        cards = cards.filter(c => !learnedSet.has(c.fieldValues?.word));
-                    }
-                } catch (e) {
-                    console.warn('[StudyPage] Filter learned family words failed:', e);
-                }
             }
             if (cardId) {
                 cards = cards.filter(c => c.id === cardId);
@@ -95,10 +87,18 @@ const StudyPage = {
             };
             this._startedAt = Date.now();
 
-            // Check pending families → hiện banner nếu có (không show khi học 1 card cụ thể)
-            const pending = FamilyWordManager.getIncompleteFamilies();
-            if (pending.length > 0 && !familyId && !cardId) {
-                this._renderPendingBanner(pending);
+            // Tính pending families TRỰC TIẾP từ Firestore (source of truth).
+            // Không cần cleanup localStorage vì schema mới không lưu learnedWords.
+            const pending = (type === 'vocabulary')
+                ? await FamilyWordManager.getIncompleteFamilies(allTypeCards)
+                : [];
+
+            // Chỉ hiện banner khi:
+            // - KHÔNG vào với familyId/cardId cụ thể
+            // - Có family dang dở và user chưa dismiss toàn bộ
+            const activePending = pending.filter(f => !f.dismissed);
+            if (activePending.length > 0 && !familyId && !cardId) {
+                this._renderPendingBanner(activePending);
             } else {
                 // Vào thẳng bước học, bỏ qua màn hình intro trung gian
                 this._renderStep();
@@ -117,7 +117,7 @@ const StudyPage = {
         if (!root) return;
 
         const list = pending.slice(0, 3).map(f =>
-            `${f.familyId} (${f.learnedWords.length}/${f.totalWords})`
+            `${f.familyId} (${f.learnedCount}/${f.totalCount})`
         ).join(' · ');
         const more = pending.length > 3 ? ` +${pending.length - 3} nữa` : '';
 
@@ -146,22 +146,17 @@ const StudyPage = {
     },
 
     async _learnPendingFirst() {
-        const pending = FamilyWordManager.getIncompleteFamilies();
+        const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+        const pending = await FamilyWordManager.getIncompleteFamilies(allCards);
         if (pending.length === 0) {
             this._renderIntro();
             return;
         }
-        // Lấy cards chưa học của các family pending
-        const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
         const familyIds = new Set(pending.map(f => f.familyId));
-        const learnedSets = {};
-        pending.forEach(f => { learnedSets[f.familyId] = new Set(f.learnedWords || []); });
-
+        const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
         const pendingCards = allCards.filter(c => {
             const fid = c.fieldValues?.familyId;
-            if (!fid || !familyIds.has(fid)) return false;
-            const word = c.fieldValues?.word;
-            return !learnedSets[fid].has(word) && (c.state === 'new' || c.state === FSRS.State.NEW);
+            return fid && familyIds.has(fid) && isNew(c);
         });
 
         if (pendingCards.length === 0) {
@@ -766,10 +761,21 @@ const StudyPage = {
             if (!result || result.unlearnedCards.length === 0) return false;
             if (result.dismissed) return false;
 
-            // Lọc ra những từ chưa có trong session hiện tại
+            // Lọc ra những từ THỰC SỰ chưa học (state === 'new') — dựa trên Firestore,
+            // không chỉ dựa vào localStorage của FamilyWordManager (vốn chỉ lưu những
+            // từ đã đi qua popup family, không biết các từ user học thẳng từ topic).
+            // → Tránh bug ép học lại từ đã ở trạng thái ôn tập.
             const sessionIds = new Set(s.cards.map(c => c.id));
-            const newCandidates = result.unlearnedCards.filter(c => !sessionIds.has(c.id));
-            if (newCandidates.length === 0) return false;
+            const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
+            const newCandidates = result.unlearnedCards
+                .filter(c => !sessionIds.has(c.id))
+                .filter(isNew);
+
+            // Nếu không còn từ nào thực sự mới → xoá family khỏi pending (đã học hết)
+            if (newCandidates.length === 0) {
+                FamilyWordManager.removeFamily(familyId);
+                return false;
+            }
 
             this._showFamilyPopup(familyId, newCandidates);
             return true;
