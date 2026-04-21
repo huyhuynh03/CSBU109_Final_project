@@ -35,6 +35,24 @@ const SeedImporter = {
     },
 
     /**
+     * Lấy map word -> card (để merge ví dụ khi card đã tồn tại)
+     */
+    async _getExistingCardsByWord() {
+        try {
+            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            const map = new Map();
+            cards.forEach(c => {
+                const w = (c.fieldValues && c.fieldValues.word || '').trim().toLowerCase();
+                if (w) map.set(w, c);
+            });
+            return map;
+        } catch (e) {
+            console.warn('[SeedImporter] Không đọc được cards hiện có:', e);
+            return new Map();
+        }
+    },
+
+    /**
      * Sanitize fieldValues theo schema vocabulary
      */
     _sanitize(fieldValues) {
@@ -67,12 +85,16 @@ const SeedImporter = {
         }
 
         const defaultFolderId = (seed._meta && seed._meta.topicId) || null;
-        const existing = await this._getExistingWords();
+        const existingMap = await this._getExistingCardsByWord();
         const total = seed.cards.length;
         let created = 0;
         let skipped = 0;
+        let updated = 0;
         let failed = 0;
         const errors = [];
+
+        // Các field example có thể cần đồng bộ lại với seed (do seed được sửa ngữ pháp).
+        const SYNC_FIELDS = ['example', 'examplePastSimple', 'examplePastParticiple', 'exampleComparative', 'exampleSuperlative'];
 
         for (let i = 0; i < total; i++) {
             const entry = seed.cards[i];
@@ -87,9 +109,32 @@ const SeedImporter = {
                 continue;
             }
 
-            if (existing.has(wordKey)) {
-                skipped++;
-                if (onProgress) onProgress({ current: i + 1, total, word, status: 'skipped' });
+            if (existingMap.has(wordKey)) {
+                // Card đã tồn tại: merge lại các field example nếu seed có giá trị khác (chỉ ghi đè, không xoá).
+                const existingCard = existingMap.get(wordKey);
+                const existingFv = existingCard.fieldValues || {};
+                const patch = {};
+                SYNC_FIELDS.forEach(k => {
+                    const seedVal = fieldValues[k];
+                    if (seedVal && seedVal !== existingFv[k]) {
+                        patch[k] = seedVal;
+                    }
+                });
+                if (Object.keys(patch).length > 0) {
+                    try {
+                        const mergedFv = { ...existingFv, ...patch };
+                        await FirestoreDB.updateCard(existingCard.id, { fieldValues: mergedFv });
+                        updated++;
+                        if (onProgress) onProgress({ current: i + 1, total, word, status: 'updated' });
+                    } catch (e) {
+                        failed++;
+                        errors.push(`Card "${word}" (update): ${e.message}`);
+                        if (onProgress) onProgress({ current: i + 1, total, word, status: 'failed' });
+                    }
+                } else {
+                    skipped++;
+                    if (onProgress) onProgress({ current: i + 1, total, word, status: 'skipped' });
+                }
                 continue;
             }
 
@@ -102,7 +147,7 @@ const SeedImporter = {
                 });
                 if (id) {
                     created++;
-                    existing.add(wordKey);
+                    existingMap.set(wordKey, { id, fieldValues });
                     if (onProgress) onProgress({ current: i + 1, total, word, status: 'created' });
                 } else {
                     failed++;
@@ -116,7 +161,7 @@ const SeedImporter = {
             }
         }
 
-        return { created, skipped, failed, total, errors };
+        return { created, skipped, updated, failed, total, errors };
     },
 
     /**

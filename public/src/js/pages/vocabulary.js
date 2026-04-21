@@ -957,16 +957,26 @@ const VocabularyPage = {
     // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
     async _autoSeedTopics() {
         if (!window.SeedImporter) return;
+        // Key đồng bộ lại examples khi seed được cập nhật ngữ pháp (tăng số khi sửa seed).
+        const EXAMPLES_SYNC_KEY = 'lf:seed-examples-sync-v2';
+        const needExamplesSync = (() => {
+            try { return localStorage.getItem(EXAMPLES_SYNC_KEY) !== '1'; }
+            catch { return false; }
+        })();
         try {
             // Lấy cards hiện có để check topic nào đã có từ
             const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
             const topicsWithCards = new Set(cards.map(c => c.folderId).filter(Boolean));
 
             for (const [topicId, filename] of Object.entries(this._seedTopics)) {
-                if (topicsWithCards.has(topicId)) continue; // Đã có từ → skip
-                console.log(`[VocabularyPage] Auto-seeding topic "${topicId}" from ${filename}`);
+                const hasCards = topicsWithCards.has(topicId);
+                if (hasCards && !needExamplesSync) continue; // Đã có + không cần sync → skip
+                console.log(`[VocabularyPage] Auto-seeding topic "${topicId}" from ${filename} (sync=${needExamplesSync})`);
                 const result = await SeedImporter.importFile(filename);
-                console.log(`[VocabularyPage] Seeded: +${result.created} created, ${result.skipped} skipped`);
+                console.log(`[VocabularyPage] Seeded: +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
+            }
+            if (needExamplesSync) {
+                try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
             }
         } catch (e) {
             console.error('[VocabularyPage] Auto-seed error:', e);
