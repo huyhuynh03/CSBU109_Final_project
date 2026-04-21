@@ -156,12 +156,17 @@ const FirestoreDB = {
         if (!ref) return [];
         try {
             const now = new Date();
-            let query = ref.where('dueDate', '<=', now);
+            // Chỉ dùng 1 where + orderBy trên cùng field 'dueDate' để tránh yêu cầu composite index.
+            // Nếu có cardType, lọc client-side (số lượng card đến hạn thường nhỏ).
+            const snapshot = await ref
+                .where('dueDate', '<=', now)
+                .orderBy('dueDate', 'asc')
+                .get();
+            let cards = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
             if (cardType) {
-                query = query.where('cardType', '==', cardType);
+                cards = cards.filter(c => c.cardType === cardType);
             }
-            const snapshot = await query.orderBy('dueDate', 'asc').get();
-            return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            return cards;
         } catch (error) {
             console.error('[Firestore] Error getting due cards:', error);
             return [];
