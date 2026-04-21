@@ -7,6 +7,8 @@ const VocabularyPage = {
     _allCards: [],
     _topics: [],
     _filterState: null,
+    // Flag session-scope: auto-seed chỉ chạy 1 lần mỗi lần mở app, không lặp lại khi điều hướng qua lại.
+    _autoSeedRan: false,
     // Map topicId → seed filename cho các topic có dữ liệu mẫu
     _seedTopics: {
         'education': 'test-samples.json',
@@ -963,6 +965,9 @@ const VocabularyPage = {
     // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
     async _autoSeedTopics() {
         if (!window.SeedImporter) return;
+        // Tránh chạy lại mỗi lần quay vào /vocabulary — chỉ cần 1 lần/session.
+        if (this._autoSeedRan) return;
+        this._autoSeedRan = true;
         // Key đồng bộ lại examples khi seed được cập nhật ngữ pháp (tăng số khi sửa seed).
         const EXAMPLES_SYNC_KEY = 'lf:seed-examples-sync-v2';
         const needExamplesSync = (() => {
