@@ -319,7 +319,14 @@ const VocabularyPage = {
             this._allCards = cards;
 
             const total = cards.length;
-            const newCount = cards.filter(c => c.state === 'new' || c.state === FSRS.State.NEW).length;
+            // Đồng bộ với topic-detail._isNewLike: NEW + LEARNING + state chưa khởi tạo đều coi là "chưa học".
+            const isNewLike = (c) => {
+                const st = c.state;
+                return st === 'new' || st === 'learning'
+                    || st === FSRS.State.NEW || st === FSRS.State.LEARNING
+                    || st === undefined || st === null;
+            };
+            const newCount = cards.filter(isNewLike).length;
             const now = new Date();
             const isReviewable = (c) => {
                 const st = c.state;
@@ -457,7 +464,10 @@ const VocabularyPage = {
             if (!topicCards[fId]) topicCards[fId] = { total: 0, new: 0, due: 0, learned: 0, mastered: 0 };
             topicCards[fId].total++;
             const st = card.state;
-            const isNew = (st === 'new' || st === FSRS.State.NEW);
+            // "Chưa học" = NEW/LEARNING/undefined (đồng bộ topic-detail._isNewLike + vocab._loadStats).
+            const isNew = (st === 'new' || st === 'learning'
+                || st === FSRS.State.NEW || st === FSRS.State.LEARNING
+                || st === undefined || st === null);
             const isReviewable = (st === 'review' || st === FSRS.State.REVIEW
                 || st === 'relearning' || st === FSRS.State.RELEARNING);
             if (isNew) topicCards[fId].new++;
