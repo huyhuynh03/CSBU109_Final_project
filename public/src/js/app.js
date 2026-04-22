@@ -32,6 +32,11 @@ const App = {
             // 6. Register routes
             this._registerRoutes();
 
+            // 6.5. ĐỢI Firebase khôi phục auth state (IndexedDB) trước khi render route đầu tiên.
+            // Tránh race condition: nếu Router chạy trước, các trang sẽ thấy chưa đăng nhập → redirect /auth
+            // và Firestore sẽ bị spam call "No user signed in".
+            await Auth.waitForInitialAuth();
+
             // 7. Initialize router (will render first page)
             Router.init();
 

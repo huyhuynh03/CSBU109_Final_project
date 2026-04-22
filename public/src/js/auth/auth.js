@@ -22,6 +22,25 @@ const Auth = {
     },
 
     /**
+     * Đợi Firebase khôi phục auth state lần đầu (khi reload trang).
+     * Trả về Promise resolve với user (hoặc null nếu chưa đăng nhập).
+     * Quan trọng để tránh race condition: render trang trước khi auth state restored.
+     */
+    async waitForInitialAuth() {
+        // Đảm bảo persistence được set trước (tránh race khi reload lần đầu).
+        if (typeof authPersistenceReady !== 'undefined') {
+            try { await authPersistenceReady; } catch {}
+        }
+        return new Promise((resolve) => {
+            const unsub = auth.onAuthStateChanged((user) => {
+                this.currentUser = user;
+                unsub();
+                resolve(user);
+            });
+        });
+    },
+
+    /**
      * Sign up with email and password
      * @param {string} email
      * @param {string} password

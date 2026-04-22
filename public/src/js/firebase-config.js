@@ -19,7 +19,7 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-// Enable Firestore offline persistence
+// Enable Firestore offline persistence (chạy nền — không chặn UI)
 db.enablePersistence({ synchronizeTabs: true })
     .then(() => {
         console.log('[Firebase] Offline persistence enabled');
@@ -32,7 +32,11 @@ db.enablePersistence({ synchronizeTabs: true })
         }
     });
 
-// Auth state persistence - LOCAL means persists even after browser close
-auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+// Auth state persistence - LOCAL: lưu vào IndexedDB, persist sau khi đóng trình duyệt.
+// Promise này resolve nhanh; ta lưu để App.init() có thể await trước khi đăng ký onAuthStateChanged.
+const authPersistenceReady = auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    .catch((err) => {
+        console.warn('[Firebase] setPersistence error:', err);
+    });
 
 console.log('[Firebase] Initialized successfully');

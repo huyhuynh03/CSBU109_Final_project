@@ -965,6 +965,8 @@ const VocabularyPage = {
     // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
     async _autoSeedTopics() {
         if (!window.SeedImporter) return;
+        // Bỏ qua nếu chưa đăng nhập — tránh spam Firestore "No user signed in".
+        if (!Auth.isSignedIn || !Auth.isSignedIn()) return;
         // Tránh chạy lại mỗi lần quay vào /vocabulary — chỉ cần 1 lần/session.
         if (this._autoSeedRan) return;
         this._autoSeedRan = true;
