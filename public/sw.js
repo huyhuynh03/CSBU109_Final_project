@@ -1,5 +1,5 @@
 // LinguaFlash Service Worker v5.50
-const CACHE_NAME = 'linguaflash-v5.52';
+const CACHE_NAME = 'linguaflash-v5.53';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -25,7 +25,7 @@ const STATIC_ASSETS = [
     '/src/js/ui/card-filter.js?v=2',
     '/src/js/config/card-schemas.js?v=8',
     '/src/js/config/vocabulary-topics.js?v=2',
-    '/src/js/auth/auth.js?v=10',
+    '/src/js/auth/auth.js?v=11',
     '/src/js/auth/auth-ui.js?v=3',
     '/src/js/db/firestore.js?v=7',
     '/src/js/db/sync.js?v=2',
@@ -37,7 +37,7 @@ const STATIC_ASSETS = [
     '/src/js/pages/vocabulary.js?v=27',
     '/src/js/pages/topic-detail.js?v=5',
     '/src/js/pages/grammar.js?v=1',
-    '/src/js/pages/study.js?v=17',
+    '/src/js/pages/study.js?v=18',
     '/src/js/pages/review.js?v=13',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',

@@ -707,12 +707,15 @@ const StudyPage = {
         const r3 = stepResults.step3 || { correct: false, revealed: true, attempts: 3 };
 
         // Rating cho từ mới: chính sách nghiêm ngặt - sai 1 lần => AGAIN (reset 30 phút).
-        // Đúng ngay cả 2 bước, không reveal => GOOD (tiến lên bậc 30 phút -> bậc 1 sau).
+        // Đúng cả 2 bước, không reveal, không sai phát nào => EASY
+        //   (NEW + EASY = stepIndex -1 → 1 → state REVIEW Cấp độ 2 (1 ngày).
+        //    Nếu dùng GOOD thì NEW + GOOD = stepIndex 0, state LEARNING — bị coi là "vẫn cần học mới"
+        //    → user phải học lại lần 2 mới lên REVIEW. EASY cho phép pass hoàn hảo lên thẳng REVIEW.)
         let rating;
         if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
         else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
         else if (r2.attempts > 1 || r3.attempts > 1) rating = FSRS.Rating.AGAIN;
-        else rating = FSRS.Rating.GOOD;
+        else rating = FSRS.Rating.EASY;
 
         const updatedCard = FSRS.review(card, rating);
         updatedCard.lastReviewSession = {

@@ -233,9 +233,14 @@ const Auth = {
 
             // Re-render current page when auth state changes
             // (skip /auth page to avoid redirect loop)
-            const currentPath = Router.getPath();
-            if (currentPath !== '/auth') {
-                Router._handleRoute();
+            // Quan trọng: chỉ re-route nếu Router đã init (mainContent != null) — tránh
+            // TypeError 'Cannot read properties of null (reading classList)' khi callback
+            // onAuthStateChanged chạy trước Router.init() lần đầu.
+            if (Router && Router.mainContent) {
+                const currentPath = Router.getPath();
+                if (currentPath !== '/auth') {
+                    Router._handleRoute();
+                }
             }
         } else {
             // Signed out
