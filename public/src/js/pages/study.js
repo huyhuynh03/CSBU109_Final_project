@@ -241,159 +241,12 @@ const StudyPage = {
     },
 
     // ============================================
-    // [LEGACY] Variant flow đã bị loại bỏ trong schema v2.
-    // Mỗi thẻ BQT giờ = 1 dạng độc lập, học qua luồng 3 bước thông thường
-    // + hiển thị baseForm (nguyên mẫu) như chú thích ở bước 1.
+    // [CLEANUP] Variant flow (schema v1) đã bị loại bỏ hoàn toàn từ schema v2.
+    // Mỗi thẻ BQT giờ = 1 dạng độc lập, học qua luồng 3 bước chung
+    // (intro → VN→EN → Listen→EN). baseForm hiển thị như chú thích ở intro.
+    // Code cũ _renderVariantIntroStep_DEPRECATED / _renderVariantTypeStep /
+    // _afterAllVariantsDone / _playVariantWord đã được xoá.
     // ============================================
-    _renderVariantIntroStep_DEPRECATED(card) {
-        const root = document.getElementById('study-page-root');
-        if (!root) return;
-
-        const s = this._session;
-        const variants = (typeof CardSchemas !== 'undefined') ? CardSchemas.getIrregularVariants(card) : [];
-        const variant = variants[s.currentVariantIndex];
-        if (!variant) {
-            // Không có biến thể → finalize
-            return this._afterAllVariantsDone();
-        }
-
-        const fv = card.fieldValues || {};
-        const meaning = fv.meaning || '';
-        const total = s.cards.length;
-        const progress = (s.currentIndex / total) * 100;
-        const totalVariants = variants.length;
-        const stepLabel = `Biến thể ${s.currentVariantIndex + 1}/${totalVariants} · ${variant.shortLabel}`;
-
-        const irrMeta = CardSchemas.getIrregularMeta(card) || { color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' };
-        const variantExample = variant.example || '';
-
-        root.innerHTML = `
-            <div class="review-card-screen">
-                <div class="review-header">
-                    <div class="review-header__info">
-                        <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${stepLabel}</span>
-                        <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
-                    </div>
-                    <div class="review-progress">
-                        <div class="review-progress__fill" style="width:${progress}%"></div>
-                    </div>
-                </div>
-
-                <div class="study-intro-card">
-                    <div class="study-intro-card__word" style="color:${irrMeta.color};">${this._escapeHtml(variant.value)}</div>
-                    <div class="study-intro-card__pos">${this._escapeHtml(variant.label)}</div>
-                    <button class="review-audio-btn" onclick="StudyPage._playVariantWord('${this._escapeHtml(variant.value)}')" style="margin:var(--spacing-md) 0;">
-                        <span class="material-icons-round">volume_up</span>
-                        Nghe phát âm
-                    </button>
-                    <div class="study-intro-card__divider"></div>
-                    <div class="study-intro-card__meaning-label">NGHĨA</div>
-                    <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
-                    ${variantExample ? `
-                        <div class="study-intro-card__example-label">VÍ DỤ</div>
-                        <div class="study-intro-card__example">${this._escapeHtml(variantExample)}</div>
-                    ` : ''}
-                </div>
-
-                <div class="review-actions">
-                    <button class="review-action-btn--primary review-action-btn" onclick="StudyPage._nextStep()">
-                        Tôi đã hiểu
-                        <span class="material-icons-round">check</span>
-                    </button>
-                </div>
-            </div>
-        `;
-        setTimeout(() => this._playVariantWord(variant.value), 400);
-    },
-
-    // ============================================
-    // STEP 5: VARIANT TYPE (gõ V2/V3/comparative/superlative)
-    // ============================================
-    _renderVariantTypeStep(card) {
-        const root = document.getElementById('study-page-root');
-        if (!root) return;
-
-        const s = this._session;
-        const variants = CardSchemas.getIrregularVariants(card);
-        const variant = variants[s.currentVariantIndex];
-        if (!variant) return this._afterAllVariantsDone();
-
-        const fv = card.fieldValues || {};
-        const word = fv.word || '';
-        const meaning = fv.meaning || '';
-        const total = s.cards.length;
-        const progress = (s.currentIndex / total) * 100;
-        const totalVariants = variants.length;
-        const stepLabel = `Biến thể ${s.currentVariantIndex + 1}/${totalVariants} · Gõ ${variant.shortLabel}`;
-        const irrMeta = CardSchemas.getIrregularMeta(card) || { color: '#8B5CF6' };
-
-        root.innerHTML = `
-            <div class="review-card-screen">
-                <div class="review-header">
-                    <div class="review-header__info">
-                        <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${stepLabel}</span>
-                        <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
-                    </div>
-                    <div class="review-progress">
-                        <div class="review-progress__fill" style="width:${progress}%"></div>
-                    </div>
-                </div>
-
-                <div class="review-question review-question--vn">
-                    <div class="review-question__label">DẠNG GỐC</div>
-                    <div class="review-question__main">${this._escapeHtml(word)}</div>
-                    <div class="review-question__pos">${this._escapeHtml(meaning)}</div>
-                </div>
-
-                <div class="review-input-wrap">
-                    <label class="review-input-label">Gõ dạng <strong>${this._escapeHtml(variant.label)}</strong>:</label>
-                    <input type="text"
-                           class="review-input"
-                           id="study-answer-input"
-                           autocomplete="off" autocapitalize="off" spellcheck="false"
-                           placeholder="${this._escapeHtml(variant.shortLabel)}..."
-                           data-expected="${this._escapeHtml(variant.value)}">
-                    <div class="review-feedback" id="study-feedback"></div>
-                </div>
-
-                <div class="review-actions">
-                    <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
-                        <span class="material-icons-round">lightbulb</span> Gợi ý
-                    </button>
-                    <button class="review-action-btn review-action-btn--reveal" onclick="StudyPage._revealAnswer()">
-                        <span class="material-icons-round">visibility</span> Hiện đáp án
-                    </button>
-                    <button class="review-action-btn review-action-btn--primary" onclick="StudyPage._submitAnswer()">
-                        <span class="material-icons-round">check</span> Kiểm tra
-                    </button>
-                </div>
-            </div>
-        `;
-
-        const input = document.getElementById('study-answer-input');
-        if (input) {
-            input.focus();
-            input.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') { e.preventDefault(); this._submitAnswer(); }
-            });
-        }
-        this._currentAttempts = 1;
-        this._currentRevealed = false;
-    },
-
-    _playVariantWord(text) {
-        if (text && TTS.isAvailable()) TTS.speak(text);
-    },
-
-    _afterAllVariantsDone() {
-        // Hoàn tất bundle → finalize card và sang từ tiếp theo
-        return (async () => {
-            await this._finalizeCard();
-            const popupShown = await this._maybeShowFamilyPopup();
-            if (popupShown) return;
-            this._nextCard();
-        })();
-    },
 
     // ============================================
     // STEP 1: INTRODUCTION (flashcard xem)
@@ -849,7 +702,6 @@ const StudyPage = {
             this._finalizeSession();
         } else {
             s.currentStep = 1;
-            s.currentVariantIndex = 0;
             this._renderStep();
         }
     },

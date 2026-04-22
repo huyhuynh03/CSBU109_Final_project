@@ -89,9 +89,23 @@ const GrammarPage = {
         try {
             const cards = await FirestoreDB.getCards({ cardType: 'grammar' });
             const total = cards.length;
-            const newCount = cards.filter(c => c.state === 'new').length;
+            // NEW có thể lưu dưới dạng string 'new' (legacy) hoặc number 0 (FSRS.State.NEW),
+            // hoặc undefined (card cũ). Phải check cả 3 cho khớp toàn bộ codebase.
+            const isNewLike = (c) => {
+                const st = c.state;
+                return st === 'new' || st === FSRS.State.NEW || st === undefined;
+            };
+            const isReviewable = (c) => {
+                const st = c.state;
+                return st === 'review' || st === 'relearning'
+                    || st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING;
+            };
+            const newCount = cards.filter(isNewLike).length;
             const now = new Date();
+            // Chỉ đếm "due" với card đã ở pipeline ôn tập (REVIEW/RELEARNING) — tránh
+            // đếm thẻ NEW có dueDate=now mặc định (FSRS.createCard đặt dueDate = now).
             const dueCount = cards.filter(c => {
+                if (!isReviewable(c)) return false;
                 if (!c.dueDate) return false;
                 const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
                 return dueDate <= now;

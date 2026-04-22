@@ -184,8 +184,16 @@ const FirestoreDB = {
         const ref = this._userCollection('cards');
         if (!ref) return 0;
         try {
-            const snapshot = await ref.where('state', '==', 'new').get();
-            return snapshot.size;
+            // FSRS.createCard() lưu state = 0 (số) chứ không phải 'new' (string).
+            // Một số card cũ/legacy có thể lưu string. Phải quét toàn bộ và filter client-side
+            // thay vì query where('state','==','new') (sẽ luôn trả 0 với card mới).
+            const snapshot = await ref.get();
+            let n = 0;
+            snapshot.forEach(doc => {
+                const st = doc.data().state;
+                if (st === 'new' || st === FSRS.State.NEW || st === undefined) n++;
+            });
+            return n;
         } catch (error) {
             console.error('[Firestore] Error getting new card count:', error);
             return 0;
@@ -225,8 +233,16 @@ const FirestoreDB = {
         const ref = this._userCollection('cards');
         if (!ref) return 0;
         try {
-            const snapshot = await ref.where('state', '==', 'review').get();
-            return snapshot.size;
+            // FSRS lưu state REVIEW = 2 (số). Quét toàn bộ + filter để bắt được cả
+            // dạng string legacy ('review', 'relearning') và dạng số (2, 3).
+            const snapshot = await ref.get();
+            let n = 0;
+            snapshot.forEach(doc => {
+                const st = doc.data().state;
+                if (st === 'review' || st === 'relearning'
+                    || st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING) n++;
+            });
+            return n;
         } catch (error) {
             console.error('[Firestore] Error getting learned card count:', error);
             return 0;
