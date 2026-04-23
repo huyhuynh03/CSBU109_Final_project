@@ -116,17 +116,25 @@ const FSRS = {
     },
 
     /**
-     * Tính state kế tiếp dựa trên (state trước, bậc sau, rating).
-     * Quy tắc duy nhất, không phân tán theo case rating:
-     *   - bậc sau = 0 (10 phút):
-     *       + nếu trước là REVIEW/RELEARNING  -> RELEARNING (lapse)
-     *       + ngược lại                       -> LEARNING
-     *   - bậc sau >= 1 (>= 1 ngày): luôn REVIEW (đã graduate / đang trưởng thành)
+     * Tính state kế tiếp dựa trên (state trước, rating).
+     * Quy tắc dứt khoát theo rating (không nhìn bậc sau):
+     *   - PASS (HARD / GOOD / EASY): luôn REVIEW — card đã graduate vào pipeline ôn tập,
+     *     cho dù bậc hiện tại mới là Cấp độ 1 (30 phút).
+     *   - AGAIN:
+     *       + nếu trước là REVIEW / RELEARNING -> RELEARNING (lapse)
+     *       + ngược lại (NEW / LEARNING)       -> LEARNING  (vẫn ở pool học mới)
+     *
+     * Lý do bỏ nhánh cũ "nextStep=0 + NEW -> LEARNING":
+     *   Nhánh đó khiến từ vừa học xong lần đầu (Cấp độ 1) vẫn bị coi là "chưa học",
+     *   xuất hiện trở lại trong màn Học mới — tạo cảm giác phải học 2 lần mới "chốt".
+     *   Semantic đúng: cứ pass = graduate, chỉ AGAIN mới quay lại pool học mới.
      */
-    _computeNextState(prevState, nextStep) {
+    _computeNextState(prevState, rating) {
         const wasMature = (prevState === this.State.REVIEW || prevState === this.State.RELEARNING);
-        if (nextStep >= 1) return this.State.REVIEW;
-        return wasMature ? this.State.RELEARNING : this.State.LEARNING;
+        if (rating === this.Rating.AGAIN) {
+            return wasMature ? this.State.RELEARNING : this.State.LEARNING;
+        }
+        return this.State.REVIEW;
     },
 
     /**
@@ -144,7 +152,7 @@ const FSRS = {
 
         // 2 hàm thuần -> không thể ghi đè / chồng chéo nhau
         const nextStep  = this._computeNextStep(prevStep, rating);
-        const nextState = this._computeNextState(prevState, nextStep);
+        const nextState = this._computeNextState(prevState, rating);
         const interval  = this._stepMinutes(nextStep);
 
         updatedCard.reps      = (card.reps || 0) + 1;
