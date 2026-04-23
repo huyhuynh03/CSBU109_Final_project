@@ -740,12 +740,6 @@ const VocabularyPage = {
             return;
         }
 
-        const stateLabels = {
-            'new': { text: 'Chưa học', color: 'var(--color-text-muted)', bg: 'var(--color-surface)' },
-            'learning': { text: 'Đang học', color: '#F59E0B', bg: 'rgba(245,158,11,0.15)' },
-            'review': { text: 'Ôn tập', color: '#3B82F6', bg: 'rgba(59,130,246,0.15)' },
-        };
-
         const html = results.map(card => {
             const fv = card.fieldValues || {};
             const word = fv.word || card.word || card.front || '—';
@@ -754,7 +748,6 @@ const VocabularyPage = {
             const partOfSpeech = fv.partOfSpeech || card.partOfSpeech || '';
             const difficulty = fv.difficulty || card.difficulty || 'intermediate';
             const diffMeta = CardSchemas.getDifficultyMeta(difficulty);
-            const state = stateLabels[card.state] || stateLabels['new'];
 
             // Highlight match
             const highlightWord = this._highlightMatch(word, query);
@@ -769,7 +762,6 @@ const VocabularyPage = {
                         <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label} (${diffMeta.band})">${diffMeta.short}</span>
                     </div>
                     <div class="vocab-word-card__meaning">${highlightMeaning}</div>
-                    <div class="vocab-word-card__state" style="color:${state.color};background:${state.bg}">${state.text}</div>
                 </div>
             `;
         }).join('');

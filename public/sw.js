@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.57
-const CACHE_NAME = 'linguaflash-v5.57';
+// LinguaFlash Service Worker v5.58
+const CACHE_NAME = 'linguaflash-v5.58';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
