@@ -9,6 +9,7 @@ const TopicDetailPage = {
     _selectMode: false,
     _selected: new Set(),
     _filterState: null,
+    _highlightId: null,
 
     render() {
         return `<div class="topic-detail-page page-enter" id="topic-detail-root">
@@ -30,6 +31,9 @@ const TopicDetailPage = {
             this._renderError('Thiếu ID chủ đề');
             return;
         }
+        // Parse query string (?highlight=cardId) — dùng để cuộn + nháy thẻ sau khi render
+        const qs = new URLSearchParams((window.location.hash || '').split('?')[1] || '');
+        this._highlightId = qs.get('highlight') || null;
         // Tìm topic trong config
         this._topic = (typeof VocabularyTopics !== 'undefined')
             ? VocabularyTopics.find(t => t.id === this._topicId)
@@ -170,6 +174,19 @@ const TopicDetailPage = {
                 }
             });
         }
+
+        // Highlight + scroll tới thẻ nếu có ?highlight=cardId
+        if (this._highlightId) {
+            const targetId = this._highlightId;
+            this._highlightId = null; // chỉ trigger 1 lần
+            requestAnimationFrame(() => {
+                const el = document.getElementById('card-' + targetId);
+                if (!el) return;
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.classList.add('highlight-flash');
+                setTimeout(() => el.classList.remove('highlight-flash'), 2200);
+            });
+        }
     },
 
     _renderRow(card) {
@@ -217,7 +234,7 @@ const TopicDetailPage = {
             : '';
 
         return `
-            <div class="topic-vocab-row">
+            <div class="topic-vocab-row" id="card-${card.id}">
                 ${checkbox}
                 <div class="topic-vocab-row__main">
                     <div class="topic-vocab-row__top">

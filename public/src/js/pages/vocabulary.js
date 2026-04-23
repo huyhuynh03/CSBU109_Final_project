@@ -753,15 +753,44 @@ const VocabularyPage = {
             const highlightWord = this._highlightMatch(word, query);
             const highlightMeaning = this._highlightMatch(meaning, query);
 
+            // Action mặc định theo trạng thái card
+            const st = card.state;
+            const isNew = (st === 'new' || st === 'learning'
+                || st === FSRS.State.NEW || st === FSRS.State.LEARNING
+                || st === undefined || st === null);
+            const primaryLabel = isNew ? 'Học ngay' : 'Ôn ngay';
+            const primaryIcon = isNew ? 'school' : 'replay';
+            const primaryAction = isNew ? 'study' : 'review';
+
             return `
-                <div class="vocab-word-card card-difficulty-${difficulty}" onclick="Router.navigate('/topic/${card.folderId}')">
-                    <div class="vocab-word-card__main">
-                        <div class="vocab-word-card__word">${highlightWord}</div>
-                        ${ipa ? `<span class="vocab-word-card__ipa">${ipa}</span>` : ''}
-                        ${partOfSpeech ? `<span class="vocab-word-card__pos">${partOfSpeech}</span>` : ''}
-                        <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label} (${diffMeta.band})">${diffMeta.short}</span>
+                <div class="vocab-word-card card-difficulty-${difficulty}">
+                    <div class="vocab-word-card__info" onclick="VocabularyPage._goToTopicWithHighlight('${card.folderId}','${card.id}')">
+                        <div class="vocab-word-card__main">
+                            <div class="vocab-word-card__word">${highlightWord}</div>
+                            ${ipa ? `<span class="vocab-word-card__ipa">${ipa}</span>` : ''}
+                            ${partOfSpeech ? `<span class="vocab-word-card__pos">${partOfSpeech}</span>` : ''}
+                            <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label} (${diffMeta.band})">${diffMeta.short}</span>
+                        </div>
+                        <div class="vocab-word-card__meaning">${highlightMeaning}</div>
                     </div>
-                    <div class="vocab-word-card__meaning">${highlightMeaning}</div>
+                    <div class="vocab-word-card__actions">
+                        <button class="vocab-word-card__action-btn vocab-word-card__action-btn--primary vocab-word-card__action-btn--${primaryAction}"
+                                title="${primaryLabel}"
+                                onclick="event.stopPropagation();VocabularyPage._searchActionPrimary('${card.id}')">
+                            <span class="material-icons-round">${primaryIcon}</span>
+                            <span class="vocab-word-card__action-label">${primaryLabel}</span>
+                        </button>
+                        <button class="vocab-word-card__action-btn"
+                                title="Nghe phát âm"
+                                onclick="event.stopPropagation();VocabularyPage._searchActionSpeak('${card.id}')">
+                            <span class="material-icons-round">volume_up</span>
+                        </button>
+                        <button class="vocab-word-card__action-btn"
+                                title="Xem trong chủ đề"
+                                onclick="event.stopPropagation();VocabularyPage._goToTopicWithHighlight('${card.folderId}','${card.id}')">
+                            <span class="material-icons-round">visibility</span>
+                        </button>
+                    </div>
                 </div>
             `;
         }).join('');
@@ -807,6 +836,41 @@ const VocabularyPage = {
         if (input) { input.value = ''; input.focus(); }
         if (clearBtn) clearBtn.style.display = 'none';
         this._hideSearchResults();
+    },
+
+    // ---- SEARCH RESULT ACTIONS ----
+    _findCardById(cardId) {
+        return (this._allCards || []).find(c => c.id === cardId);
+    },
+
+    _searchActionPrimary(cardId) {
+        const card = this._findCardById(cardId);
+        if (!card) return;
+        const st = card.state;
+        const isNew = (st === 'new' || st === 'learning'
+            || st === FSRS.State.NEW || st === FSRS.State.LEARNING
+            || st === undefined || st === null);
+        // Đi thẳng vào /study hoặc /review với cardId — pages đã hỗ trợ load 1 card cụ thể
+        const route = isNew
+            ? `/study?type=vocabulary&cardId=${encodeURIComponent(cardId)}`
+            : `/review?type=vocabulary&cardId=${encodeURIComponent(cardId)}`;
+        Router.navigate(route);
+    },
+
+    _searchActionSpeak(cardId) {
+        const card = this._findCardById(cardId);
+        if (!card) return;
+        const word = card.fieldValues?.word || card.word || '';
+        if (!word) return;
+        if (typeof TTS !== 'undefined' && TTS.isAvailable && TTS.isAvailable()) {
+            TTS.speak(word);
+        }
+    },
+
+    _goToTopicWithHighlight(folderId, cardId) {
+        if (!folderId) return;
+        const path = `/topic/${folderId}?highlight=${encodeURIComponent(cardId)}`;
+        Router.navigate(path);
     },
 
     // ---- INCOMPLETE TRACKING ----
