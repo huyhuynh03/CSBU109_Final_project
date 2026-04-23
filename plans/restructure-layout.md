@@ -1,17 +1,17 @@
-# 📐 Quy hoạch lại bố trí chủ đề, bài học & thẻ học
+﻿# 📐 Quy hoạch lại bố trí chủ đề, bài học & thẻ học
 
 ## 1. Tổng quan thay đổi
 
 ### 1.1 Vấn đề hiện tại
 - **Home Page** hiện là trang chọn ngôn ngữ (English, Japanese...) → chưa có tác dụng thực tế vì mới chỉ có English
 - **Sidebar** chứa quá nhiều mục kỹ thuật: Trường, Hồ sơ cấu hình → gây rối cho người dùng
-- **Học mới / Ôn tập** nằm trong sidebar → khó tiếp cận, không nổi bật
+- **Mới / Ôn tập** nằm trong sidebar → khó tiếp cận, không nổi bật
 - Người dùng phải tự tạo Card Types + Fields → phức tạp, không cần thiết
 
 ### 1.2 Hướng mới
 - Cấu trúc cố định theo **chủ đề nội dung**: Từ vựng, Ngữ pháp
 - Mỗi chủ đề có **cây thư mục riêng** + **thẻ học với fields cố định**
-- **Học mới / Ôn tập** đưa ra dashboard chính → truy cập nhanh
+- **Mới / Ôn tập** đưa ra dashboard chính → truy cập nhanh
 - Bỏ hoàn toàn Trường + Hồ sơ cấu hình
 
 ---
@@ -54,7 +54,7 @@ flowchart TD
 | 4 | `hearing` | Luyện chính tả | — | Coming soon |
 | 5 | `language` | Chọn ngôn ngữ | — | Ở cuối sidebar |
 
-**Bỏ khỏi sidebar:** Trang chủ, Học mới, Ôn tập, Trường, Hồ sơ cấu hình
+**Bỏ khỏi sidebar:** Trang chủ, Mới, Ôn tập, Trường, Hồ sơ cấu hình
 
 ### 2.3 Dashboard (Trang chính `/`)
 
@@ -65,7 +65,7 @@ Dashboard hiển thị khi mở app hoặc click logo:
 │  Chào mừng trở lại! 👋                 │
 │  Hôm nay bạn muốn làm gì?             │
 ├────────────────┬────────────────────────┤
-│  🟢 HỌC MỚI   │  🔵 ÔN TẬP           │
+│  🟢 Mới   │  🔵 ÔN TẬP           │
 │  15 thẻ mới    │  8 thẻ đến hạn        │
 │  chưa học      │  cần ôn               │
 ├────────────────┴────────────────────────┤
@@ -187,9 +187,9 @@ erDiagram
 
 | File | Thay đổi |
 |------|----------|
-| [`sidebar.js`](public/src/js/ui/sidebar.js) | Cập nhật menu items: bỏ Trang chủ/Học mới/Ôn tập/Trường/Hồ sơ, thêm Từ vựng/Ngữ pháp |
+| [`sidebar.js`](public/src/js/ui/sidebar.js) | Cập nhật menu items: bỏ Trang chủ/Mới/Ôn tập/Trường/Hồ sơ, thêm Từ vựng/Ngữ pháp |
 | [`app.js`](public/src/js/app.js) | Cập nhật routes: bỏ routes cũ, thêm `/vocabulary`, `/grammar`. Dashboard = `/` |
-| [`home.js`](public/src/js/pages/home.js) | Đổi thành Dashboard: 2 nút lớn Học mới/Ôn tập + thống kê |
+| [`home.js`](public/src/js/pages/home.js) | Đổi thành Dashboard: 2 nút lớn Mới/Ôn tập + thống kê |
 | [`english.js`](public/src/js/pages/english.js) | Đổi thành `vocabulary.js` - trang Từ vựng với cây thư mục |
 | [`folder-view.js`](public/src/js/pages/folder-view.js) | Cập nhật để hiển thị thẻ theo `cardType` với fields cố định |
 | [`folder-explorer.js`](public/src/js/pages/folder-explorer.js) | Cập nhật hiển thị cả 2 loại folder |
@@ -248,7 +248,7 @@ flowchart TD
     FOLDER_G -->|Them the| ADD_GRAMMAR[Form them ngu phap]
 ```
 
-### 5.2 Dashboard - Học mới flow
+### 5.2 Dashboard - Mới flow
 
 ```mermaid
 flowchart TD
@@ -289,7 +289,7 @@ flowchart TD
 
 ### Step 6: Cập nhật home.js → Dashboard
 - Bỏ language domain cards
-- Thêm 2 nút lớn Học mới + Ôn tập
+- Thêm 2 nút lớn Mới + Ôn tập
 - Thêm thống kê tổng quan
 
 ### Step 7: Cập nhật folder-view.js

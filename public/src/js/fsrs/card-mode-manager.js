@@ -1,8 +1,8 @@
-// ============================================
+﻿// ============================================
 // Card Mode Manager
 // ============================================
 // Cho phép user chuyển trạng thái SRS của thẻ:
-//   - Về "học mới" (NEW): xoá tiến trình SRS, học lại từ đầu
+//   - Về "Mới" (NEW): xoá tiến trình SRS, học lại từ đầu
 //   - Sang "ôn tập" ở bậc cụ thể (0..4): bỏ giai đoạn học, xếp ngay vào lịch ôn
 //
 // Tất cả đều có modal xác nhận rõ ràng. Thao tác bulk yêu cầu user gõ "XAC NHAN".
@@ -14,7 +14,7 @@ const CardModeManager = {
     // ======================================================
 
     /**
-     * Đặt các thẻ về trạng thái NEW (học mới).
+     * Đặt các thẻ về trạng thái NEW (Mới).
      * @param {Array<Object>} cards  - đầy đủ object card (cần có id)
      * @param {Object} [opts]
      * @param {boolean} [opts.resetStats=false] - có reset reps/lapses/difficulty không
@@ -148,20 +148,20 @@ const CardModeManager = {
               <p class="lf-mode-modal__scope">
                 Phạm vi: <strong>${this._esc(scopeLabel)}</strong>
                 <span class="lf-mode-modal__stats">
-                  (Đang học mới: <strong>${newCount}</strong> · Đang ôn tập: <strong>${reviewCount}</strong>)
+                  (Đang Mới: <strong>${newCount}</strong> · Đang ôn tập: <strong>${reviewCount}</strong>)
                 </span>
               </p>
 
               <div class="lf-mode-modal__options">
-                <!-- Option 1: Reset về học mới -->
+                <!-- Option 1: Reset về Mới -->
                 <button class="lf-mode-option" data-act="reset-new">
                   <span class="lf-mode-option__icon" style="background:rgba(139,92,246,0.15);color:#a78bfa;">
                     <span class="material-icons-round">school</span>
                   </span>
                   <div class="lf-mode-option__info">
-                    <div class="lf-mode-option__title">Chuyển về "Học mới"</div>
+                    <div class="lf-mode-option__title">Chuyển về "Mới"</div>
                     <div class="lf-mode-option__desc">
-                      Xoá tiến trình ôn tập, thẻ sẽ xuất hiện trong danh sách học mới.
+                      Xoá tiến trình ôn tập, thẻ sẽ xuất hiện trong danh sách Mới.
                     </div>
                   </div>
                   <span class="material-icons-round lf-mode-option__arrow">chevron_right</span>
@@ -210,18 +210,18 @@ const CardModeManager = {
 
             if (act === 'reset-new') {
                 const ok = await this._confirm({
-                    title: 'Chuyển về "Học mới"?',
+                    title: 'Chuyển về "Mới"?',
                     icon: 'school',
                     iconColor: '#a78bfa',
                     message: `Sẽ xoá tiến trình ôn tập của <strong>${scopeLabel}</strong>.
-                              Các thẻ sẽ xuất hiện lại trong danh sách "Học mới" và bạn phải học lại từ đầu.`,
+                              Các thẻ sẽ xuất hiện lại trong danh sách "Mới" và bạn phải học lại từ đầu.`,
                     requireText: isBulk ? 'XAC NHAN' : null,
                     danger: true
                 });
                 if (!ok) return;
                 try {
                     const n = await this.resetToNew(cards);
-                    Toast.success && Toast.success('Đã đổi chế độ', `${n} thẻ đã chuyển về "Học mới".`);
+                    Toast.success && Toast.success('Đã đổi chế độ', `${n} thẻ đã chuyển về "Mới".`);
                     close();
                     opts.onDone && opts.onDone();
                 } catch (err) {
@@ -240,7 +240,7 @@ const CardModeManager = {
                     iconColor: '#10b981',
                     message: `<strong>${scopeLabel}</strong> sẽ được đặt vào chế độ ôn tập.
                               Lần ôn kế tiếp: <strong>sau ${stepLabel}</strong> kể từ bây giờ.
-                              <br><br>Lưu ý: các thẻ đang ở "Học mới" sẽ <em>bỏ qua</em> giai đoạn học.`,
+                              <br><br>Lưu ý: các thẻ đang ở "Mới" sẽ <em>bỏ qua</em> giai đoạn học.`,
                     requireText: isBulk ? 'XAC NHAN' : null,
                     danger: false
                 });

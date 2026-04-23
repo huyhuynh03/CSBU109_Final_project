@@ -1,4 +1,4 @@
-# Family Word Learning Flow - Thiết kế luồng học nhóm từ
+﻿# Family Word Learning Flow - Thiết kế luồng học nhóm từ
 
 ## Tổng quan
 
@@ -71,7 +71,7 @@ Sau khi user gõ đúng từ gốc, VD "educate":
 
 ### Quy tắc: Chỉ hiện 1 banner duy nhất khi vào phiên học
 
-Khi user mở trang Học mới và có >= 1 pending family:
+Khi user mở trang Mới và có >= 1 pending family:
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -167,7 +167,7 @@ Khi user mở trang Học mới và có >= 1 pending family:
 
 ```mermaid
 flowchart TD
-    A[User vào Học mới] --> B{Có pending families?}
+    A[User vào Mới] --> B{Có pending families?}
     B -->|Có| C[Hiện banner: X nhóm từ chưa hoàn thành]
     B -->|Không| D[Bắt đầu học bình thường]
     C --> E{User chọn?}

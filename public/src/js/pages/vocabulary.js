@@ -97,7 +97,7 @@ const VocabularyPage = {
                             <span class="material-icons-round">auto_stories</span>
                         </div>
                         <div class="vocab-action-btn__text">
-                            <span class="vocab-action-btn__title">Học mới</span>
+                            <span class="vocab-action-btn__title">Mới</span>
                             <span class="vocab-action-btn__desc" id="vocab-study-desc">Đang tải...</span>
                         </div>
                         <span class="material-icons-round vocab-action-btn__arrow">arrow_forward</span>

@@ -1,6 +1,6 @@
-# Thiết kế thẻ học từ vựng
+﻿# Thiết kế thẻ học từ vựng
 
-> Mô tả chi tiết các thành phần cần có trong một thẻ học từ vựng, chia theo 2 chế độ: **Học mới** và **Ôn tập**.
+> Mô tả chi tiết các thành phần cần có trong một thẻ học từ vựng, chia theo 2 chế độ: **Mới** và **Ôn tập**.
 
 ---
 
@@ -69,11 +69,11 @@
 
 ---
 
-## Chế độ 1: HỌC MỚI (Study)
+## Chế độ 1: Mới (Study)
 
 > Dành cho các thẻ chưa từng học. Mục tiêu: giới thiệu từ mới + ghi nhớ mặt từ bằng cách gõ lại.
 
-### Hiển thị thẻ học mới
+### Hiển thị thẻ Mới
 
 Thẻ hiển thị **toàn bộ thông tin** để người dùng nhìn và ghi nhớ, đồng thời có **ô đục lỗ** để gõ lại từ:
 
@@ -95,7 +95,7 @@ Thẻ hiển thị **toàn bộ thông tin** để người dùng nhìn và ghi 
 | 2. Động từ bất quy tắc | V2 / V3 | `go` → went / gone |
 | 3. Tính từ/Trạng từ BQT | Comparative / Superlative | `good` → better / best |
 
-### Luồng tương tác - Học mới
+### Luồng tương tác - Mới
 
 ```
 1. Hiển thị toàn bộ thông tin thẻ (từ, IPA, từ loại, nghĩa, câu ví dụ với blank)
@@ -104,12 +104,12 @@ Thẻ hiển thị **toàn bộ thông tin** để người dùng nhìn và ghi 
 4. Khoảng trống trong câu ví dụ cập nhật real-time khi gõ
 5. User nhấn "Kiểm tra" → hệ thống so sánh đáp án
 6a. ✅ Đúng 100% → Thẻ chuyển sang trạng thái "đã học", lên lịch ôn tập theo FSRS
-6b. ❌ Sai (bất kỳ lỗi nào) → Lặp lại chế độ học mới của từ này (quay lại bước 1)
+6b. ❌ Sai (bất kỳ lỗi nào) → Lặp lại chế độ Mới của từ này (quay lại bước 1)
 ```
 
 > ⚠️ **Quy tắc quan trọng:** User phải gõ **đúng 100%** mới được chuyển sang chế độ ôn tập. Nếu sai, thẻ vẫn giữ trạng thái "new" và lặp lại cho đến khi đúng.
 
-> **Khác biệt với Ôn tập:** Ở chế độ Học mới, từ vựng **được hiển thị** để user nhìn và gõ lại (mục đích ghi nhớ mặt từ). Ở chế độ Ôn tập, từ vựng **bị ẩn** (mục đích kiểm tra trí nhớ).
+> **Khác biệt với Ôn tập:** Ở chế độ Mới, từ vựng **được hiển thị** để user nhìn và gõ lại (mục đích ghi nhớ mặt từ). Ở chế độ Ôn tập, từ vựng **bị ẩn** (mục đích kiểm tra trí nhớ).
 
 ---
 
@@ -175,7 +175,7 @@ Sau khi người dùng submit đáp án:
 
 ## So sánh 2 chế độ
 
-| Đặc điểm | Học mới | Ôn tập |
+| Đặc điểm | Mới | Ôn tập |
 |----------|---------|--------|
 | Đối tượng | Thẻ chưa học (state = new) | Thẻ đến hạn ôn (due date ≤ today) |
 | Mục đích | Ghi nhớ mặt từ | Kiểm tra trí nhớ |

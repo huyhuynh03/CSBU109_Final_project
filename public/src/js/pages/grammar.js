@@ -33,7 +33,7 @@ const GrammarPage = {
                         <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #10B981 0%, #059669 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-sm);">
                             <span class="material-icons-round" style="font-size:24px;color:#fff;">auto_stories</span>
                         </div>
-                        <h3 style="margin:0 0 var(--spacing-xs);font-size:var(--font-size-base);">Học mới</h3>
+                        <h3 style="margin:0 0 var(--spacing-xs);font-size:var(--font-size-base);">Mới</h3>
                         <p id="grammar-new-action" style="font-size:var(--font-size-sm);color:var(--color-text-muted);margin:0;">
                             <span class="material-icons-round" style="font-size:14px;vertical-align:middle;">hourglass_empty</span>
                             Đang tải...

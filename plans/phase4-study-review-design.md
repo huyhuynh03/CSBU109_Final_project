@@ -1,4 +1,4 @@
-# 📘 Phase 4: Thiết kế Học mới & Ôn tập - Chi tiết
+﻿# 📘 Phase 4: Thiết kế Mới & Ôn tập - Chi tiết
 
 > 📐 **Quy ước cấp độ ôn tập:** Xem [`plans/review-levels-mapping.md`](review-levels-mapping.md) để hiểu mapping giữa `stepIndex` (0-based, dùng trong code/data) và **"Cấp độ N"** (1-based, hiển thị UI).
 > Tóm tắt: `UI = stepIndex + 1`. Bảng các bậc:
@@ -8,8 +8,8 @@
 
 ### 1.1 Thay đổi Home Page
 - Home Page = **Cây thư mục** là trung tâm
-- 2 nút **Học mới** / **Ôn tập** nằm ở trên cùng
-- Bấm "Học mới" → hiển thị flat list các **leaf folders** có thẻ mới cần học (kèm ❗ đỏ)
+- 2 nút **Mới** / **Ôn tập** nằm ở trên cùng
+- Bấm "Mới" → hiển thị flat list các **leaf folders** có thẻ mới cần học (kèm ❗ đỏ)
 - Bấm "Ôn tập" → hiển thị flat list các **leaf folders** có thẻ đến hạn ôn (kèm ❗ đỏ)
 - Giữ phần thống kê tổng quan
 
@@ -40,7 +40,7 @@ flowchart TD
 ```mermaid
 stateDiagram-v2
     [*] --> New: Tạo thẻ mới
-    New --> Learning: Bắt đầu Học mới
+    New --> Learning: Bắt đầu Mới
     Learning --> Learning: Chưa hoàn thành các bước
     Learning --> Review: Hoàn thành TẤT CẢ bước study profile
     Review --> Review: FSRS tự xếp lịch ôn
@@ -49,8 +49,8 @@ stateDiagram-v2
 
 ### Trạng thái chi tiết:
 - **new**: Thẻ mới tạo, chưa học lần nào
-- **learning**: Đang trong quá trình Học mới - theo dõi bước nào đã hoàn thành
-- **review**: Đã hoàn thành Học mới, FSRS quản lý lịch ôn tập
+- **learning**: Đang trong quá trình Mới - theo dõi bước nào đã hoàn thành
+- **review**: Đã hoàn thành Mới, FSRS quản lý lịch ôn tập
 - **relearning**: Quên khi ôn tập, FSRS đưa vào học lại ngắn hạn
 
 ---
@@ -84,7 +84,7 @@ Profile: "IELTS Vocabulary Full"
 └── Step 4: reverse_type  | Q: meaning VN      | A: word EN
 
 Áp dụng cho:
-├── Chế độ Học mới: Phải hoàn thành Step 1→2→3→4
+├── Chế độ Mới: Phải hoàn thành Step 1→2→3→4
 └── Chế độ Ôn tập: Chỉ dùng Step 2→3→4 (bỏ flashcard xem)
 ```
 
@@ -166,13 +166,13 @@ Thêm fields mới cho tracking multi-step:
 
 ---
 
-## 5. Luồng chi tiết - Học mới
+## 5. Luồng chi tiết - Mới
 
 ### 5.1 Từ Home đến Study Session
 
 ```mermaid
 flowchart TD
-    A[Home - Bấm Học mới] --> B[Query tất cả cards có state = new]
+    A[Home - Bấm Mới] --> B[Query tất cả cards có state = new]
     B --> C[Group theo folderId]
     C --> D[Lọc chỉ leaf folders]
     D --> E[Hiển thị flat list + breadcrumb + số thẻ + badge đỏ]
@@ -232,7 +232,7 @@ flowchart TD
 │  └──────┘ └──────┘ └──────┘ └────┘ │
 │                                     │
 │  ┌─────────────┐ ┌─────────────┐   │
-│  │ 📖 Học mới  │ │ 🔄 Ôn tập  │   │
+│  │ 📖 Mới  │ │ 🔄 Ôn tập  │   │
 │  │   (8 thẻ)   │ │  (25 thẻ)  │   │
 │  └─────────────┘ └─────────────┘   │
 │                                     │
@@ -249,10 +249,10 @@ flowchart TD
 └─────────────────────────────────────┘
 ```
 
-### 6.2 Màn hình "Học mới" - Flat list
+### 6.2 Màn hình "Mới" - Flat list
 ```
 ┌─────────────────────────────────────┐
-│ ← Quay lại    📖 Học mới           │
+│ ← Quay lại    📖 Mới           │
 ├─────────────────────────────────────┤
 │                                     │
 │  Tổng: 8 thẻ mới cần học           │
@@ -340,7 +340,7 @@ public/src/js/
 13. UI tạo/sửa/xóa flashcard với nhiều fields
 14. Hiển thị cards trong folder view
 
-### Giai đoạn 4D: Chế độ Học mới
+### Giai đoạn 4D: Chế độ Mới
 15. Logic flat list leaf folders có thẻ mới
 16. Màn hình chọn folder → chọn thẻ
 17. Study Session engine - multi-step theo profile
