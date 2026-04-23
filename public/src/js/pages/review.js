@@ -83,7 +83,14 @@ const ReviewPage = {
                 round1Results: {},
                 round2Results: {},
                 startedAt: new Date(),
-                isEarlyReview: isEarlyReview
+                isEarlyReview: isEarlyReview,
+                // Handler keydown đang gắn trên document (back-side: Enter/Space → next).
+                // Lưu reference để gỡ trước khi render thẻ mới — tránh handler "rò"
+                // qua thẻ kế tiếp gây bug "ôn write nhưng backside hiện wrote":
+                // Enter ở input thẻ N → submitAnswer (setTimeout backside)
+                //   → bubble lên document → handler backside thẻ N-1 (chưa kịp gỡ)
+                //   → _nextCard() → currentIndex++ → backside cuối cùng đọc nhầm thẻ.
+                _backsideKeyHandler: null
             };
             this._startedAt = Date.now();
 
@@ -176,6 +183,9 @@ const ReviewPage = {
         if (!root) return;
 
         const s = this._session;
+        // Gỡ handler backside còn sót lại trước khi vẽ thẻ mới.
+        // (Trường hợp user click nút "Tiếp theo" thay vì Enter ở backside trước đó.)
+        this._detachBacksideKey();
         const card = s.cards[s.currentIndex];
         const total = s.cards.length;
         const progress = ((s.currentIndex) / total) * 100;
@@ -497,15 +507,39 @@ const ReviewPage = {
             </div>
         `;
 
-        // Cho phép Enter để next
-        const handler = (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
+        // Cho phép Enter / Space để next.
+        // Phải gỡ handler cũ TRƯỚC khi gắn mới — và bắt buộc đặt sau RAF
+        // để event Enter đang bubble (từ input của thẻ trước, vừa gọi
+        // _submitAnswer rồi setTimeout backside) không kích hoạt nhầm
+        // _nextCard ngay tại lượt render này.
+        this._detachBacksideKey();
+        const expectedIndex = s.currentIndex; // chốt thẻ tại thời điểm vẽ backside
+        const expectedRound = s.currentRound;
+        requestAnimationFrame(() => {
+            const handler = (e) => {
+                if (e.key !== 'Enter' && e.key !== ' ') return;
+                // Bảo vệ thêm: nếu session đã chuyển thẻ (race), bỏ qua.
+                if (!this._session
+                    || this._session.currentIndex !== expectedIndex
+                    || this._session.currentRound !== expectedRound) {
+                    this._detachBacksideKey();
+                    return;
+                }
                 e.preventDefault();
-                document.removeEventListener('keydown', handler);
+                this._detachBacksideKey();
                 this._nextCard();
-            }
-        };
-        document.addEventListener('keydown', handler);
+            };
+            this._session._backsideKeyHandler = handler;
+            document.addEventListener('keydown', handler);
+        });
+    },
+
+    _detachBacksideKey() {
+        const h = this._session && this._session._backsideKeyHandler;
+        if (h) {
+            document.removeEventListener('keydown', h);
+            this._session._backsideKeyHandler = null;
+        }
     },
 
     _recordResult(correct) {
