@@ -24,9 +24,8 @@ flowchart TD
     C -->|Có| E[Hiện intro screen: N từ sẽ ôn qua 2 vòng]
     E --> F[Vòng 1: VN → EN]
     F --> G[Loop N từ, user gõ tiếng Anh]
-    G --> H[Kết thúc vòng 1, show summary ngắn]
-    H --> I[Shuffle N từ]
-    I --> J[Vòng 2: Listen → EN]
+    G --> H[Kết thúc vòng 1 — auto shuffle + sang vòng 2 liền mạch]
+    H --> J[Vòng 2: Listen → EN]
     J --> K[Loop N từ, phát audio, user gõ]
     K --> L[Kết thúc vòng 2]
     L --> M[Tổng hợp rating mỗi từ từ 2 vòng]
@@ -116,20 +115,11 @@ ReviewSession = {
 - Nhấn "Hiện đáp án" → tính là fail vòng này, từ chuyển sang từ kế
 - Gợi ý: hiện 1 ký tự đầu tiên chưa hiện
 
-### 3.3 Round Summary (giữa vòng 1 và vòng 2)
-```
-┌─────────────────────────────────────────┐
-│ ✅ Hoàn thành Vòng 1                    │
-│                                          │
-│  Đúng lần đầu:   15/20                  │
-│  Cần gợi ý:      4/20                   │
-│  Đã bỏ qua:      1/20                   │
-│                                          │
-│  Tiếp theo: Vòng 2 — Nghe phát âm       │
-│                                          │
-│           [Bắt đầu Vòng 2] →            │
-└─────────────────────────────────────────┘
-```
+### 3.3 Transition giữa vòng 1 → vòng 2
+
+Không có màn tổng kết trung gian — sau khi user trả lời xong câu cuối của Vòng 1, app **chuyển thẳng sang Vòng 2** (shuffle lại thứ tự card) để giữ mạch ôn tập liền lạc, tránh ngắt quãng tâm lý.
+
+Nếu user thoát giữa chừng (chưa hoàn thành đủ 2 vòng) → FSRS chưa được cập nhật → lần ôn tiếp theo sẽ bắt đầu lại đủ cả 2 vòng. Chấp nhận chi phí "ôn lại vòng 1" như một lần retrieval thêm, đổi lại code đơn giản, không cần lưu state dở dang.
 
 ### 3.4 Review Card - Vòng 2 (Listen → EN)
 ```

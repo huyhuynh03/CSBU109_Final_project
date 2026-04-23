@@ -564,7 +564,9 @@ const ReviewPage = {
         if (s.currentIndex >= s.cards.length) {
             // Hết card trong vòng
             if (s.currentRound === 1) {
-                this._renderRoundSummary();
+                // Chuyển thẳng sang vòng 2 không qua màn summary (liền mạch).
+                // Nếu user thoát giữa chừng → FSRS chưa cập nhật → lần sau ôn lại đủ 2 vòng.
+                this._startRound(2);
             } else {
                 this._finalizeSession();
             }
