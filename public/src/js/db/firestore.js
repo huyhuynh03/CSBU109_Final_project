@@ -275,11 +275,6 @@ const FirestoreDB = {
         if (!ref) return null;
         try {
             const fsrsData = FSRS.createCard();
-            // [DEBUG-RESET] Ghi lại mỗi lần tạo card mới — để phân biệt "tạo mới do xoá rồi seed lại"
-            // với "card có sẵn bị cập nhật state=NEW".
-            const word = card?.fieldValues?.word || '(no-word)';
-            const stackLines = (new Error().stack || '').split('\n').slice(2, 6).join(' | ');
-            console.log('[DEBUG-RESET][createCard]', word, { folderId: card.folderId, caller: stackLines });
             const doc = await ref.add({
                 folderId: card.folderId,
                 cardType: card.cardType, // 'vocabulary' or 'grammar'
@@ -311,18 +306,6 @@ const FirestoreDB = {
         const ref = this._userCollection('cards');
         if (!ref) return;
         try {
-            // [DEBUG-RESET] Log every write touching `state` or `stepIndex` — để truy ra
-            // chỗ nào vô tình đẩy thẻ về NEW / reset stepIndex.
-            if (updates && ('state' in updates || 'stepIndex' in updates)) {
-                const stackLines = (new Error().stack || '').split('\n').slice(2, 6).join(' | ');
-                console.log('[DEBUG-RESET][updateCard]', cardId, {
-                    state: updates.state,
-                    stepIndex: updates.stepIndex,
-                    stability: updates.stability,
-                    dueDate: updates.dueDate,
-                    caller: stackLines
-                });
-            }
             await ref.doc(cardId).update({
                 ...updates,
                 updatedAt: firebase.firestore.FieldValue.serverTimestamp()
