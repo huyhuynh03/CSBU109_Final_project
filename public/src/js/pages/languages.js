@@ -16,43 +16,8 @@ const LanguagesPage = {
             description: 'Học từ vựng, ngữ pháp và giao tiếp tiếng Anh',
             route: '/vocabulary',
             available: true
-        },
-        {
-            id: 'japanese',
-            name: 'Tiếng Nhật',
-            nameNative: '日本語',
-            flagLabel: 'JP',
-            icon: 'translate',
-            color: '#EF4444',
-            colorGradient: 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)',
-            description: 'Học Hiragana, Katakana, Kanji và hội thoại',
-            route: null,
-            available: false
-        },
-        {
-            id: 'korean',
-            name: 'Tiếng Hàn',
-            nameNative: '한국어',
-            flagLabel: 'KR',
-            icon: 'translate',
-            color: '#8B5CF6',
-            colorGradient: 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)',
-            description: 'Học Hangul, từ vựng và giao tiếp tiếng Hàn',
-            route: null,
-            available: false
-        },
-        {
-            id: 'chinese',
-            name: 'Tiếng Trung',
-            nameNative: '中文',
-            flagLabel: 'CN',
-            icon: 'translate',
-            color: '#F59E0B',
-            colorGradient: 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)',
-            description: 'Học Pinyin, chữ Hán và giao tiếp tiếng Trung',
-            route: null,
-            available: false
         }
+        // Các ngôn ngữ khác sẽ thêm vào đây khi ra mắt.
     ],
 
     async render() {
@@ -66,7 +31,7 @@ const LanguagesPage = {
             <div class="home-page page-enter">
                 <div class="home-welcome">
                     <h2>Chọn ngôn ngữ 🌐</h2>
-                    <p>Chọn ngôn ngữ bạn muốn học. Hiện tại LinguaFlash mới hỗ trợ Tiếng Anh, các ngôn ngữ khác sẽ ra mắt sau.</p>
+                    <p>Chọn ngôn ngữ bạn muốn học.</p>
                 </div>
 
                 <div class="lang-domains-grid">
