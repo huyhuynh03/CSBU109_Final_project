@@ -531,7 +531,6 @@ const VocabularyPage = {
                         <div class="vocab-topic-card__cover" style="background:${gradient}">
                             <span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>
                             ${isCompleted ? '<div class="vocab-topic-card__badge"><span class="material-icons-round">verified</span></div>' : ''}
-                            ${stats.due > 0 ? `<div class="vocab-topic-card__due-badge">${stats.due}</div>` : ''}
                         </div>
                         <div class="vocab-topic-card__body">
                             <h3 class="vocab-topic-card__name">${topic.name}</h3>
