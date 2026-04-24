@@ -11,7 +11,7 @@ const Sidebar = {
      */
     _sidebarRoutes: [
         '/', '/vocabulary', '/grammar', '/study', '/review',
-        '/account', '/settings'
+        '/account', '/settings', '/languages'
     ],
 
     /**
@@ -248,10 +248,11 @@ const Sidebar = {
             `;
         }).join('');
 
-        // "Switch language" button at bottom (coming soon)
+        // "Switch language" button at bottom (active)
+        const isLangActive = currentPath === '/languages';
         const switchLangHtml = `
-            <button class="sidebar-nav-item sidebar-nav-item--disabled sidebar-nav-item--switch" 
-                    onclick="Toast.info('Sắp ra mắt', 'Tính năng chọn ngôn ngữ đang được phát triển!')"
+            <button class="sidebar-nav-item sidebar-nav-item--switch ${isLangActive ? 'sidebar-nav-item--active' : ''}"
+                    onclick="Sidebar._onItemClick('/languages')"
                     title="Chọn ngôn ngữ">
                 <span class="material-icons-round sidebar-nav-icon">language</span>
                 <span class="sidebar-nav-label">Chọn ngôn ngữ</span>

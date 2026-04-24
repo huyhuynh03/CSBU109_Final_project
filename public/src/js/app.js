@@ -113,6 +113,12 @@ const App = {
             onEnter: () => AccountPage.onEnter && AccountPage.onEnter()
         });
 
+        // Language selection
+        Router.register('/languages', {
+            render: () => LanguagesPage.render(),
+            onEnter: () => LanguagesPage.onEnter && LanguagesPage.onEnter()
+        });
+
         console.log('[App] Routes registered');
     }
 };
