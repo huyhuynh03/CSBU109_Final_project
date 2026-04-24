@@ -61,14 +61,18 @@ const BqtV2Cleanup = {
             snapshot.forEach((doc) => {
                 const c = doc.data();
                 const fv = c.fieldValues || {};
-                // Điều kiện xoá: thẻ có field biến thể cũ (legacy) HOẶC
-                // thẻ có tag irregular-* nhưng không có irregularRole (schema v2 mới yêu cầu role).
+                // Điều kiện xoá: CHỈ xoá khi thẻ có field biến thể cũ schema v1
+                // (pastSimple/pastParticiple/comparative/superlative). Đây là dấu hiệu
+                // chắc chắn của thẻ legacy v1 cần thay bằng v2.
+                //
+                // [BUG-FIX 2026-04-24] Trước đây có thêm điều kiện `missingRole` (tag irregular-*
+                // nhưng không có irregularRole). ĐIỀU KIỆN NÀY SAI vì các thẻ base form
+                // (write/good/well…) tự nhiên không có irregularRole, dẫn đến cleanup
+                // xoá oan toàn bộ base form đã học → seed importer tạo lại thành NEW
+                // → user mất tiến trình ôn tập (Cấp độ 1+ về Học mới).
                 const hasLegacyFields = !!(fv.pastSimple || fv.pastParticiple || fv.comparative || fv.superlative);
-                const tags = Array.isArray(fv.tags) ? fv.tags : [];
-                const hasIrrTag = tags.some(t => t === 'irregular-verb' || t === 'irregular-adjective' || t === 'irregular-adverb');
-                const missingRole = hasIrrTag && !fv.irregularRole;
 
-                if (!hasLegacyFields && !missingRole) return;
+                if (!hasLegacyFields) return;
 
                 if (deletedSamples.length < 10) {
                     deletedSamples.push({
@@ -76,7 +80,7 @@ const BqtV2Cleanup = {
                         word: fv.word,
                         state: c.state,
                         stepIndex: c.stepIndex,
-                        reason: hasLegacyFields ? 'legacyFields' : 'missingRole',
+                        reason: 'legacyFields',
                         tags: fv.tags
                     });
                 }
