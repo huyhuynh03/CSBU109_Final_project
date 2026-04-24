@@ -59,9 +59,10 @@ const FsrsMigration = {
         const userId = (typeof Auth !== 'undefined') ? Auth.getUserId() : null;
         if (!userId) return;
         if (this._hasRun(userId)) {
-            console.log('[FsrsMigration] Already migrated for user', userId);
+            console.log('[DEBUG-RESET][FsrsMigration] Already migrated for user', userId);
             return;
         }
+        console.log('[DEBUG-RESET][FsrsMigration] STARTING migration for user', userId);
 
         const ref = FirestoreDB._userCollection('cards');
         if (!ref) return;
@@ -94,7 +95,7 @@ const FsrsMigration = {
 
             if (inBatch > 0) await batch.commit();
 
-            console.log(`[FsrsMigration] ✅ Migrated ${updated}/${snapshot.size} cards for user ${userId}`);
+            console.log(`[DEBUG-RESET][FsrsMigration] ✅ Migrated ${updated}/${snapshot.size} cards for user ${userId}`);
             this._markDone(userId);
         } catch (e) {
             console.error('[FsrsMigration] Migration failed:', e);

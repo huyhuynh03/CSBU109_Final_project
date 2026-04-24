@@ -42,9 +42,10 @@ const BqtV2Cleanup = {
         const userId = (typeof Auth !== 'undefined') ? Auth.getUserId() : null;
         if (!userId) return;
         if (this._hasRun(userId)) {
-            console.log('[BqtV2Cleanup] Already cleaned for user', userId);
+            console.log('[DEBUG-RESET][BqtV2Cleanup] Already cleaned for user', userId);
             return;
         }
+        console.log('[DEBUG-RESET][BqtV2Cleanup] STARTING cleanup for user', userId);
 
         const ref = FirestoreDB._userCollection('cards');
         if (!ref) return;
@@ -52,6 +53,7 @@ const BqtV2Cleanup = {
         try {
             const snapshot = await ref.get();
             let deleted = 0;
+            const deletedSamples = [];
             const batchSize = 400;
             let batch = db.batch();
             let inBatch = 0;
@@ -68,6 +70,16 @@ const BqtV2Cleanup = {
 
                 if (!hasLegacyFields && !missingRole) return;
 
+                if (deletedSamples.length < 10) {
+                    deletedSamples.push({
+                        id: doc.id,
+                        word: fv.word,
+                        state: c.state,
+                        stepIndex: c.stepIndex,
+                        reason: hasLegacyFields ? 'legacyFields' : 'missingRole',
+                        tags: fv.tags
+                    });
+                }
                 batch.delete(doc.ref);
                 deleted++;
                 inBatch++;
@@ -81,7 +93,10 @@ const BqtV2Cleanup = {
 
             if (inBatch > 0) await batch.commit();
 
-            console.log(`[BqtV2Cleanup] ✅ Deleted ${deleted} legacy BQT cards for user ${userId}`);
+            console.log(`[DEBUG-RESET][BqtV2Cleanup] ✅ Deleted ${deleted}/${snapshot.size} cards for user ${userId}`);
+            if (deletedSamples.length > 0) {
+                console.log('[DEBUG-RESET][BqtV2Cleanup] Sample of deleted cards (first 10):', deletedSamples);
+            }
             this._markDone(userId);
         } catch (e) {
             console.error('[BqtV2Cleanup] Cleanup failed:', e);

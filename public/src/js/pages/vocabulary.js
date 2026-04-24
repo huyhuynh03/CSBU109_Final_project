@@ -1041,13 +1041,14 @@ const VocabularyPage = {
             // Lấy cards hiện có để check topic nào đã có từ
             const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
             const topicsWithCards = new Set(cards.map(c => c.folderId).filter(Boolean));
+            console.log(`[DEBUG-RESET][AutoSeed] totalCards=${cards.length}, topicsWithCards=[${[...topicsWithCards].join(',')}], needExamplesSync=${needExamplesSync}`);
 
             for (const [topicId, filename] of Object.entries(this._seedTopics)) {
                 const hasCards = topicsWithCards.has(topicId);
                 if (hasCards && !needExamplesSync) continue; // Đã có + không cần sync → skip
-                console.log(`[VocabularyPage] Auto-seeding topic "${topicId}" from ${filename} (sync=${needExamplesSync})`);
+                console.log(`[DEBUG-RESET][AutoSeed] Seeding topic "${topicId}" from ${filename} (hasCards=${hasCards}, needSync=${needExamplesSync})`);
                 const result = await SeedImporter.importFile(filename);
-                console.log(`[VocabularyPage] Seeded: +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
+                console.log(`[DEBUG-RESET][AutoSeed] Result for "${topicId}": +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped, ${result.failed} failed`);
             }
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}

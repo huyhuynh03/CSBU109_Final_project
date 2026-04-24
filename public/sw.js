@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.63
-const CACHE_NAME = 'linguaflash-v5.63';
+// LinguaFlash Service Worker v5.64
+const CACHE_NAME = 'linguaflash-v5.64';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -16,7 +16,7 @@ const STATIC_ASSETS = [
     '/src/js/utils/helpers.js?v=2',
     '/src/js/utils/family-word-manager.js?v=3',
     '/src/js/utils/tts.js?v=1',
-    '/src/js/utils/seed-importer.js?v=5',
+    '/src/js/utils/seed-importer.js?v=6',
     '/src/js/ui/toast.js?v=2',
     '/src/js/ui/theme.js?v=2',
     '/src/js/ui/background.js?v=3',
@@ -27,14 +27,14 @@ const STATIC_ASSETS = [
     '/src/js/config/vocabulary-topics.js?v=2',
     '/src/js/auth/auth.js?v=11',
     '/src/js/auth/auth-ui.js?v=3',
-    '/src/js/db/firestore.js?v=8',
+    '/src/js/db/firestore.js?v=9',
     '/src/js/db/sync.js?v=2',
     '/src/js/fsrs/fsrs.js?v=9',
-    '/src/js/fsrs/migration.js?v=1',
-    '/src/js/fsrs/bqt-v2-cleanup.js?v=1',
+    '/src/js/fsrs/migration.js?v=2',
+    '/src/js/fsrs/bqt-v2-cleanup.js?v=2',
     '/src/js/fsrs/card-mode-manager.js?v=4',
     '/src/js/pages/home.js?v=13',
-    '/src/js/pages/vocabulary.js?v=30',
+    '/src/js/pages/vocabulary.js?v=32',
     '/src/js/pages/topic-detail.js?v=6',
     '/src/js/pages/grammar.js?v=3',
     '/src/js/pages/study.js?v=20',

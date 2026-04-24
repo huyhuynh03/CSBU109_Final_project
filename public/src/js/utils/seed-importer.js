@@ -92,6 +92,7 @@ const SeedImporter = {
         let updated = 0;
         let failed = 0;
         const errors = [];
+        console.log(`[DEBUG-RESET][SeedImporter] importSeed start (topic=${defaultFolderId}, totalSeedCards=${total}, existingWordsCount=${existingMap.size})`);
 
         // Các field cần đồng bộ lại với seed khi card đã tồn tại.
         // - example*: seed được sửa ngữ pháp.
@@ -176,6 +177,7 @@ const SeedImporter = {
             }
         }
 
+        console.log(`[DEBUG-RESET][SeedImporter] importSeed done (topic=${defaultFolderId}): created=${created}, updated=${updated}, skipped=${skipped}, failed=${failed}`);
         return { created, skipped, updated, failed, total, errors };
     },
 
