@@ -96,7 +96,7 @@ const SeedImporter = {
         // - example*: seed được sửa ngữ pháp.
         // - irregularRole/baseForm/baseMeaning: schema BQT v2 — thẻ mới seed cần có role/baseForm đúng.
         // LƯU Ý: KHÔNG đưa field mảng (vd 'tags') vào đây — so sánh !== với array luôn trả về true gây update vô hạn.
-        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech'];
+        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty'];
         // Field mảng cần so sánh deep (JSON stringify)
         const SYNC_ARRAY_FIELDS = ['tags'];
 
