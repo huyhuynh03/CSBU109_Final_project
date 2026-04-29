@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-clothing-appearance",
+    "description": "Mặc, vừa vặn",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "wear",
+        "ipa": "/wer/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mặc",
+        "example": "What should I wear to the party?",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fit",
+        "ipa": "/fɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vừa khít",
+        "example": "These shoes fit perfectly.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

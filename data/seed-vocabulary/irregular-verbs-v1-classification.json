@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "totalVerbs": 131,
+    "description": "Phân loại 131 động từ bất quy tắc V1 (base form) theo chủ đề ngữ nghĩa"
+  },
+  "categories": {
+    "basic-essential": {
+      "topicId": "verbs-basic-essential",
+      "name": "Động từ cơ bản thiết yếu",
+      "description": "Các động từ cơ bản nhất, dùng hàng ngày",
+      "difficulty": "beginner",
+      "verbs": ["be", "have", "do", "get", "make", "go", "come", "take", "give", "put", "let", "keep", "hold", "set", "leave"]
+    },
+    "communication": {
+      "topicId": "verbs-communication",
+      "name": "Giao tiếp",
+      "description": "Nói, viết, truyền đạt thông tin",
+      "difficulty": "beginner",
+      "verbs": ["say", "tell", "speak", "mean", "read", "write", "broadcast", "teach"]
+    },
+    "movement-travel": {
+      "topicId": "verbs-movement-travel",
+      "name": "Di chuyển & Du lịch",
+      "description": "Các động từ về di chuyển, vận động",
+      "difficulty": "beginner",
+      "verbs": ["run", "fly", "drive", "ride", "swim", "dive", "fall", "rise", "leap", "slide", "flee", "withdraw"]
+    },
+    "cognition-thinking": {
+      "topicId": "verbs-cognition-thinking",
+      "name": "Tư duy & Nhận thức",
+      "description": "Suy nghĩ, hiểu biết, nhớ quên",
+      "difficulty": "intermediate",
+      "verbs": ["think", "know", "understand", "forget", "choose", "forecast", "meet", "begin"]
+    },
+    "perception-senses": {
+      "topicId": "verbs-perception-senses",
+      "name": "Cảm giác & Tri giác",
+      "description": "Nhìn, nghe, cảm nhận",
+      "difficulty": "beginner",
+      "verbs": ["see", "hear", "feel", "show", "hide", "shine", "light"]
+    },
+    "eating-drinking": {
+      "topicId": "verbs-eating-drinking",
+      "name": "Ăn uống",
+      "description": "Các động từ liên quan đến ăn uống",
+      "difficulty": "beginner",
+      "verbs": ["eat", "drink", "feed", "bite", "spit"]
+    },
+    "body-position": {
+      "topicId": "verbs-body-position",
+      "name": "Tư thế cơ thể",
+      "description": "Ngồi, đứng, nằm, quỳ",
+      "difficulty": "beginner",
+      "verbs": ["sit", "stand", "lie", "lay", "kneel", "hang", "sleep", "wake"]
+    },
+    "physical-actions": {
+      "topicId": "verbs-physical-actions",
+      "name": "Hành động vật lý",
+      "description": "Đánh, ném, bắt, đẩy, kéo",
+      "difficulty": "intermediate",
+      "verbs": ["hit", "strike", "throw", "catch", "shoot", "fling", "swing", "shake", "blow", "cast"]
+    },
+    "cutting-breaking": {
+      "topicId": "verbs-cutting-breaking",
+      "name": "Cắt & Phá vỡ",
+      "description": "Cắt, chẻ, phá, vỡ",
+      "difficulty": "intermediate",
+      "verbs": ["cut", "tear", "break", "burst", "split", "slit", "bend", "wind"]
+    },
+    "creation-building": {
+      "topicId": "verbs-creation-building",
+      "name": "Tạo dựng & Xây dựng",
+      "description": "Xây, dựng, tạo ra",
+      "difficulty": "intermediate",
+      "verbs": ["build", "draw", "weave", "knit", "sew", "breed", "grow", "spread"]
+    },
+    "destruction-damage": {
+      "topicId": "verbs-destruction-damage",
+      "name": "Phá hủy & Làm hỏng",
+      "description": "Đốt, hỏng, phá",
+      "difficulty": "intermediate",
+      "verbs": ["burn", "spoil", "hurt", "bleed"]
+    },
+    "possession-transaction": {
+      "topicId": "verbs-possession-transaction",
+      "name": "Sở hữu & Giao dịch",
+      "description": "Mua, bán, trả, cho vay",
+      "difficulty": "intermediate",
+      "verbs": ["buy", "pay", "lend", "spend", "deal", "send", "bring", "bear"]
+    },
+    "searching-finding": {
+      "topicId": "verbs-searching-finding",
+      "name": "Tìm kiếm & Phát hiện",
+      "description": "Tìm, kiếm, mất, ẩn",
+      "difficulty": "intermediate",
+      "verbs": ["find", "seek", "lose", "lead"]
+    },
+    "fighting-conflict": {
+      "topicId": "verbs-fighting-conflict",
+      "name": "Chiến đấu & Xung đột",
+      "description": "Đánh nhau, chiến đấu, vượt qua",
+      "difficulty": "intermediate",
+      "verbs": ["fight", "overcome", "overrun", "steal", "forbid", "forgive", "swear", "win"]
+    },
+    "change-transformation": {
+      "topicId": "verbs-change-transformation",
+      "name": "Thay đổi & Biến đổi",
+      "description": "Thay đổi, lớn lên, co lại",
+      "difficulty": "intermediate",
+      "verbs": ["freeze", "shrink", "sink", "spring", "bind"]
+    },
+    "sound-music": {
+      "topicId": "verbs-sound-music",
+      "name": "Âm thanh & Âm nhạc",
+      "description": "Hát, rung chuông",
+      "difficulty": "intermediate",
+      "verbs": ["sing", "ring"]
+    },
+    "cleaning-maintenance": {
+      "topicId": "verbs-cleaning-maintenance",
+      "name": "Làm sạch & Bảo trì",
+      "description": "Quét, cắt cỏ, gieo hạt",
+      "difficulty": "intermediate",
+      "verbs": ["sweep", "mow", "sow", "dig", "grind"]
+    },
+    "attachment-connection": {
+      "topicId": "verbs-attachment-connection",
+      "name": "Gắn kết & Kết nối",
+      "description": "Bám, dính, đóng, mở",
+      "difficulty": "intermediate",
+      "verbs": ["cling", "shut", "quit", "creep"]
+    },
+    "clothing-appearance": {
+      "topicId": "verbs-clothing-appearance",
+      "name": "Trang phục & Ngoại hình",
+      "description": "Mặc, vừa vặn",
+      "difficulty": "intermediate",
+      "verbs": ["wear", "fit"]
+    },
+    "spanning-covering": {
+      "topicId": "verbs-spanning-covering",
+      "name": "Bắc qua & Phủ",
+      "description": "Bắc qua, trải rộng",
+      "difficulty": "advanced",
+      "verbs": ["span"]
+    }
+  }
+}

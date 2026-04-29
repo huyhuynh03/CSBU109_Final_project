@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-change-transformation",
+    "description": "Thay đổi, lớn lên, co lại",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "freeze",
+        "ipa": "/friːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đóng băng",
+        "example": "Water will freeze at 0°C.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shrink",
+        "ipa": "/ʃrɪŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "co lại",
+        "example": "Cotton clothes shrink in hot water.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sink",
+        "ipa": "/sɪŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chìm",
+        "example": "Heavy objects sink in water.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spring",
+        "ipa": "/sprɪŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhảy lên",
+        "example": "The cat will spring at the mouse.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bind",
+        "ipa": "/baɪnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "buộc",
+        "example": "They bind the books with strong glue.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

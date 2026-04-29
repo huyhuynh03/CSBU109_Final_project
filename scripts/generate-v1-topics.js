@@ -1,0 +1,341 @@
+const fs = require('fs');
+const path = require('path');
+
+// Đọc file classification
+const classification = JSON.parse(
+  fs.readFileSync('data/seed-vocabulary/irregular-verbs-v1-classification.json', 'utf8')
+);
+
+// Đọc file V2 để lấy thông tin baseForm
+const v2Data = JSON.parse(
+  fs.readFileSync('data/seed-vocabulary/irregular-verb-v2.json', 'utf8')
+);
+
+// Tạo map baseForm -> {baseMeaning, ipa}
+const baseFormMap = {};
+v2Data.cards.forEach(card => {
+  const baseForm = card.fieldValues.baseForm;
+  if (!baseFormMap[baseForm]) {
+    baseFormMap[baseForm] = {
+      baseMeaning: card.fieldValues.baseMeaning,
+      // Lấy IPA của V2 làm tham khảo, sẽ cần điều chỉnh cho V1
+      v2Ipa: card.fieldValues.ipa
+    };
+  }
+});
+
+// IPA mapping cho các V1 forms (một số khác với V2)
+const v1IpaMap = {
+  'be': '/biː/',
+  'bear': '/beər/',
+  'begin': '/bɪˈɡɪn/',
+  'bend': '/bend/',
+  'bind': '/baɪnd/',
+  'bite': '/baɪt/',
+  'bleed': '/bliːd/',
+  'blow': '/bloʊ/',
+  'break': '/breɪk/',
+  'breed': '/briːd/',
+  'bring': '/brɪŋ/',
+  'broadcast': '/ˈbrɔːdkæst/',
+  'build': '/bɪld/',
+  'burn': '/bɜːrn/',
+  'burst': '/bɜːrst/',
+  'buy': '/baɪ/',
+  'cast': '/kæst/',
+  'catch': '/kætʃ/',
+  'choose': '/tʃuːz/',
+  'cling': '/klɪŋ/',
+  'come': '/kʌm/',
+  'creep': '/kriːp/',
+  'cut': '/kʌt/',
+  'deal': '/diːl/',
+  'dig': '/dɪɡ/',
+  'dive': '/daɪv/',
+  'do': '/duː/',
+  'draw': '/drɔː/',
+  'drink': '/drɪŋk/',
+  'drive': '/draɪv/',
+  'eat': '/iːt/',
+  'fall': '/fɔːl/',
+  'feed': '/fiːd/',
+  'feel': '/fiːl/',
+  'fight': '/faɪt/',
+  'find': '/faɪnd/',
+  'fit': '/fɪt/',
+  'flee': '/fliː/',
+  'fling': '/flɪŋ/',
+  'fly': '/flaɪ/',
+  'forbid': '/fərˈbɪd/',
+  'forecast': '/ˈfɔːrkæst/',
+  'forget': '/fərˈɡet/',
+  'forgive': '/fərˈɡɪv/',
+  'freeze': '/friːz/',
+  'get': '/ɡet/',
+  'give': '/ɡɪv/',
+  'go': '/ɡoʊ/',
+  'grind': '/ɡraɪnd/',
+  'grow': '/ɡroʊ/',
+  'hang': '/hæŋ/',
+  'have': '/hæv/',
+  'hear': '/hɪər/',
+  'hide': '/haɪd/',
+  'hit': '/hɪt/',
+  'hold': '/hoʊld/',
+  'hurt': '/hɜːrt/',
+  'keep': '/kiːp/',
+  'kneel': '/niːl/',
+  'knit': '/nɪt/',
+  'know': '/noʊ/',
+  'lay': '/leɪ/',
+  'lead': '/liːd/',
+  'leap': '/liːp/',
+  'leave': '/liːv/',
+  'lend': '/lend/',
+  'let': '/let/',
+  'lie': '/laɪ/',
+  'light': '/laɪt/',
+  'lose': '/luːz/',
+  'make': '/meɪk/',
+  'mean': '/miːn/',
+  'meet': '/miːt/',
+  'mow': '/moʊ/',
+  'overcome': '/ˌoʊvərˈkʌm/',
+  'overrun': '/ˌoʊvərˈrʌn/',
+  'pay': '/peɪ/',
+  'put': '/pʊt/',
+  'quit': '/kwɪt/',
+  'read': '/riːd/',
+  'ride': '/raɪd/',
+  'ring': '/rɪŋ/',
+  'rise': '/raɪz/',
+  'run': '/rʌn/',
+  'say': '/seɪ/',
+  'see': '/siː/',
+  'seek': '/siːk/',
+  'send': '/send/',
+  'set': '/set/',
+  'sew': '/soʊ/',
+  'shake': '/ʃeɪk/',
+  'shine': '/ʃaɪn/',
+  'shoot': '/ʃuːt/',
+  'show': '/ʃoʊ/',
+  'shrink': '/ʃrɪŋk/',
+  'shut': '/ʃʌt/',
+  'sing': '/sɪŋ/',
+  'sink': '/sɪŋk/',
+  'sit': '/sɪt/',
+  'sleep': '/sliːp/',
+  'slide': '/slaɪd/',
+  'slit': '/slɪt/',
+  'sow': '/soʊ/',
+  'span': '/spæn/',
+  'speak': '/spiːk/',
+  'spend': '/spend/',
+  'spit': '/spɪt/',
+  'split': '/splɪt/',
+  'spoil': '/spɔɪl/',
+  'spread': '/spred/',
+  'spring': '/sprɪŋ/',
+  'stand': '/stænd/',
+  'steal': '/stiːl/',
+  'strike': '/straɪk/',
+  'swear': '/swer/',
+  'sweep': '/swiːp/',
+  'swim': '/swɪm/',
+  'swing': '/swɪŋ/',
+  'take': '/teɪk/',
+  'teach': '/tiːtʃ/',
+  'tear': '/ter/',
+  'tell': '/tel/',
+  'think': '/θɪŋk/',
+  'throw': '/θroʊ/',
+  'understand': '/ˌʌndərˈstænd/',
+  'wake': '/weɪk/',
+  'wear': '/wer/',
+  'weave': '/wiːv/',
+  'win': '/wɪn/',
+  'wind': '/waɪnd/',
+  'withdraw': '/wɪðˈdrɔː/',
+  'write': '/raɪt/'
+};
+
+// Example sentences cho mỗi verb
+const exampleMap = {
+  'be': 'I want to be a doctor when I grow up.',
+  'bear': 'She cannot bear the pain anymore.',
+  'begin': 'Let\'s begin the meeting now.',
+  'bend': 'Please bend your knees when you lift heavy objects.',
+  'bind': 'They bind the books with strong glue.',
+  'bite': 'Be careful, the dog might bite.',
+  'bleed': 'The wound will bleed if you remove the bandage.',
+  'blow': 'The wind will blow harder tonight.',
+  'break': 'Don\'t break the glass!',
+  'breed': 'They breed horses on their farm.',
+  'bring': 'Please bring your notebook to class.',
+  'broadcast': 'They broadcast the news every evening.',
+  'build': 'We plan to build a new house next year.',
+  'burn': 'Be careful not to burn yourself on the stove.',
+  'burst': 'The balloon will burst if you blow too much air.',
+  'buy': 'I need to buy some groceries.',
+  'cast': 'They cast their votes in the election.',
+  'catch': 'Try to catch the ball!',
+  'choose': 'You can choose any color you like.',
+  'cling': 'The wet clothes cling to her body.',
+  'come': 'Please come to my party.',
+  'creep': 'The cat will creep quietly toward the mouse.',
+  'cut': 'Use scissors to cut the paper.',
+  'deal': 'I deal with customer complaints every day.',
+  'dig': 'They dig a hole to plant the tree.',
+  'dive': 'He loves to dive into the pool.',
+  'do': 'What do you do for a living?',
+  'draw': 'She can draw beautiful pictures.',
+  'drink': 'I drink coffee every morning.',
+  'drive': 'Can you drive me to the airport?',
+  'eat': 'Let\'s eat dinner together.',
+  'fall': 'Be careful not to fall down the stairs.',
+  'feed': 'Don\'t forget to feed the cat.',
+  'feel': 'I feel happy today.',
+  'fight': 'They fight for their rights.',
+  'find': 'I can\'t find my keys.',
+  'fit': 'These shoes fit perfectly.',
+  'flee': 'People flee from the danger zone.',
+  'fling': 'He will fling the ball across the field.',
+  'fly': 'Birds fly in the sky.',
+  'forbid': 'My parents forbid me to stay out late.',
+  'forecast': 'They forecast rain for tomorrow.',
+  'forget': 'Don\'t forget to lock the door.',
+  'forgive': 'Please forgive me for my mistake.',
+  'freeze': 'Water will freeze at 0°C.',
+  'get': 'I need to get some rest.',
+  'give': 'Please give me a chance.',
+  'go': 'Let\'s go to the park.',
+  'grind': 'They grind coffee beans every morning.',
+  'grow': 'Plants grow faster in spring.',
+  'hang': 'Please hang your coat on the hook.',
+  'have': 'I have two brothers.',
+  'hear': 'Can you hear that sound?',
+  'hide': 'Let\'s hide behind the tree.',
+  'hit': 'Don\'t hit your sister!',
+  'hold': 'Please hold my hand.',
+  'hurt': 'My leg will hurt if I run too fast.',
+  'keep': 'Keep the door closed.',
+  'kneel': 'They kneel down to pray.',
+  'knit': 'My grandmother can knit beautiful sweaters.',
+  'know': 'I know the answer.',
+  'lay': 'Please lay the book on the table.',
+  'lead': 'She will lead the team to victory.',
+  'leap': 'The frog can leap very high.',
+  'leave': 'What time do you leave for work?',
+  'lend': 'Can you lend me some money?',
+  'let': 'Let me help you.',
+  'lie': 'Don\'t lie to me.',
+  'light': 'Please light the candles.',
+  'lose': 'I don\'t want to lose this game.',
+  'make': 'I make breakfast every morning.',
+  'mean': 'What do you mean by that?',
+  'meet': 'Let\'s meet at the cafe.',
+  'mow': 'I need to mow the lawn this weekend.',
+  'overcome': 'We must overcome these challenges.',
+  'overrun': 'Weeds overrun the garden.',
+  'pay': 'I need to pay the bills.',
+  'put': 'Put your books on the shelf.',
+  'quit': 'Don\'t quit now!',
+  'read': 'I read books every night.',
+  'ride': 'Can you ride a bicycle?',
+  'ring': 'The bells ring every hour.',
+  'rise': 'The sun will rise at 6 AM.',
+  'run': 'I run every morning.',
+  'say': 'What did you say?',
+  'see': 'I can see the mountains from here.',
+  'seek': 'They seek the truth.',
+  'send': 'Please send me the document.',
+  'set': 'Set the table for dinner.',
+  'sew': 'She can sew her own clothes.',
+  'shake': 'Shake the bottle before use.',
+  'shine': 'The stars shine brightly at night.',
+  'shoot': 'They shoot arrows at the target.',
+  'show': 'Let me show you how to do it.',
+  'shrink': 'Cotton clothes shrink in hot water.',
+  'shut': 'Please shut the window.',
+  'sing': 'She loves to sing in the shower.',
+  'sink': 'Heavy objects sink in water.',
+  'sit': 'Please sit down.',
+  'sleep': 'I sleep eight hours every night.',
+  'slide': 'Children slide down the hill.',
+  'slit': 'Slit the envelope carefully.',
+  'sow': 'Farmers sow seeds in spring.',
+  'span': 'The bridge will span the entire river.',
+  'speak': 'Can you speak English?',
+  'spend': 'I spend too much money on clothes.',
+  'spit': 'Don\'t spit on the ground.',
+  'split': 'Let\'s split the bill.',
+  'spoil': 'Too much sun will spoil the food.',
+  'spread': 'Spread the butter on the bread.',
+  'spring': 'The cat will spring at the mouse.',
+  'stand': 'Please stand up.',
+  'steal': 'It\'s wrong to steal.',
+  'strike': 'The workers strike for better wages.',
+  'swear': 'I swear I\'m telling the truth.',
+  'sweep': 'Please sweep the floor.',
+  'swim': 'I swim every summer.',
+  'swing': 'Children swing in the playground.',
+  'take': 'Take your time.',
+  'teach': 'I teach English at a high school.',
+  'tear': 'Don\'t tear the paper.',
+  'tell': 'Tell me the truth.',
+  'think': 'I think you\'re right.',
+  'throw': 'Throw the ball to me.',
+  'understand': 'Do you understand the question?',
+  'wake': 'I wake up at 7 AM every day.',
+  'wear': 'What should I wear to the party?',
+  'weave': 'They weave baskets from bamboo.',
+  'win': 'I want to win the competition.',
+  'wind': 'Wind the clock every night.',
+  'withdraw': 'I need to withdraw some money from the bank.',
+  'write': 'I write in my journal every day.'
+};
+
+// Tạo file cho mỗi category
+Object.entries(classification.categories).forEach(([categoryKey, category]) => {
+  const topicData = {
+    _meta: {
+      schemaVersion: 'v2',
+      cardType: 'vocabulary',
+      topicId: category.topicId,
+      description: category.description,
+      locale: 'en'
+    },
+    cards: []
+  };
+
+  category.verbs.forEach(verb => {
+    const baseInfo = baseFormMap[verb];
+    if (!baseInfo) {
+      console.warn(`Warning: No base info found for verb "${verb}"`);
+      return;
+    }
+
+    const card = {
+      fieldValues: {
+        word: verb,
+        ipa: v1IpaMap[verb] || '/unknown/',
+        partOfSpeech: 'verb',
+        difficulty: category.difficulty,
+        meaning: baseInfo.baseMeaning,
+        example: exampleMap[verb] || `I ${verb} every day.`,
+        tags: ['irregular-verb', 'base-form']
+      }
+    };
+
+    topicData.cards.push(card);
+  });
+
+  // Ghi file
+  const filename = `${category.topicId}.json`;
+  const filepath = path.join('data', 'seed-vocabulary', filename);
+  fs.writeFileSync(filepath, JSON.stringify(topicData, null, 2), 'utf8');
+  console.log(`✓ Created ${filename} with ${topicData.cards.length} cards`);
+});
+
+console.log('\n✓ All topic files generated successfully!');

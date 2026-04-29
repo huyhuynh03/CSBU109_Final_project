@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-perception-senses",
+    "description": "Nhìn, nghe, cảm nhận",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "see",
+        "ipa": "/siː/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nhìn, thấy",
+        "example": "I can see the mountains from here.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hear",
+        "ipa": "/hɪər/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nghe",
+        "example": "Can you hear that sound?",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feel",
+        "ipa": "/fiːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cảm thấy",
+        "example": "I feel happy today.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "show",
+        "ipa": "/ʃoʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cho xem, chỉ",
+        "example": "Let me show you how to do it.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hide",
+        "ipa": "/haɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "giấu, trốn",
+        "example": "Let's hide behind the tree.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shine",
+        "ipa": "/ʃaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "chiếu sáng",
+        "example": "The stars shine brightly at night.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "light",
+        "ipa": "/laɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thắp, đốt",
+        "example": "Please light the candles.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

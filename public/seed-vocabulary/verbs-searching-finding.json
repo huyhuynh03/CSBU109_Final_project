@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-searching-finding",
+    "description": "Tìm, kiếm, mất, ẩn",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "find",
+        "ipa": "/faɪnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm thấy",
+        "example": "I can't find my keys.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seek",
+        "ipa": "/siːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm kiếm",
+        "example": "They seek the truth.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lose",
+        "ipa": "/luːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mất, thua",
+        "example": "I don't want to lose this game.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lead",
+        "ipa": "/liːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dẫn dắt",
+        "example": "She will lead the team to victory.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-cutting-breaking",
+    "description": "Cắt, chẻ, phá, vỡ",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "cut",
+        "ipa": "/kʌt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cắt",
+        "example": "Use scissors to cut the paper.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tear",
+        "ipa": "/ter/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xé, rách",
+        "example": "Don't tear the paper.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break",
+        "ipa": "/breɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm vỡ, phá vỡ",
+        "example": "Don't break the glass!",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burst",
+        "ipa": "/bɜːrst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vỡ tung, bùng nổ",
+        "example": "The balloon will burst if you blow too much air.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "split",
+        "ipa": "/splɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chia, tách",
+        "example": "Let's split the bill.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slit",
+        "ipa": "/slɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rạch",
+        "example": "Slit the envelope carefully.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bend",
+        "ipa": "/bend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cúi, uốn cong",
+        "example": "Please bend your knees when you lift heavy objects.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind",
+        "ipa": "/waɪnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quấn, vặn",
+        "example": "Wind the clock every night.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

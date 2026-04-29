@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-body-position",
+    "description": "Ngồi, đứng, nằm, quỳ",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "sit",
+        "ipa": "/sɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ngồi",
+        "example": "Please sit down.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stand",
+        "ipa": "/stænd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đứng",
+        "example": "Please stand up.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lie",
+        "ipa": "/laɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nằm",
+        "example": "Don't lie to me.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lay",
+        "ipa": "/leɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đặt, đẻ",
+        "example": "Please lay the book on the table.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kneel",
+        "ipa": "/niːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "quỳ",
+        "example": "They kneel down to pray.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hang",
+        "ipa": "/hæŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "treo",
+        "example": "Please hang your coat on the hook.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleep",
+        "ipa": "/sliːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ngủ",
+        "example": "I sleep eight hours every night.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wake",
+        "ipa": "/weɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thức dậy",
+        "example": "I wake up at 7 AM every day.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

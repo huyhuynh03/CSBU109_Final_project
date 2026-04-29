@@ -1,0 +1,179 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-movement-travel",
+    "description": "Các động từ về di chuyển, vận động",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "run",
+        "ipa": "/rʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "chạy",
+        "example": "I run every morning.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fly",
+        "ipa": "/flaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "bay",
+        "example": "Birds fly in the sky.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drive",
+        "ipa": "/draɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "lái xe",
+        "example": "Can you drive me to the airport?",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ride",
+        "ipa": "/raɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cưỡi, đi (xe)",
+        "example": "Can you ride a bicycle?",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swim",
+        "ipa": "/swɪm/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "bơi",
+        "example": "I swim every summer.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dive",
+        "ipa": "/daɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "lặn",
+        "example": "He loves to dive into the pool.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fall",
+        "ipa": "/fɔːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ngã, rơi",
+        "example": "Be careful not to fall down the stairs.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rise",
+        "ipa": "/raɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "tăng lên, đứng dậy",
+        "example": "The sun will rise at 6 AM.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leap",
+        "ipa": "/liːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nhảy",
+        "example": "The frog can leap very high.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slide",
+        "ipa": "/slaɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "trượt",
+        "example": "Children slide down the hill.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flee",
+        "ipa": "/fliː/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "chạy trốn",
+        "example": "People flee from the danger zone.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdraw",
+        "ipa": "/wɪðˈdrɔː/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "rút lui, rút tiền",
+        "example": "I need to withdraw some money from the bank.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

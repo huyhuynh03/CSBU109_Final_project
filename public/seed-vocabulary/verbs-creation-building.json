@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-creation-building",
+    "description": "Xây, dựng, tạo ra",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "build",
+        "ipa": "/bɪld/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xây dựng",
+        "example": "We plan to build a new house next year.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "draw",
+        "ipa": "/drɔː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vẽ, kéo",
+        "example": "She can draw beautiful pictures.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weave",
+        "ipa": "/wiːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dệt",
+        "example": "They weave baskets from bamboo.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knit",
+        "ipa": "/nɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đan",
+        "example": "My grandmother can knit beautiful sweaters.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sew",
+        "ipa": "/soʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "may",
+        "example": "She can sew her own clothes.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breed",
+        "ipa": "/briːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nuôi, sinh sản",
+        "example": "They breed horses on their farm.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grow",
+        "ipa": "/ɡroʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lớn lên, trồng",
+        "example": "Plants grow faster in spring.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spread",
+        "ipa": "/spred/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lan rộng, phết",
+        "example": "Spread the butter on the bread.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

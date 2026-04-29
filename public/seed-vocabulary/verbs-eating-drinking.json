@@ -1,0 +1,81 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-eating-drinking",
+    "description": "Các động từ liên quan đến ăn uống",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "eat",
+        "ipa": "/iːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ăn",
+        "example": "Let's eat dinner together.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drink",
+        "ipa": "/drɪŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "uống",
+        "example": "I drink coffee every morning.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feed",
+        "ipa": "/fiːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cho ăn",
+        "example": "Don't forget to feed the cat.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bite",
+        "ipa": "/baɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cắn",
+        "example": "Be careful, the dog might bite.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spit",
+        "ipa": "/spɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "khạc nhổ",
+        "example": "Don't spit on the ground.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

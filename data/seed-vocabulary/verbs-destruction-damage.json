@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-destruction-damage",
+    "description": "Đốt, hỏng, phá",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "burn",
+        "ipa": "/bɜːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đốt cháy",
+        "example": "Be careful not to burn yourself on the stove.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoil",
+        "ipa": "/spɔɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm hỏng",
+        "example": "Too much sun will spoil the food.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurt",
+        "ipa": "/hɜːrt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm đau",
+        "example": "My leg will hurt if I run too fast.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bleed",
+        "ipa": "/bliːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chảy máu",
+        "example": "The wound will bleed if you remove the bandage.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}

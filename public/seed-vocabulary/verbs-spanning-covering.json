@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "verbs-spanning-covering",
+    "description": "Bắc qua, trải rộng",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "span",
+        "ipa": "/spæn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "kéo dài, bắc qua",
+        "example": "The bridge will span the entire river.",
+        "tags": [
+          "irregular-verb",
+          "base-form"
+        ]
+      }
+    }
+  ]
+}
