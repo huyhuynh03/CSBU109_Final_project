@@ -12,6 +12,7 @@ const VocabularyPage = {
     // Map topicId → seed filename cho các topic có dữ liệu mẫu
     _seedTopics: {
         'education': 'test-samples.json',
+        'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
         'irregular-verb-v3': 'irregular-verb-v3.json',
         'irregular-adj-comparative': 'irregular-adj-comparative.json',

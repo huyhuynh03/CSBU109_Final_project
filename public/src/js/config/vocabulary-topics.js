@@ -230,46 +230,53 @@ const VocabularyTopics = [
     // Nhóm 6: Bất quy tắc (mỗi dạng một topic)
     // ==========================================
     {
+        id: 'irregular-verb-v1',
+        name: 'Động từ BQT – V1 (Nguyên mẫu)',
+        icon: 'bolt',
+        category: 'irregular',
+        order: 30
+    },
+    {
         id: 'irregular-verb-v2',
         name: 'Động từ BQT – V2 (Quá khứ đơn)',
         icon: 'history',
         category: 'irregular',
-        order: 30
+        order: 31
     },
     {
         id: 'irregular-verb-v3',
         name: 'Động từ BQT – V3 (Quá khứ phân từ)',
         icon: 'timelapse',
         category: 'irregular',
-        order: 31
+        order: 32
     },
     {
         id: 'irregular-adj-comparative',
         name: 'Tính từ BQT – So sánh hơn',
         icon: 'trending_up',
         category: 'irregular',
-        order: 32
+        order: 33
     },
     {
         id: 'irregular-adj-superlative',
         name: 'Tính từ BQT – So sánh nhất',
         icon: 'emoji_events',
         category: 'irregular',
-        order: 33
+        order: 34
     },
     {
         id: 'irregular-adv-comparative',
         name: 'Trạng từ BQT – So sánh hơn',
         icon: 'speed',
         category: 'irregular',
-        order: 34
+        order: 35
     },
     {
         id: 'irregular-adv-superlative',
         name: 'Trạng từ BQT – So sánh nhất',
         icon: 'rocket_launch',
         category: 'irregular',
-        order: 35
+        order: 36
     }
 ];
 
