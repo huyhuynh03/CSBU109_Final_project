@@ -17,7 +17,6 @@ const HomePage = {
                 <!-- Welcome -->
                 <div class="home-welcome">
                     <h2>Chào mừng trở lại! 👋</h2>
-                    <p>Hôm nay bạn muốn làm gì?</p>
                 </div>
 
                 <!-- Streak & Practice Time -->
@@ -50,22 +49,6 @@ const HomePage = {
                     </div>
                 </div>
 
-                <!-- Card: Nhóm từ học ngắt quãng -->
-                <div class="glass-card home-incomplete-card" id="home-incomplete-card"
-                     style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);cursor:pointer;transition:transform 0.15s ease;"
-                     onclick="HomePage._openIncompleteFamiliesModal()"
-                     onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
-                    <div style="width:48px;height:48px;border-radius:var(--radius-lg);background:rgba(245,158,11,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;">
-                        <span class="material-icons-round" style="font-size:28px;color:#F59E0B;">hourglass_top</span>
-                        <span id="home-incomplete-badge" style="display:none;position:absolute;top:-6px;right:-6px;min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:#EF4444;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid var(--color-bg, #0f0f1a);">0</span>
-                    </div>
-                    <div style="flex:1;min-width:0;">
-                        <div style="font-size:var(--font-size-base);font-weight:600;color:var(--color-text);">Nhóm từ học ngắt quãng</div>
-                        <p id="home-incomplete-desc" style="margin:4px 0 0;font-size:var(--font-size-xs);color:var(--color-text-muted);">Đang tải...</p>
-                    </div>
-                    <span class="material-icons-round" style="color:var(--color-text-muted);">chevron_right</span>
-                </div>
-
                 <!-- Unified Chart: bars + date labels + day abbreviations -->
                 <div class="glass-card" style="padding:var(--spacing-lg);">
                     <div id="dashboard-chart" style="position:relative;"></div>
@@ -79,146 +62,6 @@ const HomePage = {
         if (!Auth.isSignedIn()) return;
 
         this._loadStudyChart();
-        this._loadIncompleteFamilies();
-    },
-
-    // ============================================
-    // INCOMPLETE FAMILIES (Nhóm từ học ngắt quãng)
-    // ============================================
-    _incompleteCache: null,
-
-    async _loadIncompleteFamilies() {
-        const badge = document.getElementById('home-incomplete-badge');
-        const desc = document.getElementById('home-incomplete-desc');
-        if (!badge || !desc) return;
-
-        try {
-            const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            const families = await FamilyWordManager.getIncompleteFamilies(allCards);
-            this._incompleteCache = { families, allCards };
-
-            const n = families.length;
-            if (n > 0) {
-                badge.style.display = 'flex';
-                badge.textContent = n > 99 ? '99+' : String(n);
-                desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
-            } else {
-                badge.style.display = 'none';
-                desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
-            }
-        } catch (e) {
-            console.error('[HomePage] Load incomplete families error:', e);
-            desc.textContent = 'Không tải được dữ liệu';
-        }
-    },
-
-    async _openIncompleteFamiliesModal() {
-        const existing = document.querySelector('.lf-incomplete-modal-overlay');
-        if (existing) existing.remove();
-
-        // Luôn refetch fresh từ Firestore để tránh cache stale
-        let families = [];
-        let allCards = [];
-        try {
-            allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            families = await FamilyWordManager.getIncompleteFamilies(allCards);
-            this._incompleteCache = { families, allCards };
-            // Cập nhật badge
-            const badge = document.getElementById('home-incomplete-badge');
-            const desc = document.getElementById('home-incomplete-desc');
-            if (badge && desc) {
-                const n = families.length;
-                if (n > 0) {
-                    badge.style.display = 'flex';
-                    badge.textContent = n > 99 ? '99+' : String(n);
-                    desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
-                } else {
-                    badge.style.display = 'none';
-                    desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
-                }
-            }
-        } catch (e) {
-            console.error('[HomePage] Open incomplete modal error:', e);
-        }
-
-        let bodyHtml;
-        if (families.length === 0) {
-            bodyHtml = `
-                <div style="padding:var(--spacing-xl);text-align:center;">
-                    <span class="material-icons-round" style="font-size:48px;color:#10B981;">check_circle</span>
-                    <p style="margin:var(--spacing-md) 0 0;color:var(--color-text-secondary);">
-                        Không có nhóm từ nào đang bị học ngắt quãng.
-                    </p>
-                </div>
-            `;
-        } else {
-            const isNew = (c) => FamilyWordManager._isNewCard(c);
-            const escape = (s) => String(s || '')
-                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-                .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
-
-            bodyHtml = families.map(family => {
-                const familyCards = allCards
-                    .filter(c => c.fieldValues?.familyId === family.familyId)
-                    .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99));
-                const total = family.totalCount;
-                const learned = family.learnedCount;
-                const progress = total > 0 ? Math.round((learned / total) * 100) : 0;
-
-                const wordsHtml = familyCards.map(c => {
-                    const word = c.fieldValues?.word || '?';
-                    const learnedCard = !isNew(c);
-                    const icon = learnedCard ? '✅' : '🆕';
-                    const cls = learnedCard ? 'lf-fam-word lf-fam-word--learned' : 'lf-fam-word lf-fam-word--new';
-                    return `<span class="${cls}">${icon} ${escape(word)}</span>`;
-                }).join('');
-
-                return `
-                    <div class="lf-incomplete-item glass-panel">
-                        <div class="lf-incomplete-item__head">
-                            <strong>${escape(family.familyId)}</strong>
-                            <span class="lf-incomplete-item__count">${learned}/${total}</span>
-                        </div>
-                        <div class="lf-incomplete-item__bar">
-                            <div class="lf-incomplete-item__fill" style="width:${progress}%"></div>
-                        </div>
-                        <div class="lf-incomplete-item__words">${wordsHtml}</div>
-                        <button class="lf-incomplete-item__btn"
-                                onclick="HomePage._closeIncompleteModalAndLearn('${escape(family.familyId)}')">
-                            <span class="material-icons-round">play_arrow</span> Học tiếp
-                        </button>
-                    </div>
-                `;
-            }).join('');
-        }
-
-        const overlay = document.createElement('div');
-        overlay.className = 'lf-incomplete-modal-overlay';
-        overlay.innerHTML = `
-            <div class="lf-incomplete-modal glass-panel">
-                <div class="lf-incomplete-modal__header">
-                    <span class="material-icons-round" style="color:#F59E0B;">hourglass_top</span>
-                    <span>Nhóm từ học ngắt quãng (${families.length})</span>
-                    <button class="lf-incomplete-modal__close" onclick="HomePage._closeIncompleteModal()" aria-label="Đóng">
-                        <span class="material-icons-round">close</span>
-                    </button>
-                </div>
-                <div class="lf-incomplete-modal__body">${bodyHtml}</div>
-            </div>
-        `;
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) HomePage._closeIncompleteModal();
-        });
-        document.body.appendChild(overlay);
-    },
-
-    _closeIncompleteModal() {
-        document.querySelector('.lf-incomplete-modal-overlay')?.remove();
-    },
-
-    _closeIncompleteModalAndLearn(familyId) {
-        this._closeIncompleteModal();
-        Router.navigate(`/study?type=vocabulary&familyId=${encodeURIComponent(familyId)}`);
     },
 
     /**
