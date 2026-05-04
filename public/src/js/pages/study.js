@@ -11,6 +11,7 @@ const StudyPage = {
     _currentAttempts: 1,
     _currentRevealed: false,
     _pendingFamilyPopup: null,
+    _allTypeCards: [],
 
     render() {
         return `<div class="study-page page-enter" id="study-page-root">
@@ -36,11 +37,14 @@ const StudyPage = {
             const type = params.get('type') || 'vocabulary';
             const topicId = params.get('topicId');
             const familyId = params.get('familyId');
+            const groupType = params.get('groupType');
+            const groupKey = params.get('groupKey');
             const cardId = params.get('cardId');
 
             // Lấy TOÀN BỘ cards (một query) rồi filter client-side.
             // Lưu lại để tính pending families mà không phải query lại.
             const allTypeCards = await FirestoreDB.getCards({ cardType: type });
+            this._allTypeCards = allTypeCards;
             const isNewOrLearning = (c) => {
                 const st = c.state;
                 return st === 'new' || st === 'learning'
@@ -48,7 +52,7 @@ const StudyPage = {
             };
             let cards = allTypeCards.filter(isNewOrLearning);
 
-            // Filter theo topic / family / cardId nếu có
+            // Filter theo topic / family / group / cardId nếu có
             if (topicId) {
                 cards = cards.filter(c => c.folderId === topicId);
             }
@@ -56,6 +60,9 @@ const StudyPage = {
                 // Chỉ còn từ mới/learning của family là đủ — state Firestore là nguồn truth,
                 // không cần đối chiếu localStorage.
                 cards = cards.filter(c => c.fieldValues?.familyId === familyId);
+            }
+            if (groupType && groupKey) {
+                cards = cards.filter(c => FamilyWordManager.belongsToGroup(c, groupType, groupKey));
             }
             if (cardId) {
                 cards = cards.filter(c => c.id === cardId);
@@ -90,14 +97,14 @@ const StudyPage = {
             // Tính pending families TRỰC TIẾP từ Firestore (source of truth).
             // Không cần cleanup localStorage vì schema mới không lưu learnedWords.
             const pending = (type === 'vocabulary')
-                ? await FamilyWordManager.getIncompleteFamilies(allTypeCards)
+                ? await FamilyWordManager.getIncompleteGroups(allTypeCards)
                 : [];
 
             // Chỉ hiện banner khi:
-            // - KHÔNG vào với familyId/cardId cụ thể
-            // - Có family dang dở và user chưa dismiss toàn bộ
+            // - KHÔNG vào với familyId/group/cardId cụ thể
+            // - Có group dang dở và user chưa dismiss toàn bộ
             const activePending = pending.filter(f => !f.dismissed);
-            if (activePending.length > 0 && !familyId && !cardId) {
+            if (activePending.length > 0 && !familyId && !groupType && !groupKey && !cardId) {
                 this._renderPendingBanner(activePending);
             } else {
                 // Vào thẳng bước học, bỏ qua màn hình intro trung gian
@@ -110,14 +117,14 @@ const StudyPage = {
     },
 
     // ============================================
-    // PENDING FAMILIES BANNER
+    // PENDING GROUPS BANNER
     // ============================================
     _renderPendingBanner(pending) {
         const root = document.getElementById('study-page-root');
         if (!root) return;
 
         const list = pending.slice(0, 3).map(f =>
-            `${f.familyId} (${f.learnedCount}/${f.totalCount})`
+            `${f.title} (${f.learnedCount}/${f.totalCount})`
         ).join(' · ');
         const more = pending.length > 3 ? ` +${pending.length - 3} nữa` : '';
 
@@ -147,17 +154,19 @@ const StudyPage = {
 
     async _learnPendingFirst() {
         const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-        const pending = await FamilyWordManager.getIncompleteFamilies(allCards);
+        this._allTypeCards = allCards;
+        const pending = await FamilyWordManager.getIncompleteGroups(allCards);
         if (pending.length === 0) {
             this._renderIntro();
             return;
         }
-        const familyIds = new Set(pending.map(f => f.familyId));
+
         const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
-        const pendingCards = allCards.filter(c => {
-            const fid = c.fieldValues?.familyId;
-            return fid && familyIds.has(fid) && isNew(c);
-        });
+        const pendingCards = pending
+            .filter(group => !group.dismissed)
+            .flatMap(group => allCards.filter(c =>
+                FamilyWordManager.belongsToGroup(c, group.groupType, group.rawKey) && isNew(c)
+            ));
 
         if (pendingCards.length === 0) {
             Toast.show('Không tìm thấy từ chưa học nào trong các nhóm pending', 'info');
@@ -551,8 +560,6 @@ const StudyPage = {
         } else if (s.currentStep === 3) {
             // Step 3 xong → finalize card ngay (schema v2: không còn variant flow)
             await this._finalizeCard();
-            // Luồng mới: không còn family popup (6 topic BQT tách rời, không share familyId).
-            // Giữ an toàn: chỉ gọi khi card có familyId hợp lệ.
             const popupShown = await this._maybeShowFamilyPopup();
             if (popupShown) return;
             this._nextCard();
@@ -606,37 +613,32 @@ const StudyPage = {
     },
 
     // ============================================
-    // FAMILY WORD POPUP (sau khi học xong 1 từ có familyId)
+    // GROUP POPUP (family + irregular verb)
     // ============================================
     async _maybeShowFamilyPopup() {
         const s = this._session;
         const card = s.cards[s.currentIndex];
-        const familyId = card.fieldValues?.familyId;
-        if (!familyId) return false;
+        const groupInfo = FamilyWordManager._getGroupInfo(card);
+        if (!groupInfo) return false;
 
         try {
-            const allInFamily = await FamilyWordManager.getFamilyCards(familyId);
-            const result = await FamilyWordManager.onWordLearned(card, allInFamily);
+            const allInGroup = await FamilyWordManager.getGroupCards(groupInfo.groupType, groupInfo.rawKey, this._allTypeCards);
+            const result = await FamilyWordManager.onWordLearned(card, allInGroup);
             if (!result || result.unlearnedCards.length === 0) return false;
             if (result.dismissed) return false;
 
-            // Lọc ra những từ THỰC SỰ chưa học (state === 'new') — dựa trên Firestore,
-            // không chỉ dựa vào localStorage của FamilyWordManager (vốn chỉ lưu những
-            // từ đã đi qua popup family, không biết các từ user học thẳng từ topic).
-            // → Tránh bug ép học lại từ đã ở trạng thái ôn tập.
             const sessionIds = new Set(s.cards.map(c => c.id));
             const isNew = (c) => c.state === 'new' || c.state === FSRS.State.NEW;
             const newCandidates = result.unlearnedCards
                 .filter(c => !sessionIds.has(c.id))
                 .filter(isNew);
 
-            // Nếu không còn từ nào thực sự mới → xoá family khỏi pending (đã học hết)
             if (newCandidates.length === 0) {
-                FamilyWordManager.removeFamily(familyId);
+                FamilyWordManager.undismissGroup(result.groupKey);
                 return false;
             }
 
-            this._showFamilyPopup(familyId, newCandidates);
+            this._showFamilyPopup(result, newCandidates);
             return true;
         } catch (e) {
             console.error('[StudyPage] Family popup error:', e);
@@ -644,34 +646,41 @@ const StudyPage = {
         }
     },
 
-    _showFamilyPopup(familyId, candidates) {
+    _showFamilyPopup(group, candidates) {
         const existing = document.querySelector('.family-popup-overlay');
         if (existing) existing.remove();
 
         const wordsHtml = candidates.slice(0, 5).map(c => {
             const fv = c.fieldValues || {};
             const pos = fv.partOfSpeech ? `(${fv.partOfSpeech.charAt(0)}) ` : '';
+            const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+                ? CardSchemas.getIrregularMeta(c)
+                : null;
+            const role = irrMeta ? ` · ${irrMeta.roleShort}` : '';
             return `<div class="family-popup__word-item">
                 <span class="material-icons-round">bookmark</span>
-                <strong>${pos}${this._escapeHtml(fv.word || '?')}</strong>
+                <strong>${pos}${this._escapeHtml(fv.word || '?')}${this._escapeHtml(role)}</strong>
                 <span style="margin-left:auto;color:var(--color-text-muted);font-size:var(--font-size-sm);">${this._escapeHtml((fv.meaning || '').substring(0, 30))}</span>
             </div>`;
         }).join('');
+
+        const title = group.groupType === 'irregular-verb' ? 'Các dạng động từ liên quan' : 'Nhóm từ cùng họ';
+        const desc = group.groupType === 'irregular-verb'
+            ? `Bạn vừa học <strong>"${this._escapeHtml(group.title)}"</strong>. Còn ${candidates.length} dạng V1/V2/V3 nên học tiếp:`
+            : `Từ <strong>"${this._escapeHtml(group.title)}"</strong> có ${candidates.length} từ liên quan:`;
 
         const overlay = document.createElement('div');
         overlay.className = 'family-popup-overlay';
         overlay.innerHTML = `
             <div class="family-popup">
                 <div class="family-popup__title">
-                    <span class="material-icons-round">family_restroom</span>
-                    Nhóm từ cùng họ
+                    <span class="material-icons-round">${this._escapeHtml(group.icon || 'family_restroom')}</span>
+                    ${this._escapeHtml(title)}
                 </div>
-                <div class="family-popup__desc">
-                    Từ <strong>"${this._escapeHtml(familyId)}"</strong> có ${candidates.length} từ liên quan:
-                </div>
+                <div class="family-popup__desc">${desc}</div>
                 <div class="family-popup__words">${wordsHtml}</div>
                 <div class="family-popup__actions">
-                    <button class="family-popup__btn family-popup__btn--secondary" onclick="StudyPage._familyPopupDismiss('${this._escapeHtml(familyId)}')">
+                    <button class="family-popup__btn family-popup__btn--secondary" onclick="StudyPage._familyPopupDismiss('${this._escapeHtml(group.groupKey)}')">
                         Để sau
                     </button>
                     <button class="family-popup__btn family-popup__btn--primary" onclick="StudyPage._familyPopupLearn()">
@@ -682,23 +691,21 @@ const StudyPage = {
         `;
         document.body.appendChild(overlay);
 
-        // Lưu candidates để _familyPopupLearn dùng
-        this._pendingFamilyPopup = { familyId, candidates };
+        this._pendingFamilyPopup = { groupKey: group.groupKey, candidates };
     },
 
     _familyPopupLearn() {
         const p = this._pendingFamilyPopup;
         if (!p) return;
         const s = this._session;
-        // Chèn các từ family vào ngay sau vị trí hiện tại
         s.cards.splice(s.currentIndex + 1, 0, ...p.candidates);
         document.querySelector('.family-popup-overlay')?.remove();
         this._pendingFamilyPopup = null;
         this._nextCard();
     },
 
-    _familyPopupDismiss(familyId) {
-        FamilyWordManager.dismissFamily(familyId);
+    _familyPopupDismiss(groupKey) {
+        FamilyWordManager.dismissGroup(groupKey);
         document.querySelector('.family-popup-overlay')?.remove();
         this._pendingFamilyPopup = null;
         this._nextCard();

@@ -26,6 +26,10 @@ const FamilyWordManager = {
         return st === 'new' || st === 'learning';
     },
 
+    _normalize(value) {
+        return String(value || '').trim().toLowerCase();
+    },
+
     _getDismissed() {
         try {
             const raw = localStorage.getItem(this.DISMISS_KEY);
@@ -45,6 +49,50 @@ const FamilyWordManager = {
         }
     },
 
+    _buildGroupKey(groupType, rawKey) {
+        const key = this._normalize(rawKey);
+        return key ? `${groupType}:${key}` : '';
+    },
+
+    _getGroupInfo(card) {
+        const fv = card?.fieldValues || {};
+        const familyId = String(fv.familyId || '').trim();
+        if (familyId) {
+            return {
+                groupType: 'family',
+                rawKey: familyId,
+                groupKey: this._buildGroupKey('family', familyId),
+                title: familyId,
+                description: `Nhóm từ cùng họ: ${familyId}`,
+                icon: 'family_restroom'
+            };
+        }
+
+        const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+            ? CardSchemas.getIrregularMeta(card)
+            : null;
+        if (irrMeta && irrMeta.tag === 'irregular-verb') {
+            const base = String(fv.baseForm || fv.word || '').trim();
+            if (!base) return null;
+            return {
+                groupType: 'irregular-verb',
+                rawKey: base,
+                groupKey: this._buildGroupKey('irregular-verb', base),
+                title: base,
+                description: `Động từ bất quy tắc: ${base}`,
+                icon: 'timeline'
+            };
+        }
+
+        return null;
+    },
+
+    belongsToGroup(card, groupType, rawKey) {
+        const info = this._getGroupInfo(card);
+        if (!info) return false;
+        return info.groupType === groupType && this._normalize(info.rawKey) === this._normalize(rawKey);
+    },
+
     /** Dọn legacy key (chạy 1 lần khi load module) */
     _cleanupLegacy() {
         try {
@@ -56,11 +104,6 @@ const FamilyWordManager = {
     },
 
     // ---- Cards lookup -------------------------------------------------------
-    /**
-     * Lấy tất cả cards thuộc 1 family (từ Firestore — source of truth).
-     * @param {string} familyId
-     * @returns {Promise<Array>}
-     */
     async getFamilyCards(familyId) {
         try {
             const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
@@ -71,137 +114,165 @@ const FamilyWordManager = {
         }
     },
 
-    // ---- Pending families (tính từ Firestore) -------------------------------
-    /**
-     * Tính danh sách family đang DANG DỞ:
-     *   - Có ít nhất 1 card đã học (state ≠ new)
-     *   - VÀ còn ít nhất 1 card chưa học (state = new)
-     *
-     * @param {Array} [allCards] - Optional: pass cards có sẵn để tránh query lại.
-     * @returns {Promise<Array>} mảng { familyId, learnedCount, totalCount, dismissed }
-     */
-    async getIncompleteFamilies(allCards) {
+    async getGroupCards(groupType, rawKey, allCards) {
+        try {
+            const cards = Array.isArray(allCards)
+                ? allCards
+                : await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            return cards.filter(c => this.belongsToGroup(c, groupType, rawKey));
+        } catch (e) {
+            console.error('[FamilyWordManager] getGroupCards error:', e);
+            return [];
+        }
+    },
+
+    // ---- Pending groups (tính từ Firestore) ---------------------------------
+    async getIncompleteGroups(allCards) {
         let cards = allCards;
         if (!cards) {
             try {
                 cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
             } catch (e) {
-                console.error('[FamilyWordManager] getIncompleteFamilies error:', e);
+                console.error('[FamilyWordManager] getIncompleteGroups error:', e);
                 return [];
             }
         }
 
-        const map = {}; // familyId → { total, learned }
-        cards.forEach(c => {
-            const fid = c.fieldValues?.familyId;
-            if (!fid) return;
-            if (!map[fid]) map[fid] = { total: 0, learned: 0 };
-            map[fid].total++;
-            if (!this._isNewCard(c)) map[fid].learned++;
+        const map = new Map();
+        cards.forEach(card => {
+            const info = this._getGroupInfo(card);
+            if (!info || !info.groupKey) return;
+            if (!map.has(info.groupKey)) {
+                map.set(info.groupKey, {
+                    ...info,
+                    cards: [],
+                    totalCount: 0,
+                    learnedCount: 0
+                });
+            }
+            const item = map.get(info.groupKey);
+            item.cards.push(card);
+            item.totalCount++;
+            if (!this._isNewCard(card)) item.learnedCount++;
         });
 
         const dismissed = this._getDismissed();
-        return Object.entries(map)
-            .filter(([, v]) => v.learned > 0 && v.learned < v.total)
-            .map(([familyId, v]) => ({
-                familyId,
-                learnedCount: v.learned,
-                totalCount: v.total,
-                dismissed: dismissed.has(familyId)
+        return [...map.values()]
+            .filter(v => v.learnedCount > 0 && v.learnedCount < v.totalCount)
+            .sort((a, b) => {
+                if (a.groupType !== b.groupType) return a.groupType.localeCompare(b.groupType);
+                return a.title.localeCompare(b.title);
+            })
+            .map(v => ({
+                groupKey: v.groupKey,
+                groupType: v.groupType,
+                rawKey: v.rawKey,
+                title: v.title,
+                description: v.description,
+                icon: v.icon,
+                cards: v.cards,
+                learnedCount: v.learnedCount,
+                totalCount: v.totalCount,
+                dismissed: dismissed.has(v.groupKey)
             }));
     },
 
-    /**
-     * Đếm số family đang dang dở (alias).
-     * @returns {Promise<number>}
-     */
+    async getIncompleteFamilies(allCards) {
+        const groups = await this.getIncompleteGroups(allCards);
+        return groups
+            .filter(g => g.groupType === 'family')
+            .map(g => ({
+                familyId: g.rawKey,
+                learnedCount: g.learnedCount,
+                totalCount: g.totalCount,
+                dismissed: g.dismissed
+            }));
+    },
+
     async getPendingCount() {
-        const list = await this.getIncompleteFamilies();
+        const list = await this.getIncompleteGroups();
         return list.length;
     },
 
     // ---- Dismiss ------------------------------------------------------------
-    /** User bấm "Để sau" trong popup gợi ý */
+    dismissGroup(groupKey) {
+        const set = this._getDismissed();
+        set.add(groupKey);
+        this._saveDismissed(set);
+    },
+
+    undismissGroup(groupKey) {
+        const set = this._getDismissed();
+        set.delete(groupKey);
+        this._saveDismissed(set);
+    },
+
     dismissFamily(familyId) {
-        const set = this._getDismissed();
-        set.add(familyId);
-        this._saveDismissed(set);
+        this.dismissGroup(this._buildGroupKey('family', familyId));
     },
 
-    /** Reset dismiss state cho 1 family (gọi khi user chủ động vào học lại) */
     undismissFamily(familyId) {
-        const set = this._getDismissed();
-        set.delete(familyId);
-        this._saveDismissed(set);
+        this.undismissGroup(this._buildGroupKey('family', familyId));
     },
 
-    /** Reset toàn bộ dismiss (vd khi đổi user) */
     clearDismissed() {
         try { localStorage.removeItem(this.DISMISS_KEY); } catch (e) { /* ignore */ }
     },
 
     // ---- Sau khi học xong 1 từ ----------------------------------------------
-    /**
-     * Gọi sau khi user học xong 1 từ thuộc family.
-     * Trả về thông tin để StudyPage quyết định có hiện popup gợi ý không.
-     * KHÔNG còn lưu state, mọi tính toán đều dựa Firestore.
-     *
-     * @param {Object} learnedCard - card vừa học (đã được update state ở Firestore)
-     * @param {Array}  allCardsInFamily - cards cùng familyId (đã fetch tươi)
-     * @returns {{familyId, learnedCount, totalCount, unlearnedCards, dismissed} | null}
-     */
-    async onWordLearned(learnedCard, allCardsInFamily) {
-        const familyId = learnedCard?.fieldValues?.familyId;
-        if (!familyId || !Array.isArray(allCardsInFamily) || allCardsInFamily.length === 0) {
+    async onWordLearned(learnedCard, relatedCards) {
+        const info = this._getGroupInfo(learnedCard);
+        if (!info || !Array.isArray(relatedCards) || relatedCards.length === 0) {
             return null;
         }
 
-        // Coi card vừa học là "đã học" cho dù snapshot Firestore có thể chưa kịp cập nhật.
         const learnedId = learnedCard.id;
-        const unlearnedCards = allCardsInFamily.filter(c => {
+        const unlearnedCards = relatedCards.filter(c => {
             if (c.id === learnedId) return false;
             return this._isNewCard(c);
         });
-        const learnedCount = allCardsInFamily.length - unlearnedCards.length;
+        const learnedCount = relatedCards.length - unlearnedCards.length;
 
         return {
-            familyId,
+            ...info,
             learnedCount,
-            totalCount: allCardsInFamily.length,
+            totalCount: relatedCards.length,
             unlearnedCards,
-            dismissed: this._getDismissed().has(familyId)
+            dismissed: this._getDismissed().has(info.groupKey)
         };
     },
 
     // ---- Các API tương thích ngược (no-op / wrapper) ------------------------
-    /** Legacy: trước đây dùng để xoá family khỏi localStorage. Giờ chỉ undismiss. */
     removeFamily(familyId) {
         this.undismissFamily(familyId);
     },
 
-    /** Legacy: xoá theo danh sách word — chỉ undismiss tất cả family liên quan. */
     async removeWords(words) {
         if (!Array.isArray(words) || words.length === 0) return;
         try {
             const all = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            const wordSet = new Set(words);
-            const familySet = new Set();
+            const wordSet = new Set(words.map(w => this._normalize(w)).filter(Boolean));
+            const groupKeys = new Set();
             all.forEach(c => {
                 const fv = c.fieldValues || {};
-                if (fv.familyId && wordSet.has(fv.word)) familySet.add(fv.familyId);
+                const word = this._normalize(fv.word);
+                const baseForm = this._normalize(fv.baseForm);
+                const info = this._getGroupInfo(c);
+                if (!info) return;
+                if (wordSet.has(word) || (baseForm && wordSet.has(baseForm))) {
+                    groupKeys.add(info.groupKey);
+                }
             });
-            familySet.forEach(fid => this.undismissFamily(fid));
+            groupKeys.forEach(key => this.undismissGroup(key));
         } catch (e) {
             console.error('[FamilyWordManager] removeWords error:', e);
         }
     },
 
-    /** Legacy: trả {} để code cũ không crash. KHÔNG nên dùng nữa. */
     getPendingFamilies() {
         return {};
     },
 
-    // ---- Sync (no-op trong schema mới — state đã ở Firestore qua card) ------
     async syncToFirestore() { /* no-op: state nằm trong card */ },
     async syncFromFirestore() { /* no-op */ }
 };

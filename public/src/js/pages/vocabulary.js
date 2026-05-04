@@ -887,10 +887,10 @@ const VocabularyPage = {
                 ? this._allCards
                 : await FirestoreDB.getCards({ cardType: 'vocabulary' });
 
-            const families = await FamilyWordManager.getIncompleteFamilies(allCards);
-            this._incompleteCache = { families, allCards };
+            const groups = await FamilyWordManager.getIncompleteGroups(allCards);
+            this._incompleteCache = { groups, allCards };
 
-            const n = families.length;
+            const n = groups.length;
             if (n > 0) {
                 badge.style.display = 'flex';
                 badge.textContent = n > 99 ? '99+' : String(n);
@@ -910,17 +910,17 @@ const VocabularyPage = {
         // LUÔN fetch lại fresh từ Firestore để tránh stale sau khi đổi mode card
         document.querySelector('.lf-incomplete-modal-overlay')?.remove();
 
-        let families = [];
+        let groups = [];
         let allCards = [];
         try {
             allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            families = await FamilyWordManager.getIncompleteFamilies(allCards);
-            this._incompleteCache = { families, allCards };
+            groups = await FamilyWordManager.getIncompleteGroups(allCards);
+            this._incompleteCache = { groups, allCards };
             // Đồng thời cập nhật badge bên ngoài
             const badge = document.getElementById('vocab-incomplete-badge');
             const desc = document.getElementById('vocab-incomplete-desc');
             if (badge && desc) {
-                const n = families.length;
+                const n = groups.length;
                 if (n > 0) {
                     badge.style.display = 'flex';
                     badge.textContent = n > 99 ? '99+' : String(n);
@@ -939,7 +939,7 @@ const VocabularyPage = {
             .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
 
         let bodyHtml;
-        if (families.length === 0) {
+        if (groups.length === 0) {
             bodyHtml = `
                 <div style="padding:var(--spacing-xl);text-align:center;">
                     <span class="material-icons-round" style="font-size:48px;color:#10B981;">check_circle</span>
@@ -950,38 +950,52 @@ const VocabularyPage = {
             `;
         } else {
             const isNew = (c) => FamilyWordManager._isNewCard(c);
-            bodyHtml = families.map(family => {
-                const familyCards = allCards
-                    .filter(c => c.fieldValues?.familyId === family.familyId)
-                    .sort((a, b) => (a.fieldValues?.familyOrder || 99) - (b.fieldValues?.familyOrder || 99));
-                const total = family.totalCount;
-                const learned = family.learnedCount;
+            bodyHtml = groups.map(group => {
+                const groupCards = (group.cards || []).slice().sort((a, b) => {
+                    const aOrder = a.fieldValues?.familyOrder ?? 99;
+                    const bOrder = b.fieldValues?.familyOrder ?? 99;
+                    if (aOrder !== bOrder) return aOrder - bOrder;
+                    const aRole = String(a.fieldValues?.irregularRole || '');
+                    const bRole = String(b.fieldValues?.irregularRole || '');
+                    return aRole.localeCompare(bRole);
+                });
+                const total = group.totalCount;
+                const learned = group.learnedCount;
                 const progress = total > 0 ? Math.round((learned / total) * 100) : 0;
-                const firstCard = familyCards[0];
-                const familyDifficulty = firstCard?.fieldValues?.difficulty || 'intermediate';
-                const diffMeta = CardSchemas.getDifficultyMeta(familyDifficulty);
+                const firstCard = groupCards[0];
+                const groupDifficulty = firstCard?.fieldValues?.difficulty || 'intermediate';
+                const diffMeta = CardSchemas.getDifficultyMeta(groupDifficulty);
 
-                const wordsHtml = familyCards.map(c => {
-                    const word = c.fieldValues?.word || '?';
+                const wordsHtml = groupCards.map(c => {
+                    const fv = c.fieldValues || {};
+                    const word = fv.word || '?';
                     const learnedCard = !isNew(c);
                     const icon = learnedCard ? '✅' : '🆕';
                     const cls = learnedCard ? 'lf-fam-word lf-fam-word--learned' : 'lf-fam-word lf-fam-word--new';
-                    return `<span class="${cls}">${icon} ${escape(word)}</span>`;
+                    const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+                        ? CardSchemas.getIrregularMeta(c)
+                        : null;
+                    const suffix = irrMeta ? ` · ${escape(irrMeta.roleShort)}` : '';
+                    return `<span class="${cls}">${icon} ${escape(word)}${suffix}</span>`;
                 }).join('');
+
+                const groupTypeLabel = group.groupType === 'irregular-verb' ? 'BQT' : 'Family';
 
                 return `
                     <div class="lf-incomplete-item glass-panel">
                         <div class="lf-incomplete-item__head">
-                            <strong>${escape(family.familyId)}</strong>
-                            <span class="difficulty-badge difficulty-badge--${familyDifficulty}">${diffMeta.short}</span>
+                            <strong>${escape(group.title)}</strong>
+                            <span class="difficulty-badge difficulty-badge--${groupDifficulty}">${diffMeta.short}</span>
+                            <span class="review-round-badge" style="background:${group.groupType === 'irregular-verb' ? 'linear-gradient(135deg,#f59e0b,#ea580c)' : 'linear-gradient(135deg,#6366f1,#8b5cf6)'};">${groupTypeLabel}</span>
                             <span class="lf-incomplete-item__count">${learned}/${total}</span>
                         </div>
+                        <div style="font-size:var(--font-size-sm);color:var(--color-text-secondary);margin-bottom:var(--spacing-sm);">${escape(group.description || '')}</div>
                         <div class="lf-incomplete-item__bar">
                             <div class="lf-incomplete-item__fill" style="width:${progress}%"></div>
                         </div>
                         <div class="lf-incomplete-item__words">${wordsHtml}</div>
                         <button class="lf-incomplete-item__btn"
-                                onclick="VocabularyPage._closeIncompleteModalAndLearn('${escape(family.familyId)}')">
+                                onclick="VocabularyPage._closeIncompleteModalAndLearn('${escape(group.groupType)}','${escape(group.rawKey)}')">
                             <span class="material-icons-round">play_arrow</span> Học tiếp
                         </button>
                     </div>
@@ -995,7 +1009,7 @@ const VocabularyPage = {
             <div class="lf-incomplete-modal glass-panel">
                 <div class="lf-incomplete-modal__header">
                     <span class="material-icons-round" style="color:#F59E0B;">hourglass_bottom</span>
-                    <span>Nhóm từ chưa hoàn thành (${families.length})</span>
+                    <span>Nhóm từ chưa hoàn thành (${groups.length})</span>
                     <button class="lf-incomplete-modal__close" onclick="VocabularyPage._closeIncompleteModal()" aria-label="Đóng">
                         <span class="material-icons-round">close</span>
                     </button>
@@ -1013,9 +1027,9 @@ const VocabularyPage = {
         document.querySelector('.lf-incomplete-modal-overlay')?.remove();
     },
 
-    _closeIncompleteModalAndLearn(familyId) {
+    _closeIncompleteModalAndLearn(groupType, rawKey) {
         this._closeIncompleteModal();
-        this._learnFamily(familyId);
+        this._learnGroup(groupType, rawKey);
     },
 
     // ---- AUTO SEED: tự động nạp từ vựng mẫu vào topic tương ứng ----
@@ -1085,7 +1099,17 @@ const VocabularyPage = {
     },
 
     _learnFamily(familyId) {
-        // Navigate to study page with family filter
-        Router.navigate(`/study?type=vocabulary&familyId=${encodeURIComponent(familyId)}`);
+        this._learnGroup('family', familyId);
+    },
+
+    _learnGroup(groupType, rawKey) {
+        const params = new URLSearchParams({ type: 'vocabulary' });
+        if (groupType === 'family') {
+            params.set('familyId', rawKey);
+        } else {
+            params.set('groupType', groupType);
+            params.set('groupKey', rawKey);
+        }
+        Router.navigate(`/study?${params.toString()}`);
     }
 };

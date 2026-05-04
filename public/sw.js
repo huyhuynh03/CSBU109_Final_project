@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.77
-const CACHE_NAME = 'linguaflash-v5.77';
+// LinguaFlash Service Worker v5.78
+const CACHE_NAME = 'linguaflash-v5.78';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -14,7 +14,7 @@ const STATIC_ASSETS = [
     '/src/js/app.js?v=14',
     '/src/js/router.js?v=3',
     '/src/js/utils/helpers.js?v=2',
-    '/src/js/utils/family-word-manager.js?v=3',
+    '/src/js/utils/family-word-manager.js?v=4',
     '/src/js/utils/tts.js?v=1',
     '/src/js/utils/seed-importer.js?v=9',
     '/src/js/ui/toast.js?v=2',
@@ -34,10 +34,10 @@ const STATIC_ASSETS = [
     '/src/js/fsrs/bqt-v2-cleanup.js?v=4',
     '/src/js/fsrs/card-mode-manager.js?v=4',
     '/src/js/pages/home.js?v=13',
-    '/src/js/pages/vocabulary.js?v=33',
+    '/src/js/pages/vocabulary.js?v=34',
     '/src/js/pages/topic-detail.js?v=6',
     '/src/js/pages/grammar.js?v=3',
-    '/src/js/pages/study.js?v=21',
+    '/src/js/pages/study.js?v=22',
     '/src/js/pages/review.js?v=15',
     '/src/js/pages/settings.js?v=2',
     '/src/js/pages/auth-page.js?v=8',
