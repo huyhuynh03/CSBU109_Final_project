@@ -15,35 +15,37 @@ const SeedImporter = {
         return await res.json();
     },
 
-    /**
-     * Lấy danh sách card hiện có để check trùng (theo word)
-     * @returns {Promise<Set<string>>}
-     */
-    async _getExistingWords() {
-        try {
-            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            const set = new Set();
-            cards.forEach(c => {
-                const w = (c.fieldValues && c.fieldValues.word || '').trim().toLowerCase();
-                if (w) set.add(w);
-            });
-            return set;
-        } catch (e) {
-            console.warn('[SeedImporter] Không đọc được cards hiện có:', e);
-            return new Set();
+    _normalize(value) {
+        return String(value || '').trim().toLowerCase();
+    },
+
+    _buildIdentityKey(fieldValues = {}, folderId = null) {
+        const word = this._normalize(fieldValues.word);
+        if (!word) return '';
+
+        const tags = Array.isArray(fieldValues.tags) ? fieldValues.tags : [];
+        const isIrregularVerb = tags.includes('irregular-verb');
+
+        if (isIrregularVerb) {
+            const role = this._normalize(fieldValues.irregularRole);
+            const folder = this._normalize(folderId);
+            return ['irregular-verb', word, folder, role].join('::');
         }
+
+        return word;
     },
 
     /**
-     * Lấy map word -> card (để merge ví dụ khi card đã tồn tại)
+     * Lấy map identityKey -> card để import đúng các trường hợp cùng word nhưng khác topic/role.
      */
-    async _getExistingCardsByWord() {
+    async _getExistingCardsByIdentity() {
         try {
             const cards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
             const map = new Map();
             cards.forEach(c => {
-                const w = (c.fieldValues && c.fieldValues.word || '').trim().toLowerCase();
-                if (w) map.set(w, c);
+                const fv = c.fieldValues || {};
+                const key = this._buildIdentityKey(fv, c.folderId || null);
+                if (key) map.set(key, c);
             });
             return map;
         } catch (e) {
@@ -85,18 +87,18 @@ const SeedImporter = {
         }
 
         const defaultFolderId = (seed._meta && seed._meta.topicId) || null;
-        const existingMap = await this._getExistingCardsByWord();
+        const existingMap = await this._getExistingCardsByIdentity();
         const total = seed.cards.length;
         let created = 0;
         let skipped = 0;
         let updated = 0;
         let failed = 0;
         const errors = [];
-        // Các field cần đồng bộ lại với seed khi card đã tồn tại.
-        // - example*: seed được sửa ngữ pháp.
-        // - irregularRole/baseForm/baseMeaning: schema BQT v2 — thẻ mới seed cần có role/baseForm đúng.
+        // Các field cần đồng bộ lại với seed khi card đã tồn tại đúng cùng identity.
+        // Với irregular verbs, identity là word + folderId + irregularRole để không làm mất
+        // các trường hợp cùng surface-form nhưng thuộc topic/role khác nhau.
         // LƯU Ý: KHÔNG đưa field mảng (vd 'tags') vào đây — so sánh !== với array luôn trả về true gây update vô hạn.
-        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty'];
+        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty', 'note', 'pastSimple', 'pastParticiple'];
         // Field mảng cần so sánh deep (JSON stringify)
         const SYNC_ARRAY_FIELDS = ['tags'];
 
@@ -104,7 +106,8 @@ const SeedImporter = {
             const entry = seed.cards[i];
             const fieldValues = this._sanitize(entry.fieldValues || {});
             const word = (fieldValues.word || '').trim();
-            const wordKey = word.toLowerCase();
+            const folderId = entry.folderId || defaultFolderId;
+            const identityKey = this._buildIdentityKey(fieldValues, folderId);
 
             if (!word) {
                 failed++;
@@ -113,7 +116,7 @@ const SeedImporter = {
                 continue;
             }
 
-            if (existingMap.has(wordKey)) {
+            if (existingMap.has(identityKey)) {
                 // Card đã tồn tại: merge lại các field example nếu seed có giá trị khác (chỉ ghi đè, không xoá).
                 const existingCard = existingMap.get(wordKey);
                 const existingFv = existingCard.fieldValues || {};
@@ -153,7 +156,6 @@ const SeedImporter = {
             }
 
             try {
-                const folderId = entry.folderId || defaultFolderId;
                 const id = await FirestoreDB.createCard({
                     folderId,
                     cardType: 'vocabulary',
@@ -161,7 +163,7 @@ const SeedImporter = {
                 });
                 if (id) {
                     created++;
-                    existingMap.set(wordKey, { id, fieldValues });
+                    existingMap.set(identityKey, { id, folderId, fieldValues });
                     if (onProgress) onProgress({ current: i + 1, total, word, status: 'created' });
                 } else {
                     failed++;
