@@ -3,7 +3,7 @@
     "schemaVersion": "v2",
     "cardType": "vocabulary",
     "topicId": "irregular-verb-v1",
-    "description": "Động từ bất quy tắc – dạng V1 (Nguyên mẫu). Mỗi thẻ là 1 động từ nguyên mẫu với thông tin V2/V3.",
+    "description": "Động từ bất quy tắc – dạng V1 (Nguyên mẫu). Bao gồm toàn bộ base form; các trường hợp trùng dạng sẽ được chú thích ngay trên thẻ.",
     "locale": "en"
   },
   "cards": [
@@ -20,7 +20,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "was",
-        "pastParticiple": "been"
+        "pastParticiple": "been",
+        "baseForm": "be",
+        "baseMeaning": "là, ở, thì",
+        "note": ""
       }
     },
     {
@@ -36,7 +39,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bore",
-        "pastParticiple": "borne"
+        "pastParticiple": "borne",
+        "baseForm": "bear",
+        "baseMeaning": "sinh ra, chịu đựng",
+        "note": ""
       }
     },
     {
@@ -52,7 +58,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "began",
-        "pastParticiple": "begun"
+        "pastParticiple": "begun",
+        "baseForm": "begin",
+        "baseMeaning": "bắt đầu",
+        "note": ""
       }
     },
     {
@@ -68,7 +77,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bent",
-        "pastParticiple": "bent"
+        "pastParticiple": "bent",
+        "baseForm": "bend",
+        "baseMeaning": "cúi, uốn cong",
+        "note": "V2 = V3"
       }
     },
     {
@@ -84,7 +96,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bound",
-        "pastParticiple": "bound"
+        "pastParticiple": "bound",
+        "baseForm": "bind",
+        "baseMeaning": "buộc",
+        "note": "V2 = V3"
       }
     },
     {
@@ -100,7 +115,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bit",
-        "pastParticiple": "bitten"
+        "pastParticiple": "bitten",
+        "baseForm": "bite",
+        "baseMeaning": "cắn",
+        "note": ""
       }
     },
     {
@@ -116,7 +134,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bled",
-        "pastParticiple": "bled"
+        "pastParticiple": "bled",
+        "baseForm": "bleed",
+        "baseMeaning": "chảy máu",
+        "note": "V2 = V3"
       }
     },
     {
@@ -132,7 +153,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "blew",
-        "pastParticiple": "blown"
+        "pastParticiple": "blown",
+        "baseForm": "blow",
+        "baseMeaning": "thổi",
+        "note": ""
       }
     },
     {
@@ -148,7 +172,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "broke",
-        "pastParticiple": "broken"
+        "pastParticiple": "broken",
+        "baseForm": "break",
+        "baseMeaning": "làm vỡ, phá vỡ",
+        "note": ""
       }
     },
     {
@@ -164,7 +191,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bred",
-        "pastParticiple": "bred"
+        "pastParticiple": "bred",
+        "baseForm": "breed",
+        "baseMeaning": "nuôi, sinh sản",
+        "note": "V2 = V3"
       }
     },
     {
@@ -180,7 +210,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "brought",
-        "pastParticiple": "brought"
+        "pastParticiple": "brought",
+        "baseForm": "bring",
+        "baseMeaning": "mang, đem",
+        "note": "V2 = V3"
       }
     },
     {
@@ -196,7 +229,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "broadcast",
-        "pastParticiple": "broadcast"
+        "pastParticiple": "broadcast",
+        "baseForm": "broadcast",
+        "baseMeaning": "phát sóng",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -212,7 +248,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "built",
-        "pastParticiple": "built"
+        "pastParticiple": "built",
+        "baseForm": "build",
+        "baseMeaning": "xây dựng",
+        "note": "V2 = V3"
       }
     },
     {
@@ -228,7 +267,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "burnt",
-        "pastParticiple": "burnt"
+        "pastParticiple": "burnt",
+        "baseForm": "burn",
+        "baseMeaning": "đốt cháy",
+        "note": "V2 = V3"
       }
     },
     {
@@ -244,7 +286,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "burst",
-        "pastParticiple": "burst"
+        "pastParticiple": "burst",
+        "baseForm": "burst",
+        "baseMeaning": "vỡ tung, bùng nổ",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -260,7 +305,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "bought",
-        "pastParticiple": "bought"
+        "pastParticiple": "bought",
+        "baseForm": "buy",
+        "baseMeaning": "mua",
+        "note": "V2 = V3"
       }
     },
     {
@@ -276,7 +324,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "cast",
-        "pastParticiple": "cast"
+        "pastParticiple": "cast",
+        "baseForm": "cast",
+        "baseMeaning": "ném, đúc",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -292,7 +343,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "caught",
-        "pastParticiple": "caught"
+        "pastParticiple": "caught",
+        "baseForm": "catch",
+        "baseMeaning": "bắt, chụp",
+        "note": "V2 = V3"
       }
     },
     {
@@ -308,7 +362,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "chose",
-        "pastParticiple": "chosen"
+        "pastParticiple": "chosen",
+        "baseForm": "choose",
+        "baseMeaning": "chọn",
+        "note": ""
       }
     },
     {
@@ -324,7 +381,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "clung",
-        "pastParticiple": "clung"
+        "pastParticiple": "clung",
+        "baseForm": "cling",
+        "baseMeaning": "bám chặt",
+        "note": "V2 = V3"
       }
     },
     {
@@ -340,7 +400,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "came",
-        "pastParticiple": "come"
+        "pastParticiple": "come",
+        "baseForm": "come",
+        "baseMeaning": "đến",
+        "note": ""
       }
     },
     {
@@ -356,7 +419,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "crept",
-        "pastParticiple": "crept"
+        "pastParticiple": "crept",
+        "baseForm": "creep",
+        "baseMeaning": "bò, rón rén đi",
+        "note": "V2 = V3"
       }
     },
     {
@@ -372,7 +438,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "cut",
-        "pastParticiple": "cut"
+        "pastParticiple": "cut",
+        "baseForm": "cut",
+        "baseMeaning": "cắt",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -388,7 +457,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "dealt",
-        "pastParticiple": "dealt"
+        "pastParticiple": "dealt",
+        "baseForm": "deal",
+        "baseMeaning": "giải quyết, chia bài",
+        "note": "V2 = V3"
       }
     },
     {
@@ -404,7 +476,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "dug",
-        "pastParticiple": "dug"
+        "pastParticiple": "dug",
+        "baseForm": "dig",
+        "baseMeaning": "đào",
+        "note": "V2 = V3"
       }
     },
     {
@@ -420,7 +495,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "dove",
-        "pastParticiple": "dived"
+        "pastParticiple": "dived",
+        "baseForm": "dive",
+        "baseMeaning": "lặn",
+        "note": ""
       }
     },
     {
@@ -436,7 +514,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "did",
-        "pastParticiple": "done"
+        "pastParticiple": "done",
+        "baseForm": "do",
+        "baseMeaning": "làm",
+        "note": ""
       }
     },
     {
@@ -452,7 +533,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "drew",
-        "pastParticiple": "drawn"
+        "pastParticiple": "drawn",
+        "baseForm": "draw",
+        "baseMeaning": "vẽ, kéo",
+        "note": ""
       }
     },
     {
@@ -468,7 +552,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "drank",
-        "pastParticiple": "drunk"
+        "pastParticiple": "drunk",
+        "baseForm": "drink",
+        "baseMeaning": "uống",
+        "note": ""
       }
     },
     {
@@ -484,7 +571,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "drove",
-        "pastParticiple": "driven"
+        "pastParticiple": "driven",
+        "baseForm": "drive",
+        "baseMeaning": "lái xe",
+        "note": ""
       }
     },
     {
@@ -500,7 +590,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "ate",
-        "pastParticiple": "eaten"
+        "pastParticiple": "eaten",
+        "baseForm": "eat",
+        "baseMeaning": "ăn",
+        "note": ""
       }
     },
     {
@@ -516,7 +609,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "fell",
-        "pastParticiple": "fallen"
+        "pastParticiple": "fallen",
+        "baseForm": "fall",
+        "baseMeaning": "ngã, rơi",
+        "note": ""
       }
     },
     {
@@ -532,7 +628,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "fed",
-        "pastParticiple": "fed"
+        "pastParticiple": "fed",
+        "baseForm": "feed",
+        "baseMeaning": "cho ăn",
+        "note": "V2 = V3"
       }
     },
     {
@@ -548,7 +647,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "felt",
-        "pastParticiple": "felt"
+        "pastParticiple": "felt",
+        "baseForm": "feel",
+        "baseMeaning": "cảm thấy",
+        "note": "V2 = V3"
       }
     },
     {
@@ -564,7 +666,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "fought",
-        "pastParticiple": "fought"
+        "pastParticiple": "fought",
+        "baseForm": "fight",
+        "baseMeaning": "chiến đấu, đánh nhau",
+        "note": "V2 = V3"
       }
     },
     {
@@ -580,7 +685,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "found",
-        "pastParticiple": "found"
+        "pastParticiple": "found",
+        "baseForm": "find",
+        "baseMeaning": "tìm thấy",
+        "note": "V2 = V3"
       }
     },
     {
@@ -596,7 +704,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "fit",
-        "pastParticiple": "fit"
+        "pastParticiple": "fit",
+        "baseForm": "fit",
+        "baseMeaning": "vừa khít",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -612,7 +723,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "fled",
-        "pastParticiple": "fled"
+        "pastParticiple": "fled",
+        "baseForm": "flee",
+        "baseMeaning": "chạy trốn",
+        "note": "V2 = V3"
       }
     },
     {
@@ -628,7 +742,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "flung",
-        "pastParticiple": "flung"
+        "pastParticiple": "flung",
+        "baseForm": "fling",
+        "baseMeaning": "ném mạnh",
+        "note": "V2 = V3"
       }
     },
     {
@@ -644,7 +761,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "flew",
-        "pastParticiple": "flown"
+        "pastParticiple": "flown",
+        "baseForm": "fly",
+        "baseMeaning": "bay",
+        "note": ""
       }
     },
     {
@@ -660,7 +780,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "forbade",
-        "pastParticiple": "forbidden"
+        "pastParticiple": "forbidden",
+        "baseForm": "forbid",
+        "baseMeaning": "cấm",
+        "note": ""
       }
     },
     {
@@ -676,7 +799,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "forecast",
-        "pastParticiple": "forecast"
+        "pastParticiple": "forecast",
+        "baseForm": "forecast",
+        "baseMeaning": "dự báo",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -692,7 +818,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "forgot",
-        "pastParticiple": "forgotten"
+        "pastParticiple": "forgotten",
+        "baseForm": "forget",
+        "baseMeaning": "quên",
+        "note": ""
       }
     },
     {
@@ -708,7 +837,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "forgave",
-        "pastParticiple": "forgiven"
+        "pastParticiple": "forgiven",
+        "baseForm": "forgive",
+        "baseMeaning": "tha thứ",
+        "note": ""
       }
     },
     {
@@ -724,7 +856,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "froze",
-        "pastParticiple": "frozen"
+        "pastParticiple": "frozen",
+        "baseForm": "freeze",
+        "baseMeaning": "đóng băng",
+        "note": ""
       }
     },
     {
@@ -740,7 +875,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "got",
-        "pastParticiple": "gotten"
+        "pastParticiple": "gotten",
+        "baseForm": "get",
+        "baseMeaning": "nhận được, trở nên",
+        "note": ""
       }
     },
     {
@@ -756,7 +894,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "gave",
-        "pastParticiple": "given"
+        "pastParticiple": "given",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng",
+        "note": ""
       }
     },
     {
@@ -772,7 +913,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "went",
-        "pastParticiple": "gone"
+        "pastParticiple": "gone",
+        "baseForm": "go",
+        "baseMeaning": "đi",
+        "note": ""
       }
     },
     {
@@ -788,7 +932,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "ground",
-        "pastParticiple": "ground"
+        "pastParticiple": "ground",
+        "baseForm": "grind",
+        "baseMeaning": "xay, mài",
+        "note": "V2 = V3"
       }
     },
     {
@@ -804,7 +951,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "grew",
-        "pastParticiple": "grown"
+        "pastParticiple": "grown",
+        "baseForm": "grow",
+        "baseMeaning": "lớn lên, trồng",
+        "note": ""
       }
     },
     {
@@ -820,7 +970,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "hung",
-        "pastParticiple": "hung"
+        "pastParticiple": "hung",
+        "baseForm": "hang",
+        "baseMeaning": "treo",
+        "note": "V2 = V3"
       }
     },
     {
@@ -836,7 +989,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "had",
-        "pastParticiple": "had"
+        "pastParticiple": "had",
+        "baseForm": "have",
+        "baseMeaning": "có",
+        "note": "V2 = V3"
       }
     },
     {
@@ -852,7 +1008,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "heard",
-        "pastParticiple": "heard"
+        "pastParticiple": "heard",
+        "baseForm": "hear",
+        "baseMeaning": "nghe",
+        "note": "V2 = V3"
       }
     },
     {
@@ -868,7 +1027,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "hid",
-        "pastParticiple": "hidden"
+        "pastParticiple": "hidden",
+        "baseForm": "hide",
+        "baseMeaning": "giấu, trốn",
+        "note": ""
       }
     },
     {
@@ -884,7 +1046,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "hit",
-        "pastParticiple": "hit"
+        "pastParticiple": "hit",
+        "baseForm": "hit",
+        "baseMeaning": "đánh, va chạm",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -900,7 +1065,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "held",
-        "pastParticiple": "held"
+        "pastParticiple": "held",
+        "baseForm": "hold",
+        "baseMeaning": "cầm, giữ, tổ chức",
+        "note": "V2 = V3"
       }
     },
     {
@@ -916,7 +1084,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "hurt",
-        "pastParticiple": "hurt"
+        "pastParticiple": "hurt",
+        "baseForm": "hurt",
+        "baseMeaning": "làm đau",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -932,7 +1103,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "kept",
-        "pastParticiple": "kept"
+        "pastParticiple": "kept",
+        "baseForm": "keep",
+        "baseMeaning": "giữ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -948,7 +1122,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "knelt",
-        "pastParticiple": "knelt"
+        "pastParticiple": "knelt",
+        "baseForm": "kneel",
+        "baseMeaning": "quỳ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -964,7 +1141,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "knit",
-        "pastParticiple": "knit"
+        "pastParticiple": "knit",
+        "baseForm": "knit",
+        "baseMeaning": "đan",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -980,7 +1160,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "knew",
-        "pastParticiple": "known"
+        "pastParticiple": "known",
+        "baseForm": "know",
+        "baseMeaning": "biết",
+        "note": ""
       }
     },
     {
@@ -996,7 +1179,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "laid",
-        "pastParticiple": "laid"
+        "pastParticiple": "laid",
+        "baseForm": "lay",
+        "baseMeaning": "đặt, đẻ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1012,7 +1198,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "led",
-        "pastParticiple": "led"
+        "pastParticiple": "led",
+        "baseForm": "lead",
+        "baseMeaning": "dẫn dắt",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1028,7 +1217,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "leapt",
-        "pastParticiple": "leapt"
+        "pastParticiple": "leapt",
+        "baseForm": "leap",
+        "baseMeaning": "nhảy",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1044,7 +1236,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "left",
-        "pastParticiple": "left"
+        "pastParticiple": "left",
+        "baseForm": "leave",
+        "baseMeaning": "rời đi, để lại",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1060,7 +1255,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "lent",
-        "pastParticiple": "lent"
+        "pastParticiple": "lent",
+        "baseForm": "lend",
+        "baseMeaning": "cho mượn",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1076,7 +1274,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "let",
-        "pastParticiple": "let"
+        "pastParticiple": "let",
+        "baseForm": "let",
+        "baseMeaning": "cho phép",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1092,7 +1293,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "lay",
-        "pastParticiple": "lain"
+        "pastParticiple": "lain",
+        "baseForm": "lie",
+        "baseMeaning": "nằm",
+        "note": ""
       }
     },
     {
@@ -1108,7 +1312,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "lit",
-        "pastParticiple": "lit"
+        "pastParticiple": "lit",
+        "baseForm": "light",
+        "baseMeaning": "thắp, đốt",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1124,7 +1331,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "lost",
-        "pastParticiple": "lost"
+        "pastParticiple": "lost",
+        "baseForm": "lose",
+        "baseMeaning": "mất, thua",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1140,7 +1350,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "made",
-        "pastParticiple": "made"
+        "pastParticiple": "made",
+        "baseForm": "make",
+        "baseMeaning": "làm, chế tạo",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1156,7 +1369,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "meant",
-        "pastParticiple": "meant"
+        "pastParticiple": "meant",
+        "baseForm": "mean",
+        "baseMeaning": "có nghĩa là, có ý",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1172,7 +1388,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "met",
-        "pastParticiple": "met"
+        "pastParticiple": "met",
+        "baseForm": "meet",
+        "baseMeaning": "gặp",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1188,7 +1407,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "mowed",
-        "pastParticiple": "mown"
+        "pastParticiple": "mown",
+        "baseForm": "mow",
+        "baseMeaning": "cắt cỏ",
+        "note": ""
       }
     },
     {
@@ -1204,7 +1426,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "overcame",
-        "pastParticiple": "overcome"
+        "pastParticiple": "overcome",
+        "baseForm": "overcome",
+        "baseMeaning": "vượt qua",
+        "note": ""
       }
     },
     {
@@ -1220,7 +1445,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "overran",
-        "pastParticiple": "overrun"
+        "pastParticiple": "overrun",
+        "baseForm": "overrun",
+        "baseMeaning": "tràn ngập, vượt quá",
+        "note": ""
       }
     },
     {
@@ -1236,7 +1464,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "paid",
-        "pastParticiple": "paid"
+        "pastParticiple": "paid",
+        "baseForm": "pay",
+        "baseMeaning": "trả tiền",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1252,7 +1483,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "put",
-        "pastParticiple": "put"
+        "pastParticiple": "put",
+        "baseForm": "put",
+        "baseMeaning": "đặt, để",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1268,7 +1502,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "quit",
-        "pastParticiple": "quit"
+        "pastParticiple": "quit",
+        "baseForm": "quit",
+        "baseMeaning": "bỏ, nghỉ",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1284,7 +1521,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "read",
-        "pastParticiple": "read"
+        "pastParticiple": "read",
+        "baseForm": "read",
+        "baseMeaning": "đọc",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1300,7 +1540,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "rode",
-        "pastParticiple": "ridden"
+        "pastParticiple": "ridden",
+        "baseForm": "ride",
+        "baseMeaning": "cưỡi, đi (xe)",
+        "note": ""
       }
     },
     {
@@ -1316,7 +1559,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "rang",
-        "pastParticiple": "rung"
+        "pastParticiple": "rung",
+        "baseForm": "ring",
+        "baseMeaning": "reo, rung chuông",
+        "note": ""
       }
     },
     {
@@ -1332,7 +1578,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "rose",
-        "pastParticiple": "risen"
+        "pastParticiple": "risen",
+        "baseForm": "rise",
+        "baseMeaning": "tăng lên, đứng dậy",
+        "note": ""
       }
     },
     {
@@ -1348,7 +1597,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "ran",
-        "pastParticiple": "run"
+        "pastParticiple": "run",
+        "baseForm": "run",
+        "baseMeaning": "chạy",
+        "note": ""
       }
     },
     {
@@ -1364,7 +1616,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "said",
-        "pastParticiple": "said"
+        "pastParticiple": "said",
+        "baseForm": "say",
+        "baseMeaning": "nói",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1380,7 +1635,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "saw",
-        "pastParticiple": "seen"
+        "pastParticiple": "seen",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy",
+        "note": ""
       }
     },
     {
@@ -1396,7 +1654,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sought",
-        "pastParticiple": "sought"
+        "pastParticiple": "sought",
+        "baseForm": "seek",
+        "baseMeaning": "tìm kiếm",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1412,7 +1673,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sent",
-        "pastParticiple": "sent"
+        "pastParticiple": "sent",
+        "baseForm": "send",
+        "baseMeaning": "gửi",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1428,7 +1692,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "set",
-        "pastParticiple": "set"
+        "pastParticiple": "set",
+        "baseForm": "set",
+        "baseMeaning": "đặt, thiết lập",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1444,7 +1711,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sewed",
-        "pastParticiple": "sewn"
+        "pastParticiple": "sewn",
+        "baseForm": "sew",
+        "baseMeaning": "may",
+        "note": ""
       }
     },
     {
@@ -1460,7 +1730,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "shook",
-        "pastParticiple": "shaken"
+        "pastParticiple": "shaken",
+        "baseForm": "shake",
+        "baseMeaning": "lắc, rung",
+        "note": ""
       }
     },
     {
@@ -1476,7 +1749,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "shone",
-        "pastParticiple": "shone"
+        "pastParticiple": "shone",
+        "baseForm": "shine",
+        "baseMeaning": "chiếu sáng",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1492,7 +1768,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "shot",
-        "pastParticiple": "shot"
+        "pastParticiple": "shot",
+        "baseForm": "shoot",
+        "baseMeaning": "bắn, chụp ảnh",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1508,7 +1787,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "showed",
-        "pastParticiple": "shown"
+        "pastParticiple": "shown",
+        "baseForm": "show",
+        "baseMeaning": "cho xem, chỉ",
+        "note": ""
       }
     },
     {
@@ -1524,7 +1806,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "shrank",
-        "pastParticiple": "shrunk"
+        "pastParticiple": "shrunk",
+        "baseForm": "shrink",
+        "baseMeaning": "co lại",
+        "note": ""
       }
     },
     {
@@ -1540,7 +1825,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "shut",
-        "pastParticiple": "shut"
+        "pastParticiple": "shut",
+        "baseForm": "shut",
+        "baseMeaning": "đóng",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1556,7 +1844,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sang",
-        "pastParticiple": "sung"
+        "pastParticiple": "sung",
+        "baseForm": "sing",
+        "baseMeaning": "hát",
+        "note": ""
       }
     },
     {
@@ -1572,7 +1863,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sank",
-        "pastParticiple": "sunk"
+        "pastParticiple": "sunk",
+        "baseForm": "sink",
+        "baseMeaning": "chìm",
+        "note": ""
       }
     },
     {
@@ -1588,7 +1882,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sat",
-        "pastParticiple": "sat"
+        "pastParticiple": "sat",
+        "baseForm": "sit",
+        "baseMeaning": "ngồi",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1604,7 +1901,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "slept",
-        "pastParticiple": "slept"
+        "pastParticiple": "slept",
+        "baseForm": "sleep",
+        "baseMeaning": "ngủ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1620,7 +1920,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "slid",
-        "pastParticiple": "slid"
+        "pastParticiple": "slid",
+        "baseForm": "slide",
+        "baseMeaning": "trượt",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1636,7 +1939,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "slit",
-        "pastParticiple": "slit"
+        "pastParticiple": "slit",
+        "baseForm": "slit",
+        "baseMeaning": "rạch",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1652,7 +1958,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sowed",
-        "pastParticiple": "sown"
+        "pastParticiple": "sown",
+        "baseForm": "sow",
+        "baseMeaning": "gieo (hạt)",
+        "note": ""
       }
     },
     {
@@ -1668,7 +1977,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "span",
-        "pastParticiple": "spanned"
+        "pastParticiple": "spanned",
+        "baseForm": "span",
+        "baseMeaning": "kéo dài, bắc qua",
+        "note": ""
       }
     },
     {
@@ -1684,7 +1996,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "spoke",
-        "pastParticiple": "spoken"
+        "pastParticiple": "spoken",
+        "baseForm": "speak",
+        "baseMeaning": "nói",
+        "note": ""
       }
     },
     {
@@ -1700,7 +2015,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "spent",
-        "pastParticiple": "spent"
+        "pastParticiple": "spent",
+        "baseForm": "spend",
+        "baseMeaning": "tiêu, dành",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1716,7 +2034,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "spat",
-        "pastParticiple": "spat"
+        "pastParticiple": "spat",
+        "baseForm": "spit",
+        "baseMeaning": "khạc nhổ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1732,7 +2053,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "split",
-        "pastParticiple": "split"
+        "pastParticiple": "split",
+        "baseForm": "split",
+        "baseMeaning": "chia, tách",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1748,7 +2072,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "spoilt",
-        "pastParticiple": "spoilt"
+        "pastParticiple": "spoilt",
+        "baseForm": "spoil",
+        "baseMeaning": "làm hỏng",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1764,7 +2091,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "spread",
-        "pastParticiple": "spread"
+        "pastParticiple": "spread",
+        "baseForm": "spread",
+        "baseMeaning": "lan rộng, phết",
+        "note": "V1 = V2 = V3"
       }
     },
     {
@@ -1780,7 +2110,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "sprang",
-        "pastParticiple": "sprung"
+        "pastParticiple": "sprung",
+        "baseForm": "spring",
+        "baseMeaning": "nhảy lên",
+        "note": ""
       }
     },
     {
@@ -1796,7 +2129,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "stood",
-        "pastParticiple": "stood"
+        "pastParticiple": "stood",
+        "baseForm": "stand",
+        "baseMeaning": "đứng",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1812,7 +2148,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "stole",
-        "pastParticiple": "stolen"
+        "pastParticiple": "stolen",
+        "baseForm": "steal",
+        "baseMeaning": "ăn cắp",
+        "note": ""
       }
     },
     {
@@ -1828,7 +2167,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "struck",
-        "pastParticiple": "struck"
+        "pastParticiple": "struck",
+        "baseForm": "strike",
+        "baseMeaning": "đánh, va chạm",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1844,7 +2186,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "swore",
-        "pastParticiple": "sworn"
+        "pastParticiple": "sworn",
+        "baseForm": "swear",
+        "baseMeaning": "thề, chửi thề",
+        "note": ""
       }
     },
     {
@@ -1860,7 +2205,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "swept",
-        "pastParticiple": "swept"
+        "pastParticiple": "swept",
+        "baseForm": "sweep",
+        "baseMeaning": "quét",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1876,7 +2224,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "swam",
-        "pastParticiple": "swum"
+        "pastParticiple": "swum",
+        "baseForm": "swim",
+        "baseMeaning": "bơi",
+        "note": ""
       }
     },
     {
@@ -1892,7 +2243,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "swung",
-        "pastParticiple": "swung"
+        "pastParticiple": "swung",
+        "baseForm": "swing",
+        "baseMeaning": "đung đưa",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1908,7 +2262,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "took",
-        "pastParticiple": "taken"
+        "pastParticiple": "taken",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm",
+        "note": ""
       }
     },
     {
@@ -1924,7 +2281,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "taught",
-        "pastParticiple": "taught"
+        "pastParticiple": "taught",
+        "baseForm": "teach",
+        "baseMeaning": "dạy",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1940,7 +2300,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "tore",
-        "pastParticiple": "torn"
+        "pastParticiple": "torn",
+        "baseForm": "tear",
+        "baseMeaning": "xé, rách",
+        "note": ""
       }
     },
     {
@@ -1956,7 +2319,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "told",
-        "pastParticiple": "told"
+        "pastParticiple": "told",
+        "baseForm": "tell",
+        "baseMeaning": "kể, bảo",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1972,7 +2338,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "thought",
-        "pastParticiple": "thought"
+        "pastParticiple": "thought",
+        "baseForm": "think",
+        "baseMeaning": "nghĩ",
+        "note": "V2 = V3"
       }
     },
     {
@@ -1988,7 +2357,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "threw",
-        "pastParticiple": "thrown"
+        "pastParticiple": "thrown",
+        "baseForm": "throw",
+        "baseMeaning": "ném",
+        "note": ""
       }
     },
     {
@@ -2004,7 +2376,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "understood",
-        "pastParticiple": "understood"
+        "pastParticiple": "understood",
+        "baseForm": "understand",
+        "baseMeaning": "hiểu",
+        "note": "V2 = V3"
       }
     },
     {
@@ -2020,7 +2395,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "woke",
-        "pastParticiple": "woken"
+        "pastParticiple": "woken",
+        "baseForm": "wake",
+        "baseMeaning": "thức dậy",
+        "note": ""
       }
     },
     {
@@ -2036,7 +2414,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "wore",
-        "pastParticiple": "worn"
+        "pastParticiple": "worn",
+        "baseForm": "wear",
+        "baseMeaning": "mặc",
+        "note": ""
       }
     },
     {
@@ -2052,7 +2433,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "wove",
-        "pastParticiple": "woven"
+        "pastParticiple": "woven",
+        "baseForm": "weave",
+        "baseMeaning": "dệt",
+        "note": ""
       }
     },
     {
@@ -2068,7 +2452,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "won",
-        "pastParticiple": "won"
+        "pastParticiple": "won",
+        "baseForm": "win",
+        "baseMeaning": "thắng",
+        "note": "V2 = V3"
       }
     },
     {
@@ -2084,7 +2471,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "wound",
-        "pastParticiple": "wound"
+        "pastParticiple": "wound",
+        "baseForm": "wind",
+        "baseMeaning": "quấn, vặn",
+        "note": "V2 = V3"
       }
     },
     {
@@ -2100,7 +2490,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "withdrew",
-        "pastParticiple": "withdrawn"
+        "pastParticiple": "withdrawn",
+        "baseForm": "withdraw",
+        "baseMeaning": "rút lui, rút tiền",
+        "note": ""
       }
     },
     {
@@ -2116,7 +2509,10 @@
         ],
         "irregularRole": "baseForm",
         "pastSimple": "wrote",
-        "pastParticiple": "written"
+        "pastParticiple": "written",
+        "baseForm": "write",
+        "baseMeaning": "viết",
+        "note": ""
       }
     }
   ]

@@ -277,6 +277,12 @@ const StudyPage = {
         const roleBadgeHtml = irrMeta ? `
             <span class="review-round-badge" style="background:linear-gradient(135deg,${irrMeta.color},${irrMeta.color}cc);">${this._escapeHtml(irrMeta.label)} · ${this._escapeHtml(irrMeta.roleShort)}</span>
         ` : '';
+        const irregularNoteHtml = (irrMeta && irrMeta.note) ? `
+            <div class="study-intro-card__base-note" style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:${irrMeta.color};font-weight:700;">
+                <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">rule</span>
+                ${this._escapeHtml(irrMeta.note)}
+            </div>
+        ` : '';
         const baseFormHtml = (irrMeta && baseForm) ? `
             <div class="study-intro-card__base-note" style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:var(--color-text-secondary);">
                 <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">info</span>
@@ -313,6 +319,7 @@ const StudyPage = {
                         <div class="study-intro-card__example-label">VÍ DỤ</div>
                         <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
                     ` : ''}
+                    ${irregularNoteHtml}
                     ${baseFormHtml}
                 </div>
 

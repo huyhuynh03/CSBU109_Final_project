@@ -29,7 +29,7 @@ const CardSchemas = {
             // irregularRole: pastSimple | pastParticiple | comparative | superlative
             // baseForm: nguyên mẫu tham chiếu (hiển thị chú thích, không kiểm tra)
             { key: 'irregularRole', label: 'Vai trò BQT', type: 'select', required: false, hidden: true,
-                options: ['', 'pastSimple', 'pastParticiple', 'comparative', 'superlative'] },
+                options: ['', 'baseForm', 'pastSimple', 'pastParticiple', 'comparative', 'superlative'] },
             { key: 'baseForm', label: 'Nguyên mẫu', type: 'text', required: false, placeholder: 'VD: well (trạng từ nguyên mẫu của best)', hidden: true },
             { key: 'baseMeaning', label: 'Nghĩa nguyên mẫu', type: 'text', required: false, hidden: true }
         ],
@@ -136,6 +136,7 @@ const CardSchemas = {
     },
 
     IRREGULAR_ROLE_LABELS: {
+        baseForm:       { label: 'V1 (Nguyên mẫu)',          short: 'V1' },
         pastSimple:     { label: 'V2 (Quá khứ đơn)',         short: 'V2' },
         pastParticiple: { label: 'V3 (Quá khứ phân từ)',     short: 'V3' },
         comparative:    { label: 'So sánh hơn',              short: 'So sánh hơn' },
@@ -182,7 +183,8 @@ const CardSchemas = {
             ...base,
             role: fv.irregularRole,
             roleLabel: roleMeta ? roleMeta.label : '',
-            roleShort: roleMeta ? roleMeta.short : ''
+            roleShort: roleMeta ? roleMeta.short : '',
+            note: fv.note || base.note || ''
         };
     },
 

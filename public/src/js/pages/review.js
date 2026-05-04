@@ -455,6 +455,12 @@ const ReviewPage = {
                 </span>
             </div>
         ` : '';
+        const irregularNoteHtml = (isIrr && irrMeta.note) ? `
+            <div style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:${irrMeta.color};text-align:center;font-weight:700;">
+                <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">rule</span>
+                ${this._escapeHtml(irrMeta.note)}
+            </div>
+        ` : '';
         const baseFormHtml = (isIrr && baseForm) ? `
             <div style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:var(--color-text-secondary);text-align:center;">
                 <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">info</span>
@@ -495,6 +501,7 @@ const ReviewPage = {
                         <div class="study-intro-card__example-label">VÍ DỤ</div>
                         <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
                     ` : ''}
+                    ${irregularNoteHtml}
                     ${baseFormHtml}
                 </div>
 
