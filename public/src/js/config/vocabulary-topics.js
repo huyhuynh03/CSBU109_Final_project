@@ -14,53 +14,81 @@ const VocabularyTopics = [
         order: 1
     },
     {
+        id: 'daily-life',
+        name: 'Đời sống hằng ngày',
+        icon: 'wb_sunny',
+        category: 'society',
+        order: 2
+    },
+    {
+        id: 'personal-qualities',
+        name: 'Phẩm chất cá nhân',
+        icon: 'badge',
+        category: 'society',
+        order: 3
+    },
+    {
+        id: 'daily-activities',
+        name: 'Hoạt động hằng ngày',
+        icon: 'event_available',
+        category: 'society',
+        order: 4
+    },
+    {
+        id: 'communication-social',
+        name: 'Giao tiếp & Xã hội',
+        icon: 'forum',
+        category: 'society',
+        order: 5
+    },
+    {
         id: 'health',
         name: 'Sức khỏe',
         icon: 'health_and_safety',
         category: 'society',
-        order: 2
+        order: 6
     },
     {
         id: 'education',
         name: 'Giáo dục',
         icon: 'school',
         category: 'society',
-        order: 3
+        order: 7
     },
     {
         id: 'psychology',
         name: 'Tâm lý',
         icon: 'psychology',
         category: 'society',
-        order: 4
+        order: 8
     },
     {
         id: 'culture',
         name: 'Văn hóa',
         icon: 'theater_comedy',
         category: 'society',
-        order: 5
+        order: 9
     },
     {
         id: 'arts',
         name: 'Nghệ thuật',
         icon: 'palette',
         category: 'society',
-        order: 6
+        order: 10
     },
     {
         id: 'sports',
         name: 'Thể thao',
         icon: 'sports_soccer',
         category: 'society',
-        order: 7
+        order: 11
     },
     {
         id: 'travel',
         name: 'Du lịch',
         icon: 'flight_takeoff',
         category: 'society',
-        order: 8
+        order: 12
     },
 
     // ==========================================
@@ -71,63 +99,63 @@ const VocabularyTopics = [
         name: 'Kinh tế',
         icon: 'trending_up',
         category: 'business',
-        order: 9
+        order: 13
     },
     {
         id: 'finance',
         name: 'Tài chính',
         icon: 'account_balance',
         category: 'business',
-        order: 10
+        order: 14
     },
     {
         id: 'investment',
         name: 'Đầu tư',
         icon: 'show_chart',
         category: 'business',
-        order: 11
+        order: 15
     },
     {
         id: 'business',
         name: 'Kinh doanh',
         icon: 'business_center',
         category: 'business',
-        order: 12
+        order: 16
     },
     {
         id: 'law',
         name: 'Luật pháp',
         icon: 'gavel',
         category: 'business',
-        order: 13
+        order: 17
     },
     {
         id: 'crime',
         name: 'Tội phạm',
         icon: 'local_police',
         category: 'business',
-        order: 14
+        order: 18
     },
     {
         id: 'politics',
         name: 'Chính trị',
         icon: 'how_to_vote',
         category: 'business',
-        order: 15
+        order: 19
     },
     {
         id: 'employment',
         name: 'Việc làm',
         icon: 'work',
         category: 'business',
-        order: 16
+        order: 20
     },
     {
         id: 'urbanization',
         name: 'Đô thị hóa',
         icon: 'location_city',
         category: 'business',
-        order: 17
+        order: 21
     },
 
     // ==========================================
@@ -138,35 +166,35 @@ const VocabularyTopics = [
         name: 'Môi trường & Biến đổi khí hậu',
         icon: 'eco',
         category: 'science',
-        order: 18
+        order: 22
     },
     {
         id: 'energy-resources',
         name: 'Năng lượng & Tài nguyên',
         icon: 'bolt',
         category: 'science',
-        order: 19
+        order: 23
     },
     {
         id: 'science',
         name: 'Khoa học',
         icon: 'science',
         category: 'science',
-        order: 20
+        order: 24
     },
     {
         id: 'information-technology',
         name: 'Công nghệ thông tin',
         icon: 'computer',
         category: 'science',
-        order: 21
+        order: 25
     },
     {
         id: 'space',
         name: 'Vũ trụ',
         icon: 'rocket_launch',
         category: 'science',
-        order: 22
+        order: 26
     },
 
     // ==========================================
@@ -177,42 +205,42 @@ const VocabularyTopics = [
         name: 'Du lịch & Ngành du lịch',
         icon: 'luggage',
         category: 'ielts',
-        order: 23
+        order: 27
     },
     {
         id: 'arts-literature',
         name: 'Nghệ thuật & Văn học',
         icon: 'auto_stories',
         category: 'ielts',
-        order: 24
+        order: 28
     },
     {
         id: 'music-entertainment',
         name: 'Âm nhạc & Giải trí',
         icon: 'music_note',
         category: 'ielts',
-        order: 25
+        order: 29
     },
     {
         id: 'sports-games',
         name: 'Thể thao & Trò chơi',
         icon: 'sports_esports',
         category: 'ielts',
-        order: 26
+        order: 30
     },
     {
         id: 'history-archeology',
         name: 'Lịch sử & Khảo cổ học',
         icon: 'history_edu',
         category: 'ielts',
-        order: 27
+        order: 31
     },
     {
         id: 'cultural-differences',
         name: 'Khác biệt văn hóa',
         icon: 'public',
         category: 'ielts',
-        order: 28
+        order: 32
     },
 
     // ==========================================
@@ -223,7 +251,7 @@ const VocabularyTopics = [
         name: 'Thành ngữ',
         icon: 'format_quote',
         category: 'idiom',
-        order: 29
+        order: 33
     },
 
     // ==========================================
@@ -234,35 +262,35 @@ const VocabularyTopics = [
         name: 'Động từ BQT – V1 (Nguyên mẫu)',
         icon: 'bolt',
         category: 'irregular',
-        order: 30
+        order: 34
     },
     {
         id: 'irregular-verb-v2',
         name: 'Động từ BQT – V2 (Quá khứ đơn)',
         icon: 'history',
         category: 'irregular',
-        order: 31
+        order: 35
     },
     {
         id: 'irregular-verb-v3',
         name: 'Động từ BQT – V3 (Quá khứ phân từ)',
         icon: 'timelapse',
         category: 'irregular',
-        order: 32
+        order: 36
     },
     {
         id: 'irregular-adj-comparative',
         name: 'Irregular Comparison Comparative (So sánh hơn bất quy tắc)',
         icon: 'trending_up',
         category: 'irregular',
-        order: 33
+        order: 37
     },
     {
         id: 'irregular-adj-superlative',
         name: 'Irregular Comparison Superlative (So sánh nhất bất quy tắc)',
         icon: 'emoji_events',
         category: 'irregular',
-        order: 34
+        order: 38
     }
 ];
 
