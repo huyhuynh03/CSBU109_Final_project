@@ -24,12 +24,19 @@ const SeedImporter = {
         if (!word) return '';
 
         const tags = Array.isArray(fieldValues.tags) ? fieldValues.tags : [];
-        const isIrregularVerb = tags.includes('irregular-verb');
+        const folder = this._normalize(folderId);
+        const role = this._normalize(fieldValues.irregularRole);
+        const pos = this._normalize(fieldValues.partOfSpeech);
 
-        if (isIrregularVerb) {
-            const role = this._normalize(fieldValues.irregularRole);
-            const folder = this._normalize(folderId);
+        if (tags.includes('irregular-verb')) {
             return ['irregular-verb', word, folder, role].join('::');
+        }
+
+        if (tags.includes('irregular-comparative') || tags.includes('irregular-superlative')) {
+            const irregularTag = tags.includes('irregular-comparative')
+                ? 'irregular-comparative'
+                : 'irregular-superlative';
+            return [irregularTag, word, folder, role, pos].join('::');
         }
 
         return word;
@@ -97,6 +104,8 @@ const SeedImporter = {
         // Các field cần đồng bộ lại với seed khi card đã tồn tại đúng cùng identity.
         // Với irregular verbs, identity là word + folderId + irregularRole để không làm mất
         // các trường hợp cùng surface-form nhưng thuộc topic/role khác nhau.
+        // Với irregular comparative/superlative, identity cần thêm partOfSpeech để giữ đồng thời
+        // các cặp cùng surface-form như "better" (adjective) và "better" (adverb).
         // LƯU Ý: KHÔNG đưa field mảng (vd 'tags') vào đây — so sánh !== với array luôn trả về true gây update vô hạn.
         const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty', 'note', 'pastSimple', 'pastParticiple'];
         // Field mảng cần so sánh deep (JSON stringify)
@@ -118,7 +127,7 @@ const SeedImporter = {
 
             if (existingMap.has(identityKey)) {
                 // Card đã tồn tại: merge lại các field example nếu seed có giá trị khác (chỉ ghi đè, không xoá).
-                const existingCard = existingMap.get(wordKey);
+                const existingCard = existingMap.get(identityKey);
                 const existingFv = existingCard.fieldValues || {};
                 const patch = {};
                 SYNC_FIELDS.forEach(k => {

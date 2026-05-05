@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.81
-const CACHE_NAME = 'linguaflash-v5.81';
+// LinguaFlash Service Worker v5.82
+const CACHE_NAME = 'linguaflash-v5.82';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -16,7 +16,7 @@ const STATIC_ASSETS = [
     '/src/js/utils/helpers.js?v=2',
     '/src/js/utils/family-word-manager.js?v=4',
     '/src/js/utils/tts.js?v=1',
-    '/src/js/utils/seed-importer.js?v=9',
+    '/src/js/utils/seed-importer.js?v=10',
     '/src/js/ui/toast.js?v=2',
     '/src/js/ui/theme.js?v=2',
     '/src/js/ui/background.js?v=3',
