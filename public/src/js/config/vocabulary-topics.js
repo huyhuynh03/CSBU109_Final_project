@@ -252,31 +252,17 @@ const VocabularyTopics = [
     },
     {
         id: 'irregular-adj-comparative',
-        name: 'Tính từ BQT – So sánh hơn',
+        name: 'Irregular Comparison Comparative (So sánh hơn bất quy tắc)',
         icon: 'trending_up',
         category: 'irregular',
         order: 33
     },
     {
         id: 'irregular-adj-superlative',
-        name: 'Tính từ BQT – So sánh nhất',
+        name: 'Irregular Comparison Superlative (So sánh nhất bất quy tắc)',
         icon: 'emoji_events',
         category: 'irregular',
         order: 34
-    },
-    {
-        id: 'irregular-adv-comparative',
-        name: 'Trạng từ BQT – So sánh hơn',
-        icon: 'speed',
-        category: 'irregular',
-        order: 35
-    },
-    {
-        id: 'irregular-adv-superlative',
-        name: 'Trạng từ BQT – So sánh nhất',
-        icon: 'rocket_launch',
-        category: 'irregular',
-        order: 36
     }
 ];
 
