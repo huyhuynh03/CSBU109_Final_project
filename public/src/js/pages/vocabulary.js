@@ -349,7 +349,11 @@ const VocabularyPage = {
                 const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
                 return dueDate <= now;
             }).length;
-            const learnedCount = cards.filter(c => c.state === 'review' || c.state === FSRS.State.REVIEW).length;
+            const learnedCount = cards.filter(c => {
+                const st = c.state;
+                return st === 'review' || st === 'relearning'
+                    || st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING;
+            }).length;
             const masteredCount = cards.filter(c => (c.state === 'review' || c.state === FSRS.State.REVIEW) && c.stability > 20).length;
 
             const totalEl = document.getElementById('vocab-total-count');
