@@ -24,7 +24,7 @@ const CardSchemas = {
             { key: 'familyId', label: 'Family ID', type: 'text', required: false, placeholder: 'VD: educate (gốc từ chung)', hidden: true },
             { key: 'familyOrder', label: 'Thứ tự trong family', type: 'number', required: false, placeholder: '1 = gốc, 2,3... = biến thể', hidden: true },
             { key: 'tags', label: 'Tags', type: 'tags', required: false, placeholder: 'VD: irregular-verb, phrasal-verb',
-                allowedValues: ['idiom', 'phrasal-verb', 'irregular-verb', 'irregular-adjective', 'irregular-adverb'] },
+                allowedValues: ['idiom', 'phrasal-verb', 'irregular-verb', 'irregular-comparative', 'irregular-superlative'] },
             // ==== BQT (v2 schema): mỗi thẻ = 1 dạng độc lập ====
             // irregularRole: pastSimple | pastParticiple | comparative | superlative
             // baseForm: nguyên mẫu tham chiếu (hiển thị chú thích, không kiểm tra)
@@ -126,13 +126,13 @@ const CardSchemas = {
     /**
      * Irregular word helpers (SCHEMA v2 — mỗi thẻ = 1 dạng độc lập)
      * ============================================
-     * Tags: 'irregular-verb', 'irregular-adjective', 'irregular-adverb' — dùng để chọn màu/nhãn nhóm.
+     * Tags: 'irregular-verb', 'irregular-comparative', 'irregular-superlative' — dùng để chọn màu/nhãn nhóm.
      * Thẻ mới có: irregularRole (pastSimple|pastParticiple|comparative|superlative) + baseForm (nguyên mẫu).
      */
     IRREGULAR_TAGS: {
-        'irregular-verb':      { type: 'verb',      label: 'Động từ BQT',  note: 'Động từ BQT',  shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
-        'irregular-adjective': { type: 'adjective', label: 'Tính từ BQT',  note: 'Tính từ BQT',  shortLabel: 'BQT', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
-        'irregular-adverb':    { type: 'adverb',    label: 'Trạng từ BQT', note: 'Trạng từ BQT', shortLabel: 'BQT', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
+        'irregular-verb':         { type: 'verb',         label: 'Động từ BQT',                 note: 'Động từ BQT',                 shortLabel: 'BQT', color: '#8B5CF6', bg: 'rgba(139,92,246,0.18)' },
+        'irregular-comparative':  { type: 'comparative',  label: 'Irregular Comparative',       note: 'So sánh hơn bất quy tắc',    shortLabel: 'So sánh hơn', color: '#F59E0B', bg: 'rgba(245,158,11,0.18)' },
+        'irregular-superlative':  { type: 'superlative',  label: 'Irregular Superlative',       note: 'So sánh nhất bất quy tắc',   shortLabel: 'So sánh nhất', color: '#EC4899', bg: 'rgba(236,72,153,0.18)' }
     },
 
     IRREGULAR_ROLE_LABELS: {

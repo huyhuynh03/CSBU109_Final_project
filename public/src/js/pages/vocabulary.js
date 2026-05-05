@@ -11,14 +11,12 @@ const VocabularyPage = {
     _autoSeedRan: false,
     // Map topicId → seed filename cho các topic có dữ liệu mẫu
     _seedTopics: {
-        'education': 'test-samples.json',
+        'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
         'irregular-verb-v3': 'irregular-verb-v3.json',
-        'irregular-adj-comparative': 'irregular-adj-comparative.json',
-        'irregular-adj-superlative': 'irregular-adj-superlative.json',
-        'irregular-adv-comparative': 'irregular-adv-comparative.json',
-        'irregular-adv-superlative': 'irregular-adv-superlative.json'
+        'irregular-adj-comparative': 'irregular-comparative.json',
+        'irregular-adj-superlative': 'irregular-superlative.json'
     },
 
     async render() {

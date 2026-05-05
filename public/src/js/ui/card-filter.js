@@ -9,9 +9,9 @@
 //                      - 'lv1'..'lv5' : review/relearning + stepIndex 0..4 (UI = stepIndex+1)
 //                      - 'lv-unknown' : review/relearning nhưng chưa có stepIndex hợp lệ
 //   3. special      : 'family'            - thẻ có familyId
-//                     'irregular-verb'    - tag irregular-verb
-//                     'irregular-adjective' - tag irregular-adjective
-//                     'irregular-adverb'  - tag irregular-adverb
+//                     'irregular-verb'      - tag irregular-verb
+//                     'irregular-comparative' - tag irregular-comparative
+//                     'irregular-superlative' - tag irregular-superlative
 //
 // Dùng:
 //   const state = CardFilter.createState();
@@ -48,9 +48,9 @@ const CardFilter = {
 
     SPECIAL_OPTIONS: [
         { key: 'family',               label: 'Family word',   icon: 'account_tree', color: '#6366f1' },
-        { key: 'irregular-verb',       label: 'Động từ BQT',   icon: 'shuffle',      color: '#8B5CF6' },
-        { key: 'irregular-adjective',  label: 'Tính từ BQT',   icon: 'shuffle',      color: '#F59E0B' },
-        { key: 'irregular-adverb',     label: 'Trạng từ BQT',  icon: 'shuffle',      color: '#EC4899' }
+        { key: 'irregular-verb',          label: 'Động từ BQT',             icon: 'shuffle', color: '#8B5CF6' },
+        { key: 'irregular-comparative',   label: 'Irregular Comparative',   icon: 'trending_up', color: '#F59E0B' },
+        { key: 'irregular-superlative',   label: 'Irregular Superlative',   icon: 'emoji_events', color: '#EC4899' }
     ],
 
     /** Tạo state rỗng */
