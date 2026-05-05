@@ -13,12 +13,13 @@
         "ipa": "/ˈbɛtər/",
         "partOfSpeech": "adjective",
         "difficulty": "intermediate",
-        "meaning": "tốt hơn (so sánh hơn của good)",
+        "meaning": "tốt hơn (so sánh hơn của good/well)",
         "example": "This coffee is better than the one we had yesterday.",
+        "note": "Base forms: good (adjective) / well (adverb)",
         "tags": ["irregular-comparative"],
         "irregularRole": "comparative",
-        "baseForm": "good",
-        "baseMeaning": "tốt"
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
       }
     },
     {
@@ -27,12 +28,13 @@
         "ipa": "/ˈbɛtər/",
         "partOfSpeech": "adverb",
         "difficulty": "intermediate",
-        "meaning": "tốt hơn – bổ nghĩa cho động từ (so sánh hơn của well)",
+        "meaning": "tốt hơn – bổ nghĩa cho động từ (so sánh hơn của good/well)",
         "example": "She sings better than anyone else in the choir.",
+        "note": "Base forms: good (adjective) / well (adverb)",
         "tags": ["irregular-comparative"],
         "irregularRole": "comparative",
-        "baseForm": "well",
-        "baseMeaning": "khỏe, tốt (trạng từ)"
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
       }
     },
     {

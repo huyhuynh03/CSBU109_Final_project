@@ -13,12 +13,13 @@
         "ipa": "/bɛst/",
         "partOfSpeech": "adjective",
         "difficulty": "intermediate",
-        "meaning": "tốt nhất (so sánh nhất của good)",
+        "meaning": "tốt nhất (so sánh nhất của good/well)",
         "example": "This is the best restaurant I have ever been to in this city.",
+        "note": "Base forms: good (adjective) / well (adverb)",
         "tags": ["irregular-superlative"],
         "irregularRole": "superlative",
-        "baseForm": "good",
-        "baseMeaning": "tốt"
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
       }
     },
     {
@@ -27,12 +28,13 @@
         "ipa": "/bɛst/",
         "partOfSpeech": "adverb",
         "difficulty": "intermediate",
-        "meaning": "tốt nhất – bổ nghĩa cho động từ (so sánh nhất của well)",
+        "meaning": "tốt nhất – bổ nghĩa cho động từ (so sánh nhất của good/well)",
         "example": "Among all the players, he plays the piano best.",
+        "note": "Base forms: good (adjective) / well (adverb)",
         "tags": ["irregular-superlative"],
         "irregularRole": "superlative",
-        "baseForm": "well",
-        "baseMeaning": "khỏe, tốt (trạng từ)"
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
       }
     },
     {
