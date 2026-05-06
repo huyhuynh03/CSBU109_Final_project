@@ -13,6 +13,7 @@ const VocabularyPage = {
     _seedTopics: {
         'family-relationships': 'family-relationships.json',
         'daily-life': 'daily-life.json',
+        'home-living': 'home-living.json',
         'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
