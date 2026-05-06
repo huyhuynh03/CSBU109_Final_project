@@ -1094,7 +1094,8 @@ const VocabularyPage = {
     async _cleanupLegacyEducationGoodWellComparisonCards() {
         if (!window.FirestoreDB) return;
         try {
-            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId: 'education' });
+            // Query rộng theo folder để bắt cả card legacy thiếu/sai cardType.
+            const cards = await FirestoreDB.getCards({ folderId: 'education' });
             const legacyCards = cards.filter(card => {
                 const fv = card.fieldValues || {};
                 const word = String(fv.word || '').trim().toLowerCase();
@@ -1116,8 +1117,8 @@ const VocabularyPage = {
 
                 // better/best là card dạng so sánh, đã có seed riêng trong irregular-comparative/superlative.
                 // Xoá bản legacy trong education để không còn hiện trùng ở topic Giáo dục.
-                await FirestoreDB.deleteCard(card.id);
-                console.log('[VocabularyPage] Deleted legacy education comparison card:', card.id, word, pos);
+                const deleted = await FirestoreDB.deleteCard(card.id);
+                console.log('[VocabularyPage] Deleted legacy education comparison card:', { id: card.id, word, pos, deleted });
             }
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
@@ -1143,7 +1144,10 @@ const VocabularyPage = {
             for (const [folderId, config] of Object.entries(topics)) {
                 const allowed = new Set(config.words);
                 const seen = new Set();
-                const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId });
+                // Query rộng theo folder để cleanup không bỏ sót card legacy thiếu/sai cardType.
+                const cards = await FirestoreDB.getCards({ folderId });
+                let deletedCount = 0;
+                let failedDeleteCount = 0;
 
                 for (const card of cards) {
                     const fv = card.fieldValues || {};
@@ -1156,20 +1160,31 @@ const VocabularyPage = {
                         && tags.includes(config.tag);
 
                     if (!isCanonical || seen.has(word)) {
-                        await FirestoreDB.deleteCard(card.id);
+                        const deleted = await FirestoreDB.deleteCard(card.id);
+                        if (deleted) deletedCount++;
+                        else failedDeleteCount++;
                         console.log('[VocabularyPage] Deleted legacy irregular comparison duplicate:', {
                             id: card.id,
                             folderId,
                             word,
                             partOfSpeech: pos,
                             irregularRole: role,
-                            tags
+                            tags,
+                            deleted
                         });
                         continue;
                     }
 
                     seen.add(word);
                 }
+
+                console.log('[VocabularyPage] Irregular comparison cleanup summary:', {
+                    folderId,
+                    scanned: cards.length,
+                    kept: seen.size,
+                    deleted: deletedCount,
+                    failedDelete: failedDeleteCount
+                });
             }
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy irregular comparison topic cards error:', e);

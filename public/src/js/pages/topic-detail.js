@@ -38,6 +38,15 @@ const TopicDetailPage = {
         this._topic = (typeof VocabularyTopics !== 'undefined')
             ? VocabularyTopics.find(t => t.id === this._topicId)
             : null;
+
+        // Nếu user vào thẳng trang chi tiết 2 topic so sánh BQT, vẫn chạy cleanup
+        // giống trang Vocabulary để không phụ thuộc vào việc đã ghé /vocabulary trước đó.
+        if ((this._topicId === 'irregular-adj-comparative' || this._topicId === 'irregular-adj-superlative')
+            && typeof VocabularyPage !== 'undefined'
+            && VocabularyPage._cleanupLegacyIrregularComparisonTopicCards) {
+            await VocabularyPage._cleanupLegacyIrregularComparisonTopicCards();
+        }
+
         await this._loadCards();
     },
 

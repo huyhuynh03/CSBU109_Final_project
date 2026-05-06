@@ -104,8 +104,8 @@ const SeedImporter = {
         // Các field cần đồng bộ lại với seed khi card đã tồn tại đúng cùng identity.
         // Với irregular verbs, identity là word + folderId + irregularRole để không làm mất
         // các trường hợp cùng surface-form nhưng thuộc topic/role khác nhau.
-        // Với irregular comparative/superlative, identity cần thêm partOfSpeech để giữ đồng thời
-        // các cặp cùng surface-form như "better" (adjective) và "better" (adverb).
+        // Với irregular comparative/superlative, identity là tag + word + folderId + role,
+        // không tách theo partOfSpeech để mỗi surface word chỉ còn 1 flashcard.
         // LƯU Ý: KHÔNG đưa field mảng (vd 'tags') vào đây — so sánh !== với array luôn trả về true gây update vô hạn.
         const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty', 'note', 'pastSimple', 'pastParticiple'];
         // Field mảng cần so sánh deep (JSON stringify)

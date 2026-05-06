@@ -318,14 +318,17 @@ const FirestoreDB = {
     /**
      * Delete a card
      * @param {string} cardId
+     * @returns {boolean} true nếu Firestore xác nhận xoá thành công
      */
     async deleteCard(cardId) {
         const ref = this._userCollection('cards');
-        if (!ref) return;
+        if (!ref) return false;
         try {
             await ref.doc(cardId).delete();
+            return true;
         } catch (error) {
             console.error('[Firestore] Error deleting card:', error);
+            return false;
         }
     },
 
