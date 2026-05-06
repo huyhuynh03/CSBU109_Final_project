@@ -1141,47 +1141,85 @@ const VocabularyPage = {
         };
 
         try {
+            // Quét toàn bộ cards thay vì query theo folder/cardType để không bỏ sót dữ liệu legacy
+            // có folderId/cardType/tag/role bị lệch schema. Sau đó mới lọc client-side theo dấu hiệu BQT so sánh.
+            const allCards = await FirestoreDB.getCards({});
+
             for (const [folderId, config] of Object.entries(topics)) {
                 const allowed = new Set(config.words);
-                const seen = new Set();
-                // Query rộng theo folder để cleanup không bỏ sót card legacy thiếu/sai cardType.
-                const cards = await FirestoreDB.getCards({ folderId });
+                const keepByWord = new Map();
+                let scannedCount = 0;
+                let normalizedCount = 0;
                 let deletedCount = 0;
                 let failedDeleteCount = 0;
 
-                for (const card of cards) {
+                const candidates = allCards.filter(card => {
+                    const fv = card.fieldValues || {};
+                    const word = String(fv.word || '').trim().toLowerCase();
+                    const role = String(fv.irregularRole || '').trim().toLowerCase();
+                    const tags = Array.isArray(fv.tags) ? fv.tags.map(t => String(t).trim().toLowerCase()) : [];
+                    const inThisFolder = card.folderId === folderId;
+                    const hasThisNewTag = tags.includes(config.tag);
+                    const hasThisRole = role === config.role;
+                    const hasLegacyComparisonTag = tags.includes('irregular-adjective') || tags.includes('irregular-adverb');
+                    const hasLegacyComparisonFields = !!(fv.comparative || fv.superlative);
+
+                    return inThisFolder
+                        || (allowed.has(word) && (hasThisNewTag || hasThisRole || hasLegacyComparisonTag || hasLegacyComparisonFields));
+                });
+
+                for (const card of candidates) {
+                    scannedCount++;
                     const fv = card.fieldValues || {};
                     const word = String(fv.word || '').trim().toLowerCase();
                     const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
-                    const role = String(fv.irregularRole || '').trim();
-                    const tags = Array.isArray(fv.tags) ? fv.tags : [];
-                    const isCanonical = allowed.has(word)
-                        && role === config.role
-                        && tags.includes(config.tag);
+                    const tags = Array.isArray(fv.tags) ? fv.tags.map(t => String(t).trim()) : [];
+                    const shouldKeepOne = allowed.has(word);
 
-                    if (!isCanonical || seen.has(word)) {
-                        const deleted = await FirestoreDB.deleteCard(card.id);
-                        if (deleted) deletedCount++;
-                        else failedDeleteCount++;
-                        console.log('[VocabularyPage] Deleted legacy irregular comparison duplicate:', {
-                            id: card.id,
-                            folderId,
-                            word,
-                            partOfSpeech: pos,
-                            irregularRole: role,
-                            tags,
-                            deleted
-                        });
+                    if (shouldKeepOne && !keepByWord.has(word)) {
+                        const normalizedTags = tags.includes(config.tag) ? tags : [...tags.filter(Boolean), config.tag];
+                        const needsNormalize = card.folderId !== folderId
+                            || card.cardType !== 'vocabulary'
+                            || String(fv.irregularRole || '').trim().toLowerCase() !== config.role
+                            || !tags.map(t => String(t).trim().toLowerCase()).includes(config.tag);
+
+                        if (needsNormalize) {
+                            await FirestoreDB.updateCard(card.id, {
+                                folderId,
+                                cardType: 'vocabulary',
+                                fieldValues: {
+                                    ...fv,
+                                    irregularRole: config.role,
+                                    tags: normalizedTags
+                                }
+                            });
+                            normalizedCount++;
+                        }
+
+                        keepByWord.set(word, card.id);
                         continue;
                     }
 
-                    seen.add(word);
+                    const deleted = await FirestoreDB.deleteCard(card.id);
+                    if (deleted) deletedCount++;
+                    else failedDeleteCount++;
+                    console.log('[VocabularyPage] Deleted legacy irregular comparison duplicate:', {
+                        id: card.id,
+                        originalFolderId: card.folderId,
+                        targetFolderId: folderId,
+                        word,
+                        partOfSpeech: pos,
+                        irregularRole: fv.irregularRole,
+                        tags,
+                        deleted
+                    });
                 }
 
                 console.log('[VocabularyPage] Irregular comparison cleanup summary:', {
                     folderId,
-                    scanned: cards.length,
-                    kept: seen.size,
+                    scanned: scannedCount,
+                    kept: keepByWord.size,
+                    normalized: normalizedCount,
                     deleted: deletedCount,
                     failedDelete: failedDeleteCount
                 });
