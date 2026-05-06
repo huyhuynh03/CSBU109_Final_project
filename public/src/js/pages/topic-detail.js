@@ -39,12 +39,22 @@ const TopicDetailPage = {
             ? VocabularyTopics.find(t => t.id === this._topicId)
             : null;
 
-        // Nếu user vào thẳng trang chi tiết 2 topic so sánh BQT, vẫn chạy cleanup
+        // Nếu user vào thẳng trang chi tiết 2 topic so sánh BQT, vẫn chạy reset/cleanup
         // giống trang Vocabulary để không phụ thuộc vào việc đã ghé /vocabulary trước đó.
         if ((this._topicId === 'irregular-adj-comparative' || this._topicId === 'irregular-adj-superlative')
-            && typeof VocabularyPage !== 'undefined'
-            && VocabularyPage._cleanupLegacyIrregularComparisonTopicCards) {
-            await VocabularyPage._cleanupLegacyIrregularComparisonTopicCards();
+            && typeof VocabularyPage !== 'undefined') {
+            if (VocabularyPage._resetIrregularComparisonTopicsIfNeeded) {
+                const didReset = await VocabularyPage._resetIrregularComparisonTopicsIfNeeded();
+                if (didReset && typeof SeedImporter !== 'undefined') {
+                    for (const filename of ['irregular-comparative.json', 'irregular-superlative.json']) {
+                        const result = await SeedImporter.importFile(filename);
+                        console.log(`[TopicDetailPage] Reseeded "${filename}": +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
+                    }
+                }
+            }
+            if (VocabularyPage._cleanupLegacyIrregularComparisonTopicCards) {
+                await VocabularyPage._cleanupLegacyIrregularComparisonTopicCards();
+            }
         }
 
         await this._loadCards();

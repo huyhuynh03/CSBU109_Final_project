@@ -1070,7 +1070,9 @@ const VocabularyPage = {
 
         // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
         await this._cleanupLegacyEducationGoodWellComparisonCards();
-        // Dọn dữ liệu cũ trong 2 topic so sánh BQT: bản không tag/role, base-form sai, hoặc trùng identity.
+        // Reset cứng 2 topic so sánh BQT một lần/user để xoá triệt để dữ liệu Firestore bị lặp/lệch schema.
+        await this._resetIrregularComparisonTopicsIfNeeded();
+        // Dọn sót dữ liệu cũ trong 2 topic so sánh BQT: bản không tag/role, base-form sai, hoặc trùng identity.
         await this._cleanupLegacyIrregularComparisonTopicCards();
 
         try {
@@ -1122,6 +1124,76 @@ const VocabularyPage = {
             }
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
+        }
+    },
+
+    async _resetIrregularComparisonTopicsIfNeeded() {
+        if (!window.FirestoreDB || !Auth.isSignedIn || !Auth.isSignedIn()) return false;
+        const userId = Auth.getUserId && Auth.getUserId();
+        if (!userId) return false;
+
+        const RESET_KEY = 'lf:irregular-comparison-hard-reset-v1';
+        const hasRun = (() => {
+            try {
+                const data = JSON.parse(localStorage.getItem(RESET_KEY) || '{}');
+                return !!data[userId];
+            } catch { return false; }
+        })();
+        if (hasRun) return false;
+
+        const targetFolders = new Set(['irregular-adj-comparative', 'irregular-adj-superlative']);
+        const targetTags = new Set(['irregular-comparative', 'irregular-superlative', 'irregular-adjective', 'irregular-adverb']);
+        const targetRoles = new Set(['comparative', 'superlative']);
+        const targetWords = new Set([
+            'better', 'elder', 'farther', 'further', 'less', 'more', 'worse',
+            'best', 'eldest', 'farthest', 'furthest', 'least', 'most', 'worst'
+        ]);
+
+        try {
+            const cards = await FirestoreDB.getCards({});
+            const targets = cards.filter(card => {
+                const fv = card.fieldValues || {};
+                const word = String(fv.word || '').trim().toLowerCase();
+                const role = String(fv.irregularRole || '').trim().toLowerCase();
+                const tags = Array.isArray(fv.tags) ? fv.tags.map(t => String(t).trim().toLowerCase()) : [];
+                const hasTargetTag = tags.some(t => targetTags.has(t));
+                const hasLegacyFields = !!(fv.comparative || fv.superlative);
+
+                return targetFolders.has(card.folderId)
+                    || hasTargetTag
+                    || targetRoles.has(role)
+                    || (targetWords.has(word) && hasLegacyFields);
+            });
+
+            let deleted = 0;
+            let failed = 0;
+            for (const card of targets) {
+                const ok = await FirestoreDB.deleteCard(card.id);
+                if (ok) deleted++;
+                else failed++;
+            }
+
+            if (failed === 0) {
+                try {
+                    const data = JSON.parse(localStorage.getItem(RESET_KEY) || '{}');
+                    data[userId] = new Date().toISOString();
+                    localStorage.setItem(RESET_KEY, JSON.stringify(data));
+                } catch (e) {
+                    console.warn('[VocabularyPage] Cannot persist irregular comparison reset flag:', e);
+                }
+            }
+
+            console.log('[VocabularyPage] Hard reset irregular comparison topics:', {
+                scanned: cards.length,
+                targeted: targets.length,
+                deleted,
+                failed
+            });
+
+            return targets.length > 0 && failed === 0;
+        } catch (e) {
+            console.warn('[VocabularyPage] Hard reset irregular comparison topics error:', e);
+            return false;
         }
     },
 
