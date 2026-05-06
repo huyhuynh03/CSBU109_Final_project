@@ -2230,7 +2230,9 @@
 .vocab-topic-card__name {
     font-size: var(--font-size-sm);
     font-weight: 600;
-    margin: 0 0 4px;
+    line-height: 1.45;
+    margin: -2px 0 4px;
+    padding-top: 2px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
