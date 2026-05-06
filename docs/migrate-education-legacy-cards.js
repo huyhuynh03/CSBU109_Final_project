@@ -18,6 +18,10 @@
     const familyId = getFamilyId(card);
     return familyId === 'beauty' || word === 'good' || word === 'well';
   });
+  const cardsToDelete = educationCards.filter(card => {
+    const word = getWord(card);
+    return word === 'better' || word === 'best';
+  });
 
   console.log('Education cards total:', educationCards.length);
   console.log('Cards to move:', cardsToMove.map(card => ({
@@ -26,6 +30,13 @@
     familyId: card?.fieldValues?.familyId || '',
     from: card.folderId,
     to: getFamilyId(card) === 'beauty' ? TARGETS.beauty : TARGETS.good
+  })));
+  console.log('Cards to delete:', cardsToDelete.map(card => ({
+    id: card.id,
+    word: card?.fieldValues?.word || '',
+    partOfSpeech: card?.fieldValues?.partOfSpeech || '',
+    familyId: card?.fieldValues?.familyId || '',
+    from: card.folderId
   })));
 
   for (const card of cardsToMove) {
@@ -46,6 +57,18 @@
     });
   }
 
+  for (const card of cardsToDelete) {
+    console.log('Deleting legacy comparison card:', {
+      id: card.id,
+      word: card?.fieldValues?.word || '',
+      partOfSpeech: card?.fieldValues?.partOfSpeech || '',
+      familyId: card?.fieldValues?.familyId || '',
+      from: card.folderId
+    });
+
+    await FirestoreDB.deleteCard(card.id);
+  }
+
   const finalCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
   const finalCounts = finalCards.reduce((acc, card) => {
     const folderId = card.folderId || '(none)';
@@ -55,6 +78,7 @@
 
   console.log('Migration complete:', {
     moved: cardsToMove.length,
+    deleted: cardsToDelete.length,
     education: finalCounts.education || 0,
     arts: finalCounts.arts || 0,
     personalQualities: finalCounts['personal-qualities'] || 0

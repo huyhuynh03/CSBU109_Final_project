@@ -1068,8 +1068,8 @@ const VocabularyPage = {
             try { await BqtV2Cleanup.run(); } catch (e) { console.warn('[VocabularyPage] BqtV2Cleanup error:', e); }
         }
 
-        // Dọn dữ liệu cũ: well từng bị nằm trong topic education, chuyển về personal-qualities.
-        await this._moveLegacyEducationWellCard();
+        // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
+        await this._cleanupLegacyEducationGoodWellComparisonCards();
 
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
@@ -1089,23 +1089,36 @@ const VocabularyPage = {
         }
     },
 
-    async _moveLegacyEducationWellCard() {
+    async _cleanupLegacyEducationGoodWellComparisonCards() {
         if (!window.FirestoreDB) return;
         try {
             const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId: 'education' });
-            const targets = cards.filter(card => {
+            const legacyCards = cards.filter(card => {
                 const fv = card.fieldValues || {};
                 const word = String(fv.word || '').trim().toLowerCase();
                 const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
-                return word === 'well' && pos === 'adverb';
+                if (word === 'well' && pos === 'adverb') return true;
+                return word === 'better' || word === 'best';
             });
 
-            for (const card of targets) {
-                await FirestoreDB.updateCard(card.id, { folderId: 'personal-qualities' });
-                console.log('[VocabularyPage] Moved legacy education card to personal-qualities:', card.id, 'well');
+            for (const card of legacyCards) {
+                const fv = card.fieldValues || {};
+                const word = String(fv.word || '').trim().toLowerCase();
+                const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
+
+                if (word === 'well' && pos === 'adverb') {
+                    await FirestoreDB.updateCard(card.id, { folderId: 'personal-qualities' });
+                    console.log('[VocabularyPage] Moved legacy education card to personal-qualities:', card.id, 'well');
+                    continue;
+                }
+
+                // better/best là card dạng so sánh, đã có seed riêng trong irregular-comparative/superlative.
+                // Xoá bản legacy trong education để không còn hiện trùng ở topic Giáo dục.
+                await FirestoreDB.deleteCard(card.id);
+                console.log('[VocabularyPage] Deleted legacy education comparison card:', card.id, word, pos);
             }
         } catch (e) {
-            console.warn('[VocabularyPage] Move legacy education well card error:', e);
+            console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
         }
     },
 
