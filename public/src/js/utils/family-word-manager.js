@@ -54,8 +54,54 @@ const FamilyWordManager = {
         return key ? `${groupType}:${key}` : '';
     },
 
+    _getComparisonGroupBase(fv = {}) {
+        const word = this._normalize(fv.word);
+        const base = this._normalize(fv.baseForm || fv.word);
+        const comparative = this._normalize(fv.comparative);
+        const superlative = this._normalize(fv.superlative);
+        const joined = [word, base, comparative, superlative].filter(Boolean).join('/');
+
+        // Nhóm good/well dùng chung better/best nên phải dùng cùng 1 key cho cả
+        // base cards cũ (good, well) và v2 cards mới (better, best).
+        if (/(^|\/)good(\/|$)/.test(joined)
+            || /(^|\/)well(\/|$)/.test(joined)
+            || /(^|\/)better(\/|$)/.test(joined)
+            || /(^|\/)best(\/|$)/.test(joined)) {
+            return 'good/well';
+        }
+
+        return base || word;
+    },
+
     _getGroupInfo(card) {
         const fv = card?.fieldValues || {};
+        const tags = Array.isArray(fv.tags) ? fv.tags : [];
+        const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+            ? CardSchemas.getIrregularMeta(card)
+            : null;
+        const word = this._normalize(fv.word);
+        const pos = this._normalize(fv.partOfSpeech);
+        const isGoodWellBase = (word === 'good' && pos === 'adjective')
+            || (word === 'well' && pos === 'adverb');
+        const isLegacyComparison = tags.includes('irregular-adjective')
+            || tags.includes('irregular-adverb')
+            || !!fv.comparative
+            || !!fv.superlative
+            || isGoodWellBase;
+
+        if ((irrMeta && (irrMeta.tag === 'irregular-comparative' || irrMeta.tag === 'irregular-superlative')) || isLegacyComparison) {
+            const base = this._getComparisonGroupBase(fv);
+            if (!base) return null;
+            return {
+                groupType: 'irregular-comparison',
+                rawKey: base,
+                groupKey: this._buildGroupKey('irregular-comparison', base),
+                title: base,
+                description: `Tính từ/trạng từ bất quy tắc: nguyên mẫu, so sánh hơn và so sánh nhất của ${base}`,
+                icon: 'trending_up'
+            };
+        }
+
         const familyId = String(fv.familyId || '').trim();
         if (familyId) {
             return {
@@ -68,9 +114,6 @@ const FamilyWordManager = {
             };
         }
 
-        const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
-            ? CardSchemas.getIrregularMeta(card)
-            : null;
         if (irrMeta && irrMeta.tag === 'irregular-verb') {
             const base = String(fv.baseForm || fv.word || '').trim();
             if (!base) return null;
@@ -81,22 +124,6 @@ const FamilyWordManager = {
                 title: base,
                 description: `Động từ bất quy tắc: ${base}`,
                 icon: 'timeline'
-            };
-        }
-
-        if (irrMeta && (irrMeta.tag === 'irregular-comparative' || irrMeta.tag === 'irregular-superlative')) {
-            const base = String(fv.baseForm || '').trim();
-            const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
-            if (!base || !pos) return null;
-            const rawKey = `${pos}:${base}`;
-            const typeLabel = pos === 'adverb' ? 'Trạng từ' : 'Tính từ';
-            return {
-                groupType: 'irregular-comparison',
-                rawKey,
-                groupKey: this._buildGroupKey('irregular-comparison', rawKey),
-                title: `${base} (${pos})`,
-                description: `${typeLabel} bất quy tắc: nguyên mẫu, so sánh hơn và so sánh nhất của ${base}`,
-                icon: 'trending_up'
             };
         }
 

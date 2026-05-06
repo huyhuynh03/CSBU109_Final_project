@@ -9,6 +9,40 @@
   "cards": [
     {
       "fieldValues": {
+        "word": "good",
+        "ipa": "/ɡʊd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tốt, hay, giỏi",
+        "example": "He is a good student and always gets high marks.",
+        "note": "Base form in the irregular comparison group: good/well - better - best",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "baseForm",
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "well",
+        "ipa": "/wel/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tốt, giỏi, hay",
+        "example": "She speaks English very well after years of practice.",
+        "note": "Base form in the irregular comparison group: good/well - better - best",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "baseForm",
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
+      }
+    },
+    {
+      "fieldValues": {
         "word": "better",
         "ipa": "/ˈbɛtər/",
         "partOfSpeech": "adjective",
@@ -16,7 +50,9 @@
         "meaning": "tốt hơn (so sánh hơn của good/well)",
         "example": "This coffee is better than the one we had yesterday.",
         "note": "Base forms: good (adjective) / well (adverb)",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "good/well",
         "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
@@ -31,7 +67,9 @@
         "meaning": "tốt hơn – bổ nghĩa cho động từ (so sánh hơn của good/well)",
         "example": "She sings better than anyone else in the choir.",
         "note": "Base forms: good (adjective) / well (adverb)",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "good/well",
         "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
@@ -45,7 +83,9 @@
         "difficulty": "intermediate",
         "meaning": "lớn tuổi hơn – dùng cho người trong gia đình (so sánh hơn của old)",
         "example": "My elder brother often helps me with my homework.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "old",
         "baseMeaning": "già, lớn tuổi"
@@ -59,7 +99,9 @@
         "difficulty": "intermediate",
         "meaning": "xa hơn – khoảng cách vật lý (so sánh hơn của far)",
         "example": "My office is farther from the city center than yours.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "far",
         "baseMeaning": "xa"
@@ -73,7 +115,9 @@
         "difficulty": "intermediate",
         "meaning": "xa hơn – khoảng cách vật lý (so sánh hơn của far)",
         "example": "You can throw the ball farther than I can.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "far",
         "baseMeaning": "xa"
@@ -87,7 +131,9 @@
         "difficulty": "intermediate",
         "meaning": "xa hơn, thêm – trừu tượng (so sánh hơn của far)",
         "example": "We need further research before making the final decision.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "far",
         "baseMeaning": "xa, thêm"
@@ -101,7 +147,9 @@
         "difficulty": "intermediate",
         "meaning": "hơn nữa, sâu hơn – trừu tượng (so sánh hơn của far)",
         "example": "Let's discuss this topic further at tomorrow's meeting.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "far",
         "baseMeaning": "xa, thêm"
@@ -115,7 +163,9 @@
         "difficulty": "intermediate",
         "meaning": "ít hơn (so sánh hơn của little – với danh từ không đếm được)",
         "example": "There is less sugar in this cake than in the previous one.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "little",
         "baseMeaning": "ít"
@@ -129,7 +179,9 @@
         "difficulty": "intermediate",
         "meaning": "ít hơn – bổ nghĩa cho động từ/tính từ (so sánh hơn của little)",
         "example": "He talks less than his sister in family gatherings.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "little",
         "baseMeaning": "ít"
@@ -143,7 +195,9 @@
         "difficulty": "intermediate",
         "meaning": "nhiều hơn (so sánh hơn của much/many)",
         "example": "She has more free time on weekends than on weekdays.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "much/many",
         "baseMeaning": "nhiều"
@@ -157,7 +211,9 @@
         "difficulty": "intermediate",
         "meaning": "nhiều hơn – bổ nghĩa cho động từ/tính từ (so sánh hơn của much)",
         "example": "You should study more if you want to pass the exam.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "much",
         "baseMeaning": "nhiều"
@@ -171,7 +227,9 @@
         "difficulty": "intermediate",
         "meaning": "tệ hơn (so sánh hơn của bad)",
         "example": "The traffic is worse in the evening than in the morning.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "bad",
         "baseMeaning": "tệ, xấu"
@@ -185,7 +243,9 @@
         "difficulty": "intermediate",
         "meaning": "tệ hơn – bổ nghĩa cho động từ (so sánh hơn của badly)",
         "example": "He performed worse in today's match than in last week's.",
-        "tags": ["irregular-comparative"],
+        "tags": [
+          "irregular-comparative"
+        ],
         "irregularRole": "comparative",
         "baseForm": "badly",
         "baseMeaning": "tệ, kém (trạng từ)"
