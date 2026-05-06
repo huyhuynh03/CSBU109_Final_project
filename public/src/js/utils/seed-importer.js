@@ -39,7 +39,7 @@ const SeedImporter = {
             return [irregularTag, word, folder, role, pos].join('::');
         }
 
-        return word;
+        return ['vocabulary', word, folder, pos].join('::');
     },
 
     /**
