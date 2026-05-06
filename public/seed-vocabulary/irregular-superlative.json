@@ -11,27 +11,14 @@
       "fieldValues": {
         "word": "best",
         "ipa": "/bɛst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "intermediate",
         "meaning": "tốt nhất (so sánh nhất của good/well)",
         "example": "This is the best restaurant I have ever been to in this city.",
         "note": "Base forms: good (adjective) / well (adverb)",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "good/well",
-        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "best",
-        "ipa": "/bɛst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "intermediate",
-        "meaning": "tốt nhất – bổ nghĩa cho động từ (so sánh nhất của good/well)",
-        "example": "Among all the players, he plays the piano best.",
-        "note": "Base forms: good (adjective) / well (adverb)",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "good/well",
         "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
@@ -45,7 +32,9 @@
         "difficulty": "advanced",
         "meaning": "lớn tuổi nhất – dùng cho người trong gia đình (so sánh nhất của old)",
         "example": "My eldest sister is a doctor at the central hospital.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "old",
         "baseMeaning": "già, lớn tuổi"
@@ -55,25 +44,13 @@
       "fieldValues": {
         "word": "farthest",
         "ipa": "/ˈfɑːrðɪst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "advanced",
         "meaning": "xa nhất – khoảng cách vật lý (so sánh nhất của far)",
         "example": "His house is the farthest from the office among all employees.",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "far",
-        "baseMeaning": "xa"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "farthest",
-        "ipa": "/ˈfɑːrðɪst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "advanced",
-        "meaning": "xa nhất – khoảng cách vật lý (so sánh nhất của far)",
-        "example": "She ran the farthest among all the participants in the race.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "far",
         "baseMeaning": "xa"
@@ -83,25 +60,13 @@
       "fieldValues": {
         "word": "furthest",
         "ipa": "/ˈfɜːrðɪst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "advanced",
         "meaning": "xa nhất, nhiều nhất – trừu tượng (so sánh nhất của far)",
         "example": "That is the furthest point we have reached in our research so far.",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "far",
-        "baseMeaning": "xa, thêm"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "furthest",
-        "ipa": "/ˈfɜːrðɪst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "advanced",
-        "meaning": "xa nhất, nhiều nhất – trừu tượng (so sánh nhất của far)",
-        "example": "This is the point we can push the project furthest within our budget.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "far",
         "baseMeaning": "xa, thêm"
@@ -111,25 +76,13 @@
       "fieldValues": {
         "word": "least",
         "ipa": "/liːst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "intermediate",
         "meaning": "ít nhất (so sánh nhất của little)",
         "example": "This is the least expensive option on the whole menu.",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "little",
-        "baseMeaning": "ít"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "least",
-        "ipa": "/liːst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "intermediate",
-        "meaning": "ít nhất – bổ nghĩa cho động từ/tính từ (so sánh nhất của little)",
-        "example": "Of all my colleagues, he complains the least about overtime.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "little",
         "baseMeaning": "ít"
@@ -139,11 +92,13 @@
       "fieldValues": {
         "word": "most",
         "ipa": "/moʊst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "intermediate",
         "meaning": "nhiều nhất (so sánh nhất của much/many)",
         "example": "She has the most experience among all the candidates.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "much/many",
         "baseMeaning": "nhiều"
@@ -151,44 +106,18 @@
     },
     {
       "fieldValues": {
-        "word": "most",
-        "ipa": "/moʊst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "intermediate",
-        "meaning": "nhiều nhất – bổ nghĩa cho động từ/tính từ (so sánh nhất của much)",
-        "example": "Among the team, she contributed most to the final report.",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "much",
-        "baseMeaning": "nhiều"
-      }
-    },
-    {
-      "fieldValues": {
         "word": "worst",
         "ipa": "/wɜːrst/",
-        "partOfSpeech": "adjective",
+        "partOfSpeech": "adjective/adverb",
         "difficulty": "intermediate",
         "meaning": "tệ nhất (so sánh nhất của bad)",
         "example": "Last Monday was the worst day of the entire month.",
-        "tags": ["irregular-superlative"],
+        "tags": [
+          "irregular-superlative"
+        ],
         "irregularRole": "superlative",
         "baseForm": "bad",
         "baseMeaning": "tệ, xấu"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "worst",
-        "ipa": "/wɜːrst/",
-        "partOfSpeech": "adverb",
-        "difficulty": "intermediate",
-        "meaning": "tệ nhất – bổ nghĩa cho động từ (so sánh nhất của badly)",
-        "example": "Of all the students, he performed worst on the final exam.",
-        "tags": ["irregular-superlative"],
-        "irregularRole": "superlative",
-        "baseForm": "badly",
-        "baseMeaning": "tệ, kém (trạng từ)"
       }
     }
   ]

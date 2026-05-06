@@ -36,7 +36,7 @@ const SeedImporter = {
             const irregularTag = tags.includes('irregular-comparative')
                 ? 'irregular-comparative'
                 : 'irregular-superlative';
-            return [irregularTag, word, folder, role, pos].join('::');
+            return [irregularTag, word, folder, role].join('::');
         }
 
         return ['vocabulary', word, folder, pos].join('::');

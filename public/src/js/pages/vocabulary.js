@@ -1130,34 +1130,18 @@ const VocabularyPage = {
             'irregular-adj-comparative': {
                 tag: 'irregular-comparative',
                 role: 'comparative',
-                entries: [
-                    ['better', 'adjective'], ['better', 'adverb'],
-                    ['elder', 'adjective'],
-                    ['farther', 'adjective'], ['farther', 'adverb'],
-                    ['further', 'adjective'], ['further', 'adverb'],
-                    ['less', 'adjective'], ['less', 'adverb'],
-                    ['more', 'adjective'], ['more', 'adverb'],
-                    ['worse', 'adjective'], ['worse', 'adverb']
-                ]
+                words: ['better', 'elder', 'farther', 'further', 'less', 'more', 'worse']
             },
             'irregular-adj-superlative': {
                 tag: 'irregular-superlative',
                 role: 'superlative',
-                entries: [
-                    ['best', 'adjective'], ['best', 'adverb'],
-                    ['eldest', 'adjective'],
-                    ['farthest', 'adjective'], ['farthest', 'adverb'],
-                    ['furthest', 'adjective'], ['furthest', 'adverb'],
-                    ['least', 'adjective'], ['least', 'adverb'],
-                    ['most', 'adjective'], ['most', 'adverb'],
-                    ['worst', 'adjective'], ['worst', 'adverb']
-                ]
+                words: ['best', 'eldest', 'farthest', 'furthest', 'least', 'most', 'worst']
             }
         };
 
         try {
             for (const [folderId, config] of Object.entries(topics)) {
-                const allowed = new Set(config.entries.map(([word, pos]) => `${word}::${pos}`));
+                const allowed = new Set(config.words);
                 const seen = new Set();
                 const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId });
 
@@ -1167,12 +1151,11 @@ const VocabularyPage = {
                     const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
                     const role = String(fv.irregularRole || '').trim();
                     const tags = Array.isArray(fv.tags) ? fv.tags : [];
-                    const key = `${word}::${pos}`;
-                    const isCanonical = allowed.has(key)
+                    const isCanonical = allowed.has(word)
                         && role === config.role
                         && tags.includes(config.tag);
 
-                    if (!isCanonical || seen.has(key)) {
+                    if (!isCanonical || seen.has(word)) {
                         await FirestoreDB.deleteCard(card.id);
                         console.log('[VocabularyPage] Deleted legacy irregular comparison duplicate:', {
                             id: card.id,
@@ -1185,7 +1168,7 @@ const VocabularyPage = {
                         continue;
                     }
 
-                    seen.add(key);
+                    seen.add(word);
                 }
             }
         } catch (e) {
