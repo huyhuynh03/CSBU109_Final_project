@@ -16,7 +16,7 @@
   const cardsToMove = educationCards.filter(card => {
     const word = getWord(card);
     const familyId = getFamilyId(card);
-    return familyId === 'beauty' || word === 'good';
+    return familyId === 'beauty' || word === 'good' || word === 'well';
   });
 
   console.log('Education cards total:', educationCards.length);

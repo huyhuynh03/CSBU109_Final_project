@@ -17,6 +17,7 @@ const VocabularyPage = {
         'food-drink': 'food-drink.json',
         'daily-activities': 'daily-activities.json',
         'communication-social': 'communication-social.json',
+        'personal-qualities': 'personal-qualities.json',
         'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
@@ -1067,6 +1068,9 @@ const VocabularyPage = {
             try { await BqtV2Cleanup.run(); } catch (e) { console.warn('[VocabularyPage] BqtV2Cleanup error:', e); }
         }
 
+        // Dọn dữ liệu cũ: well từng bị nằm trong topic education, chuyển về personal-qualities.
+        await this._moveLegacyEducationWellCard();
+
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
             for (const [topicId, filename] of Object.entries(this._seedTopics)) {
@@ -1082,6 +1086,26 @@ const VocabularyPage = {
             this._loadTopics();
         } catch (e) {
             console.error('[VocabularyPage] Auto-seed error:', e);
+        }
+    },
+
+    async _moveLegacyEducationWellCard() {
+        if (!window.FirestoreDB) return;
+        try {
+            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId: 'education' });
+            const targets = cards.filter(card => {
+                const fv = card.fieldValues || {};
+                const word = String(fv.word || '').trim().toLowerCase();
+                const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
+                return word === 'well' && pos === 'adverb';
+            });
+
+            for (const card of targets) {
+                await FirestoreDB.updateCard(card.id, { folderId: 'personal-qualities' });
+                console.log('[VocabularyPage] Moved legacy education card to personal-qualities:', card.id, 'well');
+            }
+        } catch (e) {
+            console.warn('[VocabularyPage] Move legacy education well card error:', e);
         }
     },
 
