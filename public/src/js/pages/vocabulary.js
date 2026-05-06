@@ -16,6 +16,7 @@ const VocabularyPage = {
         'home-living': 'home-living.json',
         'food-drink': 'food-drink.json',
         'daily-activities': 'daily-activities.json',
+        'communication-social': 'communication-social.json',
         'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
