@@ -982,14 +982,21 @@ const VocabularyPage = {
                     return `<span class="${cls}">${icon} ${escape(word)}${suffix}</span>`;
                 }).join('');
 
-                const groupTypeLabel = group.groupType === 'irregular-verb' ? 'BQT' : 'Family';
+                const groupTypeLabel = group.groupType === 'irregular-verb'
+                    ? 'BQT'
+                    : (group.groupType === 'irregular-comparison' ? 'So sánh BQT' : 'Family');
+                const groupTypeBg = group.groupType === 'irregular-verb'
+                    ? 'linear-gradient(135deg,#f59e0b,#ea580c)'
+                    : (group.groupType === 'irregular-comparison'
+                        ? 'linear-gradient(135deg,#ec4899,#f59e0b)'
+                        : 'linear-gradient(135deg,#6366f1,#8b5cf6)');
 
                 return `
                     <div class="lf-incomplete-item glass-panel">
                         <div class="lf-incomplete-item__head">
                             <strong>${escape(group.title)}</strong>
                             <span class="difficulty-badge difficulty-badge--${groupDifficulty}">${diffMeta.short}</span>
-                            <span class="review-round-badge" style="background:${group.groupType === 'irregular-verb' ? 'linear-gradient(135deg,#f59e0b,#ea580c)' : 'linear-gradient(135deg,#6366f1,#8b5cf6)'};">${groupTypeLabel}</span>
+                            <span class="review-round-badge" style="background:${groupTypeBg};">${groupTypeLabel}</span>
                             <span class="lf-incomplete-item__count">${learned}/${total}</span>
                         </div>
                         <div style="font-size:var(--font-size-sm);color:var(--color-text-secondary);margin-bottom:var(--spacing-sm);">${escape(group.description || '')}</div>

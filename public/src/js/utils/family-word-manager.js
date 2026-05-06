@@ -84,6 +84,22 @@ const FamilyWordManager = {
             };
         }
 
+        if (irrMeta && (irrMeta.tag === 'irregular-comparative' || irrMeta.tag === 'irregular-superlative')) {
+            const base = String(fv.baseForm || '').trim();
+            const pos = String(fv.partOfSpeech || '').trim().toLowerCase();
+            if (!base || !pos) return null;
+            const rawKey = `${pos}:${base}`;
+            const typeLabel = pos === 'adverb' ? 'Trạng từ' : 'Tính từ';
+            return {
+                groupType: 'irregular-comparison',
+                rawKey,
+                groupKey: this._buildGroupKey('irregular-comparison', rawKey),
+                title: `${base} (${pos})`,
+                description: `${typeLabel} bất quy tắc: nguyên mẫu, so sánh hơn và so sánh nhất của ${base}`,
+                icon: 'trending_up'
+            };
+        }
+
         return null;
     },
 
