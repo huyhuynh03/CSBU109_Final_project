@@ -9,40 +9,6 @@
   "cards": [
     {
       "fieldValues": {
-        "word": "good",
-        "ipa": "/ɡʊd/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "tốt, hay, giỏi",
-        "example": "He is a good student and always gets high marks.",
-        "note": "Base form in the irregular comparison group: good/well - better - best",
-        "tags": [
-          "irregular-comparative"
-        ],
-        "irregularRole": "baseForm",
-        "baseForm": "good/well",
-        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "well",
-        "ipa": "/wel/",
-        "partOfSpeech": "adverb",
-        "difficulty": "intermediate",
-        "meaning": "tốt, giỏi, hay",
-        "example": "She speaks English very well after years of practice.",
-        "note": "Base form in the irregular comparison group: good/well - better - best",
-        "tags": [
-          "irregular-comparative"
-        ],
-        "irregularRole": "baseForm",
-        "baseForm": "good/well",
-        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
-      }
-    },
-    {
-      "fieldValues": {
         "word": "better",
         "ipa": "/ˈbɛtər/",
         "partOfSpeech": "adjective",

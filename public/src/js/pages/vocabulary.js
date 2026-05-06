@@ -1070,6 +1070,8 @@ const VocabularyPage = {
 
         // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
         await this._cleanupLegacyEducationGoodWellComparisonCards();
+        // Dọn dữ liệu cũ: good/well từng được seed nhầm như base-form trong topic so sánh hơn.
+        await this._cleanupLegacyIrregularComparativeBaseCards();
 
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
@@ -1119,6 +1121,28 @@ const VocabularyPage = {
             }
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
+        }
+    },
+
+    async _cleanupLegacyIrregularComparativeBaseCards() {
+        if (!window.FirestoreDB) return;
+        try {
+            const cards = await FirestoreDB.getCards({ cardType: 'vocabulary', folderId: 'irregular-adj-comparative' });
+            const legacyBaseCards = cards.filter(card => {
+                const fv = card.fieldValues || {};
+                const word = String(fv.word || '').trim().toLowerCase();
+                const role = String(fv.irregularRole || '').trim();
+                return role === 'baseForm' && (word === 'good' || word === 'well');
+            });
+
+            for (const card of legacyBaseCards) {
+                const fv = card.fieldValues || {};
+                const word = String(fv.word || '').trim().toLowerCase();
+                await FirestoreDB.deleteCard(card.id);
+                console.log('[VocabularyPage] Deleted legacy irregular comparative base-form card:', card.id, word);
+            }
+        } catch (e) {
+            console.warn('[VocabularyPage] Cleanup legacy irregular comparative base cards error:', e);
         }
     },
 
