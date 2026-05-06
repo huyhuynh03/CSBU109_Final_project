@@ -1,0 +1,1417 @@
+{
+  "_meta": {
+    "topicId": "daily-activities",
+    "topicName": "Daily Activities",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Daily Activities (B1-B2)",
+    "totalCards": 107,
+    "totalFamilies": 16,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Hoat dong hang ngay, gom theo family/nhom hanh dong de hoc theo cum lien quan. Bao gom buoi sang, cham soc ca nhan, chuan bi ra ngoai, bua an, di lai, viec cong cong, hoc tap lam viec, digital, suc khoe, viec nha, gia dinh, xa hoi, giai tri va buoi toi."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "activity",
+        "ipa": "/ækˈtɪv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động",
+        "example": "Outdoor activities can improve your health and mood.",
+        "familyId": "activities-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "action",
+        "ipa": "/ˈæk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành động",
+        "example": "Small actions can make your daily routine better.",
+        "familyId": "activities-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "routine",
+        "ipa": "/ruːˈtiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lịch trình, thói quen",
+        "example": "A clear routine helps me manage my day.",
+        "familyId": "activities-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "schedule",
+        "ipa": "/ˈʃed.juːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lịch trình",
+        "example": "My schedule is full of meetings today.",
+        "familyId": "activities-general",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wake up",
+        "ipa": "/weɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thức dậy",
+        "example": "I wake up at six every morning.",
+        "familyId": "morning-actions",
+        "familyOrder": 1,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get up",
+        "ipa": "/ɡet ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "rời giường, thức dậy",
+        "example": "She gets up early to exercise.",
+        "familyId": "morning-actions",
+        "familyOrder": 2,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stretch",
+        "ipa": "/stretʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "duỗi người, giãn cơ",
+        "example": "Stretch your body before starting the day.",
+        "familyId": "morning-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yawn",
+        "ipa": "/jɔːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngáp",
+        "example": "He yawned because he stayed up late.",
+        "familyId": "morning-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make the bed",
+        "ipa": "/meɪk ðə bed/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dọn giường",
+        "example": "I make the bed right after getting up.",
+        "familyId": "morning-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "open the curtains",
+        "ipa": "/ˈəʊ.pən ðə ˈkɜː.tənz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "mở rèm cửa",
+        "example": "Open the curtains to let in sunlight.",
+        "familyId": "morning-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wash your face",
+        "ipa": "/wɒʃ jɔː feɪs/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "rửa mặt",
+        "example": "Wash your face with cold water to feel awake.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brush your teeth",
+        "ipa": "/brʌʃ jɔː tiːθ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đánh răng",
+        "example": "Brush your teeth twice a day.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "floss",
+        "ipa": "/flɒs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dùng chỉ nha khoa",
+        "example": "Dentists recommend flossing every night.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take a shower",
+        "ipa": "/teɪk ə ˈʃaʊ.ər/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "tắm vòi sen",
+        "example": "I take a shower after jogging.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dry your hair",
+        "ipa": "/draɪ jɔː heər/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "sấy/lau khô tóc",
+        "example": "Dry your hair before going outside in cold weather.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comb your hair",
+        "ipa": "/kəʊm jɔː heər/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chải tóc",
+        "example": "He combs his hair before leaving home.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shave",
+        "ipa": "/ʃeɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cạo râu",
+        "example": "He shaves every morning before work.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put on makeup",
+        "ipa": "/pʊt ɒn ˈmeɪk.ʌp/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "trang điểm",
+        "example": "She put on makeup for the interview.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get dressed",
+        "ipa": "/ɡet drest/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "mặc quần áo xong",
+        "example": "The children got dressed quickly for school.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "choose an outfit",
+        "ipa": "/tʃuːz ən ˈaʊt.fɪt/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chọn trang phục",
+        "example": "I choose an outfit the night before work.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pack a bag",
+        "ipa": "/pæk ə bæɡ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chuẩn bị/cất đồ vào túi",
+        "example": "Pack your bag before you go to bed.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check the weather",
+        "ipa": "/tʃek ðə ˈweð.ər/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "kiểm tra thời tiết",
+        "example": "Check the weather before leaving the house.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lock the door",
+        "ipa": "/lɒk ðə dɔːr/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "khóa cửa",
+        "example": "Remember to lock the door when you leave.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leave home",
+        "ipa": "/liːv həʊm/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "rời khỏi nhà",
+        "example": "I usually leave home at seven thirty.",
+        "familyId": "getting-ready-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prepare breakfast",
+        "ipa": "/prɪˈpeər ˈbrek.fəst/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chuẩn bị bữa sáng",
+        "example": "My father prepares breakfast for the family.",
+        "familyId": "meal-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make coffee",
+        "ipa": "/meɪk ˈkɒf.i/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "pha cà phê",
+        "example": "She makes coffee before checking emails.",
+        "familyId": "meal-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pour milk",
+        "ipa": "/pɔːr mɪlk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "rót sữa",
+        "example": "Pour milk over the cereal.",
+        "familyId": "meal-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set the table",
+        "ipa": "/set ðə ˈteɪ.bəl/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dọn bàn ăn",
+        "example": "The children set the table before dinner.",
+        "familyId": "meal-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clear the table",
+        "ipa": "/klɪər ðə ˈteɪ.bəl/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dọn bàn sau bữa ăn",
+        "example": "Please clear the table after lunch.",
+        "familyId": "meal-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wash the dishes",
+        "ipa": "/wɒʃ ðə ˈdɪʃ.ɪz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "rửa bát đĩa",
+        "example": "I wash the dishes while my brother dries them.",
+        "familyId": "meal-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "do the dishes",
+        "ipa": "/duː ðə ˈdɪʃ.ɪz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "rửa bát đĩa",
+        "example": "Who is going to do the dishes tonight?",
+        "familyId": "meal-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pack lunch",
+        "ipa": "/pæk lʌntʃ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chuẩn bị cơm trưa mang theo",
+        "example": "She packs lunch to save money.",
+        "familyId": "meal-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commute",
+        "ipa": "/kəˈmjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi lại hằng ngày giữa nhà và nơi làm/học",
+        "example": "He commutes by train to the city.",
+        "familyId": "travel-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walk",
+        "ipa": "/wɔːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi bộ",
+        "example": "I walk to the bus stop every morning.",
+        "familyId": "travel-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cycle",
+        "ipa": "/ˈsaɪ.kəl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đạp xe",
+        "example": "Many students cycle to school.",
+        "familyId": "travel-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drive",
+        "ipa": "/draɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lái xe",
+        "example": "She drives to work when it rains.",
+        "familyId": "travel-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take the bus",
+        "ipa": "/teɪk ðə bʌs/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đi xe buýt",
+        "example": "We take the bus to the market.",
+        "familyId": "travel-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "catch the train",
+        "ipa": "/kætʃ ðə treɪn/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "bắt tàu",
+        "example": "I need to catch the train at eight.",
+        "familyId": "travel-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cross the street",
+        "ipa": "/krɒs ðə striːt/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "băng qua đường",
+        "example": "Look both ways before you cross the street.",
+        "familyId": "travel-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wait in line",
+        "ipa": "/weɪt ɪn laɪn/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "xếp hàng chờ",
+        "example": "We had to wait in line for tickets.",
+        "note": "British English: queue",
+        "familyId": "public-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "queue",
+        "ipa": "/kjuː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xếp hàng",
+        "example": "People queued outside the bakery.",
+        "note": "British English",
+        "familyId": "public-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "buy groceries",
+        "ipa": "/baɪ ˈɡrəʊ.sər.iz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "mua thực phẩm/hàng tạp hóa",
+        "example": "I buy groceries every Saturday morning.",
+        "familyId": "public-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pay the bill",
+        "ipa": "/peɪ ðə bɪl/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "thanh toán hóa đơn",
+        "example": "She paid the bill with her phone.",
+        "familyId": "public-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdraw cash",
+        "ipa": "/wɪðˈdrɔː kæʃ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "rút tiền mặt",
+        "example": "He withdrew cash from the ATM.",
+        "familyId": "public-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run errands",
+        "ipa": "/rʌn ˈer.əndz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "làm việc vặt bên ngoài",
+        "example": "I have to run errands after work.",
+        "familyId": "public-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "book an appointment",
+        "ipa": "/bʊk ən əˈpɔɪnt.mənt/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "đặt lịch hẹn",
+        "example": "Book an appointment before visiting the clinic.",
+        "familyId": "public-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cancel an appointment",
+        "ipa": "/ˈkæn.səl ən əˈpɔɪnt.mənt/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "hủy lịch hẹn",
+        "example": "I had to cancel my appointment because I was sick.",
+        "familyId": "public-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "study",
+        "ipa": "/ˈstʌd.i/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "học, học tập",
+        "example": "She studies English for one hour every evening.",
+        "familyId": "work-study-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attend class",
+        "ipa": "/əˈtend klɑːs/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "tham gia buổi học",
+        "example": "Students must attend class regularly.",
+        "familyId": "work-study-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take notes",
+        "ipa": "/teɪk nəʊts/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "ghi chú",
+        "example": "Take notes while the teacher is explaining.",
+        "familyId": "work-study-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "review lessons",
+        "ipa": "/rɪˈvjuː ˈles.ənz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "ôn bài",
+        "example": "Review your lessons before the exam.",
+        "familyId": "work-study-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "do homework",
+        "ipa": "/duː ˈhəʊm.wɜːk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "làm bài tập về nhà",
+        "example": "He does homework after dinner.",
+        "familyId": "work-study-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "submit homework",
+        "ipa": "/səbˈmɪt ˈhəʊm.wɜːk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "nộp bài tập",
+        "example": "Submit your homework before Friday.",
+        "familyId": "work-study-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "work",
+        "ipa": "/wɜːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm việc",
+        "example": "Most people work from Monday to Friday.",
+        "familyId": "work-study-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check emails",
+        "ipa": "/tʃek ˈiː.meɪlz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "kiểm tra email",
+        "example": "I check emails after breakfast.",
+        "familyId": "work-study-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reply to messages",
+        "ipa": "/rɪˈplaɪ tə ˈmes.ɪdʒɪz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "trả lời tin nhắn",
+        "example": "She replies to messages during her break.",
+        "familyId": "digital-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make a phone call",
+        "ipa": "/meɪk ə ˈfəʊn kɔːl/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "gọi điện thoại",
+        "example": "I need to make a phone call to confirm the booking.",
+        "familyId": "digital-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "send a text",
+        "ipa": "/send ə tekst/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "gửi tin nhắn",
+        "example": "Send me a text when you arrive.",
+        "familyId": "digital-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "browse the internet",
+        "ipa": "/braʊz ði ˈɪn.tə.net/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "lướt internet",
+        "example": "He browses the internet for news in the morning.",
+        "familyId": "digital-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scroll",
+        "ipa": "/skrəʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cuộn/lướt màn hình",
+        "example": "She scrolled through social media for an hour.",
+        "familyId": "digital-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "charge your phone",
+        "ipa": "/tʃɑːdʒ jɔː fəʊn/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "sạc điện thoại",
+        "example": "Charge your phone before going out.",
+        "familyId": "digital-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "download",
+        "ipa": "/ˌdaʊnˈləʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tải xuống",
+        "example": "Download the file before the meeting.",
+        "familyId": "digital-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upload",
+        "ipa": "/ˌʌpˈləʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tải lên",
+        "example": "Upload your assignment to the website.",
+        "familyId": "digital-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exercise",
+        "ipa": "/ˈek.sə.saɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tập thể dục",
+        "example": "I exercise three times a week.",
+        "familyId": "health-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jog",
+        "ipa": "/dʒɒɡ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chạy bộ chậm",
+        "example": "He jogs around the park every morning.",
+        "familyId": "health-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "work out",
+        "ipa": "/wɜːk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tập luyện",
+        "example": "She works out at the gym after work.",
+        "familyId": "health-actions",
+        "familyOrder": 3,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meditate",
+        "ipa": "/ˈmed.ɪ.teɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "thiền",
+        "example": "Many people meditate to reduce stress.",
+        "familyId": "health-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breathe deeply",
+        "ipa": "/briːð ˈdiːp.li/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "hít thở sâu",
+        "example": "Breathe deeply when you feel nervous.",
+        "familyId": "health-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take medicine",
+        "ipa": "/teɪk ˈmed.ɪ.sən/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "uống thuốc",
+        "example": "Take medicine after meals if your doctor advises it.",
+        "familyId": "health-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rest",
+        "ipa": "/rest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ ngơi",
+        "example": "You should rest after a long day.",
+        "familyId": "health-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take a nap",
+        "ipa": "/teɪk ə næp/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "ngủ trưa, chợp mắt",
+        "example": "A short nap can improve your concentration.",
+        "familyId": "health-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clean the house",
+        "ipa": "/kliːn ðə haʊs/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dọn dẹp nhà cửa",
+        "example": "We clean the house every weekend.",
+        "familyId": "household-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tidy the room",
+        "ipa": "/ˈtaɪ.di ðə ruːm/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dọn phòng gọn gàng",
+        "example": "Tidy the room before your guests arrive.",
+        "familyId": "household-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sweep the floor",
+        "ipa": "/swiːp ðə flɔːr/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "quét sàn",
+        "example": "Sweep the floor before mopping it.",
+        "familyId": "household-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mop the floor",
+        "ipa": "/mɒp ðə flɔːr/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "lau sàn",
+        "example": "Mop the floor when it gets dirty.",
+        "familyId": "household-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vacuum the carpet",
+        "ipa": "/ˈvæk.juːm ðə ˈkɑː.pɪt/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "hút bụi thảm",
+        "example": "I vacuum the carpet every Friday.",
+        "familyId": "household-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dust the shelves",
+        "ipa": "/dʌst ðə ʃelvz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "lau bụi kệ",
+        "example": "Dust the shelves with a soft cloth.",
+        "familyId": "household-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "do the laundry",
+        "ipa": "/duː ðə ˈlɔːn.dri/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "giặt giũ",
+        "example": "We do the laundry twice a week.",
+        "familyId": "household-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hang clothes",
+        "ipa": "/hæŋ kləʊðz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "phơi/treo quần áo",
+        "example": "Hang clothes outside when the weather is sunny.",
+        "familyId": "household-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fold clothes",
+        "ipa": "/fəʊld kləʊðz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "gấp quần áo",
+        "example": "Fold clothes and put them in the wardrobe.",
+        "familyId": "household-actions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take out the trash",
+        "ipa": "/teɪk aʊt ðə træʃ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đổ rác",
+        "example": "Take out the trash before it smells bad.",
+        "familyId": "household-actions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feed the pet",
+        "ipa": "/fiːd ðə pet/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "cho thú cưng ăn",
+        "example": "Remember to feed the pet before leaving.",
+        "familyId": "family-home-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walk the dog",
+        "ipa": "/wɔːk ðə dɒɡ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dắt chó đi dạo",
+        "example": "He walks the dog every evening.",
+        "familyId": "family-home-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "water the plants",
+        "ipa": "/ˈwɔː.tər ðə plɑːnts/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "tưới cây",
+        "example": "Water the plants when the soil is dry.",
+        "familyId": "family-home-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "help with chores",
+        "ipa": "/help wɪð tʃɔːrz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "giúp làm việc nhà",
+        "example": "Children should help with chores at home.",
+        "familyId": "family-home-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take care of someone",
+        "ipa": "/teɪk keər əv ˈsʌm.wʌn/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "chăm sóc ai đó",
+        "example": "She takes care of her younger brother after school.",
+        "familyId": "family-home-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spend time with family",
+        "ipa": "/spend taɪm wɪð ˈfæm.əl.i/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "dành thời gian cho gia đình",
+        "example": "We spend time with family on Sundays.",
+        "familyId": "family-home-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meet friends",
+        "ipa": "/miːt frendz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "gặp bạn bè",
+        "example": "I meet friends for coffee after work.",
+        "familyId": "social-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chat",
+        "ipa": "/tʃæt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trò chuyện",
+        "example": "They chatted for hours at the cafe.",
+        "familyId": "social-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hang out",
+        "ipa": "/hæŋ aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đi chơi, tụ tập",
+        "example": "Teenagers often hang out at the mall.",
+        "familyId": "social-actions",
+        "familyOrder": 3,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invite",
+        "ipa": "/ɪnˈvaɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mời",
+        "example": "We invited our neighbours to dinner.",
+        "familyId": "social-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "visit",
+        "ipa": "/ˈvɪz.ɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thăm, ghé thăm",
+        "example": "They visit their grandparents every month.",
+        "familyId": "social-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "celebrate",
+        "ipa": "/ˈsel.ə.breɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "ăn mừng, kỷ niệm",
+        "example": "We celebrate birthdays with a family dinner.",
+        "familyId": "social-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relax",
+        "ipa": "/rɪˈlæks/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thư giãn",
+        "example": "I relax by listening to quiet music.",
+        "familyId": "leisure-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "watch TV",
+        "ipa": "/wɒtʃ ˌtiːˈviː/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "xem TV",
+        "example": "They watch TV together after dinner.",
+        "familyId": "leisure-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "listen to music",
+        "ipa": "/ˈlɪs.ən tə ˈmjuː.zɪk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "nghe nhạc",
+        "example": "She listens to music while cooking.",
+        "familyId": "leisure-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "read a book",
+        "ipa": "/riːd ə bʊk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đọc sách",
+        "example": "I read a book before going to sleep.",
+        "familyId": "leisure-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "play games",
+        "ipa": "/pleɪ ɡeɪmz/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "chơi trò chơi",
+        "example": "The children play games in the living room.",
+        "familyId": "leisure-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go for a walk",
+        "ipa": "/ɡəʊ fər ə wɔːk/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đi dạo",
+        "example": "We go for a walk after dinner.",
+        "familyId": "leisure-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cook dinner",
+        "ipa": "/kʊk ˈdɪn.ər/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "nấu bữa tối",
+        "example": "My mother cooks dinner at six.",
+        "familyId": "evening-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prepare for tomorrow",
+        "ipa": "/prɪˈpeər fə təˈmɒr.əʊ/",
+        "partOfSpeech": "phrase",
+        "difficulty": "advanced",
+        "meaning": "chuẩn bị cho ngày mai",
+        "example": "Prepare for tomorrow before you relax.",
+        "familyId": "evening-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set an alarm",
+        "ipa": "/set ən əˈlɑːm/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đặt báo thức",
+        "example": "Set an alarm so you do not oversleep.",
+        "familyId": "evening-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn off the lights",
+        "ipa": "/tɜːn ɒf ðə laɪts/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "tắt đèn",
+        "example": "Turn off the lights before you leave the room.",
+        "familyId": "evening-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go to bed",
+        "ipa": "/ɡəʊ tə bed/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "đi ngủ",
+        "example": "I usually go to bed before eleven.",
+        "familyId": "evening-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fall asleep",
+        "ipa": "/fɔːl əˈsliːp/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "ngủ thiếp đi",
+        "example": "She fell asleep while reading.",
+        "familyId": "evening-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oversleep",
+        "ipa": "/ˌəʊ.vəˈsliːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngủ quên, ngủ quá giờ",
+        "example": "He overslept and missed the bus.",
+        "familyId": "sleep-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stay up",
+        "ipa": "/steɪ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thức khuya",
+        "example": "Students often stay up late before exams.",
+        "familyId": "sleep-actions",
+        "familyOrder": 2,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    }
+  ]
+}
