@@ -39,25 +39,21 @@ const TopicDetailPage = {
             ? VocabularyTopics.find(t => t.id === this._topicId)
             : null;
 
-        // Nếu user vào thẳng trang chi tiết 2 topic so sánh BQT, vẫn chạy reset/cleanup
-        // giống trang Vocabulary để không phụ thuộc vào việc đã ghé /vocabulary trước đó.
-        if ((this._topicId === 'irregular-adj-comparative' || this._topicId === 'irregular-adj-superlative')
-            && typeof VocabularyPage !== 'undefined') {
-            if (VocabularyPage._resetIrregularComparisonTopicsIfNeeded) {
-                const didReset = await VocabularyPage._resetIrregularComparisonTopicsIfNeeded();
-                if (didReset && typeof SeedImporter !== 'undefined') {
-                    for (const filename of ['irregular-comparative.json', 'irregular-superlative.json']) {
-                        const result = await SeedImporter.importFile(filename);
-                        console.log(`[TopicDetailPage] Reseeded "${filename}": +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
-                    }
-                }
+        // Hai topic so sánh BQT đã bị gỡ khỏi runtime. Nếu user vào URL cũ,
+        // chỉ purge dữ liệu Firestore còn sót và điều hướng về trang từ vựng; tuyệt đối không seed lại.
+        if (this._isRemovedIrregularComparisonTopic(this._topicId)) {
+            if (typeof VocabularyPage !== 'undefined' && VocabularyPage._purgeRemovedIrregularComparisonTopics) {
+                await VocabularyPage._purgeRemovedIrregularComparisonTopics();
             }
-            if (VocabularyPage._cleanupLegacyIrregularComparisonTopicCards) {
-                await VocabularyPage._cleanupLegacyIrregularComparisonTopicCards();
-            }
+            Router.navigate('/vocabulary');
+            return;
         }
 
         await this._loadCards();
+    },
+
+    _isRemovedIrregularComparisonTopic(topicId) {
+        return topicId === 'irregular-adj-comparative' || topicId === 'irregular-adj-superlative';
     },
 
     async _loadCards() {
