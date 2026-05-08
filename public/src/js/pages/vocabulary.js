@@ -16,6 +16,7 @@ const VocabularyPage = {
         'home-living': 'home-living.json',
         'food-drink': 'food-drink.json',
         'daily-activities': 'daily-activities.json',
+        'health': 'health.json',
         'communication-social': 'communication-social.json',
         'personal-qualities': 'personal-qualities.json',
         'emotion-feelings': 'emotion-feelings.json',
