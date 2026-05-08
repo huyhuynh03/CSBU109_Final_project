@@ -218,18 +218,46 @@ const VocabularyTopics = [
         order: 29
     },
     {
+        id: 'mathematics',
+        name: 'Toán học',
+        icon: 'calculate',
+        category: 'science',
+        order: 30
+    },
+    {
+        id: 'biology',
+        name: 'Sinh học',
+        icon: 'biotech',
+        category: 'science',
+        order: 31
+    },
+    {
+        id: 'chemistry',
+        name: 'Hóa học',
+        icon: 'science',
+        category: 'science',
+        order: 32
+    },
+    {
+        id: 'physics',
+        name: 'Vật lý',
+        icon: 'speed',
+        category: 'science',
+        order: 33
+    },
+    {
         id: 'information-technology',
         name: 'Công nghệ thông tin',
         icon: 'computer',
         category: 'science',
-        order: 30
+        order: 34
     },
     {
         id: 'space',
         name: 'Vũ trụ',
         icon: 'rocket_launch',
         category: 'science',
-        order: 31
+        order: 35
     },
 
     // ==========================================
@@ -240,7 +268,7 @@ const VocabularyTopics = [
         name: 'Lịch sử & Khảo cổ học',
         icon: 'history_edu',
         category: 'ielts',
-        order: 32
+        order: 36
     },
 
     // ==========================================
@@ -251,7 +279,7 @@ const VocabularyTopics = [
         name: 'Thành ngữ',
         icon: 'format_quote',
         category: 'idiom',
-        order: 33
+        order: 37
     },
 
     // ==========================================
@@ -262,35 +290,35 @@ const VocabularyTopics = [
         name: 'Động từ BQT – V1 (Nguyên mẫu)',
         icon: 'bolt',
         category: 'irregular',
-        order: 34
+        order: 38
     },
     {
         id: 'irregular-verb-v2',
         name: 'Động từ BQT – V2 (Quá khứ đơn)',
         icon: 'history',
         category: 'irregular',
-        order: 35
+        order: 39
     },
     {
         id: 'irregular-verb-v3',
         name: 'Động từ BQT – V3 (Quá khứ phân từ)',
         icon: 'timelapse',
         category: 'irregular',
-        order: 36
+        order: 40
     },
     {
         id: 'irregular-adj-comparative',
         name: 'Irregular Comparison Comparative (So sánh hơn bất quy tắc)',
         icon: 'trending_up',
         category: 'irregular',
-        order: 37
+        order: 41
     },
     {
         id: 'irregular-adj-superlative',
         name: 'Irregular Comparison Superlative (So sánh nhất bất quy tắc)',
         icon: 'emoji_events',
         category: 'irregular',
-        order: 38
+        order: 42
     }
 ];
 
