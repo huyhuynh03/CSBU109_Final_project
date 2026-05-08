@@ -18,6 +18,7 @@ const VocabularyPage = {
         'daily-activities': 'daily-activities.json',
         'communication-social': 'communication-social.json',
         'personal-qualities': 'personal-qualities.json',
+        'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
