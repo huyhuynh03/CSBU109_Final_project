@@ -39,21 +39,7 @@ const TopicDetailPage = {
             ? VocabularyTopics.find(t => t.id === this._topicId)
             : null;
 
-        // Hai topic so sánh BQT đã bị gỡ khỏi runtime. Nếu user vào URL cũ,
-        // chỉ purge dữ liệu Firestore còn sót và điều hướng về trang từ vựng; tuyệt đối không seed lại.
-        if (this._isRemovedIrregularComparisonTopic(this._topicId)) {
-            if (typeof VocabularyPage !== 'undefined' && VocabularyPage._purgeRemovedIrregularComparisonTopics) {
-                await VocabularyPage._purgeRemovedIrregularComparisonTopics();
-            }
-            Router.navigate('/vocabulary');
-            return;
-        }
-
         await this._loadCards();
-    },
-
-    _isRemovedIrregularComparisonTopic(topicId) {
-        return topicId === 'irregular-adj-comparative' || topicId === 'irregular-adj-superlative';
     },
 
     async _loadCards() {

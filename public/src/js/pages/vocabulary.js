@@ -21,7 +21,9 @@ const VocabularyPage = {
         'education': 'education.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
-        'irregular-verb-v3': 'irregular-verb-v3.json'
+        'irregular-verb-v3': 'irregular-verb-v3.json',
+        'irregular-adj-comparative': 'irregular-comparative.json',
+        'irregular-adj-superlative': 'irregular-superlative.json'
     },
 
     async render() {
@@ -1068,8 +1070,6 @@ const VocabularyPage = {
 
         // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
         await this._cleanupLegacyEducationGoodWellComparisonCards();
-        // Xoá triệt để 2 topic so sánh BQT đã bị gỡ khỏi runtime, không seed lại.
-        await this._purgeRemovedIrregularComparisonTopics();
 
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
@@ -1123,63 +1123,6 @@ const VocabularyPage = {
         }
     },
 
-    _getRemovedIrregularComparisonTargets(card) {
-        const fv = card.fieldValues || {};
-        const word = String(fv.word || '').trim().toLowerCase();
-        const role = String(fv.irregularRole || '').trim().toLowerCase();
-        const tags = Array.isArray(fv.tags) ? fv.tags.map(t => String(t).trim().toLowerCase()) : [];
-        const targetFolders = new Set(['irregular-adj-comparative', 'irregular-adj-superlative']);
-        const targetTags = new Set(['irregular-comparative', 'irregular-superlative', 'irregular-adjective', 'irregular-adverb']);
-        const targetRoles = new Set(['comparative', 'superlative']);
-        const targetWords = new Set([
-            'better', 'elder', 'farther', 'further', 'less', 'more', 'worse',
-            'best', 'eldest', 'farthest', 'furthest', 'least', 'most', 'worst'
-        ]);
-        const hasTargetTag = tags.some(t => targetTags.has(t));
-        const hasLegacyFields = !!(fv.comparative || fv.superlative);
-
-        return targetFolders.has(card.folderId)
-            || hasTargetTag
-            || targetRoles.has(role)
-            || (targetWords.has(word) && hasLegacyFields);
-    },
-
-    async _purgeRemovedIrregularComparisonTopics() {
-        if (!window.FirestoreDB || !Auth.isSignedIn || !Auth.isSignedIn()) return false;
-
-        try {
-            const cards = await FirestoreDB.getCards({});
-            const targets = cards.filter(card => this._getRemovedIrregularComparisonTargets(card));
-
-            let deleted = 0;
-            let failed = 0;
-            for (const card of targets) {
-                const ok = await FirestoreDB.deleteCard(card.id);
-                if (ok) deleted++;
-                else failed++;
-            }
-
-            console.log('[VocabularyPage] Purged removed irregular comparison topics:', {
-                scanned: cards.length,
-                targeted: targets.length,
-                deleted,
-                failed
-            });
-
-            return targets.length > 0 && failed === 0;
-        } catch (e) {
-            console.warn('[VocabularyPage] Purge removed irregular comparison topics error:', e);
-            return false;
-        }
-    },
-
-    async _resetIrregularComparisonTopicsIfNeeded() {
-        return this._purgeRemovedIrregularComparisonTopics();
-    },
-
-    async _cleanupLegacyIrregularComparisonTopicCards() {
-        return this._purgeRemovedIrregularComparisonTopics();
-    },
 
     _openModeForAll() {
         let cards = (this._allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);

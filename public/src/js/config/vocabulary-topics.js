@@ -277,6 +277,20 @@ const VocabularyTopics = [
         icon: 'timelapse',
         category: 'irregular',
         order: 36
+    },
+    {
+        id: 'irregular-adj-comparative',
+        name: 'Irregular Comparison Comparative (So sánh hơn bất quy tắc)',
+        icon: 'trending_up',
+        category: 'irregular',
+        order: 37
+    },
+    {
+        id: 'irregular-adj-superlative',
+        name: 'Irregular Comparison Superlative (So sánh nhất bất quy tắc)',
+        icon: 'emoji_events',
+        category: 'irregular',
+        order: 38
     }
 ];
 
