@@ -4,10 +4,10 @@
     "topicName": "Mathematics",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Mathematics (B1-B2)",
-    "totalCards": 60,
+    "totalCards": 57,
     "totalFamilies": 7,
     "generatedAt": "2026-05-08",
-    "note": "Tu vung va thuat ngu mon Toan, gom so hoc, phep toan, phan so, dai so, hinh hoc, thong ke, xac suat va giai tich."
+    "note": "Tu vung va thuat ngu mon Toan hoc, gom so hoc, phep toan, do luong, dai so, hinh hoc, thong ke-xac suat va giai tich. Tu data duoc tach sang Cong nghe thong tin."
   },
   "cards": [
     {
@@ -481,19 +481,6 @@
     },
     {
       "fieldValues": {
-        "word": "data",
-        "ipa": "/ˈdeɪ.tə/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "dữ liệu",
-        "example": "The data was collected from a class survey.",
-        "familyId": "statistics-probability",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "graph",
         "ipa": "/ɡrɑːf/",
         "partOfSpeech": "noun",
@@ -762,32 +749,6 @@
         "example": "A series is the sum of the terms of a sequence.",
         "familyId": "calculus",
         "familyOrder": 18,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "convergence",
-        "ipa": "/kənˈvɜː.dʒəns/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "sự hội tụ",
-        "example": "Convergence means that a sequence approaches a fixed value.",
-        "familyId": "calculus",
-        "familyOrder": 19,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "divergence",
-        "ipa": "/daɪˈvɜː.dʒəns/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "sự phân kỳ",
-        "example": "Divergence occurs when a series does not approach a finite value.",
-        "familyId": "calculus",
-        "familyOrder": 20,
         "tags": []
       }
     }

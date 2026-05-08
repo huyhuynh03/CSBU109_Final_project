@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "topicId": "science",
+    "topicName": "Science",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
+    "totalCards": 1,
+    "totalFamilies": 1,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom khai niem khoa hoc tong quat, nghien cuu va moi truong phong thi nghiem khong rieng cho mot mon."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "laboratory",
+        "ipa": "/ləˈbɒr.ə.tər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng thí nghiệm",
+        "example": "Scientists conduct experiments in a laboratory.",
+        "familyId": "science-places",
+        "familyOrder": 1,
+        "tags": []
+      }
+    }
+  ]
+}

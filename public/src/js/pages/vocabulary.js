@@ -22,10 +22,12 @@ const VocabularyPage = {
         'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
         'literature-reading': 'literature-reading.json',
+        'science': 'science.json',
         'mathematics': 'mathematics.json',
         'biology': 'biology.json',
         'chemistry': 'chemistry.json',
         'physics': 'physics.json',
+        'information-technology': 'information-technology.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
         'irregular-verb-v3': 'irregular-verb-v3.json',
@@ -1078,6 +1080,9 @@ const VocabularyPage = {
         // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
         await this._cleanupLegacyEducationGoodWellComparisonCards();
 
+        // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
+        await this._runVocabularyTopicMigration();
+
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
             for (const [topicId, filename] of Object.entries(this._seedTopics)) {
@@ -1093,6 +1098,113 @@ const VocabularyPage = {
             this._loadTopics();
         } catch (e) {
             console.error('[VocabularyPage] Auto-seed error:', e);
+        }
+    },
+
+    async _runVocabularyTopicMigration() {
+        if (!window.FirestoreDB) return;
+
+        const normalize = (value) => String(value || '').trim().toLowerCase();
+        const buildKey = (card, folderId = card.folderId) => {
+            const fv = card.fieldValues || {};
+            return [folderId || '', normalize(fv.word), normalize(fv.partOfSpeech)].join('|');
+        };
+
+        const migrations = [
+            {
+                fromFolder: 'chemistry',
+                toFolder: 'physics',
+                words: new Set(['atom', 'proton', 'electron', 'neutron']),
+                familyId: 'atomic-physics',
+                examples: {
+                    atom: 'An atom contains a nucleus and electrons.',
+                    proton: 'A proton is a positively charged particle in the nucleus.',
+                    electron: 'An electron is a negatively charged particle.',
+                    neutron: 'A neutron is a neutral particle in the nucleus.'
+                }
+            },
+            {
+                fromFolder: 'chemistry',
+                toFolder: 'science',
+                words: new Set(['laboratory']),
+                familyId: 'science-places',
+                examples: {
+                    laboratory: 'Scientists conduct experiments in a laboratory.'
+                }
+            },
+            {
+                fromFolder: 'mathematics',
+                toFolder: 'physics',
+                words: new Set(['convergence', 'divergence']),
+                familyId: 'waves-fields',
+                examples: {
+                    convergence: 'Convergence can describe waves or rays coming together at a point.',
+                    divergence: 'Divergence can describe rays or fields spreading out from a source.'
+                }
+            },
+            {
+                fromFolder: 'mathematics',
+                toFolder: 'information-technology',
+                words: new Set(['data']),
+                familyId: 'it-data',
+                examples: {
+                    data: 'Modern applications collect and process large amounts of data.'
+                }
+            }
+        ];
+
+        try {
+            const cards = await FirestoreDB.getCards({});
+            const vocabularyCards = (cards || []).filter(card => card.cardType === 'vocabulary' || !card.cardType);
+            const existingKeys = new Set(vocabularyCards.map(card => buildKey(card)));
+            let moved = 0;
+            let deletedDuplicates = 0;
+
+            for (const migration of migrations) {
+                const targets = vocabularyCards.filter(card => {
+                    const fv = card.fieldValues || {};
+                    return card.folderId === migration.fromFolder && migration.words.has(normalize(fv.word));
+                });
+
+                for (const card of targets) {
+                    const fv = card.fieldValues || {};
+                    const word = normalize(fv.word);
+                    const targetKey = buildKey(card, migration.toFolder);
+
+                    // Nếu bản đúng topic đã tồn tại, xoá bản sai topic để tránh duplicate sau khi seed.
+                    if (existingKeys.has(targetKey)) {
+                        const deleted = await FirestoreDB.deleteCard(card.id);
+                        if (deleted) {
+                            deletedDuplicates++;
+                            existingKeys.delete(buildKey(card));
+                        }
+                        console.log('[VocabularyPage] Deleted migrated duplicate card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
+                        continue;
+                    }
+
+                    const nextFieldValues = {
+                        ...fv,
+                        familyId: migration.familyId,
+                        familyOrder: fv.familyOrder || 1,
+                        example: migration.examples[word] || fv.example
+                    };
+
+                    await FirestoreDB.updateCard(card.id, {
+                        folderId: migration.toFolder,
+                        fieldValues: nextFieldValues
+                    });
+                    existingKeys.delete(buildKey(card));
+                    existingKeys.add(targetKey);
+                    moved++;
+                    console.log('[VocabularyPage] Migrated vocabulary topic card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
+                }
+            }
+
+            if (moved || deletedDuplicates) {
+                console.log('[VocabularyPage] Vocabulary topic migration completed:', { moved, deletedDuplicates });
+            }
+        } catch (e) {
+            console.warn('[VocabularyPage] Vocabulary topic migration error:', e);
         }
     },
 

@@ -4,10 +4,10 @@
     "topicName": "Chemistry",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Chemistry (B1-B2)",
-    "totalCards": 40,
+    "totalCards": 35,
     "totalFamilies": 8,
     "generatedAt": "2026-05-08",
-    "note": "Tu vung va thuat ngu mon Hoa hoc, gom cau truc nguyen tu, bang tuan hoan, phan ung hoa hoc, axit-bazo, dung dich, trang thai vat chat va phong thi nghiem hoa hoc."
+    "note": "Tu vung va thuat ngu mon Hoa hoc, gom chat, phan tu, nguyen to, bang tuan hoan, phan ung hoa hoc, axit-bazo, dung dich, trang thai vat chat va dung cu thi nghiem hoa hoc. Cac hat co ban nhu proton/electron/neutron duoc tach sang Vat ly; phong thi nghiem chung duoc tach sang Khoa hoc."
   },
   "cards": [
     {
@@ -51,19 +51,6 @@
     },
     {
       "fieldValues": {
-        "word": "atom",
-        "ipa": "/ˈæt.əm/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "nguyên tử",
-        "example": "An atom is the smallest unit of an element.",
-        "familyId": "atomic-structure",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "molecule",
         "ipa": "/ˈmɒl.ɪ.kjuːl/",
         "partOfSpeech": "noun",
@@ -98,45 +85,6 @@
         "example": "Salt is a compound of sodium and chlorine.",
         "familyId": "atomic-structure",
         "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "proton",
-        "ipa": "/ˈprəʊ.tɒn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "proton",
-        "example": "A proton has a positive charge.",
-        "familyId": "atomic-structure",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "electron",
-        "ipa": "/iˈlek.trɒn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "electron",
-        "example": "Electrons move around the nucleus of an atom.",
-        "familyId": "atomic-structure",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "neutron",
-        "ipa": "/ˈnjuː.trɒn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "neutron",
-        "example": "A neutron has no electric charge.",
-        "familyId": "atomic-structure",
-        "familyOrder": 7,
         "tags": []
       }
     },
@@ -463,19 +411,6 @@
         "example": "Condensation forms water droplets on a cold surface.",
         "familyId": "states-matter",
         "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "laboratory",
-        "ipa": "/ləˈbɒr.ə.tər.i/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "phòng thí nghiệm",
-        "example": "We tested the sample in the chemistry laboratory.",
-        "familyId": "lab-chemistry",
-        "familyOrder": 1,
         "tags": []
       }
     },

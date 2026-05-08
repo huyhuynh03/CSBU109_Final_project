@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.108
-const CACHE_NAME = 'linguaflash-v5.108';
+// LinguaFlash Service Worker v5.111
+const CACHE_NAME = 'linguaflash-v5.111';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -34,7 +34,7 @@ const STATIC_ASSETS = [
     '/src/js/fsrs/bqt-v2-cleanup.js?v=4',
     '/src/js/fsrs/card-mode-manager.js?v=4',
     '/src/js/pages/home.js?v=13',
-    '/src/js/pages/vocabulary.js?v=57',
+    '/src/js/pages/vocabulary.js?v=60',
     '/src/js/pages/topic-detail.js?v=10',
     '/src/js/pages/grammar.js?v=3',
     '/src/js/pages/study.js?v=22',

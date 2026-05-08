@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "topicId": "information-technology",
+    "topicName": "Information Technology",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Information Technology (B1-B2)",
+    "totalCards": 1,
+    "totalFamilies": 1,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung nen tang cho chu de Cong nghe thong tin, gom du lieu, he thong may tinh, phan mem, mang va bao mat."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "data",
+        "ipa": "/ˈdeɪ.tə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dữ liệu",
+        "example": "Modern applications collect and process large amounts of data.",
+        "familyId": "it-data",
+        "familyOrder": 1,
+        "tags": []
+      }
+    }
+  ]
+}

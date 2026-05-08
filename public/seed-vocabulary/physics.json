@@ -4,10 +4,10 @@
     "topicName": "Physics",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Physics (B1-B2)",
-    "totalCards": 40,
-    "totalFamilies": 8,
+    "totalCards": 46,
+    "totalFamilies": 10,
     "generatedAt": "2026-05-08",
-    "note": "Tu vung va thuat ngu mon Vat ly, gom luc va chuyen dong, nang luong, nhiet, dien-tu, song-am-thanh-anh sang, chat long va thi nghiem vat ly."
+    "note": "Tu vung va thuat ngu mon Vat ly, gom luc va chuyen dong, nang luong, nhiet, dien-tu, cau truc nguyen tu/co hoc hat co ban, song-truong-am-thanh-anh sang, chat long va thi nghiem vat ly."
   },
   "cards": [
     {
@@ -527,6 +527,84 @@
         "example": "The experiment tested the effect of friction.",
         "familyId": "physics-lab",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "atom",
+        "ipa": "/ˈæt.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên tử",
+        "example": "An atom contains a nucleus and electrons.",
+        "familyId": "atomic-physics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proton",
+        "ipa": "/ˈprəʊ.tɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "proton",
+        "example": "A proton is a positively charged particle in the nucleus.",
+        "familyId": "atomic-physics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electron",
+        "ipa": "/iˈlek.trɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "electron",
+        "example": "An electron is a negatively charged particle.",
+        "familyId": "atomic-physics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neutron",
+        "ipa": "/ˈnjuː.trɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "neutron",
+        "example": "A neutron is a neutral particle in the nucleus.",
+        "familyId": "atomic-physics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convergence",
+        "ipa": "/kənˈvɜː.dʒəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hội tụ",
+        "example": "Convergence can describe waves or rays coming together at a point.",
+        "familyId": "waves-fields",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divergence",
+        "ipa": "/daɪˈvɜː.dʒəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phân kỳ",
+        "example": "Divergence can describe rays or fields spreading out from a source.",
+        "familyId": "waves-fields",
+        "familyOrder": 2,
         "tags": []
       }
     }
