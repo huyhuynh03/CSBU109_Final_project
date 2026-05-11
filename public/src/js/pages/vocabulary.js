@@ -1078,10 +1078,12 @@ const VocabularyPage = {
         }
 
         // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
-        await this._cleanupLegacyEducationGoodWellComparisonCards();
+        const needReloadFromCleanup = await this._cleanupLegacyEducationGoodWellComparisonCards();
 
         // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
-        await this._runVocabularyTopicMigration();
+        const needReloadFromMigration = await this._runVocabularyTopicMigration();
+        
+        const needReload = needReloadFromCleanup || needReloadFromMigration;
 
         try {
             // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
@@ -1091,6 +1093,12 @@ const VocabularyPage = {
             }
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
+            }
+            
+            // Reload _allCards nếu migration đã thay đổi folderId
+            if (needReload) {
+                console.log('[VocabularyPage] Reloading cards after migration...');
+                this._allCards = await FirestoreDB.getCards({});
             }
             
             // Reload stats sau khi seed xong để cập nhật UI
@@ -1189,27 +1197,34 @@ const VocabularyPage = {
                         example: migration.examples[word] || fv.example
                     };
 
-                    await FirestoreDB.updateCard(card.id, {
+                    const updated = await FirestoreDB.updateCard(card.id, {
                         folderId: migration.toFolder,
                         fieldValues: nextFieldValues
                     });
-                    existingKeys.delete(buildKey(card));
-                    existingKeys.add(targetKey);
-                    moved++;
-                    console.log('[VocabularyPage] Migrated vocabulary topic card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
+                    
+                    if (updated) {
+                        existingKeys.delete(buildKey(card));
+                        existingKeys.add(targetKey);
+                        moved++;
+                        console.log('[VocabularyPage] Migrated vocabulary topic card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
+                    }
                 }
             }
 
             if (moved || deletedDuplicates) {
                 console.log('[VocabularyPage] Vocabulary topic migration completed:', { moved, deletedDuplicates });
+                // Reload _allCards để cập nhật folderId mới sau migration
+                return true; // Signal that reload is needed
             }
+            return false;
         } catch (e) {
             console.warn('[VocabularyPage] Vocabulary topic migration error:', e);
+            return false;
         }
     },
 
     async _cleanupLegacyEducationGoodWellComparisonCards() {
-        if (!window.FirestoreDB) return;
+        if (!window.FirestoreDB) return false;
         try {
             // Query rộng theo folder để bắt cả card legacy thiếu/sai cardType.
             const cards = await FirestoreDB.getCards({ folderId: 'education' });
@@ -1221,6 +1236,7 @@ const VocabularyPage = {
                 return word === 'better' || word === 'best';
             });
 
+            let changed = 0;
             for (const card of legacyCards) {
                 const fv = card.fieldValues || {};
                 const word = String(fv.word || '').trim().toLowerCase();
@@ -1229,16 +1245,25 @@ const VocabularyPage = {
                 if (word === 'well' && pos === 'adverb') {
                     await FirestoreDB.updateCard(card.id, { folderId: 'personal-qualities' });
                     console.log('[VocabularyPage] Moved legacy education card to personal-qualities:', card.id, 'well');
+                    changed++;
                     continue;
                 }
 
                 // better/best là card dạng so sánh, đã có seed riêng trong irregular-comparative/superlative.
                 // Xoá bản legacy trong education để không còn hiện trùng ở topic Giáo dục.
                 const deleted = await FirestoreDB.deleteCard(card.id);
+                if (deleted) changed++;
                 console.log('[VocabularyPage] Deleted legacy education comparison card:', { id: card.id, word, pos, deleted });
             }
+            
+            if (changed > 0) {
+                console.log('[VocabularyPage] Legacy education cleanup completed:', { changed });
+                return true; // Signal that reload is needed
+            }
+            return false;
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
+            return false;
         }
     },
 
