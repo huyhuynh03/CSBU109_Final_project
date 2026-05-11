@@ -1,0 +1,12 @@
+{
+  "name": "linguaflash-maintenance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maintenance scripts for LinguaFlash Firestore data cleanup.",
+  "scripts": {
+    "delete:atom:chemistry": "node docs/delete-atom-from-chemistry.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.5.0"
+  }
+}
