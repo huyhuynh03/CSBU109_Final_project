@@ -66,7 +66,7 @@ const TopicDetailPage = {
         const invalidRules = [
             { folderId: 'chemistry', words: new Set(['atom', 'laboratory']) },
             { folderId: 'mathematics', words: new Set(['convergence', 'divergence']) },
-            { folderId: 'education', words: new Set(['laboratory']) }
+            { folderId: 'education', words: new Set(['laboratory', 'research']) }
         ];
 
         return invalidRules.find(rule => rule.folderId === folderId && rule.words.has(word)) || null;

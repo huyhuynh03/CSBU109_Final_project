@@ -4,8 +4,8 @@
     "topicName": "Science",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
-    "totalCards": 1,
-    "totalFamilies": 1,
+    "totalCards": 2,
+    "totalFamilies": 2,
     "generatedAt": "2026-05-08",
     "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom khai niem khoa hoc tong quat, nghien cuu va moi truong phong thi nghiem khong rieng cho mot mon."
   },
@@ -20,6 +20,19 @@
         "example": "Scientists conduct experiments in a laboratory.",
         "familyId": "science-places",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "research",
+        "ipa": "/rɪˈsɜːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghiên cứu",
+        "example": "Scientists do research to discover new knowledge.",
+        "familyId": "science-methods",
+        "familyOrder": 2,
         "tags": []
       }
     }

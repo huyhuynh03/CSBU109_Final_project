@@ -1228,19 +1228,6 @@
     },
     {
       "fieldValues": {
-        "word": "research",
-        "ipa": "/rɪˈsɜːtʃ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "nghiên cứu",
-        "example": "University students often do research for their assignments.",
-        "familyId": "learning-methods",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "critical thinking",
         "ipa": "/ˌkrɪt.ɪ.kəl ˈθɪŋ.kɪŋ/",
         "partOfSpeech": "noun",

@@ -1187,10 +1187,15 @@ const VocabularyPage = {
             {
                 fromFolder: 'education',
                 toFolder: 'science',
-                words: new Set(['laboratory']),
+                words: new Set(['laboratory', 'research']),
                 familyId: 'science-places',
+                familyIds: {
+                    laboratory: 'science-places',
+                    research: 'science-methods'
+                },
                 examples: {
-                    laboratory: 'Scientists conduct experiments in a laboratory.'
+                    laboratory: 'Scientists conduct experiments in a laboratory.',
+                    research: 'Scientists do research to discover new knowledge.'
                 }
             },
             {
@@ -1257,7 +1262,7 @@ const VocabularyPage = {
 
                     const nextFieldValues = {
                         ...fv,
-                        familyId: migration.familyId,
+                        familyId: migration.familyIds && migration.familyIds[word] || migration.familyId,
                         familyOrder: fv.familyOrder || 1,
                         example: migration.examples[word] || fv.example
                     };
