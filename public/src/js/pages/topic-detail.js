@@ -45,12 +45,44 @@ const TopicDetailPage = {
     async _loadCards() {
         try {
             const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            this._cards = allCards.filter(c => c.folderId === this._topicId);
+            let topicCards = allCards.filter(c => c.folderId === this._topicId);
+
+            // Cleanup mạnh tay ngay tại trang topic: dữ liệu cũ từng có "atom" trong Chemistry
+            // phải biến mất khỏi UI lập tức và bị xóa khỏi Firestore của user hiện tại.
+            if (this._topicId === 'chemistry') {
+                topicCards = await this._purgeRemovedChemistryAtomCards(topicCards);
+            }
+
+            this._cards = topicCards;
             this._renderPage();
         } catch (error) {
             console.error('[TopicDetailPage] Load cards error:', error);
             this._renderError('Không tải được dữ liệu thẻ');
         }
+    },
+
+    _isRemovedChemistryAtomCard(card) {
+        const fv = card && card.fieldValues || {};
+        const word = String(fv.word || card.word || card.front || '').trim().toLowerCase();
+        return card && card.folderId === 'chemistry' && word === 'atom';
+    },
+
+    async _purgeRemovedChemistryAtomCards(topicCards) {
+        const removedCards = topicCards.filter(card => this._isRemovedChemistryAtomCard(card));
+        if (!removedCards.length) return topicCards;
+
+        console.warn('[TopicDetailPage] Purging removed Chemistry atom cards:', removedCards.map(card => card.id));
+        for (const card of removedCards) {
+            try {
+                const deleted = await FirestoreDB.deleteCard(card.id);
+                console.warn('[TopicDetailPage] Deleted Chemistry atom card:', { id: card.id, deleted });
+            } catch (error) {
+                console.error('[TopicDetailPage] Failed deleting Chemistry atom card:', card.id, error);
+            }
+        }
+
+        // Không cho hiển thị lại dù delete tạm thời lỗi/network pending.
+        return topicCards.filter(card => !this._isRemovedChemistryAtomCard(card));
     },
 
     // -------------------------------------------

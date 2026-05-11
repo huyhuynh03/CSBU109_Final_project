@@ -304,14 +304,16 @@ const FirestoreDB = {
      */
     async updateCard(cardId, updates) {
         const ref = this._userCollection('cards');
-        if (!ref) return;
+        if (!ref) return false;
         try {
             await ref.doc(cardId).update({
                 ...updates,
                 updatedAt: firebase.firestore.FieldValue.serverTimestamp()
             });
+            return true;
         } catch (error) {
             console.error('[Firestore] Error updating card:', error);
+            return false;
         }
     },
 
