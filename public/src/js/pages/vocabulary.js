@@ -695,6 +695,48 @@ const VocabularyPage = {
         return best;
     },
 
+    /**
+     * Match cả cụm từ đã normalize, quan trọng cho nghĩa tiếng Việt nhiều token
+     * như "nguyên tử" -> "nguyen tu". Nếu chỉ so token đơn lẻ thì query
+     * "nguyen tu" sẽ không bao giờ match token "nguyen" hoặc "tu".
+     */
+    _textScore(text, query) {
+        if (!text || !query) return -1;
+        if (text === query) return 0;
+        if (text.startsWith(query)) return 3;
+
+        const idx = text.indexOf(query);
+        if (idx !== -1) return 10 + idx;
+
+        const tokenScore = this._bestTokenScore(text, query);
+        if (tokenScore !== -1) return 100 + tokenScore;
+
+        const queryTokens = this._tokenize(query);
+        if (queryTokens.length > 1) {
+            const textTokens = this._tokenize(text);
+            let total = 0;
+            let lastIndex = -1;
+
+            for (const qToken of queryTokens) {
+                let best = { score: -1, index: -1 };
+                for (let i = 0; i < textTokens.length; i++) {
+                    const score = this._tokenScore(textTokens[i], qToken);
+                    if (score !== -1 && (best.score === -1 || score < best.score)) {
+                        best = { score, index: i };
+                    }
+                }
+                if (best.score === -1) return -1;
+                total += best.score;
+                if (lastIndex !== -1 && best.index < lastIndex) total += 25;
+                lastIndex = best.index;
+            }
+
+            return 200 + total;
+        }
+
+        return -1;
+    },
+
     _performSearch(query) {
         const qNorm = this._normalize(query);
         if (!qNorm) {
@@ -717,19 +759,19 @@ const VocabularyPage = {
 
             // Tính điểm từng nguồn — chỉ cộng penalty SAU khi xác nhận match
             const candidates = [];
-            const sWord = this._bestTokenScore(word, qNorm);
+            const sWord = this._textScore(word, qNorm);
             if (sWord !== -1) candidates.push(sWord);                // EN ưu tiên cao nhất
 
-            const sMeaning = this._bestTokenScore(meaning, qNorm);
+            const sMeaning = this._textScore(meaning, qNorm);
             if (sMeaning !== -1) candidates.push(sMeaning + 10);     // VI: penalty nhỏ
 
-            const sVar = this._bestTokenScore(variantsTxt, qNorm);
+            const sVar = this._textScore(variantsTxt, qNorm);
             if (sVar !== -1) candidates.push(sVar + 30);
 
-            const sIpa = this._bestTokenScore(ipa, qNorm);
+            const sIpa = this._textScore(ipa, qNorm);
             if (sIpa !== -1) candidates.push(sIpa + 100);
 
-            const sPos = this._bestTokenScore(pos, qNorm);
+            const sPos = this._textScore(pos, qNorm);
             if (sPos !== -1) candidates.push(sPos + 200);
 
             if (candidates.length > 0) {
