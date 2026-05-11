@@ -1077,27 +1077,29 @@ const VocabularyPage = {
             try { await BqtV2Cleanup.run(); } catch (e) { console.warn('[VocabularyPage] BqtV2Cleanup error:', e); }
         }
 
-        // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
-        const needReloadFromCleanup = await this._cleanupLegacyEducationGoodWellComparisonCards();
-
-        // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
-        const needReloadFromMigration = await this._runVocabularyTopicMigration();
-        
-        const needReload = needReloadFromCleanup || needReloadFromMigration;
-
         try {
-            // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash
+            // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash.
+            // Quan trọng: cleanup/migration phải chạy SAU seed, vì seed có thể tạo lại card
+            // ở topic cũ nếu dữ liệu legacy từng tồn tại theo identity khác.
             for (const [topicId, filename] of Object.entries(this._seedTopics)) {
                 const result = await SeedImporter.importFile(filename);
                 console.log(`[VocabularyPage] Seeded "${topicId}": +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
             }
+
+            // Dọn dữ liệu cũ: well/better/best từng bị lưu lạc trong topic education.
+            const needReloadFromCleanup = await this._cleanupLegacyEducationGoodWellComparisonCards();
+
+            // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
+            const needReloadFromMigration = await this._runVocabularyTopicMigration();
+            const needReload = needReloadFromCleanup || needReloadFromMigration;
+
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
             }
             
-            // Reload _allCards nếu migration đã thay đổi folderId
+            // Reload _allCards nếu cleanup/migration đã thay đổi folderId hoặc xoá duplicate thật.
             if (needReload) {
-                console.log('[VocabularyPage] Reloading cards after migration...');
+                console.log('[VocabularyPage] Reloading cards after cleanup/migration...');
                 this._allCards = await FirestoreDB.getCards({});
             }
             
@@ -1164,7 +1166,16 @@ const VocabularyPage = {
         try {
             const cards = await FirestoreDB.getCards({});
             const vocabularyCards = (cards || []).filter(card => card.cardType === 'vocabulary' || !card.cardType);
-            const existingKeys = new Set(vocabularyCards.map(card => buildKey(card)));
+            const findEquivalentInFolder = (sourceCard, folderId) => {
+                const sourceFv = sourceCard.fieldValues || {};
+                const sourceWord = normalize(sourceFv.word);
+                const sourcePos = normalize(sourceFv.partOfSpeech);
+                return vocabularyCards.find(card => {
+                    if (card.id === sourceCard.id || card.folderId !== folderId) return false;
+                    const fv = card.fieldValues || {};
+                    return normalize(fv.word) === sourceWord && normalize(fv.partOfSpeech) === sourcePos;
+                });
+            };
             let moved = 0;
             let deletedDuplicates = 0;
 
@@ -1177,16 +1188,19 @@ const VocabularyPage = {
                 for (const card of targets) {
                     const fv = card.fieldValues || {};
                     const word = normalize(fv.word);
-                    const targetKey = buildKey(card, migration.toFolder);
+                    const duplicateInTarget = findEquivalentInFolder(card, migration.toFolder);
 
-                    // Nếu bản đúng topic đã tồn tại, xoá bản sai topic để tránh duplicate sau khi seed.
-                    if (existingKeys.has(targetKey)) {
+                    // Nếu bản đúng topic đã tồn tại, xoá bản sai topic để mỗi từ chỉ còn 1 thẻ canonical.
+                    if (duplicateInTarget) {
                         const deleted = await FirestoreDB.deleteCard(card.id);
-                        if (deleted) {
-                            deletedDuplicates++;
-                            existingKeys.delete(buildKey(card));
-                        }
-                        console.log('[VocabularyPage] Deleted migrated duplicate card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
+                        if (deleted) deletedDuplicates++;
+                        console.log('[VocabularyPage] Deleted migrated duplicate card:', {
+                            id: card.id,
+                            duplicateId: duplicateInTarget.id,
+                            word,
+                            from: migration.fromFolder,
+                            to: migration.toFolder
+                        });
                         continue;
                     }
 
@@ -1203,8 +1217,8 @@ const VocabularyPage = {
                     });
                     
                     if (updated) {
-                        existingKeys.delete(buildKey(card));
-                        existingKeys.add(targetKey);
+                        card.folderId = migration.toFolder;
+                        card.fieldValues = nextFieldValues;
                         moved++;
                         console.log('[VocabularyPage] Migrated vocabulary topic card:', { id: card.id, word, from: migration.fromFolder, to: migration.toFolder });
                     }
