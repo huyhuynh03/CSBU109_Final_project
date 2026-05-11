@@ -1185,6 +1185,15 @@ const VocabularyPage = {
                 }
             },
             {
+                fromFolder: 'education',
+                toFolder: 'science',
+                words: new Set(['laboratory']),
+                familyId: 'science-places',
+                examples: {
+                    laboratory: 'Scientists conduct experiments in a laboratory.'
+                }
+            },
+            {
                 fromFolder: 'mathematics',
                 toFolder: 'physics',
                 words: new Set(['convergence', 'divergence']),

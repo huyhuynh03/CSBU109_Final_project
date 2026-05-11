@@ -824,19 +824,6 @@
     },
     {
       "fieldValues": {
-        "word": "laboratory",
-        "ipa": "/ləˈbɒr.ə.tər.i/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "phòng thí nghiệm",
-        "example": "We did a chemistry experiment in the laboratory.",
-        "familyId": "school-places",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "playground",
         "ipa": "/ˈpleɪ.ɡraʊnd/",
         "partOfSpeech": "noun",
