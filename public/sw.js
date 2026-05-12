@@ -1,9 +1,10 @@
-// LinguaFlash Service Worker v5.122
-const CACHE_NAME = 'linguaflash-v5.122';
+// LinguaFlash Service Worker v5.123
+const CACHE_NAME = 'linguaflash-v5.123';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
     '/manifest.json',
+    '/seed-vocabulary/space.json',
     '/src/css/variables.css?v=5',
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
