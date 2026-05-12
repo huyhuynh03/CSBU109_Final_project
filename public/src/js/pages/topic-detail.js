@@ -44,8 +44,16 @@ const TopicDetailPage = {
 
     async _loadCards() {
         try {
-            const allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+            let allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
             let topicCards = allCards.filter(c => c.folderId === this._topicId);
+
+            if (topicCards.length === 0) {
+                const seeded = await this._tryAutoSeedEmptyTopic();
+                if (seeded) {
+                    allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+                    topicCards = allCards.filter(c => c.folderId === this._topicId);
+                }
+            }
 
             // Cleanup mạnh tay ngay tại trang topic: dữ liệu cũ sai taxonomy
             // phải biến mất khỏi UI lập tức và bị xóa khỏi Firestore của user hiện tại.
@@ -56,6 +64,22 @@ const TopicDetailPage = {
         } catch (error) {
             console.error('[TopicDetailPage] Load cards error:', error);
             this._renderError('Không tải được dữ liệu thẻ');
+        }
+    },
+
+    async _tryAutoSeedEmptyTopic() {
+        if (!window.SeedImporter || typeof VocabularyPage === 'undefined') return false;
+        const seedTopics = VocabularyPage._seedTopics || {};
+        const filename = seedTopics[this._topicId];
+        if (!filename) return false;
+
+        try {
+            const result = await SeedImporter.importFile(filename);
+            console.log('[TopicDetailPage] Auto-seeded empty topic "' + this._topicId + '": +' + result.created + ' created, ' + (result.updated || 0) + ' updated, ' + result.skipped + ' skipped');
+            return (result.created || result.updated || result.skipped) > 0;
+        } catch (error) {
+            console.warn('[TopicDetailPage] Auto-seed empty topic failed:', this._topicId, error);
+            return false;
         }
     },
 

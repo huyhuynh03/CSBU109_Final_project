@@ -34,6 +34,7 @@ const VocabularyPage = {
         'chemistry': 'chemistry.json',
         'physics': 'physics.json',
         'information-technology': 'information-technology.json',
+        'space': 'space.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
         'irregular-verb-v3': 'irregular-verb-v3.json',
