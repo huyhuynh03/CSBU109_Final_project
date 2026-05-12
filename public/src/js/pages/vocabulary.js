@@ -22,6 +22,7 @@ const VocabularyPage = {
         'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
         'psychology': 'psychology.json',
+        'culture': 'culture.json',
         'literature-reading': 'literature-reading.json',
         'science': 'science.json',
         'mathematics': 'mathematics.json',
