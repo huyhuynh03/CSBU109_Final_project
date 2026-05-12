@@ -18,6 +18,7 @@ const VocabularyPage = {
         'daily-activities': 'daily-activities.json',
         'health': 'health.json',
         'communication-social': 'communication-social.json',
+        'media-entertainment': 'media-entertainment.json',
         'personal-qualities': 'personal-qualities.json',
         'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
