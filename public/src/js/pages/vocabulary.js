@@ -19,6 +19,7 @@ const VocabularyPage = {
         'health': 'health.json',
         'communication-social': 'communication-social.json',
         'media-entertainment': 'media-entertainment.json',
+        'sports': 'sports.json',
         'personal-qualities': 'personal-qualities.json',
         'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
