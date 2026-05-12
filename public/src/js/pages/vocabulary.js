@@ -21,6 +21,7 @@ const VocabularyPage = {
         'personal-qualities': 'personal-qualities.json',
         'emotion-feelings': 'emotion-feelings.json',
         'education': 'education.json',
+        'psychology': 'psychology.json',
         'literature-reading': 'literature-reading.json',
         'science': 'science.json',
         'mathematics': 'mathematics.json',
