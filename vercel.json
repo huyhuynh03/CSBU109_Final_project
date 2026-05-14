@@ -26,6 +26,17 @@
             "dest": "/public/icons/$1"
         },
         {
+            "src": "/seed-vocabulary/(.*)",
+            "dest": "/public/seed-vocabulary/$1"
+        },
+        {
+            "src": "/src/js/firebase-config.js",
+            "dest": "/public/src/js/firebase-config.js",
+            "headers": {
+                "Cache-Control": "no-cache, no-store, must-revalidate"
+            }
+        },
+        {
             "src": "/src/(.*)",
             "dest": "/public/src/$1",
             "headers": {
