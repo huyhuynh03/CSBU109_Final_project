@@ -1128,11 +1128,27 @@ const VocabularyPage = {
         }
 
         try {
-            // Seed tất cả topics — SeedImporter sẽ tự động update/create/skip dựa trên content hash.
-            // Quan trọng: cleanup/migration phải chạy SAU seed, vì seed có thể tạo lại card
-            // ở topic cũ nếu dữ liệu legacy từng tồn tại theo identity khác.
-            for (const [topicId, filename] of Object.entries(this._seedTopics)) {
-                const result = await SeedImporter.importFile(filename);
+            // [PERF] Query Firestore 1 lần duy nhất, cache map cho tất cả imports
+            // thay vì query lại mỗi topic (giảm từ 29 queries → 1 query).
+            const existingMap = await SeedImporter.getExistingCardsMap();
+
+            // [PERF] Fetch tất cả seed JSON files song song (network I/O)
+            const entries = Object.entries(this._seedTopics);
+            const seedFiles = await Promise.all(
+                entries.map(([, filename]) =>
+                    SeedImporter.loadSeedFile(filename).catch(e => {
+                        console.warn(`[VocabularyPage] Failed to load ${filename}:`, e.message);
+                        return null;
+                    })
+                )
+            );
+
+            // Import tuần tự (cần cập nhật existingMap khi tạo card mới)
+            for (let i = 0; i < entries.length; i++) {
+                const [topicId] = entries[i];
+                const seed = seedFiles[i];
+                if (!seed) continue;
+                const result = await SeedImporter.importSeed(seed, null, existingMap);
                 console.log(`[VocabularyPage] Seeded "${topicId}": +${result.created} created, ${result.updated || 0} updated, ${result.skipped} skipped`);
             }
 

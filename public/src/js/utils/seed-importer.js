@@ -86,15 +86,16 @@ const SeedImporter = {
      * Import seed JSON vào Firestore (skip nếu word đã tồn tại)
      * @param {Object} seed - { _meta, cases, cards: [...] }
      * @param {Function} onProgress - callback({ current, total, word, status })
+     * @param {Map} [cachedExistingMap] - Pre-loaded existing cards map (tránh query lại Firestore mỗi topic)
      * @returns {Promise<{ created, skipped, failed, total }>}
      */
-    async importSeed(seed, onProgress) {
+    async importSeed(seed, onProgress, cachedExistingMap) {
         if (!seed || !Array.isArray(seed.cards)) {
             throw new Error('File seed không hợp lệ (thiếu mảng cards)');
         }
 
         const defaultFolderId = (seed._meta && seed._meta.topicId) || null;
-        const existingMap = await this._getExistingCardsByIdentity();
+        const existingMap = cachedExistingMap || await this._getExistingCardsByIdentity();
         const total = seed.cards.length;
         let created = 0;
         let skipped = 0;
@@ -191,10 +192,20 @@ const SeedImporter = {
 
     /**
      * Tiện lợi: import 1 file seed có sẵn trong /public/seed-vocabulary/
+     * @param {string} filename
+     * @param {Function} [onProgress]
+     * @param {Map} [cachedExistingMap] - Pre-loaded map để tránh query Firestore mỗi file
      */
-    async importFile(filename, onProgress) {
+    async importFile(filename, onProgress, cachedExistingMap) {
         const seed = await this.loadSeedFile(filename);
-        return await this.importSeed(seed, onProgress);
+        return await this.importSeed(seed, onProgress, cachedExistingMap);
+    },
+
+    /**
+     * Public: lấy map identity -> card (dùng để cache 1 lần cho nhiều imports)
+     */
+    async getExistingCardsMap() {
+        return await this._getExistingCardsByIdentity();
     }
 };
 
