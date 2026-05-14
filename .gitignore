@@ -34,3 +34,7 @@ build/
 
 # Source assets (not for deployment)
 avatar_app.png
+
+# Service account keys (NEVER commit these)
+*-firebase-adminsdk-*.json
+service-account*.json
