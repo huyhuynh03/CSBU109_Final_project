@@ -105,6 +105,15 @@ const AuthPage = {
                     </button>
                     ` : ''}
                 </div>
+
+                <!-- PWA Install button - hiển thị bên ngoài card, dưới form -->
+                <div id="auth-install-btn" style="text-align:center;margin-top:var(--spacing-lg);display:none;">
+                    <button class="btn btn-secondary" onclick="PWAInstall.install()"
+                            style="display:inline-flex;align-items:center;gap:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-lg);border-radius:var(--radius-full);">
+                        <span class="material-icons-round" style="font-size:20px;">download</span>
+                        Cài đặt ứng dụng
+                    </button>
+                </div>
             </div>
         `;
     },
@@ -114,7 +123,20 @@ const AuthPage = {
         if (Auth.isSignedIn()) {
             Router.navigate('/');
         }
+        // Show install button if app is not yet installed
+        this._showInstallButton();
         console.log('[AuthPage] Entered, mode:', this.mode);
+    },
+
+    _showInstallButton() {
+        const btn = document.getElementById('auth-install-btn');
+        if (!btn) return;
+        // Show if not already installed as standalone
+        if (typeof PWAInstall !== 'undefined' && !PWAInstall._isInstalled) {
+            btn.style.display = 'block';
+        } else {
+            btn.style.display = 'none';
+        }
     },
 
     switchMode(mode) {
