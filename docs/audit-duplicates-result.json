@@ -1,0 +1,794 @@
+{
+  "generatedAt": "2026-05-14T07:03:39.192Z",
+  "totalCards": 2517,
+  "duplicates": [
+    {
+      "word": "affection",
+      "partOfSpeech": "noun",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "allergy",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "ancestor",
+      "partOfSpeech": "noun",
+      "keepInTopic": "biology",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "appointment",
+      "partOfSpeech": "noun",
+      "keepInTopic": "health",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "argue",
+      "partOfSpeech": "verb",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "attached",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "balanced",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "battery",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "breakfast",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "calm",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "caring",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "charge",
+      "partOfSpeech": "verb",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "cheerful",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "clean",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "comfortable",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "comment",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "commute",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "confident",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "conflict",
+      "partOfSpeech": "noun",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships",
+        "literature-reading"
+      ]
+    },
+    {
+      "word": "cook",
+      "partOfSpeech": "verb",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "curious",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "dialogue",
+      "partOfSpeech": "noun",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "literature-reading"
+      ]
+    },
+    {
+      "word": "dinner",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "download",
+      "partOfSpeech": "verb",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "dust",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "emotional",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "empathy",
+      "partOfSpeech": "noun",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "exhausted",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "fall asleep",
+      "partOfSpeech": "phrase",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "forgiving",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "friendly",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "family-relationships",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "friendship",
+      "partOfSpeech": "noun",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "function",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "mathematics"
+      ]
+    },
+    {
+      "word": "get dressed",
+      "partOfSpeech": "phrase",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "get up",
+      "partOfSpeech": "phrasal verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "good",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "personal-qualities",
+      "deleteFromTopics": [
+        "education"
+      ]
+    },
+    {
+      "word": "healthy",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "hopeful",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "household",
+      "partOfSpeech": "noun",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "humble",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "impatient",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "independent",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "family-relationships",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "ingredient",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "invite",
+      "partOfSpeech": "verb",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "jealous",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "laundry",
+      "partOfSpeech": "noun",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "lunch",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "matter",
+      "partOfSpeech": "noun",
+      "keepInTopic": "chemistry",
+      "deleteFromTopics": [
+        "physics"
+      ]
+    },
+    {
+      "word": "meal",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "message",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social",
+        "daily-life"
+      ]
+    },
+    {
+      "word": "mood",
+      "partOfSpeech": "noun",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "literature-reading"
+      ]
+    },
+    {
+      "word": "motivated",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "network",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "notification",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "optimistic",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "organ",
+      "partOfSpeech": "noun",
+      "keepInTopic": "biology",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "oversleep",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "patient",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "pressure",
+      "partOfSpeech": "noun",
+      "keepInTopic": "physics",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "privacy",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "product",
+      "partOfSpeech": "noun",
+      "keepInTopic": "chemistry",
+      "deleteFromTopics": [
+        "mathematics"
+      ]
+    },
+    {
+      "word": "protein",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "punctual",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "recipe",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "reconcile",
+      "partOfSpeech": "verb",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "relationship",
+      "partOfSpeech": "noun",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "relax",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "respectful",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "responsibility",
+      "partOfSpeech": "noun",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "responsible",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "family-relationships",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "rest",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "routine",
+      "partOfSpeech": "noun",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "rude",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "schedule",
+      "partOfSpeech": "noun",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "screen time",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "scroll",
+      "partOfSpeech": "verb",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "sensitive",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "share",
+      "partOfSpeech": "verb",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "shower",
+      "partOfSpeech": "noun",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "shy",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "snack",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "social media",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "stay up",
+      "partOfSpeech": "phrasal verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "storage",
+      "partOfSpeech": "noun",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "stress",
+      "partOfSpeech": "noun",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "daily-life",
+        "health"
+      ]
+    },
+    {
+      "word": "study",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-activities",
+      "deleteFromTopics": [
+        "education"
+      ]
+    },
+    {
+      "word": "support",
+      "partOfSpeech": "verb",
+      "keepInTopic": "communication-social",
+      "deleteFromTopics": [
+        "family-relationships"
+      ]
+    },
+    {
+      "word": "supportive",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "family-relationships",
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "tired",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "daily-life"
+      ]
+    },
+    {
+      "word": "trust",
+      "partOfSpeech": "noun",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "communication-social"
+      ]
+    },
+    {
+      "word": "understanding",
+      "partOfSpeech": "adjective",
+      "keepInTopic": "emotion-feelings",
+      "deleteFromTopics": [
+        "personal-qualities"
+      ]
+    },
+    {
+      "word": "upload",
+      "partOfSpeech": "verb",
+      "keepInTopic": "information-technology",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "vaccine",
+      "partOfSpeech": "noun",
+      "keepInTopic": "biology",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "vacuum",
+      "partOfSpeech": "verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "home-living"
+      ]
+    },
+    {
+      "word": "virus",
+      "partOfSpeech": "noun",
+      "keepInTopic": "health",
+      "deleteFromTopics": [
+        "information-technology"
+      ]
+    },
+    {
+      "word": "vitamin",
+      "partOfSpeech": "noun",
+      "keepInTopic": "food-drink",
+      "deleteFromTopics": [
+        "health"
+      ]
+    },
+    {
+      "word": "wake up",
+      "partOfSpeech": "phrasal verb",
+      "keepInTopic": "daily-life",
+      "deleteFromTopics": [
+        "daily-activities"
+      ]
+    },
+    {
+      "word": "well",
+      "partOfSpeech": "adverb",
+      "keepInTopic": "personal-qualities",
+      "deleteFromTopics": [
+        "education"
+      ]
+    }
+  ]
+}

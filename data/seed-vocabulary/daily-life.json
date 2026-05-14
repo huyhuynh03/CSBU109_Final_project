@@ -4,8 +4,8 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 100,
-    "totalFamilies": 32,
+    "totalCards": 82,
+    "totalFamilies": 30,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
   },
@@ -297,84 +297,6 @@
     },
     {
       "fieldValues": {
-        "word": "breakfast",
-        "ipa": "/ˈbrek.fəst/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bữa sáng",
-        "example": "Breakfast is often called the most important meal of the day.",
-        "familyId": "meals",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "lunch",
-        "ipa": "/lʌntʃ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bữa trưa",
-        "example": "We usually have lunch at a small restaurant near the office.",
-        "familyId": "meals",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "dinner",
-        "ipa": "/ˈdɪn.ər/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bữa tối",
-        "example": "My family has dinner together every evening.",
-        "familyId": "meals",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "snack",
-        "ipa": "/snæk/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "đồ ăn nhẹ, bữa ăn nhẹ",
-        "example": "Fruit is a healthy snack between meals.",
-        "familyId": "meals",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "meal",
-        "ipa": "/miːl/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bữa ăn",
-        "example": "Home-cooked meals are usually cheaper than eating out.",
-        "familyId": "meals",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "cook",
-        "ipa": "/kʊk/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "nấu ăn",
-        "example": "He learned to cook simple dishes at university.",
-        "familyId": "cooking",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "cooking",
         "ipa": "/ˈkʊk.ɪŋ/",
         "partOfSpeech": "noun",
@@ -382,33 +304,7 @@
         "meaning": "việc nấu ăn",
         "example": "Cooking at home can save money.",
         "familyId": "cooking",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "recipe",
-        "ipa": "/ˈres.ɪ.pi/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "công thức nấu ăn",
-        "example": "I followed a recipe for vegetable soup.",
-        "familyId": "cooking",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "ingredient",
-        "ipa": "/ɪnˈɡriː.di.ənt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "nguyên liệu",
-        "example": "Fresh ingredients make the dish taste better.",
-        "familyId": "cooking",
-        "familyOrder": 4,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -583,20 +479,6 @@
         "note": "Collocation: run errands",
         "familyId": "errands",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "appointment",
-        "ipa": "/əˈpɔɪnt.mənt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "cuộc hẹn",
-        "example": "I have a dentist appointment at three o’clock.",
-        "note": "Collocations: make, book, cancel an appointment",
-        "familyId": "errands",
-        "familyOrder": 2,
         "tags": []
       }
     },
@@ -866,71 +748,6 @@
     },
     {
       "fieldValues": {
-        "word": "screen time",
-        "ipa": "/ˈskriːn taɪm/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "thời gian dùng thiết bị màn hình",
-        "example": "Too much screen time can affect sleep quality.",
-        "familyId": "digital-life",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "notification",
-        "ipa": "/ˌnəʊ.tɪ.fɪˈkeɪ.ʃən/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "thông báo",
-        "example": "I turned off notifications during dinner.",
-        "familyId": "digital-life",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "message",
-        "ipa": "/ˈmes.ɪdʒ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "tin nhắn, thông điệp",
-        "example": "She sent me a message to confirm the time.",
-        "familyId": "digital-life",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "charge",
-        "ipa": "/tʃɑːdʒ/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "sạc pin",
-        "example": "I need to charge my phone before going out.",
-        "familyId": "digital-life",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "battery",
-        "ipa": "/ˈbæt.ər.i/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "pin",
-        "example": "My phone battery runs out quickly.",
-        "familyId": "digital-life",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "deadline",
         "ipa": "/ˈded.laɪn/",
         "partOfSpeech": "noun",
@@ -1035,19 +852,6 @@
     },
     {
       "fieldValues": {
-        "word": "comfortable",
-        "ipa": "/ˈkʌm.fə.tə.bəl/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "thoải mái, dễ chịu",
-        "example": "Comfortable shoes are important for a long commute.",
-        "familyId": "comfort",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "comfort",
         "ipa": "/ˈkʌm.fət/",
         "partOfSpeech": "noun",
@@ -1055,19 +859,6 @@
         "meaning": "sự thoải mái, tiện nghi",
         "example": "A clean home gives people a sense of comfort.",
         "familyId": "comfort",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "stress",
-        "ipa": "/stres/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "sự căng thẳng, áp lực",
-        "example": "Daily stress can build up if you do not rest properly.",
-        "familyId": "stress",
         "familyOrder": 1,
         "tags": []
       }
@@ -1081,33 +872,7 @@
         "meaning": "căng thẳng, gây áp lực",
         "example": "A long commute can be stressful.",
         "familyId": "stress",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "tired",
-        "ipa": "/taɪəd/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "mệt mỏi",
-        "example": "I feel tired after a busy day at work.",
-        "familyId": "energy",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "exhausted",
-        "ipa": "/ɪɡˈzɔː.stɪd/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "kiệt sức, rất mệt",
-        "example": "She was exhausted after cleaning the whole house.",
-        "familyId": "energy",
-        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1120,7 +885,7 @@
         "meaning": "tràn đầy năng lượng",
         "example": "A good breakfast can make you feel energetic.",
         "familyId": "energy",
-        "familyOrder": 3,
+        "familyOrder": 1,
         "tags": []
       }
     },

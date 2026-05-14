@@ -4,7 +4,7 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 111,
+    "totalCards": 102,
     "totalFamilies": 14,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
@@ -77,19 +77,6 @@
     },
     {
       "fieldValues": {
-        "word": "message",
-        "ipa": "/ˈmes.ɪdʒ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "tin nhắn, thông điệp",
-        "example": "She sent me a short message this morning.",
-        "familyId": "communication-basics",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "feedback",
         "ipa": "/ˈfiːd.bæk/",
         "partOfSpeech": "noun",
@@ -97,7 +84,7 @@
         "meaning": "phản hồi, nhận xét",
         "example": "The teacher gave helpful feedback on my presentation.",
         "familyId": "communication-basics",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -597,19 +584,6 @@
     },
     {
       "fieldValues": {
-        "word": "network",
-        "ipa": "/ˈnet.wɜːk/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "mạng lưới quan hệ",
-        "example": "A strong network can create more opportunities.",
-        "familyId": "relationships-network",
-        "familyOrder": 7,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "contact",
         "ipa": "/ˈkɒn.tækt/",
         "partOfSpeech": "noun",
@@ -617,7 +591,7 @@
         "meaning": "liên hệ, mối liên hệ",
         "example": "I saved his contact details on my phone.",
         "familyId": "relationships-network",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     },
@@ -1065,19 +1039,6 @@
     },
     {
       "fieldValues": {
-        "word": "social media",
-        "ipa": "/ˌsəʊ.ʃəl ˈmiː.di.ə/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "mạng xã hội",
-        "example": "Social media changes how people communicate.",
-        "familyId": "media-digital-social",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "post",
         "ipa": "/pəʊst/",
         "partOfSpeech": "verb",
@@ -1085,46 +1046,7 @@
         "meaning": "đăng bài",
         "example": "She posted a photo from the volunteer trip.",
         "familyId": "media-digital-social",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "comment",
-        "ipa": "/ˈkɒm.ent/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bình luận",
-        "example": "His comment started a long discussion online.",
-        "familyId": "media-digital-social",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "share",
-        "ipa": "/ʃeər/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "chia sẻ",
-        "example": "People share news quickly on social media.",
-        "familyId": "media-digital-social",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "privacy",
-        "ipa": "/ˈprɪv.ə.si/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "sự riêng tư, quyền riêng tư",
-        "example": "Online privacy is a serious concern today.",
-        "familyId": "media-digital-social",
-        "familyOrder": 6,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1137,7 +1059,7 @@
         "meaning": "tin đồn",
         "example": "A rumor can spread very fast online.",
         "familyId": "media-digital-social",
-        "familyOrder": 7,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -1150,7 +1072,7 @@
         "meaning": "thông tin sai lệch",
         "example": "Misinformation can damage public trust.",
         "familyId": "media-digital-social",
-        "familyOrder": 8,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1260,19 +1182,6 @@
     },
     {
       "fieldValues": {
-        "word": "trust",
-        "ipa": "/trʌst/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "sự tin tưởng",
-        "example": "Trust is built through honesty and respect.",
-        "familyId": "social-values",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "honesty",
         "ipa": "/ˈɒn.ə.sti/",
         "partOfSpeech": "noun",
@@ -1280,7 +1189,7 @@
         "meaning": "sự trung thực",
         "example": "Honesty is important in public life.",
         "familyId": "social-values",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1293,20 +1202,7 @@
         "meaning": "lòng trung thành",
         "example": "Loyalty is valued in close friendships.",
         "familyId": "social-values",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "empathy",
-        "ipa": "/ˈem.pə.θi/",
-        "partOfSpeech": "noun",
-        "difficulty": "advanced",
-        "meaning": "sự đồng cảm",
-        "example": "Empathy helps us understand other people’s feelings.",
-        "familyId": "social-values",
-        "familyOrder": 4,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1319,7 +1215,7 @@
         "meaning": "sự khoan dung",
         "example": "Tolerance allows people with different views to live together.",
         "familyId": "social-values",
-        "familyOrder": 5,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -1332,7 +1228,7 @@
         "meaning": "lòng tốt, sự tử tế",
         "example": "Small acts of kindness can improve society.",
         "familyId": "social-values",
-        "familyOrder": 6,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1345,7 +1241,7 @@
         "meaning": "sự đoàn kết",
         "example": "The crisis created a strong sense of solidarity.",
         "familyId": "social-values",
-        "familyOrder": 7,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -1437,19 +1333,6 @@
         "example": "Social isolation can affect older people deeply.",
         "familyId": "social-issues",
         "familyOrder": 7,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "pressure",
-        "ipa": "/ˈpreʃ.ər/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "áp lực",
-        "example": "Young people often face pressure from social media.",
-        "familyId": "social-issues",
-        "familyOrder": 8,
         "tags": []
       }
     }

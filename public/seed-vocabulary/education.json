@@ -4,7 +4,7 @@
     "topicName": "Education",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Education System & School Life (B1-B2)",
-    "totalCards": 98,
+    "totalCards": 95,
     "totalFamilies": 23,
     "generatedAt": "2026-05-08",
     "note": "Tu vung chu de Giao duc theo pham vi he thong giao duc, truong lop, day va hoc, thi cu, bang cap, co so giao duc, nhan su truong hoc, lich hoc, dung cu hoc tap, quan tri va chinh sach giao duc. Khong bao gom ten mon hoc va thuat ngu chuyen sau cua tung mon; cac phan nay duoc tach sang topic mon hoc rieng."
@@ -66,19 +66,6 @@
     },
     {
       "fieldValues": {
-        "word": "study",
-        "ipa": "/ˈstʌd.i/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "học, nghiên cứu",
-        "example": "He studies medicine at the University of Cambridge.",
-        "familyId": "study",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "student",
         "ipa": "/ˈstjuː.dənt/",
         "partOfSpeech": "noun",
@@ -86,7 +73,7 @@
         "meaning": "học sinh, sinh viên",
         "example": "There are over 30,000 students enrolled at this university.",
         "familyId": "study",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -99,7 +86,7 @@
         "meaning": "chăm chỉ, hiếu học",
         "example": "She is a quiet, studious girl who always finishes her homework.",
         "familyId": "study",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -831,7 +818,7 @@
         "meaning": "sân chơi",
         "example": "Children ran around the playground during the break.",
         "familyId": "school-places",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -844,7 +831,7 @@
         "meaning": "căng tin, nhà ăn trường học",
         "example": "Many students buy lunch at the school canteen.",
         "familyId": "school-places",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -857,7 +844,7 @@
         "meaning": "phòng thể dục, nhà thi đấu",
         "example": "The basketball match was held in the gymnasium.",
         "familyId": "school-places",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -870,7 +857,7 @@
         "meaning": "ký túc xá",
         "example": "First-year students often live in a dormitory.",
         "familyId": "school-places",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     },
@@ -1235,7 +1222,7 @@
         "meaning": "tư duy phản biện",
         "example": "Critical thinking helps students evaluate information carefully.",
         "familyId": "learning-methods",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1248,7 +1235,7 @@
         "meaning": "kỹ năng giải quyết vấn đề",
         "example": "Maths develops problem-solving skills.",
         "familyId": "learning-methods",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -1261,7 +1248,7 @@
         "meaning": "làm việc nhóm",
         "example": "Group work teaches students how to cooperate.",
         "familyId": "learning-methods",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -1274,7 +1261,7 @@
         "meaning": "tự học",
         "example": "Online courses require a lot of self-study.",
         "familyId": "learning-methods",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     }

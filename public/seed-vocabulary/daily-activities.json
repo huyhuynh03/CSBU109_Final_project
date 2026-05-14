@@ -4,8 +4,8 @@
     "topicName": "Daily Activities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Activities (B1-B2)",
-    "totalCards": 107,
-    "totalFamilies": 16,
+    "totalCards": 92,
+    "totalFamilies": 15,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Hoat dong hang ngay, gom theo family/nhom hanh dong de hoc theo cum lien quan. Bao gom buoi sang, cham soc ca nhan, chuan bi ra ngoai, bua an, di lai, viec cong cong, hoc tap lam viec, digital, suc khoe, viec nha, gia dinh, xa hoi, giai tri va buoi toi."
   },
@@ -38,62 +38,6 @@
     },
     {
       "fieldValues": {
-        "word": "routine",
-        "ipa": "/ruːˈtiːn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "lịch trình, thói quen",
-        "example": "A clear routine helps me manage my day.",
-        "familyId": "activities-general",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "schedule",
-        "ipa": "/ˈʃed.juːl/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "lịch trình",
-        "example": "My schedule is full of meetings today.",
-        "familyId": "activities-general",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "wake up",
-        "ipa": "/weɪk ʌp/",
-        "partOfSpeech": "phrasal verb",
-        "difficulty": "intermediate",
-        "meaning": "thức dậy",
-        "example": "I wake up at six every morning.",
-        "familyId": "morning-actions",
-        "familyOrder": 1,
-        "tags": [
-          "phrasal-verb"
-        ]
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "get up",
-        "ipa": "/ɡet ʌp/",
-        "partOfSpeech": "phrasal verb",
-        "difficulty": "intermediate",
-        "meaning": "rời giường, thức dậy",
-        "example": "She gets up early to exercise.",
-        "familyId": "morning-actions",
-        "familyOrder": 2,
-        "tags": [
-          "phrasal-verb"
-        ]
-      }
-    },
-    {
-      "fieldValues": {
         "word": "stretch",
         "ipa": "/stretʃ/",
         "partOfSpeech": "verb",
@@ -101,7 +45,7 @@
         "meaning": "duỗi người, giãn cơ",
         "example": "Stretch your body before starting the day.",
         "familyId": "morning-actions",
-        "familyOrder": 3,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -114,7 +58,7 @@
         "meaning": "ngáp",
         "example": "He yawned because he stayed up late.",
         "familyId": "morning-actions",
-        "familyOrder": 4,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -127,7 +71,7 @@
         "meaning": "dọn giường",
         "example": "I make the bed right after getting up.",
         "familyId": "morning-actions",
-        "familyOrder": 5,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -140,7 +84,7 @@
         "meaning": "mở rèm cửa",
         "example": "Open the curtains to let in sunlight.",
         "familyId": "morning-actions",
-        "familyOrder": 6,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -250,19 +194,6 @@
     },
     {
       "fieldValues": {
-        "word": "get dressed",
-        "ipa": "/ɡet drest/",
-        "partOfSpeech": "phrase",
-        "difficulty": "intermediate",
-        "meaning": "mặc quần áo xong",
-        "example": "The children got dressed quickly for school.",
-        "familyId": "getting-ready-actions",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "choose an outfit",
         "ipa": "/tʃuːz ən ˈaʊt.fɪt/",
         "partOfSpeech": "phrase",
@@ -270,7 +201,7 @@
         "meaning": "chọn trang phục",
         "example": "I choose an outfit the night before work.",
         "familyId": "getting-ready-actions",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -283,7 +214,7 @@
         "meaning": "chuẩn bị/cất đồ vào túi",
         "example": "Pack your bag before you go to bed.",
         "familyId": "getting-ready-actions",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -296,7 +227,7 @@
         "meaning": "kiểm tra thời tiết",
         "example": "Check the weather before leaving the house.",
         "familyId": "getting-ready-actions",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -309,7 +240,7 @@
         "meaning": "khóa cửa",
         "example": "Remember to lock the door when you leave.",
         "familyId": "getting-ready-actions",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -322,7 +253,7 @@
         "meaning": "rời khỏi nhà",
         "example": "I usually leave home at seven thirty.",
         "familyId": "getting-ready-actions",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -432,19 +363,6 @@
     },
     {
       "fieldValues": {
-        "word": "commute",
-        "ipa": "/kəˈmjuːt/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "đi lại hằng ngày giữa nhà và nơi làm/học",
-        "example": "He commutes by train to the city.",
-        "familyId": "travel-actions",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "walk",
         "ipa": "/wɔːk/",
         "partOfSpeech": "verb",
@@ -452,7 +370,7 @@
         "meaning": "đi bộ",
         "example": "I walk to the bus stop every morning.",
         "familyId": "travel-actions",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -465,7 +383,7 @@
         "meaning": "đạp xe",
         "example": "Many students cycle to school.",
         "familyId": "travel-actions",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -478,7 +396,7 @@
         "meaning": "lái xe",
         "example": "She drives to work when it rains.",
         "familyId": "travel-actions",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -491,7 +409,7 @@
         "meaning": "đi xe buýt",
         "example": "We take the bus to the market.",
         "familyId": "travel-actions",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -504,7 +422,7 @@
         "meaning": "bắt tàu",
         "example": "I need to catch the train at eight.",
         "familyId": "travel-actions",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -517,7 +435,7 @@
         "meaning": "băng qua đường",
         "example": "Look both ways before you cross the street.",
         "familyId": "travel-actions",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -785,19 +703,6 @@
     },
     {
       "fieldValues": {
-        "word": "scroll",
-        "ipa": "/skrəʊl/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "cuộn/lướt màn hình",
-        "example": "She scrolled through social media for an hour.",
-        "familyId": "digital-actions",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "charge your phone",
         "ipa": "/tʃɑːdʒ jɔː fəʊn/",
         "partOfSpeech": "phrase",
@@ -805,33 +710,7 @@
         "meaning": "sạc điện thoại",
         "example": "Charge your phone before going out.",
         "familyId": "digital-actions",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "download",
-        "ipa": "/ˌdaʊnˈləʊd/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "tải xuống",
-        "example": "Download the file before the meeting.",
-        "familyId": "digital-actions",
-        "familyOrder": 7,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "upload",
-        "ipa": "/ˌʌpˈləʊd/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "tải lên",
-        "example": "Upload your assignment to the website.",
-        "familyId": "digital-actions",
-        "familyOrder": 8,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -917,19 +796,6 @@
     },
     {
       "fieldValues": {
-        "word": "rest",
-        "ipa": "/rest/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "nghỉ ngơi",
-        "example": "You should rest after a long day.",
-        "familyId": "health-actions",
-        "familyOrder": 7,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "take a nap",
         "ipa": "/teɪk ə næp/",
         "partOfSpeech": "phrase",
@@ -937,7 +803,7 @@
         "meaning": "ngủ trưa, chợp mắt",
         "example": "A short nap can improve your concentration.",
         "familyId": "health-actions",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     },
@@ -1192,19 +1058,6 @@
     },
     {
       "fieldValues": {
-        "word": "invite",
-        "ipa": "/ɪnˈvaɪt/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "mời",
-        "example": "We invited our neighbours to dinner.",
-        "familyId": "social-actions",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "visit",
         "ipa": "/ˈvɪz.ɪt/",
         "partOfSpeech": "verb",
@@ -1212,7 +1065,7 @@
         "meaning": "thăm, ghé thăm",
         "example": "They visit their grandparents every month.",
         "familyId": "social-actions",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1225,20 +1078,7 @@
         "meaning": "ăn mừng, kỷ niệm",
         "example": "We celebrate birthdays with a family dinner.",
         "familyId": "social-actions",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "relax",
-        "ipa": "/rɪˈlæks/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "thư giãn",
-        "example": "I relax by listening to quiet music.",
-        "familyId": "leisure-actions",
-        "familyOrder": 1,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -1251,7 +1091,7 @@
         "meaning": "xem TV",
         "example": "They watch TV together after dinner.",
         "familyId": "leisure-actions",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1264,7 +1104,7 @@
         "meaning": "nghe nhạc",
         "example": "She listens to music while cooking.",
         "familyId": "leisure-actions",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1277,7 +1117,7 @@
         "meaning": "đọc sách",
         "example": "I read a book before going to sleep.",
         "familyId": "leisure-actions",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -1290,7 +1130,7 @@
         "meaning": "chơi trò chơi",
         "example": "The children play games in the living room.",
         "familyId": "leisure-actions",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1303,7 +1143,7 @@
         "meaning": "đi dạo",
         "example": "We go for a walk after dinner.",
         "familyId": "leisure-actions",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -1370,47 +1210,6 @@
         "familyId": "evening-actions",
         "familyOrder": 5,
         "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "fall asleep",
-        "ipa": "/fɔːl əˈsliːp/",
-        "partOfSpeech": "phrase",
-        "difficulty": "intermediate",
-        "meaning": "ngủ thiếp đi",
-        "example": "She fell asleep while reading.",
-        "familyId": "evening-actions",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "oversleep",
-        "ipa": "/ˌəʊ.vəˈsliːp/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "ngủ quên, ngủ quá giờ",
-        "example": "He overslept and missed the bus.",
-        "familyId": "sleep-actions",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "stay up",
-        "ipa": "/steɪ ʌp/",
-        "partOfSpeech": "phrasal verb",
-        "difficulty": "intermediate",
-        "meaning": "thức khuya",
-        "example": "Students often stay up late before exams.",
-        "familyId": "sleep-actions",
-        "familyOrder": 2,
-        "tags": [
-          "phrasal-verb"
-        ]
       }
     }
   ]

@@ -4,8 +4,8 @@
     "topicName": "Family & Relationships",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Family & Relationships (B1-B2)",
-    "totalCards": 93,
-    "totalFamilies": 38,
+    "totalCards": 81,
+    "totalFamilies": 37,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Gia dinh & Cac moi quan he, gom thanh family de hoc theo cum tu lien quan. Bao gom thanh vien gia dinh, hon nhan, quan he xa hoi, cam xuc va xung dot."
   },
@@ -54,20 +54,6 @@
     },
     {
       "fieldValues": {
-        "word": "relationship",
-        "ipa": "/rɪˈleɪ.ʃən.ʃɪp/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "mối quan hệ",
-        "example": "A healthy relationship is built on trust and respect.",
-        "note": "Collocations: build, maintain, strengthen a relationship",
-        "familyId": "relationship",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "relate",
         "ipa": "/rɪˈleɪt/",
         "partOfSpeech": "verb",
@@ -76,7 +62,7 @@
         "example": "Teenagers often find it hard to relate to their parents.",
         "note": "Phrasal use: relate to someone/something",
         "familyId": "relationship",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -89,7 +75,7 @@
         "meaning": "có liên quan; có quan hệ họ hàng",
         "example": "The two families are closely related by marriage.",
         "familyId": "relationship",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -360,20 +346,6 @@
     },
     {
       "fieldValues": {
-        "word": "household",
-        "ipa": "/ˈhaʊs.həʊld/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "hộ gia đình, những người sống chung một nhà",
-        "example": "The average household size has decreased in many cities.",
-        "note": "Useful for social topics and statistics",
-        "familyId": "household",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "generation",
         "ipa": "/ˌdʒen.əˈreɪ.ʃən/",
         "partOfSpeech": "noun",
@@ -401,19 +373,6 @@
     },
     {
       "fieldValues": {
-        "word": "ancestor",
-        "ipa": "/ˈæn.ses.tər/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "tổ tiên",
-        "example": "Many families worship their ancestors during traditional festivals.",
-        "familyId": "ancestor",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "ancestry",
         "ipa": "/ˈæn.ses.tri/",
         "partOfSpeech": "noun",
@@ -421,7 +380,7 @@
         "meaning": "nguồn gốc tổ tiên, dòng dõi",
         "example": "He is interested in tracing his family ancestry.",
         "familyId": "ancestor",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -434,7 +393,7 @@
         "meaning": "hậu duệ, con cháu đời sau",
         "example": "The descendants of the family still live in the same village.",
         "familyId": "ancestor",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -856,34 +815,6 @@
     },
     {
       "fieldValues": {
-        "word": "attached",
-        "ipa": "/əˈtætʃt/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "gắn bó, quyến luyến",
-        "example": "Young children are usually deeply attached to their caregivers.",
-        "note": "Be attached to someone/something",
-        "familyId": "attach",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "affection",
-        "ipa": "/əˈfek.ʃən/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "tình cảm yêu thương, sự trìu mến",
-        "example": "Children need affection as much as discipline.",
-        "note": "Show affection for someone",
-        "familyId": "affection",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "affectionate",
         "ipa": "/əˈfek.ʃən.ət/",
         "partOfSpeech": "adjective",
@@ -891,7 +822,7 @@
         "meaning": "trìu mến, giàu tình cảm",
         "example": "He has an affectionate relationship with his grandparents.",
         "familyId": "affection",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -910,46 +841,6 @@
     },
     {
       "fieldValues": {
-        "word": "support",
-        "ipa": "/səˈpɔːt/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "hỗ trợ, ủng hộ",
-        "example": "Parents should support their children's interests.",
-        "familyId": "support",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "supportive",
-        "ipa": "/səˈpɔː.tɪv/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "biết hỗ trợ, hay ủng hộ",
-        "example": "A supportive family environment helps children become more confident.",
-        "familyId": "support",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "responsibility",
-        "ipa": "/rɪˌspɒn.səˈbɪl.ə.ti/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "trách nhiệm",
-        "example": "Parents have a responsibility to protect their children.",
-        "note": "Collocations: parental responsibility, take responsibility for",
-        "familyId": "responsible",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "responsible",
         "ipa": "/rɪˈspɒn.sə.bəl/",
         "partOfSpeech": "adjective",
@@ -957,7 +848,7 @@
         "meaning": "có trách nhiệm, chịu trách nhiệm",
         "example": "Older siblings are sometimes responsible for looking after younger ones.",
         "familyId": "responsible",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1017,27 +908,13 @@
     {
       "fieldValues": {
         "word": "conflict",
-        "ipa": "/ˈkɒn.flɪkt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "mâu thuẫn, xung đột",
-        "example": "Family conflict can arise when people have different expectations.",
-        "note": "Collocations: family conflict, resolve a conflict",
-        "familyId": "conflict",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "conflict",
         "ipa": "/kənˈflɪkt/",
         "partOfSpeech": "verb",
         "difficulty": "advanced",
         "meaning": "mâu thuẫn, trái ngược",
         "example": "His career goals sometimes conflict with family expectations.",
         "familyId": "conflict",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1056,19 +933,6 @@
     },
     {
       "fieldValues": {
-        "word": "argue",
-        "ipa": "/ˈɑːɡ.juː/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "tranh cãi; lập luận",
-        "example": "Siblings often argue over small things.",
-        "familyId": "argue",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "reconciliation",
         "ipa": "/ˌrek.ənˌsɪl.iˈeɪ.ʃən/",
         "partOfSpeech": "noun",
@@ -1077,19 +941,6 @@
         "example": "Reconciliation is possible when both sides are willing to listen.",
         "familyId": "reconcile",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "reconcile",
-        "ipa": "/ˈrek.ən.saɪl/",
-        "partOfSpeech": "verb",
-        "difficulty": "advanced",
-        "meaning": "hòa giải, làm lành",
-        "example": "The two brothers reconciled after years of disagreement.",
-        "familyId": "reconcile",
-        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1189,20 +1040,6 @@
     },
     {
       "fieldValues": {
-        "word": "friendship",
-        "ipa": "/ˈfrend.ʃɪp/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "tình bạn",
-        "example": "A strong friendship can last for many years despite distance.",
-        "note": "Collocations: close friendship, lifelong friendship",
-        "familyId": "friend",
-        "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "friend",
         "ipa": "/frend/",
         "partOfSpeech": "noun",
@@ -1210,7 +1047,7 @@
         "meaning": "bạn bè, người bạn",
         "example": "A true friend supports you in difficult times.",
         "familyId": "friend",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1223,7 +1060,7 @@
         "meaning": "thân thiện",
         "example": "Her friendly attitude helped her build good relationships at work.",
         "familyId": "friend",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },

@@ -4,7 +4,7 @@
     "topicName": "Home & Living",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
-    "totalCards": 106,
+    "totalCards": 100,
     "totalFamilies": 14,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
@@ -876,19 +876,6 @@
     },
     {
       "fieldValues": {
-        "word": "shower",
-        "ipa": "/ˈʃaʊ.ər/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "vòi sen; việc tắm vòi sen",
-        "example": "I take a quick shower every morning.",
-        "familyId": "kitchen-bathroom",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "bathtub",
         "ipa": "/ˈbɑːθ.tʌb/",
         "partOfSpeech": "noun",
@@ -896,7 +883,7 @@
         "meaning": "bồn tắm",
         "example": "The hotel bathroom has a large bathtub.",
         "familyId": "kitchen-bathroom",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -909,7 +896,7 @@
         "meaning": "bồn cầu, nhà vệ sinh",
         "example": "The toilet is at the end of the hallway.",
         "familyId": "kitchen-bathroom",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -922,7 +909,7 @@
         "meaning": "khăn tắm, khăn lau",
         "example": "Hang the towel on the rail after using it.",
         "familyId": "kitchen-bathroom",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -935,7 +922,7 @@
         "meaning": "xà phòng",
         "example": "Wash your hands with soap and warm water.",
         "familyId": "kitchen-bathroom",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     },
@@ -1084,19 +1071,6 @@
     },
     {
       "fieldValues": {
-        "word": "storage",
-        "ipa": "/ˈstɔː.rɪdʒ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "việc cất giữ, không gian lưu trữ",
-        "example": "This apartment has very little storage.",
-        "familyId": "storage",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "shelf",
         "ipa": "/ʃelf/",
         "partOfSpeech": "noun",
@@ -1104,7 +1078,7 @@
         "meaning": "kệ",
         "example": "Put the books back on the shelf.",
         "familyId": "storage",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1117,7 +1091,7 @@
         "meaning": "giỏ, rổ",
         "example": "Dirty clothes go in the laundry basket.",
         "familyId": "storage",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -1130,20 +1104,7 @@
         "meaning": "hộp, thùng",
         "example": "We packed the dishes in cardboard boxes.",
         "familyId": "storage",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "clean",
-        "ipa": "/kliːn/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "lau dọn, làm sạch",
-        "example": "We clean the kitchen after every meal.",
-        "familyId": "housework",
-        "familyOrder": 1,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1156,7 +1117,7 @@
         "meaning": "dọn dẹp gọn gàng",
         "example": "Please tidy up your room before dinner.",
         "familyId": "housework",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": [
           "phrasal-verb"
         ]
@@ -1171,7 +1132,7 @@
         "meaning": "quét",
         "example": "He sweeps the floor every morning.",
         "familyId": "housework",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1184,47 +1145,7 @@
         "meaning": "lau sàn",
         "example": "Mop the floor after you sweep it.",
         "familyId": "housework",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "vacuum",
-        "ipa": "/ˈvæk.juːm/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "hút bụi",
-        "example": "I vacuum the carpet once a week.",
-        "familyId": "housework",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "dust",
-        "ipa": "/dʌst/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "phủi bụi, lau bụi",
-        "example": "Dust the shelves before guests arrive.",
-        "familyId": "housework",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "laundry",
-        "ipa": "/ˈlɔːn.dri/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "việc giặt giũ, đồ cần giặt",
-        "example": "I usually do the laundry on Sunday.",
-        "note": "Collocation: do the laundry",
-        "familyId": "housework",
-        "familyOrder": 7,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -1237,7 +1158,7 @@
         "meaning": "ủi, là quần áo",
         "example": "She irons her shirts for work.",
         "familyId": "housework",
-        "familyOrder": 8,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -1250,7 +1171,7 @@
         "meaning": "gấp",
         "example": "Fold the towels and put them in the cupboard.",
         "familyId": "housework",
-        "familyOrder": 9,
+        "familyOrder": 5,
         "tags": []
       }
     },

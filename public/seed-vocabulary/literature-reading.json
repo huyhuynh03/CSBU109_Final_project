@@ -4,7 +4,7 @@
     "topicName": "Literature & Reading",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Literature & Reading (B1-B2)",
-    "totalCards": 40,
+    "totalCards": 37,
     "totalFamilies": 8,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu Van hoc va Doc hieu, gom ky nang doc, the loai, yeu to truyen, ky thuat tran thuat, bien phap tu tu, phong cach va tho."
@@ -272,19 +272,6 @@
     },
     {
       "fieldValues": {
-        "word": "conflict",
-        "ipa": "/ˈkɒn.flɪkt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "xung đột",
-        "example": "Conflict drives the plot forward.",
-        "familyId": "story-elements",
-        "familyOrder": 6,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "climax",
         "ipa": "/ˈklaɪ.mæks/",
         "partOfSpeech": "noun",
@@ -292,7 +279,7 @@
         "meaning": "cao trào",
         "example": "The climax occurs when the secret is revealed.",
         "familyId": "story-elements",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -305,7 +292,7 @@
         "meaning": "phần giải quyết, kết thúc vấn đề",
         "example": "The resolution explains what happens to each character.",
         "familyId": "story-elements",
-        "familyOrder": 8,
+        "familyOrder": 7,
         "tags": []
       }
     },
@@ -337,19 +324,6 @@
     },
     {
       "fieldValues": {
-        "word": "dialogue",
-        "ipa": "/ˈdaɪ.ə.lɒɡ/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "đối thoại",
-        "example": "Dialogue reveals the relationship between characters.",
-        "familyId": "narrative-techniques",
-        "familyOrder": 3,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "foreshadowing",
         "ipa": "/fɔːˈʃæd.əʊ.ɪŋ/",
         "partOfSpeech": "noun",
@@ -357,7 +331,7 @@
         "meaning": "sự báo trước",
         "example": "Foreshadowing hints at future events.",
         "familyId": "narrative-techniques",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -370,7 +344,7 @@
         "meaning": "hồi tưởng",
         "example": "The flashback explains the character’s childhood.",
         "familyId": "narrative-techniques",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -467,19 +441,6 @@
     },
     {
       "fieldValues": {
-        "word": "mood",
-        "ipa": "/muːd/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "bầu không khí, tâm trạng trong tác phẩm",
-        "example": "The dark setting creates a mysterious mood.",
-        "familyId": "style-analysis",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "style",
         "ipa": "/staɪl/",
         "partOfSpeech": "noun",
@@ -487,7 +448,7 @@
         "meaning": "phong cách",
         "example": "The author’s style is simple but powerful.",
         "familyId": "style-analysis",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },

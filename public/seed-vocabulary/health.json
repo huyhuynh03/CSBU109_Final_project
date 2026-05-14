@@ -4,7 +4,7 @@
     "topicName": "Health",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Health (B1-B2)",
-    "totalCards": 95,
+    "totalCards": 88,
     "totalFamilies": 16,
     "generatedAt": "2026-05-08",
     "note": "Tu vung chu de Suc khoe, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom suc khoe chung, co the, trieu chung, benh tat, dau va chan thuong, suc khoe tinh than, cham soc y te, benh vien, dieu tri, thuoc, phong benh, loi song, dinh duong, the luc, benh man tinh, cap cuu va y te cong cong."
@@ -25,19 +25,6 @@
     },
     {
       "fieldValues": {
-        "word": "healthy",
-        "ipa": "/ˈhel.θi/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "khỏe mạnh, lành mạnh",
-        "example": "A healthy diet includes plenty of vegetables.",
-        "familyId": "health-general",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "well-being",
         "ipa": "/ˌwelˈbiː.ɪŋ/",
         "partOfSpeech": "noun",
@@ -45,7 +32,7 @@
         "meaning": "sự khỏe mạnh và hạnh phúc, phúc lợi tinh thần",
         "example": "Sleep is essential for physical and mental well-being.",
         "familyId": "health-general",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -58,7 +45,7 @@
         "meaning": "thể lực, sự khỏe mạnh",
         "example": "Swimming can improve your fitness quickly.",
         "familyId": "health-general",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -71,7 +58,7 @@
         "meaning": "tình trạng sức khỏe, bệnh lý",
         "example": "The doctor asked about her medical condition.",
         "familyId": "health-general",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -84,7 +71,7 @@
         "meaning": "sự hồi phục",
         "example": "Rest is important during recovery after an illness.",
         "familyId": "health-general",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -103,19 +90,6 @@
     },
     {
       "fieldValues": {
-        "word": "organ",
-        "ipa": "/ˈɔː.ɡən/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "cơ quan trong cơ thể",
-        "example": "The heart is an important organ.",
-        "familyId": "body-systems",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "muscle",
         "ipa": "/ˈmʌs.əl/",
         "partOfSpeech": "noun",
@@ -123,7 +97,7 @@
         "meaning": "cơ bắp",
         "example": "Stretching helps relax tight muscles.",
         "familyId": "body-systems",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -136,7 +110,7 @@
         "meaning": "xương",
         "example": "Calcium helps keep bones strong.",
         "familyId": "body-systems",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -149,7 +123,7 @@
         "meaning": "máu",
         "example": "The nurse took a blood sample for testing.",
         "familyId": "body-systems",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -162,7 +136,7 @@
         "meaning": "hệ miễn dịch",
         "example": "A balanced diet supports the immune system.",
         "familyId": "body-systems",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -298,19 +272,6 @@
     },
     {
       "fieldValues": {
-        "word": "allergy",
-        "ipa": "/ˈæl.ə.dʒi/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "dị ứng",
-        "example": "She has an allergy to peanuts.",
-        "familyId": "illness-disease",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "virus",
         "ipa": "/ˈvaɪə.rəs/",
         "partOfSpeech": "noun",
@@ -318,7 +279,7 @@
         "meaning": "vi-rút",
         "example": "A virus can spread through close contact.",
         "familyId": "illness-disease",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -415,19 +376,6 @@
     },
     {
       "fieldValues": {
-        "word": "stress",
-        "ipa": "/stres/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "căng thẳng, áp lực",
-        "example": "Long working hours can increase stress.",
-        "familyId": "mental-health",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "anxiety",
         "ipa": "/æŋˈzaɪ.ə.ti/",
         "partOfSpeech": "noun",
@@ -435,7 +383,7 @@
         "meaning": "sự lo âu, lo lắng",
         "example": "Deep breathing may reduce anxiety before an exam.",
         "familyId": "mental-health",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -448,7 +396,7 @@
         "meaning": "trầm cảm",
         "example": "Depression should be treated with professional help.",
         "familyId": "mental-health",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -461,7 +409,7 @@
         "meaning": "liệu pháp, trị liệu",
         "example": "Therapy helped him manage stress better.",
         "familyId": "mental-health",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -475,7 +423,7 @@
         "example": "The school offers counselling for students.",
         "note": "US English: counseling",
         "familyId": "mental-health",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -728,19 +676,6 @@
     },
     {
       "fieldValues": {
-        "word": "vaccine",
-        "ipa": "/ˈvæk.siːn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "vắc-xin",
-        "example": "The vaccine protects people from serious disease.",
-        "familyId": "prevention",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "vaccination",
         "ipa": "/ˌvæk.sɪˈneɪ.ʃən/",
         "partOfSpeech": "noun",
@@ -748,7 +683,7 @@
         "meaning": "sự tiêm chủng",
         "example": "Vaccination programs save many lives each year.",
         "familyId": "prevention",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -761,7 +696,7 @@
         "meaning": "vệ sinh",
         "example": "Good hygiene reduces the spread of infection.",
         "familyId": "prevention",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -774,7 +709,7 @@
         "meaning": "sàng lọc, kiểm tra phát hiện bệnh",
         "example": "Cancer screening can detect problems early.",
         "familyId": "prevention",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -787,7 +722,7 @@
         "meaning": "khả năng miễn dịch",
         "example": "Vaccines help the body develop immunity.",
         "familyId": "prevention",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -897,32 +832,6 @@
     },
     {
       "fieldValues": {
-        "word": "vitamin",
-        "ipa": "/ˈvɪt.ə.mɪn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "vitamin",
-        "example": "Vitamin C is found in many fruits.",
-        "familyId": "nutrition-health",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "protein",
-        "ipa": "/ˈprəʊ.tiːn/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "chất đạm, protein",
-        "example": "Fish and beans are good sources of protein.",
-        "familyId": "nutrition-health",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "hydration",
         "ipa": "/haɪˈdreɪ.ʃən/",
         "partOfSpeech": "noun",
@@ -930,7 +839,7 @@
         "meaning": "sự cung cấp đủ nước cho cơ thể",
         "example": "Proper hydration is important during hot weather.",
         "familyId": "nutrition-health",
-        "familyOrder": 6,
+        "familyOrder": 4,
         "tags": []
       }
     },
