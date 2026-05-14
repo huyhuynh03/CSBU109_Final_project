@@ -4,7 +4,7 @@
     "topicName": "Health",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Health (B1-B2)",
-    "totalCards": 96,
+    "totalCards": 95,
     "totalFamilies": 16,
     "generatedAt": "2026-05-08",
     "note": "Tu vung chu de Suc khoe, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom suc khoe chung, co the, trieu chung, benh tat, dau va chan thuong, suc khoe tinh than, cham soc y te, benh vien, dieu tri, thuoc, phong benh, loi song, dinh duong, the luc, benh man tinh, cap cuu va y te cong cong."
@@ -806,19 +806,6 @@
     },
     {
       "fieldValues": {
-        "word": "habit",
-        "ipa": "/ˈhæb.ɪt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "thói quen",
-        "example": "Drinking enough water is a good habit.",
-        "familyId": "healthy-lifestyle",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "sleep",
         "ipa": "/sliːp/",
         "partOfSpeech": "noun",
@@ -826,7 +813,7 @@
         "meaning": "giấc ngủ",
         "example": "Lack of sleep can affect your concentration.",
         "familyId": "healthy-lifestyle",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -839,7 +826,7 @@
         "meaning": "sự nghỉ ngơi",
         "example": "Your body needs rest after intense exercise.",
         "familyId": "healthy-lifestyle",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -852,7 +839,7 @@
         "meaning": "sự cân bằng giữa công việc và cuộc sống",
         "example": "Work-life balance is important for long-term health.",
         "familyId": "healthy-lifestyle",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -865,7 +852,7 @@
         "meaning": "ít vận động, ngồi nhiều",
         "example": "A sedentary lifestyle increases health risks.",
         "familyId": "healthy-lifestyle",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
