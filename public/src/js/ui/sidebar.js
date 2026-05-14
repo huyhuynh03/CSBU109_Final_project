@@ -259,11 +259,22 @@ const Sidebar = {
             </button>
         `;
 
+        // PWA Install button (hidden if already installed or running standalone)
+        const installBtnHtml = (typeof PWAInstall !== 'undefined' && !PWAInstall._isInstalled) ? `
+            <button class="sidebar-nav-item sidebar-nav-item--install"
+                    onclick="PWAInstall.install()"
+                    title="Cài đặt ứng dụng">
+                <span class="material-icons-round sidebar-nav-icon">download</span>
+                <span class="sidebar-nav-label">Cài đặt ứng dụng</span>
+            </button>
+        ` : '';
+
         content.innerHTML = `
             <nav class="sidebar-nav">
                 ${menuHtml}
             </nav>
             <div class="sidebar-footer">
+                ${installBtnHtml}
                 ${switchLangHtml}
             </div>
         `;

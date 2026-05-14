@@ -16,6 +16,7 @@ const App = {
             // 2. Initialize UI components
             Toast.init();
             FloatingBackground.init();
+            PWAInstall.init();
 
             // 3. Initialize Firebase modules
             Auth.init();
