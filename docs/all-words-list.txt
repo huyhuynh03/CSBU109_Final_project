@@ -1,0 +1,2387 @@
+abstract
+abundance
+abundant
+academy
+acceleration
+accepted
+accident
+accommodation
+account
+accuracy
+ace
+acid
+acquaintance
+acrylic
+action
+activity
+ad campaign
+adaptable
+adaptation
+addiction
+addition
+admirable
+admiration
+adolescence
+adolescent
+adopt
+adoption
+adoptive
+aesthetic
+affection
+affectionate
+afford
+afraid
+age rating
+aggressive
+agility
+agree
+agreeableness
+air conditioner
+airtime
+aisle seat
+alarm
+alcohol
+algebra
+algorithm
+alkali
+all-inclusive
+allergic
+allergy
+altar
+amazed
+ambitious
+ambulance
+amused
+amygdala
+analysis
+analyze
+ancestor
+ancestry
+anger
+angle
+angry
+annoyed
+answer
+anti-doping
+antibody
+anxiety
+anxious
+apartment
+apathy
+apologize
+app
+apparatus
+appetite
+apple
+appliance
+application
+appointment
+aquifer
+archaeological site
+architecture
+area
+arena
+argue
+argument
+aristocracy
+arithmetic
+armchair
+arousal
+arrival
+arrogant
+art
+artifact
+artisan
+artist
+artistic
+artwork
+ashamed
+ask
+assertive
+assignment
+assimilation
+assist
+assistant coach
+association
+asteroid
+asthma
+astonished
+astronaut
+astronomer
+astronomical unit
+astronomy
+ate
+athlete
+athletics
+atom
+atomic number
+attached
+attachment
+attend
+attend class
+attendance
+attention
+attic
+attitude
+audience
+audience share
+aunt
+availability
+available
+average
+avoidance
+award ceremony
+awareness
+away game
+awkward
+backhand
+backpack
+backpacker
+backpacking
+backup
+baggage claim
+bake
+balanced
+balcony
+ballet
+banana
+bandage
+banner
+baroque
+base
+base camp
+basement
+basket
+bathe
+bathroom
+bathtub
+battery
+be
+beaker
+bear
+beautiful
+beautifully
+beautify
+beauty
+bed and breakfast
+bedroom
+bedsheet
+bedtime
+beef
+been
+began
+begin
+begun
+behavior
+belief
+bend
+bent
+best
+better
+bias
+bill
+bin
+bind
+binge-watch
+biodiversity
+biofuel
+biology
+biomass
+bit
+bite
+bitten
+bitter
+black hole
+blackout
+blanket
+bled
+bleed
+blended family
+blew
+blood
+blood pressure
+blow
+blown
+boarding pass
+boastful
+body
+boil
+bold
+bond
+bone
+book an appointment
+bookshelf
+border control
+bore
+bored
+borne
+bought
+bound
+boutique hotel
+bowl
+box
+box-office hit
+brain
+brand ambassador
+brave
+bread
+break
+break down
+break point
+breakfast
+breakthrough
+breathe deeply
+bred
+breed
+bring
+bring up
+broadcast
+broadcaster
+broadcasting
+broke
+broken
+bronze medal
+brother
+brought
+browse the internet
+bruise
+brush
+brush your teeth
+bucket list
+budget
+bug
+build
+building
+built
+bulletin
+buoyancy
+burn
+burned out
+burnt
+burst
+bus stop
+business class
+butter
+buy
+buy groceries
+byline
+cabin crew
+cabinet
+cable car
+cafe
+calculator
+calculus
+calligraphy
+calm
+calm down
+calorie
+came
+campervan
+camping gear
+campsite
+campus
+cancel an appointment
+canteen
+canvas
+capacity
+capsule
+captain
+carbohydrate
+carbon capture
+carbon dioxide
+carbon emission
+carbon footprint
+care
+care for
+careful
+caregiver
+careless
+caring
+carpet
+carrot
+carry-on luggage
+carving
+cast
+casting director
+castle
+catalyst
+catch
+catch the train
+cathedral
+caught
+causation
+ceiling
+celebrate
+celebration
+celebrity endorsement
+celestial
+cell
+censorship board
+ceramic
+cereal
+ceremony
+certificate
+championship
+chant
+character
+charge
+charge your phone
+charismatic
+charity
+charming
+chart
+chat
+check emails
+check the weather
+check-in
+check-out
+check-up
+checkout
+cheer
+cheer up
+cheerful
+cheese
+chemical reaction
+chemistry
+chicken
+child
+childhood
+children
+chlorophyll
+choose
+choose an outfit
+chop
+chopsticks
+chore
+choreography
+chose
+chosen
+chromosome
+chronic disease
+cinema
+cinematographer
+circle
+circuit
+circuit training
+circulation
+citizen
+citizenship
+civilization
+clarify
+classical
+classification
+classify
+classmate
+classroom
+clean
+clean sheet
+clean the house
+cleaning
+clear the table
+clever
+click
+click farm
+clickbait
+cliffhanger
+climax
+cling
+clinic
+closed captions
+cloud
+clung
+coal
+code
+coding
+coefficient
+coffee
+coffee table
+cognition
+colleague
+college
+colonialism
+comb
+comb your hair
+combust
+combustible
+combustion
+come
+comeback
+comet
+comfort
+comfortable
+comment
+comment section
+communication
+community
+community guideline
+commute
+companion
+companionship
+compassion
+compassionate
+competition
+competitor
+composed
+composition
+compound
+compromise
+compulsion
+computer
+concentration
+concerned
+concierge
+conclusion
+condensation
+condition
+conditioning
+conduction
+confidence
+confident
+conflict
+confused
+connecting flight
+conscientious
+conscientiousness
+consciousness
+conservancy
+considerate
+constellation
+consume
+consumer
+consumption
+contact
+container
+content
+content creator
+content moderation
+context
+continuity
+continuous
+contract extension
+contrast
+convection
+convenience
+convenient
+convergence
+conversation
+cook
+cook dinner
+cooking
+cool-down
+cooperate
+cooperation
+cooperative
+coping
+copy editor
+corner kick
+correlation
+cortex
+cosmic
+cosmic dust
+cosmonaut
+cosmos
+cosplay
+costume
+cough
+counselling
+counterattack
+couple
+courageous
+court
+cousin
+cpr
+craft
+craftsman
+crater
+creative
+creativity
+creep
+crept
+crest
+crime
+crispy
+critical thinking
+cross the street
+crowded
+crude oil
+cruise
+cruise ship
+cucumber
+cultural
+culture
+culture shock
+cup
+curator
+curiosity
+curious
+currency exchange
+current
+curriculum
+curtain
+curve
+custom
+customs
+cut
+cycle
+daily
+dam
+dark energy
+dark horse
+dark matter
+data
+database
+dateline
+deadline
+deal
+dealt
+debate
+debug
+decathlon
+decimal
+decision
+decisive
+decorative
+deep space
+deepfake
+defender
+delete
+delicious
+delight
+delighted
+delivery
+delusion
+denial
+density
+departure
+dependable
+dependence
+dependency
+dependent
+depict
+deplete
+depletion
+depressed
+depression
+derby
+derivative
+desalination
+descendant
+desk
+desperate
+dessert
+destination
+determined
+deuce
+devastated
+developer
+device
+diabetes
+diagnosis
+dialogue
+diameter
+dictionary
+did
+diet
+difference
+differentiate
+differentiation
+dig
+digestion
+digit
+digital
+digital nomad
+dining room
+dinner
+direct flight
+disagree
+disappointed
+disciplined
+discouraged
+discovery
+discrimination
+discus
+discussion
+disease
+disembark
+disgust
+disgusted
+dishonest
+dishwasher
+disinformation
+disqualification
+dissection
+distraction
+dive
+dived
+divergence
+diversity
+division
+divorce
+divorced
+dizziness
+dna
+do
+do homework
+do the dishes
+do the laundry
+dock
+doctor
+doctoral degree
+docuseries
+done
+door
+dopamine
+doping
+dormitory
+dose
+doubles
+doubtful
+dove
+downhearted
+download
+drained
+drama
+drank
+draw
+drawer
+drawing
+drawn
+dress
+drew
+drill
+drink
+drive
+driven
+driveway
+drop out
+drop shot
+drove
+drunk
+dry your hair
+dryer
+dubbed
+dug
+dust
+dust the shelves
+duty
+duty-free
+duvet
+dwarf planet
+dynasty
+early childhood education
+easy-going
+eat
+eaten
+echo chamber
+eclipse
+economy class
+ecosystem
+ecotourism
+ecstatic
+editor-in-chief
+educate
+education
+educational
+educator
+efficiency
+efficient
+egg
+elder
+elderly
+eldest
+electric
+electric current
+electrical
+electrician
+electricity
+electrification
+electrify
+electron
+element
+email
+embark
+embarrassed
+emblem
+embryo
+emergency
+emit
+emotion
+emotional
+emotionally stable
+empathetic
+empathy
+empire
+empower
+empowerment
+encoding
+endurance
+energetic
+energy
+energy conservation
+energy efficiency
+energy-efficient
+engaged
+engagement
+engagement rate
+engraving
+enlightenment
+entertainment
+enthusiastic
+envious
+envy
+epidemic
+equality
+equation
+equipment
+errand
+error
+ethics
+ethnic
+etiquette
+evaluation
+evaporation
+event
+event horizon
+evidence
+evolution
+exam
+examination
+exchange rate
+excited
+exercise
+exhausted
+exhibit
+exhibition
+exoplanet
+expedition
+expense
+experiment
+experimenter
+explain
+exploit
+exploitation
+expression
+extended family
+extra time
+extract
+extraction
+extraterrestrial
+extraversion
+extroverted
+fact-checking
+fair
+fair play
+fairness
+fall
+fall asleep
+fallen
+familial
+family
+fan convention
+fanbase
+fandom
+farewell
+farther
+farthest
+fat
+father
+fatigue
+faucet
+fear
+feature
+fed
+fed up
+feed
+feed the pet
+feedback
+feel
+feeling
+fell
+felt
+fence
+ferry
+fertilisation
+festival
+feudalism
+fever
+fiber
+fiction
+field event
+fight
+file
+film
+filter bubble
+find
+finding
+first aid
+fish
+fit
+fitness
+fitness trainer
+fix
+fixture
+flashback
+flat
+flavour
+fled
+flee
+flew
+flexibility
+fling
+floor
+floss
+flour
+flown
+flu
+flung
+fly
+focus
+fold
+fold clothes
+folder
+folklore
+follower count
+fond
+food
+food chain
+forbade
+forbid
+forbidden
+force
+forecast
+forehand
+foreign correspondent
+foreshadowing
+forgave
+forget
+forgive
+forgiven
+forgiving
+forgot
+forgotten
+fork
+form
+formation
+formula
+fortress
+fossil
+fought
+foul
+found
+fraction
+franchise film
+free kick
+freedom
+freeze
+freezer
+frequency
+fresco
+fresh
+friction
+fridge
+friend
+friendly
+friendship
+frightened
+front desk
+froze
+frozen
+fruit
+frustrated
+frustration
+fry
+fuel
+fuel cell
+full
+fully booked
+function
+funicular
+furious
+furious with
+furniture
+further
+furthest
+galaxy
+gallery
+game show
+gap year
+garage
+garbage
+garden
+garlic
+gas
+gas giant
+gate
+gather
+gave
+gene
+generate
+generation
+generational
+generator
+generous
+genre
+gentle
+genuine
+geometry
+geothermal
+geothermal energy
+get
+get dressed
+get up
+give
+given
+glad
+globalization
+gloomy
+go
+go for a walk
+go to bed
+goal-oriented
+goalkeeper
+gold medal
+gone
+good
+got
+gothic
+gotten
+grade
+graduate
+graduation
+grand slam
+grandchild
+grandfather
+grandmother
+grandparent
+grape
+graph
+grateful
+gravity
+greedy
+green screen
+greenhouse gas
+greet
+greeting
+grew
+grid
+grief
+grill
+grind
+grocery
+ground
+ground floor
+groundwater
+group work
+grow
+grown
+grumpy
+guesthouse
+guided tour
+guilt
+guilty
+gymnasium
+habit
+habitable
+habitat
+habitual
+had
+halftime
+hallucination
+hallway
+hang
+hang clothes
+hang out
+happy
+harbor
+hard-working
+hardware
+harmony
+harness
+hashtag campaign
+hat trick
+have
+head coach
+head teacher
+headache
+health
+health insurance
+healthcare
+healthy
+hear
+heard
+heart disease
+heartbroken
+heat
+heater
+held
+help with chores
+helpful
+herb
+heritage
+heritage site
+heuristic
+hid
+hidden
+hidden gem
+hide
+high jump
+high school
+higher education
+hiking trail
+hippocampus
+hit
+hit the books
+hitchhiking
+hobby
+hold
+home
+home advantage
+home ground
+homelessness
+homesick
+homesickness
+homework
+honest
+honesty
+hopeful
+horrified
+hospital
+hostel
+house
+household
+hue
+human-interest story
+humble
+hung
+hungry
+hurdle
+hurt
+hurtful
+husband
+hydration
+hydroelectric
+hydrogen
+hygiene
+hypothesis
+identity
+ignition
+illness
+illustration
+illustrator
+imagery
+imagination
+imaginative
+immigration
+immune system
+immunity
+impatient
+imperialism
+impressed
+impression
+impulse
+independence
+independent
+indigenous
+inefficient
+inequality
+infection
+inference
+information
+infotainment
+ingredient
+inheritance
+injury
+innovation
+innovative
+insecure
+insight
+inspiration
+inspired
+install
+installation
+instructor
+instrument
+insulation
+integer
+integral
+integrate
+integration
+intelligent
+interaction
+interest
+interface
+internet
+interplanetary
+interpret
+interpretation
+interrupt
+interstellar
+interval training
+introduce
+introduction
+introversion
+introverted
+invention
+investigate
+investigation
+investigative reporter
+invitation
+invite
+iron
+irony
+irresponsible
+irritability
+irritated
+isolation
+itinerary
+javelin
+jealous
+jealousy
+jet lag
+jingle
+jog
+journal
+jovian
+joy
+judgment
+juice
+keep
+kept
+kettle
+keyboard
+kickoff
+kilowatt
+kind
+kindergarten
+kindness
+kinetic energy
+kitchen
+kneel
+knelt
+knew
+knife
+knit
+know
+knowledge
+knowledgeable
+known
+laboratory
+laid
+lain
+lamp
+landing
+landmark
+landscape
+laptop
+launch
+laundry
+law
+lay
+layover
+lazy
+lead
+leaf
+league
+leak
+leap
+leapt
+learn
+learner
+learning
+least
+leave
+leave home
+lecture
+lecturer
+led
+left
+legend
+leisure
+lend
+lens
+lent
+less
+lesson
+let
+lettuce
+library
+lie
+lifestyle
+light
+light-year
+lighthearted
+likable
+limit
+line
+lineup
+liquid
+listen to music
+listenership
+lit
+literature
+lithograph
+live stream
+livestreamer
+living room
+lob
+local
+local currency
+localization
+lock the door
+log in
+log out
+logic
+lonely
+long jump
+long-haul flight
+lose
+lost
+love
+loyal
+loyalty
+lunar
+lunar eclipse
+lunch
+made
+magnet
+magnetic field
+main course
+main idea
+maintenance
+make
+make a phone call
+make coffee
+make the bed
+makeup
+mango
+mania
+manners
+marathon
+mark
+marriage
+married
+marry
+martian
+mascot
+mass
+mass media
+masterpiece
+master’s degree
+masthead
+match point
+mathematics
+maths
+matter
+mattress
+mature
+maximum
+meal
+mean
+meant
+measure
+measurement
+meat
+medal
+media
+media buying
+media kit
+media literacy
+media outlet
+median
+medical record
+medication
+medicine
+meditate
+meet
+meet friends
+meeting
+megawatt
+melody
+meltdown
+membrane
+meme culture
+memorial
+memorise
+memory
+mental health
+mention
+menu
+merchandise
+message
+met
+metacognition
+metal
+metaphor
+meteor
+meteor shower
+meteorite
+method
+methodology
+metro
+micro-influencer
+microgravity
+microscope
+microwave
+midfielder
+migration
+milk
+milky way
+mind
+mindset
+mine
+mineral
+minimum
+mining
+miniseries
+minority
+mirror
+miserable
+misinformation
+mission
+mix
+mixed feelings
+mixture
+mockumentary
+model
+modernist
+modernization
+modest
+module
+molecule
+monarchy
+monument
+mood
+moon
+mop
+mop the floor
+morale
+more
+mosaic
+mosque
+most
+mother
+motion
+motivated
+motivation
+mouse
+moving
+mow
+mowed
+mown
+mug
+multicultural
+multiplication
+mural
+muscle
+museum
+mushroom
+musical
+mutation
+mythology
+nap
+narrator
+national park
+nationalism
+nationality
+natural gas
+natural selection
+nature reserve
+nebula
+negative
+neighbor
+neighborhood
+neighbour
+neighbourhood
+nephew
+nervous
+nervous system
+network
+neuron
+neuroticism
+neutralisation
+neutron
+news agency
+news anchor
+news outlet
+newsroom
+nice
+niece
+non-fiction
+non-metal
+noodle
+notebook
+notification
+notification bell
+novel
+nuclear
+nuclear family
+nuclear power
+nucleus
+number
+nurse
+nutrient
+nutrition
+obesity
+objective
+observation
+observation deck
+observatory
+observe
+observed
+observing
+obsession
+off the beaten track
+offended
+offshore
+offside
+oil
+one-way ticket
+onion
+online
+online harassment
+onshore
+op-ed
+open the curtains
+open-minded
+openness
+opera
+operating system
+operation
+opinion
+optimism
+optimistic
+orange
+orbit
+orbital
+orbital period
+orchestra
+order
+ore
+organ
+organisation
+organise
+organism
+organized
+ornament
+outage
+outfit
+outgoing
+output
+outraged
+oven
+overcame
+overcome
+overjoyed
+overran
+overrun
+oversleep
+overtourism
+overwhelmed
+own goal
+oxidation
+pack a bag
+pack lunch
+package tour
+paid
+pain
+paint
+painter
+painting
+palace
+palette
+pan
+pandemic
+panicked
+parent
+parental
+parenting
+parsec
+partner
+partnership
+passage
+passport
+password
+pasta
+patient
+patriotism
+pattern
+pay
+pay the bill
+paywall
+peaceful
+peel
+penalty
+pepper
+percentage
+perception
+performance
+performer
+periodic table
+persevering
+persistent
+personal best
+personality
+personification
+perspective
+persuade
+pessimism
+pessimistic
+petroleum
+ph
+phenomenon
+phobia
+photographer
+photography
+photojournalist
+photosynthesis
+photovoltaic
+phrase book
+physics
+physiotherapist
+pier
+pilgrimage
+pillow
+pineapple
+pipeline
+pipette
+pitch
+pity
+plan
+planet
+planetarium
+planner
+plasticity
+plate
+platform
+play games
+playground
+playlist
+playoff
+pleasant
+pleased
+plot
+plot twist
+plumber
+podcast
+podcaster
+podium
+poem
+point deduction
+point of view
+pole vault
+polite
+porch
+pork
+port
+portion
+portrait
+portray
+positive
+possession
+post
+post-production
+pot
+potato
+potential energy
+pottery
+pour
+pour milk
+poverty
+power
+power generation
+power grid
+power plant
+powered
+practice
+precision
+predator
+predict
+prediction
+preference
+preparation
+prepare
+prepare breakfast
+prepare for tomorrow
+preschool
+prescription
+preservation
+press junket
+press release
+pressure
+pressured
+prevention
+prey
+primary education
+primary school
+prime time
+principal
+principle
+principled
+printmaking
+priority
+privacy
+proactive
+probability
+probe
+problem-solving
+procedure
+process
+processor
+procrastinate
+product
+product placement
+professor
+program
+programming
+projection
+promotion
+proportion
+protagonist
+protein
+proton
+proud
+psyche
+public
+public health
+public relations
+public transport
+publication
+publicist
+punctual
+punctuality
+punishment
+pupil
+put
+put on makeup
+puzzled
+qualification
+qualified
+qualify
+quarterfinal
+queue
+quiet
+quit
+quiz
+quotient
+radiation
+radioactive
+radius
+raise
+rally
+ran
+rang
+rate of change
+ratio
+rationalization
+reactant
+reactor
+read
+read a book
+reading comprehension
+realistic
+reality show
+reasoning
+recall
+receipt
+recipe
+recognition
+reconcile
+reconciliation
+record-breaking
+recovery
+recycle
+red card
+red carpet
+referee
+refinery
+reflection
+reform
+refraction
+refuel
+regret
+rehearsal
+reinforcement
+rejected
+relate
+related
+relationship
+relative
+relax
+relaxation
+relaxed
+relay race
+relegation
+reliable
+relic
+relieved
+reluctant
+remember
+renaissance
+renewable energy
+renewal
+rental car
+repair
+replicate
+replication
+reply to messages
+report card
+represent
+reproduction
+request
+rerun
+research
+researcher
+resentful
+reservation
+reserved
+reservoir
+resident
+resilient
+resistance
+resolution
+resort
+resource
+resource depletion
+resourceful
+respect
+respectful
+respiration
+respond
+response
+responsibility
+responsible
+rest
+restaurant
+restless
+restoration
+retrieval
+review lessons
+revise
+revolution
+revolve
+reward
+rhyme
+rhythm
+rice
+rickshaw
+ridden
+ride
+right
+ring
+rise
+risen
+ritual
+rivalry
+road trip
+roast
+rocket
+rode
+roof
+room service
+root
+rose
+rotate
+rotation
+round trip
+routine
+rover
+rubbish
+rude
+rug
+ruin
+ruins
+rule
+ruler
+rumor
+run
+run errands
+rung
+rush hour
+sabbatical
+sacred
+sad
+sadness
+safari
+safety
+safety goggles
+said
+salt
+salty
+sample
+sampling
+sang
+sanitation
+sanity
+sank
+sat
+satellite
+satisfaction
+satisfied
+sauce
+saw
+say
+scarce
+scarcity
+scared
+scenic route
+schedule
+schema
+scholarship
+school
+school counsellor
+school year
+science
+scientific
+scientist
+score
+scoreboard
+scoreline
+screen
+screen time
+screening
+screenplay
+scripture
+scroll
+sculptor
+sculpture
+seafood
+seasickness
+season
+season ticket
+secondary education
+secondary school
+secularization
+secure
+security
+sedentary
+see
+seeding
+seek
+seen
+self-assured
+self-aware
+self-awareness
+self-concept
+self-control
+self-esteem
+self-guided tour
+self-image
+self-study
+selfish
+semester
+semifinal
+send
+send a text
+senior citizen
+sensation
+sensible
+sensitive
+sent
+sequence
+series
+serotonin
+serve
+server
+serving
+set
+set an alarm
+set design
+set the table
+setting
+sew
+sewed
+sewn
+shade
+shake
+shake hands
+shaken
+shame
+shape
+share
+shave
+shelf
+shine
+shock
+shone
+shook
+shoot
+shore excursion
+short story
+shortage
+shot
+shot put
+show
+showed
+shower
+shown
+showrunner
+shrank
+shrimp
+shrine
+shrink
+shrunk
+shut
+shy
+sibling
+side effect
+sightseeing
+silver medal
+simile
+simulation
+sincere
+sing
+single-parent family
+singles
+singularity
+sink
+sister
+sit
+sitcom
+sketch
+sketchbook
+skip intro
+sleep
+sleep in
+sleeper hit
+slept
+slice
+slid
+slide
+slit
+slogan
+slope
+smash
+smoothie
+snack
+soap
+soap opera
+sociable
+social
+social media
+society
+sofa
+soft drink
+software
+solar
+solar eclipse
+solar farm
+solar panel
+solar system
+solar-powered
+solid
+solidarity
+solute
+solution
+solve
+solvent
+sore throat
+sought
+sound
+sour
+source verification
+souvenir
+sovereignty
+sow
+sowed
+sown
+space station
+space suit
+spacecraft
+spacewalk
+span
+spanned
+sparkling water
+spat
+speak
+species
+specimen
+spectator
+speed
+spend
+spend time with family
+spent
+spice
+spicy
+spin-off
+spirituality
+spit
+split
+spoil
+spoiler
+spoilt
+spoke
+spoken
+sponsorship deal
+spoon
+sportsmanship
+spouse
+sprang
+spread
+spring
+sprint
+sprung
+stadium
+stage
+staircase
+stamina
+stand
+standings
+stanza
+star
+starter
+statistics
+statue
+stay up
+steal
+steam
+stem
+stepchild
+stepfather
+stepmother
+stimulus
+stir
+stir-fry
+stole
+stolen
+stomachache
+stood
+stopover
+stoppage time
+storage
+storey
+stove
+stranger
+strategy
+streaming platform
+strength
+stress
+stressed
+stressful
+stretch
+stretching
+strike
+striker
+struck
+stubborn
+student
+studious
+study
+stunned
+stunt double
+style
+subconscious
+subject
+subjective
+submit homework
+subscriber base
+subscription model
+substance
+substation
+substitute
+subtitled
+subtraction
+sugar
+suggest
+sum
+summit
+sun
+sung
+sunk
+supermarket
+supernova
+support
+supporter
+supporting detail
+supportive
+surgery
+surplus
+surprised
+surreal
+survey
+suspension
+sustainable tourism
+swam
+swear
+sweep
+sweep the floor
+sweet
+swept
+swim
+swing
+swore
+sworn
+swum
+swung
+symbol
+symbolism
+symmetry
+sympathetic
+sympathy
+symphony
+symptom
+synapse
+syndication
+system
+tactics
+take
+take a nap
+take a shower
+take care of someone
+take medicine
+take notes
+take out the trash
+take the bus
+takeaway
+taken
+talk show
+talkative
+tangent
+tap
+task
+taste
+taught
+tea
+teach
+teacher
+teaching
+team spirit
+teamwork
+tear
+technology
+telescope
+tell
+temper
+temperament
+temperature
+temple
+tender
+tense
+tension
+terminal
+terrestrial planet
+terrified
+tertiary education
+test
+test tube
+text
+textbook
+texture
+thank
+thankful
+theatre
+theme
+theory
+therapy
+think
+thirsty
+thorough
+thought
+thoughtful
+threw
+thrilled
+throw
+thrown
+thumbnail
+tidal energy
+tidy
+tidy the room
+tidy up
+tiebreak
+timetable
+tip
+tired
+tissue
+toaster
+toilet
+told
+tolerance
+tolerant
+tomato
+tone
+took
+toothbrush
+toothpaste
+tore
+torn
+touching
+tour operator
+tourist attraction
+tournament
+towel
+track
+track event
+tradition
+traffic
+trajectory
+tram
+transcript
+transfer fee
+transfer window
+transformer
+transit
+transmission
+transport
+trash
+trauma
+travel adapter
+travel agency
+travel blog
+travel insurance
+travel vlog
+treatment
+trekking
+trial
+triangle
+triathlon
+troll
+trust
+trustworthy
+truthful
+tuition
+tuk-tuk
+turbine
+turbulence
+turn off the lights
+tutor
+typography
+uncertain
+uncertainty
+uncle
+unconscious
+underdog
+undergraduate
+undergraduate degree
+understand
+understanding
+understood
+uneasy
+unhappy
+unhealthy
+universe
+university
+unsportsmanlike conduct
+upbringing
+update
+upload
+upset
+uranium
+vacancy
+vaccination
+vaccine
+vacuum
+vacuum the carpet
+valid
+validity
+value
+variable
+variety show
+vase
+vegan
+vegetable
+vegetarian
+velocity
+venusian
+viewership
+viewpoint
+vinegar
+violence
+viral trend
+virality
+virus
+visa
+visit
+visual
+visual effects
+vitamin
+vocational school
+voice-over
+void
+volley
+voltage
+volume
+volunteer
+voyage
+wait in line
+waiter
+waitress
+wake
+wake up
+walk
+walk the dog
+wall
+wanderlust
+ward
+wardrobe
+warm-up
+was
+wash
+wash the dishes
+wash your face
+washing machine
+watch tv
+water
+water the plants
+watercolor
+watermelon
+watt
+wave
+wavelength
+wear
+weave
+web browser
+webinar
+website
+wedding
+weight
+weightlessness
+welcome
+well
+well-being
+went
+were
+whiteboard
+wi-fi
+wife
+wild card
+wildlife
+willpower
+win
+wind
+wind energy
+wind farm
+wind turbine
+window
+window seat
+wire service
+wise
+withdraw
+withdraw cash
+withdrawn
+withdrew
+woke
+woken
+won
+wore
+work
+work out
+work-life balance
+workout
+worksheet
+workshop
+world record
+worn
+worried
+worry
+worse
+worship
+worst
+wound
+wove
+woven
+write
+written
+wrote
+yard
+yawn
+yellow card
+yogurt
