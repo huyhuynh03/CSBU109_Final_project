@@ -35,7 +35,9 @@ const PWAInstall = {
             this._isInstalled = true;
             this._deferredPrompt = null;
             console.log('[PWAInstall] App installed successfully');
-            this._completeProgress();
+            // Đánh dấu đã nhận event, nhưng KHÔNG hoàn tất progress ngay
+            // vì icon chưa xuất hiện trên thiết bị (cần thêm thời gian)
+            this._appInstalledFired = true;
         });
 
         // Check if already running as standalone (installed)
@@ -328,50 +330,81 @@ const PWAInstall = {
 
     /**
      * Simulate progress bar animation
-     * Tăng nhanh đến 70%, sau đó chậm dần chờ appinstalled event
+     * Chạy đều đặn trong ~45-55 giây để khớp với thời gian thực tế
+     * icon xuất hiện trên thiết bị di động
      */
     _simulateProgress() {
         let progress = 0;
+        this._appInstalledFired = false;
         const fill = this._progressOverlay?.querySelector('.pwa-progress-bar-fill');
         const percent = this._progressOverlay?.querySelector('.pwa-progress-percent');
         const status = this._progressOverlay?.querySelector('.pwa-progress-status');
 
         if (!fill || !percent || !status) return;
 
-        this._progressInterval = setInterval(() => {
-            if (progress < 30) {
-                progress += Math.random() * 8 + 3; // Nhanh: 3-11% mỗi tick
-            } else if (progress < 60) {
-                progress += Math.random() * 4 + 1; // Trung bình: 1-5%
-            } else if (progress < 85) {
-                progress += Math.random() * 1.5 + 0.3; // Chậm: 0.3-1.8%
-            } else if (progress < 95) {
-                progress += Math.random() * 0.5 + 0.1; // Rất chậm: 0.1-0.6%
-            }
-            // Không vượt quá 95% - chờ appinstalled event để hoàn tất
+        // Tổng thời gian mô phỏng: ~50 giây (250 ticks x 200ms)
+        // Chia thành các giai đoạn với tốc độ khác nhau
+        const TICK_INTERVAL = 200; // ms
+        let tickCount = 0;
 
-            progress = Math.min(progress, 95);
+        this._progressInterval = setInterval(() => {
+            tickCount++;
+
+            // Giai đoạn 1: 0-20% trong ~8s (nhanh vừa - tải manifest)
+            if (progress < 20) {
+                progress += 0.5 + Math.random() * 0.3;
+            }
+            // Giai đoạn 2: 20-50% trong ~15s (tải assets chính)
+            else if (progress < 50) {
+                progress += 0.35 + Math.random() * 0.2;
+            }
+            // Giai đoạn 3: 50-75% trong ~12s (cài đặt & đăng ký)
+            else if (progress < 75) {
+                progress += 0.3 + Math.random() * 0.15;
+            }
+            // Giai đoạn 4: 75-90% trong ~10s (thiết lập shortcut)
+            else if (progress < 90) {
+                progress += 0.2 + Math.random() * 0.1;
+            }
+            // Giai đoạn 5: 90-98% - chỉ tiến khi đã nhận appinstalled
+            else if (progress < 98) {
+                if (this._appInstalledFired) {
+                    progress += 0.4 + Math.random() * 0.3;
+                } else {
+                    // Chờ appinstalled, tiến rất chậm
+                    progress += 0.02;
+                }
+            }
+            // Giai đoạn cuối: 98-100% → hoàn tất
+            else {
+                this._completeProgress();
+                return;
+            }
+
+            progress = Math.min(progress, 99.5);
             const rounded = Math.round(progress);
 
             fill.style.width = `${rounded}%`;
             percent.textContent = `${rounded}%`;
 
             // Cập nhật status text theo tiến trình
-            if (progress < 30) {
-                status.textContent = 'Đang tải xuống...';
-            } else if (progress < 60) {
-                status.textContent = 'Đang cài đặt...';
-            } else if (progress < 85) {
-                status.textContent = 'Đang thiết lập...';
+            if (progress < 20) {
+                status.textContent = 'Đang tải dữ liệu...';
+            } else if (progress < 50) {
+                status.textContent = 'Đang tải tài nguyên...';
+            } else if (progress < 75) {
+                status.textContent = 'Đang cài đặt ứng dụng...';
+            } else if (progress < 90) {
+                status.textContent = 'Đang tạo shortcut...';
             } else {
-                status.textContent = 'Sắp hoàn tất...';
+                status.textContent = 'Đang hoàn tất...';
             }
-        }, 200);
+        }, TICK_INTERVAL);
 
-        // Timeout fallback: nếu sau 15s chưa nhận appinstalled → tự hoàn tất
+        // Timeout fallback: nếu sau 90s vẫn chưa xong → tự hoàn tất
         this._progressTimeout = setTimeout(() => {
             this._completeProgress();
-        }, 15000);
+        }, 90000);
     },
 
     /**
