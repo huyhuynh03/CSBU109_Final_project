@@ -38,6 +38,9 @@ const App = {
             // và Firestore sẽ bị spam call "No user signed in".
             await Auth.waitForInitialAuth();
 
+            // 6.6. Initialize Push Notifications (sau khi auth ready)
+            PushNotificationManager.init();
+
             // 7. Initialize router (will render first page)
             Router.init();
 

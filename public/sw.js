@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.135
-const CACHE_NAME = 'linguaflash-v5.135';
+// LinguaFlash Service Worker v5.136
+const CACHE_NAME = 'linguaflash-v5.136';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -11,11 +11,12 @@ const STATIC_ASSETS = [
     '/src/css/base.css?v=3',
     '/src/css/themes.css?v=2',
     '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=24',
+    '/src/css/components.css?v=25',
     '/src/css/animations.css?v=2',
     '/src/css/responsive.css?v=4',
     '/src/css/pwa-install.css?v=2',
-    '/src/js/app.js?v=15',
+    '/src/js/notifications/push-manager.js?v=1',
+    '/src/js/app.js?v=16',
     '/src/js/router.js?v=3',
     '/src/js/utils/helpers.js?v=2',
     '/src/js/utils/family-word-manager.js?v=6',
@@ -44,7 +45,7 @@ const STATIC_ASSETS = [
     '/src/js/pages/grammar.js?v=3',
     '/src/js/pages/study.js?v=22',
     '/src/js/pages/review.js?v=15',
-    '/src/js/pages/settings.js?v=2',
+    '/src/js/pages/settings.js?v=3',
     '/src/js/pages/auth-page.js?v=8',
     '/src/js/pages/account.js?v=4'
 ];
@@ -158,6 +159,65 @@ self.addEventListener('fetch', (event) => {
                             return caches.match('/index.html');
                         }
                     });
+            })
+    );
+});
+
+// Push notification handler (backup - FCM SW handles most cases)
+self.addEventListener('push', (event) => {
+    if (!event.data) return;
+
+    try {
+        const payload = event.data.json();
+        const data = payload.data || {};
+        const notification = payload.notification || {};
+
+        const title = notification.title || data.title || 'LinguaFlash - Nhắc ôn từ vựng';
+        const body = notification.body || data.body || 'Bạn có từ cần ôn hôm nay 📚';
+
+        const options = {
+            body: body,
+            icon: '/icons/icon-192.png',
+            badge: '/icons/icon-96.png',
+            tag: 'review-reminder',
+            renotify: true,
+            data: {
+                url: data.url || '/#/review',
+                dueCount: data.dueCount || '',
+                timestamp: Date.now()
+            },
+            actions: [
+                { action: 'review', title: 'Ôn ngay' },
+                { action: 'dismiss', title: 'Để sau' }
+            ]
+        };
+
+        event.waitUntil(
+            self.registration.showNotification(title, options)
+        );
+    } catch (err) {
+        console.error('[SW] Push parse error:', err);
+    }
+});
+
+// Notification click handler
+self.addEventListener('notificationclick', (event) => {
+    event.notification.close();
+
+    if (event.action === 'dismiss') return;
+
+    const targetUrl = event.notification.data?.url || '/#/review';
+
+    event.waitUntil(
+        clients.matchAll({ type: 'window', includeUncontrolled: true })
+            .then((clientList) => {
+                for (const client of clientList) {
+                    if (client.url.includes(self.location.origin)) {
+                        client.navigate(targetUrl);
+                        return client.focus();
+                    }
+                }
+                return clients.openWindow(targetUrl);
             })
     );
 });

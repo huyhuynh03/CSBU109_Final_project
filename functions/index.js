@@ -1,5 +1,6 @@
 const admin = require('firebase-admin');
 const { onCall, HttpsError } = require('firebase-functions/v2/https');
+const { onSchedule } = require('firebase-functions/v2/scheduler');
 const logger = require('firebase-functions/logger');
 
 if (!admin.apps.length) {
@@ -201,3 +202,226 @@ exports.cleanupSpaceDuplicateWords = onCall(async (request) => {
     preview
   };
 });
+
+// ============================================
+// Push Notification - Review Reminder
+// ============================================
+// Chạy mỗi 15 phút, check user nào đến giờ nhắc ôn,
+// đếm số cards due, gửi FCM push notification.
+
+exports.sendReviewReminders = onSchedule({
+  schedule: 'every 15 minutes',
+  timeZone: 'Asia/Ho_Chi_Minh',
+  retryCount: 1,
+  memory: '256MiB'
+}, async (event) => {
+  const now = new Date();
+  const messaging = admin.messaging();
+
+  logger.info('[sendReviewReminders] Starting...', { time: now.toISOString() });
+
+  try {
+    // Query tất cả users có bật notification
+    const usersSnapshot = await db.collection('users')
+      .where('notificationSettings.enabled', '==', true)
+      .get();
+
+    if (usersSnapshot.empty) {
+      logger.info('[sendReviewReminders] No users with notifications enabled');
+      return;
+    }
+
+    let sentCount = 0;
+    let skipCount = 0;
+
+    for (const userDoc of usersSnapshot.docs) {
+      try {
+        const userData = userDoc.data();
+        const settings = userData.notificationSettings || {};
+        const reminderTime = settings.reminderTime || '08:00';
+        const timezone = settings.timezone || 'Asia/Saigon';
+
+        // Check xem có đúng giờ nhắc không (±7 phút buffer cho 15-min interval)
+        if (!isTimeToNotify(now, reminderTime, timezone)) {
+          skipCount++;
+          continue;
+        }
+
+        // Check xem đã gửi hôm nay chưa (tránh gửi trùng)
+        const todayKey = getTodayKey(timezone);
+        if (settings.lastNotifiedDate === todayKey) {
+          skipCount++;
+          continue;
+        }
+
+        // Đếm số cards due
+        const dueCount = await countDueCards(userDoc.id);
+        if (dueCount === 0) {
+          skipCount++;
+          continue;
+        }
+
+        // Lấy tất cả device tokens của user
+        const devicesSnapshot = await db.collection('users').doc(userDoc.id)
+          .collection('devices').get();
+
+        if (devicesSnapshot.empty) {
+          skipCount++;
+          continue;
+        }
+
+        // Gửi notification tới tất cả devices
+        const tokens = devicesSnapshot.docs.map(d => d.data().token).filter(Boolean);
+        if (tokens.length === 0) {
+          skipCount++;
+          continue;
+        }
+
+        const message = {
+          notification: {
+            title: 'LinguaFlash - Nhắc ôn từ vựng 📚',
+            body: `Bạn có ${dueCount} từ cần ôn hôm nay. Ôn ngay để không quên!`
+          },
+          data: {
+            type: 'review_reminder',
+            dueCount: String(dueCount),
+            url: '/#/review',
+            timestamp: String(Date.now())
+          },
+          webpush: {
+            fcmOptions: {
+              link: '/#/review'
+            },
+            notification: {
+              icon: '/icons/icon-192.png',
+              badge: '/icons/icon-96.png',
+              tag: 'review-reminder',
+              renotify: true,
+              requireInteraction: false
+            }
+          }
+        };
+
+        // Gửi multicast
+        const response = await messaging.sendEachForMulticast({
+          tokens: tokens,
+          ...message
+        });
+
+        // Xử lý tokens hết hạn
+        if (response.failureCount > 0) {
+          const failedTokens = [];
+          response.responses.forEach((resp, idx) => {
+            if (!resp.success) {
+              const errorCode = resp.error?.code;
+              if (errorCode === 'messaging/invalid-registration-token' ||
+                  errorCode === 'messaging/registration-token-not-registered') {
+                failedTokens.push(tokens[idx]);
+              }
+            }
+          });
+
+          // Xóa tokens hết hạn
+          for (const failedToken of failedTokens) {
+            const tokenDoc = devicesSnapshot.docs.find(d => d.data().token === failedToken);
+            if (tokenDoc) {
+              await tokenDoc.ref.delete();
+              logger.info('[sendReviewReminders] Removed expired token', { uid: userDoc.id });
+            }
+          }
+        }
+
+        // Cập nhật lastNotifiedDate
+        await db.collection('users').doc(userDoc.id).update({
+          'notificationSettings.lastNotifiedDate': todayKey
+        });
+
+        sentCount++;
+        logger.info('[sendReviewReminders] Sent to user', {
+          uid: userDoc.id,
+          dueCount,
+          devices: tokens.length,
+          success: response.successCount
+        });
+
+      } catch (userErr) {
+        logger.error('[sendReviewReminders] Error for user', {
+          uid: userDoc.id,
+          error: userErr.message
+        });
+      }
+    }
+
+    logger.info('[sendReviewReminders] Done', { sentCount, skipCount });
+  } catch (err) {
+    logger.error('[sendReviewReminders] Fatal error', { error: err.message });
+  }
+});
+
+/**
+ * Check xem giờ hiện tại có khớp với reminderTime không (±7 phút)
+ */
+function isTimeToNotify(now, reminderTime, timezone) {
+  try {
+    // Lấy giờ hiện tại theo timezone của user
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      timeZone: timezone,
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    });
+    const parts = formatter.formatToParts(now);
+    const currentHour = parseInt(parts.find(p => p.type === 'hour').value, 10);
+    const currentMinute = parseInt(parts.find(p => p.type === 'minute').value, 10);
+
+    const [targetHour, targetMinute] = reminderTime.split(':').map(Number);
+
+    // Tính khoảng cách phút
+    const currentTotalMinutes = currentHour * 60 + currentMinute;
+    const targetTotalMinutes = targetHour * 60 + targetMinute;
+    const diff = Math.abs(currentTotalMinutes - targetTotalMinutes);
+
+    // Buffer ±7 phút (vì cron chạy mỗi 15 phút)
+    return diff <= 7;
+  } catch (err) {
+    logger.warn('[isTimeToNotify] Error:', err.message);
+    return false;
+  }
+}
+
+/**
+ * Lấy key ngày hôm nay theo timezone (YYYY-MM-DD)
+ */
+function getTodayKey(timezone) {
+  try {
+    const formatter = new Intl.DateTimeFormat('en-CA', {
+      timeZone: timezone,
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
+    });
+    return formatter.format(new Date());
+  } catch {
+    return new Date().toISOString().split('T')[0];
+  }
+}
+
+/**
+ * Đếm số cards có dueDate <= now cho user
+ */
+async function countDueCards(uid) {
+  try {
+    const now = new Date();
+    const cardsSnapshot = await db.collection('users').doc(uid)
+      .collection('cards')
+      .where('dueDate', '<=', now)
+      .where('state', '>=', 1) // Không đếm NEW cards (state=0)
+      .limit(100) // Giới hạn query
+      .get();
+
+    return cardsSnapshot.size;
+  } catch (err) {
+    logger.warn('[countDueCards] Error:', { uid, error: err.message });
+    return 0;
+  }
+}

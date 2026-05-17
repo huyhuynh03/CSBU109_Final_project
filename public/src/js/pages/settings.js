@@ -1,13 +1,16 @@
 // ============================================
 // Settings Page
 // ============================================
-// Stub - Will be fully implemented in Phase 3
 
 const SettingsPage = {
     render() {
         const currentTheme = ThemeManager.currentTheme;
         const themeIcon = ThemeManager.getIcon();
         const themeLabel = ThemeManager.getLabel();
+
+        // Notification status
+        const permStatus = PushNotificationManager.getPermissionStatus();
+        const isSupported = PushNotificationManager.isSupported();
 
         return `
             <div class="settings-page page-enter">
@@ -44,6 +47,15 @@ const SettingsPage = {
                     </div>
                 </div>
 
+                <!-- Notification Settings -->
+                <div class="glass-card" style="margin-bottom:var(--spacing-lg);">
+                    <h4 style="margin-bottom:var(--spacing-md);">
+                        <span class="material-icons-round" style="vertical-align:middle;margin-right:var(--spacing-xs);color:var(--color-primary);">notifications</span>
+                        Thông báo nhắc ôn
+                    </h4>
+                    ${this._renderNotificationSection(isSupported, permStatus)}
+                </div>
+
                 <!-- AI API Key Settings -->
                 <div class="glass-card" style="margin-bottom:var(--spacing-lg);">
                     <h4 style="margin-bottom:var(--spacing-md);">Trợ lý AI</h4>
@@ -75,14 +87,201 @@ const SettingsPage = {
         `;
     },
 
-    onEnter() {
+    /**
+     * Render notification settings section based on support/permission status
+     */
+    _renderNotificationSection(isSupported, permStatus) {
+        if (!isSupported) {
+            return `
+                <div style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-md);background:var(--color-surface-alt);border-radius:var(--radius-md);">
+                    <span class="material-icons-round" style="color:var(--color-text-muted);">notifications_off</span>
+                    <div>
+                        <p style="font-weight:500;color:var(--color-text);">Không hỗ trợ</p>
+                        <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
+                            Trình duyệt này không hỗ trợ push notification. Hãy dùng Chrome/Edge hoặc thêm app vào Home Screen (iOS).
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        if (permStatus === 'denied') {
+            return `
+                <div style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-md);background:var(--color-surface-alt);border-radius:var(--radius-md);">
+                    <span class="material-icons-round" style="color:var(--color-danger);">block</span>
+                    <div>
+                        <p style="font-weight:500;color:var(--color-text);">Đã bị chặn</p>
+                        <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
+                            Bạn đã chặn quyền thông báo. Vào cài đặt trình duyệt → Site Settings → Notifications để bật lại.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Permission is 'default' or 'granted'
+        return `
+            <div id="notification-settings-content">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-md);">
+                    <div style="display:flex;align-items:center;gap:var(--spacing-md);">
+                        <span class="material-icons-round" style="color:var(--color-primary);">alarm</span>
+                        <div>
+                            <p style="font-weight:500;color:var(--color-text);">Nhắc ôn hàng ngày</p>
+                            <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
+                                Nhận thông báo khi có từ cần ôn
+                            </p>
+                        </div>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="notification-toggle" onchange="SettingsPage.toggleNotification(this.checked)">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <div id="notification-time-section" style="display:none;margin-top:var(--spacing-md);padding-top:var(--spacing-md);border-top:1px solid var(--color-border);">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <div style="display:flex;align-items:center;gap:var(--spacing-md);">
+                            <span class="material-icons-round" style="color:var(--color-secondary);">schedule</span>
+                            <div>
+                                <p style="font-weight:500;color:var(--color-text);">Giờ nhắc</p>
+                                <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">Chọn thời gian nhận thông báo</p>
+                            </div>
+                        </div>
+                        <input type="time" id="notification-time" value="08:00" 
+                               onchange="SettingsPage.updateReminderTime(this.value)"
+                               style="padding:var(--spacing-sm) var(--spacing-md);border-radius:var(--radius-md);border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);font-size:var(--font-size-md);">
+                    </div>
+                </div>
+
+                <div id="notification-status" style="margin-top:var(--spacing-md);display:none;">
+                    <p style="font-size:var(--font-size-sm);color:var(--color-success);display:flex;align-items:center;gap:var(--spacing-xs);">
+                        <span class="material-icons-round" style="font-size:16px;">check_circle</span>
+                        <span id="notification-status-text">Đã bật thông báo</span>
+                    </p>
+                </div>
+            </div>
+        `;
+    },
+
+    async onEnter() {
         // Load saved API key
         const savedKey = Helpers.storage.get('linguaflash-api-key', '');
         const input = document.getElementById('api-key-input');
         if (input && savedKey) {
             input.value = savedKey;
         }
+
+        // Load notification settings
+        await this._loadNotificationSettings();
+
         console.log('[SettingsPage] Entered');
+    },
+
+    /**
+     * Load notification settings from Firestore and update UI
+     */
+    async _loadNotificationSettings() {
+        const toggle = document.getElementById('notification-toggle');
+        const timeSection = document.getElementById('notification-time-section');
+        const timeInput = document.getElementById('notification-time');
+        const statusDiv = document.getElementById('notification-status');
+        const statusText = document.getElementById('notification-status-text');
+
+        if (!toggle) return;
+
+        try {
+            const settings = await PushNotificationManager.getSettings();
+
+            if (settings && settings.enabled) {
+                toggle.checked = true;
+                if (timeSection) timeSection.style.display = 'block';
+                if (timeInput && settings.reminderTime) {
+                    timeInput.value = settings.reminderTime;
+                }
+                if (statusDiv) {
+                    statusDiv.style.display = 'block';
+                    if (statusText) {
+                        statusText.textContent = `Đã bật — nhắc lúc ${settings.reminderTime || '08:00'}`;
+                    }
+                }
+            }
+        } catch (err) {
+            console.warn('[SettingsPage] Load notification settings error:', err);
+        }
+    },
+
+    /**
+     * Toggle notification on/off
+     */
+    async toggleNotification(enabled) {
+        const timeSection = document.getElementById('notification-time-section');
+        const statusDiv = document.getElementById('notification-status');
+        const statusText = document.getElementById('notification-status-text');
+        const timeInput = document.getElementById('notification-time');
+
+        if (enabled) {
+            // Check if user is logged in
+            if (!auth.currentUser) {
+                Toast.warning('Cần đăng nhập', 'Đăng nhập để bật thông báo nhắc ôn');
+                document.getElementById('notification-toggle').checked = false;
+                return;
+            }
+
+            // Request permission
+            const granted = await PushNotificationManager.requestPermission();
+            if (!granted) {
+                document.getElementById('notification-toggle').checked = false;
+                return;
+            }
+
+            // Save settings
+            const reminderTime = timeInput ? timeInput.value : '08:00';
+            await PushNotificationManager.saveSettings({
+                enabled: true,
+                reminderTime: reminderTime,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+            });
+
+            // Update UI
+            if (timeSection) timeSection.style.display = 'block';
+            if (statusDiv) statusDiv.style.display = 'block';
+            if (statusText) statusText.textContent = `Đã bật — nhắc lúc ${reminderTime}`;
+
+            Toast.success('Đã bật thông báo', `Sẽ nhắc ôn lúc ${reminderTime} mỗi ngày`);
+        } else {
+            // Disable notifications
+            await PushNotificationManager.removeToken();
+            await PushNotificationManager.saveSettings({
+                enabled: false,
+                reminderTime: timeInput ? timeInput.value : '08:00',
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+            });
+
+            // Update UI
+            if (timeSection) timeSection.style.display = 'none';
+            if (statusDiv) statusDiv.style.display = 'none';
+
+            Toast.info('Đã tắt thông báo');
+        }
+    },
+
+    /**
+     * Update reminder time
+     */
+    async updateReminderTime(time) {
+        const statusText = document.getElementById('notification-status-text');
+
+        await PushNotificationManager.saveSettings({
+            enabled: true,
+            reminderTime: time,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+        });
+
+        if (statusText) {
+            statusText.textContent = `Đã bật — nhắc lúc ${time}`;
+        }
+
+        Toast.success('Đã cập nhật', `Giờ nhắc: ${time}`);
     },
 
     setTheme(theme) {
