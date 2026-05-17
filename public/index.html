@@ -171,18 +171,49 @@
     <script src="/src/js/pages/languages.js?v=2"></script>
     <script src="/src/js/app.js?v=16"></script>
 
-    <!-- Register Service Worker -->
+    <!-- Register Service Worker + Auto-Update -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 // Register main SW
                 navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('[SW] Registered:', reg.scope))
+                    .then(reg => {
+                        console.log('[SW] Registered:', reg.scope);
+                        // Check for updates every 30 minutes
+                        setInterval(() => {
+                            reg.update().catch(() => {});
+                        }, 30 * 60 * 1000);
+                    })
                     .catch(err => console.error('[SW] Registration failed:', err));
                 // Register FCM SW (for push notifications)
                 navigator.serviceWorker.register('/firebase-messaging-sw.js')
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))
                     .catch(err => console.error('[FCM-SW] Registration failed:', err));
+
+                // Listen for SW update messages
+                navigator.serviceWorker.addEventListener('message', (event) => {
+                    if (event.data && event.data.type === 'SW_UPDATED') {
+                        console.log('[SW] New version available:', event.data.version);
+                        // Show update toast with reload action
+                        if (typeof Toast !== 'undefined') {
+                            const toastEl = Toast.info(
+                                '🔄 Có bản cập nhật mới',
+                                'Nhấn để tải lại trang và sử dụng phiên bản mới nhất.',
+                                0 // Don't auto-dismiss
+                            );
+                            // Make toast clickable to reload
+                            if (toastEl) {
+                                toastEl.style.cursor = 'pointer';
+                                toastEl.addEventListener('click', () => {
+                                    window.location.reload();
+                                });
+                            }
+                        } else {
+                            // Fallback: auto-reload if Toast not available yet
+                            window.location.reload();
+                        }
+                    }
+                });
             });
         }
     </script>

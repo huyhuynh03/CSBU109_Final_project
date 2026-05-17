@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.136
-const CACHE_NAME = 'linguaflash-v5.136';
+// LinguaFlash Service Worker v5.137
+const CACHE_NAME = 'linguaflash-v5.137';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -68,7 +68,7 @@ self.addEventListener('install', (event) => {
     );
 });
 
-// Activate - Clean up old caches
+// Activate - Clean up old caches & notify clients
 self.addEventListener('activate', (event) => {
     console.log('[SW] Activating...');
     event.waitUntil(
@@ -84,6 +84,17 @@ self.addEventListener('activate', (event) => {
                 );
             })
             .then(() => self.clients.claim())
+            .then(() => {
+                // Notify all clients that a new version is active
+                self.clients.matchAll({ type: 'window' }).then((clients) => {
+                    clients.forEach((client) => {
+                        client.postMessage({
+                            type: 'SW_UPDATED',
+                            version: CACHE_NAME
+                        });
+                    });
+                });
+            })
     );
 });
 
