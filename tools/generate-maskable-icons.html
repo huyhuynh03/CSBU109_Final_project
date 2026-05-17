@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Maskable Icons - LinguaFlash</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 2rem;
+            text-align: center;
+        }
+        h1 { color: #6C63FF; }
+        .info {
+            background: #2d2d44;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .drop-zone {
+            border: 3px dashed #6C63FF;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem auto;
+            max-width: 400px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            background: #2d2d44;
+        }
+        .drop-zone input { display: none; }
+        .canvas-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .canvas-item {
+            background: #2d2d44;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+        .canvas-item canvas {
+            border: 2px dashed #6C63FF;
+            border-radius: 8px;
+        }
+        .canvas-item p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        button {
+            background: #6C63FF;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        button:hover { background: #5a52e0; }
+        button:disabled { background: #444; cursor: not-allowed; }
+        .safe-zone-note {
+            color: #ffcc00;
+            font-size: 0.85rem;
+        }
+        #status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+        }
+        #status.success { display: block; background: #1b4332; color: #95d5b2; }
+        #status.error { display: block; background: #4a1515; color: #f5a5a5; }
+        #status.info { display: block; background: #1b3a4a; color: #a5d5f5; }
+        .hidden { display: none !important; }
+        .scale-control {
+            background: #2d2d44;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 400px;
+        }
+        .scale-control input[type="range"] {
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+        .scale-control label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🦉 Generate Maskable Icons - LinguaFlash</h1>
+    
+    <div class="info">
+        <p><strong>Tại sao cần maskable icon?</strong></p>
+        <p>Android hiển thị icon shortcut dạng adaptive/maskable. Nếu icon có nền trong suốt, 
+        hệ thống sẽ tô nền trắng vào → gây viền trắng xấu. Ngoài ra, chỉ 80% vùng trung tâm 
+        được hiển thị → phần rìa bị cắt.</p>
+        <p><strong>Tool này sẽ:</strong></p>
+        <ul>
+           <li>Thêm nền gradient tím-xanh kiểu Apple (glossy effect)</li>
+           <li>Thu nhỏ icon xuống 70% để nằm gọn trong safe zone 80%</li>
+           <li>Xuất ra 2 file: <code>icon-192-maskable.png</code> và <code>icon-512-maskable.png</code></li>
+       </ul>
+    </div>
+
+    <div class="drop-zone" id="dropZone">
+        <p>📁 <strong>Kéo thả file icon-512.png vào đây</strong></p>
+        <p style="font-size: 0.85rem; color: #aaa;">hoặc click để chọn file</p>
+        <input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp">
+    </div>
+
+    <div class="canvas-container hidden" id="canvasSection">
+        <div class="canvas-item">
+            <h3>192x192 Maskable</h3>
+            <canvas id="canvas192" width="192" height="192"></canvas>
+            <p>icon-192-maskable.png</p>
+            <button onclick="download('canvas192', 'icon-192-maskable.png')">⬇️ Tải về 192x192</button>
+        </div>
+        <div class="canvas-item">
+            <h3>512x512 Maskable</h3>
+            <canvas id="canvas512" width="512" height="512"></canvas>
+            <p>icon-512-maskable.png</p>
+            <button onclick="download('canvas512', 'icon-512-maskable.png')">⬇️ Tải về 512x512</button>
+        </div>
+    </div>
+
+    <div class="scale-control hidden" id="scaleControl">
+        <label>🔧 Kích thước avatar: <span id="scaleValue">70</span>%</label>
+        <input type="range" id="scaleSlider" min="30" max="80" value="70" step="5">
+        <p style="font-size:0.8rem;color:#aaa;">Kéo slider sang trái để thu nhỏ avatar. Safe zone Android = 80%.</p>
+    </div>
+
+    <button id="downloadAll" class="hidden" onclick="downloadAll()">⬇️ Tải về tất cả</button>
+
+    <div id="status"></div>
+
+    <script>
+        // Gradient colors for Apple-style glossy background
+        const GRADIENT_TOP = '#4A3AFF';     // Bright purple-blue (top)
+        const GRADIENT_BOTTOM = '#1E0A4E';  // Deep dark purple (bottom)
+        const HIGHLIGHT_COLOR = 'rgba(255, 255, 255, 0.15)'; // Glossy highlight
+        let ICON_SCALE = 0.70;
+        let currentImg = null;
+
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const canvasSection = document.getElementById('canvasSection');
+        const downloadAllBtn = document.getElementById('downloadAll');
+        const scaleControl = document.getElementById('scaleControl');
+        const scaleSlider = document.getElementById('scaleSlider');
+        const scaleValue = document.getElementById('scaleValue');
+
+        // Scale slider event
+        scaleSlider.addEventListener('input', (e) => {
+            ICON_SCALE = parseInt(e.target.value) / 100;
+            scaleValue.textContent = e.target.value;
+            if (currentImg) {
+                generateMaskableIcon(document.getElementById('canvas192'), currentImg);
+                generateMaskableIcon(document.getElementById('canvas512'), currentImg);
+            }
+        });
+
+        // Drop zone events
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file) processFile(file);
+        });
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) processFile(file);
+        });
+
+        function processFile(file) {
+            if (!file.type.startsWith('image/')) {
+                showStatus('❌ Vui lòng chọn file ảnh (PNG, JPG, WebP)', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    currentImg = img;
+                    generateMaskableIcon(document.getElementById('canvas192'), img);
+                    generateMaskableIcon(document.getElementById('canvas512'), img);
+                    canvasSection.classList.remove('hidden');
+                    downloadAllBtn.classList.remove('hidden');
+                    scaleControl.classList.remove('hidden');
+                    dropZone.innerHTML = `<p>✅ Đã load: <strong>${file.name}</strong> (${img.width}x${img.height})</p><p style="font-size:0.85rem;color:#aaa;">Kéo thả file khác để thay đổi</p><input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp" style="display:none">`;
+                    showStatus('✅ Icon maskable đã được tạo! Dùng slider để điều chỉnh kích thước, rồi nhấn "Tải về".', 'success');
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function generateMaskableIcon(canvas, img) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+
+            // 1. Fill gradient background (Apple-style)
+            const gradient = ctx.createLinearGradient(0, 0, 0, size);
+            gradient.addColorStop(0, GRADIENT_TOP);
+            gradient.addColorStop(1, GRADIENT_BOTTOM);
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+
+            // 2. Add glossy highlight overlay (Apple glass effect)
+            const highlightGradient = ctx.createRadialGradient(
+                size * 0.5, size * 0.2, 0,
+                size * 0.5, size * 0.5, size * 0.7
+            );
+            highlightGradient.addColorStop(0, HIGHLIGHT_COLOR);
+            highlightGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+            ctx.fillStyle = highlightGradient;
+            ctx.fillRect(0, 0, size, size);
+
+            // 3. Calculate scaled icon size (fit in 80% safe zone)
+            const iconSize = size * ICON_SCALE;
+            const offset = (size - iconSize) / 2;
+
+            // 4. Draw icon centered
+            ctx.drawImage(img, offset, offset, iconSize, iconSize);
+        }
+
+        function download(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        function downloadAll() {
+            download('canvas192', 'icon-192-maskable.png');
+            setTimeout(() => download('canvas512', 'icon-512-maskable.png'), 500);
+            showStatus('✅ Đã tải cả 2 file! Copy vào thư mục public/icons/', 'success');
+        }
+
+        function showStatus(message, type) {
+            const el = document.getElementById('status');
+            el.innerHTML = message;
+            el.className = type;
+        }
+    </script>
+</body>
+</html>
