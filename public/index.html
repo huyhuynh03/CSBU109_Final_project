@@ -171,18 +171,57 @@
     <script src="/src/js/pages/languages.js?v=2"></script>
     <script src="/src/js/app.js?v=16"></script>
 
-    <!-- Register Service Worker + Auto-Update -->
+    <!-- Register Service Worker + Auto-Update with Progress -->
     <script>
         if ('serviceWorker' in navigator) {
+            let _updateOverlay = null;
+
+            function _showUpdateProgress(percent, loaded, total) {
+                if (!_updateOverlay) {
+                    _updateOverlay = document.createElement('div');
+                    _updateOverlay.id = 'sw-update-overlay';
+                    _updateOverlay.innerHTML = `
+                        <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:99999;display:flex;align-items:center;justify-content:center;">
+                            <div style="background:var(--color-surface,#fff);border-radius:16px;padding:24px 32px;min-width:300px;max-width:90vw;box-shadow:0 8px 32px rgba(0,0,0,0.3);text-align:center;">
+                                <div style="font-size:32px;margin-bottom:12px;">🔄</div>
+                                <h3 style="margin:0 0 8px;color:var(--color-text,#333);font-size:16px;" id="sw-update-title">Đang cập nhật...</h3>
+                                <p style="margin:0 0 16px;color:var(--color-text-muted,#666);font-size:13px;" id="sw-update-detail">Tải tài nguyên mới</p>
+                                <div style="width:100%;height:8px;background:var(--color-border,#e0e0e0);border-radius:4px;overflow:hidden;margin-bottom:8px;">
+                                    <div id="sw-update-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--color-primary,#6C5CE7),var(--color-secondary,#a29bfe));border-radius:4px;transition:width 0.3s ease;"></div>
+                                </div>
+                                <p style="margin:0;color:var(--color-text-muted,#666);font-size:12px;" id="sw-update-percent">0%</p>
+                            </div>
+                        </div>
+                    `;
+                    document.body.appendChild(_updateOverlay);
+                }
+                const bar = document.getElementById('sw-update-bar');
+                const pctText = document.getElementById('sw-update-percent');
+                const detail = document.getElementById('sw-update-detail');
+                if (bar) bar.style.width = percent + '%';
+                if (pctText) pctText.textContent = percent + '%';
+                if (detail) detail.textContent = `Đã tải ${loaded}/${total} tài nguyên`;
+            }
+
+            function _completeUpdate() {
+                const title = document.getElementById('sw-update-title');
+                const bar = document.getElementById('sw-update-bar');
+                const pctText = document.getElementById('sw-update-percent');
+                const detail = document.getElementById('sw-update-detail');
+                if (title) title.textContent = 'Cập nhật hoàn tất!';
+                if (bar) { bar.style.width = '100%'; bar.style.background = '#27ae60'; }
+                if (pctText) pctText.textContent = '100%';
+                if (detail) detail.textContent = 'Đang tải lại trang...';
+                setTimeout(() => window.location.reload(), 1200);
+            }
+
             window.addEventListener('load', () => {
                 // Register main SW
                 navigator.serviceWorker.register('/sw.js')
                     .then(reg => {
                         console.log('[SW] Registered:', reg.scope);
                         // Check for updates every 30 minutes
-                        setInterval(() => {
-                            reg.update().catch(() => {});
-                        }, 30 * 60 * 1000);
+                        setInterval(() => { reg.update().catch(() => {}); }, 30 * 60 * 1000);
                     })
                     .catch(err => console.error('[SW] Registration failed:', err));
                 // Register FCM SW (for push notifications)
@@ -190,28 +229,19 @@
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))
                     .catch(err => console.error('[FCM-SW] Registration failed:', err));
 
-                // Listen for SW update messages
+                // Listen for SW update progress messages
                 navigator.serviceWorker.addEventListener('message', (event) => {
-                    if (event.data && event.data.type === 'SW_UPDATED') {
-                        console.log('[SW] New version available:', event.data.version);
-                        // Show update toast with reload action
-                        if (typeof Toast !== 'undefined') {
-                            const toastEl = Toast.info(
-                                '🔄 Có bản cập nhật mới',
-                                'Nhấn để tải lại trang và sử dụng phiên bản mới nhất.',
-                                0 // Don't auto-dismiss
-                            );
-                            // Make toast clickable to reload
-                            if (toastEl) {
-                                toastEl.style.cursor = 'pointer';
-                                toastEl.addEventListener('click', () => {
-                                    window.location.reload();
-                                });
-                            }
-                        } else {
-                            // Fallback: auto-reload if Toast not available yet
-                            window.location.reload();
-                        }
+                    if (!event.data) return;
+                    switch (event.data.type) {
+                        case 'SW_UPDATE_START':
+                            _showUpdateProgress(0, 0, event.data.total);
+                            break;
+                        case 'SW_UPDATE_PROGRESS':
+                            _showUpdateProgress(event.data.percent, event.data.loaded, event.data.total);
+                            break;
+                        case 'SW_UPDATED':
+                            _completeUpdate();
+                            break;
                     }
                 });
             });

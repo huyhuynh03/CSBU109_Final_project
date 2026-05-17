@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.137
-const CACHE_NAME = 'linguaflash-v5.137';
+// LinguaFlash Service Worker v5.138
+const CACHE_NAME = 'linguaflash-v5.138';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -55,16 +55,43 @@ const NETWORK_FIRST_FILES = [
     '/src/js/firebase-config.js'
 ];
 
-// Install - Cache static assets
+// Install - Cache static assets with progress tracking
 self.addEventListener('install', (event) => {
     console.log('[SW] Installing...');
     event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then((cache) => {
-                console.log('[SW] Caching static assets');
-                return cache.addAll(STATIC_ASSETS);
-            })
-            .then(() => self.skipWaiting())
+        (async () => {
+            const cache = await caches.open(CACHE_NAME);
+            const total = STATIC_ASSETS.length;
+            let loaded = 0;
+
+            // Notify clients that update is starting
+            const clients = await self.clients.matchAll({ type: 'window' });
+            clients.forEach(client => {
+                client.postMessage({ type: 'SW_UPDATE_START', total });
+            });
+
+            // Cache each asset individually and report progress
+            for (const asset of STATIC_ASSETS) {
+                try {
+                    await cache.add(asset);
+                } catch (err) {
+                    console.warn('[SW] Failed to cache:', asset, err.message);
+                }
+                loaded++;
+                // Send progress to all clients
+                const allClients = await self.clients.matchAll({ type: 'window' });
+                allClients.forEach(client => {
+                    client.postMessage({
+                        type: 'SW_UPDATE_PROGRESS',
+                        loaded,
+                        total,
+                        percent: Math.round((loaded / total) * 100)
+                    });
+                });
+            }
+
+            await self.skipWaiting();
+        })()
     );
 });
 
