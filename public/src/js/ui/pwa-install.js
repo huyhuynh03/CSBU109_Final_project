@@ -13,6 +13,12 @@ const PWAInstall = {
     /** @type {HTMLElement|null} */
     _modal: null,
 
+    /** @type {HTMLElement|null} Progress overlay element */
+    _progressOverlay: null,
+
+    /** @type {number|null} Progress animation interval */
+    _progressInterval: null,
+
     /**
      * Initialize PWA Install manager
      */
@@ -29,7 +35,7 @@ const PWAInstall = {
             this._isInstalled = true;
             this._deferredPrompt = null;
             console.log('[PWAInstall] App installed successfully');
-            Toast.show({ type: 'success', title: 'Đã cài đặt!', message: 'LinguaFlash đã được thêm vào thiết bị.' });
+            this._completeProgress();
         });
 
         // Check if already running as standalone (installed)
@@ -82,7 +88,8 @@ const PWAInstall = {
                 console.log('[PWAInstall] User choice:', outcome);
                 this._deferredPrompt = null;
                 if (outcome === 'accepted') {
-                    return; // appinstalled event sẽ handle
+                    this._showProgressOverlay();
+                    return; // appinstalled event sẽ handle completion
                 }
             } catch (err) {
                 console.error('[PWAInstall] Install prompt error:', err);
@@ -274,6 +281,156 @@ const PWAInstall = {
             setTimeout(() => {
                 this._modal?.remove();
                 this._modal = null;
+            }, 300);
+        }
+    },
+
+    // ============================================
+    // Progress Overlay - Simulated install progress
+    // ============================================
+
+    /**
+     * Show progress overlay with simulated download/install animation
+     */
+    _showProgressOverlay() {
+        this._closeProgressOverlay();
+
+        const overlay = document.createElement('div');
+        overlay.id = 'pwa-progress-overlay';
+        overlay.className = 'pwa-progress-overlay';
+        overlay.innerHTML = `
+            <div class="pwa-progress-card glass-panel">
+                <div class="pwa-progress-header">
+                    <img src="/icons/icon-96.png" alt="LinguaFlash" class="pwa-progress-icon">
+                    <div class="pwa-progress-info">
+                        <h3 class="pwa-progress-title">Đang cài đặt LinguaFlash</h3>
+                        <p class="pwa-progress-status">Đang tải xuống...</p>
+                    </div>
+                </div>
+                <div class="pwa-progress-bar-container">
+                    <div class="pwa-progress-bar">
+                        <div class="pwa-progress-bar-fill"></div>
+                    </div>
+                    <span class="pwa-progress-percent">0%</span>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+        this._progressOverlay = overlay;
+
+        // Animate in
+        requestAnimationFrame(() => overlay.classList.add('pwa-progress-visible'));
+
+        // Start simulated progress
+        this._simulateProgress();
+    },
+
+    /**
+     * Simulate progress bar animation
+     * Tăng nhanh đến 70%, sau đó chậm dần chờ appinstalled event
+     */
+    _simulateProgress() {
+        let progress = 0;
+        const fill = this._progressOverlay?.querySelector('.pwa-progress-bar-fill');
+        const percent = this._progressOverlay?.querySelector('.pwa-progress-percent');
+        const status = this._progressOverlay?.querySelector('.pwa-progress-status');
+
+        if (!fill || !percent || !status) return;
+
+        this._progressInterval = setInterval(() => {
+            if (progress < 30) {
+                progress += Math.random() * 8 + 3; // Nhanh: 3-11% mỗi tick
+            } else if (progress < 60) {
+                progress += Math.random() * 4 + 1; // Trung bình: 1-5%
+            } else if (progress < 85) {
+                progress += Math.random() * 1.5 + 0.3; // Chậm: 0.3-1.8%
+            } else if (progress < 95) {
+                progress += Math.random() * 0.5 + 0.1; // Rất chậm: 0.1-0.6%
+            }
+            // Không vượt quá 95% - chờ appinstalled event để hoàn tất
+
+            progress = Math.min(progress, 95);
+            const rounded = Math.round(progress);
+
+            fill.style.width = `${rounded}%`;
+            percent.textContent = `${rounded}%`;
+
+            // Cập nhật status text theo tiến trình
+            if (progress < 30) {
+                status.textContent = 'Đang tải xuống...';
+            } else if (progress < 60) {
+                status.textContent = 'Đang cài đặt...';
+            } else if (progress < 85) {
+                status.textContent = 'Đang thiết lập...';
+            } else {
+                status.textContent = 'Sắp hoàn tất...';
+            }
+        }, 200);
+
+        // Timeout fallback: nếu sau 15s chưa nhận appinstalled → tự hoàn tất
+        this._progressTimeout = setTimeout(() => {
+            this._completeProgress();
+        }, 15000);
+    },
+
+    /**
+     * Complete the progress bar (called when appinstalled fires or timeout)
+     */
+    _completeProgress() {
+        // Clear interval & timeout
+        if (this._progressInterval) {
+            clearInterval(this._progressInterval);
+            this._progressInterval = null;
+        }
+        if (this._progressTimeout) {
+            clearTimeout(this._progressTimeout);
+            this._progressTimeout = null;
+        }
+
+        const fill = this._progressOverlay?.querySelector('.pwa-progress-bar-fill');
+        const percent = this._progressOverlay?.querySelector('.pwa-progress-percent');
+        const status = this._progressOverlay?.querySelector('.pwa-progress-status');
+        const title = this._progressOverlay?.querySelector('.pwa-progress-title');
+        const card = this._progressOverlay?.querySelector('.pwa-progress-card');
+
+        if (!this._progressOverlay) {
+            // Nếu không có overlay (trường hợp appinstalled fire mà không qua progress)
+            Toast.show({ type: 'success', title: 'Đã cài đặt!', message: 'LinguaFlash đã được thêm vào thiết bị.' });
+            return;
+        }
+
+        // Animate to 100%
+        if (fill) fill.style.width = '100%';
+        if (percent) percent.textContent = '100%';
+        if (status) status.textContent = 'Hoàn tất!';
+        if (title) title.textContent = 'Cài đặt thành công!';
+        if (card) card.classList.add('pwa-progress-complete');
+
+        // Auto close after 2.5s
+        setTimeout(() => {
+            this._closeProgressOverlay();
+            Toast.show({ type: 'success', title: 'Đã cài đặt!', message: 'LinguaFlash đã được thêm vào thiết bị.' });
+        }, 2500);
+    },
+
+    /**
+     * Close and remove progress overlay
+     */
+    _closeProgressOverlay() {
+        if (this._progressInterval) {
+            clearInterval(this._progressInterval);
+            this._progressInterval = null;
+        }
+        if (this._progressTimeout) {
+            clearTimeout(this._progressTimeout);
+            this._progressTimeout = null;
+        }
+        if (this._progressOverlay) {
+            this._progressOverlay.classList.remove('pwa-progress-visible');
+            setTimeout(() => {
+                this._progressOverlay?.remove();
+                this._progressOverlay = null;
             }, 300);
         }
     }
