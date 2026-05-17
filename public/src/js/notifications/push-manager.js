@@ -11,7 +11,7 @@ const PushNotificationManager = {
 
     // VAPID key từ Firebase Console > Cloud Messaging > Web Push certificates
     // Sẽ được set sau khi generate từ Firebase Console
-    VAPID_KEY: '',
+    VAPID_KEY: 'BLCynPD4ZtTRsmNsGOV7vUS81BWl5mwTEgSNVnrrbsUh6Dh1J_AWjyl8RRR5yBlypC7kptbF5SfJ-RBClS3D_p4',
 
     /**
      * Khởi tạo Push Manager
