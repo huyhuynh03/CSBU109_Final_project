@@ -18,9 +18,9 @@ const ICON_SOURCE = path.join(__dirname, '..', 'public', 'icons', 'icon-512.png'
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'icons');
 const ICON_SCALE = 0.70; // 70% of canvas size
 
-// Gradient colors
-const GRADIENT_TOP = { r: 74, g: 58, b: 255 };    // #4A3AFF - Bright purple-blue
-const GRADIENT_BOTTOM = { r: 30, g: 10, b: 78 };   // #1E0A4E - Deep dark purple
+// Gradient colors (lighter/pastel version)
+const GRADIENT_TOP = { r: 130, g: 110, b: 255 };   // #826EFF - Soft lavender-blue
+const GRADIENT_BOTTOM = { r: 75, g: 45, b: 180 };  // #4B2DB4 - Medium purple
 
 /**
  * Create an SVG gradient background with Apple-style glossy effect
@@ -91,7 +91,7 @@ async function main() {
     console.log('=========================================');
     console.log(`Source: ${ICON_SOURCE}`);
     console.log(`Scale: ${ICON_SCALE * 100}%`);
-    console.log(`Gradient: #4A3AFF → #1E0A4E (Apple glossy)\n`);
+    console.log(`Gradient: #826EFF → #4B2DB4 (Apple glossy, lighter)\n`);
 
     // Check source exists
     if (!fs.existsSync(ICON_SOURCE)) {
