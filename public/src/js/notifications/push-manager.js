@@ -229,8 +229,8 @@ const PushNotificationManager = {
     },
 
     /**
-     * Lưu notification settings vào Firestore
-     * @param {Object} settings - { enabled, reminderTime, timezone }
+     * Lưu notification settings vào Firestore.
+     * Schema mới: { enabled, timezone } — không còn reminderTime (gửi bất kỳ lúc nào có cards due).
      */
     async saveSettings(settings) {
         const user = auth.currentUser;
@@ -240,7 +240,6 @@ const PushNotificationManager = {
             await db.collection('users').doc(user.uid).set({
                 notificationSettings: {
                     enabled: settings.enabled,
-                    reminderTime: settings.reminderTime || '08:00',
                     timezone: settings.timezone || Intl.DateTimeFormat().resolvedOptions().timeZone,
                     updatedAt: firebase.firestore.FieldValue.serverTimestamp()
                 }
@@ -273,19 +272,57 @@ const PushNotificationManager = {
     },
 
     /**
-     * Hiển thị notification khi app ở foreground (in-app toast)
+     * Hiển thị notification khi app ở foreground (in-app toast).
+     * Body cố định, không tiết lộ số lượng / từ cụ thể.
      */
     _showForegroundNotification(payload) {
-        const data = payload.data || {};
         const notification = payload.notification || {};
 
-        const title = notification.title || 'Nhắc ôn từ vựng';
-        const body = notification.body || `Bạn có ${data.dueCount || ''} từ cần ôn 📚`;
+        const title = notification.title || 'LinguaFlash';
+        const body = notification.body || 'Có từ cần ôn tập 📚';
 
-        // Hiển thị toast thay vì system notification (vì app đang mở)
         if (typeof Toast !== 'undefined') {
-            Toast.info(title, body, 8000);
+            Toast.info(title, body);
         }
+    },
+
+    /**
+     * Tự động bật notification cho user mới.
+     * Chỉ chạy khi:
+     *   - User đã đăng nhập
+     *   - Browser hỗ trợ notification
+     *   - Permission state = 'default' (chưa hỏi lần nào)
+     *   - User chưa có settings trong Firestore
+     *
+     * Logic: gọi requestPermission() → nếu user grant → save enabled=true.
+     * Nếu user deny → silent skip, không retry (tránh annoy).
+     */
+    async autoEnableForNewUser() {
+        if (!this._isSupported) return false;
+        if (!auth.currentUser) return false;
+        if (Notification.permission !== 'default') return false;
+
+        try {
+            const existingSettings = await this.getSettings();
+            if (existingSettings) {
+                // User đã có settings (đã từng tắt/bật) → respect lựa chọn cũ
+                return false;
+            }
+
+            console.log('[PushManager] Auto-enabling notifications for new user');
+            const granted = await this.requestPermission();
+            if (granted) {
+                await this.saveSettings({
+                    enabled: true,
+                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+                });
+                console.log('[PushManager] Auto-enabled successfully');
+                return true;
+            }
+        } catch (err) {
+            console.warn('[PushManager] autoEnableForNewUser error:', err);
+        }
+        return false;
     },
 
     /**

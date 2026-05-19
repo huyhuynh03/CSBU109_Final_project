@@ -25,9 +25,9 @@ messaging.onBackgroundMessage((payload) => {
     const data = payload.data || {};
     const notification = payload.notification || {};
 
-    const title = notification.title || data.title || 'LinguaFlash - Nhắc ôn từ vựng';
-    const body = notification.body || data.body || 'Bạn có từ cần ôn hôm nay 📚';
-    const dueCount = data.dueCount || '';
+    // Body cố định, không tiết lộ số lượng / từ cụ thể
+    const title = notification.title || data.title || 'LinguaFlash';
+    const body = notification.body || data.body || 'Có từ cần ôn tập 📚';
 
     const options = {
         body: body,
@@ -38,7 +38,6 @@ messaging.onBackgroundMessage((payload) => {
         requireInteraction: false,
         data: {
             url: '/#/review',
-            dueCount: dueCount,
             timestamp: Date.now()
         },
         actions: [

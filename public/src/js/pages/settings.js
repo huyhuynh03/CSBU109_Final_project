@@ -112,7 +112,9 @@ const SettingsPage = {
     },
 
     /**
-     * Render notification settings section based on support/permission status
+     * Render notification settings section based on support/permission status.
+     * UI đơn giản: chỉ có 1 toggle bật/tắt — không có time picker.
+     * Notification gửi bất kỳ lúc nào có cards due (max 1 lần/ngày).
      */
     _renderNotificationSection(isSupported, permStatus) {
         if (!isSupported) {
@@ -143,16 +145,16 @@ const SettingsPage = {
             `;
         }
 
-        // Permission is 'default' or 'granted'
+        // Permission is 'default' or 'granted' — chỉ hiển thị toggle
         return `
             <div id="notification-settings-content">
-                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-md);">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
                     <div style="display:flex;align-items:center;gap:var(--spacing-md);">
                         <span class="material-icons-round" style="color:var(--color-primary);">alarm</span>
                         <div>
-                            <p style="font-weight:500;color:var(--color-text);">Nhắc ôn hàng ngày</p>
+                            <p style="font-weight:500;color:var(--color-text);">Nhắc ôn tập</p>
                             <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
-                                Nhận thông báo khi có từ cần ôn
+                                Nhận thông báo khi có từ tới hạn ôn tập
                             </p>
                         </div>
                     </div>
@@ -162,25 +164,10 @@ const SettingsPage = {
                     </label>
                 </div>
 
-                <div id="notification-time-section" style="display:none;margin-top:var(--spacing-md);padding-top:var(--spacing-md);border-top:1px solid var(--color-border);">
-                    <div style="display:flex;align-items:center;justify-content:space-between;">
-                        <div style="display:flex;align-items:center;gap:var(--spacing-md);">
-                            <span class="material-icons-round" style="color:var(--color-secondary);">schedule</span>
-                            <div>
-                                <p style="font-weight:500;color:var(--color-text);">Giờ nhắc</p>
-                                <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">Chọn thời gian nhận thông báo</p>
-                            </div>
-                        </div>
-                        <input type="time" id="notification-time" value="08:00" 
-                               onchange="SettingsPage.updateReminderTime(this.value)"
-                               style="padding:var(--spacing-sm) var(--spacing-md);border-radius:var(--radius-md);border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);font-size:var(--font-size-md);">
-                    </div>
-                </div>
-
                 <div id="notification-status" style="margin-top:var(--spacing-md);display:none;">
                     <p style="font-size:var(--font-size-sm);color:var(--color-success);display:flex;align-items:center;gap:var(--spacing-xs);">
                         <span class="material-icons-round" style="font-size:16px;">check_circle</span>
-                        <span id="notification-status-text">Đã bật thông báo</span>
+                        <span>Đã bật — sẽ nhắc khi có từ cần ôn</span>
                     </p>
                 </div>
             </div>
@@ -288,14 +275,12 @@ const SettingsPage = {
     },
 
     /**
-     * Load notification settings from Firestore and update UI
+     * Load notification settings from Firestore and update UI.
+     * Schema mới: chỉ có { enabled, timezone }, không còn reminderTime.
      */
     async _loadNotificationSettings() {
         const toggle = document.getElementById('notification-toggle');
-        const timeSection = document.getElementById('notification-time-section');
-        const timeInput = document.getElementById('notification-time');
         const statusDiv = document.getElementById('notification-status');
-        const statusText = document.getElementById('notification-status-text');
 
         if (!toggle) return;
 
@@ -304,16 +289,7 @@ const SettingsPage = {
 
             if (settings && settings.enabled) {
                 toggle.checked = true;
-                if (timeSection) timeSection.style.display = 'block';
-                if (timeInput && settings.reminderTime) {
-                    timeInput.value = settings.reminderTime;
-                }
-                if (statusDiv) {
-                    statusDiv.style.display = 'block';
-                    if (statusText) {
-                        statusText.textContent = `Đã bật — nhắc lúc ${settings.reminderTime || '08:00'}`;
-                    }
-                }
+                if (statusDiv) statusDiv.style.display = 'block';
             }
         } catch (err) {
             console.warn('[SettingsPage] Load notification settings error:', err);
@@ -321,77 +297,41 @@ const SettingsPage = {
     },
 
     /**
-     * Toggle notification on/off
+     * Toggle notification on/off.
      */
     async toggleNotification(enabled) {
-        const timeSection = document.getElementById('notification-time-section');
         const statusDiv = document.getElementById('notification-status');
-        const statusText = document.getElementById('notification-status-text');
-        const timeInput = document.getElementById('notification-time');
 
         if (enabled) {
-            // Check if user is logged in
             if (!auth.currentUser) {
                 Toast.warning('Cần đăng nhập', 'Đăng nhập để bật thông báo nhắc ôn');
                 document.getElementById('notification-toggle').checked = false;
                 return;
             }
 
-            // Request permission
             const granted = await PushNotificationManager.requestPermission();
             if (!granted) {
                 document.getElementById('notification-toggle').checked = false;
                 return;
             }
 
-            // Save settings
-            const reminderTime = timeInput ? timeInput.value : '08:00';
             await PushNotificationManager.saveSettings({
                 enabled: true,
-                reminderTime: reminderTime,
                 timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
             });
 
-            // Update UI
-            if (timeSection) timeSection.style.display = 'block';
             if (statusDiv) statusDiv.style.display = 'block';
-            if (statusText) statusText.textContent = `Đã bật — nhắc lúc ${reminderTime}`;
-
-            Toast.success('Đã bật thông báo', `Sẽ nhắc ôn lúc ${reminderTime} mỗi ngày`);
+            Toast.success('Đã bật thông báo', 'Sẽ nhắc khi có từ tới hạn ôn tập');
         } else {
-            // Disable notifications
             await PushNotificationManager.removeToken();
             await PushNotificationManager.saveSettings({
                 enabled: false,
-                reminderTime: timeInput ? timeInput.value : '08:00',
                 timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
             });
 
-            // Update UI
-            if (timeSection) timeSection.style.display = 'none';
             if (statusDiv) statusDiv.style.display = 'none';
-
             Toast.info('Đã tắt thông báo');
         }
-    },
-
-    /**
-     * Update reminder time
-     */
-    async updateReminderTime(time) {
-        const statusText = document.getElementById('notification-status-text');
-
-        await PushNotificationManager.saveSettings({
-            enabled: true,
-            reminderTime: time,
-            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-        });
-
-        if (statusText) {
-            statusText.textContent = `Đã bật — nhắc lúc ${time}`;
-        }
-
-        Toast.success('Đã cập nhật', `Giờ nhắc: ${time}`);
     },
 
     setTheme(theme) {

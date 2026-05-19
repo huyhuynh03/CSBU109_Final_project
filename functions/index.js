@@ -206,8 +206,10 @@ exports.cleanupSpaceDuplicateWords = onCall(async (request) => {
 // ============================================
 // Push Notification - Review Reminder
 // ============================================
-// Chạy mỗi 15 phút, check user nào đến giờ nhắc ôn,
-// đếm số cards due, gửi FCM push notification.
+// Chạy mỗi 15 phút, check user nào có cards due (state>=1, dueDate<=now),
+// gửi FCM push notification (tối đa 1 lần/ngày/user, theo timezone của user).
+//
+// Notification body cố định "Có từ cần ôn tập" — không tiết lộ số lượng / từ nào.
 
 exports.sendReviewReminders = onSchedule({
   schedule: 'every 15 minutes',
@@ -238,25 +240,19 @@ exports.sendReviewReminders = onSchedule({
       try {
         const userData = userDoc.data();
         const settings = userData.notificationSettings || {};
-        const reminderTime = settings.reminderTime || '08:00';
         const timezone = settings.timezone || 'Asia/Saigon';
 
-        // Check xem có đúng giờ nhắc không (±7 phút buffer cho 15-min interval)
-        if (!isTimeToNotify(now, reminderTime, timezone)) {
-          skipCount++;
-          continue;
-        }
-
-        // Check xem đã gửi hôm nay chưa (tránh gửi trùng)
+        // Dedup theo ngày (theo timezone user) — 1 lần/ngày là đủ,
+        // tránh spam khi cron chạy mỗi 15 phút.
         const todayKey = getTodayKey(timezone);
         if (settings.lastNotifiedDate === todayKey) {
           skipCount++;
           continue;
         }
 
-        // Đếm số cards due
-        const dueCount = await countDueCards(userDoc.id);
-        if (dueCount === 0) {
+        // Check có cards due không (chỉ cần biết có/không, không cần đếm chính xác)
+        const hasDue = await hasDueCards(userDoc.id);
+        if (!hasDue) {
           skipCount++;
           continue;
         }
@@ -279,12 +275,11 @@ exports.sendReviewReminders = onSchedule({
 
         const message = {
           notification: {
-            title: 'LinguaFlash - Nhắc ôn từ vựng 📚',
-            body: `Bạn có ${dueCount} từ cần ôn hôm nay. Ôn ngay để không quên!`
+            title: 'LinguaFlash',
+            body: 'Có từ cần ôn tập 📚'
           },
           data: {
             type: 'review_reminder',
-            dueCount: String(dueCount),
             url: '/#/review',
             timestamp: String(Date.now())
           },
@@ -339,7 +334,6 @@ exports.sendReviewReminders = onSchedule({
         sentCount++;
         logger.info('[sendReviewReminders] Sent to user', {
           uid: userDoc.id,
-          dueCount,
           devices: tokens.length,
           success: response.successCount
         });
@@ -359,37 +353,6 @@ exports.sendReviewReminders = onSchedule({
 });
 
 /**
- * Check xem giờ hiện tại có khớp với reminderTime không (±7 phút)
- */
-function isTimeToNotify(now, reminderTime, timezone) {
-  try {
-    // Lấy giờ hiện tại theo timezone của user
-    const formatter = new Intl.DateTimeFormat('en-US', {
-      timeZone: timezone,
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    });
-    const parts = formatter.formatToParts(now);
-    const currentHour = parseInt(parts.find(p => p.type === 'hour').value, 10);
-    const currentMinute = parseInt(parts.find(p => p.type === 'minute').value, 10);
-
-    const [targetHour, targetMinute] = reminderTime.split(':').map(Number);
-
-    // Tính khoảng cách phút
-    const currentTotalMinutes = currentHour * 60 + currentMinute;
-    const targetTotalMinutes = targetHour * 60 + targetMinute;
-    const diff = Math.abs(currentTotalMinutes - targetTotalMinutes);
-
-    // Buffer ±7 phút (vì cron chạy mỗi 15 phút)
-    return diff <= 7;
-  } catch (err) {
-    logger.warn('[isTimeToNotify] Error:', err.message);
-    return false;
-  }
-}
-
-/**
  * Lấy key ngày hôm nay theo timezone (YYYY-MM-DD)
  */
 function getTodayKey(timezone) {
@@ -407,21 +370,22 @@ function getTodayKey(timezone) {
 }
 
 /**
- * Đếm số cards có dueDate <= now cho user
+ * Check xem user có cards nào tới hạn ôn tập không (chỉ cần biết có/không).
+ * Trả true ngay khi tìm thấy 1 card đầu tiên — không quan tâm số lượng.
  */
-async function countDueCards(uid) {
+async function hasDueCards(uid) {
   try {
     const now = new Date();
     const cardsSnapshot = await db.collection('users').doc(uid)
       .collection('cards')
       .where('dueDate', '<=', now)
       .where('state', '>=', 1) // Không đếm NEW cards (state=0)
-      .limit(100) // Giới hạn query
+      .limit(1) // Chỉ cần biết có hay không
       .get();
 
-    return cardsSnapshot.size;
+    return !cardsSnapshot.empty;
   } catch (err) {
-    logger.warn('[countDueCards] Error:', { uid, error: err.message });
-    return 0;
+    logger.warn('[hasDueCards] Error:', { uid, error: err.message });
+    return false;
   }
 }

@@ -41,6 +41,15 @@ const App = {
             // 6.6. Initialize Push Notifications (sau khi auth ready)
             PushNotificationManager.init();
 
+            // 6.7. Auto-enable notification cho user mới (nếu user đã đăng nhập +
+            //      browser support + permission state = 'default' + chưa có settings).
+            //      Không await để không chặn render trang đầu tiên.
+            if (Auth.currentUser) {
+                PushNotificationManager.autoEnableForNewUser().catch((err) => {
+                    console.warn('[App] autoEnableForNewUser error:', err);
+                });
+            }
+
             // 7. Initialize router (will render first page)
             Router.init();
 

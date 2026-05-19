@@ -16,7 +16,7 @@
 //   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
 //     user xác nhận trên Toast "Có bản cập nhật mới"
 
-const APP_VERSION = '5.146.4';
+const APP_VERSION = '5.146.5';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
@@ -305,8 +305,9 @@ self.addEventListener('push', (event) => {
         const data = payload.data || {};
         const notification = payload.notification || {};
 
-        const title = notification.title || data.title || 'LinguaFlash - Nhắc ôn từ vựng';
-        const body = notification.body || data.body || 'Bạn có từ cần ôn hôm nay 📚';
+        // Body cố định, không tiết lộ số lượng / từ cụ thể
+        const title = notification.title || data.title || 'LinguaFlash';
+        const body = notification.body || data.body || 'Có từ cần ôn tập 📚';
 
         const options = {
             body: body,
@@ -316,7 +317,6 @@ self.addEventListener('push', (event) => {
             renotify: true,
             data: {
                 url: data.url || '/#/review',
-                dueCount: data.dueCount || '',
                 timestamp: Date.now()
             },
             actions: [
