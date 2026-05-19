@@ -149,7 +149,7 @@
     <script src="/src/js/config/card-schemas.js?v=8"></script>
     <script src="/src/js/config/vocabulary-topics.js?v=7"></script>
     <script src="/src/js/utils/family-word-manager.js?v=3"></script>
-    <script src="/src/js/auth/auth.js?v=12"></script>
+    <script src="/src/js/auth/auth.js?v=13"></script>
     <script src="/src/js/auth/auth-ui.js?v=3"></script>
     <script src="/src/js/db/firestore.js?v=12"></script>
     <script src="/src/js/db/sync.js?v=2"></script>
@@ -213,12 +213,31 @@
                 document.body.appendChild(banner);
 
                 document.getElementById('sw-update-reload').addEventListener('click', () => {
+                    console.log('[SW] User clicked "Tải lại"');
+                    // Đổi UI cho biết đang xử lý
+                    const btn = document.getElementById('sw-update-reload');
+                    if (btn) { btn.disabled = true; btn.textContent = 'Đang tải...'; }
+
+                    // Gửi SKIP_WAITING xuống SW để activate
                     if (waitingWorker) {
-                        waitingWorker.postMessage({ type: 'SKIP_WAITING' });
-                        // Sau khi SW mới activate, controllerchange sẽ fire → reload tự động
-                    } else {
-                        window.location.reload();
+                        try {
+                            waitingWorker.postMessage({ type: 'SKIP_WAITING' });
+                            console.log('[SW] SKIP_WAITING sent');
+                        } catch (e) {
+                            console.warn('[SW] postMessage failed:', e);
+                        }
                     }
+
+                    // Fallback chắc chắn: nếu controllerchange không fire trong 1.5s thì reload thẳng tay.
+                    // Lý do: SW đôi khi đã activate sẵn nhưng controllerchange không re-fire,
+                    // hoặc browser delay event.
+                    setTimeout(() => {
+                        if (!_refreshing) {
+                            console.log('[SW] Fallback reload after 1.5s');
+                            _refreshing = true;
+                            window.location.reload();
+                        }
+                    }, 1500);
                 });
                 document.getElementById('sw-update-dismiss').addEventListener('click', () => {
                     banner.remove();

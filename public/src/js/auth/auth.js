@@ -51,12 +51,21 @@ const Auth = {
     async _handleRedirectResult() {
         if (this._redirectResultHandled) return;
         this._redirectResultHandled = true;
+        console.log('[Auth] _handleRedirectResult: starting check...');
         try {
             // Đảm bảo persistence đã sẵn sàng trước khi gọi getRedirectResult
             if (typeof authPersistenceReady !== 'undefined') {
                 try { await authPersistenceReady; } catch {}
             }
+            console.log('[Auth] _handleRedirectResult: calling getRedirectResult');
             const result = await auth.getRedirectResult();
+            console.log('[Auth] _handleRedirectResult: result =', {
+                hasUser: !!(result && result.user),
+                userEmail: result && result.user ? result.user.email : null,
+                providerId: result ? result.providerId : null,
+                hasCredential: !!(result && result.credential),
+                operationType: result ? result.operationType : null
+            });
             if (result && result.user) {
                 this.currentUser = result.user;
                 console.log('[Auth] Redirect sign-in success:', result.user.email);
@@ -72,11 +81,21 @@ const Auth = {
                 if (typeof Router !== 'undefined' && Router.getPath && Router.getPath() === '/auth') {
                     Router.navigate('/');
                 }
+            } else {
+                console.log('[Auth] _handleRedirectResult: no pending redirect (normal page load)');
             }
         } catch (error) {
-            console.error('[Auth] getRedirectResult error:', error);
+            console.error('[Auth] getRedirectResult error:', error.code || 'unknown', error.message || error);
             if (error && error.code && error.code !== 'auth/no-auth-event') {
-                this._handleError(error);
+                // Hiển thị lỗi cụ thể cho user, đặc biệt là auth/unauthorized-domain
+                if (error.code === 'auth/unauthorized-domain') {
+                    Toast.error(
+                        'Lỗi cấu hình',
+                        'Domain chưa được cấp phép trong Firebase Console. Liên hệ admin.'
+                    );
+                } else {
+                    this._handleError(error);
+                }
             }
         }
     },
@@ -149,20 +168,30 @@ const Auth = {
      */
     async signInWithGoogle() {
         const provider = new firebase.auth.GoogleAuthProvider();
+        // Đảm bảo persistence đã sẵn sàng trước khi gọi signIn (quan trọng để giữ session
+        // qua redirect/reload trên Android)
+        if (typeof authPersistenceReady !== 'undefined') {
+            try { await authPersistenceReady; } catch {}
+        }
+        const useRedirect = this._shouldUseRedirect();
+        console.log('[Auth] signInWithGoogle: useRedirect =', useRedirect, 'UA:', navigator.userAgent);
         try {
-            if (this._shouldUseRedirect()) {
+            if (useRedirect) {
                 // Redirect flow: trang sẽ rời khỏi app rồi quay lại;
                 // _handleRedirectResult() trong init() sẽ xử lý kết quả khi quay lại.
-                console.log('[Auth] Using signInWithRedirect for mobile/standalone');
+                console.log('[Auth] Calling signInWithRedirect...');
                 await auth.signInWithRedirect(provider);
                 // Promise dưới đây không bao giờ resolve trên cùng phiên (page sẽ navigate đi).
                 return new Promise(() => {});
             }
+            console.log('[Auth] Calling signInWithPopup...');
             const result = await auth.signInWithPopup(provider);
             this.currentUser = result.user;
+            console.log('[Auth] Popup sign-in success:', result.user.email);
             Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName}`);
             return result.user;
         } catch (error) {
+            console.error('[Auth] signInWithGoogle error:', error.code || 'unknown', error.message || error);
             // Nếu popup bị chặn, tự động fallback sang redirect
             if (error && (error.code === 'auth/popup-blocked' || error.code === 'auth/operation-not-supported-in-this-environment')) {
                 console.warn('[Auth] Popup blocked, falling back to redirect');
@@ -174,7 +203,15 @@ const Auth = {
                     throw e2;
                 }
             }
-            this._handleError(error);
+            // Hiển thị thông báo cụ thể nếu domain chưa cấp phép
+            if (error && error.code === 'auth/unauthorized-domain') {
+                Toast.error(
+                    'Lỗi cấu hình',
+                    'Domain chưa được cấp phép trong Firebase Console. Liên hệ admin.'
+                );
+            } else {
+                this._handleError(error);
+            }
             throw error;
         }
     },
