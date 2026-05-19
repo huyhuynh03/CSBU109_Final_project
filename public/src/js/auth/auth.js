@@ -4,6 +4,8 @@
 
 const Auth = {
     currentUser: null,
+    _redirectResultHandled: false,
+    _redirectResultPromise: null,
 
     /**
      * Initialize auth listener
@@ -19,6 +21,64 @@ const Auth = {
                 FsrsMigration.run().catch(e => console.error('[Auth] FsrsMigration error:', e));
             }
         });
+
+        // Bắt đầu xử lý redirect result (lưu promise để waitForInitialAuth có thể await)
+        this._redirectResultPromise = this._handleRedirectResult();
+    },
+
+    /**
+     * Detect mobile or PWA standalone mode (popup không hoạt động ổn định ở các môi trường này).
+     * @returns {boolean}
+     * @private
+     */
+    _shouldUseRedirect() {
+        try {
+            const ua = (navigator.userAgent || '').toLowerCase();
+            const isMobile = /android|iphone|ipad|ipod|mobile|blackberry|iemobile|opera mini/i.test(ua);
+            const isStandalone =
+                (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+                window.navigator.standalone === true;
+            return isMobile || isStandalone;
+        } catch {
+            return false;
+        }
+    },
+
+    /**
+     * Xử lý kết quả khi quay lại từ Google redirect sign-in.
+     * @private
+     */
+    async _handleRedirectResult() {
+        if (this._redirectResultHandled) return;
+        this._redirectResultHandled = true;
+        try {
+            // Đảm bảo persistence đã sẵn sàng trước khi gọi getRedirectResult
+            if (typeof authPersistenceReady !== 'undefined') {
+                try { await authPersistenceReady; } catch {}
+            }
+            const result = await auth.getRedirectResult();
+            if (result && result.user) {
+                this.currentUser = result.user;
+                console.log('[Auth] Redirect sign-in success:', result.user.email);
+                Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName || result.user.email}`);
+                // Lưu profile và điều hướng về trang chủ
+                try {
+                    if (typeof FirestoreDB !== 'undefined') {
+                        await FirestoreDB.saveUserProfile(result.user);
+                    }
+                } catch (e) {
+                    console.warn('[Auth] saveUserProfile after redirect failed:', e);
+                }
+                if (typeof Router !== 'undefined' && Router.getPath && Router.getPath() === '/auth') {
+                    Router.navigate('/');
+                }
+            }
+        } catch (error) {
+            console.error('[Auth] getRedirectResult error:', error);
+            if (error && error.code && error.code !== 'auth/no-auth-event') {
+                this._handleError(error);
+            }
+        }
     },
 
     /**
@@ -30,6 +90,10 @@ const Auth = {
         // Đảm bảo persistence được set trước (tránh race khi reload lần đầu).
         if (typeof authPersistenceReady !== 'undefined') {
             try { await authPersistenceReady; } catch {}
+        }
+        // Đợi xử lý redirect result hoàn tất (nếu đang quay lại từ Google redirect sign-in)
+        if (this._redirectResultPromise) {
+            try { await this._redirectResultPromise; } catch {}
         }
         return new Promise((resolve) => {
             const unsub = auth.onAuthStateChanged((user) => {
@@ -67,6 +131,9 @@ const Auth = {
     async signIn(email, password) {
         try {
             const result = await auth.signInWithEmailAndPassword(email, password);
+            // Cập nhật currentUser ngay lập tức để tránh race condition trên Android PWA:
+            // (onAuthStateChanged có thể fire chậm, dẫn đến HomePage redirect ngược về /auth)
+            this.currentUser = result.user;
             Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName || result.user.email}`);
             return result.user;
         } catch (error) {
@@ -76,15 +143,37 @@ const Auth = {
     },
 
     /**
-     * Sign in with Google
+     * Sign in with Google.
+     * Trên mobile/PWA standalone (Android/iOS), dùng redirect thay vì popup vì popup thường bị
+     * browser chặn hoặc mất context khi quay lại app.
      */
     async signInWithGoogle() {
+        const provider = new firebase.auth.GoogleAuthProvider();
         try {
-            const provider = new firebase.auth.GoogleAuthProvider();
+            if (this._shouldUseRedirect()) {
+                // Redirect flow: trang sẽ rời khỏi app rồi quay lại;
+                // _handleRedirectResult() trong init() sẽ xử lý kết quả khi quay lại.
+                console.log('[Auth] Using signInWithRedirect for mobile/standalone');
+                await auth.signInWithRedirect(provider);
+                // Promise dưới đây không bao giờ resolve trên cùng phiên (page sẽ navigate đi).
+                return new Promise(() => {});
+            }
             const result = await auth.signInWithPopup(provider);
+            this.currentUser = result.user;
             Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName}`);
             return result.user;
         } catch (error) {
+            // Nếu popup bị chặn, tự động fallback sang redirect
+            if (error && (error.code === 'auth/popup-blocked' || error.code === 'auth/operation-not-supported-in-this-environment')) {
+                console.warn('[Auth] Popup blocked, falling back to redirect');
+                try {
+                    await auth.signInWithRedirect(provider);
+                    return new Promise(() => {});
+                } catch (e2) {
+                    this._handleError(e2);
+                    throw e2;
+                }
+            }
             this._handleError(error);
             throw error;
         }
