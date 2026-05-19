@@ -4,8 +4,6 @@
 
 const Auth = {
     currentUser: null,
-    _redirectResultHandled: false,
-    _redirectResultPromise: null,
 
     /**
      * Initialize auth listener
@@ -21,83 +19,6 @@ const Auth = {
                 FsrsMigration.run().catch(e => console.error('[Auth] FsrsMigration error:', e));
             }
         });
-
-        // Bắt đầu xử lý redirect result (lưu promise để waitForInitialAuth có thể await)
-        this._redirectResultPromise = this._handleRedirectResult();
-    },
-
-    /**
-     * Detect mobile or PWA standalone mode (popup không hoạt động ổn định ở các môi trường này).
-     * @returns {boolean}
-     * @private
-     */
-    _shouldUseRedirect() {
-        try {
-            const ua = (navigator.userAgent || '').toLowerCase();
-            const isMobile = /android|iphone|ipad|ipod|mobile|blackberry|iemobile|opera mini/i.test(ua);
-            const isStandalone =
-                (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
-                window.navigator.standalone === true;
-            return isMobile || isStandalone;
-        } catch {
-            return false;
-        }
-    },
-
-    /**
-     * Xử lý kết quả khi quay lại từ Google redirect sign-in.
-     * @private
-     */
-    async _handleRedirectResult() {
-        if (this._redirectResultHandled) return;
-        this._redirectResultHandled = true;
-        console.log('[Auth] _handleRedirectResult: starting check...');
-        try {
-            // Đảm bảo persistence đã sẵn sàng trước khi gọi getRedirectResult
-            if (typeof authPersistenceReady !== 'undefined') {
-                try { await authPersistenceReady; } catch {}
-            }
-            console.log('[Auth] _handleRedirectResult: calling getRedirectResult');
-            const result = await auth.getRedirectResult();
-            console.log('[Auth] _handleRedirectResult: result =', {
-                hasUser: !!(result && result.user),
-                userEmail: result && result.user ? result.user.email : null,
-                providerId: result ? result.providerId : null,
-                hasCredential: !!(result && result.credential),
-                operationType: result ? result.operationType : null
-            });
-            if (result && result.user) {
-                this.currentUser = result.user;
-                console.log('[Auth] Redirect sign-in success:', result.user.email);
-                Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName || result.user.email}`);
-                // Lưu profile và điều hướng về trang chủ
-                try {
-                    if (typeof FirestoreDB !== 'undefined') {
-                        await FirestoreDB.saveUserProfile(result.user);
-                    }
-                } catch (e) {
-                    console.warn('[Auth] saveUserProfile after redirect failed:', e);
-                }
-                if (typeof Router !== 'undefined' && Router.getPath && Router.getPath() === '/auth') {
-                    Router.navigate('/');
-                }
-            } else {
-                console.log('[Auth] _handleRedirectResult: no pending redirect (normal page load)');
-            }
-        } catch (error) {
-            console.error('[Auth] getRedirectResult error:', error.code || 'unknown', error.message || error);
-            if (error && error.code && error.code !== 'auth/no-auth-event') {
-                // Hiển thị lỗi cụ thể cho user, đặc biệt là auth/unauthorized-domain
-                if (error.code === 'auth/unauthorized-domain') {
-                    Toast.error(
-                        'Lỗi cấu hình',
-                        'Domain chưa được cấp phép trong Firebase Console. Liên hệ admin.'
-                    );
-                } else {
-                    this._handleError(error);
-                }
-            }
-        }
     },
 
     /**
@@ -109,10 +30,6 @@ const Auth = {
         // Đảm bảo persistence được set trước (tránh race khi reload lần đầu).
         if (typeof authPersistenceReady !== 'undefined') {
             try { await authPersistenceReady; } catch {}
-        }
-        // Đợi xử lý redirect result hoàn tất (nếu đang quay lại từ Google redirect sign-in)
-        if (this._redirectResultPromise) {
-            try { await this._redirectResultPromise; } catch {}
         }
         return new Promise((resolve) => {
             const unsub = auth.onAuthStateChanged((user) => {
@@ -162,56 +79,17 @@ const Auth = {
     },
 
     /**
-     * Sign in with Google.
-     * Trên mobile/PWA standalone (Android/iOS), dùng redirect thay vì popup vì popup thường bị
-     * browser chặn hoặc mất context khi quay lại app.
+     * Sign in with Google (popup).
      */
     async signInWithGoogle() {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        // Đảm bảo persistence đã sẵn sàng trước khi gọi signIn (quan trọng để giữ session
-        // qua redirect/reload trên Android)
-        if (typeof authPersistenceReady !== 'undefined') {
-            try { await authPersistenceReady; } catch {}
-        }
-        const useRedirect = this._shouldUseRedirect();
-        console.log('[Auth] signInWithGoogle: useRedirect =', useRedirect, 'UA:', navigator.userAgent);
         try {
-            if (useRedirect) {
-                // Redirect flow: trang sẽ rời khỏi app rồi quay lại;
-                // _handleRedirectResult() trong init() sẽ xử lý kết quả khi quay lại.
-                console.log('[Auth] Calling signInWithRedirect...');
-                await auth.signInWithRedirect(provider);
-                // Promise dưới đây không bao giờ resolve trên cùng phiên (page sẽ navigate đi).
-                return new Promise(() => {});
-            }
-            console.log('[Auth] Calling signInWithPopup...');
+            const provider = new firebase.auth.GoogleAuthProvider();
             const result = await auth.signInWithPopup(provider);
             this.currentUser = result.user;
-            console.log('[Auth] Popup sign-in success:', result.user.email);
             Toast.success('Đăng nhập thành công!', `Chào ${result.user.displayName}`);
             return result.user;
         } catch (error) {
-            console.error('[Auth] signInWithGoogle error:', error.code || 'unknown', error.message || error);
-            // Nếu popup bị chặn, tự động fallback sang redirect
-            if (error && (error.code === 'auth/popup-blocked' || error.code === 'auth/operation-not-supported-in-this-environment')) {
-                console.warn('[Auth] Popup blocked, falling back to redirect');
-                try {
-                    await auth.signInWithRedirect(provider);
-                    return new Promise(() => {});
-                } catch (e2) {
-                    this._handleError(e2);
-                    throw e2;
-                }
-            }
-            // Hiển thị thông báo cụ thể nếu domain chưa cấp phép
-            if (error && error.code === 'auth/unauthorized-domain') {
-                Toast.error(
-                    'Lỗi cấu hình',
-                    'Domain chưa được cấp phép trong Firebase Console. Liên hệ admin.'
-                );
-            } else {
-                this._handleError(error);
-            }
+            this._handleError(error);
             throw error;
         }
     },
