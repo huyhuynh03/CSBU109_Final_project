@@ -1,0 +1,6 @@
+# Windows Debug Log
+
+Paste console log từ Chrome/Edge DevTools vào đây.
+
+---
+

@@ -1,0 +1,6 @@
+# iOS Debug Log
+
+Paste console log từ Safari Web Inspector (remote debug từ Mac) vào đây.
+
+---
+

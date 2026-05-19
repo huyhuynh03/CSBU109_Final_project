@@ -1,0 +1,6 @@
+# macOS Debug Log
+
+Paste console log từ Safari Web Inspector hoặc Chrome DevTools vào đây.
+
+---
+
