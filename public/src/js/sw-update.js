@@ -4,16 +4,21 @@
 // Quản lý vòng đời update của Service Worker phía main thread:
 //   - Đăng ký SW
 //   - Định kỳ kiểm tra bản mới
-//   - Hiển thị toast "Có bản mới — Tải lại" khi SW mới sẵn sàng
+//   - So sánh APP_VERSION giữa SW cũ và mới (tránh false positive khi
+//     browser nghĩ là có update nhưng APP_VERSION thực không đổi —
+//     ví dụ Vercel CDN serve khác bytes do whitespace / edge node khác nhau)
+//   - Hiển thị toast "Có bản mới — Tải lại" CHỈ khi version thực sự đổi
 //   - Reload sau khi user xác nhận
 //
-// Dùng kèm với public/sw.js (đã hỗ trợ message {type:'SKIP_WAITING'}).
+// Dùng kèm với public/sw.js (đã hỗ trợ message {type:'SKIP_WAITING'}
+// và {type:'GET_VERSION'}).
 
 const SwUpdate = {
     // Cấu hình
     SW_URL: '/sw.js',
     FCM_SW_URL: '/firebase-messaging-sw.js',
     CHECK_INTERVAL_MS: 60 * 60 * 1000, // 60 phút
+    VERSION_QUERY_TIMEOUT_MS: 2000,
 
     _refreshing: false,
     _registration: null,
@@ -60,7 +65,7 @@ const SwUpdate = {
     _handleRegistration(reg) {
         // Trường hợp: load page và đã có SW waiting sẵn (deploy giữa lúc user offline rồi vào lại)
         if (reg.waiting && navigator.serviceWorker.controller) {
-            this._showUpdateToast(reg);
+            this._maybeShowUpdateToast(reg);
         }
 
         // Listen sự kiện updatefound khi browser tải SW mới
@@ -71,9 +76,11 @@ const SwUpdate = {
 
             newSw.addEventListener('statechange', () => {
                 console.log('[SwUpdate] New SW state:', newSw.state);
-                // Khi cài xong và đã có controller cũ → đây là update thật (không phải lần đầu)
+                // Khi cài xong và đã có controller cũ → đây CÓ THỂ là update.
+                // Cần verify bằng cách so APP_VERSION trước khi show toast,
+                // tránh false positive khi browser thấy bytes khác nhưng version giống.
                 if (newSw.state === 'installed' && navigator.serviceWorker.controller) {
-                    this._showUpdateToast(reg);
+                    this._maybeShowUpdateToast(reg);
                 }
             });
         });
@@ -112,6 +119,67 @@ const SwUpdate = {
     },
 
     /**
+     * Hỏi SW một version qua MessageChannel.
+     * Trả về null nếu timeout / SW không response.
+     */
+    _getVersionFromSw(sw) {
+        return new Promise((resolve) => {
+            if (!sw) return resolve(null);
+            try {
+                const channel = new MessageChannel();
+                const timer = setTimeout(() => resolve(null), this.VERSION_QUERY_TIMEOUT_MS);
+                channel.port1.onmessage = (event) => {
+                    clearTimeout(timer);
+                    resolve(event.data && event.data.version ? event.data.version : null);
+                };
+                sw.postMessage({ type: 'GET_VERSION' }, [channel.port2]);
+            } catch (err) {
+                console.debug('[SwUpdate] postMessage failed:', err.message);
+                resolve(null);
+            }
+        });
+    },
+
+    /**
+     * Show toast NẾU SW mới có APP_VERSION khác SW cũ.
+     * Nếu version giống → đây là false positive (Vercel CDN bytes khác
+     * nhưng nội dung không đổi) → silent skip.
+     */
+    async _maybeShowUpdateToast(reg) {
+        const newSw = reg.waiting || reg.installing;
+        const oldSw = navigator.serviceWorker.controller;
+
+        if (!newSw || !oldSw) {
+            // Không đủ điều kiện, fallback show toast
+            this._showUpdateToast(reg);
+            return;
+        }
+
+        const [newVer, oldVer] = await Promise.all([
+            this._getVersionFromSw(newSw),
+            this._getVersionFromSw(oldSw)
+        ]);
+
+        console.log(`[SwUpdate] Version check: old=${oldVer || '?'} new=${newVer || '?'}`);
+
+        // Nếu cả hai trả version + giống nhau → silent skip + auto activate SW mới
+        if (newVer && oldVer && newVer === oldVer) {
+            console.log('[SwUpdate] Same APP_VERSION - silent skip toast, auto-activating new SW');
+            // Tự skipWaiting để dọn SW thừa, không reload page (vì content giống hệt)
+            if (reg.waiting) {
+                this._refreshing = true; // chặn auto-reload trong controllerchange
+                reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+                // Reset flag sau 2s để lần update thật sau vẫn reload được
+                setTimeout(() => { this._refreshing = false; }, 2000);
+            }
+            return;
+        }
+
+        // Version khác → update thật → show toast
+        this._showUpdateToast(reg);
+    },
+
+    /**
      * Hiện toast yêu cầu user reload để áp dụng bản mới.
      */
     _showUpdateToast(reg) {
@@ -134,7 +202,6 @@ const SwUpdate = {
             action: {
                 label: 'Tải lại',
                 onClick: (toastEl) => {
-                    // Đóng toast trước cho mượt
                     Toast.dismiss(toastEl);
                     this._applyUpdate(reg);
                 }
@@ -150,14 +217,12 @@ const SwUpdate = {
         if (waiting) {
             waiting.postMessage({ type: 'SKIP_WAITING' });
         } else {
-            // Không có waiting (lạ) → reload thẳng
             window.location.reload();
         }
     },
 
     /**
-     * Public API: cho phép code khác trigger check update thủ công
-     * (ví dụ trong Settings page có nút "Kiểm tra cập nhật")
+     * Public API: cho phép code khác trigger check update thủ công.
      */
     checkNow() {
         if (this._registration) {
