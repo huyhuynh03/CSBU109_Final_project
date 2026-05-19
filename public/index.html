@@ -173,113 +173,12 @@
 
     <!-- Register Service Worker + Auto-Update with Progress -->
     <script>
-        // Pattern: "Notify, don't force" (chuẩn industry, theo khuyến nghị của Google/Workbox).
-        // - SW mới được install nhưng KHÔNG tự skipWaiting → không bao giờ tự reload trang.
-        // - Khi phát hiện SW mới đã waiting → hiển thị banner nhỏ "Có bản cập nhật. Tải lại".
-        // - User chủ động bấm → gửi SKIP_WAITING → controllerchange fire → reload đúng 1 lần.
         if ('serviceWorker' in navigator) {
-            let _refreshing = false;
-
-            function _showUpdateBanner(waitingWorker) {
-                if (document.getElementById('sw-update-banner')) return; // đã hiển thị
-                const banner = document.createElement('div');
-                banner.id = 'sw-update-banner';
-                banner.style.cssText = [
-                    'position:fixed',
-                    'right:16px',
-                    'bottom:16px',
-                    'z-index:99999',
-                    'background:rgba(20,20,30,0.92)',
-                    'color:#fff',
-                    'padding:12px 14px',
-                    'border-radius:12px',
-                    'box-shadow:0 8px 24px rgba(0,0,0,0.35)',
-                    'display:flex',
-                    'align-items:center',
-                    'gap:12px',
-                    'max-width:calc(100vw - 32px)',
-                    'font-family:Inter,sans-serif',
-                    'font-size:14px',
-                    'backdrop-filter:blur(8px)',
-                    '-webkit-backdrop-filter:blur(8px)',
-                    'border:1px solid rgba(255,255,255,0.1)'
-                ].join(';');
-                banner.innerHTML = [
-                    '<span style="font-size:20px;">✨</span>',
-                    '<span style="flex:1;">Có bản cập nhật mới</span>',
-                    '<button id="sw-update-reload" style="background:#6C63FF;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Tải lại</button>',
-                    '<button id="sw-update-dismiss" aria-label="Đóng" style="background:transparent;color:#aaa;border:none;padding:4px 8px;cursor:pointer;font-size:18px;line-height:1;">×</button>'
-                ].join('');
-                document.body.appendChild(banner);
-
-                document.getElementById('sw-update-reload').addEventListener('click', () => {
-                    console.log('[SW] User clicked "Tải lại"');
-                    // Đổi UI cho biết đang xử lý
-                    const btn = document.getElementById('sw-update-reload');
-                    if (btn) { btn.disabled = true; btn.textContent = 'Đang tải...'; }
-
-                    // Gửi SKIP_WAITING xuống SW để activate
-                    if (waitingWorker) {
-                        try {
-                            waitingWorker.postMessage({ type: 'SKIP_WAITING' });
-                            console.log('[SW] SKIP_WAITING sent');
-                        } catch (e) {
-                            console.warn('[SW] postMessage failed:', e);
-                        }
-                    }
-
-                    // Fallback chắc chắn: nếu controllerchange không fire trong 1.5s thì reload thẳng tay.
-                    // Lý do: SW đôi khi đã activate sẵn nhưng controllerchange không re-fire,
-                    // hoặc browser delay event.
-                    setTimeout(() => {
-                        if (!_refreshing) {
-                            console.log('[SW] Fallback reload after 1.5s');
-                            _refreshing = true;
-                            window.location.reload();
-                        }
-                    }, 1500);
-                });
-                document.getElementById('sw-update-dismiss').addEventListener('click', () => {
-                    banner.remove();
-                });
-            }
-
-            // controllerchange fire khi SW mới đã activate (sau khi user bấm "Tải lại")
-            // → reload trang đúng 1 lần để đồng bộ HTML và resources mới.
-            navigator.serviceWorker.addEventListener('controllerchange', () => {
-                if (_refreshing) return;
-                _refreshing = true;
-                window.location.reload();
-            });
-
             window.addEventListener('load', () => {
+                // Register main SW
                 navigator.serviceWorker.register('/sw.js')
-                    .then(reg => {
-                        console.log('[SW] Registered:', reg.scope);
-
-                        // Trường hợp 1: đã có SW waiting sẵn ngay lúc load (user đã từng truy cập
-                        // trang trước đó và SW mới đã được install nhưng chưa activate)
-                        if (reg.waiting && navigator.serviceWorker.controller) {
-                            _showUpdateBanner(reg.waiting);
-                        }
-
-                        // Trường hợp 2: SW mới được tải về sau khi page đã load
-                        reg.addEventListener('updatefound', () => {
-                            const newWorker = reg.installing;
-                            if (!newWorker) return;
-                            newWorker.addEventListener('statechange', () => {
-                                // 'installed' + đã có controller = SW mới sẵn sàng (waiting), không phải first-install
-                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                    _showUpdateBanner(newWorker);
-                                }
-                            });
-                        });
-
-                        // Định kỳ check update mỗi 30 phút
-                        setInterval(() => { reg.update().catch(() => {}); }, 30 * 60 * 1000);
-                    })
+                    .then(reg => console.log('[SW] Registered:', reg.scope))
                     .catch(err => console.error('[SW] Registration failed:', err));
-
                 // Register FCM SW (for push notifications)
                 navigator.serviceWorker.register('/firebase-messaging-sw.js')
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))

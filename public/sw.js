@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.143
-const CACHE_NAME = 'linguaflash-v5.143';
+// LinguaFlash Service Worker v5.144
+const CACHE_NAME = 'linguaflash-v5.144';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -55,40 +55,22 @@ const NETWORK_FIRST_FILES = [
     '/src/js/firebase-config.js'
 ];
 
-// Install - Cache static assets.
-// Pattern "Notify, don't force": KHÔNG gọi skipWaiting() ở đây. SW mới sẽ ở trạng thái "waiting"
-// cho đến khi user chủ động bấm "Tải lại" trên toast → page sẽ postMessage SKIP_WAITING xuống.
+// Install - Cache static assets
 self.addEventListener('install', (event) => {
-    console.log('[SW] Installing...', CACHE_NAME);
+    console.log('[SW] Installing...');
     event.waitUntil(
-        (async () => {
-            const cache = await caches.open(CACHE_NAME);
-            // Cache từng asset để tránh fail toàn bộ install nếu 1 asset lỗi
-            for (const asset of STATIC_ASSETS) {
-                try {
-                    await cache.add(asset);
-                } catch (err) {
-                    console.warn('[SW] Failed to cache:', asset, err.message);
-                }
-            }
-            // Không skipWaiting → SW mới chờ user xác nhận
-        })()
+        caches.open(CACHE_NAME)
+            .then((cache) => {
+                console.log('[SW] Caching static assets');
+                return cache.addAll(STATIC_ASSETS);
+            })
+            .then(() => self.skipWaiting())
     );
 });
 
-// Lắng nghe yêu cầu kích hoạt từ trang (khi user bấm "Tải lại" trên toast cập nhật)
-self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-        console.log('[SW] Received SKIP_WAITING, activating new version');
-        self.skipWaiting();
-    }
-});
-
-// Activate - Clean up old caches and take control.
-// Khi SW này được activate (sau skipWaiting), browser sẽ tự fire `controllerchange` ở trang
-// → trang lắng nghe event đó để reload đúng 1 lần.
+// Activate - Clean up old caches
 self.addEventListener('activate', (event) => {
-    console.log('[SW] Activating...', CACHE_NAME);
+    console.log('[SW] Activating...');
     event.waitUntil(
         caches.keys()
             .then((cacheNames) => {
