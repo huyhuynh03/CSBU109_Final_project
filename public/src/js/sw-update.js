@@ -162,20 +162,28 @@ const SwUpdate = {
 
         console.log(`[SwUpdate] Version check: old=${oldVer || '?'} new=${newVer || '?'}`);
 
-        // Nếu cả hai trả version + giống nhau → silent skip + auto activate SW mới
+        // Trường hợp 1: cả hai trả version GIỐNG NHAU → false positive (CDN bytes diff)
+        // → silent skip + auto activate SW mới để dọn dẹp.
         if (newVer && oldVer && newVer === oldVer) {
             console.log('[SwUpdate] Same APP_VERSION - silent skip toast, auto-activating new SW');
-            // Tự skipWaiting để dọn SW thừa, không reload page (vì content giống hệt)
             if (reg.waiting) {
-                this._refreshing = true; // chặn auto-reload trong controllerchange
+                this._refreshing = true;
                 reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-                // Reset flag sau 2s để lần update thật sau vẫn reload được
                 setTimeout(() => { this._refreshing = false; }, 2000);
             }
             return;
         }
 
-        // Version khác → update thật → show toast
+        // Trường hợp 2: oldVer null (SW cũ là phiên bản trước khi có GET_VERSION handler)
+        // → đây là update LỚN từ legacy SW lên SW mới → MUST show toast (1 lần thôi,
+        // sau khi user reload, SW mới sẽ có handler GET_VERSION → từ đó hết false positive).
+        if (!oldVer && newVer) {
+            console.log('[SwUpdate] Legacy SW detected (no GET_VERSION) - showing update toast');
+            this._showUpdateToast(reg);
+            return;
+        }
+
+        // Trường hợp 3: version khác nhau rõ ràng → update thật → show toast
         this._showUpdateToast(reg);
     },
 
@@ -211,12 +219,42 @@ const SwUpdate = {
 
     /**
      * Yêu cầu SW mới skip waiting → trigger controllerchange → reload.
+     *
+     * Thêm fallback: trên Android PWA standalone, controllerchange đôi khi
+     * không fire sau skipWaiting → cần force reload sau timeout.
      */
     _applyUpdate(reg) {
         const waiting = reg.waiting;
-        if (waiting) {
-            waiting.postMessage({ type: 'SKIP_WAITING' });
-        } else {
+
+        if (!waiting) {
+            console.log('[SwUpdate] No waiting SW, force reload');
+            this._forceReload();
+            return;
+        }
+
+        console.log('[SwUpdate] Posting SKIP_WAITING to new SW');
+        waiting.postMessage({ type: 'SKIP_WAITING' });
+
+        // Fallback: nếu controllerchange không fire trong 2s, force reload.
+        // Android Chrome PWA standalone đôi khi không trigger controllerchange.
+        setTimeout(() => {
+            if (!this._refreshing) {
+                console.warn('[SwUpdate] controllerchange did not fire - force reloading');
+                this._forceReload();
+            }
+        }, 2000);
+    },
+
+    /**
+     * Force page reload, bypass HTTP cache nếu có thể.
+     */
+    _forceReload() {
+        this._refreshing = true; // prevent double reload from controllerchange
+        try {
+            // Một số trình duyệt hỗ trợ reload(true) để bypass cache (deprecated trong spec
+            // nhưng vẫn có hiệu lực thực tế trên Chrome/Firefox).
+            window.location.reload(true);
+        } catch (e) {
             window.location.reload();
         }
     },
