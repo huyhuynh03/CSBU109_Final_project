@@ -175,11 +175,11 @@
     <script>
         if ('serviceWorker' in navigator) {
             let _updateOverlay = null;
-            // Quan trọng: chỉ coi là "update thật" khi đã có SW điều khiển trang TRƯỚC khi register.
-            // Tránh vòng lặp reload trên Android Chrome lần cài đầu tiên (first-install cũng kích hoạt
-            // activate event và gửi SW_UPDATED → reload → install lại → loop).
+            // Mỗi version SW chỉ được reload đúng 1 lần qua mọi session.
+            // Lưu vào localStorage để bền vững xuyên reload, tránh vòng lặp trên Android Chrome
+            // (browser đôi khi re-trigger updatefound dù code SW không đổi do header/etag/CDN edge).
+            const LAST_RELOADED_KEY = 'lf_last_sw_reloaded_version';
             const _wasControlled = !!navigator.serviceWorker.controller;
-            let _isRealUpdate = false;
             let _hasReloaded = false;
 
             function _showUpdateProgress(percent, loaded, total) {
@@ -209,9 +209,13 @@
                 if (detail) detail.textContent = `Đã tải ${loaded}/${total} tài nguyên`;
             }
 
-            function _completeUpdate() {
-                if (_hasReloaded) return; // chống gọi nhiều lần
+            function _completeUpdate(version) {
+                if (_hasReloaded) return; // chống gọi nhiều lần trong cùng phiên
                 _hasReloaded = true;
+                // Đánh dấu version này đã reload — không reload lại nữa dù SW gửi SW_UPDATED lần khác
+                try {
+                    if (version) localStorage.setItem(LAST_RELOADED_KEY, version);
+                } catch {}
                 const title = document.getElementById('sw-update-title');
                 const bar = document.getElementById('sw-update-bar');
                 const pctText = document.getElementById('sw-update-percent');
@@ -223,26 +227,25 @@
                 setTimeout(() => window.location.reload(), 1200);
             }
 
+            /**
+             * Quyết định có nên reload không. Chỉ reload khi:
+             *   1) Trước đó đã có SW điều khiển trang (_wasControlled),
+             *   2) Version SW đang activate KHÁC với version đã reload trước đây.
+             * Điều này diệt cả reload loop khi Chrome re-trigger updatefound với cùng version.
+             */
+            function _shouldReloadFor(version) {
+                if (!version) return false;
+                if (!_wasControlled) return false; // first install, không reload
+                let last = null;
+                try { last = localStorage.getItem(LAST_RELOADED_KEY); } catch {}
+                return last !== version;
+            }
+
             window.addEventListener('load', () => {
                 // Register main SW
                 navigator.serviceWorker.register('/sw.js')
                     .then(reg => {
                         console.log('[SW] Registered:', reg.scope, 'wasControlled:', _wasControlled);
-
-                        // Phát hiện SW MỚI bắt đầu install (chỉ tính là update thật khi đã có SW trước đó).
-                        reg.addEventListener('updatefound', () => {
-                            const newSW = reg.installing;
-                            if (newSW && _wasControlled) {
-                                _isRealUpdate = true;
-                                console.log('[SW] Real update detected, new SW installing');
-                            }
-                        });
-
-                        // Nếu đã có SW waiting sẵn (lần load này phát hiện ra), cũng coi là update thật.
-                        if (reg.waiting && _wasControlled) {
-                            _isRealUpdate = true;
-                        }
-
                         // Check for updates every 30 minutes
                         setInterval(() => { reg.update().catch(() => {}); }, 30 * 60 * 1000);
                     })
@@ -253,24 +256,31 @@
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))
                     .catch(err => console.error('[FCM-SW] Registration failed:', err));
 
-                // Listen for SW update progress messages.
-                // Chỉ hiển thị overlay + reload khi đây là update thật (đã có SW trước đó),
-                // tránh reload loop trên lần cài đầu tiên.
+                // Listen for SW progress/update messages.
+                // Việc CÓ reload hay không hoàn toàn dựa trên localStorage version check —
+                // không bao giờ reload 2 lần cho cùng 1 phiên bản, dù trình duyệt có re-trigger
+                // updatefound bao nhiêu lần đi nữa.
                 navigator.serviceWorker.addEventListener('message', (event) => {
                     if (!event.data) return;
-                    if (!_wasControlled && !_isRealUpdate) {
-                        // First install: bỏ qua hoàn toàn các message để không reload loop
-                        return;
-                    }
+                    const version = event.data.version;
                     switch (event.data.type) {
                         case 'SW_UPDATE_START':
-                            _showUpdateProgress(0, 0, event.data.total);
+                            if (_shouldReloadFor(version)) {
+                                _showUpdateProgress(0, 0, event.data.total);
+                            }
                             break;
                         case 'SW_UPDATE_PROGRESS':
-                            _showUpdateProgress(event.data.percent, event.data.loaded, event.data.total);
+                            // Chỉ hiển thị progress nếu lần này thực sự sẽ reload
+                            if (_updateOverlay) {
+                                _showUpdateProgress(event.data.percent, event.data.loaded, event.data.total);
+                            }
                             break;
                         case 'SW_UPDATED':
-                            _completeUpdate();
+                            if (_shouldReloadFor(version)) {
+                                _completeUpdate(version);
+                            } else {
+                                console.log('[SW] Skip reload, already reloaded for version:', version);
+                            }
                             break;
                     }
                 });

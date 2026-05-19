@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.140
-const CACHE_NAME = 'linguaflash-v5.140';
+// LinguaFlash Service Worker v5.141
+const CACHE_NAME = 'linguaflash-v5.141';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -64,10 +64,10 @@ self.addEventListener('install', (event) => {
             const total = STATIC_ASSETS.length;
             let loaded = 0;
 
-            // Notify clients that update is starting
+            // Notify clients that update is starting (kèm version để client kiểm tra dedupe)
             const clients = await self.clients.matchAll({ type: 'window' });
             clients.forEach(client => {
-                client.postMessage({ type: 'SW_UPDATE_START', total });
+                client.postMessage({ type: 'SW_UPDATE_START', total, version: CACHE_NAME });
             });
 
             // Cache each asset individually and report progress
@@ -85,7 +85,8 @@ self.addEventListener('install', (event) => {
                         type: 'SW_UPDATE_PROGRESS',
                         loaded,
                         total,
-                        percent: Math.round((loaded / total) * 100)
+                        percent: Math.round((loaded / total) * 100),
+                        version: CACHE_NAME
                     });
                 });
             }
