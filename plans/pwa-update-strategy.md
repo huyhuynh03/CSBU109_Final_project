@@ -1,10 +1,10 @@
 # 🔄 Quy hoạch cập nhật PWA tự động cho người dùng cuối
 
-> **Trạng thái triển khai (2026-05-19):** ✅ Toàn bộ 5 phase đã hoàn tất.
+> **Trạng thái triển khai (2026-05-19):** ✅ Toàn bộ 7 phase đã hoàn tất.
 >
 > **Production host (canonical):** Vercel — https://linguaflash-kohl.vercel.app
 >
-> **Firebase Hosting** đã chuyển sang **redirect-only** (301 → Vercel) trong [`firebase.json`](../firebase.json:1) để consolidate user về 1 origin duy nhất, tránh fragmenting PWA install.
+> **Firebase Hosting đã bị disable** (`firebase hosting:disable`). Project Firebase vẫn được dùng cho **Firestore, Cloud Functions, Auth, Messaging** — chỉ riêng Hosting không còn phục vụ traffic.
 >
 > Workflow deploy: `npm run deploy` (tự bump version + sync hash + `vercel --prod`).
 
@@ -49,11 +49,7 @@ flowchart TD
     DEPLOY --> BUMP[bump APP_VERSION + sync hash]
     BUMP --> VERCEL[vercel --prod]
 
-    USER[User mở PWA] --> CANONICAL{Origin?}
-    CANONICAL -->|linguaflash-kohl.vercel.app| HTML[Fetch index.html no-cache]
-    CANONICAL -->|linguaflash-f5591.web.app| REDIR[301 redirect → Vercel]
-    REDIR --> HTML
-
+    USER[User mở PWA] --> HTML[Fetch index.html no-cache]
     HTML --> NEWHTML[Nhận HTML mới nếu có]
     NEWHTML --> LOADJS[Load JS có ?v= mới]
 
@@ -86,7 +82,7 @@ flowchart TD
 
 ### 3.1 Lớp 1 — HTTP Cache Headers ✅
 
-[`vercel.json`](../vercel.json:1) (production):
+[`vercel.json`](../vercel.json:1) — production duy nhất:
 
 ```json
 {
@@ -198,7 +194,7 @@ async function staleWhileRevalidate(request) {
 
 **Đặc tính:**
 - **Idempotent**: Chạy nhiều lần liên tiếp không thay đổi nếu file không đổi (đã verify: 44 đổi → 0 đổi → 0 đổi).
-- **Per-file invalidation**: Chỉ file đổi mới có hash mới → browser chỉ tải lại đúng file đó (tận dụng `Cache-Control: immutable, max-age=1y`).
+- **Per-file invalidation**: Chỉ file đổi mới có hash mới → browser chỉ tải lại đúng file đó.
 - **Không bao giờ lệch**: Hash sinh từ chính nội dung file → không thể có chuyện `index.html` ghi `?v=A` mà SW expect `?v=B`.
 
 #### 3.3.3 npm scripts
@@ -206,20 +202,20 @@ async function staleWhileRevalidate(request) {
 ```json
 {
   "scripts": {
-    "bump":                 "node tools/bump-version.js",
-    "bump:minor":           "node tools/bump-version.js minor",
-    "bump:major":           "node tools/bump-version.js major",
-    "sync":                 "node tools/bump-version.js sync",
-    "deploy":               "node tools/bump-version.js patch && vercel --prod",
-    "deploy:minor":         "node tools/bump-version.js minor && vercel --prod",
-    "deploy:major":         "node tools/bump-version.js major && vercel --prod",
-    "deploy:firebase":      "node tools/bump-version.js patch && firebase deploy --only hosting",
-    "deploy:firebase:full": "node tools/bump-version.js patch && firebase deploy"
+    "bump":               "node tools/bump-version.js",
+    "bump:minor":         "node tools/bump-version.js minor",
+    "bump:major":         "node tools/bump-version.js major",
+    "sync":               "node tools/bump-version.js sync",
+    "deploy":             "node tools/bump-version.js patch && vercel --prod",
+    "deploy:minor":       "node tools/bump-version.js minor && vercel --prod",
+    "deploy:major":       "node tools/bump-version.js major && vercel --prod",
+    "firebase:rules":     "firebase deploy --only firestore:rules",
+    "firebase:functions": "firebase deploy --only functions"
   }
 }
 ```
 
-Production deploy lên Vercel; nhánh `:firebase` để deploy backup hoặc khi cần update Firestore rules / Functions.
+Production deploy duy nhất qua Vercel. Nhánh `firebase:*` chỉ dùng để deploy backend (rules / functions), KHÔNG dùng cho hosting.
 
 ### 3.4 Lớp 4 — Update Flow + UX Toast ✅
 
@@ -284,41 +280,46 @@ sequenceDiagram
 
 ### 3.5 Lớp 5 — Origin consolidation ✅
 
-**Vấn đề:** PWA bị "khoá" theo origin. User cài từ `linguaflash-f5591.web.app` có cache, IndexedDB, SW, FCM token TÁCH BIỆT 100% với user cài từ `linguaflash-kohl.vercel.app`. Hai PWA, hai trải nghiệm, deploy 1 nơi không tới nơi khác.
+**Vấn đề:** PWA bị "khoá" theo origin. User cài từ Firebase Hosting và user cài từ Vercel sẽ có 2 PWA tách biệt 100% (cache, IndexedDB, SW, FCM token riêng). Deploy 1 nơi không tới nơi khác.
 
-**Giải pháp:** Vercel làm origin canonical duy nhất. Firebase Hosting chuyển thành 301 redirect.
+**Giải pháp đã chốt:** Vercel làm origin canonical duy nhất. **Firebase Hosting bị disable hoàn toàn** vì không có user nào ngoài dev đang dùng.
 
-[`firebase.json`](../firebase.json:1):
+#### Quá trình tiến hoá quyết định
+
+| Phase | Quyết định | Lý do |
+|-------|-----------|-------|
+| Đầu tiên | 2 hosting song song (Firebase + Vercel) | Lịch sử dự án, có lúc cần backup |
+| Phase 6 | Firebase → 301 redirect Vercel | Consolidate user về 1 origin nhưng giữ Firebase Hosting hoạt động |
+| **Phase 7 (chốt)** | **Disable Firebase Hosting hoàn toàn** | Vì chưa có user thực ngoài dev — đơn giản hoá là tốt nhất, tránh phải maintain 2 config |
+
+#### [`firebase.json`](../firebase.json:1) cuối cùng
 
 ```json
 {
-    "hosting": {
-        "public": "public",
-        "redirects": [
-            {
-                "source": "**",
-                "destination": "https://linguaflash-kohl.vercel.app:path*",
-                "type": 301
-            }
-        ],
-        "headers": [
-            {
-                "source": "/__/auth/**",
-                "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
-            }
-        ]
+    "firestore": {
+        "rules": "firestore.rules"
+    },
+    "functions": {
+        "source": "functions"
     }
 }
 ```
 
-**Đặc điểm:**
-- 301 (permanent) để browser/search engine cache redirect, không gọi lại Firebase Hosting.
-- Path `/__/auth/**` được Firebase Hosting reserve cho Firebase Auth handler — KHÔNG bị redirect (Firebase tự ưu tiên reserved paths trước rules user-defined). Đảm bảo OAuth flow vẫn hoạt động qua `linguaflash-f5591.firebaseapp.com/__/auth/handler`.
-- Vì project chưa có user thực ngoài dev, không cần banner "vui lòng cài lại PWA" — chỉ deploy Vercel + Firebase redirect là xong.
+Block `hosting` đã bị xoá hoàn toàn. Project Firebase vẫn dùng cho:
+- **Firestore** (database) — qua [`firestore.rules`](../firestore.rules:1)
+- **Cloud Functions** ([`functions/`](../functions))
+- **Firebase Auth** — endpoint `linguaflash-f5591.firebaseapp.com/__/auth/handler` do Google quản lý, độc lập với Hosting
+- **Firebase Cloud Messaging** (FCM) — backend service, không cần Hosting
+
+Site live đã được gỡ bằng:
+```bash
+firebase hosting:disable
+```
+→ URL `linguaflash-f5591.web.app` trả 404.
 
 **Lưu ý quan trọng — KHÔNG đổi:**
-- `authDomain: "linguaflash-f5591.firebaseapp.com"` trong [`firebase-config.js`](../public/src/js/firebase-config.js:7) — đây là Firebase Auth handler URL, không phải hosting URL.
-- `noreply@linguaflash-f5591.firebaseapp.com` trong email gửi từ Firebase Auth — sender Google quản lý.
+- `authDomain: "linguaflash-f5591.firebaseapp.com"` trong [`firebase-config.js`](../public/src/js/firebase-config.js:7) — đây là Firebase Auth handler URL, hoạt động độc lập với Firebase Hosting.
+- `noreply@linguaflash-f5591.firebaseapp.com` — sender email Firebase Auth, do Google quản lý.
 - Project ID `linguaflash-f5591` — backend (Firestore/Functions/Auth/Messaging) vẫn dùng project này bình thường.
 
 ---
@@ -334,7 +335,8 @@ sequenceDiagram
 | **P3** | L2 — Refactor fetch strategies | ✅ Done | Test offline (Airplane mode) vẫn mở được app; test bản update khi online |
 | **P4** | L3 — Bump version script | ✅ Done | Chạy `npm run bump` → `sw.js` có version mới đúng |
 | **P5** | L3-B — Auto-sync `?v=<hash>` trong index.html | ✅ Done | `npm run sync` 2 lần liên tiếp → idempotent (44 đổi → 0 đổi); test sửa 1 file → chỉ file đó có hash mới |
-| **P6** | L5 — Firebase Hosting → 301 redirect Vercel | ✅ Done | `curl -I https://linguaflash-f5591.web.app/` → phải trả 301 với Location header |
+| **P6** | L5-A — Firebase Hosting → 301 redirect Vercel | ✅ Done (sau đó superseded bởi P7) |
+| **P7** | L5-B — Disable Firebase Hosting hoàn toàn | ✅ Done | `firebase hosting:disable` + verify URL trả 404 |
 
 ### 4.2 Test matrix
 
@@ -346,13 +348,13 @@ sequenceDiagram
 | Windows Edge PWA | Cài PWA từ Vercel URL; deploy mới; mở app → toast |
 | macOS Safari PWA | Tương tự iOS |
 | Offline mode | Airplane mode → mở app → vẫn vào được nhờ precache `/`, `/index.html`, `/manifest.json` |
-| Firebase URL redirect | `curl -I https://linguaflash-f5591.web.app/` → 301 Location → Vercel |
+| Firebase URL disable | `curl -I https://linguaflash-f5591.web.app/` → 404 / "Site Not Found" |
 
 ### 4.3 Rollback plan
 
 - **Nếu fetch strategy mới gây regression**: revert [`sw.js`](../public/sw.js:1) về bản cache-first cũ, giữ headers + update flow.
 - **Nếu update toast bị spam**: tạm tắt bằng `SwUpdate.init = () => {}` trong dev console.
-- **Nếu Firebase redirect gây vấn đề** (vd auth flow gặp lỗi do redirect không bypass `/__/auth/**`): xoá block `redirects` trong [`firebase.json`](../firebase.json:1), redeploy `firebase deploy --only hosting`.
+- **Nếu cần bật lại Firebase Hosting**: thêm lại block `hosting` trong [`firebase.json`](../firebase.json:1) + chạy `firebase deploy --only hosting`. Firebase project vẫn còn, không cần khởi tạo lại.
 - Cache key luôn version hoá → rollback SW chỉ cần activate lại bản trước, sẽ tự xoá cache lỗi.
 
 ---
@@ -366,21 +368,21 @@ sequenceDiagram
 | [`public/src/js/sw-update.js`](../public/src/js/sw-update.js:1) | Module quản lý update flow ở main thread |
 | [`tools/bump-version.js`](../tools/bump-version.js:1) | Script auto-bump APP_VERSION + auto-sync hash |
 | [`plans/pwa-update-strategy.md`](pwa-update-strategy.md:1) | Plan này |
+| [`package.json`](../package.json:1), [`package-lock.json`](../package-lock.json:1) | npm scripts cho deploy + bump |
 
 ### 5.2 Sửa
 
 | File | Thay đổi |
 |------|----------|
 | [`vercel.json`](../vercel.json:1) | Cache headers chuẩn (no-cache cho HTML/SW/manifest, immutable cho JS/CSS, Service-Worker-Allowed) |
-| [`firebase.json`](../firebase.json:1) | Chuyển sang 301 redirect → Vercel; bỏ hosting routes thông thường |
+| [`firebase.json`](../firebase.json:1) | **Xoá block `hosting` hoàn toàn**; chỉ giữ `firestore` + `functions` |
 | [`public/sw.js`](../public/sw.js:1) | Bỏ skipWaiting auto, thêm message listener, refactor fetch strategies, navigation preload |
 | [`public/index.html`](../public/index.html:175) | Bỏ inline register cũ, dùng `sw-update.js`; tất cả `?v=` giờ là hash 10 ký tự SHA-256 |
 | [`public/src/js/ui/toast.js`](../public/src/js/ui/toast.js:1) | Thêm `duration: 0`, `action`, `id`, public `dismiss()` |
 | [`public/src/css/components.css`](../public/src/css/components.css:268) | Style `.toast-action` |
-| [`package.json`](../package.json:1) | Scripts `bump`, `sync`, `deploy` (Vercel), `deploy:firebase`, các biến thể minor/major |
 | [`docs/PWA-DEPLOY-GUIDE.md`](../docs/PWA-DEPLOY-GUIDE.md:1) | Cập nhật URL canonical Vercel, workflow deploy mới, troubleshooting |
 
-### 5.3 KHÔNG động vào (auth domain Firebase)
+### 5.3 KHÔNG động vào (auth domain Firebase, không liên quan Hosting)
 
 - [`public/firebase-messaging-sw.js`](../public/firebase-messaging-sw.js:1) — `authDomain` là Firebase Auth, không phải hosting
 - [`public/src/js/firebase-config.js`](../public/src/js/firebase-config.js:1) — như trên
@@ -397,14 +399,15 @@ sequenceDiagram
 | Auto-reload khi idle | Không | Tránh mất state đang học của user; tin tưởng user thấy toast |
 | Cách bump version | Script Node tự viết | Không cần thêm dep; tích hợp trong npm scripts |
 | Hash format | SHA-256 → 10 ký tự đầu | Dài đủ tránh collision (16^10 ≈ 1 nghìn tỷ); ngắn đủ đọc |
-| Origin canonical | Vercel | Đang là production thực tế; Firebase Hosting chỉ là duplicate gây fragment |
+| Origin canonical | Vercel | Đang là production thực tế |
+| Firebase Hosting | **Disable hoàn toàn** | Chưa có user thực; tránh maintain 2 config; đơn giản hơn redirect |
 | Custom domain | Để sau | Khi app ổn định + có user thực, sẽ mua `linguaflash.app` để khoá origin về tay mình |
 
 ---
 
 ## 7. Acceptance criteria — đã đạt
 
-✅ Sau khi triển khai xong P1-P6:
+✅ Sau khi triển khai xong P1-P7:
 
 1. ✅ Dev `npm run deploy` → user PWA nhận toast "Có bản mới" trong vòng tối đa **60 phút** kể từ lần mở app gần nhất.
 2. ✅ User bấm "Tải lại" → app reload với phiên bản mới, không cần clear cache thủ công.
@@ -412,6 +415,6 @@ sequenceDiagram
 4. ✅ Không có reload đột ngột giữa lúc user đang học (vì bỏ skipWaiting auto).
 5. ✅ Không có lỗi `?v=N` lệch giữa SW và HTML — hash sinh từ nội dung file thật.
 6. ⏳ iOS PWA standalone không còn "kẹt" phiên bản cũ qua đêm — cần verify thực tế sau deploy đầu tiên.
-7. ✅ User truy cập Firebase Hosting URL → tự redirect về Vercel; toàn bộ user mới chỉ cài PWA từ 1 origin duy nhất.
+7. ✅ Chỉ tồn tại 1 hosting (Vercel); Firebase Hosting đã disable; không còn nguy cơ user fragment giữa 2 origin.
 
 > **Note:** `npm run sync` đã chạy thành công, lần đầu rewrite 44 file (`?v=N` → `?v=<10-char-hash>`), lần 2 và 3 báo "0 đổi" — chứng tỏ hash deterministic và idempotent. Không cần lo race condition khi nhiều dev cùng deploy: hash chỉ phụ thuộc nội dung file, không phụ thuộc thời gian/môi trường.

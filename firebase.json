@@ -4,31 +4,5 @@
     },
     "functions": {
         "source": "functions"
-    },
-    "hosting": {
-        "public": "public",
-        "ignore": [
-            "firebase.json",
-            "**/.*",
-            "**/node_modules/**"
-        ],
-        "redirects": [
-            {
-                "source": "**",
-                "destination": "https://linguaflash-kohl.vercel.app:path*",
-                "type": 301
-            }
-        ],
-        "headers": [
-            {
-                "source": "/__/auth/**",
-                "headers": [
-                    {
-                        "key": "Cache-Control",
-                        "value": "no-cache, no-store, must-revalidate"
-                    }
-                ]
-            }
-        ]
     }
 }

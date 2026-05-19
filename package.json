@@ -9,8 +9,8 @@
     "deploy": "node tools/bump-version.js patch && vercel --prod",
     "deploy:minor": "node tools/bump-version.js minor && vercel --prod",
     "deploy:major": "node tools/bump-version.js major && vercel --prod",
-    "deploy:firebase": "node tools/bump-version.js patch && firebase deploy --only hosting",
-    "deploy:firebase:full": "node tools/bump-version.js patch && firebase deploy"
+    "firebase:rules": "firebase deploy --only firestore:rules",
+    "firebase:functions": "firebase deploy --only functions"
   },
   "devDependencies": {
     "sharp": "^0.34.5"

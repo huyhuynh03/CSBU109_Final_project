@@ -6,12 +6,11 @@ LinguaFlash là Progressive Web App (PWA) hoạt động trên tất cả nền 
 
 ## URL canonical
 
-- **Production (DUY NHẤT cho user):** https://linguaflash-kohl.vercel.app
-- ~~Firebase Hosting~~ — **đã chuyển sang redirect-only**, không phục vụ traffic trực tiếp.
+- **Production (DUY NHẤT):** https://linguaflash-kohl.vercel.app
 
-> 🎯 **Quy ước:** Mọi link "Add to Home Screen" / cài PWA / share đường dẫn cho người dùng đều phải dùng `linguaflash-kohl.vercel.app`. Firebase Hosting (`linguaflash-f5591.web.app` / `linguaflash-f5591.firebaseapp.com`) chỉ còn 301 redirect về Vercel để bắt traffic cũ và bot search engine.
+> 🎯 **Quy ước:** Mọi link "Add to Home Screen" / cài PWA / share đường dẫn đều dùng `linguaflash-kohl.vercel.app`. Hosting duy nhất là Vercel.
 >
-> ⚠️ **Auth domain Firebase** (`linguaflash-f5591.firebaseapp.com`) trong [`public/src/js/firebase-config.js`](../public/src/js/firebase-config.js:7) là **Firebase Auth handler URL**, KHÔNG phải hosting URL. Không được đổi — đây là endpoint Google OAuth cần tới.
+> ⚠️ **Auth domain Firebase** (`linguaflash-f5591.firebaseapp.com`) trong [`public/src/js/firebase-config.js`](../public/src/js/firebase-config.js:7) là **Firebase Auth handler URL**, KHÔNG phải hosting URL. Không được đổi — đây là endpoint Google OAuth cần tới. Project Firebase vẫn được dùng cho Firestore, Cloud Functions, Auth, Messaging — chỉ riêng Firebase **Hosting** đã bị disable.
 
 ---
 
@@ -27,10 +26,10 @@ npm install -g vercel firebase-tools
 
 ```bash
 vercel login        # cho production hosting (Vercel)
-firebase login      # cho project Firebase (Firestore, Functions, Auth, Messaging, redirect hosting)
+firebase login      # cho project Firebase (Firestore rules, Cloud Functions)
 ```
 
-### Deploy lên Vercel (workflow chính)
+### Deploy app lên Vercel
 
 ```bash
 npm run deploy
@@ -52,22 +51,19 @@ npm run deploy:major    # bump major (5.146 → 6.0.0)
 **Tiện ích phát triển:**
 
 ```bash
-npm run sync           # CHỈ đồng bộ ?v=<hash>, không bump version (dùng khi develop local)
+npm run sync           # CHỈ đồng bộ ?v=<hash>, không bump version
 npm run bump           # CHỈ bump APP_VERSION + sync, không deploy
 ```
 
-### Deploy Firebase (chỉ khi cần)
+### Deploy Firebase backend (chỉ khi cần)
 
-Firebase Hosting hiện chỉ phục vụ 301 redirect → Vercel. Chỉ deploy khi:
-- Cập nhật rule redirect (sửa [`firebase.json`](../firebase.json:1))
+Firebase Hosting đã bị disable. Chỉ deploy Firebase khi:
 - Cập nhật Firestore rules ([`firestore.rules`](../firestore.rules:1))
 - Cập nhật Cloud Functions ([`functions/`](../functions))
 
 ```bash
-firebase deploy --only hosting     # cập nhật redirect
-firebase deploy --only firestore   # cập nhật Firestore rules
-firebase deploy --only functions   # cập nhật Functions
-firebase deploy                    # cập nhật toàn bộ Firebase
+npm run firebase:rules        # chỉ Firestore rules
+npm run firebase:functions    # chỉ Cloud Functions
 ```
 
 ### Deploy thủ công Vercel (KHÔNG khuyến nghị)
@@ -186,7 +182,7 @@ curl -I https://linguaflash-kohl.vercel.app/src/js/app.js?v=2f98fd2055
 | Windows meta tags | [`public/index.html`](../public/index.html:1) | ✅ msapplication-TileColor |
 | Icons (72-512px) | `public/icons/` | ✅ Đủ kích thước |
 | Vercel hosting config | [`vercel.json`](../vercel.json:1) | ✅ Cache headers + SPA rewrites (production) |
-| Firebase hosting config | [`firebase.json`](../firebase.json:1) | ✅ 301 redirect → Vercel |
+| Firebase config | [`firebase.json`](../firebase.json:1) | ✅ Firestore rules + Functions (KHÔNG có hosting) |
 | Auto-versioning script | [`tools/bump-version.js`](../tools/bump-version.js:1) | ✅ Bump APP_VERSION + sync hash |
 
 ---
@@ -240,12 +236,8 @@ Tương đương: `node tools/bump-version.js patch && vercel --prod`
 - Vercel đôi khi cache config cũ. Thử `vercel --prod --force` để force redeploy.
 - Kiểm tra [`vercel.json`](../vercel.json:1) syntax bằng `vercel inspect`.
 
-### User vẫn truy cập được Firebase Hosting URL
+### URL Firebase Hosting cũ vẫn truy cập được
 
-- Sau khi `firebase deploy --only hosting`, kiểm tra:
-  ```bash
-  curl -I https://linguaflash-f5591.web.app/
-  # Phải trả 301 với Location: https://linguaflash-kohl.vercel.app/
-  ```
-- Nếu không thấy 301: cấu hình `redirects` trong [`firebase.json`](../firebase.json:1) chưa được áp dụng → deploy lại.
-- Lưu ý: Firebase Hosting reserve các path bắt đầu bằng `/__/` (auth handler) → các path này **không bị redirect** dù `**` match. Đây là behavior đúng để Firebase Auth OAuth flow hoạt động bình thường.
+- Firebase Hosting đã được disable bằng `firebase hosting:disable`. URL `linguaflash-f5591.web.app` / `linguaflash-f5591.firebaseapp.com` (root) sẽ trả 404 hoặc trang "Site Not Found".
+- Nếu URL vẫn còn live: chạy lại `firebase hosting:disable` và confirm `Y`.
+- Lưu ý: path `linguaflash-f5591.firebaseapp.com/__/auth/handler` (Firebase Auth handler) **vẫn hoạt động bình thường** dù Hosting bị disable — Firebase Auth handler là endpoint riêng do Google quản lý.
