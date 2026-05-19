@@ -175,6 +175,12 @@
     <script>
         if ('serviceWorker' in navigator) {
             let _updateOverlay = null;
+            // Quan trọng: chỉ coi là "update thật" khi đã có SW điều khiển trang TRƯỚC khi register.
+            // Tránh vòng lặp reload trên Android Chrome lần cài đầu tiên (first-install cũng kích hoạt
+            // activate event và gửi SW_UPDATED → reload → install lại → loop).
+            const _wasControlled = !!navigator.serviceWorker.controller;
+            let _isRealUpdate = false;
+            let _hasReloaded = false;
 
             function _showUpdateProgress(percent, loaded, total) {
                 if (!_updateOverlay) {
@@ -204,6 +210,8 @@
             }
 
             function _completeUpdate() {
+                if (_hasReloaded) return; // chống gọi nhiều lần
+                _hasReloaded = true;
                 const title = document.getElementById('sw-update-title');
                 const bar = document.getElementById('sw-update-bar');
                 const pctText = document.getElementById('sw-update-percent');
@@ -219,19 +227,41 @@
                 // Register main SW
                 navigator.serviceWorker.register('/sw.js')
                     .then(reg => {
-                        console.log('[SW] Registered:', reg.scope);
+                        console.log('[SW] Registered:', reg.scope, 'wasControlled:', _wasControlled);
+
+                        // Phát hiện SW MỚI bắt đầu install (chỉ tính là update thật khi đã có SW trước đó).
+                        reg.addEventListener('updatefound', () => {
+                            const newSW = reg.installing;
+                            if (newSW && _wasControlled) {
+                                _isRealUpdate = true;
+                                console.log('[SW] Real update detected, new SW installing');
+                            }
+                        });
+
+                        // Nếu đã có SW waiting sẵn (lần load này phát hiện ra), cũng coi là update thật.
+                        if (reg.waiting && _wasControlled) {
+                            _isRealUpdate = true;
+                        }
+
                         // Check for updates every 30 minutes
                         setInterval(() => { reg.update().catch(() => {}); }, 30 * 60 * 1000);
                     })
                     .catch(err => console.error('[SW] Registration failed:', err));
+
                 // Register FCM SW (for push notifications)
                 navigator.serviceWorker.register('/firebase-messaging-sw.js')
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))
                     .catch(err => console.error('[FCM-SW] Registration failed:', err));
 
-                // Listen for SW update progress messages
+                // Listen for SW update progress messages.
+                // Chỉ hiển thị overlay + reload khi đây là update thật (đã có SW trước đó),
+                // tránh reload loop trên lần cài đầu tiên.
                 navigator.serviceWorker.addEventListener('message', (event) => {
                     if (!event.data) return;
+                    if (!_wasControlled && !_isRealUpdate) {
+                        // First install: bỏ qua hoàn toàn các message để không reload loop
+                        return;
+                    }
                     switch (event.data.type) {
                         case 'SW_UPDATE_START':
                             _showUpdateProgress(0, 0, event.data.total);
