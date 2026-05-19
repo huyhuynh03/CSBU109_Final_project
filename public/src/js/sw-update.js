@@ -266,6 +266,16 @@ const SwUpdate = {
         if (this._registration) {
             this._checkForUpdate(this._registration);
         }
+    },
+
+    /**
+     * Lấy APP_VERSION của Service Worker đang điều khiển page.
+     * @returns {Promise<string|null>} version string hoặc null nếu chưa có SW / SW cũ không hỗ trợ
+     */
+    async getCurrentVersion() {
+        const sw = navigator.serviceWorker?.controller;
+        if (!sw) return null;
+        return await this._getVersionFromSw(sw);
     }
 };
 
