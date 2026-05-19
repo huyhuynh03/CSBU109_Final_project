@@ -12,37 +12,20 @@
             "**/.*",
             "**/node_modules/**"
         ],
-        "rewrites": [
+        "redirects": [
             {
                 "source": "**",
-                "destination": "/index.html"
+                "destination": "https://linguaflash-kohl.vercel.app:path*",
+                "type": 301
             }
         ],
         "headers": [
             {
-                "source": "**/*.@(js|css)",
-                "headers": [
-                    {
-                        "key": "Cache-Control",
-                        "value": "public, max-age=31536000"
-                    }
-                ]
-            },
-            {
-                "source": "sw.js",
+                "source": "/__/auth/**",
                 "headers": [
                     {
                         "key": "Cache-Control",
                         "value": "no-cache, no-store, must-revalidate"
-                    }
-                ]
-            },
-            {
-                "source": "manifest.json",
-                "headers": [
-                    {
-                        "key": "Cache-Control",
-                        "value": "no-cache"
                     }
                 ]
             }

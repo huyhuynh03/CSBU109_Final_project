@@ -1,169 +1,302 @@
-// LinguaFlash Service Worker v5.145
-const CACHE_NAME = 'linguaflash-v5.145';
-const STATIC_ASSETS = [
+// ============================================
+// LinguaFlash Service Worker
+// ============================================
+// Cache strategies:
+//   - Navigation (HTML)        : Network-first with 3s timeout, fallback cache
+//   - App JS/CSS (same origin) : Stale-while-revalidate
+//   - firebase-config.js       : Network-first (sensitive config)
+//   - Google Fonts             : Cache-first
+//   - Icons / images           : Cache-first
+//   - Seed vocabulary JSON     : Stale-while-revalidate
+//   - Firebase APIs            : Bypass (network-only via browser)
+//
+// Update flow:
+//   - install: precache critical shell, KHÔNG skipWaiting tự động
+//   - activate: cleanup cache cũ, claim clients
+//   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
+//     user xác nhận trên Toast "Có bản cập nhật mới"
+
+const APP_VERSION = '5.146.1';
+const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
+
+// Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
+// Các file khác sẽ được cache khi user truy cập (stale-while-revalidate).
+const PRECACHE_URLS = [
     '/',
     '/index.html',
-    '/manifest.json',
-    '/seed-vocabulary/energy-resources.json',
-    '/seed-vocabulary/environment-climate.json',
-    '/seed-vocabulary/space.json',
-    '/src/css/variables.css?v=5',
-    '/src/css/base.css?v=3',
-    '/src/css/themes.css?v=2',
-    '/src/css/glassmorphism.css?v=2',
-    '/src/css/components.css?v=25',
-    '/src/css/animations.css?v=2',
-    '/src/css/responsive.css?v=4',
-    '/src/css/pwa-install.css?v=2',
-    '/src/js/notifications/push-manager.js?v=1',
-    '/src/js/app.js?v=16',
-    '/src/js/router.js?v=3',
-    '/src/js/utils/helpers.js?v=2',
-    '/src/js/utils/family-word-manager.js?v=6',
-    '/src/js/utils/tts.js?v=1',
-    '/src/js/utils/seed-importer.js?v=12',
-    '/src/js/ui/toast.js?v=2',
-    '/src/js/ui/theme.js?v=2',
-    '/src/js/ui/background.js?v=3',
-    '/src/js/ui/components.js?v=2',
-    '/src/js/ui/pwa-install.js?v=2',
-    '/src/js/ui/sidebar.js?v=8',
-    '/src/js/ui/card-filter.js?v=3',
-    '/src/js/config/card-schemas.js?v=10',
-    '/src/js/config/vocabulary-topics.js?v=8',
-    '/src/js/auth/auth.js?v=14',
-    '/src/js/auth/auth-ui.js?v=3',
-    '/src/js/db/firestore.js?v=11',
-    '/src/js/db/sync.js?v=2',
-    '/src/js/fsrs/fsrs.js?v=9',
-    '/src/js/fsrs/migration.js?v=3',
-    '/src/js/fsrs/bqt-v2-cleanup.js?v=4',
-    '/src/js/fsrs/card-mode-manager.js?v=4',
-    '/src/js/pages/home.js?v=13',
-    '/src/js/pages/vocabulary.js?v=59',
-    '/src/js/pages/topic-detail.js?v=14',
-    '/src/js/pages/grammar.js?v=3',
-    '/src/js/pages/study.js?v=22',
-    '/src/js/pages/review.js?v=15',
-    '/src/js/pages/settings.js?v=3',
-    '/src/js/pages/auth-page.js?v=8',
-    '/src/js/pages/account.js?v=4'
+    '/manifest.json'
 ];
 
-// Files that should always use network-first (contain sensitive config)
-const NETWORK_FIRST_FILES = [
+// Config files chứa thông tin nhạy cảm - luôn ưu tiên network
+const NETWORK_FIRST_PATHS = [
     '/src/js/firebase-config.js'
 ];
 
-// Install - Cache static assets
+// ============================================
+// Lifecycle: install
+// ============================================
 self.addEventListener('install', (event) => {
-    console.log('[SW] Installing...');
+    console.log(`[SW] Installing v${APP_VERSION}...`);
     event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then((cache) => {
-                console.log('[SW] Caching static assets');
-                return cache.addAll(STATIC_ASSETS);
-            })
-            .then(() => self.skipWaiting())
+        (async () => {
+            const cache = await caches.open(CACHE_NAME);
+            // Dùng add từng file để 1 file lỗi không làm fail toàn bộ install
+            await Promise.all(
+                PRECACHE_URLS.map((url) =>
+                    cache.add(url).catch((err) => {
+                        console.warn('[SW] Precache failed for', url, err);
+                    })
+                )
+            );
+            console.log('[SW] Precache complete');
+            // KHÔNG gọi self.skipWaiting() ở đây.
+            // Main thread (sw-update.js) sẽ post message SKIP_WAITING sau khi user xác nhận.
+        })()
     );
 });
 
-// Activate - Clean up old caches
+// ============================================
+// Lifecycle: activate
+// ============================================
 self.addEventListener('activate', (event) => {
-    console.log('[SW] Activating...');
+    console.log(`[SW] Activating v${APP_VERSION}...`);
     event.waitUntil(
-        caches.keys()
-            .then((cacheNames) => {
-                return Promise.all(
-                    cacheNames
-                        .filter((name) => name !== CACHE_NAME)
-                        .map((name) => {
-                            console.log('[SW] Deleting old cache:', name);
-                            return caches.delete(name);
-                        })
-                );
-            })
-            .then(() => self.clients.claim())
+        (async () => {
+            // Xoá cache cũ (khác CACHE_NAME hiện tại)
+            const cacheNames = await caches.keys();
+            await Promise.all(
+                cacheNames
+                    .filter((name) => name !== CACHE_NAME)
+                    .map((name) => {
+                        console.log('[SW] Deleting old cache:', name);
+                        return caches.delete(name);
+                    })
+            );
+            // Bật navigation preload nếu có (tăng tốc network-first navigation)
+            if (self.registration.navigationPreload) {
+                try {
+                    await self.registration.navigationPreload.enable();
+                } catch (e) {
+                    // Bỏ qua nếu không hỗ trợ
+                }
+            }
+            await self.clients.claim();
+            console.log('[SW] Activation complete');
+        })()
     );
 });
 
-// Fetch - Network first, fallback to cache (for API calls)
-// Cache first, fallback to network (for static assets)
+// ============================================
+// Message handler — nhận SKIP_WAITING từ main thread
+// ============================================
+self.addEventListener('message', (event) => {
+    if (!event.data) return;
+
+    if (event.data.type === 'SKIP_WAITING') {
+        console.log('[SW] SKIP_WAITING received - activating new SW');
+        self.skipWaiting();
+    }
+
+    if (event.data.type === 'GET_VERSION') {
+        event.ports[0]?.postMessage({ version: APP_VERSION });
+    }
+});
+
+// ============================================
+// Fetch handler
+// ============================================
 self.addEventListener('fetch', (event) => {
     const { request } = event;
     const url = new URL(request.url);
 
-    // Skip non-GET requests
+    // Chỉ xử lý GET
     if (request.method !== 'GET') return;
 
-    // Skip non-http(s) schemes (chrome-extension, etc.)
+    // Bỏ qua schemes không phải http(s) (chrome-extension, etc.)
     if (!url.protocol.startsWith('http')) return;
 
-    // Skip Firebase/Google API calls - let them go to network
-    if (url.hostname.includes('googleapis.com') ||
+    // Bỏ qua Firebase / Google APIs - để browser tự fetch
+    if (
+        url.hostname.includes('googleapis.com') ||
         url.hostname.includes('gstatic.com') ||
         url.hostname.includes('firebaseio.com') ||
         url.hostname.includes('firestore.googleapis.com') ||
-        url.hostname.includes('generativelanguage.googleapis.com')) {
+        url.hostname.includes('generativelanguage.googleapis.com') ||
+        url.hostname.includes('identitytoolkit.googleapis.com') ||
+        url.hostname.includes('securetoken.googleapis.com')
+    ) {
         return;
     }
 
-    // Network-first for config files (should not be cached long-term)
-    if (NETWORK_FIRST_FILES.some(f => url.pathname.endsWith(f))) {
-        event.respondWith(
-            fetch(request)
-                .then((response) => {
-                    const clone = response.clone();
-                    caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
-                    return response;
-                })
-                .catch(() => caches.match(request))
-        );
+    // 1. Navigation requests (HTML pages) → network-first
+    if (request.mode === 'navigate') {
+        event.respondWith(networkFirstNavigation(event));
         return;
     }
 
-    // For Google Fonts - cache first strategy
+    // 2. Network-first cho config files
+    if (NETWORK_FIRST_PATHS.some((p) => url.pathname.startsWith(p))) {
+        event.respondWith(networkFirst(request));
+        return;
+    }
+
+    // 3. Google Fonts → cache-first (ít khi đổi)
     if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
-        event.respondWith(
-            caches.match(request)
-                .then((cached) => {
-                    if (cached) return cached;
-                    return fetch(request).then((response) => {
-                        const clone = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
-                        return response;
-                    });
-                })
-        );
+        event.respondWith(cacheFirst(request));
         return;
     }
 
-    // For app static assets - cache first, fallback to network
-    event.respondWith(
-        caches.match(request)
-            .then((cached) => {
-                if (cached) return cached;
-                return fetch(request)
-                    .then((response) => {
-                        // Only cache successful responses
-                        if (!response || response.status !== 200 || response.type !== 'basic') {
-                            return response;
-                        }
-                        const clone = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
-                        return response;
-                    })
-                    .catch(() => {
-                        // If both cache and network fail, return offline page
-                        if (request.headers.get('accept').includes('text/html')) {
-                            return caches.match('/index.html');
-                        }
-                    });
-            })
-    );
+    // 4. Icons / images → cache-first
+    if (
+        url.pathname.startsWith('/icons/') ||
+        /\.(png|jpe?g|gif|webp|svg|ico)$/i.test(url.pathname)
+    ) {
+        event.respondWith(cacheFirst(request));
+        return;
+    }
+
+    // 5. Seed vocabulary JSON → stale-while-revalidate
+    if (url.pathname.startsWith('/seed-vocabulary/')) {
+        event.respondWith(staleWhileRevalidate(request));
+        return;
+    }
+
+    // 6. App JS/CSS cùng origin → stale-while-revalidate
+    if (url.origin === self.location.origin && /\.(js|css)$/i.test(url.pathname)) {
+        event.respondWith(staleWhileRevalidate(request));
+        return;
+    }
+
+    // 7. Default: cache-first với network fallback (giữ behavior cũ cho asset khác)
+    event.respondWith(cacheFirst(request));
 });
 
-// Push notification handler (backup - FCM SW handles most cases)
+// ============================================
+// Strategies
+// ============================================
+
+/**
+ * Network-first cho navigation (HTML).
+ * Timeout 3s; fallback về cache (request hoặc /index.html).
+ */
+async function networkFirstNavigation(event) {
+    const request = event.request;
+    const cache = await caches.open(CACHE_NAME);
+
+    try {
+        // Tận dụng navigation preload nếu có
+        const preloadResponse = await event.preloadResponse;
+        if (preloadResponse) {
+            cache.put(request, preloadResponse.clone()).catch(() => {});
+            return preloadResponse;
+        }
+
+        const networkResponse = await fetchWithTimeout(request, 3000);
+        if (networkResponse && networkResponse.status === 200) {
+            cache.put(request, networkResponse.clone()).catch(() => {});
+        }
+        return networkResponse;
+    } catch (err) {
+        console.log('[SW] Navigation network failed, fallback to cache:', err.message);
+        const cached = (await cache.match(request)) || (await cache.match('/index.html')) || (await cache.match('/'));
+        if (cached) return cached;
+        // Last resort: trả về error response
+        return new Response('Offline - không tải được trang', {
+            status: 503,
+            statusText: 'Service Unavailable',
+            headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+        });
+    }
+}
+
+/**
+ * Network-first thường (cho config / api-like resources).
+ */
+async function networkFirst(request) {
+    const cache = await caches.open(CACHE_NAME);
+    try {
+        const response = await fetch(request);
+        if (response && response.status === 200) {
+            cache.put(request, response.clone()).catch(() => {});
+        }
+        return response;
+    } catch (err) {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+        throw err;
+    }
+}
+
+/**
+ * Cache-first: dùng cache, nếu chưa có thì fetch network rồi cache lại.
+ */
+async function cacheFirst(request) {
+    const cache = await caches.open(CACHE_NAME);
+    const cached = await cache.match(request);
+    if (cached) return cached;
+
+    try {
+        const response = await fetch(request);
+        if (response && response.status === 200 && response.type !== 'opaqueredirect') {
+            cache.put(request, response.clone()).catch(() => {});
+        }
+        return response;
+    } catch (err) {
+        // Fallback offline cho HTML
+        if (request.headers.get('accept')?.includes('text/html')) {
+            const fallback = await cache.match('/index.html');
+            if (fallback) return fallback;
+        }
+        throw err;
+    }
+}
+
+/**
+ * Stale-while-revalidate: trả cache ngay (load nhanh), đồng thời fetch network để update cache.
+ * Nếu chưa có cache thì await network.
+ */
+async function staleWhileRevalidate(request) {
+    const cache = await caches.open(CACHE_NAME);
+    const cached = await cache.match(request);
+
+    const networkPromise = fetch(request)
+        .then((response) => {
+            if (response && response.status === 200 && response.type === 'basic') {
+                cache.put(request, response.clone()).catch(() => {});
+            }
+            return response;
+        })
+        .catch((err) => {
+            // Network fail - không sao nếu đã có cache
+            if (!cached) throw err;
+            return null;
+        });
+
+    return cached || networkPromise;
+}
+
+/**
+ * Helper: fetch với timeout.
+ */
+function fetchWithTimeout(request, timeoutMs) {
+    return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error('Network timeout')), timeoutMs);
+        fetch(request).then(
+            (resp) => {
+                clearTimeout(timer);
+                resolve(resp);
+            },
+            (err) => {
+                clearTimeout(timer);
+                reject(err);
+            }
+        );
+    });
+}
+
+// ============================================
+// Push notification handler (backup; FCM SW handles foreground/background)
+// ============================================
 self.addEventListener('push', (event) => {
     if (!event.data) return;
 
@@ -192,15 +325,15 @@ self.addEventListener('push', (event) => {
             ]
         };
 
-        event.waitUntil(
-            self.registration.showNotification(title, options)
-        );
+        event.waitUntil(self.registration.showNotification(title, options));
     } catch (err) {
         console.error('[SW] Push parse error:', err);
     }
 });
 
+// ============================================
 // Notification click handler
+// ============================================
 self.addEventListener('notificationclick', (event) => {
     event.notification.close();
 
@@ -209,15 +342,14 @@ self.addEventListener('notificationclick', (event) => {
     const targetUrl = event.notification.data?.url || '/#/review';
 
     event.waitUntil(
-        clients.matchAll({ type: 'window', includeUncontrolled: true })
-            .then((clientList) => {
-                for (const client of clientList) {
-                    if (client.url.includes(self.location.origin)) {
-                        client.navigate(targetUrl);
-                        return client.focus();
-                    }
+        clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+            for (const client of clientList) {
+                if (client.url.includes(self.location.origin)) {
+                    client.navigate(targetUrl);
+                    return client.focus();
                 }
-                return clients.openWindow(targetUrl);
-            })
+            }
+            return clients.openWindow(targetUrl);
+        })
     );
 });
