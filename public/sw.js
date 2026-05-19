@@ -1,5 +1,5 @@
-// LinguaFlash Service Worker v5.141
-const CACHE_NAME = 'linguaflash-v5.141';
+// LinguaFlash Service Worker v5.142
+const CACHE_NAME = 'linguaflash-v5.142';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
@@ -55,50 +55,40 @@ const NETWORK_FIRST_FILES = [
     '/src/js/firebase-config.js'
 ];
 
-// Install - Cache static assets with progress tracking
+// Install - Cache static assets.
+// Pattern "Notify, don't force": KHÔNG gọi skipWaiting() ở đây. SW mới sẽ ở trạng thái "waiting"
+// cho đến khi user chủ động bấm "Tải lại" trên toast → page sẽ postMessage SKIP_WAITING xuống.
 self.addEventListener('install', (event) => {
-    console.log('[SW] Installing...');
+    console.log('[SW] Installing...', CACHE_NAME);
     event.waitUntil(
         (async () => {
             const cache = await caches.open(CACHE_NAME);
-            const total = STATIC_ASSETS.length;
-            let loaded = 0;
-
-            // Notify clients that update is starting (kèm version để client kiểm tra dedupe)
-            const clients = await self.clients.matchAll({ type: 'window' });
-            clients.forEach(client => {
-                client.postMessage({ type: 'SW_UPDATE_START', total, version: CACHE_NAME });
-            });
-
-            // Cache each asset individually and report progress
+            // Cache từng asset để tránh fail toàn bộ install nếu 1 asset lỗi
             for (const asset of STATIC_ASSETS) {
                 try {
                     await cache.add(asset);
                 } catch (err) {
                     console.warn('[SW] Failed to cache:', asset, err.message);
                 }
-                loaded++;
-                // Send progress to all clients
-                const allClients = await self.clients.matchAll({ type: 'window' });
-                allClients.forEach(client => {
-                    client.postMessage({
-                        type: 'SW_UPDATE_PROGRESS',
-                        loaded,
-                        total,
-                        percent: Math.round((loaded / total) * 100),
-                        version: CACHE_NAME
-                    });
-                });
             }
-
-            await self.skipWaiting();
+            // Không skipWaiting → SW mới chờ user xác nhận
         })()
     );
 });
 
-// Activate - Clean up old caches & notify clients
+// Lắng nghe yêu cầu kích hoạt từ trang (khi user bấm "Tải lại" trên toast cập nhật)
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        console.log('[SW] Received SKIP_WAITING, activating new version');
+        self.skipWaiting();
+    }
+});
+
+// Activate - Clean up old caches and take control.
+// Khi SW này được activate (sau skipWaiting), browser sẽ tự fire `controllerchange` ở trang
+// → trang lắng nghe event đó để reload đúng 1 lần.
 self.addEventListener('activate', (event) => {
-    console.log('[SW] Activating...');
+    console.log('[SW] Activating...', CACHE_NAME);
     event.waitUntil(
         caches.keys()
             .then((cacheNames) => {
@@ -112,17 +102,6 @@ self.addEventListener('activate', (event) => {
                 );
             })
             .then(() => self.clients.claim())
-            .then(() => {
-                // Notify all clients that a new version is active
-                self.clients.matchAll({ type: 'window' }).then((clients) => {
-                    clients.forEach((client) => {
-                        client.postMessage({
-                            type: 'SW_UPDATED',
-                            version: CACHE_NAME
-                        });
-                    });
-                });
-            })
     );
 });
 

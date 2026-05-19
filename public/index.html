@@ -173,80 +173,90 @@
 
     <!-- Register Service Worker + Auto-Update with Progress -->
     <script>
+        // Pattern: "Notify, don't force" (chuẩn industry, theo khuyến nghị của Google/Workbox).
+        // - SW mới được install nhưng KHÔNG tự skipWaiting → không bao giờ tự reload trang.
+        // - Khi phát hiện SW mới đã waiting → hiển thị banner nhỏ "Có bản cập nhật. Tải lại".
+        // - User chủ động bấm → gửi SKIP_WAITING → controllerchange fire → reload đúng 1 lần.
         if ('serviceWorker' in navigator) {
-            let _updateOverlay = null;
-            // Mỗi version SW chỉ được reload đúng 1 lần qua mọi session.
-            // Lưu vào localStorage để bền vững xuyên reload, tránh vòng lặp trên Android Chrome
-            // (browser đôi khi re-trigger updatefound dù code SW không đổi do header/etag/CDN edge).
-            const LAST_RELOADED_KEY = 'lf_last_sw_reloaded_version';
-            const _wasControlled = !!navigator.serviceWorker.controller;
-            let _hasReloaded = false;
+            let _refreshing = false;
 
-            function _showUpdateProgress(percent, loaded, total) {
-                if (!_updateOverlay) {
-                    _updateOverlay = document.createElement('div');
-                    _updateOverlay.id = 'sw-update-overlay';
-                    _updateOverlay.innerHTML = `
-                        <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:99999;display:flex;align-items:center;justify-content:center;">
-                            <div style="background:var(--color-surface,#fff);border-radius:16px;padding:24px 32px;min-width:300px;max-width:90vw;box-shadow:0 8px 32px rgba(0,0,0,0.3);text-align:center;">
-                                <div style="font-size:32px;margin-bottom:12px;">🔄</div>
-                                <h3 style="margin:0 0 8px;color:var(--color-text,#333);font-size:16px;" id="sw-update-title">Đang cập nhật...</h3>
-                                <p style="margin:0 0 16px;color:var(--color-text-muted,#666);font-size:13px;" id="sw-update-detail">Tải tài nguyên mới</p>
-                                <div style="width:100%;height:8px;background:var(--color-border,#e0e0e0);border-radius:4px;overflow:hidden;margin-bottom:8px;">
-                                    <div id="sw-update-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--color-primary,#6C5CE7),var(--color-secondary,#a29bfe));border-radius:4px;transition:width 0.3s ease;"></div>
-                                </div>
-                                <p style="margin:0;color:var(--color-text-muted,#666);font-size:12px;" id="sw-update-percent">0%</p>
-                            </div>
-                        </div>
-                    `;
-                    document.body.appendChild(_updateOverlay);
-                }
-                const bar = document.getElementById('sw-update-bar');
-                const pctText = document.getElementById('sw-update-percent');
-                const detail = document.getElementById('sw-update-detail');
-                if (bar) bar.style.width = percent + '%';
-                if (pctText) pctText.textContent = percent + '%';
-                if (detail) detail.textContent = `Đã tải ${loaded}/${total} tài nguyên`;
+            function _showUpdateBanner(waitingWorker) {
+                if (document.getElementById('sw-update-banner')) return; // đã hiển thị
+                const banner = document.createElement('div');
+                banner.id = 'sw-update-banner';
+                banner.style.cssText = [
+                    'position:fixed',
+                    'right:16px',
+                    'bottom:16px',
+                    'z-index:99999',
+                    'background:rgba(20,20,30,0.92)',
+                    'color:#fff',
+                    'padding:12px 14px',
+                    'border-radius:12px',
+                    'box-shadow:0 8px 24px rgba(0,0,0,0.35)',
+                    'display:flex',
+                    'align-items:center',
+                    'gap:12px',
+                    'max-width:calc(100vw - 32px)',
+                    'font-family:Inter,sans-serif',
+                    'font-size:14px',
+                    'backdrop-filter:blur(8px)',
+                    '-webkit-backdrop-filter:blur(8px)',
+                    'border:1px solid rgba(255,255,255,0.1)'
+                ].join(';');
+                banner.innerHTML = [
+                    '<span style="font-size:20px;">✨</span>',
+                    '<span style="flex:1;">Có bản cập nhật mới</span>',
+                    '<button id="sw-update-reload" style="background:#6C63FF;color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Tải lại</button>',
+                    '<button id="sw-update-dismiss" aria-label="Đóng" style="background:transparent;color:#aaa;border:none;padding:4px 8px;cursor:pointer;font-size:18px;line-height:1;">×</button>'
+                ].join('');
+                document.body.appendChild(banner);
+
+                document.getElementById('sw-update-reload').addEventListener('click', () => {
+                    if (waitingWorker) {
+                        waitingWorker.postMessage({ type: 'SKIP_WAITING' });
+                        // Sau khi SW mới activate, controllerchange sẽ fire → reload tự động
+                    } else {
+                        window.location.reload();
+                    }
+                });
+                document.getElementById('sw-update-dismiss').addEventListener('click', () => {
+                    banner.remove();
+                });
             }
 
-            function _completeUpdate(version) {
-                if (_hasReloaded) return; // chống gọi nhiều lần trong cùng phiên
-                _hasReloaded = true;
-                // Đánh dấu version này đã reload — không reload lại nữa dù SW gửi SW_UPDATED lần khác
-                try {
-                    if (version) localStorage.setItem(LAST_RELOADED_KEY, version);
-                } catch {}
-                const title = document.getElementById('sw-update-title');
-                const bar = document.getElementById('sw-update-bar');
-                const pctText = document.getElementById('sw-update-percent');
-                const detail = document.getElementById('sw-update-detail');
-                if (title) title.textContent = 'Cập nhật hoàn tất!';
-                if (bar) { bar.style.width = '100%'; bar.style.background = '#27ae60'; }
-                if (pctText) pctText.textContent = '100%';
-                if (detail) detail.textContent = 'Đang tải lại trang...';
-                setTimeout(() => window.location.reload(), 1200);
-            }
-
-            /**
-             * Quyết định có nên reload không. Chỉ reload khi:
-             *   1) Trước đó đã có SW điều khiển trang (_wasControlled),
-             *   2) Version SW đang activate KHÁC với version đã reload trước đây.
-             * Điều này diệt cả reload loop khi Chrome re-trigger updatefound với cùng version.
-             */
-            function _shouldReloadFor(version) {
-                if (!version) return false;
-                if (!_wasControlled) return false; // first install, không reload
-                let last = null;
-                try { last = localStorage.getItem(LAST_RELOADED_KEY); } catch {}
-                return last !== version;
-            }
+            // controllerchange fire khi SW mới đã activate (sau khi user bấm "Tải lại")
+            // → reload trang đúng 1 lần để đồng bộ HTML và resources mới.
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (_refreshing) return;
+                _refreshing = true;
+                window.location.reload();
+            });
 
             window.addEventListener('load', () => {
-                // Register main SW
                 navigator.serviceWorker.register('/sw.js')
                     .then(reg => {
-                        console.log('[SW] Registered:', reg.scope, 'wasControlled:', _wasControlled);
-                        // Check for updates every 30 minutes
+                        console.log('[SW] Registered:', reg.scope);
+
+                        // Trường hợp 1: đã có SW waiting sẵn ngay lúc load (user đã từng truy cập
+                        // trang trước đó và SW mới đã được install nhưng chưa activate)
+                        if (reg.waiting && navigator.serviceWorker.controller) {
+                            _showUpdateBanner(reg.waiting);
+                        }
+
+                        // Trường hợp 2: SW mới được tải về sau khi page đã load
+                        reg.addEventListener('updatefound', () => {
+                            const newWorker = reg.installing;
+                            if (!newWorker) return;
+                            newWorker.addEventListener('statechange', () => {
+                                // 'installed' + đã có controller = SW mới sẵn sàng (waiting), không phải first-install
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    _showUpdateBanner(newWorker);
+                                }
+                            });
+                        });
+
+                        // Định kỳ check update mỗi 30 phút
                         setInterval(() => { reg.update().catch(() => {}); }, 30 * 60 * 1000);
                     })
                     .catch(err => console.error('[SW] Registration failed:', err));
@@ -255,35 +265,6 @@
                 navigator.serviceWorker.register('/firebase-messaging-sw.js')
                     .then(reg => console.log('[FCM-SW] Registered:', reg.scope))
                     .catch(err => console.error('[FCM-SW] Registration failed:', err));
-
-                // Listen for SW progress/update messages.
-                // Việc CÓ reload hay không hoàn toàn dựa trên localStorage version check —
-                // không bao giờ reload 2 lần cho cùng 1 phiên bản, dù trình duyệt có re-trigger
-                // updatefound bao nhiêu lần đi nữa.
-                navigator.serviceWorker.addEventListener('message', (event) => {
-                    if (!event.data) return;
-                    const version = event.data.version;
-                    switch (event.data.type) {
-                        case 'SW_UPDATE_START':
-                            if (_shouldReloadFor(version)) {
-                                _showUpdateProgress(0, 0, event.data.total);
-                            }
-                            break;
-                        case 'SW_UPDATE_PROGRESS':
-                            // Chỉ hiển thị progress nếu lần này thực sự sẽ reload
-                            if (_updateOverlay) {
-                                _showUpdateProgress(event.data.percent, event.data.loaded, event.data.total);
-                            }
-                            break;
-                        case 'SW_UPDATED':
-                            if (_shouldReloadFor(version)) {
-                                _completeUpdate(version);
-                            } else {
-                                console.log('[SW] Skip reload, already reloaded for version:', version);
-                            }
-                            break;
-                    }
-                });
             });
         }
     </script>
