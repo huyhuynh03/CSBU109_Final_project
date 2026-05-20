@@ -160,7 +160,7 @@ const HomePage = {
         const cellGap = 3;
         const totalSize = cellSize + cellGap;
 
-        // For selected year: Jan 1 to Dec 31 (or today if current year)
+        // For selected year: always Jan 1 to Dec 31 (full year)
         const startDate = new Date(year, 0, 1);
         // Align start to previous Sunday
         const startDayOfWeek = startDate.getDay();
@@ -168,7 +168,7 @@ const HomePage = {
             startDate.setDate(startDate.getDate() - startDayOfWeek);
         }
 
-        const endDate = (year === currentYear) ? new Date(today) : new Date(year, 11, 31);
+        const endDate = new Date(year, 11, 31);
 
         // Build weeks grid
         const weeks = [];
