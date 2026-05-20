@@ -413,6 +413,30 @@ const FirestoreDB = {
    },
 
    /**
+    * Get study sessions for a specific year
+    * @param {number} year - The year to fetch (e.g. 2026)
+    * @returns {Array} Array of {date, minutes}
+    */
+   async getStudySessionsByYear(year) {
+       const ref = this._userCollection('studySessions');
+       if (!ref) return [];
+
+       try {
+           const startKey = `${year}-01-01`;
+           const endKey = `${year}-12-31`;
+           const snapshot = await ref
+               .where('date', '>=', startKey)
+               .where('date', '<=', endKey)
+               .orderBy('date', 'asc')
+               .get();
+           return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+       } catch (error) {
+           console.error('[Firestore] Error getting study sessions by year:', error);
+           return [];
+       }
+   },
+
+   /**
     * Get current streak (consecutive days with study activity)
     * @returns {Object} {streak, totalMinutesToday}
     */

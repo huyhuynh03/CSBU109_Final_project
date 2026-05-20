@@ -59,9 +59,15 @@ const HomePage = {
                     </div>
                 </div>
 
-                <!-- GitHub-style Heatmap -->
+                <!-- GitHub-style Heatmap with Year Selector -->
                 <div class="glass-card" style="padding:var(--spacing-lg);">
-                    <div id="dashboard-chart" style="position:relative;overflow-x:auto;"></div>
+                    <div id="heatmap-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-md);">
+                        <span id="heatmap-summary" style="font-size:var(--font-size-sm);font-weight:600;color:var(--color-text);"></span>
+                    </div>
+                    <div style="display:flex;gap:var(--spacing-md);">
+                        <div id="dashboard-chart" style="position:relative;overflow-x:auto;flex:1;"></div>
+                        <div id="heatmap-years" style="display:flex;flex-direction:column;gap:4px;flex-shrink:0;"></div>
+                    </div>
                 </div>
             </div>
         `;
@@ -71,6 +77,7 @@ const HomePage = {
     _CACHE_TTL_MS: 60000,
     _lastLoadTime: 0,
     _cachedStreak: null,
+    _selectedYear: new Date().getFullYear(),
 
     async onEnter() {
         console.log('[HomePage] Entered - Dashboard');
@@ -121,16 +128,21 @@ const HomePage = {
             this._lastLoadTime = Date.now();
             this._renderStreakData(streakInfo);
 
-            // Get 140 days (20 weeks) of sessions for heatmap
-            const sessions = await FirestoreDB.getStudySessions(140);
-            const sessionMap = {};
-            sessions.forEach(s => { sessionMap[s.date] = s.minutes || 0; });
-
-            this._renderHeatmap(sessionMap);
+            // Load heatmap for selected year
+            await this._loadHeatmapForYear(this._selectedYear);
 
         } catch (error) {
             console.error('[HomePage] Error loading study chart:', error);
         }
+    },
+
+    async _loadHeatmapForYear(year) {
+        const sessions = await FirestoreDB.getStudySessionsByYear(year);
+        const sessionMap = {};
+        sessions.forEach(s => { sessionMap[s.date] = s.minutes || 0; });
+
+        this._renderHeatmap(sessionMap, year);
+        this._renderYearSelector(year);
     },
 
     /**
@@ -138,28 +150,33 @@ const HomePage = {
      * Uses pink/magenta palette with varying intensity
      * @private
      */
-    _renderHeatmap(sessionMap) {
+    _renderHeatmap(sessionMap, year) {
         const container = document.getElementById('dashboard-chart');
         if (!container) return;
 
         const today = new Date();
+        const currentYear = today.getFullYear();
         const cellSize = 13;
         const cellGap = 3;
         const totalSize = cellSize + cellGap;
 
-        // Calculate start date: go back to fill 20 weeks, starting from a Sunday
-        const endDate = new Date(today);
-        const startOffset = 20 * 7 - 1 + today.getDay(); // align to start on Sunday
-        const startDate = new Date(today);
-        startDate.setDate(startDate.getDate() - startOffset);
+        // For selected year: Jan 1 to Dec 31 (or today if current year)
+        const startDate = new Date(year, 0, 1);
+        // Align start to previous Sunday
+        const startDayOfWeek = startDate.getDay();
+        if (startDayOfWeek !== 0) {
+            startDate.setDate(startDate.getDate() - startDayOfWeek);
+        }
 
-        // Build weeks grid (columns = weeks, rows = days Mon-Sun)
+        const endDate = (year === currentYear) ? new Date(today) : new Date(year, 11, 31);
+
+        // Build weeks grid
         const weeks = [];
         let current = new Date(startDate);
         let week = [];
 
         while (current <= endDate) {
-            const dayOfWeek = current.getDay(); // 0=Sun
+            const dayOfWeek = current.getDay();
             if (dayOfWeek === 0 && week.length > 0) {
                 weeks.push(week);
                 week = [];
@@ -169,18 +186,32 @@ const HomePage = {
                 date: new Date(current),
                 key,
                 minutes: sessionMap[key] || 0,
-                dayOfWeek
+                dayOfWeek,
+                isOutOfRange: current.getFullYear() !== year
             });
             current.setDate(current.getDate() + 1);
         }
         if (week.length > 0) weeks.push(week);
+
+        // Count active days and total minutes
+        const activeDays = Object.values(sessionMap).filter(m => m > 0).length;
+        const totalMinutes = Object.values(sessionMap).reduce((sum, m) => sum + m, 0);
+
+        // Update summary
+        const summaryEl = document.getElementById('heatmap-summary');
+        if (summaryEl) {
+            const totalHours = Math.floor(totalMinutes / 60);
+            const remainMins = totalMinutes % 60;
+            summaryEl.textContent = `${activeDays} ngày luyện tập trong năm ${year} (${totalHours}h ${remainMins}m)`;
+        }
 
         // Find max for color scaling
         const allMinutes = Object.values(sessionMap).filter(m => m > 0);
         const maxMinutes = allMinutes.length > 0 ? Math.max(...allMinutes) : 60;
 
         // Color levels (pink/magenta palette)
-        const getColor = (minutes) => {
+        const getColor = (minutes, isOutOfRange) => {
+            if (isOutOfRange) return 'transparent';
             if (minutes === 0) return 'rgba(255, 255, 255, 0.05)';
             const ratio = minutes / maxMinutes;
             if (ratio <= 0.25) return 'rgba(233, 30, 144, 0.3)';
@@ -194,8 +225,10 @@ const HomePage = {
         let monthLabelsHtml = '';
         let lastMonth = -1;
         weeks.forEach((week, wi) => {
-            const firstDay = week[0];
-            const month = firstDay.date.getMonth();
+            // Find first day that belongs to the target year
+            const dayInYear = week.find(d => d.date.getFullYear() === year);
+            if (!dayInYear) return;
+            const month = dayInYear.date.getMonth();
             if (month !== lastMonth) {
                 lastMonth = month;
                 const left = wi * totalSize;
@@ -215,10 +248,11 @@ const HomePage = {
         weeks.forEach((week, wi) => {
             week.forEach(day => {
                 const col = wi;
-                const row = day.dayOfWeek; // 0=Sun at top, 6=Sat at bottom
+                const row = day.dayOfWeek;
                 const x = col * totalSize;
                 const y = row * totalSize;
-                const color = getColor(day.minutes);
+                const color = getColor(day.minutes, day.isOutOfRange);
+                if (day.isOutOfRange) return; // skip cells outside the year
                 const title = `${day.key}: ${day.minutes} phút`;
                 cellsHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}" style="outline:1px solid rgba(255,255,255,0.03);"><title>${title}</title></rect>`;
             });
@@ -263,5 +297,40 @@ const HomePage = {
                 </div>
             </div>
         `;
+    },
+
+    /**
+     * Render year selector buttons (right side, like GitHub)
+     * @private
+     */
+    _renderYearSelector(selectedYear) {
+        const container = document.getElementById('heatmap-years');
+        if (!container) return;
+
+        const currentYear = new Date().getFullYear();
+        // Show current year and up to 3 previous years
+        const years = [];
+        for (let y = currentYear; y >= currentYear - 3; y--) {
+            years.push(y);
+        }
+
+        container.innerHTML = years.map(y => {
+            const isActive = y === selectedYear;
+            const activeStyle = isActive
+                ? 'background:rgba(233, 30, 144, 0.2);color:#E91E90;border:1px solid rgba(233, 30, 144, 0.5);font-weight:700;'
+                : 'background:rgba(255,255,255,0.05);color:var(--color-text-muted);border:1px solid transparent;';
+            return `<button data-year="${y}" style="padding:4px 10px;border-radius:var(--radius-sm);font-size:12px;cursor:pointer;transition:all 0.2s;${activeStyle}" class="heatmap-year-btn">${y}</button>`;
+        }).join('');
+
+        // Attach event listeners
+        container.querySelectorAll('.heatmap-year-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const year = parseInt(e.target.dataset.year);
+                if (year !== this._selectedYear) {
+                    this._selectedYear = year;
+                    this._loadHeatmapForYear(year);
+                }
+            });
+        });
     }
 };
