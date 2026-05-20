@@ -122,9 +122,9 @@ const Router = {
             if (!handler) return;
         }
 
-        // Page transition
+        // Page transition — giảm delay để navigation cảm giác nhanh hơn
         this.mainContent.classList.add('page-exit');
-        await Helpers.sleep(150);
+        await Helpers.sleep(50);
 
         // Render new page
         this.currentRoute = path;

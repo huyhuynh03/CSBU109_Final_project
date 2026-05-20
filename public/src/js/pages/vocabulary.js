@@ -218,15 +218,55 @@ const VocabularyPage = {
         `;
     },
 
+    // Cache TTL: 30 giây — nếu quay lại trong khoảng này, dùng data cũ ngay lập tức
+    _CACHE_TTL_MS: 30000,
+    _lastLoadTime: 0,
+
     async onEnter() {
         console.log('[VocabularyPage] Entered');
-        // Tự động nạp seed data vào các topic chưa có từ
+
+        const now = Date.now();
+        const hasCachedData = this._allCards && this._allCards.length > 0
+            && (now - this._lastLoadTime) < this._CACHE_TTL_MS;
+
+        if (hasCachedData) {
+            // Render ngay từ cache — không chờ Firestore
+            this._loadTopics();
+            this._loadIncompleteTracking();
+            this._initSearch();
+            this._initFilter();
+            // Background refresh (không block UI)
+            this._backgroundRefresh();
+            return;
+        }
+
+        // Lần đầu hoặc cache hết hạn — load đầy đủ
         await this._autoSeedTopics();
-        await this._loadStats();   // Phải await để this._allCards có dữ liệu
-        this._loadTopics();        // Dùng this._allCards → phải chạy sau _loadStats
+        await this._loadStats();
+        this._lastLoadTime = Date.now();
+        this._loadTopics();
         this._loadIncompleteTracking();
         this._initSearch();
         this._initFilter();
+    },
+
+    /**
+     * Refresh data ở background mà không block UI.
+     * Nếu data thay đổi, cập nhật UI silently.
+     */
+    async _backgroundRefresh() {
+        try {
+            const oldCount = this._allCards ? this._allCards.length : 0;
+            await this._autoSeedTopics();
+            await this._loadStats();
+            this._lastLoadTime = Date.now();
+            // Chỉ re-render nếu data thực sự thay đổi
+            if (this._allCards && this._allCards.length !== oldCount) {
+                this._loadTopics();
+            }
+        } catch (e) {
+            console.warn('[VocabularyPage] Background refresh error:', e);
+        }
     },
 
     // ---- FILTER ----

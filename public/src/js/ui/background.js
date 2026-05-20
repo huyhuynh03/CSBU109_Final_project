@@ -20,7 +20,7 @@ const FloatingBackground = {
         'rgba(239, 68, 68, 0.3)',   // Red
         'rgba(249, 115, 22, 0.3)',  // Orange
     ],
-    maxIcons: 15,
+    maxIcons: 6,
     intervalId: null,
 
     /**
@@ -35,17 +35,17 @@ const FloatingBackground = {
             return;
         }
 
-        // Create initial batch of icons
-        for (let i = 0; i < 8; i++) {
-            setTimeout(() => this._createIcon(), i * 800);
+        // Create initial batch of icons (giảm từ 8 → 4 để nhẹ hơn)
+        for (let i = 0; i < 4; i++) {
+            setTimeout(() => this._createIcon(), i * 1200);
         }
 
-        // Continuously create new icons
+        // Continuously create new icons (giảm tần suất: 3s → 6s)
         this.intervalId = setInterval(() => {
             if (this.container.children.length < this.maxIcons) {
                 this._createIcon();
             }
-        }, 3000);
+        }, 6000);
     },
 
     /**

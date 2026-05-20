@@ -57,31 +57,53 @@ const HomePage = {
         `;
     },
 
+    // Cache TTL: 60 giây cho dashboard data
+    _CACHE_TTL_MS: 60000,
+    _lastLoadTime: 0,
+    _cachedStreak: null,
+
     async onEnter() {
         console.log('[HomePage] Entered - Dashboard');
         if (!Auth.isSignedIn()) return;
 
-        this._loadStudyChart();
+        const now = Date.now();
+        if (this._cachedStreak && (now - this._lastLoadTime) < this._CACHE_TTL_MS) {
+            // Render ngay từ cache
+            this._renderStreakData(this._cachedStreak);
+            // Background refresh
+            this._loadStudyChart().catch(() => {});
+            return;
+        }
+
+        await this._loadStudyChart();
     },
 
     /**
      * Load study chart, streak, practice time
      * @private
      */
+    /**
+     * Render streak/practice data từ cache (không cần await Firestore).
+     */
+    _renderStreakData(streakInfo) {
+        const streakEl = document.getElementById('dashboard-streak');
+        if (streakEl) streakEl.textContent = streakInfo.streak;
+
+        const practiceEl = document.getElementById('dashboard-practice-time');
+        if (practiceEl) {
+            const hours = Math.floor(streakInfo.totalMinutesToday / 60);
+            const mins = streakInfo.totalMinutesToday % 60;
+            practiceEl.innerHTML = `<span style="font-size:var(--font-size-2xl);font-weight:700;color:var(--color-text);">${hours}h ${mins}m</span>`;
+        }
+    },
+
     async _loadStudyChart() {
         try {
             // Get streak info
             const streakInfo = await FirestoreDB.getStreakInfo();
-            const streakEl = document.getElementById('dashboard-streak');
-            if (streakEl) streakEl.textContent = streakInfo.streak;
-
-            // Practice time today
-            const practiceEl = document.getElementById('dashboard-practice-time');
-            if (practiceEl) {
-                const hours = Math.floor(streakInfo.totalMinutesToday / 60);
-                const mins = streakInfo.totalMinutesToday % 60;
-                practiceEl.innerHTML = `<span style="font-size:var(--font-size-2xl);font-weight:700;color:var(--color-text);">${hours}h ${mins}m</span>`;
-            }
+            this._cachedStreak = streakInfo;
+            this._lastLoadTime = Date.now();
+            this._renderStreakData(streakInfo);
 
             // Get 7 days of sessions for chart
             const sessions = await FirestoreDB.getStudySessions(7);
