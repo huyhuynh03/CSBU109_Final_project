@@ -16,15 +16,71 @@
 //   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
 //     user xác nhận trên Toast "Có bản cập nhật mới"
 
-const APP_VERSION = '5.147.1';
+const APP_VERSION = '5.147.2';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
-// Các file khác sẽ được cache khi user truy cập (stale-while-revalidate).
+// Quota rất lớn (~300 GB), nên precache toàn bộ app shell để load instant.
 const PRECACHE_URLS = [
     '/',
     '/index.html',
-    '/manifest.json'
+    '/manifest.json',
+    // CSS
+    '/src/css/variables.css',
+    '/src/css/base.css',
+    '/src/css/components.css',
+    '/src/css/glassmorphism.css',
+    '/src/css/themes.css',
+    '/src/css/responsive.css',
+    '/src/css/animations.css',
+    '/src/css/pwa-install.css',
+    // Core JS
+    '/src/js/app.js',
+    '/src/js/router.js',
+    '/src/js/sw-update.js',
+    // Auth
+    '/src/js/auth/auth.js',
+    '/src/js/auth/auth-ui.js',
+    // DB
+    '/src/js/db/firestore.js',
+    '/src/js/db/sync.js',
+    // FSRS
+    '/src/js/fsrs/fsrs.js',
+    '/src/js/fsrs/bqt-v2-cleanup.js',
+    '/src/js/fsrs/card-mode-manager.js',
+    '/src/js/fsrs/migration.js',
+    // UI
+    '/src/js/ui/background.js',
+    '/src/js/ui/card-filter.js',
+    '/src/js/ui/components.js',
+    '/src/js/ui/pwa-install.js',
+    '/src/js/ui/sidebar.js',
+    '/src/js/ui/theme.js',
+    '/src/js/ui/toast.js',
+    // Pages
+    '/src/js/pages/home.js',
+    '/src/js/pages/vocabulary.js',
+    '/src/js/pages/grammar.js',
+    '/src/js/pages/study.js',
+    '/src/js/pages/review.js',
+    '/src/js/pages/settings.js',
+    '/src/js/pages/account.js',
+    '/src/js/pages/auth-page.js',
+    '/src/js/pages/languages.js',
+    '/src/js/pages/topic-detail.js',
+    // Utils
+    '/src/js/utils/helpers.js',
+    '/src/js/utils/seed-importer.js',
+    '/src/js/utils/tts.js',
+    '/src/js/utils/family-word-manager.js',
+    // Config
+    '/src/js/config/card-schemas.js',
+    '/src/js/config/vocabulary-topics.js',
+    // Notifications
+    '/src/js/notifications/push-manager.js',
+    // Icons
+    '/icons/icon-192.png',
+    '/icons/icon-512.png'
 ];
 
 // Config files chứa thông tin nhạy cảm - luôn ưu tiên network

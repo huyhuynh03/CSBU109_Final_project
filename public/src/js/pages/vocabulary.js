@@ -44,7 +44,7 @@ const VocabularyPage = {
         'irregular-adj-superlative': 'irregular-superlative.json'
     },
 
-    async render() {
+    _renderFresh() {
         const isSignedIn = Auth.isSignedIn();
 
         if (!isSignedIn) {
@@ -218,9 +218,21 @@ const VocabularyPage = {
         `;
     },
 
-    // Cache TTL: 30 giây — nếu quay lại trong khoảng này, dùng data cũ ngay lập tức
-    _CACHE_TTL_MS: 30000,
+    // Cache TTL: 60 giây — nếu quay lại trong khoảng này, dùng DOM snapshot cũ ngay lập tức
+    _CACHE_TTL_MS: 60000,
     _lastLoadTime: 0,
+    _cachedHtml: null,
+
+    /**
+     * render() trả về cached HTML nếu có — tránh flash spinner khi quay lại.
+     */
+    render() {
+        if (this._cachedHtml && this._allCards && this._allCards.length > 0
+            && (Date.now() - this._lastLoadTime) < this._CACHE_TTL_MS) {
+            return this._cachedHtml;
+        }
+        return this._renderFresh();
+    },
 
     async onEnter() {
         console.log('[VocabularyPage] Entered');
@@ -230,9 +242,7 @@ const VocabularyPage = {
             && (now - this._lastLoadTime) < this._CACHE_TTL_MS;
 
         if (hasCachedData) {
-            // Render ngay từ cache — không chờ Firestore
-            this._loadTopics();
-            this._loadIncompleteTracking();
+            // Data đã có + DOM đã restore từ cache → chỉ cần init interactive elements
             this._initSearch();
             this._initFilter();
             // Background refresh (không block UI)
@@ -248,6 +258,18 @@ const VocabularyPage = {
         this._loadIncompleteTracking();
         this._initSearch();
         this._initFilter();
+        // Lưu DOM snapshot sau khi render xong
+        this._saveHtmlCache();
+    },
+
+    /**
+     * Lưu DOM snapshot hiện tại để restore khi quay lại.
+     */
+    _saveHtmlCache() {
+        const container = document.getElementById('main-content');
+        if (container) {
+            this._cachedHtml = container.innerHTML;
+        }
     },
 
     /**
@@ -263,6 +285,7 @@ const VocabularyPage = {
             // Chỉ re-render nếu data thực sự thay đổi
             if (this._allCards && this._allCards.length !== oldCount) {
                 this._loadTopics();
+                this._saveHtmlCache();
             }
         } catch (e) {
             console.warn('[VocabularyPage] Background refresh error:', e);
