@@ -59,9 +59,9 @@ const HomePage = {
                     </div>
                 </div>
 
-                <!-- Unified Chart: bars + date labels + day abbreviations -->
+                <!-- GitHub-style Heatmap -->
                 <div class="glass-card" style="padding:var(--spacing-lg);">
-                    <div id="dashboard-chart" style="position:relative;"></div>
+                    <div id="dashboard-chart" style="position:relative;overflow-x:auto;"></div>
                 </div>
             </div>
         `;
@@ -121,33 +121,12 @@ const HomePage = {
             this._lastLoadTime = Date.now();
             this._renderStreakData(streakInfo);
 
-            // Get 7 days of sessions for chart
-            const sessions = await FirestoreDB.getStudySessions(7);
+            // Get 140 days (20 weeks) of sessions for heatmap
+            const sessions = await FirestoreDB.getStudySessions(140);
             const sessionMap = {};
             sessions.forEach(s => { sessionMap[s.date] = s.minutes || 0; });
 
-            // Build 7-day data
-            const today = new Date();
-            const chartData = [];
-            for (let i = 6; i >= 0; i--) {
-                const d = new Date(today);
-                d.setDate(d.getDate() - i);
-                const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-                const dayNum = d.getDate();
-                const monthNum = d.getMonth() + 1;
-                const dayOfWeek = d.getDay(); // 0=Sun, 1=Mon...
-                const dayAbbrs = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
-                chartData.push({
-                    date: d,
-                    dateKey: key,
-                    dateLabel: `${dayNum} thg ${monthNum}`,
-                    dayAbbr: dayAbbrs[dayOfWeek],
-                    minutes: sessionMap[key] || 0,
-                    isToday: i === 0
-                });
-            }
-
-            this._renderUnifiedChart(chartData);
+            this._renderHeatmap(sessionMap);
 
         } catch (error) {
             console.error('[HomePage] Error loading study chart:', error);
@@ -155,89 +134,134 @@ const HomePage = {
     },
 
     /**
-     * Render unified chart: Y-axis + bars on top, date labels in middle, day abbreviations at bottom
-     * All vertically aligned per column
+     * Render GitHub-style contribution heatmap
+     * Uses pink/magenta palette with varying intensity
      * @private
      */
-    _renderUnifiedChart(chartData) {
+    _renderHeatmap(sessionMap) {
         const container = document.getElementById('dashboard-chart');
         if (!container) return;
 
-        const maxMinutes = Math.max(...chartData.map(d => d.minutes), 1);
-        const maxHours = Math.ceil(maxMinutes / 60) || 1;
-        const ySteps = this._getYSteps(maxHours);
-        const chartHeight = 160;
-        const barColor = '#E91E90';
+        const today = new Date();
+        const cellSize = 13;
+        const cellGap = 3;
+        const totalSize = cellSize + cellGap;
 
-        // Y axis labels (positioned absolute)
-        const yLabelsHtml = ySteps.map(step => {
-            const bottom = (step / maxHours) * chartHeight;
-            return `
-                <div style="position:absolute;left:0;bottom:${bottom}px;transform:translateY(50%);font-size:11px;color:var(--color-text-muted);width:24px;text-align:right;">${step}</div>
-                <div style="position:absolute;left:32px;right:0;bottom:${bottom}px;border-bottom:1px dashed rgba(255,255,255,0.1);"></div>
-            `;
-        }).join('');
+        // Calculate start date: go back to fill 20 weeks, starting from a Sunday
+        const endDate = new Date(today);
+        const startOffset = 20 * 7 - 1 + today.getDay(); // align to start on Sunday
+        const startDate = new Date(today);
+        startDate.setDate(startDate.getDate() - startOffset);
 
-        // Columns: each column contains bar area + date label + day abbreviation
-        const columnsHtml = chartData.map((d) => {
-            const heightPct = maxHours > 0 ? (d.minutes / 60 / maxHours) * 100 : 0;
-            const barH = Math.max(heightPct, 1);
+        // Build weeks grid (columns = weeks, rows = days Mon-Sun)
+        const weeks = [];
+        let current = new Date(startDate);
+        let week = [];
 
-            // Day circle style
-            let circleStyle;
-            const hasActivity = d.minutes > 0;
-            if (hasActivity) {
-                circleStyle = 'background:linear-gradient(135deg, #6C63FF 0%, #4F46E5 100%);color:#fff;';
-            } else if (d.isToday) {
-                circleStyle = 'background:rgba(108,99,255,0.2);color:var(--color-primary);border:2px solid var(--color-primary);';
-            } else {
-                circleStyle = 'background:rgba(255,255,255,0.08);color:var(--color-text-muted);';
+        while (current <= endDate) {
+            const dayOfWeek = current.getDay(); // 0=Sun
+            if (dayOfWeek === 0 && week.length > 0) {
+                weeks.push(week);
+                week = [];
             }
+            const key = `${current.getFullYear()}-${String(current.getMonth() + 1).padStart(2, '0')}-${String(current.getDate()).padStart(2, '0')}`;
+            week.push({
+                date: new Date(current),
+                key,
+                minutes: sessionMap[key] || 0,
+                dayOfWeek
+            });
+            current.setDate(current.getDate() + 1);
+        }
+        if (week.length > 0) weeks.push(week);
 
-            return `
-                <div style="flex:1;display:flex;flex-direction:column;align-items:center;min-width:0;" title="${d.dateLabel} - ${d.minutes} phút">
-                    <!-- Bar area -->
-                    <div style="width:100%;height:${chartHeight}px;display:flex;align-items:flex-end;justify-content:center;">
-                        <div style="width:60%;max-width:24px;height:${barH}%;background:${barColor};border-radius:4px 4px 0 0;min-height:2px;transition:height 0.5s ease;"></div>
-                    </div>
-                    <!-- Date label -->
-                    <div style="font-size:10px;color:var(--color-text-muted);margin-top:8px;white-space:nowrap;text-align:center;">${d.dateLabel}</div>
-                    <!-- Day circle -->
-                    <div style="width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:var(--font-size-xs);margin-top:6px;${circleStyle}">
-                        ${d.dayAbbr}
-                    </div>
-                </div>
-            `;
+        // Find max for color scaling
+        const allMinutes = Object.values(sessionMap).filter(m => m > 0);
+        const maxMinutes = allMinutes.length > 0 ? Math.max(...allMinutes) : 60;
+
+        // Color levels (pink/magenta palette)
+        const getColor = (minutes) => {
+            if (minutes === 0) return 'rgba(255, 255, 255, 0.05)';
+            const ratio = minutes / maxMinutes;
+            if (ratio <= 0.25) return 'rgba(233, 30, 144, 0.3)';
+            if (ratio <= 0.5) return 'rgba(233, 30, 144, 0.55)';
+            if (ratio <= 0.75) return 'rgba(233, 30, 144, 0.8)';
+            return 'rgba(233, 30, 144, 1)';
+        };
+
+        // Month labels
+        const months = ['Thg 1', 'Thg 2', 'Thg 3', 'Thg 4', 'Thg 5', 'Thg 6', 'Thg 7', 'Thg 8', 'Thg 9', 'Thg 10', 'Thg 11', 'Thg 12'];
+        let monthLabelsHtml = '';
+        let lastMonth = -1;
+        weeks.forEach((week, wi) => {
+            const firstDay = week[0];
+            const month = firstDay.date.getMonth();
+            if (month !== lastMonth) {
+                lastMonth = month;
+                const left = wi * totalSize;
+                monthLabelsHtml += `<span style="position:absolute;left:${left}px;font-size:11px;color:var(--color-text-muted);">${months[month]}</span>`;
+            }
+        });
+
+        // Day labels (left side)
+        const dayLabels = ['', 'T2', '', 'T4', '', 'T6', ''];
+        const dayLabelsHtml = dayLabels.map((label, i) => {
+            const top = i * totalSize;
+            return `<div style="position:absolute;top:${top}px;height:${cellSize}px;display:flex;align-items:center;font-size:11px;color:var(--color-text-muted);white-space:nowrap;">${label}</div>`;
         }).join('');
+
+        // Grid cells
+        let cellsHtml = '';
+        weeks.forEach((week, wi) => {
+            week.forEach(day => {
+                const col = wi;
+                const row = day.dayOfWeek; // 0=Sun at top, 6=Sat at bottom
+                const x = col * totalSize;
+                const y = row * totalSize;
+                const color = getColor(day.minutes);
+                const title = `${day.key}: ${day.minutes} phút`;
+                cellsHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}" style="outline:1px solid rgba(255,255,255,0.03);"><title>${title}</title></rect>`;
+            });
+        });
+
+        const gridWidth = weeks.length * totalSize;
+        const gridHeight = 7 * totalSize;
+        const dayLabelWidth = 28;
+
+        // Legend
+        const legendColors = [
+            'rgba(255, 255, 255, 0.05)',
+            'rgba(233, 30, 144, 0.3)',
+            'rgba(233, 30, 144, 0.55)',
+            'rgba(233, 30, 144, 0.8)',
+            'rgba(233, 30, 144, 1)'
+        ];
+        const legendHtml = legendColors.map(c =>
+            `<span style="width:${cellSize}px;height:${cellSize}px;border-radius:2px;background:${c};display:inline-block;"></span>`
+        ).join('');
 
         container.innerHTML = `
-            <!-- Chart area with Y axis -->
-            <div style="position:relative;padding-left:32px;">
-                ${yLabelsHtml}
-                <!-- Baseline -->
-                <div style="position:absolute;left:32px;right:0;bottom:0;height:2px;background:${barColor};opacity:0.6;"></div>
-                <!-- Columns -->
-                <div style="display:flex;gap:0;">
-                    ${columnsHtml}
+            <div style="position:relative;padding-left:${dayLabelWidth}px;">
+                <!-- Month labels -->
+                <div style="position:relative;height:20px;margin-bottom:4px;">
+                    ${monthLabelsHtml}
+                </div>
+                <!-- Day labels + Grid -->
+                <div style="position:relative;display:flex;">
+                    <div style="position:relative;width:${dayLabelWidth}px;height:${gridHeight}px;flex-shrink:0;">
+                        ${dayLabelsHtml}
+                    </div>
+                    <svg width="${gridWidth}" height="${gridHeight}" style="display:block;">
+                        ${cellsHtml}
+                    </svg>
+                </div>
+                <!-- Legend -->
+                <div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:12px;font-size:11px;color:var(--color-text-muted);">
+                    <span>Ít</span>
+                    ${legendHtml}
+                    <span>Nhiều</span>
                 </div>
             </div>
         `;
-    },
-
-    /**
-     * Get nice Y axis steps
-     * @private
-     */
-    _getYSteps(maxHours) {
-        if (maxHours <= 1) return [0, 1];
-        if (maxHours <= 2) return [0, 1, 2];
-        if (maxHours <= 4) return [0, 1, 2, 3, 4];
-        if (maxHours <= 8) return [0, 2, 4, 6, 8];
-        const step = Math.ceil(maxHours / 4);
-        const steps = [];
-        for (let i = 0; i <= maxHours; i += step) {
-            steps.push(i);
-        }
-        return steps;
     }
 };

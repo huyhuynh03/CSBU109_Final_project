@@ -1,6 +1,72 @@
-# Windows Debug Log
-
-Paste console log từ Chrome/Edge DevTools vào đây.
-
----
-
+(index):132 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+logger.ts:115 [2026-05-20T17:12:09.020Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+(anonymous) @ logger.ts:115
+ [Firebase] Initialized successfully
+ [Firebase] Offline persistence enabled
+app.js?v=7508f27b53:10 [App] Initializing LinguaFlash...
+theme.js?v=7d2d8a5c9e:30 [Theme] Initialized: system
+pwa-install.js?v=53e11ee624:49 [PWAInstall] Initialized
+firestore.js?v=c24f78586b:14 [Firestore] Initialized
+sync.js?v=4128eea52b:25 [Sync] Initialized, online: true
+fsrs.js?v=5e348d74b3:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+auth-ui.js?v=57ee1bc840:47 [AuthUI] Initialized
+sidebar.js?v=6c084ce8e3:96 [Sidebar] Initialized
+app.js?v=7508f27b53:135 [App] Routes registered
+auth.js?v=cec132f99d:15 [Auth] State changed: huynhvuquochuy37@gmail.com
+push-manager.js?v=1a01af1878:56 [PushManager] Initialized successfully
+router.js?v=8de53699da:22 [Router] Initialized
+home.js?v=c3304586f0:61 [HomePage] Entered - Dashboard
+router.js?v=8de53699da:154 [Router] Navigated to: /
+app.js?v=7508f27b53:64 [App] ✅ Initialized successfully
+sw-update.js?v=dc43ebc4bb:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
+pwa-install.js?v=53e11ee624:30 [PWAInstall] beforeinstallprompt captured
+(index):1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+settings.js?v=e44b317cbe:191 [SettingsPage] Entered
+router.js?v=8de53699da:154 [Router] Navigated to: /settings
+/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+vocabulary.js?v=37cddc7ddf:222 [VocabularyPage] Entered
+bqt-v2-cleanup.js?v=641201c440:85 [BqtV2Cleanup] Cleaned 0/2512 legacy cards
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "family-relationships": +0 created, 0 updated, 81 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "daily-life": +0 created, 0 updated, 82 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "home-living": +0 created, 0 updated, 100 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "food-drink": +0 created, 0 updated, 119 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "daily-activities": +0 created, 0 updated, 92 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "health": +0 created, 0 updated, 88 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "communication-social": +0 created, 0 updated, 102 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "media-entertainment": +0 created, 0 updated, 115 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "sports": +0 created, 0 updated, 126 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "travel": +0 created, 0 updated, 114 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "personal-qualities": +0 created, 0 updated, 86 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "emotion-feelings": +0 created, 0 updated, 140 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "education": +0 created, 0 updated, 95 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "psychology": +0 created, 0 updated, 93 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "culture": +0 created, 0 updated, 63 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "arts": +0 created, 0 updated, 86 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "literature-reading": +0 created, 0 updated, 37 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "science": +0 created, 0 updated, 61 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "mathematics": +0 created, 0 updated, 57 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "biology": +0 created, 0 updated, 40 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "chemistry": +0 created, 0 updated, 35 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "physics": +0 created, 0 updated, 46 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "information-technology": +0 created, 0 updated, 69 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "space": +0 created, 0 updated, 76 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "environment-climate": +0 created, 0 updated, 82 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "energy-resources": +0 created, 0 updated, 100 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "irregular-verb-v1": +0 created, 0 updated, 132 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "irregular-verb-v2": +0 created, 0 updated, 114 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "irregular-verb-v3": +0 created, 0 updated, 56 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "irregular-adj-comparative": +0 created, 0 updated, 7 skipped
+vocabulary.js?v=37cddc7ddf:1153 [VocabularyPage] Seeded "irregular-adj-superlative": +0 created, 0 updated, 7 skipped
+router.js?v=8de53699da:154 [Router] Navigated to: /vocabulary
+/#/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+home.js?v=c3304586f0:61 [HomePage] Entered - Dashboard
+router.js?v=8de53699da:154 [Router] Navigated to: /
+vocabulary.js?v=37cddc7ddf:222 [VocabularyPage] Entered
+router.js?v=8de53699da:154 [Router] Navigated to: /vocabulary
+home.js?v=c3304586f0:61 [HomePage] Entered - Dashboard
+router.js?v=8de53699da:154 [Router] Navigated to: /
+vocabulary.js?v=37cddc7ddf:222 [VocabularyPage] Entered
+router.js?v=8de53699da:154 [Router] Navigated to: /vocabulary

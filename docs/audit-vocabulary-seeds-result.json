@@ -1,0 +1,275 @@
+{
+  "timestamp": "2026-05-14T14:59:41.361Z",
+  "totalTopics": 53,
+  "totalWords": 2736,
+  "discrepancies": 26,
+  "onlyInPublic": 2,
+  "onlyInData": 22,
+  "stats": {
+    "emotion-feelings": {
+      "public": 140,
+      "data": 140,
+      "total": 140
+    },
+    "irregular-verb-v2": {
+      "public": 114,
+      "data": 133,
+      "total": 133
+    },
+    "irregular-verb-v1": {
+      "public": 132,
+      "data": 0,
+      "total": 132
+    },
+    "irregular-verb-v3": {
+      "public": 56,
+      "data": 132,
+      "total": 132
+    },
+    "sports": {
+      "public": 126,
+      "data": 126,
+      "total": 126
+    },
+    "food-drink": {
+      "public": 119,
+      "data": 119,
+      "total": 119
+    },
+    "media-entertainment": {
+      "public": 115,
+      "data": 115,
+      "total": 115
+    },
+    "travel": {
+      "public": 114,
+      "data": 114,
+      "total": 114
+    },
+    "communication-social": {
+      "public": 102,
+      "data": 102,
+      "total": 102
+    },
+    "energy-resources": {
+      "public": 100,
+      "data": 100,
+      "total": 100
+    },
+    "home-living": {
+      "public": 100,
+      "data": 100,
+      "total": 100
+    },
+    "education-intermediate": {
+      "public": 0,
+      "data": 96,
+      "total": 96
+    },
+    "education": {
+      "public": 95,
+      "data": 0,
+      "total": 95
+    },
+    "psychology": {
+      "public": 93,
+      "data": 93,
+      "total": 93
+    },
+    "daily-activities": {
+      "public": 92,
+      "data": 92,
+      "total": 92
+    },
+    "health": {
+      "public": 88,
+      "data": 88,
+      "total": 88
+    },
+    "arts": {
+      "public": 86,
+      "data": 86,
+      "total": 86
+    },
+    "personal-qualities": {
+      "public": 86,
+      "data": 86,
+      "total": 86
+    },
+    "daily-life": {
+      "public": 82,
+      "data": 82,
+      "total": 82
+    },
+    "environment-climate": {
+      "public": 82,
+      "data": 82,
+      "total": 82
+    },
+    "family-relationships": {
+      "public": 81,
+      "data": 81,
+      "total": 81
+    },
+    "space": {
+      "public": 76,
+      "data": 76,
+      "total": 76
+    },
+    "information-technology": {
+      "public": 69,
+      "data": 69,
+      "total": 69
+    },
+    "culture": {
+      "public": 63,
+      "data": 63,
+      "total": 63
+    },
+    "science": {
+      "public": 61,
+      "data": 61,
+      "total": 61
+    },
+    "mathematics": {
+      "public": 57,
+      "data": 57,
+      "total": 57
+    },
+    "physics": {
+      "public": 46,
+      "data": 46,
+      "total": 46
+    },
+    "biology": {
+      "public": 40,
+      "data": 40,
+      "total": 40
+    },
+    "literature-reading": {
+      "public": 37,
+      "data": 37,
+      "total": 37
+    },
+    "chemistry": {
+      "public": 35,
+      "data": 35,
+      "total": 35
+    },
+    "verbs-basic-essential": {
+      "public": 0,
+      "data": 15,
+      "total": 15
+    },
+    "verbs-movement-travel": {
+      "public": 0,
+      "data": 12,
+      "total": 12
+    },
+    "verbs-physical-actions": {
+      "public": 0,
+      "data": 10,
+      "total": 10
+    },
+    "verbs-body-position": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-cognition-thinking": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-communication": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-creation-building": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-cutting-breaking": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-fighting-conflict": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "verbs-possession-transaction": {
+      "public": 0,
+      "data": 8,
+      "total": 8
+    },
+    "irregular-comparative": {
+      "public": 7,
+      "data": 7,
+      "total": 7
+    },
+    "irregular-superlative": {
+      "public": 7,
+      "data": 7,
+      "total": 7
+    },
+    "test-samples": {
+      "public": 0,
+      "data": 7,
+      "total": 7
+    },
+    "verbs-perception-senses": {
+      "public": 0,
+      "data": 7,
+      "total": 7
+    },
+    "verbs-change-transformation": {
+      "public": 0,
+      "data": 5,
+      "total": 5
+    },
+    "verbs-cleaning-maintenance": {
+      "public": 0,
+      "data": 5,
+      "total": 5
+    },
+    "verbs-eating-drinking": {
+      "public": 0,
+      "data": 5,
+      "total": 5
+    },
+    "verbs-attachment-connection": {
+      "public": 0,
+      "data": 4,
+      "total": 4
+    },
+    "verbs-destruction-damage": {
+      "public": 0,
+      "data": 4,
+      "total": 4
+    },
+    "verbs-searching-finding": {
+      "public": 0,
+      "data": 4,
+      "total": 4
+    },
+    "verbs-clothing-appearance": {
+      "public": 0,
+      "data": 2,
+      "total": 2
+    },
+    "verbs-sound-music": {
+      "public": 0,
+      "data": 2,
+      "total": 2
+    },
+    "verbs-spanning-covering": {
+      "public": 0,
+      "data": 1,
+      "total": 1
+    }
+  }
+}

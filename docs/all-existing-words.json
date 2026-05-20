@@ -1,0 +1,7048 @@
+{
+  "totalWordPos": 2310,
+  "totalUniqueWords": 2287,
+  "words": {
+    "art|noun": [
+      "arts"
+    ],
+    "artist|noun": [
+      "arts"
+    ],
+    "artistic|adjective": [
+      "arts"
+    ],
+    "artwork|noun": [
+      "arts"
+    ],
+    "aesthetic|adjective": [
+      "arts"
+    ],
+    "visual|adjective": [
+      "arts"
+    ],
+    "decorative|adjective": [
+      "arts"
+    ],
+    "ornament|noun": [
+      "arts"
+    ],
+    "painter|noun": [
+      "arts"
+    ],
+    "paint|verb": [
+      "arts"
+    ],
+    "drawing|noun": [
+      "arts"
+    ],
+    "sketch|noun": [
+      "arts"
+    ],
+    "sketchbook|noun": [
+      "arts"
+    ],
+    "illustration|noun": [
+      "arts"
+    ],
+    "illustrator|noun": [
+      "arts"
+    ],
+    "portrait|noun": [
+      "arts"
+    ],
+    "landscape|noun": [
+      "arts"
+    ],
+    "canvas|noun": [
+      "arts"
+    ],
+    "palette|noun": [
+      "arts"
+    ],
+    "watercolor|noun": [
+      "arts"
+    ],
+    "acrylic|noun": [
+      "arts"
+    ],
+    "sculpture|noun": [
+      "arts"
+    ],
+    "sculptor|noun": [
+      "arts"
+    ],
+    "carving|noun": [
+      "arts"
+    ],
+    "ceramic|noun": [
+      "arts"
+    ],
+    "pottery|noun": [
+      "arts"
+    ],
+    "mosaic|noun": [
+      "arts"
+    ],
+    "fresco|noun": [
+      "arts"
+    ],
+    "mural|noun": [
+      "arts"
+    ],
+    "installation|noun": [
+      "arts"
+    ],
+    "exhibit|noun": [
+      "arts"
+    ],
+    "masterpiece|noun": [
+      "arts"
+    ],
+    "composition|noun": [
+      "arts"
+    ],
+    "perspective|noun": [
+      "arts"
+    ],
+    "symmetry|noun": [
+      "arts"
+    ],
+    "contrast|noun": [
+      "arts"
+    ],
+    "texture|noun": [
+      "arts"
+    ],
+    "shade|noun": [
+      "arts"
+    ],
+    "hue|noun": [
+      "arts"
+    ],
+    "line|noun": [
+      "arts"
+    ],
+    "shape|noun": [
+      "arts"
+    ],
+    "form|noun": [
+      "arts"
+    ],
+    "pattern|noun": [
+      "arts"
+    ],
+    "abstract|adjective": [
+      "arts"
+    ],
+    "surreal|adjective": [
+      "arts"
+    ],
+    "modernist|adjective": [
+      "arts"
+    ],
+    "classical|adjective": [
+      "arts"
+    ],
+    "baroque|adjective": [
+      "arts"
+    ],
+    "gothic|adjective": [
+      "arts"
+    ],
+    "creativity|noun": [
+      "arts"
+    ],
+    "inspiration|noun": [
+      "arts"
+    ],
+    "expression|noun": [
+      "arts"
+    ],
+    "impression|noun": [
+      "arts"
+    ],
+    "interpret|verb": [
+      "arts"
+    ],
+    "depict|verb": [
+      "arts"
+    ],
+    "portray|verb": [
+      "arts"
+    ],
+    "represent|verb": [
+      "arts"
+    ],
+    "calligraphy|noun": [
+      "arts"
+    ],
+    "typography|noun": [
+      "arts"
+    ],
+    "printmaking|noun": [
+      "arts"
+    ],
+    "engraving|noun": [
+      "arts"
+    ],
+    "lithograph|noun": [
+      "arts"
+    ],
+    "craft|noun": [
+      "arts"
+    ],
+    "craftsman|noun": [
+      "arts"
+    ],
+    "artisan|noun": [
+      "arts"
+    ],
+    "workshop|noun": [
+      "arts"
+    ],
+    "photography|noun": [
+      "arts"
+    ],
+    "photographer|noun": [
+      "arts"
+    ],
+    "cinema|noun": [
+      "arts"
+    ],
+    "film|noun": [
+      "arts"
+    ],
+    "theatre|noun": [
+      "arts"
+    ],
+    "performance|noun": [
+      "arts"
+    ],
+    "performer|noun": [
+      "arts"
+    ],
+    "stage|noun": [
+      "arts"
+    ],
+    "audience|noun": [
+      "arts"
+    ],
+    "rehearsal|noun": [
+      "arts"
+    ],
+    "costume|noun": [
+      "arts"
+    ],
+    "makeup|noun": [
+      "arts"
+    ],
+    "choreography|noun": [
+      "arts"
+    ],
+    "ballet|noun": [
+      "arts"
+    ],
+    "opera|noun": [
+      "arts"
+    ],
+    "musical|noun": [
+      "arts"
+    ],
+    "orchestra|noun": [
+      "arts"
+    ],
+    "symphony|noun": [
+      "arts"
+    ],
+    "melody|noun": [
+      "arts"
+    ],
+    "harmony|noun": [
+      "arts"
+    ],
+    "biology|noun": [
+      "biology"
+    ],
+    "organism|noun": [
+      "biology"
+    ],
+    "species|noun": [
+      "biology"
+    ],
+    "cell|noun": [
+      "biology"
+    ],
+    "nucleus|noun": [
+      "biology"
+    ],
+    "membrane|noun": [
+      "biology"
+    ],
+    "tissue|noun": [
+      "biology"
+    ],
+    "organ|noun": [
+      "biology"
+    ],
+    "respiration|noun": [
+      "biology"
+    ],
+    "circulation|noun": [
+      "biology"
+    ],
+    "digestion|noun": [
+      "biology"
+    ],
+    "nervous system|noun": [
+      "biology"
+    ],
+    "gene|noun": [
+      "biology"
+    ],
+    "dna|noun": [
+      "biology"
+    ],
+    "chromosome|noun": [
+      "biology"
+    ],
+    "inheritance|noun": [
+      "biology"
+    ],
+    "mutation|noun": [
+      "biology"
+    ],
+    "evolution|noun": [
+      "biology"
+    ],
+    "adaptation|noun": [
+      "biology"
+    ],
+    "natural selection|noun": [
+      "biology"
+    ],
+    "ancestor|noun": [
+      "biology"
+    ],
+    "ecosystem|noun": [
+      "biology"
+    ],
+    "habitat|noun": [
+      "biology"
+    ],
+    "biodiversity|noun": [
+      "biology"
+    ],
+    "food chain|noun": [
+      "biology"
+    ],
+    "predator|noun": [
+      "biology"
+    ],
+    "prey|noun": [
+      "biology"
+    ],
+    "photosynthesis|noun": [
+      "biology"
+    ],
+    "chlorophyll|noun": [
+      "biology"
+    ],
+    "root|noun": [
+      "biology"
+    ],
+    "stem|noun": [
+      "biology"
+    ],
+    "leaf|noun": [
+      "biology"
+    ],
+    "reproduction|noun": [
+      "biology"
+    ],
+    "fertilisation|noun": [
+      "biology"
+    ],
+    "embryo|noun": [
+      "biology"
+    ],
+    "microscope|noun": [
+      "biology"
+    ],
+    "specimen|noun": [
+      "biology"
+    ],
+    "dissection|noun": [
+      "biology"
+    ],
+    "vaccine|noun": [
+      "biology"
+    ],
+    "antibody|noun": [
+      "biology"
+    ],
+    "chemistry|noun": [
+      "chemistry"
+    ],
+    "substance|noun": [
+      "chemistry"
+    ],
+    "matter|noun": [
+      "chemistry",
+      "physics"
+    ],
+    "molecule|noun": [
+      "chemistry"
+    ],
+    "element|noun": [
+      "chemistry"
+    ],
+    "compound|noun": [
+      "chemistry"
+    ],
+    "periodic table|noun": [
+      "chemistry"
+    ],
+    "metal|noun": [
+      "chemistry"
+    ],
+    "non-metal|noun": [
+      "chemistry"
+    ],
+    "atomic number|noun": [
+      "chemistry"
+    ],
+    "chemical reaction|noun": [
+      "chemistry"
+    ],
+    "reactant|noun": [
+      "chemistry"
+    ],
+    "product|noun": [
+      "chemistry",
+      "mathematics"
+    ],
+    "catalyst|noun": [
+      "chemistry"
+    ],
+    "oxidation|noun": [
+      "chemistry"
+    ],
+    "combustion|noun": [
+      "chemistry"
+    ],
+    "acid|noun": [
+      "chemistry"
+    ],
+    "base|noun": [
+      "chemistry"
+    ],
+    "alkali|noun": [
+      "chemistry"
+    ],
+    "ph|noun": [
+      "chemistry"
+    ],
+    "neutralisation|noun": [
+      "chemistry"
+    ],
+    "solution|noun": [
+      "chemistry"
+    ],
+    "solvent|noun": [
+      "chemistry"
+    ],
+    "solute|noun": [
+      "chemistry"
+    ],
+    "mixture|noun": [
+      "chemistry"
+    ],
+    "concentration|noun": [
+      "chemistry"
+    ],
+    "solid|noun": [
+      "chemistry"
+    ],
+    "liquid|noun": [
+      "chemistry"
+    ],
+    "gas|noun": [
+      "chemistry"
+    ],
+    "evaporation|noun": [
+      "chemistry"
+    ],
+    "condensation|noun": [
+      "chemistry"
+    ],
+    "beaker|noun": [
+      "chemistry"
+    ],
+    "test tube|noun": [
+      "chemistry"
+    ],
+    "pipette|noun": [
+      "chemistry"
+    ],
+    "safety goggles|noun": [
+      "chemistry"
+    ],
+    "communication|noun": [
+      "communication-social"
+    ],
+    "conversation|noun": [
+      "communication-social"
+    ],
+    "discussion|noun": [
+      "communication-social"
+    ],
+    "dialogue|noun": [
+      "communication-social"
+    ],
+    "interaction|noun": [
+      "communication-social"
+    ],
+    "feedback|noun": [
+      "communication-social"
+    ],
+    "greet|verb": [
+      "communication-social"
+    ],
+    "greeting|noun": [
+      "communication-social"
+    ],
+    "introduce|verb": [
+      "communication-social"
+    ],
+    "introduction|noun": [
+      "communication-social"
+    ],
+    "meet|verb": [
+      "communication-social",
+      "verbs-cognition-thinking"
+    ],
+    "shake hands|verb phrase": [
+      "communication-social"
+    ],
+    "welcome|verb": [
+      "communication-social"
+    ],
+    "farewell|noun": [
+      "communication-social"
+    ],
+    "ask|verb": [
+      "communication-social"
+    ],
+    "answer|verb": [
+      "communication-social"
+    ],
+    "explain|verb": [
+      "communication-social"
+    ],
+    "clarify|verb": [
+      "communication-social"
+    ],
+    "mention|verb": [
+      "communication-social"
+    ],
+    "suggest|verb": [
+      "communication-social"
+    ],
+    "request|verb": [
+      "communication-social"
+    ],
+    "respond|verb": [
+      "communication-social"
+    ],
+    "opinion|noun": [
+      "communication-social"
+    ],
+    "viewpoint|noun": [
+      "communication-social"
+    ],
+    "agree|verb": [
+      "communication-social"
+    ],
+    "disagree|verb": [
+      "communication-social"
+    ],
+    "persuade|verb": [
+      "communication-social"
+    ],
+    "argue|verb": [
+      "communication-social"
+    ],
+    "debate|noun": [
+      "communication-social"
+    ],
+    "compromise|noun": [
+      "communication-social"
+    ],
+    "polite|adjective": [
+      "communication-social"
+    ],
+    "rude|adjective": [
+      "communication-social"
+    ],
+    "respectful|adjective": [
+      "communication-social"
+    ],
+    "manners|noun": [
+      "communication-social"
+    ],
+    "etiquette|noun": [
+      "communication-social"
+    ],
+    "apologize|verb": [
+      "communication-social"
+    ],
+    "thank|verb": [
+      "communication-social"
+    ],
+    "interrupt|verb": [
+      "communication-social"
+    ],
+    "relationship|noun": [
+      "communication-social"
+    ],
+    "friendship|noun": [
+      "communication-social"
+    ],
+    "acquaintance|noun": [
+      "communication-social"
+    ],
+    "colleague|noun": [
+      "communication-social"
+    ],
+    "neighbor|noun": [
+      "communication-social"
+    ],
+    "stranger|noun": [
+      "communication-social"
+    ],
+    "contact|noun": [
+      "communication-social"
+    ],
+    "community|noun": [
+      "communication-social"
+    ],
+    "society|noun": [
+      "communication-social"
+    ],
+    "citizen|noun": [
+      "communication-social"
+    ],
+    "resident|noun": [
+      "communication-social"
+    ],
+    "neighborhood|noun": [
+      "communication-social"
+    ],
+    "public|adjective": [
+      "communication-social"
+    ],
+    "social|adjective": [
+      "communication-social"
+    ],
+    "volunteer|noun": [
+      "communication-social"
+    ],
+    "charity|noun": [
+      "communication-social"
+    ],
+    "culture|noun": [
+      "communication-social"
+    ],
+    "custom|noun": [
+      "communication-social"
+    ],
+    "tradition|noun": [
+      "communication-social"
+    ],
+    "belief|noun": [
+      "communication-social"
+    ],
+    "value|noun": [
+      "communication-social"
+    ],
+    "diversity|noun": [
+      "communication-social"
+    ],
+    "identity|noun": [
+      "communication-social"
+    ],
+    "minority|noun": [
+      "communication-social"
+    ],
+    "cooperate|verb": [
+      "communication-social"
+    ],
+    "cooperation|noun": [
+      "communication-social"
+    ],
+    "support|verb": [
+      "communication-social"
+    ],
+    "teamwork|noun": [
+      "communication-social"
+    ],
+    "conflict|noun": [
+      "communication-social"
+    ],
+    "tension|noun": [
+      "communication-social"
+    ],
+    "solve|verb": [
+      "communication-social"
+    ],
+    "reconcile|verb": [
+      "communication-social"
+    ],
+    "invite|verb": [
+      "communication-social"
+    ],
+    "invitation|noun": [
+      "communication-social"
+    ],
+    "attend|verb": [
+      "communication-social"
+    ],
+    "gather|verb": [
+      "communication-social"
+    ],
+    "meeting|noun": [
+      "communication-social"
+    ],
+    "event|noun": [
+      "communication-social"
+    ],
+    "ceremony|noun": [
+      "communication-social"
+    ],
+    "celebration|noun": [
+      "communication-social"
+    ],
+    "media|noun": [
+      "communication-social"
+    ],
+    "post|verb": [
+      "communication-social"
+    ],
+    "rumor|noun": [
+      "communication-social"
+    ],
+    "misinformation|noun": [
+      "communication-social"
+    ],
+    "law|noun": [
+      "communication-social"
+    ],
+    "rule|noun": [
+      "communication-social"
+    ],
+    "right|noun": [
+      "communication-social"
+    ],
+    "responsibility|noun": [
+      "communication-social"
+    ],
+    "duty|noun": [
+      "communication-social"
+    ],
+    "freedom|noun": [
+      "communication-social"
+    ],
+    "equality|noun": [
+      "communication-social"
+    ],
+    "fairness|noun": [
+      "communication-social"
+    ],
+    "honesty|noun": [
+      "communication-social"
+    ],
+    "loyalty|noun": [
+      "communication-social"
+    ],
+    "tolerance|noun": [
+      "communication-social"
+    ],
+    "kindness|noun": [
+      "communication-social"
+    ],
+    "solidarity|noun": [
+      "communication-social"
+    ],
+    "poverty|noun": [
+      "communication-social"
+    ],
+    "homelessness|noun": [
+      "communication-social"
+    ],
+    "discrimination|noun": [
+      "communication-social"
+    ],
+    "inequality|noun": [
+      "communication-social"
+    ],
+    "crime|noun": [
+      "communication-social"
+    ],
+    "violence|noun": [
+      "communication-social"
+    ],
+    "isolation|noun": [
+      "communication-social"
+    ],
+    "cultural|adjective": [
+      "culture"
+    ],
+    "heritage|noun": [
+      "culture"
+    ],
+    "festival|noun": [
+      "culture"
+    ],
+    "ritual|noun": [
+      "culture"
+    ],
+    "folklore|noun": [
+      "culture"
+    ],
+    "legend|noun": [
+      "culture"
+    ],
+    "mythology|noun": [
+      "culture"
+    ],
+    "ethnic|adjective": [
+      "culture"
+    ],
+    "indigenous|adjective": [
+      "culture"
+    ],
+    "multicultural|adjective": [
+      "culture"
+    ],
+    "colonialism|noun": [
+      "culture"
+    ],
+    "imperialism|noun": [
+      "culture"
+    ],
+    "sovereignty|noun": [
+      "culture"
+    ],
+    "citizenship|noun": [
+      "culture"
+    ],
+    "nationality|noun": [
+      "culture"
+    ],
+    "patriotism|noun": [
+      "culture"
+    ],
+    "nationalism|noun": [
+      "culture"
+    ],
+    "immigration|noun": [
+      "culture"
+    ],
+    "migration|noun": [
+      "culture"
+    ],
+    "assimilation|noun": [
+      "culture"
+    ],
+    "monument|noun": [
+      "culture"
+    ],
+    "memorial|noun": [
+      "culture"
+    ],
+    "statue|noun": [
+      "culture"
+    ],
+    "architecture|noun": [
+      "culture"
+    ],
+    "temple|noun": [
+      "culture"
+    ],
+    "shrine|noun": [
+      "culture"
+    ],
+    "mosque|noun": [
+      "culture"
+    ],
+    "cathedral|noun": [
+      "culture"
+    ],
+    "palace|noun": [
+      "culture"
+    ],
+    "castle|noun": [
+      "culture"
+    ],
+    "fortress|noun": [
+      "culture"
+    ],
+    "ruin|noun": [
+      "culture"
+    ],
+    "artifact|noun": [
+      "culture"
+    ],
+    "relic|noun": [
+      "culture"
+    ],
+    "museum|noun": [
+      "culture"
+    ],
+    "gallery|noun": [
+      "culture"
+    ],
+    "exhibition|noun": [
+      "culture"
+    ],
+    "curator|noun": [
+      "culture"
+    ],
+    "preservation|noun": [
+      "culture"
+    ],
+    "restoration|noun": [
+      "culture"
+    ],
+    "civilization|noun": [
+      "culture"
+    ],
+    "empire|noun": [
+      "culture"
+    ],
+    "dynasty|noun": [
+      "culture"
+    ],
+    "monarchy|noun": [
+      "culture"
+    ],
+    "aristocracy|noun": [
+      "culture"
+    ],
+    "feudalism|noun": [
+      "culture"
+    ],
+    "renaissance|noun": [
+      "culture"
+    ],
+    "enlightenment|noun": [
+      "culture"
+    ],
+    "revolution|noun": [
+      "culture"
+    ],
+    "reform|noun": [
+      "culture"
+    ],
+    "modernization|noun": [
+      "culture"
+    ],
+    "globalization|noun": [
+      "culture"
+    ],
+    "localization|noun": [
+      "culture"
+    ],
+    "secularization|noun": [
+      "culture"
+    ],
+    "spirituality|noun": [
+      "culture"
+    ],
+    "sacred|adjective": [
+      "culture"
+    ],
+    "worship|verb": [
+      "culture"
+    ],
+    "pilgrimage|noun": [
+      "culture"
+    ],
+    "altar|noun": [
+      "culture"
+    ],
+    "scripture|noun": [
+      "culture"
+    ],
+    "symbol|noun": [
+      "culture"
+    ],
+    "emblem|noun": [
+      "culture"
+    ],
+    "crest|noun": [
+      "culture"
+    ],
+    "activity|noun": [
+      "daily-activities"
+    ],
+    "action|noun": [
+      "daily-activities"
+    ],
+    "stretch|verb": [
+      "daily-activities"
+    ],
+    "yawn|verb": [
+      "daily-activities"
+    ],
+    "make the bed|phrase": [
+      "daily-activities"
+    ],
+    "open the curtains|phrase": [
+      "daily-activities"
+    ],
+    "wash your face|phrase": [
+      "daily-activities"
+    ],
+    "brush your teeth|phrase": [
+      "daily-activities"
+    ],
+    "floss|verb": [
+      "daily-activities"
+    ],
+    "take a shower|phrase": [
+      "daily-activities"
+    ],
+    "dry your hair|phrase": [
+      "daily-activities"
+    ],
+    "comb your hair|phrase": [
+      "daily-activities"
+    ],
+    "shave|verb": [
+      "daily-activities"
+    ],
+    "put on makeup|phrase": [
+      "daily-activities"
+    ],
+    "choose an outfit|phrase": [
+      "daily-activities"
+    ],
+    "pack a bag|phrase": [
+      "daily-activities"
+    ],
+    "check the weather|phrase": [
+      "daily-activities"
+    ],
+    "lock the door|phrase": [
+      "daily-activities"
+    ],
+    "leave home|phrase": [
+      "daily-activities"
+    ],
+    "prepare breakfast|phrase": [
+      "daily-activities"
+    ],
+    "make coffee|phrase": [
+      "daily-activities"
+    ],
+    "pour milk|phrase": [
+      "daily-activities"
+    ],
+    "set the table|phrase": [
+      "daily-activities"
+    ],
+    "clear the table|phrase": [
+      "daily-activities"
+    ],
+    "wash the dishes|phrase": [
+      "daily-activities"
+    ],
+    "do the dishes|phrase": [
+      "daily-activities"
+    ],
+    "pack lunch|phrase": [
+      "daily-activities"
+    ],
+    "walk|verb": [
+      "daily-activities"
+    ],
+    "cycle|verb": [
+      "daily-activities"
+    ],
+    "drive|verb": [
+      "daily-activities",
+      "verbs-movement-travel"
+    ],
+    "take the bus|phrase": [
+      "daily-activities"
+    ],
+    "catch the train|phrase": [
+      "daily-activities"
+    ],
+    "cross the street|phrase": [
+      "daily-activities"
+    ],
+    "wait in line|phrase": [
+      "daily-activities"
+    ],
+    "queue|verb": [
+      "daily-activities"
+    ],
+    "buy groceries|phrase": [
+      "daily-activities"
+    ],
+    "pay the bill|phrase": [
+      "daily-activities"
+    ],
+    "withdraw cash|phrase": [
+      "daily-activities"
+    ],
+    "run errands|phrase": [
+      "daily-activities"
+    ],
+    "book an appointment|phrase": [
+      "daily-activities"
+    ],
+    "cancel an appointment|phrase": [
+      "daily-activities"
+    ],
+    "study|verb": [
+      "daily-activities",
+      "education-intermediate"
+    ],
+    "attend class|phrase": [
+      "daily-activities"
+    ],
+    "take notes|phrase": [
+      "daily-activities"
+    ],
+    "review lessons|phrase": [
+      "daily-activities"
+    ],
+    "do homework|phrase": [
+      "daily-activities"
+    ],
+    "submit homework|phrase": [
+      "daily-activities"
+    ],
+    "work|verb": [
+      "daily-activities"
+    ],
+    "check emails|phrase": [
+      "daily-activities"
+    ],
+    "reply to messages|phrase": [
+      "daily-activities"
+    ],
+    "make a phone call|phrase": [
+      "daily-activities"
+    ],
+    "send a text|phrase": [
+      "daily-activities"
+    ],
+    "browse the internet|phrase": [
+      "daily-activities"
+    ],
+    "charge your phone|phrase": [
+      "daily-activities"
+    ],
+    "exercise|verb": [
+      "daily-activities"
+    ],
+    "jog|verb": [
+      "daily-activities"
+    ],
+    "work out|phrasal verb": [
+      "daily-activities"
+    ],
+    "meditate|verb": [
+      "daily-activities"
+    ],
+    "breathe deeply|phrase": [
+      "daily-activities"
+    ],
+    "take medicine|phrase": [
+      "daily-activities"
+    ],
+    "take a nap|phrase": [
+      "daily-activities"
+    ],
+    "clean the house|phrase": [
+      "daily-activities"
+    ],
+    "tidy the room|phrase": [
+      "daily-activities"
+    ],
+    "sweep the floor|phrase": [
+      "daily-activities"
+    ],
+    "mop the floor|phrase": [
+      "daily-activities"
+    ],
+    "vacuum the carpet|phrase": [
+      "daily-activities"
+    ],
+    "dust the shelves|phrase": [
+      "daily-activities"
+    ],
+    "do the laundry|phrase": [
+      "daily-activities"
+    ],
+    "hang clothes|phrase": [
+      "daily-activities"
+    ],
+    "fold clothes|phrase": [
+      "daily-activities"
+    ],
+    "take out the trash|phrase": [
+      "daily-activities"
+    ],
+    "feed the pet|phrase": [
+      "daily-activities"
+    ],
+    "walk the dog|phrase": [
+      "daily-activities"
+    ],
+    "water the plants|phrase": [
+      "daily-activities"
+    ],
+    "help with chores|phrase": [
+      "daily-activities"
+    ],
+    "take care of someone|phrase": [
+      "daily-activities"
+    ],
+    "spend time with family|phrase": [
+      "daily-activities"
+    ],
+    "meet friends|phrase": [
+      "daily-activities"
+    ],
+    "chat|verb": [
+      "daily-activities"
+    ],
+    "hang out|phrasal verb": [
+      "daily-activities"
+    ],
+    "visit|verb": [
+      "daily-activities"
+    ],
+    "celebrate|verb": [
+      "daily-activities"
+    ],
+    "watch tv|phrase": [
+      "daily-activities"
+    ],
+    "listen to music|phrase": [
+      "daily-activities"
+    ],
+    "read a book|phrase": [
+      "daily-activities"
+    ],
+    "play games|phrase": [
+      "daily-activities"
+    ],
+    "go for a walk|phrase": [
+      "daily-activities"
+    ],
+    "cook dinner|phrase": [
+      "daily-activities"
+    ],
+    "prepare for tomorrow|phrase": [
+      "daily-activities"
+    ],
+    "set an alarm|phrase": [
+      "daily-activities"
+    ],
+    "turn off the lights|phrase": [
+      "daily-activities"
+    ],
+    "go to bed|phrase": [
+      "daily-activities"
+    ],
+    "routine|noun": [
+      "daily-life"
+    ],
+    "daily|adjective": [
+      "daily-life"
+    ],
+    "habit|noun": [
+      "daily-life"
+    ],
+    "habitual|adjective": [
+      "daily-life"
+    ],
+    "wake up|phrasal verb": [
+      "daily-life"
+    ],
+    "get up|phrasal verb": [
+      "daily-life"
+    ],
+    "alarm|noun": [
+      "daily-life"
+    ],
+    "sleep in|phrasal verb": [
+      "daily-life"
+    ],
+    "oversleep|verb": [
+      "daily-life"
+    ],
+    "brush|verb": [
+      "daily-life"
+    ],
+    "toothbrush|noun": [
+      "daily-life"
+    ],
+    "toothpaste|noun": [
+      "daily-life"
+    ],
+    "wash|verb": [
+      "daily-life"
+    ],
+    "shower|noun": [
+      "daily-life"
+    ],
+    "bathe|verb": [
+      "daily-life"
+    ],
+    "comb|verb": [
+      "daily-life"
+    ],
+    "dress|verb": [
+      "daily-life"
+    ],
+    "get dressed|phrase": [
+      "daily-life"
+    ],
+    "outfit|noun": [
+      "daily-life"
+    ],
+    "prepare|verb": [
+      "daily-life"
+    ],
+    "preparation|noun": [
+      "daily-life"
+    ],
+    "cooking|noun": [
+      "daily-life"
+    ],
+    "grocery|noun": [
+      "daily-life"
+    ],
+    "supermarket|noun": [
+      "daily-life"
+    ],
+    "checkout|noun": [
+      "daily-life"
+    ],
+    "receipt|noun": [
+      "daily-life"
+    ],
+    "budget|noun": [
+      "daily-life"
+    ],
+    "expense|noun": [
+      "daily-life"
+    ],
+    "afford|verb": [
+      "daily-life"
+    ],
+    "commute|verb": [
+      "daily-life"
+    ],
+    "commute|noun": [
+      "daily-life"
+    ],
+    "transport|noun": [
+      "daily-life"
+    ],
+    "bus stop|noun": [
+      "daily-life"
+    ],
+    "traffic|noun": [
+      "daily-life"
+    ],
+    "errand|noun": [
+      "daily-life"
+    ],
+    "schedule|noun": [
+      "daily-life"
+    ],
+    "schedule|verb": [
+      "daily-life"
+    ],
+    "plan|verb": [
+      "daily-life"
+    ],
+    "planner|noun": [
+      "daily-life"
+    ],
+    "organise|verb": [
+      "daily-life"
+    ],
+    "organisation|noun": [
+      "daily-life"
+    ],
+    "tidy|verb": [
+      "daily-life"
+    ],
+    "tidy|adjective": [
+      "daily-life"
+    ],
+    "clean|verb": [
+      "daily-life"
+    ],
+    "cleaning|noun": [
+      "daily-life"
+    ],
+    "chore|noun": [
+      "daily-life"
+    ],
+    "laundry|noun": [
+      "daily-life"
+    ],
+    "dishwasher|noun": [
+      "daily-life"
+    ],
+    "vacuum|verb": [
+      "daily-life"
+    ],
+    "dust|verb": [
+      "daily-life"
+    ],
+    "relax|verb": [
+      "daily-life"
+    ],
+    "relaxation|noun": [
+      "daily-life"
+    ],
+    "leisure|noun": [
+      "daily-life"
+    ],
+    "hobby|noun": [
+      "daily-life"
+    ],
+    "entertainment|noun": [
+      "daily-life"
+    ],
+    "deadline|noun": [
+      "daily-life"
+    ],
+    "task|noun": [
+      "daily-life"
+    ],
+    "priority|noun": [
+      "daily-life"
+    ],
+    "procrastinate|verb": [
+      "daily-life"
+    ],
+    "efficient|adjective": [
+      "daily-life"
+    ],
+    "efficiency|noun": [
+      "daily-life"
+    ],
+    "convenient|adjective": [
+      "daily-life"
+    ],
+    "convenience|noun": [
+      "daily-life"
+    ],
+    "comfort|noun": [
+      "daily-life"
+    ],
+    "stressful|adjective": [
+      "daily-life"
+    ],
+    "energetic|adjective": [
+      "daily-life"
+    ],
+    "nap|noun": [
+      "daily-life"
+    ],
+    "rest|verb": [
+      "daily-life"
+    ],
+    "bedtime|noun": [
+      "daily-life"
+    ],
+    "fall asleep|phrase": [
+      "daily-life"
+    ],
+    "stay up|phrasal verb": [
+      "daily-life"
+    ],
+    "household|noun": [
+      "daily-life"
+    ],
+    "neighbour|noun": [
+      "daily-life"
+    ],
+    "neighbourhood|noun": [
+      "daily-life"
+    ],
+    "local|adjective": [
+      "daily-life"
+    ],
+    "queue|noun": [
+      "daily-life"
+    ],
+    "crowded|adjective": [
+      "daily-life"
+    ],
+    "rush hour|noun": [
+      "daily-life"
+    ],
+    "available|adjective": [
+      "daily-life"
+    ],
+    "availability|noun": [
+      "daily-life"
+    ],
+    "punctual|adjective": [
+      "daily-life"
+    ],
+    "punctuality|noun": [
+      "daily-life"
+    ],
+    "educate|verb": [
+      "education-intermediate"
+    ],
+    "education|noun": [
+      "education-intermediate"
+    ],
+    "educational|adjective": [
+      "education-intermediate"
+    ],
+    "educator|noun": [
+      "education-intermediate"
+    ],
+    "student|noun": [
+      "education-intermediate"
+    ],
+    "studious|adjective": [
+      "education-intermediate"
+    ],
+    "teach|verb": [
+      "education-intermediate",
+      "verbs-communication"
+    ],
+    "teacher|noun": [
+      "education-intermediate"
+    ],
+    "teaching|noun": [
+      "education-intermediate"
+    ],
+    "learn|verb": [
+      "education-intermediate"
+    ],
+    "learner|noun": [
+      "education-intermediate"
+    ],
+    "learning|noun": [
+      "education-intermediate"
+    ],
+    "knowledge|noun": [
+      "education-intermediate"
+    ],
+    "knowledgeable|adjective": [
+      "education-intermediate"
+    ],
+    "qualify|verb": [
+      "education-intermediate"
+    ],
+    "qualification|noun": [
+      "education-intermediate"
+    ],
+    "qualified|adjective": [
+      "education-intermediate"
+    ],
+    "graduate|verb": [
+      "education-intermediate"
+    ],
+    "graduate|noun": [
+      "education-intermediate"
+    ],
+    "graduation|noun": [
+      "education-intermediate"
+    ],
+    "undergraduate|noun": [
+      "education-intermediate"
+    ],
+    "subject|noun": [
+      "education-intermediate"
+    ],
+    "curriculum|noun": [
+      "education-intermediate"
+    ],
+    "lecture|noun": [
+      "education-intermediate"
+    ],
+    "lecturer|noun": [
+      "education-intermediate"
+    ],
+    "exam|noun": [
+      "education-intermediate"
+    ],
+    "examination|noun": [
+      "education-intermediate"
+    ],
+    "scholarship|noun": [
+      "education-intermediate"
+    ],
+    "tuition|noun": [
+      "education-intermediate"
+    ],
+    "drop out|phrasal verb": [
+      "education-intermediate"
+    ],
+    "hit the books|idiom": [
+      "education-intermediate"
+    ],
+    "school|noun": [
+      "education-intermediate"
+    ],
+    "kindergarten|noun": [
+      "education-intermediate"
+    ],
+    "preschool|noun": [
+      "education-intermediate"
+    ],
+    "primary school|noun": [
+      "education-intermediate"
+    ],
+    "secondary school|noun": [
+      "education-intermediate"
+    ],
+    "high school|noun": [
+      "education-intermediate"
+    ],
+    "vocational school|noun": [
+      "education-intermediate"
+    ],
+    "college|noun": [
+      "education-intermediate"
+    ],
+    "university|noun": [
+      "education-intermediate"
+    ],
+    "academy|noun": [
+      "education-intermediate"
+    ],
+    "early childhood education|noun": [
+      "education-intermediate"
+    ],
+    "primary education|noun": [
+      "education-intermediate"
+    ],
+    "secondary education|noun": [
+      "education-intermediate"
+    ],
+    "tertiary education|noun": [
+      "education-intermediate"
+    ],
+    "higher education|noun": [
+      "education-intermediate"
+    ],
+    "undergraduate degree|noun": [
+      "education-intermediate"
+    ],
+    "master’s degree|noun": [
+      "education-intermediate"
+    ],
+    "doctoral degree|noun": [
+      "education-intermediate"
+    ],
+    "pupil|noun": [
+      "education-intermediate"
+    ],
+    "classmate|noun": [
+      "education-intermediate"
+    ],
+    "principal|noun": [
+      "education-intermediate"
+    ],
+    "head teacher|noun": [
+      "education-intermediate"
+    ],
+    "tutor|noun": [
+      "education-intermediate"
+    ],
+    "professor|noun": [
+      "education-intermediate"
+    ],
+    "instructor|noun": [
+      "education-intermediate"
+    ],
+    "school counsellor|noun": [
+      "education-intermediate"
+    ],
+    "classroom|noun": [
+      "education-intermediate"
+    ],
+    "campus|noun": [
+      "education-intermediate"
+    ],
+    "library|noun": [
+      "education-intermediate"
+    ],
+    "playground|noun": [
+      "education-intermediate"
+    ],
+    "canteen|noun": [
+      "education-intermediate"
+    ],
+    "gymnasium|noun": [
+      "education-intermediate"
+    ],
+    "dormitory|noun": [
+      "education-intermediate"
+    ],
+    "textbook|noun": [
+      "education-intermediate"
+    ],
+    "notebook|noun": [
+      "education-intermediate"
+    ],
+    "worksheet|noun": [
+      "education-intermediate"
+    ],
+    "whiteboard|noun": [
+      "education-intermediate"
+    ],
+    "calculator|noun": [
+      "education-intermediate"
+    ],
+    "ruler|noun": [
+      "education-intermediate"
+    ],
+    "dictionary|noun": [
+      "education-intermediate"
+    ],
+    "backpack|noun": [
+      "education-intermediate"
+    ],
+    "lesson|noun": [
+      "education-intermediate"
+    ],
+    "timetable|noun": [
+      "education-intermediate"
+    ],
+    "homework|noun": [
+      "education-intermediate"
+    ],
+    "assignment|noun": [
+      "education-intermediate"
+    ],
+    "attendance|noun": [
+      "education-intermediate"
+    ],
+    "break|noun": [
+      "education-intermediate"
+    ],
+    "semester|noun": [
+      "education-intermediate"
+    ],
+    "school year|noun": [
+      "education-intermediate"
+    ],
+    "quiz|noun": [
+      "education-intermediate"
+    ],
+    "test|noun": [
+      "education-intermediate"
+    ],
+    "grade|noun": [
+      "education-intermediate"
+    ],
+    "mark|noun": [
+      "education-intermediate"
+    ],
+    "score|noun": [
+      "education-intermediate"
+    ],
+    "report card|noun": [
+      "education-intermediate"
+    ],
+    "transcript|noun": [
+      "education-intermediate"
+    ],
+    "certificate|noun": [
+      "education-intermediate"
+    ],
+    "memorise|verb": [
+      "education-intermediate"
+    ],
+    "revise|verb": [
+      "education-intermediate"
+    ],
+    "practice|noun": [
+      "education-intermediate"
+    ],
+    "critical thinking|noun": [
+      "education-intermediate"
+    ],
+    "problem-solving|noun": [
+      "education-intermediate"
+    ],
+    "group work|noun": [
+      "education-intermediate"
+    ],
+    "self-study|noun": [
+      "education-intermediate"
+    ],
+    "happy|adjective": [
+      "emotion-feelings"
+    ],
+    "sad|adjective": [
+      "emotion-feelings"
+    ],
+    "angry|adjective": [
+      "emotion-feelings"
+    ],
+    "afraid|adjective": [
+      "emotion-feelings"
+    ],
+    "surprised|adjective": [
+      "emotion-feelings"
+    ],
+    "excited|adjective": [
+      "emotion-feelings"
+    ],
+    "nervous|adjective": [
+      "emotion-feelings"
+    ],
+    "tired|adjective": [
+      "emotion-feelings"
+    ],
+    "bored|adjective": [
+      "emotion-feelings"
+    ],
+    "confused|adjective": [
+      "emotion-feelings"
+    ],
+    "joy|noun": [
+      "emotion-feelings"
+    ],
+    "delight|noun": [
+      "emotion-feelings"
+    ],
+    "pleased|adjective": [
+      "emotion-feelings"
+    ],
+    "cheerful|adjective": [
+      "emotion-feelings"
+    ],
+    "glad|adjective": [
+      "emotion-feelings"
+    ],
+    "thrilled|adjective": [
+      "emotion-feelings"
+    ],
+    "overjoyed|adjective": [
+      "emotion-feelings"
+    ],
+    "content|adjective": [
+      "emotion-feelings"
+    ],
+    "satisfied|adjective": [
+      "emotion-feelings"
+    ],
+    "optimistic|adjective": [
+      "emotion-feelings"
+    ],
+    "sadness|noun": [
+      "emotion-feelings"
+    ],
+    "unhappy|adjective": [
+      "emotion-feelings"
+    ],
+    "upset|adjective": [
+      "emotion-feelings"
+    ],
+    "disappointed|adjective": [
+      "emotion-feelings"
+    ],
+    "depressed|adjective": [
+      "emotion-feelings"
+    ],
+    "miserable|adjective": [
+      "emotion-feelings"
+    ],
+    "lonely|adjective": [
+      "emotion-feelings"
+    ],
+    "homesick|adjective": [
+      "emotion-feelings"
+    ],
+    "heartbroken|adjective": [
+      "emotion-feelings"
+    ],
+    "gloomy|adjective": [
+      "emotion-feelings"
+    ],
+    "anger|noun": [
+      "emotion-feelings"
+    ],
+    "annoyed|adjective": [
+      "emotion-feelings"
+    ],
+    "irritated|adjective": [
+      "emotion-feelings"
+    ],
+    "frustrated|adjective": [
+      "emotion-feelings"
+    ],
+    "furious|adjective": [
+      "emotion-feelings"
+    ],
+    "outraged|adjective": [
+      "emotion-feelings"
+    ],
+    "resentful|adjective": [
+      "emotion-feelings"
+    ],
+    "impatient|adjective": [
+      "emotion-feelings"
+    ],
+    "offended|adjective": [
+      "emotion-feelings"
+    ],
+    "jealous|adjective": [
+      "emotion-feelings"
+    ],
+    "fear|noun": [
+      "emotion-feelings"
+    ],
+    "scared|adjective": [
+      "emotion-feelings"
+    ],
+    "frightened|adjective": [
+      "emotion-feelings"
+    ],
+    "terrified|adjective": [
+      "emotion-feelings"
+    ],
+    "anxious|adjective": [
+      "emotion-feelings"
+    ],
+    "worried|adjective": [
+      "emotion-feelings"
+    ],
+    "panicked|adjective": [
+      "emotion-feelings"
+    ],
+    "insecure|adjective": [
+      "emotion-feelings"
+    ],
+    "uneasy|adjective": [
+      "emotion-feelings"
+    ],
+    "reluctant|adjective": [
+      "emotion-feelings"
+    ],
+    "shock|noun": [
+      "emotion-feelings"
+    ],
+    "amazed|adjective": [
+      "emotion-feelings"
+    ],
+    "astonished|adjective": [
+      "emotion-feelings"
+    ],
+    "stunned|adjective": [
+      "emotion-feelings"
+    ],
+    "puzzled|adjective": [
+      "emotion-feelings"
+    ],
+    "doubtful|adjective": [
+      "emotion-feelings"
+    ],
+    "uncertain|adjective": [
+      "emotion-feelings"
+    ],
+    "curious|adjective": [
+      "emotion-feelings"
+    ],
+    "embarrassed|adjective": [
+      "emotion-feelings"
+    ],
+    "ashamed|adjective": [
+      "emotion-feelings"
+    ],
+    "love|noun": [
+      "emotion-feelings"
+    ],
+    "affection|noun": [
+      "emotion-feelings"
+    ],
+    "fond|adjective": [
+      "emotion-feelings"
+    ],
+    "attached|adjective": [
+      "emotion-feelings"
+    ],
+    "caring|adjective": [
+      "emotion-feelings"
+    ],
+    "grateful|adjective": [
+      "emotion-feelings"
+    ],
+    "thankful|adjective": [
+      "emotion-feelings"
+    ],
+    "admiration|noun": [
+      "emotion-feelings"
+    ],
+    "respect|noun": [
+      "emotion-feelings"
+    ],
+    "trust|noun": [
+      "emotion-feelings"
+    ],
+    "sympathy|noun": [
+      "emotion-feelings"
+    ],
+    "empathy|noun": [
+      "emotion-feelings"
+    ],
+    "compassion|noun": [
+      "emotion-feelings"
+    ],
+    "pity|noun": [
+      "emotion-feelings"
+    ],
+    "concerned|adjective": [
+      "emotion-feelings"
+    ],
+    "supportive|adjective": [
+      "emotion-feelings"
+    ],
+    "understanding|adjective": [
+      "emotion-feelings"
+    ],
+    "forgiving|adjective": [
+      "emotion-feelings"
+    ],
+    "regret|noun": [
+      "emotion-feelings"
+    ],
+    "guilt|noun": [
+      "emotion-feelings"
+    ],
+    "stress|noun": [
+      "emotion-feelings"
+    ],
+    "stressed|adjective": [
+      "emotion-feelings"
+    ],
+    "overwhelmed|adjective": [
+      "emotion-feelings"
+    ],
+    "exhausted|adjective": [
+      "emotion-feelings"
+    ],
+    "drained|adjective": [
+      "emotion-feelings"
+    ],
+    "burned out|adjective": [
+      "emotion-feelings"
+    ],
+    "restless|adjective": [
+      "emotion-feelings"
+    ],
+    "tense|adjective": [
+      "emotion-feelings"
+    ],
+    "pressured|adjective": [
+      "emotion-feelings"
+    ],
+    "discouraged|adjective": [
+      "emotion-feelings"
+    ],
+    "calm|adjective": [
+      "emotion-feelings"
+    ],
+    "peaceful|adjective": [
+      "emotion-feelings"
+    ],
+    "relaxed|adjective": [
+      "emotion-feelings"
+    ],
+    "comfortable|adjective": [
+      "emotion-feelings"
+    ],
+    "relieved|adjective": [
+      "emotion-feelings"
+    ],
+    "secure|adjective": [
+      "emotion-feelings"
+    ],
+    "confident|adjective": [
+      "emotion-feelings"
+    ],
+    "hopeful|adjective": [
+      "emotion-feelings"
+    ],
+    "patient|adjective": [
+      "emotion-feelings"
+    ],
+    "balanced|adjective": [
+      "emotion-feelings"
+    ],
+    "mood|noun": [
+      "emotion-feelings"
+    ],
+    "feeling|noun": [
+      "emotion-feelings"
+    ],
+    "emotion|noun": [
+      "emotion-feelings"
+    ],
+    "attitude|noun": [
+      "emotion-feelings"
+    ],
+    "temper|noun": [
+      "emotion-feelings"
+    ],
+    "sensitive|adjective": [
+      "emotion-feelings"
+    ],
+    "emotional|adjective": [
+      "emotion-feelings"
+    ],
+    "calm down|verb phrase": [
+      "emotion-feelings"
+    ],
+    "cheer up|verb phrase": [
+      "emotion-feelings"
+    ],
+    "break down|verb phrase": [
+      "emotion-feelings"
+    ],
+    "proud|adjective": [
+      "emotion-feelings"
+    ],
+    "humble|adjective": [
+      "emotion-feelings"
+    ],
+    "awkward|adjective": [
+      "emotion-feelings"
+    ],
+    "shy|adjective": [
+      "emotion-feelings"
+    ],
+    "guilty|adjective": [
+      "emotion-feelings"
+    ],
+    "envious|adjective": [
+      "emotion-feelings"
+    ],
+    "grumpy|adjective": [
+      "emotion-feelings"
+    ],
+    "hurt|adjective": [
+      "emotion-feelings"
+    ],
+    "rejected|adjective": [
+      "emotion-feelings"
+    ],
+    "accepted|adjective": [
+      "emotion-feelings"
+    ],
+    "hurtful|adjective": [
+      "emotion-feelings"
+    ],
+    "touching|adjective": [
+      "emotion-feelings"
+    ],
+    "moving|adjective": [
+      "emotion-feelings"
+    ],
+    "disgusted|adjective": [
+      "emotion-feelings"
+    ],
+    "disgust|noun": [
+      "emotion-feelings"
+    ],
+    "amused|adjective": [
+      "emotion-feelings"
+    ],
+    "impressed|adjective": [
+      "emotion-feelings"
+    ],
+    "inspired|adjective": [
+      "emotion-feelings"
+    ],
+    "motivated|adjective": [
+      "emotion-feelings"
+    ],
+    "desperate|adjective": [
+      "emotion-feelings"
+    ],
+    "delighted|adjective": [
+      "emotion-feelings"
+    ],
+    "ecstatic|adjective": [
+      "emotion-feelings"
+    ],
+    "devastated|adjective": [
+      "emotion-feelings"
+    ],
+    "horrified|adjective": [
+      "emotion-feelings"
+    ],
+    "furious with|phrase": [
+      "emotion-feelings"
+    ],
+    "fed up|adjective phrase": [
+      "emotion-feelings"
+    ],
+    "downhearted|adjective": [
+      "emotion-feelings"
+    ],
+    "lighthearted|adjective": [
+      "emotion-feelings"
+    ],
+    "mixed feelings|noun phrase": [
+      "emotion-feelings"
+    ],
+    "emotionally stable|adjective phrase": [
+      "emotion-feelings"
+    ],
+    "family|noun": [
+      "family-relationships"
+    ],
+    "familial|adjective": [
+      "family-relationships"
+    ],
+    "relative|noun": [
+      "family-relationships"
+    ],
+    "relate|verb": [
+      "family-relationships"
+    ],
+    "related|adjective": [
+      "family-relationships"
+    ],
+    "parent|noun": [
+      "family-relationships"
+    ],
+    "parental|adjective": [
+      "family-relationships"
+    ],
+    "parenting|noun": [
+      "family-relationships"
+    ],
+    "father|noun": [
+      "family-relationships"
+    ],
+    "mother|noun": [
+      "family-relationships"
+    ],
+    "child|noun": [
+      "family-relationships"
+    ],
+    "children|noun": [
+      "family-relationships"
+    ],
+    "childhood|noun": [
+      "family-relationships"
+    ],
+    "sibling|noun": [
+      "family-relationships"
+    ],
+    "brother|noun": [
+      "family-relationships"
+    ],
+    "sister|noun": [
+      "family-relationships"
+    ],
+    "grandparent|noun": [
+      "family-relationships"
+    ],
+    "grandfather|noun": [
+      "family-relationships"
+    ],
+    "grandmother|noun": [
+      "family-relationships"
+    ],
+    "grandchild|noun": [
+      "family-relationships"
+    ],
+    "cousin|noun": [
+      "family-relationships"
+    ],
+    "uncle|noun": [
+      "family-relationships"
+    ],
+    "aunt|noun": [
+      "family-relationships"
+    ],
+    "nephew|noun": [
+      "family-relationships"
+    ],
+    "niece|noun": [
+      "family-relationships"
+    ],
+    "generation|noun": [
+      "family-relationships"
+    ],
+    "generational|adjective": [
+      "family-relationships"
+    ],
+    "ancestry|noun": [
+      "family-relationships"
+    ],
+    "descendant|noun": [
+      "family-relationships"
+    ],
+    "marriage|noun": [
+      "family-relationships"
+    ],
+    "marry|verb": [
+      "family-relationships"
+    ],
+    "married|adjective": [
+      "family-relationships"
+    ],
+    "spouse|noun": [
+      "family-relationships"
+    ],
+    "husband|noun": [
+      "family-relationships"
+    ],
+    "wife|noun": [
+      "family-relationships"
+    ],
+    "couple|noun": [
+      "family-relationships"
+    ],
+    "partner|noun": [
+      "family-relationships"
+    ],
+    "partnership|noun": [
+      "family-relationships"
+    ],
+    "wedding|noun": [
+      "family-relationships"
+    ],
+    "engagement|noun": [
+      "family-relationships"
+    ],
+    "engaged|adjective": [
+      "family-relationships"
+    ],
+    "divorce|noun": [
+      "family-relationships"
+    ],
+    "divorce|verb": [
+      "family-relationships"
+    ],
+    "divorced|adjective": [
+      "family-relationships"
+    ],
+    "single-parent family|noun": [
+      "family-relationships"
+    ],
+    "nuclear family|noun": [
+      "family-relationships"
+    ],
+    "extended family|noun": [
+      "family-relationships"
+    ],
+    "blended family|noun": [
+      "family-relationships"
+    ],
+    "stepfather|noun": [
+      "family-relationships"
+    ],
+    "stepmother|noun": [
+      "family-relationships"
+    ],
+    "stepchild|noun": [
+      "family-relationships"
+    ],
+    "adoption|noun": [
+      "family-relationships"
+    ],
+    "adopt|verb": [
+      "family-relationships"
+    ],
+    "adoptive|adjective": [
+      "family-relationships"
+    ],
+    "upbringing|noun": [
+      "family-relationships"
+    ],
+    "raise|verb": [
+      "family-relationships"
+    ],
+    "bring up|phrasal verb": [
+      "family-relationships"
+    ],
+    "bond|noun": [
+      "family-relationships"
+    ],
+    "bond|verb": [
+      "family-relationships"
+    ],
+    "attachment|noun": [
+      "family-relationships"
+    ],
+    "affectionate|adjective": [
+      "family-relationships"
+    ],
+    "support|noun": [
+      "family-relationships"
+    ],
+    "responsible|adjective": [
+      "family-relationships"
+    ],
+    "dependent|adjective": [
+      "family-relationships"
+    ],
+    "independent|adjective": [
+      "family-relationships"
+    ],
+    "dependence|noun": [
+      "family-relationships"
+    ],
+    "independence|noun": [
+      "family-relationships"
+    ],
+    "conflict|verb": [
+      "family-relationships"
+    ],
+    "argument|noun": [
+      "family-relationships"
+    ],
+    "reconciliation|noun": [
+      "family-relationships"
+    ],
+    "caregiver|noun": [
+      "family-relationships"
+    ],
+    "care|noun": [
+      "family-relationships"
+    ],
+    "care for|phrasal verb": [
+      "family-relationships"
+    ],
+    "elderly|adjective": [
+      "family-relationships"
+    ],
+    "senior citizen|noun": [
+      "family-relationships"
+    ],
+    "adolescent|noun": [
+      "family-relationships"
+    ],
+    "adolescence|noun": [
+      "family-relationships"
+    ],
+    "friend|noun": [
+      "family-relationships"
+    ],
+    "friendly|adjective": [
+      "family-relationships"
+    ],
+    "companion|noun": [
+      "family-relationships"
+    ],
+    "companionship|noun": [
+      "family-relationships"
+    ],
+    "food|noun": [
+      "food-drink"
+    ],
+    "drink|noun": [
+      "food-drink"
+    ],
+    "meal|noun": [
+      "food-drink"
+    ],
+    "breakfast|noun": [
+      "food-drink"
+    ],
+    "lunch|noun": [
+      "food-drink"
+    ],
+    "dinner|noun": [
+      "food-drink"
+    ],
+    "snack|noun": [
+      "food-drink"
+    ],
+    "starter|noun": [
+      "food-drink"
+    ],
+    "main course|noun": [
+      "food-drink"
+    ],
+    "dessert|noun": [
+      "food-drink"
+    ],
+    "ingredient|noun": [
+      "food-drink"
+    ],
+    "recipe|noun": [
+      "food-drink"
+    ],
+    "portion|noun": [
+      "food-drink"
+    ],
+    "serving|noun": [
+      "food-drink"
+    ],
+    "calorie|noun": [
+      "food-drink"
+    ],
+    "protein|noun": [
+      "food-drink"
+    ],
+    "carbohydrate|noun": [
+      "food-drink"
+    ],
+    "fat|noun": [
+      "food-drink"
+    ],
+    "vitamin|noun": [
+      "food-drink"
+    ],
+    "mineral|noun": [
+      "food-drink"
+    ],
+    "fiber|noun": [
+      "food-drink"
+    ],
+    "vegetable|noun": [
+      "food-drink"
+    ],
+    "carrot|noun": [
+      "food-drink"
+    ],
+    "potato|noun": [
+      "food-drink"
+    ],
+    "tomato|noun": [
+      "food-drink"
+    ],
+    "onion|noun": [
+      "food-drink"
+    ],
+    "garlic|noun": [
+      "food-drink"
+    ],
+    "cucumber|noun": [
+      "food-drink"
+    ],
+    "lettuce|noun": [
+      "food-drink"
+    ],
+    "mushroom|noun": [
+      "food-drink"
+    ],
+    "fruit|noun": [
+      "food-drink"
+    ],
+    "apple|noun": [
+      "food-drink"
+    ],
+    "banana|noun": [
+      "food-drink"
+    ],
+    "orange|noun": [
+      "food-drink"
+    ],
+    "grape|noun": [
+      "food-drink"
+    ],
+    "mango|noun": [
+      "food-drink"
+    ],
+    "pineapple|noun": [
+      "food-drink"
+    ],
+    "watermelon|noun": [
+      "food-drink"
+    ],
+    "meat|noun": [
+      "food-drink"
+    ],
+    "beef|noun": [
+      "food-drink"
+    ],
+    "pork|noun": [
+      "food-drink"
+    ],
+    "chicken|noun": [
+      "food-drink"
+    ],
+    "seafood|noun": [
+      "food-drink"
+    ],
+    "fish|noun": [
+      "food-drink"
+    ],
+    "shrimp|noun": [
+      "food-drink"
+    ],
+    "egg|noun": [
+      "food-drink"
+    ],
+    "milk|noun": [
+      "food-drink"
+    ],
+    "cheese|noun": [
+      "food-drink"
+    ],
+    "yogurt|noun": [
+      "food-drink"
+    ],
+    "butter|noun": [
+      "food-drink"
+    ],
+    "rice|noun": [
+      "food-drink"
+    ],
+    "bread|noun": [
+      "food-drink"
+    ],
+    "noodle|noun": [
+      "food-drink"
+    ],
+    "pasta|noun": [
+      "food-drink"
+    ],
+    "cereal|noun": [
+      "food-drink"
+    ],
+    "flour|noun": [
+      "food-drink"
+    ],
+    "sugar|noun": [
+      "food-drink"
+    ],
+    "salt|noun": [
+      "food-drink"
+    ],
+    "pepper|noun": [
+      "food-drink"
+    ],
+    "spice|noun": [
+      "food-drink"
+    ],
+    "herb|noun": [
+      "food-drink"
+    ],
+    "sauce|noun": [
+      "food-drink"
+    ],
+    "oil|noun": [
+      "food-drink"
+    ],
+    "vinegar|noun": [
+      "food-drink"
+    ],
+    "water|noun": [
+      "food-drink"
+    ],
+    "tea|noun": [
+      "food-drink"
+    ],
+    "coffee|noun": [
+      "food-drink"
+    ],
+    "juice|noun": [
+      "food-drink"
+    ],
+    "smoothie|noun": [
+      "food-drink"
+    ],
+    "soft drink|noun": [
+      "food-drink"
+    ],
+    "sparkling water|noun": [
+      "food-drink"
+    ],
+    "alcohol|noun": [
+      "food-drink"
+    ],
+    "cook|verb": [
+      "food-drink"
+    ],
+    "boil|verb": [
+      "food-drink"
+    ],
+    "fry|verb": [
+      "food-drink"
+    ],
+    "grill|verb": [
+      "food-drink"
+    ],
+    "bake|verb": [
+      "food-drink"
+    ],
+    "roast|verb": [
+      "food-drink"
+    ],
+    "steam|verb": [
+      "food-drink"
+    ],
+    "stir-fry|verb": [
+      "food-drink"
+    ],
+    "chop|verb": [
+      "food-drink"
+    ],
+    "slice|verb": [
+      "food-drink"
+    ],
+    "peel|verb": [
+      "food-drink"
+    ],
+    "mix|verb": [
+      "food-drink"
+    ],
+    "stir|verb": [
+      "food-drink"
+    ],
+    "pour|verb": [
+      "food-drink"
+    ],
+    "season|verb": [
+      "food-drink"
+    ],
+    "serve|verb": [
+      "food-drink"
+    ],
+    "taste|noun": [
+      "food-drink"
+    ],
+    "flavour|noun": [
+      "food-drink"
+    ],
+    "sweet|adjective": [
+      "food-drink"
+    ],
+    "sour|adjective": [
+      "food-drink"
+    ],
+    "salty|adjective": [
+      "food-drink"
+    ],
+    "spicy|adjective": [
+      "food-drink"
+    ],
+    "bitter|adjective": [
+      "food-drink"
+    ],
+    "fresh|adjective": [
+      "food-drink"
+    ],
+    "crispy|adjective": [
+      "food-drink"
+    ],
+    "tender|adjective": [
+      "food-drink"
+    ],
+    "delicious|adjective": [
+      "food-drink"
+    ],
+    "restaurant|noun": [
+      "food-drink"
+    ],
+    "cafe|noun": [
+      "food-drink"
+    ],
+    "menu|noun": [
+      "food-drink"
+    ],
+    "order|verb": [
+      "food-drink"
+    ],
+    "waiter|noun": [
+      "food-drink"
+    ],
+    "waitress|noun": [
+      "food-drink"
+    ],
+    "bill|noun": [
+      "food-drink"
+    ],
+    "tip|noun": [
+      "food-drink"
+    ],
+    "takeaway|noun": [
+      "food-drink"
+    ],
+    "delivery|noun": [
+      "food-drink"
+    ],
+    "hungry|adjective": [
+      "food-drink"
+    ],
+    "thirsty|adjective": [
+      "food-drink"
+    ],
+    "appetite|noun": [
+      "food-drink"
+    ],
+    "full|adjective": [
+      "food-drink"
+    ],
+    "vegetarian|noun": [
+      "food-drink"
+    ],
+    "vegan|noun": [
+      "food-drink"
+    ],
+    "allergy|noun": [
+      "food-drink"
+    ],
+    "allergic|adjective": [
+      "food-drink"
+    ],
+    "healthy|adjective": [
+      "food-drink"
+    ],
+    "unhealthy|adjective": [
+      "food-drink"
+    ],
+    "health|noun": [
+      "health"
+    ],
+    "well-being|noun": [
+      "health"
+    ],
+    "fitness|noun": [
+      "health"
+    ],
+    "condition|noun": [
+      "health"
+    ],
+    "recovery|noun": [
+      "health"
+    ],
+    "body|noun": [
+      "health"
+    ],
+    "muscle|noun": [
+      "health"
+    ],
+    "bone|noun": [
+      "health"
+    ],
+    "blood|noun": [
+      "health"
+    ],
+    "immune system|noun": [
+      "health"
+    ],
+    "symptom|noun": [
+      "health"
+    ],
+    "fever|noun": [
+      "health"
+    ],
+    "cough|noun": [
+      "health"
+    ],
+    "sore throat|noun": [
+      "health"
+    ],
+    "dizziness|noun": [
+      "health"
+    ],
+    "fatigue|noun": [
+      "health"
+    ],
+    "illness|noun": [
+      "health"
+    ],
+    "disease|noun": [
+      "health"
+    ],
+    "infection|noun": [
+      "health"
+    ],
+    "flu|noun": [
+      "health"
+    ],
+    "virus|noun": [
+      "health",
+      "information-technology"
+    ],
+    "pain|noun": [
+      "health"
+    ],
+    "headache|noun": [
+      "health"
+    ],
+    "stomachache|noun": [
+      "health"
+    ],
+    "injury|noun": [
+      "health"
+    ],
+    "wound|noun": [
+      "health"
+    ],
+    "bruise|noun": [
+      "health"
+    ],
+    "mental health|noun": [
+      "health"
+    ],
+    "anxiety|noun": [
+      "health"
+    ],
+    "depression|noun": [
+      "health"
+    ],
+    "therapy|noun": [
+      "health"
+    ],
+    "counselling|noun": [
+      "health"
+    ],
+    "doctor|noun": [
+      "health"
+    ],
+    "nurse|noun": [
+      "health"
+    ],
+    "patient|noun": [
+      "health"
+    ],
+    "appointment|noun": [
+      "health"
+    ],
+    "check-up|noun": [
+      "health"
+    ],
+    "diagnosis|noun": [
+      "health"
+    ],
+    "hospital|noun": [
+      "health"
+    ],
+    "clinic|noun": [
+      "health"
+    ],
+    "ward|noun": [
+      "health"
+    ],
+    "surgery|noun": [
+      "health"
+    ],
+    "operation|noun": [
+      "health"
+    ],
+    "medical record|noun": [
+      "health"
+    ],
+    "treatment|noun": [
+      "health"
+    ],
+    "medicine|noun": [
+      "health"
+    ],
+    "medication|noun": [
+      "health"
+    ],
+    "prescription|noun": [
+      "health"
+    ],
+    "dose|noun": [
+      "health"
+    ],
+    "side effect|noun": [
+      "health"
+    ],
+    "prevention|noun": [
+      "health"
+    ],
+    "vaccination|noun": [
+      "health"
+    ],
+    "hygiene|noun": [
+      "health"
+    ],
+    "screening|noun": [
+      "health"
+    ],
+    "immunity|noun": [
+      "health"
+    ],
+    "lifestyle|noun": [
+      "health"
+    ],
+    "sleep|noun": [
+      "health"
+    ],
+    "rest|noun": [
+      "health"
+    ],
+    "work-life balance|noun": [
+      "health"
+    ],
+    "sedentary|adjective": [
+      "health"
+    ],
+    "nutrition|noun": [
+      "health"
+    ],
+    "diet|noun": [
+      "health"
+    ],
+    "nutrient|noun": [
+      "health"
+    ],
+    "hydration|noun": [
+      "health"
+    ],
+    "exercise|noun": [
+      "health"
+    ],
+    "workout|noun": [
+      "health"
+    ],
+    "strength|noun": [
+      "health"
+    ],
+    "endurance|noun": [
+      "health"
+    ],
+    "flexibility|noun": [
+      "health"
+    ],
+    "warm-up|noun": [
+      "health"
+    ],
+    "chronic disease|noun": [
+      "health"
+    ],
+    "diabetes|noun": [
+      "health"
+    ],
+    "asthma|noun": [
+      "health"
+    ],
+    "obesity|noun": [
+      "health"
+    ],
+    "blood pressure|noun": [
+      "health"
+    ],
+    "heart disease|noun": [
+      "health"
+    ],
+    "emergency|noun": [
+      "health"
+    ],
+    "ambulance|noun": [
+      "health"
+    ],
+    "first aid|noun": [
+      "health"
+    ],
+    "accident|noun": [
+      "health"
+    ],
+    "bandage|noun": [
+      "health"
+    ],
+    "cpr|noun": [
+      "health"
+    ],
+    "public health|noun": [
+      "health"
+    ],
+    "healthcare|noun": [
+      "health"
+    ],
+    "health insurance|noun": [
+      "health"
+    ],
+    "epidemic|noun": [
+      "health"
+    ],
+    "pandemic|noun": [
+      "health"
+    ],
+    "sanitation|noun": [
+      "health"
+    ],
+    "house|noun": [
+      "home-living"
+    ],
+    "home|noun": [
+      "home-living"
+    ],
+    "apartment|noun": [
+      "home-living"
+    ],
+    "flat|noun": [
+      "home-living"
+    ],
+    "building|noun": [
+      "home-living"
+    ],
+    "floor|noun": [
+      "home-living"
+    ],
+    "ground floor|noun": [
+      "home-living"
+    ],
+    "storey|noun": [
+      "home-living"
+    ],
+    "roof|noun": [
+      "home-living"
+    ],
+    "ceiling|noun": [
+      "home-living"
+    ],
+    "wall|noun": [
+      "home-living"
+    ],
+    "door|noun": [
+      "home-living"
+    ],
+    "window|noun": [
+      "home-living"
+    ],
+    "staircase|noun": [
+      "home-living"
+    ],
+    "balcony|noun": [
+      "home-living"
+    ],
+    "garage|noun": [
+      "home-living"
+    ],
+    "driveway|noun": [
+      "home-living"
+    ],
+    "garden|noun": [
+      "home-living"
+    ],
+    "yard|noun": [
+      "home-living"
+    ],
+    "fence|noun": [
+      "home-living"
+    ],
+    "gate|noun": [
+      "home-living"
+    ],
+    "porch|noun": [
+      "home-living"
+    ],
+    "living room|noun": [
+      "home-living"
+    ],
+    "bedroom|noun": [
+      "home-living"
+    ],
+    "kitchen|noun": [
+      "home-living"
+    ],
+    "bathroom|noun": [
+      "home-living"
+    ],
+    "dining room|noun": [
+      "home-living"
+    ],
+    "hallway|noun": [
+      "home-living"
+    ],
+    "attic|noun": [
+      "home-living"
+    ],
+    "basement|noun": [
+      "home-living"
+    ],
+    "furniture|noun": [
+      "home-living"
+    ],
+    "sofa|noun": [
+      "home-living"
+    ],
+    "armchair|noun": [
+      "home-living"
+    ],
+    "coffee table|noun": [
+      "home-living"
+    ],
+    "bookshelf|noun": [
+      "home-living"
+    ],
+    "cabinet|noun": [
+      "home-living"
+    ],
+    "wardrobe|noun": [
+      "home-living"
+    ],
+    "drawer|noun": [
+      "home-living"
+    ],
+    "desk|noun": [
+      "home-living"
+    ],
+    "mattress|noun": [
+      "home-living"
+    ],
+    "pillow|noun": [
+      "home-living"
+    ],
+    "blanket|noun": [
+      "home-living"
+    ],
+    "duvet|noun": [
+      "home-living"
+    ],
+    "bedsheet|noun": [
+      "home-living"
+    ],
+    "curtain|noun": [
+      "home-living"
+    ],
+    "carpet|noun": [
+      "home-living"
+    ],
+    "rug|noun": [
+      "home-living"
+    ],
+    "lamp|noun": [
+      "home-living"
+    ],
+    "mirror|noun": [
+      "home-living"
+    ],
+    "painting|noun": [
+      "home-living"
+    ],
+    "vase|noun": [
+      "home-living"
+    ],
+    "appliance|noun": [
+      "home-living"
+    ],
+    "fridge|noun": [
+      "home-living"
+    ],
+    "freezer|noun": [
+      "home-living"
+    ],
+    "stove|noun": [
+      "home-living"
+    ],
+    "oven|noun": [
+      "home-living"
+    ],
+    "microwave|noun": [
+      "home-living"
+    ],
+    "kettle|noun": [
+      "home-living"
+    ],
+    "toaster|noun": [
+      "home-living"
+    ],
+    "washing machine|noun": [
+      "home-living"
+    ],
+    "dryer|noun": [
+      "home-living"
+    ],
+    "air conditioner|noun": [
+      "home-living"
+    ],
+    "heater|noun": [
+      "home-living"
+    ],
+    "sink|noun": [
+      "home-living"
+    ],
+    "tap|noun": [
+      "home-living"
+    ],
+    "faucet|noun": [
+      "home-living"
+    ],
+    "bathtub|noun": [
+      "home-living"
+    ],
+    "toilet|noun": [
+      "home-living"
+    ],
+    "towel|noun": [
+      "home-living"
+    ],
+    "soap|noun": [
+      "home-living"
+    ],
+    "plate|noun": [
+      "home-living"
+    ],
+    "bowl|noun": [
+      "home-living"
+    ],
+    "cup|noun": [
+      "home-living"
+    ],
+    "mug|noun": [
+      "home-living"
+    ],
+    "fork|noun": [
+      "home-living"
+    ],
+    "spoon|noun": [
+      "home-living"
+    ],
+    "knife|noun": [
+      "home-living"
+    ],
+    "chopsticks|noun": [
+      "home-living"
+    ],
+    "pan|noun": [
+      "home-living"
+    ],
+    "pot|noun": [
+      "home-living"
+    ],
+    "container|noun": [
+      "home-living"
+    ],
+    "shelf|noun": [
+      "home-living"
+    ],
+    "basket|noun": [
+      "home-living"
+    ],
+    "box|noun": [
+      "home-living"
+    ],
+    "tidy up|phrasal verb": [
+      "home-living"
+    ],
+    "sweep|verb": [
+      "home-living",
+      "verbs-cleaning-maintenance"
+    ],
+    "mop|verb": [
+      "home-living"
+    ],
+    "iron|verb": [
+      "home-living"
+    ],
+    "fold|verb": [
+      "home-living"
+    ],
+    "garbage|noun": [
+      "home-living"
+    ],
+    "rubbish|noun": [
+      "home-living"
+    ],
+    "trash|noun": [
+      "home-living"
+    ],
+    "bin|noun": [
+      "home-living"
+    ],
+    "recycle|verb": [
+      "home-living"
+    ],
+    "maintenance|noun": [
+      "home-living"
+    ],
+    "repair|verb": [
+      "home-living"
+    ],
+    "fix|verb": [
+      "home-living"
+    ],
+    "leak|noun": [
+      "home-living"
+    ],
+    "plumber|noun": [
+      "home-living"
+    ],
+    "electrician|noun": [
+      "home-living"
+    ],
+    "data|noun": [
+      "information-technology"
+    ],
+    "database|noun": [
+      "information-technology"
+    ],
+    "file|noun": [
+      "information-technology"
+    ],
+    "folder|noun": [
+      "information-technology"
+    ],
+    "storage|noun": [
+      "information-technology"
+    ],
+    "backup|noun": [
+      "information-technology"
+    ],
+    "memory|noun": [
+      "information-technology"
+    ],
+    "information|noun": [
+      "information-technology"
+    ],
+    "computer|noun": [
+      "information-technology"
+    ],
+    "laptop|noun": [
+      "information-technology"
+    ],
+    "device|noun": [
+      "information-technology"
+    ],
+    "hardware|noun": [
+      "information-technology"
+    ],
+    "keyboard|noun": [
+      "information-technology"
+    ],
+    "mouse|noun": [
+      "information-technology"
+    ],
+    "screen|noun": [
+      "information-technology"
+    ],
+    "processor|noun": [
+      "information-technology"
+    ],
+    "battery|noun": [
+      "information-technology"
+    ],
+    "software|noun": [
+      "information-technology"
+    ],
+    "program|noun": [
+      "information-technology"
+    ],
+    "application|noun": [
+      "information-technology"
+    ],
+    "app|noun": [
+      "information-technology"
+    ],
+    "system|noun": [
+      "information-technology"
+    ],
+    "operating system|noun": [
+      "information-technology"
+    ],
+    "platform|noun": [
+      "information-technology"
+    ],
+    "interface|noun": [
+      "information-technology"
+    ],
+    "feature|noun": [
+      "information-technology"
+    ],
+    "bug|noun": [
+      "information-technology"
+    ],
+    "update|noun": [
+      "information-technology"
+    ],
+    "internet|noun": [
+      "information-technology"
+    ],
+    "website|noun": [
+      "information-technology"
+    ],
+    "web browser|noun": [
+      "information-technology"
+    ],
+    "network|noun": [
+      "information-technology"
+    ],
+    "wi-fi|noun": [
+      "information-technology"
+    ],
+    "server|noun": [
+      "information-technology"
+    ],
+    "cloud|noun": [
+      "information-technology"
+    ],
+    "online|adjective": [
+      "information-technology"
+    ],
+    "email|noun": [
+      "information-technology"
+    ],
+    "message|noun": [
+      "information-technology"
+    ],
+    "notification|noun": [
+      "information-technology"
+    ],
+    "social media|noun": [
+      "information-technology"
+    ],
+    "post|noun": [
+      "information-technology"
+    ],
+    "comment|noun": [
+      "information-technology"
+    ],
+    "share|verb": [
+      "information-technology"
+    ],
+    "download|verb": [
+      "information-technology"
+    ],
+    "upload|verb": [
+      "information-technology"
+    ],
+    "browse the internet|verb phrase": [
+      "information-technology"
+    ],
+    "scroll|verb": [
+      "information-technology"
+    ],
+    "click|verb": [
+      "information-technology"
+    ],
+    "log in|phrasal verb": [
+      "information-technology"
+    ],
+    "log out|phrasal verb": [
+      "information-technology"
+    ],
+    "charge|verb": [
+      "information-technology"
+    ],
+    "install|verb": [
+      "information-technology"
+    ],
+    "delete|verb": [
+      "information-technology"
+    ],
+    "code|noun": [
+      "information-technology"
+    ],
+    "coding|noun": [
+      "information-technology"
+    ],
+    "programming|noun": [
+      "information-technology"
+    ],
+    "developer|noun": [
+      "information-technology"
+    ],
+    "algorithm|noun": [
+      "information-technology"
+    ],
+    "function|noun": [
+      "information-technology",
+      "mathematics"
+    ],
+    "error|noun": [
+      "information-technology"
+    ],
+    "debug|verb": [
+      "information-technology"
+    ],
+    "security|noun": [
+      "information-technology"
+    ],
+    "password|noun": [
+      "information-technology"
+    ],
+    "account|noun": [
+      "information-technology"
+    ],
+    "privacy|noun": [
+      "information-technology"
+    ],
+    "digital|adjective": [
+      "information-technology"
+    ],
+    "technology|noun": [
+      "information-technology"
+    ],
+    "screen time|noun": [
+      "information-technology"
+    ],
+    "better|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "elder|adjective": [
+      "irregular-comparative"
+    ],
+    "farther|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "further|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "less|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "more|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "worse|adjective/adverb": [
+      "irregular-comparative"
+    ],
+    "best|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "eldest|adjective": [
+      "irregular-superlative"
+    ],
+    "farthest|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "furthest|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "least|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "most|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "worst|adjective/adverb": [
+      "irregular-superlative"
+    ],
+    "went|verb": [
+      "irregular-verb-v2"
+    ],
+    "wrote|verb": [
+      "irregular-verb-v2"
+    ],
+    "taught|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "took|verb": [
+      "irregular-verb-v2"
+    ],
+    "gave|verb": [
+      "irregular-verb-v2"
+    ],
+    "saw|verb": [
+      "irregular-verb-v2"
+    ],
+    "made|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "spoke|verb": [
+      "irregular-verb-v2"
+    ],
+    "brought|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "bought|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "thought|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "knew|verb": [
+      "irregular-verb-v2"
+    ],
+    "was|verb": [
+      "irregular-verb-v2"
+    ],
+    "were|verb": [
+      "irregular-verb-v2"
+    ],
+    "had|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "did|verb": [
+      "irregular-verb-v2"
+    ],
+    "said|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "came|verb": [
+      "irregular-verb-v2"
+    ],
+    "got|verb": [
+      "irregular-verb-v2"
+    ],
+    "found|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "ran|verb": [
+      "irregular-verb-v2"
+    ],
+    "told|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "felt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "left|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "heard|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "kept|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "began|verb": [
+      "irregular-verb-v2"
+    ],
+    "let|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-basic-essential"
+    ],
+    "stood|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "lost|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "paid|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "met|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "sat|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "sent|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "fell|verb": [
+      "irregular-verb-v2"
+    ],
+    "held|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "read|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-communication"
+    ],
+    "spent|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "grew|verb": [
+      "irregular-verb-v2"
+    ],
+    "won|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "led|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "understood|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "lay|verb": [
+      "irregular-verb-v2",
+      "verbs-body-position"
+    ],
+    "caught|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "chose|verb": [
+      "irregular-verb-v2"
+    ],
+    "drew|verb": [
+      "irregular-verb-v2"
+    ],
+    "drove|verb": [
+      "irregular-verb-v2"
+    ],
+    "ate|verb": [
+      "irregular-verb-v2"
+    ],
+    "flew|verb": [
+      "irregular-verb-v2"
+    ],
+    "forgot|verb": [
+      "irregular-verb-v2"
+    ],
+    "froze|verb": [
+      "irregular-verb-v2"
+    ],
+    "hid|verb": [
+      "irregular-verb-v2"
+    ],
+    "hit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-physical-actions"
+    ],
+    "hung|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "hurt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-destruction-damage"
+    ],
+    "knelt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "laid|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "lent|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "lit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "meant|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "put|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-basic-essential"
+    ],
+    "quit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-attachment-connection"
+    ],
+    "rode|verb": [
+      "irregular-verb-v2"
+    ],
+    "rang|verb": [
+      "irregular-verb-v2"
+    ],
+    "rose|verb": [
+      "irregular-verb-v2"
+    ],
+    "sang|verb": [
+      "irregular-verb-v2"
+    ],
+    "sank|verb": [
+      "irregular-verb-v2"
+    ],
+    "set|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-basic-essential"
+    ],
+    "shook|verb": [
+      "irregular-verb-v2"
+    ],
+    "shot|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "showed|verb": [
+      "irregular-verb-v2"
+    ],
+    "shut|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-attachment-connection"
+    ],
+    "slept|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "slid|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "spread|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-creation-building"
+    ],
+    "sprang|verb": [
+      "irregular-verb-v2"
+    ],
+    "stole|verb": [
+      "irregular-verb-v2"
+    ],
+    "struck|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "swam|verb": [
+      "irregular-verb-v2"
+    ],
+    "swore|verb": [
+      "irregular-verb-v2"
+    ],
+    "swept|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "swung|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "threw|verb": [
+      "irregular-verb-v2"
+    ],
+    "tore|verb": [
+      "irregular-verb-v2"
+    ],
+    "woke|verb": [
+      "irregular-verb-v2"
+    ],
+    "wore|verb": [
+      "irregular-verb-v2"
+    ],
+    "wove|verb": [
+      "irregular-verb-v2"
+    ],
+    "withdrew|verb": [
+      "irregular-verb-v2"
+    ],
+    "wound|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "bent|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "bit|verb": [
+      "irregular-verb-v2"
+    ],
+    "bled|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "blew|verb": [
+      "irregular-verb-v2"
+    ],
+    "bore|verb": [
+      "irregular-verb-v2"
+    ],
+    "bound|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "bred|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "broadcast|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-communication"
+    ],
+    "broke|verb": [
+      "irregular-verb-v2"
+    ],
+    "built|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "burnt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "burst|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-cutting-breaking"
+    ],
+    "cast|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-physical-actions"
+    ],
+    "clung|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "crept|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "cut|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-cutting-breaking"
+    ],
+    "dealt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "dug|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "dove|verb": [
+      "irregular-verb-v2"
+    ],
+    "drank|verb": [
+      "irregular-verb-v2"
+    ],
+    "fed|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "fought|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "fit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-clothing-appearance"
+    ],
+    "fled|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "flung|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "forbade|verb": [
+      "irregular-verb-v2"
+    ],
+    "forecast|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-cognition-thinking"
+    ],
+    "forgave|verb": [
+      "irregular-verb-v2"
+    ],
+    "ground|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "knit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-creation-building"
+    ],
+    "leapt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "mowed|verb": [
+      "irregular-verb-v2"
+    ],
+    "overcame|verb": [
+      "irregular-verb-v2"
+    ],
+    "overran|verb": [
+      "irregular-verb-v2"
+    ],
+    "sewed|verb": [
+      "irregular-verb-v2"
+    ],
+    "shone|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "shrank|verb": [
+      "irregular-verb-v2"
+    ],
+    "slit|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-cutting-breaking"
+    ],
+    "sought|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "sowed|verb": [
+      "irregular-verb-v2"
+    ],
+    "span|verb": [
+      "irregular-verb-v2",
+      "verbs-spanning-covering"
+    ],
+    "spat|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "split|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3",
+      "verbs-cutting-breaking"
+    ],
+    "spoilt|verb": [
+      "irregular-verb-v2",
+      "irregular-verb-v3"
+    ],
+    "gone|verb": [
+      "irregular-verb-v3"
+    ],
+    "written|verb": [
+      "irregular-verb-v3"
+    ],
+    "taken|verb": [
+      "irregular-verb-v3"
+    ],
+    "given|verb": [
+      "irregular-verb-v3"
+    ],
+    "seen|verb": [
+      "irregular-verb-v3"
+    ],
+    "spoken|verb": [
+      "irregular-verb-v3"
+    ],
+    "known|verb": [
+      "irregular-verb-v3"
+    ],
+    "been|verb": [
+      "irregular-verb-v3"
+    ],
+    "done|verb": [
+      "irregular-verb-v3"
+    ],
+    "come|verb": [
+      "irregular-verb-v3",
+      "verbs-basic-essential"
+    ],
+    "gotten|verb": [
+      "irregular-verb-v3"
+    ],
+    "run|verb": [
+      "irregular-verb-v3",
+      "verbs-movement-travel"
+    ],
+    "begun|verb": [
+      "irregular-verb-v3"
+    ],
+    "fallen|verb": [
+      "irregular-verb-v3"
+    ],
+    "grown|verb": [
+      "irregular-verb-v3"
+    ],
+    "lain|verb": [
+      "irregular-verb-v3"
+    ],
+    "chosen|verb": [
+      "irregular-verb-v3"
+    ],
+    "drawn|verb": [
+      "irregular-verb-v3"
+    ],
+    "driven|verb": [
+      "irregular-verb-v3"
+    ],
+    "eaten|verb": [
+      "irregular-verb-v3"
+    ],
+    "flown|verb": [
+      "irregular-verb-v3"
+    ],
+    "forgotten|verb": [
+      "irregular-verb-v3"
+    ],
+    "frozen|verb": [
+      "irregular-verb-v3"
+    ],
+    "hidden|verb": [
+      "irregular-verb-v3"
+    ],
+    "ridden|verb": [
+      "irregular-verb-v3"
+    ],
+    "rung|verb": [
+      "irregular-verb-v3"
+    ],
+    "risen|verb": [
+      "irregular-verb-v3"
+    ],
+    "sung|verb": [
+      "irregular-verb-v3"
+    ],
+    "sunk|verb": [
+      "irregular-verb-v3"
+    ],
+    "shaken|verb": [
+      "irregular-verb-v3"
+    ],
+    "shown|verb": [
+      "irregular-verb-v3"
+    ],
+    "sprung|verb": [
+      "irregular-verb-v3"
+    ],
+    "stolen|verb": [
+      "irregular-verb-v3"
+    ],
+    "swum|verb": [
+      "irregular-verb-v3"
+    ],
+    "sworn|verb": [
+      "irregular-verb-v3"
+    ],
+    "thrown|verb": [
+      "irregular-verb-v3"
+    ],
+    "torn|verb": [
+      "irregular-verb-v3"
+    ],
+    "woken|verb": [
+      "irregular-verb-v3"
+    ],
+    "worn|verb": [
+      "irregular-verb-v3"
+    ],
+    "woven|verb": [
+      "irregular-verb-v3"
+    ],
+    "withdrawn|verb": [
+      "irregular-verb-v3"
+    ],
+    "bitten|verb": [
+      "irregular-verb-v3"
+    ],
+    "blown|verb": [
+      "irregular-verb-v3"
+    ],
+    "borne|verb": [
+      "irregular-verb-v3"
+    ],
+    "broken|verb": [
+      "irregular-verb-v3"
+    ],
+    "dived|verb": [
+      "irregular-verb-v3"
+    ],
+    "drunk|verb": [
+      "irregular-verb-v3"
+    ],
+    "forbidden|verb": [
+      "irregular-verb-v3"
+    ],
+    "forgiven|verb": [
+      "irregular-verb-v3"
+    ],
+    "mown|verb": [
+      "irregular-verb-v3"
+    ],
+    "overcome|verb": [
+      "irregular-verb-v3",
+      "verbs-fighting-conflict"
+    ],
+    "overrun|verb": [
+      "irregular-verb-v3",
+      "verbs-fighting-conflict"
+    ],
+    "sewn|verb": [
+      "irregular-verb-v3"
+    ],
+    "shrunk|verb": [
+      "irregular-verb-v3"
+    ],
+    "sown|verb": [
+      "irregular-verb-v3"
+    ],
+    "spanned|verb": [
+      "irregular-verb-v3"
+    ],
+    "literature|noun": [
+      "literature-reading"
+    ],
+    "reading comprehension|noun": [
+      "literature-reading"
+    ],
+    "text|noun": [
+      "literature-reading"
+    ],
+    "passage|noun": [
+      "literature-reading"
+    ],
+    "main idea|noun": [
+      "literature-reading"
+    ],
+    "supporting detail|noun": [
+      "literature-reading"
+    ],
+    "inference|noun": [
+      "literature-reading"
+    ],
+    "context|noun": [
+      "literature-reading"
+    ],
+    "novel|noun": [
+      "literature-reading"
+    ],
+    "short story|noun": [
+      "literature-reading"
+    ],
+    "poem|noun": [
+      "literature-reading"
+    ],
+    "drama|noun": [
+      "literature-reading"
+    ],
+    "fiction|noun": [
+      "literature-reading"
+    ],
+    "non-fiction|noun": [
+      "literature-reading"
+    ],
+    "genre|noun": [
+      "literature-reading"
+    ],
+    "plot|noun": [
+      "literature-reading"
+    ],
+    "character|noun": [
+      "literature-reading"
+    ],
+    "protagonist|noun": [
+      "literature-reading"
+    ],
+    "setting|noun": [
+      "literature-reading"
+    ],
+    "theme|noun": [
+      "literature-reading"
+    ],
+    "climax|noun": [
+      "literature-reading"
+    ],
+    "resolution|noun": [
+      "literature-reading"
+    ],
+    "narrator|noun": [
+      "literature-reading"
+    ],
+    "point of view|noun": [
+      "literature-reading"
+    ],
+    "foreshadowing|noun": [
+      "literature-reading"
+    ],
+    "flashback|noun": [
+      "literature-reading"
+    ],
+    "symbolism|noun": [
+      "literature-reading"
+    ],
+    "metaphor|noun": [
+      "literature-reading"
+    ],
+    "simile|noun": [
+      "literature-reading"
+    ],
+    "imagery|noun": [
+      "literature-reading"
+    ],
+    "personification|noun": [
+      "literature-reading"
+    ],
+    "irony|noun": [
+      "literature-reading"
+    ],
+    "tone|noun": [
+      "literature-reading"
+    ],
+    "style|noun": [
+      "literature-reading"
+    ],
+    "stanza|noun": [
+      "literature-reading"
+    ],
+    "rhyme|noun": [
+      "literature-reading"
+    ],
+    "rhythm|noun": [
+      "literature-reading"
+    ],
+    "mathematics|noun": [
+      "mathematics"
+    ],
+    "maths|noun": [
+      "mathematics"
+    ],
+    "arithmetic|noun": [
+      "mathematics"
+    ],
+    "number|noun": [
+      "mathematics"
+    ],
+    "digit|noun": [
+      "mathematics"
+    ],
+    "integer|noun": [
+      "mathematics"
+    ],
+    "addition|noun": [
+      "mathematics"
+    ],
+    "subtraction|noun": [
+      "mathematics"
+    ],
+    "multiplication|noun": [
+      "mathematics"
+    ],
+    "division|noun": [
+      "mathematics"
+    ],
+    "sum|noun": [
+      "mathematics"
+    ],
+    "difference|noun": [
+      "mathematics"
+    ],
+    "quotient|noun": [
+      "mathematics"
+    ],
+    "fraction|noun": [
+      "mathematics"
+    ],
+    "decimal|noun": [
+      "mathematics"
+    ],
+    "percentage|noun": [
+      "mathematics"
+    ],
+    "ratio|noun": [
+      "mathematics"
+    ],
+    "proportion|noun": [
+      "mathematics"
+    ],
+    "average|noun": [
+      "mathematics"
+    ],
+    "algebra|noun": [
+      "mathematics"
+    ],
+    "equation|noun": [
+      "mathematics"
+    ],
+    "variable|noun": [
+      "mathematics"
+    ],
+    "coefficient|noun": [
+      "mathematics"
+    ],
+    "formula|noun": [
+      "mathematics"
+    ],
+    "geometry|noun": [
+      "mathematics"
+    ],
+    "angle|noun": [
+      "mathematics"
+    ],
+    "triangle|noun": [
+      "mathematics"
+    ],
+    "circle|noun": [
+      "mathematics"
+    ],
+    "radius|noun": [
+      "mathematics"
+    ],
+    "diameter|noun": [
+      "mathematics"
+    ],
+    "area|noun": [
+      "mathematics"
+    ],
+    "volume|noun": [
+      "mathematics"
+    ],
+    "statistics|noun": [
+      "mathematics"
+    ],
+    "probability|noun": [
+      "mathematics"
+    ],
+    "graph|noun": [
+      "mathematics"
+    ],
+    "chart|noun": [
+      "mathematics"
+    ],
+    "median|noun": [
+      "mathematics"
+    ],
+    "calculus|noun": [
+      "mathematics"
+    ],
+    "limit|noun": [
+      "mathematics"
+    ],
+    "derivative|noun": [
+      "mathematics"
+    ],
+    "differentiate|verb": [
+      "mathematics"
+    ],
+    "differentiation|noun": [
+      "mathematics"
+    ],
+    "integral|noun": [
+      "mathematics"
+    ],
+    "integrate|verb": [
+      "mathematics"
+    ],
+    "integration|noun": [
+      "mathematics"
+    ],
+    "slope|noun": [
+      "mathematics"
+    ],
+    "tangent|noun": [
+      "mathematics"
+    ],
+    "curve|noun": [
+      "mathematics"
+    ],
+    "continuous|adjective": [
+      "mathematics"
+    ],
+    "continuity|noun": [
+      "mathematics"
+    ],
+    "rate of change|noun": [
+      "mathematics"
+    ],
+    "maximum|noun": [
+      "mathematics"
+    ],
+    "minimum|noun": [
+      "mathematics"
+    ],
+    "sequence|noun": [
+      "mathematics"
+    ],
+    "series|noun": [
+      "mathematics"
+    ],
+    "news outlet|noun": [
+      "media-entertainment"
+    ],
+    "news agency|noun": [
+      "media-entertainment"
+    ],
+    "wire service|noun": [
+      "media-entertainment"
+    ],
+    "newsroom|noun": [
+      "media-entertainment"
+    ],
+    "editor-in-chief|noun": [
+      "media-entertainment"
+    ],
+    "copy editor|noun": [
+      "media-entertainment"
+    ],
+    "photojournalist|noun": [
+      "media-entertainment"
+    ],
+    "foreign correspondent|noun": [
+      "media-entertainment"
+    ],
+    "investigative reporter|noun": [
+      "media-entertainment"
+    ],
+    "news anchor|noun": [
+      "media-entertainment"
+    ],
+    "bulletin|noun": [
+      "media-entertainment"
+    ],
+    "dateline|noun": [
+      "media-entertainment"
+    ],
+    "byline|noun": [
+      "media-entertainment"
+    ],
+    "masthead|noun": [
+      "media-entertainment"
+    ],
+    "op-ed|noun": [
+      "media-entertainment"
+    ],
+    "human-interest story|noun": [
+      "media-entertainment"
+    ],
+    "media outlet|noun": [
+      "media-entertainment"
+    ],
+    "mass media|noun": [
+      "media-entertainment"
+    ],
+    "broadcasting|noun": [
+      "media-entertainment"
+    ],
+    "broadcaster|noun": [
+      "media-entertainment"
+    ],
+    "airtime|noun": [
+      "media-entertainment"
+    ],
+    "prime time|noun": [
+      "media-entertainment"
+    ],
+    "audience share|noun": [
+      "media-entertainment"
+    ],
+    "viewership|noun": [
+      "media-entertainment"
+    ],
+    "listenership|noun": [
+      "media-entertainment"
+    ],
+    "rerun|noun": [
+      "media-entertainment"
+    ],
+    "syndication|noun": [
+      "media-entertainment"
+    ],
+    "streaming platform|noun": [
+      "media-entertainment"
+    ],
+    "live stream|noun": [
+      "media-entertainment"
+    ],
+    "livestreamer|noun": [
+      "media-entertainment"
+    ],
+    "podcast|noun": [
+      "media-entertainment"
+    ],
+    "podcaster|noun": [
+      "media-entertainment"
+    ],
+    "webinar|noun": [
+      "media-entertainment"
+    ],
+    "playlist|noun": [
+      "media-entertainment"
+    ],
+    "paywall|noun": [
+      "media-entertainment"
+    ],
+    "subscription model|noun": [
+      "media-entertainment"
+    ],
+    "binge-watch|verb": [
+      "media-entertainment"
+    ],
+    "skip intro|verb phrase": [
+      "media-entertainment"
+    ],
+    "notification bell|noun": [
+      "media-entertainment"
+    ],
+    "content creator|noun": [
+      "media-entertainment"
+    ],
+    "micro-influencer|noun": [
+      "media-entertainment"
+    ],
+    "follower count|noun": [
+      "media-entertainment"
+    ],
+    "subscriber base|noun": [
+      "media-entertainment"
+    ],
+    "engagement rate|noun": [
+      "media-entertainment"
+    ],
+    "virality|noun": [
+      "media-entertainment"
+    ],
+    "viral trend|noun": [
+      "media-entertainment"
+    ],
+    "meme culture|noun": [
+      "media-entertainment"
+    ],
+    "hashtag campaign|noun": [
+      "media-entertainment"
+    ],
+    "clickbait|noun": [
+      "media-entertainment"
+    ],
+    "thumbnail|noun": [
+      "media-entertainment"
+    ],
+    "comment section|noun": [
+      "media-entertainment"
+    ],
+    "community guideline|noun": [
+      "media-entertainment"
+    ],
+    "content moderation|noun": [
+      "media-entertainment"
+    ],
+    "troll|noun": [
+      "media-entertainment"
+    ],
+    "online harassment|noun": [
+      "media-entertainment"
+    ],
+    "spoiler|noun": [
+      "media-entertainment"
+    ],
+    "plot twist|noun": [
+      "media-entertainment"
+    ],
+    "cliffhanger|noun": [
+      "media-entertainment"
+    ],
+    "screenplay|noun": [
+      "media-entertainment"
+    ],
+    "showrunner|noun": [
+      "media-entertainment"
+    ],
+    "cinematographer|noun": [
+      "media-entertainment"
+    ],
+    "post-production|noun": [
+      "media-entertainment"
+    ],
+    "green screen|noun": [
+      "media-entertainment"
+    ],
+    "visual effects|noun": [
+      "media-entertainment"
+    ],
+    "voice-over|noun": [
+      "media-entertainment"
+    ],
+    "dubbed|adjective": [
+      "media-entertainment"
+    ],
+    "subtitled|adjective": [
+      "media-entertainment"
+    ],
+    "closed captions|noun": [
+      "media-entertainment"
+    ],
+    "stunt double|noun": [
+      "media-entertainment"
+    ],
+    "casting director|noun": [
+      "media-entertainment"
+    ],
+    "set design|noun": [
+      "media-entertainment"
+    ],
+    "box-office hit|noun": [
+      "media-entertainment"
+    ],
+    "sleeper hit|noun": [
+      "media-entertainment"
+    ],
+    "franchise film|noun": [
+      "media-entertainment"
+    ],
+    "spin-off|noun": [
+      "media-entertainment"
+    ],
+    "red carpet|noun": [
+      "media-entertainment"
+    ],
+    "award ceremony|noun": [
+      "media-entertainment"
+    ],
+    "fanbase|noun": [
+      "media-entertainment"
+    ],
+    "fandom|noun": [
+      "media-entertainment"
+    ],
+    "cosplay|noun": [
+      "media-entertainment"
+    ],
+    "fan convention|noun": [
+      "media-entertainment"
+    ],
+    "merchandise|noun": [
+      "media-entertainment"
+    ],
+    "celebrity endorsement|noun": [
+      "media-entertainment"
+    ],
+    "publicist|noun": [
+      "media-entertainment"
+    ],
+    "press junket|noun": [
+      "media-entertainment"
+    ],
+    "reality show|noun": [
+      "media-entertainment"
+    ],
+    "game show|noun": [
+      "media-entertainment"
+    ],
+    "talk show|noun": [
+      "media-entertainment"
+    ],
+    "sitcom|noun": [
+      "media-entertainment"
+    ],
+    "soap opera|noun": [
+      "media-entertainment"
+    ],
+    "docuseries|noun": [
+      "media-entertainment"
+    ],
+    "miniseries|noun": [
+      "media-entertainment"
+    ],
+    "variety show|noun": [
+      "media-entertainment"
+    ],
+    "infotainment|noun": [
+      "media-entertainment"
+    ],
+    "mockumentary|noun": [
+      "media-entertainment"
+    ],
+    "press release|noun": [
+      "media-entertainment"
+    ],
+    "media kit|noun": [
+      "media-entertainment"
+    ],
+    "public relations|noun": [
+      "media-entertainment"
+    ],
+    "brand ambassador|noun": [
+      "media-entertainment"
+    ],
+    "sponsorship deal|noun": [
+      "media-entertainment"
+    ],
+    "product placement|noun": [
+      "media-entertainment"
+    ],
+    "ad campaign|noun": [
+      "media-entertainment"
+    ],
+    "slogan|noun": [
+      "media-entertainment"
+    ],
+    "jingle|noun": [
+      "media-entertainment"
+    ],
+    "media buying|noun": [
+      "media-entertainment"
+    ],
+    "fact-checking|noun": [
+      "media-entertainment"
+    ],
+    "source verification|noun": [
+      "media-entertainment"
+    ],
+    "media literacy|noun": [
+      "media-entertainment"
+    ],
+    "disinformation|noun": [
+      "media-entertainment"
+    ],
+    "deepfake|noun": [
+      "media-entertainment"
+    ],
+    "click farm|noun": [
+      "media-entertainment"
+    ],
+    "echo chamber|noun": [
+      "media-entertainment"
+    ],
+    "filter bubble|noun": [
+      "media-entertainment"
+    ],
+    "censorship board|noun": [
+      "media-entertainment"
+    ],
+    "age rating|noun": [
+      "media-entertainment"
+    ],
+    "good|adjective": [
+      "personal-qualities",
+      "test-samples"
+    ],
+    "well|adverb": [
+      "personal-qualities",
+      "test-samples"
+    ],
+    "nice|adjective": [
+      "personal-qualities"
+    ],
+    "kind|adjective": [
+      "personal-qualities"
+    ],
+    "pleasant|adjective": [
+      "personal-qualities"
+    ],
+    "likable|adjective": [
+      "personal-qualities"
+    ],
+    "admirable|adjective": [
+      "personal-qualities"
+    ],
+    "honest|adjective": [
+      "personal-qualities"
+    ],
+    "truthful|adjective": [
+      "personal-qualities"
+    ],
+    "sincere|adjective": [
+      "personal-qualities"
+    ],
+    "genuine|adjective": [
+      "personal-qualities"
+    ],
+    "trustworthy|adjective": [
+      "personal-qualities"
+    ],
+    "reliable|adjective": [
+      "personal-qualities"
+    ],
+    "loyal|adjective": [
+      "personal-qualities"
+    ],
+    "fair|adjective": [
+      "personal-qualities"
+    ],
+    "principled|adjective": [
+      "personal-qualities"
+    ],
+    "dependable|adjective": [
+      "personal-qualities"
+    ],
+    "disciplined|adjective": [
+      "personal-qualities"
+    ],
+    "organized|adjective": [
+      "personal-qualities"
+    ],
+    "careful|adjective": [
+      "personal-qualities"
+    ],
+    "thorough|adjective": [
+      "personal-qualities"
+    ],
+    "conscientious|adjective": [
+      "personal-qualities"
+    ],
+    "hard-working|adjective": [
+      "personal-qualities"
+    ],
+    "brave|adjective": [
+      "personal-qualities"
+    ],
+    "courageous|adjective": [
+      "personal-qualities"
+    ],
+    "bold|adjective": [
+      "personal-qualities"
+    ],
+    "assertive|adjective": [
+      "personal-qualities"
+    ],
+    "decisive|adjective": [
+      "personal-qualities"
+    ],
+    "self-assured|adjective": [
+      "personal-qualities"
+    ],
+    "composed|adjective": [
+      "personal-qualities"
+    ],
+    "tolerant|adjective": [
+      "personal-qualities"
+    ],
+    "gentle|adjective": [
+      "personal-qualities"
+    ],
+    "easy-going|adjective": [
+      "personal-qualities"
+    ],
+    "creative|adjective": [
+      "personal-qualities"
+    ],
+    "imaginative|adjective": [
+      "personal-qualities"
+    ],
+    "innovative|adjective": [
+      "personal-qualities"
+    ],
+    "intelligent|adjective": [
+      "personal-qualities"
+    ],
+    "clever|adjective": [
+      "personal-qualities"
+    ],
+    "wise|adjective": [
+      "personal-qualities"
+    ],
+    "resourceful|adjective": [
+      "personal-qualities"
+    ],
+    "open-minded|adjective": [
+      "personal-qualities"
+    ],
+    "ambitious|adjective": [
+      "personal-qualities"
+    ],
+    "determined|adjective": [
+      "personal-qualities"
+    ],
+    "persistent|adjective": [
+      "personal-qualities"
+    ],
+    "persevering|adjective": [
+      "personal-qualities"
+    ],
+    "driven|adjective": [
+      "personal-qualities"
+    ],
+    "goal-oriented|adjective": [
+      "personal-qualities"
+    ],
+    "proactive|adjective": [
+      "personal-qualities"
+    ],
+    "helpful|adjective": [
+      "personal-qualities"
+    ],
+    "generous|adjective": [
+      "personal-qualities"
+    ],
+    "compassionate|adjective": [
+      "personal-qualities"
+    ],
+    "empathetic|adjective": [
+      "personal-qualities"
+    ],
+    "thoughtful|adjective": [
+      "personal-qualities"
+    ],
+    "considerate|adjective": [
+      "personal-qualities"
+    ],
+    "sympathetic|adjective": [
+      "personal-qualities"
+    ],
+    "sociable|adjective": [
+      "personal-qualities"
+    ],
+    "outgoing|adjective": [
+      "personal-qualities"
+    ],
+    "talkative|adjective": [
+      "personal-qualities"
+    ],
+    "charming|adjective": [
+      "personal-qualities"
+    ],
+    "charismatic|adjective": [
+      "personal-qualities"
+    ],
+    "cooperative|adjective": [
+      "personal-qualities"
+    ],
+    "modest|adjective": [
+      "personal-qualities"
+    ],
+    "mature|adjective": [
+      "personal-qualities"
+    ],
+    "sensible|adjective": [
+      "personal-qualities"
+    ],
+    "realistic|adjective": [
+      "personal-qualities"
+    ],
+    "self-aware|adjective": [
+      "personal-qualities"
+    ],
+    "lazy|adjective": [
+      "personal-qualities"
+    ],
+    "selfish|adjective": [
+      "personal-qualities"
+    ],
+    "greedy|adjective": [
+      "personal-qualities"
+    ],
+    "arrogant|adjective": [
+      "personal-qualities"
+    ],
+    "boastful|adjective": [
+      "personal-qualities"
+    ],
+    "stubborn|adjective": [
+      "personal-qualities"
+    ],
+    "careless|adjective": [
+      "personal-qualities"
+    ],
+    "irresponsible|adjective": [
+      "personal-qualities"
+    ],
+    "dishonest|adjective": [
+      "personal-qualities"
+    ],
+    "aggressive|adjective": [
+      "personal-qualities"
+    ],
+    "positive|adjective": [
+      "personal-qualities"
+    ],
+    "enthusiastic|adjective": [
+      "personal-qualities"
+    ],
+    "pessimistic|adjective": [
+      "personal-qualities"
+    ],
+    "negative|adjective": [
+      "personal-qualities"
+    ],
+    "resilient|adjective": [
+      "personal-qualities"
+    ],
+    "adaptable|adjective": [
+      "personal-qualities"
+    ],
+    "introverted|adjective": [
+      "personal-qualities"
+    ],
+    "extroverted|adjective": [
+      "personal-qualities"
+    ],
+    "reserved|adjective": [
+      "personal-qualities"
+    ],
+    "quiet|adjective": [
+      "personal-qualities"
+    ],
+    "physics|noun": [
+      "physics"
+    ],
+    "energy|noun": [
+      "physics"
+    ],
+    "force|noun": [
+      "physics"
+    ],
+    "motion|noun": [
+      "physics"
+    ],
+    "speed|noun": [
+      "physics"
+    ],
+    "velocity|noun": [
+      "physics"
+    ],
+    "acceleration|noun": [
+      "physics"
+    ],
+    "gravity|noun": [
+      "physics"
+    ],
+    "friction|noun": [
+      "physics"
+    ],
+    "mass|noun": [
+      "physics"
+    ],
+    "weight|noun": [
+      "physics"
+    ],
+    "work|noun": [
+      "physics"
+    ],
+    "power|noun": [
+      "physics"
+    ],
+    "kinetic energy|noun": [
+      "physics"
+    ],
+    "potential energy|noun": [
+      "physics"
+    ],
+    "heat|noun": [
+      "physics"
+    ],
+    "temperature|noun": [
+      "physics"
+    ],
+    "conduction|noun": [
+      "physics"
+    ],
+    "convection|noun": [
+      "physics"
+    ],
+    "radiation|noun": [
+      "physics"
+    ],
+    "electricity|noun": [
+      "physics"
+    ],
+    "current|noun": [
+      "physics"
+    ],
+    "voltage|noun": [
+      "physics"
+    ],
+    "resistance|noun": [
+      "physics"
+    ],
+    "circuit|noun": [
+      "physics"
+    ],
+    "magnet|noun": [
+      "physics"
+    ],
+    "magnetic field|noun": [
+      "physics"
+    ],
+    "wave|noun": [
+      "physics"
+    ],
+    "sound|noun": [
+      "physics"
+    ],
+    "frequency|noun": [
+      "physics"
+    ],
+    "wavelength|noun": [
+      "physics"
+    ],
+    "light|noun": [
+      "physics"
+    ],
+    "reflection|noun": [
+      "physics"
+    ],
+    "refraction|noun": [
+      "physics"
+    ],
+    "lens|noun": [
+      "physics"
+    ],
+    "pressure|noun": [
+      "physics"
+    ],
+    "density|noun": [
+      "physics"
+    ],
+    "buoyancy|noun": [
+      "physics"
+    ],
+    "experiment|noun": [
+      "physics"
+    ],
+    "atom|noun": [
+      "physics"
+    ],
+    "proton|noun": [
+      "physics"
+    ],
+    "electron|noun": [
+      "physics"
+    ],
+    "neutron|noun": [
+      "physics"
+    ],
+    "convergence|noun": [
+      "physics"
+    ],
+    "divergence|noun": [
+      "physics"
+    ],
+    "mind|noun": [
+      "psychology"
+    ],
+    "brain|noun": [
+      "psychology"
+    ],
+    "psyche|noun": [
+      "psychology"
+    ],
+    "neuron|noun": [
+      "psychology"
+    ],
+    "synapse|noun": [
+      "psychology"
+    ],
+    "cortex|noun": [
+      "psychology"
+    ],
+    "amygdala|noun": [
+      "psychology"
+    ],
+    "hippocampus|noun": [
+      "psychology"
+    ],
+    "dopamine|noun": [
+      "psychology"
+    ],
+    "serotonin|noun": [
+      "psychology"
+    ],
+    "cognition|noun": [
+      "psychology"
+    ],
+    "consciousness|noun": [
+      "psychology"
+    ],
+    "awareness|noun": [
+      "psychology"
+    ],
+    "perception|noun": [
+      "psychology"
+    ],
+    "attention|noun": [
+      "psychology"
+    ],
+    "focus|noun": [
+      "psychology"
+    ],
+    "sensation|noun": [
+      "psychology"
+    ],
+    "stimulus|noun": [
+      "psychology"
+    ],
+    "response|noun": [
+      "psychology"
+    ],
+    "arousal|noun": [
+      "psychology"
+    ],
+    "remember|verb": [
+      "psychology"
+    ],
+    "recall|noun": [
+      "psychology"
+    ],
+    "recognition|noun": [
+      "psychology"
+    ],
+    "encoding|noun": [
+      "psychology"
+    ],
+    "retrieval|noun": [
+      "psychology"
+    ],
+    "schema|noun": [
+      "psychology"
+    ],
+    "association|noun": [
+      "psychology"
+    ],
+    "interpretation|noun": [
+      "psychology"
+    ],
+    "evaluation|noun": [
+      "psychology"
+    ],
+    "reasoning|noun": [
+      "psychology"
+    ],
+    "logic|noun": [
+      "psychology"
+    ],
+    "judgment|noun": [
+      "psychology"
+    ],
+    "decision|noun": [
+      "psychology"
+    ],
+    "preference|noun": [
+      "psychology"
+    ],
+    "imagination|noun": [
+      "psychology"
+    ],
+    "insight|noun": [
+      "psychology"
+    ],
+    "heuristic|noun": [
+      "psychology"
+    ],
+    "conditioning|noun": [
+      "psychology"
+    ],
+    "reinforcement|noun": [
+      "psychology"
+    ],
+    "punishment|noun": [
+      "psychology"
+    ],
+    "reward|noun": [
+      "psychology"
+    ],
+    "plasticity|noun": [
+      "psychology"
+    ],
+    "metacognition|noun": [
+      "psychology"
+    ],
+    "motivation|noun": [
+      "psychology"
+    ],
+    "interest|noun": [
+      "psychology"
+    ],
+    "curiosity|noun": [
+      "psychology"
+    ],
+    "willpower|noun": [
+      "psychology"
+    ],
+    "mindset|noun": [
+      "psychology"
+    ],
+    "satisfaction|noun": [
+      "psychology"
+    ],
+    "confidence|noun": [
+      "psychology"
+    ],
+    "self-esteem|noun": [
+      "psychology"
+    ],
+    "self-control|noun": [
+      "psychology"
+    ],
+    "self-awareness|noun": [
+      "psychology"
+    ],
+    "self-image|noun": [
+      "psychology"
+    ],
+    "self-concept|noun": [
+      "psychology"
+    ],
+    "personality|noun": [
+      "psychology"
+    ],
+    "temperament|noun": [
+      "psychology"
+    ],
+    "introversion|noun": [
+      "psychology"
+    ],
+    "extraversion|noun": [
+      "psychology"
+    ],
+    "openness|noun": [
+      "psychology"
+    ],
+    "conscientiousness|noun": [
+      "psychology"
+    ],
+    "agreeableness|noun": [
+      "psychology"
+    ],
+    "neuroticism|noun": [
+      "psychology"
+    ],
+    "behavior|noun": [
+      "psychology"
+    ],
+    "impulse|noun": [
+      "psychology"
+    ],
+    "avoidance|noun": [
+      "psychology"
+    ],
+    "coping|noun": [
+      "psychology"
+    ],
+    "distraction|noun": [
+      "psychology"
+    ],
+    "rationalization|noun": [
+      "psychology"
+    ],
+    "denial|noun": [
+      "psychology"
+    ],
+    "projection|noun": [
+      "psychology"
+    ],
+    "subconscious|noun": [
+      "psychology"
+    ],
+    "unconscious|noun": [
+      "psychology"
+    ],
+    "obsession|noun": [
+      "psychology"
+    ],
+    "compulsion|noun": [
+      "psychology"
+    ],
+    "trauma|noun": [
+      "psychology"
+    ],
+    "phobia|noun": [
+      "psychology"
+    ],
+    "delusion|noun": [
+      "psychology"
+    ],
+    "hallucination|noun": [
+      "psychology"
+    ],
+    "mania|noun": [
+      "psychology"
+    ],
+    "addiction|noun": [
+      "psychology"
+    ],
+    "dependency|noun": [
+      "psychology"
+    ],
+    "sanity|noun": [
+      "psychology"
+    ],
+    "worry|noun": [
+      "psychology"
+    ],
+    "frustration|noun": [
+      "psychology"
+    ],
+    "irritability|noun": [
+      "psychology"
+    ],
+    "apathy|noun": [
+      "psychology"
+    ],
+    "jealousy|noun": [
+      "psychology"
+    ],
+    "envy|noun": [
+      "psychology"
+    ],
+    "optimism|noun": [
+      "psychology"
+    ],
+    "pessimism|noun": [
+      "psychology"
+    ],
+    "grief|noun": [
+      "psychology"
+    ],
+    "shame|noun": [
+      "psychology"
+    ],
+    "laboratory|noun": [
+      "science"
+    ],
+    "research|noun": [
+      "science"
+    ],
+    "scientist|noun": [
+      "science"
+    ],
+    "scientific|adjective": [
+      "science"
+    ],
+    "science|noun": [
+      "science"
+    ],
+    "observation|noun": [
+      "science"
+    ],
+    "observe|verb": [
+      "science"
+    ],
+    "observed|adjective": [
+      "science"
+    ],
+    "observing|verb": [
+      "science"
+    ],
+    "hypothesis|noun": [
+      "science"
+    ],
+    "theory|noun": [
+      "science"
+    ],
+    "evidence|noun": [
+      "science"
+    ],
+    "analysis|noun": [
+      "science"
+    ],
+    "analyze|verb": [
+      "science"
+    ],
+    "conclusion|noun": [
+      "science"
+    ],
+    "method|noun": [
+      "science"
+    ],
+    "methodology|noun": [
+      "science"
+    ],
+    "process|noun": [
+      "science"
+    ],
+    "principle|noun": [
+      "science"
+    ],
+    "sample|noun": [
+      "science"
+    ],
+    "sampling|noun": [
+      "science"
+    ],
+    "measurement|noun": [
+      "science"
+    ],
+    "measure|verb": [
+      "science"
+    ],
+    "predict|verb": [
+      "science"
+    ],
+    "prediction|noun": [
+      "science"
+    ],
+    "accuracy|noun": [
+      "science"
+    ],
+    "precision|noun": [
+      "science"
+    ],
+    "classification|noun": [
+      "science"
+    ],
+    "classify|verb": [
+      "science"
+    ],
+    "investigation|noun": [
+      "science"
+    ],
+    "investigate|verb": [
+      "science"
+    ],
+    "phenomenon|noun": [
+      "science"
+    ],
+    "survey|noun": [
+      "science"
+    ],
+    "trial|noun": [
+      "science"
+    ],
+    "researcher|noun": [
+      "science"
+    ],
+    "replication|noun": [
+      "science"
+    ],
+    "replicate|verb": [
+      "science"
+    ],
+    "valid|adjective": [
+      "science"
+    ],
+    "validity|noun": [
+      "science"
+    ],
+    "objective|adjective": [
+      "science"
+    ],
+    "subjective|adjective": [
+      "science"
+    ],
+    "bias|noun": [
+      "science"
+    ],
+    "uncertainty|noun": [
+      "science"
+    ],
+    "correlation|noun": [
+      "science"
+    ],
+    "causation|noun": [
+      "science"
+    ],
+    "model|noun": [
+      "science"
+    ],
+    "simulation|noun": [
+      "science"
+    ],
+    "discovery|noun": [
+      "science"
+    ],
+    "innovation|noun": [
+      "science"
+    ],
+    "invention|noun": [
+      "science"
+    ],
+    "ethics|noun": [
+      "science"
+    ],
+    "safety|noun": [
+      "science"
+    ],
+    "procedure|noun": [
+      "science"
+    ],
+    "breakthrough|noun": [
+      "science"
+    ],
+    "finding|noun": [
+      "science"
+    ],
+    "journal|noun": [
+      "science"
+    ],
+    "publication|noun": [
+      "science"
+    ],
+    "equipment|noun": [
+      "science"
+    ],
+    "instrument|noun": [
+      "science"
+    ],
+    "apparatus|noun": [
+      "science"
+    ],
+    "experimenter|noun": [
+      "science"
+    ],
+    "universe|noun": [
+      "space"
+    ],
+    "cosmos|noun": [
+      "space"
+    ],
+    "astronomy|noun": [
+      "space"
+    ],
+    "astronomer|noun": [
+      "space"
+    ],
+    "celestial|adjective": [
+      "space"
+    ],
+    "extraterrestrial|adjective": [
+      "space"
+    ],
+    "planet|noun": [
+      "space"
+    ],
+    "star|noun": [
+      "space"
+    ],
+    "moon|noun": [
+      "space"
+    ],
+    "sun|noun": [
+      "space"
+    ],
+    "galaxy|noun": [
+      "space"
+    ],
+    "nebula|noun": [
+      "space"
+    ],
+    "asteroid|noun": [
+      "space"
+    ],
+    "comet|noun": [
+      "space"
+    ],
+    "meteor|noun": [
+      "space"
+    ],
+    "meteorite|noun": [
+      "space"
+    ],
+    "dwarf planet|noun": [
+      "space"
+    ],
+    "satellite|noun": [
+      "space"
+    ],
+    "constellation|noun": [
+      "space"
+    ],
+    "solar system|noun": [
+      "space"
+    ],
+    "milky way|noun": [
+      "space"
+    ],
+    "orbit|noun": [
+      "space"
+    ],
+    "orbital|adjective": [
+      "space"
+    ],
+    "rotate|verb": [
+      "space"
+    ],
+    "rotation|noun": [
+      "space"
+    ],
+    "revolve|verb": [
+      "space"
+    ],
+    "orbital period|noun": [
+      "space"
+    ],
+    "trajectory|noun": [
+      "space"
+    ],
+    "eclipse|noun": [
+      "space"
+    ],
+    "lunar eclipse|noun": [
+      "space"
+    ],
+    "solar eclipse|noun": [
+      "space"
+    ],
+    "meteor shower|noun": [
+      "space"
+    ],
+    "supernova|noun": [
+      "space"
+    ],
+    "black hole|noun": [
+      "space"
+    ],
+    "event horizon|noun": [
+      "space"
+    ],
+    "singularity|noun": [
+      "space"
+    ],
+    "dark matter|noun": [
+      "space"
+    ],
+    "dark energy|noun": [
+      "space"
+    ],
+    "cosmic dust|noun": [
+      "space"
+    ],
+    "spacecraft|noun": [
+      "space"
+    ],
+    "rocket|noun": [
+      "space"
+    ],
+    "astronaut|noun": [
+      "space"
+    ],
+    "cosmonaut|noun": [
+      "space"
+    ],
+    "space station|noun": [
+      "space"
+    ],
+    "spacewalk|noun": [
+      "space"
+    ],
+    "mission|noun": [
+      "space"
+    ],
+    "launch|noun": [
+      "space"
+    ],
+    "landing|noun": [
+      "space"
+    ],
+    "probe|noun": [
+      "space"
+    ],
+    "rover|noun": [
+      "space"
+    ],
+    "telescope|noun": [
+      "space"
+    ],
+    "observatory|noun": [
+      "space"
+    ],
+    "space suit|noun": [
+      "space"
+    ],
+    "capsule|noun": [
+      "space"
+    ],
+    "module|noun": [
+      "space"
+    ],
+    "planetarium|noun": [
+      "space"
+    ],
+    "martian|adjective": [
+      "space"
+    ],
+    "venusian|adjective": [
+      "space"
+    ],
+    "jovian|adjective": [
+      "space"
+    ],
+    "terrestrial planet|noun": [
+      "space"
+    ],
+    "gas giant|noun": [
+      "space"
+    ],
+    "exoplanet|noun": [
+      "space"
+    ],
+    "crater|noun": [
+      "space"
+    ],
+    "lunar|adjective": [
+      "space"
+    ],
+    "solar|adjective": [
+      "space"
+    ],
+    "interstellar|adjective": [
+      "space"
+    ],
+    "interplanetary|adjective": [
+      "space"
+    ],
+    "deep space|noun": [
+      "space"
+    ],
+    "light-year|noun": [
+      "space"
+    ],
+    "astronomical unit|noun": [
+      "space"
+    ],
+    "parsec|noun": [
+      "space"
+    ],
+    "cosmic|adjective": [
+      "space"
+    ],
+    "weightlessness|noun": [
+      "space"
+    ],
+    "microgravity|noun": [
+      "space"
+    ],
+    "void|noun": [
+      "space"
+    ],
+    "habitable|adjective": [
+      "space"
+    ],
+    "athlete|noun": [
+      "sports"
+    ],
+    "athletics|noun": [
+      "sports"
+    ],
+    "championship|noun": [
+      "sports"
+    ],
+    "competition|noun": [
+      "sports"
+    ],
+    "competitor|noun": [
+      "sports"
+    ],
+    "sportsmanship|noun": [
+      "sports"
+    ],
+    "tournament|noun": [
+      "sports"
+    ],
+    "league|noun": [
+      "sports"
+    ],
+    "fixture|noun": [
+      "sports"
+    ],
+    "season ticket|noun": [
+      "sports"
+    ],
+    "fair play|noun": [
+      "sports"
+    ],
+    "team spirit|noun": [
+      "sports"
+    ],
+    "morale|noun": [
+      "sports"
+    ],
+    "stadium|noun": [
+      "sports"
+    ],
+    "arena|noun": [
+      "sports"
+    ],
+    "pitch|noun": [
+      "sports"
+    ],
+    "court|noun": [
+      "sports"
+    ],
+    "track|noun": [
+      "sports"
+    ],
+    "home ground|noun": [
+      "sports"
+    ],
+    "home advantage|noun": [
+      "sports"
+    ],
+    "away game|noun": [
+      "sports"
+    ],
+    "scoreboard|noun": [
+      "sports"
+    ],
+    "field event|noun": [
+      "sports"
+    ],
+    "track event|noun": [
+      "sports"
+    ],
+    "marathon|noun": [
+      "sports"
+    ],
+    "sprint|noun": [
+      "sports"
+    ],
+    "relay race|noun": [
+      "sports"
+    ],
+    "hurdle|noun": [
+      "sports"
+    ],
+    "long jump|noun": [
+      "sports"
+    ],
+    "high jump|noun": [
+      "sports"
+    ],
+    "pole vault|noun": [
+      "sports"
+    ],
+    "javelin|noun": [
+      "sports"
+    ],
+    "discus|noun": [
+      "sports"
+    ],
+    "shot put|noun": [
+      "sports"
+    ],
+    "triathlon|noun": [
+      "sports"
+    ],
+    "decathlon|noun": [
+      "sports"
+    ],
+    "goalkeeper|noun": [
+      "sports"
+    ],
+    "striker|noun": [
+      "sports"
+    ],
+    "midfielder|noun": [
+      "sports"
+    ],
+    "defender|noun": [
+      "sports"
+    ],
+    "substitute|noun": [
+      "sports"
+    ],
+    "referee|noun": [
+      "sports"
+    ],
+    "foul|noun": [
+      "sports"
+    ],
+    "penalty|noun": [
+      "sports"
+    ],
+    "free kick|noun": [
+      "sports"
+    ],
+    "corner kick|noun": [
+      "sports"
+    ],
+    "offside|noun": [
+      "sports"
+    ],
+    "yellow card|noun": [
+      "sports"
+    ],
+    "red card|noun": [
+      "sports"
+    ],
+    "hat trick|noun": [
+      "sports"
+    ],
+    "own goal|noun": [
+      "sports"
+    ],
+    "clean sheet|noun": [
+      "sports"
+    ],
+    "kickoff|noun": [
+      "sports"
+    ],
+    "halftime|noun": [
+      "sports"
+    ],
+    "extra time|noun": [
+      "sports"
+    ],
+    "stoppage time|noun": [
+      "sports"
+    ],
+    "formation|noun": [
+      "sports"
+    ],
+    "counterattack|noun": [
+      "sports"
+    ],
+    "possession|noun": [
+      "sports"
+    ],
+    "assist|noun": [
+      "sports"
+    ],
+    "relegation|noun": [
+      "sports"
+    ],
+    "promotion|noun": [
+      "sports"
+    ],
+    "derby|noun": [
+      "sports"
+    ],
+    "rivalry|noun": [
+      "sports"
+    ],
+    "ace|noun": [
+      "sports"
+    ],
+    "deuce|noun": [
+      "sports"
+    ],
+    "match point|noun": [
+      "sports"
+    ],
+    "break point|noun": [
+      "sports"
+    ],
+    "volley|noun": [
+      "sports"
+    ],
+    "backhand|noun": [
+      "sports"
+    ],
+    "forehand|noun": [
+      "sports"
+    ],
+    "rally|noun": [
+      "sports"
+    ],
+    "smash|noun": [
+      "sports"
+    ],
+    "lob|noun": [
+      "sports"
+    ],
+    "drop shot|noun": [
+      "sports"
+    ],
+    "singles|noun": [
+      "sports"
+    ],
+    "doubles|noun": [
+      "sports"
+    ],
+    "grand slam|noun": [
+      "sports"
+    ],
+    "tiebreak|noun": [
+      "sports"
+    ],
+    "seeding|noun": [
+      "sports"
+    ],
+    "wild card|noun": [
+      "sports"
+    ],
+    "head coach|noun": [
+      "sports"
+    ],
+    "assistant coach|noun": [
+      "sports"
+    ],
+    "fitness trainer|noun": [
+      "sports"
+    ],
+    "physiotherapist|noun": [
+      "sports"
+    ],
+    "cool-down|noun": [
+      "sports"
+    ],
+    "stretching|noun": [
+      "sports"
+    ],
+    "stamina|noun": [
+      "sports"
+    ],
+    "agility|noun": [
+      "sports"
+    ],
+    "interval training|noun": [
+      "sports"
+    ],
+    "circuit training|noun": [
+      "sports"
+    ],
+    "tactics|noun": [
+      "sports"
+    ],
+    "strategy|noun": [
+      "sports"
+    ],
+    "lineup|noun": [
+      "sports"
+    ],
+    "captain|noun": [
+      "sports"
+    ],
+    "medal|noun": [
+      "sports"
+    ],
+    "gold medal|noun": [
+      "sports"
+    ],
+    "silver medal|noun": [
+      "sports"
+    ],
+    "bronze medal|noun": [
+      "sports"
+    ],
+    "podium|noun": [
+      "sports"
+    ],
+    "record-breaking|adjective": [
+      "sports"
+    ],
+    "personal best|noun": [
+      "sports"
+    ],
+    "world record|noun": [
+      "sports"
+    ],
+    "comeback|noun": [
+      "sports"
+    ],
+    "underdog|noun": [
+      "sports"
+    ],
+    "dark horse|noun": [
+      "sports"
+    ],
+    "playoff|noun": [
+      "sports"
+    ],
+    "quarterfinal|noun": [
+      "sports"
+    ],
+    "semifinal|noun": [
+      "sports"
+    ],
+    "scoreline|noun": [
+      "sports"
+    ],
+    "standings|noun": [
+      "sports"
+    ],
+    "spectator|noun": [
+      "sports"
+    ],
+    "supporter|noun": [
+      "sports"
+    ],
+    "cheer|verb": [
+      "sports"
+    ],
+    "chant|noun": [
+      "sports"
+    ],
+    "banner|noun": [
+      "sports"
+    ],
+    "mascot|noun": [
+      "sports"
+    ],
+    "doping|noun": [
+      "sports"
+    ],
+    "anti-doping|noun": [
+      "sports"
+    ],
+    "disqualification|noun": [
+      "sports"
+    ],
+    "suspension|noun": [
+      "sports"
+    ],
+    "point deduction|noun": [
+      "sports"
+    ],
+    "unsportsmanlike conduct|noun": [
+      "sports"
+    ],
+    "transfer window|noun": [
+      "sports"
+    ],
+    "transfer fee|noun": [
+      "sports"
+    ],
+    "contract extension|noun": [
+      "sports"
+    ],
+    "beauty|noun": [
+      "test-samples"
+    ],
+    "beautify|verb": [
+      "test-samples"
+    ],
+    "beautiful|adjective": [
+      "test-samples"
+    ],
+    "beautifully|adverb": [
+      "test-samples"
+    ],
+    "write|verb": [
+      "test-samples",
+      "verbs-communication"
+    ],
+    "itinerary|noun": [
+      "travel"
+    ],
+    "destination|noun": [
+      "travel"
+    ],
+    "travel agency|noun": [
+      "travel"
+    ],
+    "tour operator|noun": [
+      "travel"
+    ],
+    "package tour|noun": [
+      "travel"
+    ],
+    "guided tour|noun": [
+      "travel"
+    ],
+    "self-guided tour|noun": [
+      "travel"
+    ],
+    "travel insurance|noun": [
+      "travel"
+    ],
+    "round trip|noun": [
+      "travel"
+    ],
+    "one-way ticket|noun": [
+      "travel"
+    ],
+    "bucket list|noun": [
+      "travel"
+    ],
+    "wanderlust|noun": [
+      "travel"
+    ],
+    "departure|noun": [
+      "travel"
+    ],
+    "arrival|noun": [
+      "travel"
+    ],
+    "boarding pass|noun": [
+      "travel"
+    ],
+    "check-in|noun": [
+      "travel"
+    ],
+    "layover|noun": [
+      "travel"
+    ],
+    "stopover|noun": [
+      "travel"
+    ],
+    "transit|noun": [
+      "travel"
+    ],
+    "connecting flight|noun": [
+      "travel"
+    ],
+    "direct flight|noun": [
+      "travel"
+    ],
+    "long-haul flight|noun": [
+      "travel"
+    ],
+    "jet lag|noun": [
+      "travel"
+    ],
+    "turbulence|noun": [
+      "travel"
+    ],
+    "cabin crew|noun": [
+      "travel"
+    ],
+    "terminal|noun": [
+      "travel"
+    ],
+    "baggage claim|noun": [
+      "travel"
+    ],
+    "carry-on luggage|noun": [
+      "travel"
+    ],
+    "aisle seat|noun": [
+      "travel"
+    ],
+    "window seat|noun": [
+      "travel"
+    ],
+    "economy class|noun": [
+      "travel"
+    ],
+    "business class|noun": [
+      "travel"
+    ],
+    "passport|noun": [
+      "travel"
+    ],
+    "visa|noun": [
+      "travel"
+    ],
+    "customs|noun": [
+      "travel"
+    ],
+    "border control|noun": [
+      "travel"
+    ],
+    "duty-free|adjective": [
+      "travel"
+    ],
+    "currency exchange|noun": [
+      "travel"
+    ],
+    "exchange rate|noun": [
+      "travel"
+    ],
+    "local currency|noun": [
+      "travel"
+    ],
+    "travel adapter|noun": [
+      "travel"
+    ],
+    "accommodation|noun": [
+      "travel"
+    ],
+    "reservation|noun": [
+      "travel"
+    ],
+    "vacancy|noun": [
+      "travel"
+    ],
+    "fully booked|adjective": [
+      "travel"
+    ],
+    "hostel|noun": [
+      "travel"
+    ],
+    "guesthouse|noun": [
+      "travel"
+    ],
+    "bed and breakfast|noun": [
+      "travel"
+    ],
+    "resort|noun": [
+      "travel"
+    ],
+    "all-inclusive|adjective": [
+      "travel"
+    ],
+    "boutique hotel|noun": [
+      "travel"
+    ],
+    "front desk|noun": [
+      "travel"
+    ],
+    "concierge|noun": [
+      "travel"
+    ],
+    "room service|noun": [
+      "travel"
+    ],
+    "check-out|noun": [
+      "travel"
+    ],
+    "sightseeing|noun": [
+      "travel"
+    ],
+    "tourist attraction|noun": [
+      "travel"
+    ],
+    "heritage site|noun": [
+      "travel"
+    ],
+    "landmark|noun": [
+      "travel"
+    ],
+    "ruins|noun": [
+      "travel"
+    ],
+    "archaeological site|noun": [
+      "travel"
+    ],
+    "national park|noun": [
+      "travel"
+    ],
+    "nature reserve|noun": [
+      "travel"
+    ],
+    "scenic route|noun": [
+      "travel"
+    ],
+    "observation deck|noun": [
+      "travel"
+    ],
+    "souvenir|noun": [
+      "travel"
+    ],
+    "cruise|noun": [
+      "travel"
+    ],
+    "cruise ship|noun": [
+      "travel"
+    ],
+    "ferry|noun": [
+      "travel"
+    ],
+    "harbor|noun": [
+      "travel"
+    ],
+    "port|noun": [
+      "travel"
+    ],
+    "dock|noun": [
+      "travel"
+    ],
+    "pier|noun": [
+      "travel"
+    ],
+    "embark|verb": [
+      "travel"
+    ],
+    "disembark|verb": [
+      "travel"
+    ],
+    "shore excursion|noun": [
+      "travel"
+    ],
+    "seasickness|noun": [
+      "travel"
+    ],
+    "voyage|noun": [
+      "travel"
+    ],
+    "backpacking|noun": [
+      "travel"
+    ],
+    "backpacker|noun": [
+      "travel"
+    ],
+    "trekking|noun": [
+      "travel"
+    ],
+    "hiking trail|noun": [
+      "travel"
+    ],
+    "campsite|noun": [
+      "travel"
+    ],
+    "camping gear|noun": [
+      "travel"
+    ],
+    "expedition|noun": [
+      "travel"
+    ],
+    "summit|noun": [
+      "travel"
+    ],
+    "base camp|noun": [
+      "travel"
+    ],
+    "wildlife|noun": [
+      "travel"
+    ],
+    "safari|noun": [
+      "travel"
+    ],
+    "off the beaten track|idiom": [
+      "travel"
+    ],
+    "hidden gem|noun": [
+      "travel"
+    ],
+    "ecotourism|noun": [
+      "travel"
+    ],
+    "sustainable tourism|noun": [
+      "travel"
+    ],
+    "overtourism|noun": [
+      "travel"
+    ],
+    "carbon footprint|noun": [
+      "travel"
+    ],
+    "culture shock|noun": [
+      "travel"
+    ],
+    "homesickness|noun": [
+      "travel"
+    ],
+    "public transport|noun": [
+      "travel"
+    ],
+    "metro|noun": [
+      "travel"
+    ],
+    "tram|noun": [
+      "travel"
+    ],
+    "cable car|noun": [
+      "travel"
+    ],
+    "rental car|noun": [
+      "travel"
+    ],
+    "campervan|noun": [
+      "travel"
+    ],
+    "road trip|noun": [
+      "travel"
+    ],
+    "hitchhiking|noun": [
+      "travel"
+    ],
+    "rickshaw|noun": [
+      "travel"
+    ],
+    "tuk-tuk|noun": [
+      "travel"
+    ],
+    "funicular|noun": [
+      "travel"
+    ],
+    "digital nomad|noun": [
+      "travel"
+    ],
+    "gap year|noun": [
+      "travel"
+    ],
+    "sabbatical|noun": [
+      "travel"
+    ],
+    "travel blog|noun": [
+      "travel"
+    ],
+    "travel vlog|noun": [
+      "travel"
+    ],
+    "phrase book|noun": [
+      "travel"
+    ],
+    "cling|verb": [
+      "verbs-attachment-connection"
+    ],
+    "creep|verb": [
+      "verbs-attachment-connection"
+    ],
+    "be|verb": [
+      "verbs-basic-essential"
+    ],
+    "have|verb": [
+      "verbs-basic-essential"
+    ],
+    "do|verb": [
+      "verbs-basic-essential"
+    ],
+    "get|verb": [
+      "verbs-basic-essential"
+    ],
+    "make|verb": [
+      "verbs-basic-essential"
+    ],
+    "go|verb": [
+      "verbs-basic-essential"
+    ],
+    "take|verb": [
+      "verbs-basic-essential"
+    ],
+    "give|verb": [
+      "verbs-basic-essential"
+    ],
+    "keep|verb": [
+      "verbs-basic-essential"
+    ],
+    "hold|verb": [
+      "verbs-basic-essential"
+    ],
+    "leave|verb": [
+      "verbs-basic-essential"
+    ],
+    "sit|verb": [
+      "verbs-body-position"
+    ],
+    "stand|verb": [
+      "verbs-body-position"
+    ],
+    "lie|verb": [
+      "verbs-body-position"
+    ],
+    "kneel|verb": [
+      "verbs-body-position"
+    ],
+    "hang|verb": [
+      "verbs-body-position"
+    ],
+    "sleep|verb": [
+      "verbs-body-position"
+    ],
+    "wake|verb": [
+      "verbs-body-position"
+    ],
+    "freeze|verb": [
+      "verbs-change-transformation"
+    ],
+    "shrink|verb": [
+      "verbs-change-transformation"
+    ],
+    "sink|verb": [
+      "verbs-change-transformation"
+    ],
+    "spring|verb": [
+      "verbs-change-transformation"
+    ],
+    "bind|verb": [
+      "verbs-change-transformation"
+    ],
+    "mow|verb": [
+      "verbs-cleaning-maintenance"
+    ],
+    "sow|verb": [
+      "verbs-cleaning-maintenance"
+    ],
+    "dig|verb": [
+      "verbs-cleaning-maintenance"
+    ],
+    "grind|verb": [
+      "verbs-cleaning-maintenance"
+    ],
+    "wear|verb": [
+      "verbs-clothing-appearance"
+    ],
+    "think|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "know|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "understand|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "forget|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "choose|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "begin|verb": [
+      "verbs-cognition-thinking"
+    ],
+    "say|verb": [
+      "verbs-communication"
+    ],
+    "tell|verb": [
+      "verbs-communication"
+    ],
+    "speak|verb": [
+      "verbs-communication"
+    ],
+    "mean|verb": [
+      "verbs-communication"
+    ],
+    "build|verb": [
+      "verbs-creation-building"
+    ],
+    "draw|verb": [
+      "verbs-creation-building"
+    ],
+    "weave|verb": [
+      "verbs-creation-building"
+    ],
+    "sew|verb": [
+      "verbs-creation-building"
+    ],
+    "breed|verb": [
+      "verbs-creation-building"
+    ],
+    "grow|verb": [
+      "verbs-creation-building"
+    ],
+    "tear|verb": [
+      "verbs-cutting-breaking"
+    ],
+    "break|verb": [
+      "verbs-cutting-breaking"
+    ],
+    "bend|verb": [
+      "verbs-cutting-breaking"
+    ],
+    "wind|verb": [
+      "verbs-cutting-breaking"
+    ],
+    "burn|verb": [
+      "verbs-destruction-damage"
+    ],
+    "spoil|verb": [
+      "verbs-destruction-damage"
+    ],
+    "bleed|verb": [
+      "verbs-destruction-damage"
+    ],
+    "eat|verb": [
+      "verbs-eating-drinking"
+    ],
+    "drink|verb": [
+      "verbs-eating-drinking"
+    ],
+    "feed|verb": [
+      "verbs-eating-drinking"
+    ],
+    "bite|verb": [
+      "verbs-eating-drinking"
+    ],
+    "spit|verb": [
+      "verbs-eating-drinking"
+    ],
+    "fight|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "steal|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "forbid|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "forgive|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "swear|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "win|verb": [
+      "verbs-fighting-conflict"
+    ],
+    "fly|verb": [
+      "verbs-movement-travel"
+    ],
+    "ride|verb": [
+      "verbs-movement-travel"
+    ],
+    "swim|verb": [
+      "verbs-movement-travel"
+    ],
+    "dive|verb": [
+      "verbs-movement-travel"
+    ],
+    "fall|verb": [
+      "verbs-movement-travel"
+    ],
+    "rise|verb": [
+      "verbs-movement-travel"
+    ],
+    "leap|verb": [
+      "verbs-movement-travel"
+    ],
+    "slide|verb": [
+      "verbs-movement-travel"
+    ],
+    "flee|verb": [
+      "verbs-movement-travel"
+    ],
+    "withdraw|verb": [
+      "verbs-movement-travel"
+    ],
+    "see|verb": [
+      "verbs-perception-senses"
+    ],
+    "hear|verb": [
+      "verbs-perception-senses"
+    ],
+    "feel|verb": [
+      "verbs-perception-senses"
+    ],
+    "show|verb": [
+      "verbs-perception-senses"
+    ],
+    "hide|verb": [
+      "verbs-perception-senses"
+    ],
+    "shine|verb": [
+      "verbs-perception-senses"
+    ],
+    "light|verb": [
+      "verbs-perception-senses"
+    ],
+    "strike|verb": [
+      "verbs-physical-actions"
+    ],
+    "throw|verb": [
+      "verbs-physical-actions"
+    ],
+    "catch|verb": [
+      "verbs-physical-actions"
+    ],
+    "shoot|verb": [
+      "verbs-physical-actions"
+    ],
+    "fling|verb": [
+      "verbs-physical-actions"
+    ],
+    "swing|verb": [
+      "verbs-physical-actions"
+    ],
+    "shake|verb": [
+      "verbs-physical-actions"
+    ],
+    "blow|verb": [
+      "verbs-physical-actions"
+    ],
+    "buy|verb": [
+      "verbs-possession-transaction"
+    ],
+    "pay|verb": [
+      "verbs-possession-transaction"
+    ],
+    "lend|verb": [
+      "verbs-possession-transaction"
+    ],
+    "spend|verb": [
+      "verbs-possession-transaction"
+    ],
+    "deal|verb": [
+      "verbs-possession-transaction"
+    ],
+    "send|verb": [
+      "verbs-possession-transaction"
+    ],
+    "bring|verb": [
+      "verbs-possession-transaction"
+    ],
+    "bear|verb": [
+      "verbs-possession-transaction"
+    ],
+    "find|verb": [
+      "verbs-searching-finding"
+    ],
+    "seek|verb": [
+      "verbs-searching-finding"
+    ],
+    "lose|verb": [
+      "verbs-searching-finding"
+    ],
+    "lead|verb": [
+      "verbs-searching-finding"
+    ],
+    "sing|verb": [
+      "verbs-sound-music"
+    ],
+    "ring|verb": [
+      "verbs-sound-music"
+    ]
+  }
+}
