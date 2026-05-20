@@ -3,20 +3,23 @@
 // ============================================
 // Quản lý vòng đời update của Service Worker phía main thread:
 //   - Đăng ký SW
+//   - Cleanup FCM SW cũ nếu nó đang chiếm scope / (bug từ bản trước)
 //   - Định kỳ kiểm tra bản mới
-//   - So sánh APP_VERSION giữa SW cũ và mới (tránh false positive khi
-//     browser nghĩ là có update nhưng APP_VERSION thực không đổi —
-//     ví dụ Vercel CDN serve khác bytes do whitespace / edge node khác nhau)
+//   - So sánh APP_VERSION giữa SW cũ và mới (tránh false positive)
 //   - Hiển thị toast "Có bản mới — Tải lại" CHỈ khi version thực sự đổi
 //   - Reload sau khi user xác nhận
 //
-// Dùng kèm với public/sw.js (đã hỗ trợ message {type:'SKIP_WAITING'}
+// Dùng kèm với public/sw.js (hỗ trợ message {type:'SKIP_WAITING'}
 // và {type:'GET_VERSION'}).
+//
+// QUAN TRỌNG: KHÔNG register firebase-messaging-sw.js ở đây!
+// Firebase Messaging SDK tự register nó với scope riêng
+// (/firebase-cloud-messaging-push-scope) khi gọi getToken().
+// Register thủ công tại scope / sẽ THAY THẾ main SW → phá GET_VERSION.
 
 const SwUpdate = {
     // Cấu hình
     SW_URL: '/sw.js',
-    FCM_SW_URL: '/firebase-messaging-sw.js',
     CHECK_INTERVAL_MS: 60 * 60 * 1000, // 60 phút
     VERSION_QUERY_TIMEOUT_MS: 2000,
 
@@ -25,7 +28,7 @@ const SwUpdate = {
 
     /**
      * Khởi tạo: đăng ký SW + thiết lập listeners.
-     * Nên gọi một lần sau khi DOM ready (App.init).
+     * Nên gọi một lần sau khi DOM ready.
      */
     init() {
         if (!('serviceWorker' in navigator)) {
@@ -41,7 +44,10 @@ const SwUpdate = {
             window.location.reload();
         });
 
-        // Đăng ký main SW
+        // Cleanup: unregister FCM SW cũ nếu nó đang chiếm scope / (bug từ bản trước).
+        this._cleanupStaleRegistrations();
+
+        // Đăng ký main SW (scope /)
         navigator.serviceWorker.register(this.SW_URL)
             .then((reg) => {
                 console.log('[SwUpdate] SW registered, scope:', reg.scope);
@@ -52,18 +58,38 @@ const SwUpdate = {
             .catch((err) => {
                 console.error('[SwUpdate] SW registration failed:', err);
             });
+    },
 
-        // Đăng ký FCM SW (cho push notifications) — không quản update flow
-        navigator.serviceWorker.register(this.FCM_SW_URL)
-            .then((reg) => console.log('[SwUpdate] FCM SW registered, scope:', reg.scope))
-            .catch((err) => console.error('[SwUpdate] FCM SW registration failed:', err));
+    /**
+     * Cleanup: tìm và unregister bất kỳ SW nào đăng ký tại scope / mà KHÔNG phải sw.js.
+     * Đây là hậu quả của bug cũ (register firebase-messaging-sw.js tại scope /).
+     */
+    async _cleanupStaleRegistrations() {
+        try {
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            for (const reg of registrations) {
+                // Chỉ xử lý root scope
+                const scopeUrl = new URL(reg.scope);
+                if (scopeUrl.pathname !== '/') continue;
+
+                // Check active SW script URL — nếu là firebase-messaging-sw.js → unregister
+                const activeSw = reg.active || reg.waiting || reg.installing;
+                if (activeSw && activeSw.scriptURL && activeSw.scriptURL.includes('firebase-messaging-sw')) {
+                    console.warn('[SwUpdate] Found stale FCM SW at root scope - unregistering:', activeSw.scriptURL);
+                    await reg.unregister();
+                    console.log('[SwUpdate] Stale FCM SW unregistered successfully');
+                }
+            }
+        } catch (err) {
+            console.debug('[SwUpdate] Cleanup error (non-critical):', err.message);
+        }
     },
 
     /**
      * Xử lý 1 SW registration: detect waiting / installing.
      */
     _handleRegistration(reg) {
-        // Trường hợp: load page và đã có SW waiting sẵn (deploy giữa lúc user offline rồi vào lại)
+        // Trường hợp: load page và đã có SW waiting sẵn
         if (reg.waiting && navigator.serviceWorker.controller) {
             this._maybeShowUpdateToast(reg);
         }
@@ -76,9 +102,6 @@ const SwUpdate = {
 
             newSw.addEventListener('statechange', () => {
                 console.log('[SwUpdate] New SW state:', newSw.state);
-                // Khi cài xong và đã có controller cũ → đây CÓ THỂ là update.
-                // Cần verify bằng cách so APP_VERSION trước khi show toast,
-                // tránh false positive khi browser thấy bytes khác nhưng version giống.
                 if (newSw.state === 'installed' && navigator.serviceWorker.controller) {
                     this._maybeShowUpdateToast(reg);
                 }
@@ -90,21 +113,18 @@ const SwUpdate = {
      * Định kỳ check update khi tab visible.
      */
     _setupAutoCheck(reg) {
-        // Check ngay khi user quay lại tab
         document.addEventListener('visibilitychange', () => {
             if (document.visibilityState === 'visible') {
                 this._checkForUpdate(reg);
             }
         });
 
-        // Check định kỳ
         setInterval(() => {
             if (document.visibilityState === 'visible') {
                 this._checkForUpdate(reg);
             }
         }, this.CHECK_INTERVAL_MS);
 
-        // Check khi browser back online
         window.addEventListener('online', () => {
             this._checkForUpdate(reg);
         });
@@ -113,7 +133,6 @@ const SwUpdate = {
     _checkForUpdate(reg) {
         if (!reg) return;
         reg.update().catch((err) => {
-            // update() có thể fail khi offline - không phải lỗi nghiêm trọng
             console.debug('[SwUpdate] update() failed:', err.message);
         });
     },
@@ -142,15 +161,12 @@ const SwUpdate = {
 
     /**
      * Show toast NẾU SW mới có APP_VERSION khác SW cũ.
-     * Nếu version giống → đây là false positive (Vercel CDN bytes khác
-     * nhưng nội dung không đổi) → silent skip.
      */
     async _maybeShowUpdateToast(reg) {
         const newSw = reg.waiting || reg.installing;
         const oldSw = navigator.serviceWorker.controller;
 
         if (!newSw || !oldSw) {
-            // Không đủ điều kiện, fallback show toast
             this._showUpdateToast(reg);
             return;
         }
@@ -162,8 +178,7 @@ const SwUpdate = {
 
         console.log(`[SwUpdate] Version check: old=${oldVer || '?'} new=${newVer || '?'}`);
 
-        // Trường hợp 1: cả hai trả version GIỐNG NHAU → false positive (CDN bytes diff)
-        // → silent skip + auto activate SW mới để dọn dẹp.
+        // Case 1: cả hai trả version GIỐNG NHAU → false positive (CDN bytes diff)
         if (newVer && oldVer && newVer === oldVer) {
             console.log('[SwUpdate] Same APP_VERSION - silent skip toast, auto-activating new SW');
             if (reg.waiting) {
@@ -174,16 +189,33 @@ const SwUpdate = {
             return;
         }
 
-        // Trường hợp 2: oldVer null (SW cũ là phiên bản trước khi có GET_VERSION handler)
-        // → đây là update LỚN từ legacy SW lên SW mới → MUST show toast (1 lần thôi,
-        // sau khi user reload, SW mới sẽ có handler GET_VERSION → từ đó hết false positive).
+        // Case 2: oldVer null nhưng newVer có → controller hiện tại không phải main SW
+        // (có thể là FCM SW cũ chiếm scope, hoặc SW legacy chưa có GET_VERSION).
+        // Sau cleanup, lần reload tiếp theo main SW sẽ là controller → hết vấn đề.
+        // Tạm thời: silent skip + force activate SW mới (có GET_VERSION) để fix ngay.
         if (!oldVer && newVer) {
-            console.log('[SwUpdate] Legacy SW detected (no GET_VERSION) - showing update toast');
-            this._showUpdateToast(reg);
+            console.log('[SwUpdate] Controller has no GET_VERSION - auto-activating new SW silently');
+            if (reg.waiting) {
+                this._refreshing = true;
+                reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+                // Cho phép reload lần này để main SW trở thành controller
+                setTimeout(() => { this._refreshing = false; }, 100);
+            }
             return;
         }
 
-        // Trường hợp 3: version khác nhau rõ ràng → update thật → show toast
+        // Case 3: cả hai null → không xác định được → silent skip (tránh spam toast)
+        if (!oldVer && !newVer) {
+            console.log('[SwUpdate] Both versions unknown - silent skip');
+            if (reg.waiting) {
+                this._refreshing = true;
+                reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+                setTimeout(() => { this._refreshing = false; }, 2000);
+            }
+            return;
+        }
+
+        // Case 4: version khác nhau rõ ràng → update thật → show toast
         this._showUpdateToast(reg);
     },
 
@@ -195,7 +227,6 @@ const SwUpdate = {
         if (!waiting) return;
 
         if (typeof Toast === 'undefined' || !Toast.show) {
-            // Fallback: tự reload sau 3s nếu không có Toast
             console.warn('[SwUpdate] Toast not available - auto reload in 3s');
             setTimeout(() => this._applyUpdate(reg), 3000);
             return;
@@ -205,7 +236,7 @@ const SwUpdate = {
             type: 'info',
             title: '✨ Có bản cập nhật mới',
             message: 'Bấm Tải lại để áp dụng phiên bản mới nhất.',
-            duration: 0, // persistent
+            duration: 0,
             id: 'sw-update-available',
             action: {
                 label: 'Tải lại',
@@ -219,9 +250,6 @@ const SwUpdate = {
 
     /**
      * Yêu cầu SW mới skip waiting → trigger controllerchange → reload.
-     *
-     * Thêm fallback: trên Android PWA standalone, controllerchange đôi khi
-     * không fire sau skipWaiting → cần force reload sau timeout.
      */
     _applyUpdate(reg) {
         const waiting = reg.waiting;
@@ -236,7 +264,6 @@ const SwUpdate = {
         waiting.postMessage({ type: 'SKIP_WAITING' });
 
         // Fallback: nếu controllerchange không fire trong 2s, force reload.
-        // Android Chrome PWA standalone đôi khi không trigger controllerchange.
         setTimeout(() => {
             if (!this._refreshing) {
                 console.warn('[SwUpdate] controllerchange did not fire - force reloading');
@@ -246,13 +273,11 @@ const SwUpdate = {
     },
 
     /**
-     * Force page reload, bypass HTTP cache nếu có thể.
+     * Force page reload.
      */
     _forceReload() {
-        this._refreshing = true; // prevent double reload from controllerchange
+        this._refreshing = true;
         try {
-            // Một số trình duyệt hỗ trợ reload(true) để bypass cache (deprecated trong spec
-            // nhưng vẫn có hiệu lực thực tế trên Chrome/Firefox).
             window.location.reload(true);
         } catch (e) {
             window.location.reload();
@@ -260,7 +285,7 @@ const SwUpdate = {
     },
 
     /**
-     * Public API: cho phép code khác trigger check update thủ công.
+     * Public API: trigger check update thủ công.
      */
     checkNow() {
         if (this._registration) {
@@ -270,10 +295,10 @@ const SwUpdate = {
 
     /**
      * Lấy APP_VERSION của Service Worker đang điều khiển page.
-     * @returns {Promise<string|null>} version string hoặc null nếu chưa có SW / SW cũ không hỗ trợ
+     * @returns {Promise<string|null>}
      */
     async getCurrentVersion() {
-        const sw = navigator.serviceWorker?.controller;
+        const sw = navigator.serviceWorker && navigator.serviceWorker.controller;
         if (!sw) return null;
         return await this._getVersionFromSw(sw);
     }
