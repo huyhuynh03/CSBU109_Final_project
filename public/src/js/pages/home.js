@@ -60,12 +60,12 @@ const HomePage = {
                 </div>
 
                 <!-- GitHub-style Heatmap with Year Selector -->
-                <div class="glass-card" style="padding:var(--spacing-lg);">
+                <div class="glass-card" style="padding:var(--spacing-lg);overflow:visible;backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--glass-bg);">
                     <div id="heatmap-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-md);flex-wrap:wrap;gap:8px;">
                         <span id="heatmap-summary" style="font-size:var(--font-size-sm);font-weight:600;color:var(--color-text);"></span>
                         <div id="heatmap-years" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
                     </div>
-                    <div id="dashboard-chart" style="position:relative;overflow-x:auto;width:100%;"></div>
+                    <div id="dashboard-chart" style="position:relative;width:100%;"></div>
                 </div>
             </div>
         `;
