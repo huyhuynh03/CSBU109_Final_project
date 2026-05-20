@@ -156,8 +156,8 @@ const HomePage = {
 
         const today = new Date();
         const currentYear = today.getFullYear();
-        const cellSize = 13;
-        const cellGap = 3;
+        const cellSize = 11;
+        const cellGap = 2;
         const totalSize = cellSize + cellGap;
 
         // For selected year: always Jan 1 to Dec 31 (full year)
@@ -220,8 +220,8 @@ const HomePage = {
             return 'rgba(233, 30, 144, 1)';
         };
 
-        // Month labels
-        const months = ['Thg 1', 'Thg 2', 'Thg 3', 'Thg 4', 'Thg 5', 'Thg 6', 'Thg 7', 'Thg 8', 'Thg 9', 'Thg 10', 'Thg 11', 'Thg 12'];
+        // Month labels (English abbreviations for compact display)
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         let monthLabelsHtml = '';
         let lastMonth = -1;
         weeks.forEach((week, wi) => {
@@ -232,15 +232,15 @@ const HomePage = {
             if (month !== lastMonth) {
                 lastMonth = month;
                 const left = wi * totalSize;
-                monthLabelsHtml += `<span style="position:absolute;left:${left}px;font-size:11px;color:var(--color-text-muted);">${months[month]}</span>`;
+                monthLabelsHtml += `<span style="position:absolute;left:${left}px;font-size:10px;color:var(--color-text-muted);white-space:nowrap;">${months[month]}</span>`;
             }
         });
 
-        // Day labels (left side)
-        const dayLabels = ['', 'T2', '', 'T4', '', 'T6', ''];
+        // Day labels (left side - English abbreviations)
+        const dayLabels = ['', 'Mon', '', 'Wed', '', 'Fri', ''];
         const dayLabelsHtml = dayLabels.map((label, i) => {
             const top = i * totalSize;
-            return `<div style="position:absolute;top:${top}px;height:${cellSize}px;display:flex;align-items:center;font-size:11px;color:var(--color-text-muted);white-space:nowrap;">${label}</div>`;
+            return `<div style="position:absolute;top:${top}px;height:${cellSize}px;display:flex;align-items:center;font-size:10px;color:var(--color-text-muted);white-space:nowrap;">${label}</div>`;
         }).join('');
 
         // Grid cells
@@ -260,7 +260,7 @@ const HomePage = {
 
         const gridWidth = weeks.length * totalSize;
         const gridHeight = 7 * totalSize;
-        const dayLabelWidth = 28;
+        const dayLabelWidth = 30;
 
         // Legend
         const legendColors = [
@@ -275,25 +275,30 @@ const HomePage = {
         ).join('');
 
         container.innerHTML = `
-            <div style="position:relative;padding-left:${dayLabelWidth}px;">
-                <!-- Month labels -->
-                <div style="position:relative;height:20px;margin-bottom:4px;">
-                    ${monthLabelsHtml}
-                </div>
-                <!-- Day labels + Grid -->
-                <div style="position:relative;display:flex;">
-                    <div style="position:relative;width:${dayLabelWidth}px;height:${gridHeight}px;flex-shrink:0;">
-                        ${dayLabelsHtml}
+            <div style="position:relative;">
+                <!-- Day labels (fixed left) + scrollable grid -->
+                <div style="display:flex;">
+                    <div style="flex-shrink:0;width:${dayLabelWidth}px;padding-top:20px;">
+                        <div style="position:relative;height:${gridHeight}px;">
+                            ${dayLabelsHtml}
+                        </div>
                     </div>
-                    <svg width="${gridWidth}" height="${gridHeight}" style="display:block;">
-                        ${cellsHtml}
-                    </svg>
+                    <div style="overflow-x:auto;flex:1;min-width:0;">
+                        <!-- Month labels -->
+                        <div style="position:relative;height:20px;min-width:${gridWidth}px;">
+                            ${monthLabelsHtml}
+                        </div>
+                        <!-- Grid -->
+                        <svg width="${gridWidth}" height="${gridHeight}" style="display:block;">
+                            ${cellsHtml}
+                        </svg>
+                    </div>
                 </div>
                 <!-- Legend -->
-                <div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:12px;font-size:11px;color:var(--color-text-muted);">
-                    <span>Ít</span>
+                <div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:12px;font-size:10px;color:var(--color-text-muted);">
+                    <span>Less</span>
                     ${legendHtml}
-                    <span>Nhiều</span>
+                    <span>More</span>
                 </div>
             </div>
         `;
