@@ -3,7 +3,17 @@
 // ============================================
 
 const HomePage = {
-    async render() {
+    _cachedHtml: null,
+
+    render() {
+        if (this._cachedHtml && this._cachedStreak
+            && (Date.now() - this._lastLoadTime) < this._CACHE_TTL_MS) {
+            return this._cachedHtml;
+        }
+        return this._renderFresh();
+    },
+
+    _renderFresh() {
         const isSignedIn = Auth.isSignedIn();
 
         if (!isSignedIn) {
@@ -68,14 +78,20 @@ const HomePage = {
 
         const now = Date.now();
         if (this._cachedStreak && (now - this._lastLoadTime) < this._CACHE_TTL_MS) {
-            // Render ngay từ cache
-            this._renderStreakData(this._cachedStreak);
-            // Background refresh
-            this._loadStudyChart().catch(() => {});
+            // DOM đã restore từ cache → background refresh
+            this._loadStudyChart().then(() => this._saveHtmlCache()).catch(() => {});
             return;
         }
 
         await this._loadStudyChart();
+        this._saveHtmlCache();
+    },
+
+    _saveHtmlCache() {
+        const container = document.getElementById('main-content');
+        if (container) {
+            this._cachedHtml = container.innerHTML;
+        }
     },
 
     /**

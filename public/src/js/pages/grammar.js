@@ -3,7 +3,18 @@
 // ============================================
 
 const GrammarPage = {
-    async render() {
+    _cachedHtml: null,
+    _CACHE_TTL_MS: 60000,
+    _lastLoadTime: 0,
+
+    render() {
+        if (this._cachedHtml && (Date.now() - this._lastLoadTime) < this._CACHE_TTL_MS) {
+            return this._cachedHtml;
+        }
+        return this._renderFresh();
+    },
+
+    _renderFresh() {
         const isSignedIn = Auth.isSignedIn();
 
         if (!isSignedIn) {
@@ -81,8 +92,22 @@ const GrammarPage = {
 
     async onEnter() {
         console.log('[GrammarPage] Entered');
-        // Load stats async
-        this._loadStats();
+        if (this._cachedHtml && (Date.now() - this._lastLoadTime) < this._CACHE_TTL_MS) {
+            // DOM đã restore từ cache → background refresh
+            this._loadStats().then(() => this._saveHtmlCache()).catch(() => {});
+            return;
+        }
+        await this._loadStats();
+        this._lastLoadTime = Date.now();
+        this._saveHtmlCache();
+    },
+
+    _saveHtmlCache() {
+        const container = document.getElementById('main-content');
+        if (container) {
+            this._cachedHtml = container.innerHTML;
+            this._lastLoadTime = Date.now();
+        }
     },
 
     async _loadStats() {
