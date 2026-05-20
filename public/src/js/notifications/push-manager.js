@@ -120,9 +120,27 @@ const PushNotificationManager = {
      */
     async _getToken() {
         try {
-            // Đợi SW ready
-            const registration = await navigator.serviceWorker.getRegistration('/firebase-messaging-sw.js')
-                || await navigator.serviceWorker.ready;
+            // Register firebase-messaging-sw.js explicitly với scope đúng
+            // để FCM SDK dùng đúng SW có onBackgroundMessage handler.
+            let registration;
+            try {
+                registration = await navigator.serviceWorker.register(
+                    '/firebase-messaging-sw.js',
+                    { scope: '/firebase-cloud-messaging-push-scope' }
+                );
+                // Đợi SW active
+                if (registration.installing) {
+                    await new Promise((resolve) => {
+                        registration.installing.addEventListener('statechange', (e) => {
+                            if (e.target.state === 'activated') resolve();
+                        });
+                    });
+                }
+                console.log('[PushManager] FCM SW registered, scope:', registration.scope);
+            } catch (regErr) {
+                console.warn('[PushManager] FCM SW register failed, fallback to ready:', regErr);
+                registration = await navigator.serviceWorker.ready;
+            }
 
             const token = await this._messaging.getToken({
                 vapidKey: this.VAPID_KEY,

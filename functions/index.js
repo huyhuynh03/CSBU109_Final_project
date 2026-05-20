@@ -376,14 +376,24 @@ function getTodayKey(timezone) {
 async function hasDueCards(uid) {
   try {
     const now = new Date();
+    // Query chỉ dùng inequality trên 1 field (dueDate) để tránh cần composite index.
+    // Filter state trong code — vì chỉ cần tìm 1 card due nên fetch batch nhỏ là đủ.
     const cardsSnapshot = await db.collection('users').doc(uid)
       .collection('cards')
       .where('dueDate', '<=', now)
-      .where('state', '>=', 1) // Không đếm NEW cards (state=0)
-      .limit(1) // Chỉ cần biết có hay không
+      .limit(20)
       .get();
 
-    return !cardsSnapshot.empty;
+    if (cardsSnapshot.empty) return false;
+
+    // Filter: chỉ đếm cards đã học (state >= 1, tức Learning/Review/Relearning)
+    for (const doc of cardsSnapshot.docs) {
+      const data = doc.data();
+      const state = typeof data.state === 'number' ? data.state : 0;
+      if (state >= 1) return true;
+    }
+
+    return false;
   } catch (err) {
     logger.warn('[hasDueCards] Error:', { uid, error: err.message });
     return false;
