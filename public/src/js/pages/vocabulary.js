@@ -1039,31 +1039,39 @@ const VocabularyPage = {
     },
 
     async _openIncompleteModal() {
-        // LUÔN fetch lại fresh từ Firestore để tránh stale sau khi đổi mode card
         document.querySelector('.lf-incomplete-modal-overlay')?.remove();
 
+        // Dùng cache nếu có → hiển thị modal ngay lập tức, không chờ Firestore
         let groups = [];
         let allCards = [];
-        try {
-            allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
-            groups = await FamilyWordManager.getIncompleteGroups(allCards);
-            this._incompleteCache = { groups, allCards };
-            // Đồng thời cập nhật badge bên ngoài
-            const badge = document.getElementById('vocab-incomplete-badge');
-            const desc = document.getElementById('vocab-incomplete-desc');
-            if (badge && desc) {
-                const n = groups.length;
-                if (n > 0) {
-                    badge.style.display = 'flex';
-                    badge.textContent = n > 99 ? '99+' : String(n);
-                    desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
-                } else {
-                    badge.style.display = 'none';
-                    desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
-                }
+
+        if (this._incompleteCache && this._incompleteCache.groups) {
+            groups = this._incompleteCache.groups;
+            allCards = this._incompleteCache.allCards || [];
+        } else {
+            // Fallback: fetch nếu chưa có cache
+            try {
+                allCards = await FirestoreDB.getCards({ cardType: 'vocabulary' });
+                groups = await FamilyWordManager.getIncompleteGroups(allCards);
+                this._incompleteCache = { groups, allCards };
+            } catch (e) {
+                console.error('[VocabularyPage] Open incomplete modal error:', e);
             }
-        } catch (e) {
-            console.error('[VocabularyPage] Open incomplete modal error:', e);
+        }
+
+        // Cập nhật badge
+        const badge = document.getElementById('vocab-incomplete-badge');
+        const desc = document.getElementById('vocab-incomplete-desc');
+        if (badge && desc) {
+            const n = groups.length;
+            if (n > 0) {
+                badge.style.display = 'flex';
+                badge.textContent = n > 99 ? '99+' : String(n);
+                desc.textContent = `${n} nhóm đang học dở — nhấn để xem chi tiết`;
+            } else {
+                badge.style.display = 'none';
+                desc.textContent = 'Không có nhóm từ nào đang bị học ngắt quãng';
+            }
         }
 
         const escape = (s) => String(s || '')
