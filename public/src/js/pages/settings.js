@@ -22,15 +22,15 @@ const SettingsPage = {
                 <!-- Theme Settings -->
                 <div class="glass-card" style="margin-bottom:var(--spacing-lg);">
                     <h4 style="margin-bottom:var(--spacing-md);">Giao diện</h4>
-                    <div style="display:flex;align-items:center;justify-content:space-between;">
-                        <div style="display:flex;align-items:center;gap:var(--spacing-md);">
+                    <div class="settings-theme-row" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--spacing-md);">
+                        <div style="display:flex;align-items:center;gap:var(--spacing-sm);">
                             <span class="material-icons-round" style="color:var(--color-primary);">${themeIcon}</span>
                             <div>
-                                <p style="font-weight:500;color:var(--color-text);">Chế độ hiển thị</p>
-                                <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">Hiện tại: ${themeLabel}</p>
+                                <p style="font-weight:500;color:var(--color-text);white-space:nowrap;">Chế độ hiển thị</p>
+                                <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);white-space:nowrap;">Hiện tại: ${themeLabel}</p>
                             </div>
                         </div>
-                        <div style="display:flex;gap:var(--spacing-sm);">
+                        <div style="display:flex;gap:var(--spacing-xs);flex-wrap:wrap;">
                             <button class="btn btn-sm ${currentTheme === 'light' ? 'btn-primary' : 'btn-secondary'}" 
                                     onclick="SettingsPage.setTheme('light')">
                                 <span class="material-icons-round" style="font-size:16px;">light_mode</span> Sáng

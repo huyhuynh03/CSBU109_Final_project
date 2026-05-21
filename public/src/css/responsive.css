@@ -68,6 +68,10 @@
     }
 
     /* Dashboard responsive */
+    .home-stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
     .dashboard-actions {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
@@ -92,6 +96,26 @@
 
     .quicklink-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Settings theme toggle - stack on mobile */
+    .settings-theme-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* Prevent horizontal overflow on all pages */
+    .home-page,
+    .settings-page,
+    .vocabulary-page {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /* Glass cards should not overflow */
+    .glass-card {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     /* Section page responsive */
