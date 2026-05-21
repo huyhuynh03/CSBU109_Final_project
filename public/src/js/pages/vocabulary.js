@@ -252,18 +252,24 @@ const VocabularyPage = {
             return;
         }
 
-        // Lần đầu hoặc cache hết hạn — load đầy đủ
+        // Init interactive elements NGAY (trước await) để search/filter luôn hoạt động
+        // ngay cả khi seed/load chậm.
+        this._initSearch();
+        this._initFilter();
+
+        // Lần đầu hoặc cache hết hạn — load đầy đủ.
+        // KHÔNG token-guard giữa các bước: các method dùng getElementById nên tự
+        // an-toàn khi DOM đã thay (id sẽ là null). Token chỉ check ở _saveHtmlCache
+        // để tránh lưu nhầm DOM của trang khác vào cache vocab.
         await this._autoSeedTopics();
-        if (!Router.isTokenValid(this._navToken)) return;
         await this._loadStats();
-        if (!Router.isTokenValid(this._navToken)) return;
         this._lastLoadTime = Date.now();
         this._loadTopics();
         this._loadIncompleteTracking();
-        this._initSearch();
-        this._initFilter();
-        // Lưu DOM snapshot sau khi render xong
-        this._saveHtmlCache();
+        // Chỉ save cache nếu vẫn còn ở trang vocabulary — tránh lưu DOM của trang khác
+        if (Router.isTokenValid(this._navToken)) {
+            this._saveHtmlCache();
+        }
     },
 
     /**
@@ -284,14 +290,14 @@ const VocabularyPage = {
         try {
             const oldCount = this._allCards ? this._allCards.length : 0;
             await this._autoSeedTopics();
-            if (!Router.isTokenValid(this._navToken)) return;
             await this._loadStats();
-            if (!Router.isTokenValid(this._navToken)) return;
             this._lastLoadTime = Date.now();
             // Chỉ re-render nếu data thực sự thay đổi
             if (this._allCards && this._allCards.length !== oldCount) {
                 this._loadTopics();
-                this._saveHtmlCache();
+                if (Router.isTokenValid(this._navToken)) {
+                    this._saveHtmlCache();
+                }
             }
         } catch (e) {
             console.warn('[VocabularyPage] Background refresh error:', e);

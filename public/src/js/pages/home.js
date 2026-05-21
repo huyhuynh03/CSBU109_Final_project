@@ -92,8 +92,9 @@ const HomePage = {
         }
 
         await this._loadStudyChart();
-        if (!Router.isTokenValid(this._navToken)) return;
-        this._saveHtmlCache();
+        if (Router.isTokenValid(this._navToken)) {
+            this._saveHtmlCache();
+        }
     },
 
     _saveHtmlCache() {

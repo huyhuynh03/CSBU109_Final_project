@@ -107,6 +107,13 @@ const Router = {
     async _handleRoute() {
         const path = this.getPath();
 
+        // Nếu đang ở cùng route (ví dụ auth.js gọi _handleRoute để refresh sau
+        // onAuthStateChanged), KHÔNG re-render — tránh invalidate token của onEnter
+        // đang chạy async (seed, loadStats...) và tránh replace DOM giữa chừng.
+        // hashchange chỉ fire khi hash thực sự thay đổi nên guard này chỉ chặn
+        // các lời gọi _handleRoute() thủ công từ code khác.
+        if (path === this.currentRoute) return;
+
         // Cấp token mới cho navigation này. Mọi async step bên dưới
         // sẽ bail-out nếu một navigation mới hơn đã bắt đầu.
         const token = ++this._navToken;

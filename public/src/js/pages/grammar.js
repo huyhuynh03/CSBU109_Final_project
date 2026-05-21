@@ -101,9 +101,11 @@ const GrammarPage = {
             return;
         }
         await this._loadStats();
-        if (!Router.isTokenValid(this._navToken)) return;
         this._lastLoadTime = Date.now();
-        this._saveHtmlCache();
+        // Chỉ save cache nếu vẫn còn ở trang grammar
+        if (Router.isTokenValid(this._navToken)) {
+            this._saveHtmlCache();
+        }
     },
 
     _saveHtmlCache() {
