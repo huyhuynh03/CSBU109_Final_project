@@ -6,6 +6,10 @@ const Router = {
     routes: {},
     currentRoute: null,
     mainContent: null,
+    // Navigation token: tăng mỗi lần navigate. Async work của navigation cũ
+    // phải kiểm tra token trước khi mutate DOM, để tránh navigation cũ ghi đè
+    // navigation mới khi user chuyển tab nhanh.
+    _navToken: 0,
 
     /**
      * Initialize router
@@ -20,6 +24,21 @@ const Router = {
         this._handleRoute();
 
         console.log('[Router] Initialized');
+    },
+
+    /**
+     * Trả về token hiện tại — page có thể lưu lại trước khi await,
+     * sau đó so với isTokenValid() để biết có nên cập nhật DOM hay không.
+     */
+    getNavToken() {
+        return this._navToken;
+    },
+
+    /**
+     * Kiểm tra token còn hợp lệ (chưa có navigation mới sau đó).
+     */
+    isTokenValid(token) {
+        return token === this._navToken;
     },
 
     /**
@@ -88,13 +107,23 @@ const Router = {
     async _handleRoute() {
         const path = this.getPath();
 
+        // Cấp token mới cho navigation này. Mọi async step bên dưới
+        // sẽ bail-out nếu một navigation mới hơn đã bắt đầu.
+        const token = ++this._navToken;
+        const isStale = () => token !== this._navToken;
+
         // Call onLeave for current route
         if (this.currentRoute && this.routes[this.currentRoute]) {
             const currentHandler = this.routes[this.currentRoute];
             if (currentHandler.onLeave) {
-                await currentHandler.onLeave();
+                try {
+                    await currentHandler.onLeave();
+                } catch (e) {
+                    console.warn('[Router] onLeave error:', e);
+                }
             }
         }
+        if (isStale()) return;
 
         // Find matching route
         let handler = null;
@@ -125,11 +154,15 @@ const Router = {
         // Page transition — giảm delay để navigation cảm giác nhanh hơn
         this.mainContent.classList.add('page-exit');
         await Helpers.sleep(50);
+        if (isStale()) return;
 
         // Render new page
         this.currentRoute = path;
         if (handler.render) {
             const content = await handler.render(params);
+            // Sau await: kiểm tra lại token trước khi đụng vào DOM, nếu không
+            // navigation cũ sẽ ghi đè HTML của navigation mới.
+            if (isStale()) return;
             if (typeof content === 'string') {
                 this.mainContent.innerHTML = content;
             } else if (content instanceof HTMLElement) {
@@ -141,12 +174,20 @@ const Router = {
         // Page enter animation
         this.mainContent.classList.remove('page-exit');
         this.mainContent.classList.add('page-enter');
-        setTimeout(() => this.mainContent.classList.remove('page-enter'), 300);
+        setTimeout(() => {
+            // Chỉ remove khi token còn valid để tránh xoá animation của nav khác
+            if (!isStale()) this.mainContent.classList.remove('page-enter');
+        }, 300);
 
-        // Call onEnter
+        // Call onEnter — truyền token để page tự kiểm tra trước khi update DOM async
         if (handler.onEnter) {
-            await handler.onEnter(params);
+            try {
+                await handler.onEnter(params, token);
+            } catch (e) {
+                console.warn('[Router] onEnter error:', e);
+            }
         }
+        if (isStale()) return;
 
         // Scroll to top
         window.scrollTo(0, 0);

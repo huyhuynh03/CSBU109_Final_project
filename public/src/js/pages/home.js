@@ -77,18 +77,22 @@ const HomePage = {
     _cachedStreak: null,
     _selectedYear: new Date().getFullYear(),
 
-    async onEnter() {
+    async onEnter(params, navToken) {
         console.log('[HomePage] Entered - Dashboard');
+        this._navToken = navToken;
         if (!Auth.isSignedIn()) return;
 
         const now = Date.now();
         if (this._cachedStreak && (now - this._lastLoadTime) < this._CACHE_TTL_MS) {
             // DOM đã restore từ cache → background refresh
-            this._loadStudyChart().then(() => this._saveHtmlCache()).catch(() => {});
+            this._loadStudyChart().then(() => {
+                if (Router.isTokenValid(this._navToken)) this._saveHtmlCache();
+            }).catch(() => {});
             return;
         }
 
         await this._loadStudyChart();
+        if (!Router.isTokenValid(this._navToken)) return;
         this._saveHtmlCache();
     },
 

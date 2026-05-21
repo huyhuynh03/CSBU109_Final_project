@@ -234,8 +234,10 @@ const VocabularyPage = {
         return this._renderFresh();
     },
 
-    async onEnter() {
+    async onEnter(params, navToken) {
         console.log('[VocabularyPage] Entered');
+        // Lưu token để các async callback kiểm tra trước khi update DOM
+        this._navToken = navToken;
 
         const now = Date.now();
         const hasCachedData = this._allCards && this._allCards.length > 0
@@ -252,7 +254,9 @@ const VocabularyPage = {
 
         // Lần đầu hoặc cache hết hạn — load đầy đủ
         await this._autoSeedTopics();
+        if (!Router.isTokenValid(this._navToken)) return;
         await this._loadStats();
+        if (!Router.isTokenValid(this._navToken)) return;
         this._lastLoadTime = Date.now();
         this._loadTopics();
         this._loadIncompleteTracking();
@@ -280,7 +284,9 @@ const VocabularyPage = {
         try {
             const oldCount = this._allCards ? this._allCards.length : 0;
             await this._autoSeedTopics();
+            if (!Router.isTokenValid(this._navToken)) return;
             await this._loadStats();
+            if (!Router.isTokenValid(this._navToken)) return;
             this._lastLoadTime = Date.now();
             // Chỉ re-render nếu data thực sự thay đổi
             if (this._allCards && this._allCards.length !== oldCount) {
