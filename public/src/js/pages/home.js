@@ -60,12 +60,12 @@ const HomePage = {
                 </div>
 
                 <!-- GitHub-style Heatmap with Year Selector -->
-                <div class="glass-card" style="padding:var(--spacing-lg);overflow:visible;backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--glass-bg);">
-                    <div id="heatmap-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-md);flex-wrap:wrap;gap:8px;">
-                        <span id="heatmap-summary" style="font-size:var(--font-size-sm);font-weight:600;color:var(--color-text);"></span>
+                <div class="glass-card" style="padding:var(--spacing-md) var(--spacing-sm);">
+                    <div id="heatmap-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-sm);flex-wrap:wrap;gap:8px;padding:0 var(--spacing-xs);">
+                        <span id="heatmap-summary" style="font-size:var(--font-size-xs);font-weight:600;color:var(--color-text);"></span>
                         <div id="heatmap-years" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
                     </div>
-                    <div id="dashboard-chart" style="position:relative;width:100%;"></div>
+                    <div id="dashboard-chart" style="width:100%;"></div>
                 </div>
             </div>
         `;
@@ -153,19 +153,16 @@ const HomePage = {
         if (!container) return;
 
         const today = new Date();
-        const currentYear = today.getFullYear();
         const cellSize = 11;
         const cellGap = 2;
         const totalSize = cellSize + cellGap;
 
         // For selected year: always Jan 1 to Dec 31 (full year)
         const startDate = new Date(year, 0, 1);
-        // Align start to previous Sunday
         const startDayOfWeek = startDate.getDay();
         if (startDayOfWeek !== 0) {
             startDate.setDate(startDate.getDate() - startDayOfWeek);
         }
-
         const endDate = new Date(year, 11, 31);
 
         // Build weeks grid
@@ -200,7 +197,7 @@ const HomePage = {
         if (summaryEl) {
             const totalHours = Math.floor(totalMinutes / 60);
             const remainMins = totalMinutes % 60;
-            summaryEl.textContent = `${activeDays} ngày luyện tập trong năm ${year} (${totalHours}h ${remainMins}m)`;
+            summaryEl.textContent = `${activeDays} ngày học trong ${year} (${totalHours}h ${remainMins}m)`;
         }
 
         // Find max for color scaling
@@ -209,97 +206,79 @@ const HomePage = {
 
         // Color levels (pink/magenta palette)
         const getColor = (minutes, isOutOfRange) => {
-            if (isOutOfRange) return 'transparent';
-            if (minutes === 0) return 'rgba(255, 255, 255, 0.05)';
+            if (isOutOfRange) return 'none';
+            if (minutes === 0) return 'rgba(255,255,255,0.06)';
             const ratio = minutes / maxMinutes;
-            if (ratio <= 0.25) return 'rgba(233, 30, 144, 0.3)';
-            if (ratio <= 0.5) return 'rgba(233, 30, 144, 0.55)';
-            if (ratio <= 0.75) return 'rgba(233, 30, 144, 0.8)';
-            return 'rgba(233, 30, 144, 1)';
+            if (ratio <= 0.25) return 'rgba(233,30,144,0.3)';
+            if (ratio <= 0.5) return 'rgba(233,30,144,0.55)';
+            if (ratio <= 0.75) return 'rgba(233,30,144,0.8)';
+            return 'rgba(233,30,144,1)';
         };
 
-        // Month labels (English abbreviations for compact display)
+        // Layout constants for SVG
+        const labelOffsetX = 28; // space for day labels
+        const labelOffsetY = 14; // space for month labels
+        const gridWidth = weeks.length * totalSize;
+        const gridHeight = 7 * totalSize;
+        const svgWidth = labelOffsetX + gridWidth;
+        const svgHeight = labelOffsetY + gridHeight;
+
+        // Build SVG month labels
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        let monthLabelsHtml = '';
+        let monthLabelsSvg = '';
         let lastMonth = -1;
         weeks.forEach((week, wi) => {
-            // Find first day that belongs to the target year
             const dayInYear = week.find(d => d.date.getFullYear() === year);
             if (!dayInYear) return;
             const month = dayInYear.date.getMonth();
             if (month !== lastMonth) {
                 lastMonth = month;
-                const left = wi * totalSize;
-                monthLabelsHtml += `<span style="position:absolute;left:${left}px;font-size:10px;color:var(--color-text-muted);white-space:nowrap;">${months[month]}</span>`;
+                const x = labelOffsetX + wi * totalSize;
+                monthLabelsSvg += `<text x="${x}" y="10" font-size="9" fill="var(--color-text-muted,#8b949e)" font-family="sans-serif">${months[month]}</text>`;
             }
         });
 
-        // Day labels (left side - English abbreviations)
+        // Build SVG day labels
         const dayLabels = ['', 'Mon', '', 'Wed', '', 'Fri', ''];
-        const dayLabelsHtml = dayLabels.map((label, i) => {
-            const top = i * totalSize;
-            return `<div style="position:absolute;top:${top}px;height:${cellSize}px;display:flex;align-items:center;font-size:10px;color:var(--color-text-muted);white-space:nowrap;">${label}</div>`;
-        }).join('');
+        let dayLabelsSvg = '';
+        dayLabels.forEach((label, i) => {
+            if (!label) return;
+            const y = labelOffsetY + i * totalSize + cellSize - 1;
+            dayLabelsSvg += `<text x="0" y="${y}" font-size="9" fill="var(--color-text-muted,#8b949e)" font-family="sans-serif">${label}</text>`;
+        });
 
-        // Grid cells
-        let cellsHtml = '';
+        // Build SVG grid cells
+        let cellsSvg = '';
         weeks.forEach((week, wi) => {
             week.forEach(day => {
-                const col = wi;
-                const row = day.dayOfWeek;
-                const x = col * totalSize;
-                const y = row * totalSize;
+                if (day.isOutOfRange) return;
+                const x = labelOffsetX + wi * totalSize;
+                const y = labelOffsetY + day.dayOfWeek * totalSize;
                 const color = getColor(day.minutes, day.isOutOfRange);
-                if (day.isOutOfRange) return; // skip cells outside the year
-                const title = `${day.key}: ${day.minutes} phút`;
-                cellsHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}" style="outline:1px solid rgba(255,255,255,0.03);"><title>${title}</title></rect>`;
+                cellsSvg += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" ry="2" fill="${color}"><title>${day.key}: ${day.minutes}m</title></rect>`;
             });
         });
 
-        const gridWidth = weeks.length * totalSize;
-        const gridHeight = 7 * totalSize;
-        const dayLabelWidth = 30;
+        // Legend cells inside SVG
+        const legendColors = ['rgba(255,255,255,0.06)', 'rgba(233,30,144,0.3)', 'rgba(233,30,144,0.55)', 'rgba(233,30,144,0.8)', 'rgba(233,30,144,1)'];
+        const legendY = svgHeight + 8;
+        const legendStartX = svgWidth - (legendColors.length * totalSize + 60);
+        let legendSvg = `<text x="${legendStartX}" y="${legendY + 9}" font-size="9" fill="var(--color-text-muted,#8b949e)" font-family="sans-serif">Less</text>`;
+        legendColors.forEach((c, i) => {
+            const lx = legendStartX + 28 + i * (cellSize + 3);
+            legendSvg += `<rect x="${lx}" y="${legendY}" width="${cellSize}" height="${cellSize}" rx="2" fill="${c}"/>`;
+        });
+        legendSvg += `<text x="${legendStartX + 28 + legendColors.length * (cellSize + 3) + 3}" y="${legendY + 9}" font-size="9" fill="var(--color-text-muted,#8b949e)" font-family="sans-serif">More</text>`;
 
-        // Legend
-        const legendColors = [
-            'rgba(255, 255, 255, 0.05)',
-            'rgba(233, 30, 144, 0.3)',
-            'rgba(233, 30, 144, 0.55)',
-            'rgba(233, 30, 144, 0.8)',
-            'rgba(233, 30, 144, 1)'
-        ];
-        const legendHtml = legendColors.map(c =>
-            `<span style="width:${cellSize}px;height:${cellSize}px;border-radius:2px;background:${c};display:inline-block;"></span>`
-        ).join('');
+        const totalSvgHeight = svgHeight + 24;
 
-        container.innerHTML = `
-            <div style="position:relative;">
-                <!-- Day labels (fixed left) + scrollable grid -->
-                <div style="display:flex;">
-                    <div style="flex-shrink:0;width:${dayLabelWidth}px;padding-top:20px;">
-                        <div style="position:relative;height:${gridHeight}px;">
-                            ${dayLabelsHtml}
-                        </div>
-                    </div>
-                    <div style="overflow-x:auto;flex:1;min-width:0;">
-                        <!-- Month labels -->
-                        <div style="position:relative;height:20px;min-width:${gridWidth}px;">
-                            ${monthLabelsHtml}
-                        </div>
-                        <!-- Grid -->
-                        <svg width="${gridWidth}" height="${gridHeight}" style="display:block;">
-                            ${cellsHtml}
-                        </svg>
-                    </div>
-                </div>
-                <!-- Legend -->
-                <div style="display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:12px;font-size:10px;color:var(--color-text-muted);">
-                    <span>Less</span>
-                    ${legendHtml}
-                    <span>More</span>
-                </div>
-            </div>
-        `;
+        // Render as single responsive SVG with viewBox
+        container.innerHTML = `<svg viewBox="0 0 ${svgWidth} ${totalSvgHeight}" width="100%" style="display:block;max-width:100%;" preserveAspectRatio="xMidYMid meet">
+            ${monthLabelsSvg}
+            ${dayLabelsSvg}
+            ${cellsSvg}
+            ${legendSvg}
+        </svg>`;
     },
 
     /**
