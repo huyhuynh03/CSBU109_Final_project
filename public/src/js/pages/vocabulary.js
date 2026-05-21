@@ -240,7 +240,7 @@ const VocabularyPage = {
         this._navToken = navToken;
 
         const now = Date.now();
-        const hasCachedData = this._allCards && this._allCards.length > 0
+        const hasCachedData = this._cachedHtml && this._allCards && this._allCards.length > 0
             && (now - this._lastLoadTime) < this._CACHE_TTL_MS;
 
         if (hasCachedData) {
@@ -258,18 +258,16 @@ const VocabularyPage = {
         this._initFilter();
 
         // Lần đầu hoặc cache hết hạn — load đầy đủ.
-        // KHÔNG token-guard giữa các bước: các method dùng getElementById nên tự
-        // an-toàn khi DOM đã thay (id sẽ là null). Token chỉ check ở _saveHtmlCache
-        // để tránh lưu nhầm DOM của trang khác vào cache vocab.
+        // Same-route guard trong router đã ngăn auth refresh invalidate token,
+        // và router isStale() check ngăn navigation cũ chạy tới onEnter.
+        // Nên ở đây không cần token guard — chỉ cần chạy hết các bước.
         await this._autoSeedTopics();
         await this._loadStats();
         this._lastLoadTime = Date.now();
         this._loadTopics();
-        this._loadIncompleteTracking();
-        // Chỉ save cache nếu vẫn còn ở trang vocabulary — tránh lưu DOM của trang khác
-        if (Router.isTokenValid(this._navToken)) {
-            this._saveHtmlCache();
-        }
+        await this._loadIncompleteTracking();
+        // Lưu DOM snapshot SAU KHI tất cả đã render xong (bao gồm incomplete tracking)
+        this._saveHtmlCache();
     },
 
     /**
@@ -295,9 +293,7 @@ const VocabularyPage = {
             // Chỉ re-render nếu data thực sự thay đổi
             if (this._allCards && this._allCards.length !== oldCount) {
                 this._loadTopics();
-                if (Router.isTokenValid(this._navToken)) {
-                    this._saveHtmlCache();
-                }
+                this._saveHtmlCache();
             }
         } catch (e) {
             console.warn('[VocabularyPage] Background refresh error:', e);
