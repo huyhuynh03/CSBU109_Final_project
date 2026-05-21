@@ -153,8 +153,8 @@ const HomePage = {
         if (!container) return;
 
         const today = new Date();
-        const cellSize = 11;
-        const cellGap = 2;
+        const cellSize = 14;
+        const cellGap = 3;
         const totalSize = cellSize + cellGap;
 
         // For selected year: always Jan 1 to Dec 31 (full year)
