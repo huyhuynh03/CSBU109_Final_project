@@ -169,6 +169,12 @@ const SettingsPage = {
                         <span class="material-icons-round" style="font-size:16px;">check_circle</span>
                         <span>Đã bật — sẽ nhắc khi có từ cần ôn</span>
                     </p>
+                    <button id="btn-test-notification"
+                            onclick="SettingsPage.sendTestNotification()"
+                            style="margin-top:var(--spacing-sm);padding:8px 16px;background:rgba(108,99,255,0.15);border:1px solid var(--color-primary);border-radius:var(--radius-md);color:var(--color-primary);font-size:var(--font-size-sm);font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
+                        <span class="material-icons-round" style="font-size:16px;">send</span>
+                        <span>Gửi thông báo thử</span>
+                    </button>
                 </div>
             </div>
         `;
@@ -360,6 +366,60 @@ const SettingsPage = {
         if (input) {
             Helpers.storage.set('linguaflash-api-key', input.value.trim());
             Toast.success('Đã lưu API Key');
+        }
+    },
+
+    /**
+     * Gửi thông báo thử ngay (gọi callable function sendTestNotification).
+     * Giúp xác minh FCM hoạt động không cần chờ cron schedule 15 phút.
+     */
+    async sendTestNotification() {
+        const btn = document.getElementById('btn-test-notification');
+        if (btn) {
+            btn.disabled = true;
+            btn.style.opacity = '0.6';
+            btn.innerHTML = '<span class="material-icons-round" style="font-size:16px;animation:spin 1s linear infinite;">hourglass_empty</span><span>Đang gửi...</span>';
+        }
+
+        try {
+            if (!Auth.isSignedIn()) {
+                Toast.warning('Cần đăng nhập', 'Đăng nhập để gửi thông báo thử');
+                return;
+            }
+            if (typeof firebase === 'undefined' || !firebase.functions) {
+                Toast.error('Lỗi', 'Firebase Functions SDK chưa sẵn sàng');
+                return;
+            }
+
+            const callable = firebase.functions().httpsCallable('sendTestNotification');
+            const result = await callable({});
+            const data = result.data || {};
+
+            console.log('[SettingsPage] Test notification result:', data);
+
+            if (data.ok) {
+                if (data.success > 0) {
+                    Toast.success(
+                        'Đã gửi thông báo thử',
+                        `Gửi tới ${data.devices} thiết bị, ${data.success} thành công`
+                    );
+                } else {
+                    Toast.warning(
+                        'Gửi xong nhưng không thành công',
+                        `${data.failure}/${data.devices} thiết bị bị lỗi token. Hãy tắt rồi bật lại notification.`
+                    );
+                }
+            }
+        } catch (err) {
+            console.error('[SettingsPage] sendTestNotification error:', err);
+            const message = err.message || 'Lỗi không xác định';
+            Toast.error('Lỗi gửi thông báo', message);
+        } finally {
+            if (btn) {
+                btn.disabled = false;
+                btn.style.opacity = '';
+                btn.innerHTML = '<span class="material-icons-round" style="font-size:16px;">send</span><span>Gửi thông báo thử</span>';
+            }
         }
     }
 };

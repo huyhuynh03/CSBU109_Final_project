@@ -399,3 +399,95 @@ async function hasDueCards(uid) {
     return false;
   }
 }
+
+// ============================================
+// Test Notification - gửi thông báo ngay (không cần chờ cron)
+// ============================================
+exports.sendTestNotification = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'Cần đăng nhập để gửi thông báo thử.');
+  }
+
+  const uid = request.auth.uid;
+  logger.info('[sendTestNotification] start', { uid });
+
+  // Lấy tất cả device tokens của user
+  const devicesSnapshot = await db.collection('users').doc(uid)
+    .collection('devices').get();
+
+  if (devicesSnapshot.empty) {
+    logger.warn('[sendTestNotification] no devices', { uid });
+    throw new HttpsError('failed-precondition',
+      'Chưa có thiết bị nào đăng ký nhận thông báo. Hãy bật notification toggle trong Cài đặt.');
+  }
+
+  const tokens = devicesSnapshot.docs.map(d => d.data().token).filter(Boolean);
+  if (tokens.length === 0) {
+    throw new HttpsError('failed-precondition', 'Không tìm thấy FCM token hợp lệ.');
+  }
+
+  const messaging = admin.messaging();
+  const message = {
+    notification: {
+      title: 'LinguaFlash - Thông báo thử',
+      body: 'Hệ thống thông báo đang hoạt động bình thường 🎉'
+    },
+    data: {
+      type: 'test_notification',
+      url: '/#/',
+      timestamp: String(Date.now())
+    },
+    webpush: {
+      fcmOptions: { link: '/#/' },
+      notification: {
+        icon: '/icons/icon-192.png',
+        badge: '/icons/icon-96.png',
+        tag: 'test-notification',
+        renotify: true,
+        requireInteraction: false
+      }
+    }
+  };
+
+  try {
+    const response = await messaging.sendEachForMulticast({ tokens, ...message });
+
+    // Cleanup expired tokens
+    if (response.failureCount > 0) {
+      const failedTokens = [];
+      response.responses.forEach((resp, idx) => {
+        if (!resp.success) {
+          const errorCode = resp.error?.code;
+          logger.warn('[sendTestNotification] token failed', {
+            uid, errorCode, message: resp.error?.message
+          });
+          if (errorCode === 'messaging/invalid-registration-token' ||
+              errorCode === 'messaging/registration-token-not-registered') {
+            failedTokens.push(tokens[idx]);
+          }
+        }
+      });
+      for (const failedToken of failedTokens) {
+        const tokenDoc = devicesSnapshot.docs.find(d => d.data().token === failedToken);
+        if (tokenDoc) await tokenDoc.ref.delete();
+      }
+    }
+
+    logger.info('[sendTestNotification] done', {
+      uid,
+      devices: tokens.length,
+      success: response.successCount,
+      failure: response.failureCount
+    });
+
+    return {
+      ok: true,
+      devices: tokens.length,
+      success: response.successCount,
+      failure: response.failureCount
+    };
+  } catch (err) {
+    logger.error('[sendTestNotification] error', { uid, error: err.message });
+    throw new HttpsError('internal', `Lỗi gửi thông báo: ${err.message}`);
+  }
+});
