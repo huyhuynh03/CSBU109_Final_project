@@ -8,10 +8,6 @@ const SettingsPage = {
         const themeIcon = ThemeManager.getIcon();
         const themeLabel = ThemeManager.getLabel();
 
-        // Notification status
-        const permStatus = PushNotificationManager.getPermissionStatus();
-        const isSupported = PushNotificationManager.isSupported();
-
         return `
             <div class="settings-page page-enter">
                 <h2 style="margin-bottom:var(--spacing-xl);">
@@ -31,7 +27,7 @@ const SettingsPage = {
                             </div>
                         </div>
                         <div style="display:flex;gap:var(--spacing-xs);flex-wrap:wrap;">
-                            <button class="btn btn-sm ${currentTheme === 'light' ? 'btn-primary' : 'btn-secondary'}" 
+                            <button class="btn btn-sm ${currentTheme === 'light' ? 'btn-primary' : 'btn-secondary'}"
                                     onclick="SettingsPage.setTheme('light')">
                                 <span class="material-icons-round" style="font-size:16px;">light_mode</span> Sáng
                             </button>
@@ -45,15 +41,6 @@ const SettingsPage = {
                             </button>
                         </div>
                     </div>
-                </div>
-
-                <!-- Notification Settings -->
-                <div class="glass-card" style="margin-bottom:var(--spacing-lg);">
-                    <h4 style="margin-bottom:var(--spacing-md);">
-                        <span class="material-icons-round" style="vertical-align:middle;margin-right:var(--spacing-xs);color:var(--color-primary);">notifications</span>
-                        Thông báo nhắc ôn
-                    </h4>
-                    ${this._renderNotificationSection(isSupported, permStatus)}
                 </div>
 
                 <!-- AI API Key Settings -->
@@ -111,75 +98,6 @@ const SettingsPage = {
         `;
     },
 
-    /**
-     * Render notification settings section based on support/permission status.
-     * UI đơn giản: chỉ có 1 toggle bật/tắt — không có time picker.
-     * Notification gửi bất kỳ lúc nào có cards due (max 1 lần/ngày).
-     */
-    _renderNotificationSection(isSupported, permStatus) {
-        if (!isSupported) {
-            return `
-                <div style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-md);background:var(--color-surface-alt);border-radius:var(--radius-md);">
-                    <span class="material-icons-round" style="color:var(--color-text-muted);">notifications_off</span>
-                    <div>
-                        <p style="font-weight:500;color:var(--color-text);">Không hỗ trợ</p>
-                        <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
-                            Trình duyệt này không hỗ trợ push notification. Hãy dùng Chrome/Edge hoặc thêm app vào Home Screen (iOS).
-                        </p>
-                    </div>
-                </div>
-            `;
-        }
-
-        if (permStatus === 'denied') {
-            return `
-                <div style="display:flex;align-items:center;gap:var(--spacing-md);padding:var(--spacing-md);background:var(--color-surface-alt);border-radius:var(--radius-md);">
-                    <span class="material-icons-round" style="color:var(--color-danger);">block</span>
-                    <div>
-                        <p style="font-weight:500;color:var(--color-text);">Đã bị chặn</p>
-                        <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
-                            Bạn đã chặn quyền thông báo. Vào cài đặt trình duyệt → Site Settings → Notifications để bật lại.
-                        </p>
-                    </div>
-                </div>
-            `;
-        }
-
-        // Permission is 'default' or 'granted' — chỉ hiển thị toggle
-        return `
-            <div id="notification-settings-content">
-                <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <div style="display:flex;align-items:center;gap:var(--spacing-md);">
-                        <span class="material-icons-round" style="color:var(--color-primary);">alarm</span>
-                        <div>
-                            <p style="font-weight:500;color:var(--color-text);">Nhắc ôn tập</p>
-                            <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);">
-                                Nhận thông báo khi có từ tới hạn ôn tập
-                            </p>
-                        </div>
-                    </div>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="notification-toggle" onchange="SettingsPage.toggleNotification(this.checked)">
-                        <span class="toggle-slider"></span>
-                    </label>
-                </div>
-
-                <div id="notification-status" style="margin-top:var(--spacing-md);display:none;">
-                    <p style="font-size:var(--font-size-sm);color:var(--color-success);display:flex;align-items:center;gap:var(--spacing-xs);">
-                        <span class="material-icons-round" style="font-size:16px;">check_circle</span>
-                        <span>Đã bật — sẽ nhắc khi có từ cần ôn</span>
-                    </p>
-                    <button id="btn-test-notification"
-                            onclick="SettingsPage.sendTestNotification()"
-                            style="margin-top:var(--spacing-sm);padding:8px 16px;background:rgba(108,99,255,0.15);border:1px solid var(--color-primary);border-radius:var(--radius-md);color:var(--color-primary);font-size:var(--font-size-sm);font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
-                        <span class="material-icons-round" style="font-size:16px;">send</span>
-                        <span>Gửi thông báo thử</span>
-                    </button>
-                </div>
-            </div>
-        `;
-    },
-
     async onEnter() {
         // Load saved API key
         const savedKey = Helpers.storage.get('linguaflash-api-key', '');
@@ -187,9 +105,6 @@ const SettingsPage = {
         if (input && savedKey) {
             input.value = savedKey;
         }
-
-        // Load notification settings
-        await this._loadNotificationSettings();
 
         // Load app version từ Service Worker
         await this._loadAppVersion();
@@ -280,66 +195,6 @@ const SettingsPage = {
         }
     },
 
-    /**
-     * Load notification settings from Firestore and update UI.
-     * Schema mới: chỉ có { enabled, timezone }, không còn reminderTime.
-     */
-    async _loadNotificationSettings() {
-        const toggle = document.getElementById('notification-toggle');
-        const statusDiv = document.getElementById('notification-status');
-
-        if (!toggle) return;
-
-        try {
-            const settings = await PushNotificationManager.getSettings();
-
-            if (settings && settings.enabled) {
-                toggle.checked = true;
-                if (statusDiv) statusDiv.style.display = 'block';
-            }
-        } catch (err) {
-            console.warn('[SettingsPage] Load notification settings error:', err);
-        }
-    },
-
-    /**
-     * Toggle notification on/off.
-     */
-    async toggleNotification(enabled) {
-        const statusDiv = document.getElementById('notification-status');
-
-        if (enabled) {
-            if (!auth.currentUser) {
-                Toast.warning('Cần đăng nhập', 'Đăng nhập để bật thông báo nhắc ôn');
-                document.getElementById('notification-toggle').checked = false;
-                return;
-            }
-
-            const granted = await PushNotificationManager.requestPermission();
-            if (!granted) {
-                document.getElementById('notification-toggle').checked = false;
-                return;
-            }
-
-            await PushNotificationManager.saveSettings({
-                enabled: true,
-                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-            });
-
-            if (statusDiv) statusDiv.style.display = 'block';
-            Toast.success('Đã bật thông báo', 'Sẽ nhắc khi có từ tới hạn ôn tập');
-        } else {
-            await PushNotificationManager.removeToken();
-            await PushNotificationManager.saveSettings({
-                enabled: false,
-                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-            });
-
-            if (statusDiv) statusDiv.style.display = 'none';
-            Toast.info('Đã tắt thông báo');
-        }
-    },
-
     setTheme(theme) {
         ThemeManager.apply(theme);
         // Re-render to update button states
@@ -366,69 +221,6 @@ const SettingsPage = {
         if (input) {
             Helpers.storage.set('linguaflash-api-key', input.value.trim());
             Toast.success('Đã lưu API Key');
-        }
-    },
-
-    /**
-     * Gửi thông báo thử ngay (gọi Vercel API /api/send-test-notification).
-     * Giúp xác minh FCM hoạt động không cần chờ cron schedule.
-     */
-    async sendTestNotification() {
-        const btn = document.getElementById('btn-test-notification');
-        if (btn) {
-            btn.disabled = true;
-            btn.style.opacity = '0.6';
-            btn.innerHTML = '<span class="material-icons-round" style="font-size:16px;animation:spin 1s linear infinite;">hourglass_empty</span><span>Đang gửi...</span>';
-        }
-
-        try {
-            if (!Auth.isSignedIn()) {
-                Toast.warning('Cần đăng nhập', 'Đăng nhập để gửi thông báo thử');
-                return;
-            }
-
-            // Lấy Firebase Auth ID token để gửi kèm request
-            const idToken = await firebase.auth().currentUser.getIdToken();
-
-            const response = await fetch('/api/send-test-notification', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${idToken}`
-                },
-                body: JSON.stringify({})
-            });
-
-            const data = await response.json();
-            console.log('[SettingsPage] Test notification result:', data);
-
-            if (!response.ok) {
-                throw new Error(data.error || `HTTP ${response.status}`);
-            }
-
-            if (data.ok) {
-                if (data.success > 0) {
-                    Toast.success(
-                        'Đã gửi thông báo thử',
-                        `Gửi tới ${data.devices} thiết bị, ${data.success} thành công`
-                    );
-                } else {
-                    Toast.warning(
-                        'Gửi xong nhưng không thành công',
-                        `${data.failure}/${data.devices} thiết bị bị lỗi token. Hãy tắt rồi bật lại notification.`
-                    );
-                }
-            }
-        } catch (err) {
-            console.error('[SettingsPage] sendTestNotification error:', err);
-            const message = err.message || 'Lỗi không xác định';
-            Toast.error('Lỗi gửi thông báo', message);
-        } finally {
-            if (btn) {
-                btn.disabled = false;
-                btn.style.opacity = '';
-                btn.innerHTML = '<span class="material-icons-round" style="font-size:16px;">send</span><span>Gửi thông báo thử</span>';
-            }
         }
     }
 };

@@ -16,7 +16,7 @@
 //   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
 //     user xác nhận trên Toast "Có bản cập nhật mới"
 
-const APP_VERSION = '5.149.3';
+const APP_VERSION = '5.150.0';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
@@ -76,8 +76,6 @@ const PRECACHE_URLS = [
     // Config
     '/src/js/config/card-schemas.js',
     '/src/js/config/vocabulary-topics.js',
-    // Notifications
-    '/src/js/notifications/push-manager.js',
     // Icons
     '/icons/icon-192.png',
     '/icons/icon-512.png'

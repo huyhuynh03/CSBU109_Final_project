@@ -1,0 +1,612 @@
+logger.ts:115 [2026-05-25T12:28:06.277Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+I @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+firebase-config.js?v=8e275903fb:42 [Firebase] Initialized successfully
+app.js?v=7508f27b53:10 [App] Initializing LinguaFlash...
+theme.js?v=7d2d8a5c9e:30 [Theme] Initialized: system
+pwa-install.js?v=53e11ee624:49 [PWAInstall] Initialized
+firestore.js?v=ebb0994a1f:14 [Firestore] Initialized
+sync.js?v=4128eea52b:25 [Sync] Initialized, online: true
+fsrs.js?v=5e348d74b3:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+auth-ui.js?v=57ee1bc840:47 [AuthUI] Initialized
+sidebar.js?v=6c084ce8e3:96 [Sidebar] Initialized
+app.js?v=7508f27b53:135 [App] Routes registered
+sw-update.js?v=dc43ebc4bb:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
+auth.js?v=cec132f99d:15 [Auth] State changed: huynhvuquochuy37@gmail.com
+push-manager.js?v=d663245d4c:56 [PushManager] Initialized successfully
+router.js?v=810b5c093e:26 [Router] Initialized
+firebase-config.js?v=8e275903fb:25 [Firebase] Offline persistence enabled
+home.js?v=1f016e11a3:81 [HomePage] Entered - Dashboard
+app.js?v=7508f27b53:64 [App] ✅ Initialized successfully
+router.js?v=810b5c093e:202 [Router] Navigated to: /
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+settings.js?v=baf2dfee17:197 [SettingsPage] Entered
+router.js?v=810b5c093e:202 [Router] Navigated to: /settings
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+webchannel_connection.ts:261 Fetch failed loading: GET "https://firestore.googleapis.com/google.firestore.v1.Firestore/Write/channel?gsessionid=l-rWpb499_2R4rmi_BWMd3jkmQb_eDI9TmhRZqEAkm6wfUD1DJoiSw&VER=8&database=projects%2Flinguaflash-f5591%2Fdatabases%2F(default)&RID=rpc&SID=n3nlvjS3XtQpNamFVYVxxg&AID=0&CI=0&TYPE=xmlhttp&zx=wmyt6vkkot4t&t=1".
+e.send @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.ea @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Le @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Jt @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.Fa @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+C @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+I @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Ht @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+qe @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Ce.Y @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Ce.ca @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Z @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+X @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Lt @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.bb @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.Ea @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+xt @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.Pa @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+Tt @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.Sa @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+e.send @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.ea @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Le @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Me @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.Ga @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+C @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+I @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+zt @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+e.connect @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+un.m @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+lo @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+send @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+i_ @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+V_ @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+Iu @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enqueue @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enqueueAndForget @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+fo @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+setTimeout
+Oo @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+l_ @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+u_ @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+auth @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+start @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+start @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+To @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Io @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+await in Io
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+await in (anonymous)
+zs @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Tu @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Promise.then
+Iu @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enqueue @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enqueueAndForget @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enqueueRetryable @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+gs @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+Navigated to https://linguaflash-kohl.vercel.app/
+logger.ts:115 [2026-05-25T12:29:01.295Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+I @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+warn @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+F @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enableMultiTabIndexedDbPersistence @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+enablePersistence @ www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js:1
+(anonymous) @ /src/js/firebase-config.js?v=8e275903fb:23
+firebase-config.js?v=8e275903fb:42 [Firebase] Initialized successfully
+app.js?v=7508f27b53:10 [App] Initializing LinguaFlash...
+theme.js?v=7d2d8a5c9e:30 [Theme] Initialized: system
+pwa-install.js?v=53e11ee624:49 [PWAInstall] Initialized
+firestore.js?v=ebb0994a1f:14 [Firestore] Initialized
+sync.js?v=4128eea52b:25 [Sync] Initialized, online: true
+fsrs.js?v=5e348d74b3:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+auth-ui.js?v=57ee1bc840:47 [AuthUI] Initialized
+sidebar.js?v=6c084ce8e3:96 [Sidebar] Initialized
+app.js?v=7508f27b53:135 [App] Routes registered
+sw-update.js?v=dc43ebc4bb:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
+auth.js?v=cec132f99d:15 [Auth] State changed: huynhvuquochuy37@gmail.com
+router.js?v=810b5c093e:26 [Router] Initialized
+push-manager.js?v=d663245d4c:139 [PushManager] FCM SW registered, scope: https://linguaflash-kohl.vercel.app/firebase-cloud-messaging-push-scope
+push-manager.js?v=d663245d4c:151 [PushManager] FCM Token obtained
+firebase-config.js?v=8e275903fb:25 [Firebase] Offline persistence enabled
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+settings.js?v=baf2dfee17:197 [SettingsPage] Entered
+router.js?v=810b5c093e:202 [Router] Navigated to: /settings
+app.js?v=7508f27b53:64 [App] ✅ Initialized successfully
+iframe.js:272 XHR finished loading: GET "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyB0owP69y_XqcUwqHx2kD2xJRSeGEqSC6A&cb=1779712141998".
+k.send @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:272
+Qm.hm @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:371
+Xm @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:369
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:375
+F @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:156
+an @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:375
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:383
+a @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+c @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+e.Rc @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:163
+hg @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:166
+dg @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:166
+F.Bk @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:165
+a @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+c @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:155
+Mf @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:156
+a
+Ff @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:156
+Zf @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:162
+F.then @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:159
+Q @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:383
+gn @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:375
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:575
+hs.start @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:574
+is.start @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:575
+ks.start @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:577
+ns @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:579
+(anonymous) @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:580
+Yi @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:240
+b @ linguaflash-f5591.firebaseapp.com/__/auth/iframe.js:238
+push-manager.js?v=d663245d4c:218 [PushManager] Token saved to Firestore
+push-manager.js?v=d663245d4c:172 [PushManager] Token refreshed
+push-manager.js?v=d663245d4c:56 [PushManager] Initialized successfully
+ [SwUpdate] Controller changed - reloading...
+ [2026-05-25T12:29:23.303Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+I @ firebase-firestore-compat.js:1
+warn @ firebase-firestore-compat.js:1
+F @ firebase-firestore-compat.js:1
+(anonymous) @ firebase-firestore-compat.js:1
+enableMultiTabIndexedDbPersistence @ firebase-firestore-compat.js:1
+enablePersistence @ firebase-firestore-compat.js:1
+(anonymous) @ firebase-config.js?v=8e275903fb:23
+ [Firebase] Initialized successfully
+Navigated to https://linguaflash-kohl.vercel.app/
+ [App] Initializing LinguaFlash...
+ [Theme] Initialized: system
+ [PWAInstall] Initialized
+ [Firestore] Initialized
+ [Sync] Initialized, online: true
+ [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+ [AuthUI] Initialized
+ [Sidebar] Initialized
+ [App] Routes registered
+ [Auth] State changed: signed out
+ [Router] Initialized
+ [SettingsPage] Entered
+ [Router] Navigated to: /settings
+ [Firebase] Offline persistence enabled
+ [App] ✅ Initialized successfully
+ [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
+sw.js:95 [SW] Installing v5.148.0...
+ [SwUpdate] New SW found, state: installing
+ [PushManager] FCM SW registered, scope: https://linguaflash-kohl.vercel.app/firebase-cloud-messaging-push-scope
+iframe.js:272 XHR finished loading: GET "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyB0owP69y_XqcUwqHx2kD2xJRSeGEqSC6A&cb=1779712164250".
+k.send @ iframe.js:272
+Qm.hm @ iframe.js:371
+Xm @ iframe.js:369
+(anonymous) @ iframe.js:375
+F @ iframe.js:156
+an @ iframe.js:375
+(anonymous) @ iframe.js:383
+a @ iframe.js:155
+(anonymous) @ iframe.js:155
+c @ iframe.js:155
+e.Rc @ iframe.js:163
+hg @ iframe.js:166
+dg @ iframe.js:166
+F.Bk @ iframe.js:165
+a @ iframe.js:155
+(anonymous) @ iframe.js:155
+c @ iframe.js:155
+Mf @ iframe.js:156
+a
+Ff @ iframe.js:156
+Zf @ iframe.js:162
+F.then @ iframe.js:159
+Q @ iframe.js:383
+gn @ iframe.js:375
+(anonymous) @ iframe.js:575
+hs.start @ iframe.js:574
+is.start @ iframe.js:575
+ks.start @ iframe.js:577
+ns @ iframe.js:579
+(anonymous) @ iframe.js:580
+Yi @ iframe.js:240
+b @ iframe.js:238
+sw.js:107 [SW] Precache complete
+sw.js:118 [SW] Activating v5.148.0...
+ [SwUpdate] New SW state: installed
+ [SwUpdate] New SW state: activating
+sw.js:140 [SW] Activation complete
+ [SwUpdate] Controller changed - reloading...
+ [SwUpdate] New SW state: activated
+Navigated to https://linguaflash-kohl.vercel.app/
+logger.ts:115 [2026-05-25T12:29:26.660Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+(anonymous) @ logger.ts:115
+warn @ logger.ts:206
+__PRIVATE_logWarn @ log.ts:69
+(anonymous) @ database.ts:408
+enableMultiTabIndexedDbPersistence @ database.ts:159
+enablePersistence @ database.ts:247
+(anonymous) @ firebase-config.js?v=8e275903fb:23
+firebase-config.js?v=8e275903fb:42 [Firebase] Initialized successfully
+app.js?v=7508f27b53:10 [App] Initializing LinguaFlash...
+theme.js?v=7d2d8a5c9e:30 [Theme] Initialized: system
+pwa-install.js?v=53e11ee624:49 [PWAInstall] Initialized
+firestore.js?v=ebb0994a1f:14 [Firestore] Initialized
+sync.js?v=4128eea52b:25 [Sync] Initialized, online: true
+fsrs.js?v=5e348d74b3:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+auth-ui.js?v=57ee1bc840:47 [AuthUI] Initialized
+sidebar.js?v=6c084ce8e3:96 [Sidebar] Initialized
+app.js?v=7508f27b53:135 [App] Routes registered
+sw-update.js?v=dc43ebc4bb:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
+auth.js?v=cec132f99d:15 [Auth] State changed: signed out
+router.js?v=810b5c093e:26 [Router] Initialized
+push-manager.js?v=d663245d4c:139 [PushManager] FCM SW registered, scope: https://linguaflash-kohl.vercel.app/firebase-cloud-messaging-push-scope
+settings.js?v=baf2dfee17:197 [SettingsPage] Entered
+router.js?v=810b5c093e:202 [Router] Navigated to: /settings
+firebase-config.js?v=8e275903fb:25 [Firebase] Offline persistence enabled
+app.js?v=7508f27b53:64 [App] ✅ Initialized successfully
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+Fetch finished loading: POST "<URL>".
+iframe.js:272 XHR finished loading: GET "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyB0owP69y_XqcUwqHx2kD2xJRSeGEqSC6A&cb=1779712167484".
+k.send @ iframe.js:272
+Qm.hm @ iframe.js:371
+Xm @ iframe.js:369
+(anonymous) @ iframe.js:375
+F @ iframe.js:156
+an @ iframe.js:375
+(anonymous) @ iframe.js:383
+a @ iframe.js:155
+(anonymous) @ iframe.js:155
+c @ iframe.js:155
+e.Rc @ iframe.js:163
+hg @ iframe.js:166
+dg @ iframe.js:166
+F.Bk @ iframe.js:165
+a @ iframe.js:155
+(anonymous) @ iframe.js:155
+c @ iframe.js:155
+Mf @ iframe.js:156
+a
+Ff @ iframe.js:156
+Zf @ iframe.js:162
+F.then @ iframe.js:159
+Q @ iframe.js:383
+gn @ iframe.js:375
+(anonymous) @ iframe.js:575
+hs.start @ iframe.js:574
+is.start @ iframe.js:575
+ks.start @ iframe.js:577
+ns @ iframe.js:579
+(anonymous) @ iframe.js:580
+Yi @ iframe.js:240
+b @ iframe.js:238
+auth-page.js?v=c5e3ac19a2:128 [AuthPage] Entered, mode: login
+router.js?v=810b5c093e:202 [Router] Navigated to: /auth
+push-manager.js?v=d663245d4c:151 [PushManager] FCM Token obtained
+push-manager.js?v=d663245d4c:186 [PushManager] No user logged in, cannot save token
+_saveTokenToFirestore @ push-manager.js?v=d663245d4c:186
+_refreshToken @ push-manager.js?v=d663245d4c:170
+await in _refreshToken
+init @ push-manager.js?v=d663245d4c:47
+init @ app.js?v=7508f27b53:42
+await in init
+(anonymous) @ app.js?v=7508f27b53:143
+push-manager.js?v=d663245d4c:172 [PushManager] Token refreshed
+push-manager.js?v=d663245d4c:56 [PushManager] Initialized successfully
+index.ts:151 Fetch finished loading: GET "https://identitytoolkit.googleapis.com/v1/projects?key=AIzaSyB0owP69y_XqcUwqHx2kD2xJRSeGEqSC6A".
+(anonymous) @ index.ts:151
+await in (anonymous)
+_performFetchWithErrorHandling @ index.ts:173
+_performApiRequest @ index.ts:126
+(anonymous) @ get_project_config.ts:34
+(anonymous) @ validate_origin.ts:33
+_originValidation @ popup_redirect.ts:173
+_originValidation @ popup_redirect.ts:86
+onExecution @ popup.ts:262
+await in onExecution
+(anonymous) @ abstract_popup_redirect_operation.ts:76
+await in (anonymous)
+execute @ abstract_popup_redirect_operation.ts:70
+executeNotNull @ popup.ts:236
+(anonymous) @ popup.ts:110
+signInWithPopup @ auth.ts:304
+signInWithGoogle @ auth.js?v=cec132f99d:87
+signInWithGoogle @ auth-page.js?v=c5e3ac19a2:204
+onclick @ (index):1
+popup.ts:302 Cross-Origin-Opener-Policy policy would block the window.closed call.
+(anonymous) @ popup.ts:302
+setTimeout
+(anonymous) @ popup.ts:317
+setTimeout
+(anonymous) @ popup.ts:317
+pollUserCancellation @ popup.ts:320
+onExecution @ popup.ts:275
+await in onExecution
+(anonymous) @ abstract_popup_redirect_operation.ts:76
+await in (anonymous)
+execute @ abstract_popup_redirect_operation.ts:70
+executeNotNull @ popup.ts:236
+(anonymous) @ popup.ts:110
+signInWithPopup @ auth.ts:304
+signInWithGoogle @ auth.js?v=cec132f99d:87
+signInWithGoogle @ auth-page.js?v=c5e3ac19a2:204
+onclick @ (index):1
+popup.ts:302 Cross-Origin-Opener-Policy policy would block the window.closed call.
+(anonymous) @ popup.ts:302
+setTimeout
+(anonymous) @ popup.ts:317
+setTimeout
+(anonymous) @ popup.ts:317
+pollUserCancellation @ popup.ts:320
+onExecution @ popup.ts:275
+await in onExecution
+(anonymous) @ abstract_popup_redirect_operation.ts:76
+await in (anonymous)
+execute @ abstract_popup_redirect_operation.ts:70
+executeNotNull @ popup.ts:236
+(anonymous) @ popup.ts:110
+signInWithPopup @ auth.ts:304
+signInWithGoogle @ auth.js?v=cec132f99d:87
+signInWithGoogle @ auth-page.js?v=c5e3ac19a2:204
+onclick @ (index):1
+auth.js?v=cec132f99d:15 [Auth] State changed: huynhvuquochuy37@gmail.com
+firestore.js?v=ebb0994a1f:54 [Firestore] User profile saved: Dn72uE3jAnMFjrtqLdKj57vTxAY2
+home.js?v=1f016e11a3:81 [HomePage] Entered - Dashboard
+migration.js?v=e9e76603df:94 [FsrsMigration] Migrated 0/2512 cards
+settings.js?v=baf2dfee17:197 [SettingsPage] Entered
+router.js?v=810b5c093e:202 [Router] Navigated to: /settings
+(index):1 Access to fetch at 'https://us-central1-linguaflash-f5591.cloudfunctions.net/sendTestNotification' from origin 'https://linguaflash-kohl.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+service.ts:221  POST https://us-central1-linguaflash-f5591.cloudfunctions.net/sendTestNotification net::ERR_FAILED
+(anonymous) @ service.ts:221
+callAtURL @ service.ts:298
+await in callAtURL
+(anonymous) @ service.ts:260
+sendTestNotification @ settings.js?v=baf2dfee17:395
+onclick @ (index):1
+settings.js?v=baf2dfee17:414 [SettingsPage] sendTestNotification error: FirebaseError: internal
+sendTestNotification @ settings.js?v=baf2dfee17:414
+await in sendTestNotification
+onclick @ (index):1
+service.ts:221 Fetch failed loading: POST "https://us-central1-linguaflash-f5591.cloudfunctions.net/sendTestNotification".
+(anonymous) @ service.ts:221
+callAtURL @ service.ts:298
+await in callAtURL
+(anonymous) @ service.ts:260
+sendTestNotification @ settings.js?v=baf2dfee17:395
+onclick @ (index):1
