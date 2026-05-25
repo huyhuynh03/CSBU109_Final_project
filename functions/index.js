@@ -112,7 +112,9 @@ function groupDuplicates(cards) {
     });
 }
 
-exports.cleanupSpaceDuplicateWords = onCall(async (request) => {
+exports.cleanupSpaceDuplicateWords = onCall({
+  cors: [/linguaflash.*\.vercel\.app$/, 'https://linguaflash-kohl.vercel.app', 'http://localhost:5000']
+}, async (request) => {
   if (!request.auth) {
     throw new HttpsError('unauthenticated', 'Cần đăng nhập để chạy cleanup.');
   }
@@ -403,7 +405,9 @@ async function hasDueCards(uid) {
 // ============================================
 // Test Notification - gửi thông báo ngay (không cần chờ cron)
 // ============================================
-exports.sendTestNotification = onCall(async (request) => {
+exports.sendTestNotification = onCall({
+  cors: [/linguaflash.*\.vercel\.app$/, 'https://linguaflash-kohl.vercel.app', 'http://localhost:5000']
+}, async (request) => {
   if (!request.auth) {
     throw new HttpsError('unauthenticated', 'Cần đăng nhập để gửi thông báo thử.');
   }
