@@ -1,0 +1,1093 @@
+{
+  "_meta": {
+    "topicId": "investment",
+    "topicName": "Đầu tư",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Investment (B1-B2)",
+    "totalCards": 83,
+    "totalFamilies": 10,
+    "generatedAt": "2026-05-25",
+    "note": "Tu vung chu de Dau tu, bao gom thi truong chung khoan, cong cu dau tu, chien luoc, rui ro va loi nhuan, bat dong san, tien ma hoa va phan tich tai chinh."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "stock market",
+        "ipa": "/ˈstɒk ˌmɑːkɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường chứng khoán",
+        "example": "The stock market crashed after the central bank raised interest rates.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stock exchange",
+        "ipa": "/ˈstɒk ɪksˌtʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sàn giao dịch chứng khoán",
+        "example": "The London Stock Exchange is one of the oldest in the world.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bull market",
+        "ipa": "/ˈbʊl ˌmɑːkɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường giá lên (xu hướng tăng)",
+        "example": "Investors made huge gains during the long bull market of the 2010s.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bear market",
+        "ipa": "/ˈbeə ˌmɑːkɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường giá xuống (xu hướng giảm)",
+        "example": "Many beginners lose money when they panic during a bear market.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "IPO",
+        "ipa": "/ˌaɪ piː ˈəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phát hành cổ phiếu lần đầu ra công chúng",
+        "example": "The tech startup raised two billion dollars through its IPO last week.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blue chip",
+        "ipa": "/ˌbluː ˈtʃɪp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(cổ phiếu) hàng đầu, uy tín và ổn định",
+        "example": "Conservative investors prefer blue chip stocks for steady long-term growth.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ticker",
+        "ipa": "/ˈtɪkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mã chứng khoán, bảng giá điện tử",
+        "example": "Apple trades under the ticker AAPL on the Nasdaq exchange.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "listed",
+        "ipa": "/ˈlɪstɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được niêm yết (trên sàn giao dịch)",
+        "example": "Only listed companies must publish detailed quarterly financial reports.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delist",
+        "ipa": "/ˌdiːˈlɪst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "huỷ niêm yết khỏi sàn giao dịch",
+        "example": "The exchange decided to delist the firm after it failed to file accounts.",
+        "familyId": "investment-stock-market",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mutual fund",
+        "ipa": "/ˌmjuːtʃuəl ˈfʌnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ tương hỗ (gom tiền nhiều người để đầu tư)",
+        "example": "She put most of her savings into a low-risk mutual fund.",
+        "familyId": "investment-instruments",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ETF",
+        "ipa": "/ˌiː tiː ˈef/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ hoán đổi danh mục (giao dịch như cổ phiếu)",
+        "example": "An ETF that tracks the S&P 500 is a simple choice for new investors.",
+        "familyId": "investment-instruments",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "index fund",
+        "ipa": "/ˈɪndeks ˌfʌnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ chỉ số (mô phỏng một chỉ số thị trường)",
+        "example": "Index funds usually charge much lower fees than actively managed ones.",
+        "familyId": "investment-instruments",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hedge fund",
+        "ipa": "/ˈhedʒ ˌfʌnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ phòng hộ (đầu tư rủi ro cao, dành cho khách giàu)",
+        "example": "Most hedge funds only accept clients with very large amounts of money.",
+        "familyId": "investment-instruments",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swap",
+        "ipa": "/swɒp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hợp đồng hoán đổi",
+        "example": "Interest rate swaps allow companies to manage their borrowing costs.",
+        "familyId": "investment-instruments",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "option",
+        "ipa": "/ˈɒpʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền chọn (mua/bán tài sản ở giá đã định)",
+        "example": "He bought an option that lets him purchase the shares at fifty dollars.",
+        "familyId": "investment-instruments",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "futures",
+        "ipa": "/ˈfjuːtʃəz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hợp đồng tương lai",
+        "example": "Farmers often use futures to lock in a price for next season's crop.",
+        "familyId": "investment-instruments",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commodity",
+        "ipa": "/kəˈmɒdəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng hoá (vàng, dầu, lúa mì, được giao dịch)",
+        "example": "Gold is a popular commodity that investors buy when markets feel unsafe.",
+        "familyId": "investment-instruments",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "treasury",
+        "ipa": "/ˈtreʒəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trái phiếu kho bạc, ngân khố",
+        "example": "Many pension funds hold US treasury bonds as a safe asset.",
+        "familyId": "investment-instruments",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "securities",
+        "ipa": "/sɪˈkjʊə.rə.tiz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chứng khoán (số nhiều)",
+        "example": "She invests her savings in a mix of securities and real estate.",
+        "familyId": "investment-instruments",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broker",
+        "ipa": "/ˈbrəʊkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà môi giới (mua bán giúp khách)",
+        "example": "Her broker called to recommend a new technology stock this morning.",
+        "familyId": "investment-participants",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brokerage",
+        "ipa": "/ˈbrəʊkərɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty môi giới, dịch vụ môi giới",
+        "example": "Online brokerages now charge almost nothing to trade common shares.",
+        "familyId": "investment-participants",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dealer",
+        "ipa": "/ˈdiːlə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại lý giao dịch (mua bán bằng vốn của mình)",
+        "example": "The dealer quoted us a slightly higher price for the bond.",
+        "familyId": "investment-participants",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "market maker",
+        "ipa": "/ˈmɑːkɪt ˌmeɪkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tạo lập thị trường (luôn sẵn sàng mua-bán)",
+        "example": "Market makers help keep prices stable by always offering to buy or sell.",
+        "familyId": "investment-participants",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "day trader",
+        "ipa": "/ˈdeɪ ˌtreɪdə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người giao dịch trong ngày (mua bán liên tục)",
+        "example": "Most day traders actually lose money over the long run.",
+        "familyId": "investment-participants",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "institutional investor",
+        "ipa": "/ˌɪnstɪˈtjuːʃənl ɪnˈvestə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà đầu tư tổ chức (quỹ, ngân hàng, bảo hiểm)",
+        "example": "Institutional investors own more than half of the shares in this company.",
+        "familyId": "investment-participants",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diversify",
+        "ipa": "/daɪˈvɜːsɪfaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đa dạng hoá danh mục (giảm rủi ro)",
+        "example": "Experts always tell beginners to diversify across different industries.",
+        "familyId": "investment-strategy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diversification",
+        "ipa": "/daɪˌvɜːsɪfɪˈkeɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đa dạng hoá danh mục đầu tư",
+        "example": "Diversification is the simplest way to protect your money from big losses.",
+        "familyId": "investment-strategy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hedge",
+        "ipa": "/hedʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phòng ngừa rủi ro (bằng giao dịch ngược chiều)",
+        "example": "Airlines often hedge against rising fuel prices using futures contracts.",
+        "familyId": "investment-strategy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speculate",
+        "ipa": "/ˈspekjuleɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đầu cơ (đặt cược vào biến động giá)",
+        "example": "He speculated on oil futures and lost most of his savings.",
+        "familyId": "investment-strategy",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speculation",
+        "ipa": "/ˌspekjuˈleɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đầu cơ, hoạt động đầu cơ",
+        "example": "Wild speculation in housing pushed prices far above their true value.",
+        "familyId": "investment-strategy",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speculator",
+        "ipa": "/ˈspekjuleɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà đầu cơ",
+        "example": "Speculators rushed to buy gold as soon as the news was announced.",
+        "familyId": "investment-strategy",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "buy-and-hold",
+        "ipa": "/ˌbaɪ ən ˈhəʊld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(chiến lược) mua và nắm giữ lâu dài",
+        "example": "Warren Buffett is famous for following a strict buy-and-hold strategy.",
+        "familyId": "investment-strategy",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dollar-cost averaging",
+        "ipa": "/ˌdɒlə kɒst ˈævərɪdʒɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến lược trung bình giá (mua đều đặn theo kỳ)",
+        "example": "Dollar-cost averaging helps reduce the impact of short-term price swings.",
+        "familyId": "investment-strategy",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "long-term",
+        "ipa": "/ˌlɒŋ ˈtɜːm/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(đầu tư) dài hạn",
+        "example": "Stocks tend to outperform other assets over the long-term horizon.",
+        "familyId": "investment-strategy",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "short-term",
+        "ipa": "/ˌʃɔːt ˈtɜːm/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(đầu tư) ngắn hạn",
+        "example": "Short-term trading is exciting but often very stressful and risky.",
+        "familyId": "investment-strategy",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "return",
+        "ipa": "/rɪˈtɜːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lợi nhuận, mức sinh lời từ đầu tư",
+        "example": "The fund delivered an average annual return of eight percent.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "risk",
+        "ipa": "/rɪsk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rủi ro, khả năng mất tiền",
+        "example": "Higher returns usually come with a higher level of risk.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "risky",
+        "ipa": "/ˈrɪski/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "rủi ro, đầy nguy cơ",
+        "example": "Putting all your money in one stock is a very risky decision.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "volatility",
+        "ipa": "/ˌvɒləˈtɪləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự biến động giá mạnh",
+        "example": "Crypto markets are known for extreme volatility within a single day.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "volatile",
+        "ipa": "/ˈvɒlətaɪl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(thị trường) biến động mạnh, khó lường",
+        "example": "The market became very volatile after the surprise election result.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gain",
+        "ipa": "/ɡeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản lời, mức tăng giá trị",
+        "example": "She made a small gain after selling her shares last week.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "capital gain",
+        "ipa": "/ˈkæpɪtl ɡeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãi vốn (lời từ bán tài sản tăng giá)",
+        "example": "You must report any capital gain from selling property to the tax office.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "underperform",
+        "ipa": "/ˌʌndəpəˈfɔːm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "(cổ phiếu/quỹ) sinh lời thấp hơn kỳ vọng",
+        "example": "Tech stocks underperformed the broader market for most of last year.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outperform",
+        "ipa": "/ˌaʊtpəˈfɔːm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vượt trội, sinh lời cao hơn mặt bằng chung",
+        "example": "Her portfolio managed to outperform the index by three percent.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "profitable",
+        "ipa": "/ˈprɒfɪtəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có lời, sinh lợi",
+        "example": "Renting out the apartment turned out to be a very profitable choice.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lucrative",
+        "ipa": "/ˈluːkrətɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "béo bở, mang lại nhiều tiền",
+        "example": "Property investment in this area has become a lucrative business.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upside",
+        "ipa": "/ˈʌp.saɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiềm năng tăng giá",
+        "example": "The stock has limited upside but huge downside risk.",
+        "familyId": "investment-risk-return",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "real estate",
+        "ipa": "/ˈriːəl ɪˌsteɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bất động sản",
+        "example": "He made his fortune in real estate during the housing boom.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "property",
+        "ipa": "/ˈprɒpəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài sản, bất động sản",
+        "example": "She owns several properties in different parts of the city.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "landlord",
+        "ipa": "/ˈlændlɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nhà cho thuê",
+        "example": "Our landlord increased the rent by ten percent this year.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tenant",
+        "ipa": "/ˈtenənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người thuê nhà",
+        "example": "Good tenants always pay on time and take care of the place.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lease",
+        "ipa": "/liːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hợp đồng thuê dài hạn",
+        "example": "We signed a two-year lease for the office downtown.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "REIT",
+        "ipa": "/riːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ tín thác bất động sản",
+        "example": "Buying a REIT is an easy way to invest in property without owning a building.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commercial",
+        "ipa": "/kəˈmɜːʃl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(bất động sản) thương mại, dùng cho kinh doanh",
+        "example": "Commercial properties usually offer higher returns than residential ones.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "residential",
+        "ipa": "/ˌrezɪˈdenʃl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(bất động sản) nhà ở, để ở",
+        "example": "Demand for residential apartments near the university remains strong.",
+        "familyId": "investment-real-estate",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cryptocurrency",
+        "ipa": "/ˈkrɪptəʊˌkʌrənsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền mã hoá, tiền điện tử",
+        "example": "Many young people now invest part of their savings in cryptocurrency.",
+        "familyId": "investment-crypto",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crypto",
+        "ipa": "/ˈkrɪptəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền mã hoá (cách gọi tắt)",
+        "example": "He lost a lot of money trading crypto during the last crash.",
+        "familyId": "investment-crypto",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bitcoin",
+        "ipa": "/ˈbɪtkɔɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "Bitcoin (đồng tiền mã hoá đầu tiên)",
+        "example": "The price of bitcoin doubled within just a few months.",
+        "familyId": "investment-crypto",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blockchain",
+        "ipa": "/ˈblɒktʃeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuỗi khối (công nghệ nền của crypto)",
+        "example": "Every bitcoin transaction is permanently recorded on the blockchain.",
+        "familyId": "investment-crypto",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "token",
+        "ipa": "/ˈtəʊkən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồng token (đại diện một tài sản hoặc quyền)",
+        "example": "The startup launched its own token to reward loyal users.",
+        "familyId": "investment-crypto",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "staking",
+        "ipa": "/ˈsteɪ.kɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đặt cọc tiền mã hóa để nhận phần thưởng",
+        "example": "Staking Ethereum can generate passive income for long-term holders.",
+        "familyId": "investment-crypto",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decentralized",
+        "ipa": "/ˌdiːˈsentrəlaɪzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phi tập trung, không có tổ chức điều hành duy nhất",
+        "example": "Cryptocurrencies are designed to be decentralized and free from banks.",
+        "familyId": "investment-crypto",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "NFT",
+        "ipa": "/ˌen ef ˈtiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài sản số độc nhất (không thể thay thế)",
+        "example": "He spent thousands of dollars buying an NFT of a digital painting.",
+        "familyId": "investment-crypto",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "valuation",
+        "ipa": "/ˌvæljuˈeɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự định giá, mức định giá",
+        "example": "The startup reached a valuation of one billion dollars after the new round.",
+        "familyId": "investment-analysis",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appraise",
+        "ipa": "/əˈpreɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thẩm định giá trị (tài sản, bất động sản)",
+        "example": "An expert came to appraise the house before we put it on the market.",
+        "familyId": "investment-analysis",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "undervalued",
+        "ipa": "/ˌʌndəˈvæljuːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị định giá thấp hơn giá trị thực",
+        "example": "He believes the stock is undervalued and will rise in the next year.",
+        "familyId": "investment-analysis",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overvalued",
+        "ipa": "/ˌəʊvəˈvæljuːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị định giá cao hơn giá trị thực",
+        "example": "Many analysts think tech shares are overvalued at the moment.",
+        "familyId": "investment-analysis",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fundamental",
+        "ipa": "/ˌfʌndəˈmentl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(phân tích) cơ bản, dựa trên báo cáo tài chính",
+        "example": "Fundamental analysis looks at a company's earnings, debt and management.",
+        "familyId": "investment-analysis",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "technical",
+        "ipa": "/ˈteknɪkl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(phân tích) kỹ thuật, dựa trên biểu đồ giá",
+        "example": "Day traders often rely on technical patterns to time their trades.",
+        "familyId": "investment-analysis",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "market cap",
+        "ipa": "/ˈmɑːkɪt kæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vốn hoá thị trường (giá cổ phiếu nhân số cổ phiếu)",
+        "example": "The market cap of the company has just passed two trillion dollars.",
+        "familyId": "investment-analysis",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "growth",
+        "ipa": "/ɡrəʊθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tăng trưởng (doanh thu, lợi nhuận)",
+        "example": "Investors love this firm because of its strong yearly growth.",
+        "familyId": "investment-analysis",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outlook",
+        "ipa": "/ˈaʊt.lʊk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "triển vọng",
+        "example": "The economic outlook for the next year remains uncertain.",
+        "familyId": "investment-analysis",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trend",
+        "ipa": "/trend/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xu hướng (giá, thị trường)",
+        "example": "The general trend has been upward for the past six months.",
+        "familyId": "investment-analysis",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "benchmark",
+        "ipa": "/ˈbentʃmɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chỉ số chuẩn để so sánh hiệu quả",
+        "example": "The fund failed to beat its benchmark for the third year in a row.",
+        "familyId": "investment-analysis",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ownership",
+        "ipa": "/ˈəʊnəʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền sở hữu",
+        "example": "Buying shares gives you partial ownership of the company.",
+        "familyId": "investment-equity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stake",
+        "ipa": "/steɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần vốn góp, cổ phần nắm giữ",
+        "example": "The billionaire bought a ten percent stake in the airline.",
+        "familyId": "investment-equity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preferred",
+        "ipa": "/prɪˈfɜːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "(cổ phiếu) ưu đãi, có quyền lợi đặc biệt",
+        "example": "Preferred shares usually pay a fixed amount before common ones.",
+        "familyId": "investment-equity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "common stock",
+        "ipa": "/ˌkɒmən ˈstɒk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổ phiếu phổ thông",
+        "example": "Common stock holders get to vote at the annual meeting.",
+        "familyId": "investment-equity",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "holding",
+        "ipa": "/ˈhəʊldɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài sản đang nắm giữ trong danh mục",
+        "example": "Her largest holding is a popular technology company.",
+        "familyId": "investment-equity",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "distribution",
+        "ipa": "/ˌdɪstrɪˈbjuːʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản phân phối lợi nhuận cho cổ đông",
+        "example": "The fund makes a small distribution to investors every quarter.",
+        "familyId": "investment-returns-payout",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ROI",
+        "ipa": "/ˌɑːr əʊ ˈaɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tỷ suất sinh lời trên vốn đầu tư",
+        "example": "The project delivered an ROI of fifteen percent in just one year.",
+        "familyId": "investment-returns-payout",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "payout",
+        "ipa": "/ˈpeɪaʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản chi trả (cổ tức, tiền lãi)",
+        "example": "Shareholders are expecting a generous payout from the company this year.",
+        "familyId": "investment-returns-payout",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "capital appreciation",
+        "ipa": "/ˈkæpɪtl əˌpriːʃiˈeɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tăng giá vốn (giá trị tài sản tăng theo thời gian)",
+        "example": "Investors hold these shares mainly for long-term capital appreciation.",
+        "familyId": "investment-returns-payout",
+        "familyOrder": 4,
+        "tags": []
+      }
+    }
+  ]
+}

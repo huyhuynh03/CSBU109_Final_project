@@ -1,0 +1,1194 @@
+{
+  "_meta": {
+    "topicId": "finance",
+    "topicName": "Tài chính",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Finance (B1-B2)",
+    "totalCards": 90,
+    "totalFamilies": 11,
+    "generatedAt": "2026-05-25",
+    "note": "Tu vung chu de Tai chinh, bao gom tai chinh ca nhan, ngan hang, thanh toan, the tin dung, vay no, bao hiem, ti gia, ke toan."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "allowance",
+        "ipa": "/əˈlaʊəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền trợ cấp, tiền chu cấp định kỳ",
+        "example": "My parents give me a weekly allowance of fifty dollars.",
+        "familyId": "finance-personal",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paycheck",
+        "ipa": "/ˈpeɪtʃek/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phiếu lương, tiền lương nhận được",
+        "example": "She lives from paycheck to paycheck and barely manages to save.",
+        "familyId": "finance-personal",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pocket money",
+        "ipa": "/ˈpɒkɪt ˌmʌni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền tiêu vặt",
+        "example": "Children often spend their pocket money on snacks and games.",
+        "familyId": "finance-personal",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "creditworthy",
+        "ipa": "/ˈkred.ɪt.wɜː.ði/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đủ uy tín tín dụng",
+        "example": "Only creditworthy applicants will be approved for the loan.",
+        "familyId": "finance-personal",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "affordable",
+        "ipa": "/əˈfɔːdəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có giá phải chăng, có thể chi trả được",
+        "example": "The company offers affordable health plans for young families.",
+        "familyId": "finance-personal",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thrifty",
+        "ipa": "/ˈθrɪfti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiết kiệm, tằn tiện",
+        "example": "Being thrifty helped him buy his first car at the age of twenty.",
+        "familyId": "finance-personal",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "ATM",
+        "ipa": "/ˌeɪ tiː ˈem/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy rút tiền tự động",
+        "example": "I withdrew some cash from the ATM near my office.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "branch",
+        "ipa": "/brɑːntʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi nhánh (ngân hàng)",
+        "example": "You can open a savings account at any branch in the city.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "teller",
+        "ipa": "/ˈtelə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân viên giao dịch ngân hàng",
+        "example": "The teller asked for my ID before processing the transaction.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deposit slip",
+        "ipa": "/dɪˈpɒz.ɪt slɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phiếu gửi tiền",
+        "example": "Please fill out a deposit slip before handing the cash to the teller.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdrawal",
+        "ipa": "/wɪðˈdrɔːəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự rút tiền",
+        "example": "There is a small fee for cash withdrawals at foreign ATMs.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transfer",
+        "ipa": "/trænsˈfɜː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chuyển khoản, chuyển tiền",
+        "example": "Please transfer the money to my account by Friday.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "statement",
+        "ipa": "/ˈsteɪtmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sao kê tài khoản",
+        "example": "I check my bank statement every month to track my spending.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "balance",
+        "ipa": "/ˈbæləns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số dư tài khoản",
+        "example": "My account balance was lower than I expected after the holiday.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overdraft",
+        "ipa": "/ˈəʊvədrɑːft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thấu chi, vượt số dư",
+        "example": "The bank charges high interest on any overdraft.",
+        "familyId": "finance-banking-services",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "payment",
+        "ipa": "/ˈpeɪmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thanh toán, khoản thanh toán",
+        "example": "Late payments will result in additional charges.",
+        "familyId": "finance-payment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "remit",
+        "ipa": "/rɪˈmɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chuyển tiền, thanh toán",
+        "example": "He remits money to his family abroad every month.",
+        "familyId": "finance-payment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "payer",
+        "ipa": "/ˈpeɪə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người trả tiền",
+        "example": "The payer must include a reference number on the transfer.",
+        "familyId": "finance-payment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "payee",
+        "ipa": "/ˌpeɪˈiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người nhận tiền",
+        "example": "Please write the name of the payee clearly on the cheque.",
+        "familyId": "finance-payment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cashier",
+        "ipa": "/kæˈʃɪə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thu ngân, nhân viên thu tiền",
+        "example": "The cashier handed me my change with a friendly smile.",
+        "familyId": "finance-payment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transaction",
+        "ipa": "/trænˈzækʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giao dịch",
+        "example": "Every transaction is recorded for security reasons.",
+        "familyId": "finance-payment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "voucher",
+        "ipa": "/ˈvaʊ.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phiếu thanh toán, chứng từ",
+        "example": "You can use this voucher to get a discount on your next purchase.",
+        "familyId": "finance-payment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invoice",
+        "ipa": "/ˈɪnvɔɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa đơn (giữa doanh nghiệp)",
+        "example": "We will send you the invoice at the end of the month.",
+        "familyId": "finance-payment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "billing",
+        "ipa": "/ˈbɪl.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc lập hóa đơn",
+        "example": "The billing department handles all customer invoices.",
+        "familyId": "finance-payment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fee",
+        "ipa": "/fiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phí, lệ phí",
+        "example": "There is a small fee for using the service abroad.",
+        "familyId": "finance-payment",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surcharge",
+        "ipa": "/ˈsɜː.tʃɑːdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phụ phí",
+        "example": "There is a ten percent surcharge for paying by credit card.",
+        "familyId": "finance-payment",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refund",
+        "ipa": "/ˈriːfʌnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản tiền hoàn lại",
+        "example": "I asked for a full refund because the product was faulty.",
+        "familyId": "finance-payment",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "cash",
+        "ipa": "/kæʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền mặt",
+        "example": "Some small shops only accept cash payments.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coin",
+        "ipa": "/kɔɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồng xu",
+        "example": "He keeps all his loose coins in a glass jar.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banknote",
+        "ipa": "/ˈbæŋknəʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tờ tiền giấy",
+        "example": "The new banknotes are made of plastic for greater durability.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "note",
+        "ipa": "/nəʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tờ tiền giấy (Anh-Anh)",
+        "example": "Could you give me change for a twenty-pound note?",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debit card",
+        "ipa": "/ˈdebɪt kɑːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ ghi nợ",
+        "example": "I paid for the groceries with my debit card.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "credit card",
+        "ipa": "/ˈkredɪt kɑːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ tín dụng",
+        "example": "Be careful not to spend too much on your credit card.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wallet",
+        "ipa": "/ˈwɒlɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ví tiền",
+        "example": "She lost her wallet on the bus this morning.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ATM card",
+        "ipa": "/ˌeɪ tiː ˈem kɑːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ ATM",
+        "example": "Insert your ATM card and enter the PIN to continue.",
+        "familyId": "finance-cash-cards",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "borrow",
+        "ipa": "/ˈbɒrəʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vay, mượn",
+        "example": "He had to borrow money from a friend to pay the rent.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "borrower",
+        "ipa": "/ˈbɒrəʊə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người đi vay",
+        "example": "Most borrowers struggle when interest rates rise sharply.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "creditor",
+        "ipa": "/ˈkred.ɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nợ",
+        "example": "The company owes money to several creditors.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lender",
+        "ipa": "/ˈlendə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người (bên) cho vay",
+        "example": "She compared offers from several lenders before choosing one.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mortgage",
+        "ipa": "/ˈmɔːɡɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản vay thế chấp (mua nhà)",
+        "example": "They took out a thirty-year mortgage to buy their first home.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "repay",
+        "ipa": "/rɪˈpeɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trả nợ, hoàn trả",
+        "example": "He plans to repay the loan within five years.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "repayment",
+        "ipa": "/rɪˈpeɪmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản trả nợ, sự hoàn trả",
+        "example": "Monthly repayments must be made on time to avoid penalties.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "installment",
+        "ipa": "/ɪnˈstɔːlmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền trả góp, kỳ trả góp",
+        "example": "You can pay for the laptop in twelve monthly installments.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "default",
+        "ipa": "/dɪˈfɔːlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vỡ nợ, không thực hiện nghĩa vụ trả nợ",
+        "example": "If you default on the mortgage, you may lose your house.",
+        "familyId": "finance-borrowing",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "insure",
+        "ipa": "/ɪnˈʃʊə/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mua bảo hiểm cho",
+        "example": "It is wise to insure your home against fire and flooding.",
+        "familyId": "finance-insurance",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insurance",
+        "ipa": "/ɪnˈʃʊərəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo hiểm",
+        "example": "Car insurance is required by law in most countries.",
+        "familyId": "finance-insurance",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insurer",
+        "ipa": "/ɪnˈʃʊərə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty bảo hiểm, người bảo hiểm",
+        "example": "The insurer refused to cover damage caused by the storm.",
+        "familyId": "finance-insurance",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insured",
+        "ipa": "/ɪnˈʃʊəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được bảo hiểm",
+        "example": "All passengers on the flight are fully insured against accidents.",
+        "familyId": "finance-insurance",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "premium",
+        "ipa": "/ˈpriːmiəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phí bảo hiểm",
+        "example": "Younger drivers usually pay higher insurance premiums.",
+        "familyId": "finance-insurance",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "claim",
+        "ipa": "/kleɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "yêu cầu bồi thường bảo hiểm",
+        "example": "She filed a claim for the items stolen during the burglary.",
+        "familyId": "finance-insurance",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "policyholder",
+        "ipa": "/ˈpɒləsihəʊldə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ hợp đồng bảo hiểm",
+        "example": "The policyholder is entitled to compensation under these terms.",
+        "familyId": "finance-insurance",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beneficiary",
+        "ipa": "/ˌbenɪˈfɪʃəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người thụ hưởng",
+        "example": "She named her daughter as the beneficiary of her life insurance.",
+        "familyId": "finance-insurance",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "foreign exchange",
+        "ipa": "/ˌfɒrən ɪksˈtʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngoại hối",
+        "example": "The foreign exchange market operates twenty-four hours a day.",
+        "familyId": "finance-exchange",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forex",
+        "ipa": "/ˈfɒr.eks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường ngoại hối",
+        "example": "Many traders make a living by investing in the forex market.",
+        "familyId": "finance-exchange",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conversion",
+        "ipa": "/kənˈvɜːʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chuyển đổi (tiền tệ)",
+        "example": "The bank charges a small fee for currency conversion.",
+        "familyId": "finance-exchange",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convert",
+        "ipa": "/kənˈvɜːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chuyển đổi (tiền)",
+        "example": "I need to convert my dollars into yen before the trip.",
+        "familyId": "finance-exchange",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depreciate",
+        "ipa": "/dɪˈpriːʃieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "(tiền tệ, tài sản) mất giá, giảm giá trị",
+        "example": "The local currency has depreciated against the dollar this year.",
+        "familyId": "finance-exchange",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appreciate",
+        "ipa": "/əˈpriːʃieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "(tiền tệ, tài sản) tăng giá trị",
+        "example": "The yen has appreciated significantly in the past few months.",
+        "familyId": "finance-exchange",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "devaluation",
+        "ipa": "/ˌdiːˌvæljuˈeɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phá giá tiền tệ",
+        "example": "The devaluation of the currency made imports much more expensive.",
+        "familyId": "finance-exchange",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "accountant",
+        "ipa": "/əˈkaʊntənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kế toán viên",
+        "example": "Our accountant prepares the company's tax returns every year.",
+        "familyId": "finance-accounting",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accounting",
+        "ipa": "/əˈkaʊntɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kế toán, ngành kế toán",
+        "example": "She studied accounting at university and now works for a big firm.",
+        "familyId": "finance-accounting",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "audit",
+        "ipa": "/ˈɔːdɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc kiểm toán",
+        "example": "The annual audit revealed several irregularities in the accounts.",
+        "familyId": "finance-accounting",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "auditor",
+        "ipa": "/ˈɔːdɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiểm toán viên",
+        "example": "The auditor questioned several entries in the financial report.",
+        "familyId": "finance-accounting",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "balance sheet",
+        "ipa": "/ˈbæləns ʃiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng cân đối kế toán",
+        "example": "The balance sheet shows that the company is in a strong position.",
+        "familyId": "finance-accounting",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ledger",
+        "ipa": "/ˈledʒə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sổ cái kế toán",
+        "example": "Every payment must be recorded in the ledger immediately.",
+        "familyId": "finance-accounting",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "asset",
+        "ipa": "/ˈæset/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài sản",
+        "example": "Their main asset is the property in the city centre.",
+        "familyId": "finance-accounting",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "liability",
+        "ipa": "/ˌlaɪəˈbɪləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản nợ phải trả, nghĩa vụ tài chính",
+        "example": "The company's liabilities exceed its assets this quarter.",
+        "familyId": "finance-accounting",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "equity",
+        "ipa": "/ˈekwəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vốn chủ sở hữu, vốn cổ phần",
+        "example": "Investors are willing to take an equity stake in the start-up.",
+        "familyId": "finance-accounting",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bookkeeping",
+        "ipa": "/ˈbʊkˌkiːpɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công việc ghi sổ kế toán",
+        "example": "Good bookkeeping is essential for any small business.",
+        "familyId": "finance-accounting",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bookkeeper",
+        "ipa": "/ˈbʊkˌkiːpə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người ghi sổ kế toán",
+        "example": "The bookkeeper updates the records at the end of every week.",
+        "familyId": "finance-accounting",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "fund",
+        "ipa": "/fʌnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ tiền",
+        "example": "The school set up a fund to help students from low-income families.",
+        "familyId": "finance-funding",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "funding",
+        "ipa": "/ˈfʌndɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kinh phí, sự cấp vốn",
+        "example": "The project received funding from the government and private donors.",
+        "familyId": "finance-funding",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refinance",
+        "ipa": "/ˌriːˈfaɪnæns/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tái cấp vốn, vay lại với điều kiện mới",
+        "example": "They decided to refinance their mortgage to get a lower rate.",
+        "familyId": "finance-funding",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "financing",
+        "ipa": "/ˈfaɪnænsɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc cấp vốn, tài trợ",
+        "example": "The dealer offers attractive financing options for new buyers.",
+        "familyId": "finance-funding",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fundraiser",
+        "ipa": "/ˈfʌndˌreɪzə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiện gây quỹ, người gây quỹ",
+        "example": "The charity held a fundraiser to support homeless families.",
+        "familyId": "finance-funding",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "interest rate",
+        "ipa": "/ˈɪntrəst reɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãi suất",
+        "example": "The central bank raised interest rates to control inflation.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compound interest",
+        "ipa": "/ˈkɒmpaʊnd ˌɪntrəst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãi kép",
+        "example": "Compound interest helps your savings grow much faster over time.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "maturity",
+        "ipa": "/məˈtʃʊə.rə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngày đáo hạn",
+        "example": "The bond reaches maturity in five years.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yield",
+        "ipa": "/jiːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lợi suất, lợi nhuận thu được",
+        "example": "Government bonds offer a lower yield but are considered safer.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "saver",
+        "ipa": "/ˈseɪvə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người tiết kiệm tiền",
+        "example": "Low interest rates discourage savers from putting money in the bank.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "piggy bank",
+        "ipa": "/ˈpɪɡi bæŋk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ống heo tiết kiệm",
+        "example": "She drops a coin in the piggy bank every evening.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nest egg",
+        "ipa": "/ˈnest eɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản tiền dành dụm cho tương lai",
+        "example": "They saved a small nest egg for their retirement.",
+        "familyId": "finance-interest-savings",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+
+    {
+      "fieldValues": {
+        "word": "financial planning",
+        "ipa": "/faɪˈnænʃl ˈplænɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc lập kế hoạch tài chính",
+        "example": "Good financial planning helps you achieve long-term goals.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "allocate",
+        "ipa": "/ˈæləkeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phân bổ (tiền, nguồn lực)",
+        "example": "We need to allocate more money to research and development.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "allocation",
+        "ipa": "/ˌæləˈkeɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phân bổ",
+        "example": "The new budget includes a larger allocation for education.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expenditure",
+        "ipa": "/ɪkˈspendɪtʃə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản chi tiêu, sự chi phí",
+        "example": "Household expenditure has increased steadily this year.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cost",
+        "ipa": "/kɒst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi phí, giá phải trả",
+        "example": "The total cost of the trip was higher than we expected.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "costly",
+        "ipa": "/ˈkɒstli/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đắt đỏ, tốn kém",
+        "example": "Repairing the old engine would be too costly.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expensive",
+        "ipa": "/ɪkˈspensɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đắt tiền",
+        "example": "Property in the city centre is becoming more expensive every year.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inexpensive",
+        "ipa": "/ˌɪnɪkˈspensɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không đắt, có giá phải chăng",
+        "example": "We found an inexpensive but cosy hotel near the beach.",
+        "familyId": "finance-planning-cost",
+        "familyOrder": 8,
+        "tags": []
+      }
+    }
+  ]
+}

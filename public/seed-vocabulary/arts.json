@@ -4,8 +4,8 @@
     "topicName": "Nghệ thuật",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Arts (B1-B2)",
-    "totalCards": 86,
-    "totalFamilies": 9,
+    "totalCards": 90,
+    "totalFamilies": 10,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Nghe thuat, da tranh trung voi cac topic seed hien co."
   },
@@ -1124,6 +1124,58 @@
         "meaning": "hòa âm, sự hài hòa",
         "example": "Harmony gives depth to the song.",
         "familyId": "arts-music",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beauty",
+        "ipa": "/ˈbjuː.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vẻ đẹp, người/vật đẹp",
+        "example": "The beauty of the painting left visitors speechless.",
+        "familyId": "arts-beauty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautify",
+        "ipa": "/ˈbjuː.t̬ə.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm đẹp, tô điểm",
+        "example": "The artist used soft colors to beautify the mural.",
+        "familyId": "arts-beauty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautiful",
+        "ipa": "/ˈbjuː.t̬ə.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đẹp, xinh đẹp",
+        "example": "She painted a beautiful landscape of the countryside.",
+        "familyId": "arts-beauty",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautifully",
+        "ipa": "/ˈbjuː.t̬ə.fəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách đẹp đẽ, một cách hay",
+        "example": "The melody was beautifully performed by the orchestra.",
+        "familyId": "arts-beauty",
         "familyOrder": 4,
         "tags": []
       }
