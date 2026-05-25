@@ -370,8 +370,8 @@ const SettingsPage = {
     },
 
     /**
-     * Gửi thông báo thử ngay (gọi callable function sendTestNotification).
-     * Giúp xác minh FCM hoạt động không cần chờ cron schedule 15 phút.
+     * Gửi thông báo thử ngay (gọi Vercel API /api/send-test-notification).
+     * Giúp xác minh FCM hoạt động không cần chờ cron schedule.
      */
     async sendTestNotification() {
         const btn = document.getElementById('btn-test-notification');
@@ -386,16 +386,25 @@ const SettingsPage = {
                 Toast.warning('Cần đăng nhập', 'Đăng nhập để gửi thông báo thử');
                 return;
             }
-            if (typeof firebase === 'undefined' || !firebase.functions) {
-                Toast.error('Lỗi', 'Firebase Functions SDK chưa sẵn sàng');
-                return;
-            }
 
-            const callable = firebase.functions().httpsCallable('sendTestNotification');
-            const result = await callable({});
-            const data = result.data || {};
+            // Lấy Firebase Auth ID token để gửi kèm request
+            const idToken = await firebase.auth().currentUser.getIdToken();
 
+            const response = await fetch('/api/send-test-notification', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${idToken}`
+                },
+                body: JSON.stringify({})
+            });
+
+            const data = await response.json();
             console.log('[SettingsPage] Test notification result:', data);
+
+            if (!response.ok) {
+                throw new Error(data.error || `HTTP ${response.status}`);
+            }
 
             if (data.ok) {
                 if (data.success > 0) {
