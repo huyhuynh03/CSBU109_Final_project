@@ -4,8 +4,8 @@
     "topicName": "Biology",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Biology (B1-B2)",
-    "totalCards": 40,
-    "totalFamilies": 10,
+    "totalCards": 55,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu mon Sinh hoc, gom te bao, he co quan, di truyen, tien hoa, sinh thai hoc, thuc vat, sinh san va phong thi nghiem sinh hoc."
   },
@@ -528,6 +528,201 @@
         "example": "Antibodies help fight infection.",
         "familyId": "biotechnology",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paleontology",
+        "ipa": "/ˌpæl.i.ɒnˈtɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cổ sinh vật học (ngành nghiên cứu sinh vật cổ qua hóa thạch)",
+        "example": "Paleontology bridges biology and geology.",
+        "familyId": "paleontology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paleontologist",
+        "ipa": "/ˌpæl.i.ɒnˈtɒl.ə.dʒɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhà cổ sinh vật học",
+        "example": "The paleontologist identified the fossil as a new species.",
+        "familyId": "paleontology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fossilize",
+        "ipa": "/ˈfɒs.əl.aɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "hóa thạch (biến thành hóa thạch)",
+        "example": "Soft tissues rarely fossilize over millions of years.",
+        "familyId": "paleontology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prehistoric",
+        "ipa": "/ˌpriː.hɪˈstɒr.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc thời tiền sử",
+        "example": "Prehistoric creatures roamed the Earth long before humans.",
+        "familyId": "paleontology",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dinosaur",
+        "ipa": "/ˈdaɪ.nə.sɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khủng long",
+        "example": "Dinosaurs dominated the planet for over 160 million years.",
+        "familyId": "paleontology",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mesozoic",
+        "ipa": "/ˌmes.əˈzəʊ.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc đại Trung sinh (kỷ nguyên của khủng long)",
+        "example": "The Mesozoic era is often called the Age of Reptiles.",
+        "familyId": "paleontology",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jurassic",
+        "ipa": "/dʒʊˈræs.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc kỷ Jura",
+        "example": "Many famous dinosaurs lived during the Jurassic period.",
+        "familyId": "paleontology",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cretaceous",
+        "ipa": "/krɪˈteɪ.ʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc kỷ Phấn trắng",
+        "example": "An asteroid likely ended the Cretaceous period.",
+        "familyId": "paleontology",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mammoth",
+        "ipa": "/ˈmæm.əθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "voi ma mút",
+        "example": "Frozen mammoths have been found preserved in Siberian ice.",
+        "familyId": "paleontology",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trilobite",
+        "ipa": "/ˈtraɪ.lə.baɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bọ ba thùy (động vật biển cổ đại)",
+        "example": "Trilobite fossils are common in Paleozoic rocks.",
+        "familyId": "paleontology",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ammonite",
+        "ipa": "/ˈæm.ə.naɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ốc cúc đá (loài thân mềm cổ đại có vỏ xoắn ốc)",
+        "example": "Ammonite shells are popular among fossil collectors.",
+        "familyId": "paleontology",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vertebrate",
+        "ipa": "/ˈvɜː.tɪ.brət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật có xương sống",
+        "example": "Fish were the first vertebrates to appear on Earth.",
+        "familyId": "paleontology",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invertebrate",
+        "ipa": "/ɪnˈvɜː.tɪ.brət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật không xương sống",
+        "example": "Most ancient invertebrates lived in the sea.",
+        "familyId": "paleontology",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stratum",
+        "ipa": "/ˈstrɑː.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tầng địa chất, lớp đất đá",
+        "example": "Each rock stratum reveals a different period of history.",
+        "familyId": "paleontology",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unearth",
+        "ipa": "/ʌnˈɜːθ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khai quật, đào lên (vật bị chôn vùi)",
+        "example": "Workers unearthed a complete dinosaur skeleton in the desert.",
+        "familyId": "paleontology",
+        "familyOrder": 15,
         "tags": []
       }
     }
