@@ -16,7 +16,7 @@
 //   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
 //     user xác nhận trên Toast "Có bản cập nhật mới"
 
-const APP_VERSION = '5.153.0';
+const APP_VERSION = '5.154.0';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
@@ -103,8 +103,8 @@ self.addEventListener('install', (event) => {
                 )
             );
             console.log('[SW] Precache complete');
-            // KHÔNG gọi self.skipWaiting() ở đây.
-            // Main thread (sw-update.js) sẽ post message SKIP_WAITING sau khi user xác nhận.
+            // Force activate ngay để đảm bảo code mới được serve (tránh kẹt ở waiting state).
+            self.skipWaiting();
         })()
     );
 });

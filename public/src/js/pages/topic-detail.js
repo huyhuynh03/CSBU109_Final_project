@@ -68,10 +68,10 @@ const TopicDetailPage = {
     },
 
     async _tryAutoSeedEmptyTopic() {
-        if (!window.SeedImporter || typeof VocabularyPage === 'undefined') return false;
-        const seedTopics = VocabularyPage._seedTopics || {};
-        const filename = seedTopics[this._topicId];
-        if (!filename) return false;
+        if (!window.SeedImporter) return false;
+        // Ưu tiên lấy filename từ _seedTopics map, fallback thử {topicId}.json trực tiếp
+        const seedTopics = (typeof VocabularyPage !== 'undefined' && VocabularyPage._seedTopics) || {};
+        const filename = seedTopics[this._topicId] || (this._topicId + '.json');
 
         try {
             const result = await SeedImporter.importFile(filename);
