@@ -1,0 +1,1184 @@
+{
+  "_meta": {
+    "topicId": "history-archeology",
+    "topicName": "Lịch sử & Khảo cổ học",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - History & Archaeology (B1-B2)",
+    "totalCards": 90,
+    "totalFamilies": 10,
+    "generatedAt": "2026-05-26",
+    "note": "Tu vung chu de Lich su va Khao co hoc, bao gom phuong phap khao co, cac thoi dai, vua chua, quy toc, ke vi, chien tranh, La Ma co, ton giao, hien vat, va ghi chep. KHONG trung lap voi cac topic khac."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "archaeology",
+        "ipa": "/ˌɑːkiˈɒlədʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khảo cổ học",
+        "example": "Archaeology helps us understand ancient civilizations through their remains.",
+        "familyId": "history-method",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "archaeologist",
+        "ipa": "/ˌɑːkiˈɒlədʒɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà khảo cổ học",
+        "example": "The archaeologist carefully brushed dirt from the ancient bones.",
+        "familyId": "history-method",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "excavate",
+        "ipa": "/ˈekskəveɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khai quật, đào lên",
+        "example": "Workers will excavate the site over the next three months.",
+        "familyId": "history-method",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "excavation",
+        "ipa": "/ˌekskəˈveɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc khai quật",
+        "example": "The excavation revealed a buried Roman bath.",
+        "familyId": "history-method",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unearth",
+        "ipa": "/ʌnˈɜːθ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đào lên, phát hiện ra",
+        "example": "Builders unearthed a mosaic floor while digging the foundations.",
+        "familyId": "history-method",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fieldwork",
+        "ipa": "/ˈfiːldwɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công tác điền dã, nghiên cứu thực địa",
+        "example": "The team spent the summer doing fieldwork in northern Greece.",
+        "familyId": "history-method",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surveying",
+        "ipa": "/sərˈveɪɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc đo đạc, khảo sát địa hình",
+        "example": "Aerial surveying revealed the outline of a buried settlement.",
+        "familyId": "history-method",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stratigraphy",
+        "ipa": "/strəˈtɪɡrəfi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "địa tầng học, phân tích các lớp đất",
+        "example": "Stratigraphy lets archaeologists date layers of buried material.",
+        "familyId": "history-method",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "antiquarian",
+        "ipa": "/ˌæntɪˈkweəriən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà sưu tầm cổ vật, người nghiên cứu đồ cổ",
+        "example": "The antiquarian collected medieval coins for over forty years.",
+        "familyId": "history-method",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "era",
+        "ipa": "/ˈɪərə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỷ nguyên, thời kỳ",
+        "example": "The industrial era transformed every aspect of daily life.",
+        "familyId": "history-eras",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "epoch",
+        "ipa": "/ˈiːpɒk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời đại quan trọng, kỷ nguyên",
+        "example": "The fall of Rome marked the end of an epoch.",
+        "familyId": "history-eras",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "millennium",
+        "ipa": "/mɪˈleniəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiên niên kỷ, một nghìn năm",
+        "example": "The temple was built more than a millennium ago.",
+        "familyId": "history-eras",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "antiquity",
+        "ipa": "/ænˈtɪkwəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời cổ đại, thời xa xưa",
+        "example": "The statue dates from classical antiquity.",
+        "familyId": "history-eras",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "medieval",
+        "ipa": "/ˌmediˈiːvəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc thời trung cổ",
+        "example": "The medieval castle dominates the small village.",
+        "familyId": "history-eras",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prehistoric",
+        "ipa": "/ˌpriːhɪˈstɒrɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc thời tiền sử",
+        "example": "Prehistoric paintings cover the walls of the cave.",
+        "familyId": "history-eras",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ancient",
+        "ipa": "/ˈeɪnʃənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cổ xưa, thuộc thời cổ đại",
+        "example": "Ancient Egyptians believed in life after death.",
+        "familyId": "history-eras",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contemporary",
+        "ipa": "/kənˈtempərəri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đương thời, cùng thời",
+        "example": "These two kings were contemporary, ruling neighbouring kingdoms.",
+        "familyId": "history-eras",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prehistory",
+        "ipa": "/ˌpriːˈhɪstri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời tiền sử",
+        "example": "Stone tools provide most of our evidence about prehistory.",
+        "familyId": "history-eras",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pharaoh",
+        "ipa": "/ˈfeərəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "pharaông, vua Ai Cập cổ đại",
+        "example": "The pharaoh was buried with treasures for the afterlife.",
+        "familyId": "history-rulers",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emperor",
+        "ipa": "/ˈempərə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoàng đế",
+        "example": "The emperor expanded his territory through a series of wars.",
+        "familyId": "history-rulers",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sovereign",
+        "ipa": "/ˈsɒvrɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vua, người trị vì tối cao",
+        "example": "Queen Victoria was a long-reigning sovereign.",
+        "familyId": "history-rulers",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warlord",
+        "ipa": "/ˈwɔːlɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãnh chúa, thủ lĩnh quân sự",
+        "example": "Local warlords ruled the region after the empire collapsed.",
+        "familyId": "history-rulers",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chieftain",
+        "ipa": "/ˈtʃiːftən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ lĩnh bộ lạc",
+        "example": "The Celtic chieftain led his warriors against the Romans.",
+        "familyId": "history-rulers",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overlord",
+        "ipa": "/ˈəʊvəlɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãnh chúa cai trị, kẻ thống trị",
+        "example": "Smaller kingdoms paid tribute to the regional overlord.",
+        "familyId": "history-rulers",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vassal",
+        "ipa": "/ˈvæsəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chư hầu, thần dân của lãnh chúa",
+        "example": "The vassal owed military service to his lord.",
+        "familyId": "history-rulers",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lord",
+        "ipa": "/lɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lãnh chúa, lãnh chúa phong kiến",
+        "example": "The lord controlled all the land surrounding his castle.",
+        "familyId": "history-rulers",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dominion",
+        "ipa": "/dəˈmɪniən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền thống trị, lãnh thổ thống trị",
+        "example": "Rome held dominion over most of the Mediterranean world.",
+        "familyId": "history-rulers",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noble",
+        "ipa": "/ˈnəʊbəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quý tộc",
+        "example": "Only nobles were allowed to attend the king's feast.",
+        "familyId": "history-nobility",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knight",
+        "ipa": "/naɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệp sĩ",
+        "example": "The knight rode into battle wearing heavy armour.",
+        "familyId": "history-nobility",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warrior",
+        "ipa": "/ˈwɒriə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến binh",
+        "example": "Viking warriors raided coastal towns in Europe.",
+        "familyId": "history-nobility",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "peasant",
+        "ipa": "/ˈpezənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nông dân (thời phong kiến)",
+        "example": "Peasants worked the land for the local lord.",
+        "familyId": "history-nobility",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serf",
+        "ipa": "/sɜːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nông nô",
+        "example": "Serfs were tied to the land they worked.",
+        "familyId": "history-nobility",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aristocrat",
+        "ipa": "/ˈærɪstəkræt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà quý tộc, người thuộc giai cấp quý tộc",
+        "example": "French aristocrats lost their privileges during the revolution.",
+        "familyId": "history-nobility",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commoner",
+        "ipa": "/ˈkɒmənə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thường dân, dân thường",
+        "example": "Commoners were not allowed to enter the palace gardens.",
+        "familyId": "history-nobility",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gentry",
+        "ipa": "/ˈdʒentri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầng lớp tiểu quý tộc, địa chủ",
+        "example": "The country gentry held considerable local power.",
+        "familyId": "history-nobility",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "squire",
+        "ipa": "/skwaɪə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tùy tùng của hiệp sĩ, địa chủ thôn quê",
+        "example": "The young squire trained for years before becoming a knight.",
+        "familyId": "history-nobility",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "succession",
+        "ipa": "/səkˈseʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kế vị, sự kế thừa ngôi vị",
+        "example": "His succession to the throne was disputed by his brother.",
+        "familyId": "history-succession",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "abdicate",
+        "ipa": "/ˈæbdɪkeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thoái vị, từ ngôi",
+        "example": "The king chose to abdicate in favour of his son.",
+        "familyId": "history-succession",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enthrone",
+        "ipa": "/ɪnˈθrəʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lên ngôi, đăng quang",
+        "example": "She was enthroned as queen at the age of nineteen.",
+        "familyId": "history-succession",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overthrow",
+        "ipa": "/ˌəʊvəˈθrəʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lật đổ (chính quyền, vua chúa)",
+        "example": "Rebels overthrew the unpopular regime.",
+        "familyId": "history-succession",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depose",
+        "ipa": "/dɪˈpəʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phế truất, truất ngôi",
+        "example": "The unpopular king was deposed by his own generals.",
+        "familyId": "history-succession",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banish",
+        "ipa": "/ˈbænɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lưu đày, đày ải",
+        "example": "The emperor banished his rival to a distant island.",
+        "familyId": "history-succession",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heir",
+        "ipa": "/eə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người thừa kế ngôi vị",
+        "example": "The prince was the legitimate heir to the throne.",
+        "familyId": "history-succession",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reign",
+        "ipa": "/reɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "triều đại, thời gian trị vì",
+        "example": "Many cathedrals were built during her long reign.",
+        "familyId": "history-succession",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "royal",
+        "ipa": "/ˈrɔɪəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc hoàng gia",
+        "example": "The royal family attended the cathedral on Sundays.",
+        "familyId": "history-succession",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conquest",
+        "ipa": "/ˈkɒŋkwest/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc chinh phục",
+        "example": "The Norman conquest changed the face of England.",
+        "familyId": "history-conflict",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conquer",
+        "ipa": "/ˈkɒŋkə/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chinh phục, chinh phạt",
+        "example": "Alexander the Great conquered most of the known world.",
+        "familyId": "history-conflict",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invader",
+        "ipa": "/ɪnˈveɪdə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ xâm lược",
+        "example": "Local people fled before the approaching invaders.",
+        "familyId": "history-conflict",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rebellion",
+        "ipa": "/rɪˈbeljən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc nổi dậy, cuộc khởi nghĩa",
+        "example": "The peasant rebellion was harshly suppressed by the king.",
+        "familyId": "history-conflict",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uprising",
+        "ipa": "/ˈʌpraɪzɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc khởi nghĩa, sự nổi dậy",
+        "example": "The uprising spread quickly through the southern provinces.",
+        "familyId": "history-conflict",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "treaty",
+        "ipa": "/ˈtriːti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệp ước",
+        "example": "The two nations signed a peace treaty after years of war.",
+        "familyId": "history-conflict",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alliance",
+        "ipa": "/əˈlaɪəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "liên minh",
+        "example": "A military alliance was formed against the common enemy.",
+        "familyId": "history-conflict",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "siege",
+        "ipa": "/siːdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc bao vây thành",
+        "example": "The city endured a siege of two long years.",
+        "familyId": "history-conflict",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weapon",
+        "ipa": "/ˈwepən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vũ khí",
+        "example": "Bronze weapons were a major advance over stone tools.",
+        "familyId": "history-conflict",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gladiator",
+        "ipa": "/ˈɡlædieɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "võ sĩ giác đấu La Mã",
+        "example": "Gladiators fought for the entertainment of huge Roman crowds.",
+        "familyId": "history-classical",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "centurion",
+        "ipa": "/senˈtjʊəriən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sĩ quan La Mã chỉ huy 100 lính",
+        "example": "A centurion led each unit of one hundred soldiers.",
+        "familyId": "history-classical",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legion",
+        "ipa": "/ˈliːdʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quân đoàn La Mã",
+        "example": "Roman legions marched across Europe and built straight roads.",
+        "familyId": "history-classical",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consul",
+        "ipa": "/ˈkɒnsəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quan chấp chính (La Mã cổ đại)",
+        "example": "Two consuls were elected each year to lead the Roman state.",
+        "familyId": "history-classical",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patrician",
+        "ipa": "/pəˈtrɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quý tộc La Mã",
+        "example": "Patricians dominated the early Roman senate.",
+        "familyId": "history-classical",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plebeian",
+        "ipa": "/plɪˈbiːən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thường dân La Mã",
+        "example": "Plebeians eventually won the right to elect their own officials.",
+        "familyId": "history-classical",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "citadel",
+        "ipa": "/ˈsɪtədəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thành lũy, pháo đài trong thành phố",
+        "example": "The citadel guarded the city's most important buildings.",
+        "familyId": "history-classical",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "obelisk",
+        "ipa": "/ˈɒbəlɪsk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tháp đá hình bút (cổ đại)",
+        "example": "An ancient Egyptian obelisk now stands in central London.",
+        "familyId": "history-classical",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sanctuary",
+        "ipa": "/ˈsæŋktʃuəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thánh địa, nơi tôn nghiêm",
+        "example": "The Greek sanctuary at Delphi attracted pilgrims from afar.",
+        "familyId": "history-classical",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deity",
+        "ipa": "/ˈdeɪəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vị thần linh",
+        "example": "Each Roman city had its own protective deity.",
+        "familyId": "history-religion",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pantheon",
+        "ipa": "/ˈpænθiən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đền thờ các vị thần, hệ thần",
+        "example": "Zeus was the chief god in the Greek pantheon.",
+        "familyId": "history-religion",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "myth",
+        "ipa": "/mɪθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thần thoại, huyền thoại",
+        "example": "Greek myths often explain natural events through gods.",
+        "familyId": "history-religion",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "saga",
+        "ipa": "/ˈsɑːɡə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "truyện anh hùng cổ, sử thi",
+        "example": "The Norse sagas describe long voyages and heroic battles.",
+        "familyId": "history-religion",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prophecy",
+        "ipa": "/ˈprɒfəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời tiên tri",
+        "example": "The king consulted priests to interpret the prophecy.",
+        "familyId": "history-religion",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prophet",
+        "ipa": "/ˈprɒfɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tiên tri",
+        "example": "The prophet warned of coming disasters.",
+        "familyId": "history-religion",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oracle",
+        "ipa": "/ˈɒrəkəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời sấm, người truyền lời thần",
+        "example": "Leaders travelled to consult the oracle before major decisions.",
+        "familyId": "history-religion",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "superstition",
+        "ipa": "/ˌsuːpəˈstɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự mê tín, dị đoan",
+        "example": "Many old superstitions still survive in rural villages.",
+        "familyId": "history-religion",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pagan",
+        "ipa": "/ˈpeɪɡən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc đa thần giáo cổ đại",
+        "example": "Many old pagan festivals were absorbed into Christian holidays.",
+        "familyId": "history-religion",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "figurine",
+        "ipa": "/ˌfɪɡəˈriːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tượng nhỏ, tượng trang trí",
+        "example": "Small clay figurines were buried with the dead.",
+        "familyId": "history-finds",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urn",
+        "ipa": "/ɜːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bình, vò đựng tro hoặc đồ tế lễ",
+        "example": "The ancient urn contained the cremated remains of a warrior.",
+        "familyId": "history-finds",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pendant",
+        "ipa": "/ˈpendənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mặt dây chuyền, vật trang trí treo",
+        "example": "A gold pendant was found around the neck of the skeleton.",
+        "familyId": "history-finds",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bracelet",
+        "ipa": "/ˈbreɪslət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vòng tay",
+        "example": "Bronze bracelets were popular with both men and women.",
+        "familyId": "history-finds",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crown",
+        "ipa": "/kraʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vương miện",
+        "example": "The golden crown was placed on the new king's head.",
+        "familyId": "history-finds",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "idol",
+        "ipa": "/ˈaɪdəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tượng thờ, tượng thần",
+        "example": "Worshippers placed offerings before the stone idol.",
+        "familyId": "history-finds",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "engrave",
+        "ipa": "/ɪnˈɡreɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khắc, chạm trên bề mặt",
+        "example": "The names of the dead were engraved on the stone.",
+        "familyId": "history-finds",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dagger",
+        "ipa": "/ˈdæɡə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dao găm, đoản kiếm",
+        "example": "A bronze dagger was found beside the warrior's body.",
+        "familyId": "history-finds",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shield",
+        "ipa": "/ʃiːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khiên, lá chắn",
+        "example": "Roman soldiers carried large rectangular shields into battle.",
+        "familyId": "history-finds",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manuscript",
+        "ipa": "/ˈmænjəskrɪpt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản chép tay, thủ bản",
+        "example": "Medieval manuscripts were copied by hand by monks.",
+        "familyId": "history-records",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inscription",
+        "ipa": "/ɪnˈskrɪpʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chữ khắc, dòng khắc trên đá",
+        "example": "The Latin inscription on the tomb was barely readable.",
+        "familyId": "history-records",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hieroglyph",
+        "ipa": "/ˈhaɪərəˌɡlɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chữ tượng hình (Ai Cập)",
+        "example": "Egyptian hieroglyphs were finally decoded in the nineteenth century.",
+        "familyId": "history-records",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chronicle",
+        "ipa": "/ˈkrɒnɪkəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biên niên sử",
+        "example": "The medieval chronicle records events year by year.",
+        "familyId": "history-records",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tablet",
+        "ipa": "/ˈtæblət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phiến đá, bản đất sét có chữ",
+        "example": "Clay tablets recorded grain stocks and trade in ancient Sumer.",
+        "familyId": "history-records",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parchment",
+        "ipa": "/ˈpɑːtʃmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "da thuộc dùng để viết, giấy da",
+        "example": "Important documents were written on parchment to last centuries.",
+        "familyId": "history-records",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "codex",
+        "ipa": "/ˈkəʊdeks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sách cổ chép tay, bản thảo cổ",
+        "example": "The ancient codex contained hand-painted illustrations.",
+        "familyId": "history-records",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "papyrus",
+        "ipa": "/pəˈpaɪrəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giấy papyrus của Ai Cập cổ",
+        "example": "Egyptian scribes wrote on long rolls of papyrus.",
+        "familyId": "history-records",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cuneiform",
+        "ipa": "/ˈkjuːnɪfɔːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chữ hình nêm (Lưỡng Hà cổ)",
+        "example": "Cuneiform was pressed into wet clay with a reed.",
+        "familyId": "history-records",
+        "familyOrder": 9,
+        "tags": []
+      }
+    }
+  ]
+}
