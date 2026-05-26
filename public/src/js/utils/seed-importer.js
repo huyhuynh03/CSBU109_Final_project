@@ -1,8 +1,26 @@
 // ============================================
 // Seed Importer - Nạp dữ liệu mẫu từ JSON vào Firestore
 // ============================================
+// [DEDUP-FIX] Permanent fix cho race condition khi nhiều entry point
+// (vocabulary.js auto-seed + topic-detail.js auto-seed) cùng chạy:
+//   1. Global mutex (_seedMutex): serialize mọi importSeed/importFile call
+//      → 2 entry point không thể đồng thời tạo cùng 1 card
+//   2. Session-shared created map (_sessionCreatedMap): mọi card đã tạo
+//      trong session đều được mọi seed call sau "nhìn thấy", kể cả khi
+//      cachedExistingMap đã stale.
+// ============================================
 
 const SeedImporter = {
+    /** Promise mutex cho mọi seed operation. Khởi tạo resolved để call đầu tiên không block. */
+    _seedMutex: Promise.resolve(),
+
+    /**
+     * Map identityKey -> { id, folderId, fieldValues } cho mọi card đã được TẠO MỚI
+     * trong session hiện tại bởi bất kỳ entry point nào.
+     * Sống xuyên suốt page load — tránh duplicate khi cachedExistingMap stale.
+     */
+    _sessionCreatedMap: new Map(),
+
     /**
      * Tải file JSON seed từ /seed-vocabulary/
      * @param {string} filename - VD: "test-samples.json"
@@ -83,19 +101,48 @@ const SeedImporter = {
     },
 
     /**
-     * Import seed JSON vào Firestore (skip nếu word đã tồn tại)
-     * @param {Object} seed - { _meta, cases, cards: [...] }
-     * @param {Function} onProgress - callback({ current, total, word, status })
-     * @param {Map} [cachedExistingMap] - Pre-loaded existing cards map (tránh query lại Firestore mỗi topic)
-     * @returns {Promise<{ created, skipped, failed, total }>}
+     * [DEDUP-FIX] Mutex wrapper — đảm bảo chỉ 1 seed operation chạy tại 1 thời điểm.
+     * Mọi entry point (importSeed, importFile) phải đi qua hàm này.
+     * Pattern: chain Promise — caller mới luôn await prev rồi mới chạy fn().
      */
-    async importSeed(seed, onProgress, cachedExistingMap) {
+    async _withSeedLock(fn) {
+        const prev = this._seedMutex;
+        let release;
+        const next = new Promise(resolve => { release = resolve; });
+        this._seedMutex = next;
+        try {
+            // Đợi mọi seed operation trước hoàn tất (kể cả khi nó throw)
+            try { await prev; } catch (_) { /* ignore */ }
+            return await fn();
+        } finally {
+            release();
+        }
+    },
+
+    /**
+     * [DEDUP-FIX] Logic import thực sự (không lock) — chỉ gọi từ trong _withSeedLock.
+     * Dùng tên _internal để tránh nhầm với importSeed (có lock).
+     * @param {Object} seed
+     * @param {Function} onProgress
+     * @param {Map} cachedExistingMap
+     */
+    async _importSeedInternal(seed, onProgress, cachedExistingMap) {
         if (!seed || !Array.isArray(seed.cards)) {
             throw new Error('File seed không hợp lệ (thiếu mảng cards)');
         }
 
         const defaultFolderId = (seed._meta && seed._meta.topicId) || null;
         const existingMap = cachedExistingMap || await this._getExistingCardsByIdentity();
+
+        // [DEDUP-FIX] Merge các card đã tạo trong session bởi entry point khác.
+        // Bảo vệ trường hợp vocabulary.js dùng cachedExistingMap stale sau khi
+        // topic-detail.js đã tạo card cho topic kế tiếp.
+        if (this._sessionCreatedMap.size > 0) {
+            for (const [key, card] of this._sessionCreatedMap) {
+                if (!existingMap.has(key)) existingMap.set(key, card);
+            }
+        }
+
         const total = seed.cards.length;
         let created = 0;
         let skipped = 0;
@@ -173,7 +220,10 @@ const SeedImporter = {
                 });
                 if (id) {
                     created++;
-                    existingMap.set(identityKey, { id, folderId, fieldValues });
+                    const cardRecord = { id, folderId, fieldValues };
+                    existingMap.set(identityKey, cardRecord);
+                    // [DEDUP-FIX] Ghi vào session map để mọi seed call sau đều thấy.
+                    this._sessionCreatedMap.set(identityKey, cardRecord);
                     if (onProgress) onProgress({ current: i + 1, total, word, status: 'created' });
                 } else {
                     failed++;
@@ -191,14 +241,31 @@ const SeedImporter = {
     },
 
     /**
+     * Import seed JSON vào Firestore (skip nếu word đã tồn tại).
+     * [DEDUP-FIX] Wrap trong mutex để serialize với mọi seed entry point khác.
+     * @param {Object} seed - { _meta, cases, cards: [...] }
+     * @param {Function} onProgress - callback({ current, total, word, status })
+     * @param {Map} [cachedExistingMap] - Pre-loaded existing cards map (tránh query lại Firestore mỗi topic)
+     * @returns {Promise<{ created, skipped, failed, total }>}
+     */
+    async importSeed(seed, onProgress, cachedExistingMap) {
+        return this._withSeedLock(() =>
+            this._importSeedInternal(seed, onProgress, cachedExistingMap)
+        );
+    },
+
+    /**
      * Tiện lợi: import 1 file seed có sẵn trong /public/seed-vocabulary/
+     * [DEDUP-FIX] Wrap trong mutex để serialize với mọi seed entry point khác.
      * @param {string} filename
      * @param {Function} [onProgress]
      * @param {Map} [cachedExistingMap] - Pre-loaded map để tránh query Firestore mỗi file
      */
     async importFile(filename, onProgress, cachedExistingMap) {
-        const seed = await this.loadSeedFile(filename);
-        return await this.importSeed(seed, onProgress, cachedExistingMap);
+        return this._withSeedLock(async () => {
+            const seed = await this.loadSeedFile(filename);
+            return await this._importSeedInternal(seed, onProgress, cachedExistingMap);
+        });
     },
 
     /**
@@ -208,5 +275,3 @@ const SeedImporter = {
         return await this._getExistingCardsByIdentity();
     }
 };
-
-window.SeedImporter = SeedImporter;
