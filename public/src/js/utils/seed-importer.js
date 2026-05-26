@@ -275,3 +275,7 @@ const SeedImporter = {
         return await this._getExistingCardsByIdentity();
     }
 };
+
+// Expose lên window để các check `if (!window.SeedImporter)` ở vocabulary.js/topic-detail.js
+// hoạt động đúng (const ở top-level không tự gắn vào window).
+window.SeedImporter = SeedImporter;
