@@ -16,7 +16,7 @@
 //   - message {type:'SKIP_WAITING'}: do main thread (sw-update.js) gọi sau khi
 //     user xác nhận trên Toast "Có bản cập nhật mới"
 
-const APP_VERSION = '5.159.0';
+const APP_VERSION = '5.160.0';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Critical app shell - được precache khi install để hỗ trợ offline ngay lần đầu.
@@ -57,25 +57,32 @@ const PRECACHE_URLS = [
     '/src/js/ui/sidebar.js',
     '/src/js/ui/theme.js',
     '/src/js/ui/toast.js',
-    // Pages
+    // Shell pages
     '/src/js/pages/home.js',
-    '/src/js/pages/vocabulary.js',
-    '/src/js/pages/grammar.js',
-    '/src/js/pages/study.js',
-    '/src/js/pages/review.js',
     '/src/js/pages/settings.js',
     '/src/js/pages/account.js',
     '/src/js/pages/auth-page.js',
     '/src/js/pages/languages.js',
-    '/src/js/pages/topic-detail.js',
-    // Utils
+    // English module pages
+    '/src/js/modules/english/pages/vocabulary.js',
+    '/src/js/modules/english/pages/grammar.js',
+    '/src/js/modules/english/pages/study.js',
+    '/src/js/modules/english/pages/review.js',
+    '/src/js/modules/english/pages/topic-detail.js',
+    // English module config
+    '/src/js/modules/english/config/card-schemas.js',
+    '/src/js/modules/english/config/vocabulary-topics.js',
+    // English module utils
+    '/src/js/modules/english/utils/seed-importer.js',
+    '/src/js/modules/english/utils/family-word-manager.js',
+    // English module fsrs
+    '/src/js/modules/english/fsrs/bqt-v2-cleanup.js',
+    '/src/js/modules/english/fsrs/card-mode-manager.js',
+    // English module ui
+    '/src/js/modules/english/ui/card-filter.js',
+    // Shell utils
     '/src/js/utils/helpers.js',
-    '/src/js/utils/seed-importer.js',
     '/src/js/utils/tts.js',
-    '/src/js/utils/family-word-manager.js',
-    // Config
-    '/src/js/config/card-schemas.js',
-    '/src/js/config/vocabulary-topics.js',
     // Icons
     '/icons/icon-192.png',
     '/icons/icon-512.png'
