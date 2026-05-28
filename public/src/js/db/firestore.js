@@ -275,10 +275,15 @@ const FirestoreDB = {
         if (!ref) return null;
         try {
             const fsrsData = FSRS.createCard();
+            // Auto-inject languageId from current URL scope (Phase 2)
+            const languageId = (typeof LinguaFlashHost !== 'undefined')
+                ? LinguaFlashHost.getActiveLanguageId()
+                : 'english';
             const doc = await ref.add({
                 folderId: card.folderId,
                 cardType: card.cardType, // 'vocabulary' or 'grammar'
                 fieldValues: card.fieldValues || {},
+                languageId: languageId || 'english',
                 // FSRS data
                 state: fsrsData.state,
                 difficulty: fsrsData.difficulty,

@@ -80,6 +80,9 @@ const PRECACHE_URLS = [
     '/src/js/modules/english/fsrs/card-mode-manager.js',
     // English module ui
     '/src/js/modules/english/ui/card-filter.js',
+    // Shell: Host API + migrations
+    '/src/js/host.js',
+    '/src/js/db/languageid-migration.js',
     // Shell utils
     '/src/js/utils/helpers.js',
     '/src/js/utils/tts.js',

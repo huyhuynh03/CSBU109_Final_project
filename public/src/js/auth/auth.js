@@ -18,6 +18,10 @@ const Auth = {
             if (user && typeof FsrsMigration !== 'undefined') {
                 FsrsMigration.run().catch(e => console.error('[Auth] FsrsMigration error:', e));
             }
+            // Backfill languageId='english' cho card cũ (Phase 2)
+            if (user && typeof LanguageIdMigration !== 'undefined') {
+                LanguageIdMigration.run().catch(e => console.error('[Auth] LanguageIdMigration error:', e));
+            }
         });
     },
 
