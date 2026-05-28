@@ -38,22 +38,14 @@ const Sidebar = {
     /**
      * Footer items — always visible
      */
-    _footerItems: [
-        {
-            id: 'languages',
-            icon: 'language',
-            label: 'Chọn ngôn ngữ',
-            route: '/languages',
-            requireAuth: true
-        }
-    ],
+    _footerItems: [],
 
     /**
      * Routes that show the sidebar (when user is signed in).
      * Includes /english/* and other language prefixes dynamically.
      */
     _sidebarRoutes: [
-        '/', '/english/', '/account', '/settings', '/languages'
+        '/', '/english/', '/account', '/settings'
     ],
 
     // ==========================================
@@ -178,7 +170,7 @@ const Sidebar = {
         if (match) {
             const candidate = match[1];
             // Only recognize known language prefixes (not shell routes)
-            const shellRoutes = ['auth', 'account', 'settings', 'languages'];
+            const shellRoutes = ['auth', 'account', 'settings'];
             if (!shellRoutes.includes(candidate)) {
                 return candidate;
             }

@@ -1196,6 +1196,39 @@
     font-size: 14px;
 }
 
+/* Compact variant — used on Dashboard (name only, no description) */
+.lang-domain-card--compact {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.lang-domain-card--compact .lang-domain-card__flag {
+    margin-bottom: 0;
+}
+
+.lang-domain-card--compact .lang-domain-card__name {
+    flex: 1;
+    margin: 0;
+    font-size: var(--font-size-lg);
+}
+
+.lang-domain-card--compact .lang-domain-card__arrow {
+    font-size: 20px;
+    color: var(--domain-color, var(--color-primary));
+    transition: transform 0.2s;
+}
+
+.lang-domain-card--compact:hover .lang-domain-card__arrow {
+    transform: translateX(4px);
+}
+
+.lang-domain-card--compact .lang-domain-card__lock {
+    font-size: 18px;
+    color: var(--color-text-muted);
+}
+
 /* ============================================
    Domain Page Header (English, Japanese, etc.)
    ============================================ */

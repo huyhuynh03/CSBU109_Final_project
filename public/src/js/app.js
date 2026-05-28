@@ -78,10 +78,12 @@ const App = {
             onEnter: () => AuthPage.onEnter && AuthPage.onEnter()
         });
 
-        // Language selection
+        // Legacy /languages → redirect to home (Phase 1: language selection moved to Dashboard)
         Router.register('/languages', {
-            render: () => LanguagesPage.render(),
-            onEnter: () => LanguagesPage.onEnter && LanguagesPage.onEnter()
+            render: () => {
+                Router.navigate('/');
+                return '<div class="page-enter"></div>';
+            }
         });
 
         // Settings & Account
