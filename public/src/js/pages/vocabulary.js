@@ -127,7 +127,7 @@ const VocabularyPage = {
 
                 <!-- Action Buttons -->
                 <div class="vocab-actions">
-                    <button class="vocab-action-btn vocab-action-btn--study" onclick="Router.navigate('/study?type=vocabulary')">
+                    <button class="vocab-action-btn vocab-action-btn--study" onclick="Router.navigate('/english/study?type=vocabulary')">
                         <div class="vocab-action-btn__icon-wrap">
                             <span class="material-icons-round">auto_stories</span>
                         </div>
@@ -137,7 +137,7 @@ const VocabularyPage = {
                         </div>
                         <span class="material-icons-round vocab-action-btn__arrow">arrow_forward</span>
                     </button>
-                    <button class="vocab-action-btn vocab-action-btn--review" onclick="Router.navigate('/review?type=vocabulary')">
+                    <button class="vocab-action-btn vocab-action-btn--review" onclick="Router.navigate('/english/review?type=vocabulary')">
                         <div class="vocab-action-btn__icon-wrap">
                             <span class="material-icons-round">replay</span>
                         </div>
@@ -392,7 +392,7 @@ const VocabularyPage = {
                 : '';
 
             return `
-                <div class="vocab-filter-result" onclick="Router.navigate('/topic/${this._esc(card.folderId || '')}')">
+                <div class="vocab-filter-result" onclick="Router.navigate('/english/topic/${this._esc(card.folderId || '')}')">
                     <div class="vocab-filter-result__top">
                         <span class="vocab-filter-result__word">${this._esc(word)}</span>
                         ${pos ? `<span class="vocab-filter-result__pos">${this._esc(pos)}</span>` : ''}
@@ -637,7 +637,7 @@ const VocabularyPage = {
                 return `
                     <div class="vocab-topic-card ${isCompleted ? 'vocab-topic-card--completed' : ''}"
                          data-topic-id="${topic.id}"
-                         onclick="Router.navigate('/topic/${topic.id}')">
+                         onclick="Router.navigate('/english/topic/${topic.id}')">
                         <div class="vocab-topic-card__cover" style="background:${gradient}">
                             <span class="material-icons-round vocab-topic-card__cover-icon">${icon}</span>
                             ${isCompleted ? '<div class="vocab-topic-card__badge"><span class="material-icons-round">verified</span></div>' : ''}
@@ -1003,8 +1003,8 @@ const VocabularyPage = {
             || st === undefined || st === null);
         // Đi thẳng vào /study hoặc /review với cardId — pages đã hỗ trợ load 1 card cụ thể
         const route = isNew
-            ? `/study?type=vocabulary&cardId=${encodeURIComponent(cardId)}`
-            : `/review?type=vocabulary&cardId=${encodeURIComponent(cardId)}`;
+            ? `/english/study?type=vocabulary&cardId=${encodeURIComponent(cardId)}`
+            : `/english/review?type=vocabulary&cardId=${encodeURIComponent(cardId)}`;
         Router.navigate(route);
     },
 
@@ -1020,7 +1020,7 @@ const VocabularyPage = {
 
     _goToTopicWithHighlight(folderId, cardId) {
         if (!folderId) return;
-        const path = `/topic/${folderId}?highlight=${encodeURIComponent(cardId)}`;
+        const path = `/english/topic/${folderId}?highlight=${encodeURIComponent(cardId)}`;
         Router.navigate(path);
     },
 
@@ -1493,6 +1493,6 @@ const VocabularyPage = {
             params.set('groupType', groupType);
             params.set('groupKey', rawKey);
         }
-        Router.navigate(`/study?${params.toString()}`);
+        Router.navigate(`/english/study?${params.toString()}`);
     }
 };
