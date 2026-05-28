@@ -141,7 +141,7 @@ const StudyPage = {
                     <button class="review-btn-primary" onclick="StudyPage._learnPendingFirst()" style="margin-top:0;">
                         Học tiếp nhóm từ
                     </button>
-                    <button class="review-btn-secondary" onclick="Router.navigate('/vocabulary')" style="margin-top:0;">
+                    <button class="review-btn-secondary" onclick="Router.navigate('/english/vocabulary')" style="margin-top:0;">
                         Xem chi tiết
                     </button>
                     <button class="review-btn-secondary" onclick="StudyPage._renderIntro()" style="margin-top:0;">
@@ -222,7 +222,7 @@ const StudyPage = {
                     Bắt đầu học
                     <span class="material-icons-round">arrow_forward</span>
                 </button>
-                <button class="review-btn-link" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-link" onclick="Router.navigate('/english/vocabulary')">
                     Hủy, quay lại
                 </button>
             </div>
@@ -756,7 +756,7 @@ const StudyPage = {
                     Các từ này sẽ xuất hiện trong chế độ Ôn tập theo lịch FSRS.
                 </p>
                 <div style="display:flex;gap:var(--spacing-sm);width:100%;max-width:400px;">
-                    <button class="review-btn-secondary" onclick="Router.navigate('/vocabulary')" style="flex:1;">
+                    <button class="review-btn-secondary" onclick="Router.navigate('/english/vocabulary')" style="flex:1;">
                         Về từ vựng
                     </button>
                     <button class="review-btn-primary" onclick="StudyPage.onEnter()" style="flex:1;">
@@ -777,11 +777,11 @@ const StudyPage = {
                 </div>
                 <h1 class="review-intro__title">Không có từ mới</h1>
                 <p class="review-intro__desc">Bạn đã học hết các từ mới hiện có. Hãy ôn tập hoặc thêm từ mới!</p>
-                <button class="review-btn-primary" onclick="Router.navigate('/review?type=vocabulary')">
+                <button class="review-btn-primary" onclick="Router.navigate('/english/review?type=vocabulary')">
                     <span class="material-icons-round">replay</span>
                     Đi ôn tập
                 </button>
-                <button class="review-btn-link" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-link" onclick="Router.navigate('/english/vocabulary')">
                     Về trang từ vựng
                 </button>
             </div>
@@ -798,7 +798,7 @@ const StudyPage = {
                 </div>
                 <h1 class="review-intro__title">Có lỗi xảy ra</h1>
                 <p class="review-intro__desc">${this._escapeHtml(msg || 'Không thể tải phiên học.')}</p>
-                <button class="review-btn-primary" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-primary" onclick="Router.navigate('/english/vocabulary')">
                     Quay lại
                 </button>
             </div>

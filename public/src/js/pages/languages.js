@@ -14,7 +14,7 @@ const LanguagesPage = {
             color: '#3B82F6',
             colorGradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
             description: 'Học từ vựng, ngữ pháp và giao tiếp tiếng Anh',
-            route: '/vocabulary',
+            route: '/english/vocabulary',
             available: true
         }
         // Các ngôn ngữ khác sẽ thêm vào đây khi ra mắt.

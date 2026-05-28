@@ -213,7 +213,7 @@ const TopicDetailPage = {
 
         root.innerHTML = `
             <div class="topic-detail-header">
-                <button class="topic-detail-header__back" onclick="Router.navigate('/vocabulary')" aria-label="Quay lại">
+                <button class="topic-detail-header__back" onclick="Router.navigate('/english/vocabulary')" aria-label="Quay lại">
                     <span class="material-icons-round">arrow_back</span>
                 </button>
                 <div class="topic-detail-header__icon">
@@ -281,8 +281,8 @@ const TopicDetailPage = {
         const btnLabel = isNew ? 'Học' : 'Ôn tập';
         const btnIcon = isNew ? 'school' : 'replay';
         const route = isNew
-            ? `/study?type=vocabulary&cardId=${encodeURIComponent(card.id)}`
-            : `/review?type=vocabulary&cardId=${encodeURIComponent(card.id)}`;
+            ? `/english/study?type=vocabulary&cardId=${encodeURIComponent(card.id)}`
+            : `/english/review?type=vocabulary&cardId=${encodeURIComponent(card.id)}`;
 
         const irregularBadge = irrMeta ? `
             <span class="topic-vocab-row__irr-badge"
@@ -355,7 +355,7 @@ const TopicDetailPage = {
                 </div>
                 <h3>Lỗi</h3>
                 <p>${this._escapeHtml(msg)}</p>
-                <button class="topic-detail-empty__btn" onclick="Router.navigate('/vocabulary')">
+                <button class="topic-detail-empty__btn" onclick="Router.navigate('/english/vocabulary')">
                     <span class="material-icons-round">arrow_back</span> Quay lại
                 </button>
             </div>

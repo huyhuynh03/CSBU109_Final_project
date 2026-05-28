@@ -145,7 +145,7 @@ const ReviewPage = {
                     Bắt đầu ôn tập
                     <span class="material-icons-round">arrow_forward</span>
                 </button>
-                <button class="review-btn-link" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-link" onclick="Router.navigate('/english/vocabulary')">
                     Hủy, quay lại
                 </button>
             </div>
@@ -754,7 +754,7 @@ const ReviewPage = {
                 </div>
 
                 <div style="display:flex;gap:var(--spacing-sm);width:100%;max-width:400px;">
-                    <button class="review-btn-secondary" onclick="Router.navigate('/vocabulary')" style="flex:1;">
+                    <button class="review-btn-secondary" onclick="Router.navigate('/english/vocabulary')" style="flex:1;">
                         Về từ vựng
                     </button>
                     <button class="review-btn-primary" onclick="ReviewPage.onEnter()" style="flex:1;">
@@ -778,11 +778,11 @@ const ReviewPage = {
                 </div>
                 <h1 class="review-intro__title">Bạn hiện không có từ cần ôn</h1>
                 <p class="review-intro__desc">Tất cả các thẻ đến hạn đã được ôn xong. Hãy quay lại sau hoặc học thêm từ mới!</p>
-                <button class="review-btn-primary" onclick="Router.navigate('/study?type=vocabulary')">
+                <button class="review-btn-primary" onclick="Router.navigate('/english/study?type=vocabulary')">
                     <span class="material-icons-round">auto_stories</span>
                     Học từ mới
                 </button>
-                <button class="review-btn-link" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-link" onclick="Router.navigate('/english/vocabulary')">
                     Về trang từ vựng
                 </button>
             </div>
@@ -799,7 +799,7 @@ const ReviewPage = {
                 </div>
                 <h1 class="review-intro__title">Có lỗi xảy ra</h1>
                 <p class="review-intro__desc">${this._escapeHtml(msg || 'Không thể tải phiên ôn tập.')}</p>
-                <button class="review-btn-primary" onclick="Router.navigate('/vocabulary')">
+                <button class="review-btn-primary" onclick="Router.navigate('/english/vocabulary')">
                     Quay lại
                 </button>
             </div>

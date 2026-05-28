@@ -40,7 +40,7 @@ const GrammarPage = {
                 <!-- Study / Review Action Cards -->
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg);margin:var(--spacing-lg) 0;">
                     <div class="glass-card hover-lift"
-                         onclick="Router.navigate('/study?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
+                         onclick="Router.navigate('/english/study?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
                         <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #10B981 0%, #059669 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-sm);">
                             <span class="material-icons-round" style="font-size:24px;color:#fff;">auto_stories</span>
                         </div>
@@ -51,7 +51,7 @@ const GrammarPage = {
                         </p>
                     </div>
                     <div class="glass-card hover-lift"
-                         onclick="Router.navigate('/review?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
+                         onclick="Router.navigate('/english/review?type=grammar')" style="cursor:pointer;padding:var(--spacing-lg);text-align:center;border:2px solid transparent;transition:all 0.3s ease;">
                         <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);display:flex;align-items:center;justify-content:center;margin:0 auto var(--spacing-sm);">
                             <span class="material-icons-round" style="font-size:24px;color:#fff;">replay</span>
                         </div>

@@ -1,53 +1,91 @@
 // ============================================
 // Sidebar Menu - Navigation Rail (expand/collapse)
+// State-based: globalItems + languageItems + activeLanguageId
 // ============================================
 
 const Sidebar = {
     isExpanded: false,
     _initialized: false,
 
-    /**
-     * Routes that show the sidebar (when user is signed in)
-     */
-    _sidebarRoutes: [
-        '/', '/vocabulary', '/grammar', '/study', '/review',
-        '/account', '/settings', '/languages'
-    ],
+    // ==========================================
+    // State
+    // ==========================================
 
     /**
-     * Menu items configuration
+     * Currently active language module id (null = global/no language selected)
      */
-    menuItems: [
+    _activeLanguageId: null,
+
+    /**
+     * Global items — always visible regardless of active language
+     */
+    _globalItems: [
         {
             id: 'home',
             icon: 'home',
             label: 'Trang chủ',
             route: '/',
             requireAuth: true
-        },
-        {
-            id: 'vocabulary',
-            icon: 'menu_book',
-            label: 'Từ vựng',
-            route: '/vocabulary',
-            requireAuth: true
-        },
-        {
-            id: 'grammar',
-            icon: 'school',
-            label: 'Ngữ pháp',
-            route: '/grammar',
-            requireAuth: true
-        },
-        {
-            id: 'dictation',
-            icon: 'hearing',
-            label: 'Luyện chính tả',
-            route: null,
-            requireAuth: true,
-            comingSoon: true
         }
     ],
+
+    /**
+     * Language-scoped items — only visible when a language module is active.
+     * Populated by setLanguageItems() when a module activates.
+     */
+    _languageItems: [],
+
+    /**
+     * Footer items — always visible
+     */
+    _footerItems: [
+        {
+            id: 'languages',
+            icon: 'language',
+            label: 'Chọn ngôn ngữ',
+            route: '/languages',
+            requireAuth: true
+        }
+    ],
+
+    /**
+     * Routes that show the sidebar (when user is signed in).
+     * Includes /english/* and other language prefixes dynamically.
+     */
+    _sidebarRoutes: [
+        '/', '/english/', '/account', '/settings', '/languages'
+    ],
+
+    // ==========================================
+    // Public API
+    // ==========================================
+
+    /**
+     * Set the active language and its sidebar items.
+     * Called by router when URL prefix changes to a language scope.
+     * @param {string|null} languageId - e.g. 'english', null to clear
+     * @param {Array} [items] - sidebar items for this language module
+     */
+    setLanguageScope(languageId, items) {
+        const changed = this._activeLanguageId !== languageId;
+        this._activeLanguageId = languageId;
+        if (items) {
+            this._languageItems = items;
+        } else if (!languageId) {
+            this._languageItems = [];
+        }
+        if (changed || items) {
+            this._renderContent();
+        }
+    },
+
+    /**
+     * Get current active language id
+     * @returns {string|null}
+     */
+    getActiveLanguageId() {
+        return this._activeLanguageId;
+    },
 
     /**
      * Initialize sidebar
@@ -81,12 +119,11 @@ const Sidebar = {
 
         // Listen for route changes to update active state & visibility
         window.addEventListener('hashchange', () => {
-            this._renderContent();
-            this._updateVisibility();
+            this._onRouteChange();
         });
 
         // Render initial content
-        this._renderContent();
+        this._onRouteChange();
 
         // Update visibility based on current context
         this._updateVisibility();
@@ -96,6 +133,78 @@ const Sidebar = {
         console.log('[Sidebar] Initialized');
     },
 
+    // ==========================================
+    // Internal
+    // ==========================================
+
+    /**
+     * Called on every route change — derive activeLanguageId from URL,
+     * then re-render sidebar content and update visibility.
+     * @private
+     */
+    _onRouteChange() {
+        const path = (window.location.hash.slice(1) || '/');
+
+        // Derive activeLanguageId from URL prefix
+        const langId = this._parseLanguageFromPath(path);
+
+        if (langId !== this._activeLanguageId) {
+            this._activeLanguageId = langId;
+            // If switching to a known language, set its items
+            if (langId) {
+                const items = this._getLanguageItems(langId);
+                if (items) this._languageItems = items;
+            } else {
+                this._languageItems = [];
+            }
+        }
+
+        this._renderContent();
+        this._updateVisibility();
+    },
+
+    /**
+     * Parse language id from URL path.
+     * e.g. '/english/vocabulary' → 'english'
+     *      '/languages' → null
+     *      '/' → null
+     * @param {string} path
+     * @returns {string|null}
+     * @private
+     */
+    _parseLanguageFromPath(path) {
+        // Match /{languageId}/... pattern
+        const match = path.match(/^\/([a-z]+)\//);
+        if (match) {
+            const candidate = match[1];
+            // Only recognize known language prefixes (not shell routes)
+            const shellRoutes = ['auth', 'account', 'settings', 'languages'];
+            if (!shellRoutes.includes(candidate)) {
+                return candidate;
+            }
+        }
+        return null;
+    },
+
+    /**
+     * Get sidebar items for a known language module.
+     * For now, hardcoded for 'english'. In Phase 2+, modules will register dynamically.
+     * @param {string} langId
+     * @returns {Array|null}
+     * @private
+     */
+    _getLanguageItems(langId) {
+        // Hardcoded registry — will be replaced by module.sidebarItems in Phase 2
+        const registry = {
+            english: [
+                { id: 'en-vocab', icon: 'menu_book', label: 'Từ vựng', route: '/english/vocabulary' },
+                { id: 'en-grammar', icon: 'school', label: 'Ngữ pháp', route: '/english/grammar' },
+                { id: 'en-dictation', icon: 'hearing', label: 'Luyện chính tả', route: null, comingSoon: true }
+            ]
+        };
+        return registry[langId] || null;
+    },
+
     /**
      * Check if a path should show the sidebar
      * @param {string} path
@@ -103,9 +212,10 @@ const Sidebar = {
      * @private
      */
     _isSidebarRoute(path) {
+        // Always show sidebar on these exact/prefix routes
         return this._sidebarRoutes.some(route => {
             if (route.endsWith('/')) {
-                return path.startsWith(route);
+                return path === route.slice(0, -1) || path.startsWith(route);
             }
             return path === route || path.startsWith(route + '/');
         });
@@ -205,7 +315,8 @@ const Sidebar = {
     },
 
     /**
-     * Render sidebar menu content
+     * Render sidebar menu content based on current state.
+     * Two zones: global items + language-scoped items (if active).
      * @private
      */
     _renderContent() {
@@ -213,51 +324,37 @@ const Sidebar = {
         if (!content) return;
 
         const isSignedIn = Auth.isSignedIn();
-        const currentPath = Router.getPath();
+        const currentPath = (typeof Router !== 'undefined') ? Router.getPath() : (window.location.hash.slice(1) || '/');
 
-        const visibleItems = this.menuItems
-            .filter(item => !item.requireAuth || isSignedIn);
+        // --- Global items ---
+        const globalHtml = this._globalItems
+            .filter(item => !item.requireAuth || isSignedIn)
+            .map(item => this._renderItem(item, currentPath))
+            .join('');
 
-        const menuHtml = visibleItems.map(item => {
-            const itemRoute = item.route;
+        // --- Language-scoped items (only when a language is active) ---
+        let languageHtml = '';
+        if (this._activeLanguageId && this._languageItems.length > 0) {
+            languageHtml = `
+                <div class="sidebar-nav-divider"></div>
+                ${this._languageItems.map(item => this._renderItem(item, currentPath)).join('')}
+            `;
+        }
 
-            const isActive = itemRoute === currentPath ||
-                (itemRoute && currentPath.startsWith(itemRoute + '/'));
-            // Special: dashboard '/' is active only when exactly on '/'
-            const activeClass = isActive ? 'sidebar-nav-item--active' : '';
-            const disabledClass = item.comingSoon ? 'sidebar-nav-item--disabled' : '';
-
-            if (item.comingSoon) {
+        // --- Footer: PWA install + Switch language ---
+        const footerItemsHtml = this._footerItems
+            .filter(item => !item.requireAuth || isSignedIn)
+            .map(item => {
+                const isActive = item.route === currentPath;
                 return `
-                    <button class="sidebar-nav-item ${disabledClass}" 
-                            onclick="Toast.info('Sắp ra mắt', 'Tính năng ${item.label} đang được phát triển!')"
+                    <button class="sidebar-nav-item sidebar-nav-item--switch ${isActive ? 'sidebar-nav-item--active' : ''}"
+                            onclick="Sidebar._onItemClick('${item.route}')"
                             title="${item.label}">
                         <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
                         <span class="sidebar-nav-label">${item.label}</span>
                     </button>
                 `;
-            }
-
-            return `
-                <button class="sidebar-nav-item ${activeClass}" 
-                        onclick="Sidebar._onItemClick('${itemRoute}')"
-                        title="${item.label}">
-                    <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
-                    <span class="sidebar-nav-label">${item.label}</span>
-                </button>
-            `;
-        }).join('');
-
-        // "Switch language" button at bottom (active)
-        const isLangActive = currentPath === '/languages';
-        const switchLangHtml = `
-            <button class="sidebar-nav-item sidebar-nav-item--switch ${isLangActive ? 'sidebar-nav-item--active' : ''}"
-                    onclick="Sidebar._onItemClick('/languages')"
-                    title="Chọn ngôn ngữ">
-                <span class="material-icons-round sidebar-nav-icon">language</span>
-                <span class="sidebar-nav-label">Chọn ngôn ngữ</span>
-            </button>
-        `;
+            }).join('');
 
         // PWA Install button (hidden if already installed or running standalone)
         const installBtnHtml = (typeof PWAInstall !== 'undefined' && !PWAInstall._isInstalled) ? `
@@ -271,12 +368,55 @@ const Sidebar = {
 
         content.innerHTML = `
             <nav class="sidebar-nav">
-                ${menuHtml}
+                ${globalHtml}
+                ${languageHtml}
             </nav>
             <div class="sidebar-footer">
                 ${installBtnHtml}
-                ${switchLangHtml}
+                ${footerItemsHtml}
             </div>
+        `;
+    },
+
+    /**
+     * Render a single sidebar item
+     * @param {Object} item
+     * @param {string} currentPath
+     * @returns {string}
+     * @private
+     */
+    _renderItem(item, currentPath) {
+        const itemRoute = item.route;
+
+        // Active state: exact match or prefix match (for nested routes)
+        let isActive = false;
+        if (itemRoute === '/') {
+            isActive = currentPath === '/';
+        } else if (itemRoute) {
+            isActive = currentPath === itemRoute || currentPath.startsWith(itemRoute + '/');
+        }
+
+        const activeClass = isActive ? 'sidebar-nav-item--active' : '';
+        const disabledClass = item.comingSoon ? 'sidebar-nav-item--disabled' : '';
+
+        if (item.comingSoon) {
+            return `
+                <button class="sidebar-nav-item ${disabledClass}" 
+                        onclick="Toast.info('Sắp ra mắt', 'Tính năng ${item.label} đang được phát triển!')"
+                        title="${item.label}">
+                    <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
+                    <span class="sidebar-nav-label">${item.label}</span>
+                </button>
+            `;
+        }
+
+        return `
+            <button class="sidebar-nav-item ${activeClass}" 
+                    onclick="Sidebar._onItemClick('${itemRoute}')"
+                    title="${item.label}">
+                <span class="material-icons-round sidebar-nav-icon">${item.icon}</span>
+                <span class="sidebar-nav-label">${item.label}</span>
+            </button>
         `;
     },
 
@@ -296,7 +436,6 @@ const Sidebar = {
      * Refresh sidebar content (e.g., after auth state change)
      */
     refresh() {
-        this._renderContent();
-        this._updateVisibility();
+        this._onRouteChange();
     }
 };

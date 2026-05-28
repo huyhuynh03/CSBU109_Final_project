@@ -60,12 +60,26 @@ const HomePage = {
                 </div>
 
                 <!-- GitHub-style Heatmap with Year Selector -->
-                <div class="glass-card" style="padding:var(--spacing-md) var(--spacing-sm);">
+                <div class="glass-card" style="padding:var(--spacing-md) var(--spacing-sm);margin-bottom:var(--spacing-lg);">
                     <div id="heatmap-header" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--spacing-sm);flex-wrap:wrap;gap:8px;padding:0 var(--spacing-xs);">
                         <span id="heatmap-summary" style="font-size:var(--font-size-xs);font-weight:600;color:var(--color-text);"></span>
                         <div id="heatmap-years" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
                     </div>
                     <div id="dashboard-chart" style="width:100%;"></div>
+                </div>
+
+                <!-- Language Summary Cards -->
+                <div class="dashboard-lang-section">
+                    <div class="dashboard-lang-section__header">
+                        <span class="material-icons-round" style="font-size:22px;color:var(--color-primary);">language</span>
+                        <h2 style="margin:0;font-size:var(--font-size-lg);">Tiến trình theo ngôn ngữ</h2>
+                    </div>
+                    <div id="dashboard-lang-grid" class="dashboard-lang-grid">
+                        <div style="grid-column:1/-1;text-align:center;padding:var(--spacing-md);color:var(--color-text-muted);font-size:var(--font-size-sm);">
+                            <span class="material-icons-round" style="font-size:18px;vertical-align:middle;">hourglass_empty</span>
+                            Đang tải...
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
@@ -92,6 +106,7 @@ const HomePage = {
         }
 
         await this._loadStudyChart();
+        await this._loadLanguageSummaries();
         if (Router.isTokenValid(this._navToken)) {
             this._saveHtmlCache();
         }
@@ -319,5 +334,111 @@ const HomePage = {
                 }
             });
         });
+    },
+
+    /**
+     * Load language summary cards (per-language progress at a glance).
+     * Phase 1: count cards by `cardType` since `languageId` field is added in Phase 2.
+     * Phase 2+: will group by `languageId` field instead.
+     * @private
+     */
+    async _loadLanguageSummaries() {
+        const container = document.getElementById('dashboard-lang-grid');
+        if (!container) return;
+
+        // Get available language modules from LanguagesPage config
+        const domains = (typeof LanguagesPage !== 'undefined' && LanguagesPage.languageDomains)
+            ? LanguagesPage.languageDomains.filter(d => d.available)
+            : [];
+
+        if (domains.length === 0) {
+            container.innerHTML = `
+                <div style="grid-column:1/-1;text-align:center;padding:var(--spacing-md);color:var(--color-text-muted);font-size:var(--font-size-sm);">
+                    Chưa có ngôn ngữ nào được kích hoạt.
+                </div>
+            `;
+            return;
+        }
+
+        try {
+            // Phase 1: tất cả card hiện có thuộc về English (chưa có languageId)
+            // → query 1 lần, count theo cardType
+            const allCards = await FirestoreDB.getCards();
+
+            const cardsByLang = {
+                english: allCards  // Phase 2 sẽ filter theo languageId
+            };
+
+            const summaries = domains.map(domain => {
+                const cards = cardsByLang[domain.id] || [];
+                const total = cards.length;
+
+                const isNewLike = (c) => {
+                    const st = c.state;
+                    return st === 'new' || st === FSRS.State.NEW || st === undefined;
+                };
+                const isReviewable = (c) => {
+                    const st = c.state;
+                    return st === 'review' || st === 'relearning'
+                        || st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING;
+                };
+
+                const newCount = cards.filter(isNewLike).length;
+                const now = new Date();
+                const dueCount = cards.filter(c => {
+                    if (!isReviewable(c)) return false;
+                    if (!c.dueDate) return false;
+                    const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
+                    return dueDate <= now;
+                }).length;
+
+                return { domain, total, newCount, dueCount };
+            });
+
+            container.innerHTML = summaries.map(s => this._renderLangSummaryCard(s)).join('');
+        } catch (error) {
+            console.error('[HomePage] Error loading language summaries:', error);
+            container.innerHTML = `
+                <div style="grid-column:1/-1;text-align:center;padding:var(--spacing-md);color:var(--color-text-muted);font-size:var(--font-size-sm);">
+                    Không tải được dữ liệu.
+                </div>
+            `;
+        }
+    },
+
+    /**
+     * Render one language summary card
+     * @private
+     */
+    _renderLangSummaryCard({ domain, total, newCount, dueCount }) {
+        const route = domain.route || '/languages';
+        return `
+            <button class="dashboard-lang-card glass-card hover-lift"
+                    onclick="Router.navigate('${route}')"
+                    style="--domain-color: ${domain.color}; --domain-gradient: ${domain.colorGradient};">
+                <div class="dashboard-lang-card__header">
+                    <div class="dashboard-lang-card__flag">${domain.flagLabel}</div>
+                    <div class="dashboard-lang-card__name-wrap">
+                        <span class="dashboard-lang-card__name">${domain.name}</span>
+                        <span class="dashboard-lang-card__native">${domain.nameNative}</span>
+                    </div>
+                    <span class="material-icons-round dashboard-lang-card__arrow">arrow_forward</span>
+                </div>
+                <div class="dashboard-lang-card__stats">
+                    <div class="dashboard-lang-stat">
+                        <span class="dashboard-lang-stat__value">${total}</span>
+                        <span class="dashboard-lang-stat__label">Tổng</span>
+                    </div>
+                    <div class="dashboard-lang-stat">
+                        <span class="dashboard-lang-stat__value" style="color:#10B981;">${newCount}</span>
+                        <span class="dashboard-lang-stat__label">Chưa học</span>
+                    </div>
+                    <div class="dashboard-lang-stat">
+                        <span class="dashboard-lang-stat__value" style="color:#F59E0B;">${dueCount}</span>
+                        <span class="dashboard-lang-stat__label">Cần ôn</span>
+                    </div>
+                </div>
+            </button>
+        `;
     }
 };

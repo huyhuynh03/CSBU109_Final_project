@@ -62,6 +62,10 @@ const App = {
      * @private
      */
     _registerRoutes() {
+        // ==========================================
+        // Shell routes (global)
+        // ==========================================
+
         // Dashboard (home)
         Router.register('/', {
             render: () => HomePage.render(),
@@ -74,33 +78,10 @@ const App = {
             onEnter: () => AuthPage.onEnter && AuthPage.onEnter()
         });
 
-        // Vocabulary section
-        Router.register('/vocabulary', {
-            render: () => VocabularyPage.render(),
-            onEnter: () => VocabularyPage.onEnter && VocabularyPage.onEnter()
-        });
-
-        // Topic detail (vocabulary topic)
-        Router.register('/topic/:id', {
-            render: () => TopicDetailPage.render(),
-            onEnter: (params) => TopicDetailPage.onEnter && TopicDetailPage.onEnter(params)
-        });
-
-        // Grammar section
-        Router.register('/grammar', {
-            render: () => GrammarPage.render(),
-            onEnter: () => GrammarPage.onEnter && GrammarPage.onEnter()
-        });
-
-        // Study & Review
-        Router.register('/study', {
-            render: () => StudyPage.render(),
-            onEnter: () => StudyPage.onEnter && StudyPage.onEnter()
-        });
-
-        Router.register('/review', {
-            render: () => ReviewPage.render(),
-            onEnter: () => ReviewPage.onEnter && ReviewPage.onEnter()
+        // Language selection
+        Router.register('/languages', {
+            render: () => LanguagesPage.render(),
+            onEnter: () => LanguagesPage.onEnter && LanguagesPage.onEnter()
         });
 
         // Settings & Account
@@ -114,10 +95,72 @@ const App = {
             onEnter: () => AccountPage.onEnter && AccountPage.onEnter()
         });
 
-        // Language selection
-        Router.register('/languages', {
-            render: () => LanguagesPage.render(),
-            onEnter: () => LanguagesPage.onEnter && LanguagesPage.onEnter()
+        // ==========================================
+        // English module routes (prefix: /english/*)
+        // ==========================================
+
+        // Vocabulary section
+        Router.register('/english/vocabulary', {
+            render: () => VocabularyPage.render(),
+            onEnter: () => VocabularyPage.onEnter && VocabularyPage.onEnter()
+        });
+
+        // Topic detail (vocabulary topic)
+        Router.register('/english/topic/:id', {
+            render: () => TopicDetailPage.render(),
+            onEnter: (params) => TopicDetailPage.onEnter && TopicDetailPage.onEnter(params)
+        });
+
+        // Grammar section
+        Router.register('/english/grammar', {
+            render: () => GrammarPage.render(),
+            onEnter: () => GrammarPage.onEnter && GrammarPage.onEnter()
+        });
+
+        // Study & Review
+        Router.register('/english/study', {
+            render: () => StudyPage.render(),
+            onEnter: () => StudyPage.onEnter && StudyPage.onEnter()
+        });
+
+        Router.register('/english/review', {
+            render: () => ReviewPage.render(),
+            onEnter: () => ReviewPage.onEnter && ReviewPage.onEnter()
+        });
+
+        // ==========================================
+        // Legacy redirects (Phase 1.4)
+        // Old URLs → new /english/* URLs. Keep for 6 months.
+        // ==========================================
+        const legacyRedirects = {
+            '/vocabulary': '/english/vocabulary',
+            '/grammar': '/english/grammar',
+            '/study': '/english/study',
+            '/review': '/english/review'
+        };
+
+        Object.entries(legacyRedirects).forEach(([oldPath, newPath]) => {
+            Router.register(oldPath, {
+                render: () => {
+                    // Preserve query string during redirect
+                    const fullHash = window.location.hash.slice(1) || '';
+                    const qIndex = fullHash.indexOf('?');
+                    const queryString = qIndex >= 0 ? fullHash.substring(qIndex) : '';
+                    Router.navigate(newPath + queryString);
+                    return '<div class="page-enter"></div>';
+                }
+            });
+        });
+
+        // Legacy topic detail: /topic/:id → /english/topic/:id
+        Router.register('/topic/:id', {
+            render: (params) => {
+                const fullHash = window.location.hash.slice(1) || '';
+                const qIndex = fullHash.indexOf('?');
+                const queryString = qIndex >= 0 ? fullHash.substring(qIndex) : '';
+                Router.navigate('/english/topic/' + params.id + queryString);
+                return '<div class="page-enter"></div>';
+            }
         });
 
         console.log('[App] Routes registered');
