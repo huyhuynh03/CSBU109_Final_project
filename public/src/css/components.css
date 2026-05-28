@@ -722,12 +722,39 @@
     padding: var(--spacing-xs);
 }
 
-/* Divider between global and language-scoped items */
+/* Divider between global (Home) and language-scoped items */
 .sidebar-nav-divider {
-    height: 1px;
-    background: var(--color-border);
-    margin: var(--spacing-xs) var(--spacing-md);
-    opacity: 0.5;
+    position: relative;
+    height: 2px;
+    margin: var(--spacing-md) var(--spacing-sm);
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-primary, rgba(124, 92, 255, 0.6)) 50%,
+        transparent 100%
+    );
+    border-radius: 2px;
+    opacity: 0.85;
+}
+
+.sidebar-nav-divider::before,
+.sidebar-nav-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-primary, rgba(124, 92, 255, 0.8));
+    transform: translateY(-50%);
+}
+
+.sidebar-nav-divider::before {
+    left: 0;
+}
+
+.sidebar-nav-divider::after {
+    right: 0;
 }
 
 /* Navigation item */
