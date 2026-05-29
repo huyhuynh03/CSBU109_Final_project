@@ -1,14 +1,17 @@
 {
   "name": "linguaflash",
   "private": true,
+  "workspaces": [
+    "packages/shell",
+    "packages/english"
+  ],
   "scripts": {
-    "bump": "node tools/bump-version.js",
-    "bump:minor": "node tools/bump-version.js minor",
-    "bump:major": "node tools/bump-version.js major",
-    "sync": "node tools/bump-version.js sync",
-    "deploy": "node tools/bump-version.js patch && vercel --prod",
-    "deploy:minor": "node tools/bump-version.js minor && vercel --prod",
-    "deploy:major": "node tools/bump-version.js major && vercel --prod",
+    "dev": "npm run dev -w packages/shell",
+    "build": "npm run build:english && npm run build:shell",
+    "build:shell": "npm run build -w packages/shell",
+    "build:english": "npm run build -w packages/english",
+    "preview": "npm run preview -w packages/shell",
+    "deploy": "npm run build && vercel --prod",
     "firebase:rules": "firebase deploy --only firestore:rules",
     "firebase:functions": "firebase deploy --only functions"
   },

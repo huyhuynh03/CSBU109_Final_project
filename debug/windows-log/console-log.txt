@@ -1,88 +1,75 @@
-(index):1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
- [2026-05-28T05:05:31.751Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
- [Firebase] Initialized successfully
-app.js?v=7508f27b53:10 [App] Initializing LinguaFlash...
-theme.js?v=7d2d8a5c9e:30 [Theme] Initialized: system
-pwa-install.js?v=53e11ee624:49 [PWAInstall] Initialized
-firestore.js?v=ebb0994a1f:14 [Firestore] Initialized
-sync.js?v=4128eea52b:25 [Sync] Initialized, online: true
-fsrs.js?v=5e348d74b3:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
-auth-ui.js?v=57ee1bc840:47 [AuthUI] Initialized
-sidebar.js?v=6c084ce8e3:96 [Sidebar] Initialized
-app.js?v=7508f27b53:123 [App] Routes registered
-express-utils.js:18 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf
-express-utils.js:18 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf
-sw-update.js?v=dc43ebc4bb:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
-auth.js?v=cec132f99d:15 [Auth] State changed: huynhvuquochuy37@gmail.com
-router.js?v=810b5c093e:26 [Router] Initialized
- [Firebase] Offline persistence enabled
-home.js?v=1f016e11a3:81 [HomePage] Entered - Dashboard
-app.js?v=7508f27b53:52 [App] ✅ Initialized successfully
-router.js?v=810b5c093e:202 [Router] Navigated to: /
-sw-update.js?v=dc43ebc4bb:101 [SwUpdate] New SW found, state: installing
-sw-update.js?v=dc43ebc4bb:104 [SwUpdate] New SW state: installed
-sw-update.js?v=dc43ebc4bb:179 [SwUpdate] Version check: old=5.158.0 new=5.158.0
-sw-update.js?v=dc43ebc4bb:183 [SwUpdate] Same APP_VERSION - silent skip toast, auto-activating new SW
-sw-update.js?v=dc43ebc4bb:104 [SwUpdate] New SW state: activating
-sw-update.js?v=dc43ebc4bb:104 [SwUpdate] New SW state: activated
-settings.js?v=baf2dfee17:112 [SettingsPage] Entered
-router.js?v=810b5c093e:202 [Router] Navigated to: /settings
-languages.js?v=815a9051cd:76 [LanguagesPage] Entered
-router.js?v=810b5c093e:202 [Router] Navigated to: /languages
-vocabulary.js?v=7c2833a157:249 [VocabularyPage] Entered
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/languages:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-languages.js?v=815a9051cd:76 [LanguagesPage] Entered
-router.js?v=810b5c093e:202 [Router] Navigated to: /languages
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "family-relationships": +0 created, 0 updated, 81 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "daily-life": +0 created, 0 updated, 82 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "home-living": +0 created, 0 updated, 100 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "food-drink": +0 created, 0 updated, 119 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "daily-activities": +0 created, 0 updated, 92 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "health": +0 created, 0 updated, 88 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "communication-social": +0 created, 0 updated, 102 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "media-entertainment": +0 created, 0 updated, 115 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "sports": +0 created, 0 updated, 126 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "travel": +0 created, 0 updated, 114 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "personal-qualities": +0 created, 0 updated, 86 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "emotion-feelings": +0 created, 0 updated, 140 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "education": +0 created, 0 updated, 95 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "psychology": +0 created, 0 updated, 93 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "culture": +0 created, 0 updated, 63 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "arts": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "literature-reading": +0 created, 0 updated, 37 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "science": +0 created, 0 updated, 61 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "mathematics": +0 created, 0 updated, 57 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "biology": +0 created, 0 updated, 55 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "chemistry": +0 created, 0 updated, 35 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "physics": +0 created, 0 updated, 46 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "information-technology": +0 created, 0 updated, 69 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "space": +0 created, 0 updated, 76 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "environment-climate": +0 created, 0 updated, 82 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "energy-resources": +0 created, 0 updated, 100 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "economy": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "finance": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "investment": +0 created, 0 updated, 83 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "business": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "law": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "crime": +0 created, 0 updated, 91 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "politics": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "employment": +0 created, 0 updated, 93 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "urbanization": +0 created, 0 updated, 89 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "history-archeology": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "idioms": +0 created, 0 updated, 90 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "irregular-verb-v1": +0 created, 0 updated, 132 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "irregular-verb-v2": +0 created, 0 updated, 114 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "irregular-verb-v3": +0 created, 0 updated, 56 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "irregular-adj-comparative": +0 created, 0 updated, 7 skipped
-vocabulary.js?v=7c2833a157:1243 [VocabularyPage] Seeded "irregular-adj-superlative": +0 created, 0 updated, 7 skipped
-settings.js?v=baf2dfee17:112 [SettingsPage] Entered
-router.js?v=810b5c093e:202 [Router] Navigated to: /settings
-/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/settings:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+logger.ts:115 [2026-05-28T15:51:05.448Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+(anonymous) @ logger.ts:115
+firebase-config.js:45 [Firebase] Initialized successfully
+app.js:27 [App] Initializing LinguaFlash...
+theme.js:30 [Theme] Initialized: system
+pwa-install.js:49 [PWAInstall] Initialized
+firestore.js:14 [Firestore] Initialized
+sync.js:25 [Sync] Initialized, online: true
+fsrs.js:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=30 ngày | 4=90 ngày
+auth-ui.js:47 [AuthUI] Initialized
+sidebar.js:134 [Sidebar] Initialized
+app.js:157 [App] Routes registered
+sw-update.js:53 [SwUpdate] SW registered, scope: http://localhost:5173/
+pwa-install.js:30 [PWAInstall] beforeinstallprompt captured
+:5173/#/english/vocabulary:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+auth.js:15 [Auth] State changed: huynhvuquochuy37@gmail.com
+module-loader.js:87 [ModuleLoader] Loading "english"...
+router.js:26 [Router] Initialized
+firebase-config.js:28 [Firebase] Offline persistence enabled
+index.js:109 [EnglishModule] Installed (v1.0.0)
+module-loader.js:124 [ModuleLoader] ✓ "english" loaded in 91ms (5 routes registered)
+vocabulary.js:249 [VocabularyPage] Entered
+ACg8ocJ7I9xg0RYawySyD-BhWVak3ZLxXIGw5WoKzX4ecPn8hvduIw=s96-c:1  Failed to load resource: the server responded with a status of 429 ()
+app.js:69 [App] ✅ Initialized successfully
+vocabulary.js:1243 [VocabularyPage] Seeded "family-relationships": +0 created, 0 updated, 81 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "daily-life": +0 created, 0 updated, 82 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "home-living": +0 created, 0 updated, 100 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "food-drink": +0 created, 0 updated, 119 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "daily-activities": +0 created, 0 updated, 92 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "health": +0 created, 0 updated, 88 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "communication-social": +0 created, 0 updated, 102 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "media-entertainment": +0 created, 0 updated, 115 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "sports": +0 created, 0 updated, 126 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "travel": +0 created, 0 updated, 114 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "personal-qualities": +0 created, 0 updated, 86 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "emotion-feelings": +0 created, 0 updated, 140 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "education": +0 created, 0 updated, 95 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "psychology": +0 created, 0 updated, 93 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "culture": +0 created, 0 updated, 63 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "arts": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "literature-reading": +0 created, 0 updated, 37 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "science": +0 created, 0 updated, 61 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "mathematics": +0 created, 0 updated, 57 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "biology": +0 created, 0 updated, 55 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "chemistry": +0 created, 0 updated, 35 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "physics": +0 created, 0 updated, 46 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "information-technology": +0 created, 0 updated, 69 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "space": +0 created, 0 updated, 76 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "environment-climate": +0 created, 0 updated, 82 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "energy-resources": +0 created, 0 updated, 100 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "economy": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "finance": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "investment": +0 created, 0 updated, 83 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "business": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "law": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "crime": +0 created, 0 updated, 91 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "politics": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "employment": +0 created, 0 updated, 93 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "urbanization": +0 created, 0 updated, 89 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "history-archeology": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "idioms": +0 created, 0 updated, 90 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "irregular-verb-v1": +0 created, 0 updated, 132 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "irregular-verb-v2": +0 created, 0 updated, 114 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "irregular-verb-v3": +0 created, 0 updated, 56 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "irregular-adj-comparative": +0 created, 0 updated, 7 skipped
+vocabulary.js:1243 [VocabularyPage] Seeded "irregular-adj-superlative": +0 created, 0 updated, 7 skipped
+ACg8ocJ7I9xg0RYawySyD-BhWVak3ZLxXIGw5WoKzX4ecPn8hvduIw=s96-c:1  Failed to load resource: the server responded with a status of 429 ()
+account.js:141 [AccountPage] Entered
+router.js:215 [Router] Navigated to: /account
+ACg8ocJ7I9xg0RYawySyD-BhWVak3ZLxXIGw5WoKzX4ecPn8hvduIw=s96-c:1  Failed to load resource: the server responded with a status of 429 ()
+home.js:92 [HomePage] Entered - Dashboard
+router.js:215 [Router] Navigated to: /
+vocabulary.js:249 [VocabularyPage] Entered
+router.js:215 [Router] Navigated to: /english/vocabulary
+ACg8ocJ7I9xg0RYawySyD-BhWVak3ZLxXIGw5WoKzX4ecPn8hvduIw=s96-c:1  Failed to load resource: the server responded with a status of 429 ()
