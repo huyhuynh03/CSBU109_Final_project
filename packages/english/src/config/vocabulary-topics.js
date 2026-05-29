@@ -319,6 +319,17 @@ const VocabularyTopics = [
         icon: 'emoji_events',
         category: 'irregular',
         order: 42
+    },
+
+    // ==========================================
+    // Nhóm 7: Phrasal Verbs (Cụm động từ)
+    // ==========================================
+    {
+        id: 'phrasal-verbs',
+        name: 'Phrasal Verbs (Cụm động từ)',
+        icon: 'merge_type',
+        category: 'phrasal',
+        order: 43
     }
 ];
 
@@ -329,7 +340,8 @@ const TopicCategories = {
     science: { label: 'Khoa học & Công nghệ', icon: 'biotech', order: 3 },
     ielts: { label: 'Văn hóa & Giải trí', icon: 'celebration', order: 4 },
     idiom: { label: 'Idiom', icon: 'format_quote', order: 5 },
-    irregular: { label: 'Bất quy tắc', icon: 'swap_horiz', order: 6 }
+    irregular: { label: 'Bất quy tắc', icon: 'swap_horiz', order: 6 },
+    phrasal: { label: 'Phrasal Verbs', icon: 'merge_type', order: 7 }
 };
 
 

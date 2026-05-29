@@ -52,7 +52,8 @@ const VocabularyPage = {
         'irregular-verb-v2': 'irregular-verb-v2.json',
         'irregular-verb-v3': 'irregular-verb-v3.json',
         'irregular-adj-comparative': 'irregular-comparative.json',
-        'irregular-adj-superlative': 'irregular-superlative.json'
+        'irregular-adj-superlative': 'irregular-superlative.json',
+        'phrasal-verbs': 'phrasal-verbs.json'
     },
 
     _renderFresh() {
