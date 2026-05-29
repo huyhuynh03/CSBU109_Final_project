@@ -93,6 +93,9 @@ const HomePage = {
         this._navToken = navToken;
         if (!Auth.isSignedIn()) return;
 
+        // Badge "cần ôn tập" luôn refresh mỗi lần vào dashboard (độc lập với cache HTML).
+        this._loadReviewAlerts();
+
         const now = Date.now();
         if (this._cachedStreak && (now - this._lastLoadTime) < this._CACHE_TTL_MS) {
             // DOM đã restore từ cache → background refresh
@@ -106,6 +109,64 @@ const HomePage = {
         if (Router.isTokenValid(this._navToken)) {
             this._saveHtmlCache();
         }
+    },
+
+    /**
+     * Đếm số thẻ "cần ôn tập" theo từng ngôn ngữ và hiển thị dấu chấm than đỏ
+     * ở góc phải trên của card ngôn ngữ tương ứng.
+     *
+     * Định nghĩa "cần ôn" đồng bộ với VocabularyPage/GrammarPage:
+     *   - state là REVIEW hoặc RELEARNING (đã vào pipeline ôn tập)
+     *   - có dueDate và dueDate <= now (đã tới hạn)
+     * Thẻ NEW/LEARNING không tính (thuộc pipeline "học mới").
+     * @private
+     */
+    async _loadReviewAlerts() {
+        try {
+            if (!window.FirestoreDB || typeof FirestoreDB.getCards !== 'function') return;
+            const cards = await FirestoreDB.getCards();
+            const now = new Date();
+            const isReviewable = (c) => {
+                const st = c.state;
+                return st === 'review' || st === 'relearning'
+                    || (typeof FSRS !== 'undefined' && (st === FSRS.State.REVIEW || st === FSRS.State.RELEARNING));
+            };
+
+            const dueByLang = {};
+            cards.forEach(c => {
+                if (!isReviewable(c)) return;
+                if (!c.dueDate) return;
+                const dueDate = c.dueDate.toDate ? c.dueDate.toDate() : new Date(c.dueDate);
+                if (dueDate > now) return;
+                const langId = c.languageId || 'english';
+                dueByLang[langId] = (dueByLang[langId] || 0) + 1;
+            });
+
+            this._renderReviewAlerts(dueByLang);
+        } catch (e) {
+            console.warn('[HomePage] Error loading review alerts:', e);
+        }
+    },
+
+    /**
+     * Bật/tắt badge cảnh báo trên mỗi card ngôn ngữ dựa trên số thẻ cần ôn.
+     * @param {Object<string, number>} dueByLang - map languageId → số thẻ cần ôn
+     * @private
+     */
+    _renderReviewAlerts(dueByLang) {
+        const cardEls = document.querySelectorAll('.lang-domain-card[data-lang-id]');
+        cardEls.forEach(cardEl => {
+            const langId = cardEl.getAttribute('data-lang-id');
+            const alertEl = cardEl.querySelector('.lang-domain-card__alert');
+            if (!alertEl) return;
+            const count = dueByLang[langId] || 0;
+            if (count > 0) {
+                alertEl.style.display = '';
+                alertEl.setAttribute('title', `Có ${count} từ cần ôn tập`);
+            } else {
+                alertEl.style.display = 'none';
+            }
+        });
     },
 
     _saveHtmlCache() {
@@ -352,7 +413,11 @@ const HomePage = {
                 : `onclick="Toast.info('Sắp ra mắt', '${domain.name} đang được phát triển!')"`;
 
             return `
-                <div class="${cardClass}" ${clickHandler} style="--domain-color: ${domain.color}; --domain-gradient: ${domain.colorGradient};">
+                <div class="${cardClass}" data-lang-id="${domain.id}" ${clickHandler} style="--domain-color: ${domain.color}; --domain-gradient: ${domain.colorGradient};">
+                    ${isAvailable
+                        ? `<span class="lang-domain-card__alert" style="display:none;" title="Có từ cần ôn tập"><span class="material-icons-round">priority_high</span></span>`
+                        : ''
+                    }
                     <div class="lang-domain-card__flag">${domain.flagLabel}</div>
                     <h3 class="lang-domain-card__name">${domain.name}</h3>
                     ${isAvailable

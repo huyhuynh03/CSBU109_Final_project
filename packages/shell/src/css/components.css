@@ -1256,6 +1256,46 @@
     color: var(--color-text-muted);
 }
 
+/* Review alert badge — dấu chấm than đỏ góc phải trên (có từ cần ôn tập) */
+.lang-domain-card__alert {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #EF4444;
+    color: #fff;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25), 0 2px 6px rgba(0, 0, 0, 0.3);
+    animation: lang-alert-pulse 1.8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.lang-domain-card__alert .material-icons-round {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@keyframes lang-alert-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25), 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(239, 68, 68, 0), 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lang-domain-card__alert {
+        animation: none;
+    }
+}
+
 /* ============================================
    Domain Page Header (English, Japanese, etc.)
    ============================================ */
