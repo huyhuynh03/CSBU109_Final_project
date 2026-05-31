@@ -933,9 +933,16 @@ const VocabularyPage = {
                             <span class="vocab-word-card__action-label">${primaryLabel}</span>
                         </button>
                         <button class="vocab-word-card__action-btn"
-                                title="Nghe phát âm"
-                                onclick="event.stopPropagation();VocabularyPage._searchActionSpeak('${card.id}')">
+                                title="Phát âm giọng Anh-Mỹ"
+                                onclick="event.stopPropagation();VocabularyPage._searchActionSpeak('${card.id}','us')">
                             <span class="material-icons-round">volume_up</span>
+                            <span class="vocab-word-card__action-accent">US</span>
+                        </button>
+                        <button class="vocab-word-card__action-btn"
+                                title="Phát âm giọng Anh-Anh"
+                                onclick="event.stopPropagation();VocabularyPage._searchActionSpeak('${card.id}','gb')">
+                            <span class="material-icons-round">volume_up</span>
+                            <span class="vocab-word-card__action-accent">UK</span>
                         </button>
                         <button class="vocab-word-card__action-btn"
                                 title="Xem trong chủ đề"
@@ -1009,13 +1016,13 @@ const VocabularyPage = {
         Router.navigate(route);
     },
 
-    _searchActionSpeak(cardId) {
+    _searchActionSpeak(cardId, accent = 'us') {
         const card = this._findCardById(cardId);
         if (!card) return;
         const word = card.fieldValues?.word || card.word || '';
         if (!word) return;
         if (typeof TTS !== 'undefined' && TTS.isAvailable && TTS.isAvailable()) {
-            TTS.speak(word);
+            TTS.speak(word, { accent });
         }
     },
 

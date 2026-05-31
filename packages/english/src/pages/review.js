@@ -224,10 +224,7 @@ const ReviewPage = {
             const fallback = !TTS.isAvailable();
             questionHtml = `
                 <div class="review-question review-question--listen">
-                    <button class="review-audio-btn" onclick="ReviewPage._playAudio()">
-                        <span class="material-icons-round">volume_up</span>
-                        Phát lại âm thanh
-                    </button>
+                    ${this._audioButtonsHtml()}
                     ${fallback && ipa ? `<div class="review-question__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="review-question__pos">(${partOfSpeech})</div>` : ''}
                     ${irrHint}
@@ -274,8 +271,11 @@ const ReviewPage = {
                 <!-- Actions -->
                 <div class="review-actions">
                     ${s.currentRound === 2 ? `
-                        <button class="review-action-btn" onclick="ReviewPage._playAudio()">
-                            <span class="material-icons-round">replay</span> Nghe lại
+                        <button class="review-action-btn" onclick="ReviewPage._playAudio('us')">
+                            <span class="material-icons-round">replay</span> US
+                        </button>
+                        <button class="review-action-btn" onclick="ReviewPage._playAudio('gb')">
+                            <span class="material-icons-round">replay</span> UK
                         </button>
                     ` : ''}
                     <button class="review-action-btn review-action-btn--hint" onclick="ReviewPage._showHint()">
@@ -313,12 +313,30 @@ const ReviewPage = {
         this._currentRevealed = false;
     },
 
-    _playAudio() {
+    /**
+     * Render cụm 2 nút phát âm US / UK.
+     */
+    _audioButtonsHtml() {
+        return `
+            <div class="audio-accent-group" role="group" aria-label="Phát âm">
+                <button class="audio-accent-btn" onclick="ReviewPage._playAudio('us')" title="Phát âm giọng Anh-Mỹ">
+                    <span class="material-icons-round">volume_up</span>
+                    <span class="audio-accent-btn__label">US</span>
+                </button>
+                <button class="audio-accent-btn" onclick="ReviewPage._playAudio('gb')" title="Phát âm giọng Anh-Anh">
+                    <span class="material-icons-round">volume_up</span>
+                    <span class="audio-accent-btn__label">UK</span>
+                </button>
+            </div>
+        `;
+    },
+
+    _playAudio(accent = 'us') {
         const s = this._session;
         const card = s.cards[s.currentIndex];
         const word = card.fieldValues?.word || '';
         if (word && TTS.isAvailable()) {
-            TTS.speak(word);
+            TTS.speak(word, { accent });
         }
     },
 
@@ -490,10 +508,7 @@ const ReviewPage = {
                     ${ipa ? `<div class="study-intro-card__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="study-intro-card__pos">${this._escapeHtml(partOfSpeech)}</div>` : ''}
                     ${irrFormBadge}
-                    <button class="review-audio-btn" onclick="ReviewPage._playAudio()" style="margin:var(--spacing-md) 0;">
-                        <span class="material-icons-round">volume_up</span>
-                        Nghe phát âm
-                    </button>
+                    <div style="margin:var(--spacing-md) 0;">${this._audioButtonsHtml()}</div>
                     <div class="study-intro-card__divider"></div>
                     <div class="study-intro-card__meaning-label">NGHĨA</div>
                     <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>

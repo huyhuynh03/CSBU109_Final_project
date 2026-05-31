@@ -317,10 +317,7 @@ const StudyPage = {
                     <div class="study-intro-card__word">${this._escapeHtml(word)}</div>
                     ${ipa ? `<div class="study-intro-card__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="study-intro-card__pos">${this._escapeHtml(partOfSpeech)}</div>` : ''}
-                    <button class="review-audio-btn" onclick="StudyPage._playWord()" style="margin:var(--spacing-md) 0;">
-                        <span class="material-icons-round">volume_up</span>
-                        Nghe phát âm
-                    </button>
+                    <div style="margin:var(--spacing-md) 0;">${this._audioButtonsHtml('_playWord')}</div>
                     <div class="study-intro-card__divider"></div>
                     <div class="study-intro-card__meaning-label">NGHĨA</div>
                     <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
@@ -377,10 +374,7 @@ const StudyPage = {
             const fallback = !TTS.isAvailable();
             questionHtml = `
                 <div class="review-question review-question--listen">
-                    <button class="review-audio-btn" onclick="StudyPage._playWord()">
-                        <span class="material-icons-round">volume_up</span>
-                        Phát lại âm thanh
-                    </button>
+                    ${this._audioButtonsHtml('_playWord')}
                     ${fallback && ipa ? `<div class="review-question__ipa">${this._escapeHtml(ipa)}</div>` : ''}
                     ${partOfSpeech ? `<div class="review-question__pos">(${partOfSpeech})</div>` : ''}
                 </div>
@@ -420,8 +414,11 @@ const StudyPage = {
 
                 <div class="review-actions">
                     ${variant === 'listen-to-en' ? `
-                        <button class="review-action-btn" onclick="StudyPage._playWord()">
-                            <span class="material-icons-round">replay</span> Nghe lại
+                        <button class="review-action-btn" onclick="StudyPage._playWord('us')">
+                            <span class="material-icons-round">replay</span> US
+                        </button>
+                        <button class="review-action-btn" onclick="StudyPage._playWord('gb')">
+                            <span class="material-icons-round">replay</span> UK
                         </button>
                     ` : ''}
                     <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
@@ -456,11 +453,30 @@ const StudyPage = {
         this._currentRevealed = false;
     },
 
-    _playWord() {
+    /**
+     * Render cụm 2 nút phát âm US / UK.
+     * @param {string} handler - tên hàm sẽ gọi, vd '_playWord'
+     */
+    _audioButtonsHtml(handler) {
+        return `
+            <div class="audio-accent-group" role="group" aria-label="Phát âm">
+                <button class="audio-accent-btn" onclick="StudyPage.${handler}('us')" title="Phát âm giọng Anh-Mỹ">
+                    <span class="material-icons-round">volume_up</span>
+                    <span class="audio-accent-btn__label">US</span>
+                </button>
+                <button class="audio-accent-btn" onclick="StudyPage.${handler}('gb')" title="Phát âm giọng Anh-Anh">
+                    <span class="material-icons-round">volume_up</span>
+                    <span class="audio-accent-btn__label">UK</span>
+                </button>
+            </div>
+        `;
+    },
+
+    _playWord(accent = 'us') {
         const card = this._session.cards[this._session.currentIndex];
         const word = card?.fieldValues?.word || '';
         if (word && TTS.isAvailable()) {
-            TTS.speak(word);
+            TTS.speak(word, { accent });
         }
     },
 

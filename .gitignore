@@ -9,10 +9,10 @@ firebase-debug.log
 # Vercel
 .vercel
 
-# Environment
-.env
-.env.local
-.env.*.local
+# Environment — bỏ qua MỌI biến thể .env* (kể cả .env.api, .env.local...)
+# nhưng GIỮ lại .env.example (mẫu an toàn) để commit.
+.env*
+!.env.example
 
 # OS files
 .DS_Store
