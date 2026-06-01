@@ -203,7 +203,7 @@ const ReviewPage = {
 
         const irrHint = isIrr
             ? `<div class="review-question__pos" style="color:${irrMeta.color};font-weight:700;">
-                  ${this._escapeHtml(irrMeta.label)} · <strong>${this._escapeHtml(irrMeta.roleShort)}</strong>${baseForm ? ` (nguyên mẫu: <em>${this._escapeHtml(baseForm)}</em>)` : ''}
+                  ${this._escapeHtml(irrMeta.label)} · <strong>${this._escapeHtml(irrMeta.roleShort)}</strong>${irrMeta.role === 'baseForm' ? ' (nguyên mẫu)' : (baseForm ? ` (nguyên mẫu: <em>${this._escapeHtml(baseForm)}</em>)` : '')}
                </div>`
             : '';
 

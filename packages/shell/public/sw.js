@@ -17,7 +17,7 @@
 // Với Vite hashed filenames (e.g. index-CN7Jhn0k.js), mỗi deploy tạo
 // filename mới → browser tự invalidate. SW chỉ cần cache-first cho /assets/*.
 
-const APP_VERSION = '6.4.0';
+const APP_VERSION = '6.4.1';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Chỉ precache stable paths (không hash). Hashed assets sẽ được cache

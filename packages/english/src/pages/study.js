@@ -292,7 +292,8 @@ const StudyPage = {
                 ${this._escapeHtml(irrMeta.note)}
             </div>
         ` : '';
-        const baseFormHtml = (irrMeta && baseForm) ? `
+        // V1 (baseForm) chính là nguyên mẫu → không lặp lại từ; chỉ V2/V3/so sánh mới hiển thị tham chiếu nguyên mẫu.
+        const baseFormHtml = (irrMeta && baseForm && irrMeta.role !== 'baseForm') ? `
             <div class="study-intro-card__base-note" style="margin-top:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-md);background:${irrMeta.bg};border-radius:10px;font-size:0.9rem;color:var(--color-text-secondary);">
                 <span class="material-icons-round" style="font-size:14px;vertical-align:middle;color:${irrMeta.color};">info</span>
                 Nguyên mẫu: <strong style="color:${irrMeta.color};">${this._escapeHtml(baseForm)}</strong>${baseMeaning ? ` — ${this._escapeHtml(baseMeaning)}` : ''}
