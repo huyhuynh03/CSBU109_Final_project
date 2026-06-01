@@ -22,6 +22,10 @@ import { VocabularyTopics, TopicCategories } from './config/vocabulary-topics.js
 window.VocabularyTopics = VocabularyTopics;
 window.TopicCategories = TopicCategories;
 
+import { GrammarTenses, GrammarTenseContent } from './config/grammar-tenses.js';
+window.GrammarTenses = GrammarTenses;
+window.GrammarTenseContent = GrammarTenseContent;
+
 // ============================================
 // Utils
 // ============================================
@@ -58,6 +62,9 @@ window.TopicDetailPage = TopicDetailPage;
 import GrammarPage from './pages/grammar.js';
 window.GrammarPage = GrammarPage;
 
+import GrammarTensePage from './pages/grammar-tense.js';
+window.GrammarTensePage = GrammarTensePage;
+
 import StudyPage from './pages/study.js';
 window.StudyPage = StudyPage;
 
@@ -93,6 +100,7 @@ const EnglishModule = {
     routes: [
         { path: '/english/vocabulary', page: VocabularyPage },
         { path: '/english/grammar', page: GrammarPage },
+        { path: '/english/grammar/tense/:id', page: GrammarTensePage },
         { path: '/english/topic/:id', page: TopicDetailPage },
         { path: '/english/study', page: StudyPage },
         { path: '/english/review', page: ReviewPage }
