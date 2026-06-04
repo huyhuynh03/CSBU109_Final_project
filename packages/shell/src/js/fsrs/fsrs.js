@@ -16,7 +16,7 @@
 //     0       | Cấp độ 1  | 30 phút          | Lần ôn đầu sau khi học, cũng là điểm reset khi sai
 //     1       | Cấp độ 2  | 24 giờ (1 ngày)  |
 //     2       | Cấp độ 3  | 7 ngày           |
-//     3       | Cấp độ 4  | 30 ngày          |
+//     3       | Cấp độ 4  | 21 ngày          |
 //     4       | Cấp độ 5  | 45 ngày (cap)    | Bậc cao nhất
 //
 // Quy tắc chuyển bậc khi ôn:
@@ -42,7 +42,7 @@ const FSRS = {
         30,         // stepIndex 0 = UI "Cấp độ 1" → 30 phút  (lần ôn đầu sau khi học, cũng là điểm reset khi sai)
         1440,       // stepIndex 1 = UI "Cấp độ 2" → 24 giờ (1 ngày)
         10080,      // stepIndex 2 = UI "Cấp độ 3" → 7 ngày
-        43200,      // stepIndex 3 = UI "Cấp độ 4" → 30 ngày
+        30240,      // stepIndex 3 = UI "Cấp độ 4" → 21 ngày
         64800       // stepIndex 4 = UI "Cấp độ 5" → 45 ngày (cap - bậc cao nhất)
     ],
 
@@ -199,7 +199,7 @@ const FSRS = {
      * Nhãn bậc hiện tại để debug / UI
      */
     getStepLabel(stepIndex) {
-        const labels = ['30 phút', '24 giờ', '7 ngày', '30 ngày', '45 ngày'];
+        const labels = ['30 phút', '24 giờ', '7 ngày', '21 ngày', '45 ngày'];
         const i = Math.max(0, Math.min(labels.length - 1, stepIndex ?? 0));
         return labels[i];
     },

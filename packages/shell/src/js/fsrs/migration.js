@@ -7,7 +7,7 @@
 //   stability ~ 1440 (1 ngày) -> bậc 1 (24 giờ)
 //   stability ~ 4320 (3 ngày) -> bậc 1 (24 giờ)
 //   stability ~ 10080 (7 ngày)-> bậc 2 (7 ngày)
-//   stability ~ 43200 (30d)   -> bậc 3 (30 ngày)
+//   stability ~ 43200 (30d)   -> bậc 3 (21 ngày)
 //   stability ~ 64800 (45d)   -> bậc 4 (45 ngày)
 
 const FsrsMigration = {
@@ -23,7 +23,7 @@ const FsrsMigration = {
         if (s <  720)   return 0;         // < 12h  -> 30 phút
         if (s <  4320)  return 1;         // < 3d   -> 24h (gồm 1d và sát 3d)
         if (s <  20160) return 2;         // < 14d  -> 7 ngày  (gồm 7d và 10d)
-        if (s <  64800) return 3;         // < 45d  -> 30 ngày
+        if (s <  64800) return 3;         // < 45d  -> 21 ngày
         return 4;                         // 45 ngày trở lên
     },
 
