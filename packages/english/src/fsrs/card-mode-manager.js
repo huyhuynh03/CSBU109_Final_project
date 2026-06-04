@@ -62,7 +62,7 @@ const CardModeManager = {
     /**
      * Đặt các thẻ sang REVIEW ở bậc stepIndex cụ thể.
      * @param {Array<Object>} cards
-     * @param {number} stepIndex - 0..4 (tương ứng Steps: 30ph/24h/7d/30d/90d)
+     * @param {number} stepIndex - 0..4 (tương ứng Steps: 30ph/24h/7d/30d/45d)
      */
     async setReviewAtStep(cards, stepIndex) {
         const lastIdx = FSRS.Steps.length - 1;
@@ -182,7 +182,7 @@ const CardModeManager = {
                     `).join('')}
                   </div>
                   <div class="lf-mode-option-group__note">
-                    Cấp độ 1 = ôn ngay sau 30 phút · Cấp độ 5 = cần ôn lại sau 90 ngày
+                    Cấp độ 1 = ôn ngay sau 30 phút · Cấp độ 5 = cần ôn lại sau 45 ngày
                   </div>
                 </div>
               </div>

@@ -27,12 +27,12 @@ Ví dụ: `stepIndex = 2` ↔ hiển thị **"Cấp độ 3"**.
 | `1` | **Cấp độ 2** | 24 giờ (1 ngày) | 1 440 | `REVIEW` |
 | `2` | **Cấp độ 3** | 7 ngày | 10 080 | `REVIEW` |
 | `3` | **Cấp độ 4** | 30 ngày | 43 200 | `REVIEW` |
-| `4` | **Cấp độ 5** | 90 ngày | 129 600 | `REVIEW` (bậc cao nhất — cap) |
+| `4` | **Cấp độ 5** | 45 ngày | 64 800 | `REVIEW` (bậc cao nhất — cap) |
 
 Mảng gốc: [`FSRS.Steps`](../public/src/js/fsrs/fsrs.js:38)
 
 ```js
-Steps: [30, 1440, 10080, 43200, 129600]  // phút
+Steps: [30, 1440, 10080, 43200, 64800]  // phút
 ```
 
 ---
@@ -75,7 +75,7 @@ Migration là **idempotent** — được guard bằng `localStorage['lf_fsrs_mi
 | Vị trí | File | Ghi chú |
 |---|---|---|
 | Modal đổi mode — nút chọn bậc | [`card-mode-manager.js`](../public/src/js/fsrs/card-mode-manager.js:176) | 5 nút "Cấp độ 1..5" |
-| Modal đổi mode — note dưới grid | [`card-mode-manager.js`](../public/src/js/fsrs/card-mode-manager.js:183) | "Cấp độ 1 = 30 phút · Cấp độ 5 = 90 ngày" |
+| Modal đổi mode — note dưới grid | [`card-mode-manager.js`](../public/src/js/fsrs/card-mode-manager.js:183) | "Cấp độ 1 = 30 phút · Cấp độ 5 = 45 ngày" |
 | Dialog xác nhận đổi mode | [`card-mode-manager.js`](../public/src/js/fsrs/card-mode-manager.js:236) | Tiêu đề: "Chuyển sang ôn tập ở Cấp độ N?" |
 | Toast thành công | [`card-mode-manager.js`](../public/src/js/fsrs/card-mode-manager.js:248) | "Cấp độ N · <label thời gian>" |
 | Section phân bố trên trang Từ vựng | [`vocabulary.js`](../public/src/js/pages/vocabulary.js:268) | 5 ô "Cấp độ 1..5" + progress bar |
@@ -89,7 +89,7 @@ Migration là **idempotent** — được guard bằng `localStorage['lf_fsrs_mi
 1. Sửa [`FSRS.Steps`](../public/src/js/fsrs/fsrs.js:38) (giá trị phút).
 2. Sửa comment mapping ở đầu file `fsrs.js` cho khớp.
 3. Cập nhật bảng ở **mục 2** và **mục 4** trong file này.
-4. Kiểm tra `FSRS.getStepLabel(i)` trả về nhãn thời gian mới (hiện đang trả: `['30 phút','24 giờ','7 ngày','30 ngày','90 ngày']`).
+4. Kiểm tra `FSRS.getStepLabel(i)` trả về nhãn thời gian mới (hiện đang trả: `['30 phút','24 giờ','7 ngày','30 ngày','45 ngày']`).
 5. Nếu số lượng cấp thay đổi (thêm/bớt bậc):
    - Xem lại [`FsrsMigration._mapStabilityToStep`](../public/src/js/fsrs/migration.js) để chia ngưỡng stability.
    - Trong CSS [`components.css`](../public/src/css/components.css), grid `.vocab-level-cells` và `.lf-mode-option-group__steps` đang dùng `repeat(5, 1fr)` — đổi theo số cấp mới.

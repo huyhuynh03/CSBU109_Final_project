@@ -2,7 +2,7 @@
 
 > 📐 **Quy ước cấp độ ôn tập:** Xem [`plans/review-levels-mapping.md`](review-levels-mapping.md) để hiểu mapping giữa `stepIndex` (0-based, dùng trong code/data) và **"Cấp độ N"** (1-based, hiển thị UI).
 > Tóm tắt: `UI = stepIndex + 1`. Bảng các bậc:
-> `stepIndex 0 → Cấp độ 1 (30 phút)` · `1 → Cấp độ 2 (1 ngày)` · `2 → Cấp độ 3 (7 ngày)` · `3 → Cấp độ 4 (30 ngày)` · `4 → Cấp độ 5 (90 ngày)`. `stepIndex = -1` = NEW.
+> `stepIndex 0 → Cấp độ 1 (30 phút)` · `1 → Cấp độ 2 (1 ngày)` · `2 → Cấp độ 3 (7 ngày)` · `3 → Cấp độ 4 (30 ngày)` · `4 → Cấp độ 5 (45 ngày)`. `stepIndex = -1` = NEW.
 
 ## 1. Tổng quan kiến trúc mới
 
