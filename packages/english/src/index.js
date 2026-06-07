@@ -112,8 +112,7 @@ const EnglishModule = {
 
     sidebarItems: [
         { id: 'en-vocab', icon: 'menu_book', label: 'Từ vựng', route: '/english/vocabulary' },
-        { id: 'en-grammar', icon: 'school', label: 'Ngữ pháp', route: '/english/grammar' },
-        { id: 'en-dictation', icon: 'hearing', label: 'Luyện chính tả', comingSoon: true }
+        { id: 'en-grammar', icon: 'school', label: 'Ngữ pháp', route: '/english/grammar' }
     ],
 
     routes: [

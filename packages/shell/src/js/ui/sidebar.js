@@ -206,8 +206,7 @@ const Sidebar = {
         const fallback = {
             english: [
                 { id: 'en-vocab', icon: 'menu_book', label: 'Từ vựng', route: '/english/vocabulary' },
-                { id: 'en-grammar', icon: 'school', label: 'Ngữ pháp', route: '/english/grammar' },
-                { id: 'en-dictation', icon: 'hearing', label: 'Luyện chính tả', route: null, comingSoon: true }
+                { id: 'en-grammar', icon: 'school', label: 'Ngữ pháp', route: '/english/grammar' }
             ]
         };
         return fallback[langId] || null;

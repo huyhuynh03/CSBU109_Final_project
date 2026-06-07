@@ -51,8 +51,7 @@ flowchart TD
 | 1 | `menu_book` | Từ vựng | `/vocabulary` | Thay thế Trang chủ |
 | 2 | `school` | Ngữ pháp | `/grammar` | Mới |
 | 3 | `account_tree` | Cây thư mục | `/folders` | Giữ nguyên |
-| 4 | `hearing` | Luyện chính tả | — | Coming soon |
-| 5 | `language` | Chọn ngôn ngữ | — | Ở cuối sidebar |
+| 4 | `language` | Chọn ngôn ngữ | — | Ở cuối sidebar |
 
 **Bỏ khỏi sidebar:** Trang chủ, Mới, Ôn tập, Trường, Hồ sơ cấu hình
 
