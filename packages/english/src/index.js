@@ -26,6 +26,19 @@ import { GrammarTenses, GrammarTenseContent } from './config/grammar-tenses.js';
 window.GrammarTenses = GrammarTenses;
 window.GrammarTenseContent = GrammarTenseContent;
 
+import {
+    GrammarGroups,
+    GrammarLessonContent,
+    getGrammarGroup,
+    getGrammarLesson,
+    getGrammarLessonContent
+} from './config/grammar-topics.js';
+window.GrammarGroups = GrammarGroups;
+window.GrammarLessonContent = GrammarLessonContent;
+window.getGrammarGroup = getGrammarGroup;
+window.getGrammarLesson = getGrammarLesson;
+window.getGrammarLessonContent = getGrammarLessonContent;
+
 // ============================================
 // Utils
 // ============================================
@@ -68,6 +81,9 @@ window.GrammarPage = GrammarPage;
 import GrammarTensePage from './pages/grammar-tense.js';
 window.GrammarTensePage = GrammarTensePage;
 
+import GrammarLessonPage from './pages/grammar-lesson.js';
+window.GrammarLessonPage = GrammarLessonPage;
+
 import StudyPage from './pages/study.js';
 window.StudyPage = StudyPage;
 
@@ -104,6 +120,7 @@ const EnglishModule = {
         { path: '/english/vocabulary', page: VocabularyPage },
         { path: '/english/grammar', page: GrammarPage },
         { path: '/english/grammar/tense/:id', page: GrammarTensePage },
+        { path: '/english/grammar/lesson/:id', page: GrammarLessonPage },
         { path: '/english/topic/:id', page: TopicDetailPage },
         { path: '/english/study', page: StudyPage },
         { path: '/english/review', page: ReviewPage }

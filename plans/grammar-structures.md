@@ -17,21 +17,21 @@
 
 | # | id (dự kiến) | Tên tiếng Việt | Tên tiếng Anh | Cấp độ dự kiến | Trạng thái |
 |---|--------------|----------------|---------------|----------------|------------|
-| 1 | `tenses` | Thì động từ | Tenses | Intermediate → Advanced | 🟨 Đang chi tiết |
-| 2 | `modal-verbs` | Động từ khuyết thiếu | Modal Verbs | Intermediate | ⬜ Khung |
-| 3 | `passive-voice` | Câu bị động | Passive Voice | Intermediate → Advanced | ⬜ Khung |
-| 4 | `conditionals` | Câu điều kiện | Conditionals | Intermediate → Advanced | ⬜ Khung |
-| 5 | `reported-speech` | Câu tường thuật | Reported Speech | Advanced | ⬜ Khung |
-| 6 | `clauses` | Mệnh đề | Clauses | Advanced | ⬜ Khung |
-| 7 | `gerunds-infinitives` | Danh động từ & Động từ nguyên mẫu | Gerunds & Infinitives | Advanced | ⬜ Khung |
-| 8 | `nouns-articles-quantifiers` | Danh từ, Mạo từ & Lượng từ | Nouns, Articles & Quantifiers | Intermediate | ⬜ Khung |
-| 9 | `pronouns` | Đại từ | Pronouns | Intermediate | ⬜ Khung |
-| 10 | `adjectives-adverbs` | Tính từ & Trạng từ | Adjectives & Adverbs | Intermediate | ⬜ Khung |
-| 11 | `prepositions` | Giới từ | Prepositions | Intermediate | ⬜ Khung |
-| 12 | `sentence-structure` | Cấu trúc câu nâng cao | Sentence Structure | Advanced | ⬜ Khung |
-| 13 | `connectors` | Từ nối & Liên từ | Connectors | Intermediate → Advanced | ⬜ Khung |
-| 14 | `questions` | Câu hỏi | Questions | Intermediate | ⬜ Khung |
-| 15 | `special-structures` | Cấu trúc đặc biệt | Special Structures | Advanced | ⬜ Khung |
+| 1 | `tenses` | Thì động từ | Tenses | Intermediate → Advanced | ✅ Hoàn thiện |
+| 2 | `modal-verbs` | Động từ khuyết thiếu | Modal Verbs | Intermediate | ✅ Hoàn thiện |
+| 3 | `passive-voice` | Câu bị động | Passive Voice | Intermediate → Advanced | ✅ Hoàn thiện |
+| 4 | `conditionals` | Câu điều kiện | Conditionals | Intermediate → Advanced | ✅ Hoàn thiện |
+| 5 | `reported-speech` | Câu tường thuật | Reported Speech | Advanced | ✅ Hoàn thiện |
+| 6 | `clauses` | Mệnh đề | Clauses | Advanced | ✅ Hoàn thiện |
+| 7 | `gerunds-infinitives` | Danh động từ & Động từ nguyên mẫu | Gerunds & Infinitives | Advanced | ✅ Hoàn thiện |
+| 8 | `nouns-articles-quantifiers` | Danh từ, Mạo từ & Lượng từ | Nouns, Articles & Quantifiers | Intermediate | ✅ Hoàn thiện |
+| 9 | `pronouns` | Đại từ | Pronouns | Intermediate | ✅ Hoàn thiện |
+| 10 | `adjectives-adverbs` | Tính từ & Trạng từ | Adjectives & Adverbs | Intermediate | ✅ Hoàn thiện |
+| 11 | `prepositions` | Giới từ | Prepositions | Intermediate | ✅ Hoàn thiện |
+| 12 | `sentence-structure` | Cấu trúc câu nâng cao | Sentence Structure | Advanced | ✅ Hoàn thiện |
+| 13 | `connectors` | Từ nối & Liên từ | Connectors | Intermediate → Advanced | ✅ Hoàn thiện |
+| 14 | `questions` | Câu hỏi | Questions | Intermediate | ✅ Hoàn thiện |
+| 15 | `special-structures` | Cấu trúc đặc biệt | Special Structures | Advanced | ✅ Hoàn thiện |
 
 **Chú thích trạng thái:** ⬜ Khung (chỉ có tên) · 🟨 Đang chi tiết · ✅ Hoàn thiện
 
