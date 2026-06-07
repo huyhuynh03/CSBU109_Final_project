@@ -49,7 +49,21 @@ const content = {
             { id: 3, sentence: 'She is good at ___ (paint).', answer: 'painting', hint: 'sau giới từ', kind: 'khẳng định' },
             { id: 4, sentence: 'They finished ___ (clean) the house.', answer: 'cleaning', hint: 'sau finish', kind: 'khẳng định' },
             { id: 5, sentence: 'Thank you for ___ (help) me.', answer: 'helping', hint: 'sau giới từ', kind: 'khẳng định' },
-            { id: 6, sentence: 'Would you mind ___ (close) the door?', answer: 'closing', hint: 'sau mind', kind: 'nghi vấn' }
+            { id: 6, sentence: 'Would you mind ___ (close) the door?', answer: 'closing', hint: 'sau mind', kind: 'nghi vấn' },
+            { id: 7, sentence: 'He avoided ___ (talk) about the problem.', answer: 'talking', hint: 'sau avoid', kind: 'khẳng định' },
+            { id: 8, sentence: '___ (smoke) is not allowed here. (chủ ngữ)', answer: 'Smoking', hint: 'chủ ngữ', kind: 'khẳng định' },
+            { id: 9, sentence: 'She suggested ___ (go) to the cinema.', answer: 'going', hint: 'sau suggest', kind: 'khẳng định' },
+            { id: 10, sentence: 'I\'m interested in ___ (learn) Spanish.', answer: 'learning', hint: 'sau giới từ', kind: 'khẳng định' },
+            { id: 11, sentence: 'They practised ___ (speak) English every day.', answer: 'speaking', hint: 'sau practise', kind: 'khẳng định' },
+            { id: 12, sentence: 'He denied ___ (steal) the money.', answer: 'stealing', hint: 'sau deny', kind: 'khẳng định' },
+            { id: 13, sentence: 'I look forward to ___ (hear) from you.', answer: 'hearing', hint: 'to là giới từ', kind: 'khẳng định' },
+            { id: 14, sentence: '___ (exercise) regularly improves your health. (chủ ngữ)', answer: 'Exercising', hint: 'chủ ngữ', kind: 'khẳng định' },
+            { id: 15, sentence: 'She is afraid of ___ (fly).', answer: 'flying', hint: 'sau giới từ', kind: 'khẳng định' },
+            { id: 16, sentence: 'We considered ___ (move) to a bigger house.', answer: 'moving', hint: 'sau consider', kind: 'khẳng định' },
+            { id: 17, sentence: 'Thank you for ___ (invite) me to the party.', answer: 'inviting', hint: 'sau giới từ', kind: 'khẳng định' },
+            { id: 18, sentence: 'Do you mind ___ (wait) a few minutes?', answer: 'waiting', hint: 'sau mind', kind: 'nghi vấn' },
+            { id: 19, sentence: 'He admitted ___ (break) the window.', answer: 'breaking', hint: 'sau admit', kind: 'khẳng định' },
+            { id: 20, sentence: 'I can\'t help ___ (laugh) at his jokes.', answer: 'laughing', hint: "can't help + V-ing", kind: 'khẳng định' }
         ]
     },
     'infinitive-usage': {
@@ -85,7 +99,21 @@ const content = {
             { id: 3, sentence: 'He went to the shop ___ (buy) some bread. (mục đích)', answer: 'to buy', hint: 'mục đích', kind: 'khẳng định' },
             { id: 4, sentence: 'It is important ___ (be) honest.', answer: 'to be', hint: 'sau tính từ', kind: 'khẳng định' },
             { id: 5, sentence: 'They asked me ___ (wait) outside.', answer: 'to wait', hint: 'O + to V', kind: 'khẳng định' },
-            { id: 6, sentence: 'We hope ___ (win) the game.', answer: 'to win', hint: 'sau hope', kind: 'khẳng định' }
+            { id: 6, sentence: 'We hope ___ (win) the game.', answer: 'to win', hint: 'sau hope', kind: 'khẳng định' },
+            { id: 7, sentence: 'He promised ___ (return) the book soon.', answer: 'to return', hint: 'sau promise', kind: 'khẳng định' },
+            { id: 8, sentence: 'They agreed ___ (meet) at noon.', answer: 'to meet', hint: 'sau agree', kind: 'khẳng định' },
+            { id: 9, sentence: 'She refused ___ (answer) the question.', answer: 'to answer', hint: 'sau refuse', kind: 'khẳng định' },
+            { id: 10, sentence: 'I\'m learning ___ (drive) a car.', answer: 'to drive', hint: 'sau learn', kind: 'khẳng định' },
+            { id: 11, sentence: 'The teacher told us ___ (open) our books.', answer: 'to open', hint: 'O + to V', kind: 'khẳng định' },
+            { id: 12, sentence: 'It\'s hard ___ (believe) this story.', answer: 'to believe', hint: 'sau tính từ', kind: 'khẳng định' },
+            { id: 13, sentence: 'We expect ___ (arrive) by evening.', answer: 'to arrive', hint: 'sau expect', kind: 'khẳng định' },
+            { id: 14, sentence: 'He offered ___ (help) us move the boxes.', answer: 'to help', hint: 'sau offer', kind: 'khẳng định' },
+            { id: 15, sentence: 'I called the office ___ (book) an appointment. (mục đích)', answer: 'to book', hint: 'mục đích', kind: 'khẳng định' },
+            { id: 16, sentence: 'She advised me ___ (see) a specialist.', answer: 'to see', hint: 'O + to V', kind: 'khẳng định' },
+            { id: 17, sentence: 'They plan ___ (open) a new branch.', answer: 'to open', hint: 'sau plan', kind: 'khẳng định' },
+            { id: 18, sentence: 'I\'m glad ___ (meet) you at last.', answer: 'to meet', hint: 'sau tính từ', kind: 'khẳng định' },
+            { id: 19, sentence: 'He wants his children ___ (study) hard.', answer: 'to study', hint: 'O + to V', kind: 'khẳng định' },
+            { id: 20, sentence: 'We went outside ___ (get) some fresh air. (mục đích)', answer: 'to get', hint: 'mục đích', kind: 'khẳng định' }
         ]
     },
     'gerund-vs-infinitive': {
@@ -123,7 +151,21 @@ const content = {
             { id: 3, sentence: 'She stopped ___ (work) because she was tired. (ngừng hẳn)', answer: 'working', hint: 'V-ing', kind: 'khẳng định' },
             { id: 4, sentence: 'On the way, we stopped ___ (have) lunch. (dừng để)', answer: 'to have', hint: 'to V', kind: 'khẳng định' },
             { id: 5, sentence: 'Don\'t forget ___ (call) your mother. (cần làm)', answer: 'to call', hint: 'to V', kind: 'khẳng định' },
-            { id: 6, sentence: 'I tried ___ (open) the door but it was locked. (cố gắng)', answer: 'to open', hint: 'to V', kind: 'khẳng định' }
+            { id: 6, sentence: 'I tried ___ (open) the door but it was locked. (cố gắng)', answer: 'to open', hint: 'to V', kind: 'khẳng định' },
+            { id: 7, sentence: 'Why don\'t you try ___ (restart) the computer? (thử cách)', answer: 'restarting', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 8, sentence: 'I regret ___ (tell) you that the trip is cancelled. (lấy làm tiếc thông báo)', answer: 'to tell', hint: 'to V', kind: 'khẳng định' },
+            { id: 9, sentence: 'He regrets ___ (not/study) harder at school. (tiếc đã)', answer: 'not studying', hint: 'V-ing', kind: 'phủ định' },
+            { id: 10, sentence: 'She forgot ___ (lock) the door, so it was open all day. (quên phải làm)', answer: 'to lock', hint: 'to V', kind: 'khẳng định' },
+            { id: 11, sentence: 'I\'ll never forget ___ (see) the Eiffel Tower for the first time. (nhớ đã)', answer: 'seeing', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 12, sentence: 'We stopped ___ (talk) when the teacher came in. (ngừng hẳn)', answer: 'talking', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 13, sentence: 'They stopped ___ (rest) for a few minutes. (dừng để)', answer: 'to rest', hint: 'to V', kind: 'khẳng định' },
+            { id: 14, sentence: 'Did you remember ___ (post) the letter? (nhớ phải làm)', answer: 'to post', hint: 'to V', kind: 'nghi vấn' },
+            { id: 15, sentence: 'I clearly remember ___ (pay) the bill last week. (nhớ đã)', answer: 'paying', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 16, sentence: 'He meant ___ (call) you, but he forgot. (định làm)', answer: 'to call', hint: 'to V', kind: 'khẳng định' },
+            { id: 17, sentence: 'Getting a visa means ___ (fill) in many forms. (kéo theo)', answer: 'filling', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 18, sentence: 'Try ___ (drink) some warm milk to sleep better. (thử cách)', answer: 'drinking', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 19, sentence: 'She regrets ___ (say) those words to him. (tiếc đã)', answer: 'saying', hint: 'V-ing', kind: 'khẳng định' },
+            { id: 20, sentence: 'Please remember ___ (bring) your ID tomorrow. (nhớ phải làm)', answer: 'to bring', hint: 'to V', kind: 'khẳng định' }
         ]
     }
 };

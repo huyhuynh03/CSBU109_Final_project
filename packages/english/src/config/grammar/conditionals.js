@@ -47,7 +47,21 @@ const content = {
             { id: 3, sentence: 'If she ___ (study) hard, she will pass the exam.', answer: 'studies', hint: 'hiện tại đơn', kind: 'khẳng định' },
             { id: 4, sentence: 'Plants die if they ___ (not/get) water.', answer: 'do not get', hint: 'loại 0 phủ định', kind: 'phủ định' },
             { id: 5, sentence: 'I ___ (help) you if you ask me.', answer: 'will help', hint: 'will + V', kind: 'khẳng định' },
-            { id: 6, sentence: 'Unless you hurry, you ___ (miss) the train.', answer: 'will miss', hint: 'will + V', kind: 'khẳng định' }
+            { id: 6, sentence: 'Unless you hurry, you ___ (miss) the train.', answer: 'will miss', hint: 'will + V', kind: 'khẳng định' },
+            { id: 7, sentence: 'Ice ___ (melt) if you leave it in the sun. (loại 0)', answer: 'melts', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 8, sentence: 'If you press this button, the machine ___ (start). (loại 0)', answer: 'starts', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 9, sentence: 'If we leave now, we ___ (catch) the early bus. (loại 1)', answer: 'will catch', hint: 'will + V', kind: 'khẳng định' },
+            { id: 10, sentence: 'If you ___ (not/water) the plants, they will die.', answer: 'do not water', hint: 'loại 1 phủ định', kind: 'phủ định' },
+            { id: 11, sentence: 'Water freezes when the temperature ___ (drop) below zero. (loại 0)', answer: 'drops', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 12, sentence: 'If the weather is nice, we ___ (have) a picnic. (loại 1)', answer: 'will have', hint: 'will + V', kind: 'khẳng định' },
+            { id: 13, sentence: 'If you mix yellow and blue, you ___ (get) green. (loại 0)', answer: 'get', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 14, sentence: 'She ___ (call) you if she needs help. (loại 1)', answer: 'will call', hint: 'will + V', kind: 'khẳng định' },
+            { id: 15, sentence: 'If I ___ (finish) early, I will join you for dinner.', answer: 'finish', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 16, sentence: 'Unless it stops raining, the match ___ (be) cancelled.', answer: 'will be', hint: 'will + V', kind: 'khẳng định' },
+            { id: 17, sentence: 'If you touch fire, you ___ (burn) yourself. (loại 0)', answer: 'burn', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 18, sentence: 'As long as you ___ (work) hard, you will succeed.', answer: 'work', hint: 'hiện tại đơn', kind: 'khẳng định' },
+            { id: 19, sentence: 'If they ___ (not/arrive) soon, we will start without them.', answer: 'do not arrive', hint: 'loại 1 phủ định', kind: 'phủ định' },
+            { id: 20, sentence: 'Provided that you book early, the tickets ___ (be) cheaper.', answer: 'will be', hint: 'will + V', kind: 'khẳng định' }
         ]
     },
     'conditional-2': {
@@ -81,7 +95,21 @@ const content = {
             { id: 3, sentence: 'If I ___ (know) his number, I would call him.', answer: 'knew', hint: 'V2', kind: 'khẳng định' },
             { id: 4, sentence: 'We would travel more if we ___ (have) time.', answer: 'had', hint: 'V2', kind: 'khẳng định' },
             { id: 5, sentence: 'If he ___ (not/be) so lazy, he would succeed.', answer: 'were not', hint: 'were phủ định', kind: 'phủ định' },
-            { id: 6, sentence: 'If they spoke English, they ___ (understand) us.', answer: 'would understand', hint: 'would + V', kind: 'khẳng định' }
+            { id: 6, sentence: 'If they spoke English, they ___ (understand) us.', answer: 'would understand', hint: 'would + V', kind: 'khẳng định' },
+            { id: 7, sentence: 'If I won the lottery, I ___ (quit) my job.', answer: 'would quit', hint: 'would + V', kind: 'khẳng định' },
+            { id: 8, sentence: 'If he ___ (live) closer, he would visit us more often.', answer: 'lived', hint: 'V2', kind: 'khẳng định' },
+            { id: 9, sentence: 'She would feel better if she ___ (sleep) more.', answer: 'slept', hint: 'V2', kind: 'khẳng định' },
+            { id: 10, sentence: 'If I ___ (be) taller, I would play basketball.', answer: 'were', hint: 'were mọi ngôi', kind: 'khẳng định' },
+            { id: 11, sentence: 'If we ___ (not/have) so much work, we would relax.', answer: 'did not have', hint: 'V2 phủ định', kind: 'phủ định' },
+            { id: 12, sentence: 'I ___ (learn) the guitar if I had a teacher.', answer: 'would learn', hint: 'would + V', kind: 'khẳng định' },
+            { id: 13, sentence: 'If she studied medicine, she ___ (become) a doctor.', answer: 'would become', hint: 'would + V', kind: 'khẳng định' },
+            { id: 14, sentence: 'If I ___ (speak) French, I could work in Paris.', answer: 'spoke', hint: 'V2', kind: 'khẳng định' },
+            { id: 15, sentence: 'They would be happier if they ___ (move) to the countryside.', answer: 'moved', hint: 'V2', kind: 'khẳng định' },
+            { id: 16, sentence: 'If I were the manager, I ___ (change) the rules.', answer: 'would change', hint: 'would + V', kind: 'khẳng định' },
+            { id: 17, sentence: 'He wouldn\'t be tired if he ___ (go) to bed earlier.', answer: 'went', hint: 'V2', kind: 'khẳng định' },
+            { id: 18, sentence: 'If you ___ (ask) politely, she might help you.', answer: 'asked', hint: 'V2', kind: 'khẳng định' },
+            { id: 19, sentence: 'If it ___ (not/be) so expensive, I would buy it.', answer: 'were not', hint: 'were phủ định', kind: 'phủ định' },
+            { id: 20, sentence: 'We ___ (travel) abroad if we had more holidays.', answer: 'would travel', hint: 'would + V', kind: 'khẳng định' }
         ]
     },
     'conditional-3-mixed': {
@@ -118,7 +146,21 @@ const content = {
             { id: 3, sentence: 'We ___ (win) if we had played better.', answer: 'would have won', hint: 'would have + V3', kind: 'khẳng định' },
             { id: 4, sentence: 'If they ___ (leave) earlier, they wouldn\'t have been late.', answer: 'had left', hint: 'had + V3', kind: 'khẳng định' },
             { id: 5, sentence: 'If I had saved money, I ___ (be) rich now. (hỗn hợp)', answer: 'would be', hint: 'would + V', kind: 'khẳng định' },
-            { id: 6, sentence: 'He ___ (not/fail) if he had tried harder.', answer: 'would not have failed', hint: 'phủ định', kind: 'phủ định' }
+            { id: 6, sentence: 'He ___ (not/fail) if he had tried harder.', answer: 'would not have failed', hint: 'phủ định', kind: 'phủ định' },
+            { id: 7, sentence: 'If we ___ (book) earlier, we would have got cheaper tickets.', answer: 'had booked', hint: 'had + V3', kind: 'khẳng định' },
+            { id: 8, sentence: 'She would have called if she ___ (have) your number.', answer: 'had had', hint: 'had + V3', kind: 'khẳng định' },
+            { id: 9, sentence: 'If they had warned us, we ___ (prepare) better.', answer: 'would have prepared', hint: 'would have + V3', kind: 'khẳng định' },
+            { id: 10, sentence: 'If I hadn\'t missed the bus, I ___ (be) on time. (hỗn hợp)', answer: 'would be', hint: 'would + V (hiện tại)', kind: 'khẳng định' },
+            { id: 11, sentence: 'He ___ (pass) the test if he had revised.', answer: 'would have passed', hint: 'would have + V3', kind: 'khẳng định' },
+            { id: 12, sentence: 'If she ___ (take) the medicine, she would have recovered.', answer: 'had taken', hint: 'had + V3', kind: 'khẳng định' },
+            { id: 13, sentence: 'We wouldn\'t have got lost if we ___ (bring) a map.', answer: 'had brought', hint: 'had + V3', kind: 'khẳng định' },
+            { id: 14, sentence: 'If I had learned to drive, I ___ (own) a car now. (hỗn hợp)', answer: 'would own', hint: 'would + V (hiện tại)', kind: 'khẳng định' },
+            { id: 15, sentence: 'If you ___ (tell) me, I would have helped.', answer: 'had told', hint: 'had + V3', kind: 'khẳng định' },
+            { id: 16, sentence: 'They ___ (arrive) on time if the flight hadn\'t been delayed.', answer: 'would have arrived', hint: 'would have + V3', kind: 'khẳng định' },
+            { id: 17, sentence: 'If he ___ (not/forget) the keys, we wouldn\'t have waited.', answer: 'had not forgotten', hint: 'phủ định', kind: 'phủ định' },
+            { id: 18, sentence: 'If I had invested then, I ___ (be) wealthy today. (hỗn hợp)', answer: 'would be', hint: 'would + V (hiện tại)', kind: 'khẳng định' },
+            { id: 19, sentence: 'She ___ (not/get) sick if she had worn a coat.', answer: 'would not have got', hint: 'phủ định', kind: 'phủ định' },
+            { id: 20, sentence: 'If we had left earlier, we ___ (avoid) the traffic.', answer: 'would have avoided', hint: 'would have + V3', kind: 'khẳng định' }
         ]
     }
 };

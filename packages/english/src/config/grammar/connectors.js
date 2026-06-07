@@ -51,7 +51,21 @@ const content = {
             { id: 3, sentence: 'He studied hard, ___ he failed. (tương phản)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
             { id: 4, sentence: 'Would you like tea ___ coffee? (lựa chọn)', answer: 'or', hint: 'FANBOYS', kind: 'nghi vấn' },
             { id: 5, sentence: 'He stayed home, ___ he was sick. (lý do)', answer: 'for', hint: 'FANBOYS', kind: 'khẳng định' },
-            { id: 6, sentence: 'It was late, ___ we kept working. (tuy nhiên)', answer: 'yet', hint: 'FANBOYS', kind: 'khẳng định' }
+            { id: 6, sentence: 'It was late, ___ we kept working. (tuy nhiên)', answer: 'yet', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 7, sentence: 'We can go by bus ___ by train. (lựa chọn)', answer: 'or', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 8, sentence: 'She was hungry, ___ she made lunch. (kết quả)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 9, sentence: 'He is kind ___ generous. (thêm vào)', answer: 'and', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 10, sentence: 'I wanted to help, ___ I had no time. (tương phản)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 11, sentence: 'They left early, ___ the meeting was over. (lý do)', answer: 'for', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 12, sentence: 'She doesn\'t eat meat, ___ does she eat fish. (cũng không)', answer: 'nor', hint: 'FANBOYS', kind: 'phủ định' },
+            { id: 13, sentence: 'The task was hard, ___ we completed it. (tuy nhiên)', answer: 'yet', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 14, sentence: 'You can stay here ___ come with us. (lựa chọn)', answer: 'or', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 15, sentence: 'It was cold, ___ I wore a jacket. (kết quả)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 16, sentence: 'We bought bread ___ milk. (thêm vào)', answer: 'and', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 17, sentence: 'He practised daily, ___ he didn\'t improve. (tương phản)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 18, sentence: 'She smiled, ___ she was very pleased. (lý do)', answer: 'for', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 19, sentence: 'The road was icy, ___ we drove slowly. (kết quả)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 20, sentence: 'It looked simple, ___ it was tricky. (tuy nhiên)', answer: 'yet', hint: 'FANBOYS', kind: 'khẳng định' }
         ]
     },
     'subordinating': {
@@ -89,7 +103,21 @@ const content = {
             { id: 3, sentence: '___ he is rich, he is not happy. (mặc dù)', answer: 'Although', hint: 'nhượng bộ', kind: 'khẳng định' },
             { id: 4, sentence: 'Call me ___ you arrive. (khi)', answer: 'when', hint: 'thời gian', kind: 'khẳng định' },
             { id: 5, sentence: 'You\'ll fail ___ you study. (trừ khi)', answer: 'unless', hint: 'điều kiện', kind: 'khẳng định' },
-            { id: 6, sentence: '___ I was cooking, he was reading. (trong khi)', answer: 'While', hint: 'thời gian', kind: 'khẳng định' }
+            { id: 6, sentence: '___ I was cooking, he was reading. (trong khi)', answer: 'While', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 7, sentence: 'We can go out ___ the rain stops. (ngay khi)', answer: 'as soon as', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 8, sentence: '___ he had little money, he was generous. (mặc dù)', answer: 'Although', hint: 'nhượng bộ', kind: 'khẳng định' },
+            { id: 9, sentence: 'Take an umbrella ___ it rains. (trong trường hợp)', answer: 'in case', hint: 'điều kiện', kind: 'khẳng định' },
+            { id: 10, sentence: '___ the weather was bad, we cancelled the picnic. (bởi vì)', answer: 'Because', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 11, sentence: 'Wash your hands ___ you eat. (trước khi)', answer: 'before', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 12, sentence: '___ you work hard, you will succeed. (miễn là)', answer: 'As long as', hint: 'điều kiện', kind: 'khẳng định' },
+            { id: 13, sentence: 'He stayed calm ___ everyone else panicked. (trong khi/ngược lại)', answer: 'whereas', hint: 'tương phản', kind: 'khẳng định' },
+            { id: 14, sentence: '___ she finished her homework, she watched TV. (sau khi)', answer: 'After', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 15, sentence: 'I won\'t go ___ you come with me. (trừ khi)', answer: 'unless', hint: 'điều kiện', kind: 'khẳng định' },
+            { id: 16, sentence: '___ it was getting dark, we headed home. (vì)', answer: 'Since', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 17, sentence: 'Stay here ___ I come back. (cho đến khi)', answer: 'until', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 18, sentence: '___ he tried his best, he didn\'t win. (mặc dù)', answer: 'Even though', hint: 'nhượng bộ', kind: 'khẳng định' },
+            { id: 19, sentence: 'Please be quiet ___ the baby is sleeping. (vì)', answer: 'because', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 20, sentence: '___ you press this button, the door opens. (khi)', answer: 'When', hint: 'thời gian', kind: 'khẳng định' }
         ]
     },
     'transitions': {
@@ -127,7 +155,21 @@ const content = {
             { id: 3, sentence: 'She is talented. ___, she works hard. (hơn nữa)', answer: 'Moreover', hint: 'bổ sung', kind: 'khẳng định' },
             { id: 4, sentence: 'Many fruits are healthy. ___, apples and oranges. (ví dụ)', answer: 'For example', hint: 'ví dụ', kind: 'khẳng định' },
             { id: 5, sentence: 'The plan failed. ___, we lost money. (kết quả)', answer: 'Consequently', hint: 'kết quả', kind: 'khẳng định' },
-            { id: 6, sentence: 'In ___, technology has changed our lives. (tổng kết)', answer: 'conclusion', hint: 'in conclusion', kind: 'khẳng định' }
+            { id: 6, sentence: 'In ___, technology has changed our lives. (tổng kết)', answer: 'conclusion', hint: 'in conclusion', kind: 'khẳng định' },
+            { id: 7, sentence: 'The product is cheap. ___, the quality is poor. (tuy nhiên)', answer: 'However', hint: 'tương phản', kind: 'khẳng định' },
+            { id: 8, sentence: 'He missed the train. ___, he was late for work. (kết quả)', answer: 'Therefore', hint: 'kết quả', kind: 'khẳng định' },
+            { id: 9, sentence: 'The hotel was lovely. ___, the staff were friendly. (hơn nữa)', answer: 'Furthermore', hint: 'bổ sung', kind: 'khẳng định' },
+            { id: 10, sentence: 'Some animals migrate. ___, birds fly south in winter. (ví dụ)', answer: 'For instance', hint: 'ví dụ', kind: 'khẳng định' },
+            { id: 11, sentence: 'Sales dropped sharply. ___, the company closed. (kết quả)', answer: 'Consequently', hint: 'kết quả', kind: 'khẳng định' },
+            { id: 12, sentence: 'The film was long. ___, it was very enjoyable. (tuy nhiên)', answer: 'Nevertheless', hint: 'tương phản', kind: 'khẳng định' },
+            { id: 13, sentence: 'She loves the city. ___, her husband prefers the countryside. (mặt khác)', answer: 'On the other hand', hint: 'tương phản', kind: 'khẳng định' },
+            { id: 14, sentence: 'The course is useful. ___, it is affordable. (thêm vào)', answer: 'In addition', hint: 'bổ sung', kind: 'khẳng định' },
+            { id: 15, sentence: 'It was raining heavily. ___, the match was postponed. (vì vậy)', answer: 'Thus', hint: 'kết quả', kind: 'khẳng định' },
+            { id: 16, sentence: 'He is a great leader. ___, he is a kind person. (hơn nữa)', answer: 'Moreover', hint: 'bổ sung', kind: 'khẳng định' },
+            { id: 17, sentence: 'Prices are rising. ___, people are spending less. (kết quả)', answer: 'Therefore', hint: 'kết quả', kind: 'khẳng định' },
+            { id: 18, sentence: 'The plan has risks. ___, it could bring great rewards. (tuy nhiên)', answer: 'However', hint: 'tương phản', kind: 'khẳng định' },
+            { id: 19, sentence: 'Exercise improves health. ___, it reduces stress. (hơn nữa)', answer: 'Furthermore', hint: 'bổ sung', kind: 'khẳng định' },
+            { id: 20, sentence: 'To ___ up, recycling benefits the environment. (tổng kết)', answer: 'sum', hint: 'to sum up', kind: 'khẳng định' }
         ]
     }
 };

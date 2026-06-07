@@ -52,7 +52,21 @@ const content = {
             { id: 3, sentence: '___ is your favorite color? (hỏi cái gì)', answer: 'What', hint: 'wh-word', kind: 'nghi vấn' },
             { id: 4, sentence: '___ broke the window? (hỏi chủ ngữ - không đảo)', answer: 'Who', hint: 'hỏi chủ ngữ', kind: 'nghi vấn' },
             { id: 5, sentence: '___ did you arrive? (hỏi khi nào)', answer: 'When', hint: 'wh-word', kind: 'nghi vấn' },
-            { id: 6, sentence: '___ she finished her homework? (Yes/No - HT hoàn thành)', answer: 'Has', hint: 'aux', kind: 'nghi vấn' }
+            { id: 6, sentence: '___ she finished her homework? (Yes/No - HT hoàn thành)', answer: 'Has', hint: 'aux', kind: 'nghi vấn' },
+            { id: 7, sentence: '___ are you so upset? (hỏi lý do)', answer: 'Why', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 8, sentence: '___ do you go to work? (hỏi cách thức)', answer: 'How', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 9, sentence: '___ they live near here? (Yes/No - HT đơn)', answer: 'Do', hint: 'aux', kind: 'nghi vấn' },
+            { id: 10, sentence: '___ happened at the party? (hỏi chủ ngữ - không đảo)', answer: 'What', hint: 'hỏi chủ ngữ', kind: 'nghi vấn' },
+            { id: 11, sentence: '___ you finish the report yesterday? (Yes/No - QK đơn)', answer: 'Did', hint: 'aux', kind: 'nghi vấn' },
+            { id: 12, sentence: '___ is that man over there? (hỏi người)', answer: 'Who', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 13, sentence: '___ much does the ticket cost? (hỏi giá)', answer: 'How', hint: 'how much', kind: 'nghi vấn' },
+            { id: 14, sentence: '___ he coming to the meeting? (Yes/No - to be)', answer: 'Is', hint: 'aux', kind: 'nghi vấn' },
+            { id: 15, sentence: '___ book is this on the desk? (hỏi của ai)', answer: 'Whose', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 16, sentence: '___ wrote this letter? (hỏi chủ ngữ - không đảo)', answer: 'Who', hint: 'hỏi chủ ngữ', kind: 'nghi vấn' },
+            { id: 17, sentence: '___ they been to Japan before? (Yes/No - HT hoàn thành)', answer: 'Have', hint: 'aux', kind: 'nghi vấn' },
+            { id: 18, sentence: '___ do the shops close on Sunday? (hỏi thời gian)', answer: 'When', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 19, sentence: '___ kind of music do you like? (hỏi loại)', answer: 'What', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 20, sentence: '___ you help me with this? (Yes/No - modal)', answer: 'Can', hint: 'aux', kind: 'nghi vấn' }
         ]
     },
     'tag-questions': {
@@ -89,7 +103,21 @@ const content = {
             { id: 3, sentence: 'They can swim, ___? (đuôi)', answer: 'can\'t they', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
             { id: 4, sentence: 'He won\'t come, ___? (đuôi)', answer: 'will he', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
             { id: 5, sentence: 'It is cold today, ___? (đuôi)', answer: 'isn\'t it', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
-            { id: 6, sentence: 'We finished, ___? (đuôi HT đơn)', answer: 'didn\'t we', hint: 'khẳng định → phủ định', kind: 'nghi vấn' }
+            { id: 6, sentence: 'We finished, ___? (đuôi HT đơn)', answer: 'didn\'t we', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 7, sentence: 'She has a car, ___? (đuôi HT đơn)', answer: 'doesn\'t she', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 8, sentence: 'They weren\'t at home, ___? (đuôi)', answer: 'were they', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
+            { id: 9, sentence: 'I am right, ___? (ngoại lệ)', answer: 'aren\'t I', hint: 'I am → aren\'t I', kind: 'nghi vấn' },
+            { id: 10, sentence: 'Let\'s go out, ___? (ngoại lệ)', answer: 'shall we', hint: "Let's → shall we", kind: 'nghi vấn' },
+            { id: 11, sentence: 'He has finished, ___? (đuôi HT hoàn thành)', answer: 'hasn\'t he', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 12, sentence: 'You didn\'t call her, ___? (đuôi)', answer: 'did you', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
+            { id: 13, sentence: 'She will help us, ___? (đuôi)', answer: 'won\'t she', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 14, sentence: 'They aren\'t coming, ___? (đuôi)', answer: 'are they', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
+            { id: 15, sentence: 'We should leave now, ___? (đuôi modal)', answer: 'shouldn\'t we', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 16, sentence: 'He doesn\'t smoke, ___? (đuôi)', answer: 'does he', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
+            { id: 17, sentence: 'You have met him, ___? (đuôi HT hoàn thành)', answer: 'haven\'t you', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 18, sentence: 'The film was great, ___? (đuôi QK)', answer: 'wasn\'t it', hint: 'khẳng định → phủ định', kind: 'nghi vấn' },
+            { id: 19, sentence: 'She can\'t drive, ___? (đuôi modal)', answer: 'can she', hint: 'phủ định → khẳng định', kind: 'nghi vấn' },
+            { id: 20, sentence: 'Open the window, ___? (mệnh lệnh)', answer: 'will you', hint: 'mệnh lệnh → will you', kind: 'nghi vấn' }
         ]
     },
     'indirect-questions': {
@@ -126,7 +154,21 @@ const content = {
             { id: 3, sentence: 'I wonder ___ she will come. (Yes/No)', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
             { id: 4, sentence: 'Can you tell me how much this ___ (cost)? (gián tiếp)', answer: 'costs', hint: 'S + V', kind: 'nghi vấn' },
             { id: 5, sentence: 'Do you know where he ___? (sống - gián tiếp)', answer: 'lives', hint: 'S + V', kind: 'nghi vấn' },
-            { id: 6, sentence: 'I\'d like to know ___ the meeting is cancelled. (Yes/No)', answer: 'whether', hint: 'if/whether', kind: 'nghi vấn' }
+            { id: 6, sentence: 'I\'d like to know ___ the meeting is cancelled. (Yes/No)', answer: 'whether', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 7, sentence: 'Could you tell me what time it ___? (gián tiếp)', answer: 'is', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 8, sentence: 'Do you know why she ___ (leave) early? (gián tiếp)', answer: 'left', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 9, sentence: 'I wonder ___ the train has arrived. (Yes/No)', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 10, sentence: 'Can you tell me where I ___ (can) buy tickets? (gián tiếp)', answer: 'can', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 11, sentence: 'Do you know how this ___ (work)? (gián tiếp)', answer: 'works', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 12, sentence: 'Would you mind telling me what your name ___? (gián tiếp)', answer: 'is', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 13, sentence: 'I\'d like to know who ___ (call) earlier. (gián tiếp)', answer: 'called', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 14, sentence: 'Could you tell me when the bus ___ (arrive)? (gián tiếp)', answer: 'arrives', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 15, sentence: 'I wonder ___ they enjoyed the trip. (Yes/No)', answer: 'whether', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 16, sentence: 'Do you know how much it ___ (cost) to fly there? (gián tiếp)', answer: 'costs', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 17, sentence: 'Can you tell me where the nearest bank ___? (gián tiếp)', answer: 'is', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 18, sentence: 'I\'m not sure ___ the shop is open today. (Yes/No)', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 19, sentence: 'Do you know what she ___ (want)? (gián tiếp)', answer: 'wants', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 20, sentence: 'Could you tell me why the flight ___ (be) delayed? (gián tiếp)', answer: 'was', hint: 'S + V', kind: 'nghi vấn' }
         ]
     }
 };

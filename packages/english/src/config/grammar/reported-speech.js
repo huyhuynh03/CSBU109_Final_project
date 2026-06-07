@@ -50,7 +50,21 @@ const content = {
             { id: 3, sentence: '"I will call you." → She said she ___ call me.', answer: 'would', hint: 'will → would', kind: 'khẳng định' },
             { id: 4, sentence: '"I can swim." → He said he ___ swim.', answer: 'could', hint: 'can → could', kind: 'khẳng định' },
             { id: 5, sentence: '"I saw him." → She said she ___ (see) him.', answer: 'had seen', hint: 'quá khứ → QKHT', kind: 'khẳng định' },
-            { id: 6, sentence: '"We are studying." → They said they ___ studying.', answer: 'were', hint: 'lùi thì', kind: 'khẳng định' }
+            { id: 6, sentence: '"We are studying." → They said they ___ studying.', answer: 'were', hint: 'lùi thì', kind: 'khẳng định' },
+            { id: 7, sentence: '"I have finished." → He said he ___ (finish).', answer: 'had finished', hint: 'HTHT → QKHT', kind: 'khẳng định' },
+            { id: 8, sentence: '"I don\'t like coffee." → She said she ___ like coffee.', answer: 'did not', hint: 'lùi thì phủ định', kind: 'phủ định' },
+            { id: 9, sentence: '"We may come." → They said they ___ come.', answer: 'might', hint: 'may → might', kind: 'khẳng định' },
+            { id: 10, sentence: '"I must leave." → He said he ___ leave.', answer: 'had to', hint: 'must → had to', kind: 'khẳng định' },
+            { id: 11, sentence: '"I am reading now." → She said she was reading ___.', answer: 'then', hint: 'now → then', kind: 'khẳng định' },
+            { id: 12, sentence: '"I bought it yesterday." → He said he ___ (buy) it the day before.', answer: 'had bought', hint: 'quá khứ → QKHT', kind: 'khẳng định' },
+            { id: 13, sentence: '"We live here." → They said they lived ___.', answer: 'there', hint: 'here → there', kind: 'khẳng định' },
+            { id: 14, sentence: '"I will help you." → She said she ___ help me.', answer: 'would', hint: 'will → would', kind: 'khẳng định' },
+            { id: 15, sentence: '"I can\'t swim." → He said he ___ swim.', answer: 'could not', hint: 'can → could', kind: 'phủ định' },
+            { id: 16, sentence: '"The Earth orbits the Sun." → She said the Earth ___ the Sun. (chân lý)', answer: 'orbits', hint: 'không lùi thì', kind: 'khẳng định' },
+            { id: 17, sentence: '"I have been waiting." → He said he ___ (wait).', answer: 'had been waiting', hint: 'HTHTTD → QKHTTD', kind: 'khẳng định' },
+            { id: 18, sentence: '"I am going today." → She said she was going ___ day.', answer: 'that', hint: 'today → that day', kind: 'khẳng định' },
+            { id: 19, sentence: '"We don\'t agree." → They said they ___ agree.', answer: 'did not', hint: 'lùi thì phủ định', kind: 'phủ định' },
+            { id: 20, sentence: '"I saw her last week." → He said he ___ (see) her the week before.', answer: 'had seen', hint: 'quá khứ → QKHT', kind: 'khẳng định' }
         ]
     },
     'reported-questions': {
@@ -84,7 +98,21 @@ const content = {
             { id: 3, sentence: '"What is your name?" → He asked what my name ___.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' },
             { id: 4, sentence: '"Did you call?" → She asked if I ___ (call).', answer: 'had called', hint: 'lùi thì', kind: 'nghi vấn' },
             { id: 5, sentence: '"Why are you late?" → He asked why I ___ late.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' },
-            { id: 6, sentence: '"Can you help?" → She asked ___ I could help.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' }
+            { id: 6, sentence: '"Can you help?" → She asked ___ I could help.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 7, sentence: '"What time does it start?" → He asked what time it ___.', answer: 'started', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 8, sentence: '"Are you coming?" → She asked ___ I was coming.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 9, sentence: '"Where did you go?" → He asked where I ___ (go).', answer: 'had gone', hint: 'lùi thì', kind: 'nghi vấn' },
+            { id: 10, sentence: '"How old are you?" → She asked how old I ___.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 11, sentence: '"Do you work here?" → He asked ___ I worked there.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 12, sentence: '"When will you finish?" → She asked when I ___ finish.', answer: 'would', hint: 'will → would', kind: 'nghi vấn' },
+            { id: 13, sentence: '"Who is that man?" → He asked who that man ___.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 14, sentence: '"Have you eaten?" → She asked if I ___ (eat).', answer: 'had eaten', hint: 'lùi thì', kind: 'nghi vấn' },
+            { id: 15, sentence: '"Why did she leave?" → He asked why she ___ (leave).', answer: 'had left', hint: 'lùi thì', kind: 'nghi vấn' },
+            { id: 16, sentence: '"Can you drive?" → She asked ___ I could drive.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 17, sentence: '"What are you doing?" → He asked what I ___ doing.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 18, sentence: '"How does it work?" → She asked how it ___.', answer: 'worked', hint: 'S + V', kind: 'nghi vấn' },
+            { id: 19, sentence: '"Did they win?" → He asked ___ they had won.', answer: 'if', hint: 'if/whether', kind: 'nghi vấn' },
+            { id: 20, sentence: '"Where is the station?" → She asked where the station ___.', answer: 'was', hint: 'S + V', kind: 'nghi vấn' }
         ]
     },
     'reported-commands': {
@@ -119,7 +147,21 @@ const content = {
             { id: 3, sentence: '"Please wait." → He asked me ___ (wait).', answer: 'to wait', hint: 'to + V', kind: 'khẳng định' },
             { id: 4, sentence: '"Be quiet." → The teacher told them ___ (be) quiet.', answer: 'to be', hint: 'to + V', kind: 'khẳng định' },
             { id: 5, sentence: '"Don\'t touch it." → She warned me ___ (not/touch) it.', answer: 'not to touch', hint: 'not to + V', kind: 'phủ định' },
-            { id: 6, sentence: '"Help me, please." → He asked me ___ (help) him.', answer: 'to help', hint: 'to + V', kind: 'khẳng định' }
+            { id: 6, sentence: '"Help me, please." → He asked me ___ (help) him.', answer: 'to help', hint: 'to + V', kind: 'khẳng định' },
+            { id: 7, sentence: '"Sit down." → The teacher told us ___ (sit) down.', answer: 'to sit', hint: 'to + V', kind: 'khẳng định' },
+            { id: 8, sentence: '"Don\'t run!" → She told the children ___ (not/run).', answer: 'not to run', hint: 'not to + V', kind: 'phủ định' },
+            { id: 9, sentence: '"Please call me." → He asked me ___ (call) him.', answer: 'to call', hint: 'to + V', kind: 'khẳng định' },
+            { id: 10, sentence: '"Don\'t forget your keys." → She reminded me ___ (not/forget) my keys.', answer: 'not to forget', hint: 'not to + V', kind: 'phủ định' },
+            { id: 11, sentence: '"Stand up." → The officer ordered them ___ (stand) up.', answer: 'to stand', hint: 'to + V', kind: 'khẳng định' },
+            { id: 12, sentence: '"Don\'t be late." → He warned us ___ (not/be) late.', answer: 'not to be', hint: 'not to + V', kind: 'phủ định' },
+            { id: 13, sentence: '"Take an umbrella." → She advised me ___ (take) an umbrella.', answer: 'to take', hint: 'to + V', kind: 'khẳng định' },
+            { id: 14, sentence: '"Please sign here." → The clerk asked me ___ (sign) there.', answer: 'to sign', hint: 'to + V', kind: 'khẳng định' },
+            { id: 15, sentence: '"Don\'t worry." → He told her ___ (not/worry).', answer: 'not to worry', hint: 'not to + V', kind: 'phủ định' },
+            { id: 16, sentence: '"Finish the report." → The boss told me ___ (finish) the report.', answer: 'to finish', hint: 'to + V', kind: 'khẳng định' },
+            { id: 17, sentence: '"Don\'t make noise." → She asked us ___ (not/make) noise.', answer: 'not to make', hint: 'not to + V', kind: 'phủ định' },
+            { id: 18, sentence: '"Close the door, please." → He asked me ___ (close) the door.', answer: 'to close', hint: 'to + V', kind: 'khẳng định' },
+            { id: 19, sentence: '"Don\'t touch the wires." → The engineer warned them ___ (not/touch) the wires.', answer: 'not to touch', hint: 'not to + V', kind: 'phủ định' },
+            { id: 20, sentence: '"Bring your passport." → She reminded him ___ (bring) his passport.', answer: 'to bring', hint: 'to + V', kind: 'khẳng định' }
         ]
     }
 };

@@ -48,7 +48,21 @@ const content = {
             { id: 3, sentence: 'The student ___ book is on the desk is absent.', answer: 'whose', hint: 'sở hữu', kind: 'khẳng định' },
             { id: 4, sentence: 'That is the house ___ I was born.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' },
             { id: 5, sentence: 'I remember the day ___ we first met.', answer: 'when', hint: 'thời gian', kind: 'khẳng định' },
-            { id: 6, sentence: 'The man ___ is talking to her is my boss.', answer: 'who', hint: 'người', kind: 'khẳng định' }
+            { id: 6, sentence: 'The man ___ is talking to her is my boss.', answer: 'who', hint: 'người', kind: 'khẳng định' },
+            { id: 7, sentence: 'The film ___ we watched last night was boring.', answer: 'which', hint: 'vật', kind: 'khẳng định' },
+            { id: 8, sentence: 'The author ___ novel won the prize is here.', answer: 'whose', hint: 'sở hữu', kind: 'khẳng định' },
+            { id: 9, sentence: 'This is the restaurant ___ we had dinner.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' },
+            { id: 10, sentence: 'The teacher ___ teaches us maths is very kind.', answer: 'who', hint: 'người', kind: 'khẳng định' },
+            { id: 11, sentence: 'I\'ll never forget the year ___ we travelled to Japan.', answer: 'when', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 12, sentence: 'The dog ___ barks all night belongs to my neighbour.', answer: 'which', hint: 'vật/con vật', kind: 'khẳng định' },
+            { id: 13, sentence: 'She is the artist ___ paintings I admire.', answer: 'whose', hint: 'sở hữu', kind: 'khẳng định' },
+            { id: 14, sentence: 'The children ___ are playing outside look happy.', answer: 'who', hint: 'người', kind: 'khẳng định' },
+            { id: 15, sentence: 'That\'s the shop ___ I bought my laptop.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' },
+            { id: 16, sentence: 'The laptop ___ I use for work is very fast.', answer: 'which', hint: 'vật', kind: 'khẳng định' },
+            { id: 17, sentence: 'The athlete ___ broke the record is only nineteen.', answer: 'who', hint: 'người', kind: 'khẳng định' },
+            { id: 18, sentence: 'Do you remember the moment ___ we first spoke?', answer: 'when', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 19, sentence: 'The woman ___ car was stolen called the police.', answer: 'whose', hint: 'sở hữu', kind: 'khẳng định' },
+            { id: 20, sentence: 'This is the village ___ my grandparents live.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' }
         ]
     },
     'noun-clauses': {
@@ -83,7 +97,21 @@ const content = {
             { id: 3, sentence: 'Tell me ___ you want for dinner.', answer: 'what', hint: 'wh-word', kind: 'khẳng định' },
             { id: 4, sentence: 'I\'m not sure ___ he will come or not.', answer: 'whether', hint: 'whether/if', kind: 'khẳng định' },
             { id: 5, sentence: '___ she said made everyone laugh. (chủ ngữ)', answer: 'What', hint: 'wh-word', kind: 'khẳng định' },
-            { id: 6, sentence: 'Nobody knows ___ he lives.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' }
+            { id: 6, sentence: 'Nobody knows ___ he lives.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' },
+            { id: 7, sentence: 'I wonder ___ she will accept the offer. (có...không)', answer: 'whether', hint: 'whether/if', kind: 'khẳng định' },
+            { id: 8, sentence: 'Can you explain ___ this machine works?', answer: 'how', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 9, sentence: 'I don\'t understand ___ he was so angry. (lý do)', answer: 'why', hint: 'wh-word', kind: 'khẳng định' },
+            { id: 10, sentence: '___ you decide is up to you. (chủ ngữ)', answer: 'What', hint: 'wh-word', kind: 'khẳng định' },
+            { id: 11, sentence: 'She told me ___ the train had already left.', answer: 'that', hint: 'that-clause', kind: 'khẳng định' },
+            { id: 12, sentence: 'I can\'t remember ___ I put my keys.', answer: 'where', hint: 'nơi chốn', kind: 'khẳng định' },
+            { id: 13, sentence: 'Do you know ___ is responsible for this? (người)', answer: 'who', hint: 'wh-word', kind: 'nghi vấn' },
+            { id: 14, sentence: 'The truth is ___ we cannot afford it.', answer: 'that', hint: 'that-clause (bổ ngữ)', kind: 'khẳng định' },
+            { id: 15, sentence: 'I\'m curious ___ they will arrive on time. (có...không)', answer: 'whether', hint: 'whether/if', kind: 'khẳng định' },
+            { id: 16, sentence: '___ he passed the exam pleased his parents. (chủ ngữ)', answer: 'That', hint: 'that-clause', kind: 'khẳng định' },
+            { id: 17, sentence: 'Please tell me ___ much it costs.', answer: 'how', hint: 'wh-word', kind: 'khẳng định' },
+            { id: 18, sentence: 'I have no idea ___ they are doing here.', answer: 'what', hint: 'wh-word', kind: 'khẳng định' },
+            { id: 19, sentence: 'Nobody told us ___ the party would start.', answer: 'when', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 20, sentence: 'It is clear ___ she made a mistake.', answer: 'that', hint: 'that-clause', kind: 'khẳng định' }
         ]
     },
     'adverbial-clauses': {
@@ -118,7 +146,21 @@ const content = {
             { id: 3, sentence: '___ it was cold, we went swimming. (nhượng bộ)', answer: 'Although', hint: 'nhượng bộ', kind: 'khẳng định' },
             { id: 4, sentence: 'I\'ll wait here ___ you come back. (cho đến khi)', answer: 'until', hint: 'thời gian', kind: 'khẳng định' },
             { id: 5, sentence: 'He studied hard ___ that he could pass. (mục đích)', answer: 'so', hint: 'so that', kind: 'khẳng định' },
-            { id: 6, sentence: 'Call me ___ as you arrive. (ngay khi)', answer: 'as soon', hint: 'as soon as', kind: 'khẳng định' }
+            { id: 6, sentence: 'Call me ___ as you arrive. (ngay khi)', answer: 'as soon', hint: 'as soon as', kind: 'khẳng định' },
+            { id: 7, sentence: '___ she was tired, she finished the work. (nhượng bộ)', answer: 'Although', hint: 'nhượng bộ', kind: 'khẳng định' },
+            { id: 8, sentence: 'I read a book ___ I was waiting for the bus. (trong khi)', answer: 'while', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 9, sentence: 'We left early ___ we wanted to avoid traffic. (vì)', answer: 'because', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 10, sentence: 'Turn off the lights ___ you leave the room. (trước khi)', answer: 'before', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 11, sentence: 'He spoke slowly ___ that everyone could understand. (mục đích)', answer: 'so', hint: 'so that', kind: 'khẳng định' },
+            { id: 12, sentence: '___ it was raining, the match continued. (mặc dù)', answer: 'Even though', hint: 'nhượng bộ', kind: 'khẳng định' },
+            { id: 13, sentence: 'We had lunch ___ we finished the meeting. (sau khi)', answer: 'after', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 14, sentence: 'She smiled ___ she was very happy. (vì)', answer: 'because', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 15, sentence: 'Stay here ___ I get back. (cho đến khi)', answer: 'until', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 16, sentence: '___ he had no money, he managed to travel. (mặc dù)', answer: 'Although', hint: 'nhượng bộ', kind: 'khẳng định' },
+            { id: 17, sentence: 'I took an umbrella ___ that I wouldn\'t get wet. (mục đích)', answer: 'so', hint: 'so that', kind: 'khẳng định' },
+            { id: 18, sentence: '___ I arrived home, dinner was ready. (khi)', answer: 'When', hint: 'thời gian', kind: 'khẳng định' },
+            { id: 19, sentence: 'They cancelled the trip ___ the weather was bad. (vì)', answer: 'because', hint: 'nguyên nhân', kind: 'khẳng định' },
+            { id: 20, sentence: 'Wait here ___ as the bell rings. (ngay khi)', answer: 'as soon', hint: 'as soon as', kind: 'khẳng định' }
         ]
     }
 };

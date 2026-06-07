@@ -52,7 +52,21 @@ const content = {
             { id: 3, sentence: 'She ___ (play) the piano when she was five.', answer: 'could play', hint: 'quá khứ', kind: 'khẳng định' },
             { id: 4, sentence: '___ you help me with this box?', answer: 'Can', hint: 'nghi vấn', kind: 'nghi vấn' },
             { id: 5, sentence: 'After the training, he was ___ to lift 100 kg.', answer: 'able', hint: 'be able to', kind: 'khẳng định' },
-            { id: 6, sentence: 'Sorry, I ___ (not/come) to the meeting yesterday.', answer: 'could not come', hint: 'quá khứ phủ định', kind: 'phủ định' }
+            { id: 6, sentence: 'Sorry, I ___ (not/come) to the meeting yesterday.', answer: 'could not come', hint: 'quá khứ phủ định', kind: 'phủ định' },
+            { id: 7, sentence: 'My grandmother ___ (read) without glasses now.', answer: 'can read', hint: 'can + V', kind: 'khẳng định' },
+            { id: 8, sentence: 'When the fog cleared, we ___ (see) the mountains.', answer: 'could see', hint: 'quá khứ', kind: 'khẳng định' },
+            { id: 9, sentence: 'I ___ (not/swim) when I was a child.', answer: 'could not swim', hint: 'quá khứ phủ định', kind: 'phủ định' },
+            { id: 10, sentence: '___ your brother drive a truck?', answer: 'Can', hint: 'nghi vấn hiện tại', kind: 'nghi vấn' },
+            { id: 11, sentence: 'Next year I will ___ (be able) to speak Japanese fluently.', answer: 'be able', hint: 'be able to (tương lai)', kind: 'khẳng định' },
+            { id: 12, sentence: 'Even as a baby, he ___ (recognize) his mother\'s voice.', answer: 'could recognize', hint: 'quá khứ', kind: 'khẳng định' },
+            { id: 13, sentence: 'Cats ___ (see) well in the dark.', answer: 'can see', hint: 'can + V', kind: 'khẳng định' },
+            { id: 14, sentence: 'Despite the noise, she was ___ to concentrate.', answer: 'able', hint: 'be able to (quá khứ)', kind: 'khẳng định' },
+            { id: 15, sentence: 'I\'m afraid I ___ (not/help) you tomorrow.', answer: 'cannot help', hint: 'phủ định hiện tại', kind: 'phủ định' },
+            { id: 16, sentence: '___ they finish the project on time? (quá khứ)', answer: 'Could', hint: 'nghi vấn quá khứ', kind: 'nghi vấn' },
+            { id: 17, sentence: 'With practice, you ___ (master) this skill.', answer: 'can master', hint: 'can + V', kind: 'khẳng định' },
+            { id: 18, sentence: 'He has ___ (been able) to walk again since the surgery.', answer: 'been able', hint: 'be able to (hoàn thành)', kind: 'khẳng định' },
+            { id: 19, sentence: 'We ___ (not/find) the keys anywhere last night.', answer: 'could not find', hint: 'quá khứ phủ định', kind: 'phủ định' },
+            { id: 20, sentence: 'A computer ___ (process) millions of operations per second.', answer: 'can process', hint: 'can + V', kind: 'khẳng định' }
         ]
     },
     'modal-obligation': {
@@ -88,7 +102,21 @@ const content = {
             { id: 3, sentence: 'You look tired. You ___ (take) a rest.', answer: 'should take', hint: 'lời khuyên', kind: 'khẳng định' },
             { id: 4, sentence: 'It\'s a holiday, so we ___ have to go to work.', answer: 'don\'t', hint: 'không cần', kind: 'phủ định' },
             { id: 5, sentence: 'She ___ to finish the report yesterday. (bắt buộc quá khứ)', answer: 'had', hint: 'have to quá khứ', kind: 'khẳng định' },
-            { id: 6, sentence: '___ I bring my passport? (xin lời khuyên)', answer: 'Should', hint: 'nghi vấn', kind: 'nghi vấn' }
+            { id: 6, sentence: '___ I bring my passport? (xin lời khuyên)', answer: 'Should', hint: 'nghi vấn', kind: 'nghi vấn' },
+            { id: 7, sentence: 'Drivers ___ (stop) at a red light. (bắt buộc theo luật)', answer: 'must stop', hint: 'must + V', kind: 'khẳng định' },
+            { id: 8, sentence: 'You ___ touch that wire — it\'s dangerous. (cấm)', answer: 'mustn\'t', hint: 'cấm đoán', kind: 'phủ định' },
+            { id: 9, sentence: 'If you have a headache, you ___ (drink) more water.', answer: 'should drink', hint: 'lời khuyên', kind: 'khẳng định' },
+            { id: 10, sentence: 'The entry is free, so you ___ have to buy a ticket.', answer: 'don\'t', hint: 'không cần', kind: 'phủ định' },
+            { id: 11, sentence: 'He ___ (work) twelve hours a day in his old job. (bắt buộc quá khứ)', answer: 'had to work', hint: 'have to quá khứ', kind: 'khẳng định' },
+            { id: 12, sentence: 'You spend too much. You ___ (not/waste) money.', answer: 'shouldn\'t waste', hint: 'lời khuyên phủ định', kind: 'phủ định' },
+            { id: 13, sentence: 'Passengers ___ (fasten) their seatbelts during take-off.', answer: 'must fasten', hint: 'must + V', kind: 'khẳng định' },
+            { id: 14, sentence: 'Tomorrow is Sunday, so I won\'t ___ to get up early.', answer: 'have', hint: 'have to (tương lai phủ định)', kind: 'phủ định' },
+            { id: 15, sentence: '___ we book the table in advance? (xin lời khuyên)', answer: 'Should', hint: 'nghi vấn', kind: 'nghi vấn' },
+            { id: 16, sentence: 'Visitors ___ (not/feed) the animals. (cấm)', answer: 'mustn\'t feed', hint: 'cấm đoán', kind: 'phủ định' },
+            { id: 17, sentence: 'To stay healthy, you ___ (exercise) regularly.', answer: 'should exercise', hint: 'lời khuyên', kind: 'khẳng định' },
+            { id: 18, sentence: 'In my country, children ___ (go) to school until they are sixteen.', answer: 'have to go', hint: 'have to (quy định)', kind: 'khẳng định' },
+            { id: 19, sentence: 'You ___ (apologize) to her; it would be the right thing.', answer: 'ought to apologize', hint: 'ought to + V', kind: 'khẳng định' },
+            { id: 20, sentence: 'We have plenty of time, so we ___ have to rush.', answer: 'don\'t', hint: 'không cần', kind: 'phủ định' }
         ]
     },
     'modal-deduction': {
@@ -99,7 +127,7 @@ const content = {
                 { title: 'Chắc chắn sai (can\'t)', icon: 'cancel', examples: ['He <b>can\'t be</b> hungry; he just ate.', 'That <b>can\'t be</b> true.'] },
                 { title: 'Có thể (may / might / could)', icon: 'help', examples: ['She <b>might be</b> at work.', 'It <b>could rain</b> later.'] }
             ],
-            signalWords: { label: 'Thang chắc chắn', words: ['must = chắc chắn ~95%', 'may/might/could = có thể ~50%', "can't = chắc chắn không ~5%"] }
+            signalWords: { label: 'Thang chắc chắn', words: ['must = gần như chắc chắn', 'may/might/could = có thể', "can't = gần như không thể"] }
         },
         formula: {
             note: 'Suy đoán hiện tại: <b>modal + V</b>. Suy đoán quá khứ: <b>modal + have + V3</b>.',
@@ -124,7 +152,21 @@ const content = {
             { id: 3, sentence: 'I\'m not sure where she is. She ___ (be) at the gym. (có thể)', answer: 'might be', hint: 'might + V', kind: 'khẳng định' },
             { id: 4, sentence: 'The ground is wet. It ___ have rained last night.', answer: 'must', hint: 'suy đoán quá khứ', kind: 'khẳng định' },
             { id: 5, sentence: 'They aren\'t answering. They ___ (have/leave) already.', answer: 'must have left', hint: 'must + have + V3', kind: 'khẳng định' },
-            { id: 6, sentence: 'That ___ be John — he\'s in London right now.', answer: 'can\'t', hint: 'chắc chắn không', kind: 'phủ định' }
+            { id: 6, sentence: 'That ___ be John — he\'s in London right now.', answer: 'can\'t', hint: 'chắc chắn không', kind: 'phủ định' },
+            { id: 7, sentence: 'She\'s wearing a coat. It ___ (be) cold outside. (chắc chắn)', answer: 'must be', hint: 'must + V', kind: 'khẳng định' },
+            { id: 8, sentence: 'I\'m not certain, but they ___ (arrive) by noon. (có thể)', answer: 'might arrive', hint: 'might + V', kind: 'khẳng định' },
+            { id: 9, sentence: 'He speaks perfect French. He ___ (live) in Paris for years.', answer: 'must have lived', hint: 'suy đoán quá khứ', kind: 'khẳng định' },
+            { id: 10, sentence: 'You ___ be serious! That\'s impossible. (chắc chắn không)', answer: 'can\'t', hint: 'phủ định suy đoán', kind: 'phủ định' },
+            { id: 11, sentence: 'The door is open. Someone ___ (be) inside. (chắc chắn)', answer: 'must be', hint: 'must + V', kind: 'khẳng định' },
+            { id: 12, sentence: 'I\'m not sure who called. It ___ (be) the office. (có thể)', answer: 'could be', hint: 'could + V', kind: 'khẳng định' },
+            { id: 13, sentence: 'Her car is gone. She ___ (have/go) to work.', answer: 'must have gone', hint: 'must + have + V3', kind: 'khẳng định' },
+            { id: 14, sentence: 'He ___ have stolen it; he was with me all day.', answer: 'can\'t', hint: 'suy đoán quá khứ phủ định', kind: 'phủ định' },
+            { id: 15, sentence: 'The lights are off. They ___ (be) asleep. (có thể)', answer: 'might be', hint: 'might + V', kind: 'khẳng định' },
+            { id: 16, sentence: 'You\'ve worked all night. You ___ (be) exhausted. (chắc chắn)', answer: 'must be', hint: 'must + V', kind: 'khẳng định' },
+            { id: 17, sentence: 'I can\'t find my wallet. I ___ (have/leave) it at home.', answer: 'might have left', hint: 'might + have + V3', kind: 'khẳng định' },
+            { id: 18, sentence: 'This ___ be the right address; the numbers don\'t match.', answer: 'can\'t', hint: 'chắc chắn không', kind: 'phủ định' },
+            { id: 19, sentence: 'She knows every detail. She ___ (have/read) the report.', answer: 'must have read', hint: 'must + have + V3', kind: 'khẳng định' },
+            { id: 20, sentence: 'Nobody answered the bell. They ___ (be) out. (có thể)', answer: 'could be', hint: 'could + V', kind: 'khẳng định' }
         ]
     }
 };

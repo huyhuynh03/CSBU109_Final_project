@@ -52,7 +52,21 @@ const content = {
             { id: 3, sentence: 'This is ___ car. (tính từ sở hữu - của tôi)', answer: 'my', hint: 'tính từ sở hữu', kind: 'khẳng định' },
             { id: 4, sentence: 'That pen is ___. (đại từ sở hữu - của cô ấy)', answer: 'hers', hint: 'đại từ sở hữu', kind: 'khẳng định' },
             { id: 5, sentence: 'The dog wagged ___ tail. (sở hữu của nó)', answer: 'its', hint: 'its', kind: 'khẳng định' },
-            { id: 6, sentence: 'We invited ___ to the party. (tân ngữ - họ)', answer: 'them', hint: 'tân ngữ', kind: 'khẳng định' }
+            { id: 6, sentence: 'We invited ___ to the party. (tân ngữ - họ)', answer: 'them', hint: 'tân ngữ', kind: 'khẳng định' },
+            { id: 7, sentence: '___ is my best friend. (chủ ngữ - anh ấy)', answer: 'He', hint: 'chủ ngữ', kind: 'khẳng định' },
+            { id: 8, sentence: 'Can you tell ___ the truth? (tân ngữ - cô ấy)', answer: 'her', hint: 'tân ngữ', kind: 'khẳng định' },
+            { id: 9, sentence: 'Is this bag ___? (đại từ sở hữu - của bạn)', answer: 'yours', hint: 'đại từ sở hữu', kind: 'nghi vấn' },
+            { id: 10, sentence: '___ teacher is very kind. (tính từ sở hữu - của chúng tôi)', answer: 'Our', hint: 'tính từ sở hữu', kind: 'khẳng định' },
+            { id: 11, sentence: 'The keys are ___. (đại từ sở hữu - của họ)', answer: 'theirs', hint: 'đại từ sở hữu', kind: 'khẳng định' },
+            { id: 12, sentence: 'I will help ___ with the homework. (tân ngữ - bạn)', answer: 'you', hint: 'tân ngữ', kind: 'khẳng định' },
+            { id: 13, sentence: '___ live in a small town. (chủ ngữ - chúng tôi)', answer: 'We', hint: 'chủ ngữ', kind: 'khẳng định' },
+            { id: 14, sentence: 'That jacket is ___, not mine. (đại từ sở hữu - của anh ấy)', answer: 'his', hint: 'đại từ sở hữu', kind: 'khẳng định' },
+            { id: 15, sentence: 'She showed ___ the photos. (tân ngữ - chúng tôi)', answer: 'us', hint: 'tân ngữ', kind: 'khẳng định' },
+            { id: 16, sentence: '___ name is John. (tính từ sở hữu - của anh ấy)', answer: 'His', hint: 'tính từ sở hữu', kind: 'khẳng định' },
+            { id: 17, sentence: 'This idea is ___. (đại từ sở hữu - của tôi)', answer: 'mine', hint: 'đại từ sở hữu', kind: 'khẳng định' },
+            { id: 18, sentence: 'I saw ___ at the cinema yesterday. (tân ngữ - anh ấy)', answer: 'him', hint: 'tân ngữ', kind: 'khẳng định' },
+            { id: 19, sentence: '___ bikes are in the garage. (tính từ sở hữu - của họ)', answer: 'Their', hint: 'tính từ sở hữu', kind: 'khẳng định' },
+            { id: 20, sentence: 'The dog hurt ___ paw. (tính từ sở hữu - của nó)', answer: 'its', hint: 'its', kind: 'khẳng định' }
         ]
     },
     'reflexive-pronouns': {
@@ -90,7 +104,21 @@ const content = {
             { id: 3, sentence: 'He lives by ___. (một mình)', answer: 'himself', hint: 'by + self', kind: 'khẳng định' },
             { id: 4, sentence: 'Please help ___ to some cake. (các bạn)', answer: 'yourselves', hint: 'số nhiều', kind: 'khẳng định' },
             { id: 5, sentence: 'The cat cleaned ___. (nó)', answer: 'itself', hint: 'phản thân', kind: 'khẳng định' },
-            { id: 6, sentence: 'I taught ___ to play guitar. (tôi)', answer: 'myself', hint: 'phản thân', kind: 'khẳng định' }
+            { id: 6, sentence: 'I taught ___ to play guitar. (tôi)', answer: 'myself', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 7, sentence: 'They built the house ___. (chính họ)', answer: 'themselves', hint: 'phản thân số nhiều', kind: 'khẳng định' },
+            { id: 8, sentence: 'Be careful! Don\'t burn ___. (bạn - số ít)', answer: 'yourself', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 9, sentence: 'The CEO ___ answered my email. (nhấn mạnh - anh ấy)', answer: 'himself', hint: 'nhấn mạnh', kind: 'khẳng định' },
+            { id: 10, sentence: 'She prepared dinner all by ___. (một mình - cô ấy)', answer: 'herself', hint: 'by + self', kind: 'khẳng định' },
+            { id: 11, sentence: 'We enjoyed ___ at the festival. (chúng tôi)', answer: 'ourselves', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 12, sentence: 'The machine turns ___ off automatically. (nó)', answer: 'itself', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 13, sentence: 'Children, you should be proud of ___. (các bạn)', answer: 'yourselves', hint: 'số nhiều', kind: 'khẳng định' },
+            { id: 14, sentence: 'He blamed ___ for the mistake. (anh ấy)', answer: 'himself', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 15, sentence: 'I made this cake ___. (chính tôi)', answer: 'myself', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 16, sentence: 'The queen ___ visited the village. (nhấn mạnh - cô ấy)', answer: 'herself', hint: 'nhấn mạnh', kind: 'khẳng định' },
+            { id: 17, sentence: 'They have to look after ___ now. (họ)', answer: 'themselves', hint: 'phản thân số nhiều', kind: 'khẳng định' },
+            { id: 18, sentence: 'Did you fix the car by ___? (bạn - số ít)', answer: 'yourself', hint: 'by + self', kind: 'nghi vấn' },
+            { id: 19, sentence: 'We taught ___ how to swim. (chúng tôi)', answer: 'ourselves', hint: 'phản thân', kind: 'khẳng định' },
+            { id: 20, sentence: 'He introduced ___ to the new team. (anh ấy)', answer: 'himself', hint: 'phản thân', kind: 'khẳng định' }
         ]
     },
     'relative-indefinite': {
@@ -128,7 +156,21 @@ const content = {
             { id: 3, sentence: '___ knows the answer. (tất cả mọi người)', answer: 'Everyone', hint: 'every-', kind: 'khẳng định' },
             { id: 4, sentence: 'I didn\'t meet ___ at the party. (phủ định)', answer: 'anyone', hint: 'any- phủ định', kind: 'phủ định' },
             { id: 5, sentence: 'Let\'s find ___ quiet to talk. (một nơi nào đó)', answer: 'somewhere', hint: 'some-', kind: 'khẳng định' },
-            { id: 6, sentence: 'Everything ___ (be) ready for the trip. (số ít)', answer: 'is', hint: 'động từ số ít', kind: 'khẳng định' }
+            { id: 6, sentence: 'Everything ___ (be) ready for the trip. (số ít)', answer: 'is', hint: 'động từ số ít', kind: 'khẳng định' },
+            { id: 7, sentence: 'Is there ___ I can do to help? (nghi vấn)', answer: 'anything', hint: 'any- nghi vấn', kind: 'nghi vấn' },
+            { id: 8, sentence: '___ left the lights on. (một ai đó)', answer: 'Someone', hint: 'some-', kind: 'khẳng định' },
+            { id: 9, sentence: 'I have ___ to tell you; it can wait. (không có gì)', answer: 'nothing', hint: 'no-', kind: 'khẳng định' },
+            { id: 10, sentence: 'We looked ___ but couldn\'t find the cat. (phủ định - khắp nơi)', answer: 'everywhere', hint: 'every-', kind: 'khẳng định' },
+            { id: 11, sentence: 'Does ___ know the way to the station? (nghi vấn)', answer: 'anyone', hint: 'any- nghi vấn', kind: 'nghi vấn' },
+            { id: 12, sentence: 'There\'s ___ at the door. (một ai đó)', answer: 'somebody', hint: 'some-', kind: 'khẳng định' },
+            { id: 13, sentence: '___ is impossible if you try hard. (không gì)', answer: 'Nothing', hint: 'no-', kind: 'khẳng định' },
+            { id: 14, sentence: 'I can\'t go ___ tonight; I\'m too tired. (phủ định)', answer: 'anywhere', hint: 'any- phủ định', kind: 'phủ định' },
+            { id: 15, sentence: '___ in the class passed the test. (tất cả)', answer: 'Everyone', hint: 'every-', kind: 'khẳng định' },
+            { id: 16, sentence: 'There is ___ wrong with the engine. (một điều gì đó)', answer: 'something', hint: 'some-', kind: 'khẳng định' },
+            { id: 17, sentence: '___ was at home, so the house was empty. (không ai)', answer: 'No one', hint: 'no-', kind: 'khẳng định' },
+            { id: 18, sentence: 'Have you been ___ interesting recently? (nghi vấn)', answer: 'anywhere', hint: 'any- nghi vấn', kind: 'nghi vấn' },
+            { id: 19, sentence: '___ makes mistakes sometimes. (tất cả mọi người)', answer: 'Everybody', hint: 'every-', kind: 'khẳng định' },
+            { id: 20, sentence: 'I didn\'t buy ___ at the shop. (phủ định)', answer: 'anything', hint: 'any- phủ định', kind: 'phủ định' }
         ]
     }
 };

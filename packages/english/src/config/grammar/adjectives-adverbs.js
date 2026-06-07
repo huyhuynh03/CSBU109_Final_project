@@ -48,7 +48,21 @@ const content = {
             { id: 3, sentence: 'He speaks English ___ (fluent).', answer: 'fluently', hint: 'trạng từ', kind: 'khẳng định' },
             { id: 4, sentence: 'The soup tastes ___ (good). (sau linking verb)', answer: 'good', hint: 'tính từ', kind: 'khẳng định' },
             { id: 5, sentence: 'They worked very ___ (hard) yesterday.', answer: 'hard', hint: 'trạng từ bất quy tắc', kind: 'khẳng định' },
-            { id: 6, sentence: 'This is a ___ (quick) test.', answer: 'quick', hint: 'tính từ + N', kind: 'khẳng định' }
+            { id: 6, sentence: 'This is a ___ (quick) test.', answer: 'quick', hint: 'tính từ + N', kind: 'khẳng định' },
+            { id: 7, sentence: 'The children played ___ (happy) in the garden.', answer: 'happily', hint: 'trạng từ (y→ily)', kind: 'khẳng định' },
+            { id: 8, sentence: 'She gave a ___ (clear) explanation.', answer: 'clear', hint: 'tính từ + N', kind: 'khẳng định' },
+            { id: 9, sentence: 'He explained the rules ___ (clear).', answer: 'clearly', hint: 'trạng từ', kind: 'khẳng định' },
+            { id: 10, sentence: 'The flowers smell ___ (sweet). (sau linking verb)', answer: 'sweet', hint: 'tính từ', kind: 'khẳng định' },
+            { id: 11, sentence: 'My grandfather can still run ___ (fast).', answer: 'fast', hint: 'trạng từ bất quy tắc', kind: 'khẳng định' },
+            { id: 12, sentence: 'She is a ___ (good) singer.', answer: 'good', hint: 'tính từ + N', kind: 'khẳng định' },
+            { id: 13, sentence: 'She sings really ___ (good). (bổ nghĩa động từ)', answer: 'well', hint: 'good → well', kind: 'khẳng định' },
+            { id: 14, sentence: 'The test was ___ (surprising) easy.', answer: 'surprisingly', hint: 'trạng từ bổ nghĩa tính từ', kind: 'khẳng định' },
+            { id: 15, sentence: 'He seems ___ (nervous) before the exam. (sau linking verb)', answer: 'nervous', hint: 'tính từ', kind: 'khẳng định' },
+            { id: 16, sentence: 'They finished the work ___ (easy).', answer: 'easily', hint: 'trạng từ (y→ily)', kind: 'khẳng định' },
+            { id: 17, sentence: 'It was a ___ (terrible) mistake.', answer: 'terrible', hint: 'tính từ + N', kind: 'khẳng định' },
+            { id: 18, sentence: 'The dog behaved ___ (bad) at the park.', answer: 'badly', hint: 'trạng từ', kind: 'khẳng định' },
+            { id: 19, sentence: 'This coffee tastes ___ (bitter). (sau linking verb)', answer: 'bitter', hint: 'tính từ', kind: 'khẳng định' },
+            { id: 20, sentence: 'She answered the questions ___ (correct).', answer: 'correctly', hint: 'trạng từ', kind: 'khẳng định' }
         ]
     },
     'comparatives-superlatives': {
@@ -87,7 +101,21 @@ const content = {
             { id: 3, sentence: 'She is ___ (good) at math than me.', answer: 'better', hint: 'bất quy tắc', kind: 'khẳng định' },
             { id: 4, sentence: 'Today is the ___ (hot) day of the year.', answer: 'hottest', hint: 'so sánh nhất ngắn', kind: 'khẳng định' },
             { id: 5, sentence: 'He is as ___ (tall) as his father. (bằng)', answer: 'tall', hint: 'as...as', kind: 'khẳng định' },
-            { id: 6, sentence: 'This is the ___ (bad) movie I\'ve ever seen.', answer: 'worst', hint: 'bất quy tắc nhất', kind: 'khẳng định' }
+            { id: 6, sentence: 'This is the ___ (bad) movie I\'ve ever seen.', answer: 'worst', hint: 'bất quy tắc nhất', kind: 'khẳng định' },
+            { id: 7, sentence: 'This book is ___ (interesting) than that one.', answer: 'more interesting', hint: 'so sánh hơn dài', kind: 'khẳng định' },
+            { id: 8, sentence: 'Mount Everest is the ___ (high) mountain in the world.', answer: 'highest', hint: 'so sánh nhất ngắn', kind: 'khẳng định' },
+            { id: 9, sentence: 'She runs ___ (fast) than her teammates.', answer: 'faster', hint: 'so sánh hơn ngắn', kind: 'khẳng định' },
+            { id: 10, sentence: 'This is the ___ (good) restaurant in town.', answer: 'best', hint: 'bất quy tắc nhất', kind: 'khẳng định' },
+            { id: 11, sentence: 'My new phone is ___ (light) than the old one.', answer: 'lighter', hint: 'so sánh hơn ngắn', kind: 'khẳng định' },
+            { id: 12, sentence: 'Winter is the ___ (cold) season here.', answer: 'coldest', hint: 'so sánh nhất ngắn', kind: 'khẳng định' },
+            { id: 13, sentence: 'Her work is ___ (careful) than his. (so sánh hơn dài)', answer: 'more careful', hint: 'so sánh hơn dài', kind: 'khẳng định' },
+            { id: 14, sentence: 'This is as ___ (easy) as the last test. (bằng)', answer: 'easy', hint: 'as...as', kind: 'khẳng định' },
+            { id: 15, sentence: 'He is the ___ (intelligent) student in the class.', answer: 'most intelligent', hint: 'so sánh nhất dài', kind: 'khẳng định' },
+            { id: 16, sentence: 'The weather today is ___ (bad) than yesterday.', answer: 'worse', hint: 'bất quy tắc hơn', kind: 'khẳng định' },
+            { id: 17, sentence: 'A train is ___ (fast) than a bicycle.', answer: 'faster', hint: 'so sánh hơn ngắn', kind: 'khẳng định' },
+            { id: 18, sentence: 'This is the ___ (busy) street in the city.', answer: 'busiest', hint: 'so sánh nhất (y→iest)', kind: 'khẳng định' },
+            { id: 19, sentence: 'My sister is not as ___ (old) as me. (bằng)', answer: 'old', hint: 'as...as', kind: 'khẳng định' },
+            { id: 20, sentence: 'It was the ___ (far) point we reached. (bất quy tắc)', answer: 'farthest', hint: 'far → farthest', kind: 'khẳng định' }
         ]
     },
     'adj-order': {
@@ -123,7 +151,21 @@ const content = {
             { id: 3, sentence: 'Sắp xếp: (red / a / big) car → ___', answer: 'a big red', hint: 'Size → Color', kind: 'khẳng định' },
             { id: 4, sentence: 'Sắp xếp: (old / an / interesting) book → ___', answer: 'an interesting old', hint: 'Opinion → Age', kind: 'khẳng định' },
             { id: 5, sentence: 'Sắp xếp: (wooden / a / brown) chair → ___', answer: 'a brown wooden', hint: 'Color → Material', kind: 'khẳng định' },
-            { id: 6, sentence: 'Sắp xếp: (new / a / lovely) dress → ___', answer: 'a lovely new', hint: 'Opinion → Age', kind: 'khẳng định' }
+            { id: 6, sentence: 'Sắp xếp: (new / a / lovely) dress → ___', answer: 'a lovely new', hint: 'Opinion → Age', kind: 'khẳng định' },
+            { id: 7, sentence: 'Sắp xếp: (French / an / expensive) perfume → ___', answer: 'an expensive French', hint: 'Opinion → Origin', kind: 'khẳng định' },
+            { id: 8, sentence: 'Sắp xếp: (square / a / black) box → ___', answer: 'a square black', hint: 'Shape → Color', kind: 'khẳng định' },
+            { id: 9, sentence: 'Sắp xếp: (silk / a / blue) scarf → ___', answer: 'a blue silk', hint: 'Color → Material', kind: 'khẳng định' },
+            { id: 10, sentence: 'Sắp xếp: (small / a / cute) puppy → ___', answer: 'a cute small', hint: 'Opinion → Size', kind: 'khẳng định' },
+            { id: 11, sentence: 'Sắp xếp: (Japanese / a / modern) car → ___', answer: 'a modern Japanese', hint: 'Age → Origin', kind: 'khẳng định' },
+            { id: 12, sentence: 'Sắp xếp: (green / a / huge) field → ___', answer: 'a huge green', hint: 'Size → Color', kind: 'khẳng định' },
+            { id: 13, sentence: 'Sắp xếp: (leather / a / brown / nice) belt → ___', answer: 'a nice brown leather', hint: 'Opinion → Color → Material', kind: 'khẳng định' },
+            { id: 14, sentence: 'Sắp xếp: (old / a / wonderful) story → ___', answer: 'a wonderful old', hint: 'Opinion → Age', kind: 'khẳng định' },
+            { id: 15, sentence: 'Sắp xếp: (round / a / wooden) table → ___', answer: 'a round wooden', hint: 'Shape → Material', kind: 'khẳng định' },
+            { id: 16, sentence: 'Sắp xếp: (white / a / long) dress → ___', answer: 'a long white', hint: 'Size → Color', kind: 'khẳng định' },
+            { id: 17, sentence: 'Sắp xếp: (Chinese / a / beautiful / silk) dress → ___', answer: 'a beautiful Chinese silk', hint: 'Opinion → Origin → Material', kind: 'khẳng định' },
+            { id: 18, sentence: 'Sắp xếp: (young / a / talented) artist → ___', answer: 'a talented young', hint: 'Opinion → Age', kind: 'khẳng định' },
+            { id: 19, sentence: 'Sắp xếp: (metal / a / small / grey) box → ___', answer: 'a small grey metal', hint: 'Size → Color → Material', kind: 'khẳng định' },
+            { id: 20, sentence: 'Sắp xếp: (Italian / an / old / red) car → ___', answer: 'an old red Italian', hint: 'Age → Color → Origin', kind: 'khẳng định' }
         ]
     }
 };

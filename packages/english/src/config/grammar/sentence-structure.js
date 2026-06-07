@@ -52,7 +52,21 @@ const content = {
             { id: 3, sentence: 'He studied hard, ___ he passed the exam. (vì vậy)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
             { id: 4, sentence: 'We stayed home ___ it was cold. (bởi vì)', answer: 'because', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
             { id: 5, sentence: 'You can have tea ___ coffee. (hoặc)', answer: 'or', hint: 'FANBOYS', kind: 'khẳng định' },
-            { id: 6, sentence: '___ you finish, let me know. (khi nào)', answer: 'When', hint: 'liên từ phụ thuộc', kind: 'khẳng định' }
+            { id: 6, sentence: '___ you finish, let me know. (khi nào)', answer: 'When', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 7, sentence: 'She was hungry, ___ she made a sandwich. (vì vậy)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 8, sentence: '___ I have time, I will help you. (nếu → câu phức)', answer: 'If', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 9, sentence: 'He didn\'t study, ___ he failed the test. (vì vậy)', answer: 'so', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 10, sentence: 'I called her, ___ she didn\'t answer. (nhưng)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 11, sentence: '___ the sun set, we went home. (sau khi → câu phức)', answer: 'After', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 12, sentence: 'You can take the bus ___ the train. (hoặc)', answer: 'or', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 13, sentence: '___ it was late, they kept working. (mặc dù → câu phức)', answer: 'Although', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 14, sentence: 'She likes apples, ___ I prefer oranges. (nhưng)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 15, sentence: 'We left early ___ we could avoid traffic. (để → câu phức)', answer: 'so that', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 16, sentence: 'He was tired, ___ he didn\'t stop working. (tuy nhiên → FANBOYS)', answer: 'yet', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 17, sentence: '___ I was a child, I lived in the countryside. (khi → câu phức)', answer: 'When', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 18, sentence: 'Turn off the lights ___ you leave. (trước khi → câu phức)', answer: 'before', hint: 'liên từ phụ thuộc', kind: 'khẳng định' },
+            { id: 19, sentence: 'I like coffee, ___ I don\'t like tea. (nhưng)', answer: 'but', hint: 'FANBOYS', kind: 'khẳng định' },
+            { id: 20, sentence: 'She stayed home ___ she was sick. (bởi vì → câu phức)', answer: 'because', hint: 'liên từ phụ thuộc', kind: 'khẳng định' }
         ]
     },
     'inversion': {
@@ -90,7 +104,21 @@ const content = {
             { id: 3, sentence: 'Not only ___ she beautiful, but also kind. (to be)', answer: 'is', hint: 'aux + S', kind: 'khẳng định' },
             { id: 4, sentence: 'Hardly ___ I arrived when the phone rang. (QK hoàn thành)', answer: 'had', hint: 'had + S + V3', kind: 'khẳng định' },
             { id: 5, sentence: 'Seldom ___ we see such talent. (HT đơn)', answer: 'do', hint: 'aux + S', kind: 'khẳng định' },
-            { id: 6, sentence: 'Only then ___ I understand the truth. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' }
+            { id: 6, sentence: 'Only then ___ I understand the truth. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 7, sentence: 'No sooner ___ she left than it began to rain. (QK hoàn thành)', answer: 'had', hint: 'had + S + V3', kind: 'khẳng định' },
+            { id: 8, sentence: 'Not until midnight ___ he finish the report. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 9, sentence: 'Little ___ they know about the danger. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 10, sentence: 'Never before ___ I tasted such food. (HT hoàn thành)', answer: 'have', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 11, sentence: 'Rarely ___ such an opportunity arise. (HT đơn)', answer: 'does', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 12, sentence: 'Not only ___ he lazy, but also rude. (to be)', answer: 'is', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 13, sentence: 'Hardly ___ the game started when it was cancelled. (QK hoàn thành)', answer: 'had', hint: 'had + S + V3', kind: 'khẳng định' },
+            { id: 14, sentence: 'Seldom ___ we hear such honesty. (HT đơn)', answer: 'do', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 15, sentence: 'Only after the storm ___ they realize the damage. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 16, sentence: 'Never again ___ I trust him. (tương lai)', answer: 'will', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 17, sentence: 'Not only ___ she finished early, but she also helped others. (QK đơn)', answer: 'did', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 18, sentence: 'So beautiful ___ the view that we stopped to take photos. (to be QK)', answer: 'was', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 19, sentence: 'Rarely ___ I seen such dedication. (HT hoàn thành)', answer: 'have', hint: 'aux + S', kind: 'khẳng định' },
+            { id: 20, sentence: 'No sooner ___ the bell rung than the students left. (QK hoàn thành)', answer: 'had', hint: 'had + S + V3', kind: 'khẳng định' }
         ]
     },
     'cleft-sentences': {
@@ -127,7 +155,21 @@ const content = {
             { id: 3, sentence: 'It is your help ___ I need most. (vật)', answer: 'that', hint: 'that', kind: 'khẳng định' },
             { id: 4, sentence: 'It was ___ Paris that we first met. (nơi chốn → giới từ)', answer: 'in', hint: 'in Paris', kind: 'khẳng định' },
             { id: 5, sentence: 'What he ___ was tell the truth. (hành động đã làm)', answer: 'did', hint: 'did', kind: 'khẳng định' },
-            { id: 6, sentence: 'It was yesterday ___ she called. (thời gian)', answer: 'that', hint: 'that', kind: 'khẳng định' }
+            { id: 6, sentence: 'It was yesterday ___ she called. (thời gian)', answer: 'that', hint: 'that', kind: 'khẳng định' },
+            { id: 7, sentence: 'It was my brother ___ fixed the car. (người)', answer: 'who', hint: 'who/that', kind: 'khẳng định' },
+            { id: 8, sentence: '___ she enjoys is reading novels. (wh-cleft)', answer: 'What', hint: 'What...', kind: 'khẳng định' },
+            { id: 9, sentence: 'It was the noise ___ woke me up. (vật)', answer: 'that', hint: 'that', kind: 'khẳng định' },
+            { id: 10, sentence: 'What they ___ was build a new school. (hành động đã làm)', answer: 'did', hint: 'did', kind: 'khẳng định' },
+            { id: 11, sentence: 'It was in London ___ they got married. (nơi chốn)', answer: 'that', hint: 'that', kind: 'khẳng định' },
+            { id: 12, sentence: 'It is honesty ___ matters most. (vật)', answer: 'that', hint: 'that', kind: 'khẳng định' },
+            { id: 13, sentence: '___ we need is more time. (wh-cleft)', answer: 'What', hint: 'What...', kind: 'khẳng định' },
+            { id: 14, sentence: 'It was Sarah ___ organized the event. (người)', answer: 'who', hint: 'who/that', kind: 'khẳng định' },
+            { id: 15, sentence: 'It was ___ 2010 that I moved here. (thời gian → giới từ)', answer: 'in', hint: 'in 2010', kind: 'khẳng định' },
+            { id: 16, sentence: 'What he wants ___ a second chance. (động từ be)', answer: 'is', hint: 'be', kind: 'khẳng định' },
+            { id: 17, sentence: 'It was the teacher ___ inspired me. (người)', answer: 'who', hint: 'who/that', kind: 'khẳng định' },
+            { id: 18, sentence: '___ surprised everyone was her decision. (wh-cleft)', answer: 'What', hint: 'What...', kind: 'khẳng định' },
+            { id: 19, sentence: 'It is your support ___ keeps me going. (vật)', answer: 'that', hint: 'that', kind: 'khẳng định' },
+            { id: 20, sentence: 'It was on Monday ___ the meeting took place. (thời gian)', answer: 'that', hint: 'that', kind: 'khẳng định' }
         ]
     }
 };

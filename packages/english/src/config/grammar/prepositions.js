@@ -52,7 +52,21 @@ const content = {
             { id: 3, sentence: 'We have a test ___ Monday.', answer: 'on', hint: 'thứ', kind: 'khẳng định' },
             { id: 4, sentence: 'She was born ___ 1995.', answer: 'in', hint: 'năm', kind: 'khẳng định' },
             { id: 5, sentence: 'I usually read ___ night.', answer: 'at', hint: 'ngoại lệ', kind: 'khẳng định' },
-            { id: 6, sentence: 'The party is ___ New Year\'s Eve.', answer: 'on', hint: 'dịp cụ thể', kind: 'khẳng định' }
+            { id: 6, sentence: 'The party is ___ New Year\'s Eve.', answer: 'on', hint: 'dịp cụ thể', kind: 'khẳng định' },
+            { id: 7, sentence: 'The shop opens ___ the morning.', answer: 'in', hint: 'buổi', kind: 'khẳng định' },
+            { id: 8, sentence: 'We met ___ midnight.', answer: 'at', hint: 'thời điểm', kind: 'khẳng định' },
+            { id: 9, sentence: 'School starts ___ September.', answer: 'in', hint: 'tháng', kind: 'khẳng định' },
+            { id: 10, sentence: 'They got married ___ Saturday.', answer: 'on', hint: 'thứ', kind: 'khẳng định' },
+            { id: 11, sentence: 'I always feel sleepy ___ the afternoon.', answer: 'in', hint: 'buổi', kind: 'khẳng định' },
+            { id: 12, sentence: 'The train leaves ___ 6:45.', answer: 'at', hint: 'giờ', kind: 'khẳng định' },
+            { id: 13, sentence: 'It often snows ___ winter.', answer: 'in', hint: 'mùa', kind: 'khẳng định' },
+            { id: 14, sentence: 'We have a meeting ___ Friday afternoon.', answer: 'on', hint: 'ngày cụ thể', kind: 'khẳng định' },
+            { id: 15, sentence: 'The shop closes ___ 9 PM.', answer: 'at', hint: 'giờ', kind: 'khẳng định' },
+            { id: 16, sentence: 'He was born ___ the 1980s.', answer: 'in', hint: 'thập kỷ', kind: 'khẳng định' },
+            { id: 17, sentence: 'I\'ll call you ___ lunchtime.', answer: 'at', hint: 'thời điểm', kind: 'khẳng định' },
+            { id: 18, sentence: 'My favourite holiday is ___ December.', answer: 'in', hint: 'tháng', kind: 'khẳng định' },
+            { id: 19, sentence: 'The concert is ___ my birthday.', answer: 'on', hint: 'dịp cụ thể', kind: 'khẳng định' },
+            { id: 20, sentence: 'Owls hunt ___ night.', answer: 'at', hint: 'ngoại lệ', kind: 'khẳng định' }
         ]
     },
     'prep-place': {
@@ -91,7 +105,21 @@ const content = {
             { id: 3, sentence: 'I\'ll meet you ___ the station.', answer: 'at', hint: 'điểm', kind: 'khẳng định' },
             { id: 4, sentence: 'The cat is ___ the chair. (bên dưới)', answer: 'under', hint: 'bên dưới', kind: 'khẳng định' },
             { id: 5, sentence: 'The bank is ___ the shop and the cafe. (giữa)', answer: 'between', hint: 'giữa hai', kind: 'khẳng định' },
-            { id: 6, sentence: 'We were ___ a plane to Tokyo.', answer: 'on', hint: 'phương tiện lớn', kind: 'khẳng định' }
+            { id: 6, sentence: 'We were ___ a plane to Tokyo.', answer: 'on', hint: 'phương tiện lớn', kind: 'khẳng định' },
+            { id: 7, sentence: 'There is a picture ___ the wall.', answer: 'on', hint: 'bề mặt', kind: 'khẳng định' },
+            { id: 8, sentence: 'The children are playing ___ the garden.', answer: 'in', hint: 'không gian', kind: 'khẳng định' },
+            { id: 9, sentence: 'I waited for you ___ the corner.', answer: 'at', hint: 'điểm', kind: 'khẳng định' },
+            { id: 10, sentence: 'The ball rolled ___ the sofa. (bên dưới)', answer: 'under', hint: 'bên dưới', kind: 'khẳng định' },
+            { id: 11, sentence: 'My office is ___ the third floor.', answer: 'on', hint: 'tầng', kind: 'khẳng định' },
+            { id: 12, sentence: 'She lives ___ a small village.', answer: 'in', hint: 'không gian', kind: 'khẳng định' },
+            { id: 13, sentence: 'The dog is sitting ___ the door. (cạnh)', answer: 'next to', hint: 'cạnh', kind: 'khẳng định' },
+            { id: 14, sentence: 'We sat ___ the back of the bus.', answer: 'at', hint: 'điểm/vị trí', kind: 'khẳng định' },
+            { id: 15, sentence: 'There is a garage ___ the house. (phía sau)', answer: 'behind', hint: 'phía sau', kind: 'khẳng định' },
+            { id: 16, sentence: 'The milk is ___ the fridge.', answer: 'in', hint: 'bên trong', kind: 'khẳng định' },
+            { id: 17, sentence: 'A car is parked ___ the building. (phía trước)', answer: 'in front of', hint: 'phía trước', kind: 'khẳng định' },
+            { id: 18, sentence: 'Put your coat ___ the hook.', answer: 'on', hint: 'bề mặt', kind: 'khẳng định' },
+            { id: 19, sentence: 'They are waiting ___ the bus stop.', answer: 'at', hint: 'điểm', kind: 'khẳng định' },
+            { id: 20, sentence: 'The library is ___ the bank and the post office. (giữa)', answer: 'between', hint: 'giữa hai', kind: 'khẳng định' }
         ]
     },
     'prep-movement': {
@@ -130,7 +158,21 @@ const content = {
             { id: 3, sentence: 'The train went ___ the tunnel. (xuyên qua)', answer: 'through', hint: 'xuyên qua', kind: 'khẳng định' },
             { id: 4, sentence: 'She swam ___ the lake. (băng qua)', answer: 'across', hint: 'băng qua', kind: 'khẳng định' },
             { id: 5, sentence: 'The cat jumped ___ the box. (ra khỏi)', answer: 'out of', hint: 'ra khỏi', kind: 'khẳng định' },
-            { id: 6, sentence: 'He is walking ___ the station. (về phía)', answer: 'towards', hint: 'về phía', kind: 'khẳng định' }
+            { id: 6, sentence: 'He is walking ___ the station. (về phía)', answer: 'towards', hint: 'về phía', kind: 'khẳng định' },
+            { id: 7, sentence: 'She ran ___ the bridge to the other side. (băng qua)', answer: 'across', hint: 'băng qua bề mặt', kind: 'khẳng định' },
+            { id: 8, sentence: 'The kids climbed ___ the tree. (lên)', answer: 'up', hint: 'lên', kind: 'khẳng định' },
+            { id: 9, sentence: 'We walked ___ the park on our way home. (xuyên qua)', answer: 'through', hint: 'xuyên qua', kind: 'khẳng định' },
+            { id: 10, sentence: 'He got ___ the car and drove off. (vào trong)', answer: 'into', hint: 'vào trong', kind: 'khẳng định' },
+            { id: 11, sentence: 'The ball rolled ___ the hill. (xuống)', answer: 'down', hint: 'xuống', kind: 'khẳng định' },
+            { id: 12, sentence: 'They sailed ___ the ocean. (băng qua)', answer: 'across', hint: 'băng qua', kind: 'khẳng định' },
+            { id: 13, sentence: 'The mouse ran ___ its hole. (ra khỏi)', answer: 'out of', hint: 'ra khỏi', kind: 'khẳng định' },
+            { id: 14, sentence: 'We flew ___ Paris last summer. (hướng đích)', answer: 'to', hint: 'hướng đích', kind: 'khẳng định' },
+            { id: 15, sentence: 'She walked ___ the river bank for an hour. (dọc theo)', answer: 'along', hint: 'dọc theo', kind: 'khẳng định' },
+            { id: 16, sentence: 'The thief ran ___ from the police. (rời xa)', answer: 'away', hint: 'rời xa', kind: 'khẳng định' },
+            { id: 17, sentence: 'Pour the water ___ the glass. (vào trong)', answer: 'into', hint: 'vào trong', kind: 'khẳng định' },
+            { id: 18, sentence: 'The plane flew ___ the clouds. (xuyên qua)', answer: 'through', hint: 'xuyên qua', kind: 'khẳng định' },
+            { id: 19, sentence: 'He climbed ___ the ladder to fix the roof. (lên)', answer: 'up', hint: 'lên', kind: 'khẳng định' },
+            { id: 20, sentence: 'They drove ___ the airport to catch the flight. (hướng đích)', answer: 'to', hint: 'hướng đích', kind: 'khẳng định' }
         ]
     }
 };

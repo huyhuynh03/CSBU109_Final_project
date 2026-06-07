@@ -49,7 +49,21 @@ const content = {
             { id: 3, sentence: 'These cars ___ (make) in Japan.', answer: 'are made', hint: 'be + V3', kind: 'khẳng định' },
             { id: 4, sentence: 'The window ___ (not/clean) yesterday.', answer: 'was not cleaned', hint: 'phủ định', kind: 'phủ định' },
             { id: 5, sentence: 'English ___ (speak) in many countries.', answer: 'is spoken', hint: 'be + V3', kind: 'khẳng định' },
-            { id: 6, sentence: 'The thief ___ (catch) by the police last night.', answer: 'was caught', hint: 'be + V3', kind: 'khẳng định' }
+            { id: 6, sentence: 'The thief ___ (catch) by the police last night.', answer: 'was caught', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 7, sentence: 'Coffee ___ (produce) in Brazil. (hiện tại đơn)', answer: 'is produced', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 8, sentence: 'The bridge ___ (design) by a famous architect. (quá khứ)', answer: 'was designed', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 9, sentence: 'These products ___ (not/sell) in our shop.', answer: 'are not sold', hint: 'phủ định', kind: 'phủ định' },
+            { id: 10, sentence: 'The museum ___ (visit) by thousands of tourists every year.', answer: 'is visited', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 11, sentence: 'My bike ___ (steal) last weekend.', answer: 'was stolen', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 12, sentence: 'Spanish ___ (teach) in this school.', answer: 'is taught', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 13, sentence: 'The documents ___ (not/sign) yesterday.', answer: 'were not signed', hint: 'phủ định', kind: 'phủ định' },
+            { id: 14, sentence: 'The results ___ (announce) tomorrow.', answer: 'are announced', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 15, sentence: 'A new hospital ___ (open) last month.', answer: 'was opened', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 16, sentence: 'The food ___ (serve) at eight o\'clock.', answer: 'is served', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 17, sentence: 'The windows ___ (break) during the storm.', answer: 'were broken', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 18, sentence: 'This song ___ (love) by millions of fans.', answer: 'is loved', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 19, sentence: 'The lost child ___ (find) safe and well.', answer: 'was found', hint: 'be + V3', kind: 'khẳng định' },
+            { id: 20, sentence: 'These rules ___ (not/understand) by the new students.', answer: 'are not understood', hint: 'phủ định', kind: 'phủ định' }
         ]
     },
     'passive-tenses': {
@@ -95,7 +109,21 @@ const content = {
             { id: 3, sentence: 'All the tickets ___ (sell) already. (HT hoàn thành)', answer: 'have been sold', hint: 'have been + V3', kind: 'khẳng định' },
             { id: 4, sentence: 'The bridge ___ (repair) when we arrived. (QK tiếp diễn)', answer: 'was being repaired', hint: 'was being + V3', kind: 'khẳng định' },
             { id: 5, sentence: 'This rule ___ (must/follow) by everyone. (modal)', answer: 'must be followed', hint: 'modal + be + V3', kind: 'khẳng định' },
-            { id: 6, sentence: 'The report ___ (not/finish) yet. (HT hoàn thành phủ định)', answer: 'has not been finished', hint: 'phủ định', kind: 'phủ định' }
+            { id: 6, sentence: 'The report ___ (not/finish) yet. (HT hoàn thành phủ định)', answer: 'has not been finished', hint: 'phủ định', kind: 'phủ định' },
+            { id: 7, sentence: 'The dinner ___ (cook) at the moment. (HT tiếp diễn)', answer: 'is being cooked', hint: 'is being + V3', kind: 'khẳng định' },
+            { id: 8, sentence: 'The new stadium ___ (build) by 2030. (tương lai)', answer: 'will be built', hint: 'will be + V3', kind: 'khẳng định' },
+            { id: 9, sentence: 'The keys ___ (lose) somewhere in the park. (HT hoàn thành)', answer: 'have been lost', hint: 'have been + V3', kind: 'khẳng định' },
+            { id: 10, sentence: 'The streets ___ (clean) when I left this morning. (QK tiếp diễn)', answer: 'were being cleaned', hint: 'were being + V3', kind: 'khẳng định' },
+            { id: 11, sentence: 'This medicine ___ (should/keep) in a cool place. (modal)', answer: 'should be kept', hint: 'modal + be + V3', kind: 'khẳng định' },
+            { id: 12, sentence: 'The garden ___ (water) every morning. (HT đơn)', answer: 'is watered', hint: 'is + V3', kind: 'khẳng định' },
+            { id: 13, sentence: 'The decision ___ (make) at yesterday\'s meeting. (QK đơn)', answer: 'was made', hint: 'was + V3', kind: 'khẳng định' },
+            { id: 14, sentence: 'The package ___ (deliver) tomorrow morning. (tương lai)', answer: 'will be delivered', hint: 'will be + V3', kind: 'khẳng định' },
+            { id: 15, sentence: 'The patient ___ (examine) by the doctor right now. (HT tiếp diễn)', answer: 'is being examined', hint: 'is being + V3', kind: 'khẳng định' },
+            { id: 16, sentence: 'All the homework ___ (complete) already. (HT hoàn thành)', answer: 'has been completed', hint: 'has been + V3', kind: 'khẳng định' },
+            { id: 17, sentence: 'The contract ___ (must/review) before signing. (modal)', answer: 'must be reviewed', hint: 'modal + be + V3', kind: 'khẳng định' },
+            { id: 18, sentence: 'The classrooms ___ (not/use) during the holiday. (QK đơn phủ định)', answer: 'were not used', hint: 'phủ định', kind: 'phủ định' },
+            { id: 19, sentence: 'The road ___ (repair) at the moment, so it\'s closed. (HT tiếp diễn)', answer: 'is being repaired', hint: 'is being + V3', kind: 'khẳng định' },
+            { id: 20, sentence: 'The invitations ___ (send) by the end of the week. (tương lai)', answer: 'will be sent', hint: 'will be + V3', kind: 'khẳng định' }
         ]
     },
     'passive-special': {
@@ -131,7 +159,21 @@ const content = {
             { id: 3, sentence: 'She got her photo ___ (take) by a professional.', answer: 'taken', hint: 'get + O + V3', kind: 'khẳng định' },
             { id: 4, sentence: 'He is ___ (believe) to be the best player.', answer: 'believed', hint: 'V3', kind: 'khẳng định' },
             { id: 5, sentence: 'We are getting the roof ___ (repair) next week.', answer: 'repaired', hint: 'get + O + V3', kind: 'khẳng định' },
-            { id: 6, sentence: 'It is ___ (think) that prices will rise.', answer: 'thought', hint: 'V3', kind: 'khẳng định' }
+            { id: 6, sentence: 'It is ___ (think) that prices will rise.', answer: 'thought', hint: 'V3', kind: 'khẳng định' },
+            { id: 7, sentence: 'He is ___ (know) to have lived abroad for years.', answer: 'known', hint: 'V3', kind: 'khẳng định' },
+            { id: 8, sentence: 'They are getting their kitchen ___ (renovate) this summer.', answer: 'renovated', hint: 'get + O + V3', kind: 'khẳng định' },
+            { id: 9, sentence: 'It is ___ (report) that the storm caused great damage.', answer: 'reported', hint: 'V3', kind: 'khẳng định' },
+            { id: 10, sentence: 'I need to have my eyes ___ (test) soon.', answer: 'tested', hint: 'have + O + V3', kind: 'khẳng định' },
+            { id: 11, sentence: 'The actor is ___ (rumour) to be retiring.', answer: 'rumoured', hint: 'V3', kind: 'khẳng định' },
+            { id: 12, sentence: 'She had her passport ___ (renew) last month.', answer: 'renewed', hint: 'have + O + V3', kind: 'khẳng định' },
+            { id: 13, sentence: 'It is ___ (expect) that the economy will improve.', answer: 'expected', hint: 'V3', kind: 'khẳng định' },
+            { id: 14, sentence: 'We got the documents ___ (translate) by an expert.', answer: 'translated', hint: 'get + O + V3', kind: 'khẳng định' },
+            { id: 15, sentence: 'The minister is ___ (suppose) to make a statement today.', answer: 'supposed', hint: 'V3', kind: 'khẳng định' },
+            { id: 16, sentence: 'They are having a new fence ___ (install) around the garden.', answer: 'installed', hint: 'have + O + V3', kind: 'khẳng định' },
+            { id: 17, sentence: 'It is ___ (claim) that the product is completely safe.', answer: 'claimed', hint: 'V3', kind: 'khẳng định' },
+            { id: 18, sentence: 'I must get my watch ___ (repair) — it stopped working.', answer: 'repaired', hint: 'get + O + V3', kind: 'khẳng định' },
+            { id: 19, sentence: 'The professor is ___ (consider) to be an expert in the field.', answer: 'considered', hint: 'V3', kind: 'khẳng định' },
+            { id: 20, sentence: 'She had her portrait ___ (paint) by a famous artist.', answer: 'painted', hint: 'have + O + V3', kind: 'khẳng định' }
         ]
     }
 };
