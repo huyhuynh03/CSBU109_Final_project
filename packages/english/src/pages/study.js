@@ -786,7 +786,7 @@ const StudyPage = {
                     <button class="review-btn-secondary" onclick="Router.navigate('/english/vocabulary')" style="flex:1;">
                         Về từ vựng
                     </button>
-                    <button class="review-btn-primary" onclick="StudyPage._continueLearning()" style="flex:1;">
+                    <button class="review-btn-primary" onclick="StudyPage._viewTopic()" style="flex:1;">
                         Học tiếp
                     </button>
                 </div>
@@ -795,82 +795,18 @@ const StudyPage = {
     },
 
     /**
-     * "Học tiếp" sau khi hoàn thành một phiên.
-     * Dùng lại phạm vi (filter) đã lưu trong session thay vì đọc lại URL hash
-     * (hash có thể còn giữ cardId cũ → khiến học lại đúng từ vừa học).
-     * Loại trừ các thẻ đã học trong phiên trước để không lặp lại (nhiều thẻ vẫn
-     * ở state "learning" do chính sách chấm điểm nghiêm ngặt nên vẫn match
-     * isNewOrLearning).
+     * "Học tiếp": chuyển tới trang chi tiết topic của từ vừa học để hiển thị
+     * TOÀN BỘ từ vựng của topic đó (cho user tự chọn từ tiếp theo), thay vì
+     * nhảy thẳng vào từ kế tiếp trong topic.
+     * Nếu phiên không gắn với topic cụ thể (vd "Học từ mới" chung), fallback
+     * về trang danh sách từ vựng.
      */
-    async _continueLearning() {
-        const prev = this._session;
-        if (!prev) {
-            this.onEnter();
-            return;
-        }
-        const filter = prev.filter || { type: prev.type };
-        const studiedIds = new Set(prev.cards.map(c => c.id));
-
-        const root = document.getElementById('study-page-root');
-        if (root) {
-            root.innerHTML = `
-                <div class="review-loading">
-                    <span class="material-icons-round" style="font-size:40px;color:var(--color-text-muted);animation:spin 1s linear infinite;">hourglass_empty</span>
-                    <p style="color:var(--color-text-muted);margin-top:var(--spacing-sm);">Đang tải phiên học...</p>
-                </div>`;
-        }
-
-        try {
-            const type = filter.type || 'vocabulary';
-            const allTypeCards = await FirestoreDB.getCards({ cardType: type });
-            this._allTypeCards = allTypeCards;
-
-            const isNewOrLearning = (c) => {
-                const st = c.state;
-                return st === 'new' || st === 'learning'
-                    || st === FSRS.State.NEW || st === FSRS.State.LEARNING;
-            };
-            let cards = allTypeCards.filter(isNewOrLearning);
-
-            if (filter.topicId) {
-                cards = cards.filter(c => c.folderId === filter.topicId);
-            }
-            if (filter.familyId) {
-                cards = cards.filter(c => c.fieldValues?.familyId === filter.familyId);
-            }
-            if (filter.groupType && filter.groupKey) {
-                cards = cards.filter(c => FamilyWordManager.belongsToGroup(c, filter.groupType, filter.groupKey));
-            }
-            // Loại trừ các thẻ đã học ở phiên trước để tránh lặp lại.
-            cards = cards.filter(c => !studiedIds.has(c.id));
-
-            if (cards.length === 0) {
-                this._renderEmpty();
-                return;
-            }
-
-            cards.sort((a, b) => {
-                const oa = a.fieldValues?.familyOrder ?? 99;
-                const ob = b.fieldValues?.familyOrder ?? 99;
-                if (oa !== ob) return oa - ob;
-                return 0;
-            });
-            cards = cards.slice(0, 20);
-
-            this._session = {
-                cards,
-                type,
-                currentIndex: 0,
-                currentStep: 1,
-                results: {},
-                startedAt: new Date(),
-                filter
-            };
-            this._startedAt = Date.now();
-            this._renderStep();
-        } catch (error) {
-            console.error('[StudyPage] Continue learning error:', error);
-            this._renderError(error.message);
+    _viewTopic() {
+        const filter = this._session?.filter || {};
+        if (filter.topicId) {
+            Router.navigate(`/english/topic/${encodeURIComponent(filter.topicId)}`);
+        } else {
+            Router.navigate('/english/vocabulary');
         }
     },
 
