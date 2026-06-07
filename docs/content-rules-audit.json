@@ -1,0 +1,553 @@
+{
+  "generatedAt": "2026-06-07T08:48:40.172Z",
+  "phraseCandidates": [
+    {
+      "word": "attend class",
+      "meaning": "tham gia buổi học",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "book an appointment",
+      "meaning": "đặt lịch hẹn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "breathe deeply",
+      "meaning": "hít thở sâu",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "browse the internet",
+      "meaning": "lướt internet",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "brush your teeth",
+      "meaning": "đánh răng",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "buy groceries",
+      "meaning": "mua thực phẩm/hàng tạp hóa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "cancel an appointment",
+      "meaning": "hủy lịch hẹn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "catch the train",
+      "meaning": "bắt tàu",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "charge your phone",
+      "meaning": "sạc điện thoại",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "check emails",
+      "meaning": "kiểm tra email",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "check the weather",
+      "meaning": "kiểm tra thời tiết",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "choose an outfit",
+      "meaning": "chọn trang phục",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "clean the house",
+      "meaning": "dọn dẹp nhà cửa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "clear the table",
+      "meaning": "dọn bàn sau bữa ăn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "comb your hair",
+      "meaning": "chải tóc",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "cook dinner",
+      "meaning": "nấu bữa tối",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "cross the street",
+      "meaning": "băng qua đường",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "do homework",
+      "meaning": "làm bài tập về nhà",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "do the dishes",
+      "meaning": "rửa bát đĩa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "do the laundry",
+      "meaning": "giặt giũ",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "dry your hair",
+      "meaning": "sấy/lau khô tóc",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "dust the shelves",
+      "meaning": "lau bụi kệ",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "fall asleep",
+      "meaning": "ngủ thiếp đi, chìm vào giấc ngủ",
+      "files": [
+        "data/daily-life.json"
+      ]
+    },
+    {
+      "word": "feed the pet",
+      "meaning": "cho thú cưng ăn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "fold clothes",
+      "meaning": "gấp quần áo",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "furious with",
+      "meaning": "giận dữ với ai/cái gì",
+      "files": [
+        "data/emotion-feelings.json"
+      ]
+    },
+    {
+      "word": "get dressed",
+      "meaning": "mặc quần áo xong",
+      "files": [
+        "data/daily-life.json"
+      ]
+    },
+    {
+      "word": "go for a walk",
+      "meaning": "đi dạo",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "go to bed",
+      "meaning": "đi ngủ",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "hang clothes",
+      "meaning": "phơi/treo quần áo",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "help with chores",
+      "meaning": "giúp làm việc nhà",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "leave home",
+      "meaning": "rời khỏi nhà",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "listen to music",
+      "meaning": "nghe nhạc",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "lock the door",
+      "meaning": "khóa cửa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "make a phone call",
+      "meaning": "gọi điện thoại",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "make coffee",
+      "meaning": "pha cà phê",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "make the bed",
+      "meaning": "dọn giường",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "meet friends",
+      "meaning": "gặp bạn bè",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "mop the floor",
+      "meaning": "lau sàn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "open the curtains",
+      "meaning": "mở rèm cửa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "pack a bag",
+      "meaning": "chuẩn bị/cất đồ vào túi",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "pack lunch",
+      "meaning": "chuẩn bị cơm trưa mang theo",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "pay the bill",
+      "meaning": "thanh toán hóa đơn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "play games",
+      "meaning": "chơi trò chơi",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "pour milk",
+      "meaning": "rót sữa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "prepare breakfast",
+      "meaning": "chuẩn bị bữa sáng",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "prepare for tomorrow",
+      "meaning": "chuẩn bị cho ngày mai",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "put on makeup",
+      "meaning": "trang điểm",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "read a book",
+      "meaning": "đọc sách",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "reply to messages",
+      "meaning": "trả lời tin nhắn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "review lessons",
+      "meaning": "ôn bài",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "run errands",
+      "meaning": "làm việc vặt bên ngoài",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "send a text",
+      "meaning": "gửi tin nhắn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "set an alarm",
+      "meaning": "đặt báo thức",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "set the table",
+      "meaning": "dọn bàn ăn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "spend time with family",
+      "meaning": "dành thời gian cho gia đình",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "submit homework",
+      "meaning": "nộp bài tập",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "sweep the floor",
+      "meaning": "quét sàn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take a nap",
+      "meaning": "ngủ trưa, chợp mắt",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take a shower",
+      "meaning": "tắm vòi sen",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take care of someone",
+      "meaning": "chăm sóc ai đó",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take medicine",
+      "meaning": "uống thuốc",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take notes",
+      "meaning": "ghi chú",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take out the trash",
+      "meaning": "đổ rác",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "take the bus",
+      "meaning": "đi xe buýt",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "tidy the room",
+      "meaning": "dọn phòng gọn gàng",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "turn off the lights",
+      "meaning": "tắt đèn",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "vacuum the carpet",
+      "meaning": "hút bụi thảm",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "wait in line",
+      "meaning": "xếp hàng chờ",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "walk the dog",
+      "meaning": "dắt chó đi dạo",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "wash the dishes",
+      "meaning": "rửa bát đĩa",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "wash your face",
+      "meaning": "rửa mặt",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "watch TV",
+      "meaning": "xem TV",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "water the plants",
+      "meaning": "tưới cây",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    },
+    {
+      "word": "withdraw cash",
+      "meaning": "rút tiền mặt",
+      "files": [
+        "data/daily-activities.json"
+      ]
+    }
+  ],
+  "properNounCandidates": [
+    {
+      "dir": "data",
+      "file": "space.json",
+      "word": "Martian",
+      "pos": "adjective",
+      "meaning": "thuộc sao Hỏa"
+    },
+    {
+      "dir": "data",
+      "file": "space.json",
+      "word": "Venusian",
+      "pos": "adjective",
+      "meaning": "thuộc sao Kim"
+    },
+    {
+      "dir": "data",
+      "file": "space.json",
+      "word": "Jovian",
+      "pos": "adjective",
+      "meaning": "thuộc sao Mộc; kiểu sao Mộc"
+    }
+  ]
+}

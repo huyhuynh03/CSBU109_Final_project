@@ -4,7 +4,7 @@
     "topicName": "Nghệ thuật",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Arts (B1-B2)",
-    "totalCards": 90,
+    "totalCards": 88,
     "totalFamilies": 10,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Nghe thuat, da tranh trung voi cac topic seed hien co."
@@ -618,32 +618,6 @@
         "example": "Classical art values harmony and order.",
         "familyId": "arts-styles",
         "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "baroque",
-        "ipa": "/bəˈroʊk/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "thuộc phong cách Baroque",
-        "example": "Baroque churches are often dramatic.",
-        "familyId": "arts-styles",
-        "familyOrder": 5,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "gothic",
-        "ipa": "/ˈɡɑː.θɪk/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "thuộc phong cách Gothic",
-        "example": "Gothic architecture uses pointed arches.",
-        "familyId": "arts-styles",
-        "familyOrder": 6,
         "tags": []
       }
     },

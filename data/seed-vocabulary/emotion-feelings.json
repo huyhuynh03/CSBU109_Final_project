@@ -4,7 +4,7 @@
     "topicName": "Emotion & Feelings",
     "level": "intermediate",
     "source": "curated emotion and feelings vocabulary seed",
-    "totalCards": 140,
+    "totalCards": 139,
     "totalFamilies": 14,
     "generatedAt": "2026-05-08",
     "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
@@ -2057,22 +2057,6 @@
         "tags": [
           "negative",
           "strong"
-        ]
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "furious with",
-        "ipa": "/ˈfjʊriəs wɪð/",
-        "partOfSpeech": "phrase",
-        "difficulty": "intermediate",
-        "meaning": "giận dữ với ai/cái gì",
-        "example": "She was furious with herself for making the same mistake.",
-        "familyId": "intensity-nuance",
-        "familyOrder": 5,
-        "tags": [
-          "phrase",
-          "negative"
         ]
       }
     },
