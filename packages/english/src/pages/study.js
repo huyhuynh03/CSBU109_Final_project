@@ -483,7 +483,7 @@ const StudyPage = {
         `;
     },
 
-    _playWord(accent = 'us') {
+    _playWord(accent = 'gb') {
         const card = this._session.cards[this._session.currentIndex];
         const word = card?.fieldValues?.word || '';
         if (word && TTS.isAvailable()) {

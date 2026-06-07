@@ -14,7 +14,7 @@ const TTS = {
     _voices: [],
     _voiceByAccent: { us: null, gb: null },
     _ready: false,
-    _defaultAccent: 'us',
+    _defaultAccent: 'gb',
 
     // Map accent -> cấu hình đường dẫn + ngôn ngữ Web Speech
     _accents: {

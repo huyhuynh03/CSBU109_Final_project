@@ -1020,7 +1020,7 @@ const VocabularyPage = {
         Router.navigate(route);
     },
 
-    _searchActionSpeak(cardId, accent = 'us') {
+    _searchActionSpeak(cardId, accent = 'gb') {
         const card = this._findCardById(cardId);
         if (!card) return;
         const word = card.fieldValues?.word || card.word || '';

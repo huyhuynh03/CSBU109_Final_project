@@ -331,7 +331,7 @@ const ReviewPage = {
         `;
     },
 
-    _playAudio(accent = 'us') {
+    _playAudio(accent = 'gb') {
         const s = this._session;
         const card = s.cards[s.currentIndex];
         const word = card.fieldValues?.word || '';
