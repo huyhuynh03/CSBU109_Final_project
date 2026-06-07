@@ -302,11 +302,15 @@ const VocabularyPage = {
             await this._autoSeedTopics();
             await this._loadStats();
             this._lastLoadTime = Date.now();
-            // Chỉ re-render nếu data thực sự thay đổi
+            // Chỉ re-render topic grid nếu số lượng card thay đổi
             if (this._allCards && this._allCards.length !== oldCount) {
                 this._loadTopics();
-                this._saveHtmlCache();
             }
+            // Luôn refresh incomplete tracking vì card state có thể thay đổi
+            // (ví dụ: học xong family word → card chuyển từ new sang review)
+            // mà không làm thay đổi tổng số card.
+            await this._loadIncompleteTracking();
+            this._saveHtmlCache();
         } catch (e) {
             console.warn('[VocabularyPage] Background refresh error:', e);
         }

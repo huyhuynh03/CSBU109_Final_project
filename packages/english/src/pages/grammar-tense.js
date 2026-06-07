@@ -12,6 +12,7 @@ const GrammarTensePage = {
         }
 
         const id = params && params.id;
+        this._currentTenseId = id; // lưu để exercise logic dùng
         const tenses = (typeof GrammarTenses !== 'undefined') ? GrammarTenses : [];
         const tense = tenses.find(t => t.id === id);
         if (!tense) {
@@ -36,10 +37,10 @@ const GrammarTensePage = {
 
         const body = content
             ? `
+                ${content.usage ? this._usageBlock(content.usage) : ''}
                 ${content.formula ? this._formulaBlock(content.formula) : ''}
                 ${content.spelling ? this._spellingBlock(content.spelling) : ''}
-                ${this._placeholderBlock('Cách dùng', 'lightbulb', 'Nội dung sẽ được cập nhật.')}
-                ${this._placeholderBlock('Bài tập', 'quiz', 'Nội dung sẽ được cập nhật.')}
+                ${content.exercises && content.exercises.length ? this._exerciseBlock(content.exercises) : this._placeholderBlock('Bài tập', 'quiz', 'Nội dung sẽ được cập nhật.')}
               `
             : `<div class="glass-card" style="padding:var(--spacing-xl);text-align:center;">
                     <span class="material-icons-round" style="font-size:48px;color:var(--color-text-muted);">construction</span>
@@ -73,7 +74,40 @@ const GrammarTensePage = {
         `;
     },
 
-    // ---- Khối: Công thức ráp câu ----
+    // ---- Khối: Cách dùng ----
+    _usageBlock(usage) {
+        const items = (usage.items || []).map(item => `
+            <div style="display:flex;gap:10px;align-items:flex-start;margin-bottom:var(--spacing-md);">
+                <span class="material-icons-round" style="font-size:20px;color:#10B981;margin-top:2px;">${item.icon}</span>
+                <div>
+                    <b style="font-size:var(--font-size-sm);">${item.title}</b>
+                    <div style="margin-top:4px;font-size:var(--font-size-sm);color:var(--color-text-muted);">
+                        ${(item.examples || []).map(ex => `<div style="margin-top:2px;">• ${ex}</div>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        const signalWords = usage.signalWords
+            ? `<div style="margin-top:var(--spacing-md);padding:var(--spacing-sm) var(--spacing-md);background:rgba(59,130,246,0.06);border-radius:10px;border-left:3px solid #3B82F6;">
+                    <b style="font-size:var(--font-size-sm);color:#3B82F6;">${usage.signalWords.label}</b>
+                    <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;">
+                        ${(usage.signalWords.words || []).map(w => `<code style="background:rgba(127,127,127,0.12);padding:2px 8px;border-radius:6px;font-size:var(--font-size-xs);">${w}</code>`).join('')}
+                    </div>
+               </div>`
+            : '';
+
+        return `
+            <div class="glass-card" style="padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);">
+                ${this._blockTitle('lightbulb', 'Cách dùng')}
+                ${usage.intro ? `<p style="color:var(--color-text-muted);font-size:var(--font-size-sm);margin:var(--spacing-xs) 0 var(--spacing-md);">${usage.intro}</p>` : ''}
+                ${items}
+                ${signalWords}
+            </div>
+        `;
+    },
+
+    // ---- Khối: Công thức ----
     _formulaBlock(formula) {
         const groups = (formula.groups || []).map(g => this._formulaGroup(g)).join('');
         const contractions = (formula.contractions && formula.contractions.length)
@@ -84,7 +118,7 @@ const GrammarTensePage = {
             : '';
         return `
             <div class="glass-card" style="padding:var(--spacing-lg);margin-bottom:var(--spacing-lg);">
-                ${this._blockTitle('functions', 'Công thức ráp câu')}
+                ${this._blockTitle('functions', 'Công thức')}
                 ${formula.note ? `<p style="color:var(--color-text-muted);font-size:var(--font-size-sm);margin:0 0 var(--spacing-md);">${formula.note}</p>` : ''}
                 ${groups}
                 ${contractions}
@@ -166,6 +200,137 @@ const GrammarTensePage = {
                 ${mnemonics}
             </div>
         `;
+    },
+
+    // ---- Khối: Bài tập (fill-in-the-blank) ----
+    _exerciseBlock(exercises) {
+        const items = exercises.map((ex, i) => `
+            <div class="grammar-exercise-item" id="ex-item-${ex.id}" style="padding:var(--spacing-md);border-bottom:1px solid var(--color-border);">
+                <div style="display:flex;align-items:flex-start;gap:10px;">
+                    <span style="min-width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--color-primary);color:#fff;font-size:12px;font-weight:700;">${i + 1}</span>
+                    <div style="flex:1;">
+                        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:var(--font-size-sm);">
+                            ${this._renderSentenceWithBlank(ex)}
+                        </div>
+                        <div style="margin-top:6px;display:flex;align-items:center;gap:8px;">
+                            <span style="font-size:var(--font-size-xs);color:var(--color-text-muted);background:rgba(127,127,127,0.1);padding:2px 8px;border-radius:6px;">${ex.hint} · ${ex.kind}</span>
+                            <button onclick="GrammarTensePage.checkSingle(${ex.id})"
+                                    style="font-size:var(--font-size-xs);padding:4px 12px;border:none;border-radius:6px;background:var(--color-primary);color:#fff;cursor:pointer;font-weight:600;">
+                                Kiểm tra
+                            </button>
+                            <span id="ex-feedback-${ex.id}" style="font-size:var(--font-size-xs);font-weight:600;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        return `
+            <div class="glass-card" style="padding:0;margin-bottom:var(--spacing-lg);overflow:hidden;">
+                <div style="padding:var(--spacing-lg);border-bottom:1px solid var(--color-border);">
+                    ${this._blockTitle('quiz', 'Bài tập')}
+                    <p style="color:var(--color-text-muted);font-size:var(--font-size-sm);margin:var(--spacing-xs) 0 0;">Điền từ thích hợp vào chỗ trống. Nhấn "Kiểm tra" để xem kết quả từng câu, hoặc "Nộp tất cả" ở cuối.</p>
+                </div>
+                ${items}
+                <div style="padding:var(--spacing-lg);display:flex;align-items:center;gap:var(--spacing-md);flex-wrap:wrap;">
+                    <button onclick="GrammarTensePage.checkAll()"
+                            style="padding:10px 24px;border:none;border-radius:10px;background:linear-gradient(135deg,#10B981 0%,#059669 100%);color:#fff;font-size:var(--font-size-sm);font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(16,185,129,0.3);">
+                        <span class="material-icons-round" style="font-size:16px;vertical-align:middle;margin-right:4px;">done_all</span>Nộp tất cả
+                    </button>
+                    <span id="ex-summary" style="font-size:var(--font-size-sm);font-weight:600;"></span>
+                </div>
+            </div>
+        `;
+    },
+
+    _renderSentenceWithBlank(ex) {
+        // Hỗ trợ nhiều ô trống trong cùng một câu, ví dụ: "___ you ___ (listen) ...".
+        // Mỗi ô trống được render thành một input riêng; khi kiểm tra sẽ nối các input lại theo thứ tự.
+        const parts = ex.sentence.split('___');
+        if (parts.length < 2) return `<span>${ex.sentence}</span>`;
+
+        const inputStyle = 'min-width:90px;width:120px;padding:4px 8px;border:2px solid var(--color-border);border-radius:8px;font-size:var(--font-size-sm);text-align:center;background:var(--color-surface);color:var(--color-text);outline:none;transition:border-color 0.2s;';
+
+        return parts.map((part, index) => {
+            const text = part ? `<span>${part}</span>` : '';
+            if (index === parts.length - 1) return text;
+
+            return `${text}<input id="ex-input-${ex.id}-${index}" data-exercise-id="${ex.id}" type="text" autocomplete="off" spellcheck="false"
+                        style="${inputStyle}"
+                        onfocus="this.style.borderColor='var(--color-primary)'" onblur="this.style.borderColor='var(--color-border)'"
+                    />`;
+        }).join('');
+    },
+
+    // --- Exercise logic ---
+    _getExercises() {
+        const id = this._currentTenseId || 'present-simple';
+        const content = (typeof GrammarTenseContent !== 'undefined') ? GrammarTenseContent[id] : null;
+        return content && content.exercises ? content.exercises : [];
+    },
+
+    _getExerciseInputs(id) {
+        return Array.from(document.querySelectorAll(`[data-exercise-id="${id}"]`));
+    },
+
+    _getExerciseUserAnswer(id) {
+        return this._getExerciseInputs(id)
+            .map(input => input.value.trim())
+            .filter(Boolean)
+            .join(' ');
+    },
+
+    _hasCompletedExerciseInputs(id) {
+        const inputs = this._getExerciseInputs(id);
+        return inputs.length > 0 && inputs.every(input => input.value.trim());
+    },
+
+    _normalizeAnswer(value) {
+        return String(value || '').trim().replace(/\s+/g, ' ').toLowerCase();
+    },
+
+    _setExerciseResult(id, correct, answer) {
+        const inputs = this._getExerciseInputs(id);
+        const feedback = document.getElementById(`ex-feedback-${id}`);
+        if (!inputs.length || !feedback) return;
+
+        inputs.forEach(input => {
+            input.style.borderColor = correct ? '#10B981' : '#EF4444';
+            input.style.background = correct ? 'rgba(16,185,129,0.08)' : 'rgba(239,68,68,0.08)';
+        });
+        feedback.textContent = correct ? '✓ Đúng' : `✗ Sai — đáp án: ${answer}`;
+        feedback.style.color = correct ? '#10B981' : '#EF4444';
+    },
+
+    checkSingle(id) {
+        const exercises = this._getExercises();
+        const ex = exercises.find(e => e.id === id);
+        if (!ex) return;
+
+        const userAnswer = this._getExerciseUserAnswer(id);
+        const correct = this._hasCompletedExerciseInputs(id)
+            && this._normalizeAnswer(userAnswer) === this._normalizeAnswer(ex.answer);
+
+        this._setExerciseResult(id, correct, ex.answer);
+    },
+
+    checkAll() {
+        const exercises = this._getExercises();
+        let correctCount = 0;
+        exercises.forEach(ex => {
+            const userAnswer = this._getExerciseUserAnswer(ex.id);
+            const correct = this._hasCompletedExerciseInputs(ex.id)
+                && this._normalizeAnswer(userAnswer) === this._normalizeAnswer(ex.answer);
+
+            this._setExerciseResult(ex.id, correct, ex.answer);
+            if (correct) correctCount++;
+        });
+
+        const summary = document.getElementById('ex-summary');
+        if (summary) {
+            summary.textContent = `Kết quả: ${correctCount}/${exercises.length} câu đúng`;
+            summary.style.color = correctCount === exercises.length ? '#10B981' : (correctCount >= exercises.length / 2 ? '#F59E0B' : '#EF4444');
+        }
     },
 
     _placeholderBlock(title, icon, text) {
