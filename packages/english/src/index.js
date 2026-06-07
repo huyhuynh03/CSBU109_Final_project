@@ -41,6 +41,9 @@ window.SeedImporter = SeedImporter;
 import BqtV2Cleanup from './fsrs/bqt-v2-cleanup.js';
 window.BqtV2Cleanup = BqtV2Cleanup;
 
+import ContentRulesCleanup from './fsrs/content-rules-cleanup.js';
+window.ContentRulesCleanup = ContentRulesCleanup;
+
 import CardModeManager from './fsrs/card-mode-manager.js';
 window.CardModeManager = CardModeManager;
 

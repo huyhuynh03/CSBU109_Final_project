@@ -59,6 +59,9 @@ const TopicDetailPage = {
             // phải biến mất khỏi UI lập tức và bị xóa khỏi Firestore của user hiện tại.
             topicCards = await this._purgeInvalidTopicVocabularyCards(topicCards);
 
+            // Cleanup thẻ vi phạm luật nội dung (cụm word-by-word, danh từ riêng ít phổ biến).
+            topicCards = await this._purgeContentRuleViolationCards(topicCards);
+
             this._cards = topicCards;
             this._renderPage();
         } catch (error) {
@@ -121,6 +124,34 @@ const TopicDetailPage = {
 
         // Không cho hiển thị lại dù delete tạm thời lỗi/network pending.
         return topicCards.filter(card => !this._getInvalidTopicVocabularyRule(card));
+    },
+
+    /**
+     * Xoá + ẩn thẻ vi phạm luật nội dung từ vựng (xem plans/vocabulary-content-rules.md).
+     * Dùng danh sách dùng chung từ ContentRulesCleanup để luôn đồng bộ.
+     */
+    async _purgeContentRuleViolationCards(topicCards) {
+        if (typeof ContentRulesCleanup === 'undefined') return topicCards;
+
+        const removedCards = topicCards.filter(card => ContentRulesCleanup.isRemovedWord(card));
+        if (!removedCards.length) return topicCards;
+
+        for (const card of removedCards) {
+            try {
+                const deleted = await FirestoreDB.deleteCard(card.id);
+                console.warn('[TopicDetailPage] Deleted content-rule violation card:', {
+                    id: card.id,
+                    folderId: card.folderId,
+                    word: card.fieldValues && card.fieldValues.word,
+                    deleted
+                });
+            } catch (error) {
+                console.error('[TopicDetailPage] Failed deleting content-rule violation card:', card.id, error);
+            }
+        }
+
+        // Luôn ẩn khỏi UI kể cả khi delete tạm thời lỗi/network pending.
+        return topicCards.filter(card => !ContentRulesCleanup.isRemovedWord(card));
     },
 
     // -------------------------------------------

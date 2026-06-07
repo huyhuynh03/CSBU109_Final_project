@@ -1230,6 +1230,14 @@ const VocabularyPage = {
             try { await BqtV2Cleanup.run(); } catch (e) { console.warn('[VocabularyPage] BqtV2Cleanup error:', e); }
         }
 
+        // [Content rules] Xoá thẻ cũ vi phạm luật nội dung (cụm word-by-word, danh từ riêng
+        // ít phổ biến) đã bị loại khỏi seed nhưng vẫn còn trong Firestore của user.
+        let removedByContentRules = false;
+        if (typeof ContentRulesCleanup !== 'undefined') {
+            try { removedByContentRules = await ContentRulesCleanup.run(); }
+            catch (e) { console.warn('[VocabularyPage] ContentRulesCleanup error:', e); }
+        }
+
         try {
             // [PERF] Query Firestore 1 lần duy nhất, cache map cho tất cả imports
             // thay vì query lại mỗi topic (giảm từ 29 queries → 1 query).
@@ -1260,7 +1268,7 @@ const VocabularyPage = {
 
             // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
             const needReloadFromMigration = await this._runVocabularyTopicMigration();
-            const needReload = needReloadFromCleanup || needReloadFromMigration;
+            const needReload = needReloadFromCleanup || needReloadFromMigration || removedByContentRules;
 
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}

@@ -1,9 +1,12 @@
 # Luật chọn nội dung từ vựng (Vocabulary Content Rules)
 
 > Quy định BẮT BUỘC khi thêm từ vựng vào bất kỳ file seed nào trong
-> [`data/seed-vocabulary/`](../data/seed-vocabulary) và [`public/seed-vocabulary/`](../public/seed-vocabulary).
+> [`data/seed-vocabulary/`](../data/seed-vocabulary) và [`packages/shell/public/seed-vocabulary/`](../packages/shell/public/seed-vocabulary).
 > Mục tiêu: chỉ học những đơn vị từ vựng thực sự đáng học, tránh rác từ vựng
 > (danh từ riêng hiếm gặp, cụm từ dịch word-by-word).
+
+> ⚠️ **Xóa từ vựng phải làm đủ các lớp** — xem mục 6. Chỉ sửa seed JSON là KHÔNG
+> đủ vì thẻ cũ đã nằm trong Firestore `users/{uid}/cards` của user.
 
 ---
 
@@ -102,8 +105,38 @@ phrasal verb là đơn vị từ vựng cố định cần học riêng.
 
 Mọi thay đổi nội dung từ vựng phải áp dụng song song cho:
 
-- [`data/seed-vocabulary/*.json`](../data/seed-vocabulary)
-- [`public/seed-vocabulary/*.json`](../public/seed-vocabulary)
+- [`data/seed-vocabulary/*.json`](../data/seed-vocabulary) — nguồn gốc
+- [`packages/shell/public/seed-vocabulary/*.json`](../packages/shell/public/seed-vocabulary) — bản phục vụ app
 
-(và các bản copy trong `packages/*` nếu có) để tránh lệch dữ liệu giữa nguồn và
-bản phục vụ.
+để tránh lệch dữ liệu giữa nguồn và bản phục vụ. Thư mục `dist/` và
+`node_modules/@linguaflash/*` là build artifact tự sinh — KHÔNG sửa tay.
+
+---
+
+## 6. Xóa từ vựng triệt để (2 lớp)
+
+Sửa seed JSON **không đủ** để gỡ một từ khỏi app. Thẻ học của user được lưu ở
+Firestore `users/{uid}/cards`; seed chỉ tác động lần import mới, thẻ cũ vẫn hiển
+thị (có nút "Học"/"Ôn ngay"). Phải xử lý đủ 2 lớp:
+
+### Lớp 1 — Seed JSON
+
+Xóa mục khỏi cả 2 thư mục ở mục 5. Có thể dùng:
+
+- [`scripts/audit-content-rules.js`](../scripts/audit-content-rules.js): liệt kê ứng viên vi phạm.
+- [`scripts/clean-content-rules.js`](../scripts/clean-content-rules.js): dọn dẹp (dry-run mặc định, `--apply` để xóa thật).
+
+### Lớp 2 — Firestore user data (cleanup tự động trong app)
+
+Thêm word cần xóa vào `REMOVED_VOCABULARY_WORDS` trong
+[`content-rules-cleanup.js`](../packages/english/src/fsrs/content-rules-cleanup.js)
+và **tăng `VERSION_KEY`** (vd `_v1` → `_v2`) để cleanup chạy lại cho mọi user.
+
+Cơ chế:
+- [`ContentRulesCleanup.run()`](../packages/english/src/fsrs/content-rules-cleanup.js) được gọi trong [`VocabularyPage._autoSeedTopics()`](../packages/english/src/pages/vocabulary.js) — xóa batch các thẻ vi phạm, idempotent qua localStorage flag.
+- UI guard [`TopicDetailPage._purgeContentRuleViolationCards()`](../packages/english/src/pages/topic-detail.js) ẩn + xóa thẻ ngay khi mở trang topic, kể cả khi cleanup nền chưa chạy xong.
+
+### Lớp 3 — Cache bust
+
+Tăng `APP_VERSION` trong [`packages/shell/public/sw.js`](../packages/shell/public/sw.js)
+để service worker đổi `CACHE_NAME` và nạp bundle mới.
