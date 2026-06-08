@@ -4,7 +4,7 @@
     "topicName": "Home & Living",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
-    "totalCards": 100,
+    "totalCards": 101,
     "totalFamilies": 14,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
@@ -1318,6 +1318,19 @@
         "example": "Call an electrician if the lights keep flickering.",
         "familyId": "home-maintenance",
         "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wiring",
+        "ipa": "/ˈwaɪə.rɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hệ thống dây điện",
+        "example": "The old house needs new wiring to be safe.",
+        "familyId": "home-maintenance",
+        "familyOrder": 7,
         "tags": []
       }
     }

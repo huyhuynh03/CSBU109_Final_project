@@ -4,7 +4,7 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 86,
+    "totalCards": 87,
     "totalFamilies": 13,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
@@ -100,6 +100,19 @@
         "example": "Her dedication to charity work is admirable.",
         "familyId": "general-positive",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extraordinary",
+        "ipa": "/ɪkˈstrɔː.dɪn.ər.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phi thường, đặc biệt",
+        "example": "She has an extraordinary talent for music.",
+        "familyId": "general-positive",
+        "familyOrder": 8,
         "tags": []
       }
     },

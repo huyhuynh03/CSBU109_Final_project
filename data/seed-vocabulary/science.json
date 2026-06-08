@@ -4,7 +4,7 @@
     "topicName": "Science",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
-    "totalCards": 61,
+    "totalCards": 62,
     "totalFamilies": 8,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom cac tu don ve nghien cuu, phuong phap, quan sat, phan tich, danh gia va phong thi nghiem. Da loai bo cac danh tu/cum tu ghep co the tu suy ra va tranh trung voi cac topic hien co."
@@ -800,6 +800,19 @@
         "example": "The experimenter recorded every step carefully.",
         "familyId": "science-lab",
         "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cluster",
+        "ipa": "/ˈklʌs.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cụm, nhóm",
+        "example": "The data points formed a cluster around the average value.",
+        "familyId": "science-research",
+        "familyOrder": 14,
         "tags": []
       }
     }
