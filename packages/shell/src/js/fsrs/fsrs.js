@@ -13,14 +13,14 @@
 //   stepIndex | UI        | Thời gian chờ ôn | Ghi chú
 //   ----------|-----------|------------------|------------------------------------------
 //     -1      | (n/a)     | —                | NEW, chưa bước vào lịch ôn
-//     0       | Cấp độ 1  | 30 phút          | Lần ôn đầu sau khi học, cũng là điểm reset khi sai
+//     0       | Cấp độ 1  | 30 phút          | Lần ôn đầu sau khi học, cũng là bậc thấp nhất khi sai
 //     1       | Cấp độ 2  | 24 giờ (1 ngày)  |
 //     2       | Cấp độ 3  | 7 ngày           |
 //     3       | Cấp độ 4  | 21 ngày          |
 //     4       | Cấp độ 5  | 45 ngày (cap)    | Bậc cao nhất
 //
 // Quy tắc chuyển bậc khi ôn:
-//   - AGAIN (sai 1 lần)        → reset về stepIndex = 0 (Cấp độ 1)
+//   - AGAIN (sai 1 lần)        → lùi 1 bậc: stepIndex - 1 (không xuống dưới 0 = Cấp độ 1)
 //   - HARD                     → giữ nguyên stepIndex hiện tại
 //   - GOOD                     → stepIndex + 1 (tiến 1 cấp)
 //   - EASY                     → stepIndex + 2 (nhảy 2 cấp)
@@ -96,7 +96,7 @@ const FSRS = {
     /**
      * Tính bậc kế tiếp dựa trên bậc trước và rating.
      * Hàm thuần (pure) - chỉ phụ thuộc 2 tham số -> không thể "ghi đè" nhau.
-     *   AGAIN -> 0
+     *   AGAIN -> lùi 1 bậc: max(0, cur - 1) (NEW => 0, không xuống dưới Cấp độ 1)
      *   HARD  -> giữ nguyên (NEW => 0)
      *   GOOD  -> tiến +1 bậc (NEW => 0)
      *   EASY  -> tiến +2 bậc (NEW => 1, nhảy bỏ 10 phút)
@@ -107,7 +107,7 @@ const FSRS = {
         const cur = (typeof prevStep === 'number' && prevStep >= 0) ? prevStep : -1;
 
         switch (rating) {
-            case this.Rating.AGAIN: return 0;
+            case this.Rating.AGAIN: return cur < 0 ? 0 : Math.max(0, cur - 1);
             case this.Rating.HARD:  return cur < 0 ? 0 : cur;
             case this.Rating.GOOD:  return cur < 0 ? 0 : Math.min(last, cur + 1);
             case this.Rating.EASY:  return cur < 0 ? 1 : Math.min(last, cur + 2);

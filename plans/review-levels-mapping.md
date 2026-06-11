@@ -43,14 +43,14 @@ Hàm [`_computeNextStep(prevStep, rating)`](../public/src/js/fsrs/fsrs.js) trong
 
 | Rating | Mô tả (tín hiệu user) | `stepIndex` mới |
 |---|---|---|
-| `AGAIN` | Sai ít nhất 1 lần (hoặc revealed) | **Reset về `0`** (Cấp độ 1) |
+| `AGAIN` | Sai ít nhất 1 lần (hoặc revealed) | **Lùi 1 bậc** `max(0, prev - 1)` (không xuống dưới Cấp độ 1) |
 | `HARD` | Đúng nhưng khó | Giữ nguyên `prev` |
 | `GOOD` | Đúng bình thường | `prev + 1` |
 | `EASY` | Quá dễ | `prev + 2` |
 
 Sau đó cap `min(maxIdx, value)` với `maxIdx = Steps.length - 1 = 4` (Cấp độ 5).
 
-> **Luật nghiêm ngặt:** chỉ cần user sai 1 lần trong phiên ôn → rating = `AGAIN` → bay về Cấp độ 1 ngay lập tức, bất kể đang ở cấp nào. Xem [`ReviewPage._computeFinalRating`](../public/src/js/pages/review.js:693) và [`StudyPage._finalizeCard`](../public/src/js/pages/study.js:720).
+> **Luật khi sai:** chỉ cần user sai 1 lần trong phiên ôn → rating = `AGAIN` → từ bị **lùi xuống 1 cấp độ** so với cấp hiện tại (ví dụ Cấp độ 5 → Cấp độ 4), không tụt thẳng về Cấp độ 1. Cấp độ thấp nhất là Cấp độ 1 (`stepIndex = 0`). Xem [`ReviewPage._computeFinalRating`](../public/src/js/pages/review.js:716) và [`StudyPage._finalizeCard`](../public/src/js/pages/study.js:720).
 
 ---
 
