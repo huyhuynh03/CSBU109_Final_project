@@ -6,12 +6,88 @@ Khi người dùng học 1 từ mới, hệ thống gợi ý học tiếp các t
 
 ---
 
+## 0. QUY TẮC NHÓM FAMILY WORD (BẮT BUỘC)
+
+> ⚠️ Đọc kỹ trước khi gán `familyId` cho bất kỳ từ nào trong seed. Quy tắc này
+> là nguồn chân lý cho cách [`FamilyWordManager`](../packages/english/src/utils/family-word-manager.js)
+> gom nhóm và gợi ý học.
+
+### 0.1. Định nghĩa: Family word là gì
+
+Một **family word** (nhóm từ cùng họ) là tập các từ **phái sinh từ CÙNG MỘT GỐC
+TỪ** bằng cách biến đổi đuôi / thêm tiền tố hậu tố (derivational morphology).
+Chúng chia sẻ một **gốc chung (stem)** nhìn thấy được ở dạng chữ viết.
+
+**✅ ĐÚNG là family word:**
+
+```
+beauty → beautify → beautiful → beautifully   (gốc "beaut")
+art → artist → artistic → artwork              (gốc "art")
+educate → education → educational → educator   (gốc "educat")
+happy → happily → happiness → unhappy          (gốc "happ")
+```
+
+**❌ KHÔNG phải family word** (dù cùng chủ đề ngữ nghĩa):
+
+```
+fat, protein, fiber, calorie, vitamin   → cùng chủ đề "dinh dưỡng" nhưng KHÁC GỐC
+breakfast, lunch, dinner, snack          → cùng chủ đề "bữa ăn" nhưng KHÁC GỐC
+beef, pork, chicken, seafood             → cùng chủ đề "thịt" nhưng KHÁC GỐC
+```
+
+> Sai lầm thường gặp: dùng `familyId` như "nhãn chủ đề" (topic label) để gom các
+> từ liên quan về nghĩa. KHÔNG được làm vậy. Chủ đề đã được thể hiện qua chính
+> topic/folder của từ. `familyId` CHỈ dành cho họ từ phái sinh cùng gốc.
+
+### 0.2. Tiêu chí kỹ thuật để 2 từ "cùng họ"
+
+Hai từ thuộc cùng một family khi và chỉ khi tiền tố chung dài nhất (Longest
+Common Prefix - LCP) của chúng thoả mãn ĐỒNG THỜI:
+
+1. **LCP ≥ 3 ký tự** (`MIN_STEM_LEN`), và
+2. **LCP ≥ 50% độ dài từ ngắn hơn** (`MIN_STEM_RATIO`).
+
+| Cặp từ | LCP | Từ ngắn hơn | Tỉ lệ | Kết luận |
+|--------|-----|-------------|-------|----------|
+| art / artist | 3 (`art`) | 3 | 100% | ✅ cùng họ |
+| educate / education | 6 (`educat`) | 7 | 86% | ✅ cùng họ |
+| calorie / calcium | 3 (`cal`) | 7 | 43% | ❌ trùng tiền tố tình cờ |
+| fat / fiber | 1 (`f`) | 3 | 33% | ❌ khác gốc |
+
+> Điều kiện (2) loại bỏ trường hợp trùng tiền tố ngẫu nhiên (calorie/calcium).
+
+### 0.3. Cơ chế xác thực tự động (runtime)
+
+[`FamilyWordManager`](../packages/english/src/utils/family-word-manager.js) KHÔNG
+tin tuyệt đối vào `familyId` từ seed. Trong từng `familyId`, nó:
+
+1. Gom cụm các từ bằng **union-find** dựa trên tiêu chí 0.2 (hàm `_clusterFamilyCards`).
+2. Mỗi cụm có **≥ 2 từ cùng gốc** mới được coi là family thật → mới gợi ý học.
+3. Từ lẻ (không có từ nào cùng gốc trong family) bị loại khỏi gợi ý family.
+4. `rawKey` của family là `"${familyId}|${stem}"` (stem = LCP của cả cụm), nên một
+   `familyId` chứa nhiều gốc khác nhau sẽ tách thành nhiều nhóm độc lập.
+
+Hệ quả: kể cả khi seed lỡ gán `familyId: "nutrition"` cho fat/protein/fiber, hệ
+thống vẫn KHÔNG gợi ý chúng như một family vì không có ≥ 2 từ cùng gốc.
+
+### 0.4. Hướng dẫn gán familyId trong seed
+
+- Chỉ gán cùng `familyId` cho các từ THỰC SỰ cùng gốc phái sinh.
+- Đặt tên `familyId` theo gốc từ, VD `educate`, `art`, `beauty` (không đặt theo
+  chủ đề như `nutrition`, `meal-types`).
+- `familyOrder`: 1 = từ gốc, 2,3... = các biến thể (thứ tự học).
+- Từ đơn lẻ không có biến thể cùng gốc trong topic → để `familyId` rỗng/null.
+- Không bắt buộc tách file; nhiều cụm gốc khác nhau có thể vô tình trùng
+  `familyId` — runtime vẫn tách đúng nhờ 0.3, nhưng nên đặt đúng để dữ liệu sạch.
+
+---
+
 ## 1. Cấu trúc dữ liệu
 
 ### Trường bổ sung trong mỗi từ vựng
 
 ```
-familyId: string | null    -- Gốc từ chung, VD: "educate"
+familyId: string | null    -- Gốc từ chung, VD: "educate" (xem mục 0 về quy tắc)
 familyOrder: number | null -- Thứ tự học trong family: 1 = gốc, 2,3... = biến thể
 tags: string[]             -- ["idiom", "phrasal-verb", "irregular-verb", "irregular-adjective", "irregular-adverb"]
 ```
@@ -31,6 +107,8 @@ familyId: "good"
 
 familyId: null → từ đơn lẻ, không thuộc family nào
 ```
+
+> Lưu ý: gán `familyId` phải tuân theo **mục 0**. `familyId` không phải nhãn chủ đề.
 
 ---
 

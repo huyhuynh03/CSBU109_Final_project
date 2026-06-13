@@ -59,7 +59,9 @@ const StudyPage = {
             if (familyId) {
                 // Chỉ còn từ mới/learning của family là đủ — state Firestore là nguồn truth,
                 // không cần đối chiếu localStorage.
-                cards = cards.filter(c => c.fieldValues?.familyId === familyId);
+                // rawKey family schema mới có dạng "familyId|stem" để chỉ gom đúng
+                // cụm họ từ phái sinh; belongsToGroup hiểu cả 2 định dạng (có/không stem).
+                cards = cards.filter(c => FamilyWordManager.belongsToGroup(c, 'family', familyId));
             }
             if (groupType && groupKey) {
                 cards = cards.filter(c => FamilyWordManager.belongsToGroup(c, groupType, groupKey));
@@ -645,7 +647,9 @@ const StudyPage = {
     async _maybeShowFamilyPopup() {
         const s = this._session;
         const card = s.cards[s.currentIndex];
-        const groupInfo = FamilyWordManager._getGroupInfo(card);
+        // Truyền allTypeCards làm context để xác định đúng cụm họ từ (family cần
+        // toàn bộ card cùng familyId để cluster theo gốc chung).
+        const groupInfo = FamilyWordManager._getGroupInfo(card, this._allTypeCards);
         if (!groupInfo) return false;
 
         try {

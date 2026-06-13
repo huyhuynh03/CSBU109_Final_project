@@ -1,17 +1,32 @@
 // ============================================
 // Family Word Manager - Quản lý nhóm từ cùng họ
 // ============================================
-// Refactor v2: KHÔNG còn lưu danh sách "learnedWords" trong localStorage.
-// Trạng thái học của từng từ được tính trực tiếp từ Firestore (card.state):
-//   - state === 'new' (hoặc FSRS.State.NEW)  → CHƯA HỌC
-//   - bất kỳ state nào khác (learning/review/relearning) → ĐÃ HỌC
+// Refactor v3: family word giờ phải là HỌ TỪ PHÁI SINH THẬT (gốc + biến đổi
+// đuôi như art/artist/artistic/artwork), KHÔNG còn tin tuyệt đối vào familyId.
 //
-// localStorage chỉ còn dùng để lưu danh sách familyId user đã bấm "Để sau"
-// (dismissed) để không hiện popup gợi ý lặp lại trong cùng phiên.
+// Vấn đề cũ: nhiều seed dùng familyId như "nhóm chủ đề ngữ nghĩa"
+//   (vd nutrition = calorie/protein/fat/fiber; meal-types = breakfast/lunch/...)
+//   khiến các từ chả cùng gốc bị gom vào 1 "gia đình" để gợi ý học chung.
+//
+// Cách sửa: trong từng familyId, gom cụm (cluster) các từ bằng union-find dựa
+//   trên GỐC CHUNG (shared stem). Hai từ chỉ cùng họ nếu tiền tố chung dài nhất
+//   (LCP) >= MIN_STEM_LEN ký tự VÀ >= 50% độ dài từ ngắn hơn. Chỉ cụm có >= 2 từ
+//   cùng gốc mới được coi là family thật. rawKey của family giờ là
+//   `${familyId}|${stem}`. Từ lẻ (không có biến thể cùng gốc) bị loại khỏi gợi ý.
+//
+// Refactor v2 (giữ nguyên): KHÔNG lưu "learnedWords" trong localStorage. Trạng
+// thái học tính trực tiếp từ Firestore (card.state). localStorage chỉ lưu danh
+// sách groupKey user đã bấm "Để sau" (dismissed).
 
 const FamilyWordManager = {
     DISMISS_KEY: 'linguaflash_dismissed_families',
     LEGACY_KEY: 'linguaflash_pending_families', // Schema cũ — sẽ tự xoá nếu gặp
+
+    // Độ dài gốc chung tối thiểu để 2 từ được coi là cùng họ phái sinh.
+    MIN_STEM_LEN: 3,
+    // Tỉ lệ gốc chung tối thiểu so với từ ngắn hơn (loại bỏ trùng tiền tố tình cờ
+    // như calorie/calcium chung "cal" nhưng không cùng họ).
+    MIN_STEM_RATIO: 0.5,
 
     // ---- Internals ----------------------------------------------------------
     _isNewCard(card) {
@@ -28,6 +43,11 @@ const FamilyWordManager = {
 
     _normalize(value) {
         return String(value || '').trim().toLowerCase();
+    },
+
+    /** Chuẩn hoá word về chữ thường, chỉ giữ chữ cái (bỏ dấu, space, ký tự lạ). */
+    _normalizeWord(value) {
+        return String(value || '').trim().toLowerCase().replace(/[^a-z]/g, '');
     },
 
     _getDismissed() {
@@ -54,6 +74,114 @@ const FamilyWordManager = {
         return key ? `${groupType}:${key}` : '';
     },
 
+    // ---- Stem clustering (nhóm họ từ phái sinh thật) ------------------------
+
+    /** Độ dài tiền tố chung dài nhất (longest common prefix) của 2 chuỗi. */
+    _lcpLen(a, b) {
+        const n = Math.min(a.length, b.length);
+        let i = 0;
+        while (i < n && a[i] === b[i]) i++;
+        return i;
+    },
+
+    /**
+     * Hai từ có cùng gốc phái sinh không?
+     * Điều kiện: LCP >= MIN_STEM_LEN ký tự VÀ LCP >= MIN_STEM_RATIO * độ dài từ ngắn hơn.
+     * VD: art/artist (lcp=3, min=3 → 100%) ✓ ; calorie/calcium (lcp=3, min=7 → 43%) ✗.
+     */
+    _shareStem(a, b) {
+        const lcp = this._lcpLen(a, b);
+        if (lcp < this.MIN_STEM_LEN) return false;
+        const minLen = Math.min(a.length, b.length);
+        return lcp >= Math.ceil(minLen * this.MIN_STEM_RATIO);
+    },
+
+    /**
+     * Gom các card cùng 1 familyId thành các cụm họ từ phái sinh (union-find).
+     * Mỗi cụm trả về { stem, words[], cards[], rootWord }.
+     * stem = LCP của mọi từ trong cụm. rootWord = từ có familyOrder nhỏ nhất
+     * (gốc), tie-break theo độ dài ngắn nhất.
+     */
+    _clusterFamilyCards(cards) {
+        const wordToCards = new Map();
+        cards.forEach(c => {
+            const w = this._normalizeWord(c.fieldValues?.word);
+            if (!w) return;
+            if (!wordToCards.has(w)) wordToCards.set(w, []);
+            wordToCards.get(w).push(c);
+        });
+
+        const words = [...wordToCards.keys()];
+        const parent = words.map((_, i) => i);
+        const find = (x) => {
+            while (parent[x] !== x) { parent[x] = parent[parent[x]]; x = parent[x]; }
+            return x;
+        };
+        const union = (a, b) => {
+            const ra = find(a), rb = find(b);
+            if (ra !== rb) parent[ra] = rb;
+        };
+
+        for (let i = 0; i < words.length; i++) {
+            for (let j = i + 1; j < words.length; j++) {
+                if (this._shareStem(words[i], words[j])) union(i, j);
+            }
+        }
+
+        const groups = new Map();
+        words.forEach((w, i) => {
+            const r = find(i);
+            if (!groups.has(r)) groups.set(r, []);
+            groups.get(r).push(w);
+        });
+
+        return [...groups.values()].map(ws => {
+            let stem = ws[0];
+            ws.forEach(w => { stem = stem.slice(0, this._lcpLen(stem, w)); });
+            const clusterCards = ws.flatMap(w => wordToCards.get(w));
+            let rootCard = clusterCards[0];
+            clusterCards.forEach(c => {
+                const o = c.fieldValues?.familyOrder ?? 99;
+                const ro = rootCard.fieldValues?.familyOrder ?? 99;
+                const w = this._normalizeWord(c.fieldValues?.word);
+                const rw = this._normalizeWord(rootCard.fieldValues?.word);
+                if (o < ro || (o === ro && w.length < rw.length)) rootCard = c;
+            });
+            return {
+                stem,
+                words: ws.slice().sort(),
+                cards: clusterCards,
+                rootWord: rootCard.fieldValues?.word || stem
+            };
+        });
+    },
+
+    /** Tách rawKey family "${familyId}|${stem}" → { familyId, stem }. */
+    _parseFamilyRawKey(rawKey) {
+        const key = String(rawKey || '');
+        const idx = key.indexOf('|');
+        if (idx === -1) return { familyId: this._normalize(key), stem: '' };
+        return {
+            familyId: this._normalize(key.slice(0, idx)),
+            stem: this._normalizeWord(key.slice(idx + 1))
+        };
+    },
+
+    /** Dựng group info cho 1 cụm family. */
+    _familyGroupInfo(familyId, cluster) {
+        const rawKey = `${familyId}|${cluster.stem}`;
+        return {
+            groupType: 'family',
+            rawKey,
+            groupKey: this._buildGroupKey('family', rawKey),
+            title: cluster.rootWord,
+            description: `Nhóm từ cùng họ "${cluster.rootWord}": ${cluster.words.join(', ')}`,
+            icon: 'family_restroom'
+        };
+    },
+
+    // ---- Group info theo loại ----------------------------------------------
+
     _getComparisonGroupBase(fv = {}) {
         const word = this._normalize(fv.word);
         const base = this._normalize(fv.baseForm || fv.word);
@@ -73,7 +201,8 @@ const FamilyWordManager = {
         return base || word;
     },
 
-    _getGroupInfo(card) {
+    /** Comparison (tính từ/trạng từ bất quy tắc) — không cần context cards. */
+    _getComparisonInfo(card) {
         const fv = card?.fieldValues || {};
         const tags = Array.isArray(fv.tags) ? fv.tags : [];
         const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
@@ -101,19 +230,19 @@ const FamilyWordManager = {
                 icon: 'trending_up'
             };
         }
+        return null;
+    },
 
-        const familyId = String(fv.familyId || '').trim();
-        if (familyId) {
-            return {
-                groupType: 'family',
-                rawKey: familyId,
-                groupKey: this._buildGroupKey('family', familyId),
-                title: familyId,
-                description: `Nhóm từ cùng họ: ${familyId}`,
-                icon: 'family_restroom'
-            };
-        }
+    _isComparisonCard(card) {
+        return !!this._getComparisonInfo(card);
+    },
 
+    /** Động từ bất quy tắc V1/V2/V3 — không cần context cards. */
+    _getIrregularVerbInfo(card) {
+        const fv = card?.fieldValues || {};
+        const irrMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getIrregularMeta)
+            ? CardSchemas.getIrregularMeta(card)
+            : null;
         if (irrMeta && irrMeta.tag === 'irregular-verb') {
             const base = String(fv.baseForm || fv.word || '').trim();
             if (!base) return null;
@@ -126,11 +255,58 @@ const FamilyWordManager = {
                 icon: 'timeline'
             };
         }
-
         return null;
     },
 
+    /**
+     * Family info cho 1 card — CẦN allCards để xác định cụm họ từ thật.
+     * Trả null nếu card không thuộc cụm họ từ phái sinh nào (>= 2 từ cùng gốc).
+     */
+    _getFamilyInfo(card, allCards) {
+        const fv = card?.fieldValues || {};
+        const fid = this._normalize(fv.familyId);
+        if (!fid) return null;
+        if (this._isComparisonCard(card)) return null;
+        if (!Array.isArray(allCards) || allCards.length === 0) return null;
+
+        const famCards = allCards.filter(c =>
+            this._normalize(c.fieldValues?.familyId) === fid && !this._isComparisonCard(c)
+        );
+        if (famCards.length === 0) return null;
+
+        const clusters = this._clusterFamilyCards(famCards);
+        const word = this._normalizeWord(fv.word);
+        const cluster = clusters.find(cl => cl.cards.some(c => c.id === card.id))
+            || clusters.find(cl => cl.words.includes(word));
+
+        if (!cluster || cluster.cards.length < 2) return null;
+        return this._familyGroupInfo(fid, cluster);
+    },
+
+    /**
+     * Group info tổng hợp cho 1 card. Ưu tiên: comparison > family > irregular-verb.
+     * @param {Object} card
+     * @param {Array} [allCards] - cần thiết để xác định cụm family. Thiếu → bỏ family.
+     */
+    _getGroupInfo(card, allCards) {
+        const comp = this._getComparisonInfo(card);
+        if (comp) return comp;
+        const fam = this._getFamilyInfo(card, allCards);
+        if (fam) return fam;
+        return this._getIrregularVerbInfo(card);
+    },
+
     belongsToGroup(card, groupType, rawKey) {
+        if (groupType === 'family') {
+            const fv = card?.fieldValues || {};
+            const cardFamily = this._normalize(fv.familyId);
+            if (!cardFamily) return false;
+            const { familyId, stem } = this._parseFamilyRawKey(rawKey);
+            if (cardFamily !== familyId) return false;
+            if (this._isComparisonCard(card)) return false;
+            if (!stem) return true; // legacy: cả familyId (không có stem)
+            return this._normalizeWord(fv.word).startsWith(stem);
+        }
         const info = this._getGroupInfo(card);
         if (!info) return false;
         return info.groupType === groupType && this._normalize(info.rawKey) === this._normalize(rawKey);
@@ -170,6 +346,17 @@ const FamilyWordManager = {
     },
 
     // ---- Pending groups (tính từ Firestore) ---------------------------------
+    _accumulate(map, info, card) {
+        if (!info || !info.groupKey) return;
+        if (!map.has(info.groupKey)) {
+            map.set(info.groupKey, { ...info, cards: [], totalCount: 0, learnedCount: 0 });
+        }
+        const item = map.get(info.groupKey);
+        item.cards.push(card);
+        item.totalCount++;
+        if (!this._isNewCard(card)) item.learnedCount++;
+    },
+
     async getIncompleteGroups(allCards) {
         let cards = allCards;
         if (!cards) {
@@ -182,21 +369,42 @@ const FamilyWordManager = {
         }
 
         const map = new Map();
+
+        // 1) Nhóm không phải family: comparison + irregular-verb (tính theo từng card).
+        //    Card có familyId (và không phải comparison) → để pass family xử lý.
+        const familyMap = new Map(); // familyId -> cards[]
         cards.forEach(card => {
-            const info = this._getGroupInfo(card);
-            if (!info || !info.groupKey) return;
-            if (!map.has(info.groupKey)) {
-                map.set(info.groupKey, {
-                    ...info,
-                    cards: [],
-                    totalCount: 0,
-                    learnedCount: 0
-                });
+            const comp = this._getComparisonInfo(card);
+            if (comp) { this._accumulate(map, comp, card); return; }
+
+            const fid = this._normalize(card.fieldValues?.familyId);
+            if (fid) {
+                if (!familyMap.has(fid)) familyMap.set(fid, []);
+                familyMap.get(fid).push(card);
+                return;
             }
-            const item = map.get(info.groupKey);
-            item.cards.push(card);
-            item.totalCount++;
-            if (!this._isNewCard(card)) item.learnedCount++;
+
+            const verb = this._getIrregularVerbInfo(card);
+            if (verb) this._accumulate(map, verb, card);
+        });
+
+        // 2) Nhóm family: gom cụm họ từ phái sinh trong từng familyId.
+        //    Chỉ cụm >= 2 từ cùng gốc mới là family thật.
+        familyMap.forEach((famCards, fid) => {
+            const clusters = this._clusterFamilyCards(famCards);
+            clusters.forEach(cluster => {
+                if (cluster.cards.length < 2) {
+                    // Từ lẻ trong familyId không cùng gốc với từ nào → không phải
+                    // family. Nếu là động từ BQT thì vẫn cho vào nhóm verb.
+                    cluster.cards.forEach(c => {
+                        const verb = this._getIrregularVerbInfo(c);
+                        if (verb) this._accumulate(map, verb, c);
+                    });
+                    return;
+                }
+                const info = this._familyGroupInfo(fid, cluster);
+                cluster.cards.forEach(c => this._accumulate(map, info, c));
+            });
         });
 
         const dismissed = this._getDismissed();
@@ -264,7 +472,9 @@ const FamilyWordManager = {
 
     // ---- Sau khi học xong 1 từ ----------------------------------------------
     async onWordLearned(learnedCard, relatedCards) {
-        const info = this._getGroupInfo(learnedCard);
+        // relatedCards là toàn bộ card trong nhóm (cluster) — dùng làm context để
+        // xác định đúng group info (rawKey kèm stem).
+        const info = this._getGroupInfo(learnedCard, relatedCards);
         if (!info || !Array.isArray(relatedCards) || relatedCards.length === 0) {
             return null;
         }
@@ -300,7 +510,7 @@ const FamilyWordManager = {
                 const fv = c.fieldValues || {};
                 const word = this._normalize(fv.word);
                 const baseForm = this._normalize(fv.baseForm);
-                const info = this._getGroupInfo(c);
+                const info = this._getGroupInfo(c, all);
                 if (!info) return;
                 if (wordSet.has(word) || (baseForm && wordSet.has(baseForm))) {
                     groupKeys.add(info.groupKey);

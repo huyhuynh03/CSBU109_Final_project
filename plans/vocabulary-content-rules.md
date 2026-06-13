@@ -8,6 +8,51 @@
 > ⚠️ **Xóa từ vựng phải làm đủ các lớp** — xem mục 6. Chỉ sửa seed JSON là KHÔNG
 > đủ vì thẻ cũ đã nằm trong Firestore `users/{uid}/cards` của user.
 
+> 🔊 **Audio phát âm BẮT BUỘC render từ giọng đọc AI** — xem mục 0. Mọi từ mới
+> thêm vào seed phải có file audio AI sinh từ pipeline TTS có sẵn của project.
+
+---
+
+## 0. Audio phát âm BẮT BUỘC render từ giọng đọc AI
+
+Mọi audio phát âm gắn với từ vựng **bắt buộc** phải là audio được render từ
+giọng đọc AI (AI TTS) thông qua hệ thống pre-generate có sẵn của project. Cấm
+dùng audio thu âm thủ công, tải từ nguồn ngoài, hay nhúng URL TTS gọi runtime.
+
+### 0.1. Nguồn chính thức duy nhất
+
+- Pipeline sinh audio: [`scripts/tts/generate-audio.js`](../scripts/tts/generate-audio.js)
+  — gọi TTS API một lần ở máy dev, xuất file MP3 tĩnh.
+- Cấu hình ngôn ngữ / accent / giọng: [`scripts/tts/config.js`](../scripts/tts/config.js).
+- Provider hợp lệ: `shopaikey`, `gemini`, `google`, `openai`, `elevenlabs`
+  (xem `PROVIDERS` trong [`config.js`](../scripts/tts/config.js)).
+- API key **chỉ** đọc từ biến môi trường (`.env` đã `.gitignore`) — KHÔNG bao
+  giờ ghi key vào code/seed/bundle.
+
+### 0.2. Quy ước output
+
+- File MP3 tĩnh lưu tại `packages/shell/public/audio/<lang>/<variant>/<slug>.mp3`
+  (ví dụ `audio/en/us/<slug>.mp3`, `audio/en/gb/<slug>.mp3`).
+- Slug suy ra từ `card.fieldValues.word` qua [`lib/slug.js`](../scripts/tts/lib/slug.js).
+- App phát file tĩnh đã bundle — KHÔNG gọi API lúc chạy, không tốn phí, chạy
+  offline.
+
+### 0.3. Quy trình BẮT BUỘC khi thêm từ mới
+
+Sau khi thêm từ vào seed (mục 5), phải sinh audio AI cho từ đó:
+
+1. Dry-run để kiểm tra danh sách + chi phí:
+   `node scripts/tts/generate-audio.js --lang english --variant us,gb --dry-run`
+2. Generate thật (resume — chỉ tạo file còn thiếu):
+   `node scripts/tts/generate-audio.js --lang english --provider openai --variant us,gb`
+   - Chỉ một vài từ: thêm `--only word1,word2`.
+3. Ghi/đồng bộ manifest: thêm cờ `--manifest`.
+4. Tăng `APP_VERSION` trong [`packages/shell/public/sw.js`](../packages/shell/public/sw.js)
+   để service worker nạp audio mới (xem mục 6 — Lớp 3).
+
+> ⚠️ Một mục từ vựng chỉ được coi là hoàn chỉnh khi đã có đủ file audio AI cho
+> mọi variant (accent) mà ngôn ngữ đó hỗ trợ.
+
 ---
 
 ## 1. KHÔNG được thêm
@@ -78,6 +123,22 @@ lẻ (nghĩa bóng, idiom, collocation cố định, compound có nghĩa riêng)
 
 ---
 
+## 2.3. Gán `familyId` — chỉ cho họ từ phái sinh cùng gốc
+
+`familyId` dùng để gom **nhóm từ cùng họ** (gốc + biến đổi đuôi) phục vụ gợi ý
+học theo nhóm. **KHÔNG** dùng `familyId` như nhãn chủ đề ngữ nghĩa.
+
+- ✅ Cùng gốc phái sinh: `art / artist / artistic / artwork` → `familyId: "art"`.
+- ❌ Cùng chủ đề nhưng khác gốc: `fat, protein, fiber` (dinh dưỡng);
+  `breakfast, lunch, dinner` (bữa ăn) → KHÔNG gán chung `familyId`.
+
+Tiêu chí kỹ thuật (LCP ≥ 3 ký tự VÀ ≥ 50% độ dài từ ngắn hơn) và cơ chế xác
+thực runtime được mô tả đầy đủ ở **mục 0** của
+[`family-word-learning-flow.md`](family-word-learning-flow.md). Đọc kỹ trước khi
+gán `familyId` cho từ mới.
+
+---
+
 ## 3. NGOẠI LỆ: Phrasal verb
 
 **Phrasal verb KHÔNG bị áp dụng các quy định ở mục 1.** Phrasal verb luôn được
@@ -98,6 +159,8 @@ phrasal verb là đơn vị từ vựng cố định cần học riêng.
    - Dịch word-by-word ra nghĩa giống hệt? → **Loại**.
    - Nghĩa thay đổi so với dịch word-by-word? → **Được thêm**.
 3. Từ đơn thông dụng? → **Được thêm**.
+4. Đã thêm vào seed? → **Sinh audio AI** cho từ qua pipeline TTS (mục 0) cho
+   mọi variant trước khi coi là hoàn chỉnh.
 
 ---
 
