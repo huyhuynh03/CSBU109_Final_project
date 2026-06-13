@@ -4,8 +4,8 @@
     "topicName": "Home & Living",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
-    "totalCards": 101,
-    "totalFamilies": 14,
+    "totalCards": 104,
+    "totalFamilies": 15,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
   },
@@ -242,7 +242,7 @@
         "difficulty": "intermediate",
         "meaning": "vườn",
         "example": "My grandmother grows vegetables in the garden.",
-        "familyId": "outdoor-home",
+        "familyId": "garden",
         "familyOrder": 1,
         "tags": []
       }
@@ -1331,6 +1331,46 @@
         "example": "The old house needs new wiring to be safe.",
         "familyId": "home-maintenance",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gardener",
+        "ipa": "/ˈɡɑːr.dən.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người làm vườn",
+        "example": "The gardener trims the hedges every weekend.",
+        "familyId": "garden",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gardening",
+        "ipa": "/ˈɡɑːr.dən.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc làm vườn",
+        "example": "Gardening is a relaxing hobby for many retired people.",
+        "familyId": "garden",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tweezer",
+        "ipa": "/ˈtwiː.zər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cái nhíp",
+        "example": "She used a tweezer to remove the tiny splinter.",
+        "note": "Thường dùng số nhiều: tweezers",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

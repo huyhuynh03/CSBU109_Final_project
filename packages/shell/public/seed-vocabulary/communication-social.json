@@ -4,8 +4,8 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 102,
-    "totalFamilies": 14,
+    "totalCards": 118,
+    "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
   },
@@ -1333,6 +1333,214 @@
         "example": "Social isolation can affect older people deeply.",
         "familyId": "social-issues",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probable",
+        "ipa": "/ˈprɑː.bə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có khả năng xảy ra",
+        "example": "It is probable that the meeting will be postponed.",
+        "familyId": "probable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probably",
+        "ipa": "/ˈprɑː.bə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "có lẽ, có khả năng",
+        "example": "She is probably the best candidate for the job.",
+        "familyId": "probable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "by",
+        "ipa": "/baɪ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bởi, bằng, cạnh, trước (thời điểm)",
+        "example": "The report must be finished by Friday.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "every",
+        "ipa": "/ˈev.ri/",
+        "partOfSpeech": "determiner",
+        "difficulty": "beginner",
+        "meaning": "mỗi, mọi",
+        "example": "She checks her email every morning.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anybody",
+        "ipa": "/ˈen.iˌbɑː.di/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "beginner",
+        "meaning": "bất cứ ai, người nào",
+        "example": "Is there anybody who can help me with this?",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "during",
+        "ipa": "/ˈdʊr.ɪŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "trong suốt, trong lúc",
+        "example": "Please keep quiet during the presentation.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yourself",
+        "ipa": "/jɔːrˈself/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "beginner",
+        "meaning": "chính bạn, bản thân bạn",
+        "example": "You should be proud of yourself for finishing the course.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possible",
+        "ipa": "/ˈpɑː.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có thể, khả thi",
+        "example": "It is possible to learn a language at any age.",
+        "familyId": "possible",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possibly",
+        "ipa": "/ˈpɑː.sə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "có lẽ, có thể",
+        "example": "The delay was possibly caused by the heavy rain.",
+        "familyId": "possible",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possibility",
+        "ipa": "/ˌpɑː.səˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khả năng, điều có thể xảy ra",
+        "example": "There is a strong possibility of rain tomorrow.",
+        "familyId": "possible",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "define",
+        "ipa": "/dɪˈfaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "định nghĩa, xác định",
+        "example": "Can you define this word in your own words?",
+        "familyId": "define",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definition",
+        "ipa": "/ˌdef.ɪˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "định nghĩa",
+        "example": "The dictionary gives a clear definition of the term.",
+        "familyId": "define",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definite",
+        "ipa": "/ˈdef.ɪ.nət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "rõ ràng, chắc chắn",
+        "example": "We need a definite answer by tomorrow.",
+        "familyId": "define",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definitely",
+        "ipa": "/ˈdef.ɪ.nət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "chắc chắn, nhất định",
+        "example": "I will definitely come to your birthday party.",
+        "familyId": "define",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "current",
+        "ipa": "/ˈkɝː.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiện tại, hiện hành",
+        "example": "The current situation requires immediate action.",
+        "familyId": "current",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "currently",
+        "ipa": "/ˈkɝː.ənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "hiện nay, hiện thời",
+        "example": "She is currently working on a new project.",
+        "familyId": "current",
+        "familyOrder": 2,
         "tags": []
       }
     }

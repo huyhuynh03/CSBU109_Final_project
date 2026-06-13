@@ -4,8 +4,8 @@
     "topicName": "Psychology & Cognition",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Psychology & Cognition (B1-B2)",
-    "totalCards": 93,
-    "totalFamilies": 12,
+    "totalCards": 100,
+    "totalFamilies": 14,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Tam ly va Nhan thuc, da ra soat tranh trung voi cac topic seed hien co."
   },
@@ -1216,6 +1216,97 @@
         "example": "Shame can make people hide their problems.",
         "familyId": "psychology-emotion",
         "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insane",
+        "ipa": "/ɪnˈseɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "điên rồ, mất trí",
+        "example": "Driving in that storm would be insane.",
+        "familyId": "insane",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insanely",
+        "ipa": "/ɪnˈseɪn.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách điên rồ, cực kỳ",
+        "example": "The tickets were insanely expensive.",
+        "familyId": "insane",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insanity",
+        "ipa": "/ɪnˈsæn.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự điên rồ, mất trí",
+        "example": "Repeating the same mistake and expecting change is insanity.",
+        "familyId": "insane",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "notice",
+        "ipa": "/ˈnoʊ.tɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "để ý, nhận thấy",
+        "example": "Did you notice the change in his behavior?",
+        "familyId": "notice",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noticeable",
+        "ipa": "/ˈnoʊ.tɪ.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ nhận thấy",
+        "example": "There was a noticeable improvement in her grades.",
+        "familyId": "notice",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noticeably",
+        "ipa": "/ˈnoʊ.tɪ.sə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách rõ rệt",
+        "example": "The room grew noticeably colder at night.",
+        "familyId": "notice",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unnoticed",
+        "ipa": "/ʌnˈnoʊ.tɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không bị chú ý, không ai để ý",
+        "example": "His effort went completely unnoticed.",
+        "familyId": "notice",
+        "familyOrder": 4,
         "tags": []
       }
     }

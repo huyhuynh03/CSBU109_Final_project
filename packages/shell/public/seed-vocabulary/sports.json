@@ -4,7 +4,7 @@
     "topicName": "Thể thao",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Sports (B1-B2)",
-    "totalCards": 126,
+    "totalCards": 128,
     "totalFamilies": 9,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de The thao, da loc tranh trung word voi cac topic seed hien co."
@@ -1645,6 +1645,32 @@
         "example": "The star player signed a contract extension.",
         "familyId": "rules-discipline",
         "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "squat",
+        "ipa": "/skwɑːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động tác ngồi xổm (squat)",
+        "example": "Add squats to your workout to build leg strength.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chase",
+        "ipa": "/tʃeɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đuổi theo, rượt",
+        "example": "The dog loves to chase the ball in the park.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

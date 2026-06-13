@@ -4,8 +4,8 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 82,
-    "totalFamilies": 30,
+    "totalCards": 97,
+    "totalFamilies": 36,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
   },
@@ -1100,6 +1100,201 @@
         "example": "Punctuality is important at school and work.",
         "familyId": "time-management",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "world",
+        "ipa": "/wɝːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "thế giới",
+        "example": "She dreams of traveling around the world.",
+        "familyId": "world",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worldwide",
+        "ipa": "/ˌwɝːldˈwaɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "toàn cầu, khắp thế giới",
+        "example": "The company has a worldwide network of offices.",
+        "familyId": "world",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empty",
+        "ipa": "/ˈemp.ti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "trống rỗng",
+        "example": "The fridge was completely empty this morning.",
+        "familyId": "empty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emptiness",
+        "ipa": "/ˈemp.ti.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự trống rỗng",
+        "example": "He felt a deep emptiness after the trip ended.",
+        "familyId": "empty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "whole",
+        "ipa": "/hoʊl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "toàn bộ, nguyên vẹn",
+        "example": "She ate the whole pizza by herself.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plenty",
+        "ipa": "/ˈplen.ti/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "intermediate",
+        "meaning": "nhiều, dư dả",
+        "example": "There is plenty of food for everyone.",
+        "familyId": "plenty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plentiful",
+        "ipa": "/ˈplen.tɪ.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "dồi dào, phong phú",
+        "example": "Fresh vegetables are plentiful in summer.",
+        "familyId": "plenty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rare",
+        "ipa": "/rer/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiếm, hiếm có",
+        "example": "It is rare to see snow in this region.",
+        "familyId": "rare",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rarely",
+        "ipa": "/ˈrer.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "hiếm khi",
+        "example": "He rarely watches television on weekdays.",
+        "familyId": "rare",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rarity",
+        "ipa": "/ˈrer.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hiếm có, vật hiếm",
+        "example": "A snowfall here is a real rarity.",
+        "familyId": "rare",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "large",
+        "ipa": "/lɑːrdʒ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "lớn, rộng",
+        "example": "They live in a large house near the park.",
+        "familyId": "large",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "largely",
+        "ipa": "/ˈlɑːrdʒ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "phần lớn, chủ yếu",
+        "example": "The project was largely successful.",
+        "familyId": "large",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "near",
+        "ipa": "/nɪr/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "gần",
+        "example": "The bus stop is near my house.",
+        "familyId": "near",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nearly",
+        "ipa": "/ˈnɪr.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "gần như, suýt",
+        "example": "We have nearly finished the report.",
+        "familyId": "near",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nearby",
+        "ipa": "/ˌnɪrˈbaɪ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gần đó, lân cận",
+        "example": "There is a nice cafe in a nearby street.",
+        "familyId": "near",
+        "familyOrder": 3,
         "tags": []
       }
     }

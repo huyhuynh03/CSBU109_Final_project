@@ -4,8 +4,8 @@
     "topicName": "Kinh tế",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Economy (B1-B2)",
-    "totalCards": 90,
-    "totalFamilies": 11,
+    "totalCards": 93,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-25",
     "note": "Tu vung chu de Kinh te, bao gom cac khai niem kinh te vi mo, vi mo, thi truong, thuong mai, lao dong, san xuat va phat trien kinh te."
   },
@@ -616,7 +616,7 @@
         "difficulty": "intermediate",
         "meaning": "thuê, tuyển dụng",
         "example": "The factory employs over five hundred workers.",
-        "familyId": "economy-employment",
+        "familyId": "employ",
         "familyOrder": 1,
         "tags": []
       }
@@ -655,8 +655,8 @@
         "difficulty": "intermediate",
         "meaning": "việc làm",
         "example": "Employment in the tech sector is rising.",
-        "familyId": "economy-employment",
-        "familyOrder": 4,
+        "familyId": "employ",
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1177,6 +1177,45 @@
         "example": "The business reported heavy losses this year.",
         "familyId": "economy-spending",
         "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employable",
+        "ipa": "/ɪmˈplɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có thể tuyển dụng, đủ khả năng làm việc",
+        "example": "New skills make graduates more employable.",
+        "familyId": "employ",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unemployed",
+        "ipa": "/ˌʌn.ɪmˈplɔɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thất nghiệp",
+        "example": "He has been unemployed since the factory closed.",
+        "familyId": "employ",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unemployable",
+        "ipa": "/ˌʌn.ɪmˈplɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể tuyển dụng được",
+        "example": "Without basic training, some applicants are considered unemployable.",
+        "familyId": "employ",
+        "familyOrder": 5,
         "tags": []
       }
     }

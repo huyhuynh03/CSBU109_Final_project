@@ -4,7 +4,7 @@
     "topicName": "Kinh doanh",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Business (B1-B2)",
-    "totalCards": 90,
+    "totalCards": 91,
     "totalFamilies": 9,
     "generatedAt": "2026-05-25",
     "note": "Tu vung chu de Kinh doanh, bao gom quan ly, marketing, ban hang, hop dong, dam phan, khoi nghiep, thuong hieu va chien luoc kinh doanh."
@@ -1177,6 +1177,19 @@
         "example": "Could you write a brief summary of today's meeting and send it to everyone?",
         "familyId": "business-meeting",
         "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counter",
+        "ipa": "/ˈkaʊn.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quầy (thu ngân, phục vụ)",
+        "example": "Please pay for your items at the counter.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }
