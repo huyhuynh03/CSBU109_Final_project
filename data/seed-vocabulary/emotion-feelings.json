@@ -4,8 +4,8 @@
     "topicName": "Emotion & Feelings",
     "level": "intermediate",
     "source": "curated emotion and feelings vocabulary seed",
-    "totalCards": 139,
-    "totalFamilies": 14,
+    "totalCards": 144,
+    "totalFamilies": 16,
     "generatedAt": "2026-05-08",
     "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
   },
@@ -2137,6 +2137,71 @@
           "phrase",
           "advanced"
         ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "incredible",
+        "ipa": "/ɪnˈkred.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không thể tin được, tuyệt vời",
+        "example": "The view from the mountain top was incredible.",
+        "familyId": "incredible",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "incredibly",
+        "ipa": "/ɪnˈkred.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "cực kỳ, đáng kinh ngạc",
+        "example": "She was incredibly kind to the new students.",
+        "familyId": "incredible",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoy",
+        "ipa": "/ɪnˈdʒɔɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thưởng thức, tận hưởng",
+        "example": "I really enjoy listening to music after work.",
+        "familyId": "enjoy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoyable",
+        "ipa": "/ɪnˈdʒɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thú vị, đáng tận hưởng",
+        "example": "We had an enjoyable evening at the concert.",
+        "familyId": "enjoy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoyment",
+        "ipa": "/ɪnˈdʒɔɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thích thú, niềm vui",
+        "example": "Reading gives her great enjoyment.",
+        "familyId": "enjoy",
+        "familyOrder": 3,
+        "tags": []
       }
     }
   ]

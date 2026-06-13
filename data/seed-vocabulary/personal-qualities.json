@@ -4,8 +4,8 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 87,
-    "totalFamilies": 13,
+    "totalCards": 97,
+    "totalFamilies": 17,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
   },
@@ -1140,6 +1140,136 @@
         "example": "He is quiet but very thoughtful.",
         "familyId": "personality-types",
         "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfect",
+        "ipa": "/ˈpɝː.fɪkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hoàn hảo",
+        "example": "She speaks perfect English after years of practice.",
+        "familyId": "perfect",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfectly",
+        "ipa": "/ˈpɝː.fɪkt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách hoàn hảo",
+        "example": "The two colors match perfectly.",
+        "familyId": "perfect",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfection",
+        "ipa": "/pɚˈfek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hoàn hảo",
+        "example": "He practices for hours in pursuit of perfection.",
+        "familyId": "perfect",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "goodness",
+        "ipa": "/ˈɡʊd.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng tốt, sự tốt lành",
+        "example": "She believes in the goodness of ordinary people.",
+        "familyId": "good",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedicate",
+        "ipa": "/ˈded.ɪ.keɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "cống hiến, dành trọn",
+        "example": "He decided to dedicate his life to helping others.",
+        "familyId": "dedicate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedication",
+        "ipa": "/ˌded.ɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cống hiến, tận tụy",
+        "example": "Her dedication to the team was admirable.",
+        "familyId": "dedicate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedicated",
+        "ipa": "/ˈded.ɪ.keɪ.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tận tụy, hết lòng",
+        "example": "She is a dedicated teacher who cares about every student.",
+        "familyId": "dedicate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspire",
+        "ipa": "/əˈspaɪr/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "khao khát, hướng tới",
+        "example": "Many young people aspire to start their own business.",
+        "familyId": "aspire",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspiration",
+        "ipa": "/ˌæs.pɚˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khát vọng, hoài bão",
+        "example": "Her greatest aspiration is to become a doctor.",
+        "familyId": "aspire",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspiring",
+        "ipa": "/əˈspaɪr.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có khát vọng, đầy tham vọng",
+        "example": "The workshop is designed for aspiring writers.",
+        "familyId": "aspire",
+        "familyOrder": 3,
         "tags": []
       }
     }
