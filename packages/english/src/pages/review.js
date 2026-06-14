@@ -8,6 +8,9 @@ const ReviewPage = {
     // ---- Session state ----
     _session: null,
     _startedAt: null,
+    // Cờ chống bấm trùng (double-click "Ôn tiếp"): khi đang tải phiên mới
+    // thì bỏ qua các lần gọi onEnter() tiếp theo cho tới khi xong.
+    _loading: false,
 
     // ============================================
     // RENDER + ENTRY POINT
@@ -27,7 +30,28 @@ const ReviewPage = {
             Router.navigate('/auth');
             return;
         }
-        await this._init();
+        // Chống double-click: nếu đang tải phiên thì bỏ qua các lần gọi tiếp theo.
+        // (Nút "Ôn tiếp" gọi onEnter() trực tiếp — getDueCards() mất vài giây nên
+        //  user dễ bấm lại nhiều lần khiến nhiều _init() chạy song song.)
+        if (this._loading) return;
+        this._loading = true;
+        // Hiển thị loading ngay để phản hồi tức thì, tránh cảm giác "đơ".
+        this._renderLoading();
+        try {
+            await this._init();
+        } finally {
+            this._loading = false;
+        }
+    },
+
+    _renderLoading() {
+        const root = document.getElementById('review-page-root');
+        if (!root) return;
+        root.innerHTML = `
+            <div class="review-loading">
+                <span class="material-icons-round" style="font-size:40px;color:var(--color-text-muted);animation:spin 1s linear infinite;">hourglass_empty</span>
+                <p style="color:var(--color-text-muted);margin-top:var(--spacing-sm);">Đang tải phiên ôn tập...</p>
+            </div>`;
     },
 
     async _init() {
