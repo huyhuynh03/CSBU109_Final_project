@@ -1268,7 +1268,12 @@ const VocabularyPage = {
 
             // Tự động áp dụng các lần chỉnh taxonomy để không cần dán script thủ công trong console.
             const needReloadFromMigration = await this._runVocabularyTopicMigration();
-            const needReload = needReloadFromCleanup || needReloadFromMigration || removedByContentRules;
+
+            // Dọn thẻ trùng trong Firestore user data (vd: educate bị lặp trong topic education).
+            // Chạy sau seed/migration để không xoá nhầm thẻ vừa tạo/di chuyển.
+            const needReloadFromDedupe = await this._dedupeDuplicateVocabularyCards();
+
+            const needReload = needReloadFromCleanup || needReloadFromMigration || needReloadFromDedupe || removedByContentRules;
 
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
@@ -1479,6 +1484,73 @@ const VocabularyPage = {
             return false;
         } catch (e) {
             console.warn('[VocabularyPage] Cleanup legacy education comparison cards error:', e);
+            return false;
+        }
+    },
+
+    /**
+     * Dọn thẻ từ vựng bị trùng trong Firestore user data.
+     * Trùng = cùng folderId + word + partOfSpeech (khớp identityKey của SeedImporter,
+     * nên trong cùng 1 topic đây chắc chắn là bản lặp, không phải homonym).
+     * Giữ lại thẻ có tiến độ học cao nhất (reps lớn nhất, rồi createdAt sớm nhất),
+     * xoá các bản còn lại để mỗi từ chỉ còn 1 thẻ canonical.
+     */
+    async _dedupeDuplicateVocabularyCards() {
+        if (!window.FirestoreDB) return false;
+        try {
+            const normalize = (value) => String(value || '').trim().toLowerCase();
+            const cards = await FirestoreDB.getCards({});
+            const vocabularyCards = (cards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);
+
+            const groups = new Map();
+            for (const card of vocabularyCards) {
+                const fv = card.fieldValues || {};
+                const word = normalize(fv.word);
+                if (!word) continue;
+                const key = [normalize(card.folderId), word, normalize(fv.partOfSpeech)].join('|');
+                if (!groups.has(key)) groups.set(key, []);
+                groups.get(key).push(card);
+            }
+
+            const toMillis = (value) => {
+                if (!value) return 0;
+                if (typeof value.toMillis === 'function') return value.toMillis();
+                if (value.seconds) return value.seconds * 1000;
+                const t = new Date(value).getTime();
+                return Number.isNaN(t) ? 0 : t;
+            };
+            // Thẻ "tốt hơn" = nhiều reps hơn; hoà thì giữ thẻ tạo sớm hơn.
+            const isBetter = (a, b) => {
+                const repsA = Number(a.reps) || 0;
+                const repsB = Number(b.reps) || 0;
+                if (repsA !== repsB) return repsA > repsB;
+                return toMillis(a.createdAt) <= toMillis(b.createdAt);
+            };
+
+            let deleted = 0;
+            for (const [, list] of groups) {
+                if (list.length < 2) continue;
+                let keep = list[0];
+                for (const card of list) {
+                    if (isBetter(card, keep)) keep = card;
+                }
+                for (const card of list) {
+                    if (card.id === keep.id) continue;
+                    const ok = await FirestoreDB.deleteCard(card.id);
+                    if (ok) deleted++;
+                    console.log('[VocabularyPage] Deleted duplicate vocabulary card:', {
+                        id: card.id, keptId: keep.id, folderId: card.folderId, word: (card.fieldValues || {}).word
+                    });
+                }
+            }
+
+            if (deleted > 0) {
+                console.log('[VocabularyPage] Duplicate vocabulary cleanup completed:', { deleted });
+                return true; // Signal that reload is needed
+            }
+            return false;
+        } catch (e) {
+            console.warn('[VocabularyPage] Dedupe duplicate vocabulary cards error:', e);
             return false;
         }
     },
