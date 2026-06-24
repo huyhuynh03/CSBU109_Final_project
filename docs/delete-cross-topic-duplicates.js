@@ -25,9 +25,6 @@ const HOMONYM_EXCLUSIONS = [
   { word: 'product', partOfSpeech: 'noun', topics: ['mathematics', 'chemistry'] },
   // "virus" (noun): health = "vi-rút bệnh" vs IT = "vi-rút máy tính"
   { word: 'virus', partOfSpeech: 'noun', topics: ['health', 'information-technology'] },
-  // "matter" (noun): physics vs chemistry - cùng nghĩa "vật chất" nhưng ngữ cảnh khác
-  // → Giữ cả hai vì physics dạy về states of matter, chemistry dạy về composition
-  { word: 'matter', partOfSpeech: 'noun', topics: ['physics', 'chemistry'] },
 ];
 
 function normalize(value) {

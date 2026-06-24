@@ -11730,12 +11730,6 @@
         "pos":  "noun"
     },
     {
-        "word":  "matter",
-        "topic":  "physics",
-        "familyId":  "physics-general",
-        "pos":  "noun"
-    },
-    {
         "word":  "energy",
         "topic":  "physics",
         "familyId":  "physics-general",

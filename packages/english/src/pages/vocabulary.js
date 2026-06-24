@@ -1351,6 +1351,17 @@ const VocabularyPage = {
                 examples: {
                     data: 'Modern applications collect and process large amounts of data.'
                 }
+            },
+            {
+                // "matter" bị trùng ở cả physics và chemistry. Canonical topic là chemistry.
+                // Xoá bản physics nếu chemistry đã có; nếu chưa, move sang chemistry.
+                fromFolder: 'physics',
+                toFolder: 'chemistry',
+                words: new Set(['matter']),
+                familyId: 'chemistry-general',
+                examples: {
+                    matter: 'Matter can exist as a solid, liquid or gas.'
+                }
             }
         ];
 

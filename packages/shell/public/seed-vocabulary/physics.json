@@ -4,7 +4,7 @@
     "topicName": "Physics",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Physics (B1-B2)",
-    "totalCards": 46,
+    "totalCards": 45,
     "totalFamilies": 10,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu mon Vat ly, gom luc va chuyen dong, nang luong, nhiet, dien-tu, cau truc nguyen tu/co hoc hat co ban, song-truong-am-thanh-anh sang, chat long va thi nghiem vat ly."
@@ -25,19 +25,6 @@
     },
     {
       "fieldValues": {
-        "word": "matter",
-        "ipa": "/ˈmæt.ər/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "vật chất",
-        "example": "Physics studies matter and energy.",
-        "familyId": "physics-general",
-        "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "energy",
         "ipa": "/ˈen.ə.dʒi/",
         "partOfSpeech": "noun",
@@ -45,7 +32,7 @@
         "meaning": "năng lượng",
         "example": "Energy can change from one form to another.",
         "familyId": "physics-general",
-        "familyOrder": 3,
+        "familyOrder": 2,
         "tags": []
       }
     },
