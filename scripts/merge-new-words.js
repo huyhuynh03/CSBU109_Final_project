@@ -3,7 +3,7 @@
  * merge-new-words.js — Chèn các card từ vựng mới vào đúng seed file ở CẢ 2 thư mục.
  *
  * Nguồn dữ liệu: scripts/new-words-data.js
- * Đích: data/seed-vocabulary/<topic>.json  +  packages/shell/public/seed-vocabulary/<topic>.json
+ * Đích: packages/shell/public/seed-vocabulary/<topic>.json (nguồn seed duy nhất app nạp)
  *
  * Đặc tính:
  *   - Idempotent: chạy lại không tạo trùng (dedup theo word + partOfSpeech).
@@ -22,7 +22,6 @@ const NEW_WORDS = require('./new-words-data');
 const APPLY = process.argv.includes('--apply');
 
 const DIRS = [
-  path.join(__dirname, '..', 'data', 'seed-vocabulary'),
   path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary')
 ];
 

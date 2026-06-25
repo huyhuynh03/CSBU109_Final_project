@@ -61,5 +61,11 @@ async function synthesize(text, voiceConfig, apiKey) {
 module.exports = {
     id: 'elevenlabs',
     envKey: 'ELEVENLABS_API_KEY',
+    // Xuất audio vào subfolder riêng theo provider để phân biệt với
+    // Google/OpenAI: audio/en/<accent>/elevenlabs/<slug>.mp3 + manifest riêng.
+    // Nhờ vậy luôn truy được file nào do ElevenLabs tạo, và client có thể ưu
+    // tiên nguồn này khi có. Provider KHÔNG khai báo outputSubDir thì ghi thẳng
+    // vào root accent như cũ (tương thích ngược).
+    outputSubDir: 'elevenlabs',
     synthesize
 };

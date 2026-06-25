@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 // Read both files
-const v2Data = JSON.parse(fs.readFileSync('public/seed-vocabulary/irregular-verb-v2.json', 'utf8'));
-const v3Data = JSON.parse(fs.readFileSync('public/seed-vocabulary/irregular-verb-v3.json', 'utf8'));
+const v2Data = JSON.parse(fs.readFileSync('packages/shell/public/seed-vocabulary/irregular-verb-v2.json', 'utf8'));
+const v3Data = JSON.parse(fs.readFileSync('packages/shell/public/seed-vocabulary/irregular-verb-v3.json', 'utf8'));
 
 // Extract baseForm from each
 const v2BaseForms = v2Data.cards.map(card => card.fieldValues.baseForm).sort();

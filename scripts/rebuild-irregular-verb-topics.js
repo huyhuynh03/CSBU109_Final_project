@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const INPUT_DIR = path.join('public', 'seed-vocabulary');
+const INPUT_DIR = path.join('packages', 'shell', 'public', 'seed-vocabulary');
 const OUTPUT_DIR = INPUT_DIR;
 
 function readJson(file) {

@@ -1,3 +1,13 @@
+// ⚠️ DEPRECATED — script này phụ thuộc các file nguồn-trung-gian đã bị gỡ khỏi repo
+// sau khi hợp nhất nguồn seed về một thư mục duy nhất
+// (packages/shell/public/seed-vocabulary/).
+//
+// Cụ thể nó đọc data/seed-vocabulary/irregular-verbs-v1-classification.json và ghi ra
+// các file data/seed-vocabulary/verbs-*.json — tất cả đều KHÔNG còn tồn tại và app
+// cũng không nạp. Giữ lại chỉ để tham khảo lịch sử; KHÔNG chạy lại.
+// Nếu cần dựng lại V1, dùng scripts/generate-v1-from-v2-v3.js (đọc/ghi trực tiếp
+// packages/shell/public/seed-vocabulary/).
+
 const fs = require('fs');
 const path = require('path');
 

@@ -35,8 +35,9 @@ const LANGUAGES = {
     english: {
         id: 'english',
         label: 'English',
-        // Nguồn seed gốc của repo. Có thể khai báo nhiều thư mục.
-        seedDirs: [path.join(ROOT, 'data', 'seed-vocabulary')],
+        // Nguồn seed gốc của repo — chính là bộ seed app thực sự nạp & deploy.
+        // Có thể khai báo nhiều thư mục.
+        seedDirs: [path.join(ROOT, 'packages', 'shell', 'public', 'seed-vocabulary')],
         // Trích từ: card.fieldValues.word
         seedField: ['fieldValues', 'word'],
         // Thư mục gốc cho audio của ngôn ngữ này. Mỗi variant tạo subfolder bên dưới.
@@ -103,8 +104,12 @@ const LANGUAGES = {
                         instructions: 'Native British English speaker. Female. Say the word once, naturally, as in casual speech.'
                     },
                     elevenlabs: {
-                        // ⚠ Đổi sang voiceId giọng Anh-Anh để có accent đúng
-                        voiceId: '21m00Tcm4TlvDq8ikWAM',
+                        // Bea — Corporate, Polished and Clear: giọng nữ Anh-Anh,
+                        // category Educational. Đây là "library voice" nên cần thêm
+                        // vào My Voices trước khi dùng. Lưu ý: gói free có thể bị chặn
+                        // (lỗi 402 paid_plan_required) với library voice — nếu gặp lỗi
+                        // hãy quay lại giọng PREMADE (vd: Lily 'pFZP5JQG7iQjIQuC4Bku').
+                        voiceId: 'aHCytOTnUOgfGPn5n89j',
                         modelId: 'eleven_multilingual_v2'
                     }
                 }

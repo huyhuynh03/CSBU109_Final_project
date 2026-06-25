@@ -173,7 +173,7 @@ const seed = {
   }))
 };
 
-for (const dir of ['public/seed-vocabulary', 'data/seed-vocabulary']) {
+for (const dir of ['packages/shell/public/seed-vocabulary']) {
   fs.writeFileSync(path.join(dir, 'sports.json'), JSON.stringify(seed, null, 2) + '\n', 'utf8');
 }
 

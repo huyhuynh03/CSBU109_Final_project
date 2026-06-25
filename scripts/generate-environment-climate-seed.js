@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SEED_DIR = path.join(__dirname, '..', 'data', 'seed-vocabulary');
+const SEED_DIR = path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary');
 const OUTPUT_FILE = path.join(SEED_DIR, 'environment-climate.json');
 
 // ---------- 1. Load tất cả từ vựng hiện có ----------

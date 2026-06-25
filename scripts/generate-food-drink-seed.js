@@ -157,7 +157,7 @@ const seed = {
   cards
 };
 
-for (const dir of ['data/seed-vocabulary', 'public/seed-vocabulary']) {
+for (const dir of ['packages/shell/public/seed-vocabulary']) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'food-drink.json'), JSON.stringify(seed, null, 2) + '\n', 'utf8');
 }

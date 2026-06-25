@@ -2,6 +2,27 @@
 
 Tài liệu này ghi lại quy trình chuẩn sau case `atom` bị nằm trong topic Hóa học nhưng canonical topic đúng là Vật lý.
 
+> **Chú thích — "trang học từ vựng" / "từ vựng đã nạp trong các topic của app" là phần đang chứa 3623 thẻ.**
+>
+> Mỗi khi tài liệu này (hoặc các tài liệu liên quan) nhắc đến "trang học từ vựng",
+> "từ vựng đã nạp bên trong các topic của app", hãy hiểu đó là **đúng bộ 3623 thẻ**
+> mà app thực sự load — KHÔNG phải toàn bộ file trong thư mục nguồn `data/seed-vocabulary/`.
+>
+> Có 2 thư mục seed dễ gây nhầm lẫn:
+>
+> | Thư mục | Vai trò | Số thẻ |
+> |---------|---------|--------|
+> | `packages/shell/public/seed-vocabulary/` | **Bản app thực sự nạp & deploy** | **3623** (43 file) |
+> | `data/seed-vocabulary/` | Kho nguồn/nháp (gồm cả draft, test, verb-category chưa dùng) | 3726 (64 file) |
+>
+> App chỉ nạp đúng 43 file được khai báo trong [`VocabularyPage._seedTopics`](../packages/english/src/pages/vocabulary.js)
+> từ `packages/shell/public/seed-vocabulary/`. Vì vậy con số chuẩn để đối chiếu với UI là **3623**.
+> Chênh lệch 103 thẻ so với `data/` đến từ 23 file chỉ tồn tại trong `data/` mà app không nạp
+> (ví dụ `education-intermediate.json`, `test-samples.json`, nhóm `verbs-*.json`).
+>
+> Khi audit "tổng số thẻ học từ vựng của app", luôn lọc theo danh sách `_seedTopics`
+> thay vì quét toàn bộ thư mục, nếu không sẽ ra con số rộng hơn thực tế.
+
 ## 1. Nhận diện đúng bản chất lỗi
 
 Trong app hiện tại, dữ liệu từ vựng thực tế của từng user nằm ở Firestore path:
@@ -39,9 +60,8 @@ git grep -n "\batom\b"
 
 Cần kiểm tra ít nhất:
 
-- `data/seed-vocabulary/*.json`
-- `public/seed-vocabulary/*.json`
-- Các script cleanup/migration trong `public/src/js/pages/*.js`
+- `packages/shell/public/seed-vocabulary/*.json` (nguồn seed duy nhất app nạp & deploy)
+- Các script cleanup/migration trong `packages/english/src/pages/*.js`
 - Các tài liệu/script maintenance trong `docs/*.js`
 
 ### Bước 2: Sửa seed sai topic
@@ -49,15 +69,13 @@ Cần kiểm tra ít nhất:
 Nếu từ nằm sai ở topic A, xóa khỏi:
 
 ```text
-data/seed-vocabulary/{topic-sai}.json
-public/seed-vocabulary/{topic-sai}.json
+packages/shell/public/seed-vocabulary/{topic-sai}.json
 ```
 
 Nếu từ vẫn cần học ở topic B, đảm bảo nó có trong:
 
 ```text
-data/seed-vocabulary/{topic-dung}.json
-public/seed-vocabulary/{topic-dung}.json
+packages/shell/public/seed-vocabulary/{topic-dung}.json
 ```
 
 Sau đó cập nhật metadata nếu cần:
@@ -146,7 +164,7 @@ node --check public/src/js/db/firestore.js
 Grep lại từ trong seed sai topic:
 
 ```bash
-git grep -n "\batom\b" -- public/seed-vocabulary/chemistry.json data/seed-vocabulary/chemistry.json
+git grep -n "\batom\b" -- packages/shell/public/seed-vocabulary/chemistry.json
 ```
 
 Kết quả đúng là không còn match trong topic sai.
@@ -154,7 +172,7 @@ Kết quả đúng là không còn match trong topic sai.
 ### Bước 7: Commit và push
 
 ```bash
-git add public/index.html public/src/js/db/firestore.js public/src/js/pages/topic-detail.js public/src/js/pages/vocabulary.js data/seed-vocabulary public/seed-vocabulary
+git add packages/english/src/pages/topic-detail.js packages/english/src/pages/vocabulary.js packages/shell/public/sw.js packages/shell/public/seed-vocabulary
 git commit -m "Fix duplicate vocabulary topic migration"
 git push
 ```

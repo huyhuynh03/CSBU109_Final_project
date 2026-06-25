@@ -1,6 +1,12 @@
 # 📊 Báo Cáo Thống Kê Từ Vựng - Vocabulary Audit Report
 
-**Ngày tạo:** 2026-05-14  
+> ⚠️ **LỖI THỜI (2026-05-14).** Báo cáo này được tạo khi repo còn 2 thư mục seed
+> (`data/` và `public/`) nên các số liệu (2.736, public-vs-data, 53 topics, 26 chênh lệch)
+> KHÔNG còn phản ánh hiện trạng. Repo nay chỉ còn MỘT nguồn seed duy nhất
+> `packages/shell/public/seed-vocabulary/` (43 topic = 3623 thẻ).
+> Chạy `node docs/audit-vocabulary-seeds.js` để xem số liệu cập nhật.
+
+**Ngày tạo:** 2026-05-14
 **Tổng số topics:** 53  
 **Tổng số từ vựng:** 2,736  
 **Topics có chênh lệch:** 26  

@@ -1,7 +1,7 @@
 # Luật chọn nội dung từ vựng (Vocabulary Content Rules)
 
-> Quy định BẮT BUỘC khi thêm từ vựng vào bất kỳ file seed nào trong
-> [`data/seed-vocabulary/`](../data/seed-vocabulary) và [`packages/shell/public/seed-vocabulary/`](../packages/shell/public/seed-vocabulary).
+> Quy định BẮT BUỘC khi thêm từ vựng vào file seed trong
+> [`packages/shell/public/seed-vocabulary/`](../packages/shell/public/seed-vocabulary) — nguồn seed duy nhất app nạp & deploy.
 > Mục tiêu: chỉ học những đơn vị từ vựng thực sự đáng học, tránh rác từ vựng
 > (danh từ riêng hiếm gặp, cụm từ dịch word-by-word).
 
@@ -145,8 +145,8 @@ gán `familyId` cho từ mới.
 phép thêm, kể cả khi nghĩa có vẻ đoán được từ các thành phần, vì bản chất
 phrasal verb là đơn vị từ vựng cố định cần học riêng.
 
-- Các phrasal verb tập trung trong [`phrasal-verbs.json`](../data/seed-vocabulary/phrasal-verbs.json).
-- Idiom tập trung trong [`idioms.json`](../data/seed-vocabulary/idioms.json).
+- Các phrasal verb tập trung trong [`phrasal-verbs.json`](../packages/shell/public/seed-vocabulary/phrasal-verbs.json).
+- Idiom tập trung trong [`idioms.json`](../packages/shell/public/seed-vocabulary/idioms.json).
 - Hai file này **không bị rà soát/xóa** theo luật mục 1.
 
 ---
@@ -164,12 +164,13 @@ phrasal verb là đơn vị từ vựng cố định cần học riêng.
 
 ---
 
-## 5. Đồng bộ 2 thư mục
+## 5. Nguồn seed duy nhất
 
-Mọi thay đổi nội dung từ vựng phải áp dụng song song cho:
+Repo chỉ còn MỘT thư mục seed (đã gỡ `data/seed-vocabulary/` để tránh lệch dữ liệu):
 
-- [`data/seed-vocabulary/*.json`](../data/seed-vocabulary) — nguồn gốc
-- [`packages/shell/public/seed-vocabulary/*.json`](../packages/shell/public/seed-vocabulary) — bản phục vụ app
+- [`packages/shell/public/seed-vocabulary/*.json`](../packages/shell/public/seed-vocabulary) — vừa là nguồn gốc, vừa là bản app nạp & deploy.
+
+Mọi thay đổi nội dung từ vựng chỉ cần áp dụng ở thư mục này. Các script generate/audit/TTS cũng đã trỏ về đây.
 
 để tránh lệch dữ liệu giữa nguồn và bản phục vụ. Thư mục `dist/` và
 `node_modules/@linguaflash/*` là build artifact tự sinh — KHÔNG sửa tay.

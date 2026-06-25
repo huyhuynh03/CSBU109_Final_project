@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SEED_DIR = path.join(__dirname, '..', 'data', 'seed-vocabulary');
+const SEED_DIR = path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary');
 
 // Topics đặc biệt - KHÔNG tính là duplicate khi trùng với nhau hoặc với verb topics
 const IRREGULAR_TOPICS = new Set([

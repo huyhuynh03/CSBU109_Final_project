@@ -14,8 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SEED_DIRS = [
-  path.join(__dirname, '..', 'data', 'seed-vocabulary'),
-  path.join(__dirname, '..', 'public', 'seed-vocabulary'),
+  path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary'),
 ];
 
 // File được miễn trừ hoàn toàn

@@ -155,7 +155,10 @@ const SeedImporter = {
         // Với irregular comparative/superlative, identity là tag + word + folderId + role,
         // không tách theo partOfSpeech để mỗi surface word chỉ còn 1 flashcard.
         // LƯU Ý: KHÔNG đưa field mảng (vd 'tags') vào đây — so sánh !== với array luôn trả về true gây update vô hạn.
-        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty', 'note', 'pastSimple', 'pastParticiple'];
+        // familyId/familyOrder: backfill cho card cũ thiếu nhãn họ từ (vd garden/gardener/gardening
+        // bị tách nhóm vì card "garden" cũ không có familyId). Việc gom nhóm thật vẫn do
+        // FamilyWordManager quyết định dựa trên gốc chung (LCP) — familyId chỉ là điều kiện cần.
+        const SYNC_FIELDS = ['example', 'irregularRole', 'baseForm', 'baseMeaning', 'meaning', 'ipa', 'partOfSpeech', 'difficulty', 'note', 'pastSimple', 'pastParticiple', 'familyId', 'familyOrder'];
         // Field mảng cần so sánh deep (JSON stringify)
         const SYNC_ARRAY_FIELDS = ['tags'];
 

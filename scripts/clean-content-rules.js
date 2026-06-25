@@ -19,7 +19,6 @@ const path = require('path');
 const APPLY = process.argv.includes('--apply');
 
 const SEED_DIRS = [
-  path.join(__dirname, '..', 'data', 'seed-vocabulary'),
   path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary'),
 ];
 

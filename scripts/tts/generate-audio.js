@@ -203,7 +203,11 @@ function filterPending(words, outDir, force) {
 // Generate cho MỘT variant
 // ----------------------------------------------------------------------------
 async function generateVariant({ variant, words, provider, apiKey, langConfig, args }) {
-    const outDir = path.join(langConfig.outputBaseDir, variant.subDir);
+    // Provider có outputSubDir → ghi vào folder anh em "<accent>_<provider>" (vd gb_elevenlabs/).
+    // Không có → ghi thẳng vào root accent như cũ.
+    const outDir = provider.outputSubDir
+        ? path.join(langConfig.outputBaseDir, `${variant.subDir}_${provider.outputSubDir}`)
+        : path.join(langConfig.outputBaseDir, variant.subDir);
     const voiceConfig = variant.voices[provider.id];
 
     console.log(`\n──────────────────────────────────────────────────────────`);
@@ -329,14 +333,20 @@ async function main() {
     // 4) Dry-run — dừng ở đây, không cần API key
     if (args.dryRun) {
         console.log('\n[DRY-RUN] Không gọi API, không ghi file.');
+        // Provider có outputSubDir → file nằm trong folder anh em "<accent>_<provider>" (vd gb_elevenlabs/).
+        const providerSubDir = require(`./providers/${args.provider}`).outputSubDir || null;
         for (const v of variants) {
-            const outDir = path.join(langConfig.outputBaseDir, v.subDir);
+            const outDir = providerSubDir
+                ? path.join(langConfig.outputBaseDir, `${v.subDir}_${providerSubDir}`)
+                : path.join(langConfig.outputBaseDir, v.subDir);
             const { pending, existing } = filterPending(targets, outDir, args.force);
             const hasVoice = !!v.voices[args.provider];
             console.log(`\n  • ${v.label} (${v.id}): cần ${pending.length}, đã có ${existing}` +
                 (hasVoice ? '' : `  ⚠ thiếu giọng cho provider ${args.provider}`));
+            const subParts = [path.basename(langConfig.outputBaseDir)];
+            subParts.push(providerSubDir ? `${v.subDir}_${providerSubDir}` : v.subDir);
             for (const w of pending.slice(0, 5)) {
-                console.log(`      ${w.word}  →  ${path.join('audio', path.basename(langConfig.outputBaseDir), v.subDir, w.fileName)}`);
+                console.log(`      ${w.word}  →  ${path.join('audio', ...subParts, w.fileName)}`);
             }
         }
         console.log('\nXong dry-run.');

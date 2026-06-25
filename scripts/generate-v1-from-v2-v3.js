@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 // Read V2 and V3 files
-const v2Data = JSON.parse(fs.readFileSync('public/seed-vocabulary/irregular-verb-v2.json', 'utf8'));
-const v3Data = JSON.parse(fs.readFileSync('public/seed-vocabulary/irregular-verb-v3.json', 'utf8'));
+const v2Data = JSON.parse(fs.readFileSync('packages/shell/public/seed-vocabulary/irregular-verb-v2.json', 'utf8'));
+const v3Data = JSON.parse(fs.readFileSync('packages/shell/public/seed-vocabulary/irregular-verb-v3.json', 'utf8'));
 
 // Extract unique baseForms with their meanings
 const baseFormsMap = new Map();
@@ -73,5 +73,5 @@ const v1Data = {
     cards: v1Cards
 };
 
-fs.writeFileSync('public/seed-vocabulary/irregular-verb-v1.json', JSON.stringify(v1Data, null, 2), 'utf8');
+fs.writeFileSync('packages/shell/public/seed-vocabulary/irregular-verb-v1.json', JSON.stringify(v1Data, null, 2), 'utf8');
 console.log(`✅ Created irregular-verb-v1.json with ${v1Cards.length} cards`);

@@ -1,6 +1,11 @@
 # 📊 Tóm Tắt Thống Kê Thẻ Học Theo Topic
 
-**Ngày tạo:** 2026-05-14  
+> ⚠️ **LỖI THỜI (2026-05-14).** Tóm tắt này dựa trên thời điểm repo còn 2 thư mục seed
+> nên số liệu (2.736 từ, 26/53 topic chênh lệch) KHÔNG còn đúng. Repo nay chỉ còn MỘT
+> nguồn seed `packages/shell/public/seed-vocabulary/` (43 topic = 3623 thẻ).
+> Chạy `node docs/audit-vocabulary-seeds.js` để xem số liệu cập nhật.
+
+**Ngày tạo:** 2026-05-14
 **Tổng số từ vựng trong seed:** 2,736  
 **Topics có chênh lệch:** 26/53
 

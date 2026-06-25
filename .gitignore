@@ -35,6 +35,9 @@ build/
 # Source assets (not for deployment)
 avatar_app.png
 
+# TTS preview output (file nghe thử ElevenLabs — không commit)
+scripts/tts/preview/
+
 # Service account keys (NEVER commit these)
 *-firebase-adminsdk-*.json
 service-account*.json

@@ -9,8 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SEED_DIR = path.join(__dirname, '..', 'data', 'seed-vocabulary');
-const PUBLIC_SEED_DIR = path.join(__dirname, '..', 'public', 'seed-vocabulary');
+const SEED_DIR = path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary');
 const AUDIT_FILE = path.join(__dirname, '..', 'docs', 'audit-duplicates-result.json');
 
 // Homonyms to KEEP (same as in delete-cross-topic-duplicates.js)
@@ -117,13 +116,11 @@ console.log(`\nTopics cần xử lý: ${deleteMap.size}`);
 let totalRemoved = 0;
 
 for (const [topicId, deleteSet] of [...deleteMap.entries()].sort()) {
-  const dataFile = path.join(SEED_DIR, `${topicId}.json`);
-  const publicFile = path.join(PUBLIC_SEED_DIR, `${topicId}.json`);
+  const publicFile = path.join(SEED_DIR, `${topicId}.json`);
 
-  const dataResult = processFile(dataFile, deleteSet);
   const publicResult = processFile(publicFile, deleteSet);
 
-  const removed = Math.max(dataResult.removed, publicResult.removed);
+  const removed = publicResult.removed;
   totalRemoved += removed;
 
   console.log(`\n  📁 ${topicId}: xóa ${removed} từ`);
@@ -132,8 +129,7 @@ for (const [topicId, deleteSet] of [...deleteMap.entries()].sort()) {
     console.log(`    - ${word} (${pos})`);
   });
 
-  if (dataResult.exists) console.log(`    ✓ data/seed-vocabulary/${topicId}.json`);
-  if (publicResult.exists) console.log(`    ✓ public/seed-vocabulary/${topicId}.json`);
+  if (publicResult.exists) console.log(`    ✓ packages/shell/public/seed-vocabulary/${topicId}.json`);
 }
 
 console.log('\n' + '='.repeat(70));

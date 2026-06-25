@@ -33,9 +33,17 @@ danh sách từ được đọc lại theo từng variant → ra file ở subfol
 
 ```
 packages/shell/public/audio/en/
-├── us/<slug>.mp3      # giọng Mỹ
-└── gb/<slug>.mp3      # giọng Anh
+├── us/<slug>.mp3              # giọng Mỹ (mặc định: Google/OpenAI)
+├── us/elevenlabs/<slug>.mp3   # bản ElevenLabs (nếu có) — tách riêng theo provider
+├── gb/<slug>.mp3              # giọng Anh (mặc định)
+└── gb/elevenlabs/<slug>.mp3   # bản ElevenLabs (nếu có)
 ```
+
+> **Tách provider:** provider khai báo `outputSubDir` (vd ElevenLabs →
+> `elevenlabs`) sẽ ghi vào subfolder riêng + manifest riêng, nên luôn biết file
+> nào do nguồn nào tạo. Provider không khai báo (Google/OpenAI) ghi thẳng vào
+> root accent như cũ. Client ưu tiên nguồn ElevenLabs khi có, không thì dùng bản
+> mặc định, cuối cùng fallback Web Speech.
 
 Mỗi provider là một adapter cùng interface:
 
@@ -139,7 +147,7 @@ node scripts/tts/generate-audio.js --provider google --variant us,gb --manifest
 |---|---|---|
 | **google** | ✅ `en-US-*` | ✅ `en-GB-*` — **tách rõ ràng, tốt nhất** |
 | openai | ✅ giọng mặc định | ⚠ KHÔNG có giọng Anh-Anh thật → nghe vẫn như US |
-| elevenlabs | ✅ theo voiceId | ⚠ phải đặt `voiceId` giọng Anh-Anh riêng trong config |
+| elevenlabs | ✅ theo voiceId | ⚠ phải đặt `voiceId` giọng Anh-Anh riêng trong config — hiện đặt **Bea** (`aHCytOTnUOgfGPn5n89j`) |
 
 → Muốn accent US/GB khác biệt thật sự, **dùng Google**.
 
@@ -156,6 +164,55 @@ node scripts/tts/generate-audio.js --provider google --variant us,gb --manifest
 
 Với mục tiêu "generate một lần + accent US/GB", **Google Cloud TTS** là lựa chọn
 hợp nhất. Tự kiểm tra điều khoản và giá hiện hành trước khi phát hành.
+
+---
+
+## 5b. Nghe thử ElevenLabs trước khi quyết định
+
+ElevenLabs giọng tự nhiên nhưng tính phí theo gói — nên **nghe thử** rồi mới
+chọn. Hai script riêng cho việc này, **không đụng** tới audio chính của app
+(output vào `scripts/tts/preview/`, đã được `.gitignore`).
+
+**Bước 1 — liệt kê voice trong tài khoản** (để lấy `voiceId`):
+
+```cmd
+node scripts/tts/list-voices.js
+```
+
+In ra tên, `voiceId`, accent, giới tính của từng giọng; phần ★ gợi ý nhanh các
+giọng tiếng Anh (American/British).
+
+**Bước 2 — render vài từ mẫu để nghe so sánh:**
+
+```cmd
+node scripts/tts/preview-elevenlabs.js --voices VOICE_ID_1,VOICE_ID_2
+```
+
+Tạo `scripts/tts/preview/elevenlabs/index.html` — mở bằng trình duyệt, mỗi voice
+một hàng, mỗi từ một nút play để nghe cạnh nhau. Bỏ trống `--voices` sẽ dùng
+`voiceId` đang khai báo trong [`config.js`](config.js).
+
+Tuỳ chọn đổi từ mẫu / model:
+
+```cmd
+node scripts/tts/preview-elevenlabs.js --voices id1 --words "hello,water,thorough" --model eleven_turbo_v2_5
+```
+
+**Bước 3 — ưng giọng nào** thì dán `voiceId` vào [`config.js`](config.js)
+(`voices.elevenlabs.voiceId` của variant `us` / `gb`), rồi generate như mục 3:
+
+```cmd
+node scripts/tts/generate-audio.js --provider elevenlabs --variant us,gb --manifest
+```
+
+> Cần `ELEVENLABS_API_KEY` trong `.env`. Hai script preview/list READ-ONLY hoặc
+> chỉ render vài từ — tốn quota không đáng kể.
+
+> **Hiện tại**: variant `gb` (UK) đang dùng giọng **Bea — Corporate, Polished
+> and Clear** (`voiceId: aHCytOTnUOgfGPn5n89j`), giọng nữ Anh-Anh. Đây là
+> *library voice* nên phải thêm vào **My Voices** trước khi dùng; gói free có thể
+> bị chặn (lỗi **402 paid_plan_required**). Nếu gặp lỗi, quay lại giọng PREMADE
+> như **Lily** (`pFZP5JQG7iQjIQuC4Bku`).
 
 ---
 

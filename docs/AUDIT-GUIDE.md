@@ -2,6 +2,21 @@
 
 Tài liệu này hướng dẫn cách sử dụng các script để thống kê và kiểm tra sự chênh lệch số thẻ học giữa seed files và Firestore.
 
+> **Chú thích — "trang học từ vựng" / "từ vựng đã nạp trong các topic của app" là phần đang chứa 3623 thẻ.**
+>
+> Repo hiện chỉ còn MỘT nguồn seed duy nhất: `packages/shell/public/seed-vocabulary/`
+> (43 file = **3623 thẻ**), được khai báo ở
+> [`VocabularyPage._seedTopics`](../packages/english/src/pages/vocabulary.js). Đây vừa là
+> nguồn app nạp/deploy, vừa là nguồn cho mọi script generate/audit/TTS.
+>
+> Thư mục `data/seed-vocabulary/` cũ (từng chứa 64 file = 3726 thẻ gồm draft/test/verbs)
+> đã được GỠ BỎ để tránh lệch dữ liệu giữa hai nơi. Mọi script đã trỏ về nguồn duy nhất ở trên.
+>
+> Lưu ý lịch sử: các báo cáo cũ như `QUICK-SUMMARY.md`, `VOCABULARY-AUDIT-REPORT.md` được
+> tạo khi còn 2 thư mục seed nên có số liệu (2.736, public-vs-data) không còn phản ánh hiện trạng.
+>
+> Chạy `node docs/audit-vocabulary-seeds.js` để xem thống kê cập nhật theo nguồn duy nhất.
+
 ---
 
 ## 📋 Danh Sách Scripts

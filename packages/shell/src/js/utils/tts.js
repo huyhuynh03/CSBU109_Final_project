@@ -22,10 +22,16 @@ const TTS = {
         gb: { subDir: 'gb', lang: 'en-GB', label: 'UK' }
     },
 
+    // Thứ tự ưu tiên nguồn audio trong mỗi accent. '' = root accent (mặc định:
+    // OpenAI/Google). 'elevenlabs' = subfolder render bằng ElevenLabs. Có file
+    // ElevenLabs cho từ nào thì ưu tiên dùng, không thì rơi về bản mặc định.
+    _sources: ['elevenlabs', ''],
+
     // Đường dẫn gốc tới audio tĩnh (đặt trong public/ của shell)
     _audioBase: '/audio/en',
 
-    // Cache manifest đã nạp theo accent: accent -> { files: {slug: fileName} } | false (không có)
+    // Cache manifest đã nạp theo khoá "accent/source":
+    //   "accent/source" -> { files: {slug: fileName} } | false (không có)
     _manifests: {},
     // Cache phần tử <audio> đang phát để stop được
     _currentAudio: null,
@@ -77,30 +83,41 @@ const TTS = {
     },
 
     /**
-     * Nạp manifest cho một accent (chỉ nạp 1 lần, cache kết quả).
-     * Không có manifest (chưa generate) -> trả false, app sẽ dùng Web Speech.
-     * @returns {Promise<object|false>}
+     * Thư mục con cho một nguồn trong accent. '' = root accent (mặc định).
      */
-    async _loadManifest(accent) {
-        if (accent in this._manifests) return this._manifests[accent];
-
-        const cfg = this._accents[accent];
-        if (!cfg) { this._manifests[accent] = false; return false; }
-
-        const url = `${this._audioBase}/${cfg.subDir}/audio-manifest.json`;
-        try {
-            const res = await fetch(url, { cache: 'force-cache' });
-            if (!res.ok) { this._manifests[accent] = false; return false; }
-            const json = await res.json();
-            this._manifests[accent] = (json && json.files) ? json : false;
-        } catch {
-            this._manifests[accent] = false;
-        }
-        return this._manifests[accent];
+    _sourceDir(cfg, source) {
+        return source ? `${cfg.subDir}/${source}` : cfg.subDir;
     },
 
     /**
-     * Suy đường dẫn MP3 nếu manifest xác nhận file tồn tại, ngược lại null.
+     * Nạp manifest cho một (accent, source) — chỉ nạp 1 lần, cache kết quả.
+     * Không có manifest (chưa generate / nguồn không tồn tại) -> trả false.
+     * @param {string} accent  'us' | 'gb'
+     * @param {string} source  '' (mặc định) | 'elevenlabs'
+     * @returns {Promise<object|false>}
+     */
+    async _loadManifest(accent, source = '') {
+        const key = `${accent}/${source}`;
+        if (key in this._manifests) return this._manifests[key];
+
+        const cfg = this._accents[accent];
+        if (!cfg) { this._manifests[key] = false; return false; }
+
+        const url = `${this._audioBase}/${this._sourceDir(cfg, source)}/audio-manifest.json`;
+        try {
+            const res = await fetch(url, { cache: 'force-cache' });
+            if (!res.ok) { this._manifests[key] = false; return false; }
+            const json = await res.json();
+            this._manifests[key] = (json && json.files) ? json : false;
+        } catch {
+            this._manifests[key] = false;
+        }
+        return this._manifests[key];
+    },
+
+    /**
+     * Suy đường dẫn MP3 cho từ, duyệt các nguồn theo thứ tự ưu tiên
+     * (ElevenLabs trước, rồi bản mặc định). Không nguồn nào có -> null.
      * @returns {Promise<string|null>}
      */
     async _resolveAudioUrl(text, accent) {
@@ -110,10 +127,11 @@ const TTS = {
         const slug = this.slugify(text);
         if (!slug) return null;
 
-        const manifest = await this._loadManifest(accent);
-        // Có manifest và chứa slug -> chắc chắn có file
-        if (manifest && manifest.files && manifest.files[slug]) {
-            return `${this._audioBase}/${cfg.subDir}/${manifest.files[slug]}`;
+        for (const source of this._sources) {
+            const manifest = await this._loadManifest(accent, source);
+            if (manifest && manifest.files && manifest.files[slug]) {
+                return `${this._audioBase}/${this._sourceDir(cfg, source)}/${manifest.files[slug]}`;
+            }
         }
         return null;
     },

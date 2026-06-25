@@ -11,7 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SEED_DIR = path.join(__dirname, '..', 'data', 'seed-vocabulary');
+const SEED_DIR = path.join(__dirname, '..', 'packages', 'shell', 'public', 'seed-vocabulary');
 
 const MIN_STEM_LEN = 3;
 const MIN_STEM_RATIO = 0.5;
