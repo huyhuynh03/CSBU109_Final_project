@@ -74,6 +74,10 @@ const LANGUAGES = {
                     elevenlabs: {
                         voiceId: '21m00Tcm4TlvDq8ikWAM', // Rachel (giọng Mỹ)
                         modelId: 'eleven_multilingual_v2'
+                    },
+                    edge: {
+                        // en-US-GuyNeural — giọng nam Mỹ tự nhiên (Microsoft Neural)
+                        voice: 'en-US-GuyNeural'
                     }
                 }
             },
@@ -111,6 +115,10 @@ const LANGUAGES = {
                         // hãy quay lại giọng PREMADE (vd: Lily 'pFZP5JQG7iQjIQuC4Bku').
                         voiceId: 'aHCytOTnUOgfGPn5n89j',
                         modelId: 'eleven_multilingual_v2'
+                    },
+                    edge: {
+                        // en-GB-SoniaNeural — giọng nữ Anh-Anh tự nhiên (Microsoft Neural)
+                        voice: 'en-GB-SoniaNeural'
                     }
                 }
             }
@@ -151,7 +159,7 @@ const DEFAULTS = {
 };
 
 // Danh sách provider hợp lệ (khớp tên file trong providers/)
-const PROVIDERS = ['shopaikey', 'gemini', 'google', 'openai', 'elevenlabs'];
+const PROVIDERS = ['shopaikey', 'gemini', 'google', 'openai', 'elevenlabs', 'edge'];
 
 function getLanguage(langId) {
     const lang = LANGUAGES[langId];

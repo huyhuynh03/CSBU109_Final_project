@@ -16,6 +16,7 @@
     "firebase:functions": "firebase deploy --only functions"
   },
   "devDependencies": {
+    "msedge-tts": "^2.0.6",
     "sharp": "^0.34.5"
   }
 }

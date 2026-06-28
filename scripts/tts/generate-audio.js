@@ -359,23 +359,28 @@ async function main() {
     }
 
     // 5) Nạp provider + API key (hỗ trợ fallback keys — vd cùng 1 GCP key cho nhiều service)
+    //    Provider keyless (envKey = null, vd Edge TTS) → bỏ qua bước yêu cầu key.
     const provider = require(`./providers/${args.provider}`);
-    const envKeys = [provider.envKey, ...(provider.envKeyFallbacks || [])];
     let apiKey = null;
-    let usedEnvKey = '';
-    for (const ek of envKeys) {
-        if (process.env[ek]) { apiKey = process.env[ek]; usedEnvKey = ek; break; }
-    }
-    if (!apiKey) {
-        console.error(`\n✗ Thiếu API key. Hãy đặt biến môi trường ${envKeys[0]} rồi chạy lại.`);
-        if (envKeys.length > 1) console.error(`  (hoặc: ${envKeys.slice(1).join(', ')})`);
-        console.error(`  Windows (cmd):  set ${envKeys[0]}=YOUR_KEY`);
-        console.error(`  PowerShell:     $env:${envKeys[0]}="YOUR_KEY"`);
-        console.error(`  bash:           export ${envKeys[0]}=YOUR_KEY`);
-        process.exit(1);
-    }
-    if (usedEnvKey !== provider.envKey) {
-        console.log(`  ℹ Dùng key từ ${usedEnvKey} (fallback cho ${provider.envKey})`);
+    if (provider.envKey) {
+        const envKeys = [provider.envKey, ...(provider.envKeyFallbacks || [])];
+        let usedEnvKey = '';
+        for (const ek of envKeys) {
+            if (process.env[ek]) { apiKey = process.env[ek]; usedEnvKey = ek; break; }
+        }
+        if (!apiKey) {
+            console.error(`\n✗ Thiếu API key. Hãy đặt biến môi trường ${envKeys[0]} rồi chạy lại.`);
+            if (envKeys.length > 1) console.error(`  (hoặc: ${envKeys.slice(1).join(', ')})`);
+            console.error(`  Windows (cmd):  set ${envKeys[0]}=YOUR_KEY`);
+            console.error(`  PowerShell:     $env:${envKeys[0]}="YOUR_KEY"`);
+            console.error(`  bash:           export ${envKeys[0]}=YOUR_KEY`);
+            process.exit(1);
+        }
+        if (usedEnvKey !== provider.envKey) {
+            console.log(`  ℹ Dùng key từ ${usedEnvKey} (fallback cho ${provider.envKey})`);
+        }
+    } else {
+        console.log('  ℹ Provider keyless — không cần API key (Edge TTS).');
     }
 
     // 6) Generate lần lượt từng variant

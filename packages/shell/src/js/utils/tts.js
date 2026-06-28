@@ -25,7 +25,7 @@ const TTS = {
     // Thứ tự ưu tiên nguồn audio trong mỗi accent. '' = root accent (mặc định:
     // OpenAI/Google). 'elevenlabs' = subfolder render bằng ElevenLabs. Có file
     // ElevenLabs cho từ nào thì ưu tiên dùng, không thì rơi về bản mặc định.
-    _sources: ['elevenlabs', ''],
+    _sources: ['edge', 'elevenlabs', ''],
 
     // Đường dẫn gốc tới audio tĩnh (đặt trong public/ của shell)
     _audioBase: '/audio/en',
@@ -86,7 +86,9 @@ const TTS = {
      * Thư mục con cho một nguồn trong accent. '' = root accent (mặc định).
      */
     _sourceDir(cfg, source) {
-        return source ? `${cfg.subDir}/${source}` : cfg.subDir;
+        // Folder tĩnh dùng underscore: us_edge, gb_elevenlabs, v.v.
+        // (KHÔNG dùng slash — slash là URL path, underscore là tên folder vật lý)
+        return source ? `${cfg.subDir}_${source}` : cfg.subDir;
     },
 
     /**
