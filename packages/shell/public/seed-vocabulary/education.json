@@ -245,26 +245,13 @@
       "fieldValues": {
         "word": "graduate",
         "ipa": "/ˈɡrædʒ.u.eɪt/",
-        "partOfSpeech": "verb",
+        "partOfSpeech": "verb, noun",
         "difficulty": "intermediate",
-        "meaning": "tốt nghiệp",
-        "example": "She graduated from Oxford University last year.",
-        "note": "Phat am khac nhau: verb /ˈɡrædʒ.u.eɪt/ - noun /ˈɡrædʒ.u.ət/",
+        "meaning": "verb: tốt nghiệp\nnoun: người đã tốt nghiệp đại học, cử nhân",
+        "example": "verb: She graduated from Oxford University last year.\nnoun: Many graduates struggle to find jobs after university.",
+        "note": "Phát âm khác nhau: verb /ˈɡrædʒ.u.eɪt/ — noun /ˈɡrædʒ.u.ət/",
         "familyId": "graduate",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "graduate",
-        "ipa": "/ˈɡrædʒ.u.ət/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "người đã tốt nghiệp đại học, cử nhân",
-        "example": "Many graduates struggle to find jobs after university.",
-        "familyId": "graduate",
-        "familyOrder": 2,
         "tags": []
       }
     },

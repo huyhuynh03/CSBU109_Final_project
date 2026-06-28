@@ -405,25 +405,12 @@
       "fieldValues": {
         "word": "commute",
         "ipa": "/kəˈmjuːt/",
-        "partOfSpeech": "verb",
+        "partOfSpeech": "verb, noun",
         "difficulty": "intermediate",
-        "meaning": "đi lại hằng ngày giữa nhà và nơi làm/học",
-        "example": "She commutes by bus to the city centre.",
+        "meaning": "verb: đi lại hằng ngày giữa nhà và nơi làm/học\nnoun: quãng đường đi làm/học hằng ngày",
+        "example": "verb: She commutes by bus to the city centre.\nnoun: My morning commute takes about forty minutes.",
         "familyId": "commuting",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "commute",
-        "ipa": "/kəˈmjuːt/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "quãng đường đi làm/học hằng ngày",
-        "example": "My morning commute takes about forty minutes.",
-        "familyId": "commuting",
-        "familyOrder": 2,
         "tags": []
       }
     },
@@ -486,25 +473,12 @@
       "fieldValues": {
         "word": "schedule",
         "ipa": "/ˈʃed.juːl/",
-        "partOfSpeech": "noun",
+        "partOfSpeech": "noun, verb",
         "difficulty": "intermediate",
-        "meaning": "lịch trình, thời khóa biểu",
-        "example": "My schedule is full today.",
+        "meaning": "noun: lịch trình, thời khóa biểu\nverb: lên lịch, sắp xếp lịch",
+        "example": "noun: My schedule is full today.\nverb: We scheduled a meeting for Monday morning.",
         "familyId": "schedule",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "schedule",
-        "ipa": "/ˈʃed.juːl/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "lên lịch, sắp xếp lịch",
-        "example": "We scheduled a meeting for Monday morning.",
-        "familyId": "schedule",
-        "familyOrder": 2,
         "tags": []
       }
     },
@@ -565,25 +539,12 @@
       "fieldValues": {
         "word": "tidy",
         "ipa": "/ˈtaɪ.di/",
-        "partOfSpeech": "verb",
+        "partOfSpeech": "verb, adjective",
         "difficulty": "intermediate",
-        "meaning": "dọn dẹp cho gọn gàng",
-        "example": "I tidy my room every weekend.",
+        "meaning": "verb: dọn dẹp cho gọn gàng\nadjective: gọn gàng, ngăn nắp",
+        "example": "verb: I tidy my room every weekend.\nadjective: A tidy room can help you concentrate better.",
         "familyId": "chores",
         "familyOrder": 1,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "tidy",
-        "ipa": "/ˈtaɪ.di/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "gọn gàng, ngăn nắp",
-        "example": "A tidy room can help you concentrate better.",
-        "familyId": "chores",
-        "familyOrder": 2,
         "tags": []
       }
     },

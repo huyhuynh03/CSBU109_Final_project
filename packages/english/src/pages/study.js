@@ -333,10 +333,10 @@ const StudyPage = {
                     <div style="margin:var(--spacing-md) 0;">${this._audioButtonsHtml('_playWord')}</div>
                     <div class="study-intro-card__divider"></div>
                     <div class="study-intro-card__meaning-label">NGHĨA</div>
-                    <div class="study-intro-card__meaning">${this._escapeHtml(meaning)}</div>
+                    <div class="study-intro-card__meaning">${this._escapeHtml(meaning).replace(/\n/g, '<br>')}</div>
                     ${example ? `
                         <div class="study-intro-card__example-label">VÍ DỤ</div>
-                        <div class="study-intro-card__example">${this._escapeHtml(example)}</div>
+                        <div class="study-intro-card__example">${this._escapeHtml(example).replace(/\n/g, '<br>')}</div>
                     ` : ''}
                     ${irregularNoteHtml}
                     ${baseFormHtml}

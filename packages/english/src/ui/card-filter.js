@@ -115,10 +115,11 @@ const CardFilter = {
         return cards.filter(c => {
             const fv = c.fieldValues || {};
 
-            // partOfSpeech
+            // partOfSpeech — hỗ trợ card gộp nhiều từ loại (vd "noun, verb")
             if (posSet.size > 0) {
-                const pos = (fv.partOfSpeech || '').toLowerCase().trim();
-                if (!pos || !posSet.has(pos)) return false;
+                const posList = (fv.partOfSpeech || '')
+                    .toLowerCase().split(',').map(p => p.trim()).filter(Boolean);
+                if (posList.length === 0 || !posList.some(p => posSet.has(p))) return false;
             }
 
             // level

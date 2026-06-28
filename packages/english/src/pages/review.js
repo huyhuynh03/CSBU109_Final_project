@@ -238,7 +238,7 @@ const ReviewPage = {
             questionHtml = `
                 <div class="review-question review-question--vn">
                     <div class="review-question__label">NGHĨA</div>
-                    <div class="review-question__main">${this._escapeHtml(meaning)}</div>
+                    <div class="review-question__main">${this._escapeHtml(meaning).replace(/\n/g, '<br>')}</div>
                     ${partOfSpeech ? `<div class="review-question__pos">(${partOfSpeech})</div>` : ''}
                     ${irrHint}
                 </div>

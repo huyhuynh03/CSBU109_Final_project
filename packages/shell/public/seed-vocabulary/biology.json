@@ -4,7 +4,7 @@
     "topicName": "Biology",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Biology (B1-B2)",
-    "totalCards": 55,
+    "totalCards": 53,
     "totalFamilies": 11,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu mon Sinh hoc, gom te bao, he co quan, di truyen, tien hoa, sinh thai hoc, thuc vat, sinh san va phong thi nghiem sinh hoc."
@@ -572,19 +572,6 @@
     },
     {
       "fieldValues": {
-        "word": "prehistoric",
-        "ipa": "/ˌpriː.hɪˈstɒr.ɪk/",
-        "partOfSpeech": "adjective",
-        "difficulty": "intermediate",
-        "meaning": "thuộc thời tiền sử",
-        "example": "Prehistoric creatures roamed the Earth long before humans.",
-        "familyId": "paleontology",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "dinosaur",
         "ipa": "/ˈdaɪ.nə.sɔːr/",
         "partOfSpeech": "noun",
@@ -710,19 +697,6 @@
         "example": "Each rock stratum reveals a different period of history.",
         "familyId": "paleontology",
         "familyOrder": 14,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "unearth",
-        "ipa": "/ʌnˈɜːθ/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "khai quật, đào lên (vật bị chôn vùi)",
-        "example": "Workers unearthed a complete dinosaur skeleton in the desert.",
-        "familyId": "paleontology",
-        "familyOrder": 15,
         "tags": []
       }
     }

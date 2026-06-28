@@ -326,8 +326,8 @@ const TopicDetailPage = {
         ` : '';
 
         const meaningText = variantsShort
-            ? `${this._escapeHtml(meaning)} <span class="topic-vocab-row__variants">(${this._escapeHtml(variantsShort)})</span>`
-            : this._escapeHtml(meaning);
+            ? `${this._escapeHtml(meaning).replace(/\n/g, '<br>')} <span class="topic-vocab-row__variants">(${this._escapeHtml(variantsShort)})</span>`
+            : this._escapeHtml(meaning).replace(/\n/g, '<br>');
 
         const checkbox = this._selectMode
             ? `<input type="checkbox" class="topic-vocab-row__select"
