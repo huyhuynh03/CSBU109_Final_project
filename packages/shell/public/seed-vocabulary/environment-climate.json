@@ -4,7 +4,7 @@
     "topicName": "Môi trường & Biến đổi khí hậu",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Environment & Climate Change (B1-B2)",
-    "totalCards": 82,
+    "totalCards": 89,
     "totalFamilies": 23,
     "generatedAt": "2026-05-14",
     "note": "Tu vung nen tang ve Moi truong & Bien doi khi hau, gom o nhiem, khi thai, bao ton, tai tao, thien tai. Da loai bo cac tu da co o cac topic khac va tranh trung trong topic. Cac tu cung family duoc nhom theo familyId.",
@@ -187,6 +187,32 @@
         "example": "The government wants to cut carbon emissions by half.",
         "familyId": "environment-climate-emission",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emit",
+        "ipa": "/ɪˈmɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phát thải, thải ra",
+        "example": "Coal-fired power plants emit large amounts of CO2.",
+        "familyId": "environment-climate-emission",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greenhouse gas",
+        "ipa": "/ˈɡriːn.haʊs ˌɡæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí nhà kính",
+        "example": "Methane is a powerful greenhouse gas that traps heat.",
+        "familyId": "environment-climate-emission",
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -868,6 +894,32 @@
     },
     {
       "fieldValues": {
+        "word": "crude oil",
+        "ipa": "/ˌkruːd ˈɔɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dầu thô",
+        "example": "Crude oil spills cause severe damage to ocean wildlife.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "natural gas",
+        "ipa": "/ˌnætʃ.ər.əl ˈɡæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí tự nhiên",
+        "example": "Natural gas burns more cleanly than coal but still adds emissions.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
         "word": "wind power",
         "ipa": "/ˈwɪnd ˌpaʊ.ər/",
         "partOfSpeech": "noun",
@@ -889,6 +941,19 @@
         "example": "Hydropower provides clean energy from flowing rivers.",
         "familyId": "environment-climate-fossil-fuel",
         "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "geothermal",
+        "ipa": "/ˌdʒiː.əʊˈθɜː.məl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc địa nhiệt",
+        "example": "Iceland uses geothermal heat to warm most of its homes.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 6,
         "tags": []
       }
     },
@@ -980,6 +1045,32 @@
         "example": "Vietnam is rich in natural resources like coal and rice.",
         "familyId": "environment-climate-resources",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depletion",
+        "ipa": "/dɪˈpliː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cạn kiệt",
+        "example": "Resource depletion will affect future generations badly.",
+        "familyId": "environment-climate-resources",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deplete",
+        "ipa": "/dɪˈpliːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm cạn kiệt",
+        "example": "Overfishing has depleted fish stocks in many oceans.",
+        "familyId": "environment-climate-resources",
+        "familyOrder": 3,
         "tags": []
       }
     },

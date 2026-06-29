@@ -57,9 +57,6 @@ window.BqtV2Cleanup = BqtV2Cleanup;
 import ContentRulesCleanup from './fsrs/content-rules-cleanup.js';
 window.ContentRulesCleanup = ContentRulesCleanup;
 
-import MergedPosCleanup from './fsrs/merged-pos-cleanup.js';
-window.MergedPosCleanup = MergedPosCleanup;
-
 import CardModeManager from './fsrs/card-mode-manager.js';
 window.CardModeManager = CardModeManager;
 

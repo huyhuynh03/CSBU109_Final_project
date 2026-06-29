@@ -564,12 +564,25 @@
       "fieldValues": {
         "word": "divorce",
         "ipa": "/dɪˈvɔːs/",
-        "partOfSpeech": "noun, verb",
+        "partOfSpeech": "noun",
         "difficulty": "intermediate",
-        "meaning": "noun: sự ly hôn, vụ ly hôn\nverb: ly hôn",
-        "example": "noun: Divorce can be stressful for both parents and children.\nverb: The couple decided to divorce after years of conflict.",
+        "meaning": "sự ly hôn, vụ ly hôn",
+        "example": "Divorce can be stressful for both parents and children.",
         "familyId": "divorce",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divorce",
+        "ipa": "/dɪˈvɔːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ly hôn",
+        "example": "The couple decided to divorce after years of conflict.",
+        "familyId": "divorce",
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -764,13 +777,26 @@
       "fieldValues": {
         "word": "bond",
         "ipa": "/bɒnd/",
-        "partOfSpeech": "noun, verb",
+        "partOfSpeech": "noun",
         "difficulty": "intermediate",
-        "meaning": "noun: sự gắn bó, mối liên kết\nverb: gắn kết, tạo sự gắn bó",
-        "example": "noun: The bond between parents and children is often very strong.\nverb: Shared experiences can help family members bond with each other.",
+        "meaning": "sự gắn bó, mối liên kết",
+        "example": "The bond between parents and children is often very strong.",
         "note": "Collocations: family bond, emotional bond",
         "familyId": "bond",
         "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bond",
+        "ipa": "/bɒnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gắn kết, tạo sự gắn bó",
+        "example": "Shared experiences can help family members bond with each other.",
+        "familyId": "bond",
+        "familyOrder": 2,
         "tags": []
       }
     },
