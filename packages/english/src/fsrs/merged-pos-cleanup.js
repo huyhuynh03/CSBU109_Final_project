@@ -1,16 +1,23 @@
 // ============================================
-// Merged POS Cleanup - Dọn thẻ trùng word+partOfSpeech qua nhiều topic
+// Merged POS Cleanup - Dọn thẻ trùng từ vựng sau khi refactor merge POS
 // ============================================
-// Lý do: cùng một từ (word + partOfSpeech) bị seed vào nhiều topic khác nhau,
-// gây trùng lặp trong dữ liệu user. Theo docs/audit-duplicates-result.json,
-// mỗi từ chỉ nên giữ ở một topic chuẩn (keepInTopic) và xoá khỏi các topic
-// còn lại (deleteFromTopics).
+// Sau khi SeedImporter gộp partOfSpeech (vd "verb" + "noun" -> "verb, noun"),
+// identity key đổi nên các thẻ single-POS cũ KHÔNG bị match và trở thành
+// orphan, làm tổng số thẻ tăng (3577 -> 3629). Cleanup xử lý 2 lớp:
+//
+// LOGIC 1 - Orphan cùng topic (nguyên nhân chính):
+//   Trong cùng (word + folderId), nếu tồn tại 1 thẻ merged POS (có dấu phẩy),
+//   xoá các thẻ single-POS mà POS của chúng là 1 thành phần của thẻ merged.
+//   Vd group daily-life: ["verb, noun"] + ["verb"] + ["noun"]
+//     -> giữ "verb, noun", xoá "verb" và "noun".
+//
+// LOGIC 2 - Trùng cross-topic (docs/audit-duplicates-result.json):
+//   Mỗi từ chỉ giữ ở keepInTopic, xoá khỏi deleteFromTopics. Vì POS có thể đã
+//   bị merge, ta match theo THÀNH PHẦN POS (component) thay vì khớp tuyệt đối.
+//   HOMONYM_EXCLUSIONS giữ lại các từ đồng âm khác nghĩa (function/product/virus).
 //
 // Cleanup idempotent: chỉ chạy 1 lần/user, flag lưu trong localStorage.
-// Tăng suffix VERSION_KEY khi cập nhật DUPLICATES để chạy lại.
-//
-// Lưu ý: chỉ xoá thẻ khi folderId (topic) khớp deleteFromTopics VÀ word +
-// partOfSpeech khớp. Không đụng tới thẻ trong keepInTopic.
+// Tăng suffix VERSION_KEY khi cập nhật logic/DUPLICATES để chạy lại.
 
 const DUPLICATES = [
     { word: 'affection', partOfSpeech: 'noun', keepInTopic: 'emotion-feelings', deleteFromTopics: ['family-relationships'] },
@@ -113,47 +120,165 @@ const DUPLICATES = [
     { word: 'well', partOfSpeech: 'adverb', keepInTopic: 'personal-qualities', deleteFromTopics: ['education'] }
 ];
 
+// Từ đồng âm khác nghĩa -> GIỮ CẢ HAI bản (đồng bộ với docs/delete-cross-topic-duplicates.js).
+// Nếu cả keepInTopic và deleteFromTopic đều nằm trong cặp này thì KHÔNG xoá.
+const HOMONYM_EXCLUSIONS = [
+    { word: 'function', partOfSpeech: 'noun', topics: ['mathematics', 'information-technology'] },
+    { word: 'product', partOfSpeech: 'noun', topics: ['mathematics', 'chemistry'] },
+    { word: 'virus', partOfSpeech: 'noun', topics: ['health', 'information-technology'] }
+];
+
 const MergedPosCleanup = {
-    // Tăng suffix (_v2, _v3...) khi cập nhật DUPLICATES để cleanup chạy lại.
-    VERSION_KEY: 'lf_merged_pos_cleanup_v1',
+    // Tăng suffix (_v2, _v3...) khi cập nhật logic/DUPLICATES để cleanup chạy lại.
+    VERSION_KEY: 'lf_merged_pos_cleanup_v2',
 
     DUPLICATES,
+    HOMONYM_EXCLUSIONS,
 
     _normalize(value) {
         return String(value || '').trim().toLowerCase();
     },
 
     /**
-     * Build lookup map: "word|partOfSpeech" -> Set(deleteFromTopics).
-     * Dùng để kiểm tra nhanh xem thẻ có nằm trong topic cần xoá không.
+     * Tách partOfSpeech (có thể đã merge "verb, noun") thành mảng component.
+     * Hỗ trợ dấu phẩy và dấu "/".
      */
-    _buildDeleteMap() {
+    _posComponents(value) {
+        return this._normalize(value)
+            .split(/[,/]/)
+            .map(s => s.trim())
+            .filter(Boolean);
+    },
+
+    /**
+     * Lấy word của 1 thẻ (đã normalize).
+     */
+    _cardWord(card) {
+        const fv = (card && card.fieldValues) || card || {};
+        return this._normalize(fv.word || card.word || card.front);
+    },
+
+    /**
+     * True nếu là thẻ vocabulary hợp lệ (có word).
+     */
+    _isVocabulary(card) {
+        if (!card) return false;
+        const cardType = card.cardType || 'vocabulary';
+        if (cardType !== 'vocabulary') return false;
+        return !!this._cardWord(card);
+    },
+
+    // ---------- LOGIC 2: cross-topic ----------
+
+    _isHomonymExcluded(word, posComponents, deleteTopic, keepTopic) {
+        return HOMONYM_EXCLUSIONS.some(exc => {
+            if (this._normalize(exc.word) !== word) return false;
+            if (!posComponents.includes(this._normalize(exc.partOfSpeech))) return false;
+            const topics = exc.topics.map(t => this._normalize(t));
+            return topics.includes(deleteTopic) && topics.includes(keepTopic);
+        });
+    },
+
+    /**
+     * Build map: word -> [{ pos, keepTopic, deleteTopics:Set }]
+     */
+    _buildCrossTopicMap() {
         const map = new Map();
-        DUPLICATES.forEach(({ word, partOfSpeech, deleteFromTopics }) => {
-            const key = `${this._normalize(word)}|${this._normalize(partOfSpeech)}`;
-            const set = map.get(key) || new Set();
-            deleteFromTopics.forEach(t => set.add(this._normalize(t)));
-            map.set(key, set);
+        DUPLICATES.forEach(({ word, partOfSpeech, keepInTopic, deleteFromTopics }) => {
+            const w = this._normalize(word);
+            const entry = {
+                pos: this._normalize(partOfSpeech),
+                keepTopic: this._normalize(keepInTopic),
+                deleteTopics: new Set(deleteFromTopics.map(t => this._normalize(t)))
+            };
+            const list = map.get(w) || [];
+            list.push(entry);
+            map.set(w, list);
         });
         return map;
     },
 
     /**
-     * True nếu thẻ vocabulary trùng word+partOfSpeech VÀ folderId nằm trong
-     * danh sách topic cần xoá.
+     * True nếu thẻ trùng cross-topic và đang nằm trong topic cần xoá.
+     * Match POS theo component để bắt cả thẻ đã merge ("verb, noun").
      */
-    _shouldDelete(card, deleteMap) {
-        if (!card) return false;
-        const cardType = card.cardType || 'vocabulary';
-        if (cardType !== 'vocabulary') return false;
-        const fv = card.fieldValues || card || {};
-        const word = this._normalize(fv.word || card.word || card.front);
-        const pos = this._normalize(fv.partOfSpeech);
-        if (!word) return false;
-        const set = deleteMap.get(`${word}|${pos}`);
-        if (!set) return false;
+    _shouldDeleteCrossTopic(card, crossMap) {
+        const word = this._cardWord(card);
+        const entries = crossMap.get(word);
+        if (!entries) return false;
+
         const folder = this._normalize(card.folderId);
-        return set.has(folder);
+        if (!folder) return false;
+
+        const cardPos = this._posComponents(card.fieldValues ? card.fieldValues.partOfSpeech : card.partOfSpeech);
+
+        for (const entry of entries) {
+            if (!entry.deleteTopics.has(folder)) continue;
+            // POS phải khớp ít nhất 1 component (nếu thẻ có POS rỗng vẫn match by word).
+            const posMatch = cardPos.length === 0 || cardPos.includes(entry.pos);
+            if (!posMatch) continue;
+            if (this._isHomonymExcluded(word, cardPos, folder, entry.keepTopic)) continue;
+            return true;
+        }
+        return false;
+    },
+
+    // ---------- LOGIC 1: orphan single-POS cùng topic ----------
+
+    /**
+     * Trong từng group (word + folderId): nếu có thẻ merged (POS chứa >1 component),
+     * trả về Set id của các thẻ single-POS cần xoá (POS là thành phần của thẻ merged).
+     * Nếu group có nhiều thẻ merged giống hệt POS thì giữ 1, xoá phần còn lại.
+     */
+    _collectOrphanIds(cards) {
+        const groups = new Map(); // key word::folder -> array of {id, components, raw}
+        for (const card of cards) {
+            if (!this._isVocabulary(card)) continue;
+            const word = this._cardWord(card);
+            const folder = this._normalize(card.folderId);
+            if (!word || !folder) continue;
+            const components = this._posComponents(card.fieldValues ? card.fieldValues.partOfSpeech : card.partOfSpeech);
+            const key = `${word}::${folder}`;
+            const arr = groups.get(key) || [];
+            arr.push({ id: card.id, components, posKey: components.slice().sort().join(',') });
+            groups.set(key, arr);
+        }
+
+        const toDelete = new Set();
+
+        for (const arr of groups.values()) {
+            if (arr.length < 2) continue;
+
+            const merged = arr.filter(c => c.components.length > 1);
+            if (merged.length === 0) continue;
+
+            // Tập hợp tất cả component được phủ bởi các thẻ merged.
+            const mergedComponentSet = new Set();
+            merged.forEach(m => m.components.forEach(p => mergedComponentSet.add(p)));
+
+            // 1) Xoá các thẻ single-POS có POS nằm trong mergedComponentSet.
+            for (const c of arr) {
+                if (c.components.length === 1 && mergedComponentSet.has(c.components[0])) {
+                    toDelete.add(c.id);
+                }
+                // Single-POS rỗng (không có POS) cũng coi là orphan của thẻ merged.
+                if (c.components.length === 0) {
+                    toDelete.add(c.id);
+                }
+            }
+
+            // 2) Nếu có nhiều thẻ merged trùng POS, giữ 1, xoá còn lại.
+            const seenMergedKeys = new Set();
+            for (const m of merged) {
+                if (seenMergedKeys.has(m.posKey)) {
+                    toDelete.add(m.id);
+                } else {
+                    seenMergedKeys.add(m.posKey);
+                }
+            }
+        }
+
+        return toDelete;
     },
 
     _hasRun(userId) {
@@ -176,8 +301,8 @@ const MergedPosCleanup = {
     },
 
     /**
-     * Xoá các thẻ vocabulary trùng word+partOfSpeech khỏi deleteFromTopics,
-     * giữ lại bản trong keepInTopic.
+     * Dọn thẻ trùng: orphan single-POS cùng topic (Logic 1) + trùng cross-topic
+     * (Logic 2). Idempotent theo VERSION_KEY/user.
      * @returns {Promise<boolean>} true nếu có xoá thẻ (caller nên reload cards).
      */
     async run() {
@@ -190,33 +315,55 @@ const MergedPosCleanup = {
             : null;
         if (!ref) return false;
 
-        const deleteMap = this._buildDeleteMap();
-
         try {
             const snapshot = await ref.get();
-            let deleted = 0;
+
+            // Gom toàn bộ thẻ vào memory để chạy Logic 1 theo group.
+            const cards = [];
+            const refById = new Map();
+            snapshot.forEach((doc) => {
+                cards.push({ id: doc.id, ...doc.data() });
+                refById.set(doc.id, doc.ref);
+            });
+
+            const crossMap = this._buildCrossTopicMap();
+            const orphanIds = this._collectOrphanIds(cards);
+
+            // Hợp nhất id cần xoá từ cả 2 logic.
+            const deleteIds = new Set(orphanIds);
+            for (const card of cards) {
+                if (deleteIds.has(card.id)) continue;
+                if (this._shouldDeleteCrossTopic(card, crossMap)) {
+                    deleteIds.add(card.id);
+                }
+            }
+
+            if (deleteIds.size === 0) {
+                console.log(`[MergedPosCleanup] Không có thẻ nào cần xoá (tổng ${snapshot.size})`);
+                this._markDone(userId);
+                return false;
+            }
+
             const batchSize = 400;
             let batch = db.batch();
             let inBatch = 0;
+            let deleted = 0;
 
-            snapshot.forEach((doc) => {
-                const c = { id: doc.id, ...doc.data() };
-                if (!this._shouldDelete(c, deleteMap)) return;
-
-                batch.delete(doc.ref);
+            for (const id of deleteIds) {
+                const docRef = refById.get(id);
+                if (!docRef) continue;
+                batch.delete(docRef);
                 deleted++;
                 inBatch++;
-
                 if (inBatch >= batchSize) {
-                    batch.commit().catch(e => console.error('[MergedPosCleanup] batch commit failed:', e));
+                    await batch.commit();
                     batch = db.batch();
                     inBatch = 0;
                 }
-            });
-
+            }
             if (inBatch > 0) await batch.commit();
 
-            console.log(`[MergedPosCleanup] Removed ${deleted}/${snapshot.size} thẻ trùng word+partOfSpeech qua nhiều topic`);
+            console.log(`[MergedPosCleanup] Removed ${deleted}/${snapshot.size} thẻ (orphan ${orphanIds.size} + cross-topic ${deleted - orphanIds.size})`);
             this._markDone(userId);
             return deleted > 0;
         } catch (e) {
