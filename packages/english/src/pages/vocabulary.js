@@ -1238,6 +1238,14 @@ const VocabularyPage = {
             catch (e) { console.warn('[VocabularyPage] ContentRulesCleanup error:', e); }
         }
 
+        // [Merged POS] Xoá thẻ trùng word+partOfSpeech bị seed lạc qua nhiều topic,
+        // chỉ giữ lại bản trong keepInTopic (theo docs/audit-duplicates-result.json).
+        let removedByMergedPos = false;
+        if (typeof MergedPosCleanup !== 'undefined') {
+            try { removedByMergedPos = await MergedPosCleanup.run(); }
+            catch (e) { console.warn('[VocabularyPage] MergedPosCleanup error:', e); }
+        }
+
         try {
             // [PERF] Query Firestore 1 lần duy nhất, cache map cho tất cả imports
             // thay vì query lại mỗi topic (giảm từ 29 queries → 1 query).
@@ -1273,7 +1281,7 @@ const VocabularyPage = {
             // Chạy sau seed/migration để không xoá nhầm thẻ vừa tạo/di chuyển.
             const needReloadFromDedupe = await this._dedupeDuplicateVocabularyCards();
 
-            const needReload = needReloadFromCleanup || needReloadFromMigration || needReloadFromDedupe || removedByContentRules;
+            const needReload = needReloadFromCleanup || needReloadFromMigration || needReloadFromDedupe || removedByContentRules || removedByMergedPos;
 
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
