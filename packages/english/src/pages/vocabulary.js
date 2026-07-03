@@ -1273,7 +1273,11 @@ const VocabularyPage = {
             // Chạy sau seed/migration để không xoá nhầm thẻ vừa tạo/di chuyển.
             const needReloadFromDedupe = await this._dedupeDuplicateVocabularyCards();
 
-            const needReload = needReloadFromCleanup || needReloadFromMigration || needReloadFromDedupe || removedByContentRules;
+            // Xoá thẻ POS gộp (VD: "verb, noun") còn sót từ phiên bản app cũ (trước Plan A).
+            // Chạy sau dedupe để seed đã kịp tạo thẻ đơn lẻ thay thế (nếu có).
+            const needReloadFromMergedPos = await this._cleanupMergedPosCards();
+
+            const needReload = needReloadFromCleanup || needReloadFromMigration || needReloadFromDedupe || needReloadFromMergedPos || removedByContentRules;
 
             if (needExamplesSync) {
                 try { localStorage.setItem(EXAMPLES_SYNC_KEY, '1'); } catch {}
@@ -1555,6 +1559,79 @@ const VocabularyPage = {
         }
     },
 
+    /**
+     * Xoá thẻ từ vựng có partOfSpeech dạng gộp (VD: "verb, noun", "noun/verb").
+     * Các thẻ này là dữ liệu cũ từ phiên bản app trước Plan A.
+     * Sau khi xoá, auto-seed sẽ tự bổ sung thẻ đơn lẻ đúng chuẩn khi reload.
+     * Chạy 1 lần duy nhất/session (guard bằng localStorage key).
+     */
+    async _cleanupMergedPosCards() {
+        if (!window.FirestoreDB) return false;
+        const GUARD_KEY = 'lf:merged-pos-cleanup-v1';
+        try {
+            if (localStorage.getItem(GUARD_KEY) === '1') return false;
+        } catch { /* ignore */ }
+
+        const VALID_POS = new Set([
+            'noun', 'verb', 'adjective', 'adverb',
+            'preposition', 'conjunction', 'interjection',
+            'pronoun', 'determiner', 'idiom', 'phrasal verb'
+        ]);
+        const normalize = (v) => String(v || '').trim().toLowerCase();
+
+        const splitMergedPos = (rawPos) => {
+            const pos = normalize(rawPos);
+            if (!pos || VALID_POS.has(pos)) return null;
+            const parts = pos
+                .split(/\s*,\s*|\s*\/\s*|\s*&\s*|\s+and\s+|\s+or\s+/i)
+                .map(p => p.trim())
+                .filter(Boolean);
+            if (parts.length < 2) return null;
+            if (!parts.every(p => VALID_POS.has(p))) return null;
+            return parts;
+        };
+
+        try {
+            const allCards = await FirestoreDB.getCards({});
+            const vocabCards = (allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);
+
+            const mergedCards = vocabCards.filter(card => {
+                const pos = (card.fieldValues || {}).partOfSpeech;
+                return splitMergedPos(pos) !== null;
+            });
+
+            if (mergedCards.length === 0) {
+                try { localStorage.setItem(GUARD_KEY, '1'); } catch { /* ignore */ }
+                return false;
+            }
+
+            let deleted = 0;
+            for (const card of mergedCards) {
+                const fv = card.fieldValues || {};
+                const ok = await FirestoreDB.deleteCard(card.id);
+                if (ok) {
+                    deleted++;
+                    console.log('[VocabularyPage] Deleted merged-POS card:', {
+                        id: card.id,
+                        word: fv.word,
+                        partOfSpeech: fv.partOfSpeech,
+                        folderId: card.folderId
+                    });
+                }
+            }
+
+            if (deleted > 0) {
+                console.log('[VocabularyPage] Merged-POS cleanup completed:', { deleted });
+                try { localStorage.setItem(GUARD_KEY, '1'); } catch { /* ignore */ }
+                return true;
+            }
+            try { localStorage.setItem(GUARD_KEY, '1'); } catch { /* ignore */ }
+            return false;
+        } catch (e) {
+            console.warn('[VocabularyPage] Merged-POS cleanup error:', e);
+            return false;
+        }
+    },
 
     _openModeForAll() {
         let cards = (this._allCards || []).filter(c => c.cardType === 'vocabulary' || !c.cardType);

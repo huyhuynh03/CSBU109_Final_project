@@ -1,0 +1,690 @@
+{
+  "generatedAt": "2026-07-03T04:36:14.230Z",
+  "totalTopics": 43,
+  "totalCards": 3623,
+  "intraTopicDuplicates": [],
+  "crossTopicDuplicates": [
+    {
+      "word": "come",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v3"
+      ]
+    },
+    {
+      "word": "crude oil",
+      "partOfSpeech": "noun",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "deplete",
+      "partOfSpeech": "verb",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "depletion",
+      "partOfSpeech": "noun",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "drive",
+      "partOfSpeech": "verb",
+      "topics": [
+        "daily-activities",
+        "irregular-verb-v1"
+      ]
+    },
+    {
+      "word": "emit",
+      "partOfSpeech": "verb",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "function",
+      "partOfSpeech": "noun",
+      "topics": [
+        "information-technology",
+        "mathematics"
+      ]
+    },
+    {
+      "word": "geothermal",
+      "partOfSpeech": "adjective",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "greenhouse gas",
+      "partOfSpeech": "noun",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "lay",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v2"
+      ]
+    },
+    {
+      "word": "meet",
+      "partOfSpeech": "verb",
+      "topics": [
+        "communication-social",
+        "irregular-verb-v1"
+      ]
+    },
+    {
+      "word": "natural gas",
+      "partOfSpeech": "noun",
+      "topics": [
+        "energy-resources",
+        "environment-climate"
+      ]
+    },
+    {
+      "word": "overcome",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v3"
+      ]
+    },
+    {
+      "word": "overrun",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v3"
+      ]
+    },
+    {
+      "word": "prehistoric",
+      "partOfSpeech": "adjective",
+      "topics": [
+        "biology",
+        "history-archeology"
+      ]
+    },
+    {
+      "word": "product",
+      "partOfSpeech": "noun",
+      "topics": [
+        "chemistry",
+        "mathematics"
+      ]
+    },
+    {
+      "word": "run",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v3"
+      ]
+    },
+    {
+      "word": "span",
+      "partOfSpeech": "verb",
+      "topics": [
+        "irregular-verb-v1",
+        "irregular-verb-v2"
+      ]
+    },
+    {
+      "word": "sweep",
+      "partOfSpeech": "verb",
+      "topics": [
+        "home-living",
+        "irregular-verb-v1"
+      ]
+    },
+    {
+      "word": "teach",
+      "partOfSpeech": "verb",
+      "topics": [
+        "education",
+        "irregular-verb-v1"
+      ]
+    },
+    {
+      "word": "unearth",
+      "partOfSpeech": "verb",
+      "topics": [
+        "biology",
+        "history-archeology"
+      ]
+    },
+    {
+      "word": "virus",
+      "partOfSpeech": "noun",
+      "topics": [
+        "health",
+        "information-technology"
+      ]
+    }
+  ],
+  "sameWordDifferentPos": [
+    {
+      "word": "bond",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "break",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "education"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "break down",
+      "partsOfSpeech": [
+        "verb phrase",
+        "phrasal verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb phrase",
+          "topics": [
+            "emotion-feelings"
+          ]
+        },
+        {
+          "partOfSpeech": "phrasal verb",
+          "topics": [
+            "phrasal-verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "commute",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "conflict",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "current",
+      "partsOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "adjective",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "physics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "divorce",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "drink",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "food-drink"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "driven",
+      "partsOfSpeech": [
+        "verb",
+        "adjective"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v3"
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "topics": [
+            "personal-qualities"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "exercise",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "graduate",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "education"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "hurt",
+      "partsOfSpeech": [
+        "adjective",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "adjective",
+          "topics": [
+            "emotion-feelings"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "light",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "physics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "patient",
+      "partsOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "adjective",
+          "topics": [
+            "emotion-feelings"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "post",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "information-technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "queue",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rest",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "schedule",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "sink",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "home-living"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "sleep",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "health"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v1"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "support",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tidy",
+      "partsOfSpeech": [
+        "verb",
+        "adjective"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "work",
+      "partsOfSpeech": [
+        "verb",
+        "noun"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "physics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "wound",
+      "partsOfSpeech": [
+        "noun",
+        "verb"
+      ],
+      "locations": [
+        {
+          "partOfSpeech": "noun",
+          "topics": [
+            "health"
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "topics": [
+            "irregular-verb-v2"
+          ]
+        }
+      ]
+    }
+  ]
+}

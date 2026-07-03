@@ -1,0 +1,158 @@
+========================================================================
+📊 THỐNG KÊ TRÙNG LẶP TỪ VỰNG TOÀN DIỆN
+========================================================================
+Tổng số topic: 43
+Tổng số thẻ:   3623
+
+========================================================================
+📋 PHẦN 1: TRÙNG LẶP TRONG CÙNG MỘT TOPIC
+   (cùng topic + cùng word + cùng loại từ, xuất hiện >1 lần)
+========================================================================
+
+✅ Không có từ nào bị trùng trong nội bộ topic.
+
+
+========================================================================
+📋 PHẦN 2: TRÙNG LẶP GIỮA CÁC TOPIC KHÁC NHAU
+   (cùng word + cùng loại từ, xuất hiện ở nhiều topic)
+========================================================================
+
+⚠️  Tìm thấy 22 từ xuất hiện ở nhiều topic:
+
+  "come" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v3
+  "crude oil" (noun) — 2 topic:
+      energy-resources, environment-climate
+  "deplete" (verb) — 2 topic:
+      energy-resources, environment-climate
+  "depletion" (noun) — 2 topic:
+      energy-resources, environment-climate
+  "drive" (verb) — 2 topic:
+      daily-activities, irregular-verb-v1
+  "emit" (verb) — 2 topic:
+      energy-resources, environment-climate
+  "function" (noun) — 2 topic:
+      information-technology, mathematics
+  "geothermal" (adjective) — 2 topic:
+      energy-resources, environment-climate
+  "greenhouse gas" (noun) — 2 topic:
+      energy-resources, environment-climate
+  "lay" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v2
+  "meet" (verb) — 2 topic:
+      communication-social, irregular-verb-v1
+  "natural gas" (noun) — 2 topic:
+      energy-resources, environment-climate
+  "overcome" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v3
+  "overrun" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v3
+  "prehistoric" (adjective) — 2 topic:
+      biology, history-archeology
+  "product" (noun) — 2 topic:
+      chemistry, mathematics
+  "run" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v3
+  "span" (verb) — 2 topic:
+      irregular-verb-v1, irregular-verb-v2
+  "sweep" (verb) — 2 topic:
+      home-living, irregular-verb-v1
+  "teach" (verb) — 2 topic:
+      education, irregular-verb-v1
+  "unearth" (verb) — 2 topic:
+      biology, history-archeology
+  "virus" (noun) — 2 topic:
+      health, information-technology
+
+
+========================================================================
+📋 PHẦN 3: CÙNG CÁCH VIẾT (100%) NHƯNG KHÁC LOẠI TỪ
+   (homograph: cùng word, khác partOfSpeech)
+========================================================================
+
+⚠️  Tìm thấy 24 từ có nhiều loại từ khác nhau:
+
+  "bond" — các loại từ: noun, verb
+      • noun: family-relationships
+      • verb: family-relationships
+  "break" — các loại từ: noun, verb
+      • noun: education
+      • verb: irregular-verb-v1
+  "break down" — các loại từ: verb phrase, phrasal verb
+      • verb phrase: emotion-feelings
+      • phrasal verb: phrasal-verbs
+  "commute" — các loại từ: verb, noun
+      • verb: daily-life
+      • noun: daily-life
+  "conflict" — các loại từ: noun, verb
+      • noun: communication-social
+      • verb: family-relationships
+  "current" — các loại từ: adjective, noun
+      • adjective: communication-social
+      • noun: physics
+  "divorce" — các loại từ: noun, verb
+      • noun: family-relationships
+      • verb: family-relationships
+  "drink" — các loại từ: noun, verb
+      • noun: food-drink
+      • verb: irregular-verb-v1
+  "driven" — các loại từ: verb, adjective
+      • verb: irregular-verb-v3
+      • adjective: personal-qualities
+  "exercise" — các loại từ: verb, noun
+      • verb: daily-activities
+      • noun: health
+  "graduate" — các loại từ: verb, noun
+      • verb: education
+      • noun: education
+  "hurt" — các loại từ: adjective, verb
+      • adjective: emotion-feelings
+      • verb: irregular-verb-v1
+  "light" — các loại từ: verb, noun
+      • verb: irregular-verb-v1
+      • noun: physics
+  "patient" — các loại từ: adjective, noun
+      • adjective: emotion-feelings
+      • noun: health
+  "post" — các loại từ: verb, noun
+      • verb: communication-social
+      • noun: information-technology
+  "queue" — các loại từ: verb, noun
+      • verb: daily-activities
+      • noun: daily-life
+  "rest" — các loại từ: verb, noun
+      • verb: daily-life
+      • noun: health
+  "schedule" — các loại từ: noun, verb
+      • noun: daily-life
+      • verb: daily-life
+  "sink" — các loại từ: noun, verb
+      • noun: home-living
+      • verb: irregular-verb-v1
+  "sleep" — các loại từ: noun, verb
+      • noun: health
+      • verb: irregular-verb-v1
+  "support" — các loại từ: verb, noun
+      • verb: communication-social
+      • noun: family-relationships
+  "tidy" — các loại từ: verb, adjective
+      • verb: daily-life
+      • adjective: daily-life
+  "work" — các loại từ: verb, noun
+      • verb: daily-activities
+      • noun: physics
+  "wound" — các loại từ: noun, verb
+      • noun: health
+      • verb: irregular-verb-v2
+
+
+========================================================================
+📊 TÓM TẮT
+========================================================================
+  Tổng topic:                                  43
+  Tổng thẻ:                                    3623
+  Trùng trong nội bộ topic:                    0
+  Trùng giữa các topic:                        22
+  Cùng cách viết khác loại từ (homograph):     24
+
+📁 Báo cáo JSON: docs/audit-full-duplicates-result.json
