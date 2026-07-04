@@ -4,7 +4,7 @@
     "topicName": "Family & Relationships",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Family & Relationships (B1-B2)",
-    "totalCards": 81,
+    "totalCards": 87,
     "totalFamilies": 37,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Gia dinh & Cac moi quan he, gom thanh family de hoc theo cum tu lien quan. Bao gom thanh vien gia dinh, hon nhan, quan he xa hoi, cam xuc va xung dot."
@@ -1087,6 +1087,84 @@
         "example": "Many elderly people value companionship more than material gifts.",
         "familyId": "companion",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mom",
+        "ipa": "/mɑːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "mẹ (thân mật)",
+        "example": "My mom cooks dinner every evening.",
+        "familyId": "mother",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dad",
+        "ipa": "/dæd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bố (thân mật)",
+        "example": "My dad taught me how to ride a bike.",
+        "familyId": "father",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kid",
+        "ipa": "/kɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đứa trẻ (thân mật)",
+        "example": "The kids are playing in the garden.",
+        "familyId": "child",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "son",
+        "ipa": "/sʌn/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con trai",
+        "example": "Their son is studying at university.",
+        "familyId": "child",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "daughter",
+        "ipa": "/ˈdɔːtər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con gái",
+        "example": "Their daughter just started school.",
+        "familyId": "child",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "baby",
+        "ipa": "/ˈbeɪbi/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "em bé",
+        "example": "The baby is sleeping in the next room.",
+        "familyId": "child",
+        "familyOrder": 7,
         "tags": []
       }
     }

@@ -4,7 +4,7 @@
     "topicName": "Home & Living",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
-    "totalCards": 104,
+    "totalCards": 112,
     "totalFamilies": 15,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
@@ -1371,6 +1371,110 @@
         "note": "Thường dùng số nhiều: tweezers",
         "familyId": "",
         "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "room",
+        "ipa": "/ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phòng",
+        "example": "My room has a large window.",
+        "familyId": "rooms",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stairs",
+        "ipa": "/sterz/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cầu thang",
+        "example": "She ran up the stairs quickly.",
+        "familyId": "structure",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "table",
+        "ipa": "/ˈteɪbl/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái bàn",
+        "example": "We eat dinner at the table together.",
+        "familyId": "furniture",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chair",
+        "ipa": "/tʃer/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái ghế",
+        "example": "Please pull up a chair and sit down.",
+        "familyId": "furniture",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bed",
+        "ipa": "/bed/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái giường",
+        "example": "She makes her bed every morning.",
+        "familyId": "furniture",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "closet",
+        "ipa": "/ˈklɑːzət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ quần áo (âm tường)",
+        "example": "Hang your coat in the closet.",
+        "familyId": "storage",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "key",
+        "ipa": "/kiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chìa khóa",
+        "example": "I lost my house key this morning.",
+        "familyId": "home-maintenance",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lock",
+        "ipa": "/lɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "ổ khóa",
+        "example": "The lock on the front door is broken.",
+        "familyId": "home-maintenance",
+        "familyOrder": 9,
         "tags": []
       }
     }

@@ -4,7 +4,7 @@
     "topicName": "Food & Drink",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Food & Drink (B1-B2)",
-    "totalCards": 119,
+    "totalCards": 132,
     "totalFamilies": 17,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Am thuc va Do uong, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom bua an, nguyen lieu, dinh duong, rau cu, trai cay, thit hai san, do uong, phuong phap nau an, vi giac, an ngoai va che do an."
@@ -1562,6 +1562,175 @@
         "example": "Eating too much fried food can be unhealthy.",
         "familyId": "diet",
         "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dish",
+        "ipa": "/dɪʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "món ăn, đĩa",
+        "example": "This dish is a local specialty.",
+        "familyId": "food-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ripe",
+        "ipa": "/raɪp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chín (trái cây)",
+        "example": "These bananas are perfectly ripe.",
+        "familyId": "taste-texture",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "raw",
+        "ipa": "/rɔː/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sống, chưa nấu",
+        "example": "Sushi is made with raw fish.",
+        "familyId": "taste-texture",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooked",
+        "ipa": "/kʊkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "đã nấu chín",
+        "example": "Make sure the meat is fully cooked.",
+        "familyId": "taste-texture",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tasty",
+        "ipa": "/ˈteɪsti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ngon",
+        "example": "The soup was really tasty.",
+        "familyId": "taste-texture",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lemon",
+        "ipa": "/ˈlemən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "quả chanh vàng",
+        "example": "She added a slice of lemon to her tea.",
+        "familyId": "fruit",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soup",
+        "ipa": "/suːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "súp, canh",
+        "example": "A bowl of hot soup is perfect in winter.",
+        "familyId": "meal-types",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salad",
+        "ipa": "/ˈsæləd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "salad, rau trộn",
+        "example": "I ordered a green salad for lunch.",
+        "familyId": "meal-types",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cake",
+        "ipa": "/keɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bánh ngọt, bánh kem",
+        "example": "She baked a chocolate cake for the party.",
+        "familyId": "meal-types",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cookie",
+        "ipa": "/ˈkʊki/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bánh quy",
+        "example": "The children love homemade cookies.",
+        "familyId": "meal-types",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "candy",
+        "ipa": "/ˈkændi/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "kẹo",
+        "example": "Too much candy is bad for your teeth.",
+        "familyId": "meal-types",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chocolate",
+        "ipa": "/ˈtʃɑːklət/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sô cô la",
+        "example": "He gave her a box of chocolate.",
+        "familyId": "meal-types",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "glass",
+        "ipa": "/ɡlæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cốc, ly (thủy tinh)",
+        "example": "She poured a glass of water.",
+        "familyId": "beverages",
+        "familyOrder": 9,
         "tags": []
       }
     }

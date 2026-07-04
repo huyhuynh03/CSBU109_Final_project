@@ -4,7 +4,7 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 100,
+    "totalCards": 165,
     "totalFamilies": 37,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
@@ -1313,6 +1313,20 @@
     },
     {
       "fieldValues": {
+        "word": "far",
+        "ipa": "/fɑːr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "xa",
+        "example": "The train station is quite far from my house.",
+        "note": "Nguyên mẫu của dạng so sánh bất quy tắc: far – farther/further – farthest/furthest.",
+        "familyId": "far",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
         "word": "mistake",
         "ipa": "/mɪˈsteɪk/",
         "partOfSpeech": "noun",
@@ -1334,6 +1348,838 @@
         "example": "She mistakenly sent the email to the wrong person.",
         "familyId": "mistake",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thing",
+        "ipa": "/θɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "vật, thứ, điều",
+        "example": "Can you pass me that thing on the table?",
+        "familyId": "things-objects",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stuff",
+        "ipa": "/stʌf/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đồ đạc, thứ (nói chung)",
+        "example": "I need to move all my stuff to the new house.",
+        "familyId": "things-objects",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "place",
+        "ipa": "/pleɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "nơi, chỗ, địa điểm",
+        "example": "This is a good place to relax.",
+        "familyId": "things-objects",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "way",
+        "ipa": "/weɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cách, đường, lối",
+        "example": "Can you show me the way to the station?",
+        "familyId": "things-objects",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "part",
+        "ipa": "/pɑːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phần, bộ phận",
+        "example": "This is the most important part of the plan.",
+        "familyId": "things-objects",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "side",
+        "ipa": "/saɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bên, phía, cạnh",
+        "example": "Please stand on the other side of the road.",
+        "familyId": "position-location",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "top",
+        "ipa": "/tɑːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đỉnh, phía trên",
+        "example": "The book is on top of the shelf.",
+        "familyId": "position-location",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bottom",
+        "ipa": "/ˈbɑːtəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đáy, phía dưới",
+        "example": "Sign your name at the bottom of the page.",
+        "familyId": "position-location",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "middle",
+        "ipa": "/ˈmɪdl/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "giữa, trung tâm",
+        "example": "There is a table in the middle of the room.",
+        "familyId": "position-location",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "front",
+        "ipa": "/frʌnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phía trước, mặt trước",
+        "example": "The car is parked in front of the house.",
+        "familyId": "position-location",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "edge",
+        "ipa": "/edʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mép, rìa, cạnh",
+        "example": "Do not put the glass near the edge of the table.",
+        "familyId": "position-location",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "corner",
+        "ipa": "/ˈkɔːrnər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "góc",
+        "example": "The shop is on the corner of the street.",
+        "familyId": "position-location",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "here",
+        "ipa": "/hɪr/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "ở đây",
+        "example": "Please come here for a moment.",
+        "familyId": "directions-place",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "there",
+        "ipa": "/ðer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "ở đó, ở kia",
+        "example": "Put your bag over there.",
+        "familyId": "directions-place",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "everywhere",
+        "ipa": "/ˈevriwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "khắp mọi nơi",
+        "example": "I looked everywhere but could not find my keys.",
+        "familyId": "directions-place",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anywhere",
+        "ipa": "/ˈeniwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "bất cứ đâu",
+        "example": "You can sit anywhere you like.",
+        "familyId": "directions-place",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nowhere",
+        "ipa": "/ˈnoʊwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "không nơi nào",
+        "example": "There was nowhere to park the car.",
+        "familyId": "directions-place",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inside",
+        "ipa": "/ɪnˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bên trong",
+        "example": "It is warmer inside the house.",
+        "familyId": "directions-place",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outside",
+        "ipa": "/ˌaʊtˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bên ngoài",
+        "example": "The children are playing outside.",
+        "familyId": "directions-place",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "above",
+        "ipa": "/əˈbʌv/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "ở trên, phía trên",
+        "example": "There is a lamp above the table.",
+        "familyId": "directions-place",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "below",
+        "ipa": "/bɪˈloʊ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "ở dưới, phía dưới",
+        "example": "The temperature is below zero today.",
+        "familyId": "directions-place",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "between",
+        "ipa": "/bɪˈtwiːn/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "ở giữa (hai vật)",
+        "example": "The bank is between the school and the park.",
+        "familyId": "directions-place",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "among",
+        "ipa": "/əˈmʌŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "giữa, trong số (nhiều)",
+        "example": "She was among the first to arrive.",
+        "familyId": "directions-place",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "behind",
+        "ipa": "/bɪˈhaɪnd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "phía sau",
+        "example": "The garden is behind the house.",
+        "familyId": "directions-place",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beside",
+        "ipa": "/bɪˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "bên cạnh",
+        "example": "She sat beside her friend.",
+        "familyId": "directions-place",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toward",
+        "ipa": "/tɔːrd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "về phía, hướng đến",
+        "example": "He walked toward the door.",
+        "familyId": "directions-place",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thin",
+        "ipa": "/θɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "mỏng, gầy",
+        "example": "The ice on the lake is very thin.",
+        "familyId": "describe-objects",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thick",
+        "ipa": "/θɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "dày",
+        "example": "She wore a thick coat in winter.",
+        "familyId": "describe-objects",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wide",
+        "ipa": "/waɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "rộng",
+        "example": "The river is very wide here.",
+        "familyId": "describe-objects",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "narrow",
+        "ipa": "/ˈnæroʊ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hẹp",
+        "example": "The old town has many narrow streets.",
+        "familyId": "describe-objects",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deep",
+        "ipa": "/diːp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "sâu",
+        "example": "The pool is too deep for children.",
+        "familyId": "describe-objects",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shallow",
+        "ipa": "/ˈʃæloʊ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nông, cạn",
+        "example": "The children played in the shallow water.",
+        "familyId": "describe-objects",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heavy",
+        "ipa": "/ˈhevi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "nặng",
+        "example": "This box is too heavy to lift.",
+        "familyId": "describe-objects",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hard",
+        "ipa": "/hɑːrd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "cứng, khó",
+        "example": "The bed was too hard to sleep on.",
+        "familyId": "describe-objects",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soft",
+        "ipa": "/sɔːft/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "mềm",
+        "example": "The pillow is soft and comfortable.",
+        "familyId": "describe-objects",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smooth",
+        "ipa": "/smuːð/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mịn, trơn",
+        "example": "The table has a smooth surface.",
+        "familyId": "describe-objects",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rough",
+        "ipa": "/rʌf/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thô ráp, gồ ghề",
+        "example": "The wall felt rough to the touch.",
+        "familyId": "describe-objects",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sharp",
+        "ipa": "/ʃɑːrp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sắc, bén",
+        "example": "Be careful, the knife is very sharp.",
+        "familyId": "describe-objects",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "round",
+        "ipa": "/raʊnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "tròn",
+        "example": "They sat at a round table.",
+        "familyId": "describe-objects",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "straight",
+        "ipa": "/streɪt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "thẳng",
+        "example": "Draw a straight line with the ruler.",
+        "familyId": "describe-objects",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wet",
+        "ipa": "/wet/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ướt",
+        "example": "The floor is wet, so be careful.",
+        "familyId": "describe-objects",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dry",
+        "ipa": "/draɪ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "khô",
+        "example": "Please use a dry towel.",
+        "familyId": "describe-objects",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dirty",
+        "ipa": "/ˈdɜːrti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "bẩn, dơ",
+        "example": "Your shoes are very dirty.",
+        "familyId": "describe-objects",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "start",
+        "ipa": "/stɑːrt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "bắt đầu, khởi động",
+        "example": "Let us start the lesson now.",
+        "familyId": "basic-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stop",
+        "ipa": "/stɑːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "dừng lại",
+        "example": "The bus stopped at the corner.",
+        "familyId": "basic-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wait",
+        "ipa": "/weɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "chờ, đợi",
+        "example": "Please wait for me here.",
+        "familyId": "basic-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stay",
+        "ipa": "/steɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ở lại",
+        "example": "We stayed at home all weekend.",
+        "familyId": "basic-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enter",
+        "ipa": "/ˈentər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi vào",
+        "example": "Please knock before you enter the room.",
+        "familyId": "basic-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exit",
+        "ipa": "/ˈeɡzɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi ra, thoát ra",
+        "example": "Everyone must exit through the back door.",
+        "familyId": "basic-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "open",
+        "ipa": "/ˈoʊpən/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mở",
+        "example": "Can you open the window, please?",
+        "familyId": "basic-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "close",
+        "ipa": "/kloʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đóng",
+        "example": "Please close the door quietly.",
+        "familyId": "basic-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "push",
+        "ipa": "/pʊʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đẩy",
+        "example": "You have to push the door to open it.",
+        "familyId": "basic-actions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pull",
+        "ipa": "/pʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "kéo",
+        "example": "Pull the rope as hard as you can.",
+        "familyId": "basic-actions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn",
+        "ipa": "/tɜːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "quay, rẽ, xoay",
+        "example": "Turn left at the next corner.",
+        "familyId": "basic-actions",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "move",
+        "ipa": "/muːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "di chuyển, chuyển động",
+        "example": "We plan to move to a bigger house.",
+        "familyId": "basic-actions",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carry",
+        "ipa": "/ˈkæri/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mang, vác, xách",
+        "example": "She carried the baby in her arms.",
+        "familyId": "basic-actions",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "use",
+        "ipa": "/juːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "sử dụng, dùng",
+        "example": "May I use your phone for a minute?",
+        "familyId": "basic-actions",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "need",
+        "ipa": "/niːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cần",
+        "example": "I need some help with this task.",
+        "familyId": "basic-actions",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "want",
+        "ipa": "/wɑːnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "muốn",
+        "example": "They want to buy a new car.",
+        "familyId": "basic-actions",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "try",
+        "ipa": "/traɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thử, cố gắng",
+        "example": "Try to finish it before lunch.",
+        "familyId": "basic-actions",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "help",
+        "ipa": "/help/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "giúp đỡ",
+        "example": "Can you help me carry these bags?",
+        "familyId": "basic-actions",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "own",
+        "ipa": "/oʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sở hữu",
+        "example": "They own a small shop downtown.",
+        "familyId": "basic-actions",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "belong",
+        "ipa": "/bɪˈlɔːŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về",
+        "example": "This book belongs to the library.",
+        "familyId": "basic-actions",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "end",
+        "ipa": "/end/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "kết thúc",
+        "example": "The movie ends at ten.",
+        "familyId": "basic-actions",
+        "familyOrder": 21,
         "tags": []
       }
     }

@@ -4,7 +4,7 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 100,
+    "totalCards": 110,
     "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
@@ -1310,6 +1310,136 @@
         "example": "He described a deep sense of helplessness after losing his job.",
         "familyId": "help",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hardworking",
+        "ipa": "/ˌhɑːrdˈwɜːrkɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chăm chỉ, cần cù",
+        "example": "She is a hardworking and reliable employee.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smart",
+        "ipa": "/smɑːrt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "thông minh, lanh lợi",
+        "example": "He is smart enough to solve the problem.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foolish",
+        "ipa": "/ˈfuːlɪʃ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngu ngốc, dại dột",
+        "example": "It was foolish to ignore the warning.",
+        "familyId": "negative-qualities",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "silly",
+        "ipa": "/ˈsɪli/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ngớ ngẩn, ngốc nghếch",
+        "example": "Stop making silly jokes during class.",
+        "familyId": "negative-qualities",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serious",
+        "ipa": "/ˈsɪriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nghiêm túc",
+        "example": "He is a serious student who studies hard.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "funny",
+        "ipa": "/ˈfʌni/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "vui tính, hài hước",
+        "example": "She is very funny and makes everyone laugh.",
+        "familyId": "social-personality",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strict",
+        "ipa": "/strɪkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nghiêm khắc",
+        "example": "Our teacher is strict but fair.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cruel",
+        "ipa": "/ˈkruːəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "độc ác, tàn nhẫn",
+        "example": "It is cruel to leave animals in the cold.",
+        "familyId": "negative-qualities",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talented",
+        "ipa": "/ˈtæləntɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tài năng",
+        "example": "She is a talented young musician.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cautious",
+        "ipa": "/ˈkɔːʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thận trọng, cẩn thận",
+        "example": "He is cautious when making big decisions.",
+        "familyId": "patience-emotional-control",
+        "familyOrder": 5,
         "tags": []
       }
     }

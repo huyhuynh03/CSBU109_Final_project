@@ -4,7 +4,7 @@
     "topicName": "Du lịch",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Travel (B1-B2)",
-    "totalCards": 114,
+    "totalCards": 137,
     "totalFamilies": 10,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Du lich, da loc tranh trung word voi cac topic seed hien co."
@@ -1489,6 +1489,305 @@
         "example": "A phrase book helps in countries where you don't speak the language.",
         "familyId": "travel-lifestyle",
         "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trip",
+        "ipa": "/trɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến đi",
+        "example": "We are planning a trip to the beach.",
+        "familyId": "planning-booking",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "journey",
+        "ipa": "/ˈdʒɜːrni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành trình, cuộc hành trình",
+        "example": "The journey by train took six hours.",
+        "familyId": "planning-booking",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tour",
+        "ipa": "/tʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến tham quan, tour",
+        "example": "We joined a guided tour of the old city.",
+        "familyId": "sightseeing",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flight",
+        "ipa": "/flaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến bay",
+        "example": "Our flight leaves at six in the morning.",
+        "familyId": "air-travel",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "airport",
+        "ipa": "/ˈerpɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sân bay",
+        "example": "We arrived at the airport two hours early.",
+        "familyId": "air-travel",
+        "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ticket",
+        "ipa": "/ˈtɪkət/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "vé",
+        "example": "I booked a return ticket online.",
+        "familyId": "planning-booking",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "luggage",
+        "ipa": "/ˈlʌɡɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành lý",
+        "example": "She packed her luggage the night before.",
+        "familyId": "air-travel",
+        "familyOrder": 23,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suitcase",
+        "ipa": "/ˈsuːtkeɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vali",
+        "example": "His suitcase was too heavy to carry.",
+        "familyId": "air-travel",
+        "familyOrder": 24,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "map",
+        "ipa": "/mæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bản đồ",
+        "example": "We used a map to find the museum.",
+        "familyId": "sightseeing",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hotel",
+        "ipa": "/hoʊˈtel/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "khách sạn",
+        "example": "We stayed at a small hotel near the beach.",
+        "familyId": "accommodation",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tourist",
+        "ipa": "/ˈtʊrɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "khách du lịch",
+        "example": "The city is full of tourists in summer.",
+        "familyId": "sightseeing",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beach",
+        "ipa": "/biːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bãi biển",
+        "example": "The children built sandcastles on the beach.",
+        "familyId": "sightseeing",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mountain",
+        "ipa": "/ˈmaʊntən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "núi",
+        "example": "They climbed the mountain in two days.",
+        "familyId": "sightseeing",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lake",
+        "ipa": "/leɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "hồ",
+        "example": "We went swimming in the lake.",
+        "familyId": "sightseeing",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "river",
+        "ipa": "/ˈrɪvər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sông",
+        "example": "A long bridge crosses the river.",
+        "familyId": "sightseeing",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forest",
+        "ipa": "/ˈfɔːrɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "rừng",
+        "example": "We hiked through the forest all day.",
+        "familyId": "sightseeing",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desert",
+        "ipa": "/ˈdezərt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sa mạc",
+        "example": "The desert is very hot during the day.",
+        "familyId": "sightseeing",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "island",
+        "ipa": "/ˈaɪlənd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hòn đảo",
+        "example": "They spent a week on a tropical island.",
+        "familyId": "sightseeing",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "road",
+        "ipa": "/roʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con đường",
+        "example": "This road leads to the city center.",
+        "familyId": "transport",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "street",
+        "ipa": "/striːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đường phố",
+        "example": "The shop is on a busy street.",
+        "familyId": "transport",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bridge",
+        "ipa": "/brɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cây cầu",
+        "example": "We crossed the bridge over the river.",
+        "familyId": "transport",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "station",
+        "ipa": "/ˈsteɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "nhà ga, trạm",
+        "example": "The train station is near the hotel.",
+        "familyId": "transport",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guide",
+        "ipa": "/ɡaɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hướng dẫn viên",
+        "example": "Our guide explained the history of the temple.",
+        "familyId": "sightseeing",
+        "familyOrder": 22,
         "tags": []
       }
     }

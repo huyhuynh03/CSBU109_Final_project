@@ -4,7 +4,7 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 120,
+    "totalCards": 135,
     "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
@@ -1567,6 +1567,201 @@
         "example": "She is currently working on a new project.",
         "familyId": "current",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talk",
+        "ipa": "/tɔːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nói chuyện, trò chuyện",
+        "example": "Can we talk about this later?",
+        "familyId": "speaking-asking",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reply",
+        "ipa": "/rɪˈplaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "trả lời, hồi đáp",
+        "example": "She replied to my email right away.",
+        "familyId": "speaking-asking",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "question",
+        "ipa": "/ˈkwestʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "câu hỏi",
+        "example": "May I ask you a question?",
+        "familyId": "speaking-asking",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "describe",
+        "ipa": "/dɪˈskraɪb/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "miêu tả, mô tả",
+        "example": "Can you describe what you saw?",
+        "familyId": "speaking-asking",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advise",
+        "ipa": "/ədˈvaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khuyên, tư vấn",
+        "example": "The doctor advised me to rest.",
+        "familyId": "speaking-asking",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warn",
+        "ipa": "/wɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cảnh báo",
+        "example": "They warned us about the storm.",
+        "familyId": "speaking-asking",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "promise",
+        "ipa": "/ˈprɑːmɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hứa",
+        "example": "He promised to call me tonight.",
+        "familyId": "speaking-asking",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "complain",
+        "ipa": "/kəmˈpleɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phàn nàn, than phiền",
+        "example": "She complained about the noisy neighbors.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refuse",
+        "ipa": "/rɪˈfjuːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "từ chối",
+        "example": "He refused to accept the offer.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accept",
+        "ipa": "/əkˈsept/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chấp nhận, đồng ý",
+        "example": "She accepted the invitation happily.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discuss",
+        "ipa": "/dɪˈskʌs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thảo luận, bàn bạc",
+        "example": "We will discuss the plan tomorrow.",
+        "familyId": "speaking-asking",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "whisper",
+        "ipa": "/ˈwɪspər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thì thầm",
+        "example": "She whispered the secret in my ear.",
+        "familyId": "speaking-asking",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shout",
+        "ipa": "/ʃaʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hét, la lớn",
+        "example": "He shouted to get their attention.",
+        "familyId": "speaking-asking",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "announce",
+        "ipa": "/əˈnaʊns/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thông báo, tuyên bố",
+        "example": "They announced the results this morning.",
+        "familyId": "media-digital-social",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "letter",
+        "ipa": "/ˈletər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "lá thư",
+        "example": "She wrote a letter to her grandmother.",
+        "familyId": "communication-basics",
+        "familyOrder": 7,
         "tags": []
       }
     }

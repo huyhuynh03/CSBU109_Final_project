@@ -4,7 +4,7 @@
     "topicName": "Emotion & Feelings",
     "level": "intermediate",
     "source": "curated emotion and feelings vocabulary seed",
-    "totalCards": 144,
+    "totalCards": 159,
     "totalFamilies": 16,
     "generatedAt": "2026-05-08",
     "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
@@ -2201,6 +2201,201 @@
         "example": "Reading gives her great enjoyment.",
         "familyId": "enjoy",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "joyful",
+        "ipa": "/ˈdʒɔɪfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui sướng, hân hoan",
+        "example": "It was a joyful reunion after many years.",
+        "familyId": "happiness-positive",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eager",
+        "ipa": "/ˈiːɡər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "háo hức, hăm hở",
+        "example": "The students were eager to learn.",
+        "familyId": "happiness-positive",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleepy",
+        "ipa": "/ˈsliːpi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "buồn ngủ",
+        "example": "I feel sleepy after a big lunch.",
+        "familyId": "emotional-states",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shocked",
+        "ipa": "/ʃɑːkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị sốc, sững sờ",
+        "example": "She was shocked by the sad news.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "like",
+        "ipa": "/laɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thích",
+        "example": "I like listening to music in the evening.",
+        "familyId": "love-affection",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dislike",
+        "ipa": "/dɪsˈlaɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "không thích",
+        "example": "He dislikes waking up early.",
+        "familyId": "love-affection",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hate",
+        "ipa": "/heɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ghét",
+        "example": "She hates being stuck in traffic.",
+        "familyId": "anger-frustration",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hope",
+        "ipa": "/hoʊp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hy vọng",
+        "example": "I hope you feel better soon.",
+        "familyId": "calm-relief",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wish",
+        "ipa": "/wɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ước, mong",
+        "example": "I wish I could travel more often.",
+        "familyId": "calm-relief",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smile",
+        "ipa": "/smaɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mỉm cười",
+        "example": "She smiled when she saw her friend.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "laugh",
+        "ipa": "/læf/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cười",
+        "example": "We laughed at his funny story.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cry",
+        "ipa": "/kraɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "khóc",
+        "example": "The baby cried all night.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weep",
+        "ipa": "/wiːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "khóc thút thít, rơi lệ",
+        "example": "She wept quietly at the funeral.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sigh",
+        "ipa": "/saɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thở dài",
+        "example": "He sighed with relief when it was over.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frown",
+        "ipa": "/fraʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cau mày, nhíu mày",
+        "example": "She frowned when she read the message.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 16,
         "tags": []
       }
     }

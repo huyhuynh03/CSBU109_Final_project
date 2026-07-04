@@ -4,7 +4,7 @@
     "topicName": "Daily Activities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Activities (B1-B2)",
-    "totalCards": 44,
+    "totalCards": 49,
     "totalFamilies": 16,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Hoat dong hang ngay, gom theo family/nhom hanh dong de hoc theo cum lien quan. Bao gom buoi sang, cham soc ca nhan, chuan bi ra ngoai, bua an, di lai, viec cong cong, hoc tap lam viec, digital, suc khoe, viec nha, gia dinh, xa hoi, giai tri va buoi toi."
@@ -585,6 +585,71 @@
         "example": "I actually finished my morning routine early today.",
         "familyId": "actual",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "undress",
+        "ipa": "/ʌnˈdres/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cởi quần áo",
+        "example": "The child learned to undress by himself.",
+        "familyId": "personal-care-actions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breathe",
+        "ipa": "/briːð/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hít thở",
+        "example": "Breathe deeply and try to relax.",
+        "familyId": "health-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shop",
+        "ipa": "/ʃɑːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mua sắm",
+        "example": "We usually shop for groceries on Sunday.",
+        "familyId": "public-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "call",
+        "ipa": "/kɔːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "gọi điện, gọi",
+        "example": "I will call you when I get home.",
+        "familyId": "digital-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel",
+        "ipa": "/ˈtrævl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đi lại, du hành",
+        "example": "They travel to work by train every day.",
+        "familyId": "travel-actions",
+        "familyOrder": 5,
         "tags": []
       }
     }
