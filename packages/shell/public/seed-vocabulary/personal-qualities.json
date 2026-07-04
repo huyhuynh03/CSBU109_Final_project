@@ -4,7 +4,7 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 99,
+    "totalCards": 100,
     "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
@@ -1010,6 +1010,20 @@
         "example": "Aggressive behavior makes teamwork difficult.",
         "familyId": "negative-qualities",
         "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bad",
+        "ipa": "/bæd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "xấu, tệ, kém",
+        "example": "He has a bad habit of arriving late to meetings.",
+        "note": "Nguyên mẫu của dạng so sánh bất quy tắc: bad – worse – worst.",
+        "familyId": "negative-qualities",
+        "familyOrder": 11,
         "tags": []
       }
     },

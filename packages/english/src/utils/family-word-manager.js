@@ -212,11 +212,13 @@ const FamilyWordManager = {
         const pos = this._normalize(fv.partOfSpeech);
         const isGoodWellBase = (word === 'good' && pos === 'adjective')
             || (word === 'well' && pos === 'adverb');
+        const isBadBase = word === 'bad' && pos === 'adjective';
         const isLegacyComparison = tags.includes('irregular-adjective')
             || tags.includes('irregular-adverb')
             || !!fv.comparative
             || !!fv.superlative
-            || isGoodWellBase;
+            || isGoodWellBase
+            || isBadBase;
 
         if ((irrMeta && (irrMeta.tag === 'irregular-comparative' || irrMeta.tag === 'irregular-superlative')) || isLegacyComparison) {
             const base = this._getComparisonGroupBase(fv);
