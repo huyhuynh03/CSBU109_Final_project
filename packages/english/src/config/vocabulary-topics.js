@@ -270,6 +270,13 @@ const VocabularyTopics = [
         category: 'ielts',
         order: 36
     },
+    {
+        id: 'adverbs-ielts-writing',
+        name: 'Trạng từ (IELTS Writing)',
+        icon: 'edit_note',
+        category: 'ielts',
+        order: 37
+    },
 
     // ==========================================
     // Nhóm 5: Idiom
@@ -279,7 +286,7 @@ const VocabularyTopics = [
         name: 'Thành ngữ',
         icon: 'format_quote',
         category: 'idiom',
-        order: 37
+        order: 38
     },
 
     // ==========================================
@@ -290,35 +297,35 @@ const VocabularyTopics = [
         name: 'Động từ BQT – V1 (Nguyên mẫu)',
         icon: 'bolt',
         category: 'irregular',
-        order: 38
+        order: 39
     },
     {
         id: 'irregular-verb-v2',
         name: 'Động từ BQT – V2 (Quá khứ đơn)',
         icon: 'history',
         category: 'irregular',
-        order: 39
+        order: 40
     },
     {
         id: 'irregular-verb-v3',
         name: 'Động từ BQT – V3 (Quá khứ phân từ)',
         icon: 'timelapse',
         category: 'irregular',
-        order: 40
+        order: 41
     },
     {
         id: 'irregular-adj-comparative',
         name: 'Irregular Comparison Comparative (So sánh hơn bất quy tắc)',
         icon: 'trending_up',
         category: 'irregular',
-        order: 41
+        order: 42
     },
     {
         id: 'irregular-adj-superlative',
         name: 'Irregular Comparison Superlative (So sánh nhất bất quy tắc)',
         icon: 'emoji_events',
         category: 'irregular',
-        order: 42
+        order: 43
     },
 
     // ==========================================
@@ -329,7 +336,7 @@ const VocabularyTopics = [
         name: 'Phrasal Verbs (Cụm động từ)',
         icon: 'merge_type',
         category: 'phrasal',
-        order: 43
+        order: 44
     }
 ];
 

@@ -1,0 +1,1223 @@
+{
+  "_meta": {
+    "topicId": "adverbs-ielts-writing",
+    "topicName": "Trạng từ (IELTS Writing)",
+    "level": "advanced",
+    "source": "Curated IELTS/Academic Vocabulary - Adverbs for Writing (B2-C1)",
+    "totalCards": 93,
+    "totalFamilies": 12,
+    "generatedAt": "2026-07-04",
+    "note": "Bo trang tu hoc thuat thuong dung trong IELTS Writing, nhom theo chuc nang: lien ket (tuong phan/bo sung/ket qua), trinh tu, thai do (do chac chan/danh gia), muc do (manh/vua), tan suat & khai quat, cach thuc hoc thuat, xu huong thay doi va tom tat. Da loai bo cac trang tu da co san trong cac topic khac cua app (actually, largely, probably, definitely, exactly, ...)."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "however",
+        "ipa": "/haʊˈev.ər/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tuy nhiên, tuy vậy",
+        "example": "The plan looks promising; however, it ignores the long-term costs.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nevertheless",
+        "ipa": "/ˌnev.ə.ðəˈles/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "tuy nhiên, dù vậy",
+        "example": "The evidence is limited; nevertheless, the trend is clear.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nonetheless",
+        "ipa": "/ˌnʌn.ðəˈles/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "dù vậy, mặc dù thế",
+        "example": "The policy is controversial; nonetheless, it has widespread support.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conversely",
+        "ipa": "/ˈkɒn.vɜːs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "ngược lại",
+        "example": "Urban wages are rising; conversely, rural incomes are falling.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alternatively",
+        "ipa": "/ɔːlˈtɜː.nə.tɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách khác, hoặc là",
+        "example": "Governments could raise taxes; alternatively, they could cut spending.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "instead",
+        "ipa": "/ɪnˈsted/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "thay vào đó",
+        "example": "Many students no longer buy books; instead, they read online.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regardless",
+        "ipa": "/rɪˈɡɑːd.ləs/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "bất kể, dù thế nào",
+        "example": "The project will proceed regardless of the criticism.",
+        "familyId": "adv-linking-contrast",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "furthermore",
+        "ipa": "/ˌfɜː.ðəˈmɔːr/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "hơn nữa, ngoài ra",
+        "example": "The plan is expensive; furthermore, it may not work.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moreover",
+        "ipa": "/mɔːrˈəʊ.vər/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "hơn nữa, thêm vào đó",
+        "example": "The city is crowded; moreover, pollution is worsening.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "additionally",
+        "ipa": "/əˈdɪʃ.ən.əl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "ngoài ra, thêm nữa",
+        "example": "Additionally, the report highlights the impact on health.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "besides",
+        "ipa": "/bɪˈsaɪdz/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "ngoài ra, bên cạnh đó",
+        "example": "Besides, few people can afford such a service.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "likewise",
+        "ipa": "/ˈlaɪk.waɪz/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "tương tự như vậy",
+        "example": "Reading improves vocabulary; likewise, writing sharpens grammar.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "similarly",
+        "ipa": "/ˈsɪm.ɪ.lə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tương tự, giống như vậy",
+        "example": "Similarly, older workers may struggle with new technology.",
+        "familyId": "adv-linking-addition",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "therefore",
+        "ipa": "/ˈðeə.fɔːr/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "do đó, vì vậy",
+        "example": "The costs are high; therefore, the plan is unlikely to succeed.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thus",
+        "ipa": "/ðʌs/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "vì thế, như vậy",
+        "example": "Demand fell sharply, thus forcing prices down.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hence",
+        "ipa": "/hens/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "do đó, bởi vậy",
+        "example": "The data is incomplete; hence, the conclusion is uncertain.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consequently",
+        "ipa": "/ˈkɒn.sɪ.kwənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "kết quả là, do đó",
+        "example": "Traffic increased; consequently, air quality declined.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accordingly",
+        "ipa": "/əˈkɔː.dɪŋ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "theo đó, vì thế mà",
+        "example": "The rules changed, and companies adjusted their policies accordingly.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subsequently",
+        "ipa": "/ˈsʌb.sɪ.kwənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "sau đó, tiếp theo",
+        "example": "The law was passed and subsequently enforced nationwide.",
+        "familyId": "adv-linking-result",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "firstly",
+        "ipa": "/ˈfɜːst.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "trước tiên, thứ nhất",
+        "example": "Firstly, education reduces poverty in the long term.",
+        "familyId": "adv-sequence",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "secondly",
+        "ipa": "/ˈsek.ənd.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "thứ hai, tiếp theo",
+        "example": "Secondly, public transport eases traffic congestion.",
+        "familyId": "adv-sequence",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "finally",
+        "ipa": "/ˈfaɪ.nəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "cuối cùng",
+        "example": "Finally, governments must invest in renewable energy.",
+        "familyId": "adv-sequence",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "initially",
+        "ipa": "/ɪˈnɪʃ.əl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "ban đầu, lúc đầu",
+        "example": "Initially, the reform faced strong opposition.",
+        "familyId": "adv-sequence",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "previously",
+        "ipa": "/ˈpriː.vi.əs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "trước đây, trước đó",
+        "example": "Prices were previously stable before the crisis.",
+        "familyId": "adv-sequence",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eventually",
+        "ipa": "/ɪˈven.tʃu.ə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "cuối cùng thì, rốt cuộc",
+        "example": "The economy eventually recovered after several years.",
+        "familyId": "adv-sequence",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meanwhile",
+        "ipa": "/ˈmiːn.waɪl/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "trong khi đó, đồng thời",
+        "example": "Cities expanded; meanwhile, rural areas lost population.",
+        "familyId": "adv-sequence",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simultaneously",
+        "ipa": "/ˌsɪm.əlˈteɪ.ni.əs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "đồng thời, cùng lúc",
+        "example": "The policy simultaneously boosts jobs and reduces emissions.",
+        "familyId": "adv-sequence",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arguably",
+        "ipa": "/ˈɑːɡ.ju.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "có thể lập luận rằng, có lẽ",
+        "example": "Education is arguably the most important factor in development.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "undoubtedly",
+        "ipa": "/ʌnˈdaʊ.tɪd.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "chắc chắn, không nghi ngờ gì",
+        "example": "Technology has undoubtedly changed the way we communicate.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "certainly",
+        "ipa": "/ˈsɜː.tən.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "chắc chắn, hẳn là",
+        "example": "This approach will certainly reduce costs.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "presumably",
+        "ipa": "/prɪˈzjuː.mə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "có lẽ, chắc là",
+        "example": "The figures are presumably based on official records.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seemingly",
+        "ipa": "/ˈsiː.mɪŋ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "có vẻ như, dường như",
+        "example": "The seemingly simple solution created new problems.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apparently",
+        "ipa": "/əˈpær.ənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "có vẻ như, dường như",
+        "example": "Apparently, the policy had little effect on unemployment.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evidently",
+        "ipa": "/ˈev.ɪ.dənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "rõ ràng là, hiển nhiên",
+        "example": "The results were evidently affected by the small sample.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clearly",
+        "ipa": "/ˈklɪə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "rõ ràng",
+        "example": "The graph clearly shows a rise in temperatures.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "obviously",
+        "ipa": "/ˈɒb.vi.əs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "rõ ràng, hiển nhiên",
+        "example": "Obviously, no single measure can solve the problem.",
+        "familyId": "adv-stance-certainty",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fortunately",
+        "ipa": "/ˈfɔː.tʃən.ət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "may mắn thay",
+        "example": "Fortunately, awareness of the issue is growing.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unfortunately",
+        "ipa": "/ʌnˈfɔː.tʃən.ət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "không may thay, đáng tiếc",
+        "example": "Unfortunately, many species are already extinct.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ideally",
+        "ipa": "/aɪˈdɪə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "lý tưởng nhất là",
+        "example": "Ideally, funding should be shared between the two sectors.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surprisingly",
+        "ipa": "/səˈpraɪ.zɪŋ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "đáng ngạc nhiên là",
+        "example": "Surprisingly, the cheaper option performed better.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interestingly",
+        "ipa": "/ˈɪn.trəs.tɪŋ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "điều thú vị là",
+        "example": "Interestingly, younger people were less affected.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "importantly",
+        "ipa": "/ɪmˈpɔː.tənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "quan trọng là",
+        "example": "More importantly, the reform protects vulnerable groups.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "notably",
+        "ipa": "/ˈnəʊ.tə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "đáng chú ý là, đặc biệt là",
+        "example": "Several countries, notably Japan, have ageing populations.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crucially",
+        "ipa": "/ˈkruː.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách then chốt, quan trọng là",
+        "example": "Crucially, the plan depends on long-term funding.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "critically",
+        "ipa": "/ˈkrɪt.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách nghiêm trọng; một cách phê phán",
+        "example": "The health system is critically underfunded in rural areas.",
+        "familyId": "adv-stance-evaluation",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "significantly",
+        "ipa": "/sɪɡˈnɪf.ɪ.kənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách đáng kể",
+        "example": "Online learning has significantly increased in recent years.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "considerably",
+        "ipa": "/kənˈsɪd.ər.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách đáng kể, khá nhiều",
+        "example": "Living costs have risen considerably over the past decade.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "substantially",
+        "ipa": "/səbˈstæn.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách đáng kể, về cơ bản",
+        "example": "Emissions fell substantially after the new law.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dramatically",
+        "ipa": "/drəˈmæt.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách mạnh mẽ, đột ngột",
+        "example": "The number of tourists rose dramatically after 2010.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "markedly",
+        "ipa": "/ˈmɑː.kɪd.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách rõ rệt",
+        "example": "Attitudes towards recycling have changed markedly.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greatly",
+        "ipa": "/ˈɡreɪt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "rất nhiều, đáng kể",
+        "example": "The internet has greatly improved access to information.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vastly",
+        "ipa": "/ˈvɑːst.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "vô cùng, rất lớn",
+        "example": "The two regions differ vastly in wealth.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "profoundly",
+        "ipa": "/prəˈfaʊnd.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách sâu sắc",
+        "example": "The pandemic profoundly affected global trade.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "remarkably",
+        "ipa": "/rɪˈmɑː.kə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách đáng chú ý, hết sức",
+        "example": "The city has grown remarkably fast in ten years.",
+        "familyId": "adv-degree-strong",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relatively",
+        "ipa": "/ˈrel.ə.tɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách tương đối",
+        "example": "The country has a relatively low crime rate.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comparatively",
+        "ipa": "/kəmˈpær.ə.tɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách tương đối, so với",
+        "example": "Housing is comparatively cheap in smaller towns.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moderately",
+        "ipa": "/ˈmɒd.ər.ət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách vừa phải",
+        "example": "The results were moderately successful.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fairly",
+        "ipa": "/ˈfeə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "khá, tương đối",
+        "example": "The task is fairly straightforward for most learners.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reasonably",
+        "ipa": "/ˈriː.zən.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách hợp lý, khá",
+        "example": "The prices are reasonably stable this year.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slightly",
+        "ipa": "/ˈslaɪt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một chút, khẽ",
+        "example": "The figure rose slightly before falling again.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marginally",
+        "ipa": "/ˈmɑː.dʒɪn.əl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách không đáng kể, chút ít",
+        "example": "Sales improved only marginally after the campaign.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "partially",
+        "ipa": "/ˈpɑː.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một phần",
+        "example": "The problem was only partially solved by the reform.",
+        "familyId": "adv-degree-moderate",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generally",
+        "ipa": "/ˈdʒen.ər.əl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "nhìn chung, thường",
+        "example": "People generally prefer flexible working hours.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "typically",
+        "ipa": "/ˈtɪp.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "điển hình là, thường",
+        "example": "Large cities typically have higher living costs.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "usually",
+        "ipa": "/ˈjuː.ʒu.ə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "thường thường",
+        "example": "Students usually perform better with regular feedback.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frequently",
+        "ipa": "/ˈfriː.kwənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "thường xuyên",
+        "example": "This issue is frequently discussed in the media.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occasionally",
+        "ipa": "/əˈkeɪ.ʒən.əl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "thỉnh thoảng",
+        "example": "Governments occasionally intervene to control prices.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "increasingly",
+        "ipa": "/ɪnˈkriː.sɪŋ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "ngày càng",
+        "example": "People are increasingly concerned about data privacy.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predominantly",
+        "ipa": "/prɪˈdɒm.ɪ.nənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "chủ yếu, phần lớn",
+        "example": "The workforce is predominantly young in this sector.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "primarily",
+        "ipa": "/praɪˈmer.ɪ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "chủ yếu, trước hết",
+        "example": "The problem is primarily caused by rapid urbanisation.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mainly",
+        "ipa": "/ˈmeɪn.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "chủ yếu",
+        "example": "The report focuses mainly on developing countries.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commonly",
+        "ipa": "/ˈkɒm.ən.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách phổ biến, thường",
+        "example": "This method is commonly used in academic research.",
+        "familyId": "adv-frequency-generalization",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "effectively",
+        "ipa": "/ɪˈfek.tɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách hiệu quả; thực chất",
+        "example": "The measures effectively reduced traffic in the city centre.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "efficiently",
+        "ipa": "/ɪˈfɪʃ.ənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách hiệu quả (ít lãng phí)",
+        "example": "Resources must be used efficiently to avoid waste.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accurately",
+        "ipa": "/ˈæk.jə.rət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách chính xác",
+        "example": "The model predicts demand fairly accurately.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "precisely",
+        "ipa": "/prɪˈsaɪs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách chính xác, cụ thể",
+        "example": "It is difficult to measure happiness precisely.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thoroughly",
+        "ipa": "/ˈθʌr.ə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách kỹ lưỡng, triệt để",
+        "example": "The proposal should be thoroughly examined first.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extensively",
+        "ipa": "/ɪkˈsten.sɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách rộng rãi, kỹ càng",
+        "example": "The topic has been studied extensively by economists.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rigorously",
+        "ipa": "/ˈrɪɡ.ər.əs.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách nghiêm ngặt, chặt chẽ",
+        "example": "The data was rigorously tested before publication.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "systematically",
+        "ipa": "/ˌsɪs.təˈmæt.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách có hệ thống",
+        "example": "The evidence was collected systematically over ten years.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "objectively",
+        "ipa": "/əbˈdʒek.tɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách khách quan",
+        "example": "It is hard to assess art objectively.",
+        "familyId": "adv-manner-academic",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gradually",
+        "ipa": "/ˈɡrædʒ.u.ə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách từ từ, dần dần",
+        "example": "Attitudes towards remote work are gradually changing.",
+        "familyId": "adv-trend",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "steadily",
+        "ipa": "/ˈsted.ɪ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách đều đặn, ổn định",
+        "example": "The population has grown steadily since 2000.",
+        "familyId": "adv-trend",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rapidly",
+        "ipa": "/ˈræp.ɪd.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách nhanh chóng",
+        "example": "Technology is developing rapidly in this field.",
+        "familyId": "adv-trend",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "progressively",
+        "ipa": "/prəˈɡres.ɪv.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách dần dần, tăng dần",
+        "example": "The tax becomes progressively higher for larger incomes.",
+        "familyId": "adv-trend",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inevitably",
+        "ipa": "/ɪnˈev.ɪ.tə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách tất yếu, không tránh khỏi",
+        "example": "Rapid growth inevitably puts pressure on infrastructure.",
+        "familyId": "adv-trend",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ultimately",
+        "ipa": "/ˈʌl.tɪ.mət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "cuối cùng, xét cho cùng",
+        "example": "Ultimately, the decision rests with the government.",
+        "familyId": "adv-trend",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "essentially",
+        "ipa": "/ɪˈsen.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "về cơ bản, thực chất",
+        "example": "The two proposals are essentially the same.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fundamentally",
+        "ipa": "/ˌfʌn.dəˈmen.təl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "về căn bản",
+        "example": "The system is fundamentally flawed and needs reform.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "basically",
+        "ipa": "/ˈbeɪ.sɪk.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "về cơ bản, nói chung",
+        "example": "Basically, the argument comes down to cost.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overall",
+        "ipa": "/ˌəʊ.vərˈɔːl/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "nhìn chung, tổng thể",
+        "example": "Overall, the benefits outweigh the drawbacks.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "particularly",
+        "ipa": "/pəˈtɪk.jə.lə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "đặc biệt là, nhất là",
+        "example": "This affects young people, particularly students.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "specifically",
+        "ipa": "/spəˈsɪf.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách cụ thể, nói rõ hơn",
+        "example": "The funds should be used specifically for education.",
+        "familyId": "adv-summarizing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    }
+  ]
+}

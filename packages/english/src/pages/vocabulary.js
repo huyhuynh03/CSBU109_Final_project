@@ -47,6 +47,7 @@ const VocabularyPage = {
         'employment': 'employment.json',
         'urbanization': 'urbanization.json',
         'history-archeology': 'history-archeology.json',
+        'adverbs-ielts-writing': 'adverbs-ielts-writing.json',
         'idioms': 'idioms.json',
         'irregular-verb-v1': 'irregular-verb-v1.json',
         'irregular-verb-v2': 'irregular-verb-v2.json',
