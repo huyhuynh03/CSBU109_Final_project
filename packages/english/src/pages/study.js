@@ -10,6 +10,7 @@ const StudyPage = {
     _startedAt: null,
     _currentAttempts: 1,
     _currentRevealed: false,
+    _currentUsedHint: false,
     _pendingFamilyPopup: null,
     _allTypeCards: [],
 
@@ -464,6 +465,7 @@ const StudyPage = {
 
         this._currentAttempts = 1;
         this._currentRevealed = false;
+        this._currentUsedHint = false;
     },
 
     /**
@@ -542,7 +544,10 @@ const StudyPage = {
             <span class="material-icons-round">lightbulb</span>
             Gợi ý: <strong>${this._escapeHtml(hint)}...</strong>
         </div>`;
-        this._currentAttempts = Math.max(this._currentAttempts, 2);
+        // Dùng gợi ý KHÔNG được tính như gõ sai. Đánh dấu riêng usedHint để
+        // rating xử lý bằng HARD (giữ nguyên bậc) thay vì AGAIN (lùi bậc)
+        // khi vẫn trả lời đúng.
+        this._currentUsedHint = true;
         input.value = hint;
         input.focus();
         input.setSelectionRange(hint.length, hint.length);
@@ -571,7 +576,8 @@ const StudyPage = {
         s.results[card.id][`step${s.currentStep}`] = {
             correct: correct && !this._currentRevealed,
             attempts: this._currentAttempts,
-            revealed: this._currentRevealed
+            revealed: this._currentRevealed,
+            usedHint: this._currentUsedHint
         };
     },
 
@@ -606,10 +612,13 @@ const StudyPage = {
         // Đúng cả 2 bước, không reveal, không sai phát nào => GOOD
         //   (NEW + GOOD -> stepIndex 0 = Cấp độ 1 (30 phút), state REVIEW.
         //    KHÔNG dùng EASY vì EASY nhảy +2 bậc -> Cấp độ 2 ngay, bỏ qua Cấp độ 1.)
+        // Dùng gợi ý nhưng không gõ sai lần nào => HARD (giữ nguyên bậc,
+        // không bị coi như gõ sai/AGAIN).
         let rating;
         if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
         else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
         else if (r2.attempts > 1 || r3.attempts > 1) rating = FSRS.Rating.AGAIN;
+        else if (r2.usedHint || r3.usedHint) rating = FSRS.Rating.HARD;
         else rating = FSRS.Rating.GOOD;
 
         const updatedCard = FSRS.review(card, rating);

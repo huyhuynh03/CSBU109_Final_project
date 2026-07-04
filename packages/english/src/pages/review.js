@@ -335,6 +335,7 @@ const ReviewPage = {
         // Reset attempts tracking
         this._currentAttempts = 1;
         this._currentRevealed = false;
+        this._currentUsedHint = false;
     },
 
     /**
@@ -432,7 +433,10 @@ const ReviewPage = {
             Gợi ý: <strong>${this._escapeHtml(hint)}...</strong>
         </div>`;
 
-        this._currentAttempts = Math.max(this._currentAttempts, 2);
+        // Dùng gợi ý KHÔNG được tính như gõ sai (attempts giữ nguyên số lần
+        // gõ sai thật). Đánh dấu riêng usedHint để rating xử lý bằng HARD
+        // (giữ nguyên bậc) thay vì AGAIN (lùi bậc) khi vẫn trả lời đúng.
+        this._currentUsedHint = true;
         input.value = hint;
         input.focus();
         input.setSelectionRange(hint.length, hint.length);
@@ -594,7 +598,8 @@ const ReviewPage = {
         const result = {
             correct: correct && !this._currentRevealed,
             attempts: this._currentAttempts,
-            revealed: this._currentRevealed
+            revealed: this._currentRevealed,
+            usedHint: this._currentUsedHint
         };
         if (s.currentRound === 1) {
             s.round1Results[card.id] = result;
@@ -630,8 +635,8 @@ const ReviewPage = {
 
         const results = Object.values(this._session.round1Results);
         const total = results.length;
-        const firstTry = results.filter(r => r.correct && r.attempts === 1 && !r.revealed).length;
-        const needHint = results.filter(r => r.correct && r.attempts > 1 && !r.revealed).length;
+        const firstTry = results.filter(r => r.correct && r.attempts === 1 && !r.usedHint && !r.revealed).length;
+        const needHint = results.filter(r => r.correct && r.usedHint && !r.revealed).length;
         const revealed = results.filter(r => r.revealed).length;
 
         root.innerHTML = `
@@ -741,12 +746,16 @@ const ReviewPage = {
         // Chính sách nghiêm ngặt: sai 1 lần = reset ngay về bậc 30 phút.
         // - Revealed (xem đáp án)        -> AGAIN
         // - Không correct                -> AGAIN
-        // - Có bất kỳ lần gõ sai nào     -> AGAIN  (attempts > 1)
+        // - Có bất kỳ lần gõ sai thật    -> AGAIN  (attempts > 1)
         if (r1.revealed || r2.revealed) return FSRS.Rating.AGAIN;
         if (!r1.correct || !r2.correct) return FSRS.Rating.AGAIN;
         if (r1.attempts > 1 || r2.attempts > 1) return FSRS.Rating.AGAIN;
 
-        // Cả 2 vòng đúng ngay lần đầu -> đẩy bậc nhanh
+        // Dùng gợi ý nhưng KHÔNG gõ sai lần nào -> HARD (giữ nguyên bậc,
+        // không lùi bậc như AGAIN, nhưng cũng không tiến bậc như GOOD).
+        if (r1.usedHint || r2.usedHint) return FSRS.Rating.HARD;
+
+        // Cả 2 vòng đúng ngay lần đầu, không cần gợi ý -> đẩy bậc nhanh
         return FSRS.Rating.GOOD;
     },
 
