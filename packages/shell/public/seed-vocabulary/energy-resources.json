@@ -4,7 +4,7 @@
     "topicName": "Năng lượng & Tài nguyên",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Energy & Resources (B1-B2)",
-    "totalCards": 100,
+    "totalCards": 98,
     "totalFamilies": 18,
     "generatedAt": "2026-05-14",
     "note": "Tu vung nen tang ve Nang luong va Tai nguyen. Da loai bo cac tu da co o cac topic khac.",
@@ -513,21 +513,6 @@
     },
     {
       "fieldValues": {
-        "word": "emit",
-        "ipa": "/ɪˈmɪt/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "phát ra, thải ra",
-        "example": "Factories emit large amounts of carbon dioxide.",
-        "familyId": "energy-resources-emit",
-        "familyOrder": 1,
-        "tags": [
-          "family word"
-        ]
-      }
-    },
-    {
-      "fieldValues": {
         "word": "carbon emission",
         "ipa": "/ˈkɑːr.bən ɪˈmɪʃ.ən/",
         "partOfSpeech": "noun",
@@ -535,7 +520,7 @@
         "meaning": "khí thải carbon",
         "example": "Reducing carbon emissions is essential to combat climate change.",
         "familyId": "energy-resources-emit",
-        "familyOrder": 2,
+        "familyOrder": 1,
         "tags": [
           "family word"
         ]
@@ -1284,19 +1269,6 @@
         "example": "Burning fossil fuels releases carbon dioxide into the atmosphere.",
         "familyId": "energy-resources-carbon",
         "familyOrder": 2,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
-        "word": "greenhouse gas",
-        "ipa": "/ˈɡriːn.haʊs ɡæs/",
-        "partOfSpeech": "noun",
-        "difficulty": "intermediate",
-        "meaning": "khí nhà kính",
-        "example": "Methane is a potent greenhouse gas that traps heat in the atmosphere.",
-        "familyId": "energy-resources-carbon",
-        "familyOrder": 3,
         "tags": []
       }
     },

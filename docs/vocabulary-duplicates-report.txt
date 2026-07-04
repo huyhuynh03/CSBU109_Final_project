@@ -1,0 +1,53 @@
+================================================================================
+BÁO CÁO THỐNG KÊ TRÙNG LẶP TỪ VỰNG
+================================================================================
+Số file topic: 43
+Tổng số card (tất cả): 3640
+  - Card thuộc topic thường: 3335
+  - Card thuộc topic bất quy tắc (V1/V2/V3, comparative/superlative): 305
+
+Ghi chú: Các topic bất quy tắc được tách riêng vì việc một từ xuất hiện ở
+nhiều dạng (be/was/been...) là cố ý. Phần 1-3 dưới đây chỉ xét topic thường.
+
+────────────────────────────────────────────────────────────────────────────────
+[1] TRÙNG LẶP TRONG CÙNG TOPIC (cùng word + cùng loại từ): 0 trường hợp
+────────────────────────────────────────────────────────────────────────────────
+  (Không có)
+
+────────────────────────────────────────────────────────────────────────────────
+[2] TRÙNG LẶP NGOÀI TOPIC (cùng word + cùng loại từ, ở nhiều topic): 3 trường hợp
+────────────────────────────────────────────────────────────────────────────────
+  • "function" (noun) — 2 topic: information-technology, mathematics
+  • "product" (noun) — 2 topic: chemistry, mathematics
+  • "virus" (noun) — 2 topic: health, information-technology
+
+────────────────────────────────────────────────────────────────────────────────
+[3] CÙNG CÁCH VIẾT 100% NHƯNG KHÁC LOẠI TỪ: 16 trường hợp
+────────────────────────────────────────────────────────────────────────────────
+  • "bond": noun [family-relationships]  |  verb [family-relationships]
+  • "break down": verb phrase [emotion-feelings]  |  phrasal verb [phrasal-verbs]
+  • "commute": verb [daily-life]  |  noun [daily-life]
+  • "conflict": noun [communication-social]  |  verb [family-relationships]
+  • "current": adjective [communication-social]  |  noun [physics]
+  • "divorce": noun [family-relationships]  |  verb [family-relationships]
+  • "exercise": verb [daily-activities]  |  noun [health]
+  • "graduate": verb [education]  |  noun [education]
+  • "patient": adjective [emotion-feelings]  |  noun [health]
+  • "post": verb [communication-social]  |  noun [information-technology]
+  • "queue": verb [daily-activities]  |  noun [daily-life]
+  • "rest": verb [daily-life]  |  noun [health]
+  • "schedule": noun [daily-life]  |  verb [daily-life]
+  • "support": verb [communication-social]  |  noun [family-relationships]
+  • "tidy": verb [daily-life]  |  adjective [daily-life]
+  • "work": verb [daily-activities]  |  noun [physics]
+
+────────────────────────────────────────────────────────────────────────────────
+[Tham khảo] Từ xuất hiện ở nhiều topic BẤT QUY TẮC (thường là cố ý): 6 từ
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+TỔNG KẾT
+================================================================================
+  [1] Trùng trong cùng topic:        0
+  [2] Trùng ngoài topic:             3
+  [3] Cùng viết khác loại từ:        16

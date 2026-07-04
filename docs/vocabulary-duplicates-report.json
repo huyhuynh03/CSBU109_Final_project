@@ -1,0 +1,532 @@
+{
+  "summary": {
+    "files": 43,
+    "totalCards": 3640,
+    "regularCards": 3335,
+    "irregularCards": 305,
+    "withinTopicDupes": 0,
+    "acrossTopicDupes": 3,
+    "sameWordDiffPos": 16
+  },
+  "fileStats": [
+    {
+      "file": "arts.json",
+      "topicId": "arts",
+      "count": 90
+    },
+    {
+      "file": "biology.json",
+      "topicId": "biology",
+      "count": 53
+    },
+    {
+      "file": "business.json",
+      "topicId": "business",
+      "count": 91
+    },
+    {
+      "file": "chemistry.json",
+      "topicId": "chemistry",
+      "count": 35
+    },
+    {
+      "file": "communication-social.json",
+      "topicId": "communication-social",
+      "count": 120
+    },
+    {
+      "file": "crime.json",
+      "topicId": "crime",
+      "count": 91
+    },
+    {
+      "file": "culture.json",
+      "topicId": "culture",
+      "count": 63
+    },
+    {
+      "file": "daily-activities.json",
+      "topicId": "daily-activities",
+      "count": 44
+    },
+    {
+      "file": "daily-life.json",
+      "topicId": "daily-life",
+      "count": 100
+    },
+    {
+      "file": "economy.json",
+      "topicId": "economy",
+      "count": 93
+    },
+    {
+      "file": "education.json",
+      "topicId": "education",
+      "count": 95
+    },
+    {
+      "file": "emotion-feelings.json",
+      "topicId": "emotion-feelings",
+      "count": 144
+    },
+    {
+      "file": "employment.json",
+      "topicId": "employment",
+      "count": 94
+    },
+    {
+      "file": "energy-resources.json",
+      "topicId": "energy-resources",
+      "count": 98
+    },
+    {
+      "file": "environment-climate.json",
+      "topicId": "environment-climate",
+      "count": 84
+    },
+    {
+      "file": "family-relationships.json",
+      "topicId": "family-relationships",
+      "count": 81
+    },
+    {
+      "file": "finance.json",
+      "topicId": "finance",
+      "count": 90
+    },
+    {
+      "file": "food-drink.json",
+      "topicId": "food-drink",
+      "count": 119
+    },
+    {
+      "file": "health.json",
+      "topicId": "health",
+      "count": 88
+    },
+    {
+      "file": "history-archeology.json",
+      "topicId": "history-archeology",
+      "count": 90
+    },
+    {
+      "file": "home-living.json",
+      "topicId": "home-living",
+      "count": 104
+    },
+    {
+      "file": "idioms.json",
+      "topicId": "idioms",
+      "count": 90
+    },
+    {
+      "file": "information-technology.json",
+      "topicId": "information-technology",
+      "count": 71
+    },
+    {
+      "file": "investment.json",
+      "topicId": "investment",
+      "count": 83
+    },
+    {
+      "file": "irregular-comparative.json",
+      "topicId": "irregular-adj-comparative",
+      "count": 7
+    },
+    {
+      "file": "irregular-superlative.json",
+      "topicId": "irregular-adj-superlative",
+      "count": 7
+    },
+    {
+      "file": "irregular-verb-v1.json",
+      "topicId": "irregular-verb-v1",
+      "count": 133
+    },
+    {
+      "file": "irregular-verb-v2.json",
+      "topicId": "irregular-verb-v2",
+      "count": 115
+    },
+    {
+      "file": "irregular-verb-v3.json",
+      "topicId": "irregular-verb-v3",
+      "count": 57
+    },
+    {
+      "file": "law.json",
+      "topicId": "law",
+      "count": 90
+    },
+    {
+      "file": "literature-reading.json",
+      "topicId": "literature-reading",
+      "count": 38
+    },
+    {
+      "file": "mathematics.json",
+      "topicId": "mathematics",
+      "count": 57
+    },
+    {
+      "file": "media-entertainment.json",
+      "topicId": "media-entertainment",
+      "count": 115
+    },
+    {
+      "file": "personal-qualities.json",
+      "topicId": "personal-qualities",
+      "count": 99
+    },
+    {
+      "file": "phrasal-verbs.json",
+      "topicId": "phrasal-verbs",
+      "count": 98
+    },
+    {
+      "file": "physics.json",
+      "topicId": "physics",
+      "count": 45
+    },
+    {
+      "file": "politics.json",
+      "topicId": "politics",
+      "count": 92
+    },
+    {
+      "file": "psychology.json",
+      "topicId": "psychology",
+      "count": 103
+    },
+    {
+      "file": "science.json",
+      "topicId": "science",
+      "count": 64
+    },
+    {
+      "file": "space.json",
+      "topicId": "space",
+      "count": 76
+    },
+    {
+      "file": "sports.json",
+      "topicId": "sports",
+      "count": 130
+    },
+    {
+      "file": "travel.json",
+      "topicId": "travel",
+      "count": 114
+    },
+    {
+      "file": "urbanization.json",
+      "topicId": "urbanization",
+      "count": 89
+    }
+  ],
+  "withinTopicDupes": [],
+  "acrossTopicDupes": [
+    {
+      "word": "function",
+      "pos": "noun",
+      "topicCount": 2,
+      "topics": {
+        "information-technology": 1,
+        "mathematics": 1
+      }
+    },
+    {
+      "word": "product",
+      "pos": "noun",
+      "topicCount": 2,
+      "topics": {
+        "chemistry": 1,
+        "mathematics": 1
+      }
+    },
+    {
+      "word": "virus",
+      "pos": "noun",
+      "topicCount": 2,
+      "topics": {
+        "health": 1,
+        "information-technology": 1
+      }
+    }
+  ],
+  "sameWordDiffPos": [
+    {
+      "word": "bond",
+      "posList": [
+        {
+          "pos": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        },
+        {
+          "pos": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "break down",
+      "posList": [
+        {
+          "pos": "verb phrase",
+          "topics": [
+            "emotion-feelings"
+          ]
+        },
+        {
+          "pos": "phrasal verb",
+          "topics": [
+            "phrasal-verbs"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "commute",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "conflict",
+      "posList": [
+        {
+          "pos": "noun",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "pos": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "current",
+      "posList": [
+        {
+          "pos": "adjective",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "physics"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "divorce",
+      "posList": [
+        {
+          "pos": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        },
+        {
+          "pos": "verb",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "exercise",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "graduate",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "education"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "education"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "patient",
+      "posList": [
+        {
+          "pos": "adjective",
+          "topics": [
+            "emotion-feelings"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "post",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "information-technology"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "queue",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "rest",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "health"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "schedule",
+      "posList": [
+        {
+          "pos": "noun",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "support",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "communication-social"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "family-relationships"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tidy",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-life"
+          ]
+        },
+        {
+          "pos": "adjective",
+          "topics": [
+            "daily-life"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "work",
+      "posList": [
+        {
+          "pos": "verb",
+          "topics": [
+            "daily-activities"
+          ]
+        },
+        {
+          "pos": "noun",
+          "topics": [
+            "physics"
+          ]
+        }
+      ]
+    }
+  ]
+}
