@@ -1,40 +1,40 @@
- [2026-06-13T10:28:32.082Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
+ [2026-07-04T06:35:13.894Z]  @firebase/firestore: Firestore (10.12.0): enableMultiTabIndexedDbPersistence() will be deprecated in the future, you can use `FirestoreSettings.cache` instead.
  [Firebase] Initialized successfully
-app.js:28 [App] Initializing LinguaFlash...
-theme.js:30 [Theme] Initialized: system
-pwa-install.js:49 [PWAInstall] Initialized
-firestore.js:14 [Firestore] Initialized
-sync.js:25 [Sync] Initialized, online: true
-fsrs.js:208 [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=21 ngày | 4=45 ngày
-auth-ui.js:47 [AuthUI] Initialized
-module-loader.js:76 [ModuleLoader] Registry loaded: 1 module(s), 1 available
-sidebar.js:134 [Sidebar] Initialized
-app.js:164 [App] Routes registered
+ [App] Initializing LinguaFlash...
+ [Theme] Initialized: system
+ [PWAInstall] Initialized
+ [Firestore] Initialized
+ [Sync] Initialized, online: true
+ [FSRS] Initialized (fixed-step mode): 0=30 phút | 1=24 giờ | 2=7 ngày | 3=21 ngày | 4=45 ngày
+ [AuthUI] Initialized
+ [ModuleLoader] Registry loaded: 1 module(s), 1 available
+ [Sidebar] Initialized
+ [App] Routes registered
+sw-update.js:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
 auth.js:15 [Auth] State changed: huynhvuquochuy37@gmail.com
-module-loader.js:197 [ModuleLoader] Loading "english" (type=local)...
 router.js:26 [Router] Initialized
 firebase-config.js:28 [Firebase] Offline persistence enabled
-index.js:136 [EnglishModule] Installed (v1.0.0)
-module-loader.js:235 [ModuleLoader] ✓ "english" loaded in 34ms (7 routes)
-vocabulary.js:250 [VocabularyPage] Entered
+home.js:92 [HomePage] Entered - Dashboard
 app.js:76 [App] ✅ Initialized successfully
-sw-update.js:53 [SwUpdate] SW registered, scope: https://linguaflash-kohl.vercel.app/
-instrument.a92644615fa504da204f.js?dpl=dpl_7K4pWbS5wRozZy8SuQasvYqAxfYT?dpl=dpl_7K4pWbS5wRozZy8SuQasvYqAxfYT:2 [DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
-f @ instrument.a92644615fa504da204f.js?dpl=dpl_7K4pWbS5wRozZy8SuQasvYqAxfYT?dpl=dpl_7K4pWbS5wRozZy8SuQasvYqAxfYT:2
+router.js:222 [Router] Navigated to: /
+module-loader.js:197 [ModuleLoader] Loading "english" (type=local)...
+index.js:136 [EnglishModule] Installed (v1.0.0)
+module-loader.js:235 [ModuleLoader] ✓ "english" loaded in 37ms (7 routes)
+vocabulary.js:250 [VocabularyPage] Entered
 vocabulary.js:1263 [VocabularyPage] Seeded "family-relationships": +0 created, 0 updated, 81 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "daily-life": +15 created, 0 updated, 82 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "home-living": +3 created, 0 updated, 101 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "daily-life": +0 created, 0 updated, 97 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "home-living": +0 created, 0 updated, 104 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "food-drink": +0 created, 0 updated, 119 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "daily-activities": +0 created, 0 updated, 42 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "health": +0 created, 0 updated, 88 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "communication-social": +16 created, 0 updated, 102 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "communication-social": +0 created, 0 updated, 118 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "media-entertainment": +0 created, 0 updated, 115 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "sports": +2 created, 0 updated, 126 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "sports": +0 created, 0 updated, 128 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "travel": +0 created, 0 updated, 114 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "personal-qualities": +10 created, 0 updated, 87 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "emotion-feelings": +5 created, 0 updated, 139 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "personal-qualities": +0 created, 0 updated, 97 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "emotion-feelings": +0 created, 0 updated, 144 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "education": +0 created, 0 updated, 95 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "psychology": +7 created, 0 updated, 93 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "psychology": +0 created, 0 updated, 100 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "culture": +0 created, 0 updated, 63 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "arts": +0 created, 0 updated, 88 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "literature-reading": +0 created, 0 updated, 37 skipped
@@ -42,19 +42,19 @@ vocabulary.js:1263 [VocabularyPage] Seeded "science": +0 created, 0 updated, 62 
 vocabulary.js:1263 [VocabularyPage] Seeded "mathematics": +0 created, 0 updated, 57 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "biology": +0 created, 0 updated, 55 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "chemistry": +0 created, 0 updated, 35 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "physics": +0 created, 0 updated, 46 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "physics": +0 created, 0 updated, 45 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "information-technology": +0 created, 0 updated, 69 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "space": +0 created, 0 updated, 76 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "environment-climate": +7 created, 0 updated, 82 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "environment-climate": +0 created, 0 updated, 89 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "energy-resources": +0 created, 0 updated, 100 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "economy": +3 created, 0 updated, 90 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "economy": +0 created, 0 updated, 93 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "finance": +0 created, 0 updated, 90 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "investment": +0 created, 0 updated, 83 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "business": +1 created, 0 updated, 90 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "business": +0 created, 0 updated, 91 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "law": +0 created, 0 updated, 90 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "crime": +0 created, 0 updated, 91 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "politics": +0 created, 0 updated, 90 skipped
-vocabulary.js:1263 [VocabularyPage] Seeded "employment": +1 created, 0 updated, 93 skipped
+vocabulary.js:1263 [VocabularyPage] Seeded "employment": +0 created, 0 updated, 94 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "urbanization": +0 created, 0 updated, 89 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "history-archeology": +0 created, 0 updated, 90 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "idioms": +0 created, 0 updated, 90 skipped
@@ -64,16 +64,22 @@ vocabulary.js:1263 [VocabularyPage] Seeded "irregular-verb-v3": +0 created, 0 up
 vocabulary.js:1263 [VocabularyPage] Seeded "irregular-adj-comparative": +0 created, 0 updated, 7 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "irregular-adj-superlative": +0 created, 0 updated, 7 skipped
 vocabulary.js:1263 [VocabularyPage] Seeded "phrasal-verbs": +0 created, 0 updated, 98 skipped
+/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
 router.js:222 [Router] Navigated to: /english/vocabulary
-/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-/#/english/vocabulary:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
-review.js:25 [ReviewPage] Entered
-router.js:222 [Router] Navigated to: /english/review
-review.js:25 [ReviewPage] Entered
-review.js:25 [ReviewPage] Entered
-review.js:25 [ReviewPage] Entered
+topic-detail.js:24 [TopicDetailPage] Entered with params: Object
+router.js:222 [Router] Navigated to: /english/topic/phrasal-verbs
+study.js:26 [StudyPage] Entered
+router.js:222 [Router] Navigated to: /english/study
+vocabulary.js:250 [VocabularyPage] Entered
+router.js:222 [Router] Navigated to: /english/vocabulary
+home.js:92 [HomePage] Entered - Dashboard
+router.js:222 [Router] Navigated to: /
+vocabulary.js:250 [VocabularyPage] Entered
+router.js:222 [Router] Navigated to: /english/vocabulary
 sw.js:239 Fetch finished loading: GET "https://linguaflash-kohl.vercel.app/manifest.json".
 staleWhileRevalidate @ sw.js:239
 await in staleWhileRevalidate

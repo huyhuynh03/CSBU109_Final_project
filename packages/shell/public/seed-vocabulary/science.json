@@ -4,8 +4,8 @@
     "topicName": "Science",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
-    "totalCards": 62,
-    "totalFamilies": 8,
+    "totalCards": 64,
+    "totalFamilies": 9,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom cac tu don ve nghien cuu, phuong phap, quan sat, phan tich, danh gia va phong thi nghiem. Da loai bo cac danh tu/cum tu ghep co the tu suy ra va tranh trung voi cac topic hien co."
   },
@@ -813,6 +813,32 @@
         "example": "The data points formed a cluster around the average value.",
         "familyId": "science-research",
         "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exact",
+        "ipa": "/ɪɡˈzækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chính xác, đúng đắn",
+        "example": "Scientists need to record the exact temperature of the experiment.",
+        "familyId": "exact",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exactly",
+        "ipa": "/ɪɡˈzækt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách chính xác, đúng là",
+        "example": "The results matched exactly what the hypothesis predicted.",
+        "familyId": "exact",
+        "familyOrder": 2,
         "tags": []
       }
     }

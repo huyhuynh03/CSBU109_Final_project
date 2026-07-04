@@ -1944,6 +1944,23 @@
         "baseMeaning": "viết",
         "note": ""
       }
+    },
+    {
+      "fieldValues": {
+        "word": "mistook",
+        "ipa": "/mɪˈstʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhầm lẫn (quá khứ đơn của mistake)",
+        "example": "She mistook him for someone else at the party.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
     }
   ]
 }

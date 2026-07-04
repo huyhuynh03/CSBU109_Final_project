@@ -4,8 +4,8 @@
     "topicName": "Information Technology",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Information Technology (B1-B2)",
-    "totalCards": 69,
-    "totalFamilies": 8,
+    "totalCards": 71,
+    "totalFamilies": 9,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Cong nghe thong tin, gom du lieu, he thong may tinh, phan mem, mang, internet, thiet bi, hanh dong so va bao mat. Da bo sung cac tu/cum tu IT dang thieu tu cac seed topic lien quan."
   },
@@ -904,6 +904,32 @@
         "example": "Too much screen time can affect sleep quality.",
         "familyId": "it-general",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "automatic",
+        "ipa": "/ˌɔː.təˈmæt.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự động, không cần điều khiển tay",
+        "example": "The software has an automatic update feature.",
+        "familyId": "automatic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "automatically",
+        "ipa": "/ˌɔː.təˈmæt.ɪ.kli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách tự động, tự động mà không cần thao tác",
+        "example": "The system automatically backs up your data every night.",
+        "familyId": "automatic",
+        "familyOrder": 2,
         "tags": []
       }
     }

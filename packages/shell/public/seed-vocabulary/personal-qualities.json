@@ -4,8 +4,8 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 97,
-    "totalFamilies": 17,
+    "totalCards": 99,
+    "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
   },
@@ -657,7 +657,7 @@
         "difficulty": "intermediate",
         "meaning": "hay giúp đỡ, hữu ích",
         "example": "Helpful classmates share notes with absent students.",
-        "familyId": "kindness-empathy",
+        "familyId": "help",
         "familyOrder": 1,
         "tags": []
       }
@@ -1269,6 +1269,32 @@
         "meaning": "có khát vọng, đầy tham vọng",
         "example": "The workshop is designed for aspiring writers.",
         "familyId": "aspire",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "helpless",
+        "ipa": "/ˈhelp.ləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất lực, không có khả năng tự giúp mình",
+        "example": "She felt helpless when her car broke down on the highway.",
+        "familyId": "help",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "helplessness",
+        "ipa": "/ˈhelp.ləs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bất lực, cảm giác bất lực",
+        "example": "He described a deep sense of helplessness after losing his job.",
+        "familyId": "help",
         "familyOrder": 3,
         "tags": []
       }

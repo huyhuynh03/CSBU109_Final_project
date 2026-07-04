@@ -4,7 +4,7 @@
     "topicName": "Literature & Reading",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Literature & Reading (B1-B2)",
-    "totalCards": 37,
+    "totalCards": 38,
     "totalFamilies": 8,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu Van hoc va Doc hieu, gom ky nang doc, the loai, yeu to truyen, ky thuat tran thuat, bien phap tu tu, phong cach va tho."
@@ -293,6 +293,19 @@
         "example": "The resolution explains what happens to each character.",
         "familyId": "story-elements",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "characteristic",
+        "ipa": "/ˌkær.ək.təˈrɪs.tɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đặc điểm, nét đặc trưng",
+        "example": "Courage is one of the character's key characteristics.",
+        "familyId": "story-elements",
+        "familyOrder": 8,
         "tags": []
       }
     },

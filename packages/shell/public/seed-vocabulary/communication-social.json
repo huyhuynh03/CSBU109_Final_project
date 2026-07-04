@@ -4,7 +4,7 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 118,
+    "totalCards": 120,
     "totalFamilies": 18,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
@@ -293,6 +293,32 @@
         "example": "Please respond to the invitation by Friday.",
         "familyId": "speaking-asking",
         "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "explanation",
+        "ipa": "/ˌek.spləˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giải thích, lời giải thích",
+        "example": "The teacher gave a clear explanation of the rule.",
+        "familyId": "speaking-asking",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "explanatory",
+        "ipa": "/ɪkˈsplæn.ə.tɔːr.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "mang tính giải thích, dùng để giải thích",
+        "example": "She added an explanatory note at the bottom of the letter.",
+        "familyId": "speaking-asking",
+        "familyOrder": 10,
         "tags": []
       }
     },

@@ -4,8 +4,8 @@
     "topicName": "Thể thao",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Sports (B1-B2)",
-    "totalCards": 128,
-    "totalFamilies": 9,
+    "totalCards": 130,
+    "totalFamilies": 10,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de The thao, da loc tranh trung word voi cac topic seed hien co."
   },
@@ -1671,6 +1671,32 @@
         "example": "The dog loves to chase the ball in the park.",
         "familyId": "",
         "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eliminate",
+        "ipa": "/ɪˈlɪm.ɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "loại bỏ, loại khỏi cuộc đấu",
+        "example": "The team was eliminated in the quarter-finals.",
+        "familyId": "eliminate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elimination",
+        "ipa": "/ɪˌlɪm.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự loại bỏ, việc bị loại khỏi giải",
+        "example": "The elimination round decides who advances to the final.",
+        "familyId": "eliminate",
+        "familyOrder": 2,
         "tags": []
       }
     }

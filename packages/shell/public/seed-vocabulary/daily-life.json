@@ -4,8 +4,8 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 97,
-    "totalFamilies": 36,
+    "totalCards": 100,
+    "totalFamilies": 37,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
   },
@@ -1131,6 +1131,19 @@
     },
     {
       "fieldValues": {
+        "word": "worldly",
+        "ipa": "/ˈwɜːrld.li/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về thế gian, trần tục; từng trải",
+        "example": "She had worldly experience from years of travel.",
+        "familyId": "world",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
         "word": "empty",
         "ipa": "/ˈemp.ti/",
         "partOfSpeech": "adjective",
@@ -1295,6 +1308,32 @@
         "example": "There is a nice cafe in a nearby street.",
         "familyId": "near",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistake",
+        "ipa": "/mɪˈsteɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "lỗi lầm, sai lầm",
+        "example": "Everyone makes a mistake sometimes.",
+        "familyId": "mistake",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistakenly",
+        "ipa": "/mɪˈsteɪ.kən.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách nhầm lẫn, do nhầm",
+        "example": "She mistakenly sent the email to the wrong person.",
+        "familyId": "mistake",
+        "familyOrder": 2,
         "tags": []
       }
     }

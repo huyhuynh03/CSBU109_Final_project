@@ -4,8 +4,8 @@
     "topicName": "Nghệ thuật",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Arts (B1-B2)",
-    "totalCards": 88,
-    "totalFamilies": 10,
+    "totalCards": 90,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Nghe thuat, da tranh trung voi cac topic seed hien co."
   },
@@ -1151,6 +1151,32 @@
         "example": "The melody was beautifully performed by the orchestra.",
         "familyId": "arts-beauty",
         "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pretty",
+        "ipa": "/ˈprɪt.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "xinh đẹp, dễ nhìn",
+        "example": "The artist painted a pretty picture of the garden.",
+        "familyId": "pretty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prettily",
+        "ipa": "/ˈprɪt.ɪ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách xinh đẹp, một cách duyên dáng",
+        "example": "The dancer moved prettily across the stage.",
+        "familyId": "pretty",
+        "familyOrder": 2,
         "tags": []
       }
     }

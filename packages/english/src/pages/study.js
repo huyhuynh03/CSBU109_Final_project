@@ -602,13 +602,10 @@ const StudyPage = {
         const r2 = stepResults.step2 || { correct: false, revealed: true, attempts: 3 };
         const r3 = stepResults.step3 || { correct: false, revealed: true, attempts: 3 };
 
-        // Rating cho từ mới: chính sách nghiêm ngặt - sai 1 lần => AGAIN (reset 30 phút).
+        // Rating cho từ mới: chính sách nghiêm ngặt - sai/reveal 1 lần => AGAIN.
         // Đúng cả 2 bước, không reveal, không sai phát nào => GOOD
         //   (NEW + GOOD -> stepIndex 0 = Cấp độ 1 (30 phút), state REVIEW.
-        //    KHÔNG dùng EASY vì EASY nhảy +2 bậc -> Cấp độ 2 ngay, bỏ qua Cấp độ 1.
-        //    Bug LEARNING "phải học 2 lần" đã được vá trong FSRS._computeNextState:
-        //    nay PASS bất kỳ rating nào cũng đẩy card sang state REVIEW,
-        //    không cần bơm lên EASY để né state LEARNING nữa.)
+        //    KHÔNG dùng EASY vì EASY nhảy +2 bậc -> Cấp độ 2 ngay, bỏ qua Cấp độ 1.)
         let rating;
         if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
         else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
@@ -616,6 +613,17 @@ const StudyPage = {
         else rating = FSRS.Rating.GOOD;
 
         const updatedCard = FSRS.review(card, rating);
+
+        // Fix bug study-new: khi gõ sai (AGAIN) trong phiên học mới, card phải
+        // được reset về stepIndex = -1 (chưa graduate) thay vì stepIndex = 0.
+        // Lý do: _computeNextStep(-1, AGAIN) = 0, nhưng lần học lại đúng
+        // _computeNextStep(0, GOOD) = 1 → nhảy thẳng Cấp độ 2 bỏ qua Cấp độ 1.
+        // Giữ nguyên state = LEARNING để card vẫn xuất hiện trong phiên học mới
+        // (filter isNewOrLearning), nhưng stepIndex = -1 để lần GOOD tiếp theo
+        // cho ra stepIndex = 0 (Cấp độ 1) đúng như kỳ vọng.
+        if (rating === FSRS.Rating.AGAIN) {
+            updatedCard.stepIndex = -1;
+        }
         updatedCard.lastReviewSession = {
             date: new Date().toISOString(),
             type: 'study-new',

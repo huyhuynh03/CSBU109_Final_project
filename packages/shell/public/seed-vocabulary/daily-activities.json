@@ -4,8 +4,8 @@
     "topicName": "Daily Activities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Activities (B1-B2)",
-    "totalCards": 42,
-    "totalFamilies": 15,
+    "totalCards": 44,
+    "totalFamilies": 16,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Hoat dong hang ngay, gom theo family/nhom hanh dong de hoc theo cum lien quan. Bao gom buoi sang, cham soc ca nhan, chuan bi ra ngoai, bua an, di lai, viec cong cong, hoc tap lam viec, digital, suc khoe, viec nha, gia dinh, xa hoi, giai tri va buoi toi."
   },
@@ -559,6 +559,32 @@
         "example": "I usually go to bed before eleven.",
         "familyId": "evening-actions",
         "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "actual",
+        "ipa": "/ˈæk.tʃu.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thực tế, thực sự",
+        "example": "The actual time we spent on chores was longer than planned.",
+        "familyId": "actual",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "actually",
+        "ipa": "/ˈæk.tʃu.ə.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "thực ra, trên thực tế",
+        "example": "I actually finished my morning routine early today.",
+        "familyId": "actual",
+        "familyOrder": 2,
         "tags": []
       }
     }

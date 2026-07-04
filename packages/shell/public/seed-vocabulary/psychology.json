@@ -4,8 +4,8 @@
     "topicName": "Psychology & Cognition",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Psychology & Cognition (B1-B2)",
-    "totalCards": 100,
-    "totalFamilies": 14,
+    "totalCards": 103,
+    "totalFamilies": 15,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Tam ly va Nhan thuc, da ra soat tranh trung voi cac topic seed hien co."
   },
@@ -1307,6 +1307,45 @@
         "example": "His effort went completely unnoticed.",
         "familyId": "notice",
         "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychology",
+        "ipa": "/saɪˈkɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tâm lý học",
+        "example": "She is studying psychology at university.",
+        "familyId": "psychology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychological",
+        "ipa": "/ˌsaɪ.kəˈlɒdʒ.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về tâm lý, tâm lý học",
+        "example": "The stress had a serious psychological impact on him.",
+        "familyId": "psychology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychologist",
+        "ipa": "/saɪˈkɒl.ə.dʒɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tâm lý học",
+        "example": "The psychologist helped her understand her anxiety.",
+        "familyId": "psychology",
+        "familyOrder": 3,
         "tags": []
       }
     }

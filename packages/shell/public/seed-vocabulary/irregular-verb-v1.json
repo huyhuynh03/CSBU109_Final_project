@@ -2514,6 +2514,25 @@
         "baseMeaning": "viết",
         "note": ""
       }
+    },
+    {
+      "fieldValues": {
+        "word": "mistake",
+        "ipa": "/mɪˈsteɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhầm lẫn, hiểu sai",
+        "example": "I always mistake her for her twin sister.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "mistook",
+        "pastParticiple": "mistaken",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
     }
   ]
 }

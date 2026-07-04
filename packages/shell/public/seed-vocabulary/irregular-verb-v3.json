@@ -958,6 +958,23 @@
         "baseMeaning": "viết",
         "note": ""
       }
+    },
+    {
+      "fieldValues": {
+        "word": "mistaken",
+        "ipa": "/mɪˈsteɪkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bị nhầm lẫn (quá khứ phân từ của mistake)",
+        "example": "He has been mistaken for his older brother many times.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
     }
   ]
 }
