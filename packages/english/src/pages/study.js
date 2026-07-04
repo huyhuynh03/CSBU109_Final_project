@@ -612,13 +612,12 @@ const StudyPage = {
         // Đúng cả 2 bước, không reveal, không sai phát nào => GOOD
         //   (NEW + GOOD -> stepIndex 0 = Cấp độ 1 (30 phút), state REVIEW.
         //    KHÔNG dùng EASY vì EASY nhảy +2 bậc -> Cấp độ 2 ngay, bỏ qua Cấp độ 1.)
-        // Dùng gợi ý nhưng không gõ sai lần nào => HARD (giữ nguyên bậc,
-        // không bị coi như gõ sai/AGAIN).
+        // Lưu ý: nút "Gợi ý" (usedHint) KHÔNG ảnh hưởng đến rating — chỉ là
+        // công cụ hỗ trợ UI, không tính như gõ sai.
         let rating;
         if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
         else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
         else if (r2.attempts > 1 || r3.attempts > 1) rating = FSRS.Rating.AGAIN;
-        else if (r2.usedHint || r3.usedHint) rating = FSRS.Rating.HARD;
         else rating = FSRS.Rating.GOOD;
 
         const updatedCard = FSRS.review(card, rating);

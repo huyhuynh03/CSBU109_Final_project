@@ -747,15 +747,13 @@ const ReviewPage = {
         // - Revealed (xem đáp án)        -> AGAIN
         // - Không correct                -> AGAIN
         // - Có bất kỳ lần gõ sai thật    -> AGAIN  (attempts > 1)
+        // Lưu ý: nút "Gợi ý" (usedHint) KHÔNG ảnh hưởng đến rating — chỉ là
+        // công cụ hỗ trợ UI, không tính như gõ sai. Chỉ gõ sai thật hoặc xem
+        // đáp án mới bị coi là AGAIN.
         if (r1.revealed || r2.revealed) return FSRS.Rating.AGAIN;
         if (!r1.correct || !r2.correct) return FSRS.Rating.AGAIN;
         if (r1.attempts > 1 || r2.attempts > 1) return FSRS.Rating.AGAIN;
 
-        // Dùng gợi ý nhưng KHÔNG gõ sai lần nào -> HARD (giữ nguyên bậc,
-        // không lùi bậc như AGAIN, nhưng cũng không tiến bậc như GOOD).
-        if (r1.usedHint || r2.usedHint) return FSRS.Rating.HARD;
-
-        // Cả 2 vòng đúng ngay lần đầu, không cần gợi ý -> đẩy bậc nhanh
         return FSRS.Rating.GOOD;
     },
 
