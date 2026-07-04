@@ -112,8 +112,26 @@ ReviewSession = {
 - User gõ → Enter để kiểm tra
 - Đúng ngay lần đầu: ✅ xanh, chuyển từ tiếp theo sau 0.8s
 - Sai: ❌ đỏ, hiện hint (ký tự đầu) → cho gõ lại
-- Nhấn "Hiện đáp án" → tính là fail vòng này, từ chuyển sang từ kế
-- Gợi ý: hiện 1 ký tự đầu tiên chưa hiện
+- Nhấn "Hiện đáp án" → tính là fail vòng này (rating AGAIN). **Cảnh KHÔNG tự
+  động chuyển tiếp** — xem mục 3.6 bên dưới.
+- Gợi ý: hiện 1 ký tự đầu tiên chưa hiện. Nút gợi ý **không ảnh hưởng** tới
+  rating (chỉ là công cụ hỗ trợ UI).
+
+### 3.6 Hành vi nút "Hiện đáp án" (reveal) — giữ cảnh để ghi nhớ
+
+Khi người học bấm "Hiện đáp án" (hoặc bị auto-reveal sau 3 lần gõ sai), thay vì
+tự động chuyển cảnh sau vài giây, app **giữ nguyên màn hình** để người học có
+thời gian nhìn và ghi nhớ mặt chữ của đáp án. Cụ thể:
+
+- Ô nhập được điền sẵn đáp án đúng và bị vô hiệu hoá (`disabled`).
+- Nút **"Kiểm tra"** bị vô hiệu hoá (không còn tác dụng vì đã lộ đáp án).
+- Nút **"Hiện đáp án"** biến thành nút **"Tiếp tục"** (icon `arrow_forward`);
+  người học chủ động bấm để chuyển sang cảnh kế tiếp.
+- Kết quả vòng vẫn được ghi nhận là `revealed = true` ngay lúc bấm reveal
+  (rating AGAIN), không phụ thuộc vào thời điểm bấm "Tiếp tục".
+
+Lý do: tránh việc đáp án chỉ hiện thoáng qua rồi tự chuyển cảnh, khiến người
+học không kịp nhìn để ghi nhớ. Trao quyền kiểm soát nhịp độ cho người học.
 
 ### 3.3 Transition giữa vòng 1 → vòng 2
 

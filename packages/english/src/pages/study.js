@@ -438,10 +438,10 @@ const StudyPage = {
                     <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
                         <span class="material-icons-round">lightbulb</span> Gợi ý
                     </button>
-                    <button class="review-action-btn review-action-btn--reveal" onclick="StudyPage._revealAnswer()">
+                    <button class="review-action-btn review-action-btn--reveal" id="study-reveal-btn" onclick="StudyPage._revealAnswer()">
                         <span class="material-icons-round">visibility</span> Hiện đáp án
                     </button>
-                    <button class="review-action-btn review-action-btn--primary" onclick="StudyPage._submitAnswer()">
+                    <button class="review-action-btn review-action-btn--primary" id="study-submit-btn" onclick="StudyPage._submitAnswer()">
                         <span class="material-icons-round">check</span> Kiểm tra
                     </button>
                 </div>
@@ -566,7 +566,18 @@ const StudyPage = {
         input.disabled = true;
         this._currentRevealed = true;
         this._recordStepResult(false);
-        setTimeout(() => this._nextStep(), 1500);
+
+        // Giữ nguyên cảnh để người học có thời gian ghi nhớ mặt chữ.
+        // Không tự động chuyển cảnh — vô hiệu hoá nút "Kiểm tra" và biến nút
+        // "Hiện đáp án" thành nút "Tiếp tục" để người học tự chủ động chuyển.
+        const submitBtn = document.getElementById('study-submit-btn');
+        if (submitBtn) submitBtn.disabled = true;
+
+        const revealBtn = document.getElementById('study-reveal-btn');
+        if (revealBtn) {
+            revealBtn.innerHTML = `<span class="material-icons-round">arrow_forward</span> Tiếp tục`;
+            revealBtn.onclick = () => this._nextStep();
+        }
     },
 
     _recordStepResult(correct) {

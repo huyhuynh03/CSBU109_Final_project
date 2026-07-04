@@ -305,10 +305,10 @@ const ReviewPage = {
                     <button class="review-action-btn review-action-btn--hint" onclick="ReviewPage._showHint()">
                         <span class="material-icons-round">lightbulb</span> Gợi ý
                     </button>
-                    <button class="review-action-btn review-action-btn--reveal" onclick="ReviewPage._revealAnswer()">
+                    <button class="review-action-btn review-action-btn--reveal" id="review-reveal-btn" onclick="ReviewPage._revealAnswer()">
                         <span class="material-icons-round">visibility</span> Hiện đáp án
                     </button>
-                    <button class="review-action-btn review-action-btn--primary" onclick="ReviewPage._submitAnswer()">
+                    <button class="review-action-btn review-action-btn--primary" id="review-submit-btn" onclick="ReviewPage._submitAnswer()">
                         <span class="material-icons-round">check</span> Kiểm tra
                     </button>
                 </div>
@@ -458,7 +458,18 @@ const ReviewPage = {
         this._currentRevealed = true;
 
         this._recordResult(false);
-        setTimeout(() => this._renderBackside('revealed'), 800);
+
+        // Giữ nguyên cảnh để người học có thời gian ghi nhớ mặt chữ.
+        // Không tự động chuyển cảnh — vô hiệu hoá nút "Kiểm tra" và biến nút
+        // "Hiện đáp án" thành nút "Tiếp tục" để người học tự chủ động chuyển.
+        const submitBtn = document.getElementById('review-submit-btn');
+        if (submitBtn) submitBtn.disabled = true;
+
+        const revealBtn = document.getElementById('review-reveal-btn');
+        if (revealBtn) {
+            revealBtn.innerHTML = `<span class="material-icons-round">arrow_forward</span> Tiếp tục`;
+            revealBtn.onclick = () => this._renderBackside('revealed');
+        }
     },
 
     // ============================================
