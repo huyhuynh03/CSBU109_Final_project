@@ -25,8 +25,39 @@ scripts/tts/
 └── providers/
     ├── google.js             # Google Cloud TTS  (env: GOOGLE_TTS_API_KEY)
     ├── openai.js             # OpenAI TTS        (env: OPENAI_API_KEY)
-    └── elevenlabs.js         # ElevenLabs TTS    (env: ELEVENLABS_API_KEY)
+    ├── elevenlabs.js         # ElevenLabs TTS    (env: ELEVENLABS_API_KEY)
+    ├── gemini.js             # Gemini TTS native (env: GEMINI_API_KEY)
+    ├── shopaikey.js          # Shopaikey → Gemini (env: SHOPAIKEY_API_KEY)
+    └── edge.js               # Microsoft Edge TTS — KEYLESS (không cần key)
 ```
+
+> **Edge TTS (đang dùng làm nguồn ưu tiên số 1):** provider `edge` gọi dịch vụ
+> Azure Speech ẩn sau trình duyệt Edge qua WebSocket công khai — **không cần API
+> key, miễn phí**. Ghi vào subfolder `<accent>_edge` (vd `us_edge/`, `gb_edge/`).
+> Giọng đang cấu hình trong [`config.js`](config.js):
+>
+> | Accent | Giọng Edge | Kiểu |
+> |---|---|---|
+> | `us` | `en-US-GuyNeural` | Nam, American English |
+> | `gb` | `en-GB-SoniaNeural` | Nữ, British English |
+>
+> Client mặc định phát accent **`gb`** (`_defaultAccent: 'gb'` trong
+> [`tts.js`](../../packages/shell/src/js/utils/tts.js)), nên phần lớn từ nghe là
+> giọng **nữ Anh-Anh `en-GB-SoniaNeural`**. Prosody đọc chậm nhẹ (`rate: -8%`).
+>
+> ⚠ **Nếu một từ nghe khác hẳn các từ còn lại** (vd giọng máy/robot của hệ điều
+> hành thay vì giọng Neural): gần như chắc chắn từ đó **thiếu file MP3** trong cả
+> ba nguồn (`edge` → `elevenlabs` → mặc định) nên client **fallback Web Speech
+> API**. Thường xảy ra khi từ được **thêm vào seed sau lần generate gần nhất**.
+> Cách khắc phục: chạy lại generate cho riêng từ đó (xem mục 3, cờ `--only`):
+>
+> ```cmd
+> node scripts/tts/generate-audio.js --provider edge --variant us,gb --only bad --manifest
+> ```
+>
+> Muốn **rà soát toàn bộ** những từ nào đang thiếu file Edge (không chỉ một từ),
+> chạy script audit ở [mục 3b](#3b-rà-soát-từ-thiếu-file-edge). Nó liệt kê hết từ
+> thiếu và in sẵn lệnh generate bù.
 
 Mô hình config: `LANGUAGES[lang].variants[variantId].voices[provider]`. Cùng một
 danh sách từ được đọc lại theo từng variant → ra file ở subfolder riêng:
@@ -141,15 +172,51 @@ node scripts/tts/generate-audio.js --provider google --variant us,gb --manifest
 
 ---
 
+## 3b. Rà soát từ thiếu file Edge
+
+Khi thêm từ mới vào seed sau lần generate gần nhất, các từ đó **chưa có file
+MP3 Edge** nên client sẽ fallback sang Web Speech API (giọng hệ điều hành) —
+nghe khác hẳn giọng Neural (đây chính là hiện tượng từ `bad` nghe lạ).
+
+Script [`audit-missing-edge.js`](audit-missing-edge.js) **quét toàn bộ seed** và
+so với file thực tế trong `<accent>_edge/`, liệt kê **tất cả** từ đang thiếu +
+in sẵn lệnh generate bù. Script **không gọi API, không ghi file** — an toàn chạy
+bất cứ lúc nào.
+
+```cmd
+node scripts/tts/audit-missing-edge.js
+```
+
+Ví dụ output:
+
+```
+── American English (us)  →  ...\audio\en\us_edge
+   Thiếu 311 / 3888 file MP3 Edge.
+      ✗ above
+      ✗ bad
+      ...
+ ⚠ Tổng 311 từ (duy nhất) thiếu file Edge.
+ Chạy lệnh sau để generate bù (Edge keyless, không cần key):
+   node scripts/tts/generate-audio.js --provider edge --variant us,gb --only "above,bad,..." --manifest
+```
+
+> **Quy trình khuyến nghị sau khi thêm từ vào seed:** chạy audit → copy lệnh
+> generate ở cuối output → chạy lệnh đó (nhớ có `--manifest` để cập nhật
+> `audio-manifest.json`). Vì Edge keyless nên bước bù này miễn phí.
+
+---
+
 ## 4. Accent theo provider
 
 | Provider | Anh-Mỹ (us) | Anh-Anh (gb) |
 |---|---|---|
+| **edge** (đang dùng) | ✅ `en-US-GuyNeural` (nam) | ✅ `en-GB-SoniaNeural` (nữ) — **tách rõ, keyless, miễn phí** |
 | **google** | ✅ `en-US-*` | ✅ `en-GB-*` — **tách rõ ràng, tốt nhất** |
 | openai | ✅ giọng mặc định | ⚠ KHÔNG có giọng Anh-Anh thật → nghe vẫn như US |
 | elevenlabs | ✅ theo voiceId | ⚠ phải đặt `voiceId` giọng Anh-Anh riêng trong config — hiện đặt **Bea** (`aHCytOTnUOgfGPn5n89j`) |
 
-→ Muốn accent US/GB khác biệt thật sự, **dùng Google**.
+→ Nguồn thực tế app đang dùng là **Edge** (ưu tiên số 1, tách accent rõ + miễn
+phí). Google là lựa chọn thay thế nếu cần chất lượng Neural2.
 
 ---
 
