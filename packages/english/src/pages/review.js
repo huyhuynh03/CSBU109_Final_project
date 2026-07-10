@@ -293,24 +293,18 @@ const ReviewPage = {
                 </div>
 
                 <!-- Actions -->
-                <div class="review-actions">
-                    ${s.currentRound === 2 ? `
-                        <button class="review-action-btn" onclick="ReviewPage._playAudio('us')">
-                            <span class="material-icons-round">replay</span> US
-                        </button>
-                        <button class="review-action-btn" onclick="ReviewPage._playAudio('gb')">
-                            <span class="material-icons-round">replay</span> UK
-                        </button>
-                    ` : ''}
-                    <button class="review-action-btn review-action-btn--hint" onclick="ReviewPage._showHint()">
-                        <span class="material-icons-round">lightbulb</span> Gợi ý
-                    </button>
+                <div class="review-actions review-actions--stacked">
                     <button class="review-action-btn review-action-btn--reveal" id="review-reveal-btn" onclick="ReviewPage._revealAnswer()">
                         <span class="material-icons-round">visibility</span> Hiện đáp án
                     </button>
-                    <button class="review-action-btn review-action-btn--primary" id="review-submit-btn" onclick="ReviewPage._submitAnswer()">
-                        <span class="material-icons-round">check</span> Kiểm tra
-                    </button>
+                    <div class="review-actions-row">
+                        <button class="review-action-btn review-action-btn--hint" onclick="ReviewPage._showHint()">
+                            <span class="material-icons-round">lightbulb</span> Gợi ý
+                        </button>
+                        <button class="review-action-btn review-action-btn--primary" id="review-submit-btn" onclick="ReviewPage._submitAnswer()">
+                            <span class="material-icons-round">check</span> Kiểm tra
+                        </button>
+                    </div>
                 </div>
             </div>
         `;

@@ -426,24 +426,18 @@ const StudyPage = {
                     <div class="review-feedback" id="study-feedback"></div>
                 </div>
 
-                <div class="review-actions">
-                    ${variant === 'listen-to-en' ? `
-                        <button class="review-action-btn" onclick="StudyPage._playWord('us')">
-                            <span class="material-icons-round">replay</span> US
-                        </button>
-                        <button class="review-action-btn" onclick="StudyPage._playWord('gb')">
-                            <span class="material-icons-round">replay</span> UK
-                        </button>
-                    ` : ''}
-                    <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
-                        <span class="material-icons-round">lightbulb</span> Gợi ý
-                    </button>
+                <div class="review-actions review-actions--stacked">
                     <button class="review-action-btn review-action-btn--reveal" id="study-reveal-btn" onclick="StudyPage._revealAnswer()">
                         <span class="material-icons-round">visibility</span> Hiện đáp án
                     </button>
-                    <button class="review-action-btn review-action-btn--primary" id="study-submit-btn" onclick="StudyPage._submitAnswer()">
-                        <span class="material-icons-round">check</span> Kiểm tra
-                    </button>
+                    <div class="review-actions-row">
+                        <button class="review-action-btn review-action-btn--hint" onclick="StudyPage._showHint()">
+                            <span class="material-icons-round">lightbulb</span> Gợi ý
+                        </button>
+                        <button class="review-action-btn review-action-btn--primary" id="study-submit-btn" onclick="StudyPage._submitAnswer()">
+                            <span class="material-icons-round">check</span> Kiểm tra
+                        </button>
+                    </div>
                 </div>
             </div>
         `;

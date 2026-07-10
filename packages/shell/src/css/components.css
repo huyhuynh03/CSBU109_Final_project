@@ -3256,6 +3256,25 @@
     border-color: rgba(239,68,68,0.3);
 }
 
+/* Bố cục xếp dọc: tách "Hiện đáp án" khỏi cụm Gợi ý + Kiểm tra
+   bằng khoảng trống lớn để tránh bấm nhầm. */
+.review-actions--stacked {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-2xl);
+}
+
+.review-actions--stacked .review-action-btn--reveal {
+    align-self: center;
+}
+
+.review-actions-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    justify-content: center;
+}
+
 /* ---- FINAL STATS ---- */
 .review-final-stats {
     display: grid;
