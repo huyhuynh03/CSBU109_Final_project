@@ -748,18 +748,25 @@ const ReviewPage = {
     // COMPUTE FINAL RATING (2 rounds → 1 FSRS rating)
     // ============================================
     _computeFinalRating(r1, r2) {
-        // Chính sách nghiêm ngặt: sai 1 lần = reset ngay về bậc 30 phút.
-        // - Revealed (xem đáp án)        -> AGAIN
-        // - Không correct                -> AGAIN
-        // - Có bất kỳ lần gõ sai thật    -> AGAIN  (attempts > 1)
-        // Lưu ý: nút "Gợi ý" (usedHint) KHÔNG ảnh hưởng đến rating — chỉ là
-        // công cụ hỗ trợ UI, không tính như gõ sai. Chỉ gõ sai thật hoặc xem
-        // đáp án mới bị coi là AGAIN.
-        if (r1.revealed || r2.revealed) return FSRS.Rating.AGAIN;
-        if (!r1.correct || !r2.correct) return FSRS.Rating.AGAIN;
-        if (r1.attempts > 1 || r2.attempts > 1) return FSRS.Rating.AGAIN;
+        // Chính sách 3 mức dựa trên KẾT QUẢ của cả 2 vòng ôn tập:
+        //   - Đúng CẢ 2 vòng      -> GOOD  (lên 1 cấp độ ghi nhớ)
+        //   - Sai đúng 1 trong 2  -> HARD  (giữ nguyên cấp độ hiện tại)
+        //   - Sai CẢ 2 vòng       -> AGAIN (giảm 1 cấp độ ghi nhớ)
+        //
+        // Ánh xạ FSRS (_computeNextStep):
+        //   AGAIN -> lùi 1 bậc | HARD -> giữ nguyên | GOOD -> +1 bậc
+        //
+        // Một vòng bị coi là "sai" khi:
+        //   - Không correct (gõ sai / hết lượt), HOẶC
+        //   - Đã xem đáp án (revealed), HOẶC
+        //   - Có gõ sai thật trước khi đúng (attempts > 1)
+        // Lưu ý: nút "Gợi ý" (usedHint) KHÔNG tính là sai — chỉ hỗ trợ UI.
+        const failed = (r) => (!r.correct || r.revealed || r.attempts > 1);
+        const failCount = (failed(r1) ? 1 : 0) + (failed(r2) ? 1 : 0);
 
-        return FSRS.Rating.GOOD;
+        if (failCount === 0) return FSRS.Rating.GOOD;
+        if (failCount === 1) return FSRS.Rating.HARD;
+        return FSRS.Rating.AGAIN;
     },
 
     // ============================================
