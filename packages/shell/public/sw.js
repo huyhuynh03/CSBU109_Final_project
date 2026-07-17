@@ -17,7 +17,7 @@
 // Với Vite hashed filenames (e.g. index-CN7Jhn0k.js), mỗi deploy tạo
 // filename mới → browser tự invalidate. SW chỉ cần cache-first cho /assets/*.
 
-const APP_VERSION = '6.4.41';
+const APP_VERSION = '6.4.42';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Chỉ precache stable paths (không hash). Hashed assets sẽ được cache
@@ -152,9 +152,10 @@ self.addEventListener('fetch', (event) => {
     }
 
     // 5a. Audio manifest → network-first (danh sách slug thay đổi theo từng lần
-    //     generate; cache-first + header immutable cũ từng kẹt bản thiếu "bad").
+    //     generate). KHÔNG dùng SWR: SWR trả cache cũ trước → kẹt bản thiếu slug.
+    //     Header immutable cũ + cache-first từng làm "bad" + 310 từ rơi Web Speech.
     if (url.pathname.startsWith('/audio/') && url.pathname.endsWith('/audio-manifest.json')) {
-        event.respondWith(staleWhileRevalidate(request));
+        event.respondWith(networkFirstAudioManifest(request));
         return;
     }
 
@@ -233,6 +234,28 @@ async function cacheFirst(request) {
         return response;
     } catch (err) {
         return new Response('', { status: 408, statusText: 'Request Timeout' });
+    }
+}
+
+/**
+ * Network-first cho audio-manifest.json.
+ * Danh sách slug phải luôn mới; cache chỉ là fallback offline.
+ */
+async function networkFirstAudioManifest(request) {
+    const cache = await caches.open(CACHE_NAME);
+    try {
+        const response = await fetchWithTimeout(request, 4000);
+        if (response && response.status === 200) {
+            cache.put(request, response.clone()).catch(() => {});
+        }
+        return response;
+    } catch (err) {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+        return new Response(JSON.stringify({ files: {} }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 }
 
