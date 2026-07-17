@@ -17,7 +17,7 @@
 // Với Vite hashed filenames (e.g. index-CN7Jhn0k.js), mỗi deploy tạo
 // filename mới → browser tự invalidate. SW chỉ cần cache-first cho /assets/*.
 
-const APP_VERSION = '6.4.40';
+const APP_VERSION = '6.4.41';
 const CACHE_NAME = `linguaflash-v${APP_VERSION}`;
 
 // Chỉ precache stable paths (không hash). Hashed assets sẽ được cache
@@ -151,7 +151,14 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // 5. Audio pronunciation files → cache-first (static, never change)
+    // 5a. Audio manifest → network-first (danh sách slug thay đổi theo từng lần
+    //     generate; cache-first + header immutable cũ từng kẹt bản thiếu "bad").
+    if (url.pathname.startsWith('/audio/') && url.pathname.endsWith('/audio-manifest.json')) {
+        event.respondWith(staleWhileRevalidate(request));
+        return;
+    }
+
+    // 5b. Audio MP3 → cache-first (file tĩnh theo slug, không đổi nội dung)
     if (url.pathname.startsWith('/audio/')) {
         event.respondWith(cacheFirst(request));
         return;

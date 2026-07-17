@@ -105,9 +105,13 @@ const TTS = {
         const cfg = this._accents[accent];
         if (!cfg) { this._manifests[key] = false; return false; }
 
-        const url = `${this._audioBase}/${this._sourceDir(cfg, source)}/audio-manifest.json`;
+        // Manifest có thể được bổ sung slug mới theo từng lần generate → KHÔNG
+        // được force-cache / immutable. Query `?v=` + cache:'reload' phá cache HTTP
+        // immutable cũ (max-age=1 năm) đã từng kẹt bản thiếu slug (vd "bad").
+        // File .mp3 từng slug vẫn immutable OK vì URL cố định theo slug.
+        const url = `${this._audioBase}/${this._sourceDir(cfg, source)}/audio-manifest.json?v=20260717`;
         try {
-            const res = await fetch(url, { cache: 'force-cache' });
+            const res = await fetch(url, { cache: 'reload' });
             if (!res.ok) { this._manifests[key] = false; return false; }
             const json = await res.json();
             this._manifests[key] = (json && json.files) ? json : false;

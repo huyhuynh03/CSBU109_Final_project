@@ -22,12 +22,21 @@ dùng audio thu âm thủ công, tải từ nguồn ngoài, hay nhúng URL TTS g
 ### 0.1. Nguồn chính thức duy nhất
 
 - Pipeline sinh audio: [`scripts/tts/generate-audio.js`](../scripts/tts/generate-audio.js)
-  — gọi TTS API một lần ở máy dev, xuất file MP3 tĩnh.
+  — gọi TTS một lần ở máy dev, xuất file MP3 tĩnh.
 - Cấu hình ngôn ngữ / accent / giọng: [`scripts/tts/config.js`](../scripts/tts/config.js).
-- Provider hợp lệ: `shopaikey`, `gemini`, `google`, `openai`, `elevenlabs`
+- Provider hợp lệ: `edge`, `shopaikey`, `gemini`, `google`, `openai`, `elevenlabs`
   (xem `PROVIDERS` trong [`config.js`](../scripts/tts/config.js)).
-- API key **chỉ** đọc từ biến môi trường (`.env` đã `.gitignore`) — KHÔNG bao
-  giờ ghi key vào code/seed/bundle.
+- 🥇 **`edge` là provider CHÍNH THỨC đang dùng** (Microsoft Edge Neural TTS —
+  miễn phí, KHÔNG cần API key). Client [`tts.js`](../packages/shell/src/js/utils/tts.js)
+  duyệt nguồn theo thứ tự `['edge', 'elevenlabs', '']` (xem `_sources`). Nếu một
+  từ **thiếu file Edge**, app rớt dần xuống nguồn khác, và cuối cùng rơi về
+  **Web Speech API của trình duyệt** → giọng đọc lệ thuộc thiết bị, nghe KHÁC
+  hẳn các từ khác (đây chính là lỗi "từ `bad` sai giọng").
+- Giọng Edge cố định cho từng accent (xem `voices.edge` trong [`config.js`](../scripts/tts/config.js)):
+  - **US** (giọng nam Anh-Mỹ): `en-US-GuyNeural`
+  - **GB** (giọng nữ Anh-Anh): `en-GB-SoniaNeural`
+- API key (nếu dùng provider khác) **chỉ** đọc từ biến môi trường (`.env` đã
+  `.gitignore`) — KHÔNG bao giờ ghi key vào code/seed/bundle. `edge` không cần key.
 
 ### 0.2. Quy ước output
 
@@ -39,19 +48,48 @@ dùng audio thu âm thủ công, tải từ nguồn ngoài, hay nhúng URL TTS g
 
 ### 0.3. Quy trình BẮT BUỘC khi thêm từ mới
 
-Sau khi thêm từ vào seed (mục 5), phải sinh audio AI cho từ đó:
+> 🔊 Provider mặc định để generate là **`edge`** — giọng nữ Anh-Anh
+> (`en-GB-SoniaNeural`) và giọng nam Anh-Mỹ (`en-US-GuyNeural`). Đây đúng là
+> nguồn client ưu tiên số 1, nên PHẢI generate bằng `edge` để đồng nhất giọng.
 
-1. Dry-run để kiểm tra danh sách + chi phí:
-   `node scripts/tts/generate-audio.js --lang english --variant us,gb --dry-run`
-2. Generate thật (resume — chỉ tạo file còn thiếu):
-   `node scripts/tts/generate-audio.js --lang english --provider openai --variant us,gb`
+Sau khi thêm từ vào seed (mục 5), phải sinh audio Edge cho từ đó:
+
+1. Dry-run để kiểm tra danh sách:
+   `node scripts/tts/generate-audio.js --lang english --provider edge --variant us,gb --dry-run`
+2. Generate thật (resume — chỉ tạo file còn thiếu) + ghi manifest:
+   `node scripts/tts/generate-audio.js --lang english --provider edge --variant us,gb --manifest`
    - Chỉ một vài từ: thêm `--only word1,word2`.
-3. Ghi/đồng bộ manifest: thêm cờ `--manifest`.
+   - `edge` miễn phí, KHÔNG cần API key.
+3. **Audit BẮT BUỘC** — xác nhận không còn từ nào thiếu file Edge:
+   `node scripts/tts/audit-missing-edge.js`
+   - Kết quả phải là **Missing 0/N** cho CẢ `us` và `gb`. Nếu còn thiếu, script
+     in sẵn lệnh generate cho các từ đó → chạy rồi audit lại tới khi sạch.
+   - ⚠️ Audit chỉ **phát hiện** file thiếu, KHÔNG tự sinh. Bỏ qua bước 2 mà chỉ
+     audit thì file vẫn thiếu — đây chính là nguyên nhân lỗi ở mục 0.4.
 4. Tăng `APP_VERSION` trong [`packages/shell/public/sw.js`](../packages/shell/public/sw.js)
    để service worker nạp audio mới (xem mục 6 — Lớp 3).
 
-> ⚠️ Một mục từ vựng chỉ được coi là hoàn chỉnh khi đã có đủ file audio AI cho
-> mọi variant (accent) mà ngôn ngữ đó hỗ trợ.
+> ⚠️ Một mục từ vựng chỉ được coi là hoàn chỉnh khi đã có đủ file audio Edge cho
+> mọi variant (accent) mà ngôn ngữ đó hỗ trợ VÀ audit báo Missing 0.
+
+### 0.4. Vì sao trước đây nhiều từ bị thiếu audio (nguyên nhân gốc rễ)
+
+Đã có lúc 311 từ (gồm cả `bad`) thiếu file Edge → app rớt về Web Speech API,
+nghe khác hẳn các từ khác. Nguyên nhân:
+
+1. **Từ được thêm vào seed nhưng bỏ qua bước generate** (mục 0.3 bước 2). Seed
+   JSON có từ mới nhưng thư mục `audio/en/*_edge/` không có MP3 tương ứng.
+2. **Nhầm giữa audit và generate.** `audit-missing-edge.js` chỉ *liệt kê* từ
+   thiếu; nó KHÔNG tạo file. Chạy audit rồi tưởng đã xong là sai.
+3. **Đổi provider chính sang `edge` nhưng chưa render lại toàn bộ.** Các từ cũ
+   từng chỉ có file provider khác (hoặc chưa có file Edge) nên khi client ưu tiên
+   `edge` thì không tìm thấy → fallback Web Speech.
+4. **Commit thiếu MP3 thực tế.** Có lần chỉ commit doc + script audit mà quên
+   `git add` các file `.mp3` mới → deploy xong vẫn thiếu audio.
+
+**Cách phòng tránh:** luôn chạy đủ mục 0.3 (generate → audit Missing 0 → bump
+`APP_VERSION`), và khi commit nhớ `git add` cả thư mục `audio/en/us_edge` +
+`audio/en/gb_edge` (MP3 + `audio-manifest.json`).
 
 ---
 
@@ -159,8 +197,11 @@ phrasal verb là đơn vị từ vựng cố định cần học riêng.
    - Dịch word-by-word ra nghĩa giống hệt? → **Loại**.
    - Nghĩa thay đổi so với dịch word-by-word? → **Được thêm**.
 3. Từ đơn thông dụng? → **Được thêm**.
-4. Đã thêm vào seed? → **Sinh audio AI** cho từ qua pipeline TTS (mục 0) cho
-   mọi variant trước khi coi là hoàn chỉnh.
+4. Đã thêm vào seed? → **Generate audio Edge** cho từ (mục 0.3): chạy
+   `generate-audio.js --provider edge --variant us,gb --manifest` (giọng nữ
+   Anh-Anh `en-GB-SoniaNeural` + nam Anh-Mỹ `en-US-GuyNeural`), rồi
+   `audit-missing-edge.js` phải báo **Missing 0** cho cả us/gb, cuối cùng bump
+   `APP_VERSION`. Chưa đủ các bước này thì từ CHƯA hoàn chỉnh.
 
 ---
 
