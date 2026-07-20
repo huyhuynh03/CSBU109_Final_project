@@ -109,13 +109,24 @@ const TTS = {
         // được force-cache / immutable. Query `?v=` + cache:'reload' phá cache HTTP
         // immutable cũ (max-age=1 năm) đã từng kẹt bản thiếu slug (vd "bad").
         // File .mp3 từng slug vẫn immutable OK vì URL cố định theo slug.
-        const url = `${this._audioBase}/${this._sourceDir(cfg, source)}/audio-manifest.json?v=20260717`;
+        const url = `${this._audioBase}/${this._sourceDir(cfg, source)}/audio-manifest.json?v=20260720-full`;
         try {
             const res = await fetch(url, { cache: 'reload' });
-            if (!res.ok) { this._manifests[key] = false; return false; }
+            if (!res.ok) {
+                console.warn('[TTS_DIAG] manifest_http_error', { accent, source, url, status: res.status });
+                this._manifests[key] = false;
+                return false;
+            }
             const json = await res.json();
             this._manifests[key] = (json && json.files) ? json : false;
-        } catch {
+            console.info('[TTS_DIAG] manifest_loaded', {
+                accent,
+                source,
+                url,
+                entries: this._manifests[key] ? Object.keys(this._manifests[key].files).length : 0
+            });
+        } catch (err) {
+            console.warn('[TTS_DIAG] manifest_fetch_failed', { accent, source, url, error: err?.message });
             this._manifests[key] = false;
         }
         return this._manifests[key];
@@ -139,6 +150,12 @@ const TTS = {
                 return `${this._audioBase}/${this._sourceDir(cfg, source)}/${manifest.files[slug]}`;
             }
         }
+        console.warn('[TTS_DIAG] slug_not_found_in_manifests', {
+            text,
+            slug,
+            accent,
+            sources: this._sources
+        });
         return null;
     },
 
@@ -163,18 +180,26 @@ const TTS = {
                 if (options.onEnd) audio.onended = options.onEnd;
                 audio.onerror = () => {
                     // File lỗi bất ngờ -> fallback Web Speech
+                    console.warn('[TTS_DIAG] mp3_playback_error', { text, accent, audioUrl });
                     this._currentAudio = null;
                     this._speakWebSpeech(text, accent, options);
                 };
                 await audio.play();
                 return;
-            } catch {
+            } catch (err) {
                 // play() bị chặn / lỗi -> fallback
+                console.warn('[TTS_DIAG] mp3_play_rejected', {
+                    text,
+                    accent,
+                    audioUrl,
+                    error: err?.message
+                });
                 this._currentAudio = null;
             }
         }
 
         // 2) Fallback Web Speech API
+        console.warn('[TTS_DIAG] fallback_web_speech', { text, accent, reason: audioUrl ? 'mp3_error' : 'manifest_miss' });
         this._speakWebSpeech(text, accent, options);
     },
 

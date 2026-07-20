@@ -185,6 +185,49 @@ async function runPool(items, limit, worker) {
 }
 
 /**
+ * Ghi manifest an toàn từ TOÀN BỘ từ trong seed và các MP3 thực sự tồn tại.
+ *
+ * Quan trọng: `--only` / `--limit` chỉ giới hạn target cần synthesize, tuyệt đối
+ * không được thu nhỏ manifest. Lỗi cũ đã ghi đè manifest 3.886 từ bằng 311 từ,
+ * khiến MP3 vẫn tồn tại nhưng client không tìm thấy (body, call off...).
+ */
+async function writeCompleteManifest({ outDir, allWords, langConfig, variant, provider }) {
+    await fsp.mkdir(outDir, { recursive: true });
+
+    const files = {};
+    const missingFiles = [];
+    for (const w of allWords) {
+        const dest = path.join(outDir, w.fileName);
+        try {
+            await fsp.access(dest, fs.constants.F_OK);
+            files[w.slug] = w.fileName;
+        } catch {
+            missingFiles.push(w.word);
+        }
+    }
+
+    const manifest = {
+        _meta: {
+            lang: langConfig.id,
+            variant: variant.id,
+            provider: provider.id,
+            generatedAt: new Date().toISOString(),
+            total: Object.keys(files).length,
+            seedTotal: allWords.length,
+            missing: missingFiles.length
+        },
+        files
+    };
+
+    const manifestPath = path.join(outDir, 'audio-manifest.json');
+    await fsp.writeFile(manifestPath, JSON.stringify(manifest, null, 2));
+    console.log(`  • Đã ghi manifest đầy đủ: ${manifestPath} (${manifest._meta.total}/${allWords.length} từ)`);
+    if (missingFiles.length) {
+        console.warn(`  ⚠ Không đưa ${missingFiles.length} từ chưa có MP3 vào manifest.`);
+    }
+}
+
+/**
  * Lọc danh sách từ còn cần generate cho một thư mục output (resume).
  * @returns {{ pending: Array, existing: number }}
  */
@@ -202,7 +245,7 @@ function filterPending(words, outDir, force) {
 // ----------------------------------------------------------------------------
 // Generate cho MỘT variant
 // ----------------------------------------------------------------------------
-async function generateVariant({ variant, words, provider, apiKey, langConfig, args }) {
+async function generateVariant({ variant, words, allWords, provider, apiKey, langConfig, args }) {
     // Provider có outputSubDir → ghi vào folder anh em "<accent>_<provider>" (vd gb_elevenlabs/).
     // Không có → ghi thẳng vào root accent như cũ.
     const outDir = provider.outputSubDir
@@ -222,26 +265,11 @@ async function generateVariant({ variant, words, provider, apiKey, langConfig, a
     const { pending, existing } = filterPending(words, outDir, args.force);
     if (existing) console.log(`  • Đã có sẵn ${existing} file (bỏ qua — dùng --force để ghi đè)`);
 
-    // Ghi manifest (gồm TẤT CẢ từ, kể cả đã có) nếu yêu cầu
-    if (args.manifest) {
-        await fsp.mkdir(outDir, { recursive: true });
-        const manifest = {
-            _meta: {
-                lang: langConfig.id,
-                variant: variant.id,
-                provider: provider.id,
-                generatedAt: new Date().toISOString(),
-                total: words.length
-            },
-            files: {}
-        };
-        for (const w of words) manifest.files[w.slug] = w.fileName;
-        await fsp.writeFile(path.join(outDir, 'audio-manifest.json'), JSON.stringify(manifest, null, 2));
-        console.log(`  • Đã ghi manifest: ${path.join(outDir, 'audio-manifest.json')}`);
-    }
-
     if (!pending.length) {
-        console.log('  ✓ Không có gì để làm (tất cả đã tồn tại).');
+        console.log('  ✓ Không có gì để synthesize (tất cả target đã tồn tại).');
+        if (args.manifest) {
+            await writeCompleteManifest({ outDir, allWords, langConfig, variant, provider });
+        }
         return { done: 0, failed: 0, bytes: 0, skipped: existing, failures: [] };
     }
 
@@ -265,6 +293,12 @@ async function generateVariant({ variant, words, provider, apiKey, langConfig, a
             console.error(`    ✗ [${done + failed}/${pending.length}] ${w.word} — ${err.message}`);
         }
     });
+
+    // Chỉ ghi sau khi synthesize xong để manifest phản ánh đúng file thực tế.
+    // Luôn dùng allWords, không dùng danh sách đã lọc bởi --only/--limit.
+    if (args.manifest) {
+        await writeCompleteManifest({ outDir, allWords, langConfig, variant, provider });
+    }
 
     return { done, failed, bytes, skipped: existing, failures };
 }
@@ -387,7 +421,15 @@ async function main() {
     let totDone = 0, totFailed = 0, totBytes = 0;
     const allFailures = [];
     for (const variant of variants) {
-        const r = await generateVariant({ variant, words: targets, provider, apiKey, langConfig, args });
+        const r = await generateVariant({
+            variant,
+            words: targets,
+            allWords: words,
+            provider,
+            apiKey,
+            langConfig,
+            args
+        });
         totDone += r.done;
         totFailed += r.failed;
         totBytes += r.bytes;

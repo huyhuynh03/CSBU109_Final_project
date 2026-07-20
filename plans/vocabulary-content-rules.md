@@ -58,14 +58,16 @@ Sau khi thêm từ vào seed (mục 5), phải sinh audio Edge cho từ đó:
    `node scripts/tts/generate-audio.js --lang english --provider edge --variant us,gb --dry-run`
 2. Generate thật (resume — chỉ tạo file còn thiếu) + ghi manifest:
    `node scripts/tts/generate-audio.js --lang english --provider edge --variant us,gb --manifest`
-   - Chỉ một vài từ: thêm `--only word1,word2`.
+   - Chỉ một vài từ: thêm `--only word1,word2`. Generator vẫn phải dựng manifest
+     từ **toàn bộ seed + MP3 hiện có**, tuyệt đối không thu nhỏ manifest theo
+     `--only`/`--limit`.
    - `edge` miễn phí, KHÔNG cần API key.
-3. **Audit BẮT BUỘC** — xác nhận không còn từ nào thiếu file Edge:
+3. **Audit BẮT BUỘC** — xác nhận MP3 **và manifest** đều toàn vẹn:
    `node scripts/tts/audit-missing-edge.js`
-   - Kết quả phải là **Missing 0/N** cho CẢ `us` và `gb`. Nếu còn thiếu, script
-     in sẵn lệnh generate cho các từ đó → chạy rồi audit lại tới khi sạch.
-   - ⚠️ Audit chỉ **phát hiện** file thiếu, KHÔNG tự sinh. Bỏ qua bước 2 mà chỉ
-     audit thì file vẫn thiếu — đây chính là nguyên nhân lỗi ở mục 0.4.
+   - Kết quả phải là **MP3 và manifest toàn vẹn** cho CẢ `us` và `gb`; mọi nhóm
+     lỗi (thiếu MP3, thiếu entry manifest, dangling/orphan) phải bằng 0.
+   - ⚠️ Audit chỉ **phát hiện**, KHÔNG tự sinh MP3 hay sửa manifest. Nếu lỗi,
+     chạy lệnh script gợi ý rồi audit lại tới khi sạch.
 4. Tăng `APP_VERSION` trong [`packages/shell/public/sw.js`](../packages/shell/public/sw.js)
    để service worker nạp audio mới (xem mục 6 — Lớp 3).
 
@@ -86,8 +88,15 @@ nghe khác hẳn các từ khác. Nguyên nhân:
    `edge` thì không tìm thấy → fallback Web Speech.
 4. **Commit thiếu MP3 thực tế.** Có lần chỉ commit doc + script audit mà quên
    `git add` các file `.mp3` mới → deploy xong vẫn thiếu audio.
+5. **Manifest bị ghi đè bởi danh sách `--only`.** Lần generate bù 311 từ đã dùng
+   `--only ... --manifest`; phiên bản generator cũ dựng manifest từ đúng 311
+   target thay vì toàn bộ 3.888 từ trong seed. Kết quả: 3.577 MP3 cũ mỗi accent
+   vẫn nằm trên production (`body`, `call off`, ...) nhưng mất entry manifest,
+   nên client không biết file tồn tại và fallback Web Speech. Audit cũ chỉ kiểm
+   tra file vật lý nên báo sai rằng mọi thứ đầy đủ. Generator và audit hiện đã
+   được sửa để ngăn lỗi này tái diễn.
 
-**Cách phòng tránh:** luôn chạy đủ mục 0.3 (generate → audit Missing 0 → bump
+**Cách phòng tránh:** luôn chạy đủ mục 0.3 (generate → audit toàn vẹn → bump
 `APP_VERSION`), và khi commit nhớ `git add` cả thư mục `audio/en/us_edge` +
 `audio/en/gb_edge` (MP3 + `audio-manifest.json`).
 
