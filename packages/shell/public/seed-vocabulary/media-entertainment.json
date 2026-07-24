@@ -4,8 +4,8 @@
     "topicName": "Truyền thông & Giải trí",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Media & Entertainment (B1-B2)",
-    "totalCards": 115,
-    "totalFamilies": 9,
+    "totalCards": 118,
+    "totalFamilies": 10,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Truyen thong & Giai tri, da loc tranh trung word voi cac topic seed hien co."
   },
@@ -1502,6 +1502,45 @@
         "example": "Parents check the age rating before letting children watch.",
         "familyId": "media-ethics",
         "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mystery",
+        "ipa": "/ˈmɪstri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điều bí ẩn, sự huyền bí",
+        "example": "The cause of the fire remains a mystery.",
+        "familyId": "mystery",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mysterious",
+        "ipa": "/mɪˈstɪəriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bí ẩn, huyền bí",
+        "example": "A mysterious stranger appeared at the door.",
+        "familyId": "mystery",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mysteriously",
+        "ipa": "/mɪˈstɪəriəsli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách bí ẩn",
+        "example": "The documents mysteriously disappeared overnight.",
+        "familyId": "mystery",
+        "familyOrder": 3,
         "tags": []
       }
     }

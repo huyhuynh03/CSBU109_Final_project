@@ -4,8 +4,8 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 165,
-    "totalFamilies": 37,
+    "totalCards": 169,
+    "totalFamilies": 45,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
   },
@@ -2180,6 +2180,59 @@
         "example": "The movie ends at ten.",
         "familyId": "basic-actions",
         "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "certain",
+        "ipa": "/ˈsɜːtn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chắc chắn; nào đó",
+        "example": "I'm certain that I locked the door.",
+        "familyId": "certain",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "certainty",
+        "ipa": "/ˈsɜːtnti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự chắc chắn, điều chắc chắn",
+        "example": "There is no certainty that prices will fall.",
+        "familyId": "certain",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lighten",
+        "ipa": "/ˈlaɪtn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm sáng lên; làm nhẹ bớt",
+        "example": "A few jokes helped to lighten the mood.",
+        "familyId": "lighten",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lightening",
+        "ipa": "/ˈlaɪtnɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự làm sáng lên; sự làm nhẹ bớt",
+        "example": "The lightening of her mood was obvious to everyone.",
+        "note": "Lightening (làm sáng/nhẹ hơn) khác với lightning (tia chớp, sét).",
+        "familyId": "lighten",
+        "familyOrder": 2,
         "tags": []
       }
     }

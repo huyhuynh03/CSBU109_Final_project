@@ -4,8 +4,8 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 135,
-    "totalFamilies": 18,
+    "totalCards": 137,
+    "totalFamilies": 19,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
   },
@@ -1762,6 +1762,32 @@
         "example": "She wrote a letter to her grandmother.",
         "familyId": "communication-basics",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acknowledge",
+        "ipa": "/əkˈnɒlɪdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thừa nhận, công nhận; xác nhận",
+        "example": "She acknowledged that she had made a mistake.",
+        "familyId": "acknowledge",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acknowledgement",
+        "ipa": "/əkˈnɒlɪdʒmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thừa nhận, sự xác nhận",
+        "example": "He nodded in acknowledgement of her help.",
+        "familyId": "acknowledge",
+        "familyOrder": 2,
         "tags": []
       }
     }

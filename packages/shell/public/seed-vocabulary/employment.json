@@ -4,8 +4,8 @@
     "topicName": "Việc làm",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Employment (B1-B2)",
-    "totalCards": 94,
-    "totalFamilies": 11,
+    "totalCards": 95,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-26",
     "note": "Tu vung chu de Viec lam, bao gom tuyen dung, vai tro, dai ngo, dao tao, dieu kien lam viec, va quan he lao dong. KHONG trung lap voi cac topic khac (employment word, hire, salary v.v. da co o cac topic khac)."
   },
@@ -1229,6 +1229,19 @@
         "example": "She has built a successful career in marketing.",
         "familyId": "",
         "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cubicle",
+        "ipa": "/ˈkjuːbɪkl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ngăn làm việc, buồng nhỏ",
+        "example": "She spends eight hours a day in a small office cubicle.",
+        "familyId": "cubicle",
+        "familyOrder": 1,
         "tags": []
       }
     }

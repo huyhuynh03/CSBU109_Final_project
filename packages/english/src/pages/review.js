@@ -1,8 +1,9 @@
 // ============================================
-// Review Page - Chế độ Ôn tập (Grouped 2-Round)
+// Review Page - Chế độ Ôn tập (2 bước mỗi từ)
 // ============================================
-// Vòng 1: VN → EN (gõ từ tiếng Anh từ nghĩa tiếng Việt)
-// Vòng 2: Listen → EN (gõ từ tiếng Anh từ audio)
+// Mỗi từ ôn qua 2 bước liền nhau rồi mới sang từ kế tiếp:
+//   Bước 1: VN → EN (gõ từ tiếng Anh từ nghĩa tiếng Việt)
+//   Bước 2: Listen → EN (gõ từ tiếng Anh từ audio)
 
 const ReviewPage = {
     // ---- Session state ----
@@ -102,18 +103,21 @@ const ReviewPage = {
             this._session = {
                 cards: cards,
                 type: type,
+                // currentRound giờ mang nghĩa "BƯỚC hiện tại của TỪ đang ôn" (1 hoặc 2).
+                // Mỗi từ đi qua bước 1 (nhìn nghĩa) rồi bước 2 (nghe) rồi mới sang từ kế tiếp.
                 currentRound: 1,
                 currentIndex: 0,
                 round1Results: {},
                 round2Results: {},
+                // Tổng hợp rating để hiển thị summary cuối phiên.
+                ratingsCount: { 1: 0, 2: 0, 3: 0, 4: 0 },
+                // Các promise lưu FSRS theo từng từ (lưu ngay khi xong bước 2 của từ đó).
+                savePromises: [],
                 startedAt: new Date(),
                 isEarlyReview: isEarlyReview,
                 // Handler keydown đang gắn trên document (back-side: Enter/Space → next).
                 // Lưu reference để gỡ trước khi render thẻ mới — tránh handler "rò"
-                // qua thẻ kế tiếp gây bug "ôn write nhưng backside hiện wrote":
-                // Enter ở input thẻ N → submitAnswer (setTimeout backside)
-                //   → bubble lên document → handler backside thẻ N-1 (chưa kịp gỡ)
-                //   → _nextCard() → currentIndex++ → backside cuối cùng đọc nhầm thẻ.
+                // qua thẻ kế tiếp gây bug handler backside kích hoạt nhầm _nextCard.
                 _backsideKeyHandler: null
             };
             this._startedAt = Date.now();
@@ -148,7 +152,7 @@ const ReviewPage = {
                 </div>
                 ${earlyBadge}
                 <h1 class="review-intro__title">Ôn tập ${count} từ</h1>
-                <p class="review-intro__desc">Bạn sẽ ôn qua 2 vòng:</p>
+                <p class="review-intro__desc">Mỗi từ ôn qua 2 bước liền nhau:</p>
                 <div class="review-intro__steps">
                     <div class="review-step-card">
                         <div class="review-step-card__number">1</div>
@@ -165,7 +169,7 @@ const ReviewPage = {
                         </div>
                     </div>
                 </div>
-                <button class="review-btn-primary" onclick="ReviewPage._startRound(1)">
+                <button class="review-btn-primary" onclick="ReviewPage._startRound()">
                     Bắt đầu ôn tập
                     <span class="material-icons-round">arrow_forward</span>
                 </button>
@@ -179,24 +183,11 @@ const ReviewPage = {
     // ============================================
     // START A ROUND
     // ============================================
-    _startRound(roundNum) {
-        this._session.currentRound = roundNum;
+    _startRound() {
+        // Bắt đầu phiên: từ đầu tiên, bước 1 (nhìn nghĩa).
         this._session.currentIndex = 0;
-
-        // Shuffle cards khi bắt đầu vòng 2
-        if (roundNum === 2) {
-            this._session.cards = this._shuffle([...this._session.cards]);
-        }
-
+        this._session.currentRound = 1;
         this._renderCard();
-    },
-
-    _shuffle(arr) {
-        for (let i = arr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arr[i], arr[j]] = [arr[j], arr[i]];
-        }
-        return arr;
     },
 
     // ============================================
@@ -212,7 +203,8 @@ const ReviewPage = {
         this._detachBacksideKey();
         const card = s.cards[s.currentIndex];
         const total = s.cards.length;
-        const progress = ((s.currentIndex) / total) * 100;
+        // Tiến độ tính theo tổng số bước (mỗi từ 2 bước) cho mượt.
+        const progress = ((s.currentIndex * 2 + (s.currentRound - 1)) / (total * 2)) * 100;
 
         const meaning = card.fieldValues?.meaning || '(chưa có nghĩa)';
         const partOfSpeech = card.fieldValues?.partOfSpeech || '';
@@ -266,8 +258,8 @@ const ReviewPage = {
                 <!-- Progress Header -->
                 <div class="review-header">
                     <div class="review-header__info">
-                        <span class="review-round-badge">Vòng ${s.currentRound}/2</span>
-                        <span class="review-counter">Câu ${s.currentIndex + 1}/${total}</span>
+                        <span class="review-round-badge">Bước ${s.currentRound}/2</span>
+                        <span class="review-counter">Từ ${s.currentIndex + 1}/${total}</span>
                         <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
                     </div>
                     <div class="review-progress">
@@ -486,7 +478,7 @@ const ReviewPage = {
         const example = fv.example || '';
         const partOfSpeech = fv.partOfSpeech || '';
         const total = s.cards.length;
-        const progress = ((s.currentIndex + 1) / total) * 100;
+        const progress = ((s.currentIndex * 2 + s.currentRound) / (total * 2)) * 100;
 
         const difficulty = fv.difficulty || 'intermediate';
         const diffMeta = (typeof CardSchemas !== 'undefined' && CardSchemas.getDifficultyMeta)
@@ -528,7 +520,7 @@ const ReviewPage = {
                 <div class="review-header">
                     <div class="review-header__info">
                         ${headerBadge}
-                        <span class="review-counter">Vòng ${s.currentRound}/2 · Câu ${s.currentIndex + 1}/${total}</span>
+                        <span class="review-counter">Bước ${s.currentRound}/2 · Từ ${s.currentIndex + 1}/${total}</span>
                         <span class="difficulty-badge difficulty-badge--${difficulty}" title="${diffMeta.label}">${diffMeta.short}</span>
                     </div>
                     <div class="review-progress">
@@ -615,64 +607,67 @@ const ReviewPage = {
 
     _nextCard() {
         const s = this._session;
-        s.currentIndex++;
 
+        if (s.currentRound === 1) {
+            // Xong bước 1 (nhìn nghĩa) của TỪ hiện tại → sang ngay bước 2 (nghe)
+            // của chính từ đó để hoàn thành lần ôn tập cho từ này.
+            s.currentRound = 2;
+            this._renderCard();
+            return;
+        }
+
+        // Xong bước 2 → lưu FSRS ngay cho từ vừa ôn. Từ này coi như đã ôn xong
+        // (kể cả khi user thoát ở các từ sau, từ này vẫn được ghi nhận đã ôn).
+        this._saveCurrentWord();
+
+        // Sang từ kế tiếp, quay lại bước 1.
+        s.currentIndex++;
         if (s.currentIndex >= s.cards.length) {
-            // Hết card trong vòng
-            if (s.currentRound === 1) {
-                // Chuyển thẳng sang vòng 2 không qua màn summary (liền mạch).
-                // Nếu user thoát giữa chừng → FSRS chưa cập nhật → lần sau ôn lại đủ 2 vòng.
-                this._startRound(2);
-            } else {
-                this._finalizeSession();
-            }
+            this._finalizeSession();
         } else {
+            s.currentRound = 1;
             this._renderCard();
         }
     },
 
     // ============================================
-    // ROUND SUMMARY (giữa vòng 1 và 2)
+    // LƯU KẾT QUẢ FSRS CHO 1 TỪ (ngay khi xong bước 2)
     // ============================================
-    _renderRoundSummary() {
-        const root = document.getElementById('review-page-root');
-        if (!root) return;
+    _saveCurrentWord() {
+        const s = this._session;
+        const card = s.cards[s.currentIndex];
+        if (!card) return;
 
-        const results = Object.values(this._session.round1Results);
-        const total = results.length;
-        const firstTry = results.filter(r => r.correct && r.attempts === 1 && !r.usedHint && !r.revealed).length;
-        const needHint = results.filter(r => r.correct && r.usedHint && !r.revealed).length;
-        const revealed = results.filter(r => r.revealed).length;
+        const r1 = s.round1Results[card.id] || { correct: false, attempts: 3, revealed: true };
+        const r2 = s.round2Results[card.id] || { correct: false, attempts: 3, revealed: true };
+        const rating = this._computeFinalRating(r1, r2);
+        s.ratingsCount[rating] = (s.ratingsCount[rating] || 0) + 1;
 
-        root.innerHTML = `
-            <div class="review-intro">
-                <div class="review-intro__icon review-intro__icon--success">
-                    <span class="material-icons-round">check_circle</span>
-                </div>
-                <h1 class="review-intro__title">Hoàn thành Vòng 1</h1>
-                <div class="review-round-stats">
-                    <div class="review-round-stat">
-                        <span class="review-round-stat__value">${firstTry}</span>
-                        <span class="review-round-stat__label">Đúng lần đầu</span>
-                    </div>
-                    <div class="review-round-stat">
-                        <span class="review-round-stat__value">${needHint}</span>
-                        <span class="review-round-stat__label">Cần gợi ý</span>
-                    </div>
-                    <div class="review-round-stat">
-                        <span class="review-round-stat__value">${revealed}</span>
-                        <span class="review-round-stat__label">Xem đáp án</span>
-                    </div>
-                </div>
-                <p class="review-intro__desc" style="margin-top:var(--spacing-lg);">
-                    Tiếp theo: <strong>Vòng 2 — Nghe phát âm</strong>
-                </p>
-                <button class="review-btn-primary" onclick="ReviewPage._startRound(2)">
-                    Bắt đầu Vòng 2
-                    <span class="material-icons-round">arrow_forward</span>
-                </button>
-            </div>
-        `;
+        // Gọi FSRS
+        const updatedCard = FSRS.review(card, rating);
+
+        // Lưu lịch sử
+        updatedCard.lastReviewSession = {
+            date: new Date().toISOString(),
+            round1: r1,
+            round2: r2,
+            finalRating: ['', 'again', 'hard', 'good', 'easy'][rating]
+        };
+
+        // Update Firestore (không chặn UI — gom promise để chờ ở _finalizeSession)
+        s.savePromises.push(
+            FirestoreDB.updateCard(card.id, {
+                state: updatedCard.state,
+                difficulty: updatedCard.difficulty,
+                stability: updatedCard.stability,
+                stepIndex: updatedCard.stepIndex,
+                dueDate: updatedCard.dueDate,
+                reps: updatedCard.reps,
+                lapses: updatedCard.lapses,
+                lastReview: updatedCard.lastReview,
+                lastReviewSession: updatedCard.lastReviewSession
+            }).catch(e => console.error('[ReviewPage] Save card error:', e))
+        );
     },
 
     // ============================================
@@ -691,43 +686,10 @@ const ReviewPage = {
         `;
 
         const s = this._session;
-        const ratingsCount = { 1: 0, 2: 0, 3: 0, 4: 0 };
-        const updatePromises = [];
 
-        for (const card of s.cards) {
-            const r1 = s.round1Results[card.id] || { correct: false, attempts: 3, revealed: true };
-            const r2 = s.round2Results[card.id] || { correct: false, attempts: 3, revealed: true };
-            const rating = this._computeFinalRating(r1, r2);
-            ratingsCount[rating]++;
-
-            // Gọi FSRS
-            const updatedCard = FSRS.review(card, rating);
-
-            // Lưu lịch sử
-            updatedCard.lastReviewSession = {
-                date: new Date().toISOString(),
-                round1: r1,
-                round2: r2,
-                finalRating: ['', 'again', 'hard', 'good', 'easy'][rating]
-            };
-
-            // Update Firestore
-            updatePromises.push(
-                FirestoreDB.updateCard(card.id, {
-                    state: updatedCard.state,
-                    difficulty: updatedCard.difficulty,
-                    stability: updatedCard.stability,
-                    stepIndex: updatedCard.stepIndex,
-                    dueDate: updatedCard.dueDate,
-                    reps: updatedCard.reps,
-                    lapses: updatedCard.lapses,
-                    lastReview: updatedCard.lastReview,
-                    lastReviewSession: updatedCard.lastReviewSession
-                }).catch(e => console.error('[ReviewPage] Save card error:', e))
-            );
-        }
-
-        await Promise.all(updatePromises);
+        // FSRS của từng từ đã được lưu ngay khi xong bước 2 (_saveCurrentWord).
+        // Ở đây chỉ chờ các promise lưu còn lại hoàn tất trước khi hiển thị summary.
+        await Promise.all(s.savePromises);
 
         // (FamilyWordManager schema mới: state từ vựng đã nằm trong Firestore card.state,
         //  không cần đồng bộ localStorage ở đây nữa.)
@@ -741,7 +703,7 @@ const ReviewPage = {
             console.error('[ReviewPage] Log study time error:', e);
         }
 
-        this._renderFinalSummary(ratingsCount, durationMs);
+        this._renderFinalSummary(s.ratingsCount, durationMs);
     },
 
     // ============================================

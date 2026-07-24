@@ -4,8 +4,8 @@
     "topicName": "Physics",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Physics (B1-B2)",
-    "totalCards": 45,
-    "totalFamilies": 10,
+    "totalCards": 48,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu mon Vat ly, gom luc va chuyen dong, nang luong, nhiet, dien-tu, cau truc nguyen tu/co hoc hat co ban, song-truong-am-thanh-anh sang, chat long va thi nghiem vat ly."
   },
@@ -592,6 +592,45 @@
         "example": "Divergence can describe rays or fields spreading out from a source.",
         "familyId": "waves-fields",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cog",
+        "ipa": "/kɒɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bánh răng cưa",
+        "example": "Each cog in the machine must turn smoothly.",
+        "familyId": "cog",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experimentation",
+        "ipa": "/ɪkˌsperɪmenˈteɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thử nghiệm, sự thí nghiệm",
+        "example": "Scientific progress depends on constant experimentation.",
+        "familyId": "experiment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experimental",
+        "ipa": "/ɪkˌsperɪˈmentl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "mang tính thử nghiệm, thực nghiệm",
+        "example": "The drug is still at an experimental stage.",
+        "familyId": "experiment",
+        "familyOrder": 3,
         "tags": []
       }
     }

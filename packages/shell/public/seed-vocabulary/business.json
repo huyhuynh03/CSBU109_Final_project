@@ -4,8 +4,8 @@
     "topicName": "Kinh doanh",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Business (B1-B2)",
-    "totalCards": 91,
-    "totalFamilies": 9,
+    "totalCards": 97,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-25",
     "note": "Tu vung chu de Kinh doanh, bao gom quan ly, marketing, ban hang, hop dong, dam phan, khoi nghiep, thuong hieu va chien luoc kinh doanh."
   },
@@ -1190,6 +1190,84 @@
         "example": "Please pay for your items at the counter.",
         "familyId": "",
         "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extent",
+        "ipa": "/ɪkˈstent/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mức độ, phạm vi",
+        "example": "To some extent, I agree with you.",
+        "familyId": "extend",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extend",
+        "ipa": "/ɪkˈstend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mở rộng, kéo dài; gia hạn",
+        "example": "They decided to extend the deadline by a week.",
+        "familyId": "extend",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extension",
+        "ipa": "/ɪkˈstenʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự mở rộng; sự gia hạn; phần mở rộng",
+        "example": "We applied for an extension of the contract.",
+        "familyId": "extend",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extensive",
+        "ipa": "/ɪkˈstensɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "rộng rãi, sâu rộng, quy mô lớn",
+        "example": "The report is based on extensive research.",
+        "familyId": "extend",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guarantee",
+        "ipa": "/ˌɡærənˈtiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đảm bảo, sự bảo hành; đảm bảo",
+        "example": "The product comes with a two-year guarantee.",
+        "familyId": "guarantee",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guaranteed",
+        "ipa": "/ˌɡærənˈtiːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "được đảm bảo, chắc chắn",
+        "example": "Success is not guaranteed, even with hard work.",
+        "familyId": "guarantee",
+        "familyOrder": 2,
         "tags": []
       }
     }

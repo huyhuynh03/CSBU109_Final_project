@@ -4,8 +4,8 @@
     "topicName": "Chính trị",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Politics (B1-B2)",
-    "totalCards": 92,
-    "totalFamilies": 10,
+    "totalCards": 95,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-26",
     "note": "Tu vung chu de Chinh tri, bao gom cac he thong chinh tri, chinh phu, quoc hoi, bau cu, y thuc he, va cac vi tri chinh tri. KHONG trung lap voi cac topic khac."
   },
@@ -1203,6 +1203,45 @@
         "example": "The two parties hold opposite views on immigration.",
         "familyId": "politics-positions",
         "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "merit",
+        "ipa": "/ˈmerɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị, ưu điểm; công trạng",
+        "example": "Each proposal was judged on its own merit.",
+        "familyId": "merit",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meritocratic",
+        "ipa": "/ˌmerɪtəˈkrætɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc chế độ trọng dụng nhân tài",
+        "example": "The company promotes a meritocratic culture.",
+        "familyId": "merit",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meritocracy",
+        "ipa": "/ˌmerɪˈtɒkrəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chế độ trọng dụng nhân tài",
+        "example": "They believe society should be a meritocracy based on talent and effort.",
+        "familyId": "merit",
+        "familyOrder": 3,
         "tags": []
       }
     }

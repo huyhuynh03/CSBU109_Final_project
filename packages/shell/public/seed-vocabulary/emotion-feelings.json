@@ -4,8 +4,8 @@
     "topicName": "Emotion & Feelings",
     "level": "intermediate",
     "source": "curated emotion and feelings vocabulary seed",
-    "totalCards": 159,
-    "totalFamilies": 16,
+    "totalCards": 160,
+    "totalFamilies": 17,
     "generatedAt": "2026-05-08",
     "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
   },
@@ -2396,6 +2396,19 @@
         "example": "She frowned when she read the message.",
         "familyId": "emotional-reactions",
         "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loneliness",
+        "ipa": "/ˈləʊnlinəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cô đơn, nỗi cô đơn",
+        "example": "She felt a deep sense of loneliness after moving abroad.",
+        "familyId": "lonely",
+        "familyOrder": 2,
         "tags": []
       }
     }

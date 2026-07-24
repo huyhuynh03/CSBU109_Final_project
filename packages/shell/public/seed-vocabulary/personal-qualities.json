@@ -4,8 +4,8 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 110,
-    "totalFamilies": 18,
+    "totalCards": 113,
+    "totalFamilies": 19,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
   },
@@ -1440,6 +1440,45 @@
         "example": "He is cautious when making big decisions.",
         "familyId": "patience-emotional-control",
         "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weird",
+        "ipa": "/wɪəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kỳ lạ, kỳ quái",
+        "example": "It felt weird to be back at my old school.",
+        "familyId": "weird",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weirdly",
+        "ipa": "/ˈwɪədli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách kỳ lạ",
+        "example": "The house was weirdly quiet that night.",
+        "familyId": "weird",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weirdness",
+        "ipa": "/ˈwɪədnəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự kỳ lạ, tính kỳ quái",
+        "example": "There was a certain weirdness to the whole situation.",
+        "familyId": "weird",
+        "familyOrder": 3,
         "tags": []
       }
     }

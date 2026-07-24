@@ -4,8 +4,8 @@
     "topicName": "Psychology & Cognition",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Psychology & Cognition (B1-B2)",
-    "totalCards": 103,
-    "totalFamilies": 15,
+    "totalCards": 107,
+    "totalFamilies": 17,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Tam ly va Nhan thuc, da ra soat tranh trung voi cac topic seed hien co."
   },
@@ -1346,6 +1346,58 @@
         "example": "The psychologist helped her understand her anxiety.",
         "familyId": "psychology",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "associate",
+        "ipa": "/əˈsəʊʃieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "liên hệ, liên tưởng; kết giao",
+        "example": "We tend to associate certain smells with childhood memories.",
+        "familyId": "associate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "associated",
+        "ipa": "/əˈsəʊʃieɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có liên quan, có liên hệ",
+        "example": "There are several risks associated with this treatment.",
+        "familyId": "associate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recognize",
+        "ipa": "/ˈrekəɡnaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận ra, công nhận",
+        "example": "I didn't recognize her after all these years.",
+        "familyId": "recognize",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recognizable",
+        "ipa": "/ˈrekəɡnaɪzəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "dễ nhận ra, có thể nhận biết",
+        "example": "His voice is instantly recognizable.",
+        "familyId": "recognize",
+        "familyOrder": 2,
         "tags": []
       }
     }

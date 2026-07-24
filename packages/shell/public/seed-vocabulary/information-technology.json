@@ -4,8 +4,8 @@
     "topicName": "Information Technology",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Information Technology (B1-B2)",
-    "totalCards": 71,
-    "totalFamilies": 9,
+    "totalCards": 72,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Cong nghe thong tin, gom du lieu, he thong may tinh, phan mem, mang, internet, thiet bi, hanh dong so va bao mat. Da bo sung cac tu/cum tu IT dang thieu tu cac seed topic lien quan."
   },
@@ -930,6 +930,19 @@
         "example": "The system automatically backs up your data every night.",
         "familyId": "automatic",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drone",
+        "ipa": "/drəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy bay không người lái, thiết bị bay điều khiển từ xa",
+        "example": "The company uses drones to deliver small packages.",
+        "familyId": "drone",
+        "familyOrder": 1,
         "tags": []
       }
     }
