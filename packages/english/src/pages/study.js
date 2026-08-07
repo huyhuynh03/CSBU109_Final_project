@@ -610,25 +610,33 @@ const StudyPage = {
         const s = this._session;
         const card = s.cards[s.currentIndex];
         const stepResults = s.results[card.id] || {};
-        const r2 = stepResults.step2 || { correct: false, revealed: true, attempts: 3 };
-        const r3 = stepResults.step3 || { correct: false, revealed: true, attempts: 3 };
+        const rawR2 = stepResults.step2;
+        const rawR3 = stepResults.step3;
 
-        // Rating cho từ mới: chính sách nghiêm ngặt - sai/reveal 1 lần => AGAIN.
-        // Đúng cả 2 bước, không reveal, không sai phát nào => GOOD
-        //   (NEW + GOOD -> stepIndex 0 = Cấp độ 1 (30 phút), state REVIEW.
+        // Rating cho từ mới: chính sách "hoàn thành 2 vòng luyện".
+        // Chỉ cần người học đi hết cả 2 vòng của từ mới:
+        //   - Bước 2: nhìn nghĩa → gõ từ
+        //   - Bước 3: nghe phát âm → gõ lại từ
+        // là từ đó được graduate vào Ôn tập Cấp độ 1
+        //   (NEW/LEARNING + GOOD -> stepIndex 0 = Cấp độ 1 (30 phút), state REVIEW.
         //    KHÔNG dùng EASY vì EASY nhảy +2 bậc -> Cấp độ 2 ngay, bỏ qua Cấp độ 1.)
-        // Lưu ý: nút "Gợi ý" (usedHint) KHÔNG ảnh hưởng đến rating — chỉ là
-        // công cụ hỗ trợ UI, không tính như gõ sai.
-        let rating;
-        if (r2.revealed || r3.revealed) rating = FSRS.Rating.AGAIN;
-        else if (!r2.correct || !r3.correct) rating = FSRS.Rating.AGAIN;
-        else if (r2.attempts > 1 || r3.attempts > 1) rating = FSRS.Rating.AGAIN;
-        else rating = FSRS.Rating.GOOD;
+        //
+        // Gõ sai, dùng "Gợi ý" hay bấm "Hiện đáp án" trong lúc học mới KHÔNG còn
+        // đẩy từ trở lại pool học mới nữa — đây là giai đoạn làm quen, sai là bình
+        // thường. Việc siết chất lượng ghi nhớ để dành cho chế độ Ôn tập.
+        // Chỉ khi phiên bị bỏ dở (thiếu kết quả của 1 trong 2 vòng) mới cho AGAIN
+        // để từ ở lại pool học mới.
+        const completedBothRounds = !!rawR2 && !!rawR3;
+        const rating = completedBothRounds ? FSRS.Rating.GOOD : FSRS.Rating.AGAIN;
+
+        // Bản ghi log: đảm bảo luôn có object hợp lệ để ghi Firestore.
+        const r2 = rawR2 || { correct: false, revealed: true, attempts: 0, usedHint: false, skipped: true };
+        const r3 = rawR3 || { correct: false, revealed: true, attempts: 0, usedHint: false, skipped: true };
 
         const updatedCard = FSRS.review(card, rating);
 
-        // Fix bug study-new: khi gõ sai (AGAIN) trong phiên học mới, card phải
-        // được reset về stepIndex = -1 (chưa graduate) thay vì stepIndex = 0.
+        // Khi AGAIN trong phiên học mới (phiên bỏ dở), card phải được reset về
+        // stepIndex = -1 (chưa graduate) thay vì stepIndex = 0.
         // Lý do: _computeNextStep(-1, AGAIN) = 0, nhưng lần học lại đúng
         // _computeNextStep(0, GOOD) = 1 → nhảy thẳng Cấp độ 2 bỏ qua Cấp độ 1.
         // Giữ nguyên state = LEARNING để card vẫn xuất hiện trong phiên học mới
