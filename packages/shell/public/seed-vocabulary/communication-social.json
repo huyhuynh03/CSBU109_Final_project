@@ -4,8 +4,8 @@
     "topicName": "Communication & Society",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
-    "totalCards": 137,
-    "totalFamilies": 19,
+    "totalCards": 151,
+    "totalFamilies": 24,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
   },
@@ -1788,6 +1788,188 @@
         "example": "He nodded in acknowledgement of her help.",
         "familyId": "acknowledge",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inconvenience",
+        "ipa": "/ˌɪn.kənˈviː.ni.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bất tiện, phiền phức",
+        "example": "We apologize for any inconvenience caused by the delay.",
+        "familyId": "inconvenience",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inconvenient",
+        "ipa": "/ˌɪn.kənˈviː.ni.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bất tiện, phiền toái",
+        "example": "The meeting time is inconvenient for our team.",
+        "familyId": "inconvenience",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regard",
+        "ipa": "/rɪˈɡɑːrd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "coi như, xem như",
+        "example": "She is highly regarded for her honesty.",
+        "familyId": "regard",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regarding",
+        "ipa": "/rɪˈɡɑːr.dɪŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "advanced",
+        "meaning": "về việc, liên quan đến",
+        "example": "Please contact us regarding the delivery date.",
+        "familyId": "regard",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "critic",
+        "ipa": "/ˈkrɪt.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà phê bình, người chỉ trích",
+        "example": "The film critic praised the actress's performance.",
+        "familyId": "critic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "criticize",
+        "ipa": "/ˈkrɪt.ɪ.saɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phê bình, chỉ trích",
+        "example": "It is easy to criticize others but harder to help them.",
+        "familyId": "critic",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "criticism",
+        "ipa": "/ˈkrɪt.ɪ.sɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời phê bình, sự chỉ trích",
+        "example": "He accepted the criticism with good grace.",
+        "familyId": "critic",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "critical",
+        "ipa": "/ˈkrɪt.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phê phán, gay gắt; quan trọng then chốt",
+        "example": "The report was critical of the government's handling of the crisis.",
+        "familyId": "critic",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "straightforward",
+        "ipa": "/ˌstreɪtˈfɔːr.wəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thẳng thắn, dễ hiểu, đơn giản",
+        "example": "The instructions are straightforward and easy to follow.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inexplicable",
+        "ipa": "/ˌɪn.ɪkˈsplɪk.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể giải thích được",
+        "example": "For some inexplicable reason, the alarm kept going off.",
+        "familyId": "inexplicable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inexplicably",
+        "ipa": "/ˌɪn.ɪkˈsplɪk.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách khó hiểu",
+        "example": "He inexplicably left the meeting without a word.",
+        "familyId": "inexplicable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "encourage",
+        "ipa": "/ɪnˈkɝː.ɪdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khuyến khích, động viên",
+        "example": "Teachers should encourage students to ask questions.",
+        "familyId": "encourage",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "encouragement",
+        "ipa": "/ɪnˈkɝː.ɪdʒ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khuyến khích, động viên",
+        "example": "Her words of encouragement gave me confidence.",
+        "familyId": "encourage",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "particular",
+        "ipa": "/pərˈtɪk.jə.lər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "riêng, cụ thể, đặc biệt",
+        "example": "Is there any particular topic you want to discuss?",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

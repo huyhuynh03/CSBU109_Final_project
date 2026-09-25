@@ -4,8 +4,8 @@
     "topicName": "Health",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Health (B1-B2)",
-    "totalCards": 120,
-    "totalFamilies": 16,
+    "totalCards": 135,
+    "totalFamilies": 23,
     "generatedAt": "2026-05-08",
     "note": "Tu vung chu de Suc khoe, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom suc khoe chung, co the, trieu chung, benh tat, dau va chan thuong, suc khoe tinh than, cham soc y te, benh vien, dieu tri, thuoc, phong benh, loi song, dinh duong, the luc, benh man tinh, cap cuu va y te cong cong."
   },
@@ -695,8 +695,8 @@
         "difficulty": "intermediate",
         "meaning": "vệ sinh",
         "example": "Good hygiene reduces the spread of infection.",
-        "familyId": "prevention",
-        "familyOrder": 3,
+        "familyId": "hygiene",
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1046,8 +1046,8 @@
         "difficulty": "intermediate",
         "meaning": "tai nạn",
         "example": "He broke his arm in a cycling accident.",
-        "familyId": "emergency-first-aid",
-        "familyOrder": 4,
+        "familyId": "accident",
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -1568,6 +1568,202 @@
         "example": "Smoking damages your lungs.",
         "familyId": "body-systems",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accidental",
+        "ipa": "/ˌæk.sɪˈden.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tình cờ, do tai nạn",
+        "example": "The fire was caused by an accidental spark.",
+        "familyId": "accident",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accidentally",
+        "ipa": "/ˌæk.sɪˈden.təl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách tình cờ, vô tình",
+        "example": "I accidentally deleted the important file.",
+        "familyId": "accident",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fate",
+        "ipa": "/feɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số phận, định mệnh",
+        "example": "They believe it was fate that brought them together.",
+        "familyId": "fate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatal",
+        "ipa": "/ˈfeɪ.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gây tử vong, chết người",
+        "example": "The driver suffered a fatal injury in the crash.",
+        "familyId": "fate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatally",
+        "ipa": "/ˈfeɪ.təl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "gây chết người, tử vong",
+        "example": "The passenger was fatally wounded in the attack.",
+        "familyId": "fate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatality",
+        "ipa": "/feɪˈtæl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ca tử vong, sự chết chóc",
+        "example": "The crash resulted in two fatalities.",
+        "familyId": "fate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prevent",
+        "ipa": "/prɪˈvent/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngăn chặn, phòng ngừa",
+        "example": "Washing your hands helps prevent the spread of disease.",
+        "familyId": "prevent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preventive",
+        "ipa": "/prɪˈven.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phòng ngừa, dự phòng",
+        "example": "Regular check-ups are part of preventive healthcare.",
+        "familyId": "prevent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hygienic",
+        "ipa": "/haɪˈdʒen.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "vệ sinh, hợp vệ sinh",
+        "example": "The restaurant must maintain hygienic conditions in the kitchen.",
+        "familyId": "hygiene",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pregnant",
+        "ipa": "/ˈpreg.nənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mang thai",
+        "example": "She is pregnant and expecting her first child.",
+        "familyId": "pregnant",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pregnancy",
+        "ipa": "/ˈpreg.nən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời kỳ mang thai",
+        "example": "A healthy diet is important during pregnancy.",
+        "familyId": "pregnant",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metabolism",
+        "ipa": "/məˈtæb.ə.lɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự trao đổi chất",
+        "example": "Exercise can speed up your metabolism.",
+        "familyId": "metabolism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metabolic",
+        "ipa": "/ˌmet.əˈbɑː.lɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về trao đổi chất",
+        "example": "The doctor checked his metabolic rate at rest.",
+        "familyId": "metabolism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dexterity",
+        "ipa": "/dekˈster.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự khéo léo, tài khéo tay",
+        "example": "Playing the piano requires manual dexterity.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spreading",
+        "ipa": "/ˈspred.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự lan truyền, lây lan",
+        "example": "Hand washing helps slow the spreading of germs.",
+        "note": "Dạng V-ing của spread (động từ bất quy tắc) — không tạo family riêng",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

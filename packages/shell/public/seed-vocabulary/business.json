@@ -4,8 +4,8 @@
     "topicName": "Kinh doanh",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Business (B1-B2)",
-    "totalCards": 97,
-    "totalFamilies": 11,
+    "totalCards": 114,
+    "totalFamilies": 17,
     "generatedAt": "2026-05-25",
     "note": "Tu vung chu de Kinh doanh, bao gom quan ly, marketing, ban hang, hop dong, dam phan, khoi nghiep, thuong hieu va chien luoc kinh doanh."
   },
@@ -1268,6 +1268,227 @@
         "example": "Success is not guaranteed, even with hard work.",
         "familyId": "guarantee",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adjust",
+        "ipa": "/əˈdʒʌst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "điều chỉnh, chỉnh sửa",
+        "example": "We had to adjust our budget after the price increase.",
+        "familyId": "adjust",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adjusted",
+        "ipa": "/əˈdʒʌs.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đã được điều chỉnh",
+        "example": "The adjusted figures show a small profit this quarter.",
+        "familyId": "adjust",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compact",
+        "ipa": "/kəmˈpækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gọn gàng, nhỏ gọn",
+        "example": "This compact design saves a lot of space in the office.",
+        "familyId": "compact",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compactly",
+        "ipa": "/kəmˈpækt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách gọn gàng",
+        "example": "The tools are stored compactly in a small drawer.",
+        "familyId": "compact",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compaction",
+        "ipa": "/kəmˈpæk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự nén chặt",
+        "example": "Soil compaction can affect how well plants grow.",
+        "familyId": "compact",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspect",
+        "ipa": "/ɪnˈspekt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kiểm tra, thanh tra",
+        "example": "An inspector will inspect the building for safety issues.",
+        "familyId": "inspect",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspection",
+        "ipa": "/ɪnˈspek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiểm tra, thanh tra",
+        "example": "The fire inspection revealed several problems in the wiring.",
+        "familyId": "inspect",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspector",
+        "ipa": "/ɪnˈspek.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thanh tra viên, người giám sát",
+        "example": "The health inspector checked the cleanliness of the kitchen.",
+        "familyId": "inspect",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refurbish",
+        "ipa": "/ˌriːˈfɝː.bɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "tân trang, sửa sang lại",
+        "example": "The company plans to refurbish all its old computers.",
+        "familyId": "refurbish",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refurbishment",
+        "ipa": "/ˌriːˈfɝː.bɪʃ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tân trang, tu sửa",
+        "example": "The refurbishment of the hotel took nearly a year.",
+        "familyId": "refurbish",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warranty",
+        "ipa": "/ˈwɔːr.ən.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo hành, chế độ bảo hành",
+        "example": "The laptop comes with a two-year warranty.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantity",
+        "ipa": "/ˈkwɑːn.tə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số lượng",
+        "example": "We ordered a large quantity of paper for the office.",
+        "familyId": "quantity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantify",
+        "ipa": "/ˈkwɑːn.tə.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "định lượng, đo lường",
+        "example": "It is hard to quantify the exact impact of the policy.",
+        "familyId": "quantity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantitative",
+        "ipa": "/ˈkwɑːn.tə.teɪ.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "định lượng (thuộc về số lượng)",
+        "example": "The report includes both quantitative and qualitative data.",
+        "familyId": "quantity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "receive",
+        "ipa": "/rɪˈsiːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận",
+        "example": "You will receive a confirmation email after booking.",
+        "familyId": "receive",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reception",
+        "ipa": "/rɪˈsep.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lễ tân, sự đón tiếp, bộ phận tiếp tân",
+        "example": "Please leave your keys at the reception desk.",
+        "familyId": "receive",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counterproductive",
+        "ipa": "/ˌkaʊn.tər.prəˈdʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phản tác dụng",
+        "example": "Working too many hours can be counterproductive for your health.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

@@ -4,8 +4,8 @@
     "topicName": "Daily Life",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
-    "totalCards": 169,
-    "totalFamilies": 45,
+    "totalCards": 181,
+    "totalFamilies": 50,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
   },
@@ -2061,8 +2061,8 @@
         "difficulty": "beginner",
         "meaning": "di chuyển, chuyển động",
         "example": "We plan to move to a bigger house.",
-        "familyId": "basic-actions",
-        "familyOrder": 12,
+        "familyId": "move",
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -2233,6 +2233,162 @@
         "note": "Lightening (làm sáng/nhẹ hơn) khác với lightning (tia chớp, sét).",
         "familyId": "lighten",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "envelope",
+        "ipa": "/ˈen.və.loʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phong bì",
+        "example": "She sealed the letter and put it in an envelope.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blink",
+        "ipa": "/blɪŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chớp mắt, nhấp nháy",
+        "example": "He tried not to blink during the staring contest.",
+        "familyId": "blink",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blinking",
+        "ipa": "/ˈblɪŋ.kɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "nhấp nháy",
+        "example": "The blinking light on the machine means it is charging.",
+        "familyId": "blink",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "count",
+        "ipa": "/kaʊnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đếm",
+        "example": "The teacher asked the children to count from one to ten.",
+        "familyId": "count",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "countless",
+        "ipa": "/ˈkaʊnt.ləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vô số, không đếm xuể",
+        "example": "She has given countless hours to charity work.",
+        "familyId": "count",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "movement",
+        "ipa": "/ˈmuːv.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chuyển động, phong trào",
+        "example": "The dancer moved with great grace and fluid movement.",
+        "familyId": "move",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "separate",
+        "ipa": "/ˈsep.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tách, phân tách",
+        "example": "We need to separate the recyclable waste from the rest.",
+        "familyId": "separate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "separation",
+        "ipa": "/ˌsep.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tách rời, phân ly",
+        "example": "The separation of church and state is an important principle.",
+        "familyId": "separate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quite",
+        "ipa": "/kwaɪt/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "khá, khá là, hoàn toàn",
+        "example": "The new sofa is quite comfortable to sit on.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simple",
+        "ipa": "/ˈsɪm.pəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "đơn giản, giản dị",
+        "example": "The recipe is simple and takes only ten minutes.",
+        "familyId": "simple",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simply",
+        "ipa": "/ˈsɪm.pli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách đơn giản, chỉ đơn giản là",
+        "example": "He simply walked away without saying a word.",
+        "familyId": "simple",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "common",
+        "ipa": "/ˈkɑː.mən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phổ biến, chung, thông thường",
+        "example": "This is a common mistake among language learners.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

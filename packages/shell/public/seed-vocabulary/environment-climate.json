@@ -4,8 +4,8 @@
     "topicName": "Môi trường & Biến đổi khí hậu",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Environment & Climate Change (B1-B2)",
-    "totalCards": 84,
-    "totalFamilies": 23,
+    "totalCards": 92,
+    "totalFamilies": 26,
     "generatedAt": "2026-05-14",
     "note": "Tu vung nen tang ve Moi truong & Bien doi khi hau, gom o nhiem, khi thai, bao ton, tai tao, thien tai. Da loai bo cac tu da co o cac topic khac va tranh trung trong topic. Cac tu cung family duoc nhom theo familyId.",
     "skipped": [
@@ -1175,6 +1175,110 @@
         "example": "Farmers were working in the rice field.",
         "familyId": "",
         "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fog",
+        "ipa": "/fɑːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sương mù",
+        "example": "Heavy fog made it difficult to see the road.",
+        "familyId": "fog",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foggy",
+        "ipa": "/ˈfɑː.ɡi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có sương mù, mù mờ",
+        "example": "It was a cold and foggy winter morning.",
+        "familyId": "fog",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vegetation",
+        "ipa": "/ˌvedʒ.əˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thảm thực vật, thực vật",
+        "example": "The hillside was covered with thick vegetation.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vulnerable",
+        "ipa": "/ˈvʌl.nər.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ bị tổn thương, yếu thế",
+        "example": "Children are particularly vulnerable to air pollution.",
+        "familyId": "vulnerable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vulnerability",
+        "ipa": "/ˌvʌl.nər.əˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự dễ bị tổn thương",
+        "example": "Scientists are studying the vulnerability of coral reefs.",
+        "familyId": "vulnerable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destroy",
+        "ipa": "/dɪˈstrɔɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phá hủy, tàn phá",
+        "example": "The earthquake destroyed many buildings in the city.",
+        "familyId": "destroy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destructive",
+        "ipa": "/dɪˈstrʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "gây phá hủy, tàn phá",
+        "example": "The hurricane had a destructive effect on the coastline.",
+        "familyId": "destroy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destruction",
+        "ipa": "/dɪˈstrʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phá hủy, sự tàn phá",
+        "example": "The destruction of the rainforest affects global weather.",
+        "familyId": "destroy",
+        "familyOrder": 3,
         "tags": []
       }
     }

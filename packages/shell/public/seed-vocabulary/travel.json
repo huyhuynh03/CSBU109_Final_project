@@ -4,8 +4,8 @@
     "topicName": "Du lịch",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Travel (B1-B2)",
-    "totalCards": 137,
-    "totalFamilies": 10,
+    "totalCards": 141,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-12",
     "note": "Tu vung bo sung cho chu de Du lich, da loc tranh trung word voi cac topic seed hien co."
   },
@@ -174,8 +174,8 @@
         "difficulty": "intermediate",
         "meaning": "sự khởi hành",
         "example": "The departure time is 7 AM.",
-        "familyId": "air-travel",
-        "familyOrder": 1,
+        "familyId": "depart",
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -564,7 +564,7 @@
         "difficulty": "intermediate",
         "meaning": "đặt chỗ trước",
         "example": "I made a reservation for two nights.",
-        "familyId": "accommodation",
+        "familyId": "reserve",
         "familyOrder": 2,
         "tags": []
       }
@@ -1788,6 +1788,58 @@
         "example": "Our guide explained the history of the temple.",
         "familyId": "sightseeing",
         "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shuttle",
+        "ipa": "/ˈʃʌt.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe đưa đón (shuttle)",
+        "example": "A free shuttle takes guests from the airport to the hotel.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depart",
+        "ipa": "/dɪˈpɑːrt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khởi hành, rời đi",
+        "example": "The train will depart from platform four at six.",
+        "familyId": "depart",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alight",
+        "ipa": "/əˈlaɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "xuống (tàu, xe, ngựa)",
+        "example": "Passengers must alight from the bus at the front door.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reserve",
+        "ipa": "/rɪˈzɝːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt trước, dành trước",
+        "example": "You should reserve a table before going to that restaurant.",
+        "familyId": "reserve",
+        "familyOrder": 1,
         "tags": []
       }
     }

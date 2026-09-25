@@ -4,8 +4,8 @@
     "topicName": "Biology",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Biology (B1-B2)",
-    "totalCards": 53,
-    "totalFamilies": 11,
+    "totalCards": 65,
+    "totalFamilies": 15,
     "generatedAt": "2026-05-08",
     "note": "Tu vung va thuat ngu mon Sinh hoc, gom te bao, he co quan, di truyen, tien hoa, sinh thai hoc, thuc vat, sinh san va phong thi nghiem sinh hoc."
   },
@@ -343,8 +343,8 @@
         "difficulty": "intermediate",
         "meaning": "động vật săn mồi",
         "example": "A lion is a powerful predator.",
-        "familyId": "ecology",
-        "familyOrder": 5,
+        "familyId": "predator",
+        "familyOrder": 1,
         "tags": []
       }
     },
@@ -697,6 +697,163 @@
         "example": "Each rock stratum reveals a different period of history.",
         "familyId": "paleontology",
         "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rodent",
+        "ipa": "/ˈroʊ.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gặm nhấm",
+        "example": "Mice and squirrels are both types of rodents.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predatory",
+        "ipa": "/ˈpred.ə.tɔːr.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "săn mồi, có tính săn mồi; bóc lột",
+        "example": "Lions and tigers are large predatory animals.",
+        "familyId": "predator",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predation",
+        "ipa": "/prɪˈdeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự săn bắt, hành vi săn mồi",
+        "example": "Predation is a key factor in controlling prey populations.",
+        "familyId": "predator",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breeding",
+        "ipa": "/ˈbriː.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự sinh sản, chăn nuôi",
+        "example": "The zoo runs a breeding program for endangered species.",
+        "note": "Dạng V-ing của breed (động từ bất quy tắc) — không tạo family riêng",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invade",
+        "ipa": "/ɪnˈveɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xâm lược, xâm nhập",
+        "example": "Invasive species can invade new territories rapidly.",
+        "familyId": "invade",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invasive",
+        "ipa": "/ɪnˈveɪ.sɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "xâm lấn, xâm nhập; xâm lấn (y khoa)",
+        "example": "The removal of invasive species protects native habitats.",
+        "familyId": "invade",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invasion",
+        "ipa": "/ɪnˈveɪ.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc xâm lược, sự xâm nhập",
+        "example": "The insect invasion destroyed the local crops.",
+        "familyId": "invade",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dominate",
+        "ipa": "/ˈdɑː.mɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chi phối, thống trị",
+        "example": "One species tends to dominate in this environment.",
+        "familyId": "dominate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dominant",
+        "ipa": "/ˈdɑː.mɪ.nənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chiếm ưu thế, trội",
+        "example": "The dominant species in the forest is the oak tree.",
+        "familyId": "dominate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "domination",
+        "ipa": "/ˌdɑː.mɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thống trị, chi phối",
+        "example": "The company's domination of the market lasted for decades.",
+        "familyId": "dominate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poison",
+        "ipa": "/ˈpɔɪ.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất độc",
+        "example": "Some mushrooms contain a deadly poison.",
+        "familyId": "poison",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poisonous",
+        "ipa": "/ˈpɔɪ.zə.nəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có độc, gây độc",
+        "example": "The snake's venom is extremely poisonous.",
+        "familyId": "poison",
+        "familyOrder": 2,
         "tags": []
       }
     }

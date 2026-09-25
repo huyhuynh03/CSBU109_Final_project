@@ -4,8 +4,8 @@
     "topicName": "Chính trị",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Politics (B1-B2)",
-    "totalCards": 95,
-    "totalFamilies": 11,
+    "totalCards": 98,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-26",
     "note": "Tu vung chu de Chinh tri, bao gom cac he thong chinh tri, chinh phu, quoc hoi, bau cu, y thuc he, va cac vi tri chinh tri. KHONG trung lap voi cac topic khac."
   },
@@ -1242,6 +1242,45 @@
         "example": "They believe society should be a meritocracy based on talent and effort.",
         "familyId": "merit",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scheme",
+        "ipa": "/skiːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kế hoạch, âm mưu, dự án",
+        "example": "The government announced a new housing scheme.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intervene",
+        "ipa": "/ˌɪn.tərˈviːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "can thiệp",
+        "example": "The president had to intervene to end the dispute.",
+        "familyId": "intervene",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intervention",
+        "ipa": "/ˌɪn.tərˈven.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự can thiệp",
+        "example": "Foreign intervention can escalate the conflict further.",
+        "familyId": "intervene",
+        "familyOrder": 2,
         "tags": []
       }
     }

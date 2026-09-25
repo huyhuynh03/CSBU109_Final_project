@@ -4,8 +4,8 @@
     "topicName": "Education",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Education System & School Life (B1-B2)",
-    "totalCards": 95,
-    "totalFamilies": 23,
+    "totalCards": 99,
+    "totalFamilies": 24,
     "generatedAt": "2026-05-08",
     "note": "Tu vung chu de Giao duc theo pham vi he thong giao duc, truong lop, day va hoc, thi cu, bang cap, co so giao duc, nhan su truong hoc, lich hoc, dung cu hoc tap, quan tri va chinh sach giao duc. Khong bao gom ten mon hoc va thuat ngu chuyen sau cua tung mon; cac phan nay duoc tach sang topic mon hoc rieng."
   },
@@ -1262,6 +1262,58 @@
         "example": "Online courses require a lot of self-study.",
         "familyId": "learning-methods",
         "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "include",
+        "ipa": "/ɪnˈkluːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bao gồm",
+        "example": "The course will include practical exercises.",
+        "familyId": "include",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inclusive",
+        "ipa": "/ɪnˈkluː.sɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bao gồm tất cả, hòa nhập",
+        "example": "The school promotes an inclusive learning environment.",
+        "familyId": "include",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inclusion",
+        "ipa": "/ɪnˈkluː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bao gồm, tính hòa nhập",
+        "example": "The inclusion of all students is important in modern education.",
+        "familyId": "include",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "essential",
+        "ipa": "/ɪˈsen.ʃəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cần thiết, thiết yếu",
+        "example": "Reading is an essential skill for every student.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

@@ -4,8 +4,8 @@
     "topicName": "Psychology & Cognition",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Psychology & Cognition (B1-B2)",
-    "totalCards": 107,
-    "totalFamilies": 17,
+    "totalCards": 109,
+    "totalFamilies": 18,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang cho chu de Tam ly va Nhan thuc, da ra soat tranh trung voi cac topic seed hien co."
   },
@@ -161,7 +161,7 @@
         "difficulty": "advanced",
         "meaning": "ý thức",
         "example": "Consciousness allows us to be aware of ourselves.",
-        "familyId": "psychology-cognition",
+        "familyId": "conscious",
         "familyOrder": 2,
         "tags": []
       }
@@ -1398,6 +1398,32 @@
         "example": "His voice is instantly recognizable.",
         "familyId": "recognize",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conscious",
+        "ipa": "/ˈkɑːn.ʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có ý thức, tỉnh táo",
+        "example": "She was conscious of someone watching her.",
+        "familyId": "conscious",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resilience",
+        "ipa": "/rɪˈzɪl.i.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự kiên cường, khả năng phục hồi",
+        "example": "Children often show remarkable resilience after difficult experiences.",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

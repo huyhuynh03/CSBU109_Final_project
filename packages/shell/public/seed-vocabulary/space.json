@@ -4,8 +4,8 @@
     "topicName": "Space",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Space and Astronomy (B1-B2)",
-    "totalCards": 76,
-    "totalFamilies": 12,
+    "totalCards": 77,
+    "totalFamilies": 13,
     "generatedAt": "2026-05-12",
     "note": "Tu vung chuyen biet ve vu tru va thien van hoc. Da tranh trung lap voi cac topic hien co, dac biet cac tu vat ly da co nhu force, velocity, acceleration, gravity, mass, radiation, wave, light, atom, proton, electron, neutron."
   },
@@ -96,7 +96,7 @@
         "difficulty": "intermediate",
         "meaning": "hành tinh",
         "example": "Mars is a rocky planet.",
-        "familyId": "space-objects",
+        "familyId": "planet",
         "familyOrder": 1,
         "tags": []
       }
@@ -995,6 +995,19 @@
         "example": "Scientists look for habitable planets beyond our solar system.",
         "familyId": "space-descriptors",
         "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planetary",
+        "ipa": "/ˈplæn.ə.ter.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc hành tinh, thiên thể",
+        "example": "The search for planetary systems beyond our own continues.",
+        "familyId": "planet",
+        "familyOrder": 2,
         "tags": []
       }
     }

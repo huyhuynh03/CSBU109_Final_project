@@ -4,8 +4,8 @@
     "topicName": "Tội phạm",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Crime (B1-B2)",
-    "totalCards": 91,
-    "totalFamilies": 10,
+    "totalCards": 93,
+    "totalFamilies": 11,
     "generatedAt": "2026-05-26",
     "note": "Tu vung chu de Toi pham, bao gom cac loai toi pham, ke pham toi, dieu tra, an ninh mang, va cong cu pha an. KHONG trung lap voi topic Luat phap (legal/court/jury) va da tranh moi tu hien co o cac topic khac."
   },
@@ -1190,6 +1190,32 @@
         "example": "He was charged with treason for selling state secrets.",
         "familyId": "crime-public-disorder",
         "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seize",
+        "ipa": "/siːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tịch thu, chiếm giữ",
+        "example": "Police seized a large amount of illegal drugs.",
+        "familyId": "seize",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seizure",
+        "ipa": "/ˈsiː.ʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tịch thu, sự bắt giữ; cơn co giật",
+        "example": "The seizure of the weapons prevented a major attack.",
+        "familyId": "seize",
+        "familyOrder": 2,
         "tags": []
       }
     }

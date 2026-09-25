@@ -4,8 +4,8 @@
     "topicName": "Emotion & Feelings",
     "level": "intermediate",
     "source": "curated emotion and feelings vocabulary seed",
-    "totalCards": 160,
-    "totalFamilies": 17,
+    "totalCards": 168,
+    "totalFamilies": 22,
     "generatedAt": "2026-05-08",
     "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
   },
@@ -591,8 +591,8 @@
         "difficulty": "intermediate",
         "meaning": "thiếu kiên nhẫn, sốt ruột",
         "example": "The passengers became impatient after the delay.",
-        "familyId": "anger-frustration",
-        "familyOrder": 8,
+        "familyId": "impatient",
+        "familyOrder": 1,
         "tags": [
           "negative"
         ]
@@ -667,7 +667,7 @@
         "difficulty": "intermediate",
         "meaning": "hoảng sợ",
         "example": "She was frightened by the sudden noise.",
-        "familyId": "fear-anxiety",
+        "familyId": "frighten",
         "familyOrder": 3,
         "tags": [
           "negative"
@@ -1520,8 +1520,8 @@
         "difficulty": "intermediate",
         "meaning": "kiên nhẫn",
         "example": "Please be patient while we solve the problem.",
-        "familyId": "calm-relief",
-        "familyOrder": 9,
+        "familyId": "patient",
+        "familyOrder": 1,
         "tags": [
           "positive"
         ]
@@ -2408,6 +2408,110 @@
         "meaning": "sự cô đơn, nỗi cô đơn",
         "example": "She felt a deep sense of loneliness after moving abroad.",
         "familyId": "lonely",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patience",
+        "ipa": "/ˈpeɪ.ʃəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiên nhẫn",
+        "example": "Learning a language requires a lot of patience.",
+        "familyId": "patient",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impatiently",
+        "ipa": "/ɪmˈpeɪ.ʃənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách sốt ruột, mất kiên nhẫn",
+        "example": "She tapped her foot impatiently while waiting in line.",
+        "familyId": "impatient",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frighten",
+        "ipa": "/ˈfraɪ.tən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm sợ hãi, dọa",
+        "example": "Sudden loud noises frighten small children.",
+        "familyId": "frighten",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frightening",
+        "ipa": "/ˈfraɪ.tən.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đáng sợ, đáng kinh hãi",
+        "example": "The movie was too frightening for young viewers.",
+        "familyId": "frighten",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desire",
+        "ipa": "/dɪˈzaɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khao khát, ham muốn",
+        "example": "She has a strong desire to travel the world.",
+        "familyId": "desire",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desirable",
+        "ipa": "/dɪˈzaɪr.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đáng mong muốn, đáng mơ ước",
+        "example": "A quiet neighborhood is highly desirable for families.",
+        "familyId": "desire",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triumph",
+        "ipa": "/ˈtraɪ.əmf/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự chiến thắng, chiến thắng vẻ vang",
+        "example": "Winning the championship was a great triumph for the team.",
+        "familyId": "triumph",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triumphant",
+        "ipa": "/traɪˈʌm.fənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hân hoan chiến thắng",
+        "example": "The triumphant players lifted the trophy high.",
+        "familyId": "triumph",
         "familyOrder": 2,
         "tags": []
       }

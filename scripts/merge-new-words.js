@@ -18,7 +18,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const NEW_WORDS = require('./new-words-data');
+// Cho phép nạp nguồn dữ liệu khác: node scripts/merge-new-words.js --data=./new-words-batch2.js
+const dataArg = process.argv.find((a) => a.startsWith('--data'));
+const DATA_FILE = dataArg
+  ? path.join(__dirname, dataArg.includes('=') ? dataArg.split('=')[1] : './new-words-data')
+  : './new-words-data';
+const NEW_WORDS = require(DATA_FILE);
 const APPLY = process.argv.includes('--apply');
 
 const DIRS = [

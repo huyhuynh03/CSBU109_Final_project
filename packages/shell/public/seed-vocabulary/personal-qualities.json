@@ -4,8 +4,8 @@
     "topicName": "Personal Qualities",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
-    "totalCards": 113,
-    "totalFamilies": 19,
+    "totalCards": 117,
+    "totalFamilies": 20,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
   },
@@ -1438,8 +1438,8 @@
         "difficulty": "intermediate",
         "meaning": "thận trọng, cẩn thận",
         "example": "He is cautious when making big decisions.",
-        "familyId": "patience-emotional-control",
-        "familyOrder": 5,
+        "familyId": "caution",
+        "familyOrder": 2,
         "tags": []
       }
     },
@@ -1479,6 +1479,59 @@
         "example": "There was a certain weirdness to the whole situation.",
         "familyId": "weird",
         "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caution",
+        "ipa": "/ˈkɔː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thận trọng, sự cẩn thận",
+        "example": "The driver approached the icy road with caution.",
+        "familyId": "caution",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "virtue",
+        "ipa": "/ˈvɝː.tʃuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đức hạnh, đức tính",
+        "example": "Patience is considered a great virtue.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "effort",
+        "ipa": "/ˈef.ərt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗ lực, cố gắng",
+        "example": "She made a great effort to finish the project on time.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unshakable",
+        "ipa": "/ʌnˈʃeɪ.kə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể lay chuyển",
+        "example": "He has an unshakable belief in his dream.",
+        "note": "Không patch vào irregular verb shake — prefix un- quá dài để LCP đủ",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

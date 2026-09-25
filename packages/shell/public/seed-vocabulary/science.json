@@ -4,8 +4,8 @@
     "topicName": "Science",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
-    "totalCards": 64,
-    "totalFamilies": 9,
+    "totalCards": 77,
+    "totalFamilies": 14,
     "generatedAt": "2026-05-12",
     "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom cac tu don ve nghien cuu, phuong phap, quan sat, phan tich, danh gia va phong thi nghiem. Da loai bo cac danh tu/cum tu ghep co the tu suy ra va tranh trung voi cac topic hien co."
   },
@@ -839,6 +839,176 @@
         "example": "The results matched exactly what the hypothesis predicted.",
         "familyId": "exact",
         "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanism",
+        "ipa": "/ˈmek.ə.nɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ chế, cơ cấu",
+        "example": "Scientists studied the mechanism behind the chemical reaction.",
+        "familyId": "mechanism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanical",
+        "ipa": "/məˈkæn.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc cơ khí, cơ học",
+        "example": "The clock uses a mechanical system with gears and springs.",
+        "familyId": "mechanism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanically",
+        "ipa": "/məˈkæn.ɪ.kli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách cơ học",
+        "example": "He responded almost mechanically to the routine question.",
+        "familyId": "mechanism",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calibrate",
+        "ipa": "/ˈkæl.ɪ.breɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "hiệu chuẩn, căn chỉnh",
+        "example": "The technician will calibrate the instrument before use.",
+        "familyId": "calibrate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calibration",
+        "ipa": "/ˌkæl.ɪˈbreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hiệu chuẩn",
+        "example": "Regular calibration ensures the equipment remains accurate.",
+        "familyId": "calibrate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occur",
+        "ipa": "/əˈkɝː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xảy ra, có mặt",
+        "example": "Natural disasters can occur without warning.",
+        "familyId": "occur",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occurrence",
+        "ipa": "/əˈkɝː.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự việc xảy ra, hiện tượng",
+        "example": "The occurrence of earthquakes is common in this region.",
+        "familyId": "occur",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drift",
+        "ipa": "/drɪft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trôi dạt, sự sai lệch",
+        "example": "The boat began to drift with the current.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "external",
+        "ipa": "/ɪkˈstɝː.nəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bên ngoài",
+        "example": "The temperature sensor detects external heat sources.",
+        "familyId": "external",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "externally",
+        "ipa": "/ɪkˈstɝː.nəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "ở bên ngoài",
+        "example": "The device is powered by an externally mounted solar panel.",
+        "familyId": "external",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combine",
+        "ipa": "/kəmˈbaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kết hợp, hòa trộn",
+        "example": "The experiment combines two chemicals at high temperature.",
+        "familyId": "combine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combination",
+        "ipa": "/ˌkɑːm.bɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kết hợp, tổ hợp",
+        "example": "A combination of heat and pressure transforms the rock.",
+        "familyId": "combine",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "settling",
+        "ipa": "/ˈset.əl.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự lắng đọng, sự lắng xuống",
+        "example": "The settling of dust particles affected the lab results.",
+        "note": "Dạng V-ing của settle — từ đơn lẻ, không tạo family",
+        "familyId": "",
+        "familyOrder": null,
         "tags": []
       }
     }

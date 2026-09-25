@@ -4,8 +4,8 @@
     "topicName": "Đô thị hóa",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Urbanization (B1-B2)",
-    "totalCards": 89,
-    "totalFamilies": 10,
+    "totalCards": 93,
+    "totalFamilies": 12,
     "generatedAt": "2026-05-26",
     "note": "Tu vung chu de Do thi hoa, bao gom phat trien do thi, ha tang, quy hoach, nha o, giao thong do thi, va van de xa hoi do thi. KHONG trung lap voi cac topic khac (commute, pollution, sustainability v.v. da co o cac topic khac)."
   },
@@ -1164,6 +1164,58 @@
         "example": "The neighborhood is an ethnic enclave within the city.",
         "familyId": "urban-modern",
         "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dense",
+        "ipa": "/dens/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đậm đặc, đông đúc",
+        "example": "The city has a dense population in the downtown area.",
+        "familyId": "dense",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "access",
+        "ipa": "/ˈæk.ses/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền truy cập, sự tiếp cận",
+        "example": "Access to clean water is a basic human right.",
+        "familyId": "access",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accessible",
+        "ipa": "/əkˈses.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ tiếp cận, dễ truy cập",
+        "example": "The new building is fully accessible for wheelchair users.",
+        "familyId": "access",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accessibility",
+        "ipa": "/əkˌses.əˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính dễ tiếp cận",
+        "example": "Accessibility for disabled passengers is a priority at the airport.",
+        "familyId": "access",
+        "familyOrder": 3,
         "tags": []
       }
     }

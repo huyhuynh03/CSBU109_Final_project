@@ -4,8 +4,8 @@
     "topicName": "Home & Living",
     "level": "intermediate",
     "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
-    "totalCards": 112,
-    "totalFamilies": 15,
+    "totalCards": 118,
+    "totalFamilies": 17,
     "generatedAt": "2026-05-06",
     "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
   },
@@ -1475,6 +1475,85 @@
         "example": "The lock on the front door is broken.",
         "familyId": "home-maintenance",
         "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rack",
+        "ipa": "/ræk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá đỡ, kệ",
+        "example": "He hung the towels on the drying rack.",
+        "note": "Thường dùng trong cụm như drying rack, luggage rack",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crack",
+        "ipa": "/kræk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nứt, làm nứt; bẻ gãy",
+        "example": "The heat caused the old window to crack.",
+        "familyId": "crack",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cracked",
+        "ipa": "/krækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị nứt",
+        "example": "The cracked tile needs to be replaced.",
+        "familyId": "crack",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocute",
+        "ipa": "/ɪˈlek.trə.kjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "bị điện giật (gây tử vong/thương tích)",
+        "example": "Never touch a power line or you could electrocute yourself.",
+        "familyId": "electrocute",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocution",
+        "ipa": "/ɪˌlek.trəˈkjuː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự điện giật, chết do điện giật",
+        "example": "Workers are trained to prevent electrocution on site.",
+        "familyId": "electrocute",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocuted",
+        "ipa": "/ɪˈlek.trə.kjuː.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bị điện giật",
+        "example": "Luckily nobody was electrocuted during the storm.",
+        "familyId": "electrocute",
+        "familyOrder": 3,
         "tags": []
       }
     }

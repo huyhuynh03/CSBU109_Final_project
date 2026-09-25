@@ -4,8 +4,8 @@
     "topicName": "Kinh tế",
     "level": "intermediate",
     "source": "Curated IELTS/Academic Vocabulary - Economy (B1-B2)",
-    "totalCards": 93,
-    "totalFamilies": 12,
+    "totalCards": 95,
+    "totalFamilies": 13,
     "generatedAt": "2026-05-25",
     "note": "Tu vung chu de Kinh te, bao gom cac khai niem kinh te vi mo, vi mo, thi truong, thuong mai, lao dong, san xuat va phat trien kinh te."
   },
@@ -746,7 +746,7 @@
         "difficulty": "intermediate",
         "meaning": "sản xuất",
         "example": "This factory produces over a thousand cars per day.",
-        "familyId": "economy-production",
+        "familyId": "produce",
         "familyOrder": 1,
         "tags": []
       }
@@ -759,7 +759,7 @@
         "difficulty": "intermediate",
         "meaning": "sự sản xuất",
         "example": "Steel production has decreased this quarter.",
-        "familyId": "economy-production",
+        "familyId": "produce",
         "familyOrder": 2,
         "tags": []
       }
@@ -1216,6 +1216,32 @@
         "example": "Without basic training, some applicants are considered unemployable.",
         "familyId": "employ",
         "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "productive",
+        "ipa": "/prəˈdʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiệu quả, năng suất cao",
+        "example": "The meeting was short but very productive.",
+        "familyId": "produce",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "productivity",
+        "ipa": "/ˌproʊ.dʌkˈtɪv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "năng suất",
+        "example": "Investing in training improves workplace productivity.",
+        "familyId": "produce",
+        "familyOrder": 4,
         "tags": []
       }
     }
