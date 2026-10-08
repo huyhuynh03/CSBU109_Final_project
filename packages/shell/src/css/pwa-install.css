@@ -1,0 +1,378 @@
+/* ============================================
+   PWA Install Modal Styles
+   ============================================ */
+
+/* Sidebar install button */
+.sidebar-nav-item--install {
+    color: var(--color-primary) !important;
+}
+
+.sidebar-nav-item--install .sidebar-nav-icon {
+    color: var(--color-primary) !important;
+}
+
+/* Overlay */
+.pwa-install-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: var(--spacing-md);
+}
+
+.pwa-install-overlay.pwa-install-visible {
+    opacity: 1;
+}
+
+/* Modal */
+.pwa-install-modal {
+    width: 100%;
+    max-width: 480px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: var(--radius-xl, 16px);
+    padding: var(--spacing-xl, 24px);
+    transform: translateY(20px) scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.pwa-install-visible .pwa-install-modal {
+    transform: translateY(0) scale(1);
+}
+
+/* Header */
+.pwa-install-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg, 16px);
+}
+
+.pwa-install-title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md, 12px);
+}
+
+.pwa-install-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md, 8px);
+}
+
+.pwa-install-title {
+    font-size: var(--font-size-lg, 18px);
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.pwa-install-subtitle {
+    font-size: var(--font-size-sm, 14px);
+    color: var(--text-secondary);
+    margin: 2px 0 0;
+}
+
+.pwa-install-close {
+    flex-shrink: 0;
+}
+
+/* Body - Instructions */
+.pwa-install-body {
+    margin-bottom: var(--spacing-lg, 16px);
+}
+
+.pwa-instructions-steps {
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+    margin: 0;
+}
+
+.pwa-instructions-steps li {
+    counter-increment: step;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm, 8px);
+    padding: var(--spacing-sm, 8px) 0;
+    font-size: var(--font-size-sm, 14px);
+    color: var(--text-primary);
+    line-height: 1.5;
+    border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.08));
+}
+
+.pwa-instructions-steps li:last-child {
+    border-bottom: none;
+}
+
+.pwa-instructions-steps li::before {
+    content: counter(step);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gradient-primary, linear-gradient(135deg, #667eea, #764ba2));
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.pwa-instructions-steps li strong {
+    color: var(--color-primary, #667eea);
+    font-weight: 600;
+}
+
+.pwa-instructions-note {
+    margin-top: var(--spacing-md, 12px);
+    padding: var(--spacing-sm, 8px) var(--spacing-md, 12px);
+    border-radius: var(--radius-md, 8px);
+    background: var(--surface-hover, rgba(255,255,255,0.05));
+    font-size: var(--font-size-xs, 12px);
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Platform Switcher */
+.pwa-platform-switcher {
+    border-top: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    padding-top: var(--spacing-md, 12px);
+}
+
+.pwa-platform-switcher-label {
+    font-size: var(--font-size-xs, 12px);
+    color: var(--text-tertiary, var(--text-secondary));
+    margin-bottom: var(--spacing-sm, 8px);
+    display: block;
+}
+
+.pwa-platform-tabs {
+    display: flex;
+    gap: var(--spacing-xs, 4px);
+    flex-wrap: wrap;
+}
+
+.pwa-platform-tab {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs, 4px);
+    padding: 6px 12px;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs, 12px);
+    cursor: pointer;
+    transition: all var(--transition-fast, 0.15s);
+}
+
+.pwa-platform-tab:hover {
+    background: var(--surface-hover, rgba(255,255,255,0.05));
+    color: var(--text-primary);
+}
+
+.pwa-platform-tab--active {
+    background: var(--color-primary, #667eea) !important;
+    color: white !important;
+    border-color: var(--color-primary, #667eea) !important;
+}
+
+.pwa-platform-tab .material-icons-round {
+    font-size: 16px;
+}
+
+.pwa-platform-tab-label {
+    font-weight: 500;
+}
+
+/* ============================================
+   PWA Install Progress Overlay
+   ============================================ */
+
+/* Progress Overlay */
+.pwa-progress-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: var(--spacing-md, 12px);
+}
+
+.pwa-progress-overlay.pwa-progress-visible {
+    opacity: 1;
+}
+
+/* Progress Card */
+.pwa-progress-card {
+    width: 100%;
+    max-width: 380px;
+    border-radius: var(--radius-xl, 16px);
+    padding: var(--spacing-xl, 24px);
+    transform: translateY(20px) scale(0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pwa-progress-visible .pwa-progress-card {
+    transform: translateY(0) scale(1);
+}
+
+.pwa-progress-card.pwa-progress-complete {
+    box-shadow: 0 0 0 2px var(--color-success, #4caf50),
+                0 8px 32px rgba(76, 175, 80, 0.2);
+}
+
+/* Progress Header */
+.pwa-progress-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md, 12px);
+    margin-bottom: var(--spacing-lg, 16px);
+}
+
+.pwa-progress-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md, 8px);
+    flex-shrink: 0;
+}
+
+.pwa-progress-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pwa-progress-title {
+    font-size: var(--font-size-md, 16px);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 2px;
+    transition: color 0.3s ease;
+}
+
+.pwa-progress-complete .pwa-progress-title {
+    color: var(--color-success, #4caf50);
+}
+
+.pwa-progress-status {
+    font-size: var(--font-size-sm, 14px);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Progress Bar */
+.pwa-progress-bar-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm, 8px);
+}
+
+.pwa-progress-bar {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--surface-hover, rgba(255, 255, 255, 0.08));
+    overflow: hidden;
+    position: relative;
+}
+
+.pwa-progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    background: var(--gradient-primary, linear-gradient(135deg, #667eea, #764ba2));
+    transition: width 0.2s ease-out;
+    position: relative;
+}
+
+/* Shimmer effect on progress bar */
+.pwa-progress-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+    );
+    animation: pwa-progress-shimmer 1.5s infinite;
+}
+
+.pwa-progress-complete .pwa-progress-bar-fill {
+    background: var(--color-success, #4caf50);
+}
+
+.pwa-progress-complete .pwa-progress-bar-fill::after {
+    animation: none;
+}
+
+@keyframes pwa-progress-shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.pwa-progress-percent {
+    font-size: var(--font-size-xs, 12px);
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 36px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.pwa-progress-complete .pwa-progress-percent {
+    color: var(--color-success, #4caf50);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .pwa-install-modal {
+        padding: var(--spacing-lg, 16px);
+        max-height: 90vh;
+    }
+
+    .pwa-install-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pwa-install-title {
+        font-size: var(--font-size-md, 16px);
+    }
+
+    .pwa-platform-tabs {
+        gap: var(--spacing-xs, 4px);
+    }
+
+    .pwa-platform-tab {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    .pwa-progress-card {
+        padding: var(--spacing-lg, 16px);
+    }
+
+    .pwa-progress-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

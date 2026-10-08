@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "comment": "Shell-facing registry of language modules. The shell reads this to render the sidebar + dashboard language cards WITHOUT loading the module bundle. 'type=local' modules live in this monorepo and are imported via a built-in importer keyed by 'id'. 'type=remote' modules are fetched from a separate deploy via 'manifestUrl' (see docs/adding-language-module.md for how to add one).",
+  "modules": [
+    {
+      "id": "english",
+      "type": "local",
+      "available": true,
+      "minHostVersion": "1.0.0",
+      "basePath": "/english",
+      "defaultRoute": "/english/vocabulary",
+      "meta": {
+        "name": "Tiếng Anh",
+        "nameNative": "English",
+        "flagLabel": "EN",
+        "icon": "translate",
+        "color": "#3B82F6",
+        "colorGradient": "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)",
+        "description": "Học từ vựng, ngữ pháp và giao tiếp tiếng Anh"
+      },
+      "sidebarItems": [
+        { "id": "en-vocab", "icon": "menu_book", "label": "Từ vựng", "route": "/english/vocabulary" },
+        { "id": "en-grammar", "icon": "school", "label": "Ngữ pháp", "route": "/english/grammar" }
+      ]
+    }
+  ]
+}

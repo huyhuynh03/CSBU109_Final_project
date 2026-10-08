@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Ứng dụng học và ôn tập thông minh với Spaced Repetition">
+    <meta name="theme-color" content="#6C63FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="LinguaFlash">
+    <meta name="application-name" content="LinguaFlash">
+    <meta name="msapplication-TileColor" content="#6C63FF">
+    <meta name="msapplication-TileImage" content="/icons/icon-144.png">
+    
+    <title>LinguaFlash - Học Từ Vựng Thông Minh</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384.png">
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-logo">
+            <img src="/icons/icon-192.png" alt="LinguaFlash" class="loading-icon" style="width:80px;height:80px;max-width:none;border-radius:16px;">
+            <h1>LinguaFlash</h1>
+            <p class="loading-subtitle">Đang tải ứng dụng...</p>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div id="app" class="app-container">
+        <!-- Header -->
+        <header id="app-header" class="app-header glass-panel">
+            <div class="header-left">
+                <button id="sidebar-toggle" class="header-btn sidebar-toggle" aria-label="Menu">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <a href="#/" class="logo-link">
+                    <img src="/icons/icon-192.png" alt="LinguaFlash" class="header-logo-icon">
+                    <span class="header-logo-text">LinguaFlash</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <button id="user-avatar" class="header-btn user-avatar" aria-label="Tài khoản">
+                    <img id="avatar-img" class="avatar-img" src="" alt="Avatar">
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content"></main>
+    </div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar glass-panel">
+        <div class="sidebar-header">
+            <button class="sidebar-close-btn" aria-label="Đóng menu">
+                <span class="material-icons-round">close</span>
+            </button>
+        </div>
+        <div id="sidebar-content" class="sidebar-content"></div>
+    </nav>
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- User Menu Dropdown -->
+    <div id="user-menu" class="dropdown-menu glass-panel" style="display:none;">
+        <div class="menu-header">
+            <img id="menu-avatar" class="menu-avatar-img" src="" alt="">
+            <div class="menu-user-info">
+                <span id="menu-user-name" class="menu-user-name"></span>
+                <span id="menu-user-email" class="menu-user-email"></span>
+            </div>
+        </div>
+        <button class="menu-item" data-action="account">
+            <span class="material-icons-round">person</span>
+            <span>Tài khoản</span>
+        </button>
+        <button class="menu-item" data-action="settings">
+            <span class="material-icons-round">settings</span>
+            <span>Cài đặt</span>
+        </button>
+        <hr class="menu-divider">
+        <button class="menu-item menu-item-danger" data-action="logout">
+            <span class="material-icons-round">logout</span>
+            <span>Đăng xuất</span>
+        </button>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Firebase SDKs (CDN - must load before app module) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+    <!-- App Entry (ES Module) — Vite bundles everything from here -->
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

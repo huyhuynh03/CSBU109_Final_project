@@ -1,0 +1,281 @@
+/* ============================================
+   Responsive Design - Mobile / Tablet / Desktop
+   ============================================ */
+
+/* ---- Mobile First (< 640px) ---- */
+@media (max-width: 639px) {
+    .main-content {
+        padding: var(--spacing-md);
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .toast-container {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        bottom: var(--spacing-md);
+    }
+
+    .toast {
+        min-width: auto;
+        max-width: none;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        min-width: auto;
+    }
+
+    .glass-modal {
+        margin: var(--spacing-md);
+        padding: var(--spacing-lg);
+    }
+
+    h1 { font-size: var(--font-size-2xl); }
+    h2 { font-size: var(--font-size-xl); }
+
+
+    /* Explorer grid - smaller cards on mobile */
+    .explorer-grid {
+        gap: var(--spacing-sm);
+    }
+
+    .explorer-tree-node {
+        min-width: 100px;
+        max-width: 140px;
+    }
+
+    .explorer-folder-card {
+        padding: var(--spacing-sm) var(--spacing-xs);
+        min-height: 70px;
+    }
+
+    .explorer-folder-icon {
+        font-size: 28px;
+    }
+
+    .explorer-body {
+        padding: var(--spacing-sm);
+    }
+
+    .explorer-tree-children {
+        margin-left: var(--spacing-md);
+        padding-left: var(--spacing-sm);
+    }
+
+    /* Dashboard responsive */
+    .home-stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .dashboard-actions {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .action-card {
+        padding: var(--spacing-lg);
+    }
+
+    .action-card-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .action-card-icon .material-icons-round {
+        font-size: 24px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quicklink-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Settings theme toggle - stack on mobile */
+    .settings-theme-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    /* Prevent horizontal overflow on all pages */
+    .home-page,
+    .settings-page,
+    .vocabulary-page {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /* Glass cards should not overflow */
+    .glass-card {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Section page responsive */
+    .section-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Vocabulary page mobile */
+    .vocab-hero {
+        padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    }
+
+    .vocab-hero__title {
+        font-size: var(--font-size-lg);
+    }
+
+    .vocab-hero__icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .vocab-hero__icon .material-icons-round {
+        font-size: 22px;
+    }
+
+    .vocab-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vocab-actions {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .vocab-action-btn {
+        padding: var(--spacing-md);
+    }
+
+    .vocab-topic-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: var(--spacing-sm);
+    }
+
+    .vocab-topic-card__cover {
+        height: 80px;
+    }
+
+    .vocab-topic-card__cover-icon {
+        font-size: 32px;
+    }
+
+    .vocab-topic-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vocab-word-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .vocab-word-card__main {
+        min-width: 0;
+    }
+
+    .vocab-word-card__meaning {
+        white-space: normal;
+    }
+}
+
+/* ---- Tablet (640px - 1023px) ---- */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .main-content {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* ---- Desktop (>= 1024px) ---- */
+@media (min-width: 1024px) {
+    .main-content {
+        padding: var(--spacing-xl);
+        transition: margin-left var(--transition-base);
+    }
+}
+
+/* ---- Large Desktop (>= 1440px) ---- */
+@media (min-width: 1440px) {
+    :root {
+        --max-content-width: 1400px;
+    }
+}
+
+/* ---- Touch device optimizations ---- */
+@media (hover: none) and (pointer: coarse) {
+    .icon-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu-item {
+        padding: var(--spacing-md);
+    }
+
+    .btn {
+        min-height: 44px;
+    }
+
+    .form-input {
+        min-height: 48px;
+        font-size: 16px; /* Prevent iOS zoom on focus */
+    }
+}
+
+/* ---- Safe area (notch devices) ---- */
+@supports (padding: env(safe-area-inset-top)) {
+    .app-header {
+        padding-top: env(safe-area-inset-top);
+        height: calc(var(--header-height) + env(safe-area-inset-top));
+    }
+
+    .main-content {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .toast-container {
+        bottom: calc(var(--spacing-lg) + env(safe-area-inset-bottom));
+    }
+}
+
+/* ---- Landscape phone ---- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .app-header {
+        height: 48px;
+    }
+
+    .main-content {
+        margin-top: 48px;
+    }
+}
+
+/* ---- Print ---- */
+@media print {
+    .app-header,
+    .floating-bg,
+    .toast-container,
+    #loading-screen {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-top: 0;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}

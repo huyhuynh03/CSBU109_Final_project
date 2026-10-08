@@ -1,0 +1,18 @@
+/* ============================================
+   Theme Styles - Dark/Light Mode Transitions
+   ============================================ */
+
+/* Smooth transition when switching themes */
+body,
+body * {
+    transition: background-color var(--transition-base),
+                border-color var(--transition-base),
+                color var(--transition-base),
+                box-shadow var(--transition-base);
+}
+
+/* Prevent transition on page load */
+body.no-transition,
+body.no-transition * {
+    transition: none !important;
+}
