@@ -1,0 +1,53 @@
+# ============================================================
+# .gitignore — LinguaFlash (bản nộp bài tập)
+# ============================================================
+
+# Dependencies
+node_modules/
+.npm
+
+# Environment / Secrets — KHÔNG bao giờ commit
+.env
+.env.*
+!.env.example
+
+# Firebase
+.firebase/
+firebase-debug.log
+*-firebase-adminsdk-*.json
+service-account*.json
+
+# Vercel
+.vercel
+
+# Build output
+dist/
+build/
+.vite/
+
+# Audio assets (dung lượng lớn — không đưa vào bản nộp học thuật)
+packages/shell/public/audio/**/*.mp3
+scripts/tts/preview/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Công cụ AI / tài liệu nội bộ (không đưa lên bản nộp)
+.kilo/
+.roo/
+debug/
+docs/
+plans/
+scripts/
+tools/

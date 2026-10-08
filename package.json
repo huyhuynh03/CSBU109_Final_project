@@ -1,0 +1,22 @@
+{
+  "name": "linguaflash",
+  "private": true,
+  "workspaces": [
+    "packages/shell",
+    "packages/english"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w packages/shell",
+    "build": "npm run build:english && npm run build:shell",
+    "build:shell": "npm run build -w packages/shell",
+    "build:english": "npm run build -w packages/english",
+    "preview": "npm run preview -w packages/shell",
+    "deploy": "npm run build && vercel --prod",
+    "firebase:rules": "firebase deploy --only firestore:rules",
+    "firebase:functions": "firebase deploy --only functions"
+  },
+  "devDependencies": {
+    "msedge-tts": "^2.0.6",
+    "sharp": "^0.34.5"
+  }
+}
