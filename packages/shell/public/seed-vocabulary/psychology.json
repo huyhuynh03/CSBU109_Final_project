@@ -304,7 +304,7 @@
         "difficulty": "intermediate",
         "meaning": "sự nhận ra, nhận diện",
         "example": "Recognition is often easier than recall.",
-        "familyId": "psychology-memory",
+        "familyId": "recognize",
         "familyOrder": 3,
         "tags": []
       }
@@ -318,7 +318,7 @@
         "meaning": "sự mã hóa thông tin vào trí nhớ",
         "example": "Encoding helps turn new information into memory.",
         "familyId": "psychology-memory",
-        "familyOrder": 4,
+        "familyOrder": 3,
         "tags": []
       }
     },
@@ -331,7 +331,7 @@
         "meaning": "sự truy xuất, gợi lại thông tin",
         "example": "Retrieval becomes easier with repeated review.",
         "familyId": "psychology-memory",
-        "familyOrder": 5,
+        "familyOrder": 4,
         "tags": []
       }
     },
@@ -344,7 +344,7 @@
         "meaning": "lược đồ nhận thức",
         "example": "A schema helps the mind organize knowledge.",
         "familyId": "psychology-memory",
-        "familyOrder": 6,
+        "familyOrder": 5,
         "tags": []
       }
     },
@@ -357,7 +357,7 @@
         "meaning": "sự liên tưởng, liên kết",
         "example": "The smell created a strong association with childhood.",
         "familyId": "psychology-memory",
-        "familyOrder": 7,
+        "familyOrder": 6,
         "tags": []
       }
     },
