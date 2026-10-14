@@ -6,6 +6,8 @@
     "packages/english"
   ],
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
     "dev": "npm run dev -w packages/shell",
     "build": "npm run build:english && npm run build:shell",
     "build:shell": "npm run build -w packages/shell",
@@ -16,7 +18,9 @@
     "firebase:functions": "firebase deploy --only functions"
   },
   "devDependencies": {
+    "jsdom": "^25.0.1",
     "msedge-tts": "^2.0.6",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "vitest": "^2.1.9"
   }
 }
