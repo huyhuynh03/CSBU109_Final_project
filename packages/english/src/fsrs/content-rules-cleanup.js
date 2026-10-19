@@ -65,12 +65,14 @@ const REMOVED_VOCABULARY_WORDS = new Set([
     'withdraw cash',
     // --- Danh từ riêng / tên phong cách ít phổ biến ---
     'gothic',
-    'baroque'
+    'baroque',
+    // --- Dạng V-ing không phải mục từ loại độc lập ---
+    'observing'
 ]);
 
 const ContentRulesCleanup = {
     // Tăng suffix (_v2, _v3...) khi cập nhật REMOVED_VOCABULARY_WORDS để cleanup chạy lại.
-    VERSION_KEY: 'lf_content_rules_cleanup_v1',
+    VERSION_KEY: 'lf_content_rules_cleanup_v2',
 
     /** Danh sách word bị loại — chia sẻ cho UI guard ở topic-detail/vocabulary. */
     REMOVED_WORDS: REMOVED_VOCABULARY_WORDS,
