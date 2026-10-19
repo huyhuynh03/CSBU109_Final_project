@@ -12600,12 +12600,6 @@
         "pos":  "adjective"
     },
     {
-        "word":  "observing",
-        "topic":  "science",
-        "familyId":  "science-observation",
-        "pos":  "verb"
-    },
-    {
         "word":  "hypothesis",
         "topic":  "science",
         "familyId":  "science-observation",

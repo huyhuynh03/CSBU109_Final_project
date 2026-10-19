@@ -116,19 +116,6 @@
     },
     {
       "fieldValues": {
-        "word": "observing",
-        "ipa": "/əbˈzɜː.vɪŋ/",
-        "partOfSpeech": "verb",
-        "difficulty": "intermediate",
-        "meaning": "việc quan sát",
-        "example": "Observing animals in their habitat can reveal useful patterns.",
-        "familyId": "science-observation",
-        "familyOrder": 4,
-        "tags": []
-      }
-    },
-    {
-      "fieldValues": {
         "word": "hypothesis",
         "ipa": "/haɪˈpɒθ.ə.sɪs/",
         "partOfSpeech": "noun",
