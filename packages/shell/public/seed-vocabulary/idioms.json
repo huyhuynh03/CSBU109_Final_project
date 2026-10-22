@@ -1,0 +1,1184 @@
+{
+  "_meta": {
+    "topicId": "idioms",
+    "topicName": "Thành ngữ",
+    "level": "B2-C1",
+    "source": "common-english-idioms",
+    "totalCards": 90,
+    "totalFamilies": 9,
+    "generatedAt": "2026-05-26",
+    "note": "90 thành ngữ tiếng Anh thông dụng, nhóm theo chủ đề (thời gian, tiền bạc, nỗ lực, giao tiếp, cảm xúc, khó khăn, tư duy, may rủi, so sánh)."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "in the nick of time",
+        "ipa": "/ɪn ðə nɪk əv taɪm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "vừa kịp lúc, vào phút chót",
+        "example": "She arrived in the nick of time to catch the last train.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 1,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "against the clock",
+        "ipa": "/əˈɡɛnst ðə klɒk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "chạy đua với thời gian",
+        "example": "The team worked against the clock to finish before the deadline.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 2,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "around the clock",
+        "ipa": "/əˈraʊnd ðə klɒk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "suốt ngày đêm, 24 giờ liên tục",
+        "example": "Doctors worked around the clock to treat the patients.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 3,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "call it a day",
+        "ipa": "/kɔːl ɪt ə deɪ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "tạm dừng công việc, kết thúc một ngày làm việc",
+        "example": "It's almost midnight; let's call it a day.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 4,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "behind the times",
+        "ipa": "/bɪˈhaɪnd ðə taɪmz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "lạc hậu, không theo kịp thời đại",
+        "example": "His teaching methods are a bit behind the times.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 5,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ahead of time",
+        "ipa": "/əˈhɛd əv taɪm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "sớm hơn dự kiến, trước thời hạn",
+        "example": "We finished the project ahead of time.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 6,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "time flies",
+        "ipa": "/taɪm flaɪz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "thời gian trôi nhanh",
+        "example": "Time flies when you're having fun.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 7,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kill time",
+        "ipa": "/kɪl taɪm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "giết thời gian",
+        "example": "I read a magazine to kill time at the airport.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 8,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "once in a blue moon",
+        "ipa": "/wʌns ɪn ə bluː muːn/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "rất hiếm khi, hiếm hoi lắm mới có",
+        "example": "She visits her hometown once in a blue moon.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 9,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beat the clock",
+        "ipa": "/biːt ðə klɒk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "hoàn thành trước hạn chót",
+        "example": "He managed to beat the clock and submit his paper on time.",
+        "familyId": "idiom-time-001",
+        "familyOrder": 10,
+        "tags": "idiom,time"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break the bank",
+        "ipa": "/breɪk ðə bæŋk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "tốn quá nhiều tiền, cháy túi",
+        "example": "A weekend trip won't break the bank.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 1,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cost an arm and a leg",
+        "ipa": "/kɒst ən ɑːm ənd ə lɛɡ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đắt cắt cổ, tốn rất nhiều tiền",
+        "example": "That designer bag cost an arm and a leg.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 2,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foot the bill",
+        "ipa": "/fʊt ðə bɪl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "trả tiền hóa đơn, gánh chi phí",
+        "example": "The company will foot the bill for the conference.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 3,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tighten the belt",
+        "ipa": "/ˈtaɪtən ðə bɛlt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "thắt lưng buộc bụng, tiết kiệm chi tiêu",
+        "example": "We had to tighten the belt after losing our jobs.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 4,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pay through the nose",
+        "ipa": "/peɪ θruː ðə nəʊz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "trả giá quá cao cho thứ gì đó",
+        "example": "Tourists often pay through the nose for taxis.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 5,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "on a shoestring",
+        "ipa": "/ɒn ə ˈʃuːstrɪŋ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "với ngân sách rất eo hẹp",
+        "example": "They traveled around Europe on a shoestring.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 6,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pinch pennies",
+        "ipa": "/pɪntʃ ˈpɛniz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "chắt bóp từng đồng",
+        "example": "Students often have to pinch pennies to make ends meet.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 7,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in the red",
+        "ipa": "/ɪn ðə rɛd/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đang nợ nần, thua lỗ",
+        "example": "The company has been in the red for two quarters.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 8,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in the black",
+        "ipa": "/ɪn ðə blæk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "có lãi, làm ăn có lời",
+        "example": "After three tough years, the firm is finally in the black.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 9,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "money talks",
+        "ipa": "/ˈmʌni tɔːks/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "có tiền là có tiếng nói, đồng tiền có sức mạnh",
+        "example": "In politics, money talks more than ideals.",
+        "familyId": "idiom-money-001",
+        "familyOrder": 10,
+        "tags": "idiom,money"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go the extra mile",
+        "ipa": "/ɡəʊ ði ˈɛkstrə maɪl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "nỗ lực hơn mức yêu cầu",
+        "example": "She always goes the extra mile to help her clients.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 1,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burn the midnight oil",
+        "ipa": "/bɜːn ðə ˈmɪdnaɪt ɔɪl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "thức khuya làm việc hoặc học bài",
+        "example": "He burned the midnight oil to finish the report.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 2,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pull out all the stops",
+        "ipa": "/pʊl aʊt ɔːl ðə stɒps/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "dốc toàn lực, làm hết sức",
+        "example": "They pulled out all the stops for the wedding.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 3,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give it your all",
+        "ipa": "/ɡɪv ɪt jɔːr ɔːl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "cố gắng hết sức",
+        "example": "If you want to win, you have to give it your all.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 4,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bite the bullet",
+        "ipa": "/baɪt ðə ˈbʊlɪt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "cắn răng làm điều khó khăn",
+        "example": "I had to bite the bullet and apologize.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 5,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take the bull by the horns",
+        "ipa": "/teɪk ðə bʊl baɪ ðə hɔːnz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "đối mặt thẳng với khó khăn",
+        "example": "She took the bull by the horns and confronted her boss.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 6,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break a leg",
+        "ipa": "/breɪk ə lɛɡ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "chúc may mắn (đặc biệt trước khi biểu diễn)",
+        "example": "Break a leg in your audition tomorrow!",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 7,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "no pain no gain",
+        "ipa": "/nəʊ peɪn nəʊ ɡeɪn/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "không khổ luyện thì không thành công",
+        "example": "Training is hard, but no pain no gain.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 8,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "against all odds",
+        "ipa": "/əˈɡɛnst ɔːl ɒdz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "bất chấp mọi khó khăn",
+        "example": "Against all odds, the team won the championship.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 9,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hit the ground running",
+        "ipa": "/hɪt ðə ɡraʊnd ˈrʌnɪŋ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "bắt đầu công việc một cách nhanh chóng và hiệu quả",
+        "example": "The new manager hit the ground running on her first day.",
+        "familyId": "idiom-effort-001",
+        "familyOrder": 10,
+        "tags": "idiom,effort"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beat around the bush",
+        "ipa": "/biːt əˈraʊnd ðə bʊʃ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "nói vòng vo, không vào thẳng vấn đề",
+        "example": "Stop beating around the bush and tell me the truth.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 1,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get to the point",
+        "ipa": "/ɡɛt tə ðə pɔɪnt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đi thẳng vào vấn đề",
+        "example": "Please get to the point; we don't have all day.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 2,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spill the beans",
+        "ipa": "/spɪl ðə biːnz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "tiết lộ bí mật",
+        "example": "Don't spill the beans about the surprise party.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 3,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "let the cat out of the bag",
+        "ipa": "/lɛt ðə kæt aʊt əv ðə bæɡ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "lỡ miệng để lộ bí mật",
+        "example": "He let the cat out of the bag about her promotion.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 4,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "on the same page",
+        "ipa": "/ɒn ðə seɪm peɪdʒ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "cùng quan điểm, hiểu nhau",
+        "example": "Let's make sure we're all on the same page before the meeting.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 5,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "on the tip of my tongue",
+        "ipa": "/ɒn ðə tɪp əv maɪ tʌŋ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "sắp nhớ ra, ở đầu lưỡi",
+        "example": "His name is on the tip of my tongue.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 6,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mum is the word",
+        "ipa": "/mʌm ɪz ðə wɜːd/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "giữ kín, không nói ra",
+        "example": "About the new project, mum is the word until Monday.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 7,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lend an ear",
+        "ipa": "/lɛnd ən ɪər/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "lắng nghe ai đó",
+        "example": "She always lends an ear when I need to talk.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 8,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speak of the devil",
+        "ipa": "/spiːk əv ðə ˈdɛvəl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "nhắc Tào Tháo, Tào Tháo đến",
+        "example": "Speak of the devil, here comes John now!",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 9,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "through the grapevine",
+        "ipa": "/θruː ðə ˈɡreɪpvaɪn/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "nghe đồn, nghe qua tin đồn",
+        "example": "I heard through the grapevine that they're getting married.",
+        "familyId": "idiom-comm-001",
+        "familyOrder": 10,
+        "tags": "idiom,communication"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "on cloud nine",
+        "ipa": "/ɒn klaʊd naɪn/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "vô cùng hạnh phúc",
+        "example": "She was on cloud nine after getting the promotion.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 1,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "over the moon",
+        "ipa": "/ˈəʊvə ðə muːn/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "vui sướng tột độ",
+        "example": "He was over the moon when he heard the news.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 2,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "down in the dumps",
+        "ipa": "/daʊn ɪn ðə dʌmps/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "buồn bã, chán nản",
+        "example": "She has been down in the dumps since the breakup.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 3,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walking on air",
+        "ipa": "/ˈwɔːkɪŋ ɒn ɛə/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "lâng lâng, hạnh phúc như đi trên mây",
+        "example": "Ever since she got engaged, she's been walking on air.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 4,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in seventh heaven",
+        "ipa": "/ɪn ˈsɛvənθ ˈhɛvən/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "sung sướng tột bậc",
+        "example": "When he won the prize, he was in seventh heaven.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 5,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lose your cool",
+        "ipa": "/luːz jɔː kuːl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "mất bình tĩnh",
+        "example": "He lost his cool when the customer started shouting.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 6,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blow off steam",
+        "ipa": "/bləʊ ɒf stiːm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "xả stress, giải tỏa cảm xúc",
+        "example": "He goes for a run to blow off steam after work.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 7,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blow a fuse",
+        "ipa": "/bləʊ ə fjuːz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "nổi giận, mất bình tĩnh",
+        "example": "Dad blew a fuse when he saw the broken window.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 8,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get cold feet",
+        "ipa": "/ɡɛt kəʊld fiːt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đột nhiên lo lắng, chùn bước",
+        "example": "He got cold feet right before the wedding.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 9,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "butterflies in your stomach",
+        "ipa": "/ˈbʌtəflaɪz ɪn jɔː ˈstʌmək/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "hồi hộp, lo lắng (cảm giác bồn chồn trong bụng)",
+        "example": "I always get butterflies in my stomach before a presentation.",
+        "familyId": "idiom-mood-001",
+        "familyOrder": 10,
+        "tags": "idiom,emotion"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in hot water",
+        "ipa": "/ɪn hɒt ˈwɔːtə/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "gặp rắc rối",
+        "example": "He's in hot water with his boss for missing the deadline.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 1,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in deep water",
+        "ipa": "/ɪn diːp ˈwɔːtə/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "trong tình trạng khó khăn nghiêm trọng",
+        "example": "She's in deep water after losing the company files.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 2,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "between a rock and a hard place",
+        "ipa": "/bɪˈtwiːn ə rɒk ənd ə hɑːd pleɪs/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "tiến thoái lưỡng nan",
+        "example": "I'm between a rock and a hard place with this decision.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 3,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "at the end of your rope",
+        "ipa": "/æt ði ɛnd əv jɔː rəʊp/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "đã đến giới hạn chịu đựng",
+        "example": "After hours of crying babies, she was at the end of her rope.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 4,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "throw in the towel",
+        "ipa": "/θrəʊ ɪn ðə ˈtaʊəl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đầu hàng, bỏ cuộc",
+        "example": "After several failed attempts, he threw in the towel.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 5,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hit a snag",
+        "ipa": "/hɪt ə snæɡ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "gặp trở ngại bất ngờ",
+        "example": "Our plans hit a snag when the supplier canceled.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 6,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "the last straw",
+        "ipa": "/ðə lɑːst strɔː/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "giọt nước tràn ly",
+        "example": "His rude comment was the last straw for her.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 7,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tip of the iceberg",
+        "ipa": "/tɪp əv ði ˈaɪsbɜːɡ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "phần nổi của tảng băng chìm",
+        "example": "These complaints are just the tip of the iceberg.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 8,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "open a can of worms",
+        "ipa": "/ˈəʊpən ə kæn əv wɜːmz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "khơi ra hàng loạt rắc rối mới",
+        "example": "Asking about his past opened a can of worms.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 9,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bite off more than you can chew",
+        "ipa": "/baɪt ɒf mɔː ðən juː kæn tʃuː/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "ôm đồm quá sức mình",
+        "example": "Taking on three jobs is biting off more than you can chew.",
+        "familyId": "idiom-trouble-001",
+        "familyOrder": 10,
+        "tags": "idiom,problem"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "on the fence",
+        "ipa": "/ɒn ðə fɛns/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "lưỡng lự, chưa quyết định",
+        "example": "I'm still on the fence about which job to accept.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 1,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jump on the bandwagon",
+        "ipa": "/dʒʌmp ɒn ðə ˈbændwæɡən/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "chạy theo xu hướng, theo đám đông",
+        "example": "Many companies jumped on the bandwagon of remote work.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 2,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleep on it",
+        "ipa": "/sliːp ɒn ɪt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "để qua đêm suy nghĩ rồi quyết định",
+        "example": "Don't decide now; sleep on it and tell me tomorrow.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 3,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "food for thought",
+        "ipa": "/fuːd fɔː θɔːt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "điều đáng suy ngẫm",
+        "example": "Her speech gave us a lot of food for thought.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 4,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rule of thumb",
+        "ipa": "/ruːl əv θʌm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "quy tắc chung, kinh nghiệm thực tế",
+        "example": "As a rule of thumb, drink eight glasses of water a day.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 5,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "learn the ropes",
+        "ipa": "/lɜːn ðə rəʊps/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "học việc, làm quen công việc",
+        "example": "It took me a few weeks to learn the ropes at the new job.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 6,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "know the ropes",
+        "ipa": "/nəʊ ðə rəʊps/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "rành việc, thông thạo công việc",
+        "example": "Ask Sarah for help; she knows the ropes around here.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 7,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in a nutshell",
+        "ipa": "/ɪn ə ˈnʌtʃɛl/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "tóm lại, nói ngắn gọn",
+        "example": "In a nutshell, we need to cut costs and increase sales.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 8,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "read between the lines",
+        "ipa": "/riːd bɪˈtwiːn ðə laɪnz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đọc hiểu ẩn ý",
+        "example": "You have to read between the lines to understand his email.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 9,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "the ball is in your court",
+        "ipa": "/ðə bɔːl ɪz ɪn jɔː kɔːt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "đến lượt bạn quyết định/hành động",
+        "example": "I've made my offer; now the ball is in your court.",
+        "familyId": "idiom-mind-001",
+        "familyOrder": 10,
+        "tags": "idiom,decision"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "out of the blue",
+        "ipa": "/aʊt əv ðə bluː/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đột ngột, không báo trước",
+        "example": "She called me out of the blue after ten years.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 1,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blessing in disguise",
+        "ipa": "/ˈblɛsɪŋ ɪn dɪsˈɡaɪz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "trong họa có phúc",
+        "example": "Losing that job was a blessing in disguise.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 2,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "piece of cake",
+        "ipa": "/piːs əv keɪk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "dễ như ăn kẹo",
+        "example": "The math test was a piece of cake.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 3,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walk in the park",
+        "ipa": "/wɔːk ɪn ðə pɑːk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "việc dễ dàng, nhẹ nhàng",
+        "example": "Raising twins is no walk in the park.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 4,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "easy as pie",
+        "ipa": "/ˈiːzi əz paɪ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "cực kỳ dễ dàng",
+        "example": "Once you know the trick, it's easy as pie.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 5,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drop in the bucket",
+        "ipa": "/drɒp ɪn ðə ˈbʌkɪt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "muối bỏ bể, chỉ là phần nhỏ",
+        "example": "His donation is just a drop in the bucket compared to what is needed.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 6,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "long shot",
+        "ipa": "/lɒŋ ʃɒt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "khả năng thành công thấp, canh bạc liều",
+        "example": "Applying to that university is a long shot, but worth trying.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 7,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stroke of luck",
+        "ipa": "/strəʊk əv lʌk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "sự may mắn bất ngờ",
+        "example": "Finding that lost wallet was a stroke of luck.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 8,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dodge a bullet",
+        "ipa": "/dɒdʒ ə ˈbʊlɪt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "may mắn thoát hiểm",
+        "example": "I dodged a bullet by not signing that contract.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 9,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take with a grain of salt",
+        "ipa": "/teɪk wɪð ə ɡreɪn əv sɔːlt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "đừng tin hoàn toàn, cần xem xét lại",
+        "example": "Take what he says with a grain of salt; he tends to exaggerate.",
+        "familyId": "idiom-luck-001",
+        "familyOrder": 10,
+        "tags": "idiom,chance"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apples and oranges",
+        "ipa": "/ˈæpəlz ənd ˈɒrɪndʒɪz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "khác biệt hoàn toàn, không thể so sánh",
+        "example": "Comparing those two cars is like apples and oranges.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 1,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "two peas in a pod",
+        "ipa": "/tuː piːz ɪn ə pɒd/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "giống nhau như hai giọt nước",
+        "example": "The twins are like two peas in a pod.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 2,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "like night and day",
+        "ipa": "/laɪk naɪt ənd deɪ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "khác biệt một trời một vực",
+        "example": "Their personalities are like night and day.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 3,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "the best of both worlds",
+        "ipa": "/ðə bɛst əv bəʊθ wɜːldz/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "vẹn cả đôi đường",
+        "example": "Working from home gives me the best of both worlds.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 4,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "a far cry from",
+        "ipa": "/ə fɑː kraɪ frɒm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "khác xa so với",
+        "example": "This hotel is a far cry from the one we stayed at last year.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 5,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cut from the same cloth",
+        "ipa": "/kʌt frɒm ðə seɪm klɒθ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "cùng một giuộc, giống nhau về tính cách",
+        "example": "Father and son are cut from the same cloth.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 6,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "birds of a feather",
+        "ipa": "/bɜːdz əv ə ˈfɛðə/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "ngưu tầm ngưu, mã tầm mã",
+        "example": "Those two are birds of a feather; they share every hobby.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 7,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "in the same boat",
+        "ipa": "/ɪn ðə seɪm bəʊt/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "cùng cảnh ngộ",
+        "example": "We're all in the same boat during this crisis.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 8,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "a different ballgame",
+        "ipa": "/ə ˈdɪfərənt ˈbɔːlɡeɪm/",
+        "partOfSpeech": "idiom",
+        "difficulty": "C1",
+        "meaning": "một câu chuyện hoàn toàn khác",
+        "example": "Managing people is a different ballgame from coding.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 9,
+        "tags": "idiom,comparison"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "see eye to eye",
+        "ipa": "/siː aɪ tə aɪ/",
+        "partOfSpeech": "idiom",
+        "difficulty": "B2",
+        "meaning": "đồng quan điểm, nhất trí với nhau",
+        "example": "We don't always see eye to eye, but we respect each other.",
+        "familyId": "idiom-compare-001",
+        "familyOrder": 10,
+        "tags": "idiom,comparison"
+      }
+    }
+  ]
+}

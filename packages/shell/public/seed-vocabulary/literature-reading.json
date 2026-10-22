@@ -1,0 +1,508 @@
+{
+  "_meta": {
+    "topicId": "literature-reading",
+    "topicName": "Literature & Reading",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Literature & Reading (B1-B2)",
+    "totalCards": 38,
+    "totalFamilies": 8,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung va thuat ngu Van hoc va Doc hieu, gom ky nang doc, the loai, yeu to truyen, ky thuat tran thuat, bien phap tu tu, phong cach va tho."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "literature",
+        "ipa": "/ˈlɪt.rə.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn học, môn Văn",
+        "example": "Students read poems and novels in literature class.",
+        "familyId": "literature-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reading comprehension",
+        "ipa": "/ˈriː.dɪŋ ˌkɒm.prɪˈhen.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đọc hiểu",
+        "example": "Reading comprehension improves with regular practice.",
+        "familyId": "reading-skills",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "text",
+        "ipa": "/tekst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn bản",
+        "example": "Read the text carefully before answering the questions.",
+        "familyId": "reading-skills",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "passage",
+        "ipa": "/ˈpæs.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đoạn văn",
+        "example": "The passage discusses the benefits of libraries.",
+        "familyId": "reading-skills",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "main idea",
+        "ipa": "/ˌmeɪn aɪˈdɪə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ý chính",
+        "example": "Find the main idea of each paragraph.",
+        "familyId": "reading-skills",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supporting detail",
+        "ipa": "/səˌpɔː.tɪŋ ˈdiː.teɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi tiết hỗ trợ",
+        "example": "A supporting detail explains or proves the main idea.",
+        "familyId": "reading-skills",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inference",
+        "ipa": "/ˈɪn.fər.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "suy luận",
+        "example": "The answer requires inference from the final paragraph.",
+        "familyId": "reading-skills",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "context",
+        "ipa": "/ˈkɒn.tekst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngữ cảnh",
+        "example": "Use context to guess the meaning of a new word.",
+        "familyId": "reading-skills",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "novel",
+        "ipa": "/ˈnɒv.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiểu thuyết",
+        "example": "She wrote a novel about family life.",
+        "familyId": "genres",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "short story",
+        "ipa": "/ˌʃɔːt ˈstɔː.ri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "truyện ngắn",
+        "example": "A short story can create a strong impression in a few pages.",
+        "familyId": "genres",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poem",
+        "ipa": "/ˈpəʊ.ɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài thơ",
+        "example": "The poem describes a peaceful village.",
+        "familyId": "genres",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drama",
+        "ipa": "/ˈdrɑː.mə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kịch",
+        "example": "Drama is written to be performed on stage.",
+        "familyId": "genres",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fiction",
+        "ipa": "/ˈfɪk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn học hư cấu",
+        "example": "Fiction includes novels and short stories.",
+        "familyId": "genres",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "non-fiction",
+        "ipa": "/ˌnɒn ˈfɪk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn bản phi hư cấu",
+        "example": "Biographies are a type of non-fiction.",
+        "familyId": "genres",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "genre",
+        "ipa": "/ˈʒɒn.rə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thể loại",
+        "example": "Science fiction is a popular genre.",
+        "familyId": "genres",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plot",
+        "ipa": "/plɒt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cốt truyện",
+        "example": "The plot becomes more exciting near the end.",
+        "familyId": "story-elements",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "character",
+        "ipa": "/ˈkær.ək.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân vật",
+        "example": "The main character changes throughout the story.",
+        "familyId": "story-elements",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protagonist",
+        "ipa": "/prəˈtæɡ.ən.ɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân vật chính",
+        "example": "The protagonist faces a difficult choice.",
+        "familyId": "story-elements",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "setting",
+        "ipa": "/ˈset.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bối cảnh",
+        "example": "The setting of the novel is a small coastal town.",
+        "familyId": "story-elements",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "theme",
+        "ipa": "/θiːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ đề",
+        "example": "Friendship is a major theme in the story.",
+        "familyId": "story-elements",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "climax",
+        "ipa": "/ˈklaɪ.mæks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cao trào",
+        "example": "The climax occurs when the secret is revealed.",
+        "familyId": "story-elements",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resolution",
+        "ipa": "/ˌrez.əˈluː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần giải quyết, kết thúc vấn đề",
+        "example": "The resolution explains what happens to each character.",
+        "familyId": "story-elements",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "characteristic",
+        "ipa": "/ˌkær.ək.təˈrɪs.tɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đặc điểm, nét đặc trưng",
+        "example": "Courage is one of the character's key characteristics.",
+        "familyId": "story-elements",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "narrator",
+        "ipa": "/nəˈreɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người kể chuyện",
+        "example": "The narrator tells the story in the first person.",
+        "familyId": "narrative-techniques",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "point of view",
+        "ipa": "/ˌpɔɪnt əv ˈvjuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "góc nhìn trần thuật",
+        "example": "The point of view affects how readers understand events.",
+        "familyId": "narrative-techniques",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foreshadowing",
+        "ipa": "/fɔːˈʃæd.əʊ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự báo trước",
+        "example": "Foreshadowing hints at future events.",
+        "familyId": "narrative-techniques",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flashback",
+        "ipa": "/ˈflæʃ.bæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hồi tưởng",
+        "example": "The flashback explains the character’s childhood.",
+        "familyId": "narrative-techniques",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "symbolism",
+        "ipa": "/ˈsɪm.bəl.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa biểu tượng, phép biểu tượng",
+        "example": "The river is used as symbolism for freedom.",
+        "familyId": "literary-devices",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metaphor",
+        "ipa": "/ˈmet.ə.fɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ẩn dụ",
+        "example": "The phrase “time is a thief” is a metaphor.",
+        "familyId": "literary-devices",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simile",
+        "ipa": "/ˈsɪm.ɪ.li/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "so sánh ví von",
+        "example": "“As brave as a lion” is a simile.",
+        "familyId": "literary-devices",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "imagery",
+        "ipa": "/ˈɪm.ɪ.dʒər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình ảnh gợi tả",
+        "example": "The writer uses imagery to describe the storm.",
+        "familyId": "literary-devices",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "personification",
+        "ipa": "/pəˌsɒn.ɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân hóa",
+        "example": "Personification gives human qualities to non-human things.",
+        "familyId": "literary-devices",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "irony",
+        "ipa": "/ˈaɪ.rə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự mỉa mai, trớ trêu",
+        "example": "The story uses irony to criticize greed.",
+        "familyId": "literary-devices",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tone",
+        "ipa": "/təʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giọng điệu",
+        "example": "The tone of the poem is sad and reflective.",
+        "familyId": "style-analysis",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "style",
+        "ipa": "/staɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phong cách",
+        "example": "The author’s style is simple but powerful.",
+        "familyId": "style-analysis",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stanza",
+        "ipa": "/ˈstæn.zə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khổ thơ",
+        "example": "The poem has four stanzas.",
+        "familyId": "poetry",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rhyme",
+        "ipa": "/raɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vần",
+        "example": "The rhyme makes the poem easy to remember.",
+        "familyId": "poetry",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rhythm",
+        "ipa": "/ˈrɪð.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhịp điệu",
+        "example": "The rhythm of the poem sounds like waves.",
+        "familyId": "poetry",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,2396 @@
+{
+  "_meta": {
+    "topicId": "daily-life",
+    "topicName": "Daily Life",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Daily Life (B1-B2)",
+    "totalCards": 181,
+    "totalFamilies": 50,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Doi song hang ngay, gom theo family de hoc theo cum tu lien quan. Bao gom routine, sinh hoat ca nhan, bua an, di lai, viec nha, mua sam, giai tri, quan ly thoi gian va suc khoe tinh than."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "routine",
+        "ipa": "/ruːˈtiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thói quen, lịch trình hằng ngày",
+        "example": "A healthy routine can make your day more productive.",
+        "note": "Collocations: daily routine, morning routine",
+        "familyId": "routine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "daily",
+        "ipa": "/ˈdeɪ.li/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hằng ngày, thường ngày",
+        "example": "Exercise should be part of your daily life.",
+        "familyId": "routine",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "habit",
+        "ipa": "/ˈhæb.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thói quen",
+        "example": "Reading before bed is a good habit.",
+        "note": "Collocations: develop a habit, break a habit",
+        "familyId": "habit",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "habitual",
+        "ipa": "/həˈbɪtʃ.u.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "theo thói quen, thường lệ",
+        "example": "Habitual late-night snacking can affect your sleep.",
+        "familyId": "habit",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wake up",
+        "ipa": "/weɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thức dậy",
+        "example": "I usually wake up at six thirty on weekdays.",
+        "familyId": "morning-routine",
+        "familyOrder": 1,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get up",
+        "ipa": "/ɡet ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "rời giường, thức dậy",
+        "example": "She gets up early to prepare breakfast.",
+        "familyId": "morning-routine",
+        "familyOrder": 2,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alarm",
+        "ipa": "/əˈlɑːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "báo thức, chuông báo",
+        "example": "I set an alarm so I would not be late for work.",
+        "note": "Collocation: set an alarm",
+        "familyId": "morning-routine",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleep in",
+        "ipa": "/sliːp ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ngủ nướng",
+        "example": "Many people like to sleep in on Sunday mornings.",
+        "familyId": "morning-routine",
+        "familyOrder": 4,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oversleep",
+        "ipa": "/ˌəʊ.vəˈsliːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngủ quên, ngủ quá giờ",
+        "example": "He overslept and missed the first bus.",
+        "familyId": "morning-routine",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brush",
+        "ipa": "/brʌʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đánh, chải",
+        "example": "You should brush your teeth twice a day.",
+        "note": "Collocation: brush your teeth/hair",
+        "familyId": "personal-care",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toothbrush",
+        "ipa": "/ˈtuːθ.brʌʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bàn chải đánh răng",
+        "example": "Remember to replace your toothbrush regularly.",
+        "familyId": "personal-care",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toothpaste",
+        "ipa": "/ˈtuːθ.peɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kem đánh răng",
+        "example": "This toothpaste has a mint flavour.",
+        "familyId": "personal-care",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wash",
+        "ipa": "/wɒʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rửa, giặt",
+        "example": "Wash your hands before meals.",
+        "familyId": "personal-care",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shower",
+        "ipa": "/ˈʃaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vòi sen, việc tắm vòi sen",
+        "example": "I usually take a shower after exercising.",
+        "note": "Collocation: take a shower",
+        "familyId": "personal-care",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bathe",
+        "ipa": "/beɪð/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tắm",
+        "example": "Parents often bathe young children before bedtime.",
+        "familyId": "personal-care",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comb",
+        "ipa": "/kəʊm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chải tóc",
+        "example": "He combed his hair before leaving the house.",
+        "familyId": "personal-care",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dress",
+        "ipa": "/dres/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mặc quần áo",
+        "example": "It takes me ten minutes to dress in the morning.",
+        "familyId": "getting-ready",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get dressed",
+        "ipa": "/ɡet drest/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "mặc quần áo xong",
+        "example": "The children got dressed quickly for school.",
+        "familyId": "getting-ready",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outfit",
+        "ipa": "/ˈaʊt.fɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ trang phục",
+        "example": "She chose a comfortable outfit for the long journey.",
+        "familyId": "getting-ready",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prepare",
+        "ipa": "/prɪˈpeər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chuẩn bị",
+        "example": "I prepare my bag the night before work.",
+        "note": "Collocations: prepare breakfast, prepare for work",
+        "familyId": "prepare",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preparation",
+        "ipa": "/ˌprep.ərˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chuẩn bị",
+        "example": "Good preparation helps reduce stress in the morning.",
+        "familyId": "prepare",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooking",
+        "ipa": "/ˈkʊk.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc nấu ăn",
+        "example": "Cooking at home can save money.",
+        "familyId": "cooking",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grocery",
+        "ipa": "/ˈɡrəʊ.sər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thực phẩm, hàng tạp hóa",
+        "example": "We buy groceries every Saturday morning.",
+        "note": "Often plural: groceries",
+        "familyId": "shopping",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supermarket",
+        "ipa": "/ˈsuː.pəˌmɑː.kɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "siêu thị",
+        "example": "The supermarket is crowded after work.",
+        "familyId": "shopping",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "checkout",
+        "ipa": "/ˈtʃek.aʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quầy thanh toán",
+        "example": "There was a long queue at the checkout.",
+        "familyId": "shopping",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "receipt",
+        "ipa": "/rɪˈsiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa đơn, biên lai",
+        "example": "Keep the receipt in case you need to return the item.",
+        "familyId": "shopping",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "budget",
+        "ipa": "/ˈbʌdʒ.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngân sách, khoản tiền dự trù",
+        "example": "A weekly budget helps control daily spending.",
+        "familyId": "money-daily",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expense",
+        "ipa": "/ɪkˈspens/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi phí, khoản tiêu",
+        "example": "Rent is usually the biggest monthly expense.",
+        "familyId": "money-daily",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "afford",
+        "ipa": "/əˈfɔːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "có đủ khả năng chi trả",
+        "example": "Many students cannot afford to eat out every day.",
+        "note": "Pattern: afford to do something",
+        "familyId": "money-daily",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commute",
+        "ipa": "/kəˈmjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi lại hằng ngày giữa nhà và nơi làm/học",
+        "example": "She commutes by bus to the city centre.",
+        "familyId": "commuting",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commute",
+        "ipa": "/kəˈmjuːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quãng đường đi làm/học hằng ngày",
+        "example": "My morning commute takes about forty minutes.",
+        "familyId": "commuting",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transport",
+        "ipa": "/ˈtræn.spɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phương tiện giao thông, sự vận chuyển",
+        "example": "Public transport is convenient in big cities.",
+        "note": "Collocation: public transport",
+        "familyId": "commuting",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bus stop",
+        "ipa": "/ˈbʌs stɒp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trạm xe buýt",
+        "example": "The bus stop is only five minutes from my house.",
+        "familyId": "commuting",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "traffic",
+        "ipa": "/ˈtræf.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giao thông, xe cộ",
+        "example": "Heavy traffic makes people tired before work.",
+        "note": "Collocations: traffic jam, heavy traffic",
+        "familyId": "commuting",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "errand",
+        "ipa": "/ˈer.ənd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc vặt cần làm",
+        "example": "I have to run some errands after work.",
+        "note": "Collocation: run errands",
+        "familyId": "errands",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "schedule",
+        "ipa": "/ˈʃed.juːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lịch trình, thời khóa biểu",
+        "example": "My schedule is full today.",
+        "familyId": "schedule",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "schedule",
+        "ipa": "/ˈʃed.juːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lên lịch, sắp xếp lịch",
+        "example": "We scheduled a meeting for Monday morning.",
+        "familyId": "schedule",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plan",
+        "ipa": "/plæn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lên kế hoạch",
+        "example": "I plan my day before checking my messages.",
+        "familyId": "planning",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planner",
+        "ipa": "/ˈplæn.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sổ/ứng dụng lập kế hoạch",
+        "example": "She uses a digital planner to organise her tasks.",
+        "familyId": "planning",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "organise",
+        "ipa": "/ˈɔː.ɡən.aɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sắp xếp, tổ chức",
+        "example": "Organise your desk before starting work.",
+        "note": "US spelling: organize",
+        "familyId": "organise",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "organisation",
+        "ipa": "/ˌɔː.ɡən.aɪˈzeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự sắp xếp, tổ chức",
+        "example": "Good organisation saves time during a busy day.",
+        "familyId": "organise",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tidy",
+        "ipa": "/ˈtaɪ.di/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dọn dẹp cho gọn gàng",
+        "example": "I tidy my room every weekend.",
+        "familyId": "chores",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tidy",
+        "ipa": "/ˈtaɪ.di/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gọn gàng, ngăn nắp",
+        "example": "A tidy room can help you concentrate better.",
+        "familyId": "chores",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clean",
+        "ipa": "/kliːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lau dọn, làm sạch",
+        "example": "We clean the kitchen after dinner.",
+        "familyId": "chores",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cleaning",
+        "ipa": "/ˈkliː.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc dọn dẹp, lau chùi",
+        "example": "Saturday morning is usually for cleaning.",
+        "familyId": "chores",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chore",
+        "ipa": "/tʃɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc nhà, việc vặt",
+        "example": "Children should help with household chores.",
+        "note": "Collocation: household chores",
+        "familyId": "chores",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "laundry",
+        "ipa": "/ˈlɔːn.dri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc giặt giũ, đồ cần giặt",
+        "example": "I do the laundry twice a week.",
+        "note": "Collocation: do the laundry",
+        "familyId": "chores",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dishwasher",
+        "ipa": "/ˈdɪʃˌwɒʃ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy rửa bát",
+        "example": "The dishwasher saves us a lot of time.",
+        "familyId": "chores",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vacuum",
+        "ipa": "/ˈvæk.juːm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hút bụi",
+        "example": "He vacuums the living room every Friday.",
+        "familyId": "chores",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dust",
+        "ipa": "/dʌst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phủi bụi, lau bụi",
+        "example": "You should dust the shelves regularly.",
+        "familyId": "chores",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relax",
+        "ipa": "/rɪˈlæks/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thư giãn",
+        "example": "I relax by listening to music after work.",
+        "familyId": "relax",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relaxation",
+        "ipa": "/ˌriː.lækˈseɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thư giãn",
+        "example": "Relaxation is important for mental health.",
+        "familyId": "relax",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leisure",
+        "ipa": "/ˈleʒ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời gian rảnh, giải trí",
+        "example": "People need leisure time to recharge.",
+        "note": "Collocation: leisure activities",
+        "familyId": "free-time",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hobby",
+        "ipa": "/ˈhɒb.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sở thích",
+        "example": "Gardening is a relaxing hobby for many people.",
+        "familyId": "free-time",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "entertainment",
+        "ipa": "/ˌen.təˈteɪn.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giải trí, chương trình giải trí",
+        "example": "Streaming services are a common form of entertainment.",
+        "familyId": "free-time",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deadline",
+        "ipa": "/ˈded.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hạn chót",
+        "example": "Daily tasks feel stressful when deadlines are too close.",
+        "familyId": "tasks",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "task",
+        "ipa": "/tɑːsk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiệm vụ, việc cần làm",
+        "example": "I write down every task on my to-do list.",
+        "familyId": "tasks",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "priority",
+        "ipa": "/praɪˈɒr.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc ưu tiên, mức ưu tiên",
+        "example": "Health should be a priority in everyday life.",
+        "familyId": "tasks",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "procrastinate",
+        "ipa": "/prəʊˈkræs.tɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "trì hoãn, chần chừ",
+        "example": "Many people procrastinate when a task feels difficult.",
+        "familyId": "tasks",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "efficient",
+        "ipa": "/ɪˈfɪʃ.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiệu quả, năng suất",
+        "example": "An efficient routine leaves more time for hobbies.",
+        "familyId": "efficiency",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hiệu quả, hiệu suất",
+        "example": "Technology can improve efficiency in daily tasks.",
+        "familyId": "efficiency",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiện lợi, thuận tiện",
+        "example": "Online shopping is convenient for busy people.",
+        "familyId": "convenience",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convenience",
+        "ipa": "/kənˈviː.ni.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tiện lợi",
+        "example": "Many people choose convenience over price.",
+        "familyId": "convenience",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comfort",
+        "ipa": "/ˈkʌm.fət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thoải mái, tiện nghi",
+        "example": "A clean home gives people a sense of comfort.",
+        "familyId": "comfort",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stressful",
+        "ipa": "/ˈstres.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "căng thẳng, gây áp lực",
+        "example": "A long commute can be stressful.",
+        "familyId": "stress",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "energetic",
+        "ipa": "/ˌen.əˈdʒet.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tràn đầy năng lượng",
+        "example": "A good breakfast can make you feel energetic.",
+        "familyId": "energy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nap",
+        "ipa": "/næp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giấc ngủ ngắn",
+        "example": "A short nap can improve your mood.",
+        "note": "Collocation: take a nap",
+        "familyId": "rest",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rest",
+        "ipa": "/rest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ ngơi",
+        "example": "You should rest after a long day.",
+        "familyId": "rest",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bedtime",
+        "ipa": "/ˈbed.taɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giờ đi ngủ",
+        "example": "Children need a regular bedtime.",
+        "familyId": "evening-routine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fall asleep",
+        "ipa": "/fɔːl əˈsliːp/",
+        "partOfSpeech": "phrase",
+        "difficulty": "intermediate",
+        "meaning": "ngủ thiếp đi, chìm vào giấc ngủ",
+        "example": "I fell asleep while watching television.",
+        "familyId": "evening-routine",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stay up",
+        "ipa": "/steɪ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thức khuya",
+        "example": "Students often stay up late before exams.",
+        "familyId": "evening-routine",
+        "familyOrder": 3,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "household",
+        "ipa": "/ˈhaʊs.həʊld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hộ gia đình, việc trong nhà",
+        "example": "Household routines differ from family to family.",
+        "familyId": "household-life",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neighbour",
+        "ipa": "/ˈneɪ.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng xóm",
+        "example": "A friendly neighbour can make daily life more pleasant.",
+        "note": "US spelling: neighbor",
+        "familyId": "community-daily",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neighbourhood",
+        "ipa": "/ˈneɪ.bə.hʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu phố, vùng lân cận",
+        "example": "There is a small park in my neighbourhood.",
+        "note": "US spelling: neighborhood",
+        "familyId": "community-daily",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "local",
+        "ipa": "/ˈləʊ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "địa phương, gần nơi ở",
+        "example": "We often buy vegetables from the local market.",
+        "familyId": "community-daily",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "queue",
+        "ipa": "/kjuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng chờ, hàng xếp",
+        "example": "There was a long queue at the bakery.",
+        "note": "British English; US: line",
+        "familyId": "public-life",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crowded",
+        "ipa": "/ˈkraʊ.dɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đông đúc",
+        "example": "The train is crowded during rush hour.",
+        "familyId": "public-life",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rush hour",
+        "ipa": "/ˈrʌʃ aʊər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giờ cao điểm",
+        "example": "Avoid travelling during rush hour if possible.",
+        "familyId": "public-life",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có sẵn, rảnh, khả dụng",
+        "example": "Are you available for lunch tomorrow?",
+        "familyId": "availability",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "availability",
+        "ipa": "/əˌveɪ.ləˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự sẵn có, khả năng rảnh",
+        "example": "The availability of public transport affects daily life.",
+        "familyId": "availability",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "punctual",
+        "ipa": "/ˈpʌŋk.tʃu.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đúng giờ",
+        "example": "Being punctual shows respect for other people’s time.",
+        "familyId": "time-management",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "punctuality",
+        "ipa": "/ˌpʌŋk.tʃuˈæl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính đúng giờ",
+        "example": "Punctuality is important at school and work.",
+        "familyId": "time-management",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "world",
+        "ipa": "/wɝːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "thế giới",
+        "example": "She dreams of traveling around the world.",
+        "familyId": "world",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worldwide",
+        "ipa": "/ˌwɝːldˈwaɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "toàn cầu, khắp thế giới",
+        "example": "The company has a worldwide network of offices.",
+        "familyId": "world",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worldly",
+        "ipa": "/ˈwɜːrld.li/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về thế gian, trần tục; từng trải",
+        "example": "She had worldly experience from years of travel.",
+        "familyId": "world",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empty",
+        "ipa": "/ˈemp.ti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "trống rỗng",
+        "example": "The fridge was completely empty this morning.",
+        "familyId": "empty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emptiness",
+        "ipa": "/ˈemp.ti.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự trống rỗng",
+        "example": "He felt a deep emptiness after the trip ended.",
+        "familyId": "empty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "whole",
+        "ipa": "/hoʊl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "toàn bộ, nguyên vẹn",
+        "example": "She ate the whole pizza by herself.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plenty",
+        "ipa": "/ˈplen.ti/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "intermediate",
+        "meaning": "nhiều, dư dả",
+        "example": "There is plenty of food for everyone.",
+        "familyId": "plenty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plentiful",
+        "ipa": "/ˈplen.tɪ.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "dồi dào, phong phú",
+        "example": "Fresh vegetables are plentiful in summer.",
+        "familyId": "plenty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rare",
+        "ipa": "/rer/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiếm, hiếm có",
+        "example": "It is rare to see snow in this region.",
+        "familyId": "rare",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rarely",
+        "ipa": "/ˈrer.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "hiếm khi",
+        "example": "He rarely watches television on weekdays.",
+        "familyId": "rare",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rarity",
+        "ipa": "/ˈrer.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hiếm có, vật hiếm",
+        "example": "A snowfall here is a real rarity.",
+        "familyId": "rare",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "large",
+        "ipa": "/lɑːrdʒ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "lớn, rộng",
+        "example": "They live in a large house near the park.",
+        "familyId": "large",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "largely",
+        "ipa": "/ˈlɑːrdʒ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "phần lớn, chủ yếu",
+        "example": "The project was largely successful.",
+        "familyId": "large",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "near",
+        "ipa": "/nɪr/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "gần",
+        "example": "The bus stop is near my house.",
+        "familyId": "near",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nearly",
+        "ipa": "/ˈnɪr.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "gần như, suýt",
+        "example": "We have nearly finished the report.",
+        "familyId": "near",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nearby",
+        "ipa": "/ˌnɪrˈbaɪ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gần đó, lân cận",
+        "example": "There is a nice cafe in a nearby street.",
+        "familyId": "near",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "far",
+        "ipa": "/fɑːr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "xa",
+        "example": "The train station is quite far from my house.",
+        "note": "Nguyên mẫu của dạng so sánh bất quy tắc: far – farther/further – farthest/furthest.",
+        "familyId": "far",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistake",
+        "ipa": "/mɪˈsteɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "lỗi lầm, sai lầm",
+        "example": "Everyone makes a mistake sometimes.",
+        "familyId": "mistake",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistakenly",
+        "ipa": "/mɪˈsteɪ.kən.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách nhầm lẫn, do nhầm",
+        "example": "She mistakenly sent the email to the wrong person.",
+        "familyId": "mistake",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thing",
+        "ipa": "/θɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "vật, thứ, điều",
+        "example": "Can you pass me that thing on the table?",
+        "familyId": "things-objects",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stuff",
+        "ipa": "/stʌf/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đồ đạc, thứ (nói chung)",
+        "example": "I need to move all my stuff to the new house.",
+        "familyId": "things-objects",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "place",
+        "ipa": "/pleɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "nơi, chỗ, địa điểm",
+        "example": "This is a good place to relax.",
+        "familyId": "things-objects",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "way",
+        "ipa": "/weɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cách, đường, lối",
+        "example": "Can you show me the way to the station?",
+        "familyId": "things-objects",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "part",
+        "ipa": "/pɑːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phần, bộ phận",
+        "example": "This is the most important part of the plan.",
+        "familyId": "things-objects",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "side",
+        "ipa": "/saɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bên, phía, cạnh",
+        "example": "Please stand on the other side of the road.",
+        "familyId": "position-location",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "top",
+        "ipa": "/tɑːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đỉnh, phía trên",
+        "example": "The book is on top of the shelf.",
+        "familyId": "position-location",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bottom",
+        "ipa": "/ˈbɑːtəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đáy, phía dưới",
+        "example": "Sign your name at the bottom of the page.",
+        "familyId": "position-location",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "middle",
+        "ipa": "/ˈmɪdl/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "giữa, trung tâm",
+        "example": "There is a table in the middle of the room.",
+        "familyId": "position-location",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "front",
+        "ipa": "/frʌnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phía trước, mặt trước",
+        "example": "The car is parked in front of the house.",
+        "familyId": "position-location",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "edge",
+        "ipa": "/edʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mép, rìa, cạnh",
+        "example": "Do not put the glass near the edge of the table.",
+        "familyId": "position-location",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "corner",
+        "ipa": "/ˈkɔːrnər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "góc",
+        "example": "The shop is on the corner of the street.",
+        "familyId": "position-location",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "here",
+        "ipa": "/hɪr/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "ở đây",
+        "example": "Please come here for a moment.",
+        "familyId": "directions-place",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "there",
+        "ipa": "/ðer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "ở đó, ở kia",
+        "example": "Put your bag over there.",
+        "familyId": "directions-place",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "everywhere",
+        "ipa": "/ˈevriwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "khắp mọi nơi",
+        "example": "I looked everywhere but could not find my keys.",
+        "familyId": "directions-place",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anywhere",
+        "ipa": "/ˈeniwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "bất cứ đâu",
+        "example": "You can sit anywhere you like.",
+        "familyId": "directions-place",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nowhere",
+        "ipa": "/ˈnoʊwer/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "không nơi nào",
+        "example": "There was nowhere to park the car.",
+        "familyId": "directions-place",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inside",
+        "ipa": "/ɪnˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bên trong",
+        "example": "It is warmer inside the house.",
+        "familyId": "directions-place",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outside",
+        "ipa": "/ˌaʊtˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bên ngoài",
+        "example": "The children are playing outside.",
+        "familyId": "directions-place",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "above",
+        "ipa": "/əˈbʌv/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "ở trên, phía trên",
+        "example": "There is a lamp above the table.",
+        "familyId": "directions-place",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "below",
+        "ipa": "/bɪˈloʊ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "ở dưới, phía dưới",
+        "example": "The temperature is below zero today.",
+        "familyId": "directions-place",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "between",
+        "ipa": "/bɪˈtwiːn/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "ở giữa (hai vật)",
+        "example": "The bank is between the school and the park.",
+        "familyId": "directions-place",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "among",
+        "ipa": "/əˈmʌŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "giữa, trong số (nhiều)",
+        "example": "She was among the first to arrive.",
+        "familyId": "directions-place",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "behind",
+        "ipa": "/bɪˈhaɪnd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "phía sau",
+        "example": "The garden is behind the house.",
+        "familyId": "directions-place",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beside",
+        "ipa": "/bɪˈsaɪd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "bên cạnh",
+        "example": "She sat beside her friend.",
+        "familyId": "directions-place",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toward",
+        "ipa": "/tɔːrd/",
+        "partOfSpeech": "preposition",
+        "difficulty": "intermediate",
+        "meaning": "về phía, hướng đến",
+        "example": "He walked toward the door.",
+        "familyId": "directions-place",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thin",
+        "ipa": "/θɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "mỏng, gầy",
+        "example": "The ice on the lake is very thin.",
+        "familyId": "describe-objects",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thick",
+        "ipa": "/θɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "dày",
+        "example": "She wore a thick coat in winter.",
+        "familyId": "describe-objects",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wide",
+        "ipa": "/waɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "rộng",
+        "example": "The river is very wide here.",
+        "familyId": "describe-objects",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "narrow",
+        "ipa": "/ˈnæroʊ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hẹp",
+        "example": "The old town has many narrow streets.",
+        "familyId": "describe-objects",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deep",
+        "ipa": "/diːp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "sâu",
+        "example": "The pool is too deep for children.",
+        "familyId": "describe-objects",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shallow",
+        "ipa": "/ˈʃæloʊ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nông, cạn",
+        "example": "The children played in the shallow water.",
+        "familyId": "describe-objects",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heavy",
+        "ipa": "/ˈhevi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "nặng",
+        "example": "This box is too heavy to lift.",
+        "familyId": "describe-objects",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hard",
+        "ipa": "/hɑːrd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "cứng, khó",
+        "example": "The bed was too hard to sleep on.",
+        "familyId": "describe-objects",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soft",
+        "ipa": "/sɔːft/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "mềm",
+        "example": "The pillow is soft and comfortable.",
+        "familyId": "describe-objects",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smooth",
+        "ipa": "/smuːð/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mịn, trơn",
+        "example": "The table has a smooth surface.",
+        "familyId": "describe-objects",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rough",
+        "ipa": "/rʌf/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thô ráp, gồ ghề",
+        "example": "The wall felt rough to the touch.",
+        "familyId": "describe-objects",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sharp",
+        "ipa": "/ʃɑːrp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sắc, bén",
+        "example": "Be careful, the knife is very sharp.",
+        "familyId": "describe-objects",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "round",
+        "ipa": "/raʊnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "tròn",
+        "example": "They sat at a round table.",
+        "familyId": "describe-objects",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "straight",
+        "ipa": "/streɪt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "thẳng",
+        "example": "Draw a straight line with the ruler.",
+        "familyId": "describe-objects",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wet",
+        "ipa": "/wet/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ướt",
+        "example": "The floor is wet, so be careful.",
+        "familyId": "describe-objects",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dry",
+        "ipa": "/draɪ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "khô",
+        "example": "Please use a dry towel.",
+        "familyId": "describe-objects",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dirty",
+        "ipa": "/ˈdɜːrti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "bẩn, dơ",
+        "example": "Your shoes are very dirty.",
+        "familyId": "describe-objects",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "start",
+        "ipa": "/stɑːrt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "bắt đầu, khởi động",
+        "example": "Let us start the lesson now.",
+        "familyId": "basic-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stop",
+        "ipa": "/stɑːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "dừng lại",
+        "example": "The bus stopped at the corner.",
+        "familyId": "basic-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wait",
+        "ipa": "/weɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "chờ, đợi",
+        "example": "Please wait for me here.",
+        "familyId": "basic-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stay",
+        "ipa": "/steɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ở lại",
+        "example": "We stayed at home all weekend.",
+        "familyId": "basic-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enter",
+        "ipa": "/ˈentər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi vào",
+        "example": "Please knock before you enter the room.",
+        "familyId": "basic-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exit",
+        "ipa": "/ˈeɡzɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi ra, thoát ra",
+        "example": "Everyone must exit through the back door.",
+        "familyId": "basic-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "open",
+        "ipa": "/ˈoʊpən/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mở",
+        "example": "Can you open the window, please?",
+        "familyId": "basic-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "close",
+        "ipa": "/kloʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đóng",
+        "example": "Please close the door quietly.",
+        "familyId": "basic-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "push",
+        "ipa": "/pʊʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đẩy",
+        "example": "You have to push the door to open it.",
+        "familyId": "basic-actions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pull",
+        "ipa": "/pʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "kéo",
+        "example": "Pull the rope as hard as you can.",
+        "familyId": "basic-actions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn",
+        "ipa": "/tɜːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "quay, rẽ, xoay",
+        "example": "Turn left at the next corner.",
+        "familyId": "basic-actions",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "move",
+        "ipa": "/muːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "di chuyển, chuyển động",
+        "example": "We plan to move to a bigger house.",
+        "familyId": "move",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carry",
+        "ipa": "/ˈkæri/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mang, vác, xách",
+        "example": "She carried the baby in her arms.",
+        "familyId": "basic-actions",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "use",
+        "ipa": "/juːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "sử dụng, dùng",
+        "example": "May I use your phone for a minute?",
+        "familyId": "basic-actions",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "need",
+        "ipa": "/niːd/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cần",
+        "example": "I need some help with this task.",
+        "familyId": "basic-actions",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "want",
+        "ipa": "/wɑːnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "muốn",
+        "example": "They want to buy a new car.",
+        "familyId": "basic-actions",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "try",
+        "ipa": "/traɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thử, cố gắng",
+        "example": "Try to finish it before lunch.",
+        "familyId": "basic-actions",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "help",
+        "ipa": "/help/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "giúp đỡ",
+        "example": "Can you help me carry these bags?",
+        "familyId": "basic-actions",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "own",
+        "ipa": "/oʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sở hữu",
+        "example": "They own a small shop downtown.",
+        "familyId": "basic-actions",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "belong",
+        "ipa": "/bɪˈlɔːŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về",
+        "example": "This book belongs to the library.",
+        "familyId": "basic-actions",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "end",
+        "ipa": "/end/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "kết thúc",
+        "example": "The movie ends at ten.",
+        "familyId": "basic-actions",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "certain",
+        "ipa": "/ˈsɜːtn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chắc chắn; nào đó",
+        "example": "I'm certain that I locked the door.",
+        "familyId": "certain",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "certainty",
+        "ipa": "/ˈsɜːtnti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự chắc chắn, điều chắc chắn",
+        "example": "There is no certainty that prices will fall.",
+        "familyId": "certain",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lighten",
+        "ipa": "/ˈlaɪtn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm sáng lên; làm nhẹ bớt",
+        "example": "A few jokes helped to lighten the mood.",
+        "familyId": "lighten",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lightening",
+        "ipa": "/ˈlaɪtnɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự làm sáng lên; sự làm nhẹ bớt",
+        "example": "The lightening of her mood was obvious to everyone.",
+        "note": "Lightening (làm sáng/nhẹ hơn) khác với lightning (tia chớp, sét).",
+        "familyId": "lighten",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "envelope",
+        "ipa": "/ˈen.və.loʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phong bì",
+        "example": "She sealed the letter and put it in an envelope.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blink",
+        "ipa": "/blɪŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chớp mắt, nhấp nháy",
+        "example": "He tried not to blink during the staring contest.",
+        "familyId": "blink",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blinking",
+        "ipa": "/ˈblɪŋ.kɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "nhấp nháy",
+        "example": "The blinking light on the machine means it is charging.",
+        "familyId": "blink",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "count",
+        "ipa": "/kaʊnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "đếm",
+        "example": "The teacher asked the children to count from one to ten.",
+        "familyId": "count",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "countless",
+        "ipa": "/ˈkaʊnt.ləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vô số, không đếm xuể",
+        "example": "She has given countless hours to charity work.",
+        "familyId": "count",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "movement",
+        "ipa": "/ˈmuːv.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chuyển động, phong trào",
+        "example": "The dancer moved with great grace and fluid movement.",
+        "familyId": "move",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "separate",
+        "ipa": "/ˈsep.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tách, phân tách",
+        "example": "We need to separate the recyclable waste from the rest.",
+        "familyId": "separate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "separation",
+        "ipa": "/ˌsep.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tách rời, phân ly",
+        "example": "The separation of church and state is an important principle.",
+        "familyId": "separate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quite",
+        "ipa": "/kwaɪt/",
+        "partOfSpeech": "adverb",
+        "difficulty": "beginner",
+        "meaning": "khá, khá là, hoàn toàn",
+        "example": "The new sofa is quite comfortable to sit on.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simple",
+        "ipa": "/ˈsɪm.pəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "đơn giản, giản dị",
+        "example": "The recipe is simple and takes only ten minutes.",
+        "familyId": "simple",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simply",
+        "ipa": "/ˈsɪm.pli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách đơn giản, chỉ đơn giản là",
+        "example": "He simply walked away without saying a word.",
+        "familyId": "simple",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "common",
+        "ipa": "/ˈkɑː.mən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phổ biến, chung, thông thường",
+        "example": "This is a common mistake among language learners.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

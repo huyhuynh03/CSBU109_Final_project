@@ -1,0 +1,124 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-adj-comparative",
+    "description": "Irregular Comparison Comparative - dữ liệu gộp đầy đủ cho các từ có dạng so sánh hơn bất quy tắc.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "better",
+        "ipa": "/ˈbɛtər/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "tốt hơn (so sánh hơn của good/well)",
+        "example": "This coffee is better than the one we had yesterday.",
+        "note": "Base forms: good (adjective) / well (adverb)",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "good/well",
+        "baseMeaning": "tốt; tốt/giỏi (trạng từ)"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elder",
+        "ipa": "/ˈɛldər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lớn tuổi hơn – dùng cho người trong gia đình (so sánh hơn của old)",
+        "example": "My elder brother often helps me with my homework.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "old",
+        "baseMeaning": "già, lớn tuổi"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "farther",
+        "ipa": "/ˈfɑːrðər/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "xa hơn – khoảng cách vật lý (so sánh hơn của far)",
+        "example": "My office is farther from the city center than yours.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "far",
+        "baseMeaning": "xa"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "further",
+        "ipa": "/ˈfɜːrðər/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "xa hơn, thêm – trừu tượng (so sánh hơn của far)",
+        "example": "We need further research before making the final decision.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "far",
+        "baseMeaning": "xa, thêm"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "less",
+        "ipa": "/lɛs/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "ít hơn (so sánh hơn của little – với danh từ không đếm được)",
+        "example": "There is less sugar in this cake than in the previous one.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "little",
+        "baseMeaning": "ít"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "more",
+        "ipa": "/mɔːr/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "nhiều hơn (so sánh hơn của much/many)",
+        "example": "She has more free time on weekends than on weekdays.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "much/many",
+        "baseMeaning": "nhiều"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worse",
+        "ipa": "/wɜːrs/",
+        "partOfSpeech": "adjective/adverb",
+        "difficulty": "intermediate",
+        "meaning": "tệ hơn (so sánh hơn của bad)",
+        "example": "The traffic is worse in the evening than in the morning.",
+        "tags": [
+          "irregular-comparative"
+        ],
+        "irregularRole": "comparative",
+        "baseForm": "bad",
+        "baseMeaning": "tệ, xấu"
+      }
+    }
+  ]
+}

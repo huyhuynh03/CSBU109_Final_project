@@ -1,0 +1,861 @@
+{
+  "_meta": {
+    "topicId": "biology",
+    "topicName": "Biology",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Biology (B1-B2)",
+    "totalCards": 65,
+    "totalFamilies": 15,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung va thuat ngu mon Sinh hoc, gom te bao, he co quan, di truyen, tien hoa, sinh thai hoc, thuc vat, sinh san va phong thi nghiem sinh hoc."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "biology",
+        "ipa": "/baɪˈɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sinh học",
+        "example": "Biology is the study of living things.",
+        "familyId": "biology-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "organism",
+        "ipa": "/ˈɔː.ɡən.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sinh vật",
+        "example": "A plant is a living organism.",
+        "familyId": "biology-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "species",
+        "ipa": "/ˈspiː.ʃiːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "loài",
+        "example": "The island is home to many rare species.",
+        "familyId": "biology-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cell",
+        "ipa": "/sel/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tế bào",
+        "example": "The cell is the basic unit of life.",
+        "familyId": "cells",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nucleus",
+        "ipa": "/ˈnjuː.kli.əs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân tế bào",
+        "example": "The nucleus contains genetic information.",
+        "familyId": "cells",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "membrane",
+        "ipa": "/ˈmem.breɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "màng",
+        "example": "A cell membrane controls what enters the cell.",
+        "familyId": "cells",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tissue",
+        "ipa": "/ˈtɪʃ.uː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mô",
+        "example": "Muscle tissue helps the body move.",
+        "familyId": "cells",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "organ",
+        "ipa": "/ˈɔː.ɡən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ quan",
+        "example": "The heart is an important organ.",
+        "familyId": "body-systems",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "respiration",
+        "ipa": "/ˌres.pəˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hô hấp",
+        "example": "Respiration releases energy from food.",
+        "familyId": "body-systems",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "circulation",
+        "ipa": "/ˌsɜː.kjəˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tuần hoàn",
+        "example": "Blood circulation carries oxygen around the body.",
+        "familyId": "body-systems",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "digestion",
+        "ipa": "/daɪˈdʒes.tʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tiêu hóa",
+        "example": "Digestion breaks food into smaller molecules.",
+        "familyId": "body-systems",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nervous system",
+        "ipa": "/ˈnɜː.vəs ˌsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ thần kinh",
+        "example": "The nervous system controls body responses.",
+        "familyId": "body-systems",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gene",
+        "ipa": "/dʒiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gen",
+        "example": "A gene can influence eye colour.",
+        "familyId": "genetics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "DNA",
+        "ipa": "/ˌdiː en ˈeɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ADN, DNA",
+        "example": "DNA carries genetic instructions.",
+        "familyId": "genetics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chromosome",
+        "ipa": "/ˈkrəʊ.mə.səʊm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiễm sắc thể",
+        "example": "Humans usually have 46 chromosomes.",
+        "familyId": "genetics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inheritance",
+        "ipa": "/ɪnˈher.ɪ.təns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự di truyền",
+        "example": "Inheritance explains how traits pass from parents to children.",
+        "familyId": "genetics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mutation",
+        "ipa": "/mjuːˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đột biến",
+        "example": "A mutation is a change in genetic material.",
+        "familyId": "genetics",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evolution",
+        "ipa": "/ˌiː.vəˈluː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tiến hóa",
+        "example": "Evolution explains how species change over time.",
+        "familyId": "evolution",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adaptation",
+        "ipa": "/ˌæd.æpˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thích nghi",
+        "example": "Thick fur is an adaptation to cold weather.",
+        "familyId": "evolution",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "natural selection",
+        "ipa": "/ˌnætʃ.ər.əl sɪˈlek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chọn lọc tự nhiên",
+        "example": "Natural selection favours useful traits.",
+        "familyId": "evolution",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ancestor",
+        "ipa": "/ˈæn.ses.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tổ tiên",
+        "example": "Modern birds evolved from ancient ancestors.",
+        "familyId": "evolution",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ecosystem",
+        "ipa": "/ˈiː.kəʊˌsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ sinh thái",
+        "example": "A forest is a complex ecosystem.",
+        "familyId": "ecology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "habitat",
+        "ipa": "/ˈhæb.ɪ.tæt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "môi trường sống",
+        "example": "Wetlands provide habitat for many birds.",
+        "familyId": "ecology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "biodiversity",
+        "ipa": "/ˌbaɪ.əʊ.daɪˈvɜː.sə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đa dạng sinh học",
+        "example": "Biodiversity is important for healthy ecosystems.",
+        "familyId": "ecology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "food chain",
+        "ipa": "/ˈfuːd tʃeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuỗi thức ăn",
+        "example": "A food chain shows how energy moves through organisms.",
+        "familyId": "ecology",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predator",
+        "ipa": "/ˈpred.ə.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật săn mồi",
+        "example": "A lion is a powerful predator.",
+        "familyId": "predator",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prey",
+        "ipa": "/preɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "con mồi",
+        "example": "Rabbits are prey for many predators.",
+        "familyId": "ecology",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "photosynthesis",
+        "ipa": "/ˌfəʊ.təʊˈsɪn.θə.sɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quang hợp",
+        "example": "Plants use photosynthesis to make food.",
+        "familyId": "plants",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chlorophyll",
+        "ipa": "/ˈklɒr.ə.fɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "diệp lục",
+        "example": "Chlorophyll gives leaves their green colour.",
+        "familyId": "plants",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "root",
+        "ipa": "/ruːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rễ cây",
+        "example": "Roots absorb water from the soil.",
+        "familyId": "plants",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stem",
+        "ipa": "/stem/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thân cây",
+        "example": "The stem supports the plant.",
+        "familyId": "plants",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leaf",
+        "ipa": "/liːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lá cây",
+        "example": "A leaf captures sunlight for photosynthesis.",
+        "familyId": "plants",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reproduction",
+        "ipa": "/ˌriː.prəˈdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự sinh sản",
+        "example": "Reproduction allows species to continue.",
+        "familyId": "reproduction",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fertilisation",
+        "ipa": "/ˌfɜː.tɪ.laɪˈzeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thụ tinh",
+        "example": "Fertilisation occurs when two sex cells join.",
+        "familyId": "reproduction",
+        "familyOrder": 2,
+        "tags": [],
+        "note": "US English: fertilization"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embryo",
+        "ipa": "/ˈem.bri.əʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phôi",
+        "example": "An embryo develops after fertilisation.",
+        "familyId": "reproduction",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "microscope",
+        "ipa": "/ˈmaɪ.krə.skəʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kính hiển vi",
+        "example": "Students used a microscope to observe cells.",
+        "familyId": "lab-biology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "specimen",
+        "ipa": "/ˈspes.ə.mɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mẫu vật",
+        "example": "The specimen was examined in the laboratory.",
+        "familyId": "lab-biology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dissection",
+        "ipa": "/daɪˈsek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự mổ xẻ, giải phẫu mẫu vật",
+        "example": "Dissection helps students study anatomy.",
+        "familyId": "lab-biology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vaccine",
+        "ipa": "/ˈvæk.siːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vắc-xin",
+        "example": "A vaccine trains the immune system.",
+        "familyId": "biotechnology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "antibody",
+        "ipa": "/ˈæn.tiˌbɒd.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kháng thể",
+        "example": "Antibodies help fight infection.",
+        "familyId": "biotechnology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paleontology",
+        "ipa": "/ˌpæl.i.ɒnˈtɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cổ sinh vật học (ngành nghiên cứu sinh vật cổ qua hóa thạch)",
+        "example": "Paleontology bridges biology and geology.",
+        "familyId": "paleontology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paleontologist",
+        "ipa": "/ˌpæl.i.ɒnˈtɒl.ə.dʒɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhà cổ sinh vật học",
+        "example": "The paleontologist identified the fossil as a new species.",
+        "familyId": "paleontology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fossilize",
+        "ipa": "/ˈfɒs.əl.aɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "hóa thạch (biến thành hóa thạch)",
+        "example": "Soft tissues rarely fossilize over millions of years.",
+        "familyId": "paleontology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dinosaur",
+        "ipa": "/ˈdaɪ.nə.sɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khủng long",
+        "example": "Dinosaurs dominated the planet for over 160 million years.",
+        "familyId": "paleontology",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mesozoic",
+        "ipa": "/ˌmes.əˈzəʊ.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc đại Trung sinh (kỷ nguyên của khủng long)",
+        "example": "The Mesozoic era is often called the Age of Reptiles.",
+        "familyId": "paleontology",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jurassic",
+        "ipa": "/dʒʊˈræs.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc kỷ Jura",
+        "example": "Many famous dinosaurs lived during the Jurassic period.",
+        "familyId": "paleontology",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cretaceous",
+        "ipa": "/krɪˈteɪ.ʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc kỷ Phấn trắng",
+        "example": "An asteroid likely ended the Cretaceous period.",
+        "familyId": "paleontology",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mammoth",
+        "ipa": "/ˈmæm.əθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "voi ma mút",
+        "example": "Frozen mammoths have been found preserved in Siberian ice.",
+        "familyId": "paleontology",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trilobite",
+        "ipa": "/ˈtraɪ.lə.baɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bọ ba thùy (động vật biển cổ đại)",
+        "example": "Trilobite fossils are common in Paleozoic rocks.",
+        "familyId": "paleontology",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ammonite",
+        "ipa": "/ˈæm.ə.naɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ốc cúc đá (loài thân mềm cổ đại có vỏ xoắn ốc)",
+        "example": "Ammonite shells are popular among fossil collectors.",
+        "familyId": "paleontology",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vertebrate",
+        "ipa": "/ˈvɜː.tɪ.brət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật có xương sống",
+        "example": "Fish were the first vertebrates to appear on Earth.",
+        "familyId": "paleontology",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invertebrate",
+        "ipa": "/ɪnˈvɜː.tɪ.brət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật không xương sống",
+        "example": "Most ancient invertebrates lived in the sea.",
+        "familyId": "paleontology",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stratum",
+        "ipa": "/ˈstrɑː.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tầng địa chất, lớp đất đá",
+        "example": "Each rock stratum reveals a different period of history.",
+        "familyId": "paleontology",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rodent",
+        "ipa": "/ˈroʊ.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gặm nhấm",
+        "example": "Mice and squirrels are both types of rodents.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predatory",
+        "ipa": "/ˈpred.ə.tɔːr.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "săn mồi, có tính săn mồi; bóc lột",
+        "example": "Lions and tigers are large predatory animals.",
+        "familyId": "predator",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predation",
+        "ipa": "/prɪˈdeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự săn bắt, hành vi săn mồi",
+        "example": "Predation is a key factor in controlling prey populations.",
+        "familyId": "predator",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breeding",
+        "ipa": "/ˈbriː.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự sinh sản, chăn nuôi",
+        "example": "The zoo runs a breeding program for endangered species.",
+        "note": "Dạng V-ing của breed (động từ bất quy tắc) — không tạo family riêng",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invade",
+        "ipa": "/ɪnˈveɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xâm lược, xâm nhập",
+        "example": "Invasive species can invade new territories rapidly.",
+        "familyId": "invade",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invasive",
+        "ipa": "/ɪnˈveɪ.sɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "xâm lấn, xâm nhập; xâm lấn (y khoa)",
+        "example": "The removal of invasive species protects native habitats.",
+        "familyId": "invade",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invasion",
+        "ipa": "/ɪnˈveɪ.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc xâm lược, sự xâm nhập",
+        "example": "The insect invasion destroyed the local crops.",
+        "familyId": "invade",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dominate",
+        "ipa": "/ˈdɑː.mɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chi phối, thống trị",
+        "example": "One species tends to dominate in this environment.",
+        "familyId": "dominate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dominant",
+        "ipa": "/ˈdɑː.mɪ.nənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chiếm ưu thế, trội",
+        "example": "The dominant species in the forest is the oak tree.",
+        "familyId": "dominate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "domination",
+        "ipa": "/ˌdɑː.mɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thống trị, chi phối",
+        "example": "The company's domination of the market lasted for decades.",
+        "familyId": "dominate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poison",
+        "ipa": "/ˈpɔɪ.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất độc",
+        "example": "Some mushrooms contain a deadly poison.",
+        "familyId": "poison",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poisonous",
+        "ipa": "/ˈpɔɪ.zə.nəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có độc, gây độc",
+        "example": "The snake's venom is extremely poisonous.",
+        "familyId": "poison",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

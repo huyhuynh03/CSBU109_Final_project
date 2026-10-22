@@ -1,0 +1,1431 @@
+{
+  "_meta": {
+    "topicId": "psychology",
+    "topicName": "Psychology & Cognition",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Psychology & Cognition (B1-B2)",
+    "totalCards": 109,
+    "totalFamilies": 18,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung nen tang cho chu de Tam ly va Nhan thuc, da ra soat tranh trung voi cac topic seed hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "mind",
+        "ipa": "/maɪnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tâm trí, trí óc",
+        "example": "A calm mind helps you make better decisions.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brain",
+        "ipa": "/breɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ não",
+        "example": "The brain processes information very quickly.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psyche",
+        "ipa": "/ˈsaɪ.ki/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tâm thức, tâm hồn",
+        "example": "Early experiences can shape a person's psyche.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neuron",
+        "ipa": "/ˈnʊr.ɑːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nơ-ron, tế bào thần kinh",
+        "example": "A neuron sends signals through the nervous system.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "synapse",
+        "ipa": "/ˈsɪn.æps/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khớp thần kinh",
+        "example": "Learning can strengthen connections at the synapse.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cortex",
+        "ipa": "/ˈkɔːr.teks/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "vỏ não",
+        "example": "The cortex is involved in complex thinking.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "amygdala",
+        "ipa": "/əˈmɪɡ.də.lə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hạch hạnh nhân",
+        "example": "The amygdala plays a role in fear responses.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hippocampus",
+        "ipa": "/ˌhɪp.əˈkæm.pəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hồi hải mã",
+        "example": "The hippocampus is important for forming memories.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dopamine",
+        "ipa": "/ˈdoʊ.pə.miːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dopamine, chất dẫn truyền liên quan đến động lực và phần thưởng",
+        "example": "Dopamine is linked to motivation and reward.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serotonin",
+        "ipa": "/ˌser.əˈtoʊ.nɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "serotonin, chất dẫn truyền ảnh hưởng đến tâm trạng",
+        "example": "Serotonin can influence mood and sleep.",
+        "familyId": "psychology-mind-brain",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cognition",
+        "ipa": "/kɑːɡˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhận thức",
+        "example": "Cognition includes thinking, learning, and understanding.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consciousness",
+        "ipa": "/ˈkɑːn.ʃəs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ý thức",
+        "example": "Consciousness allows us to be aware of ourselves.",
+        "familyId": "conscious",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "awareness",
+        "ipa": "/əˈwer.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhận biết, nhận thức",
+        "example": "Self-awareness is useful for personal growth.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perception",
+        "ipa": "/pərˈsep.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tri giác, cách nhìn nhận",
+        "example": "Our perception of risk can change under stress.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attention",
+        "ipa": "/əˈten.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chú ý",
+        "example": "The task requires close attention.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "focus",
+        "ipa": "/ˈfoʊ.kəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tập trung, trọng tâm",
+        "example": "Good sleep can improve focus.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sensation",
+        "ipa": "/senˈseɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cảm giác từ giác quan",
+        "example": "A sensation of warmth spread through her hands.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stimulus",
+        "ipa": "/ˈstɪm.jə.ləs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tác nhân kích thích",
+        "example": "The sound acted as a stimulus for the response.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "response",
+        "ipa": "/rɪˈspɑːns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phản ứng, đáp ứng",
+        "example": "Fear is a common response to danger.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arousal",
+        "ipa": "/əˈraʊ.zəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "mức độ kích hoạt, hưng phấn sinh lý",
+        "example": "High arousal can make it harder to relax.",
+        "familyId": "psychology-cognition",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "remember",
+        "ipa": "/rɪˈmem.bər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhớ",
+        "example": "Try to remember the details of the event.",
+        "familyId": "psychology-memory",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recall",
+        "ipa": "/rɪˈkɔːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhớ lại",
+        "example": "Her recall of names improved with practice.",
+        "familyId": "psychology-memory",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recognition",
+        "ipa": "/ˌrek.əɡˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhận ra, nhận diện",
+        "example": "Recognition is often easier than recall.",
+        "familyId": "psychology-memory",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "encoding",
+        "ipa": "/ɪnˈkoʊ.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự mã hóa thông tin vào trí nhớ",
+        "example": "Encoding helps turn new information into memory.",
+        "familyId": "psychology-memory",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "retrieval",
+        "ipa": "/rɪˈtriː.vəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự truy xuất, gợi lại thông tin",
+        "example": "Retrieval becomes easier with repeated review.",
+        "familyId": "psychology-memory",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "schema",
+        "ipa": "/ˈskiː.mə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lược đồ nhận thức",
+        "example": "A schema helps the mind organize knowledge.",
+        "familyId": "psychology-memory",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "association",
+        "ipa": "/əˌsoʊ.siˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự liên tưởng, liên kết",
+        "example": "The smell created a strong association with childhood.",
+        "familyId": "psychology-memory",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interpretation",
+        "ipa": "/ɪnˌtɝː.prəˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự diễn giải, cách hiểu",
+        "example": "His interpretation of the comment was negative.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evaluation",
+        "ipa": "/ɪˌvæl.juˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đánh giá",
+        "example": "Evaluation helps us compare different choices.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reasoning",
+        "ipa": "/ˈriː.zən.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự lập luận, suy luận",
+        "example": "Clear reasoning supports better arguments.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "logic",
+        "ipa": "/ˈlɑː.dʒɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "logic, lý lẽ",
+        "example": "Logic can reduce emotional mistakes.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "judgment",
+        "ipa": "/ˈdʒʌdʒ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phán đoán",
+        "example": "Tiredness can affect judgment.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decision",
+        "ipa": "/dɪˈsɪʒ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyết định",
+        "example": "Emotion often influences a decision.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preference",
+        "ipa": "/ˈpref.ər.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sở thích, sự ưu tiên",
+        "example": "Personal preference affects daily choices.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "imagination",
+        "ipa": "/ɪˌmædʒ.əˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trí tưởng tượng",
+        "example": "Imagination helps children create stories.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insight",
+        "ipa": "/ˈɪn.saɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thấu hiểu sâu sắc",
+        "example": "Therapy gave her insight into her behavior.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heuristic",
+        "ipa": "/hjʊˈrɪs.tɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quy tắc kinh nghiệm để ra quyết định nhanh",
+        "example": "A heuristic can save time but may lead to errors.",
+        "familyId": "psychology-thinking",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conditioning",
+        "ipa": "/kənˈdɪʃ.ən.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự điều kiện hóa",
+        "example": "Conditioning can explain some learned behaviors.",
+        "familyId": "psychology-learning",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reinforcement",
+        "ipa": "/ˌriː.ɪnˈfɔːrs.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự củng cố hành vi",
+        "example": "Positive reinforcement can encourage good habits.",
+        "familyId": "psychology-learning",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "punishment",
+        "ipa": "/ˈpʌn.ɪʃ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trừng phạt",
+        "example": "Punishment may stop a behavior temporarily.",
+        "familyId": "psychology-learning",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reward",
+        "ipa": "/rɪˈwɔːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần thưởng",
+        "example": "A reward can increase motivation.",
+        "familyId": "psychology-learning",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plasticity",
+        "ipa": "/plæsˈtɪs.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính mềm dẻo, khả năng thay đổi của não",
+        "example": "Brain plasticity supports learning throughout life.",
+        "familyId": "psychology-learning",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metacognition",
+        "ipa": "/ˌmet̬.ə.kɑːɡˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "siêu nhận thức, nhận thức về cách mình suy nghĩ",
+        "example": "Metacognition helps students monitor their learning.",
+        "familyId": "psychology-learning",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "motivation",
+        "ipa": "/ˌmoʊ.t̬əˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động lực",
+        "example": "Motivation makes long-term goals easier to pursue.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interest",
+        "ipa": "/ˈɪn.trəst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự quan tâm, hứng thú",
+        "example": "Interest can make learning feel effortless.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "curiosity",
+        "ipa": "/ˌkjʊr.iˈɑː.sə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tò mò",
+        "example": "Curiosity encourages people to ask questions.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "willpower",
+        "ipa": "/ˈwɪlˌpaʊ.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ý chí, nghị lực",
+        "example": "Willpower helps him resist distractions.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mindset",
+        "ipa": "/ˈmaɪnd.set/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tư duy, hệ tư tưởng cá nhân",
+        "example": "A growth mindset can support improvement.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "satisfaction",
+        "ipa": "/ˌsæt̬.ɪsˈfæk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hài lòng",
+        "example": "Job satisfaction affects motivation.",
+        "familyId": "psychology-motivation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "confidence",
+        "ipa": "/ˈkɑːn.fə.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tự tin",
+        "example": "Practice can build confidence.",
+        "familyId": "psychology-self",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-esteem",
+        "ipa": "/ˌself.ɪˈstiːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng tự trọng, sự tự đánh giá bản thân",
+        "example": "Supportive feedback can improve self-esteem.",
+        "familyId": "psychology-self",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-control",
+        "ipa": "/ˌself.kənˈtroʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tự chủ",
+        "example": "Self-control helps people delay rewards.",
+        "familyId": "psychology-self",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-awareness",
+        "ipa": "/ˌself.əˈwer.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tự nhận thức",
+        "example": "Self-awareness helps you notice your emotions.",
+        "familyId": "psychology-self",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-image",
+        "ipa": "/ˌselfˈɪm.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình ảnh bản thân",
+        "example": "A negative self-image can affect confidence.",
+        "familyId": "psychology-self",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-concept",
+        "ipa": "/ˌselfˈkɑːn.sept/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khái niệm về bản thân",
+        "example": "Self-concept develops through experience.",
+        "familyId": "psychology-self",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "personality",
+        "ipa": "/ˌpɝː.sənˈæl.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính cách, nhân cách",
+        "example": "Personality affects how people react to change.",
+        "familyId": "psychology-personality",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "temperament",
+        "ipa": "/ˈtem.pɚ.ə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khí chất, tính khí bẩm sinh",
+        "example": "A child's temperament can be seen early in life.",
+        "familyId": "psychology-personality",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "introversion",
+        "ipa": "/ˌɪn.trəˈvɝː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính hướng nội",
+        "example": "Introversion is not the same as shyness.",
+        "familyId": "psychology-personality",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extraversion",
+        "ipa": "/ˌek.strəˈvɝː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính hướng ngoại",
+        "example": "Extraversion often involves enjoying social contact.",
+        "familyId": "psychology-personality",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "openness",
+        "ipa": "/ˈoʊ.pən.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cởi mở với trải nghiệm",
+        "example": "Openness is linked to creativity and curiosity.",
+        "familyId": "psychology-personality",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conscientiousness",
+        "ipa": "/ˌkɑːn.ʃiˈen.ʃəs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính tận tâm, có trách nhiệm",
+        "example": "Conscientiousness predicts careful planning.",
+        "familyId": "psychology-personality",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agreeableness",
+        "ipa": "/əˈɡriː.ə.bəl.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính dễ chịu, hợp tác",
+        "example": "Agreeableness can support teamwork.",
+        "familyId": "psychology-personality",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neuroticism",
+        "ipa": "/nʊˈrɑː.t̬ə.sɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính bất ổn cảm xúc",
+        "example": "High neuroticism may involve frequent worry.",
+        "familyId": "psychology-personality",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "behavior",
+        "ipa": "/bɪˈheɪ.vjɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi",
+        "example": "Behavior can change when rewards change.",
+        "familyId": "psychology-behavior",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impulse",
+        "ipa": "/ˈɪm.pʌls/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bốc đồng, thôi thúc",
+        "example": "He resisted the impulse to speak angrily.",
+        "familyId": "psychology-behavior",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "avoidance",
+        "ipa": "/əˈvɔɪ.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự né tránh",
+        "example": "Avoidance can keep anxiety going.",
+        "familyId": "psychology-behavior",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coping",
+        "ipa": "/ˈkoʊ.pɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cách đối phó với khó khăn",
+        "example": "Healthy coping reduces emotional pressure.",
+        "familyId": "psychology-behavior",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "distraction",
+        "ipa": "/dɪˈstræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự xao nhãng",
+        "example": "The phone became a major distraction.",
+        "familyId": "psychology-behavior",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rationalization",
+        "ipa": "/ˌræʃ.ən.əl.əˈzeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hợp lý hóa để biện minh",
+        "example": "Rationalization can hide the real reason for a choice.",
+        "familyId": "psychology-defense",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "denial",
+        "ipa": "/dɪˈnaɪ.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phủ nhận",
+        "example": "Denial can protect a person from painful facts.",
+        "familyId": "psychology-defense",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "projection",
+        "ipa": "/prəˈdʒek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự phóng chiếu cảm xúc lên người khác",
+        "example": "Projection may make someone blame others for their own feelings.",
+        "familyId": "psychology-defense",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subconscious",
+        "ipa": "/ˌsʌbˈkɑːn.ʃəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tiềm thức",
+        "example": "The subconscious can influence behavior.",
+        "familyId": "psychology-defense",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unconscious",
+        "ipa": "/ʌnˈkɑːn.ʃəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "vô thức",
+        "example": "Unconscious motives are not always easy to notice.",
+        "familyId": "psychology-defense",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "obsession",
+        "ipa": "/əbˈseʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự ám ảnh",
+        "example": "An obsession can dominate a person's thoughts.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compulsion",
+        "ipa": "/kəmˈpʌl.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cưỡng chế nội tâm, hành vi thôi thúc",
+        "example": "A compulsion can feel difficult to resist.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trauma",
+        "ipa": "/ˈtrɑː.mə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sang chấn tâm lý",
+        "example": "Trauma can affect sleep and trust.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "phobia",
+        "ipa": "/ˈfoʊ.bi.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nỗi ám ảnh sợ hãi",
+        "example": "A phobia can make everyday situations stressful.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delusion",
+        "ipa": "/dɪˈluː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ảo tưởng, niềm tin sai lệch dai dẳng",
+        "example": "A delusion may continue despite clear evidence.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hallucination",
+        "ipa": "/həˌluː.sənˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ảo giác",
+        "example": "A hallucination can involve seeing or hearing things that are not there.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mania",
+        "ipa": "/ˈmeɪ.ni.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hưng cảm",
+        "example": "Mania may involve unusually high energy.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "addiction",
+        "ipa": "/əˈdɪk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nghiện, lệ thuộc",
+        "example": "Addiction can change behavior and priorities.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dependency",
+        "ipa": "/dɪˈpen.dən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự phụ thuộc",
+        "example": "Dependency can be emotional or physical.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sanity",
+        "ipa": "/ˈsæn.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tỉnh táo, minh mẫn",
+        "example": "Rest helped him regain a sense of sanity.",
+        "familyId": "psychology-conditions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worry",
+        "ipa": "/ˈwɝː.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗi lo lắng",
+        "example": "Constant worry can make sleep difficult.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frustration",
+        "ipa": "/frʌˈstreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thất vọng, bực bội",
+        "example": "Frustration grew when the plan failed again.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "irritability",
+        "ipa": "/ˌɪr.ə.t̬əˈbɪl.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính dễ cáu gắt",
+        "example": "Lack of sleep can increase irritability.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apathy",
+        "ipa": "/ˈæp.ə.θi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thờ ơ, lãnh đạm",
+        "example": "Apathy made it hard for him to start anything.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jealousy",
+        "ipa": "/ˈdʒel.ə.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ghen tuông",
+        "example": "Jealousy can damage trust in relationships.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "envy",
+        "ipa": "/ˈen.vi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đố kỵ, ghen tị",
+        "example": "Envy can appear when we compare ourselves to others.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "optimism",
+        "ipa": "/ˈɑːp.tə.mɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự lạc quan",
+        "example": "Optimism can support persistence during challenges.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pessimism",
+        "ipa": "/ˈpes.ə.mɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bi quan",
+        "example": "Pessimism can make problems seem larger than they are.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grief",
+        "ipa": "/ɡriːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗi đau buồn, tang thương",
+        "example": "Grief takes time and support to process.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shame",
+        "ipa": "/ʃeɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự xấu hổ, hổ thẹn",
+        "example": "Shame can make people hide their problems.",
+        "familyId": "psychology-emotion",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insane",
+        "ipa": "/ɪnˈseɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "điên rồ, mất trí",
+        "example": "Driving in that storm would be insane.",
+        "familyId": "insane",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insanely",
+        "ipa": "/ɪnˈseɪn.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách điên rồ, cực kỳ",
+        "example": "The tickets were insanely expensive.",
+        "familyId": "insane",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insanity",
+        "ipa": "/ɪnˈsæn.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự điên rồ, mất trí",
+        "example": "Repeating the same mistake and expecting change is insanity.",
+        "familyId": "insane",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "notice",
+        "ipa": "/ˈnoʊ.tɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "để ý, nhận thấy",
+        "example": "Did you notice the change in his behavior?",
+        "familyId": "notice",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noticeable",
+        "ipa": "/ˈnoʊ.tɪ.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ nhận thấy",
+        "example": "There was a noticeable improvement in her grades.",
+        "familyId": "notice",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noticeably",
+        "ipa": "/ˈnoʊ.tɪ.sə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách rõ rệt",
+        "example": "The room grew noticeably colder at night.",
+        "familyId": "notice",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unnoticed",
+        "ipa": "/ʌnˈnoʊ.tɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không bị chú ý, không ai để ý",
+        "example": "His effort went completely unnoticed.",
+        "familyId": "notice",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychology",
+        "ipa": "/saɪˈkɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tâm lý học",
+        "example": "She is studying psychology at university.",
+        "familyId": "psychology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychological",
+        "ipa": "/ˌsaɪ.kəˈlɒdʒ.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về tâm lý, tâm lý học",
+        "example": "The stress had a serious psychological impact on him.",
+        "familyId": "psychology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "psychologist",
+        "ipa": "/saɪˈkɒl.ə.dʒɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tâm lý học",
+        "example": "The psychologist helped her understand her anxiety.",
+        "familyId": "psychology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "associate",
+        "ipa": "/əˈsəʊʃieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "liên hệ, liên tưởng; kết giao",
+        "example": "We tend to associate certain smells with childhood memories.",
+        "familyId": "associate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "associated",
+        "ipa": "/əˈsəʊʃieɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có liên quan, có liên hệ",
+        "example": "There are several risks associated with this treatment.",
+        "familyId": "associate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recognize",
+        "ipa": "/ˈrekəɡnaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận ra, công nhận",
+        "example": "I didn't recognize her after all these years.",
+        "familyId": "recognize",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recognizable",
+        "ipa": "/ˈrekəɡnaɪzəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "dễ nhận ra, có thể nhận biết",
+        "example": "His voice is instantly recognizable.",
+        "familyId": "recognize",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conscious",
+        "ipa": "/ˈkɑːn.ʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có ý thức, tỉnh táo",
+        "example": "She was conscious of someone watching her.",
+        "familyId": "conscious",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resilience",
+        "ipa": "/rɪˈzɪl.i.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự kiên cường, khả năng phục hồi",
+        "example": "Children often show remarkable resilience after difficult experiences.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

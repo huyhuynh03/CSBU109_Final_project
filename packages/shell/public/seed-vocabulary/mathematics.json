@@ -1,0 +1,756 @@
+{
+  "_meta": {
+    "topicId": "mathematics",
+    "topicName": "Mathematics",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Mathematics (B1-B2)",
+    "totalCards": 57,
+    "totalFamilies": 7,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung va thuat ngu mon Toan hoc, gom so hoc, phep toan, do luong, dai so, hinh hoc, thong ke-xac suat va giai tich. Tu data duoc tach sang Cong nghe thong tin."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "mathematics",
+        "ipa": "/ˌmæθˈmæt.ɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "toán học",
+        "example": "Mathematics teaches students how to solve problems logically.",
+        "familyId": "math-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "maths",
+        "ipa": "/mæθs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "môn Toán, toán học",
+        "example": "Maths is my favourite subject at school.",
+        "familyId": "math-general",
+        "familyOrder": 2,
+        "tags": [],
+        "note": "British English; US English: math"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arithmetic",
+        "ipa": "/əˈrɪθ.mə.tɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số học",
+        "example": "Arithmetic includes basic operations with numbers.",
+        "familyId": "math-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "number",
+        "ipa": "/ˈnʌm.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số",
+        "example": "Seven is a lucky number in many cultures.",
+        "familyId": "math-general",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "digit",
+        "ipa": "/ˈdɪdʒ.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chữ số",
+        "example": "The number 405 has three digits.",
+        "familyId": "math-general",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "integer",
+        "ipa": "/ˈɪn.tɪ.dʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số nguyên",
+        "example": "Negative five is an integer.",
+        "familyId": "math-general",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "addition",
+        "ipa": "/əˈdɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép cộng",
+        "example": "Addition is one of the first operations children learn.",
+        "familyId": "math-operations",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subtraction",
+        "ipa": "/səbˈtræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép trừ",
+        "example": "Subtraction shows the difference between two numbers.",
+        "familyId": "math-operations",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "multiplication",
+        "ipa": "/ˌmʌl.tɪ.plɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép nhân",
+        "example": "Multiplication is repeated addition.",
+        "familyId": "math-operations",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "division",
+        "ipa": "/dɪˈvɪʒ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép chia",
+        "example": "Division is used to share a number into equal parts.",
+        "familyId": "math-operations",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sum",
+        "ipa": "/sʌm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tổng",
+        "example": "The sum of five and seven is twelve.",
+        "familyId": "math-operations",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "difference",
+        "ipa": "/ˈdɪf.ər.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệu, sự khác biệt",
+        "example": "The difference between ten and six is four.",
+        "familyId": "math-operations",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "product",
+        "ipa": "/ˈprɒd.ʌkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tích",
+        "example": "The product of three and four is twelve.",
+        "familyId": "math-operations",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quotient",
+        "ipa": "/ˈkwəʊ.ʃənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương số",
+        "example": "The quotient of twenty divided by five is four.",
+        "familyId": "math-operations",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fraction",
+        "ipa": "/ˈfræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phân số",
+        "example": "One half is a simple fraction.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decimal",
+        "ipa": "/ˈdes.ɪ.məl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số thập phân",
+        "example": "A decimal uses a point to show part of a whole number.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "percentage",
+        "ipa": "/pəˈsen.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần trăm, tỷ lệ phần trăm",
+        "example": "The percentage of students who passed the exam was high.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ratio",
+        "ipa": "/ˈreɪ.ʃi.əʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tỷ số, tỷ lệ",
+        "example": "The ratio of boys to girls is two to three.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proportion",
+        "ipa": "/prəˈpɔː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tỷ lệ, sự cân xứng",
+        "example": "The map is drawn in proportion to the real area.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "average",
+        "ipa": "/ˈæv.ər.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị trung bình",
+        "example": "The average score in the class was 8 out of 10.",
+        "familyId": "numbers-measurement",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "algebra",
+        "ipa": "/ˈæl.dʒə.brə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại số",
+        "example": "Algebra uses letters to represent numbers.",
+        "familyId": "algebra",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "equation",
+        "ipa": "/ɪˈkweɪ.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phương trình",
+        "example": "Solve the equation to find the value of x.",
+        "familyId": "algebra",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "variable",
+        "ipa": "/ˈveə.ri.ə.bəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biến số",
+        "example": "In algebra, x is often used as a variable.",
+        "familyId": "algebra",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coefficient",
+        "ipa": "/ˌkəʊ.ɪˈfɪʃ.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ số",
+        "example": "In 3x, the coefficient is 3.",
+        "familyId": "algebra",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "formula",
+        "ipa": "/ˈfɔː.mjə.lə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công thức",
+        "example": "Use the formula to calculate the area of a circle.",
+        "familyId": "algebra",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "function",
+        "ipa": "/ˈfʌŋk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàm số",
+        "example": "A linear function can be shown as a straight line.",
+        "familyId": "algebra",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "geometry",
+        "ipa": "/dʒiˈɒm.ə.tri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình học",
+        "example": "Geometry deals with shapes, lines and angles.",
+        "familyId": "geometry",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "angle",
+        "ipa": "/ˈæŋ.ɡəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "góc",
+        "example": "A triangle has three angles.",
+        "familyId": "geometry",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triangle",
+        "ipa": "/ˈtraɪ.æŋ.ɡəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình tam giác",
+        "example": "A triangle has three sides.",
+        "familyId": "geometry",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "circle",
+        "ipa": "/ˈsɜː.kəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình tròn, đường tròn",
+        "example": "The wheels form perfect circles.",
+        "familyId": "geometry",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "radius",
+        "ipa": "/ˈreɪ.di.əs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bán kính",
+        "example": "The radius is half of the diameter.",
+        "familyId": "geometry",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diameter",
+        "ipa": "/daɪˈæm.ɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường kính",
+        "example": "The diameter passes through the centre of a circle.",
+        "familyId": "geometry",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "area",
+        "ipa": "/ˈeə.ri.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "diện tích",
+        "example": "Find the area of the rectangle.",
+        "familyId": "geometry",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "volume",
+        "ipa": "/ˈvɒl.juːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thể tích",
+        "example": "The volume of the box is measured in cubic centimetres.",
+        "familyId": "geometry",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "statistics",
+        "ipa": "/stəˈtɪs.tɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thống kê học, số liệu thống kê",
+        "example": "Statistics helps students understand data.",
+        "familyId": "statistics-probability",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probability",
+        "ipa": "/ˌprɒb.əˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xác suất",
+        "example": "Probability describes how likely something is to happen.",
+        "familyId": "statistics-probability",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "graph",
+        "ipa": "/ɡrɑːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biểu đồ, đồ thị",
+        "example": "The graph shows changes in temperature.",
+        "familyId": "statistics-probability",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chart",
+        "ipa": "/tʃɑːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biểu đồ",
+        "example": "A pie chart shows proportions clearly.",
+        "familyId": "statistics-probability",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "median",
+        "ipa": "/ˈmiː.di.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trung vị",
+        "example": "The median is the middle value in a data set.",
+        "familyId": "statistics-probability",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calculus",
+        "ipa": "/ˈkæl.kjə.ləs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giải tích",
+        "example": "Calculus studies change and motion using limits and derivatives.",
+        "familyId": "calculus",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "limit",
+        "ipa": "/ˈlɪm.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giới hạn",
+        "example": "A limit describes the value a function approaches.",
+        "familyId": "calculus",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "derivative",
+        "ipa": "/dɪˈrɪv.ə.tɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đạo hàm",
+        "example": "The derivative measures the rate of change of a function.",
+        "familyId": "calculus",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "differentiate",
+        "ipa": "/ˌdɪf.əˈren.ʃi.eɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lấy đạo hàm, vi phân",
+        "example": "Students learn how to differentiate polynomial functions.",
+        "familyId": "calculus",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "differentiation",
+        "ipa": "/ˌdɪf.əˌren.ʃiˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép lấy đạo hàm, vi phân",
+        "example": "Differentiation is used to find gradients of curves.",
+        "familyId": "calculus",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "integral",
+        "ipa": "/ˈɪn.tɪ.ɡrəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tích phân",
+        "example": "An integral can represent the area under a curve.",
+        "familyId": "calculus",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "integrate",
+        "ipa": "/ˈɪn.tɪ.ɡreɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lấy tích phân",
+        "example": "We integrate the function to find the total area.",
+        "familyId": "calculus",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "integration",
+        "ipa": "/ˌɪn.tɪˈɡreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép tích phân",
+        "example": "Integration is the reverse process of differentiation in many cases.",
+        "familyId": "calculus",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slope",
+        "ipa": "/sləʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "độ dốc, hệ số góc",
+        "example": "The slope of the tangent shows the instantaneous rate of change.",
+        "familyId": "calculus",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tangent",
+        "ipa": "/ˈtæn.dʒənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiếp tuyến",
+        "example": "A tangent touches a curve at one point.",
+        "familyId": "calculus",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "curve",
+        "ipa": "/kɜːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường cong",
+        "example": "The curve rises steeply near the origin.",
+        "familyId": "calculus",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "continuous",
+        "ipa": "/kənˈtɪn.ju.əs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "liên tục",
+        "example": "A continuous function has no sudden breaks in its graph.",
+        "familyId": "calculus",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "continuity",
+        "ipa": "/ˌkɒn.tɪˈnjuː.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính liên tục",
+        "example": "Continuity is an important idea in calculus.",
+        "familyId": "calculus",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rate of change",
+        "ipa": "/ˌreɪt əv ˈtʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tốc độ thay đổi",
+        "example": "The derivative gives the rate of change at a point.",
+        "familyId": "calculus",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "maximum",
+        "ipa": "/ˈmæk.sɪ.məm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị lớn nhất, cực đại",
+        "example": "The maximum occurs where the graph reaches its highest point.",
+        "familyId": "calculus",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "minimum",
+        "ipa": "/ˈmɪn.ɪ.məm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị nhỏ nhất, cực tiểu",
+        "example": "The minimum value of the function is zero.",
+        "familyId": "calculus",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sequence",
+        "ipa": "/ˈsiː.kwəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dãy số",
+        "example": "A sequence is an ordered list of numbers.",
+        "familyId": "calculus",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "series",
+        "ipa": "/ˈsɪə.riːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuỗi số",
+        "example": "A series is the sum of the terms of a sequence.",
+        "familyId": "calculus",
+        "familyOrder": 18,
+        "tags": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,1704 @@
+{
+  "_meta": {
+    "topicId": "sports",
+    "topicName": "Thể thao",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Sports (B1-B2)",
+    "totalCards": 130,
+    "totalFamilies": 10,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung bo sung cho chu de The thao, da loc tranh trung word voi cac topic seed hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "athlete",
+        "ipa": "/ˈæθ.liːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vận động viên",
+        "example": "Every athlete trains hard before a major competition.",
+        "familyId": "general-sports",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "athletics",
+        "ipa": "/æθˈlet.ɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "môn điền kinh",
+        "example": "Athletics includes running, jumping, and throwing events.",
+        "familyId": "general-sports",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "championship",
+        "ipa": "/ˈtʃæm.pi.ən.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giải vô địch",
+        "example": "The national championship takes place every year.",
+        "familyId": "general-sports",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "competition",
+        "ipa": "/ˌkɑːm.pəˈtɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc thi đấu",
+        "example": "The swimming competition attracted hundreds of participants.",
+        "familyId": "general-sports",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "competitor",
+        "ipa": "/kəmˈpet.ɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đối thủ, người thi đấu",
+        "example": "Each competitor must register before the deadline.",
+        "familyId": "general-sports",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sportsmanship",
+        "ipa": "/ˈspɔːrts.mən.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tinh thần thể thao",
+        "example": "Good sportsmanship means respecting your opponent.",
+        "familyId": "general-sports",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tournament",
+        "ipa": "/ˈtʊr.nə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giải đấu",
+        "example": "The tennis tournament lasts two weeks.",
+        "familyId": "general-sports",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "league",
+        "ipa": "/liːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giải liên đoàn, liên đoàn",
+        "example": "The team was promoted to the top league.",
+        "familyId": "general-sports",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fixture",
+        "ipa": "/ˈfɪks.tʃɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lịch thi đấu, trận đấu theo lịch",
+        "example": "The fixture list was released at the start of the season.",
+        "familyId": "general-sports",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "season ticket",
+        "ipa": "/ˈsiː.zən ˌtɪk.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vé mùa giải",
+        "example": "A season ticket gives access to all home games.",
+        "familyId": "general-sports",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fair play",
+        "ipa": "/ˌfer ˈpleɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chơi đẹp, tinh thần fair play",
+        "example": "Fair play is valued more than winning at all costs.",
+        "familyId": "general-sports",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "team spirit",
+        "ipa": "/ˈtiːm ˌspɪr.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tinh thần đồng đội",
+        "example": "Strong team spirit helped them win the final.",
+        "familyId": "general-sports",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "morale",
+        "ipa": "/məˈræl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tinh thần, nhuệ khí",
+        "example": "The coach worked hard to boost team morale.",
+        "familyId": "general-sports",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stadium",
+        "ipa": "/ˈsteɪ.di.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân vận động",
+        "example": "The stadium holds over 60,000 spectators.",
+        "familyId": "venues-facilities",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arena",
+        "ipa": "/əˈriː.nə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đấu trường, nhà thi đấu",
+        "example": "The basketball arena was packed for the final.",
+        "familyId": "venues-facilities",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pitch",
+        "ipa": "/pɪtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân cỏ (bóng đá)",
+        "example": "The pitch was in perfect condition for the match.",
+        "familyId": "venues-facilities",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "court",
+        "ipa": "/kɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân (tennis, bóng rổ)",
+        "example": "Players warmed up on the court before the game.",
+        "familyId": "venues-facilities",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "track",
+        "ipa": "/træk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường chạy",
+        "example": "The 400-metre track surrounds the football field.",
+        "familyId": "venues-facilities",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "home ground",
+        "ipa": "/ˈhoʊm ˌɡraʊnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân nhà",
+        "example": "Playing on home ground gives teams an advantage.",
+        "familyId": "venues-facilities",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "home advantage",
+        "ipa": "/ˈhoʊm ədˌvæn.t̬ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lợi thế sân nhà",
+        "example": "Home advantage often leads to more wins.",
+        "familyId": "venues-facilities",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "away game",
+        "ipa": "/əˈweɪ ˌɡeɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trận đấu sân khách",
+        "example": "The team struggled in the away game.",
+        "familyId": "venues-facilities",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scoreboard",
+        "ipa": "/ˈskɔːr.bɔːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng tỉ số",
+        "example": "The scoreboard showed a tied result at halftime.",
+        "familyId": "venues-facilities",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "field event",
+        "ipa": "/ˈfiːld ɪˌvent/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "môn thi trên sân (nhảy, ném)",
+        "example": "The long jump is a popular field event.",
+        "familyId": "track-field",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "track event",
+        "ipa": "/ˈtræk ɪˌvent/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "môn thi trên đường chạy",
+        "example": "The 100-metre dash is the fastest track event.",
+        "familyId": "track-field",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marathon",
+        "ipa": "/ˈmær.ə.θɑːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc chạy marathon",
+        "example": "She completed her first marathon in under four hours.",
+        "familyId": "track-field",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sprint",
+        "ipa": "/sprɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chạy nước rút",
+        "example": "The sprint requires explosive speed.",
+        "familyId": "track-field",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relay race",
+        "ipa": "/rɪˈleɪ ˌreɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chạy tiếp sức",
+        "example": "Each runner covers one leg of the relay race.",
+        "familyId": "track-field",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurdle",
+        "ipa": "/ˈhɝː.dəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rào chắn, môn chạy vượt rào",
+        "example": "She cleared every hurdle without slowing down.",
+        "familyId": "track-field",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "long jump",
+        "ipa": "/ˈlɑːŋ ˌdʒʌmp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhảy xa",
+        "example": "His long jump measured over eight metres.",
+        "familyId": "track-field",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "high jump",
+        "ipa": "/ˈhaɪ ˌdʒʌmp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhảy cao",
+        "example": "The high jump bar was raised to two metres.",
+        "familyId": "track-field",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pole vault",
+        "ipa": "/ˈpoʊl ˌvɑːlt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhảy sào",
+        "example": "Pole vault requires both speed and technique.",
+        "familyId": "track-field",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "javelin",
+        "ipa": "/ˈdʒæv.lɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "môn ném lao",
+        "example": "The javelin flew over 80 metres.",
+        "familyId": "track-field",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discus",
+        "ipa": "/ˈdɪs.kəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "môn ném đĩa",
+        "example": "She won gold in the discus throw.",
+        "familyId": "track-field",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shot put",
+        "ipa": "/ˈʃɑːt ˌpʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "môn đẩy tạ",
+        "example": "Shot put athletes need great upper-body strength.",
+        "familyId": "track-field",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triathlon",
+        "ipa": "/traɪˈæθ.lɑːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ba môn phối hợp",
+        "example": "A triathlon combines swimming, cycling, and running.",
+        "familyId": "track-field",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decathlon",
+        "ipa": "/dɪˈkæθ.lɑːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "mười môn phối hợp",
+        "example": "The decathlon tests athletes across ten events.",
+        "familyId": "track-field",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "goalkeeper",
+        "ipa": "/ˈɡoʊlˌkiː.pɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ môn",
+        "example": "The goalkeeper made a brilliant save.",
+        "familyId": "football-terms",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "striker",
+        "ipa": "/ˈstraɪ.kɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền đạo",
+        "example": "The striker scored twice in the first half.",
+        "familyId": "football-terms",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "midfielder",
+        "ipa": "/ˈmɪdˌfiːl.dɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền vệ",
+        "example": "The midfielder controlled the pace of the game.",
+        "familyId": "football-terms",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "defender",
+        "ipa": "/dɪˈfen.dɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hậu vệ",
+        "example": "The defender blocked the shot on the goal line.",
+        "familyId": "football-terms",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "substitute",
+        "ipa": "/ˈsʌb.stɪ.tuːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cầu thủ dự bị",
+        "example": "The substitute came on in the second half.",
+        "familyId": "football-terms",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "referee",
+        "ipa": "/ˌref.əˈriː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trọng tài",
+        "example": "The referee awarded a penalty kick.",
+        "familyId": "football-terms",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foul",
+        "ipa": "/faʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lỗi phạm luật",
+        "example": "The foul was committed near the penalty area.",
+        "familyId": "football-terms",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "penalty",
+        "ipa": "/ˈpen.əl.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả phạt đền",
+        "example": "He scored from the penalty spot.",
+        "familyId": "football-terms",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "free kick",
+        "ipa": "/ˈfriː ˌkɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả đá phạt",
+        "example": "The free kick curled over the wall.",
+        "familyId": "football-terms",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "corner kick",
+        "ipa": "/ˈkɔːr.nɚ ˌkɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả phạt góc",
+        "example": "A corner kick led to the winning goal.",
+        "familyId": "football-terms",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offside",
+        "ipa": "/ˌɑːfˈsaɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việt vị",
+        "example": "The goal was disallowed for offside.",
+        "familyId": "football-terms",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yellow card",
+        "ipa": "/ˈjel.oʊ ˌkɑːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ vàng",
+        "example": "He received a yellow card for a late tackle.",
+        "familyId": "football-terms",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "red card",
+        "ipa": "/ˈred ˌkɑːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ đỏ",
+        "example": "A red card means the player must leave the field.",
+        "familyId": "football-terms",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hat trick",
+        "ipa": "/ˈhæt ˌtrɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú hat-trick (ghi 3 bàn)",
+        "example": "The forward completed a hat trick before halftime.",
+        "familyId": "football-terms",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "own goal",
+        "ipa": "/ˌoʊn ˈɡoʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bàn phản lưới nhà",
+        "example": "An own goal gave the visitors the lead.",
+        "familyId": "football-terms",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clean sheet",
+        "ipa": "/ˌkliːn ˈʃiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trận giữ sạch lưới",
+        "example": "The team kept a clean sheet for the third game.",
+        "familyId": "football-terms",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kickoff",
+        "ipa": "/ˈkɪk.ɑːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giờ bắt đầu trận đấu",
+        "example": "Kickoff is scheduled for 8 PM.",
+        "familyId": "football-terms",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "halftime",
+        "ipa": "/ˈhæf.taɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giờ nghỉ giữa hiệp",
+        "example": "The score was 1-0 at halftime.",
+        "familyId": "football-terms",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extra time",
+        "ipa": "/ˈek.strə ˌtaɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệp phụ",
+        "example": "The match went to extra time after a draw.",
+        "familyId": "football-terms",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stoppage time",
+        "ipa": "/ˈstɑː.pɪdʒ ˌtaɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thời gian bù giờ",
+        "example": "A goal in stoppage time decided the match.",
+        "familyId": "football-terms",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "formation",
+        "ipa": "/fɔːrˈmeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đội hình",
+        "example": "The coach changed the formation at halftime.",
+        "familyId": "football-terms",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counterattack",
+        "ipa": "/ˈkaʊn.t̬ɚ.əˌtæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phản công",
+        "example": "A quick counterattack led to the second goal.",
+        "familyId": "football-terms",
+        "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possession",
+        "ipa": "/pəˈzeʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền kiểm soát bóng",
+        "example": "The team had 60 percent possession.",
+        "familyId": "football-terms",
+        "familyOrder": 23,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "assist",
+        "ipa": "/əˈsɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường kiến tạo",
+        "example": "The midfielder provided the assist for the goal.",
+        "familyId": "football-terms",
+        "familyOrder": 24,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relegation",
+        "ipa": "/ˌrel.ɪˈɡeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xuống hạng",
+        "example": "Relegation was confirmed after the final match.",
+        "familyId": "football-terms",
+        "familyOrder": 25,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "promotion",
+        "ipa": "/prəˈmoʊ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thăng hạng",
+        "example": "The club celebrated promotion to the top division.",
+        "familyId": "football-terms",
+        "familyOrder": 26,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "derby",
+        "ipa": "/ˈdɝː.bi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trận derby (đội cùng thành phố)",
+        "example": "The local derby attracted a full stadium.",
+        "familyId": "football-terms",
+        "familyOrder": 27,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rivalry",
+        "ipa": "/ˈraɪ.vəl.ri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kình địch",
+        "example": "The rivalry between the two clubs is legendary.",
+        "familyId": "football-terms",
+        "familyOrder": 28,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ace",
+        "ipa": "/eɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú giao bóng ăn điểm trực tiếp",
+        "example": "She hit 12 aces during the match.",
+        "familyId": "tennis-terms",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deuce",
+        "ipa": "/duːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "điểm hòa 40-40",
+        "example": "The game reached deuce three times.",
+        "familyId": "tennis-terms",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "match point",
+        "ipa": "/ˈmætʃ ˌpɔɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điểm kết thúc trận",
+        "example": "He saved two match points before winning.",
+        "familyId": "tennis-terms",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break point",
+        "ipa": "/ˈbreɪk ˌpɔɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "điểm phá giao bóng",
+        "example": "She converted the break point to take the lead.",
+        "familyId": "tennis-terms",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "volley",
+        "ipa": "/ˈvɑː.li/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú đánh bóng chưa nảy",
+        "example": "A sharp volley at the net won the point.",
+        "familyId": "tennis-terms",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "backhand",
+        "ipa": "/ˈbæk.hænd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú đánh trái tay",
+        "example": "Her backhand is one of the best on tour.",
+        "familyId": "tennis-terms",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forehand",
+        "ipa": "/ˈfɔːr.hænd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú đánh thuận tay",
+        "example": "He hit a powerful forehand down the line.",
+        "familyId": "tennis-terms",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rally",
+        "ipa": "/ˈræl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "pha bóng qua lại",
+        "example": "The rally lasted over 30 shots.",
+        "familyId": "tennis-terms",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smash",
+        "ipa": "/smæʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú đập bóng",
+        "example": "The smash was too fast to return.",
+        "familyId": "tennis-terms",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lob",
+        "ipa": "/lɑːb/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cú bóng bổng qua đầu",
+        "example": "A perfect lob sailed over the opponent.",
+        "familyId": "tennis-terms",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drop shot",
+        "ipa": "/ˈdrɑːp ˌʃɑːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cú thả nhẹ qua lưới",
+        "example": "The drop shot caught the opponent off guard.",
+        "familyId": "tennis-terms",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "singles",
+        "ipa": "/ˈsɪŋ.ɡəlz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đánh đơn",
+        "example": "She won the singles title for the third time.",
+        "familyId": "tennis-terms",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "doubles",
+        "ipa": "/ˈdʌb.əlz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đánh đôi",
+        "example": "They partnered in doubles at the Olympics.",
+        "familyId": "tennis-terms",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grand slam",
+        "ipa": "/ˌɡrænd ˈslæm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giải Grand Slam",
+        "example": "Winning all four grand slams is extremely rare.",
+        "familyId": "tennis-terms",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tiebreak",
+        "ipa": "/ˈtaɪ.breɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "loạt tie-break",
+        "example": "The first set was decided by a tiebreak.",
+        "familyId": "tennis-terms",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seeding",
+        "ipa": "/ˈsiː.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xếp hạng hạt giống",
+        "example": "Seeding determines the draw for the tournament.",
+        "familyId": "tennis-terms",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wild card",
+        "ipa": "/ˈwaɪld ˌkɑːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "suất đặc cách",
+        "example": "The young player received a wild card entry.",
+        "familyId": "tennis-terms",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "head coach",
+        "ipa": "/ˈhed ˌkoʊtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huấn luyện viên trưởng",
+        "example": "The head coach announced the starting lineup.",
+        "familyId": "coaching-training",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "assistant coach",
+        "ipa": "/əˈsɪs.tənt ˌkoʊtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trợ lý huấn luyện viên",
+        "example": "The assistant coach led the training session.",
+        "familyId": "coaching-training",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fitness trainer",
+        "ipa": "/ˈfɪt.nəs ˌtreɪ.nɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huấn luyện viên thể lực",
+        "example": "The fitness trainer designed a new program.",
+        "familyId": "coaching-training",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "physiotherapist",
+        "ipa": "/ˌfɪz.i.oʊˈθer.ə.pɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chuyên viên vật lý trị liệu",
+        "example": "The physiotherapist treated the knee injury.",
+        "familyId": "coaching-training",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cool-down",
+        "ipa": "/ˈkuːl ˌdaʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giai đoạn hạ nhiệt sau tập",
+        "example": "A proper cool-down prevents muscle soreness.",
+        "familyId": "coaching-training",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stretching",
+        "ipa": "/ˈstretʃ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài tập giãn cơ",
+        "example": "Stretching before exercise reduces injury risk.",
+        "familyId": "coaching-training",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stamina",
+        "ipa": "/ˈstæm.ə.nə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sức bền, thể lực",
+        "example": "Long-distance runners need excellent stamina.",
+        "familyId": "coaching-training",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agility",
+        "ipa": "/əˈdʒɪl.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự nhanh nhẹn",
+        "example": "Agility drills improve a player's reaction time.",
+        "familyId": "coaching-training",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interval training",
+        "ipa": "/ˈɪn.t̬ɚ.vəl ˌtreɪ.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tập luyện xen kẽ cường độ",
+        "example": "Interval training alternates high and low effort.",
+        "familyId": "coaching-training",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "circuit training",
+        "ipa": "/ˈsɝː.kɪt ˌtreɪ.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tập luyện theo vòng",
+        "example": "Circuit training targets different muscle groups.",
+        "familyId": "coaching-training",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tactics",
+        "ipa": "/ˈtæk.tɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến thuật",
+        "example": "The coach explained the tactics before the game.",
+        "familyId": "coaching-training",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strategy",
+        "ipa": "/ˈstræt̬.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến lược",
+        "example": "A defensive strategy helped protect the lead.",
+        "familyId": "coaching-training",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lineup",
+        "ipa": "/ˈlaɪn.ʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đội hình ra sân",
+        "example": "The lineup was announced one hour before kickoff.",
+        "familyId": "coaching-training",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "captain",
+        "ipa": "/ˈkæp.tɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đội trưởng",
+        "example": "The captain led the team onto the pitch.",
+        "familyId": "coaching-training",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "medal",
+        "ipa": "/ˈmed.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huy chương",
+        "example": "She won a gold medal at the Olympics.",
+        "familyId": "results-records",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gold medal",
+        "ipa": "/ˈɡoʊld ˌmed.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huy chương vàng",
+        "example": "The swimmer earned a gold medal in the 200m.",
+        "familyId": "results-records",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "silver medal",
+        "ipa": "/ˈsɪl.vɚ ˌmed.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huy chương bạc",
+        "example": "A silver medal is still a great achievement.",
+        "familyId": "results-records",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bronze medal",
+        "ipa": "/ˈbrɑːnz ˌmed.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huy chương đồng",
+        "example": "He took the bronze medal in the final event.",
+        "familyId": "results-records",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "podium",
+        "ipa": "/ˈpoʊ.di.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bục nhận giải",
+        "example": "Three athletes stood on the podium.",
+        "familyId": "results-records",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "record-breaking",
+        "ipa": "/ˈrek.ɚd ˌbreɪ.kɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phá kỷ lục",
+        "example": "It was a record-breaking performance.",
+        "familyId": "results-records",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "personal best",
+        "ipa": "/ˌpɝː.sən.əl ˈbest/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thành tích cá nhân tốt nhất",
+        "example": "She achieved a personal best in the 100m.",
+        "familyId": "results-records",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "world record",
+        "ipa": "/ˌwɝːld ˈrek.ɚd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỷ lục thế giới",
+        "example": "The world record stood for over ten years.",
+        "familyId": "results-records",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comeback",
+        "ipa": "/ˈkʌm.bæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc lội ngược dòng",
+        "example": "The team made an incredible comeback.",
+        "familyId": "results-records",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "underdog",
+        "ipa": "/ˈʌn.dɚ.dɑːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đội cửa dưới",
+        "example": "The underdog surprised everyone by winning.",
+        "familyId": "results-records",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dark horse",
+        "ipa": "/ˌdɑːrk ˈhɔːrs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ngựa ô, ứng viên bất ngờ",
+        "example": "The dark horse reached the semifinal.",
+        "familyId": "results-records",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "playoff",
+        "ipa": "/ˈpleɪ.ɑːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trận play-off",
+        "example": "The playoff decides who gets promoted.",
+        "familyId": "results-records",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quarterfinal",
+        "ipa": "/ˌkwɔːr.t̬ɚˈfaɪ.nəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tứ kết",
+        "example": "They were eliminated in the quarterfinal.",
+        "familyId": "results-records",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "semifinal",
+        "ipa": "/ˌsem.iˈfaɪ.nəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bán kết",
+        "example": "The semifinal attracted a huge audience.",
+        "familyId": "results-records",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scoreline",
+        "ipa": "/ˈskɔːr.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tỉ số trận đấu",
+        "example": "The scoreline did not reflect how close the game was.",
+        "familyId": "results-records",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "standings",
+        "ipa": "/ˈstæn.dɪŋz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng xếp hạng",
+        "example": "The team moved to the top of the standings.",
+        "familyId": "results-records",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spectator",
+        "ipa": "/ˈspek.teɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khán giả",
+        "example": "Over 50,000 spectators attended the match.",
+        "familyId": "fans-spectators",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supporter",
+        "ipa": "/səˈpɔːr.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổ động viên",
+        "example": "Loyal supporters travel to every away game.",
+        "familyId": "fans-spectators",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cheer",
+        "ipa": "/tʃɪr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cổ vũ, hò reo",
+        "example": "Fans cheer loudly when their team scores.",
+        "familyId": "fans-spectators",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chant",
+        "ipa": "/tʃænt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài hát cổ động",
+        "example": "The crowd sang a chant for the captain.",
+        "familyId": "fans-spectators",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banner",
+        "ipa": "/ˈbæn.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "băng-rôn",
+        "example": "Supporters held up a giant banner.",
+        "familyId": "fans-spectators",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mascot",
+        "ipa": "/ˈmæs.kɑːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "linh vật",
+        "example": "The team mascot entertained the crowd.",
+        "familyId": "fans-spectators",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "doping",
+        "ipa": "/ˈdoʊ.pɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sử dụng chất cấm",
+        "example": "Doping can lead to a lifetime ban.",
+        "familyId": "rules-discipline",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anti-doping",
+        "ipa": "/ˌæn.t̬i ˈdoʊ.pɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chống doping",
+        "example": "Anti-doping tests are conducted after every race.",
+        "familyId": "rules-discipline",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disqualification",
+        "ipa": "/dɪsˌkwɑː.lɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự truất quyền thi đấu",
+        "example": "Disqualification followed the failed drug test.",
+        "familyId": "rules-discipline",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suspension",
+        "ipa": "/səˈspen.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "án treo giò",
+        "example": "The player received a three-match suspension.",
+        "familyId": "rules-discipline",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "point deduction",
+        "ipa": "/ˈpɔɪnt dɪˌdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trừ điểm",
+        "example": "A point deduction dropped the team in the table.",
+        "familyId": "rules-discipline",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unsportsmanlike conduct",
+        "ipa": "/ʌnˈspɔːrts.mən.laɪk ˈkɑːn.dʌkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hành vi phi thể thao",
+        "example": "Unsportsmanlike conduct results in a penalty.",
+        "familyId": "rules-discipline",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transfer window",
+        "ipa": "/ˈtræns.fɝː ˌwɪn.doʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kỳ chuyển nhượng",
+        "example": "The club signed two players during the transfer window.",
+        "familyId": "rules-discipline",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transfer fee",
+        "ipa": "/ˈtræns.fɝː ˌfiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phí chuyển nhượng",
+        "example": "The transfer fee broke the club record.",
+        "familyId": "rules-discipline",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contract extension",
+        "ipa": "/ˈkɑːn.trækt ɪkˌsten.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "gia hạn hợp đồng",
+        "example": "The star player signed a contract extension.",
+        "familyId": "rules-discipline",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "squat",
+        "ipa": "/skwɑːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động tác ngồi xổm (squat)",
+        "example": "Add squats to your workout to build leg strength.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chase",
+        "ipa": "/tʃeɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đuổi theo, rượt",
+        "example": "The dog loves to chase the ball in the park.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eliminate",
+        "ipa": "/ɪˈlɪm.ɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "loại bỏ, loại khỏi cuộc đấu",
+        "example": "The team was eliminated in the quarter-finals.",
+        "familyId": "eliminate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elimination",
+        "ipa": "/ɪˌlɪm.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự loại bỏ, việc bị loại khỏi giải",
+        "example": "The elimination round decides who advances to the final.",
+        "familyId": "eliminate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

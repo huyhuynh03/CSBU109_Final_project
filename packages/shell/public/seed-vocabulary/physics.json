@@ -1,0 +1,638 @@
+{
+  "_meta": {
+    "topicId": "physics",
+    "topicName": "Physics",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Physics (B1-B2)",
+    "totalCards": 48,
+    "totalFamilies": 12,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung va thuat ngu mon Vat ly, gom luc va chuyen dong, nang luong, nhiet, dien-tu, cau truc nguyen tu/co hoc hat co ban, song-truong-am-thanh-anh sang, chat long va thi nghiem vat ly."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "physics",
+        "ipa": "/ˈfɪz.ɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vật lý",
+        "example": "Physics helps us understand energy, force and motion.",
+        "familyId": "physics-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "energy",
+        "ipa": "/ˈen.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năng lượng",
+        "example": "Energy can change from one form to another.",
+        "familyId": "physics-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "force",
+        "ipa": "/fɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lực",
+        "example": "A force can change the motion of an object.",
+        "familyId": "motion-forces",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "motion",
+        "ipa": "/ˈməʊ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chuyển động",
+        "example": "The motion of the ball was easy to predict.",
+        "familyId": "motion-forces",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speed",
+        "ipa": "/spiːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tốc độ",
+        "example": "Speed is distance divided by time.",
+        "familyId": "motion-forces",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "velocity",
+        "ipa": "/vəˈlɒs.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vận tốc",
+        "example": "Velocity includes speed and direction.",
+        "familyId": "motion-forces",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acceleration",
+        "ipa": "/əkˌsel.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia tốc",
+        "example": "Acceleration is a change in velocity.",
+        "familyId": "motion-forces",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gravity",
+        "ipa": "/ˈɡræv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trọng lực",
+        "example": "Gravity pulls objects toward Earth.",
+        "familyId": "motion-forces",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "friction",
+        "ipa": "/ˈfrɪk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ma sát",
+        "example": "Friction slows down moving objects.",
+        "familyId": "motion-forces",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mass",
+        "ipa": "/mæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khối lượng",
+        "example": "Mass is measured in kilograms.",
+        "familyId": "motion-forces",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weight",
+        "ipa": "/weɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trọng lượng",
+        "example": "Weight depends on gravity.",
+        "familyId": "motion-forces",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "work",
+        "ipa": "/wɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công",
+        "example": "In physics, work is done when a force moves an object.",
+        "familyId": "energy-work",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "power",
+        "ipa": "/ˈpaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công suất",
+        "example": "Power is the rate of doing work.",
+        "familyId": "energy-work",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kinetic energy",
+        "ipa": "/kɪˌnet.ɪk ˈen.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động năng",
+        "example": "A moving car has kinetic energy.",
+        "familyId": "energy-work",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "potential energy",
+        "ipa": "/pəˌten.ʃəl ˈen.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thế năng",
+        "example": "A raised object has potential energy.",
+        "familyId": "energy-work",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heat",
+        "ipa": "/hiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiệt",
+        "example": "Heat flows from hotter objects to cooler ones.",
+        "familyId": "heat-thermodynamics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "temperature",
+        "ipa": "/ˈtem.prə.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiệt độ",
+        "example": "Temperature measures how hot or cold something is.",
+        "familyId": "heat-thermodynamics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conduction",
+        "ipa": "/kənˈdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự dẫn nhiệt, dẫn điện",
+        "example": "Conduction transfers heat through a solid.",
+        "familyId": "heat-thermodynamics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convection",
+        "ipa": "/kənˈvek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đối lưu",
+        "example": "Convection occurs in liquids and gases.",
+        "familyId": "heat-thermodynamics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "radiation",
+        "ipa": "/ˌreɪ.diˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bức xạ",
+        "example": "The Sun transfers energy by radiation.",
+        "familyId": "heat-thermodynamics",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electricity",
+        "ipa": "/ɪˌlekˈtrɪs.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điện",
+        "example": "Electricity powers many household devices.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "current",
+        "ipa": "/ˈkʌr.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dòng điện",
+        "example": "Electric current flows through a circuit.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "voltage",
+        "ipa": "/ˈvəʊl.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điện áp",
+        "example": "Voltage pushes current around a circuit.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resistance",
+        "ipa": "/rɪˈzɪs.təns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điện trở, lực cản",
+        "example": "Resistance reduces the flow of current.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "circuit",
+        "ipa": "/ˈsɜː.kɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mạch điện",
+        "example": "A circuit must be complete for current to flow.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "magnet",
+        "ipa": "/ˈmæɡ.nət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nam châm",
+        "example": "A magnet attracts iron.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "magnetic field",
+        "ipa": "/mæɡˌnet.ɪk ˈfiːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "từ trường",
+        "example": "A magnetic field surrounds a magnet.",
+        "familyId": "electricity-magnetism",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wave",
+        "ipa": "/weɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sóng",
+        "example": "Sound travels as a wave.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sound",
+        "ipa": "/saʊnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "âm thanh",
+        "example": "Sound cannot travel through a vacuum.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frequency",
+        "ipa": "/ˈfriː.kwən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tần số",
+        "example": "Frequency is measured in hertz.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wavelength",
+        "ipa": "/ˈweɪv.leŋθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bước sóng",
+        "example": "Different colours of light have different wavelengths.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "light",
+        "ipa": "/laɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ánh sáng",
+        "example": "Light travels very fast.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reflection",
+        "ipa": "/rɪˈflek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phản xạ",
+        "example": "Reflection occurs when light bounces off a surface.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refraction",
+        "ipa": "/rɪˈfræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khúc xạ",
+        "example": "Refraction bends light as it enters water.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lens",
+        "ipa": "/lenz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thấu kính",
+        "example": "A lens can focus light.",
+        "familyId": "waves-light-sound",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pressure",
+        "ipa": "/ˈpreʃ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "áp suất",
+        "example": "Pressure increases with depth in water.",
+        "familyId": "fluids",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "density",
+        "ipa": "/ˈden.sə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khối lượng riêng, mật độ",
+        "example": "Density is mass divided by volume.",
+        "familyId": "fluids",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "buoyancy",
+        "ipa": "/ˈbɔɪ.ən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lực nổi",
+        "example": "Buoyancy helps ships float.",
+        "familyId": "fluids",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experiment",
+        "ipa": "/ɪkˈsper.ɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thí nghiệm",
+        "example": "The experiment tested the effect of friction.",
+        "familyId": "physics-lab",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "atom",
+        "ipa": "/ˈæt.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên tử",
+        "example": "An atom contains a nucleus and electrons.",
+        "familyId": "atomic-physics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proton",
+        "ipa": "/ˈprəʊ.tɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "proton",
+        "example": "A proton is a positively charged particle in the nucleus.",
+        "familyId": "atomic-physics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electron",
+        "ipa": "/iˈlek.trɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "electron",
+        "example": "An electron is a negatively charged particle.",
+        "familyId": "atomic-physics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neutron",
+        "ipa": "/ˈnjuː.trɒn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "neutron",
+        "example": "A neutron is a neutral particle in the nucleus.",
+        "familyId": "atomic-physics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convergence",
+        "ipa": "/kənˈvɜː.dʒəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hội tụ",
+        "example": "Convergence can describe waves or rays coming together at a point.",
+        "familyId": "waves-fields",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divergence",
+        "ipa": "/daɪˈvɜː.dʒəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phân kỳ",
+        "example": "Divergence can describe rays or fields spreading out from a source.",
+        "familyId": "waves-fields",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cog",
+        "ipa": "/kɒɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bánh răng cưa",
+        "example": "Each cog in the machine must turn smoothly.",
+        "familyId": "cog",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experimentation",
+        "ipa": "/ɪkˌsperɪmenˈteɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thử nghiệm, sự thí nghiệm",
+        "example": "Scientific progress depends on constant experimentation.",
+        "familyId": "experiment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experimental",
+        "ipa": "/ɪkˌsperɪˈmentl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "mang tính thử nghiệm, thực nghiệm",
+        "example": "The drug is still at an experimental stage.",
+        "familyId": "experiment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

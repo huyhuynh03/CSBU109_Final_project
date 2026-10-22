@@ -1,0 +1,1172 @@
+{
+  "_meta": {
+    "topicId": "family-relationships",
+    "topicName": "Family & Relationships",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Family & Relationships (B1-B2)",
+    "totalCards": 87,
+    "totalFamilies": 37,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Gia dinh & Cac moi quan he, gom thanh family de hoc theo cum tu lien quan. Bao gom thanh vien gia dinh, hon nhan, quan he xa hoi, cam xuc va xung dot."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "family",
+        "ipa": "/ˈfæm.əl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia đình",
+        "example": "Family plays an important role in shaping a person's values.",
+        "note": "Collocations: nuclear family, extended family, family values",
+        "familyId": "family",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "familial",
+        "ipa": "/fəˈmɪl.i.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về gia đình, có tính gia đình",
+        "example": "Children need a strong familial bond during their early years.",
+        "note": "Formal adjective for family-related matters",
+        "familyId": "family",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relative",
+        "ipa": "/ˈrel.ə.tɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người thân, họ hàng",
+        "example": "Many relatives came to the wedding from different provinces.",
+        "note": "Synonym: family member",
+        "familyId": "relative",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relate",
+        "ipa": "/rɪˈleɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "liên quan, kết nối; thấu hiểu",
+        "example": "Teenagers often find it hard to relate to their parents.",
+        "note": "Phrasal use: relate to someone/something",
+        "familyId": "relationship",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "related",
+        "ipa": "/rɪˈleɪ.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có liên quan; có quan hệ họ hàng",
+        "example": "The two families are closely related by marriage.",
+        "familyId": "relationship",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parent",
+        "ipa": "/ˈpeə.rənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cha hoặc mẹ, phụ huynh",
+        "example": "Every parent wants their child to feel safe and loved.",
+        "note": "Collocations: single parent, working parent",
+        "familyId": "parent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parental",
+        "ipa": "/pəˈren.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về cha mẹ, của phụ huynh",
+        "example": "Parental support can improve children's academic performance.",
+        "note": "Collocations: parental guidance, parental control, parental responsibility",
+        "familyId": "parent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parenting",
+        "ipa": "/ˈpeə.rən.tɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc nuôi dạy con cái",
+        "example": "Good parenting requires patience, consistency, and empathy.",
+        "familyId": "parent",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "father",
+        "ipa": "/ˈfɑː.ðər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bố, cha",
+        "example": "My father taught me how to ride a bicycle.",
+        "familyId": "father",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mother",
+        "ipa": "/ˈmʌð.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mẹ",
+        "example": "Her mother encouraged her to follow her dreams.",
+        "familyId": "mother",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "child",
+        "ipa": "/tʃaɪld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đứa trẻ, con",
+        "example": "Every child deserves a loving and supportive home.",
+        "note": "Plural: children",
+        "familyId": "child",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "children",
+        "ipa": "/ˈtʃɪl.drən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "những đứa trẻ, các con",
+        "example": "Parents should spend quality time with their children.",
+        "note": "Plural form of child",
+        "familyId": "child",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "childhood",
+        "ipa": "/ˈtʃaɪld.hʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tuổi thơ",
+        "example": "She has many happy memories from her childhood.",
+        "familyId": "child",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sibling",
+        "ipa": "/ˈsɪb.lɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "anh chị em ruột",
+        "example": "Having a sibling can teach children how to share and cooperate.",
+        "note": "Gender-neutral word for brother or sister",
+        "familyId": "sibling",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brother",
+        "ipa": "/ˈbrʌð.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "anh trai, em trai",
+        "example": "My brother and I used to play football after school.",
+        "familyId": "sibling",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sister",
+        "ipa": "/ˈsɪs.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chị gái, em gái",
+        "example": "She is very close to her older sister.",
+        "familyId": "sibling",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grandparent",
+        "ipa": "/ˈɡrænˌpeə.rənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ông hoặc bà",
+        "example": "Many children learn family traditions from their grandparents.",
+        "familyId": "grandparent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grandfather",
+        "ipa": "/ˈɡrænˌfɑː.ðər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ông",
+        "example": "My grandfather often tells stories about his youth.",
+        "familyId": "grandparent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grandmother",
+        "ipa": "/ˈɡrænˌmʌð.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bà",
+        "example": "His grandmother taught him how to cook traditional dishes.",
+        "familyId": "grandparent",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grandchild",
+        "ipa": "/ˈɡræn.tʃaɪld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cháu nội, cháu ngoại",
+        "example": "She loves spending weekends with her grandchildren.",
+        "familyId": "grandparent",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cousin",
+        "ipa": "/ˈkʌz.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "anh chị em họ",
+        "example": "I meet my cousins every year during Tet holiday.",
+        "familyId": "extended-family",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uncle",
+        "ipa": "/ˈʌŋ.kəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chú, bác, cậu, dượng",
+        "example": "My uncle works as a doctor in a rural hospital.",
+        "familyId": "extended-family",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aunt",
+        "ipa": "/ɑːnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cô, dì, bác gái, mợ, thím",
+        "example": "Her aunt gave her useful advice about university life.",
+        "familyId": "extended-family",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nephew",
+        "ipa": "/ˈnef.juː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cháu trai của cô/chú/bác/cậu/dì",
+        "example": "He bought a toy car for his nephew.",
+        "familyId": "extended-family",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "niece",
+        "ipa": "/niːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cháu gái của cô/chú/bác/cậu/dì",
+        "example": "My niece is learning to speak English at school.",
+        "familyId": "extended-family",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generation",
+        "ipa": "/ˌdʒen.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thế hệ",
+        "example": "There is often a communication gap between different generations.",
+        "note": "Collocations: younger generation, older generation, generation gap",
+        "familyId": "generation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generational",
+        "ipa": "/ˌdʒen.əˈreɪ.ʃən.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về thế hệ",
+        "example": "Generational differences can influence attitudes toward marriage.",
+        "familyId": "generation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ancestry",
+        "ipa": "/ˈæn.ses.tri/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nguồn gốc tổ tiên, dòng dõi",
+        "example": "He is interested in tracing his family ancestry.",
+        "familyId": "ancestor",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "descendant",
+        "ipa": "/dɪˈsen.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hậu duệ, con cháu đời sau",
+        "example": "The descendants of the family still live in the same village.",
+        "familyId": "ancestor",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marriage",
+        "ipa": "/ˈmær.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hôn nhân, cuộc hôn nhân",
+        "example": "A successful marriage requires communication and compromise.",
+        "note": "Collocations: arrange a marriage, marriage breakdown, happy marriage",
+        "familyId": "marry",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marry",
+        "ipa": "/ˈmær.i/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kết hôn, cưới",
+        "example": "They decided to marry after five years of dating.",
+        "familyId": "marry",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "married",
+        "ipa": "/ˈmær.id/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đã kết hôn",
+        "example": "She is married and has two children.",
+        "note": "Be married to someone, not with someone",
+        "familyId": "marry",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spouse",
+        "ipa": "/spaʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vợ hoặc chồng",
+        "example": "Employees can include their spouse in the health insurance plan.",
+        "note": "Formal gender-neutral word for husband or wife",
+        "familyId": "spouse",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "husband",
+        "ipa": "/ˈhʌz.bənd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chồng",
+        "example": "Her husband helps with housework every evening.",
+        "familyId": "spouse",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wife",
+        "ipa": "/waɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vợ",
+        "example": "His wife is a teacher at a local school.",
+        "note": "Plural: wives",
+        "familyId": "spouse",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "couple",
+        "ipa": "/ˈkʌp.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cặp đôi, vợ chồng",
+        "example": "The young couple moved into their first apartment together.",
+        "familyId": "couple",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "partner",
+        "ipa": "/ˈpɑːt.nər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bạn đời, người yêu; đối tác",
+        "example": "She and her partner share the responsibility of raising their child.",
+        "note": "Can mean romantic partner or business partner",
+        "familyId": "partner",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "partnership",
+        "ipa": "/ˈpɑːt.nə.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mối quan hệ hợp tác, quan hệ bạn đời",
+        "example": "Their marriage is a partnership based on equality.",
+        "familyId": "partner",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wedding",
+        "ipa": "/ˈwed.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đám cưới, lễ cưới",
+        "example": "They invited all their relatives to the wedding ceremony.",
+        "note": "Collocations: wedding ceremony, wedding reception",
+        "familyId": "wedding",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "engagement",
+        "ipa": "/ɪnˈɡeɪdʒ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đính hôn, lễ đính hôn",
+        "example": "They announced their engagement at a family dinner.",
+        "familyId": "engage",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "engaged",
+        "ipa": "/ɪnˈɡeɪdʒd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đã đính hôn",
+        "example": "My sister is engaged to her university classmate.",
+        "note": "Be engaged to someone",
+        "familyId": "engage",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divorce",
+        "ipa": "/dɪˈvɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ly hôn, vụ ly hôn",
+        "example": "Divorce can be stressful for both parents and children.",
+        "familyId": "divorce",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divorce",
+        "ipa": "/dɪˈvɔːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ly hôn",
+        "example": "The couple decided to divorce after years of conflict.",
+        "familyId": "divorce",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "divorced",
+        "ipa": "/dɪˈvɔːst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đã ly hôn",
+        "example": "He is divorced but still has a good relationship with his children.",
+        "familyId": "divorce",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "single-parent family",
+        "ipa": "/ˌsɪŋ.ɡəl ˈpeə.rənt ˈfæm.əl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia đình đơn thân",
+        "example": "Children from single-parent families may need additional support.",
+        "note": "Also: single-parent household",
+        "familyId": "family-type",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nuclear family",
+        "ipa": "/ˌnjuː.kli.ər ˈfæm.əl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia đình hạt nhân",
+        "example": "A nuclear family usually consists of parents and their children.",
+        "familyId": "family-type",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extended family",
+        "ipa": "/ɪkˌsten.dɪd ˈfæm.əl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia đình nhiều thế hệ, đại gia đình",
+        "example": "Living with an extended family can provide emotional support.",
+        "familyId": "family-type",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blended family",
+        "ipa": "/ˌblen.dɪd ˈfæm.əl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "gia đình tái hợp, gia đình có con riêng của vợ/chồng",
+        "example": "A blended family may include stepchildren from previous marriages.",
+        "familyId": "family-type",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stepfather",
+        "ipa": "/ˈstepˌfɑː.ðər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cha dượng, bố dượng",
+        "example": "Her stepfather has always treated her with kindness.",
+        "familyId": "step-family",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stepmother",
+        "ipa": "/ˈstepˌmʌð.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mẹ kế, mẹ ghẻ",
+        "example": "The film shows a positive relationship between a boy and his stepmother.",
+        "familyId": "step-family",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stepchild",
+        "ipa": "/ˈstep.tʃaɪld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "con riêng của vợ hoặc chồng",
+        "example": "He has two stepchildren from his wife's first marriage.",
+        "familyId": "step-family",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adoption",
+        "ipa": "/əˈdɒp.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhận con nuôi",
+        "example": "Adoption gives many children the chance to grow up in a stable home.",
+        "familyId": "adopt",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adopt",
+        "ipa": "/əˈdɒpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận nuôi, nhận làm con nuôi",
+        "example": "The couple decided to adopt a child.",
+        "familyId": "adopt",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adoptive",
+        "ipa": "/əˈdɒp.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về việc nhận nuôi, là cha mẹ nuôi",
+        "example": "His adoptive parents supported him throughout his education.",
+        "familyId": "adopt",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upbringing",
+        "ipa": "/ˈʌpˌbrɪŋ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nuôi dạy, cách được giáo dục từ nhỏ",
+        "example": "A child's upbringing can affect their confidence and behaviour.",
+        "note": "Collocation: have a strict/liberal upbringing",
+        "familyId": "upbringing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "raise",
+        "ipa": "/reɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nuôi nấng, nuôi dạy",
+        "example": "She was raised by her grandparents in the countryside.",
+        "note": "American English often uses raise a child; British English also uses bring up",
+        "familyId": "upbringing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bring up",
+        "ipa": "/brɪŋ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nuôi dạy, nuôi lớn",
+        "example": "They brought up their children to respect others.",
+        "familyId": "upbringing",
+        "familyOrder": 3,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bond",
+        "ipa": "/bɒnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự gắn bó, mối liên kết",
+        "example": "The bond between parents and children is often very strong.",
+        "note": "Collocations: family bond, emotional bond",
+        "familyId": "bond",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bond",
+        "ipa": "/bɒnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gắn kết, tạo sự gắn bó",
+        "example": "Shared experiences can help family members bond with each other.",
+        "familyId": "bond",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attachment",
+        "ipa": "/əˈtætʃ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự gắn bó, sự quyến luyến",
+        "example": "A secure attachment helps children develop emotional stability.",
+        "familyId": "attach",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "affectionate",
+        "ipa": "/əˈfek.ʃən.ət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trìu mến, giàu tình cảm",
+        "example": "He has an affectionate relationship with his grandparents.",
+        "familyId": "affection",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "support",
+        "ipa": "/səˈpɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hỗ trợ, sự ủng hộ",
+        "example": "Emotional support from family can reduce stress.",
+        "familyId": "support",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "responsible",
+        "ipa": "/rɪˈspɒn.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có trách nhiệm, chịu trách nhiệm",
+        "example": "Older siblings are sometimes responsible for looking after younger ones.",
+        "familyId": "responsible",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dependent",
+        "ipa": "/dɪˈpen.dənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phụ thuộc, lệ thuộc",
+        "example": "Young children are dependent on adults for care and protection.",
+        "note": "Be dependent on someone/something",
+        "familyId": "depend",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "independent",
+        "ipa": "/ˌɪn.dɪˈpen.dənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "độc lập, tự lập",
+        "example": "Many young adults want to become financially independent from their parents.",
+        "familyId": "depend",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dependence",
+        "ipa": "/dɪˈpen.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự phụ thuộc, sự lệ thuộc",
+        "example": "Long-term financial dependence can create tension in a family.",
+        "familyId": "depend",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "independence",
+        "ipa": "/ˌɪn.dɪˈpen.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự độc lập, tính tự lập",
+        "example": "Teenagers often seek more independence from their parents.",
+        "familyId": "depend",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conflict",
+        "ipa": "/kənˈflɪkt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "mâu thuẫn, trái ngược",
+        "example": "His career goals sometimes conflict with family expectations.",
+        "familyId": "conflict",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "argument",
+        "ipa": "/ˈɑːɡ.jə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc tranh cãi, lý lẽ",
+        "example": "They had an argument about household chores.",
+        "familyId": "argue",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reconciliation",
+        "ipa": "/ˌrek.ənˌsɪl.iˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hòa giải, sự làm lành",
+        "example": "Reconciliation is possible when both sides are willing to listen.",
+        "familyId": "reconcile",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caregiver",
+        "ipa": "/ˈkeəˌɡɪv.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người chăm sóc",
+        "example": "A caregiver must be patient and attentive to a child's needs.",
+        "familyId": "care",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "care",
+        "ipa": "/keər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chăm sóc, sự quan tâm",
+        "example": "Elderly parents often need special care from their families.",
+        "familyId": "care",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "care for",
+        "ipa": "/keə fɔːr/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chăm sóc, quan tâm đến",
+        "example": "Adult children may need to care for their elderly parents.",
+        "familyId": "care",
+        "familyOrder": 3,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elderly",
+        "ipa": "/ˈel.dəl.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cao tuổi, lớn tuổi",
+        "example": "Many elderly people prefer to live near their children.",
+        "note": "Polite adjective for old people",
+        "familyId": "elderly",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "senior citizen",
+        "ipa": "/ˌsiː.ni.ə ˈsɪt.ɪ.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người cao tuổi",
+        "example": "The community centre offers free classes for senior citizens.",
+        "familyId": "elderly",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adolescent",
+        "ipa": "/ˌæd.əˈles.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thanh thiếu niên",
+        "example": "Adolescents often experience pressure from both family and friends.",
+        "familyId": "adolescent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adolescence",
+        "ipa": "/ˌæd.əˈles.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tuổi vị thành niên, tuổi thanh thiếu niên",
+        "example": "Adolescence is a period when young people search for identity.",
+        "familyId": "adolescent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "friend",
+        "ipa": "/frend/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bạn bè, người bạn",
+        "example": "A true friend supports you in difficult times.",
+        "familyId": "friend",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "friendly",
+        "ipa": "/ˈfrend.li/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thân thiện",
+        "example": "Her friendly attitude helped her build good relationships at work.",
+        "familyId": "friend",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "companion",
+        "ipa": "/kəmˈpæn.jən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người bạn đồng hành, bạn thân thiết",
+        "example": "His dog became his closest companion after retirement.",
+        "familyId": "companion",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "companionship",
+        "ipa": "/kəmˈpæn.jən.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tình bạn đồng hành, sự bầu bạn",
+        "example": "Many elderly people value companionship more than material gifts.",
+        "familyId": "companion",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mom",
+        "ipa": "/mɑːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "mẹ (thân mật)",
+        "example": "My mom cooks dinner every evening.",
+        "familyId": "mother",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dad",
+        "ipa": "/dæd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bố (thân mật)",
+        "example": "My dad taught me how to ride a bike.",
+        "familyId": "father",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kid",
+        "ipa": "/kɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đứa trẻ (thân mật)",
+        "example": "The kids are playing in the garden.",
+        "familyId": "child",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "son",
+        "ipa": "/sʌn/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con trai",
+        "example": "Their son is studying at university.",
+        "familyId": "child",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "daughter",
+        "ipa": "/ˈdɔːtər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con gái",
+        "example": "Their daughter just started school.",
+        "familyId": "child",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "baby",
+        "ipa": "/ˈbeɪbi/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "em bé",
+        "example": "The baby is sleeping in the next room.",
+        "familyId": "child",
+        "familyOrder": 7,
+        "tags": []
+      }
+    }
+  ]
+}

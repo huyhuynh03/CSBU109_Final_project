@@ -1,0 +1,1184 @@
+{
+  "_meta": {
+    "topicId": "arts",
+    "topicName": "Nghệ thuật",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Arts (B1-B2)",
+    "totalCards": 90,
+    "totalFamilies": 11,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung bo sung cho chu de Nghe thuat, da tranh trung voi cac topic seed hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "art",
+        "ipa": "/ɑːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghệ thuật",
+        "example": "Art can express ideas without words.",
+        "familyId": "arts-foundation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "artist",
+        "ipa": "/ˈɑːr.t̬ɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghệ sĩ",
+        "example": "The artist presented a new series of works.",
+        "familyId": "arts-foundation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "artistic",
+        "ipa": "/ɑːrˈtɪs.tɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có tính nghệ thuật",
+        "example": "She has a strong artistic sense.",
+        "familyId": "arts-foundation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "artwork",
+        "ipa": "/ˈɑːrt.wɝːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tác phẩm nghệ thuật",
+        "example": "The artwork was displayed in the hall.",
+        "familyId": "arts-foundation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aesthetic",
+        "ipa": "/esˈθet̬.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc thẩm mỹ",
+        "example": "The room has a simple aesthetic style.",
+        "familyId": "arts-foundation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "visual",
+        "ipa": "/ˈvɪʒ.u.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc thị giác",
+        "example": "Visual art often depends on color and form.",
+        "familyId": "arts-foundation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decorative",
+        "ipa": "/ˈdek.ər.ə.t̬ɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có tính trang trí",
+        "example": "The wall has decorative patterns.",
+        "familyId": "arts-foundation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ornament",
+        "ipa": "/ˈɔːr.nə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đồ trang trí, họa tiết trang trí",
+        "example": "The ornament was made by hand.",
+        "familyId": "arts-foundation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "painter",
+        "ipa": "/ˈpeɪn.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "họa sĩ",
+        "example": "The painter used bright colors.",
+        "familyId": "arts-visual",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paint",
+        "ipa": "/peɪnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vẽ, sơn",
+        "example": "They paint landscapes every weekend.",
+        "familyId": "arts-visual",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drawing",
+        "ipa": "/ˈdrɑː.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản vẽ, tranh vẽ",
+        "example": "Her drawing shows careful observation.",
+        "familyId": "arts-visual",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sketch",
+        "ipa": "/sketʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản phác thảo",
+        "example": "The sketch captured the model quickly.",
+        "familyId": "arts-visual",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sketchbook",
+        "ipa": "/ˈsketʃ.bʊk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sổ phác thảo",
+        "example": "He carries a sketchbook everywhere.",
+        "familyId": "arts-visual",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "illustration",
+        "ipa": "/ˌɪl.əˈstreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hình minh họa",
+        "example": "The book contains beautiful illustration work.",
+        "familyId": "arts-visual",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "illustrator",
+        "ipa": "/ˈɪl.ə.streɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "họa sĩ minh họa",
+        "example": "The illustrator designed the cover.",
+        "familyId": "arts-visual",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "portrait",
+        "ipa": "/ˈpɔːr.trət/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tranh chân dung",
+        "example": "The portrait shows a serious expression.",
+        "familyId": "arts-visual",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "landscape",
+        "ipa": "/ˈlænd.skeɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tranh phong cảnh",
+        "example": "The landscape includes mountains and a river.",
+        "familyId": "arts-visual",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "canvas",
+        "ipa": "/ˈkæn.vəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vải bạt vẽ tranh",
+        "example": "The artist prepared a large canvas.",
+        "familyId": "arts-visual",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "palette",
+        "ipa": "/ˈpæl.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng màu",
+        "example": "The palette contained warm colors.",
+        "familyId": "arts-visual",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "watercolor",
+        "ipa": "/ˈwɑː.t̬ɚˌkʌl.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "màu nước, tranh màu nước",
+        "example": "Watercolor creates soft transparent effects.",
+        "familyId": "arts-techniques",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acrylic",
+        "ipa": "/əˈkrɪl.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "màu acrylic",
+        "example": "Acrylic dries faster than many paints.",
+        "familyId": "arts-techniques",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sculpture",
+        "ipa": "/ˈskʌlp.tʃɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tác phẩm điêu khắc",
+        "example": "The sculpture stands in the garden.",
+        "familyId": "arts-techniques",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sculptor",
+        "ipa": "/ˈskʌlp.tɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhà điêu khắc",
+        "example": "The sculptor worked with stone.",
+        "familyId": "arts-techniques",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carving",
+        "ipa": "/ˈkɑːr.vɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tác phẩm chạm khắc",
+        "example": "The carving shows traditional symbols.",
+        "familyId": "arts-techniques",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ceramic",
+        "ipa": "/səˈræm.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ gốm, chất liệu gốm",
+        "example": "The ceramic was fired in a kiln.",
+        "familyId": "arts-techniques",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pottery",
+        "ipa": "/ˈpɑː.t̬ɚ.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ gốm",
+        "example": "Pottery is both useful and artistic.",
+        "familyId": "arts-techniques",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mosaic",
+        "ipa": "/moʊˈzeɪ.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tranh khảm",
+        "example": "The floor has a colorful mosaic.",
+        "familyId": "arts-techniques",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fresco",
+        "ipa": "/ˈfres.koʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tranh tường trên vữa ướt",
+        "example": "The old church contains a fresco.",
+        "familyId": "arts-techniques",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mural",
+        "ipa": "/ˈmjʊr.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tranh tường",
+        "example": "A mural brightened the neighborhood.",
+        "familyId": "arts-techniques",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "installation",
+        "ipa": "/ˌɪn.stəˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nghệ thuật sắp đặt",
+        "example": "The installation filled the entire room.",
+        "familyId": "arts-techniques",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exhibit",
+        "ipa": "/ɪɡˈzɪb.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiện vật trưng bày",
+        "example": "Each exhibit has a short description.",
+        "familyId": "arts-techniques",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "masterpiece",
+        "ipa": "/ˈmæs.tɚ.piːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kiệt tác",
+        "example": "The painting is considered a masterpiece.",
+        "familyId": "arts-techniques",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "composition",
+        "ipa": "/ˌkɑːm.pəˈzɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bố cục",
+        "example": "Good composition guides the viewer’s eye.",
+        "familyId": "arts-principles",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phối cảnh, góc nhìn",
+        "example": "Perspective makes the street look deep.",
+        "familyId": "arts-principles",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "symmetry",
+        "ipa": "/ˈsɪm.ə.tri/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự đối xứng",
+        "example": "Symmetry gives the design balance.",
+        "familyId": "arts-principles",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contrast",
+        "ipa": "/ˈkɑːn.træst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "độ tương phản",
+        "example": "Strong contrast makes the image dramatic.",
+        "familyId": "arts-principles",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "texture",
+        "ipa": "/ˈteks.tʃɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kết cấu bề mặt",
+        "example": "The texture of the sculpture feels rough.",
+        "familyId": "arts-principles",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shade",
+        "ipa": "/ʃeɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sắc độ, vùng tối",
+        "example": "The artist added shade under the tree.",
+        "familyId": "arts-principles",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hue",
+        "ipa": "/hjuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sắc màu",
+        "example": "The hue changes under different light.",
+        "familyId": "arts-principles",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "line",
+        "ipa": "/laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường nét",
+        "example": "A simple line can suggest movement.",
+        "familyId": "arts-principles",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shape",
+        "ipa": "/ʃeɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình dạng",
+        "example": "The design repeats the same shape.",
+        "familyId": "arts-principles",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "form",
+        "ipa": "/fɔːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hình khối, dạng thức",
+        "example": "The form of the statue is elegant.",
+        "familyId": "arts-principles",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pattern",
+        "ipa": "/ˈpæt̬.ɚn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoa văn, mẫu hình",
+        "example": "The pattern appears on the fabric.",
+        "familyId": "arts-principles",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "abstract",
+        "ipa": "/æbˈstrækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trừu tượng",
+        "example": "Abstract art does not always show real objects.",
+        "familyId": "arts-styles",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surreal",
+        "ipa": "/səˈriː.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "siêu thực",
+        "example": "The image has a surreal atmosphere.",
+        "familyId": "arts-styles",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "modernist",
+        "ipa": "/ˈmɑː.dɚ.nɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc chủ nghĩa hiện đại",
+        "example": "Modernist artists challenged old rules.",
+        "familyId": "arts-styles",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "classical",
+        "ipa": "/ˈklæs.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cổ điển",
+        "example": "Classical art values harmony and order.",
+        "familyId": "arts-styles",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "creativity",
+        "ipa": "/ˌkriː.eɪˈtɪv.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự sáng tạo",
+        "example": "Creativity helps artists solve problems.",
+        "familyId": "arts-creation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspiration",
+        "ipa": "/ˌɪn.spəˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nguồn cảm hứng",
+        "example": "Nature is a common source of inspiration.",
+        "familyId": "arts-creation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expression",
+        "ipa": "/ɪkˈspreʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự biểu đạt",
+        "example": "Art can be a form of emotional expression.",
+        "familyId": "arts-creation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impression",
+        "ipa": "/ɪmˈpreʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ấn tượng",
+        "example": "The first impression of the artwork was powerful.",
+        "familyId": "arts-creation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interpret",
+        "ipa": "/ɪnˈtɝː.prət/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "diễn giải, hiểu theo cách riêng",
+        "example": "Viewers may interpret the image differently.",
+        "familyId": "arts-creation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depict",
+        "ipa": "/dɪˈpɪkt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "miêu tả, khắc họa",
+        "example": "The mural depicts daily life in the village.",
+        "familyId": "arts-creation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "portray",
+        "ipa": "/pɔːrˈtreɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khắc họa, mô tả",
+        "example": "The film portrays an artist’s struggle.",
+        "familyId": "arts-creation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "represent",
+        "ipa": "/ˌrep.rɪˈzent/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đại diện, thể hiện",
+        "example": "The colors represent hope and peace.",
+        "familyId": "arts-creation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calligraphy",
+        "ipa": "/kəˈlɪɡ.rə.fi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thư pháp",
+        "example": "Calligraphy turns writing into art.",
+        "familyId": "arts-craft",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "typography",
+        "ipa": "/taɪˈpɑː.ɡrə.fi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nghệ thuật chữ in",
+        "example": "Typography affects how a poster feels.",
+        "familyId": "arts-craft",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "printmaking",
+        "ipa": "/ˈprɪntˌmeɪ.kɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nghệ thuật in tranh",
+        "example": "Printmaking can produce many copies of an image.",
+        "familyId": "arts-craft",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "engraving",
+        "ipa": "/ɪnˈɡreɪ.vɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bản khắc, nghệ thuật khắc",
+        "example": "The engraving shows fine detail.",
+        "familyId": "arts-craft",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lithograph",
+        "ipa": "/ˈlɪθ.ə.ɡræf/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tranh in thạch bản",
+        "example": "The lithograph was signed by the artist.",
+        "familyId": "arts-craft",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "craft",
+        "ipa": "/kræft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghề thủ công, đồ thủ công",
+        "example": "The village is famous for traditional craft.",
+        "familyId": "arts-craft",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "craftsman",
+        "ipa": "/ˈkræfts.mən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thợ thủ công",
+        "example": "The craftsman carved the wood by hand.",
+        "familyId": "arts-craft",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "artisan",
+        "ipa": "/ˈɑːr.t̬ə.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghệ nhân thủ công",
+        "example": "The artisan makes pottery using old methods.",
+        "familyId": "arts-craft",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workshop",
+        "ipa": "/ˈwɝːk.ʃɑːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xưởng, buổi thực hành nghệ thuật",
+        "example": "The workshop teaches basic drawing skills.",
+        "familyId": "arts-craft",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "photography",
+        "ipa": "/fəˈtɑː.ɡrə.fi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhiếp ảnh",
+        "example": "Photography captures moments in visual form.",
+        "familyId": "arts-visual",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "photographer",
+        "ipa": "/fəˈtɑː.ɡrə.fɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhiếp ảnh gia",
+        "example": "The photographer waited for perfect light.",
+        "familyId": "arts-visual",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cinema",
+        "ipa": "/ˈsɪn.ə.mə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điện ảnh",
+        "example": "Cinema combines image, sound, and story.",
+        "familyId": "arts-performing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "film",
+        "ipa": "/fɪlm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phim",
+        "example": "The film won several art awards.",
+        "familyId": "arts-performing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "theatre",
+        "ipa": "/ˈθiː.ə.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân khấu, nhà hát",
+        "example": "The theatre was full on opening night.",
+        "familyId": "arts-performing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "performance",
+        "ipa": "/pɚˈfɔːr.məns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "buổi biểu diễn, màn trình diễn",
+        "example": "The performance received long applause.",
+        "familyId": "arts-performing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "performer",
+        "ipa": "/pɚˈfɔːr.mɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người biểu diễn",
+        "example": "Each performer wore a colorful costume.",
+        "familyId": "arts-performing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stage",
+        "ipa": "/steɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân khấu",
+        "example": "The dancer moved across the stage.",
+        "familyId": "arts-performing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "audience",
+        "ipa": "/ˈɑː.di.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khán giả",
+        "example": "The audience listened in silence.",
+        "familyId": "arts-performing",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rehearsal",
+        "ipa": "/rɪˈhɝː.səl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "buổi diễn tập",
+        "example": "The final rehearsal lasted three hours.",
+        "familyId": "arts-performing",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "costume",
+        "ipa": "/ˈkɑː.stuːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trang phục biểu diễn",
+        "example": "The costume matched the historical setting.",
+        "familyId": "arts-performing",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "makeup",
+        "ipa": "/ˈmeɪk.ʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa trang, lớp trang điểm",
+        "example": "Stage makeup makes expressions clearer.",
+        "familyId": "arts-performing",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "choreography",
+        "ipa": "/ˌkɔːr.iˈɑː.ɡrə.fi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "biên đạo múa",
+        "example": "The choreography was complex and energetic.",
+        "familyId": "arts-performing",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ballet",
+        "ipa": "/bæˈleɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "múa ba lê",
+        "example": "Ballet requires strength and control.",
+        "familyId": "arts-performing",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "opera",
+        "ipa": "/ˈɑː.pɚ.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhạc kịch opera",
+        "example": "Opera combines singing and drama.",
+        "familyId": "arts-performing",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "musical",
+        "ipa": "/ˈmjuː.zɪ.kəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhạc kịch",
+        "example": "The musical includes memorable songs.",
+        "familyId": "arts-performing",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "orchestra",
+        "ipa": "/ˈɔːr.kə.strə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dàn nhạc giao hưởng",
+        "example": "The orchestra performed a new composition.",
+        "familyId": "arts-music",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "symphony",
+        "ipa": "/ˈsɪm.fə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bản giao hưởng",
+        "example": "The symphony has four movements.",
+        "familyId": "arts-music",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "melody",
+        "ipa": "/ˈmel.ə.di/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giai điệu",
+        "example": "The melody is simple but beautiful.",
+        "familyId": "arts-music",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harmony",
+        "ipa": "/ˈhɑːr.mə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hòa âm, sự hài hòa",
+        "example": "Harmony gives depth to the song.",
+        "familyId": "arts-music",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beauty",
+        "ipa": "/ˈbjuː.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vẻ đẹp, người/vật đẹp",
+        "example": "The beauty of the painting left visitors speechless.",
+        "familyId": "arts-beauty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautify",
+        "ipa": "/ˈbjuː.t̬ə.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm đẹp, tô điểm",
+        "example": "The artist used soft colors to beautify the mural.",
+        "familyId": "arts-beauty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautiful",
+        "ipa": "/ˈbjuː.t̬ə.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đẹp, xinh đẹp",
+        "example": "She painted a beautiful landscape of the countryside.",
+        "familyId": "arts-beauty",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beautifully",
+        "ipa": "/ˈbjuː.t̬ə.fəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách đẹp đẽ, một cách hay",
+        "example": "The melody was beautifully performed by the orchestra.",
+        "familyId": "arts-beauty",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pretty",
+        "ipa": "/ˈprɪt.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "xinh đẹp, dễ nhìn",
+        "example": "The artist painted a pretty picture of the garden.",
+        "familyId": "pretty",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prettily",
+        "ipa": "/ˈprɪt.ɪ.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách xinh đẹp, một cách duyên dáng",
+        "example": "The dancer moved prettily across the stage.",
+        "familyId": "pretty",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

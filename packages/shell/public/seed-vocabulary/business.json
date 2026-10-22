@@ -1,0 +1,1496 @@
+{
+  "_meta": {
+    "topicId": "business",
+    "topicName": "Kinh doanh",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Business (B1-B2)",
+    "totalCards": 114,
+    "totalFamilies": 17,
+    "generatedAt": "2026-05-25",
+    "note": "Tu vung chu de Kinh doanh, bao gom quan ly, marketing, ban hang, hop dong, dam phan, khoi nghiep, thuong hieu va chien luoc kinh doanh."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "manage",
+        "ipa": "/ˈmænɪdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quản lý, điều hành",
+        "example": "She manages a team of fifteen people in the marketing department.",
+        "familyId": "business-management",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manager",
+        "ipa": "/ˈmænɪdʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người quản lý, giám đốc",
+        "example": "The new manager has introduced several changes to improve productivity.",
+        "familyId": "business-management",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "management",
+        "ipa": "/ˈmænɪdʒmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ban quản lý, sự quản lý",
+        "example": "Good time management is essential for success in business.",
+        "familyId": "business-management",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "director",
+        "ipa": "/dɪˈrektər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giám đốc, người chỉ đạo",
+        "example": "The director will give a speech at the annual general meeting tomorrow.",
+        "familyId": "business-management",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "executive",
+        "ipa": "/ɪɡˈzekjətɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người điều hành, lãnh đạo cấp cao",
+        "example": "Top executives often work long hours to meet ambitious targets.",
+        "familyId": "business-management",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leadership",
+        "ipa": "/ˈliːdərʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khả năng lãnh đạo, sự lãnh đạo",
+        "example": "Strong leadership is needed to guide the company through this difficult period.",
+        "familyId": "business-management",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oversee",
+        "ipa": "/ˌəʊ.vəˈsiː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giám sát",
+        "example": "She was hired to oversee the entire production process.",
+        "familyId": "business-management",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supervise",
+        "ipa": "/ˈsuːpərvaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giám sát, trông coi",
+        "example": "Her job is to supervise the daily operations of the warehouse.",
+        "familyId": "business-management",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supervisor",
+        "ipa": "/ˈsuːpərvaɪzər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người giám sát, quản đốc",
+        "example": "Please report any technical issues to your supervisor immediately.",
+        "familyId": "business-management",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delegate",
+        "ipa": "/ˈdelɪɡeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ủy quyền, giao việc",
+        "example": "Effective leaders know how to delegate tasks to their team members.",
+        "familyId": "business-management",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marketing",
+        "ipa": "/ˈmɑːrkɪtɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiếp thị, marketing",
+        "example": "The marketing team is preparing a new campaign for the summer season.",
+        "familyId": "business-marketing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advertise",
+        "ipa": "/ˈædvərtaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quảng cáo",
+        "example": "Many small businesses advertise their services on social media platforms.",
+        "familyId": "business-marketing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advertisement",
+        "ipa": "/ˌædvərˈtaɪzmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quảng cáo, mẩu quảng cáo",
+        "example": "I saw an advertisement for that new restaurant in the local newspaper.",
+        "familyId": "business-marketing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advertiser",
+        "ipa": "/ˈædvərtaɪzər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà quảng cáo, người đặt quảng cáo",
+        "example": "Major advertisers spend millions on television commercials every year.",
+        "familyId": "business-marketing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "promote",
+        "ipa": "/prəˈmoʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quảng bá, thăng chức",
+        "example": "The company is using influencers to promote its latest product line.",
+        "familyId": "business-marketing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "publicity",
+        "ipa": "/pʌbˈlɪs.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự quảng bá",
+        "example": "The new product received a lot of publicity in the media.",
+        "familyId": "business-marketing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "campaign",
+        "ipa": "/kæmˈpeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến dịch quảng cáo",
+        "example": "Their advertising campaign successfully attracted thousands of new customers.",
+        "familyId": "business-marketing",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "demographic",
+        "ipa": "/ˌdem.əˈɡræf.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhóm đối tượng",
+        "example": "Our product appeals to the 18-to-25 demographic.",
+        "familyId": "business-marketing",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "customer",
+        "ipa": "/ˈkʌstəmər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khách hàng",
+        "example": "Customer satisfaction is our top priority at this hotel.",
+        "familyId": "business-marketing",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "client",
+        "ipa": "/ˈklaɪənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khách hàng (dịch vụ chuyên môn)",
+        "example": "The lawyer met with her client to discuss the upcoming case.",
+        "familyId": "business-marketing",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sell",
+        "ipa": "/sel/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bán, kinh doanh",
+        "example": "This shop sells handmade jewelry from local artists.",
+        "familyId": "business-sales",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seller",
+        "ipa": "/ˈselər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người bán, bên bán",
+        "example": "The seller agreed to lower the price after some friendly discussion.",
+        "familyId": "business-sales",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sales",
+        "ipa": "/seɪlz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "doanh số, doanh thu bán hàng",
+        "example": "Sales have increased by twenty percent compared to last quarter.",
+        "familyId": "business-sales",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salesperson",
+        "ipa": "/ˈseɪlzpɜːrsən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân viên bán hàng",
+        "example": "A friendly salesperson helped me choose the perfect gift for my father.",
+        "familyId": "business-sales",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "procurement",
+        "ipa": "/prəˈkjʊə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mua sắm, thu mua",
+        "example": "The procurement department is responsible for sourcing raw materials.",
+        "familyId": "business-sales",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "negotiate",
+        "ipa": "/nɪˈɡoʊʃieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đàm phán, thương lượng",
+        "example": "They spent hours trying to negotiate a fair price for the building.",
+        "familyId": "business-sales",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "negotiation",
+        "ipa": "/nɪˌɡoʊʃiˈeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc đàm phán, sự thương lượng",
+        "example": "After lengthy negotiations, both sides reached a satisfactory agreement.",
+        "familyId": "business-sales",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bargain",
+        "ipa": "/ˈbɑːrɡən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "món hời, mặc cả",
+        "example": "I got a real bargain on this jacket during the winter sale.",
+        "familyId": "business-sales",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discount",
+        "ipa": "/ˈdɪskaʊnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giảm giá, chiết khấu",
+        "example": "Members of our loyalty program receive a ten percent discount on every purchase.",
+        "familyId": "business-sales",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offer",
+        "ipa": "/ˈɔːfər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đề nghị, chào bán",
+        "example": "The store is offering a special deal on laptops this weekend.",
+        "familyId": "business-sales",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contract",
+        "ipa": "/ˈkɑːntrækt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hợp đồng",
+        "example": "Please read the contract carefully before signing it.",
+        "familyId": "business-contract",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agreement",
+        "ipa": "/əˈɡriːmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thỏa thuận, hiệp định",
+        "example": "The two parties finally reached an agreement after months of discussion.",
+        "familyId": "business-contract",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clause",
+        "ipa": "/klɔːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điều khoản",
+        "example": "There is a clause in the contract that allows either party to cancel.",
+        "familyId": "business-contract",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terms",
+        "ipa": "/tɜːrmz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "các điều khoản, điều kiện",
+        "example": "We need to review the terms of the agreement before making a decision.",
+        "familyId": "business-contract",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stipulation",
+        "ipa": "/ˌstɪp.jʊˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điều khoản quy định",
+        "example": "One stipulation of the contract is that all work must be completed by March.",
+        "familyId": "business-contract",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sign",
+        "ipa": "/saɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ký tên, ký kết",
+        "example": "Both directors will sign the partnership agreement next Monday.",
+        "familyId": "business-contract",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "signature",
+        "ipa": "/ˈsɪɡnətʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chữ ký",
+        "example": "Your signature is required at the bottom of every page of the document.",
+        "familyId": "business-contract",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "timeline",
+        "ipa": "/ˈtaɪm.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mốc thời gian",
+        "example": "The project timeline shows all key dates from start to delivery.",
+        "familyId": "business-contract",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breach",
+        "ipa": "/briːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vi phạm hợp đồng",
+        "example": "A breach of contract can result in legal action against the company.",
+        "familyId": "business-contract",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "obligation",
+        "ipa": "/ˌɑːblɪˈɡeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghĩa vụ, trách nhiệm",
+        "example": "Each party has clear obligations under the new business agreement.",
+        "familyId": "business-contract",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "startup",
+        "ipa": "/ˈstɑːrtʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty khởi nghiệp",
+        "example": "He founded a tech startup right after graduating from university.",
+        "familyId": "business-startup",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debut",
+        "ipa": "/ˈdeɪ.bjuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ra mắt",
+        "example": "The company made its debut on the stock exchange last Monday.",
+        "familyId": "business-startup",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scale",
+        "ipa": "/skeɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mở rộng quy mô",
+        "example": "It is difficult to scale a business without enough financial resources.",
+        "familyId": "business-startup",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expand",
+        "ipa": "/ɪkˈspænd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mở rộng, phát triển",
+        "example": "They are planning to expand their operations into Southeast Asia next year.",
+        "familyId": "business-startup",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expansion",
+        "ipa": "/ɪkˈspænʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự mở rộng, sự phát triển",
+        "example": "The expansion into European markets has been remarkably successful so far.",
+        "familyId": "business-startup",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disrupt",
+        "ipa": "/dɪsˈrʌpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phá vỡ, đổi mới ngành",
+        "example": "Streaming services have disrupted the traditional television industry.",
+        "familyId": "business-startup",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "innovate",
+        "ipa": "/ˈɪnəveɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đổi mới, sáng tạo",
+        "example": "Successful companies must constantly innovate to keep pace with change.",
+        "familyId": "business-startup",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disruptive",
+        "ipa": "/dɪsˈrʌp.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mang tính đột phá",
+        "example": "Their disruptive technology changed the way people shop online.",
+        "familyId": "business-startup",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prototype",
+        "ipa": "/ˈprəʊ.tə.taɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên mẫu",
+        "example": "The team built a working prototype before seeking investor funding.",
+        "familyId": "business-startup",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "venture",
+        "ipa": "/ˈventʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dự án kinh doanh mạo hiểm",
+        "example": "Their joint venture in renewable energy has shown promising early results.",
+        "familyId": "business-startup",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brand",
+        "ipa": "/brænd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương hiệu, nhãn hiệu",
+        "example": "Apple has become one of the most valuable brands in the world.",
+        "familyId": "business-brand",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "branding",
+        "ipa": "/ˈbrændɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc xây dựng thương hiệu",
+        "example": "Strong branding helps customers recognize and trust your products quickly.",
+        "familyId": "business-brand",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trademark",
+        "ipa": "/ˈtreɪdmɑːrk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhãn hiệu đăng ký, dấu hiệu đặc trưng",
+        "example": "The company registered its logo as a trademark to protect its identity.",
+        "familyId": "business-brand",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "logo",
+        "ipa": "/ˈloʊɡoʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biểu tượng, logo",
+        "example": "They redesigned their logo to give the brand a more modern appearance.",
+        "familyId": "business-brand",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tagline",
+        "ipa": "/ˈtæɡ.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khẩu hiệu thương hiệu",
+        "example": "A good tagline makes a brand instantly recognizable to customers.",
+        "familyId": "business-brand",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reputation",
+        "ipa": "/ˌrepjuˈteɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "danh tiếng, uy tín",
+        "example": "It takes years to build a good reputation but only moments to lose it.",
+        "familyId": "business-brand",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quality",
+        "ipa": "/ˈkwɑːləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất lượng",
+        "example": "Customers are willing to pay more for products of high quality.",
+        "familyId": "business-brand",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "competitive",
+        "ipa": "/kəmˈpetətɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có tính cạnh tranh",
+        "example": "Our prices are very competitive compared to other shops in the area.",
+        "familyId": "business-brand",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rival",
+        "ipa": "/ˈraɪ.vəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đối thủ",
+        "example": "The two companies have been rivals in the smartphone market for years.",
+        "familyId": "business-brand",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "market share",
+        "ipa": "/ˌmɑː.kɪt ˈʃeər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị phần",
+        "example": "The company increased its market share by launching affordable products.",
+        "familyId": "business-brand",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "roadmap",
+        "ipa": "/ˈrəʊd.mæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lộ trình",
+        "example": "The CEO presented a five-year roadmap for the company's growth.",
+        "familyId": "business-strategy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strategic",
+        "ipa": "/strəˈtiːdʒɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc chiến lược, có tính chiến lược",
+        "example": "The new office location was chosen for strategic reasons.",
+        "familyId": "business-strategy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blueprint",
+        "ipa": "/ˈbluː.prɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kế hoạch chi tiết",
+        "example": "The management team created a blueprint for the company's expansion.",
+        "familyId": "business-strategy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planning",
+        "ipa": "/ˈplænɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc lập kế hoạch",
+        "example": "Careful planning is essential for the success of any business project.",
+        "familyId": "business-strategy",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "goal",
+        "ipa": "/ɡoʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mục tiêu",
+        "example": "Our main goal this year is to double the number of regular customers.",
+        "familyId": "business-strategy",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "milestone",
+        "ipa": "/ˈmaɪl.stəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cột mốc",
+        "example": "Reaching one million users was a major milestone for the startup.",
+        "familyId": "business-strategy",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "core value",
+        "ipa": "/kɔːr ˈvæl.juː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị cốt lõi",
+        "example": "Integrity is one of the core values that guides our business decisions.",
+        "familyId": "business-strategy",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vision",
+        "ipa": "/ˈvɪʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầm nhìn",
+        "example": "The CEO shared his long-term vision for the company at the conference.",
+        "familyId": "business-strategy",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "implement",
+        "ipa": "/ˈɪmpləment/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thực hiện, triển khai",
+        "example": "The team will implement the new policy starting from next Monday.",
+        "familyId": "business-strategy",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "implementation",
+        "ipa": "/ˌɪmpləmenˈteɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thực thi, sự triển khai",
+        "example": "The implementation of the new system took several months to complete.",
+        "familyId": "business-strategy",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recruit",
+        "ipa": "/rɪˈkruːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tuyển dụng, chiêu mộ",
+        "example": "We need to recruit five new engineers before the end of the year.",
+        "familyId": "business-recruitment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recruitment",
+        "ipa": "/rɪˈkruːtmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc tuyển dụng",
+        "example": "The recruitment process usually takes about three weeks from start to finish.",
+        "familyId": "business-recruitment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hire",
+        "ipa": "/ˈhaɪər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thuê, tuyển nhân viên",
+        "example": "The restaurant plans to hire more staff before the busy summer season.",
+        "familyId": "business-recruitment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interview",
+        "ipa": "/ˈɪntərvjuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc phỏng vấn",
+        "example": "I have a job interview at a marketing agency tomorrow morning.",
+        "familyId": "business-recruitment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interviewer",
+        "ipa": "/ˈɪntərvjuːər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người phỏng vấn",
+        "example": "The interviewer asked several challenging questions about my previous experience.",
+        "familyId": "business-recruitment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "candidate",
+        "ipa": "/ˈkændɪdət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ứng viên",
+        "example": "Out of fifty candidates, only three were selected for the final round.",
+        "familyId": "business-recruitment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resume",
+        "ipa": "/ˈrezəmeɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sơ yếu lý lịch, CV",
+        "example": "Please send your resume and cover letter to the email address below.",
+        "familyId": "business-recruitment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "training",
+        "ipa": "/ˈtreɪnɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc đào tạo, huấn luyện",
+        "example": "All new employees attend a two-week training program before starting.",
+        "familyId": "business-recruitment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "applicant",
+        "ipa": "/ˈæplɪkənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người nộp đơn xin việc",
+        "example": "We received over a hundred applicants for the senior designer position.",
+        "familyId": "business-recruitment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "opening",
+        "ipa": "/ˈəʊ.pən.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vị trí tuyển dụng",
+        "example": "There are several job openings in the marketing department this month.",
+        "familyId": "business-recruitment",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "briefing",
+        "ipa": "/ˈbriː.fɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc họp ngắn",
+        "example": "The morning briefing keeps everyone updated on the day's priorities.",
+        "familyId": "business-meeting",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agenda",
+        "ipa": "/əˈdʒendə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình nghị sự, lịch trình họp",
+        "example": "Please send me the agenda for tomorrow's meeting before the end of today.",
+        "familyId": "business-meeting",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "presentation",
+        "ipa": "/ˌprezənˈteɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài thuyết trình",
+        "example": "She gave an excellent presentation on the company's new marketing strategy.",
+        "familyId": "business-meeting",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proposal",
+        "ipa": "/prəˈpoʊzəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đề xuất, bản đề nghị",
+        "example": "The board approved the proposal to open three new branches next year.",
+        "familyId": "business-meeting",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "report",
+        "ipa": "/rɪˈpɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "báo cáo",
+        "example": "The annual report shows that sales have grown by fifteen percent.",
+        "familyId": "business-meeting",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debrief",
+        "ipa": "/ˌdiːˈbriːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc họp rút kinh nghiệm",
+        "example": "After the project ended, the team held a debrief to discuss lessons learned.",
+        "familyId": "business-meeting",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conference",
+        "ipa": "/ˈkɑːnfərəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hội nghị, hội thảo",
+        "example": "She is attending an international business conference in Singapore next week.",
+        "familyId": "business-meeting",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "networking",
+        "ipa": "/ˈnetwɜːrkɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc xây dựng quan hệ, kết nối",
+        "example": "Networking events are great opportunities to meet potential business contacts.",
+        "familyId": "business-meeting",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brainstorm",
+        "ipa": "/ˈbreɪnstɔːrm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "động não, suy nghĩ tập thể",
+        "example": "The team will brainstorm new product ideas during the workshop tomorrow.",
+        "familyId": "business-meeting",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "summary",
+        "ipa": "/ˈsʌməri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản tóm tắt",
+        "example": "Could you write a brief summary of today's meeting and send it to everyone?",
+        "familyId": "business-meeting",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counter",
+        "ipa": "/ˈkaʊn.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quầy (thu ngân, phục vụ)",
+        "example": "Please pay for your items at the counter.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extent",
+        "ipa": "/ɪkˈstent/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mức độ, phạm vi",
+        "example": "To some extent, I agree with you.",
+        "familyId": "extend",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extend",
+        "ipa": "/ɪkˈstend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mở rộng, kéo dài; gia hạn",
+        "example": "They decided to extend the deadline by a week.",
+        "familyId": "extend",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extension",
+        "ipa": "/ɪkˈstenʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự mở rộng; sự gia hạn; phần mở rộng",
+        "example": "We applied for an extension of the contract.",
+        "familyId": "extend",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extensive",
+        "ipa": "/ɪkˈstensɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "rộng rãi, sâu rộng, quy mô lớn",
+        "example": "The report is based on extensive research.",
+        "familyId": "extend",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guarantee",
+        "ipa": "/ˌɡærənˈtiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đảm bảo, sự bảo hành; đảm bảo",
+        "example": "The product comes with a two-year guarantee.",
+        "familyId": "guarantee",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guaranteed",
+        "ipa": "/ˌɡærənˈtiːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "được đảm bảo, chắc chắn",
+        "example": "Success is not guaranteed, even with hard work.",
+        "familyId": "guarantee",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adjust",
+        "ipa": "/əˈdʒʌst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "điều chỉnh, chỉnh sửa",
+        "example": "We had to adjust our budget after the price increase.",
+        "familyId": "adjust",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adjusted",
+        "ipa": "/əˈdʒʌs.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đã được điều chỉnh",
+        "example": "The adjusted figures show a small profit this quarter.",
+        "familyId": "adjust",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compact",
+        "ipa": "/kəmˈpækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gọn gàng, nhỏ gọn",
+        "example": "This compact design saves a lot of space in the office.",
+        "familyId": "compact",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compactly",
+        "ipa": "/kəmˈpækt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách gọn gàng",
+        "example": "The tools are stored compactly in a small drawer.",
+        "familyId": "compact",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compaction",
+        "ipa": "/kəmˈpæk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự nén chặt",
+        "example": "Soil compaction can affect how well plants grow.",
+        "familyId": "compact",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspect",
+        "ipa": "/ɪnˈspekt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kiểm tra, thanh tra",
+        "example": "An inspector will inspect the building for safety issues.",
+        "familyId": "inspect",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspection",
+        "ipa": "/ɪnˈspek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiểm tra, thanh tra",
+        "example": "The fire inspection revealed several problems in the wiring.",
+        "familyId": "inspect",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspector",
+        "ipa": "/ɪnˈspek.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thanh tra viên, người giám sát",
+        "example": "The health inspector checked the cleanliness of the kitchen.",
+        "familyId": "inspect",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refurbish",
+        "ipa": "/ˌriːˈfɝː.bɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "tân trang, sửa sang lại",
+        "example": "The company plans to refurbish all its old computers.",
+        "familyId": "refurbish",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refurbishment",
+        "ipa": "/ˌriːˈfɝː.bɪʃ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tân trang, tu sửa",
+        "example": "The refurbishment of the hotel took nearly a year.",
+        "familyId": "refurbish",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warranty",
+        "ipa": "/ˈwɔːr.ən.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo hành, chế độ bảo hành",
+        "example": "The laptop comes with a two-year warranty.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantity",
+        "ipa": "/ˈkwɑːn.tə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số lượng",
+        "example": "We ordered a large quantity of paper for the office.",
+        "familyId": "quantity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantify",
+        "ipa": "/ˈkwɑːn.tə.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "định lượng, đo lường",
+        "example": "It is hard to quantify the exact impact of the policy.",
+        "familyId": "quantity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quantitative",
+        "ipa": "/ˈkwɑːn.tə.teɪ.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "định lượng (thuộc về số lượng)",
+        "example": "The report includes both quantitative and qualitative data.",
+        "familyId": "quantity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "receive",
+        "ipa": "/rɪˈsiːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận",
+        "example": "You will receive a confirmation email after booking.",
+        "familyId": "receive",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reception",
+        "ipa": "/rɪˈsep.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lễ tân, sự đón tiếp, bộ phận tiếp tân",
+        "example": "Please leave your keys at the reception desk.",
+        "familyId": "receive",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counterproductive",
+        "ipa": "/ˌkaʊn.tər.prəˈdʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phản tác dụng",
+        "example": "Working too many hours can be counterproductive for your health.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

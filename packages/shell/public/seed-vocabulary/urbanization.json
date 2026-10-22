@@ -1,0 +1,1223 @@
+{
+  "_meta": {
+    "topicId": "urbanization",
+    "topicName": "Đô thị hóa",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Urbanization (B1-B2)",
+    "totalCards": 93,
+    "totalFamilies": 12,
+    "generatedAt": "2026-05-26",
+    "note": "Tu vung chu de Do thi hoa, bao gom phat trien do thi, ha tang, quy hoach, nha o, giao thong do thi, va van de xa hoi do thi. KHONG trung lap voi cac topic khac (commute, pollution, sustainability v.v. da co o cac topic khac)."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "urbanize",
+        "ipa": "/ˈɜːbənaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đô thị hoá, biến thành đô thị",
+        "example": "Many rural areas have been urbanized in recent decades.",
+        "familyId": "urban-process",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urbanization",
+        "ipa": "/ˌɜːbənaɪˈzeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quá trình đô thị hoá",
+        "example": "Rapid urbanization has changed the country's landscape.",
+        "familyId": "urban-process",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urban",
+        "ipa": "/ˈɜːbən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về đô thị, thành thị",
+        "example": "Urban areas often have better access to public services.",
+        "familyId": "urban-process",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rural",
+        "ipa": "/ˈrʊərəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về nông thôn",
+        "example": "Many young people are leaving rural villages for the city.",
+        "familyId": "urban-process",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suburb",
+        "ipa": "/ˈsʌbɜːb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vùng ngoại ô",
+        "example": "She grew up in a quiet suburb outside London.",
+        "familyId": "urban-process",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suburban",
+        "ipa": "/səˈbɜːbən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về ngoại ô",
+        "example": "Suburban families often rely on cars for daily travel.",
+        "familyId": "urban-process",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outskirts",
+        "ipa": "/ˈaʊtskɜːts/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vùng rìa, ngoại vi thành phố",
+        "example": "A new shopping mall was built on the outskirts of town.",
+        "familyId": "urban-process",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "downtown",
+        "ipa": "/ˌdaʊnˈtaʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trung tâm thành phố",
+        "example": "Most offices are concentrated in downtown areas.",
+        "familyId": "urban-process",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metropolis",
+        "ipa": "/məˈtrɒpəlɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đô thị lớn, thủ phủ",
+        "example": "Tokyo is one of the largest metropolises in the world.",
+        "familyId": "urban-cities",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metropolitan",
+        "ipa": "/ˌmetrəˈpɒlɪtən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc đô thị lớn",
+        "example": "The metropolitan area has a population of over ten million.",
+        "familyId": "urban-cities",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "megacity",
+        "ipa": "/ˈmeɡəsɪti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "siêu đô thị (trên 10 triệu dân)",
+        "example": "Megacities face huge challenges in providing housing for all.",
+        "familyId": "urban-cities",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inner city",
+        "ipa": "/ˌɪnə ˈsɪti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu trung tâm cũ của thành phố",
+        "example": "Inner-city neighborhoods have benefited from new investment.",
+        "familyId": "urban-cities",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "satellite town",
+        "ipa": "/ˈsætəlaɪt taʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thành phố vệ tinh",
+        "example": "New satellite towns help reduce pressure on the capital.",
+        "familyId": "urban-cities",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "infrastructure",
+        "ipa": "/ˈɪnfrəstrʌktʃə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ sở hạ tầng",
+        "example": "The city is investing heavily in transport infrastructure.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "skyscraper",
+        "ipa": "/ˈskaɪskreɪpə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "toà nhà chọc trời",
+        "example": "Modern skyscrapers dominate the city skyline.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "high-rise",
+        "ipa": "/ˈhaɪraɪz/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc nhà cao tầng",
+        "example": "High-rise apartments are now common in the city center.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "skyline",
+        "ipa": "/ˈskaɪlaɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường chân trời thành phố",
+        "example": "The skyline of New York is famous around the world.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pavement",
+        "ipa": "/ˈpeɪvmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vỉa hè, lối đi bộ",
+        "example": "The pavement was crowded with shoppers and tourists.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sidewalk",
+        "ipa": "/ˈsaɪdwɔːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vỉa hè, lề đường (Mỹ)",
+        "example": "She tripped on a broken section of the sidewalk.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "streetlight",
+        "ipa": "/ˈstriːtlaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đèn đường",
+        "example": "Streetlights are slowly being replaced with LED versions.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intersection",
+        "ipa": "/ˌɪntəˈsekʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngã tư, giao lộ",
+        "example": "Traffic lights were installed at the busy intersection.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overpass",
+        "ipa": "/ˈəʊvəpɑːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cầu vượt",
+        "example": "A new overpass was built to ease traffic congestion.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "underpass",
+        "ipa": "/ˈʌndəpɑːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường ngầm, hầm chui",
+        "example": "Pedestrians can use the underpass to cross the highway.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tunnel",
+        "ipa": "/ˈtʌnəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường hầm",
+        "example": "The tunnel beneath the river opened last year.",
+        "familyId": "urban-infrastructure",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "city planning",
+        "ipa": "/ˈsɪti ˈplænɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy hoạch đô thị",
+        "example": "Good city planning improves quality of life for residents.",
+        "familyId": "urban-planning",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urban planner",
+        "ipa": "/ˈɜːbən ˈplænə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà quy hoạch đô thị",
+        "example": "The urban planner proposed a new pedestrian zone.",
+        "familyId": "urban-planning",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "masterplan",
+        "ipa": "/ˈmɑːstəplæn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản quy hoạch tổng thể",
+        "example": "The new masterplan covers the next twenty years of development.",
+        "familyId": "urban-planning",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "zone",
+        "ipa": "/zəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu vực được quy hoạch theo chức năng",
+        "example": "This zone is reserved for commercial use only.",
+        "familyId": "urban-planning",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "zoning",
+        "ipa": "/ˈzəʊnɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy hoạch phân khu chức năng",
+        "example": "Zoning laws separate residential and industrial areas.",
+        "familyId": "urban-planning",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "residential area",
+        "ipa": "/ˌrezɪˈdenʃəl ˈeəriə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu dân cư",
+        "example": "The proposal would convert the warehouse into a residential area.",
+        "familyId": "urban-planning",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commercial district",
+        "ipa": "/kəˈmɜːʃəl ˈdɪstrɪkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu thương mại",
+        "example": "The city's commercial district is bustling at lunchtime.",
+        "familyId": "urban-planning",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "industrial zone",
+        "ipa": "/ɪnˈdʌstriəl zəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu công nghiệp",
+        "example": "The industrial zone provides thousands of jobs.",
+        "familyId": "urban-planning",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "green space",
+        "ipa": "/ɡriːn speɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "không gian xanh trong đô thị",
+        "example": "Green spaces are vital for the well-being of city residents.",
+        "familyId": "urban-planning",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pedestrian zone",
+        "ipa": "/pəˈdestriən zəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu phố đi bộ",
+        "example": "The new pedestrian zone has revitalized local businesses.",
+        "familyId": "urban-planning",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "housing estate",
+        "ipa": "/ˈhaʊzɪŋ ɪˈsteɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu nhà ở quy hoạch",
+        "example": "She grew up on a small housing estate in the suburbs.",
+        "familyId": "urban-housing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "affordable housing",
+        "ipa": "/əˈfɔːdəbəl ˈhaʊzɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà ở giá phải chăng",
+        "example": "Affordable housing remains a major political issue.",
+        "familyId": "urban-housing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "public housing",
+        "ipa": "/ˈpʌblɪk ˈhaʊzɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà ở công cộng",
+        "example": "Public housing supports families on low incomes.",
+        "familyId": "urban-housing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "social housing",
+        "ipa": "/ˈsəʊʃəl ˈhaʊzɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà ở xã hội",
+        "example": "Social housing is run by the local council.",
+        "familyId": "urban-housing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rent",
+        "ipa": "/rent/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền thuê nhà",
+        "example": "Rent in the city has risen sharply this year.",
+        "familyId": "urban-housing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rental",
+        "ipa": "/ˈrentəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc thuê, tiền thuê",
+        "example": "She found a small rental near her workplace.",
+        "familyId": "urban-housing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evict",
+        "ipa": "/ɪˈvɪkt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đuổi người thuê khỏi nhà",
+        "example": "The owner threatened to evict tenants who failed to pay.",
+        "familyId": "urban-housing",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eviction",
+        "ipa": "/ɪˈvɪkʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc đuổi người thuê",
+        "example": "Eviction notices are sent if rent is unpaid for three months.",
+        "familyId": "urban-housing",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "homeless",
+        "ipa": "/ˈhəʊmləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vô gia cư",
+        "example": "Many homeless people sleep in shelters during the winter.",
+        "familyId": "urban-housing",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shelter",
+        "ipa": "/ˈʃeltə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nơi tạm trú cho người vô gia cư",
+        "example": "The city opened a new shelter for homeless families.",
+        "familyId": "urban-housing",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "congestion",
+        "ipa": "/kənˈdʒestʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ùn tắc giao thông",
+        "example": "Traffic congestion costs the city millions every year.",
+        "familyId": "urban-traffic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "traffic jam",
+        "ipa": "/ˈtræfɪk dʒæm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ùn tắc giao thông, kẹt xe",
+        "example": "We were stuck in a traffic jam for over an hour.",
+        "familyId": "urban-traffic",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gridlock",
+        "ipa": "/ˈɡrɪdlɒk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng tắc nghẽn hoàn toàn",
+        "example": "An accident caused gridlock in the city center.",
+        "familyId": "urban-traffic",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commuter",
+        "ipa": "/kəˈmjuːtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người đi làm bằng phương tiện công cộng hằng ngày",
+        "example": "Thousands of commuters were delayed by the train strike.",
+        "familyId": "urban-traffic",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pedestrian",
+        "ipa": "/pəˈdestriən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người đi bộ",
+        "example": "Pedestrians should always use the crosswalk.",
+        "familyId": "urban-traffic",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "highway",
+        "ipa": "/ˈhaɪweɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xa lộ, đường lớn",
+        "example": "The new highway connects the city to the airport.",
+        "familyId": "urban-traffic",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "motorway",
+        "ipa": "/ˈməʊtəweɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường cao tốc",
+        "example": "The motorway was closed due to heavy fog.",
+        "familyId": "urban-traffic",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expressway",
+        "ipa": "/ɪkˈspresweɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường cao tốc đô thị",
+        "example": "The expressway helped reduce travel time across the city.",
+        "familyId": "urban-traffic",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bypass",
+        "ipa": "/ˈbaɪpɑːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường tránh",
+        "example": "A new bypass was built to relieve city traffic.",
+        "familyId": "urban-traffic",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "demolish",
+        "ipa": "/dɪˈmɒlɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phá huỷ, đập bỏ công trình",
+        "example": "Old buildings will be demolished to make way for the new metro.",
+        "familyId": "urban-development",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "demolition",
+        "ipa": "/ˌdeməˈlɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc phá huỷ công trình",
+        "example": "The demolition of the factory took several months.",
+        "familyId": "urban-development",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renovate",
+        "ipa": "/ˈrenəveɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cải tạo, tu sửa",
+        "example": "The city plans to renovate the old market hall.",
+        "familyId": "urban-development",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renovation",
+        "ipa": "/ˌrenəˈveɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc cải tạo công trình",
+        "example": "The library closed for major renovation work.",
+        "familyId": "urban-development",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "redevelop",
+        "ipa": "/ˌriːdɪˈveləp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tái phát triển khu vực đô thị",
+        "example": "Plans to redevelop the waterfront have been approved.",
+        "familyId": "urban-development",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "redevelopment",
+        "ipa": "/ˌriːdɪˈveləpmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc tái phát triển đô thị",
+        "example": "The redevelopment project will create thousands of new jobs.",
+        "familyId": "urban-development",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regenerate",
+        "ipa": "/rɪˈdʒenəreɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phục hồi, tái sinh khu đô thị xuống cấp",
+        "example": "The plan aims to regenerate run-down neighborhoods.",
+        "familyId": "urban-development",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regeneration",
+        "ipa": "/rɪˌdʒenəˈreɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phục hồi, tái sinh khu đô thị",
+        "example": "Urban regeneration brought new life to the old port.",
+        "familyId": "urban-development",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gentrify",
+        "ipa": "/ˈdʒentrɪfaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nâng cấp khu phố nghèo thành khu cao cấp",
+        "example": "Old industrial areas are being gentrified into trendy districts.",
+        "familyId": "urban-development",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gentrification",
+        "ipa": "/ˌdʒentrɪfɪˈkeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cải tạo khu phố cũ phục vụ tầng lớp khá giả",
+        "example": "Gentrification has driven up rents in many neighborhoods.",
+        "familyId": "urban-development",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slum",
+        "ipa": "/slʌm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu ổ chuột",
+        "example": "Millions of people still live in urban slums.",
+        "familyId": "urban-issues",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shantytown",
+        "ipa": "/ˈʃæntitaʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu nhà tạm bợ ven đô",
+        "example": "Shantytowns spread on the outskirts of the megacity.",
+        "familyId": "urban-issues",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ghetto",
+        "ipa": "/ˈɡetəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu phố nghèo, biệt lập",
+        "example": "The book describes life in an inner-city ghetto.",
+        "familyId": "urban-issues",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overcrowded",
+        "ipa": "/ˌəʊvəˈkraʊdɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "quá đông đúc, chật chội",
+        "example": "Public transport is severely overcrowded during peak hours.",
+        "familyId": "urban-issues",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overcrowding",
+        "ipa": "/ˌəʊvəˈkraʊdɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng quá tải dân cư",
+        "example": "Overcrowding has worsened in urban schools.",
+        "familyId": "urban-issues",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urban sprawl",
+        "ipa": "/ˈɜːbən sprɔːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự lan rộng đô thị thiếu kiểm soát",
+        "example": "Urban sprawl has destroyed valuable farmland.",
+        "familyId": "urban-issues",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "population density",
+        "ipa": "/ˌpɒpjʊˈleɪʃən ˈdensəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mật độ dân số",
+        "example": "Population density in the capital is among the highest in the world.",
+        "familyId": "urban-issues",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noise pollution",
+        "ipa": "/nɔɪz pəˈluːʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ô nhiễm tiếng ồn",
+        "example": "Noise pollution from traffic affects sleep and health.",
+        "familyId": "urban-issues",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drainage",
+        "ipa": "/ˈdreɪnɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ thống thoát nước",
+        "example": "Poor drainage causes flooding during heavy rain.",
+        "familyId": "urban-services",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "water supply",
+        "ipa": "/ˈwɔːtə səˈplaɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguồn cung cấp nước",
+        "example": "The city's water supply is being upgraded this year.",
+        "familyId": "urban-services",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "waste management",
+        "ipa": "/weɪst ˈmænɪdʒmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quản lý rác thải",
+        "example": "Effective waste management is essential for clean cities.",
+        "familyId": "urban-services",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "garbage collection",
+        "ipa": "/ˈɡɑːbɪdʒ kəˈlekʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thu gom rác sinh hoạt",
+        "example": "Garbage collection happens twice a week in this neighborhood.",
+        "familyId": "urban-services",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "utility",
+        "ipa": "/juːˈtɪləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch vụ công ích đô thị (điện, nước, gas)",
+        "example": "Utility costs make up a large part of monthly expenses.",
+        "familyId": "urban-services",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fire station",
+        "ipa": "/ˈfaɪə ˈsteɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trạm cứu hoả",
+        "example": "A new fire station was built in the growing district.",
+        "familyId": "urban-services",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "police station",
+        "ipa": "/pəˈliːs ˈsteɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồn cảnh sát",
+        "example": "The nearest police station is just two blocks away.",
+        "familyId": "urban-services",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smart city",
+        "ipa": "/smɑːt ˈsɪti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thành phố thông minh",
+        "example": "Smart cities use technology to improve daily life.",
+        "familyId": "urban-modern",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cctv",
+        "ipa": "/ˌsiːsiːtiːˈviː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ thống camera giám sát",
+        "example": "CCTV footage helped identify the suspect quickly.",
+        "familyId": "urban-modern",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bicycle lane",
+        "ipa": "/ˈbaɪsɪkəl leɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "làn đường dành cho xe đạp",
+        "example": "New bicycle lanes encourage people to leave their cars at home.",
+        "familyId": "urban-modern",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bike-sharing",
+        "ipa": "/ˈbaɪkˌʃeərɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch vụ xe đạp công cộng",
+        "example": "Bike-sharing programs have reduced short car trips significantly.",
+        "familyId": "urban-modern",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carpool",
+        "ipa": "/ˈkɑːpuːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc đi chung xe",
+        "example": "Many workers form carpools to save money on fuel.",
+        "familyId": "urban-modern",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ride-sharing",
+        "ipa": "/ˈraɪdˌʃeərɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch vụ chia sẻ chuyến đi",
+        "example": "Ride-sharing apps have transformed urban transport.",
+        "familyId": "urban-modern",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walkability",
+        "ipa": "/ˌwɔːkəˈbɪləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khả năng đi bộ tiếp cận tiện ích",
+        "example": "The city is rated highly for its walkability.",
+        "familyId": "urban-modern",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "livability",
+        "ipa": "/ˌlɪvəˈbɪləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mức độ đáng sống của đô thị",
+        "example": "Livability rankings consider safety, pollution and transport.",
+        "familyId": "urban-modern",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rural-urban migration",
+        "ipa": "/ˈrʊərəl ˈɜːbən maɪˈɡreɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "di cư từ nông thôn ra thành thị",
+        "example": "Rural-urban migration has fueled the growth of megacities.",
+        "familyId": "urban-modern",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "urban renewal",
+        "ipa": "/ˈɜːbən rɪˈnjuːəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công cuộc đổi mới đô thị",
+        "example": "Urban renewal programs aim to revive declining areas.",
+        "familyId": "urban-modern",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enclave",
+        "ipa": "/ˈenkleɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu biệt lập, cộng đồng dân cư cùng đặc trưng",
+        "example": "The neighborhood is an ethnic enclave within the city.",
+        "familyId": "urban-modern",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dense",
+        "ipa": "/dens/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đậm đặc, đông đúc",
+        "example": "The city has a dense population in the downtown area.",
+        "familyId": "dense",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "access",
+        "ipa": "/ˈæk.ses/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền truy cập, sự tiếp cận",
+        "example": "Access to clean water is a basic human right.",
+        "familyId": "access",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accessible",
+        "ipa": "/əkˈses.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ tiếp cận, dễ truy cập",
+        "example": "The new building is fully accessible for wheelchair users.",
+        "familyId": "access",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accessibility",
+        "ipa": "/əkˌses.əˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính dễ tiếp cận",
+        "example": "Accessibility for disabled passengers is a priority at the airport.",
+        "familyId": "access",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

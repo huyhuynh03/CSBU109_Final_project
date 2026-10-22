@@ -1,0 +1,1771 @@
+{
+  "_meta": {
+    "topicId": "health",
+    "topicName": "Health",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Health (B1-B2)",
+    "totalCards": 135,
+    "totalFamilies": 23,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung chu de Suc khoe, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom suc khoe chung, co the, trieu chung, benh tat, dau va chan thuong, suc khoe tinh than, cham soc y te, benh vien, dieu tri, thuoc, phong benh, loi song, dinh duong, the luc, benh man tinh, cap cuu va y te cong cong."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "health",
+        "ipa": "/helθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sức khỏe",
+        "example": "Regular exercise is good for your health.",
+        "familyId": "health-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "well-being",
+        "ipa": "/ˌwelˈbiː.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khỏe mạnh và hạnh phúc, phúc lợi tinh thần",
+        "example": "Sleep is essential for physical and mental well-being.",
+        "familyId": "health-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fitness",
+        "ipa": "/ˈfɪt.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thể lực, sự khỏe mạnh",
+        "example": "Swimming can improve your fitness quickly.",
+        "familyId": "health-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "condition",
+        "ipa": "/kənˈdɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng sức khỏe, bệnh lý",
+        "example": "The doctor asked about her medical condition.",
+        "familyId": "health-general",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recovery",
+        "ipa": "/rɪˈkʌv.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hồi phục",
+        "example": "Rest is important during recovery after an illness.",
+        "familyId": "health-general",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "body",
+        "ipa": "/ˈbɒd.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ thể",
+        "example": "The human body needs water to function properly.",
+        "familyId": "body-systems",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "muscle",
+        "ipa": "/ˈmʌs.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ bắp",
+        "example": "Stretching helps relax tight muscles.",
+        "familyId": "body-systems",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bone",
+        "ipa": "/bəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xương",
+        "example": "Calcium helps keep bones strong.",
+        "familyId": "body-systems",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blood",
+        "ipa": "/blʌd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máu",
+        "example": "The nurse took a blood sample for testing.",
+        "familyId": "body-systems",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "immune system",
+        "ipa": "/ɪˈmjuːn ˌsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ miễn dịch",
+        "example": "A balanced diet supports the immune system.",
+        "familyId": "body-systems",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "symptom",
+        "ipa": "/ˈsɪmp.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "triệu chứng",
+        "example": "A fever can be a symptom of infection.",
+        "familyId": "symptoms",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fever",
+        "ipa": "/ˈfiː.vər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sốt",
+        "example": "He stayed home because he had a high fever.",
+        "familyId": "symptoms",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cough",
+        "ipa": "/kɒf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơn ho, sự ho",
+        "example": "A persistent cough should be checked by a doctor.",
+        "familyId": "symptoms",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sore throat",
+        "ipa": "/ˌsɔː ˈθrəʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đau họng",
+        "example": "Warm tea can help soothe a sore throat.",
+        "familyId": "symptoms",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dizziness",
+        "ipa": "/ˈdɪz.i.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chóng mặt",
+        "example": "She felt dizziness after standing up too quickly.",
+        "familyId": "symptoms",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatigue",
+        "ipa": "/fəˈtiːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự mệt mỏi, kiệt sức",
+        "example": "Fatigue is common after a long illness.",
+        "familyId": "symptoms",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "illness",
+        "ipa": "/ˈɪl.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh tật, tình trạng ốm đau",
+        "example": "Many people miss work because of illness.",
+        "familyId": "illness-disease",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disease",
+        "ipa": "/dɪˈziːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh, bệnh lý",
+        "example": "Vaccination helps prevent serious diseases.",
+        "familyId": "illness-disease",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "infection",
+        "ipa": "/ɪnˈfek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhiễm trùng, nhiễm khuẩn",
+        "example": "The cut became red because of an infection.",
+        "familyId": "illness-disease",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flu",
+        "ipa": "/fluː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cúm",
+        "example": "The flu spreads easily in winter.",
+        "familyId": "illness-disease",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "virus",
+        "ipa": "/ˈvaɪə.rəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vi-rút",
+        "example": "A virus can spread through close contact.",
+        "familyId": "illness-disease",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pain",
+        "ipa": "/peɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơn đau, sự đau đớn",
+        "example": "He felt a sharp pain in his knee.",
+        "familyId": "pain-injury",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "headache",
+        "ipa": "/ˈhed.eɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đau đầu",
+        "example": "Too much screen time can cause a headache.",
+        "familyId": "pain-injury",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stomachache",
+        "ipa": "/ˈstʌm.ək.eɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đau bụng",
+        "example": "He had a stomachache after eating too much.",
+        "familyId": "pain-injury",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "injury",
+        "ipa": "/ˈɪn.dʒər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chấn thương, vết thương",
+        "example": "The player recovered from a serious injury.",
+        "familyId": "pain-injury",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wound",
+        "ipa": "/wuːnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vết thương",
+        "example": "The nurse cleaned the wound carefully.",
+        "familyId": "pain-injury",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bruise",
+        "ipa": "/bruːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vết bầm tím",
+        "example": "A small bruise appeared on her arm.",
+        "familyId": "pain-injury",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mental health",
+        "ipa": "/ˌmen.təl ˈhelθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sức khỏe tinh thần",
+        "example": "Talking to friends can support mental health.",
+        "familyId": "mental-health",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anxiety",
+        "ipa": "/æŋˈzaɪ.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự lo âu, lo lắng",
+        "example": "Deep breathing may reduce anxiety before an exam.",
+        "familyId": "mental-health",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depression",
+        "ipa": "/dɪˈpreʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trầm cảm",
+        "example": "Depression should be treated with professional help.",
+        "familyId": "mental-health",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "therapy",
+        "ipa": "/ˈθer.ə.pi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "liệu pháp, trị liệu",
+        "example": "Therapy helped him manage stress better.",
+        "familyId": "mental-health",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counselling",
+        "ipa": "/ˈkaʊn.səl.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tư vấn tâm lý",
+        "example": "The school offers counselling for students.",
+        "note": "US English: counseling",
+        "familyId": "mental-health",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "doctor",
+        "ipa": "/ˈdɒk.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bác sĩ",
+        "example": "You should see a doctor if the pain continues.",
+        "familyId": "medical-care",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nurse",
+        "ipa": "/nɜːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "y tá, điều dưỡng",
+        "example": "The nurse checked the patient's temperature.",
+        "familyId": "medical-care",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patient",
+        "ipa": "/ˈpeɪ.ʃənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh nhân",
+        "example": "The patient waited for the test results.",
+        "familyId": "medical-care",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appointment",
+        "ipa": "/əˈpɔɪnt.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc hẹn khám",
+        "example": "I made an appointment with my dentist.",
+        "familyId": "medical-care",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check-up",
+        "ipa": "/ˈtʃek.ʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "buổi kiểm tra sức khỏe định kỳ",
+        "example": "Adults should have a regular health check-up.",
+        "familyId": "medical-care",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diagnosis",
+        "ipa": "/ˌdaɪ.əɡˈnəʊ.sɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự chẩn đoán",
+        "example": "An early diagnosis can improve treatment results.",
+        "familyId": "medical-care",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hospital",
+        "ipa": "/ˈhɒs.pɪ.təl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh viện",
+        "example": "She was taken to hospital after the accident.",
+        "familyId": "hospital-services",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clinic",
+        "ipa": "/ˈklɪn.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng khám",
+        "example": "There is a small clinic near my home.",
+        "familyId": "hospital-services",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ward",
+        "ipa": "/wɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoa, buồng bệnh",
+        "example": "Visitors are not allowed in the ward after nine.",
+        "familyId": "hospital-services",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surgery",
+        "ipa": "/ˈsɜː.dʒər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phẫu thuật, ca mổ",
+        "example": "The surgery lasted two hours.",
+        "familyId": "hospital-services",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "operation",
+        "ipa": "/ˌɒp.ərˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ca phẫu thuật",
+        "example": "He needs an operation on his knee.",
+        "familyId": "hospital-services",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "medical record",
+        "ipa": "/ˈmed.ɪ.kəl ˈrek.ɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hồ sơ y tế",
+        "example": "Doctors use medical records to understand a patient's history.",
+        "familyId": "hospital-services",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "treatment",
+        "ipa": "/ˈtriːt.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự điều trị, phương pháp điều trị",
+        "example": "The treatment reduced her symptoms within a week.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "medicine",
+        "ipa": "/ˈmed.ɪ.sən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thuốc, y học",
+        "example": "Take this medicine twice a day after meals.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "medication",
+        "ipa": "/ˌmed.ɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thuốc điều trị",
+        "example": "Some medication can cause side effects.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prescription",
+        "ipa": "/prɪˈskrɪp.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đơn thuốc",
+        "example": "You need a prescription for this antibiotic.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dose",
+        "ipa": "/dəʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "liều thuốc",
+        "example": "Do not take more than the recommended dose.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "side effect",
+        "ipa": "/ˈsaɪd ɪˌfekt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tác dụng phụ",
+        "example": "Drowsiness is a common side effect of this drug.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prevention",
+        "ipa": "/prɪˈven.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phòng ngừa",
+        "example": "Prevention is often cheaper than treatment.",
+        "familyId": "prevention",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vaccination",
+        "ipa": "/ˌvæk.sɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tiêm chủng",
+        "example": "Vaccination programs save many lives each year.",
+        "familyId": "prevention",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hygiene",
+        "ipa": "/ˈhaɪ.dʒiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vệ sinh",
+        "example": "Good hygiene reduces the spread of infection.",
+        "familyId": "hygiene",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "screening",
+        "ipa": "/ˈskriː.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sàng lọc, kiểm tra phát hiện bệnh",
+        "example": "Cancer screening can detect problems early.",
+        "familyId": "prevention",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "immunity",
+        "ipa": "/ɪˈmjuː.nə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khả năng miễn dịch",
+        "example": "Vaccines help the body develop immunity.",
+        "familyId": "prevention",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lifestyle",
+        "ipa": "/ˈlaɪf.staɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lối sống",
+        "example": "A healthy lifestyle can prevent many diseases.",
+        "familyId": "healthy-lifestyle",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleep",
+        "ipa": "/sliːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giấc ngủ",
+        "example": "Lack of sleep can affect your concentration.",
+        "familyId": "healthy-lifestyle",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rest",
+        "ipa": "/rest/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nghỉ ngơi",
+        "example": "Your body needs rest after intense exercise.",
+        "familyId": "healthy-lifestyle",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "work-life balance",
+        "ipa": "/ˌwɜːk laɪf ˈbæl.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cân bằng giữa công việc và cuộc sống",
+        "example": "Work-life balance is important for long-term health.",
+        "familyId": "healthy-lifestyle",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sedentary",
+        "ipa": "/ˈsed.ən.tər.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ít vận động, ngồi nhiều",
+        "example": "A sedentary lifestyle increases health risks.",
+        "familyId": "healthy-lifestyle",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nutrition",
+        "ipa": "/njuːˈtrɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dinh dưỡng",
+        "example": "Good nutrition helps children grow properly.",
+        "familyId": "nutrition-health",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diet",
+        "ipa": "/ˈdaɪ.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chế độ ăn uống",
+        "example": "A balanced diet provides enough energy and nutrients.",
+        "familyId": "nutrition-health",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nutrient",
+        "ipa": "/ˈnjuː.tri.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất dinh dưỡng",
+        "example": "Iron is an important nutrient for the blood.",
+        "familyId": "nutrition-health",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hydration",
+        "ipa": "/haɪˈdreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cung cấp đủ nước cho cơ thể",
+        "example": "Proper hydration is important during hot weather.",
+        "familyId": "nutrition-health",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exercise",
+        "ipa": "/ˈek.sə.saɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài tập, sự tập thể dục",
+        "example": "Daily exercise can lower the risk of heart disease.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workout",
+        "ipa": "/ˈwɜː.kaʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "buổi tập luyện",
+        "example": "She does a short workout every morning.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strength",
+        "ipa": "/streŋθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sức mạnh",
+        "example": "Weight training builds strength.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "endurance",
+        "ipa": "/ɪnˈdjʊə.rəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sức bền",
+        "example": "Running regularly improves endurance.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flexibility",
+        "ipa": "/ˌflek.səˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự linh hoạt, dẻo dai",
+        "example": "Yoga can increase flexibility.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warm-up",
+        "ipa": "/ˈwɔːm.ʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần khởi động",
+        "example": "A warm-up prepares your body for exercise.",
+        "familyId": "fitness-exercise",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chronic disease",
+        "ipa": "/ˌkrɒn.ɪk dɪˈziːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh mạn tính",
+        "example": "Diabetes is a common chronic disease.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diabetes",
+        "ipa": "/ˌdaɪ.əˈbiː.tiːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh tiểu đường",
+        "example": "People with diabetes need to monitor their blood sugar.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "asthma",
+        "ipa": "/ˈæs.mə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh hen suyễn",
+        "example": "Cold air can make asthma symptoms worse.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "obesity",
+        "ipa": "/əʊˈbiː.sə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "béo phì",
+        "example": "Obesity can increase the risk of heart problems.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blood pressure",
+        "ipa": "/ˈblʌd ˌpreʃ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "huyết áp",
+        "example": "The doctor measured my blood pressure.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heart disease",
+        "ipa": "/ˈhɑːt dɪˌziːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bệnh tim",
+        "example": "Smoking increases the risk of heart disease.",
+        "familyId": "chronic-conditions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emergency",
+        "ipa": "/ɪˈmɜː.dʒən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trường hợp khẩn cấp",
+        "example": "Call an ambulance in a medical emergency.",
+        "familyId": "emergency-first-aid",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ambulance",
+        "ipa": "/ˈæm.bjə.ləns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe cứu thương",
+        "example": "The ambulance arrived within ten minutes.",
+        "familyId": "emergency-first-aid",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "first aid",
+        "ipa": "/ˌfɜːst ˈeɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sơ cứu",
+        "example": "Everyone should learn basic first aid.",
+        "familyId": "emergency-first-aid",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accident",
+        "ipa": "/ˈæk.sɪ.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tai nạn",
+        "example": "He broke his arm in a cycling accident.",
+        "familyId": "accident",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bandage",
+        "ipa": "/ˈbæn.dɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "băng gạc, băng vết thương",
+        "example": "She put a bandage on the small cut.",
+        "familyId": "emergency-first-aid",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "CPR",
+        "ipa": "/ˌsiː piː ˈɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hồi sức tim phổi",
+        "example": "CPR can save a person's life before help arrives.",
+        "familyId": "emergency-first-aid",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "public health",
+        "ipa": "/ˌpʌb.lɪk ˈhelθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "y tế công cộng, sức khỏe cộng đồng",
+        "example": "Public health campaigns encourage people to quit smoking.",
+        "familyId": "public-health",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "healthcare",
+        "ipa": "/ˈhelθ.keər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch vụ chăm sóc sức khỏe, y tế",
+        "example": "Access to healthcare is important for every community.",
+        "familyId": "public-health",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "health insurance",
+        "ipa": "/ˈhelθ ɪnˌʃʊə.rəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo hiểm y tế",
+        "example": "Health insurance helps cover medical costs.",
+        "familyId": "public-health",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "epidemic",
+        "ipa": "/ˌep.ɪˈdem.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch bệnh",
+        "example": "The government acted quickly to control the epidemic.",
+        "familyId": "public-health",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pandemic",
+        "ipa": "/pænˈdem.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại dịch",
+        "example": "The pandemic changed many people's daily routines.",
+        "familyId": "public-health",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sanitation",
+        "ipa": "/ˌsæn.ɪˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vệ sinh môi trường, hệ thống vệ sinh",
+        "example": "Clean water and sanitation prevent many illnesses.",
+        "familyId": "public-health",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sick",
+        "ipa": "/sɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ốm, bệnh",
+        "example": "She stayed home because she was sick.",
+        "familyId": "illness-disease",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ill",
+        "ipa": "/ɪl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ốm, bệnh",
+        "example": "He has been ill for a week.",
+        "familyId": "illness-disease",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cold",
+        "ipa": "/koʊld/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cảm lạnh",
+        "example": "I caught a cold last weekend.",
+        "familyId": "illness-disease",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ache",
+        "ipa": "/eɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơn đau âm ỉ",
+        "example": "I have an ache in my lower back.",
+        "familyId": "symptoms",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pill",
+        "ipa": "/pɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "viên thuốc",
+        "example": "Take one pill after each meal.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cure",
+        "ipa": "/kjʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cách chữa, phương thuốc",
+        "example": "There is no cure for the common cold.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heal",
+        "ipa": "/hiːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lành lại, chữa lành",
+        "example": "The wound will heal in a few days.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recover",
+        "ipa": "/rɪˈkʌvər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hồi phục, bình phục",
+        "example": "It took him a month to recover from the flu.",
+        "familyId": "treatment-medicine",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "head",
+        "ipa": "/hed/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đầu",
+        "example": "She hit her head on the shelf.",
+        "familyId": "body-parts",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "face",
+        "ipa": "/feɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "khuôn mặt",
+        "example": "He washed his face with cold water.",
+        "familyId": "body-parts",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eye",
+        "ipa": "/aɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "mắt",
+        "example": "She has bright blue eyes.",
+        "familyId": "body-parts",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ear",
+        "ipa": "/ɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "tai",
+        "example": "The loud noise hurt my ears.",
+        "familyId": "body-parts",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nose",
+        "ipa": "/noʊz/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "mũi",
+        "example": "My nose is blocked because of the cold.",
+        "familyId": "body-parts",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mouth",
+        "ipa": "/maʊθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "miệng",
+        "example": "Open your mouth and say ah.",
+        "familyId": "body-parts",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tooth",
+        "ipa": "/tuːθ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "răng",
+        "example": "The dentist pulled out a bad tooth.",
+        "familyId": "body-parts",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tongue",
+        "ipa": "/tʌŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lưỡi",
+        "example": "He burned his tongue on the hot soup.",
+        "familyId": "body-parts",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neck",
+        "ipa": "/nek/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cổ",
+        "example": "I have a stiff neck this morning.",
+        "familyId": "body-parts",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shoulder",
+        "ipa": "/ˈʃoʊldər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "vai",
+        "example": "He carried the bag on his shoulder.",
+        "familyId": "body-parts",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arm",
+        "ipa": "/ɑːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cánh tay",
+        "example": "She broke her arm while skiing.",
+        "familyId": "body-parts",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elbow",
+        "ipa": "/ˈelboʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khuỷu tay",
+        "example": "He rested his elbow on the table.",
+        "familyId": "body-parts",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hand",
+        "ipa": "/hænd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bàn tay",
+        "example": "Wash your hands before eating.",
+        "familyId": "body-parts",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "finger",
+        "ipa": "/ˈfɪŋɡər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "ngón tay",
+        "example": "She cut her finger while cooking.",
+        "familyId": "body-parts",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chest",
+        "ipa": "/tʃest/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngực",
+        "example": "He felt a sharp pain in his chest.",
+        "familyId": "body-parts",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stomach",
+        "ipa": "/ˈstʌmək/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dạ dày, bụng",
+        "example": "My stomach hurts after eating too much.",
+        "familyId": "body-parts",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "back",
+        "ipa": "/bæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "lưng",
+        "example": "He has pain in his lower back.",
+        "familyId": "body-parts",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leg",
+        "ipa": "/leɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chân (cẳng chân)",
+        "example": "She hurt her leg during the game.",
+        "familyId": "body-parts",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knee",
+        "ipa": "/niː/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đầu gối",
+        "example": "He fell and hurt his knee.",
+        "familyId": "body-parts",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foot",
+        "ipa": "/fʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bàn chân",
+        "example": "My left foot is sore from walking.",
+        "familyId": "body-parts",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toe",
+        "ipa": "/toʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngón chân",
+        "example": "She stubbed her toe on the door.",
+        "familyId": "body-parts",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "skin",
+        "ipa": "/skɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "da",
+        "example": "Sunscreen protects your skin.",
+        "familyId": "body-parts",
+        "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heart",
+        "ipa": "/hɑːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "tim",
+        "example": "Exercise is good for your heart.",
+        "familyId": "body-systems",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lung",
+        "ipa": "/lʌŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phổi",
+        "example": "Smoking damages your lungs.",
+        "familyId": "body-systems",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accidental",
+        "ipa": "/ˌæk.sɪˈden.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tình cờ, do tai nạn",
+        "example": "The fire was caused by an accidental spark.",
+        "familyId": "accident",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accidentally",
+        "ipa": "/ˌæk.sɪˈden.təl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách tình cờ, vô tình",
+        "example": "I accidentally deleted the important file.",
+        "familyId": "accident",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fate",
+        "ipa": "/feɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số phận, định mệnh",
+        "example": "They believe it was fate that brought them together.",
+        "familyId": "fate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatal",
+        "ipa": "/ˈfeɪ.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gây tử vong, chết người",
+        "example": "The driver suffered a fatal injury in the crash.",
+        "familyId": "fate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatally",
+        "ipa": "/ˈfeɪ.təl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "gây chết người, tử vong",
+        "example": "The passenger was fatally wounded in the attack.",
+        "familyId": "fate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fatality",
+        "ipa": "/feɪˈtæl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ca tử vong, sự chết chóc",
+        "example": "The crash resulted in two fatalities.",
+        "familyId": "fate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prevent",
+        "ipa": "/prɪˈvent/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngăn chặn, phòng ngừa",
+        "example": "Washing your hands helps prevent the spread of disease.",
+        "familyId": "prevent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preventive",
+        "ipa": "/prɪˈven.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phòng ngừa, dự phòng",
+        "example": "Regular check-ups are part of preventive healthcare.",
+        "familyId": "prevent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hygienic",
+        "ipa": "/haɪˈdʒen.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "vệ sinh, hợp vệ sinh",
+        "example": "The restaurant must maintain hygienic conditions in the kitchen.",
+        "familyId": "hygiene",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pregnant",
+        "ipa": "/ˈpreg.nənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mang thai",
+        "example": "She is pregnant and expecting her first child.",
+        "familyId": "pregnant",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pregnancy",
+        "ipa": "/ˈpreg.nən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời kỳ mang thai",
+        "example": "A healthy diet is important during pregnancy.",
+        "familyId": "pregnant",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metabolism",
+        "ipa": "/məˈtæb.ə.lɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự trao đổi chất",
+        "example": "Exercise can speed up your metabolism.",
+        "familyId": "metabolism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metabolic",
+        "ipa": "/ˌmet.əˈbɑː.lɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc về trao đổi chất",
+        "example": "The doctor checked his metabolic rate at rest.",
+        "familyId": "metabolism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dexterity",
+        "ipa": "/dekˈster.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự khéo léo, tài khéo tay",
+        "example": "Playing the piano requires manual dexterity.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spreading",
+        "ipa": "/ˈspred.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự lan truyền, lây lan",
+        "example": "Hand washing helps slow the spreading of germs.",
+        "note": "Dạng V-ing của spread (động từ bất quy tắc) — không tạo family riêng",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

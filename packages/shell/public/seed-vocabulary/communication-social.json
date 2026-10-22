@@ -1,0 +1,1977 @@
+{
+  "_meta": {
+    "topicId": "communication-social",
+    "topicName": "Communication & Society",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Communication & Society (B1-B2)",
+    "totalCards": 151,
+    "totalFamilies": 24,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Giao tiep va Xa hoi, gom theo family ve giao tiep co ban, chao hoi, hoi dap, y kien, phep lich su, quan he, cong dong, van hoa, hop tac, su kien, truyen thong, quyen trach nhiem, gia tri xa hoi va van de xa hoi."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "communication",
+        "ipa": "/kəˌmjuː.nɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giao tiếp, truyền đạt",
+        "example": "Good communication helps people understand each other clearly.",
+        "familyId": "communication-basics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conversation",
+        "ipa": "/ˌkɒn.vəˈseɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc trò chuyện",
+        "example": "We had a friendly conversation after class.",
+        "familyId": "communication-basics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discussion",
+        "ipa": "/dɪˈskʌʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc thảo luận",
+        "example": "The discussion focused on community problems.",
+        "familyId": "communication-basics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dialogue",
+        "ipa": "/ˈdaɪ.ə.lɒɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đối thoại",
+        "example": "Open dialogue can reduce misunderstanding.",
+        "familyId": "communication-basics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interaction",
+        "ipa": "/ˌɪn.təˈræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tương tác",
+        "example": "Social interaction is important for mental health.",
+        "familyId": "communication-basics",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feedback",
+        "ipa": "/ˈfiːd.bæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phản hồi, nhận xét",
+        "example": "The teacher gave helpful feedback on my presentation.",
+        "familyId": "communication-basics",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greet",
+        "ipa": "/ɡriːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chào hỏi",
+        "example": "People usually greet their neighbors politely.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greeting",
+        "ipa": "/ˈɡriː.tɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời chào",
+        "example": "A warm greeting can make a visitor feel welcome.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "introduce",
+        "ipa": "/ˌɪn.trəˈdjuːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giới thiệu",
+        "example": "Let me introduce you to my colleague.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "introduction",
+        "ipa": "/ˌɪn.trəˈdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giới thiệu, phần giới thiệu",
+        "example": "His introduction was clear and confident.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meet",
+        "ipa": "/miːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gặp gỡ",
+        "example": "I often meet my friends at the weekend.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shake hands",
+        "ipa": "/ʃeɪk hændz/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "intermediate",
+        "meaning": "bắt tay",
+        "example": "In many cultures, people shake hands when they meet.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "welcome",
+        "ipa": "/ˈwel.kəm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chào đón",
+        "example": "The host welcomed everyone with a smile.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "farewell",
+        "ipa": "/ˌfeəˈwel/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời tạm biệt",
+        "example": "They said farewell before leaving the city.",
+        "familyId": "greetings-introductions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ask",
+        "ipa": "/ɑːsk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hỏi, yêu cầu",
+        "example": "You should ask questions if you do not understand.",
+        "familyId": "speaking-asking",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "answer",
+        "ipa": "/ˈɑːn.sər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trả lời",
+        "example": "He answered the question honestly.",
+        "familyId": "speaking-asking",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "explain",
+        "ipa": "/ɪkˈspleɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giải thích",
+        "example": "Could you explain the rule again?",
+        "familyId": "speaking-asking",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clarify",
+        "ipa": "/ˈklær.ə.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "làm rõ",
+        "example": "The speaker clarified his main point.",
+        "familyId": "speaking-asking",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mention",
+        "ipa": "/ˈmen.ʃən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đề cập",
+        "example": "She mentioned a useful website during the meeting.",
+        "familyId": "speaking-asking",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suggest",
+        "ipa": "/səˈdʒest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gợi ý, đề xuất",
+        "example": "I suggest meeting earlier to avoid traffic.",
+        "familyId": "speaking-asking",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "request",
+        "ipa": "/rɪˈkwest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "yêu cầu, đề nghị",
+        "example": "Visitors can request more information at the desk.",
+        "familyId": "speaking-asking",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "respond",
+        "ipa": "/rɪˈspɒnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phản hồi, đáp lại",
+        "example": "Please respond to the invitation by Friday.",
+        "familyId": "speaking-asking",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "explanation",
+        "ipa": "/ˌek.spləˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giải thích, lời giải thích",
+        "example": "The teacher gave a clear explanation of the rule.",
+        "familyId": "speaking-asking",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "explanatory",
+        "ipa": "/ɪkˈsplæn.ə.tɔːr.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "mang tính giải thích, dùng để giải thích",
+        "example": "She added an explanatory note at the bottom of the letter.",
+        "familyId": "speaking-asking",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "opinion",
+        "ipa": "/əˈpɪn.jən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ý kiến, quan điểm",
+        "example": "Everyone has the right to express an opinion.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "viewpoint",
+        "ipa": "/ˈvjuː.pɔɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "góc nhìn, quan điểm",
+        "example": "Try to understand the issue from another viewpoint.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agree",
+        "ipa": "/əˈɡriː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đồng ý",
+        "example": "I agree with your idea about public transport.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disagree",
+        "ipa": "/ˌdɪs.əˈɡriː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "không đồng ý",
+        "example": "They disagree about how to solve the problem.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "persuade",
+        "ipa": "/pəˈsweɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "thuyết phục",
+        "example": "He tried to persuade his parents to let him volunteer.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "argue",
+        "ipa": "/ˈɑːɡ.juː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tranh luận, cãi nhau",
+        "example": "People sometimes argue about politics online.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debate",
+        "ipa": "/dɪˈbeɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc tranh luận",
+        "example": "The debate encouraged students to think critically.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compromise",
+        "ipa": "/ˈkɒm.prə.maɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thỏa hiệp",
+        "example": "A fair compromise satisfied both sides.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "polite",
+        "ipa": "/pəˈlaɪt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lịch sự",
+        "example": "It is polite to say thank you after receiving help.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rude",
+        "ipa": "/ruːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thô lỗ, bất lịch sự",
+        "example": "It is rude to interrupt someone while they are speaking.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "respectful",
+        "ipa": "/rɪˈspekt.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tôn trọng, lễ phép",
+        "example": "A respectful attitude makes communication easier.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manners",
+        "ipa": "/ˈmæn.əz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cách cư xử, phép lịch sự",
+        "example": "Good manners are valued in every society.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "etiquette",
+        "ipa": "/ˈet.ɪ.ket/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nghi thức, phép xã giao",
+        "example": "Business etiquette differs from country to country.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apologize",
+        "ipa": "/əˈpɒl.ə.dʒaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xin lỗi",
+        "example": "You should apologize when you make a mistake.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thank",
+        "ipa": "/θæŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cảm ơn",
+        "example": "Remember to thank people for their support.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interrupt",
+        "ipa": "/ˌɪn.təˈrʌpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngắt lời, làm gián đoạn",
+        "example": "Please do not interrupt the speaker.",
+        "familyId": "manners-etiquette",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relationship",
+        "ipa": "/rɪˈleɪ.ʃən.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mối quan hệ",
+        "example": "Trust is important in every relationship.",
+        "familyId": "relationships-network",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "friendship",
+        "ipa": "/ˈfrend.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình bạn",
+        "example": "Their friendship has lasted for many years.",
+        "familyId": "relationships-network",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acquaintance",
+        "ipa": "/əˈkweɪn.təns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người quen",
+        "example": "He is an acquaintance from my language class.",
+        "familyId": "relationships-network",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "colleague",
+        "ipa": "/ˈkɒl.iːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồng nghiệp",
+        "example": "My colleague helped me prepare for the meeting.",
+        "familyId": "relationships-network",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neighbor",
+        "ipa": "/ˈneɪ.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng xóm",
+        "example": "Our neighbor often looks after our plants.",
+        "familyId": "relationships-network",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stranger",
+        "ipa": "/ˈstreɪn.dʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người lạ",
+        "example": "Children should be careful when talking to strangers.",
+        "familyId": "relationships-network",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contact",
+        "ipa": "/ˈkɒn.tækt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "liên hệ, mối liên hệ",
+        "example": "I saved his contact details on my phone.",
+        "familyId": "relationships-network",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "community",
+        "ipa": "/kəˈmjuː.nə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cộng đồng",
+        "example": "The local community organized a clean-up day.",
+        "familyId": "community-society",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "society",
+        "ipa": "/səˈsaɪ.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xã hội",
+        "example": "Education plays an important role in society.",
+        "familyId": "community-society",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "citizen",
+        "ipa": "/ˈsɪt.ɪ.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công dân",
+        "example": "Every citizen should obey the law.",
+        "familyId": "community-society",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resident",
+        "ipa": "/ˈrez.ɪ.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cư dân",
+        "example": "Residents complained about the noise at night.",
+        "familyId": "community-society",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neighborhood",
+        "ipa": "/ˈneɪ.bə.hʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu phố, vùng lân cận",
+        "example": "This neighborhood is quiet and safe.",
+        "familyId": "community-society",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "public",
+        "ipa": "/ˈpʌb.lɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "công cộng, thuộc công chúng",
+        "example": "Public spaces should be clean and accessible.",
+        "familyId": "community-society",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "social",
+        "ipa": "/ˈsəʊ.ʃəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc xã hội, mang tính xã hội",
+        "example": "Social problems require cooperation from many groups.",
+        "familyId": "community-society",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "volunteer",
+        "ipa": "/ˌvɒl.ənˈtɪər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình nguyện viên",
+        "example": "Many volunteers helped at the charity event.",
+        "familyId": "community-society",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "charity",
+        "ipa": "/ˈtʃær.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tổ chức từ thiện, lòng từ thiện",
+        "example": "The charity supports homeless children.",
+        "familyId": "community-society",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "culture",
+        "ipa": "/ˈkʌl.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn hóa",
+        "example": "Learning a language also means learning its culture.",
+        "familyId": "culture-diversity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "custom",
+        "ipa": "/ˈkʌs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phong tục",
+        "example": "It is a local custom to bring a small gift.",
+        "familyId": "culture-diversity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tradition",
+        "ipa": "/trəˈdɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "truyền thống",
+        "example": "Family meals are an important tradition in many countries.",
+        "familyId": "culture-diversity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "belief",
+        "ipa": "/bɪˈliːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "niềm tin, tín ngưỡng",
+        "example": "People should respect different beliefs.",
+        "familyId": "culture-diversity",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "value",
+        "ipa": "/ˈvæl.juː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị",
+        "example": "Honesty is a value that many societies share.",
+        "familyId": "culture-diversity",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "diversity",
+        "ipa": "/daɪˈvɜː.sə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự đa dạng",
+        "example": "Cultural diversity makes a city more interesting.",
+        "familyId": "culture-diversity",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "identity",
+        "ipa": "/aɪˈden.tə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bản sắc, danh tính",
+        "example": "Language is part of a person’s identity.",
+        "familyId": "culture-diversity",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "minority",
+        "ipa": "/maɪˈnɒr.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhóm thiểu số",
+        "example": "Minority groups should have equal rights.",
+        "familyId": "culture-diversity",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooperate",
+        "ipa": "/kəʊˈɒp.ər.eɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hợp tác",
+        "example": "The two teams cooperated to finish the project.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooperation",
+        "ipa": "/kəʊˌɒp.ərˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hợp tác",
+        "example": "International cooperation is needed to solve climate change.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "support",
+        "ipa": "/səˈpɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ủng hộ, hỗ trợ",
+        "example": "Friends should support each other in difficult times.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "teamwork",
+        "ipa": "/ˈtiːm.wɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "làm việc nhóm, tinh thần đồng đội",
+        "example": "Teamwork helped us complete the task quickly.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conflict",
+        "ipa": "/ˈkɒn.flɪkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xung đột, mâu thuẫn",
+        "example": "Poor communication can lead to conflict.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tension",
+        "ipa": "/ˈten.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự căng thẳng",
+        "example": "There was tension between the two communities.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solve",
+        "ipa": "/sɒlv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giải quyết",
+        "example": "They worked together to solve the problem.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reconcile",
+        "ipa": "/ˈrek.ən.saɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "hòa giải, làm hòa",
+        "example": "The leader tried to reconcile the two sides.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invite",
+        "ipa": "/ɪnˈvaɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mời",
+        "example": "They invited us to a community dinner.",
+        "familyId": "events-meetings",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invitation",
+        "ipa": "/ˌɪn.vɪˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời mời",
+        "example": "I received an invitation to the workshop.",
+        "familyId": "events-meetings",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attend",
+        "ipa": "/əˈtend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tham dự",
+        "example": "More than a hundred people attended the meeting.",
+        "familyId": "events-meetings",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gather",
+        "ipa": "/ˈɡæð.ər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tụ họp, tập hợp",
+        "example": "People gathered in the park for the festival.",
+        "familyId": "events-meetings",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meeting",
+        "ipa": "/ˈmiː.tɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc họp, buổi gặp mặt",
+        "example": "The meeting lasted for two hours.",
+        "familyId": "events-meetings",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "event",
+        "ipa": "/ɪˈvent/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiện",
+        "example": "The event attracted many young people.",
+        "familyId": "events-meetings",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ceremony",
+        "ipa": "/ˈser.ə.mə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "buổi lễ, nghi lễ",
+        "example": "The ceremony began with a short speech.",
+        "familyId": "events-meetings",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "celebration",
+        "ipa": "/ˌsel.əˈbreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lễ kỷ niệm, sự ăn mừng",
+        "example": "The celebration brought the whole community together.",
+        "familyId": "events-meetings",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "media",
+        "ipa": "/ˈmiː.di.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "truyền thông, phương tiện truyền thông",
+        "example": "The media reported the story widely.",
+        "familyId": "media-digital-social",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "post",
+        "ipa": "/pəʊst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đăng bài",
+        "example": "She posted a photo from the volunteer trip.",
+        "familyId": "media-digital-social",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rumor",
+        "ipa": "/ˈruː.mər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tin đồn",
+        "example": "A rumor can spread very fast online.",
+        "familyId": "media-digital-social",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "misinformation",
+        "ipa": "/ˌmɪs.ɪn.fəˈmeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thông tin sai lệch",
+        "example": "Misinformation can damage public trust.",
+        "familyId": "media-digital-social",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "law",
+        "ipa": "/lɔː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật pháp",
+        "example": "The law protects citizens from discrimination.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rule",
+        "ipa": "/ruːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy tắc, luật lệ",
+        "example": "Every club has rules that members must follow.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "right",
+        "ipa": "/raɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền lợi, quyền",
+        "example": "Freedom of speech is an important right.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "responsibility",
+        "ipa": "/rɪˌspɒn.səˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trách nhiệm",
+        "example": "It is our responsibility to keep public places clean.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "duty",
+        "ipa": "/ˈdjuː.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bổn phận, nhiệm vụ",
+        "example": "Jury service is a civic duty in some countries.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freedom",
+        "ipa": "/ˈfriː.dəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tự do",
+        "example": "People value freedom of expression.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "equality",
+        "ipa": "/iˈkwɒl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bình đẳng",
+        "example": "The campaign promotes equality in education.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fairness",
+        "ipa": "/ˈfeə.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự công bằng",
+        "example": "Fairness is essential in a healthy society.",
+        "familyId": "rights-responsibilities",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "honesty",
+        "ipa": "/ˈɒn.ə.sti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trung thực",
+        "example": "Honesty is important in public life.",
+        "familyId": "social-values",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loyalty",
+        "ipa": "/ˈlɔɪ.əl.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng trung thành",
+        "example": "Loyalty is valued in close friendships.",
+        "familyId": "social-values",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tolerance",
+        "ipa": "/ˈtɒl.ər.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự khoan dung",
+        "example": "Tolerance allows people with different views to live together.",
+        "familyId": "social-values",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kindness",
+        "ipa": "/ˈkaɪnd.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng tốt, sự tử tế",
+        "example": "Small acts of kindness can improve society.",
+        "familyId": "social-values",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solidarity",
+        "ipa": "/ˌsɒl.ɪˈdær.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự đoàn kết",
+        "example": "The crisis created a strong sense of solidarity.",
+        "familyId": "social-values",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poverty",
+        "ipa": "/ˈpɒv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nghèo đói",
+        "example": "Poverty remains a serious social issue.",
+        "familyId": "social-issues",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "homelessness",
+        "ipa": "/ˈhəʊm.ləs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tình trạng vô gia cư",
+        "example": "Homelessness has increased in many large cities.",
+        "familyId": "social-issues",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discrimination",
+        "ipa": "/dɪˌskrɪm.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự phân biệt đối xử",
+        "example": "Discrimination can harm people’s opportunities.",
+        "familyId": "social-issues",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inequality",
+        "ipa": "/ˌɪn.ɪˈkwɒl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bất bình đẳng",
+        "example": "Income inequality is a topic of public debate.",
+        "familyId": "social-issues",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crime",
+        "ipa": "/kraɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội phạm",
+        "example": "The city has introduced measures to reduce crime.",
+        "familyId": "social-issues",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "violence",
+        "ipa": "/ˈvaɪə.ləns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bạo lực",
+        "example": "Schools should teach students to reject violence.",
+        "familyId": "social-issues",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "isolation",
+        "ipa": "/ˌaɪ.səlˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cô lập",
+        "example": "Social isolation can affect older people deeply.",
+        "familyId": "social-issues",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probable",
+        "ipa": "/ˈprɑː.bə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có khả năng xảy ra",
+        "example": "It is probable that the meeting will be postponed.",
+        "familyId": "probable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probably",
+        "ipa": "/ˈprɑː.bə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "có lẽ, có khả năng",
+        "example": "She is probably the best candidate for the job.",
+        "familyId": "probable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "by",
+        "ipa": "/baɪ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "bởi, bằng, cạnh, trước (thời điểm)",
+        "example": "The report must be finished by Friday.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "every",
+        "ipa": "/ˈev.ri/",
+        "partOfSpeech": "determiner",
+        "difficulty": "beginner",
+        "meaning": "mỗi, mọi",
+        "example": "She checks her email every morning.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anybody",
+        "ipa": "/ˈen.iˌbɑː.di/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "beginner",
+        "meaning": "bất cứ ai, người nào",
+        "example": "Is there anybody who can help me with this?",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "during",
+        "ipa": "/ˈdʊr.ɪŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "beginner",
+        "meaning": "trong suốt, trong lúc",
+        "example": "Please keep quiet during the presentation.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yourself",
+        "ipa": "/jɔːrˈself/",
+        "partOfSpeech": "pronoun",
+        "difficulty": "beginner",
+        "meaning": "chính bạn, bản thân bạn",
+        "example": "You should be proud of yourself for finishing the course.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possible",
+        "ipa": "/ˈpɑː.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có thể, khả thi",
+        "example": "It is possible to learn a language at any age.",
+        "familyId": "possible",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possibly",
+        "ipa": "/ˈpɑː.sə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "có lẽ, có thể",
+        "example": "The delay was possibly caused by the heavy rain.",
+        "familyId": "possible",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "possibility",
+        "ipa": "/ˌpɑː.səˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khả năng, điều có thể xảy ra",
+        "example": "There is a strong possibility of rain tomorrow.",
+        "familyId": "possible",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "define",
+        "ipa": "/dɪˈfaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "định nghĩa, xác định",
+        "example": "Can you define this word in your own words?",
+        "familyId": "define",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definition",
+        "ipa": "/ˌdef.ɪˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "định nghĩa",
+        "example": "The dictionary gives a clear definition of the term.",
+        "familyId": "define",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definite",
+        "ipa": "/ˈdef.ɪ.nət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "rõ ràng, chắc chắn",
+        "example": "We need a definite answer by tomorrow.",
+        "familyId": "define",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "definitely",
+        "ipa": "/ˈdef.ɪ.nət.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "chắc chắn, nhất định",
+        "example": "I will definitely come to your birthday party.",
+        "familyId": "define",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "current",
+        "ipa": "/ˈkɝː.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiện tại, hiện hành",
+        "example": "The current situation requires immediate action.",
+        "familyId": "current",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "currently",
+        "ipa": "/ˈkɝː.ənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "hiện nay, hiện thời",
+        "example": "She is currently working on a new project.",
+        "familyId": "current",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talk",
+        "ipa": "/tɔːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "nói chuyện, trò chuyện",
+        "example": "Can we talk about this later?",
+        "familyId": "speaking-asking",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reply",
+        "ipa": "/rɪˈplaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "trả lời, hồi đáp",
+        "example": "She replied to my email right away.",
+        "familyId": "speaking-asking",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "question",
+        "ipa": "/ˈkwestʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "câu hỏi",
+        "example": "May I ask you a question?",
+        "familyId": "speaking-asking",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "describe",
+        "ipa": "/dɪˈskraɪb/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "miêu tả, mô tả",
+        "example": "Can you describe what you saw?",
+        "familyId": "speaking-asking",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advise",
+        "ipa": "/ədˈvaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khuyên, tư vấn",
+        "example": "The doctor advised me to rest.",
+        "familyId": "speaking-asking",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warn",
+        "ipa": "/wɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cảnh báo",
+        "example": "They warned us about the storm.",
+        "familyId": "speaking-asking",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "promise",
+        "ipa": "/ˈprɑːmɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hứa",
+        "example": "He promised to call me tonight.",
+        "familyId": "speaking-asking",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "complain",
+        "ipa": "/kəmˈpleɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phàn nàn, than phiền",
+        "example": "She complained about the noisy neighbors.",
+        "familyId": "cooperation-conflict",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refuse",
+        "ipa": "/rɪˈfjuːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "từ chối",
+        "example": "He refused to accept the offer.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accept",
+        "ipa": "/əkˈsept/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chấp nhận, đồng ý",
+        "example": "She accepted the invitation happily.",
+        "familyId": "opinions-agreement",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discuss",
+        "ipa": "/dɪˈskʌs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thảo luận, bàn bạc",
+        "example": "We will discuss the plan tomorrow.",
+        "familyId": "speaking-asking",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "whisper",
+        "ipa": "/ˈwɪspər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thì thầm",
+        "example": "She whispered the secret in my ear.",
+        "familyId": "speaking-asking",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shout",
+        "ipa": "/ʃaʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hét, la lớn",
+        "example": "He shouted to get their attention.",
+        "familyId": "speaking-asking",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "announce",
+        "ipa": "/əˈnaʊns/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thông báo, tuyên bố",
+        "example": "They announced the results this morning.",
+        "familyId": "media-digital-social",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "letter",
+        "ipa": "/ˈletər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "lá thư",
+        "example": "She wrote a letter to her grandmother.",
+        "familyId": "communication-basics",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acknowledge",
+        "ipa": "/əkˈnɒlɪdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thừa nhận, công nhận; xác nhận",
+        "example": "She acknowledged that she had made a mistake.",
+        "familyId": "acknowledge",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acknowledgement",
+        "ipa": "/əkˈnɒlɪdʒmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự thừa nhận, sự xác nhận",
+        "example": "He nodded in acknowledgement of her help.",
+        "familyId": "acknowledge",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inconvenience",
+        "ipa": "/ˌɪn.kənˈviː.ni.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bất tiện, phiền phức",
+        "example": "We apologize for any inconvenience caused by the delay.",
+        "familyId": "inconvenience",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inconvenient",
+        "ipa": "/ˌɪn.kənˈviː.ni.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bất tiện, phiền toái",
+        "example": "The meeting time is inconvenient for our team.",
+        "familyId": "inconvenience",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regard",
+        "ipa": "/rɪˈɡɑːrd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "coi như, xem như",
+        "example": "She is highly regarded for her honesty.",
+        "familyId": "regard",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regarding",
+        "ipa": "/rɪˈɡɑːr.dɪŋ/",
+        "partOfSpeech": "preposition",
+        "difficulty": "advanced",
+        "meaning": "về việc, liên quan đến",
+        "example": "Please contact us regarding the delivery date.",
+        "familyId": "regard",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "critic",
+        "ipa": "/ˈkrɪt.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà phê bình, người chỉ trích",
+        "example": "The film critic praised the actress's performance.",
+        "familyId": "critic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "criticize",
+        "ipa": "/ˈkrɪt.ɪ.saɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phê bình, chỉ trích",
+        "example": "It is easy to criticize others but harder to help them.",
+        "familyId": "critic",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "criticism",
+        "ipa": "/ˈkrɪt.ɪ.sɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời phê bình, sự chỉ trích",
+        "example": "He accepted the criticism with good grace.",
+        "familyId": "critic",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "critical",
+        "ipa": "/ˈkrɪt.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phê phán, gay gắt; quan trọng then chốt",
+        "example": "The report was critical of the government's handling of the crisis.",
+        "familyId": "critic",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "straightforward",
+        "ipa": "/ˌstreɪtˈfɔːr.wəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thẳng thắn, dễ hiểu, đơn giản",
+        "example": "The instructions are straightforward and easy to follow.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inexplicable",
+        "ipa": "/ˌɪn.ɪkˈsplɪk.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể giải thích được",
+        "example": "For some inexplicable reason, the alarm kept going off.",
+        "familyId": "inexplicable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inexplicably",
+        "ipa": "/ˌɪn.ɪkˈsplɪk.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách khó hiểu",
+        "example": "He inexplicably left the meeting without a word.",
+        "familyId": "inexplicable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "encourage",
+        "ipa": "/ɪnˈkɝː.ɪdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khuyến khích, động viên",
+        "example": "Teachers should encourage students to ask questions.",
+        "familyId": "encourage",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "encouragement",
+        "ipa": "/ɪnˈkɝː.ɪdʒ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khuyến khích, động viên",
+        "example": "Her words of encouragement gave me confidence.",
+        "familyId": "encourage",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "particular",
+        "ipa": "/pərˈtɪk.jə.lər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "riêng, cụ thể, đặc biệt",
+        "example": "Is there any particular topic you want to discuss?",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

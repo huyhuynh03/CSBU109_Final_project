@@ -1,0 +1,1288 @@
+{
+  "_meta": {
+    "topicId": "phrasal-verbs",
+    "topicName": "Phrasal Verbs",
+    "level": "intermediate",
+    "source": "Curated Common English Phrasal Verbs (B1-B2)",
+    "totalCards": 98,
+    "totalFamilies": 26,
+    "generatedAt": "2026-05-29",
+    "note": "Tong hop cac phrasal verb thong dung, nhom theo dong tu goc (get, give, go, look, take, put, turn, come...). Khong trung voi cac phrasal verb da co o cac chu de khac (work out, hang out, wake up, get up, sleep in, stay up, drop out, bring up, care for, tidy up, log in, log out)."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "get along",
+        "ipa": "/ɡet əˈlɒŋ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hòa thuận, hợp nhau",
+        "example": "She gets along well with all of her colleagues.",
+        "familyId": "phv-get",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get away",
+        "ipa": "/ɡet əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trốn thoát, đi nghỉ xa",
+        "example": "We managed to get away for the weekend.",
+        "familyId": "phv-get",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get back",
+        "ipa": "/ɡet bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trở về, quay lại",
+        "example": "I got back home late last night.",
+        "familyId": "phv-get",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get by",
+        "ipa": "/ɡet baɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "xoay xở, sống tạm đủ",
+        "example": "It is hard to get by on such a low salary.",
+        "familyId": "phv-get",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get over",
+        "ipa": "/ɡet ˈəʊvə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "vượt qua, hồi phục",
+        "example": "It took her months to get over the breakup.",
+        "familyId": "phv-get",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get through",
+        "ipa": "/ɡet θruː/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "vượt qua, hoàn thành, liên lạc được",
+        "example": "I finally got through to the customer service line.",
+        "familyId": "phv-get",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give up",
+        "ipa": "/ɡɪv ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "từ bỏ, bỏ cuộc",
+        "example": "Don't give up on your dreams so easily.",
+        "familyId": "phv-give",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give in",
+        "ipa": "/ɡɪv ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nhượng bộ, đầu hàng",
+        "example": "After hours of arguing, he finally gave in.",
+        "familyId": "phv-give",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give away",
+        "ipa": "/ɡɪv əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "cho đi, tiết lộ (bí mật)",
+        "example": "They gave away free samples at the store.",
+        "familyId": "phv-give",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give back",
+        "ipa": "/ɡɪv bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trả lại",
+        "example": "Please give back the book when you finish it.",
+        "familyId": "phv-give",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give out",
+        "ipa": "/ɡɪv aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "phân phát, cạn kiệt",
+        "example": "The teacher gave out the exam papers.",
+        "familyId": "phv-give",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go on",
+        "ipa": "/ɡəʊ ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tiếp tục, diễn ra",
+        "example": "Please go on with your story.",
+        "familyId": "phv-go",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go off",
+        "ipa": "/ɡəʊ ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "phát nổ, reo (chuông), ôi thiu",
+        "example": "The alarm went off at six in the morning.",
+        "familyId": "phv-go",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go out",
+        "ipa": "/ɡəʊ aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ra ngoài, hẹn hò",
+        "example": "They go out for dinner every Friday.",
+        "familyId": "phv-go",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go over",
+        "ipa": "/ɡəʊ ˈəʊvə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "xem lại, rà soát",
+        "example": "Let's go over the plan one more time.",
+        "familyId": "phv-go",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go through",
+        "ipa": "/ɡəʊ θruː/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trải qua, xem xét kỹ",
+        "example": "She went through a difficult time after the accident.",
+        "familyId": "phv-go",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go back",
+        "ipa": "/ɡəʊ bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "quay lại, trở về",
+        "example": "I need to go back to the office to get my keys.",
+        "familyId": "phv-go",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look after",
+        "ipa": "/lʊk ˈɑːftə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chăm sóc, trông nom",
+        "example": "Could you look after my dog while I'm away?",
+        "familyId": "phv-look",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look for",
+        "ipa": "/lʊk fɔː/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm kiếm",
+        "example": "I'm looking for my glasses everywhere.",
+        "familyId": "phv-look",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look forward to",
+        "ipa": "/lʊk ˈfɔːwəd tuː/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "mong chờ, trông đợi",
+        "example": "I look forward to seeing you next week.",
+        "familyId": "phv-look",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look up",
+        "ipa": "/lʊk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tra cứu, tìm thông tin",
+        "example": "Look up the word in the dictionary if you don't know it.",
+        "familyId": "phv-look",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look out",
+        "ipa": "/lʊk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "coi chừng, cẩn thận",
+        "example": "Look out! There's a car coming.",
+        "familyId": "phv-look",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "look into",
+        "ipa": "/lʊk ˈɪntə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "điều tra, xem xét",
+        "example": "The police are looking into the matter.",
+        "familyId": "phv-look",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take off",
+        "ipa": "/teɪk ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "cất cánh, cởi ra",
+        "example": "The plane took off on time.",
+        "familyId": "phv-take",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take after",
+        "ipa": "/teɪk ˈɑːftə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "giống (người thân)",
+        "example": "She takes after her mother in many ways.",
+        "familyId": "phv-take",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take over",
+        "ipa": "/teɪk ˈəʊvə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tiếp quản, đảm nhận",
+        "example": "A larger company took over the small firm.",
+        "familyId": "phv-take",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take up",
+        "ipa": "/teɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt đầu (sở thích), chiếm (chỗ)",
+        "example": "He took up painting after he retired.",
+        "familyId": "phv-take",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take out",
+        "ipa": "/teɪk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "lấy ra, mang đi, mời đi chơi",
+        "example": "He took out his wallet to pay the bill.",
+        "familyId": "phv-take",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take back",
+        "ipa": "/teɪk bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "rút lại (lời nói), trả lại hàng",
+        "example": "I take back what I said earlier; I was wrong.",
+        "familyId": "phv-take",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put on",
+        "ipa": "/pʊt ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "mặc vào, đeo vào",
+        "example": "Put on your coat; it's cold outside.",
+        "familyId": "phv-put",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put off",
+        "ipa": "/pʊt ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hoãn lại, trì hoãn",
+        "example": "We had to put off the meeting until next week.",
+        "familyId": "phv-put",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put up with",
+        "ipa": "/pʊt ʌp wɪð/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chịu đựng, nhẫn nhịn",
+        "example": "I can't put up with his rudeness any longer.",
+        "familyId": "phv-put",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put away",
+        "ipa": "/pʊt əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "cất đi, dọn dẹp",
+        "example": "Please put away your toys after playing.",
+        "familyId": "phv-put",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put out",
+        "ipa": "/pʊt aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "dập tắt, đưa ra ngoài",
+        "example": "Firefighters quickly put out the fire.",
+        "familyId": "phv-put",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put down",
+        "ipa": "/pʊt daʊn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt xuống, hạ thấp (ai đó)",
+        "example": "She put down her bag and sat on the sofa.",
+        "familyId": "phv-put",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn on",
+        "ipa": "/tɜːn ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bật (thiết bị)",
+        "example": "Can you turn on the lights, please?",
+        "familyId": "phv-turn",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn off",
+        "ipa": "/tɜːn ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tắt (thiết bị)",
+        "example": "Don't forget to turn off the TV before bed.",
+        "familyId": "phv-turn",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn up",
+        "ipa": "/tɜːn ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tăng (âm lượng), xuất hiện",
+        "example": "Please turn up the volume; I can't hear it.",
+        "familyId": "phv-turn",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn down",
+        "ipa": "/tɜːn daʊn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "từ chối, giảm (âm lượng)",
+        "example": "She turned down the job offer.",
+        "familyId": "phv-turn",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn out",
+        "ipa": "/tɜːn aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hóa ra, kết quả là",
+        "example": "It turned out that he was right all along.",
+        "familyId": "phv-turn",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turn into",
+        "ipa": "/tɜːn ˈɪntə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "biến thành, trở thành",
+        "example": "The caterpillar turned into a butterfly.",
+        "familyId": "phv-turn",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come across",
+        "ipa": "/kʌm əˈkrɒs/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tình cờ gặp, bắt gặp",
+        "example": "I came across an old photo while cleaning.",
+        "familyId": "phv-come",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come back",
+        "ipa": "/kʌm bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trở lại, quay về",
+        "example": "She promised to come back soon.",
+        "familyId": "phv-come",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come up",
+        "ipa": "/kʌm ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nảy sinh, xuất hiện",
+        "example": "A problem came up during the meeting.",
+        "familyId": "phv-come",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come over",
+        "ipa": "/kʌm ˈəʊvə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ghé qua, đến chơi",
+        "example": "Why don't you come over for dinner tonight?",
+        "familyId": "phv-come",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come in",
+        "ipa": "/kʌm ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "vào, đi vào",
+        "example": "Please come in and take a seat.",
+        "familyId": "phv-come",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come out",
+        "ipa": "/kʌm aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ra mắt, lộ ra",
+        "example": "Her new album comes out next month.",
+        "familyId": "phv-come",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break down",
+        "ipa": "/breɪk daʊn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hỏng hóc, suy sụp",
+        "example": "My car broke down on the highway.",
+        "familyId": "phv-break",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break up",
+        "ipa": "/breɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chia tay, tan rã",
+        "example": "They broke up after three years together.",
+        "familyId": "phv-break",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break in",
+        "ipa": "/breɪk ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đột nhập",
+        "example": "Thieves broke in while we were on holiday.",
+        "familyId": "phv-break",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break out",
+        "ipa": "/breɪk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bùng phát, nổ ra",
+        "example": "A fire broke out in the building last night.",
+        "familyId": "phv-break",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break into",
+        "ipa": "/breɪk ˈɪntə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đột nhập vào, xông vào",
+        "example": "Someone broke into the house and stole the jewelry.",
+        "familyId": "phv-break",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "call off",
+        "ipa": "/kɔːl ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hủy bỏ",
+        "example": "They called off the wedding at the last minute.",
+        "familyId": "phv-call",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "call back",
+        "ipa": "/kɔːl bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "gọi lại",
+        "example": "I'll call back later when you're free.",
+        "familyId": "phv-call",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "call on",
+        "ipa": "/kɔːl ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ghé thăm, kêu gọi",
+        "example": "The teacher called on me to answer the question.",
+        "familyId": "phv-call",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carry on",
+        "ipa": "/ˈkæri ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tiếp tục",
+        "example": "Carry on with your work; I'll be back soon.",
+        "familyId": "phv-carry",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carry out",
+        "ipa": "/ˈkæri aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thực hiện, tiến hành",
+        "example": "The scientists carried out several experiments.",
+        "familyId": "phv-carry",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check in",
+        "ipa": "/tʃek ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "làm thủ tục nhận phòng/chuyến bay",
+        "example": "We need to check in two hours before the flight.",
+        "familyId": "phv-check",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check out",
+        "ipa": "/tʃek aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "trả phòng, kiểm tra thử",
+        "example": "Guests must check out before noon.",
+        "familyId": "phv-check",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cut down",
+        "ipa": "/kʌt daʊn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "giảm bớt, chặt hạ",
+        "example": "You should cut down on sugar for your health.",
+        "familyId": "phv-cut",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cut off",
+        "ipa": "/kʌt ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "cắt đứt, ngắt",
+        "example": "Our electricity was cut off during the storm.",
+        "familyId": "phv-cut",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cut out",
+        "ipa": "/kʌt aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "cắt bỏ, loại bỏ",
+        "example": "The doctor told him to cut out fatty foods.",
+        "familyId": "phv-cut",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fill in",
+        "ipa": "/fɪl ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "điền vào, thay thế tạm",
+        "example": "Please fill in this form before the interview.",
+        "familyId": "phv-fill",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fill out",
+        "ipa": "/fɪl aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "điền (mẫu đơn)",
+        "example": "You must fill out the application carefully.",
+        "familyId": "phv-fill",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fill up",
+        "ipa": "/fɪl ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đổ đầy, làm đầy",
+        "example": "Let's fill up the tank before the long drive.",
+        "familyId": "phv-fill",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "find out",
+        "ipa": "/faɪnd aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm ra, phát hiện",
+        "example": "I want to find out what really happened.",
+        "familyId": "phv-find",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hand in",
+        "ipa": "/hænd ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nộp (bài, đơn)",
+        "example": "Students must hand in their essays by Friday.",
+        "familyId": "phv-hand",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hand out",
+        "ipa": "/hænd aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "phát ra, phân phát",
+        "example": "The volunteers handed out water to the runners.",
+        "familyId": "phv-hand",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hold on",
+        "ipa": "/həʊld ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chờ chút, giữ máy",
+        "example": "Hold on a second; I'll get the manager.",
+        "familyId": "phv-hold",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hold up",
+        "ipa": "/həʊld ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "làm chậm trễ, cản trở",
+        "example": "The accident held up traffic for hours.",
+        "familyId": "phv-hold",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hold back",
+        "ipa": "/həʊld bæk/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "kìm nén, giữ lại",
+        "example": "She could not hold back her tears.",
+        "familyId": "phv-hold",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "keep up",
+        "ipa": "/kiːp ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "theo kịp, duy trì",
+        "example": "It's hard to keep up with all the changes.",
+        "familyId": "phv-keep",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "keep on",
+        "ipa": "/kiːp ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tiếp tục (làm gì)",
+        "example": "He kept on talking even after the bell rang.",
+        "familyId": "phv-keep",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "keep away",
+        "ipa": "/kiːp əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tránh xa, để xa",
+        "example": "Keep away from the edge of the cliff.",
+        "familyId": "phv-keep",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make up",
+        "ipa": "/meɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bịa ra, làm hòa, trang điểm",
+        "example": "He made up a story to avoid trouble.",
+        "familyId": "phv-make",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make out",
+        "ipa": "/meɪk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận ra, hiểu được",
+        "example": "I couldn't make out what he was saying.",
+        "familyId": "phv-make",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pick up",
+        "ipa": "/pɪk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đón, nhặt lên, học được",
+        "example": "I'll pick you up at the airport at noon.",
+        "familyId": "phv-pick",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pick out",
+        "ipa": "/pɪk aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "chọn ra, lựa ra",
+        "example": "She picked out a nice dress for the party.",
+        "familyId": "phv-pick",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run out",
+        "ipa": "/rʌn aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "hết, cạn kiệt",
+        "example": "We've run out of milk again.",
+        "familyId": "phv-run",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run into",
+        "ipa": "/rʌn ˈɪntə/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tình cờ gặp, đâm vào",
+        "example": "I ran into an old friend at the market.",
+        "familyId": "phv-run",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run away",
+        "ipa": "/rʌn əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bỏ chạy, bỏ trốn",
+        "example": "The boy ran away from home when he was sixteen.",
+        "familyId": "phv-run",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set up",
+        "ipa": "/set ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "thiết lập, thành lập",
+        "example": "They set up a new company last year.",
+        "familyId": "phv-set",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set off",
+        "ipa": "/set ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "khởi hành, kích nổ",
+        "example": "We set off early to avoid the traffic.",
+        "familyId": "phv-set",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set out",
+        "ipa": "/set aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt đầu (hành trình/việc gì)",
+        "example": "She set out to become a doctor at a young age.",
+        "familyId": "phv-set",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "show up",
+        "ipa": "/ʃəʊ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "xuất hiện, có mặt",
+        "example": "He didn't show up for the meeting.",
+        "familyId": "phv-show",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "show off",
+        "ipa": "/ʃəʊ ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "khoe khoang, phô trương",
+        "example": "He likes to show off his new car.",
+        "familyId": "phv-show",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "switch on",
+        "ipa": "/swɪtʃ ɒn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bật (công tắc, thiết bị)",
+        "example": "Switch on the computer and wait a moment.",
+        "familyId": "phv-switch",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "switch off",
+        "ipa": "/swɪtʃ ɒf/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tắt (công tắc, thiết bị)",
+        "example": "Remember to switch off the heater before leaving.",
+        "familyId": "phv-switch",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "throw away",
+        "ipa": "/θrəʊ əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "vứt đi, bỏ đi",
+        "example": "Don't throw away those old newspapers; we can recycle them.",
+        "familyId": "phv-throw",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "throw up",
+        "ipa": "/θrəʊ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "nôn, ói",
+        "example": "He felt sick and threw up after the ride.",
+        "familyId": "phv-throw",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "back up",
+        "ipa": "/bæk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "sao lưu, ủng hộ",
+        "example": "Always back up your files before updating.",
+        "familyId": "phv-misc",
+        "familyOrder": 1,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "catch up",
+        "ipa": "/kætʃ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt kịp, theo kịp",
+        "example": "Go ahead; I'll catch up with you later.",
+        "familyId": "phv-misc",
+        "familyOrder": 2,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "end up",
+        "ipa": "/end ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "kết cục, rốt cuộc",
+        "example": "We ended up staying home all weekend.",
+        "familyId": "phv-misc",
+        "familyOrder": 3,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "figure out",
+        "ipa": "/ˈfɪɡə aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm ra (cách), hiểu ra",
+        "example": "I can't figure out how to solve this problem.",
+        "familyId": "phv-misc",
+        "familyOrder": 4,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grow up",
+        "ipa": "/ɡrəʊ ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "lớn lên, trưởng thành",
+        "example": "She grew up in a small village in the countryside.",
+        "familyId": "phv-misc",
+        "familyOrder": 5,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pass out",
+        "ipa": "/pɑːs aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "ngất xỉu",
+        "example": "He passed out from the heat.",
+        "familyId": "phv-misc",
+        "familyOrder": 6,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pass away",
+        "ipa": "/pɑːs əˈweɪ/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "qua đời (cách nói lịch sự)",
+        "example": "Her grandfather passed away last winter.",
+        "familyId": "phv-misc",
+        "familyOrder": 7,
+        "tags": ["phrasal-verb"]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sort out",
+        "ipa": "/sɔːt aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "giải quyết, sắp xếp",
+        "example": "We need to sort out this misunderstanding.",
+        "familyId": "phv-misc",
+        "familyOrder": 8,
+        "tags": ["phrasal-verb"]
+      }
+    }
+  ]
+}

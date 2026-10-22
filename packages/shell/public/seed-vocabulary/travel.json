@@ -1,0 +1,1847 @@
+{
+  "_meta": {
+    "topicId": "travel",
+    "topicName": "Du lịch",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Travel (B1-B2)",
+    "totalCards": 141,
+    "totalFamilies": 12,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung bo sung cho chu de Du lich, da loc tranh trung word voi cac topic seed hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "itinerary",
+        "ipa": "/aɪˈtɪn.ə.rer.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lịch trình chuyến đi",
+        "example": "We planned a detailed itinerary before the trip.",
+        "familyId": "planning-booking",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destination",
+        "ipa": "/ˌdes.tɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điểm đến",
+        "example": "Paris is a popular tourist destination.",
+        "familyId": "planning-booking",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel agency",
+        "ipa": "/ˈtræv.əl ˌeɪ.dʒən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty du lịch",
+        "example": "The travel agency arranged our flights and hotels.",
+        "familyId": "planning-booking",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tour operator",
+        "ipa": "/ˈtʊr ˌɑː.pə.reɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhà điều hành tour",
+        "example": "The tour operator offered a discount for groups.",
+        "familyId": "planning-booking",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "package tour",
+        "ipa": "/ˈpæk.ɪdʒ ˌtʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tour trọn gói",
+        "example": "A package tour includes flights, hotels, and meals.",
+        "familyId": "planning-booking",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guided tour",
+        "ipa": "/ˌɡaɪ.dɪd ˈtʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tour có hướng dẫn viên",
+        "example": "The guided tour lasted three hours.",
+        "familyId": "planning-booking",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-guided tour",
+        "ipa": "/ˌself.ɡaɪ.dɪd ˈtʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tour tự khám phá",
+        "example": "A self-guided tour lets you explore at your own pace.",
+        "familyId": "planning-booking",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel insurance",
+        "ipa": "/ˈtræv.əl ɪnˌʃʊr.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo hiểm du lịch",
+        "example": "Travel insurance covers medical emergencies abroad.",
+        "familyId": "planning-booking",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "round trip",
+        "ipa": "/ˌraʊnd ˈtrɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến đi khứ hồi",
+        "example": "A round trip ticket is cheaper than two one-way tickets.",
+        "familyId": "planning-booking",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "one-way ticket",
+        "ipa": "/ˌwʌn.weɪ ˈtɪk.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vé một chiều",
+        "example": "She bought a one-way ticket to London.",
+        "familyId": "planning-booking",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bucket list",
+        "ipa": "/ˈbʌk.ɪt ˌlɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "danh sách điều muốn làm trước khi chết",
+        "example": "Visiting Japan is on my bucket list.",
+        "familyId": "planning-booking",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wanderlust",
+        "ipa": "/ˈwɑːn.dɚ.lʌst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "niềm đam mê du lịch",
+        "example": "Wanderlust drives many people to explore new places.",
+        "familyId": "planning-booking",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "departure",
+        "ipa": "/dɪˈpɑːr.tʃɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khởi hành",
+        "example": "The departure time is 7 AM.",
+        "familyId": "depart",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arrival",
+        "ipa": "/əˈraɪ.vəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đến nơi",
+        "example": "Our arrival was delayed by two hours.",
+        "familyId": "air-travel",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "boarding pass",
+        "ipa": "/ˈbɔːr.dɪŋ ˌpæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ lên máy bay",
+        "example": "Show your boarding pass at the gate.",
+        "familyId": "air-travel",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check-in",
+        "ipa": "/ˈtʃek.ɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ tục đăng ký (tại sân bay/khách sạn)",
+        "example": "Online check-in saves time at the airport.",
+        "familyId": "air-travel",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "layover",
+        "ipa": "/ˈleɪ.oʊ.vɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thời gian chờ nối chuyến",
+        "example": "We had a six-hour layover in Dubai.",
+        "familyId": "air-travel",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stopover",
+        "ipa": "/ˈstɑːp.oʊ.vɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "điểm dừng chân giữa hành trình",
+        "example": "The stopover gave us time to explore Singapore.",
+        "familyId": "air-travel",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transit",
+        "ipa": "/ˈtræn.zɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quá cảnh",
+        "example": "Passengers in transit do not need a visa.",
+        "familyId": "air-travel",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "connecting flight",
+        "ipa": "/kəˈnek.tɪŋ ˌflaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến bay nối chuyến",
+        "example": "We missed our connecting flight due to the delay.",
+        "familyId": "air-travel",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "direct flight",
+        "ipa": "/dəˈrekt ˌflaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến bay thẳng",
+        "example": "A direct flight saves several hours.",
+        "familyId": "air-travel",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "long-haul flight",
+        "ipa": "/ˌlɑːŋ.hɑːl ˈflaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chuyến bay đường dài",
+        "example": "A long-haul flight can last over 12 hours.",
+        "familyId": "air-travel",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jet lag",
+        "ipa": "/ˈdʒet ˌlæɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mệt mỏi do lệch múi giờ",
+        "example": "Jet lag made it hard to sleep the first night.",
+        "familyId": "air-travel",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turbulence",
+        "ipa": "/ˈtɝː.bjə.ləns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhiễu động (khi bay)",
+        "example": "The plane experienced turbulence over the ocean.",
+        "familyId": "air-travel",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cabin crew",
+        "ipa": "/ˈkæb.ɪn ˌkruː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phi hành đoàn",
+        "example": "The cabin crew served drinks during the flight.",
+        "familyId": "air-travel",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terminal",
+        "ipa": "/ˈtɝː.mɪ.nəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà ga sân bay",
+        "example": "The international terminal is on the left.",
+        "familyId": "air-travel",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "baggage claim",
+        "ipa": "/ˈbæɡ.ɪdʒ ˌkleɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu nhận hành lý",
+        "example": "We waited at baggage claim for 30 minutes.",
+        "familyId": "air-travel",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carry-on luggage",
+        "ipa": "/ˌker.i.ɑːn ˈlʌɡ.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành lý xách tay",
+        "example": "Carry-on luggage must fit in the overhead bin.",
+        "familyId": "air-travel",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aisle seat",
+        "ipa": "/ˈaɪl ˌsiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ghế cạnh lối đi",
+        "example": "I prefer an aisle seat for extra legroom.",
+        "familyId": "air-travel",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "window seat",
+        "ipa": "/ˈwɪn.doʊ ˌsiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ghế cạnh cửa sổ",
+        "example": "A window seat offers a great view during landing.",
+        "familyId": "air-travel",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economy class",
+        "ipa": "/ɪˈkɑː.nə.mi ˌklæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hạng phổ thông",
+        "example": "Economy class tickets are the most affordable.",
+        "familyId": "air-travel",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "business class",
+        "ipa": "/ˈbɪz.nɪs ˌklæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hạng thương gia",
+        "example": "Business class offers wider seats and better meals.",
+        "familyId": "air-travel",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "passport",
+        "ipa": "/ˈpæs.pɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hộ chiếu",
+        "example": "Make sure your passport is valid for six months.",
+        "familyId": "documents-border",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "visa",
+        "ipa": "/ˈviː.zə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị thực",
+        "example": "You need a visa to enter some countries.",
+        "familyId": "documents-border",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "customs",
+        "ipa": "/ˈkʌs.təmz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hải quan",
+        "example": "Customs officers checked our bags at the border.",
+        "familyId": "documents-border",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "border control",
+        "ipa": "/ˈbɔːr.dɚ kənˌtroʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiểm soát biên giới",
+        "example": "Border control was strict during the holiday season.",
+        "familyId": "documents-border",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "duty-free",
+        "ipa": "/ˌduː.t̬i ˈfriː/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "miễn thuế",
+        "example": "She bought perfume at the duty-free shop.",
+        "familyId": "documents-border",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "currency exchange",
+        "ipa": "/ˈkɝː.ən.si ɪksˌtʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đổi tiền",
+        "example": "The currency exchange booth is near the exit.",
+        "familyId": "documents-border",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exchange rate",
+        "ipa": "/ɪksˈtʃeɪndʒ ˌreɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tỷ giá hối đoái",
+        "example": "The exchange rate changes daily.",
+        "familyId": "documents-border",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "local currency",
+        "ipa": "/ˈloʊ.kəl ˌkɝː.ən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền tệ địa phương",
+        "example": "Always carry some local currency for small purchases.",
+        "familyId": "documents-border",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel adapter",
+        "ipa": "/ˈtræv.əl əˌdæp.tɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ổ cắm chuyển đổi du lịch",
+        "example": "A travel adapter is essential for international trips.",
+        "familyId": "documents-border",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accommodation",
+        "ipa": "/əˌkɑː.məˈdeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chỗ ở",
+        "example": "Finding affordable accommodation can be challenging.",
+        "familyId": "accommodation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reservation",
+        "ipa": "/ˌrez.ɚˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đặt chỗ trước",
+        "example": "I made a reservation for two nights.",
+        "familyId": "reserve",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vacancy",
+        "ipa": "/ˈveɪ.kən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng trống",
+        "example": "The sign said no vacancy.",
+        "familyId": "accommodation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fully booked",
+        "ipa": "/ˌfʊl.i ˈbʊkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hết phòng",
+        "example": "The hotel was fully booked during the festival.",
+        "familyId": "accommodation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hostel",
+        "ipa": "/ˈhɑː.stəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà trọ bình dân",
+        "example": "Hostels are popular with budget travelers.",
+        "familyId": "accommodation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guesthouse",
+        "ipa": "/ˈɡest.haʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà khách",
+        "example": "The guesthouse had a lovely garden.",
+        "familyId": "accommodation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bed and breakfast",
+        "ipa": "/ˌbed ən ˈbrek.fəst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà nghỉ có bữa sáng",
+        "example": "We stayed at a cozy bed and breakfast.",
+        "familyId": "accommodation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resort",
+        "ipa": "/rɪˈzɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu nghỉ dưỡng",
+        "example": "The beach resort had a swimming pool.",
+        "familyId": "accommodation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "all-inclusive",
+        "ipa": "/ˌɑːl.ɪnˈkluː.sɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "trọn gói (bao gồm mọi thứ)",
+        "example": "An all-inclusive resort covers food and activities.",
+        "familyId": "accommodation",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "boutique hotel",
+        "ipa": "/buːˈtiːk hoʊˌtel/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khách sạn boutique (nhỏ, sang trọng)",
+        "example": "The boutique hotel had only 20 rooms.",
+        "familyId": "accommodation",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "front desk",
+        "ipa": "/ˌfrʌnt ˈdesk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quầy lễ tân",
+        "example": "Ask at the front desk for a city map.",
+        "familyId": "accommodation",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "concierge",
+        "ipa": "/ˌkɑːn.siˈerʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhân viên hỗ trợ khách",
+        "example": "The concierge recommended a local restaurant.",
+        "familyId": "accommodation",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "room service",
+        "ipa": "/ˈruːm ˌsɝː.vɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dịch vụ phòng",
+        "example": "We ordered breakfast through room service.",
+        "familyId": "accommodation",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "check-out",
+        "ipa": "/ˈtʃek.aʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trả phòng",
+        "example": "Check-out time is 11 AM.",
+        "familyId": "accommodation",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sightseeing",
+        "ipa": "/ˈsaɪtˌsiː.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tham quan",
+        "example": "We spent the day sightseeing in Rome.",
+        "familyId": "sightseeing",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tourist attraction",
+        "ipa": "/ˈtʊr.ɪst əˌtræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điểm thu hút du khách",
+        "example": "The tower is the city's main tourist attraction.",
+        "familyId": "sightseeing",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heritage site",
+        "ipa": "/ˈher.ɪ.t̬ɪdʒ ˌsaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "di sản",
+        "example": "The temple is a UNESCO heritage site.",
+        "familyId": "sightseeing",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "landmark",
+        "ipa": "/ˈlænd.mɑːrk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "địa danh nổi bật",
+        "example": "The bridge is a famous landmark.",
+        "familyId": "sightseeing",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ruins",
+        "ipa": "/ˈruː.ɪnz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phế tích",
+        "example": "The ancient ruins attract thousands of visitors.",
+        "familyId": "sightseeing",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "archaeological site",
+        "ipa": "/ˌɑːr.ki.əˈlɑː.dʒɪ.kəl ˌsaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "di chỉ khảo cổ",
+        "example": "The archaeological site dates back 2,000 years.",
+        "familyId": "sightseeing",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "national park",
+        "ipa": "/ˌnæʃ.ən.əl ˈpɑːrk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vườn quốc gia",
+        "example": "The national park protects rare wildlife.",
+        "familyId": "sightseeing",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nature reserve",
+        "ipa": "/ˈneɪ.tʃɚ rɪˌzɝːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khu bảo tồn thiên nhiên",
+        "example": "The nature reserve is home to many bird species.",
+        "familyId": "sightseeing",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scenic route",
+        "ipa": "/ˈsiː.nɪk ˌruːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tuyến đường phong cảnh đẹp",
+        "example": "We took the scenic route along the coast.",
+        "familyId": "sightseeing",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observation deck",
+        "ipa": "/ˌɑːb.zɚˈveɪ.ʃən ˌdek/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đài quan sát",
+        "example": "The observation deck offers a 360-degree view.",
+        "familyId": "sightseeing",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "souvenir",
+        "ipa": "/ˌsuː.vəˈnɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quà lưu niệm",
+        "example": "She bought a souvenir magnet for her fridge.",
+        "familyId": "sightseeing",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cruise",
+        "ipa": "/kruːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến du thuyền",
+        "example": "The cruise stopped at three islands.",
+        "familyId": "sea-travel",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cruise ship",
+        "ipa": "/ˈkruːz ˌʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tàu du lịch",
+        "example": "The cruise ship carried over 3,000 passengers.",
+        "familyId": "sea-travel",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ferry",
+        "ipa": "/ˈfer.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phà",
+        "example": "We took a ferry to the island.",
+        "familyId": "sea-travel",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harbor",
+        "ipa": "/ˈhɑːr.bɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bến cảng",
+        "example": "The harbor was full of fishing boats.",
+        "familyId": "sea-travel",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "port",
+        "ipa": "/pɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cảng",
+        "example": "The ship docked at the port early morning.",
+        "familyId": "sea-travel",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dock",
+        "ipa": "/dɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bến tàu",
+        "example": "Passengers waited at the dock.",
+        "familyId": "sea-travel",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pier",
+        "ipa": "/pɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cầu cảng",
+        "example": "We walked along the pier at sunset.",
+        "familyId": "sea-travel",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embark",
+        "ipa": "/ɪmˈbɑːrk/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "lên tàu",
+        "example": "Passengers embark at 4 PM.",
+        "familyId": "sea-travel",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disembark",
+        "ipa": "/ˌdɪs.ɪmˈbɑːrk/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "xuống tàu",
+        "example": "We disembarked at the first port of call.",
+        "familyId": "sea-travel",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shore excursion",
+        "ipa": "/ˈʃɔːr ɪkˌskɝː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chuyến tham quan trên bờ",
+        "example": "The shore excursion included a visit to a temple.",
+        "familyId": "sea-travel",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seasickness",
+        "ipa": "/ˈsiːˌsɪk.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "say sóng",
+        "example": "Seasickness is common on rough waters.",
+        "familyId": "sea-travel",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "voyage",
+        "ipa": "/ˈvɔɪ.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chuyến hải trình dài",
+        "example": "The voyage across the Atlantic took seven days.",
+        "familyId": "sea-travel",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "backpacking",
+        "ipa": "/ˈbæk.pæk.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "du lịch bụi",
+        "example": "Backpacking through Southeast Asia is very popular.",
+        "familyId": "adventure-travel",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "backpacker",
+        "ipa": "/ˈbæk.pæk.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người du lịch bụi",
+        "example": "The backpacker stayed in cheap hostels.",
+        "familyId": "adventure-travel",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trekking",
+        "ipa": "/ˈtrek.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đi bộ đường dài",
+        "example": "Trekking in the mountains requires good fitness.",
+        "familyId": "adventure-travel",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hiking trail",
+        "ipa": "/ˈhaɪ.kɪŋ ˌtreɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường mòn đi bộ",
+        "example": "The hiking trail leads to a waterfall.",
+        "familyId": "adventure-travel",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "campsite",
+        "ipa": "/ˈkæmp.saɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu cắm trại",
+        "example": "The campsite had showers and a cooking area.",
+        "familyId": "adventure-travel",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "camping gear",
+        "ipa": "/ˈkæmp.ɪŋ ˌɡɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dụng cụ cắm trại",
+        "example": "We packed all the camping gear in the car.",
+        "familyId": "adventure-travel",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expedition",
+        "ipa": "/ˌek.spəˈdɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cuộc thám hiểm",
+        "example": "The expedition reached the summit after five days.",
+        "familyId": "adventure-travel",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "summit",
+        "ipa": "/ˈsʌm.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đỉnh núi",
+        "example": "They reached the summit at dawn.",
+        "familyId": "adventure-travel",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "base camp",
+        "ipa": "/ˈbeɪs ˌkæmp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trại căn cứ",
+        "example": "The team rested at base camp before the final climb.",
+        "familyId": "adventure-travel",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wildlife",
+        "ipa": "/ˈwaɪld.laɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động vật hoang dã",
+        "example": "The region is famous for its wildlife.",
+        "familyId": "adventure-travel",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "safari",
+        "ipa": "/səˈfɑːr.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến đi xem thú hoang dã",
+        "example": "We went on a safari in Kenya.",
+        "familyId": "adventure-travel",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "off the beaten track",
+        "ipa": "/ˌɑːf ðə ˌbiː.tən ˈtræk/",
+        "partOfSpeech": "idiom",
+        "difficulty": "advanced",
+        "meaning": "nơi ít người biết đến",
+        "example": "The village is off the beaten track.",
+        "familyId": "adventure-travel",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hidden gem",
+        "ipa": "/ˌhɪd.ən ˈdʒem/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "viên ngọc ẩn (nơi đẹp ít người biết)",
+        "example": "The café is a hidden gem in the old town.",
+        "familyId": "adventure-travel",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ecotourism",
+        "ipa": "/ˈiː.koʊˌtʊr.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "du lịch sinh thái",
+        "example": "Ecotourism supports local communities.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sustainable tourism",
+        "ipa": "/səˌsteɪ.nə.bəl ˈtʊr.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "du lịch bền vững",
+        "example": "Sustainable tourism minimizes environmental damage.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overtourism",
+        "ipa": "/ˌoʊ.vɚˈtʊr.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "du lịch quá tải",
+        "example": "Overtourism harms popular destinations.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbon footprint",
+        "ipa": "/ˈkɑːr.bən ˌfʊt.prɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dấu chân carbon",
+        "example": "Flying increases your carbon footprint.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "culture shock",
+        "ipa": "/ˈkʌl.tʃɚ ˌʃɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sốc văn hóa",
+        "example": "Culture shock is normal when living abroad.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "homesickness",
+        "ipa": "/ˈhoʊmˌsɪk.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗi nhớ nhà",
+        "example": "Homesickness faded after the first week.",
+        "familyId": "sustainable-travel",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "public transport",
+        "ipa": "/ˌpʌb.lɪk ˈtræns.pɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phương tiện giao thông công cộng",
+        "example": "Public transport is efficient in most European cities.",
+        "familyId": "transport",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metro",
+        "ipa": "/ˈmet.roʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tàu điện ngầm",
+        "example": "The metro runs every five minutes.",
+        "familyId": "transport",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tram",
+        "ipa": "/træm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe điện",
+        "example": "The tram connects the old town to the station.",
+        "familyId": "transport",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cable car",
+        "ipa": "/ˈkeɪ.bəl ˌkɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cáp treo",
+        "example": "The cable car goes up to the mountain top.",
+        "familyId": "transport",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rental car",
+        "ipa": "/ˈren.t̬əl ˌkɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe thuê",
+        "example": "We picked up a rental car at the airport.",
+        "familyId": "transport",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "campervan",
+        "ipa": "/ˈkæm.pɚ.væn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xe cắm trại",
+        "example": "Traveling by campervan gives you freedom.",
+        "familyId": "transport",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "road trip",
+        "ipa": "/ˈroʊd ˌtrɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến đi bằng đường bộ",
+        "example": "A road trip along the coast is unforgettable.",
+        "familyId": "transport",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hitchhiking",
+        "ipa": "/ˈhɪtʃˌhaɪ.kɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đi nhờ xe",
+        "example": "Hitchhiking is less common today than in the past.",
+        "familyId": "transport",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rickshaw",
+        "ipa": "/ˈrɪk.ʃɑː/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xe kéo, xích lô",
+        "example": "We took a rickshaw through the old quarter.",
+        "familyId": "transport",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tuk-tuk",
+        "ipa": "/ˈtʊk.tʊk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe tuk-tuk",
+        "example": "A tuk-tuk ride is a fun way to see the city.",
+        "familyId": "transport",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "funicular",
+        "ipa": "/fjuːˈnɪk.jə.lɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tàu leo dốc",
+        "example": "The funicular takes you up the steep hill.",
+        "familyId": "transport",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "digital nomad",
+        "ipa": "/ˌdɪdʒ.ɪ.t̬əl ˈnoʊ.mæd/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người làm việc từ xa và du lịch",
+        "example": "A digital nomad works online while traveling.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gap year",
+        "ipa": "/ˈɡæp ˌjɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năm nghỉ (trước đại học/giữa công việc)",
+        "example": "She took a gap year to travel Asia.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sabbatical",
+        "ipa": "/səˈbæt̬.ɪ.kəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kỳ nghỉ dài hạn",
+        "example": "He spent his sabbatical exploring South America.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel blog",
+        "ipa": "/ˈtræv.əl ˌblɑːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "blog du lịch",
+        "example": "Her travel blog has thousands of readers.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "travel vlog",
+        "ipa": "/ˈtræv.əl ˌvlɑːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vlog du lịch",
+        "example": "His travel vlog shows daily adventures.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "phrase book",
+        "ipa": "/ˈfreɪz ˌbʊk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sách cụm từ giao tiếp",
+        "example": "A phrase book helps in countries where you don't speak the language.",
+        "familyId": "travel-lifestyle",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trip",
+        "ipa": "/trɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến đi",
+        "example": "We are planning a trip to the beach.",
+        "familyId": "planning-booking",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "journey",
+        "ipa": "/ˈdʒɜːrni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành trình, cuộc hành trình",
+        "example": "The journey by train took six hours.",
+        "familyId": "planning-booking",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tour",
+        "ipa": "/tʊr/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến tham quan, tour",
+        "example": "We joined a guided tour of the old city.",
+        "familyId": "sightseeing",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flight",
+        "ipa": "/flaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chuyến bay",
+        "example": "Our flight leaves at six in the morning.",
+        "familyId": "air-travel",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "airport",
+        "ipa": "/ˈerpɔːrt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sân bay",
+        "example": "We arrived at the airport two hours early.",
+        "familyId": "air-travel",
+        "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ticket",
+        "ipa": "/ˈtɪkət/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "vé",
+        "example": "I booked a return ticket online.",
+        "familyId": "planning-booking",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "luggage",
+        "ipa": "/ˈlʌɡɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành lý",
+        "example": "She packed her luggage the night before.",
+        "familyId": "air-travel",
+        "familyOrder": 23,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suitcase",
+        "ipa": "/ˈsuːtkeɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vali",
+        "example": "His suitcase was too heavy to carry.",
+        "familyId": "air-travel",
+        "familyOrder": 24,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "map",
+        "ipa": "/mæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bản đồ",
+        "example": "We used a map to find the museum.",
+        "familyId": "sightseeing",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hotel",
+        "ipa": "/hoʊˈtel/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "khách sạn",
+        "example": "We stayed at a small hotel near the beach.",
+        "familyId": "accommodation",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tourist",
+        "ipa": "/ˈtʊrɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "khách du lịch",
+        "example": "The city is full of tourists in summer.",
+        "familyId": "sightseeing",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beach",
+        "ipa": "/biːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bãi biển",
+        "example": "The children built sandcastles on the beach.",
+        "familyId": "sightseeing",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mountain",
+        "ipa": "/ˈmaʊntən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "núi",
+        "example": "They climbed the mountain in two days.",
+        "familyId": "sightseeing",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lake",
+        "ipa": "/leɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "hồ",
+        "example": "We went swimming in the lake.",
+        "familyId": "sightseeing",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "river",
+        "ipa": "/ˈrɪvər/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sông",
+        "example": "A long bridge crosses the river.",
+        "familyId": "sightseeing",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forest",
+        "ipa": "/ˈfɔːrɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "rừng",
+        "example": "We hiked through the forest all day.",
+        "familyId": "sightseeing",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desert",
+        "ipa": "/ˈdezərt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sa mạc",
+        "example": "The desert is very hot during the day.",
+        "familyId": "sightseeing",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "island",
+        "ipa": "/ˈaɪlənd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hòn đảo",
+        "example": "They spent a week on a tropical island.",
+        "familyId": "sightseeing",
+        "familyOrder": 21,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "road",
+        "ipa": "/roʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "con đường",
+        "example": "This road leads to the city center.",
+        "familyId": "transport",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "street",
+        "ipa": "/striːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "đường phố",
+        "example": "The shop is on a busy street.",
+        "familyId": "transport",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bridge",
+        "ipa": "/brɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cây cầu",
+        "example": "We crossed the bridge over the river.",
+        "familyId": "transport",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "station",
+        "ipa": "/ˈsteɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "nhà ga, trạm",
+        "example": "The train station is near the hotel.",
+        "familyId": "transport",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guide",
+        "ipa": "/ɡaɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hướng dẫn viên",
+        "example": "Our guide explained the history of the temple.",
+        "familyId": "sightseeing",
+        "familyOrder": 22,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shuttle",
+        "ipa": "/ˈʃʌt.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe đưa đón (shuttle)",
+        "example": "A free shuttle takes guests from the airport to the hotel.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depart",
+        "ipa": "/dɪˈpɑːrt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khởi hành, rời đi",
+        "example": "The train will depart from platform four at six.",
+        "familyId": "depart",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alight",
+        "ipa": "/əˈlaɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "xuống (tàu, xe, ngựa)",
+        "example": "Passengers must alight from the bus at the front door.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reserve",
+        "ipa": "/rɪˈzɝːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt trước, dành trước",
+        "example": "You should reserve a table before going to that restaurant.",
+        "familyId": "reserve",
+        "familyOrder": 1,
+        "tags": []
+      }
+    }
+  ]
+}

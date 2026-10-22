@@ -1,0 +1,1738 @@
+{
+  "_meta": {
+    "topicId": "food-drink",
+    "topicName": "Food & Drink",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Food & Drink (B1-B2)",
+    "totalCards": 132,
+    "totalFamilies": 17,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Am thuc va Do uong, gom theo family/nhom ngu nghia de hoc theo cum lien quan. Bao gom bua an, nguyen lieu, dinh duong, rau cu, trai cay, thit hai san, do uong, phuong phap nau an, vi giac, an ngoai va che do an."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "food",
+        "ipa": "/fuːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thức ăn, thực phẩm",
+        "example": "Fresh food is usually healthier than processed food.",
+        "familyId": "food-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drink",
+        "ipa": "/drɪŋk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ uống, thức uống",
+        "example": "Water is the best drink when you are thirsty.",
+        "familyId": "food-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meal",
+        "ipa": "/miːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bữa ăn",
+        "example": "A balanced meal should include vegetables and protein.",
+        "familyId": "meal-types",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breakfast",
+        "ipa": "/ˈbrek.fəst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bữa sáng",
+        "example": "Breakfast gives you energy for the morning.",
+        "familyId": "meal-types",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lunch",
+        "ipa": "/lʌntʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bữa trưa",
+        "example": "We had lunch at a small cafe near the office.",
+        "familyId": "meal-types",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dinner",
+        "ipa": "/ˈdɪn.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bữa tối",
+        "example": "My family usually has dinner together at seven.",
+        "familyId": "meal-types",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "snack",
+        "ipa": "/snæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ ăn nhẹ, bữa ăn nhẹ",
+        "example": "Fruit is a healthy snack between meals.",
+        "familyId": "meal-types",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "starter",
+        "ipa": "/ˈstɑː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "món khai vị",
+        "example": "We ordered soup as a starter.",
+        "note": "US English: appetizer",
+        "familyId": "meal-types",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "main course",
+        "ipa": "/ˌmeɪn ˈkɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "món chính",
+        "example": "For the main course, I chose grilled fish.",
+        "familyId": "meal-types",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dessert",
+        "ipa": "/dɪˈzɜːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "món tráng miệng",
+        "example": "Ice cream is my favourite dessert.",
+        "familyId": "meal-types",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ingredient",
+        "ipa": "/ɪnˈɡriː.di.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên liệu",
+        "example": "Fresh ingredients make the soup taste better.",
+        "familyId": "ingredients",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recipe",
+        "ipa": "/ˈres.ɪ.pi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công thức nấu ăn",
+        "example": "I followed a simple recipe for banana bread.",
+        "familyId": "ingredients",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "portion",
+        "ipa": "/ˈpɔː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khẩu phần, phần ăn",
+        "example": "The portions at this restaurant are quite large.",
+        "familyId": "ingredients",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serving",
+        "ipa": "/ˈsɜː.vɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "suất ăn, phần dùng",
+        "example": "This package contains four servings.",
+        "familyId": "ingredients",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calorie",
+        "ipa": "/ˈkæl.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "calo",
+        "example": "Nuts are healthy but high in calories.",
+        "familyId": "nutrition",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protein",
+        "ipa": "/ˈprəʊ.tiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất đạm, protein",
+        "example": "Eggs are a good source of protein.",
+        "familyId": "nutrition",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbohydrate",
+        "ipa": "/ˌkɑː.bəʊˈhaɪ.dreɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chất bột đường",
+        "example": "Rice and bread contain a lot of carbohydrates.",
+        "note": "Often shortened to carbs",
+        "familyId": "nutrition",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fat",
+        "ipa": "/fæt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất béo",
+        "example": "Avocados contain healthy fats.",
+        "familyId": "nutrition",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vitamin",
+        "ipa": "/ˈvɪt.ə.mɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vitamin",
+        "example": "Oranges are rich in vitamin C.",
+        "familyId": "nutrition",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mineral",
+        "ipa": "/ˈmɪn.ər.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khoáng chất",
+        "example": "Calcium is an important mineral for bones.",
+        "familyId": "nutrition",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fiber",
+        "ipa": "/ˈfaɪ.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chất xơ",
+        "example": "Whole grains are high in fiber.",
+        "note": "British spelling: fibre",
+        "familyId": "nutrition",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vegetable",
+        "ipa": "/ˈvedʒ.tə.bəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rau củ",
+        "example": "Children should eat more vegetables every day.",
+        "familyId": "vegetables",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carrot",
+        "ipa": "/ˈkær.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cà rốt",
+        "example": "Carrots can be eaten raw or cooked.",
+        "familyId": "vegetables",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "potato",
+        "ipa": "/pəˈteɪ.təʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoai tây",
+        "example": "Baked potatoes are easy to prepare.",
+        "familyId": "vegetables",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tomato",
+        "ipa": "/təˈmɑː.təʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cà chua",
+        "example": "Add chopped tomatoes to the sauce.",
+        "familyId": "vegetables",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "onion",
+        "ipa": "/ˈʌn.jən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành tây",
+        "example": "Fry the onions until they turn golden.",
+        "familyId": "vegetables",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "garlic",
+        "ipa": "/ˈɡɑː.lɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tỏi",
+        "example": "Garlic gives the dish a strong flavour.",
+        "familyId": "vegetables",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cucumber",
+        "ipa": "/ˈkjuː.kʌm.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dưa chuột",
+        "example": "Cucumber is often used in salads.",
+        "familyId": "vegetables",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lettuce",
+        "ipa": "/ˈlet.ɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rau xà lách",
+        "example": "Wash the lettuce before making the salad.",
+        "familyId": "vegetables",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mushroom",
+        "ipa": "/ˈmʌʃ.ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nấm",
+        "example": "Mushrooms add a rich taste to pasta.",
+        "familyId": "vegetables",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fruit",
+        "ipa": "/fruːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trái cây, hoa quả",
+        "example": "Fresh fruit is a good dessert choice.",
+        "familyId": "fruit",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apple",
+        "ipa": "/ˈæp.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả táo",
+        "example": "She eats an apple after lunch.",
+        "familyId": "fruit",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banana",
+        "ipa": "/bəˈnɑː.nə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả chuối",
+        "example": "Bananas are convenient to carry as a snack.",
+        "familyId": "fruit",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "orange",
+        "ipa": "/ˈɒr.ɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả cam",
+        "example": "I squeezed an orange to make juice.",
+        "familyId": "fruit",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grape",
+        "ipa": "/ɡreɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả nho",
+        "example": "The grapes were sweet and juicy.",
+        "familyId": "fruit",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mango",
+        "ipa": "/ˈmæŋ.ɡəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả xoài",
+        "example": "Mango is a popular tropical fruit.",
+        "familyId": "fruit",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pineapple",
+        "ipa": "/ˈpaɪnˌæp.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quả dứa, thơm",
+        "example": "Pineapple tastes both sweet and sour.",
+        "familyId": "fruit",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "watermelon",
+        "ipa": "/ˈwɔː.təˌmel.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dưa hấu",
+        "example": "Cold watermelon is refreshing in summer.",
+        "familyId": "fruit",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meat",
+        "ipa": "/miːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thịt",
+        "example": "Some people choose not to eat meat.",
+        "familyId": "meat-seafood",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beef",
+        "ipa": "/biːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thịt bò",
+        "example": "Beef stew is popular in many countries.",
+        "familyId": "meat-seafood",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pork",
+        "ipa": "/pɔːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thịt lợn, thịt heo",
+        "example": "Pork is used in many Vietnamese dishes.",
+        "familyId": "meat-seafood",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chicken",
+        "ipa": "/ˈtʃɪk.ɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thịt gà; con gà",
+        "example": "Grilled chicken is served with rice and salad.",
+        "familyId": "meat-seafood",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seafood",
+        "ipa": "/ˈsiː.fuːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hải sản",
+        "example": "This restaurant is famous for fresh seafood.",
+        "familyId": "meat-seafood",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fish",
+        "ipa": "/fɪʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cá",
+        "example": "Fish is a good source of protein.",
+        "familyId": "meat-seafood",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shrimp",
+        "ipa": "/ʃrɪmp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tôm",
+        "example": "The noodles are topped with shrimp.",
+        "note": "British English: prawn",
+        "familyId": "meat-seafood",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "egg",
+        "ipa": "/eɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trứng",
+        "example": "Boiled eggs are easy to prepare.",
+        "familyId": "dairy-eggs",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "milk",
+        "ipa": "/mɪlk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sữa",
+        "example": "Many people drink milk with breakfast.",
+        "familyId": "dairy-eggs",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cheese",
+        "ipa": "/tʃiːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phô mai",
+        "example": "This pizza has extra cheese.",
+        "familyId": "dairy-eggs",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yogurt",
+        "ipa": "/ˈjɒɡ.ət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sữa chua",
+        "example": "Plain yogurt can be eaten with fruit.",
+        "note": "British spelling: yoghurt",
+        "familyId": "dairy-eggs",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "butter",
+        "ipa": "/ˈbʌt.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bơ",
+        "example": "Spread a little butter on the toast.",
+        "familyId": "dairy-eggs",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rice",
+        "ipa": "/raɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơm, gạo",
+        "example": "Rice is a staple food in many Asian countries.",
+        "familyId": "grains-staples",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bread",
+        "ipa": "/bred/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bánh mì",
+        "example": "She bought a loaf of bread from the bakery.",
+        "familyId": "grains-staples",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "noodle",
+        "ipa": "/ˈnuː.dəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mì, sợi mì",
+        "example": "These noodles are served in a spicy broth.",
+        "familyId": "grains-staples",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pasta",
+        "ipa": "/ˈpæs.tə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mì Ý",
+        "example": "Pasta with tomato sauce is simple but delicious.",
+        "familyId": "grains-staples",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cereal",
+        "ipa": "/ˈsɪə.ri.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngũ cốc ăn sáng",
+        "example": "He eats cereal with milk every morning.",
+        "familyId": "grains-staples",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flour",
+        "ipa": "/flaʊər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bột mì",
+        "example": "Mix the flour with water and salt.",
+        "familyId": "grains-staples",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sugar",
+        "ipa": "/ˈʃʊɡ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường",
+        "example": "Do not add too much sugar to your tea.",
+        "familyId": "seasoning",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salt",
+        "ipa": "/sɔːlt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "muối",
+        "example": "Add a pinch of salt to the soup.",
+        "familyId": "seasoning",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pepper",
+        "ipa": "/ˈpep.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hạt tiêu, tiêu",
+        "example": "Season the steak with salt and pepper.",
+        "familyId": "seasoning",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spice",
+        "ipa": "/spaɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gia vị",
+        "example": "This market sells many different spices.",
+        "familyId": "seasoning",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "herb",
+        "ipa": "/hɜːb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rau thơm, thảo mộc",
+        "example": "Fresh herbs make the dish smell wonderful.",
+        "familyId": "seasoning",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sauce",
+        "ipa": "/sɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước sốt",
+        "example": "The pasta is served with a creamy sauce.",
+        "familyId": "seasoning",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oil",
+        "ipa": "/ɔɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dầu ăn",
+        "example": "Use olive oil for the salad dressing.",
+        "familyId": "seasoning",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vinegar",
+        "ipa": "/ˈvɪn.ɪ.ɡər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "giấm",
+        "example": "Vinegar gives the sauce a sharp taste.",
+        "familyId": "seasoning",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "water",
+        "ipa": "/ˈwɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước",
+        "example": "Drink enough water during the day.",
+        "familyId": "beverages",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tea",
+        "ipa": "/tiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trà",
+        "example": "Would you like a cup of tea?",
+        "familyId": "beverages",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coffee",
+        "ipa": "/ˈkɒf.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cà phê",
+        "example": "She drinks coffee before going to work.",
+        "familyId": "beverages",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "juice",
+        "ipa": "/dʒuːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước ép",
+        "example": "Orange juice is popular at breakfast.",
+        "familyId": "beverages",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smoothie",
+        "ipa": "/ˈsmuː.ði/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sinh tố",
+        "example": "This smoothie is made with banana and yogurt.",
+        "familyId": "beverages",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soft drink",
+        "ipa": "/ˌsɒft ˈdrɪŋk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước ngọt",
+        "example": "Soft drinks often contain a lot of sugar.",
+        "familyId": "beverages",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sparkling water",
+        "ipa": "/ˌspɑː.klɪŋ ˈwɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nước có ga",
+        "example": "I ordered sparkling water with lemon.",
+        "familyId": "beverages",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alcohol",
+        "ipa": "/ˈæl.kə.hɒl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ uống có cồn, cồn",
+        "example": "Some people avoid alcohol for health reasons.",
+        "familyId": "beverages",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cook",
+        "ipa": "/kʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nấu ăn",
+        "example": "He learned to cook when he lived alone.",
+        "familyId": "cooking-methods",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "boil",
+        "ipa": "/bɔɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "luộc, đun sôi",
+        "example": "Boil the potatoes until they are soft.",
+        "familyId": "cooking-methods",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fry",
+        "ipa": "/fraɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chiên, rán",
+        "example": "Fry the onions in a little oil.",
+        "familyId": "cooking-methods",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grill",
+        "ipa": "/ɡrɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nướng vỉ",
+        "example": "We grilled fish for dinner.",
+        "familyId": "cooking-methods",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bake",
+        "ipa": "/beɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nướng bằng lò",
+        "example": "She likes to bake bread at weekends.",
+        "familyId": "cooking-methods",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "roast",
+        "ipa": "/rəʊst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quay, nướng",
+        "example": "Roast the chicken with garlic and herbs.",
+        "familyId": "cooking-methods",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "steam",
+        "ipa": "/stiːm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hấp",
+        "example": "Steam the vegetables for five minutes.",
+        "familyId": "cooking-methods",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stir-fry",
+        "ipa": "/ˈstɜː.fraɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "xào",
+        "example": "Stir-fry the beef quickly over high heat.",
+        "familyId": "cooking-methods",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chop",
+        "ipa": "/tʃɒp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chặt, thái nhỏ",
+        "example": "Chop the carrots into small pieces.",
+        "familyId": "preparation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slice",
+        "ipa": "/slaɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thái lát",
+        "example": "Slice the bread before serving it.",
+        "familyId": "preparation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "peel",
+        "ipa": "/piːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gọt vỏ, bóc vỏ",
+        "example": "Peel the apples before cooking them.",
+        "familyId": "preparation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mix",
+        "ipa": "/mɪks/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trộn",
+        "example": "Mix the eggs with milk and flour.",
+        "familyId": "preparation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stir",
+        "ipa": "/stɜːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khuấy, đảo",
+        "example": "Stir the soup so it does not burn.",
+        "familyId": "preparation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pour",
+        "ipa": "/pɔːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rót, đổ",
+        "example": "Pour the sauce over the noodles.",
+        "familyId": "preparation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "season",
+        "ipa": "/ˈsiː.zən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nêm gia vị",
+        "example": "Season the meat with salt and pepper.",
+        "familyId": "preparation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serve",
+        "ipa": "/sɜːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phục vụ, dọn món",
+        "example": "Serve the soup while it is still hot.",
+        "familyId": "preparation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taste",
+        "ipa": "/teɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vị, khẩu vị",
+        "example": "The soup has a rich taste.",
+        "familyId": "taste-texture",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flavour",
+        "ipa": "/ˈfleɪ.vər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hương vị",
+        "example": "Vanilla is a common ice-cream flavour.",
+        "note": "US spelling: flavor",
+        "familyId": "taste-texture",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sweet",
+        "ipa": "/swiːt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngọt",
+        "example": "This mango is very sweet.",
+        "familyId": "taste-texture",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sour",
+        "ipa": "/saʊər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chua",
+        "example": "The lemon tastes sour.",
+        "familyId": "taste-texture",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salty",
+        "ipa": "/ˈsɔːl.ti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mặn",
+        "example": "The soup is too salty.",
+        "familyId": "taste-texture",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spicy",
+        "ipa": "/ˈspaɪ.si/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cay",
+        "example": "Do you like spicy food?",
+        "familyId": "taste-texture",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bitter",
+        "ipa": "/ˈbɪt.ər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đắng",
+        "example": "Black coffee can taste bitter.",
+        "familyId": "taste-texture",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fresh",
+        "ipa": "/freʃ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tươi",
+        "example": "Fresh bread smells amazing.",
+        "familyId": "taste-texture",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crispy",
+        "ipa": "/ˈkrɪs.pi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "giòn",
+        "example": "The fried chicken is crispy on the outside.",
+        "familyId": "taste-texture",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tender",
+        "ipa": "/ˈten.dər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mềm, dễ nhai",
+        "example": "The beef was tender and delicious.",
+        "familyId": "taste-texture",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delicious",
+        "ipa": "/dɪˈlɪʃ.əs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngon",
+        "example": "The homemade soup was delicious.",
+        "familyId": "taste-texture",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "restaurant",
+        "ipa": "/ˈres.tər.ɒnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà hàng",
+        "example": "We booked a table at an Italian restaurant.",
+        "familyId": "eating-out",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cafe",
+        "ipa": "/ˈkæf.eɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quán cà phê",
+        "example": "They met at a cafe near the station.",
+        "familyId": "eating-out",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "menu",
+        "ipa": "/ˈmen.juː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thực đơn",
+        "example": "The menu includes vegetarian dishes.",
+        "familyId": "eating-out",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "order",
+        "ipa": "/ˈɔː.dər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gọi món, đặt món",
+        "example": "I ordered noodles and iced tea.",
+        "familyId": "eating-out",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "waiter",
+        "ipa": "/ˈweɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nam phục vụ bàn",
+        "example": "The waiter brought us the bill.",
+        "familyId": "eating-out",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "waitress",
+        "ipa": "/ˈweɪ.trəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nữ phục vụ bàn",
+        "example": "The waitress recommended the seafood pasta.",
+        "familyId": "eating-out",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bill",
+        "ipa": "/bɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa đơn",
+        "example": "Could we have the bill, please?",
+        "note": "US English: check",
+        "familyId": "eating-out",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tip",
+        "ipa": "/tɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền boa",
+        "example": "In some countries, leaving a tip is expected.",
+        "familyId": "eating-out",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "takeaway",
+        "ipa": "/ˈteɪk.ə.weɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ ăn mang đi",
+        "example": "We ordered a takeaway because we were tired.",
+        "note": "US English: takeout",
+        "familyId": "eating-out",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delivery",
+        "ipa": "/dɪˈlɪv.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giao hàng",
+        "example": "Food delivery is convenient on rainy days.",
+        "familyId": "eating-out",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hungry",
+        "ipa": "/ˈhʌŋ.ɡri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đói",
+        "example": "I am hungry after the long walk.",
+        "familyId": "hunger-appetite",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thirsty",
+        "ipa": "/ˈθɜː.sti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khát",
+        "example": "She felt thirsty after eating salty food.",
+        "familyId": "hunger-appetite",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appetite",
+        "ipa": "/ˈæp.ə.taɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cảm giác thèm ăn, khẩu vị",
+        "example": "The smell of bread gave me an appetite.",
+        "familyId": "hunger-appetite",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "full",
+        "ipa": "/fʊl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "no",
+        "example": "I am full after such a big meal.",
+        "familyId": "hunger-appetite",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vegetarian",
+        "ipa": "/ˌvedʒ.ɪˈteə.ri.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người ăn chay",
+        "example": "A vegetarian does not eat meat or fish.",
+        "familyId": "diet",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vegan",
+        "ipa": "/ˈviː.ɡən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người ăn thuần chay",
+        "example": "Vegans avoid all animal products.",
+        "familyId": "diet",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "allergy",
+        "ipa": "/ˈæl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dị ứng",
+        "example": "He has a peanut allergy.",
+        "familyId": "diet",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "allergic",
+        "ipa": "/əˈlɜː.dʒɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bị dị ứng",
+        "example": "She is allergic to shellfish.",
+        "familyId": "diet",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "healthy",
+        "ipa": "/ˈhel.θi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lành mạnh, tốt cho sức khỏe",
+        "example": "A healthy diet includes plenty of vegetables.",
+        "familyId": "diet",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unhealthy",
+        "ipa": "/ʌnˈhel.θi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không lành mạnh",
+        "example": "Eating too much fried food can be unhealthy.",
+        "familyId": "diet",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dish",
+        "ipa": "/dɪʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "món ăn, đĩa",
+        "example": "This dish is a local specialty.",
+        "familyId": "food-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ripe",
+        "ipa": "/raɪp/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chín (trái cây)",
+        "example": "These bananas are perfectly ripe.",
+        "familyId": "taste-texture",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "raw",
+        "ipa": "/rɔː/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sống, chưa nấu",
+        "example": "Sushi is made with raw fish.",
+        "familyId": "taste-texture",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooked",
+        "ipa": "/kʊkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "đã nấu chín",
+        "example": "Make sure the meat is fully cooked.",
+        "familyId": "taste-texture",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tasty",
+        "ipa": "/ˈteɪsti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ngon",
+        "example": "The soup was really tasty.",
+        "familyId": "taste-texture",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lemon",
+        "ipa": "/ˈlemən/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "quả chanh vàng",
+        "example": "She added a slice of lemon to her tea.",
+        "familyId": "fruit",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soup",
+        "ipa": "/suːp/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "súp, canh",
+        "example": "A bowl of hot soup is perfect in winter.",
+        "familyId": "meal-types",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salad",
+        "ipa": "/ˈsæləd/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "salad, rau trộn",
+        "example": "I ordered a green salad for lunch.",
+        "familyId": "meal-types",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cake",
+        "ipa": "/keɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bánh ngọt, bánh kem",
+        "example": "She baked a chocolate cake for the party.",
+        "familyId": "meal-types",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cookie",
+        "ipa": "/ˈkʊki/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "bánh quy",
+        "example": "The children love homemade cookies.",
+        "familyId": "meal-types",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "candy",
+        "ipa": "/ˈkændi/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "kẹo",
+        "example": "Too much candy is bad for your teeth.",
+        "familyId": "meal-types",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chocolate",
+        "ipa": "/ˈtʃɑːklət/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "sô cô la",
+        "example": "He gave her a box of chocolate.",
+        "familyId": "meal-types",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "glass",
+        "ipa": "/ɡlæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cốc, ly (thủy tinh)",
+        "example": "She poured a glass of water.",
+        "familyId": "beverages",
+        "familyOrder": 9,
+        "tags": []
+      }
+    }
+  ]
+}

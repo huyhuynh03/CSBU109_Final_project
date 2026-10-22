@@ -1,0 +1,1539 @@
+{
+  "_meta": {
+    "topicId": "personal-qualities",
+    "topicName": "Personal Qualities",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Personal Qualities (B1-B2)",
+    "totalCards": 117,
+    "totalFamilies": 20,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Pham chat ca nhan, gom cac tinh tu/trang tu mo ta pham chat, tinh cach, thai do, ky luat, long tot, kha nang xa hoi va cac pham chat tieu cuc. Bao gom good va well de nguoi hoc thay chung trong cung topic pham chat, dong thoi van giu duoc nhom bat quy tac good/well - better - best."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "good",
+        "ipa": "/ɡʊd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tốt, hay, giỏi",
+        "example": "A good person tries to help others when possible.",
+        "note": "Included here as a normal personal quality; the irregular-comparison seed may also contain good as a comparison base.",
+        "familyId": "general-positive",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "well",
+        "ipa": "/wel/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "tốt, giỏi, ổn",
+        "example": "She works well with different kinds of people.",
+        "note": "Included with good because good/well share the irregular comparison forms better and best.",
+        "familyId": "general-positive",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nice",
+        "ipa": "/naɪs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tốt bụng, dễ chịu",
+        "example": "He is a nice person who always smiles.",
+        "familyId": "general-positive",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kind",
+        "ipa": "/kaɪnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tử tế, tốt bụng",
+        "example": "A kind neighbor helped the old man carry his bags.",
+        "familyId": "general-positive",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pleasant",
+        "ipa": "/ˈplez.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ chịu, vui vẻ",
+        "example": "She has a pleasant personality.",
+        "familyId": "general-positive",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "likable",
+        "ipa": "/ˈlaɪ.kə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ mến",
+        "example": "His honest smile makes him very likable.",
+        "familyId": "general-positive",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "admirable",
+        "ipa": "/ˈæd.mər.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đáng ngưỡng mộ",
+        "example": "Her dedication to charity work is admirable.",
+        "familyId": "general-positive",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extraordinary",
+        "ipa": "/ɪkˈstrɔː.dɪn.ər.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "phi thường, đặc biệt",
+        "example": "She has an extraordinary talent for music.",
+        "familyId": "general-positive",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "honest",
+        "ipa": "/ˈɒn.ɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trung thực",
+        "example": "An honest employee admits mistakes quickly.",
+        "familyId": "integrity-values",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "truthful",
+        "ipa": "/ˈtruːθ.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thành thật, nói thật",
+        "example": "Children should learn to be truthful.",
+        "familyId": "integrity-values",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sincere",
+        "ipa": "/sɪnˈsɪər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "chân thành",
+        "example": "Her apology sounded sincere.",
+        "familyId": "integrity-values",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "genuine",
+        "ipa": "/ˈdʒen.ju.ɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thật lòng, chân thật",
+        "example": "He showed genuine concern for his friend.",
+        "familyId": "integrity-values",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trustworthy",
+        "ipa": "/ˈtrʌstˌwɜː.ði/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đáng tin cậy",
+        "example": "A trustworthy leader keeps promises.",
+        "familyId": "integrity-values",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reliable",
+        "ipa": "/rɪˈlaɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đáng tin cậy",
+        "example": "She is reliable and always finishes tasks on time.",
+        "familyId": "integrity-values",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loyal",
+        "ipa": "/ˈlɔɪ.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trung thành",
+        "example": "A loyal friend supports you in difficult times.",
+        "familyId": "integrity-values",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fair",
+        "ipa": "/feər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "công bằng",
+        "example": "A fair teacher treats all students equally.",
+        "familyId": "integrity-values",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "principled",
+        "ipa": "/ˈprɪn.sə.pəld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có nguyên tắc",
+        "example": "A principled person refuses to cheat.",
+        "familyId": "integrity-values",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dependable",
+        "ipa": "/dɪˈpen.də.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đáng tin, có thể dựa vào",
+        "example": "He is dependable in emergencies.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disciplined",
+        "ipa": "/ˈdɪs.ə.plɪnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kỷ luật",
+        "example": "Disciplined athletes train every day.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "organized",
+        "ipa": "/ˈɔː.ɡən.aɪzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngăn nắp, có tổ chức",
+        "example": "An organized manager keeps clear records.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "careful",
+        "ipa": "/ˈkeə.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cẩn thận",
+        "example": "A careful driver checks the mirrors often.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thorough",
+        "ipa": "/ˈθʌr.ə/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kỹ lưỡng",
+        "example": "Her report was thorough and accurate.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conscientious",
+        "ipa": "/ˌkɒn.ʃiˈen.ʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tận tâm, chu đáo",
+        "example": "Conscientious employees pay attention to detail.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hard-working",
+        "ipa": "/ˌhɑːdˈwɜː.kɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chăm chỉ",
+        "example": "Hard-working people often improve steadily.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brave",
+        "ipa": "/breɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dũng cảm",
+        "example": "The brave firefighter entered the burning building.",
+        "familyId": "confidence-courage",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "courageous",
+        "ipa": "/kəˈreɪ.dʒəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "can đảm",
+        "example": "It was courageous of her to speak the truth.",
+        "familyId": "confidence-courage",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bold",
+        "ipa": "/bəʊld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "táo bạo, mạnh dạn",
+        "example": "He made a bold decision to start a new career.",
+        "familyId": "confidence-courage",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "assertive",
+        "ipa": "/əˈsɜː.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "quyết đoán, dám nói rõ ý kiến",
+        "example": "Assertive people can say no politely.",
+        "familyId": "confidence-courage",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "decisive",
+        "ipa": "/dɪˈsaɪ.sɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "quyết đoán",
+        "example": "A decisive leader acts quickly when needed.",
+        "familyId": "confidence-courage",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-assured",
+        "ipa": "/ˌself əˈʃɔːd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tự tin, vững tin",
+        "example": "She sounded calm and self-assured during the interview.",
+        "familyId": "confidence-courage",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "composed",
+        "ipa": "/kəmˈpəʊzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "điềm tĩnh",
+        "example": "She remained composed during the crisis.",
+        "familyId": "patience-emotional-control",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tolerant",
+        "ipa": "/ˈtɒl.ər.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "khoan dung",
+        "example": "Tolerant people accept different opinions.",
+        "familyId": "patience-emotional-control",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gentle",
+        "ipa": "/ˈdʒen.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dịu dàng, nhẹ nhàng",
+        "example": "He has a gentle voice and a calm manner.",
+        "familyId": "patience-emotional-control",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "easy-going",
+        "ipa": "/ˌiː.ziˈɡəʊ.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ tính, thoải mái",
+        "example": "Easy-going people rarely get angry about small problems.",
+        "familyId": "patience-emotional-control",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "creative",
+        "ipa": "/kriˈeɪ.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sáng tạo",
+        "example": "Creative people find new ways to solve problems.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "imaginative",
+        "ipa": "/ɪˈmædʒ.ɪ.nə.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "giàu trí tưởng tượng",
+        "example": "An imaginative child can invent wonderful stories.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "innovative",
+        "ipa": "/ˈɪn.ə.veɪ.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đổi mới, sáng tạo",
+        "example": "Innovative teams develop better products.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intelligent",
+        "ipa": "/ɪnˈtel.ɪ.dʒənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thông minh",
+        "example": "An intelligent solution can save time and money.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clever",
+        "ipa": "/ˈklev.ər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thông minh, lanh lợi",
+        "example": "She found a clever way to remember new words.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wise",
+        "ipa": "/waɪz/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khôn ngoan, sáng suốt",
+        "example": "A wise person learns from past mistakes.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resourceful",
+        "ipa": "/rɪˈsɔːs.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tháo vát, xoay xở giỏi",
+        "example": "Resourceful travelers can handle unexpected problems.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "open-minded",
+        "ipa": "/ˌəʊ.pənˈmaɪn.dɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "cởi mở, sẵn sàng tiếp thu",
+        "example": "Open-minded people are willing to learn from others.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ambitious",
+        "ipa": "/æmˈbɪʃ.əs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tham vọng, có hoài bão",
+        "example": "Ambitious students set challenging goals.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "determined",
+        "ipa": "/dɪˈtɜː.mɪnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "quyết tâm",
+        "example": "She was determined to pass the exam.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "persistent",
+        "ipa": "/pəˈsɪs.tənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kiên trì",
+        "example": "Persistent people keep trying after failure.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "persevering",
+        "ipa": "/ˌpɜː.sɪˈvɪə.rɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bền bỉ, kiên trì",
+        "example": "A persevering athlete trains through setbacks.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "driven",
+        "ipa": "/ˈdrɪv.ən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đầy quyết tâm, có động lực mạnh",
+        "example": "Driven entrepreneurs work hard to reach their goals.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "goal-oriented",
+        "ipa": "/ˈɡəʊl ˌɔː.ri.en.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hướng tới mục tiêu",
+        "example": "Goal-oriented employees focus on clear results.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proactive",
+        "ipa": "/ˌprəʊˈæk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "chủ động",
+        "example": "A proactive person solves problems before they grow.",
+        "familyId": "ambition-motivation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "helpful",
+        "ipa": "/ˈhelp.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hay giúp đỡ, hữu ích",
+        "example": "Helpful classmates share notes with absent students.",
+        "familyId": "help",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generous",
+        "ipa": "/ˈdʒen.ər.əs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hào phóng, rộng lượng",
+        "example": "A generous person shares time and resources.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compassionate",
+        "ipa": "/kəmˈpæʃ.ən.ət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "giàu lòng trắc ẩn",
+        "example": "Compassionate leaders care about vulnerable people.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empathetic",
+        "ipa": "/ˌem.pəˈθet.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "biết đồng cảm",
+        "example": "Empathetic friends understand how you feel.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thoughtful",
+        "ipa": "/ˈθɔːt.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chu đáo, sâu sắc",
+        "example": "It was thoughtful of him to bring her medicine.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "considerate",
+        "ipa": "/kənˈsɪd.ər.ət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "ân cần, chu đáo",
+        "example": "Considerate neighbors keep noise low at night.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sympathetic",
+        "ipa": "/ˌsɪm.pəˈθet.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thông cảm",
+        "example": "She was sympathetic when I explained my problem.",
+        "familyId": "kindness-empathy",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sociable",
+        "ipa": "/ˈsəʊ.ʃə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hòa đồng, thích giao tiếp",
+        "example": "Sociable people enjoy meeting new friends.",
+        "familyId": "social-personality",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outgoing",
+        "ipa": "/ˌaʊtˈɡəʊ.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hòa đồng, cởi mở",
+        "example": "An outgoing student joins many school activities.",
+        "familyId": "social-personality",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talkative",
+        "ipa": "/ˈtɔː.kə.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nói nhiều",
+        "example": "He is talkative in small groups.",
+        "familyId": "social-personality",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "charming",
+        "ipa": "/ˈtʃɑː.mɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "duyên dáng, quyến rũ",
+        "example": "The charming host made everyone feel comfortable.",
+        "familyId": "social-personality",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "charismatic",
+        "ipa": "/ˌkær.ɪzˈmæt.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có sức hút, lôi cuốn",
+        "example": "A charismatic speaker can inspire a crowd.",
+        "familyId": "social-personality",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cooperative",
+        "ipa": "/kəʊˈɒp.ər.ə.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hợp tác",
+        "example": "Cooperative team members listen to each other.",
+        "familyId": "social-personality",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "modest",
+        "ipa": "/ˈmɒd.ɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khiêm tốn",
+        "example": "A modest winner thanks the whole team.",
+        "familyId": "humility-maturity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mature",
+        "ipa": "/məˈtʃʊər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "trưởng thành, chín chắn",
+        "example": "Mature teenagers can make responsible decisions.",
+        "familyId": "humility-maturity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sensible",
+        "ipa": "/ˈsen.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "biết điều, hợp lý",
+        "example": "A sensible person thinks before acting.",
+        "familyId": "humility-maturity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "realistic",
+        "ipa": "/ˌrɪəˈlɪs.tɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thực tế",
+        "example": "Realistic people set achievable goals.",
+        "familyId": "humility-maturity",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-aware",
+        "ipa": "/ˌself əˈweər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "tự nhận thức",
+        "example": "Self-aware people understand their strengths and weaknesses.",
+        "familyId": "humility-maturity",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lazy",
+        "ipa": "/ˈleɪ.zi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lười biếng",
+        "example": "Lazy habits can stop you from improving.",
+        "familyId": "negative-qualities",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "selfish",
+        "ipa": "/ˈsel.fɪʃ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ích kỷ",
+        "example": "Selfish behavior can damage friendships.",
+        "familyId": "negative-qualities",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greedy",
+        "ipa": "/ˈɡriː.di/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tham lam",
+        "example": "A greedy person always wants more than necessary.",
+        "familyId": "negative-qualities",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arrogant",
+        "ipa": "/ˈær.ə.ɡənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kiêu ngạo",
+        "example": "Arrogant people often refuse advice.",
+        "familyId": "negative-qualities",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "boastful",
+        "ipa": "/ˈbəʊst.fəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hay khoe khoang",
+        "example": "A boastful student talks too much about his grades.",
+        "familyId": "negative-qualities",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stubborn",
+        "ipa": "/ˈstʌb.ən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bướng bỉnh, cố chấp",
+        "example": "Stubborn people may ignore good advice.",
+        "familyId": "negative-qualities",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "careless",
+        "ipa": "/ˈkeə.ləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất cẩn",
+        "example": "Careless mistakes can reduce your score.",
+        "familyId": "negative-qualities",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "irresponsible",
+        "ipa": "/ˌɪr.ɪˈspɒn.sə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "vô trách nhiệm",
+        "example": "It is irresponsible to leave work unfinished.",
+        "familyId": "negative-qualities",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dishonest",
+        "ipa": "/dɪsˈɒn.ɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không trung thực",
+        "example": "Dishonest actions destroy trust.",
+        "familyId": "negative-qualities",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aggressive",
+        "ipa": "/əˈɡres.ɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hung hăng, gây hấn",
+        "example": "Aggressive behavior makes teamwork difficult.",
+        "familyId": "negative-qualities",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bad",
+        "ipa": "/bæd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "xấu, tệ, kém",
+        "example": "He has a bad habit of arriving late to meetings.",
+        "note": "Nguyên mẫu của dạng so sánh bất quy tắc: bad – worse – worst.",
+        "familyId": "negative-qualities",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "positive",
+        "ipa": "/ˈpɒz.ə.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tích cực",
+        "example": "A positive attitude helps during hard times.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enthusiastic",
+        "ipa": "/ɪnˌθjuː.ziˈæs.tɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nhiệt tình, hào hứng",
+        "example": "Enthusiastic volunteers worked all day.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pessimistic",
+        "ipa": "/ˌpes.ɪˈmɪs.tɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bi quan",
+        "example": "Pessimistic thinking can reduce motivation.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "negative",
+        "ipa": "/ˈneɡ.ə.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiêu cực",
+        "example": "A negative attitude can affect the whole group.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resilient",
+        "ipa": "/rɪˈzɪl.i.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kiên cường, có khả năng phục hồi",
+        "example": "Resilient people recover after failure.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "adaptable",
+        "ipa": "/əˈdæp.tə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "dễ thích nghi",
+        "example": "Adaptable workers learn new tools quickly.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "introverted",
+        "ipa": "/ˈɪn.trə.vɜː.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hướng nội",
+        "example": "Introverted people may prefer quiet conversations.",
+        "familyId": "personality-types",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extroverted",
+        "ipa": "/ˈek.strə.vɜː.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hướng ngoại",
+        "example": "Extroverted students often enjoy group activities.",
+        "familyId": "personality-types",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reserved",
+        "ipa": "/rɪˈzɜːvd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kín đáo, dè dặt",
+        "example": "Reserved people may need time to open up.",
+        "familyId": "personality-types",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quiet",
+        "ipa": "/ˈkwaɪ.ət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ít nói, trầm lặng",
+        "example": "He is quiet but very thoughtful.",
+        "familyId": "personality-types",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfect",
+        "ipa": "/ˈpɝː.fɪkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hoàn hảo",
+        "example": "She speaks perfect English after years of practice.",
+        "familyId": "perfect",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfectly",
+        "ipa": "/ˈpɝː.fɪkt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách hoàn hảo",
+        "example": "The two colors match perfectly.",
+        "familyId": "perfect",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perfection",
+        "ipa": "/pɚˈfek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hoàn hảo",
+        "example": "He practices for hours in pursuit of perfection.",
+        "familyId": "perfect",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "goodness",
+        "ipa": "/ˈɡʊd.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng tốt, sự tốt lành",
+        "example": "She believes in the goodness of ordinary people.",
+        "familyId": "good",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedicate",
+        "ipa": "/ˈded.ɪ.keɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "cống hiến, dành trọn",
+        "example": "He decided to dedicate his life to helping others.",
+        "familyId": "dedicate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedication",
+        "ipa": "/ˌded.ɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cống hiến, tận tụy",
+        "example": "Her dedication to the team was admirable.",
+        "familyId": "dedicate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dedicated",
+        "ipa": "/ˈded.ɪ.keɪ.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tận tụy, hết lòng",
+        "example": "She is a dedicated teacher who cares about every student.",
+        "familyId": "dedicate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspire",
+        "ipa": "/əˈspaɪr/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "khao khát, hướng tới",
+        "example": "Many young people aspire to start their own business.",
+        "familyId": "aspire",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspiration",
+        "ipa": "/ˌæs.pɚˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "khát vọng, hoài bão",
+        "example": "Her greatest aspiration is to become a doctor.",
+        "familyId": "aspire",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aspiring",
+        "ipa": "/əˈspaɪr.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có khát vọng, đầy tham vọng",
+        "example": "The workshop is designed for aspiring writers.",
+        "familyId": "aspire",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "helpless",
+        "ipa": "/ˈhelp.ləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất lực, không có khả năng tự giúp mình",
+        "example": "She felt helpless when her car broke down on the highway.",
+        "familyId": "help",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "helplessness",
+        "ipa": "/ˈhelp.ləs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bất lực, cảm giác bất lực",
+        "example": "He described a deep sense of helplessness after losing his job.",
+        "familyId": "help",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hardworking",
+        "ipa": "/ˌhɑːrdˈwɜːrkɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chăm chỉ, cần cù",
+        "example": "She is a hardworking and reliable employee.",
+        "familyId": "responsibility-discipline",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smart",
+        "ipa": "/smɑːrt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "thông minh, lanh lợi",
+        "example": "He is smart enough to solve the problem.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foolish",
+        "ipa": "/ˈfuːlɪʃ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngu ngốc, dại dột",
+        "example": "It was foolish to ignore the warning.",
+        "familyId": "negative-qualities",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "silly",
+        "ipa": "/ˈsɪli/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "ngớ ngẩn, ngốc nghếch",
+        "example": "Stop making silly jokes during class.",
+        "familyId": "negative-qualities",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "serious",
+        "ipa": "/ˈsɪriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nghiêm túc",
+        "example": "He is a serious student who studies hard.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "funny",
+        "ipa": "/ˈfʌni/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "vui tính, hài hước",
+        "example": "She is very funny and makes everyone laugh.",
+        "familyId": "social-personality",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strict",
+        "ipa": "/strɪkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nghiêm khắc",
+        "example": "Our teacher is strict but fair.",
+        "familyId": "attitude-mindset",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cruel",
+        "ipa": "/ˈkruːəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "độc ác, tàn nhẫn",
+        "example": "It is cruel to leave animals in the cold.",
+        "familyId": "negative-qualities",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talented",
+        "ipa": "/ˈtæləntɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tài năng",
+        "example": "She is a talented young musician.",
+        "familyId": "creativity-intelligence",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cautious",
+        "ipa": "/ˈkɔːʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thận trọng, cẩn thận",
+        "example": "He is cautious when making big decisions.",
+        "familyId": "caution",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weird",
+        "ipa": "/wɪəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kỳ lạ, kỳ quái",
+        "example": "It felt weird to be back at my old school.",
+        "familyId": "weird",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weirdly",
+        "ipa": "/ˈwɪədli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách kỳ lạ",
+        "example": "The house was weirdly quiet that night.",
+        "familyId": "weird",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weirdness",
+        "ipa": "/ˈwɪədnəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự kỳ lạ, tính kỳ quái",
+        "example": "There was a certain weirdness to the whole situation.",
+        "familyId": "weird",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caution",
+        "ipa": "/ˈkɔː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thận trọng, sự cẩn thận",
+        "example": "The driver approached the icy road with caution.",
+        "familyId": "caution",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "virtue",
+        "ipa": "/ˈvɝː.tʃuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đức hạnh, đức tính",
+        "example": "Patience is considered a great virtue.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "effort",
+        "ipa": "/ˈef.ərt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗ lực, cố gắng",
+        "example": "She made a great effort to finish the project on time.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unshakable",
+        "ipa": "/ʌnˈʃeɪ.kə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể lay chuyển",
+        "example": "He has an unshakable belief in his dream.",
+        "note": "Không patch vào irregular verb shake — prefix un- quá dài để LCP đủ",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

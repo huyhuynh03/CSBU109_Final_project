@@ -1,0 +1,1184 @@
+{
+  "_meta": {
+    "topicId": "law",
+    "topicName": "Luật pháp",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Law (B1-B2)",
+    "totalCards": 90,
+    "totalFamilies": 10,
+    "generatedAt": "2026-05-25",
+    "note": "Tu vung chu de Luat phap, bao gom he thong phap luat, toa an, toi pham, hinh phat, luat su, quyen loi, hop dong phap ly va thu tuc to tung."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "legal",
+        "ipa": "/ˈliːɡəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về pháp luật, hợp pháp",
+        "example": "You should seek legal advice before signing the document.",
+        "familyId": "law-system",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "illegal",
+        "ipa": "/ɪˈliːɡəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất hợp pháp, trái pháp luật",
+        "example": "It is illegal to drive without a valid licence in this country.",
+        "familyId": "law-system",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legality",
+        "ipa": "/liːˈɡæləti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính hợp pháp, tính pháp lý",
+        "example": "The committee questioned the legality of the new policy.",
+        "familyId": "law-system",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legislation",
+        "ipa": "/ˌledʒɪsˈleɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đạo luật, hệ thống luật",
+        "example": "New legislation on data protection will take effect next year.",
+        "familyId": "law-system",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legislator",
+        "ipa": "/ˈledʒɪsleɪtər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà lập pháp, người làm luật",
+        "example": "Legislators are debating the proposed environmental bill this week.",
+        "familyId": "law-system",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legislature",
+        "ipa": "/ˈledʒɪsleɪtʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ quan lập pháp",
+        "example": "The state legislature passed the new budget last Friday.",
+        "familyId": "law-system",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "statute",
+        "ipa": "/ˈstætʃuːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đạo luật, văn bản luật chính thức",
+        "example": "This action is prohibited under the statute passed in 2018.",
+        "familyId": "law-system",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regulation",
+        "ipa": "/ˌreɡjəˈleɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy định, quy chế",
+        "example": "All factories must comply with safety regulations.",
+        "familyId": "law-system",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regulate",
+        "ipa": "/ˈreɡjəleɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "điều chỉnh, kiểm soát bằng quy định",
+        "example": "The government plans to regulate social media platforms more strictly.",
+        "familyId": "law-system",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regulatory",
+        "ipa": "/ˈreɡjələtɔːri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về quản lý, điều tiết",
+        "example": "Banks must follow strict regulatory requirements when offering loans.",
+        "familyId": "law-system",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "constitution",
+        "ipa": "/ˌkɒnstɪˈtjuːʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiến pháp",
+        "example": "Freedom of speech is protected by the constitution.",
+        "familyId": "law-system",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "constitutional",
+        "ipa": "/ˌkɒnstɪˈtjuːʃənəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về hiến pháp, hợp hiến",
+        "example": "The court ruled that the law was not constitutional.",
+        "familyId": "law-system",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "judge",
+        "ipa": "/dʒʌdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẩm phán, quan tòa",
+        "example": "The judge listened carefully to both sides before making a decision.",
+        "familyId": "law-court",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jury",
+        "ipa": "/ˈdʒʊəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bồi thẩm đoàn",
+        "example": "The jury found the defendant not guilty after three hours of discussion.",
+        "familyId": "law-court",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "juror",
+        "ipa": "/ˈdʒʊərər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thành viên bồi thẩm đoàn",
+        "example": "Each juror must listen to the evidence carefully and remain impartial.",
+        "familyId": "law-court",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "courtroom",
+        "ipa": "/ˈkɔːtruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng xử án",
+        "example": "The courtroom was silent as the verdict was read aloud.",
+        "familyId": "law-court",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "courthouse",
+        "ipa": "/ˈkɔːthaʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tòa nhà tòa án",
+        "example": "Reporters waited outside the courthouse for news of the case.",
+        "familyId": "law-court",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hearing",
+        "ipa": "/ˈhɪərɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phiên điều trần",
+        "example": "The hearing has been scheduled for next Monday morning.",
+        "familyId": "law-court",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "verdict",
+        "ipa": "/ˈvɜːdɪkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phán quyết",
+        "example": "The jury reached a unanimous verdict after a long discussion.",
+        "familyId": "law-court",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sentence",
+        "ipa": "/ˈsentəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản án, hình phạt do tòa tuyên",
+        "example": "He received a five-year sentence for the robbery.",
+        "familyId": "law-court",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sentencing",
+        "ipa": "/ˈsentənsɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc tuyên án, sự tuyên hình phạt",
+        "example": "The sentencing will take place two weeks after the verdict.",
+        "familyId": "law-court",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acquit",
+        "ipa": "/əˈkwɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tuyên trắng án, tha bổng",
+        "example": "The court decided to acquit him due to a lack of evidence.",
+        "familyId": "law-trial-process",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acquittal",
+        "ipa": "/əˈkwɪtəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tuyên trắng án, sự tha bổng",
+        "example": "His acquittal came as a surprise to many people in the town.",
+        "familyId": "law-trial-process",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "convict",
+        "ipa": "/kənˈvɪkt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kết tội, tuyên có tội",
+        "example": "The jury voted to convict him of fraud after two days.",
+        "familyId": "law-trial-process",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conviction",
+        "ipa": "/kənˈvɪkʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kết án, bản án có tội",
+        "example": "He had two previous convictions for theft on his record.",
+        "familyId": "law-trial-process",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appeal",
+        "ipa": "/əˈpiːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kháng cáo",
+        "example": "Her lawyer filed an appeal against the harsh sentence.",
+        "familyId": "law-trial-process",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plaintiff",
+        "ipa": "/ˈpleɪntɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên đơn",
+        "example": "The plaintiff is seeking compensation for damages caused by the accident.",
+        "familyId": "law-trial-process",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "defendant",
+        "ipa": "/dɪˈfendənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bị đơn, bị cáo",
+        "example": "The defendant denied all charges brought against him.",
+        "familyId": "law-trial-process",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prosecutor",
+        "ipa": "/ˈprɒsɪkjuːtər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công tố viên",
+        "example": "The prosecutor presented strong evidence linking the suspect to the crime scene.",
+        "familyId": "law-trial-process",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prosecution",
+        "ipa": "/ˌprɒsɪˈkjuːʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc truy tố, bên công tố",
+        "example": "The prosecution called three witnesses to testify against the accused.",
+        "familyId": "law-trial-process",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prosecute",
+        "ipa": "/ˈprɒsɪkjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "truy tố, khởi tố",
+        "example": "Anyone caught shoplifting will be prosecuted to the full extent of the law.",
+        "familyId": "law-trial-process",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "criminal",
+        "ipa": "/ˈkrɪmɪnəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội phạm, kẻ phạm tội",
+        "example": "The police are searching for the criminal who robbed the bank.",
+        "familyId": "law-crime",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offense",
+        "ipa": "/əˈfens/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi vi phạm, tội",
+        "example": "Driving without insurance is a serious offense in most countries.",
+        "familyId": "law-crime",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offender",
+        "ipa": "/əˈfendər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người vi phạm, kẻ phạm tội",
+        "example": "First-time offenders may receive a lighter sentence than repeat offenders.",
+        "familyId": "law-crime",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "felony",
+        "ipa": "/ˈfeləni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trọng tội",
+        "example": "Armed robbery is classified as a felony in this state.",
+        "familyId": "law-crime",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "misdemeanor",
+        "ipa": "/ˌmɪsdɪˈmiːnər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội nhẹ, vi phạm nhỏ",
+        "example": "He was charged with a misdemeanor and had to pay a small fine.",
+        "familyId": "law-crime",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "theft",
+        "ipa": "/θeft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội trộm cắp",
+        "example": "The shop has installed cameras to prevent theft.",
+        "familyId": "law-crime",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "robbery",
+        "ipa": "/ˈrɒbəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội cướp",
+        "example": "Two men were arrested in connection with the bank robbery yesterday.",
+        "familyId": "law-crime",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burglary",
+        "ipa": "/ˈbɜːɡləri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội đột nhập, trộm nhà",
+        "example": "There has been a sharp rise in burglary cases in this neighborhood.",
+        "familyId": "law-crime",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fraud",
+        "ipa": "/frɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội lừa đảo, gian lận",
+        "example": "The accountant was charged with fraud after stealing from the company.",
+        "familyId": "law-crime",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "assault",
+        "ipa": "/əˈsɔːlt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội hành hung, tấn công",
+        "example": "He was sentenced to two years in prison for assault.",
+        "familyId": "law-crime",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "murder",
+        "ipa": "/ˈmɜːdər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội giết người",
+        "example": "He was found guilty of murder and given a life sentence.",
+        "familyId": "law-crime",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arson",
+        "ipa": "/ˈɑːsən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội đốt phá",
+        "example": "Investigators believe the fire was a clear case of arson.",
+        "familyId": "law-crime",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "punish",
+        "ipa": "/ˈpʌnɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trừng phạt",
+        "example": "The school has clear rules about how to punish students who cheat.",
+        "familyId": "law-punishment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sanction",
+        "ipa": "/ˈsæŋk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biện pháp trừng phạt",
+        "example": "The country imposed economic sanctions on its trading partner.",
+        "familyId": "law-punishment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fine",
+        "ipa": "/faɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền phạt",
+        "example": "She had to pay a heavy fine for parking illegally.",
+        "familyId": "law-punishment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prison",
+        "ipa": "/ˈprɪzən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tù",
+        "example": "He spent ten years in prison for his role in the robbery.",
+        "familyId": "law-punishment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "imprisonment",
+        "ipa": "/ɪmˈprɪzənmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc bỏ tù, sự giam cầm",
+        "example": "He was sentenced to life imprisonment without parole.",
+        "familyId": "law-punishment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jail",
+        "ipa": "/dʒeɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trại giam, nhà tù",
+        "example": "He spent two nights in jail before being released on bail.",
+        "familyId": "law-punishment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parole",
+        "ipa": "/pəˈrəʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tha tù có điều kiện",
+        "example": "He was released on parole after serving five years of his sentence.",
+        "familyId": "law-punishment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probation",
+        "ipa": "/prəˈbeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "án treo, sự quản chế",
+        "example": "Instead of going to prison, she was put on two years' probation.",
+        "familyId": "law-punishment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lawyer",
+        "ipa": "/ˈlɔːjər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật sư",
+        "example": "You should consult a lawyer before signing this document.",
+        "familyId": "law-lawyer",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attorney",
+        "ipa": "/əˈtɜːni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật sư (Mỹ), người đại diện pháp lý",
+        "example": "His attorney advised him not to answer any questions from the police.",
+        "familyId": "law-lawyer",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solicitor",
+        "ipa": "/səˈlɪsɪtər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật sư tư vấn (Anh)",
+        "example": "We hired a solicitor to help us with the property purchase.",
+        "familyId": "law-lawyer",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "barrister",
+        "ipa": "/ˈbærɪstər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật sư tranh tụng (Anh)",
+        "example": "A skilled barrister will represent her at the trial next week.",
+        "familyId": "law-lawyer",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counsel",
+        "ipa": "/ˈkaʊnsəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "luật sư biện hộ, cố vấn pháp lý",
+        "example": "The defendant has the right to legal counsel during questioning.",
+        "familyId": "law-lawyer",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paralegal",
+        "ipa": "/ˌpærəˈliːɡəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trợ lý luật sư",
+        "example": "The paralegal prepared all the documents for the upcoming case.",
+        "familyId": "law-lawyer",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "civil rights",
+        "ipa": "/ˌsɪv.əl ˈraɪts/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền công dân",
+        "example": "The civil rights movement fought for equal treatment under the law.",
+        "familyId": "law-rights",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "civil liberty",
+        "ipa": "/ˌsɪv.əl ˈlɪb.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền tự do dân sự",
+        "example": "The constitution protects the civil liberty of every individual.",
+        "familyId": "law-rights",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "liberty",
+        "ipa": "/ˈlɪbəti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tự do, quyền tự do",
+        "example": "The constitution protects the personal liberty of every citizen.",
+        "familyId": "law-rights",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "justice",
+        "ipa": "/ˈdʒʌstɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công lý, sự công bằng",
+        "example": "The victims' families are still seeking justice after many years.",
+        "familyId": "law-rights",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "injustice",
+        "ipa": "/ɪnˈdʒʌstɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bất công",
+        "example": "She has spent her life fighting against social injustice.",
+        "familyId": "law-rights",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "due process",
+        "ipa": "/ˌdjuː ˈprəʊ.ses/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ tục tố tụng hợp pháp",
+        "example": "Every defendant is entitled to due process under the constitution.",
+        "familyId": "law-rights",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "admissible",
+        "ipa": "/ədˈmɪs.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được chấp nhận làm bằng chứng",
+        "example": "The judge ruled that the documents were admissible in court.",
+        "familyId": "law-evidence",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proof",
+        "ipa": "/pruːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bằng chứng, chứng cứ xác thực",
+        "example": "The lawyer demanded proof that her client had been at the scene.",
+        "familyId": "law-evidence",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "witness",
+        "ipa": "/ˈwɪtnəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân chứng",
+        "example": "The main witness described what she had seen on the night of the crime.",
+        "familyId": "law-evidence",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "testimony",
+        "ipa": "/ˈtestɪməni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời khai, lời chứng",
+        "example": "Her testimony helped the jury understand what really happened that night.",
+        "familyId": "law-evidence",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "testify",
+        "ipa": "/ˈtestɪfaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm chứng, ra làm chứng",
+        "example": "She agreed to testify against her former boss in court.",
+        "familyId": "law-evidence",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forensic",
+        "ipa": "/fəˈrenzɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về pháp y, pháp chứng",
+        "example": "Forensic experts found traces of blood on the suspect's jacket.",
+        "familyId": "law-evidence",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "suspect",
+        "ipa": "/ˈsʌspekt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghi phạm, người bị tình nghi",
+        "example": "The police are questioning two suspects in connection with the robbery.",
+        "familyId": "law-evidence",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arrest",
+        "ipa": "/əˈrest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt giữ",
+        "example": "Officers arrested the man as he tried to leave the country.",
+        "familyId": "law-evidence",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "warrant",
+        "ipa": "/ˈwɒrənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lệnh (bắt, khám xét)",
+        "example": "The police obtained a warrant before searching the property.",
+        "familyId": "law-evidence",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interrogate",
+        "ipa": "/ɪnˈter.ə.ɡeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thẩm vấn",
+        "example": "Police interrogated the suspect for several hours yesterday.",
+        "familyId": "law-evidence",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sue",
+        "ipa": "/suː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kiện ra tòa",
+        "example": "She decided to sue the company for unfair dismissal.",
+        "familyId": "law-civil",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lawsuit",
+        "ipa": "/ˈlɔːsuːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vụ kiện, đơn kiện",
+        "example": "The company is facing a lawsuit from former employees over unpaid wages.",
+        "familyId": "law-civil",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dispute",
+        "ipa": "/dɪˈspjuːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tranh chấp",
+        "example": "The two neighbors had a long dispute over the boundary fence.",
+        "familyId": "law-civil",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "settle",
+        "ipa": "/ˈsetl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giải quyết, dàn xếp tranh chấp",
+        "example": "The two sides agreed to settle the case out of court.",
+        "familyId": "law-civil",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "settlement",
+        "ipa": "/ˈsetlmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự dàn xếp, thỏa thuận giải quyết",
+        "example": "They reached a settlement of two million dollars after long negotiations.",
+        "familyId": "law-civil",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mediate",
+        "ipa": "/ˈmiːdieɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm trung gian hòa giải",
+        "example": "A neutral third party was asked to mediate the dispute.",
+        "familyId": "law-civil",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mediation",
+        "ipa": "/ˌmiːdiˈeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hòa giải",
+        "example": "Mediation is often cheaper and faster than going to court.",
+        "familyId": "law-civil",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "arbitration",
+        "ipa": "/ˌɑːbɪˈtreɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phân xử, trọng tài",
+        "example": "The companies agreed to send the dispute to arbitration instead of court.",
+        "familyId": "law-civil",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "damages",
+        "ipa": "/ˈdæmɪdʒɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền bồi thường thiệt hại",
+        "example": "The court ordered the firm to pay damages of fifty thousand pounds.",
+        "familyId": "law-civil",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compensation",
+        "ipa": "/ˌkɒmpenˈseɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bồi thường, đền bù",
+        "example": "She received compensation for the injuries caused by the accident.",
+        "familyId": "law-civil",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enforce",
+        "ipa": "/ɪnˈfɔːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thực thi, thi hành (luật)",
+        "example": "Local authorities are working harder to enforce traffic laws.",
+        "familyId": "law-enforcement",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enforcement",
+        "ipa": "/ɪnˈfɔːsmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc thực thi pháp luật",
+        "example": "Strict enforcement of the new rules has reduced the number of accidents.",
+        "familyId": "law-enforcement",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "officer",
+        "ipa": "/ˈɒfɪsər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sĩ quan, viên chức cảnh sát",
+        "example": "A police officer arrived at the scene within minutes of the call.",
+        "familyId": "law-enforcement",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patrol",
+        "ipa": "/pəˈtrəʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tuần tra",
+        "example": "Officers patrol the streets every night to keep the area safe.",
+        "familyId": "law-enforcement",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "detain",
+        "ipa": "/dɪˈteɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tạm giữ, giam giữ",
+        "example": "The police can detain a suspect for up to 24 hours without charge.",
+        "familyId": "law-enforcement",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "custody",
+        "ipa": "/ˈkʌstədi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tạm giam, quyền giám hộ",
+        "example": "The suspect remains in police custody pending further investigation.",
+        "familyId": "law-enforcement",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bail",
+        "ipa": "/beɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền bảo lãnh tại ngoại",
+        "example": "He was released on bail of ten thousand dollars while awaiting trial.",
+        "familyId": "law-enforcement",
+        "familyOrder": 7,
+        "tags": []
+      }
+    }
+  ]
+}

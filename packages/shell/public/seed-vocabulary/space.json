@@ -1,0 +1,1015 @@
+{
+  "_meta": {
+    "topicId": "space",
+    "topicName": "Space",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Space and Astronomy (B1-B2)",
+    "totalCards": 77,
+    "totalFamilies": 13,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung chuyen biet ve vu tru va thien van hoc. Da tranh trung lap voi cac topic hien co, dac biet cac tu vat ly da co nhu force, velocity, acceleration, gravity, mass, radiation, wave, light, atom, proton, electron, neutron."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "universe",
+        "ipa": "/ˈjuː.nɪ.vɜːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vũ trụ",
+        "example": "The universe contains billions of galaxies.",
+        "familyId": "space-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cosmos",
+        "ipa": "/ˈkɒz.mɒs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vũ trụ; trật tự vũ trụ",
+        "example": "Astronomers study the structure of the cosmos.",
+        "familyId": "space-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "astronomy",
+        "ipa": "/əˈstrɒn.ə.mi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiên văn học",
+        "example": "Astronomy helps us understand planets and stars.",
+        "familyId": "space-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "astronomer",
+        "ipa": "/əˈstrɒn.ə.mər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà thiên văn học",
+        "example": "The astronomer observed a distant galaxy.",
+        "familyId": "space-general",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "celestial",
+        "ipa": "/səˈles.ti.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc bầu trời; thuộc thiên thể",
+        "example": "The telescope can track celestial objects.",
+        "familyId": "space-general",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extraterrestrial",
+        "ipa": "/ˌek.strə.təˈres.tri.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "ngoài Trái Đất",
+        "example": "Scientists search for extraterrestrial life.",
+        "familyId": "space-general",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planet",
+        "ipa": "/ˈplæn.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành tinh",
+        "example": "Mars is a rocky planet.",
+        "familyId": "planet",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "star",
+        "ipa": "/stɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngôi sao",
+        "example": "A star produces heat and energy.",
+        "familyId": "space-objects",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moon",
+        "ipa": "/muːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mặt trăng; vệ tinh tự nhiên",
+        "example": "The moon orbits Earth.",
+        "familyId": "space-objects",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sun",
+        "ipa": "/sʌn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mặt trời",
+        "example": "The sun is the center of our solar system.",
+        "familyId": "space-objects",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "galaxy",
+        "ipa": "/ˈɡæl.ək.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiên hà",
+        "example": "The Milky Way is our galaxy.",
+        "familyId": "space-objects",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nebula",
+        "ipa": "/ˈneb.jə.lə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tinh vân",
+        "example": "A nebula is a cloud of gas and dust in space.",
+        "familyId": "space-objects",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "asteroid",
+        "ipa": "/ˈæs.tər.ɔɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiểu hành tinh",
+        "example": "An asteroid passed near Earth last year.",
+        "familyId": "space-objects",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comet",
+        "ipa": "/ˈkɒm.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sao chổi",
+        "example": "A comet often has a bright tail.",
+        "familyId": "space-objects",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meteor",
+        "ipa": "/ˈmiː.ti.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sao băng",
+        "example": "We saw a meteor crossing the night sky.",
+        "familyId": "space-objects",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meteorite",
+        "ipa": "/ˈmiː.ti.ə.raɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thiên thạch rơi xuống bề mặt hành tinh",
+        "example": "A meteorite was found in the desert.",
+        "familyId": "space-objects",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dwarf planet",
+        "ipa": "/ˌdwɔːf ˈplæn.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hành tinh lùn",
+        "example": "Pluto is classified as a dwarf planet.",
+        "familyId": "space-objects",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "satellite",
+        "ipa": "/ˈsæt.əl.aɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vệ tinh",
+        "example": "The satellite sends weather data to Earth.",
+        "familyId": "space-objects",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "constellation",
+        "ipa": "/ˌkɒn.stəˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chòm sao",
+        "example": "Orion is a famous constellation.",
+        "familyId": "space-objects",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar system",
+        "ipa": "/ˈsəʊ.lə ˌsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ Mặt Trời",
+        "example": "Earth is part of the solar system.",
+        "familyId": "space-systems",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "Milky Way",
+        "ipa": "/ˌmɪl.ki ˈweɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "Dải Ngân Hà",
+        "example": "The Milky Way is visible on very dark nights.",
+        "familyId": "space-systems",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "orbit",
+        "ipa": "/ˈɔː.bɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quỹ đạo",
+        "example": "The satellite entered orbit around Earth.",
+        "familyId": "space-motion",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "orbital",
+        "ipa": "/ˈɔː.bɪ.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc quỹ đạo",
+        "example": "Orbital speed depends on distance from the planet.",
+        "familyId": "space-motion",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rotate",
+        "ipa": "/rəʊˈteɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tự quay; xoay quanh trục",
+        "example": "Earth rotates once every day.",
+        "familyId": "space-motion",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rotation",
+        "ipa": "/rəʊˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tự quay; sự xoay quanh trục",
+        "example": "Earth's rotation causes day and night.",
+        "familyId": "space-motion",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "revolve",
+        "ipa": "/rɪˈvɒlv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quay quanh",
+        "example": "Planets revolve around the sun.",
+        "familyId": "space-motion",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "orbital period",
+        "ipa": "/ˌɔː.bɪ.təl ˈpɪə.ri.əd/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chu kỳ quỹ đạo",
+        "example": "The orbital period of the moon is about 27 days.",
+        "familyId": "space-motion",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trajectory",
+        "ipa": "/trəˈdʒek.tər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quỹ đạo bay; đường bay",
+        "example": "Engineers calculated the spacecraft's trajectory.",
+        "familyId": "space-motion",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eclipse",
+        "ipa": "/ɪˈklɪps/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhật thực; nguyệt thực",
+        "example": "A solar eclipse happens when the moon blocks the sun.",
+        "familyId": "space-events",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lunar eclipse",
+        "ipa": "/ˌluː.nər ɪˈklɪps/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyệt thực",
+        "example": "During a lunar eclipse, Earth casts a shadow on the moon.",
+        "familyId": "space-events",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar eclipse",
+        "ipa": "/ˌsəʊ.lər ɪˈklɪps/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhật thực",
+        "example": "Many people wore special glasses to watch the solar eclipse.",
+        "familyId": "space-events",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meteor shower",
+        "ipa": "/ˈmiː.ti.ə ˌʃaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mưa sao băng",
+        "example": "The meteor shower was visible after midnight.",
+        "familyId": "space-events",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supernova",
+        "ipa": "/ˌsuː.pəˈnəʊ.və/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "siêu tân tinh",
+        "example": "A supernova can shine brighter than an entire galaxy.",
+        "familyId": "space-events",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "black hole",
+        "ipa": "/ˌblæk ˈhəʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hố đen",
+        "example": "Nothing can escape from a black hole once it crosses the boundary.",
+        "familyId": "space-phenomena",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "event horizon",
+        "ipa": "/ɪˈvent həˌraɪ.zən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chân trời sự kiện",
+        "example": "The event horizon marks the boundary of a black hole.",
+        "familyId": "space-phenomena",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "singularity",
+        "ipa": "/ˌsɪŋ.ɡjəˈlær.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "điểm kỳ dị",
+        "example": "A singularity is predicted at the center of a black hole.",
+        "familyId": "space-phenomena",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dark matter",
+        "ipa": "/ˌdɑːk ˈmæt.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "vật chất tối",
+        "example": "Dark matter cannot be seen directly.",
+        "familyId": "space-phenomena",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dark energy",
+        "ipa": "/ˌdɑːk ˈen.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "năng lượng tối",
+        "example": "Dark energy may explain the expansion of the universe.",
+        "familyId": "space-phenomena",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cosmic dust",
+        "ipa": "/ˌkɒz.mɪk ˈdʌst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bụi vũ trụ",
+        "example": "Cosmic dust can form new stars over time.",
+        "familyId": "space-phenomena",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spacecraft",
+        "ipa": "/ˈspeɪs.krɑːft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tàu vũ trụ",
+        "example": "The spacecraft landed safely on Mars.",
+        "familyId": "space-exploration",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rocket",
+        "ipa": "/ˈrɒk.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tên lửa",
+        "example": "The rocket launched at dawn.",
+        "familyId": "space-exploration",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "astronaut",
+        "ipa": "/ˈæs.trə.nɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phi hành gia",
+        "example": "The astronaut repaired equipment outside the station.",
+        "familyId": "space-exploration",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cosmonaut",
+        "ipa": "/ˈkɒz.mə.nɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phi hành gia Nga/Liên Xô",
+        "example": "The cosmonaut trained for months before launch.",
+        "familyId": "space-exploration",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "space station",
+        "ipa": "/ˈspeɪs ˌsteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trạm vũ trụ",
+        "example": "Scientists conduct experiments on the space station.",
+        "familyId": "space-exploration",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spacewalk",
+        "ipa": "/ˈspeɪs.wɔːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyến đi bộ ngoài không gian",
+        "example": "The spacewalk lasted more than six hours.",
+        "familyId": "space-exploration",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mission",
+        "ipa": "/ˈmɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiệm vụ; sứ mệnh không gian",
+        "example": "The mission will collect samples from the asteroid.",
+        "familyId": "space-exploration",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "launch",
+        "ipa": "/lɔːntʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phóng; lần phóng",
+        "example": "The launch was delayed because of bad weather.",
+        "familyId": "space-exploration",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "landing",
+        "ipa": "/ˈlæn.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hạ cánh",
+        "example": "The lunar landing was broadcast worldwide.",
+        "familyId": "space-exploration",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "probe",
+        "ipa": "/prəʊb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tàu thăm dò",
+        "example": "The probe sent images from Jupiter.",
+        "familyId": "space-exploration",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rover",
+        "ipa": "/ˈrəʊ.vər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xe tự hành thám hiểm",
+        "example": "The rover explored the surface of Mars.",
+        "familyId": "space-exploration",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "telescope",
+        "ipa": "/ˈtel.ɪ.skəʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kính thiên văn",
+        "example": "A telescope makes distant objects appear closer.",
+        "familyId": "space-tools",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observatory",
+        "ipa": "/əbˈzɜː.və.tər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đài quan sát thiên văn",
+        "example": "The observatory is located on a high mountain.",
+        "familyId": "space-tools",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "space suit",
+        "ipa": "/ˈspeɪs suːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ đồ du hành vũ trụ",
+        "example": "An astronaut needs a space suit outside the spacecraft.",
+        "familyId": "space-tools",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "capsule",
+        "ipa": "/ˈkæp.sjuːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoang tàu vũ trụ",
+        "example": "The crew returned to Earth inside a capsule.",
+        "familyId": "space-tools",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "module",
+        "ipa": "/ˈmɒdʒ.uːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mô-đun; khoang chức năng",
+        "example": "The lunar module separated from the main spacecraft.",
+        "familyId": "space-tools",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planetarium",
+        "ipa": "/ˌplæn.ɪˈteə.ri.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cung thiên văn",
+        "example": "Students visited the planetarium to learn about stars.",
+        "familyId": "space-tools",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "Martian",
+        "ipa": "/ˈmɑː.ʃən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc sao Hỏa",
+        "example": "The rover studied Martian rocks.",
+        "familyId": "space-planets",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "Venusian",
+        "ipa": "/vɪˈnjuː.zi.ən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc sao Kim",
+        "example": "The Venusian atmosphere is extremely dense.",
+        "familyId": "space-planets",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "Jovian",
+        "ipa": "/ˈdʒəʊ.vi.ən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc sao Mộc; kiểu sao Mộc",
+        "example": "Jovian planets are large gas giants.",
+        "familyId": "space-planets",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terrestrial planet",
+        "ipa": "/təˌres.tri.əl ˈplæn.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hành tinh đất đá",
+        "example": "Earth and Mars are terrestrial planets.",
+        "familyId": "space-planets",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gas giant",
+        "ipa": "/ˈɡæs ˌdʒaɪ.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hành tinh khí khổng lồ",
+        "example": "Jupiter is the largest gas giant in our solar system.",
+        "familyId": "space-planets",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exoplanet",
+        "ipa": "/ˈek.səʊˌplæn.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ngoại hành tinh",
+        "example": "An exoplanet orbits a star outside our solar system.",
+        "familyId": "space-planets",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crater",
+        "ipa": "/ˈkreɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "miệng hố va chạm",
+        "example": "The moon has many craters on its surface.",
+        "familyId": "space-surfaces",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lunar",
+        "ipa": "/ˈluː.nər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc Mặt Trăng",
+        "example": "The lunar surface is covered with dust.",
+        "familyId": "space-surfaces",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar",
+        "ipa": "/ˈsəʊ.lər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc Mặt Trời",
+        "example": "Solar activity can affect satellites.",
+        "familyId": "space-surfaces",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interstellar",
+        "ipa": "/ˌɪn.təˈstel.ər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "giữa các vì sao",
+        "example": "Interstellar space is the region between stars.",
+        "familyId": "space-distance",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interplanetary",
+        "ipa": "/ˌɪn.təˈplæn.ɪ.tər.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "giữa các hành tinh",
+        "example": "The probe traveled through interplanetary space.",
+        "familyId": "space-distance",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deep space",
+        "ipa": "/ˌdiːp ˈspeɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "không gian sâu",
+        "example": "Deep space missions require advanced technology.",
+        "familyId": "space-distance",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "light-year",
+        "ipa": "/ˈlaɪt.jɪər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "năm ánh sáng",
+        "example": "A light-year measures distance in space.",
+        "familyId": "space-distance",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "astronomical unit",
+        "ipa": "/ˌæs.trəˈnɒm.ɪ.kəl ˈjuː.nɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đơn vị thiên văn",
+        "example": "One astronomical unit is roughly the distance from Earth to the sun.",
+        "familyId": "space-distance",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parsec",
+        "ipa": "/ˈpɑː.sek/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "pa-sec; đơn vị đo khoảng cách thiên văn",
+        "example": "Astronomers use parsecs to describe huge distances.",
+        "familyId": "space-distance",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cosmic",
+        "ipa": "/ˈkɒz.mɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc vũ trụ",
+        "example": "Cosmic events can occur over millions of years.",
+        "familyId": "space-descriptors",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weightlessness",
+        "ipa": "/ˈweɪt.ləs.nəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "trạng thái không trọng lượng",
+        "example": "Astronauts experience weightlessness in orbit.",
+        "familyId": "space-descriptors",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "microgravity",
+        "ipa": "/ˌmaɪ.krəʊˈɡræv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "vi trọng lực",
+        "example": "Microgravity affects how fluids move in space.",
+        "familyId": "space-descriptors",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "void",
+        "ipa": "/vɔɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoảng không trống rỗng",
+        "example": "The spacecraft drifted through the void of space.",
+        "familyId": "space-descriptors",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "habitable",
+        "ipa": "/ˈhæb.ɪ.tə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có thể sinh sống được",
+        "example": "Scientists look for habitable planets beyond our solar system.",
+        "familyId": "space-descriptors",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "planetary",
+        "ipa": "/ˈplæn.ə.ter.i/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc hành tinh, thiên thể",
+        "example": "The search for planetary systems beyond our own continues.",
+        "familyId": "planet",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

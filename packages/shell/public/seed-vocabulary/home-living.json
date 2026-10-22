@@ -1,0 +1,1561 @@
+{
+  "_meta": {
+    "topicId": "home-living",
+    "topicName": "Home & Living",
+    "level": "intermediate",
+    "source": "Curated IELTS Vocabulary - Home & Living (B1-B2)",
+    "totalCards": 118,
+    "totalFamilies": 17,
+    "generatedAt": "2026-05-06",
+    "note": "Tu vung chu de Nha cua va Sinh hoat, gom theo family/nhom ngu nghia de hoc theo cum tu lien quan. Bao gom kieu nha, cau truc nha, phong oc, noi that, thiet bi gia dung, do bep, luu tru, viec nha, rac thai va bao tri."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "house",
+        "ipa": "/haʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngôi nhà",
+        "example": "They bought a small house near the river.",
+        "familyId": "home-building",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "home",
+        "ipa": "/həʊm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà, tổ ấm",
+        "example": "After a long trip, I was happy to come home.",
+        "familyId": "home-building",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apartment",
+        "ipa": "/əˈpɑːt.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "căn hộ",
+        "example": "She rents a modern apartment in the city centre.",
+        "note": "British English: flat",
+        "familyId": "home-building",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flat",
+        "ipa": "/flæt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "căn hộ",
+        "example": "They live in a two-bedroom flat above a shop.",
+        "note": "British English; US: apartment",
+        "familyId": "home-building",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "building",
+        "ipa": "/ˈbɪl.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tòa nhà",
+        "example": "The building has twelve floors and a rooftop garden.",
+        "familyId": "home-building",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "floor",
+        "ipa": "/flɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầng nhà; sàn nhà",
+        "example": "Our office is on the third floor.",
+        "familyId": "home-building",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ground floor",
+        "ipa": "/ˌɡraʊnd ˈflɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tầng trệt",
+        "example": "The reception desk is on the ground floor.",
+        "familyId": "home-building",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "storey",
+        "ipa": "/ˈstɔː.ri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầng lầu",
+        "example": "They live in a three-storey house.",
+        "note": "US spelling: story",
+        "familyId": "home-building",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "roof",
+        "ipa": "/ruːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mái nhà",
+        "example": "The roof was damaged during the storm.",
+        "familyId": "structure",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ceiling",
+        "ipa": "/ˈsiː.lɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trần nhà",
+        "example": "The ceiling in this room is very high.",
+        "familyId": "structure",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wall",
+        "ipa": "/wɔːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tường",
+        "example": "We painted the walls light blue.",
+        "familyId": "structure",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "door",
+        "ipa": "/dɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cửa ra vào",
+        "example": "Please close the door when you leave.",
+        "familyId": "structure",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "window",
+        "ipa": "/ˈwɪn.dəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cửa sổ",
+        "example": "Open the window to let in some fresh air.",
+        "familyId": "structure",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "staircase",
+        "ipa": "/ˈsteə.keɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cầu thang",
+        "example": "The wooden staircase leads to the bedrooms upstairs.",
+        "familyId": "structure",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "balcony",
+        "ipa": "/ˈbæl.kə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ban công",
+        "example": "We grow flowers on the balcony.",
+        "familyId": "structure",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "garage",
+        "ipa": "/ˈɡær.ɑːʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà để xe",
+        "example": "He keeps his bicycle in the garage.",
+        "familyId": "structure",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "driveway",
+        "ipa": "/ˈdraɪv.weɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lối xe vào nhà",
+        "example": "There are two cars parked in the driveway.",
+        "familyId": "structure",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "garden",
+        "ipa": "/ˈɡɑː.dən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vườn",
+        "example": "My grandmother grows vegetables in the garden.",
+        "familyId": "garden",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "yard",
+        "ipa": "/jɑːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sân nhà",
+        "example": "The children are playing in the yard.",
+        "familyId": "outdoor-home",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fence",
+        "ipa": "/fens/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng rào",
+        "example": "A low fence separates the garden from the street.",
+        "familyId": "outdoor-home",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gate",
+        "ipa": "/ɡeɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổng",
+        "example": "Lock the gate before going to bed.",
+        "familyId": "outdoor-home",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "porch",
+        "ipa": "/pɔːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiên nhà",
+        "example": "They sat on the porch and drank tea.",
+        "familyId": "outdoor-home",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "living room",
+        "ipa": "/ˈlɪv.ɪŋ ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng khách",
+        "example": "The family watches TV in the living room.",
+        "familyId": "rooms",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bedroom",
+        "ipa": "/ˈbed.ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng ngủ",
+        "example": "My bedroom has a desk and a large wardrobe.",
+        "familyId": "rooms",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kitchen",
+        "ipa": "/ˈkɪtʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà bếp",
+        "example": "The kitchen smells of fresh bread.",
+        "familyId": "rooms",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bathroom",
+        "ipa": "/ˈbɑːθ.ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng tắm",
+        "example": "The bathroom is next to the bedroom.",
+        "familyId": "rooms",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dining room",
+        "ipa": "/ˈdaɪ.nɪŋ ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng ăn",
+        "example": "We have dinner in the dining room every evening.",
+        "familyId": "rooms",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hallway",
+        "ipa": "/ˈhɔːl.weɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành lang",
+        "example": "Leave your shoes in the hallway.",
+        "familyId": "rooms",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attic",
+        "ipa": "/ˈæt.ɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gác mái",
+        "example": "Old boxes are stored in the attic.",
+        "familyId": "rooms",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "basement",
+        "ipa": "/ˈbeɪs.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầng hầm",
+        "example": "The washing machine is in the basement.",
+        "familyId": "rooms",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "furniture",
+        "ipa": "/ˈfɜː.nɪ.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồ nội thất",
+        "example": "The apartment came with basic furniture.",
+        "familyId": "furniture",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sofa",
+        "ipa": "/ˈsəʊ.fə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ghế sofa",
+        "example": "She fell asleep on the sofa after work.",
+        "familyId": "furniture",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "armchair",
+        "ipa": "/ˈɑːm.tʃeər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ghế bành",
+        "example": "Grandpa likes reading in his old armchair.",
+        "familyId": "furniture",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coffee table",
+        "ipa": "/ˈkɒf.i ˌteɪ.bəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bàn trà",
+        "example": "Put the magazines on the coffee table.",
+        "familyId": "furniture",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bookshelf",
+        "ipa": "/ˈbʊk.ʃelf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kệ sách",
+        "example": "The bookshelf is full of novels and dictionaries.",
+        "familyId": "furniture",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cabinet",
+        "ipa": "/ˈkæb.ɪ.nət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ, tủ đựng đồ",
+        "example": "Cleaning products are kept in the cabinet.",
+        "familyId": "furniture",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wardrobe",
+        "ipa": "/ˈwɔː.drəʊb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ quần áo",
+        "example": "Her winter coats are in the wardrobe.",
+        "familyId": "furniture",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drawer",
+        "ipa": "/drɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngăn kéo",
+        "example": "I keep my keys in the top drawer.",
+        "familyId": "furniture",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desk",
+        "ipa": "/desk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bàn làm việc",
+        "example": "He bought a larger desk for working from home.",
+        "familyId": "furniture",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mattress",
+        "ipa": "/ˈmæt.rəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nệm",
+        "example": "A good mattress can improve your sleep.",
+        "familyId": "furniture",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pillow",
+        "ipa": "/ˈpɪl.əʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gối",
+        "example": "This pillow is too soft for me.",
+        "familyId": "bedding",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blanket",
+        "ipa": "/ˈblæŋ.kɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chăn",
+        "example": "She covered the baby with a warm blanket.",
+        "familyId": "bedding",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "duvet",
+        "ipa": "/ˈduː.veɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chăn bông",
+        "example": "I need a thicker duvet in winter.",
+        "familyId": "bedding",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bedsheet",
+        "ipa": "/ˈbed.ʃiːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ga trải giường",
+        "example": "Change the bedsheets once a week.",
+        "familyId": "bedding",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "curtain",
+        "ipa": "/ˈkɜː.tən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rèm cửa",
+        "example": "The curtains block out the morning sunlight.",
+        "familyId": "home-decor",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carpet",
+        "ipa": "/ˈkɑː.pɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thảm trải sàn",
+        "example": "The carpet makes the room feel warmer.",
+        "familyId": "home-decor",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rug",
+        "ipa": "/rʌɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thảm nhỏ",
+        "example": "There is a colourful rug beside the bed.",
+        "familyId": "home-decor",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lamp",
+        "ipa": "/læmp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đèn",
+        "example": "Turn on the lamp if you want to read.",
+        "familyId": "home-decor",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mirror",
+        "ipa": "/ˈmɪr.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "gương",
+        "example": "She checked her hair in the mirror.",
+        "familyId": "home-decor",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "painting",
+        "ipa": "/ˈpeɪn.tɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bức tranh",
+        "example": "A large painting hangs above the sofa.",
+        "familyId": "home-decor",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vase",
+        "ipa": "/vɑːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lọ hoa",
+        "example": "Fresh flowers look beautiful in that vase.",
+        "familyId": "home-decor",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appliance",
+        "ipa": "/əˈplaɪ.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thiết bị gia dụng",
+        "example": "Modern appliances save time in the kitchen.",
+        "familyId": "appliances",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fridge",
+        "ipa": "/frɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ lạnh",
+        "example": "Put the milk back in the fridge.",
+        "note": "Full form: refrigerator",
+        "familyId": "appliances",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freezer",
+        "ipa": "/ˈfriː.zər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ đông, ngăn đá",
+        "example": "We keep frozen vegetables in the freezer.",
+        "familyId": "appliances",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stove",
+        "ipa": "/stəʊv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bếp nấu",
+        "example": "The soup is simmering on the stove.",
+        "familyId": "appliances",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oven",
+        "ipa": "/ˈʌv.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lò nướng",
+        "example": "Preheat the oven to two hundred degrees.",
+        "familyId": "appliances",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "microwave",
+        "ipa": "/ˈmaɪ.krə.weɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lò vi sóng",
+        "example": "Heat the leftovers in the microwave.",
+        "familyId": "appliances",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kettle",
+        "ipa": "/ˈket.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ấm đun nước",
+        "example": "The kettle is boiling for tea.",
+        "familyId": "appliances",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toaster",
+        "ipa": "/ˈtəʊ.stər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy nướng bánh mì",
+        "example": "The toaster stopped working this morning.",
+        "familyId": "appliances",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "washing machine",
+        "ipa": "/ˈwɒʃ.ɪŋ məˌʃiːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy giặt",
+        "example": "The washing machine is full of towels.",
+        "familyId": "appliances",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dryer",
+        "ipa": "/ˈdraɪ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy sấy",
+        "example": "Use the dryer when it rains all day.",
+        "familyId": "appliances",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "air conditioner",
+        "ipa": "/ˈeə kənˌdɪʃ.ən.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy điều hòa",
+        "example": "The air conditioner keeps the room cool.",
+        "familyId": "appliances",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heater",
+        "ipa": "/ˈhiː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy sưởi",
+        "example": "We turned on the heater because the room was cold.",
+        "familyId": "appliances",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sink",
+        "ipa": "/sɪŋk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bồn rửa",
+        "example": "There are dirty dishes in the sink.",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tap",
+        "ipa": "/tæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vòi nước",
+        "example": "Turn off the tap while brushing your teeth.",
+        "note": "US English: faucet",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "faucet",
+        "ipa": "/ˈfɔː.sɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vòi nước",
+        "example": "The faucet in the kitchen is leaking.",
+        "note": "US English; British English: tap",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bathtub",
+        "ipa": "/ˈbɑːθ.tʌb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bồn tắm",
+        "example": "The hotel bathroom has a large bathtub.",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "toilet",
+        "ipa": "/ˈtɔɪ.lət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bồn cầu, nhà vệ sinh",
+        "example": "The toilet is at the end of the hallway.",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "towel",
+        "ipa": "/ˈtaʊ.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khăn tắm, khăn lau",
+        "example": "Hang the towel on the rail after using it.",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soap",
+        "ipa": "/səʊp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xà phòng",
+        "example": "Wash your hands with soap and warm water.",
+        "familyId": "kitchen-bathroom",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plate",
+        "ipa": "/pleɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đĩa",
+        "example": "Put the salad on a large plate.",
+        "familyId": "kitchenware",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bowl",
+        "ipa": "/bəʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bát, tô",
+        "example": "She ate a bowl of soup for lunch.",
+        "familyId": "kitchenware",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cup",
+        "ipa": "/kʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cốc, tách",
+        "example": "Would you like a cup of tea?",
+        "familyId": "kitchenware",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mug",
+        "ipa": "/mʌɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cốc có quai",
+        "example": "He drinks coffee from a big mug.",
+        "familyId": "kitchenware",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fork",
+        "ipa": "/fɔːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nĩa",
+        "example": "Use a fork to eat the salad.",
+        "familyId": "kitchenware",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoon",
+        "ipa": "/spuːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thìa, muỗng",
+        "example": "Stir the soup with a wooden spoon.",
+        "familyId": "kitchenware",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knife",
+        "ipa": "/naɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dao",
+        "example": "Be careful with that sharp knife.",
+        "familyId": "kitchenware",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chopsticks",
+        "ipa": "/ˈtʃɒp.stɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đũa",
+        "example": "Many people in Vietnam eat noodles with chopsticks.",
+        "familyId": "kitchenware",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pan",
+        "ipa": "/pæn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chảo",
+        "example": "Fry the eggs in a small pan.",
+        "familyId": "kitchenware",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pot",
+        "ipa": "/pɒt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nồi",
+        "example": "The rice is cooking in the pot.",
+        "familyId": "kitchenware",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "container",
+        "ipa": "/kənˈteɪ.nər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hộp đựng",
+        "example": "Store leftovers in an airtight container.",
+        "familyId": "storage",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shelf",
+        "ipa": "/ʃelf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kệ",
+        "example": "Put the books back on the shelf.",
+        "familyId": "storage",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "basket",
+        "ipa": "/ˈbɑː.skɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giỏ, rổ",
+        "example": "Dirty clothes go in the laundry basket.",
+        "familyId": "storage",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "box",
+        "ipa": "/bɒks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hộp, thùng",
+        "example": "We packed the dishes in cardboard boxes.",
+        "familyId": "storage",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tidy up",
+        "ipa": "/ˈtaɪ.di ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "dọn dẹp gọn gàng",
+        "example": "Please tidy up your room before dinner.",
+        "familyId": "housework",
+        "familyOrder": 1,
+        "tags": [
+          "phrasal-verb"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sweep",
+        "ipa": "/swiːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quét",
+        "example": "He sweeps the floor every morning.",
+        "familyId": "housework",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mop",
+        "ipa": "/mɒp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lau sàn",
+        "example": "Mop the floor after you sweep it.",
+        "familyId": "housework",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "iron",
+        "ipa": "/ˈaɪ.ən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ủi, là quần áo",
+        "example": "She irons her shirts for work.",
+        "familyId": "housework",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fold",
+        "ipa": "/fəʊld/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gấp",
+        "example": "Fold the towels and put them in the cupboard.",
+        "familyId": "housework",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "garbage",
+        "ipa": "/ˈɡɑː.bɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rác",
+        "example": "Take out the garbage before it smells bad.",
+        "note": "British English: rubbish",
+        "familyId": "waste",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rubbish",
+        "ipa": "/ˈrʌb.ɪʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rác",
+        "example": "Put the rubbish in the bin outside.",
+        "note": "British English; US: garbage/trash",
+        "familyId": "waste",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trash",
+        "ipa": "/træʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rác",
+        "example": "The kitchen trash needs to be taken out.",
+        "note": "US English",
+        "familyId": "waste",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bin",
+        "ipa": "/bɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thùng rác",
+        "example": "Throw the wrappers in the bin.",
+        "familyId": "waste",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recycle",
+        "ipa": "/ˌriːˈsaɪ.kəl/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "tái chế",
+        "example": "We recycle paper, glass and plastic at home.",
+        "familyId": "waste",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "maintenance",
+        "ipa": "/ˈmeɪn.tən.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự bảo trì, bảo dưỡng",
+        "example": "Regular maintenance keeps the house safe.",
+        "familyId": "home-maintenance",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "repair",
+        "ipa": "/rɪˈpeər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sửa chữa",
+        "example": "We need to repair the broken window.",
+        "familyId": "home-maintenance",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fix",
+        "ipa": "/fɪks/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sửa, khắc phục",
+        "example": "Can you fix the leaking tap?",
+        "familyId": "home-maintenance",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leak",
+        "ipa": "/liːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chỗ rò rỉ",
+        "example": "There is a leak under the kitchen sink.",
+        "familyId": "home-maintenance",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plumber",
+        "ipa": "/ˈplʌm.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thợ sửa ống nước",
+        "example": "A plumber came to repair the bathroom pipe.",
+        "familyId": "home-maintenance",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrician",
+        "ipa": "/ɪˌlekˈtrɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thợ điện",
+        "example": "Call an electrician if the lights keep flickering.",
+        "familyId": "home-maintenance",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wiring",
+        "ipa": "/ˈwaɪə.rɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hệ thống dây điện",
+        "example": "The old house needs new wiring to be safe.",
+        "familyId": "home-maintenance",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gardener",
+        "ipa": "/ˈɡɑːr.dən.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người làm vườn",
+        "example": "The gardener trims the hedges every weekend.",
+        "familyId": "garden",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gardening",
+        "ipa": "/ˈɡɑːr.dən.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc làm vườn",
+        "example": "Gardening is a relaxing hobby for many retired people.",
+        "familyId": "garden",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tweezer",
+        "ipa": "/ˈtwiː.zər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cái nhíp",
+        "example": "She used a tweezer to remove the tiny splinter.",
+        "note": "Thường dùng số nhiều: tweezers",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "room",
+        "ipa": "/ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "phòng",
+        "example": "My room has a large window.",
+        "familyId": "rooms",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stairs",
+        "ipa": "/sterz/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cầu thang",
+        "example": "She ran up the stairs quickly.",
+        "familyId": "structure",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "table",
+        "ipa": "/ˈteɪbl/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái bàn",
+        "example": "We eat dinner at the table together.",
+        "familyId": "furniture",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chair",
+        "ipa": "/tʃer/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái ghế",
+        "example": "Please pull up a chair and sit down.",
+        "familyId": "furniture",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bed",
+        "ipa": "/bed/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "cái giường",
+        "example": "She makes her bed every morning.",
+        "familyId": "furniture",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "closet",
+        "ipa": "/ˈklɑːzət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tủ quần áo (âm tường)",
+        "example": "Hang your coat in the closet.",
+        "familyId": "storage",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "key",
+        "ipa": "/kiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "chìa khóa",
+        "example": "I lost my house key this morning.",
+        "familyId": "home-maintenance",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lock",
+        "ipa": "/lɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "beginner",
+        "meaning": "ổ khóa",
+        "example": "The lock on the front door is broken.",
+        "familyId": "home-maintenance",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rack",
+        "ipa": "/ræk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá đỡ, kệ",
+        "example": "He hung the towels on the drying rack.",
+        "note": "Thường dùng trong cụm như drying rack, luggage rack",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crack",
+        "ipa": "/kræk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nứt, làm nứt; bẻ gãy",
+        "example": "The heat caused the old window to crack.",
+        "familyId": "crack",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cracked",
+        "ipa": "/krækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị nứt",
+        "example": "The cracked tile needs to be replaced.",
+        "familyId": "crack",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocute",
+        "ipa": "/ɪˈlek.trə.kjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "bị điện giật (gây tử vong/thương tích)",
+        "example": "Never touch a power line or you could electrocute yourself.",
+        "familyId": "electrocute",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocution",
+        "ipa": "/ɪˌlek.trəˈkjuː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự điện giật, chết do điện giật",
+        "example": "Workers are trained to prevent electrocution on site.",
+        "familyId": "electrocute",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrocuted",
+        "ipa": "/ɪˈlek.trə.kjuː.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bị điện giật",
+        "example": "Luckily nobody was electrocuted during the storm.",
+        "familyId": "electrocute",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

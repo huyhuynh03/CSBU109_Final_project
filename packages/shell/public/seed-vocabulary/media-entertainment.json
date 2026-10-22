@@ -1,0 +1,1548 @@
+{
+  "_meta": {
+    "topicId": "media-entertainment",
+    "topicName": "Truyền thông & Giải trí",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Media & Entertainment (B1-B2)",
+    "totalCards": 118,
+    "totalFamilies": 10,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung bo sung cho chu de Truyen thong & Giai tri, da loc tranh trung word voi cac topic seed hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "news outlet",
+        "ipa": "/ˈnuːz ˌaʊt.let/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ quan đưa tin",
+        "example": "A reliable news outlet checks information before publishing it.",
+        "familyId": "news-journalism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "news agency",
+        "ipa": "/ˈnuːz ˌeɪ.dʒən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hãng thông tấn",
+        "example": "The news agency supplied reports to newspapers worldwide.",
+        "familyId": "news-journalism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wire service",
+        "ipa": "/ˈwaɪr ˌsɝː.vɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dịch vụ tin tức qua hãng thông tấn",
+        "example": "Many local papers use stories from a wire service.",
+        "familyId": "news-journalism",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "newsroom",
+        "ipa": "/ˈnuːz.ruːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng tin tức, tòa soạn",
+        "example": "The newsroom was busy during the election night.",
+        "familyId": "news-journalism",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "editor-in-chief",
+        "ipa": "/ˌed.ɪ.t̬ɚ ɪn ˈtʃiːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tổng biên tập",
+        "example": "The editor-in-chief approved the front-page story.",
+        "familyId": "news-journalism",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "copy editor",
+        "ipa": "/ˈkɑː.pi ˌed.ɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "biên tập viên chỉnh sửa bản thảo",
+        "example": "A copy editor corrected the article before publication.",
+        "familyId": "news-journalism",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "photojournalist",
+        "ipa": "/ˌfoʊ.t̬oʊˈdʒɝː.nə.lɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phóng viên ảnh",
+        "example": "The photojournalist captured powerful images of the event.",
+        "familyId": "news-journalism",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foreign correspondent",
+        "ipa": "/ˈfɔːr.ən ˌkɔːr.əˈspɑːn.dənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phóng viên thường trú nước ngoài",
+        "example": "A foreign correspondent reported from the conflict zone.",
+        "familyId": "news-journalism",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investigative reporter",
+        "ipa": "/ɪnˈves.tɪ.ɡə.t̬ɪv rɪˈpɔːr.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phóng viên điều tra",
+        "example": "The investigative reporter uncovered corruption in the city.",
+        "familyId": "news-journalism",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "news anchor",
+        "ipa": "/ˈnuːz ˌæŋ.kɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người dẫn chương trình tin tức",
+        "example": "The news anchor introduced the evening bulletin.",
+        "familyId": "news-journalism",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bulletin",
+        "ipa": "/ˈbʊl.ə.tɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản tin ngắn",
+        "example": "A weather bulletin warned people about heavy rain.",
+        "familyId": "news-journalism",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dateline",
+        "ipa": "/ˈdeɪt.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dòng ghi nơi và ngày trong bài báo",
+        "example": "The dateline showed that the report came from Seoul.",
+        "familyId": "news-journalism",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "byline",
+        "ipa": "/ˈbaɪ.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "dòng tên tác giả bài báo",
+        "example": "Her byline appeared under the headline.",
+        "familyId": "news-journalism",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "masthead",
+        "ipa": "/ˈmæst.hed/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phần tên báo và thông tin xuất bản",
+        "example": "The newspaper changed its masthead after a redesign.",
+        "familyId": "news-journalism",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "op-ed",
+        "ipa": "/ˌɑːp ˈed/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bài bình luận đối diện trang xã luận",
+        "example": "The professor wrote an op-ed about digital privacy.",
+        "familyId": "news-journalism",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "human-interest story",
+        "ipa": "/ˌhjuː.mən ˈɪn.trɪst ˌstɔːr.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "câu chuyện đời thường gây xúc động",
+        "example": "The magazine published a human-interest story about volunteers.",
+        "familyId": "news-journalism",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "media outlet",
+        "ipa": "/ˈmiː.di.ə ˌaʊt.let/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đơn vị truyền thông",
+        "example": "The event attracted every major media outlet in the region.",
+        "familyId": "media-industry",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mass media",
+        "ipa": "/ˌmæs ˈmiː.di.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "truyền thông đại chúng",
+        "example": "Mass media can influence public attitudes.",
+        "familyId": "media-industry",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broadcasting",
+        "ipa": "/ˈbrɔːdˌkæs.tɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngành phát thanh truyền hình",
+        "example": "Broadcasting has changed rapidly because of online platforms.",
+        "familyId": "media-industry",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broadcaster",
+        "ipa": "/ˈbrɔːdˌkæs.tɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đài phát sóng, người phát sóng",
+        "example": "The broadcaster launched a new sports channel.",
+        "familyId": "media-industry",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "airtime",
+        "ipa": "/ˈer.taɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thời lượng phát sóng",
+        "example": "The advertisement received two minutes of airtime.",
+        "familyId": "media-industry",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prime time",
+        "ipa": "/ˈpraɪm ˌtaɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khung giờ vàng",
+        "example": "The drama is shown during prime time.",
+        "familyId": "media-industry",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "audience share",
+        "ipa": "/ˈɑː.di.əns ˌʃer/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thị phần khán giả",
+        "example": "The channel increased its audience share last month.",
+        "familyId": "media-industry",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "viewership",
+        "ipa": "/ˈvjuː.ɚ.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lượng người xem",
+        "example": "Viewership rose after the final episode.",
+        "familyId": "media-industry",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "listenership",
+        "ipa": "/ˈlɪs.ən.ɚ.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "lượng người nghe",
+        "example": "The radio station has a loyal listenership.",
+        "familyId": "media-industry",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rerun",
+        "ipa": "/ˈriː.rʌn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình phát lại",
+        "example": "The network showed a rerun of the comedy series.",
+        "familyId": "media-industry",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "syndication",
+        "ipa": "/ˌsɪn.dɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "việc bán quyền phát sóng lại",
+        "example": "Syndication allowed the show to reach new audiences.",
+        "familyId": "media-industry",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "streaming platform",
+        "ipa": "/ˈstriː.mɪŋ ˌplæt.fɔːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền tảng phát trực tuyến",
+        "example": "The film was released on a streaming platform.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "live stream",
+        "ipa": "/ˈlaɪv ˌstriːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "buổi phát trực tiếp",
+        "example": "Thousands watched the live stream of the concert.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "livestreamer",
+        "ipa": "/ˈlaɪvˌstriː.mɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người phát trực tiếp",
+        "example": "The livestreamer answered questions from viewers.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "podcast",
+        "ipa": "/ˈpɑːd.kæst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình âm thanh trực tuyến",
+        "example": "I listen to a language-learning podcast every morning.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "podcaster",
+        "ipa": "/ˈpɑːdˌkæs.tɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người làm podcast",
+        "example": "The podcaster interviewed a famous director.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "webinar",
+        "ipa": "/ˈweb.ɪ.nɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hội thảo trực tuyến",
+        "example": "The company hosted a webinar about online safety.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "playlist",
+        "ipa": "/ˈpleɪ.lɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "danh sách phát",
+        "example": "She created a playlist for the road trip.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paywall",
+        "ipa": "/ˈpeɪ.wɑːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tường phí truy cập nội dung",
+        "example": "The article was hidden behind a paywall.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subscription model",
+        "ipa": "/səbˈskrɪp.ʃən ˌmɑː.dəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "mô hình đăng ký trả phí",
+        "example": "Many platforms use a subscription model.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "binge-watch",
+        "ipa": "/ˈbɪndʒ ˌwɑːtʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xem liền tù tì nhiều tập",
+        "example": "We binge-watch the whole season on weekends.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "skip intro",
+        "ipa": "/ˌskɪp ˈɪn.troʊ/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "intermediate",
+        "meaning": "bỏ qua phần mở đầu",
+        "example": "Many viewers press skip intro after the first episode.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "notification bell",
+        "ipa": "/ˌnoʊ.t̬ə.fɪˈkeɪ.ʃən ˌbel/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuông thông báo",
+        "example": "Subscribers click the notification bell to receive updates.",
+        "familyId": "digital-entertainment",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "content creator",
+        "ipa": "/ˈkɑːn.tent kriˈeɪ.t̬ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà sáng tạo nội dung",
+        "example": "A content creator must post regularly to keep followers engaged.",
+        "familyId": "social-media",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "micro-influencer",
+        "ipa": "/ˌmaɪ.kroʊ ˈɪn.flu.ən.sɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người ảnh hưởng quy mô nhỏ",
+        "example": "Brands often work with a micro-influencer for niche audiences.",
+        "familyId": "social-media",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "follower count",
+        "ipa": "/ˈfɑː.loʊ.ɚ ˌkaʊnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số lượng người theo dõi",
+        "example": "Her follower count grew after the video went viral.",
+        "familyId": "social-media",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subscriber base",
+        "ipa": "/səbˈskraɪ.bɚ ˌbeɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tệp người đăng ký",
+        "example": "The channel expanded its subscriber base quickly.",
+        "familyId": "social-media",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "engagement rate",
+        "ipa": "/ɪnˈɡeɪdʒ.mənt ˌreɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tỷ lệ tương tác",
+        "example": "Advertisers care about engagement rate, not just views.",
+        "familyId": "social-media",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "virality",
+        "ipa": "/vaɪˈræl.ə.t̬i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính lan truyền mạnh",
+        "example": "The campaign achieved virality within hours.",
+        "familyId": "social-media",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "viral trend",
+        "ipa": "/ˈvaɪ.rəl ˌtrend/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "xu hướng lan truyền",
+        "example": "A viral trend can disappear within a week.",
+        "familyId": "social-media",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meme culture",
+        "ipa": "/ˈmiːm ˌkʌl.tʃɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "văn hóa meme",
+        "example": "Meme culture shapes the way young people joke online.",
+        "familyId": "social-media",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hashtag campaign",
+        "ipa": "/ˈhæʃ.tæɡ kæmˌpeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến dịch hashtag",
+        "example": "The hashtag campaign encouraged users to share stories.",
+        "familyId": "social-media",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clickbait",
+        "ipa": "/ˈklɪk.beɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiêu đề câu nhấp chuột",
+        "example": "Clickbait may attract views but damage trust.",
+        "familyId": "social-media",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thumbnail",
+        "ipa": "/ˈθʌm.neɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ảnh thu nhỏ đại diện nội dung",
+        "example": "A clear thumbnail helps viewers choose a video.",
+        "familyId": "social-media",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comment section",
+        "ipa": "/ˈkɑː.ment ˌsek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần bình luận",
+        "example": "The comment section became very active after the announcement.",
+        "familyId": "social-media",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "community guideline",
+        "ipa": "/kəˈmjuː.nə.t̬i ˈɡaɪd.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quy tắc cộng đồng",
+        "example": "Users must follow the community guideline to avoid removal.",
+        "familyId": "social-media",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "content moderation",
+        "ipa": "/ˈkɑːn.tent ˌmɑː.dəˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kiểm duyệt nội dung",
+        "example": "Content moderation helps reduce harmful posts.",
+        "familyId": "social-media",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "troll",
+        "ipa": "/troʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ quấy rối trên mạng",
+        "example": "A troll tried to start an argument in the forum.",
+        "familyId": "social-media",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "online harassment",
+        "ipa": "/ˌɑːn.laɪn həˈræs.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quấy rối trực tuyến",
+        "example": "Online harassment can seriously affect mental health.",
+        "familyId": "social-media",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoiler",
+        "ipa": "/ˈspɔɪ.lɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nội dung tiết lộ tình tiết",
+        "example": "Please avoid posting a spoiler before everyone watches the finale.",
+        "familyId": "film-television",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "plot twist",
+        "ipa": "/ˈplɑːt ˌtwɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú ngoặt cốt truyện",
+        "example": "The plot twist surprised the whole audience.",
+        "familyId": "film-television",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cliffhanger",
+        "ipa": "/ˈklɪfˌhæŋ.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kết thúc bỏ lửng gây hồi hộp",
+        "example": "The episode ended with a dramatic cliffhanger.",
+        "familyId": "film-television",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "screenplay",
+        "ipa": "/ˈskriːn.pleɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "kịch bản phim",
+        "example": "The screenplay won an award for its sharp dialogue.",
+        "familyId": "film-television",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "showrunner",
+        "ipa": "/ˈʃoʊˌrʌn.ɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người điều hành sản xuất loạt phim",
+        "example": "The showrunner planned the story for five seasons.",
+        "familyId": "film-television",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cinematographer",
+        "ipa": "/ˌsɪn.ə.məˈtɑː.ɡrə.fɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đạo diễn hình ảnh",
+        "example": "The cinematographer used natural light beautifully.",
+        "familyId": "film-television",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "post-production",
+        "ipa": "/ˌpoʊst prəˈdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hậu kỳ",
+        "example": "Post-production took six months to complete.",
+        "familyId": "film-television",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "green screen",
+        "ipa": "/ˌɡriːn ˈskriːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phông xanh kỹ xảo",
+        "example": "Actors performed in front of a green screen.",
+        "familyId": "film-television",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "visual effects",
+        "ipa": "/ˌvɪʒ.u.əl ɪˈfekts/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệu ứng hình ảnh",
+        "example": "The movie used visual effects to create alien worlds.",
+        "familyId": "film-television",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "voice-over",
+        "ipa": "/ˈvɔɪsˌoʊ.vɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lời thuyết minh, lồng tiếng dẫn",
+        "example": "The documentary uses a calm voice-over.",
+        "familyId": "film-television",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dubbed",
+        "ipa": "/dʌbd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được lồng tiếng",
+        "example": "The dubbed version is popular with children.",
+        "familyId": "film-television",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subtitled",
+        "ipa": "/ˈsʌbˌtaɪ.t̬əld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có phụ đề",
+        "example": "I prefer subtitled films to dubbed ones.",
+        "familyId": "film-television",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "closed captions",
+        "ipa": "/ˌkloʊzd ˈkæp.ʃənz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phụ đề chi tiết cho người khiếm thính",
+        "example": "Closed captions describe sounds as well as speech.",
+        "familyId": "film-television",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stunt double",
+        "ipa": "/ˈstʌnt ˌdʌb.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "diễn viên đóng thế",
+        "example": "A stunt double performed the dangerous jump.",
+        "familyId": "film-television",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "casting director",
+        "ipa": "/ˈkæs.tɪŋ dəˌrek.tɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đạo diễn tuyển vai",
+        "example": "The casting director looked for a young actor.",
+        "familyId": "film-television",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set design",
+        "ipa": "/ˈset dɪˌzaɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thiết kế bối cảnh",
+        "example": "The set design made the city look futuristic.",
+        "familyId": "film-television",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "box-office hit",
+        "ipa": "/ˈbɑːks ˌɑː.fɪs ˌhɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phim ăn khách phòng vé",
+        "example": "The comedy became a box-office hit.",
+        "familyId": "film-television",
+        "familyOrder": 17,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleeper hit",
+        "ipa": "/ˈsliː.pɚ ˌhɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tác phẩm bất ngờ thành công",
+        "example": "The low-budget film became a sleeper hit.",
+        "familyId": "film-television",
+        "familyOrder": 18,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "franchise film",
+        "ipa": "/ˈfræn.tʃaɪz ˌfɪlm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phim thuộc thương hiệu dài hạn",
+        "example": "A franchise film often has a built-in audience.",
+        "familyId": "film-television",
+        "familyOrder": 19,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spin-off",
+        "ipa": "/ˈspɪnˌɔːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tác phẩm ăn theo, ngoại truyện",
+        "example": "The popular character got a spin-off.",
+        "familyId": "film-television",
+        "familyOrder": 20,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "red carpet",
+        "ipa": "/ˌred ˈkɑːr.pət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thảm đỏ",
+        "example": "Fans waited near the red carpet to see celebrities.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "award ceremony",
+        "ipa": "/əˈwɔːrd ˌser.ə.moʊ.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lễ trao giải",
+        "example": "The award ceremony was broadcast live.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fanbase",
+        "ipa": "/ˈfæn.beɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cộng đồng người hâm mộ",
+        "example": "The singer has a devoted fanbase.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fandom",
+        "ipa": "/ˈfæn.dəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "văn hóa/cộng đồng hâm mộ",
+        "example": "The fandom created artwork for the anniversary.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cosplay",
+        "ipa": "/ˈkɑːz.pleɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa trang nhân vật",
+        "example": "Cosplay is common at comic conventions.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fan convention",
+        "ipa": "/ˈfæn kənˌven.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hội nghị người hâm mộ",
+        "example": "A fan convention brings actors and viewers together.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "merchandise",
+        "ipa": "/ˈmɝː.tʃən.daɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng hóa ăn theo thương hiệu",
+        "example": "The band sells merchandise after concerts.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "celebrity endorsement",
+        "ipa": "/səˈleb.rə.t̬i ɪnˈdɔːrs.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự chứng thực của người nổi tiếng",
+        "example": "Celebrity endorsement can boost product sales.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "publicist",
+        "ipa": "/ˈpʌb.lɪ.sɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người phụ trách truyền thông cho nghệ sĩ",
+        "example": "The publicist arranged interviews for the actor.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "press junket",
+        "ipa": "/ˈpres ˌdʒʌŋ.kɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chuỗi phỏng vấn quảng bá phim",
+        "example": "The cast attended a press junket before the premiere.",
+        "familyId": "celebrity-fandom",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reality show",
+        "ipa": "/riˈæl.ə.t̬i ˌʃoʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình truyền hình thực tế",
+        "example": "The reality show follows young chefs in a competition.",
+        "familyId": "genres-formats",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "game show",
+        "ipa": "/ˈɡeɪm ˌʃoʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trò chơi truyền hình",
+        "example": "The game show gives prizes to quick contestants.",
+        "familyId": "genres-formats",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "talk show",
+        "ipa": "/ˈtɑːk ˌʃoʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình trò chuyện",
+        "example": "A talk show invited experts to discuss the issue.",
+        "familyId": "genres-formats",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sitcom",
+        "ipa": "/ˈsɪt.kɑːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phim hài tình huống",
+        "example": "The sitcom is set in a small office.",
+        "familyId": "genres-formats",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "soap opera",
+        "ipa": "/ˈsoʊp ˌɑː.pɚ.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phim truyền hình dài tập nhiều kịch tính",
+        "example": "My grandmother watches a soap opera every afternoon.",
+        "familyId": "genres-formats",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "docuseries",
+        "ipa": "/ˈdɑː.kjuːˌsɪr.iːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "loạt phim tài liệu",
+        "example": "The docuseries explores life in remote villages.",
+        "familyId": "genres-formats",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "miniseries",
+        "ipa": "/ˈmɪn.iˌsɪr.iːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "loạt phim ngắn tập",
+        "example": "The historical miniseries has only six episodes.",
+        "familyId": "genres-formats",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "variety show",
+        "ipa": "/vəˈraɪ.ə.t̬i ˌʃoʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình tạp kỹ",
+        "example": "The variety show includes music, comedy, and interviews.",
+        "familyId": "genres-formats",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "infotainment",
+        "ipa": "/ˌɪn.foʊˈteɪn.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nội dung vừa thông tin vừa giải trí",
+        "example": "Some channels rely on infotainment to attract younger viewers.",
+        "familyId": "genres-formats",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mockumentary",
+        "ipa": "/ˌmɑː.kjəˈmen.t̬ɚ.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phim giả tài liệu",
+        "example": "The mockumentary uses interviews for comic effect.",
+        "familyId": "genres-formats",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "press release",
+        "ipa": "/ˈpres rɪˌliːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thông cáo báo chí",
+        "example": "The studio issued a press release about the new film.",
+        "familyId": "advertising-pr",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "media kit",
+        "ipa": "/ˈmiː.di.ə ˌkɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bộ tài liệu truyền thông",
+        "example": "The startup sent a media kit to journalists.",
+        "familyId": "advertising-pr",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "public relations",
+        "ipa": "/ˌpʌb.lɪk rɪˈleɪ.ʃənz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quan hệ công chúng",
+        "example": "Public relations helps organizations manage their image.",
+        "familyId": "advertising-pr",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brand ambassador",
+        "ipa": "/ˈbrænd æmˌbæs.ə.dɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại sứ thương hiệu",
+        "example": "The athlete became a brand ambassador for a sports company.",
+        "familyId": "advertising-pr",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sponsorship deal",
+        "ipa": "/ˈspɑːn.sɚ.ʃɪp ˌdiːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thỏa thuận tài trợ",
+        "example": "The podcast signed a sponsorship deal with a bank.",
+        "familyId": "advertising-pr",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "product placement",
+        "ipa": "/ˈprɑː.dʌkt ˌpleɪs.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quảng cáo lồng ghép sản phẩm",
+        "example": "Product placement appears naturally inside the movie scene.",
+        "familyId": "advertising-pr",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ad campaign",
+        "ipa": "/ˈæd kæmˌpeɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chiến dịch quảng cáo",
+        "example": "The ad campaign used short videos on several platforms.",
+        "familyId": "advertising-pr",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slogan",
+        "ipa": "/ˈsloʊ.ɡən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khẩu hiệu quảng cáo",
+        "example": "A memorable slogan can define a brand.",
+        "familyId": "advertising-pr",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jingle",
+        "ipa": "/ˈdʒɪŋ.ɡəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhạc hiệu quảng cáo",
+        "example": "The jingle stayed in my head all day.",
+        "familyId": "advertising-pr",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "media buying",
+        "ipa": "/ˈmiː.di.ə ˌbaɪ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "việc mua vị trí quảng cáo trên truyền thông",
+        "example": "Media buying determines where advertisements appear.",
+        "familyId": "advertising-pr",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fact-checking",
+        "ipa": "/ˈfæktˌtʃek.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiểm chứng thông tin",
+        "example": "Fact-checking is essential before sharing breaking stories.",
+        "familyId": "media-ethics",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "source verification",
+        "ipa": "/ˈsɔːrs ˌver.ə.fəˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "xác minh nguồn tin",
+        "example": "Source verification reduces the risk of false reports.",
+        "familyId": "media-ethics",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "media literacy",
+        "ipa": "/ˈmiː.di.ə ˌlɪt̬.ɚ.ə.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "năng lực hiểu và đánh giá truyền thông",
+        "example": "Schools teach media literacy to help students detect manipulation.",
+        "familyId": "media-ethics",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disinformation",
+        "ipa": "/ˌdɪs.ɪn.fɚˈmeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thông tin sai lệch có chủ ý",
+        "example": "Disinformation can spread quickly during a crisis.",
+        "familyId": "media-ethics",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deepfake",
+        "ipa": "/ˈdiːp.feɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nội dung giả mạo bằng AI",
+        "example": "A deepfake can make a person appear to say something false.",
+        "familyId": "media-ethics",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "click farm",
+        "ipa": "/ˈklɪk ˌfɑːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "nhóm tạo lượt nhấp giả",
+        "example": "A click farm can inflate online popularity.",
+        "familyId": "media-ethics",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "echo chamber",
+        "ipa": "/ˈek.oʊ ˌtʃeɪm.bɚ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "buồng vang thông tin một chiều",
+        "example": "An echo chamber reinforces existing beliefs.",
+        "familyId": "media-ethics",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "filter bubble",
+        "ipa": "/ˈfɪl.tɚ ˌbʌb.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bong bóng lọc thông tin",
+        "example": "A filter bubble limits the range of news people see.",
+        "familyId": "media-ethics",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "censorship board",
+        "ipa": "/ˈsen.sɚ.ʃɪp ˌbɔːrd/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hội đồng kiểm duyệt",
+        "example": "The censorship board reviewed the film before release.",
+        "familyId": "media-ethics",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "age rating",
+        "ipa": "/ˈeɪdʒ ˌreɪ.t̬ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phân loại độ tuổi",
+        "example": "Parents check the age rating before letting children watch.",
+        "familyId": "media-ethics",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mystery",
+        "ipa": "/ˈmɪstri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điều bí ẩn, sự huyền bí",
+        "example": "The cause of the fire remains a mystery.",
+        "familyId": "mystery",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mysterious",
+        "ipa": "/mɪˈstɪəriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "bí ẩn, huyền bí",
+        "example": "A mysterious stranger appeared at the door.",
+        "familyId": "mystery",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mysteriously",
+        "ipa": "/mɪˈstɪəriəsli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách bí ẩn",
+        "example": "The documents mysteriously disappeared overnight.",
+        "familyId": "mystery",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

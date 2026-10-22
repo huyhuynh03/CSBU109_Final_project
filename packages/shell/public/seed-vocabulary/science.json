@@ -1,0 +1,1016 @@
+{
+  "_meta": {
+    "topicId": "science",
+    "topicName": "Science",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Science (B1-B2)",
+    "totalCards": 77,
+    "totalFamilies": 14,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung nen tang chung cho chu de Khoa hoc, gom cac tu don ve nghien cuu, phuong phap, quan sat, phan tich, danh gia va phong thi nghiem. Da loai bo cac danh tu/cum tu ghep co the tu suy ra va tranh trung voi cac topic hien co."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "laboratory",
+        "ipa": "/ləˈbɒr.ə.tər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phòng thí nghiệm",
+        "example": "Scientists conduct experiments in a laboratory.",
+        "familyId": "science-places",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "research",
+        "ipa": "/rɪˈsɜːtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghiên cứu",
+        "example": "Scientists do research to discover new knowledge.",
+        "familyId": "science-methods",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scientist",
+        "ipa": "/ˈsaɪən.tɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà khoa học",
+        "example": "The scientist explained the results carefully.",
+        "familyId": "science-methods",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scientific",
+        "ipa": "/ˌsaɪənˈtɪf.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc khoa học",
+        "example": "The report uses a scientific approach.",
+        "familyId": "science-methods",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "science",
+        "ipa": "/ˈsaɪ.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoa học",
+        "example": "Science helps us understand the natural world.",
+        "familyId": "science-methods",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observation",
+        "ipa": "/ˌɒb.zəˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự quan sát",
+        "example": "Careful observation is important in scientific work.",
+        "familyId": "science-observation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observe",
+        "ipa": "/əbˈzɜːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quan sát",
+        "example": "Researchers observe changes over time.",
+        "familyId": "science-observation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observed",
+        "ipa": "/əbˈzɜːvd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đã được quan sát",
+        "example": "The observed pattern helped the team draw a conclusion.",
+        "familyId": "science-observation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "observing",
+        "ipa": "/əbˈzɜː.vɪŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "việc quan sát",
+        "example": "Observing animals in their habitat can reveal useful patterns.",
+        "familyId": "science-observation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hypothesis",
+        "ipa": "/haɪˈpɒθ.ə.sɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giả thuyết",
+        "example": "The hypothesis was tested with a simple experiment.",
+        "familyId": "science-observation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "theory",
+        "ipa": "/ˈθɪə.ri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lý thuyết",
+        "example": "The theory explains why the result happened.",
+        "familyId": "science-observation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evidence",
+        "ipa": "/ˈev.ɪ.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bằng chứng",
+        "example": "The evidence supports the scientist's claim.",
+        "familyId": "science-reasoning",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "analysis",
+        "ipa": "/əˈnæl.ə.sɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phân tích",
+        "example": "The analysis showed a clear trend in the data.",
+        "familyId": "science-reasoning",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "analyze",
+        "ipa": "/ˈæn.ə.laɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phân tích",
+        "example": "Scientists analyze the data before making a claim.",
+        "familyId": "science-reasoning",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conclusion",
+        "ipa": "/kənˈkluː.ʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kết luận",
+        "example": "The conclusion was based on the results of the experiment.",
+        "familyId": "science-reasoning",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "method",
+        "ipa": "/ˈmeθ.əd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phương pháp",
+        "example": "The method must be clear and repeatable.",
+        "familyId": "science-reasoning",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "methodology",
+        "ipa": "/ˌmeθ.əˈdɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "phương pháp luận",
+        "example": "The methodology was described in detail in the report.",
+        "familyId": "science-reasoning",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "process",
+        "ipa": "/ˈprəʊ.ses/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quá trình",
+        "example": "The process takes several steps to complete.",
+        "familyId": "science-reasoning",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "principle",
+        "ipa": "/ˈprɪn.sɪ.pəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên lý",
+        "example": "This principle explains how the system works.",
+        "familyId": "science-reasoning",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sample",
+        "ipa": "/ˈsɑːm.pəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mẫu",
+        "example": "The team tested a small sample of the material.",
+        "familyId": "science-research",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sampling",
+        "ipa": "/ˈsɑːm.plɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc lấy mẫu",
+        "example": "Sampling must be done carefully to avoid bias.",
+        "familyId": "science-research",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "measurement",
+        "ipa": "/ˈmeʒ.ə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đo lường",
+        "example": "Precise measurement is essential in science.",
+        "familyId": "science-research",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "measure",
+        "ipa": "/ˈmeʒ.ər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đo lường",
+        "example": "Measure the temperature every hour.",
+        "familyId": "science-research",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "predict",
+        "ipa": "/prɪˈdɪkt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dự đoán",
+        "example": "Scientists try to predict future changes.",
+        "familyId": "science-research",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "prediction",
+        "ipa": "/prɪˈdɪk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự dự đoán",
+        "example": "The prediction was confirmed by later tests.",
+        "familyId": "science-research",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accuracy",
+        "ipa": "/ˈæk.jə.rə.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "độ chính xác",
+        "example": "Accuracy is important when recording results.",
+        "familyId": "science-research",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "precision",
+        "ipa": "/prɪˈsɪʒ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "độ chuẩn xác",
+        "example": "Precision matters in laboratory measurements.",
+        "familyId": "science-research",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "classification",
+        "ipa": "/ˌklæs.ɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự phân loại",
+        "example": "Classification helps organize scientific information.",
+        "familyId": "science-research",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "classify",
+        "ipa": "/ˈklæs.ɪ.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "phân loại",
+        "example": "Scientists classify plants by shared features.",
+        "familyId": "science-research",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investigation",
+        "ipa": "/ɪnˌves.tɪˈɡeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc điều tra, nghiên cứu",
+        "example": "The investigation lasted for several months.",
+        "familyId": "science-research",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investigate",
+        "ipa": "/ɪnˈves.tɪ.ɡeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "điều tra, nghiên cứu",
+        "example": "The team will investigate the cause of the change.",
+        "familyId": "science-research",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "phenomenon",
+        "ipa": "/fəˈnɒm.ɪ.nən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiện tượng",
+        "example": "The phenomenon surprised the researchers.",
+        "familyId": "science-research",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "survey",
+        "ipa": "/ˈsɜː.veɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khảo sát",
+        "example": "A survey can gather useful data from many people.",
+        "familyId": "science-study",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trial",
+        "ipa": "/traɪəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thử nghiệm",
+        "example": "The trial tested the method under different conditions.",
+        "familyId": "science-study",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "researcher",
+        "ipa": "/rɪˈsɜː.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà nghiên cứu",
+        "example": "Each researcher recorded the results carefully.",
+        "familyId": "science-study",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "replication",
+        "ipa": "/ˌrep.lɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự lặp lại, sự nhân bản",
+        "example": "Replication is important for confirming results.",
+        "familyId": "science-study",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "replicate",
+        "ipa": "/ˈrep.lɪ.keɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "lặp lại, nhân bản",
+        "example": "Other teams tried to replicate the experiment.",
+        "familyId": "science-study",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "valid",
+        "ipa": "/ˈvæl.ɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có giá trị, hợp lệ",
+        "example": "The result is valid if the method is correct.",
+        "familyId": "science-study",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "validity",
+        "ipa": "/vəˈlɪd.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "tính hợp lệ",
+        "example": "The validity of the data must be checked.",
+        "familyId": "science-study",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "objective",
+        "ipa": "/əbˈdʒek.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khách quan",
+        "example": "Scientists should remain objective when reporting findings.",
+        "familyId": "science-study",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "subjective",
+        "ipa": "/səbˈdʒek.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chủ quan",
+        "example": "A subjective opinion is not enough in scientific writing.",
+        "familyId": "science-study",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bias",
+        "ipa": "/ˈbaɪ.əs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thiên lệch",
+        "example": "Researchers try to reduce bias in their studies.",
+        "familyId": "science-study",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uncertainty",
+        "ipa": "/ʌnˈsɜː.tən.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự không chắc chắn",
+        "example": "There is always some uncertainty in prediction.",
+        "familyId": "science-study",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "correlation",
+        "ipa": "/ˌkɒr.əˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "mối tương quan",
+        "example": "The correlation between the two variables was strong.",
+        "familyId": "science-study",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "causation",
+        "ipa": "/kɔːˈzeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "quan hệ nhân quả",
+        "example": "Correlation does not always prove causation.",
+        "familyId": "science-study",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "model",
+        "ipa": "/ˈmɒd.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mô hình",
+        "example": "The model helps explain a complex system.",
+        "familyId": "science-study",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "simulation",
+        "ipa": "/ˌsɪm.jəˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "mô phỏng",
+        "example": "The simulation showed how the process might work in reality.",
+        "familyId": "science-study",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discovery",
+        "ipa": "/dɪˈskʌv.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khám phá",
+        "example": "The discovery changed how scientists view the topic.",
+        "familyId": "science-discovery",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "innovation",
+        "ipa": "/ˌɪn.əˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đổi mới, sáng tạo",
+        "example": "Innovation can improve the way research is done.",
+        "familyId": "science-discovery",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invention",
+        "ipa": "/ɪnˈven.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phát minh",
+        "example": "The invention made the experiment easier to conduct.",
+        "familyId": "science-discovery",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ethics",
+        "ipa": "/ˈeθ.ɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đạo đức",
+        "example": "Ethics are important in scientific research.",
+        "familyId": "science-discovery",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "safety",
+        "ipa": "/ˈseɪf.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "an toàn",
+        "example": "Safety is a priority in every laboratory.",
+        "familyId": "science-discovery",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "procedure",
+        "ipa": "/prəˈsiː.dʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy trình",
+        "example": "Follow the procedure exactly during the experiment.",
+        "familyId": "science-discovery",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breakthrough",
+        "ipa": "/ˈbreɪk.θruː/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "đột phá",
+        "example": "The breakthrough led to new research opportunities.",
+        "familyId": "science-discovery",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "finding",
+        "ipa": "/ˈfaɪn.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phát hiện, kết quả tìm thấy",
+        "example": "The finding supported the original hypothesis.",
+        "familyId": "science-discovery",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "journal",
+        "ipa": "/ˈdʒɜː.nəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tạp chí khoa học",
+        "example": "The article was published in a respected journal.",
+        "familyId": "science-discovery",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "publication",
+        "ipa": "/ˌpʌb.lɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ấn phẩm, bài xuất bản",
+        "example": "The publication reached a wide academic audience.",
+        "familyId": "science-discovery",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "equipment",
+        "ipa": "/ɪˈkwɪp.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiết bị, dụng cụ",
+        "example": "The lab equipment must be cleaned after use.",
+        "familyId": "science-lab",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "instrument",
+        "ipa": "/ˈɪn.strə.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dụng cụ, thiết bị đo",
+        "example": "The instrument measures tiny changes in temperature.",
+        "familyId": "science-lab",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apparatus",
+        "ipa": "/ˌæp.əˈreɪ.təs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bộ máy, thiết bị",
+        "example": "The apparatus was designed for a special experiment.",
+        "familyId": "science-lab",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "experimenter",
+        "ipa": "/ɪkˈsper.ɪ.men.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "người thực hiện thí nghiệm",
+        "example": "The experimenter recorded every step carefully.",
+        "familyId": "science-lab",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cluster",
+        "ipa": "/ˈklʌs.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "cụm, nhóm",
+        "example": "The data points formed a cluster around the average value.",
+        "familyId": "science-research",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exact",
+        "ipa": "/ɪɡˈzækt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chính xác, đúng đắn",
+        "example": "Scientists need to record the exact temperature of the experiment.",
+        "familyId": "exact",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exactly",
+        "ipa": "/ɪɡˈzækt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách chính xác, đúng là",
+        "example": "The results matched exactly what the hypothesis predicted.",
+        "familyId": "exact",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanism",
+        "ipa": "/ˈmek.ə.nɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ chế, cơ cấu",
+        "example": "Scientists studied the mechanism behind the chemical reaction.",
+        "familyId": "mechanism",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanical",
+        "ipa": "/məˈkæn.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc cơ khí, cơ học",
+        "example": "The clock uses a mechanical system with gears and springs.",
+        "familyId": "mechanism",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mechanically",
+        "ipa": "/məˈkæn.ɪ.kli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách cơ học",
+        "example": "He responded almost mechanically to the routine question.",
+        "familyId": "mechanism",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calibrate",
+        "ipa": "/ˈkæl.ɪ.breɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "hiệu chuẩn, căn chỉnh",
+        "example": "The technician will calibrate the instrument before use.",
+        "familyId": "calibrate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calibration",
+        "ipa": "/ˌkæl.ɪˈbreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự hiệu chuẩn",
+        "example": "Regular calibration ensures the equipment remains accurate.",
+        "familyId": "calibrate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occur",
+        "ipa": "/əˈkɝː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xảy ra, có mặt",
+        "example": "Natural disasters can occur without warning.",
+        "familyId": "occur",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occurrence",
+        "ipa": "/əˈkɝː.əns/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự việc xảy ra, hiện tượng",
+        "example": "The occurrence of earthquakes is common in this region.",
+        "familyId": "occur",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drift",
+        "ipa": "/drɪft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trôi dạt, sự sai lệch",
+        "example": "The boat began to drift with the current.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "external",
+        "ipa": "/ɪkˈstɝː.nəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bên ngoài",
+        "example": "The temperature sensor detects external heat sources.",
+        "familyId": "external",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "externally",
+        "ipa": "/ɪkˈstɝː.nəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "ở bên ngoài",
+        "example": "The device is powered by an externally mounted solar panel.",
+        "familyId": "external",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combine",
+        "ipa": "/kəmˈbaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kết hợp, hòa trộn",
+        "example": "The experiment combines two chemicals at high temperature.",
+        "familyId": "combine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combination",
+        "ipa": "/ˌkɑːm.bɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kết hợp, tổ hợp",
+        "example": "A combination of heat and pressure transforms the rock.",
+        "familyId": "combine",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "settling",
+        "ipa": "/ˈset.əl.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự lắng đọng, sự lắng xuống",
+        "example": "The settling of dust particles affected the lab results.",
+        "note": "Dạng V-ing của settle — từ đơn lẻ, không tạo family",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

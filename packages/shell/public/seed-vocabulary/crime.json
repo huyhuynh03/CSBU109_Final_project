@@ -1,0 +1,1223 @@
+{
+  "_meta": {
+    "topicId": "crime",
+    "topicName": "Tội phạm",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Crime (B1-B2)",
+    "totalCards": 93,
+    "totalFamilies": 11,
+    "generatedAt": "2026-05-26",
+    "note": "Tu vung chu de Toi pham, bao gom cac loai toi pham, ke pham toi, dieu tra, an ninh mang, va cong cu pha an. KHONG trung lap voi topic Luat phap (legal/court/jury) va da tranh moi tu hien co o cac topic khac."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "cybercrime",
+        "ipa": "/ˈsaɪbəkraɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội phạm mạng, tội phạm sử dụng công nghệ",
+        "example": "Cybercrime has become a major threat to global security.",
+        "familyId": "crime-cyber",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hacker",
+        "ipa": "/ˈhækə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tin tặc, kẻ xâm nhập hệ thống máy tính",
+        "example": "A hacker stole millions of customer records from the company.",
+        "familyId": "crime-cyber",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hacking",
+        "ipa": "/ˈhækɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi xâm nhập trái phép hệ thống",
+        "example": "The hacking incident exposed serious security flaws.",
+        "familyId": "crime-cyber",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "phishing",
+        "ipa": "/ˈfɪʃɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lừa đảo qua mạng để đánh cắp thông tin",
+        "example": "Be careful of phishing emails that ask for your password.",
+        "familyId": "crime-cyber",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "malware",
+        "ipa": "/ˈmælweə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần mềm độc hại",
+        "example": "The malware infected thousands of computers worldwide.",
+        "familyId": "crime-cyber",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ransomware",
+        "ipa": "/ˈrænsəmweə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần mềm tống tiền, mã độc đòi tiền chuộc",
+        "example": "The hospital paid millions to remove the ransomware.",
+        "familyId": "crime-cyber",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spyware",
+        "ipa": "/ˈspaɪweə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần mềm gián điệp",
+        "example": "Spyware secretly collected personal data from her phone.",
+        "familyId": "crime-cyber",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cyberattack",
+        "ipa": "/ˈsaɪbərətæk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc tấn công mạng",
+        "example": "The cyberattack shut down the entire transportation network.",
+        "familyId": "crime-cyber",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cyberbullying",
+        "ipa": "/ˈsaɪbəbʊliɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bắt nạt trên mạng",
+        "example": "Schools are taking action against cyberbullying among teenagers.",
+        "familyId": "crime-cyber",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "identity theft",
+        "ipa": "/aɪˈdentəti θeft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đánh cắp danh tính cá nhân",
+        "example": "Identity theft can ruin a person's credit for years.",
+        "familyId": "crime-cyber",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kidnap",
+        "ipa": "/ˈkɪdnæp/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt cóc",
+        "example": "Two armed men tried to kidnap a wealthy businessman.",
+        "familyId": "crime-violent",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kidnapping",
+        "ipa": "/ˈkɪdnæpɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vụ bắt cóc",
+        "example": "The kidnapping shocked the entire community.",
+        "familyId": "crime-violent",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kidnapper",
+        "ipa": "/ˈkɪdnæpə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ bắt cóc",
+        "example": "The kidnapper demanded a ransom of one million dollars.",
+        "familyId": "crime-violent",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manslaughter",
+        "ipa": "/ˈmænslɔːtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội ngộ sát, giết người không cố ý",
+        "example": "The driver was charged with manslaughter after the fatal accident.",
+        "familyId": "crime-violent",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "homicide",
+        "ipa": "/ˈhɒmɪsaɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội giết người, vụ giết người",
+        "example": "The homicide rate has dropped significantly this year.",
+        "familyId": "crime-violent",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mugging",
+        "ipa": "/ˈmʌɡɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vụ cướp giật ngoài đường",
+        "example": "There has been a rise in muggings near the park.",
+        "familyId": "crime-violent",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mugger",
+        "ipa": "/ˈmʌɡə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ cướp giật ngoài đường",
+        "example": "A mugger snatched her purse and ran into the alley.",
+        "familyId": "crime-violent",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attacker",
+        "ipa": "/əˈtækə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ tấn công",
+        "example": "Police are still searching for the attacker.",
+        "familyId": "crime-violent",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "abuser",
+        "ipa": "/əˈbjuːzə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ ngược đãi, kẻ lạm dụng",
+        "example": "The abuser was sentenced to ten years in prison.",
+        "familyId": "crime-violent",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perpetrator",
+        "ipa": "/ˈpɜːpətreɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ phạm, người thực hiện hành vi phạm tội",
+        "example": "The perpetrator left fingerprints at the scene.",
+        "familyId": "crime-violent",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shoplift",
+        "ipa": "/ˈʃɒplɪft/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trộm cắp trong cửa hàng",
+        "example": "She was caught trying to shoplift cosmetics from the store.",
+        "familyId": "crime-property",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shoplifting",
+        "ipa": "/ˈʃɒplɪftɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi trộm cắp trong cửa hàng",
+        "example": "Shoplifting costs retailers billions of dollars each year.",
+        "familyId": "crime-property",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shoplifter",
+        "ipa": "/ˈʃɒplɪftə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ trộm cắp trong cửa hàng",
+        "example": "The shoplifter was caught on the security camera.",
+        "familyId": "crime-property",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vandal",
+        "ipa": "/ˈvændəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ phá hoại tài sản công",
+        "example": "Vandals broke the windows of the abandoned building.",
+        "familyId": "crime-property",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vandalism",
+        "ipa": "/ˈvændəlɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi phá hoại tài sản",
+        "example": "The park has suffered from years of vandalism.",
+        "familyId": "crime-property",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vandalize",
+        "ipa": "/ˈvændəlaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phá hoại tài sản",
+        "example": "Someone vandalized the statue with red paint.",
+        "familyId": "crime-property",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "looter",
+        "ipa": "/ˈluːtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ hôi của, kẻ cướp bóc",
+        "example": "Looters broke into shops during the riot.",
+        "familyId": "crime-property",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "looting",
+        "ipa": "/ˈluːtɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi hôi của, cướp bóc trong hỗn loạn",
+        "example": "Widespread looting followed the natural disaster.",
+        "familyId": "crime-property",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smuggle",
+        "ipa": "/ˈsmʌɡəl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "buôn lậu",
+        "example": "They tried to smuggle drugs across the border.",
+        "familyId": "crime-contraband",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smuggling",
+        "ipa": "/ˈsmʌɡlɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động buôn lậu",
+        "example": "Drug smuggling is a serious international problem.",
+        "familyId": "crime-contraband",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smuggler",
+        "ipa": "/ˈsmʌɡlə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ buôn lậu",
+        "example": "The smugglers used hidden compartments in the truck.",
+        "familyId": "crime-contraband",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trafficker",
+        "ipa": "/ˈtræfɪkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ buôn người, kẻ buôn lậu hàng cấm",
+        "example": "Drug traffickers were arrested at the border.",
+        "familyId": "crime-contraband",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trafficking",
+        "ipa": "/ˈtræfɪkɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động buôn người, buôn hàng cấm",
+        "example": "Human trafficking is a global human rights issue.",
+        "familyId": "crime-contraband",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contraband",
+        "ipa": "/ˈkɒntrəbænd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng lậu, hàng cấm",
+        "example": "Customs officers seized a large amount of contraband.",
+        "familyId": "crime-contraband",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "narcotic",
+        "ipa": "/nɑːˈkɒtɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất ma tuý",
+        "example": "Police seized narcotics worth millions of dollars.",
+        "familyId": "crime-contraband",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drug dealer",
+        "ipa": "/drʌɡ ˈdiːlə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ buôn bán ma tuý",
+        "example": "The drug dealer was sentenced to twenty years.",
+        "familyId": "crime-contraband",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embezzle",
+        "ipa": "/ɪmˈbezəl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "biển thủ, tham ô tài sản",
+        "example": "The accountant was caught trying to embezzle company funds.",
+        "familyId": "crime-financial",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embezzlement",
+        "ipa": "/ɪmˈbezəlmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội biển thủ, tham ô",
+        "example": "She was found guilty of embezzlement and tax evasion.",
+        "familyId": "crime-financial",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blackmail",
+        "ipa": "/ˈblækmeɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tống tiền bằng đe doạ",
+        "example": "He was a victim of blackmail for several months.",
+        "familyId": "crime-financial",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blackmailer",
+        "ipa": "/ˈblækmeɪlə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ tống tiền",
+        "example": "The blackmailer threatened to release private photos.",
+        "familyId": "crime-financial",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extort",
+        "ipa": "/ɪkˈstɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tống tiền, ép buộc lấy tiền",
+        "example": "Gang members tried to extort money from local shop owners.",
+        "familyId": "crime-financial",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extortion",
+        "ipa": "/ɪkˈstɔːʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội tống tiền",
+        "example": "He was arrested on charges of extortion.",
+        "familyId": "crime-financial",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bribe",
+        "ipa": "/braɪb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền hối lộ",
+        "example": "The official was offered a bribe to ignore the violation.",
+        "familyId": "crime-financial",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bribery",
+        "ipa": "/ˈbraɪbəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội hối lộ",
+        "example": "Bribery is illegal in nearly every country.",
+        "familyId": "crime-financial",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "money laundering",
+        "ipa": "/ˈmʌni ˈlɔːndərɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rửa tiền, hợp pháp hoá tiền bất chính",
+        "example": "The bank was fined heavily for money laundering.",
+        "familyId": "crime-financial",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tax evasion",
+        "ipa": "/tæks ɪˈveɪʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trốn thuế",
+        "example": "He was sentenced to prison for tax evasion.",
+        "familyId": "crime-financial",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forge",
+        "ipa": "/fɔːdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm giả, giả mạo",
+        "example": "Someone tried to forge his signature on the contract.",
+        "familyId": "crime-forgery",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgery",
+        "ipa": "/ˈfɔːdʒəri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội làm giả, vật giả mạo",
+        "example": "The painting turned out to be a forgery.",
+        "familyId": "crime-forgery",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forger",
+        "ipa": "/ˈfɔːdʒə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ làm giả",
+        "example": "The forger produced fake passports for criminals.",
+        "familyId": "crime-forgery",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counterfeit",
+        "ipa": "/ˈkaʊntəfɪt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hàng giả, tiền giả",
+        "example": "Counterfeit goods are a major problem at street markets.",
+        "familyId": "crime-forgery",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "counterfeiter",
+        "ipa": "/ˈkaʊntəfɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ làm hàng giả, kẻ làm tiền giả",
+        "example": "Counterfeiters were arrested with millions in fake bills.",
+        "familyId": "crime-forgery",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impersonate",
+        "ipa": "/ɪmˈpɜːsəneɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giả danh, mạo danh người khác",
+        "example": "He was charged with impersonating a police officer.",
+        "familyId": "crime-forgery",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harass",
+        "ipa": "/ˈhærəs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quấy rối",
+        "example": "She accused her boss of harassing her at work.",
+        "familyId": "crime-harassment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harassment",
+        "ipa": "/ˈhærəsmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi quấy rối",
+        "example": "Workplace harassment must be reported immediately.",
+        "familyId": "crime-harassment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harasser",
+        "ipa": "/həˈræsə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ quấy rối",
+        "example": "The harasser was banned from the building.",
+        "familyId": "crime-harassment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stalk",
+        "ipa": "/stɔːk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "theo dõi, rình rập một người",
+        "example": "He was arrested for stalking his ex-girlfriend online.",
+        "familyId": "crime-harassment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stalking",
+        "ipa": "/ˈstɔːkɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hành vi theo dõi, rình rập",
+        "example": "Stalking is a serious offense in many jurisdictions.",
+        "familyId": "crime-harassment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stalker",
+        "ipa": "/ˈstɔːkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ theo dõi rình rập",
+        "example": "She got a restraining order against her stalker.",
+        "familyId": "crime-harassment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intimidate",
+        "ipa": "/ɪnˈtɪmɪdeɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đe doạ, hăm doạ",
+        "example": "Witnesses were intimidated into changing their statements.",
+        "familyId": "crime-harassment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intimidation",
+        "ipa": "/ɪnˌtɪmɪˈdeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đe doạ, hăm doạ",
+        "example": "Voter intimidation is illegal under federal law.",
+        "familyId": "crime-harassment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "detective",
+        "ipa": "/dɪˈtektɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thám tử, điều tra viên",
+        "example": "The detective interviewed everyone at the crime scene.",
+        "familyId": "crime-investigation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investigator",
+        "ipa": "/ɪnˈvestɪɡeɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điều tra viên",
+        "example": "The investigator collected evidence from the scene.",
+        "familyId": "crime-investigation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clue",
+        "ipa": "/kluː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "manh mối",
+        "example": "Police are searching for clues to solve the mystery.",
+        "familyId": "crime-investigation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "motive",
+        "ipa": "/ˈməʊtɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "động cơ phạm tội",
+        "example": "The police are still trying to determine the motive.",
+        "familyId": "crime-investigation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alibi",
+        "ipa": "/ˈæləbaɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bằng chứng ngoại phạm",
+        "example": "He had a solid alibi for the night of the crime.",
+        "familyId": "crime-investigation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fingerprint",
+        "ipa": "/ˈfɪŋɡəprɪnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dấu vân tay",
+        "example": "Fingerprints found at the scene matched the suspect.",
+        "familyId": "crime-investigation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surveillance",
+        "ipa": "/səˈveɪləns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự giám sát, theo dõi",
+        "example": "The suspect has been under police surveillance for weeks.",
+        "familyId": "crime-investigation",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "undercover",
+        "ipa": "/ˌʌndəˈkʌvə/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động ngầm, bí mật",
+        "example": "An undercover agent infiltrated the criminal organization.",
+        "familyId": "crime-investigation",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "autopsy",
+        "ipa": "/ˈɔːtɒpsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khám nghiệm tử thi",
+        "example": "The autopsy revealed the cause of death.",
+        "familyId": "crime-investigation",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interrogation",
+        "ipa": "/ɪnˌterəˈɡeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc thẩm vấn",
+        "example": "The interrogation lasted for several hours.",
+        "familyId": "crime-investigation",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "raid",
+        "ipa": "/reɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc đột kích, lục soát của cảnh sát",
+        "example": "Police carried out a raid on the suspected drug house.",
+        "familyId": "crime-investigation",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crime scene",
+        "ipa": "/kraɪm siːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiện trường vụ án",
+        "example": "Investigators carefully examined the crime scene.",
+        "familyId": "crime-investigation",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "victim",
+        "ipa": "/ˈvɪktɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nạn nhân",
+        "example": "The victim was taken to hospital after the attack.",
+        "familyId": "crime-people",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accomplice",
+        "ipa": "/əˈkʌmplɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đồng phạm, kẻ tòng phạm",
+        "example": "He was arrested along with two accomplices.",
+        "familyId": "crime-people",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fugitive",
+        "ipa": "/ˈfjuːdʒətɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ trốn chạy, tội phạm bỏ trốn",
+        "example": "The fugitive was caught after a five-year manhunt.",
+        "familyId": "crime-people",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gang",
+        "ipa": "/ɡæŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "băng đảng, băng nhóm tội phạm",
+        "example": "The gang controlled drug sales in the neighborhood.",
+        "familyId": "crime-people",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gangster",
+        "ipa": "/ˈɡæŋstə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tay anh chị, thành viên băng đảng",
+        "example": "The film tells the story of a notorious gangster.",
+        "familyId": "crime-people",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mafia",
+        "ipa": "/ˈmæfiə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tổ chức mafia, tội phạm có tổ chức",
+        "example": "The mafia ran illegal gambling operations across the city.",
+        "familyId": "crime-people",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delinquent",
+        "ipa": "/dɪˈlɪŋkwənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thanh thiếu niên phạm pháp",
+        "example": "Juvenile delinquents are often sent to special schools.",
+        "familyId": "crime-people",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ringleader",
+        "ipa": "/ˈrɪŋliːdə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ cầm đầu băng đảng",
+        "example": "Police identified the ringleader of the smuggling operation.",
+        "familyId": "crime-people",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "riot",
+        "ipa": "/ˈraɪət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc bạo loạn",
+        "example": "A riot broke out after the controversial verdict.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rioter",
+        "ipa": "/ˈraɪətə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ tham gia bạo loạn",
+        "example": "Hundreds of rioters were arrested during the unrest.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hijack",
+        "ipa": "/ˈhaɪdʒæk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cướp máy bay hoặc phương tiện",
+        "example": "Two armed men attempted to hijack the plane.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hijacking",
+        "ipa": "/ˈhaɪdʒækɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vụ cướp máy bay hoặc phương tiện",
+        "example": "Airport security was tightened after the hijacking.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hijacker",
+        "ipa": "/ˈhaɪdʒækə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ cướp máy bay",
+        "example": "Three hijackers were eventually overpowered by passengers.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terrorism",
+        "ipa": "/ˈterərɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa khủng bố",
+        "example": "Terrorism remains a major global security concern.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terrorist",
+        "ipa": "/ˈterərɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ khủng bố",
+        "example": "The terrorist was captured before he could act.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hostage",
+        "ipa": "/ˈhɒstɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "con tin",
+        "example": "The hostages were released unharmed after negotiations.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ransom",
+        "ipa": "/ˈrænsəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền chuộc",
+        "example": "The family refused to pay the ransom for their son.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "espionage",
+        "ipa": "/ˈespiənɑːʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động gián điệp",
+        "example": "He was arrested on charges of corporate espionage.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "treason",
+        "ipa": "/ˈtriːzən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tội phản quốc",
+        "example": "He was charged with treason for selling state secrets.",
+        "familyId": "crime-public-disorder",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seize",
+        "ipa": "/siːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tịch thu, chiếm giữ",
+        "example": "Police seized a large amount of illegal drugs.",
+        "familyId": "seize",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seizure",
+        "ipa": "/ˈsiː.ʒər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự tịch thu, sự bắt giữ; cơn co giật",
+        "example": "The seizure of the weapons prevented a major attack.",
+        "familyId": "seize",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

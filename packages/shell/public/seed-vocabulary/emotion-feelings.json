@@ -1,0 +1,2520 @@
+{
+  "_meta": {
+    "topicId": "emotion-feelings",
+    "topicName": "Emotion & Feelings",
+    "level": "intermediate",
+    "source": "curated emotion and feelings vocabulary seed",
+    "totalCards": 168,
+    "totalFamilies": 22,
+    "generatedAt": "2026-05-08",
+    "note": "Comprehensive seed for the Cảm xúc & Cảm giác topic. Covers basic emotions, positive and negative feelings, anxiety, empathy, stress, calm states, social feelings, and common emotional phrases."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "happy",
+        "ipa": "/ˈhæpi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui, hạnh phúc",
+        "example": "She felt happy when she heard the good news.",
+        "familyId": "basic-emotions",
+        "familyOrder": 1,
+        "tags": [
+          "positive",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sad",
+        "ipa": "/sæd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "buồn",
+        "example": "He looked sad after saying goodbye to his friend.",
+        "familyId": "basic-emotions",
+        "familyOrder": 2,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "angry",
+        "ipa": "/ˈæŋɡri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tức giận",
+        "example": "My teacher was angry because the class was too noisy.",
+        "familyId": "basic-emotions",
+        "familyOrder": 3,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "afraid",
+        "ipa": "/əˈfreɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sợ hãi",
+        "example": "The child was afraid of the dark room.",
+        "familyId": "basic-emotions",
+        "familyOrder": 4,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surprised",
+        "ipa": "/sərˈpraɪzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngạc nhiên",
+        "example": "I was surprised to see my old classmate at the airport.",
+        "familyId": "basic-emotions",
+        "familyOrder": 5,
+        "tags": [
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "excited",
+        "ipa": "/ɪkˈsaɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hào hứng, phấn khích",
+        "example": "We were excited about the school trip.",
+        "familyId": "basic-emotions",
+        "familyOrder": 6,
+        "tags": [
+          "positive",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nervous",
+        "ipa": "/ˈnɜːrvəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lo lắng, hồi hộp",
+        "example": "She felt nervous before the speaking test.",
+        "familyId": "basic-emotions",
+        "familyOrder": 7,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tired",
+        "ipa": "/ˈtaɪərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mệt mỏi",
+        "example": "I was too tired to cook dinner after work.",
+        "familyId": "basic-emotions",
+        "familyOrder": 8,
+        "tags": [
+          "state",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bored",
+        "ipa": "/bɔːrd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chán nản, buồn chán",
+        "example": "The students got bored during the long lecture.",
+        "familyId": "basic-emotions",
+        "familyOrder": 9,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "confused",
+        "ipa": "/kənˈfjuːzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bối rối, lúng túng",
+        "example": "He was confused by the complicated instructions.",
+        "familyId": "basic-emotions",
+        "familyOrder": 10,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "joy",
+        "ipa": "/dʒɔɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "niềm vui",
+        "example": "Her face was full of joy when she saw her family.",
+        "familyId": "happiness-positive",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delight",
+        "ipa": "/dɪˈlaɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "niềm vui sướng, sự thích thú",
+        "example": "The children laughed with delight at the magic show.",
+        "familyId": "happiness-positive",
+        "familyOrder": 2,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pleased",
+        "ipa": "/pliːzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hài lòng, vui lòng",
+        "example": "I am pleased with your progress this month.",
+        "familyId": "happiness-positive",
+        "familyOrder": 3,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cheerful",
+        "ipa": "/ˈtʃɪrfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui vẻ, phấn khởi",
+        "example": "She has a cheerful voice that makes people feel welcome.",
+        "familyId": "happiness-positive",
+        "familyOrder": 4,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "glad",
+        "ipa": "/ɡlæd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui mừng",
+        "example": "I am glad you arrived safely.",
+        "familyId": "happiness-positive",
+        "familyOrder": 5,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thrilled",
+        "ipa": "/θrɪld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vô cùng vui sướng, phấn khích",
+        "example": "They were thrilled to win the competition.",
+        "familyId": "happiness-positive",
+        "familyOrder": 6,
+        "tags": [
+          "positive",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overjoyed",
+        "ipa": "/ˌoʊvərˈdʒɔɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui mừng khôn xiết",
+        "example": "She was overjoyed when her application was accepted.",
+        "familyId": "happiness-positive",
+        "familyOrder": 7,
+        "tags": [
+          "positive",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "content",
+        "ipa": "/kənˈtent/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "mãn nguyện, hài lòng",
+        "example": "He felt content with his simple life.",
+        "familyId": "happiness-positive",
+        "familyOrder": 8,
+        "tags": [
+          "positive",
+          "calm"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "satisfied",
+        "ipa": "/ˈsætɪsfaɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hài lòng, thỏa mãn",
+        "example": "The customer was satisfied with the service.",
+        "familyId": "happiness-positive",
+        "familyOrder": 9,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "optimistic",
+        "ipa": "/ˌɑːptɪˈmɪstɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lạc quan",
+        "example": "She remains optimistic about the future.",
+        "familyId": "happiness-positive",
+        "familyOrder": 10,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sadness",
+        "ipa": "/ˈsædnəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗi buồn",
+        "example": "A deep sadness filled the room after the news.",
+        "familyId": "sadness-negative",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unhappy",
+        "ipa": "/ʌnˈhæpi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không vui, bất hạnh",
+        "example": "He was unhappy with the result of the exam.",
+        "familyId": "sadness-negative",
+        "familyOrder": 2,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upset",
+        "ipa": "/ʌpˈset/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "buồn bực, khó chịu",
+        "example": "She was upset because her friend forgot her birthday.",
+        "familyId": "sadness-negative",
+        "familyOrder": 3,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disappointed",
+        "ipa": "/ˌdɪsəˈpɔɪntɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thất vọng",
+        "example": "We were disappointed by the cancelled concert.",
+        "familyId": "sadness-negative",
+        "familyOrder": 4,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depressed",
+        "ipa": "/dɪˈprest/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chán nản, trầm cảm",
+        "example": "He felt depressed after losing his job.",
+        "familyId": "sadness-negative",
+        "familyOrder": 5,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "miserable",
+        "ipa": "/ˈmɪzərəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khổ sở, rất buồn",
+        "example": "I felt miserable when I had to stay home alone.",
+        "familyId": "sadness-negative",
+        "familyOrder": 6,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lonely",
+        "ipa": "/ˈloʊnli/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cô đơn",
+        "example": "She felt lonely in the new city.",
+        "familyId": "sadness-negative",
+        "familyOrder": 7,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "homesick",
+        "ipa": "/ˈhoʊmsɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nhớ nhà",
+        "example": "Many students feel homesick during their first week abroad.",
+        "familyId": "sadness-negative",
+        "familyOrder": 8,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heartbroken",
+        "ipa": "/ˈhɑːrtbroʊkən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đau lòng, tan nát cõi lòng",
+        "example": "He was heartbroken after the relationship ended.",
+        "familyId": "sadness-negative",
+        "familyOrder": 9,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gloomy",
+        "ipa": "/ˈɡluːmi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "u ám, buồn rầu",
+        "example": "The rainy weather made everyone feel gloomy.",
+        "familyId": "sadness-negative",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anger",
+        "ipa": "/ˈæŋɡər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tức giận",
+        "example": "He tried to control his anger during the argument.",
+        "familyId": "anger-frustration",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "annoyed",
+        "ipa": "/əˈnɔɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bực mình, khó chịu",
+        "example": "She was annoyed by the loud music next door.",
+        "familyId": "anger-frustration",
+        "familyOrder": 2,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "irritated",
+        "ipa": "/ˈɪrɪteɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phát cáu, khó chịu",
+        "example": "His rude comments made me irritated.",
+        "familyId": "anger-frustration",
+        "familyOrder": 3,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frustrated",
+        "ipa": "/ˈfrʌstreɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bực bội, nản lòng",
+        "example": "I felt frustrated when the computer crashed again.",
+        "familyId": "anger-frustration",
+        "familyOrder": 4,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "furious",
+        "ipa": "/ˈfjʊriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "giận dữ, điên tiết",
+        "example": "Dad was furious when he saw the broken window.",
+        "familyId": "anger-frustration",
+        "familyOrder": 5,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outraged",
+        "ipa": "/ˈaʊtreɪdʒd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "phẫn nộ",
+        "example": "People were outraged by the unfair decision.",
+        "familyId": "anger-frustration",
+        "familyOrder": 6,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resentful",
+        "ipa": "/rɪˈzentfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "oán giận, phẫn uất",
+        "example": "She felt resentful after being treated unfairly.",
+        "familyId": "anger-frustration",
+        "familyOrder": 7,
+        "tags": [
+          "negative",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impatient",
+        "ipa": "/ɪmˈpeɪʃnt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thiếu kiên nhẫn, sốt ruột",
+        "example": "The passengers became impatient after the delay.",
+        "familyId": "impatient",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offended",
+        "ipa": "/əˈfendɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị xúc phạm, phật ý",
+        "example": "He felt offended by the careless joke.",
+        "familyId": "anger-frustration",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "jealous",
+        "ipa": "/ˈdʒeləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ghen tị, ghen tuông",
+        "example": "She felt jealous when her friend got more attention.",
+        "familyId": "anger-frustration",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fear",
+        "ipa": "/fɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nỗi sợ",
+        "example": "Fear kept him from trying something new.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scared",
+        "ipa": "/skerd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sợ hãi",
+        "example": "The little boy was scared of the thunder.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 2,
+        "tags": [
+          "negative",
+          "basic"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frightened",
+        "ipa": "/ˈfraɪtnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hoảng sợ",
+        "example": "She was frightened by the sudden noise.",
+        "familyId": "frighten",
+        "familyOrder": 3,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "terrified",
+        "ipa": "/ˈterɪfaɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khiếp sợ",
+        "example": "They were terrified when the car lost control.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 4,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "anxious",
+        "ipa": "/ˈæŋkʃəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lo âu, bồn chồn",
+        "example": "He felt anxious about the interview.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 5,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worried",
+        "ipa": "/ˈwɜːrid/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lo lắng",
+        "example": "My parents were worried when I came home late.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 6,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "panicked",
+        "ipa": "/ˈpænɪkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hoảng loạn",
+        "example": "The crowd panicked when the alarm went off.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 7,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insecure",
+        "ipa": "/ˌɪnsɪˈkjʊr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất an, thiếu tự tin",
+        "example": "He felt insecure about speaking English in public.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 8,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uneasy",
+        "ipa": "/ʌnˈiːzi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bất an, không yên tâm",
+        "example": "I felt uneasy walking alone at night.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reluctant",
+        "ipa": "/rɪˈlʌktənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "miễn cưỡng, không sẵn lòng",
+        "example": "She was reluctant to share her personal feelings.",
+        "familyId": "fear-anxiety",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shock",
+        "ipa": "/ʃɑːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cú sốc, sự bàng hoàng",
+        "example": "The news came as a shock to everyone.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 1,
+        "tags": [
+          "reaction"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "amazed",
+        "ipa": "/əˈmeɪzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kinh ngạc, sửng sốt",
+        "example": "I was amazed by how quickly she learned the song.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 2,
+        "tags": [
+          "positive",
+          "reaction"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "astonished",
+        "ipa": "/əˈstɑːnɪʃt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kinh ngạc",
+        "example": "They were astonished by the final result.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 3,
+        "tags": [
+          "reaction",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stunned",
+        "ipa": "/stʌnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "sững sờ",
+        "example": "She was stunned when she heard the announcement.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 4,
+        "tags": [
+          "reaction",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "puzzled",
+        "ipa": "/ˈpʌzld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bối rối, khó hiểu",
+        "example": "He looked puzzled by the strange question.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 5,
+        "tags": [
+          "reaction"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "doubtful",
+        "ipa": "/ˈdaʊtfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nghi ngờ, không chắc",
+        "example": "I was doubtful that the plan would work.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 6,
+        "tags": [
+          "thinking"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uncertain",
+        "ipa": "/ʌnˈsɜːrtn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không chắc chắn",
+        "example": "She felt uncertain about which course to choose.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 7,
+        "tags": [
+          "thinking"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "curious",
+        "ipa": "/ˈkjʊriəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tò mò",
+        "example": "The children were curious about the old house.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 8,
+        "tags": [
+          "thinking",
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embarrassed",
+        "ipa": "/ɪmˈbærəst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "xấu hổ, ngượng",
+        "example": "He felt embarrassed after making a mistake.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ashamed",
+        "ipa": "/əˈʃeɪmd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hổ thẹn, xấu hổ",
+        "example": "She was ashamed of telling a lie.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "love",
+        "ipa": "/lʌv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình yêu, sự yêu thương",
+        "example": "Love and respect are important in every family.",
+        "familyId": "love-affection",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "affection",
+        "ipa": "/əˈfekʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình cảm, sự trìu mến",
+        "example": "He showed affection by helping his grandmother every day.",
+        "familyId": "love-affection",
+        "familyOrder": 2,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fond",
+        "ipa": "/fɑːnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "yêu mến, thích",
+        "example": "She is fond of her little brother.",
+        "familyId": "love-affection",
+        "familyOrder": 3,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attached",
+        "ipa": "/əˈtætʃt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gắn bó, quyến luyến",
+        "example": "The child is deeply attached to his mother.",
+        "familyId": "love-affection",
+        "familyOrder": 4,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caring",
+        "ipa": "/ˈkerɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "quan tâm, chu đáo",
+        "example": "A caring friend listens when you need help.",
+        "familyId": "love-affection",
+        "familyOrder": 5,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grateful",
+        "ipa": "/ˈɡreɪtfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "biết ơn",
+        "example": "I am grateful for your kindness.",
+        "familyId": "love-affection",
+        "familyOrder": 6,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thankful",
+        "ipa": "/ˈθæŋkfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cảm kích, biết ơn",
+        "example": "We are thankful for all the support we received.",
+        "familyId": "love-affection",
+        "familyOrder": 7,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "admiration",
+        "ipa": "/ˌædməˈreɪʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ngưỡng mộ",
+        "example": "She has great admiration for her hardworking parents.",
+        "familyId": "love-affection",
+        "familyOrder": 8,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "respect",
+        "ipa": "/rɪˈspekt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tôn trọng",
+        "example": "Mutual respect makes communication easier.",
+        "familyId": "love-affection",
+        "familyOrder": 9,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trust",
+        "ipa": "/trʌst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tin tưởng",
+        "example": "Trust is built through honest actions.",
+        "familyId": "love-affection",
+        "familyOrder": 10,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sympathy",
+        "ipa": "/ˈsɪmpəθi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cảm thông",
+        "example": "She expressed sympathy for her friend's loss.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empathy",
+        "ipa": "/ˈempəθi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đồng cảm",
+        "example": "Empathy helps us understand other people's feelings.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 2,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compassion",
+        "ipa": "/kəmˈpæʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lòng trắc ẩn",
+        "example": "The nurse treated every patient with compassion.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 3,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pity",
+        "ipa": "/ˈpɪti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thương hại",
+        "example": "He felt pity for the injured bird.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 4,
+        "tags": [
+          "feeling"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "concerned",
+        "ipa": "/kənˈsɜːrnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lo lắng, quan tâm",
+        "example": "Her family was concerned about her health.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 5,
+        "tags": [
+          "care"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supportive",
+        "ipa": "/səˈpɔːrtɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ủng hộ, hỗ trợ",
+        "example": "My classmates were supportive when I felt nervous.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 6,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "understanding",
+        "ipa": "/ˌʌndərˈstændɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thấu hiểu, cảm thông",
+        "example": "He is an understanding manager who listens to his team.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 7,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgiving",
+        "ipa": "/fərˈɡɪvɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bao dung, dễ tha thứ",
+        "example": "A forgiving person does not hold anger for long.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 8,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regret",
+        "ipa": "/rɪˈɡret/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự hối tiếc",
+        "example": "He felt regret after speaking too harshly.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guilt",
+        "ipa": "/ɡɪlt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cảm giác tội lỗi",
+        "example": "She felt guilt about breaking her promise.",
+        "familyId": "empathy-compassion",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stress",
+        "ipa": "/stres/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự căng thẳng, áp lực",
+        "example": "Too much stress can affect your sleep.",
+        "familyId": "stress-pressure",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stressed",
+        "ipa": "/strest/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "căng thẳng",
+        "example": "I feel stressed when I have too many deadlines.",
+        "familyId": "stress-pressure",
+        "familyOrder": 2,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overwhelmed",
+        "ipa": "/ˌoʊvərˈwelmd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "choáng ngợp, quá tải",
+        "example": "She felt overwhelmed by all the responsibilities.",
+        "familyId": "stress-pressure",
+        "familyOrder": 3,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exhausted",
+        "ipa": "/ɪɡˈzɔːstɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kiệt sức",
+        "example": "After the long journey, everyone was exhausted.",
+        "familyId": "stress-pressure",
+        "familyOrder": 4,
+        "tags": [
+          "state",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drained",
+        "ipa": "/dreɪnd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kiệt quệ, cạn năng lượng",
+        "example": "He felt emotionally drained after the meeting.",
+        "familyId": "stress-pressure",
+        "familyOrder": 5,
+        "tags": [
+          "state"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burned out",
+        "ipa": "/ˌbɜːrnd ˈaʊt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "kiệt sức vì làm việc quá mức",
+        "example": "Many workers feel burned out after months of pressure.",
+        "familyId": "stress-pressure",
+        "familyOrder": 6,
+        "tags": [
+          "state",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "restless",
+        "ipa": "/ˈrestləs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bồn chồn, không yên",
+        "example": "I felt restless and could not sit still.",
+        "familyId": "stress-pressure",
+        "familyOrder": 7,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tense",
+        "ipa": "/tens/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "căng thẳng",
+        "example": "The atmosphere became tense during the discussion.",
+        "familyId": "stress-pressure",
+        "familyOrder": 8,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pressured",
+        "ipa": "/ˈpreʃərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị áp lực",
+        "example": "He felt pressured to make a quick decision.",
+        "familyId": "stress-pressure",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "discouraged",
+        "ipa": "/dɪsˈkɜːrɪdʒd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nản lòng",
+        "example": "Do not feel discouraged after one failure.",
+        "familyId": "stress-pressure",
+        "familyOrder": 10,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calm",
+        "ipa": "/kɑːm/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bình tĩnh, yên bình",
+        "example": "She stayed calm during the emergency.",
+        "familyId": "calm-relief",
+        "familyOrder": 1,
+        "tags": [
+          "positive",
+          "calm"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "peaceful",
+        "ipa": "/ˈpiːsfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "yên bình, thanh thản",
+        "example": "The quiet garden made me feel peaceful.",
+        "familyId": "calm-relief",
+        "familyOrder": 2,
+        "tags": [
+          "positive",
+          "calm"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relaxed",
+        "ipa": "/rɪˈlækst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thư giãn, thoải mái",
+        "example": "He felt relaxed after taking a warm bath.",
+        "familyId": "calm-relief",
+        "familyOrder": 3,
+        "tags": [
+          "positive",
+          "calm"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comfortable",
+        "ipa": "/ˈkʌmftəbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thoải mái, dễ chịu",
+        "example": "I feel comfortable talking to her.",
+        "familyId": "calm-relief",
+        "familyOrder": 4,
+        "tags": [
+          "positive",
+          "calm"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "relieved",
+        "ipa": "/rɪˈliːvd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nhẹ nhõm",
+        "example": "We were relieved when the doctor said everything was fine.",
+        "familyId": "calm-relief",
+        "familyOrder": 5,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "secure",
+        "ipa": "/sɪˈkjʊr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "an tâm, an toàn",
+        "example": "Children feel secure when they are loved and protected.",
+        "familyId": "calm-relief",
+        "familyOrder": 6,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "confident",
+        "ipa": "/ˈkɑːnfɪdənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự tin",
+        "example": "She felt confident after practicing many times.",
+        "familyId": "calm-relief",
+        "familyOrder": 7,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hopeful",
+        "ipa": "/ˈhoʊpfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đầy hy vọng",
+        "example": "He is hopeful that things will improve soon.",
+        "familyId": "calm-relief",
+        "familyOrder": 8,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patient",
+        "ipa": "/ˈpeɪʃnt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kiên nhẫn",
+        "example": "Please be patient while we solve the problem.",
+        "familyId": "patient",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "balanced",
+        "ipa": "/ˈbælənst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cân bằng, ổn định",
+        "example": "A balanced lifestyle can improve your mood.",
+        "familyId": "calm-relief",
+        "familyOrder": 10,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mood",
+        "ipa": "/muːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tâm trạng",
+        "example": "Music can change your mood quickly.",
+        "familyId": "emotional-states",
+        "familyOrder": 1,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feeling",
+        "ipa": "/ˈfiːlɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cảm giác, cảm xúc",
+        "example": "It is important to talk about your feelings.",
+        "familyId": "emotional-states",
+        "familyOrder": 2,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emotion",
+        "ipa": "/ɪˈmoʊʃn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cảm xúc",
+        "example": "Anger is a natural emotion, but we must control it.",
+        "familyId": "emotional-states",
+        "familyOrder": 3,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "attitude",
+        "ipa": "/ˈætɪtuːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thái độ",
+        "example": "A positive attitude can help you overcome difficulties.",
+        "familyId": "emotional-states",
+        "familyOrder": 4,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "temper",
+        "ipa": "/ˈtempər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính khí, cơn nóng giận",
+        "example": "He has a bad temper when he is under stress.",
+        "familyId": "emotional-states",
+        "familyOrder": 5,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sensitive",
+        "ipa": "/ˈsensətɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nhạy cảm",
+        "example": "She is sensitive to criticism.",
+        "familyId": "emotional-states",
+        "familyOrder": 6,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emotional",
+        "ipa": "/ɪˈmoʊʃənl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ xúc động, thuộc cảm xúc",
+        "example": "The movie was very emotional.",
+        "familyId": "emotional-states",
+        "familyOrder": 7,
+        "tags": [
+          "general"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "calm down",
+        "ipa": "/kɑːm daʊn/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "intermediate",
+        "meaning": "bình tĩnh lại",
+        "example": "Take a deep breath and calm down.",
+        "familyId": "emotional-states",
+        "familyOrder": 8,
+        "tags": [
+          "phrase"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cheer up",
+        "ipa": "/tʃɪr ʌp/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "intermediate",
+        "meaning": "vui lên, làm ai vui lên",
+        "example": "I tried to cheer up my friend after the exam.",
+        "familyId": "emotional-states",
+        "familyOrder": 9,
+        "tags": [
+          "phrase",
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break down",
+        "ipa": "/breɪk daʊn/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "intermediate",
+        "meaning": "suy sụp, bật khóc",
+        "example": "She broke down when she heard the tragic news.",
+        "familyId": "emotional-states",
+        "familyOrder": 10,
+        "tags": [
+          "phrase",
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proud",
+        "ipa": "/praʊd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự hào",
+        "example": "His parents were proud of his hard work.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "humble",
+        "ipa": "/ˈhʌmbl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khiêm tốn",
+        "example": "Even after winning, she remained humble.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 2,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "awkward",
+        "ipa": "/ˈɔːkwərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngượng ngùng, khó xử",
+        "example": "There was an awkward silence after the joke.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 3,
+        "tags": [
+          "social"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shy",
+        "ipa": "/ʃaɪ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "nhút nhát, e thẹn",
+        "example": "He was too shy to introduce himself.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 4,
+        "tags": [
+          "social"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "guilty",
+        "ipa": "/ˈɡɪlti/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cảm thấy có lỗi",
+        "example": "I felt guilty for forgetting her birthday.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 5,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "envious",
+        "ipa": "/ˈenviəs/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đố kỵ, ghen tị",
+        "example": "He was envious of his friend's success.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 6,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grumpy",
+        "ipa": "/ˈɡrʌmpi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cáu kỉnh",
+        "example": "My brother is grumpy when he wakes up early.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 7,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurt",
+        "ipa": "/hɜːrt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị tổn thương",
+        "example": "She felt hurt by his careless words.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 8,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rejected",
+        "ipa": "/rɪˈdʒektɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị từ chối, bị ruồng bỏ",
+        "example": "He felt rejected when nobody invited him.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 9,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "accepted",
+        "ipa": "/əkˈseptɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được chấp nhận",
+        "example": "She finally felt accepted by her new classmates.",
+        "familyId": "self-social-feelings",
+        "familyOrder": 10,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurtful",
+        "ipa": "/ˈhɜːrtfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "gây tổn thương",
+        "example": "Hurtful comments can damage a friendship.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 1,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "touching",
+        "ipa": "/ˈtʌtʃɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cảm động",
+        "example": "It was a touching story about friendship.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 2,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moving",
+        "ipa": "/ˈmuːvɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "xúc động, cảm động",
+        "example": "Her speech was deeply moving.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 3,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disgusted",
+        "ipa": "/dɪsˈɡʌstɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ghê tởm, kinh tởm",
+        "example": "She felt disgusted by the dirty kitchen.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 4,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "disgust",
+        "ipa": "/dɪsˈɡʌst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ghê tởm",
+        "example": "He could not hide his disgust at the smell.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 5,
+        "tags": [
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "amused",
+        "ipa": "/əˈmjuːzd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thích thú, buồn cười",
+        "example": "The audience was amused by his funny story.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 6,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impressed",
+        "ipa": "/ɪmˈprest/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ấn tượng",
+        "example": "I was impressed by her confidence.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 7,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inspired",
+        "ipa": "/ɪnˈspaɪərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được truyền cảm hứng",
+        "example": "The speech made everyone feel inspired.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 8,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "motivated",
+        "ipa": "/ˈmoʊtɪveɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có động lực",
+        "example": "She felt motivated after receiving helpful feedback.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 9,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desperate",
+        "ipa": "/ˈdespərət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tuyệt vọng, liều lĩnh",
+        "example": "He felt desperate after trying every possible solution.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 10,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delighted",
+        "ipa": "/dɪˈlaɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "rất vui, hài lòng",
+        "example": "We were delighted to receive your invitation.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 1,
+        "tags": [
+          "positive"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ecstatic",
+        "ipa": "/ɪkˈstætɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "ngây ngất, cực kỳ vui sướng",
+        "example": "She was ecstatic when she passed the final exam.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 2,
+        "tags": [
+          "positive",
+          "advanced",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "devastated",
+        "ipa": "/ˈdevəsteɪtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "suy sụp, đau đớn",
+        "example": "The family was devastated by the accident.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 3,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "horrified",
+        "ipa": "/ˈhɔːrɪfaɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kinh hoàng",
+        "example": "They were horrified by the violent scene.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 4,
+        "tags": [
+          "negative",
+          "strong"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fed up",
+        "ipa": "/ˌfed ˈʌp/",
+        "partOfSpeech": "adjective phrase",
+        "difficulty": "intermediate",
+        "meaning": "chán ngấy, chịu hết nổi",
+        "example": "I am fed up with all these delays.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 6,
+        "tags": [
+          "phrase",
+          "negative"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "downhearted",
+        "ipa": "/ˌdaʊnˈhɑːrtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "nản lòng, buồn bã",
+        "example": "The team felt downhearted after losing the match.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 7,
+        "tags": [
+          "negative",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lighthearted",
+        "ipa": "/ˌlaɪtˈhɑːrtɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "vui vẻ, vô tư",
+        "example": "The conversation was lighthearted and friendly.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 8,
+        "tags": [
+          "positive",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mixed feelings",
+        "ipa": "/mɪkst ˈfiːlɪŋz/",
+        "partOfSpeech": "noun phrase",
+        "difficulty": "intermediate",
+        "meaning": "cảm xúc lẫn lộn",
+        "example": "I had mixed feelings about leaving my hometown.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 9,
+        "tags": [
+          "phrase"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emotionally stable",
+        "ipa": "/ɪˈmoʊʃənəli ˈsteɪbl/",
+        "partOfSpeech": "adjective phrase",
+        "difficulty": "advanced",
+        "meaning": "ổn định về mặt cảm xúc",
+        "example": "He tries to stay emotionally stable under pressure.",
+        "familyId": "intensity-nuance",
+        "familyOrder": 10,
+        "tags": [
+          "phrase",
+          "advanced"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "incredible",
+        "ipa": "/ɪnˈkred.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không thể tin được, tuyệt vời",
+        "example": "The view from the mountain top was incredible.",
+        "familyId": "incredible",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "incredibly",
+        "ipa": "/ɪnˈkred.ə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "cực kỳ, đáng kinh ngạc",
+        "example": "She was incredibly kind to the new students.",
+        "familyId": "incredible",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoy",
+        "ipa": "/ɪnˈdʒɔɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thưởng thức, tận hưởng",
+        "example": "I really enjoy listening to music after work.",
+        "familyId": "enjoy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoyable",
+        "ipa": "/ɪnˈdʒɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thú vị, đáng tận hưởng",
+        "example": "We had an enjoyable evening at the concert.",
+        "familyId": "enjoy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enjoyment",
+        "ipa": "/ɪnˈdʒɔɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thích thú, niềm vui",
+        "example": "Reading gives her great enjoyment.",
+        "familyId": "enjoy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "joyful",
+        "ipa": "/ˈdʒɔɪfl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "vui sướng, hân hoan",
+        "example": "It was a joyful reunion after many years.",
+        "familyId": "happiness-positive",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eager",
+        "ipa": "/ˈiːɡər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "háo hức, hăm hở",
+        "example": "The students were eager to learn.",
+        "familyId": "happiness-positive",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleepy",
+        "ipa": "/ˈsliːpi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "beginner",
+        "meaning": "buồn ngủ",
+        "example": "I feel sleepy after a big lunch.",
+        "familyId": "emotional-states",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shocked",
+        "ipa": "/ʃɑːkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị sốc, sững sờ",
+        "example": "She was shocked by the sad news.",
+        "familyId": "surprise-confusion",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "like",
+        "ipa": "/laɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "thích",
+        "example": "I like listening to music in the evening.",
+        "familyId": "love-affection",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dislike",
+        "ipa": "/dɪsˈlaɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "không thích",
+        "example": "He dislikes waking up early.",
+        "familyId": "love-affection",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hate",
+        "ipa": "/heɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ghét",
+        "example": "She hates being stuck in traffic.",
+        "familyId": "anger-frustration",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hope",
+        "ipa": "/hoʊp/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "hy vọng",
+        "example": "I hope you feel better soon.",
+        "familyId": "calm-relief",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wish",
+        "ipa": "/wɪʃ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "ước, mong",
+        "example": "I wish I could travel more often.",
+        "familyId": "calm-relief",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smile",
+        "ipa": "/smaɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "mỉm cười",
+        "example": "She smiled when she saw her friend.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "laugh",
+        "ipa": "/læf/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "cười",
+        "example": "We laughed at his funny story.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cry",
+        "ipa": "/kraɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "beginner",
+        "meaning": "khóc",
+        "example": "The baby cried all night.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weep",
+        "ipa": "/wiːp/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "khóc thút thít, rơi lệ",
+        "example": "She wept quietly at the funeral.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 14,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sigh",
+        "ipa": "/saɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thở dài",
+        "example": "He sighed with relief when it was over.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 15,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frown",
+        "ipa": "/fraʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cau mày, nhíu mày",
+        "example": "She frowned when she read the message.",
+        "familyId": "emotional-reactions",
+        "familyOrder": 16,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loneliness",
+        "ipa": "/ˈləʊnlinəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự cô đơn, nỗi cô đơn",
+        "example": "She felt a deep sense of loneliness after moving abroad.",
+        "familyId": "lonely",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "patience",
+        "ipa": "/ˈpeɪ.ʃəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự kiên nhẫn",
+        "example": "Learning a language requires a lot of patience.",
+        "familyId": "patient",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "impatiently",
+        "ipa": "/ɪmˈpeɪ.ʃənt.li/",
+        "partOfSpeech": "adverb",
+        "difficulty": "advanced",
+        "meaning": "một cách sốt ruột, mất kiên nhẫn",
+        "example": "She tapped her foot impatiently while waiting in line.",
+        "familyId": "impatient",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frighten",
+        "ipa": "/ˈfraɪ.tən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm sợ hãi, dọa",
+        "example": "Sudden loud noises frighten small children.",
+        "familyId": "frighten",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frightening",
+        "ipa": "/ˈfraɪ.tən.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đáng sợ, đáng kinh hãi",
+        "example": "The movie was too frightening for young viewers.",
+        "familyId": "frighten",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desire",
+        "ipa": "/dɪˈzaɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khao khát, ham muốn",
+        "example": "She has a strong desire to travel the world.",
+        "familyId": "desire",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desirable",
+        "ipa": "/dɪˈzaɪr.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "đáng mong muốn, đáng mơ ước",
+        "example": "A quiet neighborhood is highly desirable for families.",
+        "familyId": "desire",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triumph",
+        "ipa": "/ˈtraɪ.əmf/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự chiến thắng, chiến thắng vẻ vang",
+        "example": "Winning the championship was a great triumph for the team.",
+        "familyId": "triumph",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "triumphant",
+        "ipa": "/traɪˈʌm.fənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "hân hoan chiến thắng",
+        "example": "The triumphant players lifted the trophy high.",
+        "familyId": "triumph",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

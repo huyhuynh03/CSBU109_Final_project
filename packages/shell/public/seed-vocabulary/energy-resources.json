@@ -1,0 +1,1540 @@
+{
+  "_meta": {
+    "topicId": "energy-resources",
+    "topicName": "Năng lượng & Tài nguyên",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Energy & Resources (B1-B2)",
+    "totalCards": 98,
+    "totalFamilies": 18,
+    "generatedAt": "2026-05-14",
+    "note": "Tu vung nen tang ve Nang luong va Tai nguyen. Da loai bo cac tu da co o cac topic khac.",
+    "skipped": [
+      {
+        "word": "energy",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "physics"
+        }
+      },
+      {
+        "word": "electricity",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "physics"
+        }
+      },
+      {
+        "word": "power",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "physics"
+        }
+      },
+      {
+        "word": "solar",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "space"
+        }
+      },
+      {
+        "word": "gas",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "chemistry"
+        }
+      },
+      {
+        "word": "mineral",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "food-drink"
+        }
+      },
+      {
+        "word": "oil",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "food-drink"
+        }
+      },
+      {
+        "word": "renewable",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "fossil fuel",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "wind power",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "hydropower",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "natural resource",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "emission",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "conservation",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "environment-climate"
+        }
+      },
+      {
+        "word": "efficient",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "daily-life",
+          "familyId": "efficiency"
+        }
+      },
+      {
+        "word": "voltage",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "physics",
+          "familyId": "electricity-magnetism"
+        }
+      },
+      {
+        "word": "combustion",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "chemistry",
+          "familyId": "reactions"
+        }
+      },
+      {
+        "word": "current",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "physics",
+          "familyId": "electricity-magnetism"
+        }
+      }
+    ],
+    "crossTopicFamilies": [
+      {
+        "familyId": "energy-resources-efficiency",
+        "words": [
+          "energy efficiency",
+          "energy-efficient",
+          "inefficient",
+          "insulation"
+        ],
+        "sharedWith": {
+          "topicId": "daily-life",
+          "familyId": "efficiency",
+          "words": [
+            "efficient"
+          ]
+        },
+        "note": "efficient (daily-life) cung goc tu voi energy-efficient/inefficient (energy-resources)"
+      },
+      {
+        "familyId": "energy-resources-grid",
+        "words": [
+          "current",
+          "transformer",
+          "transmission",
+          "blackout",
+          "outage"
+        ],
+        "sharedWith": {
+          "topicId": "physics",
+          "familyId": "electricity-magnetism",
+          "words": [
+            "voltage",
+            "electricity"
+          ]
+        },
+        "note": "voltage (physics) cung goc dien voi current/transformer/transmission (energy-resources)"
+      },
+      {
+        "familyId": "energy-resources-combustion",
+        "words": [
+          "ignition",
+          "combust",
+          "combustible"
+        ],
+        "sharedWith": {
+          "topicId": "chemistry",
+          "familyId": "reactions",
+          "words": [
+            "combustion"
+          ]
+        },
+        "note": "combustion (chemistry) cung goc tu voi combust/combustible/ignition (energy-resources)"
+      }
+    ]
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "fuel",
+        "ipa": "/fjuːəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiên liệu",
+        "example": "The car runs on diesel fuel.",
+        "familyId": "energy-resources-fuel",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "biofuel",
+        "ipa": "/ˈbaɪ.oʊˌfjuː.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "nhiên liệu sinh học",
+        "example": "Biofuel is made from organic materials like corn and sugarcane.",
+        "familyId": "energy-resources-fuel",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fuel cell",
+        "ipa": "/ˈfjuːəl sel/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "pin nhiên liệu",
+        "example": "Fuel cells convert hydrogen into electricity with zero emissions.",
+        "familyId": "energy-resources-fuel",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refuel",
+        "ipa": "/riːˈfjuː.əl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tiếp nhiên liệu",
+        "example": "We need to refuel the plane before the next flight.",
+        "familyId": "energy-resources-fuel",
+        "familyOrder": 4,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electric",
+        "ipa": "/ɪˈlek.trɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về điện, chạy bằng điện",
+        "example": "Electric vehicles are becoming more popular worldwide.",
+        "familyId": "energy-resources-electric",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrical",
+        "ipa": "/ɪˈlek.trɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "liên quan đến điện",
+        "example": "The electrical system in the building needs upgrading.",
+        "familyId": "energy-resources-electric",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrify",
+        "ipa": "/ɪˈlek.trɪ.faɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "upper-intermediate",
+        "meaning": "điện khí hóa",
+        "example": "The government plans to electrify all rural areas by 2030.",
+        "familyId": "energy-resources-electric",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electrification",
+        "ipa": "/ɪˌlek.trɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự điện khí hóa",
+        "example": "Rural electrification has improved living standards significantly.",
+        "familyId": "energy-resources-electric",
+        "familyOrder": 4,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar panel",
+        "ipa": "/ˈsoʊ.lər ˈpæn.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tấm pin mặt trời",
+        "example": "We installed solar panels on our roof to reduce electricity bills.",
+        "familyId": "energy-resources-solar",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar farm",
+        "ipa": "/ˈsoʊ.lər fɑːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trang trại điện mặt trời",
+        "example": "The solar farm generates enough power for 10,000 homes.",
+        "familyId": "energy-resources-solar",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solar-powered",
+        "ipa": "/ˈsoʊ.lər paʊərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chạy bằng năng lượng mặt trời",
+        "example": "Solar-powered streetlights are common in modern cities.",
+        "familyId": "energy-resources-solar",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generate",
+        "ipa": "/ˈdʒen.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tạo ra, phát (điện)",
+        "example": "Wind turbines generate clean electricity.",
+        "familyId": "energy-resources-generate",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "generator",
+        "ipa": "/ˈdʒen.ə.reɪ.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy phát điện",
+        "example": "The hospital has a backup generator in case of power outages.",
+        "familyId": "energy-resources-generate",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "power generation",
+        "ipa": "/ˈpaʊ.ər ˌdʒen.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phát điện",
+        "example": "Power generation from coal is declining in many countries.",
+        "familyId": "energy-resources-generate",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "power plant",
+        "ipa": "/ˈpaʊ.ər plænt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà máy điện",
+        "example": "The power plant supplies electricity to the entire city.",
+        "familyId": "energy-resources-power",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "power grid",
+        "ipa": "/ˈpaʊ.ər ɡrɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lưới điện",
+        "example": "A smart power grid can distribute energy more efficiently.",
+        "familyId": "energy-resources-power",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "powered",
+        "ipa": "/paʊərd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "được cung cấp năng lượng",
+        "example": "Battery-powered devices are convenient for travel.",
+        "familyId": "energy-resources-power",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empower",
+        "ipa": "/ɪmˈpaʊ.ər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trao quyền, tiếp sức",
+        "example": "Renewable energy can empower remote communities.",
+        "familyId": "energy-resources-power",
+        "familyOrder": 4,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "empowerment",
+        "ipa": "/ɪmˈpaʊ.ər.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự trao quyền",
+        "example": "Energy empowerment means giving people access to affordable power.",
+        "familyId": "energy-resources-power",
+        "familyOrder": 5,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resource",
+        "ipa": "/rɪˈsɔːrs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài nguyên, nguồn lực",
+        "example": "Water is a precious resource that must be protected.",
+        "familyId": "energy-resources-resource",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resource depletion",
+        "ipa": "/rɪˈsɔːrs dɪˈpliː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự cạn kiệt tài nguyên",
+        "example": "Resource depletion is one of the biggest challenges facing humanity.",
+        "familyId": "energy-resources-resource",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbon emission",
+        "ipa": "/ˈkɑːr.bən ɪˈmɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí thải carbon",
+        "example": "Reducing carbon emissions is essential to combat climate change.",
+        "familyId": "energy-resources-emit",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "energy conservation",
+        "ipa": "/ˈen.ər.dʒi ˌkɒn.sərˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo tồn năng lượng",
+        "example": "Energy conservation helps reduce utility bills and protect the environment.",
+        "familyId": "energy-resources-conserve",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conservancy",
+        "ipa": "/kənˈsɜːr.vən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "tổ chức bảo tồn",
+        "example": "The nature conservancy works to protect endangered ecosystems.",
+        "familyId": "energy-resources-conserve",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renewable energy",
+        "ipa": "/rɪˈnjuː.ə.bəl ˈen.ər.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năng lượng tái tạo",
+        "example": "Renewable energy sources include solar, wind, and geothermal.",
+        "familyId": "energy-resources-renew",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renewal",
+        "ipa": "/rɪˈnjuː.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đổi mới, tái tạo",
+        "example": "The renewal of energy infrastructure requires significant investment.",
+        "familyId": "energy-resources-renew",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nuclear",
+        "ipa": "/ˈnjuː.klɪ.ər/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc hạt nhân",
+        "example": "Nuclear energy provides about 10% of the world electricity.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "nuclear power",
+        "ipa": "/ˈnjuː.klɪ.ər ˈpaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năng lượng hạt nhân",
+        "example": "Nuclear power is a low-carbon source of electricity.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reactor",
+        "ipa": "/riˈæk.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lò phản ứng",
+        "example": "The nuclear reactor was shut down for maintenance.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "uranium",
+        "ipa": "/jʊˈreɪ.ni.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "uranium",
+        "example": "Uranium is the primary fuel used in nuclear reactors.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "radioactive",
+        "ipa": "/ˌreɪ.di.oʊˈæk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "upper-intermediate",
+        "meaning": "phóng xạ",
+        "example": "Radioactive waste must be stored safely for thousands of years.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meltdown",
+        "ipa": "/ˈmelt.daʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự nóng chảy lõi (lò phản ứng)",
+        "example": "The Chernobyl meltdown was the worst nuclear disaster in history.",
+        "familyId": "energy-resources-nuclear",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind turbine",
+        "ipa": "/wɪnd ˈtɜːr.baɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tuabin gió",
+        "example": "Wind turbines convert wind energy into electricity.",
+        "familyId": "energy-resources-wind",
+        "familyOrder": 1,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind farm",
+        "ipa": "/wɪnd fɑːrm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trang trại điện gió",
+        "example": "The offshore wind farm produces enough energy for a small town.",
+        "familyId": "energy-resources-wind",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind energy",
+        "ipa": "/wɪnd ˈen.ər.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năng lượng gió",
+        "example": "Wind energy is one of the fastest-growing renewable sources.",
+        "familyId": "energy-resources-wind",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "turbine",
+        "ipa": "/ˈtɜːr.baɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tuabin",
+        "example": "The turbine spins to generate electricity from flowing water.",
+        "familyId": "energy-resources-turbine",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hydroelectric",
+        "ipa": "/ˌhaɪ.droʊ.ɪˈlek.trɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "upper-intermediate",
+        "meaning": "thủy điện",
+        "example": "The hydroelectric dam provides clean energy to millions.",
+        "familyId": "energy-resources-hydro",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dam",
+        "ipa": "/dæm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đập nước",
+        "example": "The dam was built to generate hydroelectric power.",
+        "familyId": "energy-resources-hydro",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "geothermal",
+        "ipa": "/ˌdʒiː.oʊˈθɜːr.məl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "upper-intermediate",
+        "meaning": "địa nhiệt",
+        "example": "Iceland uses geothermal energy to heat most of its buildings.",
+        "familyId": "energy-resources-geothermal",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "geothermal energy",
+        "ipa": "/ˌdʒiː.oʊˈθɜːr.məl ˈen.ər.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "năng lượng địa nhiệt",
+        "example": "Geothermal energy comes from heat stored deep within the Earth.",
+        "familyId": "energy-resources-geothermal",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coal",
+        "ipa": "/koʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "than đá",
+        "example": "Coal was the main energy source during the Industrial Revolution.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "petroleum",
+        "ipa": "/pəˈtroʊ.li.əm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dầu mỏ",
+        "example": "Petroleum is refined into gasoline, diesel, and other products.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "natural gas",
+        "ipa": "/ˈnætʃ.ər.əl ɡæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí đốt tự nhiên",
+        "example": "Natural gas is used for heating and cooking in many homes.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crude oil",
+        "ipa": "/kruːd ɔɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dầu thô",
+        "example": "Crude oil prices affect the global economy significantly.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 4,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refinery",
+        "ipa": "/rɪˈfaɪ.nər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "nhà máy lọc dầu",
+        "example": "The oil refinery processes crude oil into usable products.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pipeline",
+        "ipa": "/ˈpaɪp.laɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đường ống dẫn",
+        "example": "The gas pipeline stretches across three countries.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drill",
+        "ipa": "/drɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khoan",
+        "example": "Companies drill deep into the earth to extract oil.",
+        "familyId": "energy-resources-extraction",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extract",
+        "ipa": "/ɪkˈstrækt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khai thác, chiết xuất",
+        "example": "It is expensive to extract minerals from deep underground.",
+        "familyId": "energy-resources-extraction",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extraction",
+        "ipa": "/ɪkˈstræk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khai thác",
+        "example": "Oil extraction has environmental consequences.",
+        "familyId": "energy-resources-extraction",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mine",
+        "ipa": "/maɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mỏ, hầm mỏ",
+        "example": "The coal mine has been operating for over fifty years.",
+        "familyId": "energy-resources-mining",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mining",
+        "ipa": "/ˈmaɪ.nɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khai thác mỏ",
+        "example": "Mining activities can cause significant environmental damage.",
+        "familyId": "energy-resources-mining",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ore",
+        "ipa": "/ɔːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "quặng",
+        "example": "Iron ore is the raw material used to make steel.",
+        "familyId": "energy-resources-mining",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "energy efficiency",
+        "ipa": "/ˈen.ər.dʒi ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệu suất năng lượng",
+        "example": "Improving energy efficiency can significantly reduce costs.",
+        "familyId": "energy-resources-efficiency",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inefficient",
+        "ipa": "/ˌɪn.ɪˈfɪʃ.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không hiệu quả",
+        "example": "Old appliances are often inefficient and waste energy.",
+        "familyId": "energy-resources-efficiency",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "insulation",
+        "ipa": "/ˌɪn.sjəˈleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cách nhiệt",
+        "example": "Good insulation keeps homes warm and reduces heating costs.",
+        "familyId": "energy-resources-efficiency",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blackout",
+        "ipa": "/ˈblæk.aʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mất điện diện rộng",
+        "example": "The blackout lasted three hours and affected thousands of homes.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outage",
+        "ipa": "/ˈaʊ.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cắt điện",
+        "example": "Power outages are common during severe storms.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transformer",
+        "ipa": "/trænsˈfɔːr.mər/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "máy biến áp",
+        "example": "Transformers convert high voltage to lower levels for home use.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "transmission",
+        "ipa": "/trænzˈmɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự truyền tải",
+        "example": "Energy transmission losses occur over long distances.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "biomass",
+        "ipa": "/ˈbaɪ.oʊ.mæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sinh khối",
+        "example": "Biomass energy comes from burning organic materials like wood chips.",
+        "familyId": "energy-resources-alternative",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tidal energy",
+        "ipa": "/ˈtaɪ.dəl ˈen.ər.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "năng lượng thủy triều",
+        "example": "Tidal energy harnesses the power of ocean tides.",
+        "familyId": "energy-resources-alternative",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hydrogen",
+        "ipa": "/ˈhaɪ.drə.dʒən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hydro",
+        "example": "Hydrogen could become a major clean fuel in the future.",
+        "familyId": "energy-resources-alternative",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "photovoltaic",
+        "ipa": "/ˌfoʊ.toʊ.vɒlˈteɪ.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "upper-intermediate",
+        "meaning": "quang điện",
+        "example": "Photovoltaic cells convert sunlight directly into electricity.",
+        "familyId": "energy-resources-alternative",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reservoir",
+        "ipa": "/ˈrez.ər.vwɑːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hồ chứa",
+        "example": "The reservoir stores water for the hydroelectric power station.",
+        "familyId": "energy-resources-water",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "groundwater",
+        "ipa": "/ˈɡraʊnd.wɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước ngầm",
+        "example": "Groundwater is an important resource for agriculture and drinking.",
+        "familyId": "energy-resources-water",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "aquifer",
+        "ipa": "/ˈæk.wɪ.fər/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "tầng chứa nước",
+        "example": "The aquifer provides fresh water to millions of people.",
+        "familyId": "energy-resources-water",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "desalination",
+        "ipa": "/diːˌsæl.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự khử muối",
+        "example": "Desalination plants convert seawater into drinking water.",
+        "familyId": "energy-resources-water",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scarcity",
+        "ipa": "/ˈsker.sə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự khan hiếm",
+        "example": "Water scarcity affects billions of people worldwide.",
+        "familyId": "energy-resources-scarcity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scarce",
+        "ipa": "/skers/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "khan hiếm",
+        "example": "Clean water is becoming increasingly scarce in many regions.",
+        "familyId": "energy-resources-scarcity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deplete",
+        "ipa": "/dɪˈpliːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "upper-intermediate",
+        "meaning": "làm cạn kiệt",
+        "example": "Overuse will deplete our natural resources within decades.",
+        "familyId": "energy-resources-scarcity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "depletion",
+        "ipa": "/dɪˈpliː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự cạn kiệt",
+        "example": "The depletion of fossil fuels is driving the shift to renewables.",
+        "familyId": "energy-resources-scarcity",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consumption",
+        "ipa": "/kənˈsʌmp.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tiêu thụ",
+        "example": "Energy consumption has doubled in the last twenty years.",
+        "familyId": "energy-resources-consume",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consume",
+        "ipa": "/kənˈsjuːm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tiêu thụ",
+        "example": "Modern cities consume vast amounts of electricity daily.",
+        "familyId": "energy-resources-consume",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "consumer",
+        "ipa": "/kənˈsjuː.mər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người tiêu dùng",
+        "example": "Consumers can reduce energy use by choosing efficient appliances.",
+        "familyId": "energy-resources-consume",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offshore",
+        "ipa": "/ˌɒfˈʃɔːr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ngoài khơi",
+        "example": "Offshore drilling is more expensive but accesses larger oil reserves.",
+        "familyId": "energy-resources-offshore",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "onshore",
+        "ipa": "/ˈɒn.ʃɔːr/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trên bờ",
+        "example": "Onshore wind farms are cheaper to build than offshore ones.",
+        "familyId": "energy-resources-offshore",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbon capture",
+        "ipa": "/ˈkɑːr.bən ˈkæp.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "thu giữ carbon",
+        "example": "Carbon capture technology removes CO2 from industrial emissions.",
+        "familyId": "energy-resources-carbon",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbon dioxide",
+        "ipa": "/ˈkɑːr.bən daɪˈɒk.saɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí CO2",
+        "example": "Burning fossil fuels releases carbon dioxide into the atmosphere.",
+        "familyId": "energy-resources-carbon",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fossil",
+        "ipa": "/ˈfɒs.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa thạch",
+        "example": "Fossils show that the area was once covered by tropical forests.",
+        "familyId": "energy-resources-fossil",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combust",
+        "ipa": "/kəmˈbʌst/",
+        "partOfSpeech": "verb",
+        "difficulty": "upper-intermediate",
+        "meaning": "bốc cháy, đốt cháy",
+        "example": "Some materials can spontaneously combust at high temperatures.",
+        "familyId": "energy-resources-combustion",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combustible",
+        "ipa": "/kəmˈbʌs.tɪ.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "upper-intermediate",
+        "meaning": "dễ cháy",
+        "example": "Keep combustible materials away from heat sources.",
+        "familyId": "energy-resources-combustion",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "watt",
+        "ipa": "/wɒt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "oát (đơn vị công suất)",
+        "example": "A typical light bulb uses about 60 watts of power.",
+        "familyId": "energy-resources-units",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kilowatt",
+        "ipa": "/ˈkɪl.ə.wɒt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kilôoát",
+        "example": "The solar system produces five kilowatts of electricity.",
+        "familyId": "energy-resources-units",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "megawatt",
+        "ipa": "/ˈmeɡ.ə.wɒt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mêgaoát",
+        "example": "The wind farm has a capacity of 200 megawatts.",
+        "familyId": "energy-resources-units",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grid",
+        "ipa": "/ɡrɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lưới (điện)",
+        "example": "The national grid distributes electricity across the country.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "substation",
+        "ipa": "/ˈsʌb.steɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "trạm biến áp",
+        "example": "The substation reduces voltage before electricity reaches homes.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "capacity",
+        "ipa": "/kəˈpæs.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công suất, dung lượng",
+        "example": "The power plant operates at full capacity during peak hours.",
+        "familyId": "energy-resources-capacity",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "output",
+        "ipa": "/ˈaʊt.pʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sản lượng, đầu ra",
+        "example": "The factory increased its energy output by 30 percent.",
+        "familyId": "energy-resources-capacity",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "surplus",
+        "ipa": "/ˈsɜːr.pləs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thặng dư",
+        "example": "The surplus electricity is sold to neighboring countries.",
+        "familyId": "energy-resources-capacity",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shortage",
+        "ipa": "/ˈʃɔːr.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thiếu hụt",
+        "example": "An energy shortage could lead to widespread blackouts.",
+        "familyId": "energy-resources-capacity",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "harness",
+        "ipa": "/ˈhɑːr.nəs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khai thác, tận dụng",
+        "example": "Engineers are finding new ways to harness solar energy.",
+        "familyId": "energy-resources-harness",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exploit",
+        "ipa": "/ɪkˈsplɔɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khai thác (tài nguyên)",
+        "example": "Many countries exploit their natural gas reserves for export.",
+        "familyId": "energy-resources-harness",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exploitation",
+        "ipa": "/ˌek.splɔɪˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự khai thác",
+        "example": "The exploitation of oil reserves has environmental consequences.",
+        "familyId": "energy-resources-harness",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "abundant",
+        "ipa": "/əˈbʌn.dənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dồi dào, phong phú",
+        "example": "Solar energy is abundant in tropical regions.",
+        "familyId": "energy-resources-abundance",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "abundance",
+        "ipa": "/əˈbʌn.dəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự dồi dào",
+        "example": "The abundance of wind makes this area ideal for turbines.",
+        "familyId": "energy-resources-abundance",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "energy-efficient",
+        "ipa": "/ˈen.ər.dʒi ɪˈfɪʃ.ənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiết kiệm năng lượng",
+        "example": "Energy-efficient buildings use less power for heating and cooling.",
+        "familyId": "energy-resources-efficiency",
+        "familyOrder": 2,
+        "tags": [
+          "family word"
+        ]
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ignition",
+        "ipa": "/ɪɡˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "upper-intermediate",
+        "meaning": "sự đánh lửa, bắt cháy",
+        "example": "The ignition of fuel in the engine produces mechanical energy.",
+        "familyId": "energy-resources-combustion",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electric current",
+        "ipa": "/ɪˈlek.trɪk ˈkʌr.ənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dòng điện",
+        "example": "Electric current flows through conductors like copper wire.",
+        "familyId": "energy-resources-grid",
+        "familyOrder": 3,
+        "tags": [
+          "family word"
+        ]
+      }
+    }
+  ]
+}

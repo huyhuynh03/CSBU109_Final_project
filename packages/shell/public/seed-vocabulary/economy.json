@@ -1,0 +1,1249 @@
+{
+  "_meta": {
+    "topicId": "economy",
+    "topicName": "Kinh tế",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Economy (B1-B2)",
+    "totalCards": 95,
+    "totalFamilies": 13,
+    "generatedAt": "2026-05-25",
+    "note": "Tu vung chu de Kinh te, bao gom cac khai niem kinh te vi mo, vi mo, thi truong, thuong mai, lao dong, san xuat va phat trien kinh te."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "economy",
+        "ipa": "/ɪˈkɒn.ə.mi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền kinh tế",
+        "example": "The country's economy is growing steadily.",
+        "familyId": "economy-foundation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economic",
+        "ipa": "/ˌiː.kəˈnɒm.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về kinh tế",
+        "example": "The government announced new economic policies.",
+        "familyId": "economy-foundation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economical",
+        "ipa": "/ˌiː.kəˈnɒm.ɪ.kəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiết kiệm, hiệu quả về chi phí",
+        "example": "This small car is very economical to run.",
+        "familyId": "economy-foundation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economically",
+        "ipa": "/ˌiː.kəˈnɒm.ɪ.kəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "về mặt kinh tế",
+        "example": "The region has developed economically over the past decade.",
+        "familyId": "economy-foundation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economist",
+        "ipa": "/ɪˈkɒn.ə.mɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà kinh tế học",
+        "example": "Many economists predict slower growth next year.",
+        "familyId": "economy-foundation",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "economics",
+        "ipa": "/ˌiː.kəˈnɒm.ɪks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kinh tế học",
+        "example": "She is studying economics at university.",
+        "familyId": "economy-foundation",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "inflation",
+        "ipa": "/ɪnˈfleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lạm phát",
+        "example": "Rising inflation is reducing people's purchasing power.",
+        "familyId": "economy-macro",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deflation",
+        "ipa": "/diːˈfleɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giảm phát",
+        "example": "Deflation can be just as harmful as inflation.",
+        "familyId": "economy-macro",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recession",
+        "ipa": "/rɪˈseʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "suy thoái kinh tế",
+        "example": "The country fell into recession last year.",
+        "familyId": "economy-macro",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "downturn",
+        "ipa": "/ˈdaʊn.tɜːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "suy thoái nhẹ",
+        "example": "The economic downturn led to job losses across the country.",
+        "familyId": "economy-macro",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "boom",
+        "ipa": "/buːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời kỳ bùng nổ kinh tế",
+        "example": "The tech boom created thousands of new jobs.",
+        "familyId": "economy-macro",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stagnation",
+        "ipa": "/stæɡˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trì trệ",
+        "example": "Economic stagnation has worried policy makers.",
+        "familyId": "economy-macro",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "market",
+        "ipa": "/ˈmɑː.kɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường",
+        "example": "The smartphone market is highly competitive.",
+        "familyId": "economy-market",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "marketplace",
+        "ipa": "/ˈmɑː.kɪt.pleɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thị trường, nơi giao dịch",
+        "example": "Online marketplaces have changed how we shop.",
+        "familyId": "economy-market",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "supply",
+        "ipa": "/səˈplaɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguồn cung",
+        "example": "The supply of fresh water is limited in this region.",
+        "familyId": "economy-market",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "demand",
+        "ipa": "/dɪˈmɑːnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhu cầu",
+        "example": "Consumer demand for electric cars is rising.",
+        "familyId": "economy-market",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "price",
+        "ipa": "/praɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá cả",
+        "example": "Oil prices have dropped sharply this month.",
+        "familyId": "economy-market",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pricing",
+        "ipa": "/ˈpraɪ.sɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc định giá",
+        "example": "The pricing of goods depends on supply and demand.",
+        "familyId": "economy-market",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "currency",
+        "ipa": "/ˈkʌr.ən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền tệ",
+        "example": "The euro is the currency used in many European countries.",
+        "familyId": "economy-market",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trade",
+        "ipa": "/treɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương mại, buôn bán",
+        "example": "International trade benefits both countries.",
+        "familyId": "economy-trade",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trader",
+        "ipa": "/ˈtreɪ.dər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương nhân, người buôn bán",
+        "example": "Stock traders watched the markets nervously.",
+        "familyId": "economy-trade",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "export",
+        "ipa": "/ˈek.spɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng xuất khẩu",
+        "example": "Coffee is a major export of this country.",
+        "familyId": "economy-trade",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exporter",
+        "ipa": "/ekˈspɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà xuất khẩu",
+        "example": "Vietnam is one of the largest rice exporters in the world.",
+        "familyId": "economy-trade",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "import",
+        "ipa": "/ˈɪm.pɔːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng nhập khẩu",
+        "example": "The country relies heavily on imports of oil.",
+        "familyId": "economy-trade",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "importer",
+        "ipa": "/ɪmˈpɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà nhập khẩu",
+        "example": "China is a major importer of raw materials.",
+        "familyId": "economy-trade",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tariff",
+        "ipa": "/ˈtær.ɪf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thuế quan",
+        "example": "The new tariffs will raise prices for consumers.",
+        "familyId": "economy-trade",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "commerce",
+        "ipa": "/ˈkɒm.ɜːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương mại",
+        "example": "E-commerce has transformed the retail industry.",
+        "familyId": "economy-trade",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "finance",
+        "ipa": "/ˈfaɪ.næns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài chính",
+        "example": "He works in finance at a large bank.",
+        "familyId": "economy-finance",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "financial",
+        "ipa": "/faɪˈnæn.ʃəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về tài chính",
+        "example": "The company is facing serious financial difficulties.",
+        "familyId": "economy-finance",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "financially",
+        "ipa": "/faɪˈnæn.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "về mặt tài chính",
+        "example": "She is financially independent from her family.",
+        "familyId": "economy-finance",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bank",
+        "ipa": "/bæŋk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngân hàng",
+        "example": "I need to go to the bank to transfer money.",
+        "familyId": "economy-finance",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banking",
+        "ipa": "/ˈbæŋ.kɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngành ngân hàng",
+        "example": "Online banking makes life much easier.",
+        "familyId": "economy-finance",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "banker",
+        "ipa": "/ˈbæŋ.kər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân viên ngân hàng",
+        "example": "The banker advised her to save more for retirement.",
+        "familyId": "economy-finance",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loan",
+        "ipa": "/ləʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản vay",
+        "example": "They took out a loan to buy their first house.",
+        "familyId": "economy-finance",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debt",
+        "ipa": "/det/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nợ",
+        "example": "Many young people are in serious debt after university.",
+        "familyId": "economy-finance",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "credit",
+        "ipa": "/ˈkred.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tín dụng",
+        "example": "She has an excellent credit history.",
+        "familyId": "economy-finance",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deposit",
+        "ipa": "/dɪˈpɒz.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền gửi, tiền đặt cọc",
+        "example": "He made a deposit of one thousand dollars.",
+        "familyId": "economy-finance",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "invest",
+        "ipa": "/ɪnˈvest/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đầu tư",
+        "example": "She decided to invest her savings in the stock market.",
+        "familyId": "economy-investment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investment",
+        "ipa": "/ɪnˈvest.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản đầu tư",
+        "example": "Real estate is considered a safe investment.",
+        "familyId": "economy-investment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "investor",
+        "ipa": "/ɪnˈves.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà đầu tư",
+        "example": "Foreign investors are returning to the country.",
+        "familyId": "economy-investment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stock",
+        "ipa": "/stɒk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổ phiếu",
+        "example": "He owns stock in several technology companies.",
+        "familyId": "economy-investment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "treasury bond",
+        "ipa": "/ˈtreʒ.ər.i bɒnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trái phiếu kho bạc",
+        "example": "Treasury bonds are considered one of the safest investments.",
+        "familyId": "economy-investment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shareholder",
+        "ipa": "/ˈʃeə.həʊl.dər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổ đông",
+        "example": "Shareholders voted against the merger.",
+        "familyId": "economy-investment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dividend",
+        "ipa": "/ˈdɪv.ɪ.dend/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cổ tức",
+        "example": "The company paid a dividend of two dollars per share.",
+        "familyId": "economy-investment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "portfolio",
+        "ipa": "/pɔːtˈfəʊ.li.əʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "danh mục đầu tư",
+        "example": "She manages a diverse portfolio of investments.",
+        "familyId": "economy-investment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "capital",
+        "ipa": "/ˈkæp.ɪ.təl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vốn",
+        "example": "The startup needs more capital to expand.",
+        "familyId": "economy-investment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employ",
+        "ipa": "/ɪmˈplɔɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thuê, tuyển dụng",
+        "example": "The factory employs over five hundred workers.",
+        "familyId": "employ",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employee",
+        "ipa": "/ɪmˈplɔɪ.iː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhân viên",
+        "example": "All employees must attend the safety training.",
+        "familyId": "economy-employment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employer",
+        "ipa": "/ɪmˈplɔɪ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ lao động",
+        "example": "Her employer provides excellent health benefits.",
+        "familyId": "economy-employment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employment",
+        "ipa": "/ɪmˈplɔɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc làm",
+        "example": "Employment in the tech sector is rising.",
+        "familyId": "employ",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unemployment",
+        "ipa": "/ˌʌn.ɪmˈplɔɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng thất nghiệp",
+        "example": "Unemployment has fallen to its lowest level in years.",
+        "familyId": "economy-employment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wage",
+        "ipa": "/weɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền lương (theo giờ/ngày/tuần)",
+        "example": "The minimum wage was raised last month.",
+        "familyId": "economy-employment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "salary",
+        "ipa": "/ˈsæl.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lương (theo tháng/năm)",
+        "example": "He earns a good salary as an engineer.",
+        "familyId": "economy-employment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "income",
+        "ipa": "/ˈɪn.kʌm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thu nhập",
+        "example": "Their household income has doubled in five years.",
+        "familyId": "economy-employment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "earn",
+        "ipa": "/ɜːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kiếm được (tiền)",
+        "example": "She earns more than her colleagues.",
+        "familyId": "economy-employment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "earnings",
+        "ipa": "/ˈɜː.nɪŋz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thu nhập, lợi nhuận",
+        "example": "The company's quarterly earnings exceeded expectations.",
+        "familyId": "economy-employment",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "produce",
+        "ipa": "/prəˈdjuːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sản xuất",
+        "example": "This factory produces over a thousand cars per day.",
+        "familyId": "produce",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "production",
+        "ipa": "/prəˈdʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự sản xuất",
+        "example": "Steel production has decreased this quarter.",
+        "familyId": "produce",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "producer",
+        "ipa": "/prəˈdjuː.sər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà sản xuất",
+        "example": "Brazil is a major producer of coffee.",
+        "familyId": "economy-production",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manufacture",
+        "ipa": "/ˌmæn.jəˈfæk.tʃər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sản xuất, chế tạo",
+        "example": "The company manufactures high-quality electronics.",
+        "familyId": "economy-production",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manufacturer",
+        "ipa": "/ˌmæn.jəˈfæk.tʃər.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà sản xuất, hãng chế tạo",
+        "example": "She works for a leading car manufacturer.",
+        "familyId": "economy-production",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manufacturing",
+        "ipa": "/ˌmæn.jəˈfæk.tʃər.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngành sản xuất, chế tạo",
+        "example": "Manufacturing accounts for a large share of jobs here.",
+        "familyId": "economy-production",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "industry",
+        "ipa": "/ˈɪn.də.stri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngành công nghiệp",
+        "example": "The film industry has grown rapidly in recent years.",
+        "familyId": "economy-production",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "industrial",
+        "ipa": "/ɪnˈdʌs.tri.əl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về công nghiệp",
+        "example": "This area is known for its industrial activities.",
+        "familyId": "economy-production",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "factory",
+        "ipa": "/ˈfæk.tər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà máy",
+        "example": "The new factory will create thousands of jobs.",
+        "familyId": "economy-production",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "business",
+        "ipa": "/ˈbɪz.nɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kinh doanh, doanh nghiệp",
+        "example": "She started her own business after college.",
+        "familyId": "economy-business",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "company",
+        "ipa": "/ˈkʌm.pə.ni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty",
+        "example": "The company has offices in over twenty countries.",
+        "familyId": "economy-business",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "corporation",
+        "ipa": "/ˌkɔː.pərˈeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tập đoàn",
+        "example": "Large corporations dominate the global economy.",
+        "familyId": "economy-business",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "corporate",
+        "ipa": "/ˈkɔː.pər.ət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về tập đoàn",
+        "example": "The corporate office is in New York.",
+        "familyId": "economy-business",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "firm",
+        "ipa": "/fɜːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hãng, công ty",
+        "example": "He works for a small law firm downtown.",
+        "familyId": "economy-business",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "enterprise",
+        "ipa": "/ˈen.tə.praɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "doanh nghiệp",
+        "example": "The government supports small enterprises with tax breaks.",
+        "familyId": "economy-business",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "entrepreneur",
+        "ipa": "/ˌɒn.trə.prəˈnɜːr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "doanh nhân",
+        "example": "Successful entrepreneurs take calculated risks.",
+        "familyId": "economy-business",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "entrepreneurship",
+        "ipa": "/ˌɒn.trə.prəˈnɜː.ʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tinh thần khởi nghiệp",
+        "example": "The university offers a course in entrepreneurship.",
+        "familyId": "economy-business",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "agency",
+        "ipa": "/ˈeɪ.dʒən.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công ty, đại lý",
+        "example": "She booked the trip through a travel agency.",
+        "familyId": "economy-business",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tax",
+        "ipa": "/tæks/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thuế",
+        "example": "Citizens must pay tax on their income.",
+        "familyId": "economy-tax",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taxation",
+        "ipa": "/tækˈseɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự đánh thuế, hệ thống thuế",
+        "example": "The new taxation policy benefits low-income families.",
+        "familyId": "economy-tax",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taxpayer",
+        "ipa": "/ˈtæksˌpeɪ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người nộp thuế",
+        "example": "Taxpayers want transparency in government spending.",
+        "familyId": "economy-tax",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "revenue",
+        "ipa": "/ˈrev.ən.juː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "doanh thu, nguồn thu",
+        "example": "The government's revenue from tourism has increased.",
+        "familyId": "economy-tax",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deficit",
+        "ipa": "/ˈdef.ɪ.sɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thâm hụt",
+        "example": "The country has a large trade deficit this year.",
+        "familyId": "economy-tax",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trade surplus",
+        "ipa": "/treɪd ˈsɜː.pləs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thặng dư thương mại",
+        "example": "China has maintained a large trade surplus with many countries.",
+        "familyId": "economy-tax",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outlay",
+        "ipa": "/ˈaʊt.leɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi phí bỏ ra",
+        "example": "The initial outlay for the project was higher than expected.",
+        "familyId": "economy-spending",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spending",
+        "ipa": "/ˈspen.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chi tiêu",
+        "example": "Government spending has increased this year.",
+        "familyId": "economy-spending",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "save",
+        "ipa": "/seɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tiết kiệm",
+        "example": "She saves part of her salary every month.",
+        "familyId": "economy-spending",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "savings",
+        "ipa": "/ˈseɪ.vɪŋz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền tiết kiệm",
+        "example": "He used his savings to start a business.",
+        "familyId": "economy-spending",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "purchase",
+        "ipa": "/ˈpɜː.tʃəs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mua, mua sắm",
+        "example": "Customers can purchase tickets online.",
+        "familyId": "economy-spending",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "retail",
+        "ipa": "/ˈriː.teɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bán lẻ",
+        "example": "Retail sales have improved during the holidays.",
+        "familyId": "economy-spending",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "retailer",
+        "ipa": "/ˈriː.teɪ.lər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà bán lẻ",
+        "example": "Online retailers are taking over the market.",
+        "familyId": "economy-spending",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wholesale",
+        "ipa": "/ˈhəʊl.seɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bán buôn",
+        "example": "He buys goods at wholesale and sells them in his shop.",
+        "familyId": "economy-spending",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "profit",
+        "ipa": "/ˈprɒf.ɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lợi nhuận",
+        "example": "The company made a record profit last quarter.",
+        "familyId": "economy-spending",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "loss",
+        "ipa": "/lɒs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thua lỗ, mất mát",
+        "example": "The business reported heavy losses this year.",
+        "familyId": "economy-spending",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "employable",
+        "ipa": "/ɪmˈplɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "có thể tuyển dụng, đủ khả năng làm việc",
+        "example": "New skills make graduates more employable.",
+        "familyId": "employ",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unemployed",
+        "ipa": "/ˌʌn.ɪmˈplɔɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thất nghiệp",
+        "example": "He has been unemployed since the factory closed.",
+        "familyId": "employ",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unemployable",
+        "ipa": "/ˌʌn.ɪmˈplɔɪ.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "không thể tuyển dụng được",
+        "example": "Without basic training, some applicants are considered unemployable.",
+        "familyId": "employ",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "productive",
+        "ipa": "/prəˈdʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "hiệu quả, năng suất cao",
+        "example": "The meeting was short but very productive.",
+        "familyId": "produce",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "productivity",
+        "ipa": "/ˌproʊ.dʌkˈtɪv.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "năng suất",
+        "example": "Investing in training improves workplace productivity.",
+        "familyId": "produce",
+        "familyOrder": 4,
+        "tags": []
+      }
+    }
+  ]
+}

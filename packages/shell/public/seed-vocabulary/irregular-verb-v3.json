@@ -1,0 +1,980 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-verb-v3",
+    "description": "Động từ bất quy tắc – dạng V3 (Quá khứ phân từ). Chỉ giữ các trường hợp V3 thực sự khác V2.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "been",
+        "ipa": "/bɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã là, đã ở (quá khứ phân từ của be)",
+        "example": "She has been a teacher for over twenty years.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "be",
+        "baseMeaning": "là, ở",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "borne",
+        "ipa": "/bɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã sinh ra, đã chịu đựng (quá khứ phân từ của bear)",
+        "example": "The cost has been borne by the company.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "bear",
+        "baseMeaning": "sinh ra, chịu đựng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "begun",
+        "ipa": "/bɪˈɡʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bắt đầu (quá khứ phân từ của begin)",
+        "example": "The construction work has begun on the new hospital.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "begin",
+        "baseMeaning": "bắt đầu",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bitten",
+        "ipa": "/ˈbɪtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cắn (quá khứ phân từ của bite)",
+        "example": "He has been bitten by a mosquito on his arm.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "bite",
+        "baseMeaning": "cắn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blown",
+        "ipa": "/bloʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thổi (quá khứ phân từ của blow)",
+        "example": "The candles have been blown out by the wind.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "blow",
+        "baseMeaning": "thổi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broken",
+        "ipa": "/ˈbroʊkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã vỡ (quá khứ phân từ của break)",
+        "example": "The vase has been broken into many pieces.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "break",
+        "baseMeaning": "làm vỡ, phá vỡ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chosen",
+        "ipa": "/ˈtʃoʊzən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được chọn (quá khứ phân từ của choose)",
+        "example": "The winner has been chosen from hundreds of applicants.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "choose",
+        "baseMeaning": "chọn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come",
+        "ipa": "/kʌm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đến (quá khứ phân từ của come – giống nguyên mẫu)",
+        "example": "Many visitors have come to see the exhibition this week.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "come",
+        "baseMeaning": "đến",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dived",
+        "ipa": "/daɪvd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lặn (quá khứ phân từ của dive – dạng thông dụng)",
+        "example": "She has dived into the pool many times today.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "dive",
+        "baseMeaning": "lặn, nhảy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "done",
+        "ipa": "/dʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm (quá khứ phân từ của do)",
+        "example": "All the homework has been done by the students.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "do",
+        "baseMeaning": "làm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drawn",
+        "ipa": "/drɔːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã vẽ (quá khứ phân từ của draw)",
+        "example": "This beautiful picture has been drawn by a talented artist.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "draw",
+        "baseMeaning": "vẽ, kéo",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drunk",
+        "ipa": "/drʌŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã uống (quá khứ phân từ của drink)",
+        "example": "All the water has been drunk by the athletes.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "drink",
+        "baseMeaning": "uống",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "driven",
+        "ipa": "/ˈdrɪvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lái (quá khứ phân từ của drive)",
+        "example": "This car has been driven over 100,000 kilometres.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "drive",
+        "baseMeaning": "lái xe",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eaten",
+        "ipa": "/ˈiːtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ăn (quá khứ phân từ của eat)",
+        "example": "All the cake has been eaten by the children.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "eat",
+        "baseMeaning": "ăn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fallen",
+        "ipa": "/ˈfɔːlən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã rơi (quá khứ phân từ của fall)",
+        "example": "Many leaves have fallen from the trees this autumn.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "fall",
+        "baseMeaning": "rơi, ngã",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flown",
+        "ipa": "/floʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bay (quá khứ phân từ của fly)",
+        "example": "The birds have flown south for the winter.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "fly",
+        "baseMeaning": "bay",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forbidden",
+        "ipa": "/fərˈbɪdən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bị cấm (quá khứ phân từ của forbid)",
+        "example": "Smoking has been forbidden in all public buildings.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "forbid",
+        "baseMeaning": "cấm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgotten",
+        "ipa": "/fərˈɡɒtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã quên (quá khứ phân từ của forget)",
+        "example": "His name has been forgotten by most people.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "forget",
+        "baseMeaning": "quên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgiven",
+        "ipa": "/fərˈɡɪvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tha thứ (quá khứ phân từ của forgive)",
+        "example": "His mistakes have been forgiven by his family.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "forgive",
+        "baseMeaning": "tha thứ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "frozen",
+        "ipa": "/ˈfroʊzən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đông lạnh (quá khứ phân từ của freeze)",
+        "example": "The lake has frozen solid during the cold winter.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "freeze",
+        "baseMeaning": "đông lạnh",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gotten",
+        "ipa": "/ˈɡɒtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhận được (quá khứ phân từ của get – dạng Mỹ)",
+        "example": "She has gotten much better at playing the piano.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "get",
+        "baseMeaning": "nhận, lấy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "given",
+        "ipa": "/ˈɡɪvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được cho (quá khứ phân từ của give)",
+        "example": "Each student has been given a free textbook this semester.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gone",
+        "ipa": "/ɡɒn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đi (quá khứ phân từ của go)",
+        "example": "She has gone to the library since early morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "go",
+        "baseMeaning": "đi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grown",
+        "ipa": "/ɡroʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lớn lên (quá khứ phân từ của grow)",
+        "example": "These vegetables have been grown organically without pesticides.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "grow",
+        "baseMeaning": "lớn lên, trồng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hidden",
+        "ipa": "/ˈhɪdən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã giấu (quá khứ phân từ của hide)",
+        "example": "The treasure has been hidden somewhere in the old castle.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "hide",
+        "baseMeaning": "giấu, trốn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "known",
+        "ipa": "/noʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được biết đến (quá khứ phân từ của know)",
+        "example": "This traditional recipe has been known in our family for generations.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "know",
+        "baseMeaning": "biết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lain",
+        "ipa": "/leɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã nằm (quá khứ phân từ của lie)",
+        "example": "The treasure has lain hidden beneath the sand for centuries.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "lie",
+        "baseMeaning": "nằm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mown",
+        "ipa": "/moʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cắt cỏ (quá khứ phân từ của mow)",
+        "example": "The lawn has been mown every week during summer.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "mow",
+        "baseMeaning": "cắt cỏ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overcome",
+        "ipa": "/ˌoʊvərˈkʌm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã vượt qua (quá khứ phân từ của overcome – giống nguyên mẫu)",
+        "example": "Many difficulties have been overcome by the team.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "overcome",
+        "baseMeaning": "vượt qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overrun",
+        "ipa": "/ˌoʊvərˈrʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã tràn ngập (quá khứ phân từ của overrun – giống nguyên mẫu)",
+        "example": "The garden has been overrun with weeds.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "overrun",
+        "baseMeaning": "tràn ngập",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ridden",
+        "ipa": "/ˈrɪdən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cưỡi (quá khứ phân từ của ride)",
+        "example": "This horse has been ridden by many experienced riders.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "ride",
+        "baseMeaning": "cưỡi, đi (xe)",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rung",
+        "ipa": "/rʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã rung chuông (quá khứ phân từ của ring)",
+        "example": "The church bells have rung every hour for centuries.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "ring",
+        "baseMeaning": "reo, rung chuông",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "risen",
+        "ipa": "/ˈrɪzən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tăng lên (quá khứ phân từ của rise)",
+        "example": "The sun has risen above the mountains.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "rise",
+        "baseMeaning": "tăng lên, đứng dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run",
+        "ipa": "/rʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chạy (quá khứ phân từ của run – giống nguyên mẫu)",
+        "example": "The marathon has been run in record time this year.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "run",
+        "baseMeaning": "chạy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seen",
+        "ipa": "/siːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được nhìn thấy (quá khứ phân từ của see)",
+        "example": "I have seen that movie three times already.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sewn",
+        "ipa": "/soʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã may (quá khứ phân từ của sew)",
+        "example": "The dress has been sewn with great care and attention.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "sew",
+        "baseMeaning": "may",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shaken",
+        "ipa": "/ˈʃeɪkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lắc (quá khứ phân từ của shake)",
+        "example": "The bottle has been shaken well before opening.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "shake",
+        "baseMeaning": "lắc, rung",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shown",
+        "ipa": "/ʃoʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho xem (quá khứ phân từ của show)",
+        "example": "The documentary has been shown on television many times.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "show",
+        "baseMeaning": "cho xem, chỉ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shrunk",
+        "ipa": "/ʃrʌŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã co lại (quá khứ phân từ của shrink)",
+        "example": "My shirt has shrunk after being washed in hot water.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "shrink",
+        "baseMeaning": "co lại",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sung",
+        "ipa": "/sʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã hát (quá khứ phân từ của sing)",
+        "example": "This song has been sung by many famous artists.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "sing",
+        "baseMeaning": "hát",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sunk",
+        "ipa": "/sʌŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chìm (quá khứ phân từ của sink)",
+        "example": "The ship has sunk to the bottom of the ocean.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "sink",
+        "baseMeaning": "chìm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sown",
+        "ipa": "/soʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã gieo (quá khứ phân từ của sow)",
+        "example": "The seeds have been sown in the fertile soil.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "sow",
+        "baseMeaning": "gieo hạt",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spanned",
+        "ipa": "/spænd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bắc qua (quá khứ phân từ của span – dạng thông dụng)",
+        "example": "The bridge has spanned the river for over a century.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "span",
+        "baseMeaning": "bắc qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoken",
+        "ipa": "/ˈspoʊkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được nói (quá khứ phân từ của speak)",
+        "example": "English is spoken in over sixty countries around the world.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "speak",
+        "baseMeaning": "nói",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sprung",
+        "ipa": "/sprʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhảy lên (quá khứ phân từ của spring)",
+        "example": "A leak has sprung in the water pipe.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "spring",
+        "baseMeaning": "nhảy lên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stolen",
+        "ipa": "/ˈstoʊlən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bị ăn cắp (quá khứ phân từ của steal)",
+        "example": "My laptop has been stolen from my office.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "steal",
+        "baseMeaning": "ăn cắp",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sworn",
+        "ipa": "/swɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thề (quá khứ phân từ của swear)",
+        "example": "The witness has sworn to tell the truth in court.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "swear",
+        "baseMeaning": "thề, chửi thề",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swum",
+        "ipa": "/swʌm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bơi (quá khứ phân từ của swim)",
+        "example": "She has swum across the English Channel twice.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "swim",
+        "baseMeaning": "bơi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taken",
+        "ipa": "/ˈteɪkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được lấy (quá khứ phân từ của take)",
+        "example": "All the available seats have been taken by the audience.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "torn",
+        "ipa": "/tɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã xé rách (quá khứ phân từ của tear)",
+        "example": "The page has been torn out of the book.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "tear",
+        "baseMeaning": "xé, rách",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thrown",
+        "ipa": "/θroʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ném (quá khứ phân từ của throw)",
+        "example": "The ball has been thrown over the fence.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "throw",
+        "baseMeaning": "ném",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "woken",
+        "ipa": "/ˈwoʊkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thức dậy (quá khứ phân từ của wake)",
+        "example": "The baby has woken up from her afternoon nap.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "wake",
+        "baseMeaning": "thức dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "worn",
+        "ipa": "/wɔːrn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mặc (quá khứ phân từ của wear)",
+        "example": "This jacket has been worn only a few times.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "wear",
+        "baseMeaning": "mặc",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "woven",
+        "ipa": "/ˈwoʊvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã dệt (quá khứ phân từ của weave)",
+        "example": "This carpet has been woven by hand using traditional methods.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "weave",
+        "baseMeaning": "dệt",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdrawn",
+        "ipa": "/wɪðˈdrɔːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã rút lui (quá khứ phân từ của withdraw)",
+        "example": "The troops have been withdrawn from the conflict zone.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "withdraw",
+        "baseMeaning": "rút lui, rút tiền",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "written",
+        "ipa": "/ˈrɪtən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã được viết (quá khứ phân từ của write)",
+        "example": "This report has been written by our senior analyst.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "write",
+        "baseMeaning": "viết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistaken",
+        "ipa": "/mɪˈsteɪkən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bị nhầm lẫn (quá khứ phân từ của mistake)",
+        "example": "He has been mistaken for his older brother many times.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastParticiple",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
+    }
+  ]
+}

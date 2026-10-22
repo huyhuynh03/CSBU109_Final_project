@@ -1,0 +1,1966 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-verb-v2",
+    "description": "Động từ bất quy tắc – dạng V2 (Quá khứ đơn). Không lặp lại các động từ có V1 = V2 = V3; các trường hợp V2 = V3 chỉ xuất hiện một lần tại đây.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "was",
+        "ipa": "/wɒz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã là, đã ở (quá khứ đơn của be – ngôi I/he/she/it)",
+        "example": "She was very tired after the long meeting yesterday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "be",
+        "baseMeaning": "là, ở, thì",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bore",
+        "ipa": "/bɔːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã sinh ra, đã chịu đựng (quá khứ đơn của bear)",
+        "example": "She bore the pain bravely during the medical procedure.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bear",
+        "baseMeaning": "sinh ra, chịu đựng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "began",
+        "ipa": "/bɪˈɡæn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bắt đầu (quá khứ đơn của begin)",
+        "example": "The concert began at eight o'clock sharp.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "begin",
+        "baseMeaning": "bắt đầu",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bent",
+        "ipa": "/bɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cúi, đã uốn cong (quá khứ đơn của bend)",
+        "example": "He bent down to pick up the coin from the ground.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bend",
+        "baseMeaning": "cúi, uốn cong",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bound",
+        "ipa": "/baʊnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã buộc (quá khứ đơn của bind)",
+        "example": "They bound the prisoner's hands with rope.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bind",
+        "baseMeaning": "buộc",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bit",
+        "ipa": "/bɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cắn (quá khứ đơn của bite)",
+        "example": "The dog bit the mailman on the leg.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bite",
+        "baseMeaning": "cắn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bled",
+        "ipa": "/blɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chảy máu (quá khứ đơn của bleed)",
+        "example": "His finger bled after he cut it with the knife.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bleed",
+        "baseMeaning": "chảy máu",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blew",
+        "ipa": "/bluː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thổi (quá khứ đơn của blow)",
+        "example": "The wind blew so hard that it knocked over the fence.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "blow",
+        "baseMeaning": "thổi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broke",
+        "ipa": "/broʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm vỡ, đã phá vỡ (quá khứ đơn của break)",
+        "example": "He accidentally broke the window with a football.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "break",
+        "baseMeaning": "làm vỡ, phá vỡ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bred",
+        "ipa": "/brɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã nuôi, đã sinh sản (quá khứ đơn của breed)",
+        "example": "The farmer bred horses on his ranch for many years.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "breed",
+        "baseMeaning": "nuôi, sinh sản",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "brought",
+        "ipa": "/brɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mang, đã đem (quá khứ đơn của bring)",
+        "example": "She brought her own lunch to the office this morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "bring",
+        "baseMeaning": "mang, đem",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "built",
+        "ipa": "/bɪlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã xây dựng (quá khứ đơn của build)",
+        "example": "They built a new school in the neighbourhood last year.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "build",
+        "baseMeaning": "xây dựng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burnt",
+        "ipa": "/bɜːrnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đốt cháy (quá khứ đơn của burn)",
+        "example": "She burnt the toast because she forgot about it.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "burn",
+        "baseMeaning": "đốt cháy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bought",
+        "ipa": "/bɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mua (quá khứ đơn của buy)",
+        "example": "We bought a new refrigerator last weekend.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "buy",
+        "baseMeaning": "mua",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caught",
+        "ipa": "/kɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bắt, đã chụp (quá khứ đơn của catch)",
+        "example": "The police caught the thief running down the alley.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "catch",
+        "baseMeaning": "bắt, chụp",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chose",
+        "ipa": "/tʃoʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chọn (quá khứ đơn của choose)",
+        "example": "She chose the blue dress for the graduation ceremony.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "choose",
+        "baseMeaning": "chọn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "clung",
+        "ipa": "/klʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bám chặt (quá khứ đơn của cling)",
+        "example": "The child clung to his mother's hand in the crowded market.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "cling",
+        "baseMeaning": "bám chặt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "came",
+        "ipa": "/keɪm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đến (quá khứ đơn của come)",
+        "example": "She came to the party late because of the heavy traffic.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "come",
+        "baseMeaning": "đến",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "crept",
+        "ipa": "/krɛpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bò, đã rón rén đi (quá khứ đơn của creep)",
+        "example": "The cat crept silently towards the bird in the garden.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "creep",
+        "baseMeaning": "bò, rón rén đi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dealt",
+        "ipa": "/dɛlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã giải quyết, đã chia bài (quá khứ đơn của deal)",
+        "example": "The manager dealt with the customer complaint professionally.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "deal",
+        "baseMeaning": "giải quyết, chia bài",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dug",
+        "ipa": "/dʌɡ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đào (quá khứ đơn của dig)",
+        "example": "They dug a deep hole to plant the tree.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "dig",
+        "baseMeaning": "đào",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dove",
+        "ipa": "/doʊv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lặn (quá khứ đơn của dive – dạng Mỹ)",
+        "example": "He dove into the pool from the high diving board.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "dive",
+        "baseMeaning": "lặn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "did",
+        "ipa": "/dɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm (quá khứ đơn của do)",
+        "example": "She did all the housework before her parents came home.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "do",
+        "baseMeaning": "làm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drew",
+        "ipa": "/druː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã vẽ, đã kéo (quá khứ đơn của draw)",
+        "example": "The artist drew a beautiful portrait of the old woman.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "draw",
+        "baseMeaning": "vẽ, kéo",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drank",
+        "ipa": "/dræŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã uống (quá khứ đơn của drink)",
+        "example": "We drank fresh orange juice at breakfast this morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "drink",
+        "baseMeaning": "uống",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drove",
+        "ipa": "/droʊv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lái xe (quá khứ đơn của drive)",
+        "example": "He drove to the airport to pick up his parents.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "drive",
+        "baseMeaning": "lái xe",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ate",
+        "ipa": "/eɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ăn (quá khứ đơn của eat)",
+        "example": "We ate lunch at a small restaurant near the office.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "eat",
+        "baseMeaning": "ăn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fell",
+        "ipa": "/fɛl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ngã, đã rơi (quá khứ đơn của fall)",
+        "example": "The little boy fell off his bicycle and scraped his knee.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "fall",
+        "baseMeaning": "ngã, rơi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fed",
+        "ipa": "/fɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho ăn (quá khứ đơn của feed)",
+        "example": "She fed the baby before putting him to bed.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "feed",
+        "baseMeaning": "cho ăn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "felt",
+        "ipa": "/fɛlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cảm thấy (quá khứ đơn của feel)",
+        "example": "I felt much better after a good night's sleep.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "feel",
+        "baseMeaning": "cảm thấy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fought",
+        "ipa": "/fɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chiến đấu, đã đánh nhau (quá khứ đơn của fight)",
+        "example": "The soldiers fought bravely to defend their country.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "fight",
+        "baseMeaning": "chiến đấu, đánh nhau",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "found",
+        "ipa": "/faʊnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tìm thấy (quá khứ đơn của find)",
+        "example": "The children found a hidden path behind the old house.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "find",
+        "baseMeaning": "tìm thấy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fled",
+        "ipa": "/flɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chạy trốn (quá khứ đơn của flee)",
+        "example": "The villagers fled when they heard the warning sirens.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "flee",
+        "baseMeaning": "chạy trốn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flung",
+        "ipa": "/flʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã ném mạnh (quá khứ đơn của fling)",
+        "example": "She flung open the door and rushed outside.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "fling",
+        "baseMeaning": "ném mạnh",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flew",
+        "ipa": "/fluː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bay (quá khứ đơn của fly)",
+        "example": "The family flew to Japan for their summer holiday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "fly",
+        "baseMeaning": "bay",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forbade",
+        "ipa": "/fərˈbæd/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã cấm (quá khứ đơn của forbid)",
+        "example": "His parents forbade him from going out late at night.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "forbid",
+        "baseMeaning": "cấm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgot",
+        "ipa": "/fərˈɡɒt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã quên (quá khứ đơn của forget)",
+        "example": "I forgot to bring my umbrella and got soaked in the rain.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "forget",
+        "baseMeaning": "quên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgave",
+        "ipa": "/fərˈɡeɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tha thứ (quá khứ đơn của forgive)",
+        "example": "She forgave him for breaking her favourite vase.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "forgive",
+        "baseMeaning": "tha thứ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "froze",
+        "ipa": "/froʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đóng băng (quá khứ đơn của freeze)",
+        "example": "The lake froze completely during the harsh winter.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "freeze",
+        "baseMeaning": "đóng băng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "got",
+        "ipa": "/ɡɒt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhận được, đã trở nên (quá khứ đơn của get)",
+        "example": "I got a promotion at work last month.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "get",
+        "baseMeaning": "nhận được, trở nên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gave",
+        "ipa": "/ɡeɪv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho (quá khứ đơn của give)",
+        "example": "He gave his sister a beautiful watch for her birthday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "went",
+        "ipa": "/wɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đi (quá khứ đơn của go)",
+        "example": "She went to the market yesterday morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "go",
+        "baseMeaning": "đi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ground",
+        "ipa": "/ɡraʊnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã xay, đã mài (quá khứ đơn của grind)",
+        "example": "She ground the coffee beans fresh every morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "grind",
+        "baseMeaning": "xay, mài",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grew",
+        "ipa": "/ɡruː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lớn lên, đã trồng (quá khứ đơn của grow)",
+        "example": "The population grew rapidly during the last decade.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "grow",
+        "baseMeaning": "lớn lên, trồng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hung",
+        "ipa": "/hʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã treo (quá khứ đơn của hang)",
+        "example": "She hung the painting on the wall above the fireplace.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "hang",
+        "baseMeaning": "treo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "had",
+        "ipa": "/hæd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã có (quá khứ đơn của have)",
+        "example": "We had a wonderful time at the beach last summer.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "have",
+        "baseMeaning": "có",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heard",
+        "ipa": "/hɜːrd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nghe (quá khứ đơn của hear)",
+        "example": "I heard a strange noise coming from the basement last night.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "hear",
+        "baseMeaning": "nghe",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hid",
+        "ipa": "/hɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã giấu, đã trốn (quá khứ đơn của hide)",
+        "example": "The children hid behind the curtains during the game.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "hide",
+        "baseMeaning": "giấu, trốn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "held",
+        "ipa": "/hɛld/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cầm, đã tổ chức (quá khứ đơn của hold)",
+        "example": "The company held its annual meeting in the main conference room.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "hold",
+        "baseMeaning": "cầm, giữ, tổ chức",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kept",
+        "ipa": "/kɛpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã giữ (quá khứ đơn của keep)",
+        "example": "She kept all the letters her grandmother had written to her.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "keep",
+        "baseMeaning": "giữ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knelt",
+        "ipa": "/nɛlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã quỳ (quá khứ đơn của kneel)",
+        "example": "She knelt down to tie her daughter's shoelaces.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "kneel",
+        "baseMeaning": "quỳ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knew",
+        "ipa": "/njuː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã biết (quá khứ đơn của know)",
+        "example": "He knew the answer long before the teacher finished the question.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "know",
+        "baseMeaning": "biết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "laid",
+        "ipa": "/leɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đặt, đã đẻ (quá khứ đơn của lay)",
+        "example": "He laid the book on the table and went to answer the door.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "lay",
+        "baseMeaning": "đặt, đẻ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "led",
+        "ipa": "/lɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã dẫn dắt (quá khứ đơn của lead)",
+        "example": "She led the research team that discovered the new treatment.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "lead",
+        "baseMeaning": "dẫn dắt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leapt",
+        "ipa": "/lɛpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhảy (quá khứ đơn của leap)",
+        "example": "The deer leapt gracefully over the fallen log.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "leap",
+        "baseMeaning": "nhảy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "left",
+        "ipa": "/lɛft/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã rời đi, đã để lại (quá khứ đơn của leave)",
+        "example": "He left the office early because he had a doctor's appointment.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "leave",
+        "baseMeaning": "rời đi, để lại",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lent",
+        "ipa": "/lɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho mượn (quá khứ đơn của lend)",
+        "example": "My neighbour lent me his ladder to fix the roof.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "lend",
+        "baseMeaning": "cho mượn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lay",
+        "ipa": "/leɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nằm (quá khứ đơn của lie – nằm)",
+        "example": "He lay on the sofa and fell asleep within minutes.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "lie",
+        "baseMeaning": "nằm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lit",
+        "ipa": "/lɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thắp, đã đốt (quá khứ đơn của light)",
+        "example": "She lit the candles on the birthday cake and everyone sang.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "light",
+        "baseMeaning": "thắp, đốt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lost",
+        "ipa": "/lɒst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mất, đã thua (quá khứ đơn của lose)",
+        "example": "Our team lost the final match by just one point.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "lose",
+        "baseMeaning": "mất, thua",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "made",
+        "ipa": "/meɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm, đã chế tạo (quá khứ đơn của make)",
+        "example": "They made a delicious dinner for the guests last Saturday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "make",
+        "baseMeaning": "làm, chế tạo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meant",
+        "ipa": "/mɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã có nghĩa là, đã có ý (quá khứ đơn của mean)",
+        "example": "I'm sorry, I never meant to upset you with my words.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "mean",
+        "baseMeaning": "có nghĩa là, có ý",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "met",
+        "ipa": "/mɛt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã gặp (quá khứ đơn của meet)",
+        "example": "I met my best friend for the first time in primary school.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "meet",
+        "baseMeaning": "gặp",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mowed",
+        "ipa": "/moʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cắt cỏ (quá khứ đơn của mow)",
+        "example": "He mowed the lawn every Saturday morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "mow",
+        "baseMeaning": "cắt cỏ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overcame",
+        "ipa": "/ˌoʊvərˈkeɪm/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã vượt qua (quá khứ đơn của overcome)",
+        "example": "She overcame many obstacles to achieve her dreams.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "overcome",
+        "baseMeaning": "vượt qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overran",
+        "ipa": "/ˌoʊvərˈræn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã tràn ngập, đã vượt quá (quá khứ đơn của overrun)",
+        "example": "Weeds overran the abandoned garden within months.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "overrun",
+        "baseMeaning": "tràn ngập, vượt quá",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paid",
+        "ipa": "/peɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã trả tiền (quá khứ đơn của pay)",
+        "example": "She paid for the groceries with her credit card.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "pay",
+        "baseMeaning": "trả tiền",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rode",
+        "ipa": "/roʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cưỡi, đã đi (xe) (quá khứ đơn của ride)",
+        "example": "They rode their bicycles along the river path every weekend.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "ride",
+        "baseMeaning": "cưỡi, đi (xe)",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rang",
+        "ipa": "/ræŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã reo, đã rung chuông (quá khứ đơn của ring)",
+        "example": "The phone rang three times before she picked it up.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "ring",
+        "baseMeaning": "reo, rung chuông",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rose",
+        "ipa": "/roʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tăng lên, đã đứng dậy (quá khứ đơn của rise)",
+        "example": "The temperature rose sharply during the afternoon.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "rise",
+        "baseMeaning": "tăng lên, đứng dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ran",
+        "ipa": "/ræn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chạy (quá khứ đơn của run)",
+        "example": "He ran five kilometers every morning last year.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "run",
+        "baseMeaning": "chạy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "said",
+        "ipa": "/sɛd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nói (quá khứ đơn của say)",
+        "example": "He said goodbye and walked out of the room quietly.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "say",
+        "baseMeaning": "nói",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "saw",
+        "ipa": "/sɔː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhìn thấy (quá khứ đơn của see)",
+        "example": "I saw my old classmate at the coffee shop yesterday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sought",
+        "ipa": "/sɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã tìm kiếm (quá khứ đơn của seek)",
+        "example": "They sought advice from a financial expert.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "seek",
+        "baseMeaning": "tìm kiếm",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sent",
+        "ipa": "/sɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã gửi (quá khứ đơn của send)",
+        "example": "She sent an email to the whole team about the schedule change.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "send",
+        "baseMeaning": "gửi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sewed",
+        "ipa": "/soʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã may (quá khứ đơn của sew)",
+        "example": "She sewed a button back onto her coat.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sew",
+        "baseMeaning": "may",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shook",
+        "ipa": "/ʃʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lắc, đã rung (quá khứ đơn của shake)",
+        "example": "He shook hands with the interviewer and sat down.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "shake",
+        "baseMeaning": "lắc, rung",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shone",
+        "ipa": "/ʃoʊn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chiếu sáng (quá khứ đơn của shine)",
+        "example": "The sun shone brightly through the window.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "shine",
+        "baseMeaning": "chiếu sáng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shot",
+        "ipa": "/ʃɒt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bắn, đã chụp ảnh (quá khứ đơn của shoot)",
+        "example": "The photographer shot hundreds of pictures during the wedding.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "shoot",
+        "baseMeaning": "bắn, chụp ảnh",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "showed",
+        "ipa": "/ʃoʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã cho xem, đã chỉ (quá khứ đơn của show)",
+        "example": "The guide showed us around the ancient temple.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "show",
+        "baseMeaning": "cho xem, chỉ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shrank",
+        "ipa": "/ʃræŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã co lại (quá khứ đơn của shrink)",
+        "example": "My sweater shrank when I washed it in hot water.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "shrink",
+        "baseMeaning": "co lại",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sang",
+        "ipa": "/sæŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã hát (quá khứ đơn của sing)",
+        "example": "The choir sang beautifully at the Christmas concert.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sing",
+        "baseMeaning": "hát",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sank",
+        "ipa": "/sæŋk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã chìm (quá khứ đơn của sink)",
+        "example": "The ship sank to the bottom of the ocean after hitting the rocks.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sink",
+        "baseMeaning": "chìm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sat",
+        "ipa": "/sæt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ngồi (quá khứ đơn của sit)",
+        "example": "We sat on the bench and watched the sunset together.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sit",
+        "baseMeaning": "ngồi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slept",
+        "ipa": "/slɛpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ngủ (quá khứ đơn của sleep)",
+        "example": "The baby slept through the entire night without waking up.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sleep",
+        "baseMeaning": "ngủ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slid",
+        "ipa": "/slɪd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã trượt (quá khứ đơn của slide)",
+        "example": "The children slid down the snowy hill on their sleds.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "slide",
+        "baseMeaning": "trượt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sowed",
+        "ipa": "/soʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã gieo (hạt) (quá khứ đơn của sow)",
+        "example": "The farmer sowed seeds in the field in early spring.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sow",
+        "baseMeaning": "gieo (hạt)",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "span",
+        "ipa": "/spæn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã kéo dài, đã bắc qua (quá khứ đơn của span)",
+        "example": "The bridge span the wide river connecting both cities.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "span",
+        "baseMeaning": "kéo dài, bắc qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoke",
+        "ipa": "/spoʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nói (quá khứ đơn của speak)",
+        "example": "The director spoke to the whole team about the new project yesterday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "speak",
+        "baseMeaning": "nói",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spent",
+        "ipa": "/spɛnt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã tiêu, đã dành (quá khứ đơn của spend)",
+        "example": "They spent the whole weekend decorating their new apartment.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "spend",
+        "baseMeaning": "tiêu, dành",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spat",
+        "ipa": "/spæt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã khạc nhổ (quá khứ đơn của spit)",
+        "example": "He spat out the bitter medicine immediately.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "spit",
+        "baseMeaning": "khạc nhổ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoilt",
+        "ipa": "/spɔɪlt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã làm hỏng (quá khứ đơn của spoil)",
+        "example": "The rain spoilt our plans for a picnic in the park.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "spoil",
+        "baseMeaning": "làm hỏng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sprang",
+        "ipa": "/spræŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhảy lên (quá khứ đơn của spring)",
+        "example": "The cat sprang onto the table when it heard the noise.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "spring",
+        "baseMeaning": "nhảy lên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stood",
+        "ipa": "/stʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đứng (quá khứ đơn của stand)",
+        "example": "We stood in line for over an hour to buy the tickets.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "stand",
+        "baseMeaning": "đứng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stole",
+        "ipa": "/stoʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ăn cắp (quá khứ đơn của steal)",
+        "example": "Someone stole my bicycle from outside the library.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "steal",
+        "baseMeaning": "ăn cắp",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "struck",
+        "ipa": "/strʌk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đánh, đã va chạm (quá khứ đơn của strike)",
+        "example": "Lightning struck the old oak tree during the storm.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "strike",
+        "baseMeaning": "đánh, va chạm",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swore",
+        "ipa": "/swɔːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thề, đã chửi thề (quá khứ đơn của swear)",
+        "example": "He swore he would never tell anyone the secret.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "swear",
+        "baseMeaning": "thề, chửi thề",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swept",
+        "ipa": "/swɛpt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã quét (quá khứ đơn của sweep)",
+        "example": "She swept the floor before the guests arrived.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "sweep",
+        "baseMeaning": "quét",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swam",
+        "ipa": "/swæm/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã bơi (quá khứ đơn của swim)",
+        "example": "We swam in the ocean every morning during our holiday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "swim",
+        "baseMeaning": "bơi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swung",
+        "ipa": "/swʌŋ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã đung đưa (quá khứ đơn của swing)",
+        "example": "The children swung on the playground swings all afternoon.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "swing",
+        "baseMeaning": "đung đưa",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "took",
+        "ipa": "/tʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã lấy, đã cầm (quá khứ đơn của take)",
+        "example": "She took the last seat on the bus this morning.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "taught",
+        "ipa": "/tɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã dạy (quá khứ đơn của teach)",
+        "example": "My grandmother taught me how to bake bread when I was young.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "teach",
+        "baseMeaning": "dạy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tore",
+        "ipa": "/tɔːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã xé, đã rách (quá khứ đơn của tear)",
+        "example": "She accidentally tore her dress on the fence.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "tear",
+        "baseMeaning": "xé, rách",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "told",
+        "ipa": "/toʊld/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã kể, đã bảo (quá khứ đơn của tell)",
+        "example": "She told me the whole story about what happened at school.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "tell",
+        "baseMeaning": "kể, bảo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "thought",
+        "ipa": "/θɔːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nghĩ (quá khứ đơn của think)",
+        "example": "I thought about your suggestion for a long time yesterday.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "think",
+        "baseMeaning": "nghĩ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "threw",
+        "ipa": "/θruː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã ném (quá khứ đơn của throw)",
+        "example": "He threw the ball to his friend across the field.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "throw",
+        "baseMeaning": "ném",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "understood",
+        "ipa": "/ˌʌndərˈstʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã hiểu (quá khứ đơn của understand)",
+        "example": "After the explanation, everyone understood the new policy clearly.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "understand",
+        "baseMeaning": "hiểu",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "woke",
+        "ipa": "/woʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thức dậy (quá khứ đơn của wake)",
+        "example": "I woke up early to catch the first train to the city.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "wake",
+        "baseMeaning": "thức dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wore",
+        "ipa": "/wɔːr/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã mặc (quá khứ đơn của wear)",
+        "example": "She wore a beautiful red dress to the party.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "wear",
+        "baseMeaning": "mặc",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wove",
+        "ipa": "/woʊv/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã dệt (quá khứ đơn của weave)",
+        "example": "The artisan wove beautiful patterns into the fabric.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "weave",
+        "baseMeaning": "dệt",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "won",
+        "ipa": "/wʌn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã thắng (quá khứ đơn của win)",
+        "example": "Our school team won the national championship last year.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "win",
+        "baseMeaning": "thắng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wound",
+        "ipa": "/waʊnd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã quấn, đã vặn (quá khứ đơn của wind)",
+        "example": "She wound the bandage around his injured arm.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "wind",
+        "baseMeaning": "quấn, vặn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdrew",
+        "ipa": "/wɪðˈdruː/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "đã rút lui, đã rút tiền (quá khứ đơn của withdraw)",
+        "example": "He withdrew money from the ATM before going shopping.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "withdraw",
+        "baseMeaning": "rút lui, rút tiền",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wrote",
+        "ipa": "/roʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã viết (quá khứ đơn của write)",
+        "example": "He wrote a long email to his manager last night.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "write",
+        "baseMeaning": "viết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistook",
+        "ipa": "/mɪˈstʊk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đã nhầm lẫn (quá khứ đơn của mistake)",
+        "example": "She mistook him for someone else at the party.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "pastSimple",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
+    }
+  ]
+}

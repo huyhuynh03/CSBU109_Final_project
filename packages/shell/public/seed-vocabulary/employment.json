@@ -1,0 +1,1275 @@
+{
+  "_meta": {
+    "topicId": "employment",
+    "topicName": "Việc làm",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Employment (B1-B2)",
+    "totalCards": 97,
+    "totalFamilies": 12,
+    "generatedAt": "2026-05-26",
+    "note": "Tu vung chu de Viec lam, bao gom tuyen dung, vai tro, dai ngo, dao tao, dieu kien lam viec, va quan he lao dong. KHONG trung lap voi cac topic khac (employment word, hire, salary v.v. da co o cac topic khac)."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "recruiter",
+        "ipa": "/rɪˈkruːtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà tuyển dụng, người tìm ứng viên",
+        "example": "The recruiter contacted me about a senior developer role.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "headhunter",
+        "ipa": "/ˈhedhʌntə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người săn đầu người, chuyên tìm nhân sự cao cấp",
+        "example": "A headhunter offered her a position at a leading firm.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "headhunting",
+        "ipa": "/ˈhedhʌntɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc săn đầu người, tìm kiếm nhân tài",
+        "example": "Headhunting has become competitive in the tech industry.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shortlist",
+        "ipa": "/ˈʃɔːtlɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "danh sách rút gọn các ứng viên",
+        "example": "She made the shortlist of five candidates.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vetting",
+        "ipa": "/ˈvetɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc thẩm tra, sàng lọc kỹ lưỡng ứng viên",
+        "example": "Initial vetting eliminated half of the applicants.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "onboarding",
+        "ipa": "/ˈɒnbɔːdɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quy trình hội nhập nhân viên mới",
+        "example": "The onboarding process takes about two weeks.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "induction",
+        "ipa": "/ɪnˈdʌkʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "buổi giới thiệu cho nhân viên mới",
+        "example": "All new staff attend a one-day induction session.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cover letter",
+        "ipa": "/ˈkʌvə ˈletə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thư xin việc kèm hồ sơ",
+        "example": "A strong cover letter can set you apart from other candidates.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "curriculum vitae",
+        "ipa": "/kəˌrɪkjʊləm ˈviːtaɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sơ yếu lý lịch chuyên nghiệp",
+        "example": "Submit your curriculum vitae along with two references.",
+        "familyId": "employment-recruitment",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occupation",
+        "ipa": "/ˌɒkjʊˈpeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghề nghiệp",
+        "example": "Please state your occupation on the form.",
+        "familyId": "employment-roles",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "occupational",
+        "ipa": "/ˌɒkjʊˈpeɪʃənəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về nghề nghiệp",
+        "example": "Occupational hazards must be assessed regularly.",
+        "familyId": "employment-roles",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "profession",
+        "ipa": "/prəˈfeʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghề chuyên môn, ngành nghề",
+        "example": "Teaching is a respected profession in many cultures.",
+        "familyId": "employment-roles",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "professional",
+        "ipa": "/prəˈfeʃənəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "chuyên nghiệp, thuộc về nghề",
+        "example": "She gave a very professional presentation.",
+        "familyId": "employment-roles",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "professionalism",
+        "ipa": "/prəˈfeʃənəlɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính chuyên nghiệp",
+        "example": "Her professionalism impressed everyone in the meeting.",
+        "familyId": "employment-roles",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vocation",
+        "ipa": "/vəʊˈkeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiên chức, nghề nghiệp tâm huyết",
+        "example": "He found his true vocation in nursing.",
+        "familyId": "employment-roles",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vocational",
+        "ipa": "/vəʊˈkeɪʃənəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc đào tạo nghề",
+        "example": "Vocational training can lead to well-paid jobs.",
+        "familyId": "employment-roles",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trainee",
+        "ipa": "/ˌtreɪˈniː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thực tập sinh, người được đào tạo",
+        "example": "The new trainee will shadow you for a week.",
+        "familyId": "employment-roles",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intern",
+        "ipa": "/ˈɪntɜːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thực tập sinh",
+        "example": "The company hires twenty interns each summer.",
+        "familyId": "employment-roles",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "internship",
+        "ipa": "/ˈɪntɜːnʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỳ thực tập",
+        "example": "Her internship led to a full-time job offer.",
+        "familyId": "employment-roles",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apprentice",
+        "ipa": "/əˈprentɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "học việc, thợ học nghề",
+        "example": "He started as an apprentice at the carpentry workshop.",
+        "familyId": "employment-roles",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "apprenticeship",
+        "ipa": "/əˈprentɪsʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỳ học việc, hợp đồng học nghề",
+        "example": "She completed a four-year apprenticeship in plumbing.",
+        "familyId": "employment-roles",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freelancer",
+        "ipa": "/ˈfriːlɑːnsə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người làm việc tự do, hợp tác viên",
+        "example": "She works as a freelancer for several magazines.",
+        "familyId": "employment-status",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freelance",
+        "ipa": "/ˈfriːlɑːns/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự do, không thuộc biên chế",
+        "example": "He has been a freelance designer for ten years.",
+        "familyId": "employment-status",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "self-employed",
+        "ipa": "/ˌselfɪmˈplɔɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự kinh doanh, làm chủ",
+        "example": "Many self-employed people work from home.",
+        "familyId": "employment-status",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "full-time",
+        "ipa": "/ˌfʊlˈtaɪm/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "toàn thời gian",
+        "example": "She accepted a full-time position at the firm.",
+        "familyId": "employment-status",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "part-time",
+        "ipa": "/ˌpɑːtˈtaɪm/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bán thời gian",
+        "example": "He worked part-time while studying at university.",
+        "familyId": "employment-status",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "permanent",
+        "ipa": "/ˈpɜːmənənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lâu dài, biên chế chính thức",
+        "example": "After six months, she was offered a permanent role.",
+        "familyId": "employment-status",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "temporary",
+        "ipa": "/ˈtempərəri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tạm thời, thời vụ",
+        "example": "He took a temporary job during the holidays.",
+        "familyId": "employment-status",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contractor",
+        "ipa": "/kənˈtræktə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà thầu, người làm việc theo hợp đồng",
+        "example": "The company prefers to hire independent contractors.",
+        "familyId": "employment-status",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "remote work",
+        "ipa": "/rɪˈməʊt wɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "làm việc từ xa",
+        "example": "Remote work has become standard at many companies.",
+        "familyId": "employment-status",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "telecommute",
+        "ipa": "/ˈtelɪkəmjuːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm việc từ xa qua máy tính",
+        "example": "Many employees telecommute three days a week.",
+        "familyId": "employment-status",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stipend",
+        "ipa": "/ˈstaɪpend/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khoản trợ cấp, lương cố định",
+        "example": "Interns receive a monthly stipend during the program.",
+        "familyId": "employment-pay",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "remuneration",
+        "ipa": "/rɪˌmjuːnəˈreɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thù lao, tiền công",
+        "example": "Executive remuneration has increased sharply this year.",
+        "familyId": "employment-pay",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bonus",
+        "ipa": "/ˈbəʊnəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tiền thưởng",
+        "example": "Employees received a year-end bonus for strong performance.",
+        "familyId": "employment-pay",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "perk",
+        "ipa": "/pɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đặc quyền, quyền lợi phụ",
+        "example": "Free meals are one of the perks of working here.",
+        "familyId": "employment-pay",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "incentive",
+        "ipa": "/ɪnˈsentɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ưu đãi khuyến khích, động lực vật chất",
+        "example": "Sales incentives motivate the team to hit their targets.",
+        "familyId": "employment-pay",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "minimum wage",
+        "ipa": "/ˈmɪnɪməm weɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mức lương tối thiểu",
+        "example": "The government raised the minimum wage by ten percent.",
+        "familyId": "employment-pay",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pay rise",
+        "ipa": "/peɪ raɪz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc tăng lương",
+        "example": "She got a five percent pay rise after her review.",
+        "familyId": "employment-pay",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "payroll",
+        "ipa": "/ˈpeɪrəʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng lương, danh sách trả lương",
+        "example": "Payroll is processed on the last day of each month.",
+        "familyId": "employment-pay",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "earner",
+        "ipa": "/ˈɜːnə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người kiếm tiền, lao động hưởng lương",
+        "example": "She is the main earner in the family.",
+        "familyId": "employment-pay",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advance",
+        "ipa": "/ədˈvɑːns/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thăng tiến trong công việc",
+        "example": "Hard work helped him advance quickly in the company.",
+        "familyId": "employment-development",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "advancement",
+        "ipa": "/ədˈvɑːnsmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thăng tiến nghề nghiệp",
+        "example": "There are many opportunities for advancement here.",
+        "familyId": "employment-development",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "demotion",
+        "ipa": "/dɪˈməʊʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc giáng chức",
+        "example": "His demotion came after a series of poor decisions.",
+        "familyId": "employment-development",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "appraisal",
+        "ipa": "/əˈpreɪzəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đánh giá hiệu suất nhân viên",
+        "example": "Annual appraisals help identify training needs.",
+        "familyId": "employment-development",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mentor",
+        "ipa": "/ˈmentɔː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người cố vấn, người hướng dẫn",
+        "example": "Her mentor gave her invaluable career advice.",
+        "familyId": "employment-development",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mentorship",
+        "ipa": "/ˈmentɔːʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quan hệ cố vấn, chương trình dìu dắt",
+        "example": "The mentorship program pairs juniors with senior staff.",
+        "familyId": "employment-development",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "competence",
+        "ipa": "/ˈkɒmpɪtəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "năng lực chuyên môn",
+        "example": "She has demonstrated her competence in many projects.",
+        "familyId": "employment-skills",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "competent",
+        "ipa": "/ˈkɒmpɪtənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có năng lực, đủ trình độ",
+        "example": "He is a competent and experienced engineer.",
+        "familyId": "employment-skills",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "expertise",
+        "ipa": "/ˌekspɜːˈtiːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyên môn sâu",
+        "example": "Her expertise in marketing is widely recognized.",
+        "familyId": "employment-skills",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proficiency",
+        "ipa": "/prəˈfɪʃənsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự thành thạo",
+        "example": "Proficiency in English is required for this role.",
+        "familyId": "employment-skills",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "proficient",
+        "ipa": "/prəˈfɪʃənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thành thạo",
+        "example": "She is proficient in three programming languages.",
+        "familyId": "employment-skills",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "skilled",
+        "ipa": "/skɪld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có tay nghề, có kỹ năng",
+        "example": "Skilled workers are in high demand right now.",
+        "familyId": "employment-skills",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unskilled",
+        "ipa": "/ˌʌnˈskɪld/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không có tay nghề, lao động phổ thông",
+        "example": "Many unskilled jobs are being automated.",
+        "familyId": "employment-skills",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upskill",
+        "ipa": "/ˌʌpˈskɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nâng cao kỹ năng nghề",
+        "example": "The company invests heavily to upskill its workforce.",
+        "familyId": "employment-skills",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reskill",
+        "ipa": "/ˌriːˈskɪl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đào tạo lại để chuyển nghề",
+        "example": "Workers must reskill to keep up with new technology.",
+        "familyId": "employment-skills",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workforce",
+        "ipa": "/ˈwɜːkfɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lực lượng lao động",
+        "example": "The country has an aging workforce.",
+        "familyId": "employment-conditions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workplace",
+        "ipa": "/ˈwɜːkpleɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nơi làm việc, môi trường công sở",
+        "example": "A safe workplace is a basic right of every employee.",
+        "familyId": "employment-conditions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workload",
+        "ipa": "/ˈwɜːkləʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khối lượng công việc",
+        "example": "Her workload has doubled since the merger.",
+        "familyId": "employment-conditions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "workspace",
+        "ipa": "/ˈwɜːkspeɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "không gian làm việc",
+        "example": "Each employee has their own private workspace.",
+        "familyId": "employment-conditions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shift",
+        "ipa": "/ʃɪft/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ca làm việc",
+        "example": "He works the night shift at the factory.",
+        "familyId": "employment-conditions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overtime",
+        "ipa": "/ˈəʊvətaɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời gian làm thêm giờ",
+        "example": "Employees are paid extra for overtime work.",
+        "familyId": "employment-conditions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flextime",
+        "ipa": "/ˈfleksˌtaɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giờ làm linh hoạt",
+        "example": "Flextime helps parents balance work and family life.",
+        "familyId": "employment-conditions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "telework",
+        "ipa": "/ˈtelɪwɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công việc làm tại nhà qua công nghệ",
+        "example": "Telework reduces commuting time and costs.",
+        "familyId": "employment-conditions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "maternity leave",
+        "ipa": "/məˈtɜːnəti liːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ thai sản",
+        "example": "She returned to work after six months of maternity leave.",
+        "familyId": "employment-leave",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "paternity leave",
+        "ipa": "/pəˈtɜːnəti liːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ phép cho cha sau sinh",
+        "example": "Many fathers now take paternity leave to bond with newborns.",
+        "familyId": "employment-leave",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sick leave",
+        "ipa": "/sɪk liːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ phép vì bệnh",
+        "example": "Employees can take up to ten days of sick leave per year.",
+        "familyId": "employment-leave",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "annual leave",
+        "ipa": "/ˈænjuəl liːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phép năm",
+        "example": "She used her annual leave to travel to Japan.",
+        "familyId": "employment-leave",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "absenteeism",
+        "ipa": "/ˌæbsənˈtiːɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng nghỉ làm thường xuyên",
+        "example": "High absenteeism is hurting team productivity.",
+        "familyId": "employment-leave",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "presenteeism",
+        "ipa": "/ˌprezənˈtiːɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng đi làm khi không khoẻ hay thiếu hiệu quả",
+        "example": "Presenteeism reduces overall efficiency in many offices.",
+        "familyId": "employment-leave",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sabbatical leave",
+        "ipa": "/səˈbætɪkəl liːv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỳ nghỉ dài có lương để học hoặc nghiên cứu",
+        "example": "He took sabbatical leave to write a book.",
+        "familyId": "employment-leave",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resign",
+        "ipa": "/rɪˈzaɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "từ chức, xin nghỉ việc",
+        "example": "She decided to resign after years at the firm.",
+        "familyId": "employment-exit",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "resignation",
+        "ipa": "/ˌrezɪɡˈneɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đơn xin nghỉ việc, sự từ chức",
+        "example": "His resignation took the entire office by surprise.",
+        "familyId": "employment-exit",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dismiss",
+        "ipa": "/dɪsˈmɪs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sa thải, đuổi việc",
+        "example": "He was dismissed for repeated misconduct.",
+        "familyId": "employment-exit",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dismissal",
+        "ipa": "/dɪsˈmɪsəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc sa thải",
+        "example": "Unfair dismissal can be challenged at a tribunal.",
+        "familyId": "employment-exit",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "redundancy",
+        "ipa": "/rɪˈdʌndənsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cắt giảm nhân sự",
+        "example": "The company announced two hundred redundancies last week.",
+        "familyId": "employment-exit",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "redundant",
+        "ipa": "/rɪˈdʌndənt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị mất việc do cắt giảm",
+        "example": "Two hundred staff were made redundant after the merger.",
+        "familyId": "employment-exit",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "layoff",
+        "ipa": "/ˈleɪɒf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đợt sa thải hàng loạt",
+        "example": "Recent layoffs have affected the entire industry.",
+        "familyId": "employment-exit",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "severance",
+        "ipa": "/ˈsevərəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trợ cấp thôi việc",
+        "example": "Laid-off staff received six months of severance pay.",
+        "familyId": "employment-exit",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "retire",
+        "ipa": "/rɪˈtaɪə/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nghỉ hưu",
+        "example": "He plans to retire at the age of sixty-five.",
+        "familyId": "employment-exit",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "retirement",
+        "ipa": "/rɪˈtaɪəmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc về hưu, thời kỳ hưu trí",
+        "example": "She is enjoying her retirement after forty years of teaching.",
+        "familyId": "employment-exit",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pension",
+        "ipa": "/ˈpenʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lương hưu",
+        "example": "His monthly pension covers most living expenses.",
+        "familyId": "employment-exit",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "trade union",
+        "ipa": "/treɪd ˈjuːniən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công đoàn",
+        "example": "The trade union negotiated better conditions for workers.",
+        "familyId": "employment-relations",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "unionize",
+        "ipa": "/ˈjuːniənaɪz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thành lập hoặc tham gia công đoàn",
+        "example": "Warehouse workers voted to unionize last year.",
+        "familyId": "employment-relations",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "collective bargaining",
+        "ipa": "/kəˈlektɪv ˈbɑːɡənɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thương lượng tập thể",
+        "example": "Collective bargaining secured a five percent pay rise.",
+        "familyId": "employment-relations",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "picket",
+        "ipa": "/ˈpɪkɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hàng rào người biểu tình ở chỗ làm",
+        "example": "Workers formed a picket outside the factory gates.",
+        "familyId": "employment-relations",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "walkout",
+        "ipa": "/ˈwɔːkaʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc đình công, bỏ việc tập thể",
+        "example": "A one-day walkout disrupted services across the country.",
+        "familyId": "employment-relations",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grievance",
+        "ipa": "/ˈɡriːvəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khiếu nại của người lao động",
+        "example": "The company has a clear procedure for staff grievances.",
+        "familyId": "employment-relations",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burnout",
+        "ipa": "/ˈbɜːnaʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiệt sức nghề nghiệp",
+        "example": "Long hours have led to widespread employee burnout.",
+        "familyId": "employment-issues",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outsource",
+        "ipa": "/ˌaʊtˈsɔːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thuê ngoài làm công việc",
+        "example": "The firm decided to outsource its customer service.",
+        "familyId": "employment-issues",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "outsourcing",
+        "ipa": "/ˈaʊtsɔːsɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc thuê ngoài dịch vụ",
+        "example": "Outsourcing has transformed the global labour market.",
+        "familyId": "employment-issues",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "offshoring",
+        "ipa": "/ˌɒfˈʃɔːrɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuyển công việc ra nước ngoài",
+        "example": "Offshoring led to the closure of several local plants.",
+        "familyId": "employment-issues",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "underemployment",
+        "ipa": "/ˌʌndərɪmˈplɔɪmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tình trạng thiếu việc làm phù hợp",
+        "example": "Underemployment is a serious problem for many graduates.",
+        "familyId": "employment-issues",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gig economy",
+        "ipa": "/ɡɪɡ ɪˈkɒnəmi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền kinh tế việc làm ngắn hạn",
+        "example": "The gig economy offers flexibility but little job security.",
+        "familyId": "employment-issues",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "career",
+        "ipa": "/kəˈrɪr/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nghiệp",
+        "example": "She has built a successful career in marketing.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cubicle",
+        "ipa": "/ˈkjuːbɪkl/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "ngăn làm việc, buồng nhỏ",
+        "example": "She spends eight hours a day in a small office cubicle.",
+        "familyId": "cubicle",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "technician",
+        "ipa": "/tekˈnɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kỹ thuật viên",
+        "example": "The technician repaired the air conditioner within an hour.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "badge",
+        "ipa": "/bædʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thẻ đeo, phù hiệu",
+        "example": "All employees must wear an ID badge at work.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    }
+  ]
+}

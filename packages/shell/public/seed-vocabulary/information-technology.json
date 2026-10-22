@@ -1,0 +1,950 @@
+{
+  "_meta": {
+    "topicId": "information-technology",
+    "topicName": "Information Technology",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Information Technology (B1-B2)",
+    "totalCards": 72,
+    "totalFamilies": 11,
+    "generatedAt": "2026-05-12",
+    "note": "Tu vung nen tang cho chu de Cong nghe thong tin, gom du lieu, he thong may tinh, phan mem, mang, internet, thiet bi, hanh dong so va bao mat. Da bo sung cac tu/cum tu IT dang thieu tu cac seed topic lien quan."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "data",
+        "ipa": "/ˈdeɪ.tə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dữ liệu",
+        "example": "Modern applications collect and process large amounts of data.",
+        "familyId": "it-data",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "database",
+        "ipa": "/ˈdeɪ.tə.beɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cơ sở dữ liệu",
+        "example": "The company stores customer records in a secure database.",
+        "familyId": "it-data",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "file",
+        "ipa": "/faɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tệp, tập tin",
+        "example": "Please save the file before closing the program.",
+        "familyId": "it-data",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "folder",
+        "ipa": "/ˈfəʊl.dər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thư mục",
+        "example": "I created a folder for all project documents.",
+        "familyId": "it-data",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "storage",
+        "ipa": "/ˈstɔː.rɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ nhớ lưu trữ, dung lượng lưu trữ",
+        "example": "Cloud storage lets users access files from different devices.",
+        "familyId": "it-data",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "backup",
+        "ipa": "/ˈbæk.ʌp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản sao lưu",
+        "example": "You should keep a backup of important files.",
+        "familyId": "it-data",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "memory",
+        "ipa": "/ˈmem.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ nhớ",
+        "example": "The computer needs more memory to run large applications.",
+        "familyId": "it-data",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "information",
+        "ipa": "/ˌɪn.fəˈmeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thông tin",
+        "example": "Users need accurate information to make decisions online.",
+        "familyId": "it-data",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "computer",
+        "ipa": "/kəmˈpjuː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy tính",
+        "example": "A computer can process information very quickly.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "laptop",
+        "ipa": "/ˈlæp.tɒp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy tính xách tay",
+        "example": "He put his laptop in his backpack before class.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "device",
+        "ipa": "/dɪˈvaɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiết bị",
+        "example": "Many people use more than one digital device every day.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hardware",
+        "ipa": "/ˈhɑːd.weər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần cứng",
+        "example": "Hardware includes the physical parts of a computer.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "keyboard",
+        "ipa": "/ˈkiː.bɔːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bàn phím",
+        "example": "She typed her password on the keyboard.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mouse",
+        "ipa": "/maʊs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chuột máy tính",
+        "example": "Use the mouse to click the icon.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "screen",
+        "ipa": "/skriːn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "màn hình",
+        "example": "The screen is bright enough to read outdoors.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "processor",
+        "ipa": "/ˈprəʊ.ses.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "bộ xử lý",
+        "example": "A faster processor improves the performance of the machine.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "battery",
+        "ipa": "/ˈbæt.ər.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "pin",
+        "example": "My phone battery runs out quickly when I use mobile data.",
+        "familyId": "it-devices-hardware",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "software",
+        "ipa": "/ˈsɒft.weər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phần mềm",
+        "example": "The software helps users manage their daily tasks.",
+        "familyId": "it-software-systems",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "program",
+        "ipa": "/ˈprəʊ.ɡræm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chương trình máy tính",
+        "example": "This program checks spelling automatically.",
+        "familyId": "it-software-systems",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "application",
+        "ipa": "/ˌæp.lɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ứng dụng",
+        "example": "The application is designed for beginner learners of English.",
+        "familyId": "it-software-systems",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "app",
+        "ipa": "/æp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ứng dụng",
+        "example": "This app sends a notification when a lesson is ready.",
+        "familyId": "it-software-systems",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "system",
+        "ipa": "/ˈsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ thống",
+        "example": "The system saves user progress automatically.",
+        "familyId": "it-software-systems",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "operating system",
+        "ipa": "/ˈɒp.ər.eɪ.tɪŋ ˌsɪs.təm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hệ điều hành",
+        "example": "An operating system manages hardware and software resources.",
+        "familyId": "it-software-systems",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "platform",
+        "ipa": "/ˈplæt.fɔːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền tảng",
+        "example": "The learning platform works on phones and laptops.",
+        "familyId": "it-software-systems",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "interface",
+        "ipa": "/ˈɪn.tə.feɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "giao diện",
+        "example": "A simple interface makes the app easier to use.",
+        "familyId": "it-software-systems",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feature",
+        "ipa": "/ˈfiː.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính năng",
+        "example": "The new feature allows users to review difficult cards.",
+        "familyId": "it-software-systems",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bug",
+        "ipa": "/bʌɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lỗi phần mềm",
+        "example": "The developer fixed a bug in the login screen.",
+        "familyId": "it-software-systems",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "update",
+        "ipa": "/ˌʌpˈdeɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bản cập nhật",
+        "example": "The latest update improves security and performance.",
+        "familyId": "it-software-systems",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "internet",
+        "ipa": "/ˈɪn.tə.net/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "internet",
+        "example": "Students use the internet to search for information.",
+        "familyId": "it-internet-network",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "website",
+        "ipa": "/ˈweb.saɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trang web",
+        "example": "She mentioned a useful website during the meeting.",
+        "familyId": "it-internet-network",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "web browser",
+        "ipa": "/web ˈbraʊ.zər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "trình duyệt web",
+        "example": "Open the website in a web browser.",
+        "familyId": "it-internet-network",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "network",
+        "ipa": "/ˈnet.wɜːk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mạng, hệ thống kết nối",
+        "example": "The office network connects all computers to the server.",
+        "familyId": "it-internet-network",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "Wi-Fi",
+        "ipa": "/ˈwaɪ.faɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mạng không dây Wi-Fi",
+        "example": "The Wi-Fi is too slow for a video call.",
+        "familyId": "it-internet-network",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "server",
+        "ipa": "/ˈsɜː.vər/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "máy chủ",
+        "example": "The server handles requests from many users at the same time.",
+        "familyId": "it-internet-network",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cloud",
+        "ipa": "/klaʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đám mây, dịch vụ lưu trữ trực tuyến",
+        "example": "Many companies store backups in the cloud.",
+        "familyId": "it-internet-network",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "online",
+        "ipa": "/ˌɒnˈlaɪn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trực tuyến",
+        "example": "Online learning has become very popular.",
+        "familyId": "it-internet-network",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "email",
+        "ipa": "/ˈiː.meɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "email, thư điện tử",
+        "example": "He wrote a long email to his manager last night.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "message",
+        "ipa": "/ˈmes.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tin nhắn, thông điệp",
+        "example": "She sent me a message to confirm the time.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "notification",
+        "ipa": "/ˌnəʊ.tɪ.fɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thông báo",
+        "example": "I turned off notifications during dinner.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "social media",
+        "ipa": "/ˌsəʊ.ʃəl ˈmiː.di.ə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mạng xã hội",
+        "example": "Social media changes how people communicate.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "post",
+        "ipa": "/pəʊst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bài đăng",
+        "example": "Her post received hundreds of comments online.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "comment",
+        "ipa": "/ˈkɒm.ent/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bình luận",
+        "example": "His comment started a long discussion online.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "share",
+        "ipa": "/ʃeər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chia sẻ",
+        "example": "People share news quickly on social media.",
+        "familyId": "it-digital-communication",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "download",
+        "ipa": "/ˌdaʊnˈləʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tải xuống",
+        "example": "Download the file before the meeting.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "upload",
+        "ipa": "/ˌʌpˈləʊd/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tải lên",
+        "example": "Upload your assignment to the website.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "browse the internet",
+        "ipa": "/braʊz ði ˈɪn.tə.net/",
+        "partOfSpeech": "verb phrase",
+        "difficulty": "advanced",
+        "meaning": "lướt internet",
+        "example": "He browses the internet for news in the morning.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scroll",
+        "ipa": "/skrəʊl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cuộn màn hình",
+        "example": "She scrolled through social media for an hour.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "click",
+        "ipa": "/klɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhấp chuột, bấm",
+        "example": "Click the button to submit the form.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "log in",
+        "ipa": "/lɒɡ ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đăng nhập",
+        "example": "Users must log in before they can view their progress.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "log out",
+        "ipa": "/lɒɡ aʊt/",
+        "partOfSpeech": "phrasal verb",
+        "difficulty": "intermediate",
+        "meaning": "đăng xuất",
+        "example": "Remember to log out on a shared computer.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "charge",
+        "ipa": "/tʃɑːdʒ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sạc pin",
+        "example": "I need to charge my phone before going out.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "install",
+        "ipa": "/ɪnˈstɔːl/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cài đặt",
+        "example": "You need to install the app before using it offline.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "delete",
+        "ipa": "/dɪˈliːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xóa",
+        "example": "Do not delete important system files.",
+        "familyId": "it-digital-actions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "code",
+        "ipa": "/kəʊd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mã, mã lập trình",
+        "example": "The developer wrote code to fix the error.",
+        "familyId": "it-programming",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coding",
+        "ipa": "/ˈkəʊ.dɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc lập trình",
+        "example": "Coding teaches students how to solve problems logically.",
+        "familyId": "it-programming",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "programming",
+        "ipa": "/ˈprəʊ.ɡræm.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lập trình",
+        "example": "Programming is an important skill in information technology.",
+        "familyId": "it-programming",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "developer",
+        "ipa": "/dɪˈvel.ə.pər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lập trình viên, nhà phát triển",
+        "example": "The developer improved the app's performance.",
+        "familyId": "it-programming",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "algorithm",
+        "ipa": "/ˈæl.ɡə.rɪ.ðəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "thuật toán",
+        "example": "The algorithm recommends lessons based on user progress.",
+        "familyId": "it-programming",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "function",
+        "ipa": "/ˈfʌŋk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "hàm, chức năng",
+        "example": "This function calculates the next review date.",
+        "familyId": "it-programming",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "error",
+        "ipa": "/ˈer.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lỗi",
+        "example": "An error appeared when the user submitted the form.",
+        "familyId": "it-programming",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "debug",
+        "ipa": "/ˌdiːˈbʌɡ/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "gỡ lỗi",
+        "example": "Engineers debug the program before release.",
+        "familyId": "it-programming",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "security",
+        "ipa": "/sɪˈkjʊə.rə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảo mật, an ninh",
+        "example": "The latest update improves security and protects user data.",
+        "familyId": "it-security",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "password",
+        "ipa": "/ˈpɑːs.wɜːd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mật khẩu",
+        "example": "Choose a strong password for your account.",
+        "familyId": "it-security",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "account",
+        "ipa": "/əˈkaʊnt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài khoản",
+        "example": "You need an account to save your learning progress.",
+        "familyId": "it-security",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "privacy",
+        "ipa": "/ˈprɪv.ə.si/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự riêng tư, quyền riêng tư",
+        "example": "Online privacy is a serious concern today.",
+        "familyId": "it-security",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "virus",
+        "ipa": "/ˈvaɪə.rəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vi-rút máy tính",
+        "example": "A virus can damage files on a computer.",
+        "familyId": "it-security",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "digital",
+        "ipa": "/ˈdɪdʒ.ɪ.təl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "kỹ thuật số",
+        "example": "Digital tools can improve efficiency in daily tasks.",
+        "familyId": "it-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "technology",
+        "ipa": "/tekˈnɒl.ə.dʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "công nghệ",
+        "example": "Technology can improve efficiency in daily tasks.",
+        "familyId": "it-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "screen time",
+        "ipa": "/ˈskriːn taɪm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thời gian dùng thiết bị màn hình",
+        "example": "Too much screen time can affect sleep quality.",
+        "familyId": "it-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "automatic",
+        "ipa": "/ˌɔː.təˈmæt.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự động, không cần điều khiển tay",
+        "example": "The software has an automatic update feature.",
+        "familyId": "automatic",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "automatically",
+        "ipa": "/ˌɔː.təˈmæt.ɪ.kli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách tự động, tự động mà không cần thao tác",
+        "example": "The system automatically backs up your data every night.",
+        "familyId": "automatic",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drone",
+        "ipa": "/drəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "máy bay không người lái, thiết bị bay điều khiển từ xa",
+        "example": "The company uses drones to deliver small packages.",
+        "familyId": "drone",
+        "familyOrder": 1,
+        "tags": []
+      }
+    }
+  ]
+}

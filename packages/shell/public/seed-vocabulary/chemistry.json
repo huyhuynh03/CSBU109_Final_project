@@ -1,0 +1,470 @@
+{
+  "_meta": {
+    "topicId": "chemistry",
+    "topicName": "Chemistry",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Chemistry (B1-B2)",
+    "totalCards": 35,
+    "totalFamilies": 8,
+    "generatedAt": "2026-05-08",
+    "note": "Tu vung va thuat ngu mon Hoa hoc, gom chat, phan tu, nguyen to, bang tuan hoan, phan ung hoa hoc, axit-bazo, dung dich, trang thai vat chat va dung cu thi nghiem hoa hoc. Cac hat co ban nhu proton/electron/neutron duoc tach sang Vat ly; phong thi nghiem chung duoc tach sang Khoa hoc."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "chemistry",
+        "ipa": "/ˈkem.ɪ.stri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hóa học",
+        "example": "Chemistry explains how substances react with each other.",
+        "familyId": "chemistry-general",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "substance",
+        "ipa": "/ˈsʌb.stəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất",
+        "example": "Water is a common chemical substance.",
+        "familyId": "chemistry-general",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "matter",
+        "ipa": "/ˈmæt.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vật chất",
+        "example": "Matter can exist as a solid, liquid or gas.",
+        "familyId": "chemistry-general",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "molecule",
+        "ipa": "/ˈmɒl.ɪ.kjuːl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phân tử",
+        "example": "A water molecule contains hydrogen and oxygen.",
+        "familyId": "atomic-structure",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "element",
+        "ipa": "/ˈel.ɪ.mənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nguyên tố",
+        "example": "Oxygen is a chemical element.",
+        "familyId": "atomic-structure",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compound",
+        "ipa": "/ˈkɒm.paʊnd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hợp chất",
+        "example": "Salt is a compound of sodium and chlorine.",
+        "familyId": "atomic-structure",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "periodic table",
+        "ipa": "/ˌpɪə.riˈɒd.ɪk ˈteɪ.bəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bảng tuần hoàn",
+        "example": "The periodic table organizes chemical elements.",
+        "familyId": "periodic-table",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "metal",
+        "ipa": "/ˈmet.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kim loại",
+        "example": "Iron is a common metal.",
+        "familyId": "periodic-table",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "non-metal",
+        "ipa": "/ˌnɒn ˈmet.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phi kim",
+        "example": "Oxygen is a non-metal.",
+        "familyId": "periodic-table",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "atomic number",
+        "ipa": "/əˌtɒm.ɪk ˈnʌm.bər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "số nguyên tử",
+        "example": "The atomic number of carbon is six.",
+        "familyId": "periodic-table",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chemical reaction",
+        "ipa": "/ˌkem.ɪ.kəl riˈæk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phản ứng hóa học",
+        "example": "A chemical reaction creates new substances.",
+        "familyId": "reactions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reactant",
+        "ipa": "/riˈæk.tənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất phản ứng",
+        "example": "Reactants are used up in a reaction.",
+        "familyId": "reactions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "product",
+        "ipa": "/ˈprɒd.ʌkt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sản phẩm phản ứng",
+        "example": "The products form at the end of a reaction.",
+        "familyId": "reactions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "catalyst",
+        "ipa": "/ˈkæt.əl.ɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất xúc tác",
+        "example": "A catalyst speeds up a chemical reaction.",
+        "familyId": "reactions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oxidation",
+        "ipa": "/ˌɒk.sɪˈdeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự oxy hóa",
+        "example": "Rusting is a form of oxidation.",
+        "familyId": "reactions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "combustion",
+        "ipa": "/kəmˈbʌs.tʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cháy",
+        "example": "Combustion releases heat and light.",
+        "familyId": "reactions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acid",
+        "ipa": "/ˈæs.ɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "axit",
+        "example": "Lemon juice contains acid.",
+        "familyId": "acids-bases",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "base",
+        "ipa": "/beɪs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bazơ, chất kiềm",
+        "example": "A base can neutralize an acid.",
+        "familyId": "acids-bases",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "alkali",
+        "ipa": "/ˈæl.kəl.aɪ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kiềm",
+        "example": "An alkali dissolves in water and forms a basic solution.",
+        "familyId": "acids-bases",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pH",
+        "ipa": "/ˌpiː ˈeɪtʃ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "độ pH",
+        "example": "The pH scale measures acidity.",
+        "familyId": "acids-bases",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "neutralisation",
+        "ipa": "/ˌnjuː.trə.laɪˈzeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trung hòa",
+        "example": "Neutralisation occurs when an acid reacts with a base.",
+        "familyId": "acids-bases",
+        "familyOrder": 5,
+        "tags": [],
+        "note": "US English: neutralization"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solution",
+        "ipa": "/səˈluː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dung dịch",
+        "example": "Salt water is a solution.",
+        "familyId": "mixtures-solutions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solvent",
+        "ipa": "/ˈsɒl.vənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "dung môi",
+        "example": "Water is a common solvent.",
+        "familyId": "mixtures-solutions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solute",
+        "ipa": "/ˈsɒl.juːt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất tan",
+        "example": "Sugar is the solute in sugar water.",
+        "familyId": "mixtures-solutions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mixture",
+        "ipa": "/ˈmɪks.tʃər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hỗn hợp",
+        "example": "Air is a mixture of gases.",
+        "familyId": "mixtures-solutions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "concentration",
+        "ipa": "/ˌkɒn.sənˈtreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nồng độ",
+        "example": "The concentration of salt in the solution is high.",
+        "familyId": "mixtures-solutions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "solid",
+        "ipa": "/ˈsɒl.ɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất rắn",
+        "example": "Ice is water in a solid state.",
+        "familyId": "states-matter",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "liquid",
+        "ipa": "/ˈlɪk.wɪd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất lỏng",
+        "example": "Water is a liquid at room temperature.",
+        "familyId": "states-matter",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "gas",
+        "ipa": "/ɡæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất khí",
+        "example": "Oxygen is a gas.",
+        "familyId": "states-matter",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "evaporation",
+        "ipa": "/ɪˌvæp.əˈreɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bay hơi",
+        "example": "Evaporation changes liquid into gas.",
+        "familyId": "states-matter",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "condensation",
+        "ipa": "/ˌkɒn.denˈseɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ngưng tụ",
+        "example": "Condensation forms water droplets on a cold surface.",
+        "familyId": "states-matter",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "beaker",
+        "ipa": "/ˈbiː.kər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cốc thủy tinh thí nghiệm",
+        "example": "Pour the solution into a beaker.",
+        "familyId": "lab-chemistry",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "test tube",
+        "ipa": "/ˈtest tjuːb/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ống nghiệm",
+        "example": "The liquid changed colour in the test tube.",
+        "familyId": "lab-chemistry",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pipette",
+        "ipa": "/pɪˈpet/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ống nhỏ giọt, pipet",
+        "example": "Use a pipette to measure a small amount of liquid.",
+        "familyId": "lab-chemistry",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "safety goggles",
+        "ipa": "/ˈseɪf.ti ˌɡɒɡ.əlz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kính bảo hộ",
+        "example": "Students must wear safety goggles during experiments.",
+        "familyId": "lab-chemistry",
+        "familyOrder": 5,
+        "tags": []
+      }
+    }
+  ]
+}

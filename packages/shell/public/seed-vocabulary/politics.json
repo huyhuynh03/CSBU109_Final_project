@@ -1,0 +1,1288 @@
+{
+  "_meta": {
+    "topicId": "politics",
+    "topicName": "Chính trị",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Politics (B1-B2)",
+    "totalCards": 98,
+    "totalFamilies": 12,
+    "generatedAt": "2026-05-26",
+    "note": "Tu vung chu de Chinh tri, bao gom cac he thong chinh tri, chinh phu, quoc hoi, bau cu, y thuc he, va cac vi tri chinh tri. KHONG trung lap voi cac topic khac."
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "democracy",
+        "ipa": "/dɪˈmɒkrəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền dân chủ",
+        "example": "Most Western countries have a parliamentary democracy.",
+        "familyId": "politics-democracy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "democratic",
+        "ipa": "/ˌdeməˈkrætɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về dân chủ",
+        "example": "The country held its first democratic election in decades.",
+        "familyId": "politics-democracy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "democrat",
+        "ipa": "/ˈdeməkræt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người theo chủ nghĩa dân chủ",
+        "example": "He has been a lifelong democrat fighting for civil rights.",
+        "familyId": "politics-democracy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "democratization",
+        "ipa": "/dɪˌmɒkrətaɪˈzeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quá trình dân chủ hoá",
+        "example": "Democratization has brought new freedoms to many nations.",
+        "familyId": "politics-democracy",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "republic",
+        "ipa": "/rɪˈpʌblɪk/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nền cộng hoà",
+        "example": "France has been a republic since 1870.",
+        "familyId": "politics-democracy",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "republican",
+        "ipa": "/rɪˈpʌblɪkən/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về nền cộng hoà",
+        "example": "The country adopted a republican form of government.",
+        "familyId": "politics-democracy",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "autocracy",
+        "ipa": "/ɔːˈtɒkrəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chế độ chuyên quyền, độc tài",
+        "example": "Autocracy concentrates all power in one ruler.",
+        "familyId": "politics-democracy",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oligarchy",
+        "ipa": "/ˈɒlɪɡɑːki/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chế độ đầu sỏ chính trị, nhóm tinh hoa cai trị",
+        "example": "Critics argue that the country is becoming an oligarchy.",
+        "familyId": "politics-democracy",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "govern",
+        "ipa": "/ˈɡʌvən/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cai trị, quản lý đất nước",
+        "example": "The party has governed the country for over a decade.",
+        "familyId": "politics-government",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "government",
+        "ipa": "/ˈɡʌvənmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chính phủ",
+        "example": "The government announced a new tax policy yesterday.",
+        "familyId": "politics-government",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "governor",
+        "ipa": "/ˈɡʌvənə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thống đốc, người đứng đầu một bang",
+        "example": "The governor signed the new education bill into law.",
+        "familyId": "politics-government",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "governance",
+        "ipa": "/ˈɡʌvənəns/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc quản trị, điều hành",
+        "example": "Good governance is essential for economic stability.",
+        "familyId": "politics-government",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "administration",
+        "ipa": "/ədˌmɪnɪˈstreɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chính quyền, ban điều hành",
+        "example": "The new administration promised major political reforms.",
+        "familyId": "politics-government",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "administrator",
+        "ipa": "/ədˈmɪnɪstreɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người quản lý, viên chức điều hành",
+        "example": "Senior administrators meet weekly to discuss policy.",
+        "familyId": "politics-government",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "regime",
+        "ipa": "/reɪˈʒiːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chính thể, chế độ chính trị",
+        "example": "The military regime banned all political opposition.",
+        "familyId": "politics-government",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "statesman",
+        "ipa": "/ˈsteɪtsmən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chính khách lão thành",
+        "example": "He was respected as an elder statesman of his party.",
+        "familyId": "politics-government",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parliament",
+        "ipa": "/ˈpɑːləmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nghị viện, quốc hội",
+        "example": "Parliament will vote on the proposed bill next week.",
+        "familyId": "politics-parliament",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "parliamentary",
+        "ipa": "/ˌpɑːləˈmentəri/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về nghị viện, quốc hội",
+        "example": "A parliamentary committee will investigate the scandal.",
+        "familyId": "politics-parliament",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "congress",
+        "ipa": "/ˈkɒŋɡres/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quốc hội, đại hội",
+        "example": "The bill needs approval from both houses of Congress.",
+        "familyId": "politics-parliament",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "congressional",
+        "ipa": "/kənˈɡreʃənəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về quốc hội",
+        "example": "Congressional hearings will begin next month.",
+        "familyId": "politics-parliament",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "senate",
+        "ipa": "/ˈsenɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thượng viện",
+        "example": "The Senate confirmed the nomination by a narrow margin.",
+        "familyId": "politics-parliament",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "senator",
+        "ipa": "/ˈsenətə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thượng nghị sĩ",
+        "example": "The senator gave a powerful speech on healthcare reform.",
+        "familyId": "politics-parliament",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "assembly",
+        "ipa": "/əˈsembli/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hội đồng lập pháp, hội nghị",
+        "example": "The national assembly meets twice a year.",
+        "familyId": "politics-parliament",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chamber",
+        "ipa": "/ˈtʃeɪmbə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "viện trong cơ quan lập pháp",
+        "example": "The bill passed the lower chamber with strong support.",
+        "familyId": "politics-parliament",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "minister",
+        "ipa": "/ˈmɪnɪstə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ trưởng",
+        "example": "The foreign minister met with her counterpart yesterday.",
+        "familyId": "politics-leader",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ministry",
+        "ipa": "/ˈmɪnɪstri/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bộ trong chính phủ",
+        "example": "The Ministry of Education launched a new program.",
+        "familyId": "politics-leader",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "premier",
+        "ipa": "/ˈpremiə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ tướng",
+        "example": "The premier addressed the nation on television.",
+        "familyId": "politics-leader",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "chancellor",
+        "ipa": "/ˈtʃɑːnsələ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủ tướng, viện trưởng",
+        "example": "The chancellor announced new economic measures today.",
+        "familyId": "politics-leader",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ambassador",
+        "ipa": "/æmˈbæsədə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại sứ",
+        "example": "The ambassador presented her credentials to the president.",
+        "familyId": "politics-leader",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "embassy",
+        "ipa": "/ˈembəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đại sứ quán",
+        "example": "Citizens were urged to contact the embassy in case of trouble.",
+        "familyId": "politics-leader",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dictator",
+        "ipa": "/dɪkˈteɪtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ độc tài",
+        "example": "The dictator ruled the country with an iron fist.",
+        "familyId": "politics-leader",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dictatorship",
+        "ipa": "/dɪkˈteɪtəʃɪp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chế độ độc tài",
+        "example": "The dictatorship lasted nearly thirty years.",
+        "familyId": "politics-leader",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "monarch",
+        "ipa": "/ˈmɒnək/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "vua, quốc vương",
+        "example": "The monarch opened the new session of parliament.",
+        "familyId": "politics-leader",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "throne",
+        "ipa": "/θrəʊn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "ngai vàng, ngôi vua",
+        "example": "She succeeded her father to the throne in 2020.",
+        "familyId": "politics-leader",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "elect",
+        "ipa": "/ɪˈlekt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bầu chọn",
+        "example": "Citizens will elect a new president in November.",
+        "familyId": "politics-elections",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "election",
+        "ipa": "/ɪˈlekʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc bầu cử",
+        "example": "The general election will be held next spring.",
+        "familyId": "politics-elections",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electoral",
+        "ipa": "/ɪˈlektərəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về bầu cử",
+        "example": "Reforms to the electoral system are long overdue.",
+        "familyId": "politics-elections",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "electorate",
+        "ipa": "/ɪˈlektərət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cử tri đoàn, tập hợp người đi bầu",
+        "example": "The electorate is divided over the new immigration law.",
+        "familyId": "politics-elections",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vote",
+        "ipa": "/vəʊt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bỏ phiếu, biểu quyết",
+        "example": "Millions of people voted in the recent election.",
+        "familyId": "politics-elections",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "voter",
+        "ipa": "/ˈvəʊtə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cử tri, người đi bầu",
+        "example": "Voter turnout was unusually high this year.",
+        "familyId": "politics-elections",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ballot",
+        "ipa": "/ˈbælət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lá phiếu, cuộc bỏ phiếu kín",
+        "example": "Each citizen received a ballot at the polling station.",
+        "familyId": "politics-elections",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "poll",
+        "ipa": "/pəʊl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc thăm dò ý kiến, cuộc bầu cử",
+        "example": "Recent polls show the candidate leading by ten points.",
+        "familyId": "politics-elections",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "referendum",
+        "ipa": "/ˌrefəˈrendəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc trưng cầu dân ý",
+        "example": "The referendum on independence narrowly failed.",
+        "familyId": "politics-elections",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ideology",
+        "ipa": "/ˌaɪdiˈɒlədʒi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hệ tư tưởng, ý thức hệ",
+        "example": "The two parties have very different ideologies.",
+        "familyId": "politics-ideology",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ideological",
+        "ipa": "/ˌaɪdiəˈlɒdʒɪkəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về tư tưởng, ý thức hệ",
+        "example": "The conflict has clear ideological roots.",
+        "familyId": "politics-ideology",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "liberal",
+        "ipa": "/ˈlɪbərəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tự do, có tư tưởng cấp tiến",
+        "example": "She holds liberal views on most social issues.",
+        "familyId": "politics-ideology",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "liberalism",
+        "ipa": "/ˈlɪbərəlɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa tự do",
+        "example": "Classical liberalism emphasizes individual rights.",
+        "familyId": "politics-ideology",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conservative",
+        "ipa": "/kənˈsɜːvətɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bảo thủ, theo chủ nghĩa truyền thống",
+        "example": "He has always held conservative political views.",
+        "familyId": "politics-ideology",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conservatism",
+        "ipa": "/kənˈsɜːvətɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa bảo thủ",
+        "example": "Conservatism remains influential in rural areas.",
+        "familyId": "politics-ideology",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "socialist",
+        "ipa": "/ˈsəʊʃəlɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc chủ nghĩa xã hội",
+        "example": "The socialist party won the most seats in parliament.",
+        "familyId": "politics-ideology",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "socialism",
+        "ipa": "/ˈsəʊʃəlɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa xã hội",
+        "example": "Democratic socialism is gaining popularity among young voters.",
+        "familyId": "politics-ideology",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "communist",
+        "ipa": "/ˈkɒmjənɪst/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc chủ nghĩa cộng sản",
+        "example": "The country had a communist government for decades.",
+        "familyId": "politics-ideology",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "communism",
+        "ipa": "/ˈkɒmjənɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa cộng sản",
+        "example": "Communism rose to prominence in the early twentieth century.",
+        "familyId": "politics-ideology",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protest",
+        "ipa": "/ˈprəʊtest/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc biểu tình, sự phản đối",
+        "example": "Thousands joined the protest against the new law.",
+        "familyId": "politics-actions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protester",
+        "ipa": "/prəˈtestə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người biểu tình",
+        "example": "Protesters gathered outside the parliament building.",
+        "familyId": "politics-actions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "activist",
+        "ipa": "/ˈæktɪvɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà hoạt động chính trị, xã hội",
+        "example": "Activists demanded immediate action on climate change.",
+        "familyId": "politics-actions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "activism",
+        "ipa": "/ˈæktɪvɪzəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hoạt động đấu tranh chính trị, xã hội",
+        "example": "Online activism has grown significantly in recent years.",
+        "familyId": "politics-actions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "petition",
+        "ipa": "/pəˈtɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đơn kiến nghị, đơn thỉnh nguyện",
+        "example": "More than a million people signed the petition.",
+        "familyId": "politics-actions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "manifesto",
+        "ipa": "/ˌmænɪˈfestəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tuyên ngôn chính trị, cương lĩnh",
+        "example": "The party published its manifesto ahead of the election.",
+        "familyId": "politics-actions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lobby",
+        "ipa": "/ˈlɒbi/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vận động hành lang chính trị",
+        "example": "Industry groups lobbied hard against the proposed regulations.",
+        "familyId": "politics-actions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lobbyist",
+        "ipa": "/ˈlɒbiɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người vận động hành lang",
+        "example": "Lobbyists wield considerable influence in the capital.",
+        "familyId": "politics-actions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "policy",
+        "ipa": "/ˈpɒləsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chính sách",
+        "example": "The government announced a new foreign policy approach.",
+        "familyId": "politics-process",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "policymaker",
+        "ipa": "/ˈpɒləsiˌmeɪkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà hoạch định chính sách",
+        "example": "Policymakers must balance many competing interests.",
+        "familyId": "politics-process",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "legislative",
+        "ipa": "/ˈledʒɪslətɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về lập pháp",
+        "example": "The legislative branch passes the laws of the country.",
+        "familyId": "politics-process",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lawmaker",
+        "ipa": "/ˈlɔːmeɪkə/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà lập pháp, người làm luật",
+        "example": "Lawmakers debated the bill for several hours.",
+        "familyId": "politics-process",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mandate",
+        "ipa": "/ˈmændeɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "uỷ thác chính trị, sự uỷ nhiệm của cử tri",
+        "example": "The party claimed a clear mandate from voters.",
+        "familyId": "politics-process",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "veto",
+        "ipa": "/ˈviːtəʊ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phủ quyết",
+        "example": "The president vetoed the controversial budget bill.",
+        "familyId": "politics-process",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "amendment",
+        "ipa": "/əˈmendmənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tu chính án, sửa đổi luật",
+        "example": "The amendment requires a two-thirds majority to pass.",
+        "familyId": "politics-process",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ratify",
+        "ipa": "/ˈrætɪfaɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phê chuẩn, thông qua chính thức",
+        "example": "The senate must ratify the treaty before it takes effect.",
+        "familyId": "politics-process",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ratification",
+        "ipa": "/ˌrætɪfɪˈkeɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phê chuẩn, thông qua chính thức",
+        "example": "Ratification of the agreement is expected by next month.",
+        "familyId": "politics-process",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coup",
+        "ipa": "/kuː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cuộc đảo chính",
+        "example": "The military launched a coup against the elected government.",
+        "familyId": "politics-conflict",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dissident",
+        "ipa": "/ˈdɪsɪdənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người bất đồng chính kiến",
+        "example": "The dissident was imprisoned for criticising the regime.",
+        "familyId": "politics-conflict",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "asylum",
+        "ipa": "/əˈsaɪləm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "quyền tị nạn chính trị",
+        "example": "She sought political asylum in a neighboring country.",
+        "familyId": "politics-conflict",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "refugee",
+        "ipa": "/ˌrefjʊˈdʒiː/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người tị nạn",
+        "example": "Thousands of refugees have crossed the border this year.",
+        "familyId": "politics-conflict",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "exile",
+        "ipa": "/ˈeksaɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự lưu vong, người bị lưu vong",
+        "example": "He spent twenty years in exile before returning home.",
+        "familyId": "politics-conflict",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "annex",
+        "ipa": "/əˈneks/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sáp nhập lãnh thổ",
+        "example": "The country tried to annex the disputed territory.",
+        "familyId": "politics-conflict",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "annexation",
+        "ipa": "/ˌænekˈseɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự sáp nhập lãnh thổ",
+        "example": "The annexation was condemned by the international community.",
+        "familyId": "politics-conflict",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tyrant",
+        "ipa": "/ˈtaɪrənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kẻ bạo chúa, độc tài tàn ác",
+        "example": "Citizens rose up against the tyrant after years of oppression.",
+        "familyId": "politics-conflict",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tyranny",
+        "ipa": "/ˈtɪrəni/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự cai trị tàn bạo, chuyên chế",
+        "example": "The country finally escaped decades of tyranny.",
+        "familyId": "politics-conflict",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "partisan",
+        "ipa": "/ˈpɑːtɪzæn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thiên vị một đảng phái",
+        "example": "The vote split along strictly partisan lines.",
+        "familyId": "politics-positions",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bipartisan",
+        "ipa": "/baɪˈpɑːtɪzæn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có sự ủng hộ của hai đảng",
+        "example": "The bill received rare bipartisan support.",
+        "familyId": "politics-positions",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "caucus",
+        "ipa": "/ˈkɔːkəs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhóm họp đảng phái, hội nghị nội bộ",
+        "example": "The party caucus chose its candidate for the nomination.",
+        "familyId": "politics-positions",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "constituency",
+        "ipa": "/kənˈstɪtjuənsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khu vực bầu cử, cử tri của một khu vực",
+        "example": "He represents a working-class constituency in the north.",
+        "familyId": "politics-positions",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "constituent",
+        "ipa": "/kənˈstɪtjuənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cử tri trong khu vực bầu cử",
+        "example": "The senator listened carefully to her constituents.",
+        "familyId": "politics-positions",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coalition",
+        "ipa": "/ˌkəʊəˈlɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "liên minh chính trị",
+        "example": "The two parties formed a coalition to gain a majority.",
+        "familyId": "politics-positions",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "opposition",
+        "ipa": "/ˌɒpəˈzɪʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phe đối lập",
+        "example": "The opposition demanded a parliamentary inquiry.",
+        "familyId": "politics-positions",
+        "familyOrder": 7,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "centrist",
+        "ipa": "/ˈsentrɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "người theo đường lối ôn hoà, trung dung",
+        "example": "Centrists hold the balance of power in parliament.",
+        "familyId": "politics-positions",
+        "familyOrder": 8,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moderate",
+        "ipa": "/ˈmɒdərət/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ôn hoà về tư tưởng chính trị",
+        "example": "She is known as a moderate voice within her party.",
+        "familyId": "politics-positions",
+        "familyOrder": 9,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "radical",
+        "ipa": "/ˈrædɪkəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "cấp tiến, cực đoan về chính trị",
+        "example": "His radical views split opinion within the movement.",
+        "familyId": "politics-positions",
+        "familyOrder": 10,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "progressive",
+        "ipa": "/prəˈɡresɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tiến bộ, theo đường lối cải cách",
+        "example": "Progressive politicians are pushing for stronger climate action.",
+        "familyId": "politics-positions",
+        "familyOrder": 11,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oppose",
+        "ipa": "/əˈpoʊz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phản đối, chống lại",
+        "example": "Many citizens oppose the new tax policy.",
+        "familyId": "politics-positions",
+        "familyOrder": 12,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "opposite",
+        "ipa": "/ˈɒpəzɪt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "đối lập, trái ngược",
+        "example": "The two parties hold opposite views on immigration.",
+        "familyId": "politics-positions",
+        "familyOrder": 13,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "merit",
+        "ipa": "/ˈmerɪt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "giá trị, ưu điểm; công trạng",
+        "example": "Each proposal was judged on its own merit.",
+        "familyId": "merit",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meritocratic",
+        "ipa": "/ˌmerɪtəˈkrætɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "thuộc chế độ trọng dụng nhân tài",
+        "example": "The company promotes a meritocratic culture.",
+        "familyId": "merit",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meritocracy",
+        "ipa": "/ˌmerɪˈtɒkrəsi/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "chế độ trọng dụng nhân tài",
+        "example": "They believe society should be a meritocracy based on talent and effort.",
+        "familyId": "merit",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "scheme",
+        "ipa": "/skiːm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "kế hoạch, âm mưu, dự án",
+        "example": "The government announced a new housing scheme.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intervene",
+        "ipa": "/ˌɪn.tərˈviːn/",
+        "partOfSpeech": "verb",
+        "difficulty": "advanced",
+        "meaning": "can thiệp",
+        "example": "The president had to intervene to end the dispute.",
+        "familyId": "intervene",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "intervention",
+        "ipa": "/ˌɪn.tərˈven.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự can thiệp",
+        "example": "Foreign intervention can escalate the conflict further.",
+        "familyId": "intervene",
+        "familyOrder": 2,
+        "tags": []
+      }
+    }
+  ]
+}

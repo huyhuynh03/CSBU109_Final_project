@@ -1,0 +1,1286 @@
+{
+  "_meta": {
+    "topicId": "environment-climate",
+    "topicName": "Môi trường & Biến đổi khí hậu",
+    "level": "intermediate",
+    "source": "Curated IELTS/Academic Vocabulary - Environment & Climate Change (B1-B2)",
+    "totalCards": 92,
+    "totalFamilies": 26,
+    "generatedAt": "2026-05-14",
+    "note": "Tu vung nen tang ve Moi truong & Bien doi khi hau, gom o nhiem, khi thai, bao ton, tai tao, thien tai. Da loai bo cac tu da co o cac topic khac va tranh trung trong topic. Cac tu cung family duoc nhom theo familyId.",
+    "skipped": [
+      {
+        "word": "preservation",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "culture",
+          "familyId": "culture-institutions",
+          "word": "preservation"
+        }
+      },
+      {
+        "word": "habitat",
+        "reason": "duplicate-other-topic",
+        "other": {
+          "topicId": "biology",
+          "familyId": "ecology",
+          "word": "habitat"
+        }
+      }
+    ],
+    "crossTopicFamilies": [
+      {
+        "familyId": "waste",
+        "words": [
+          "recycling",
+          "recyclable",
+          "reuse",
+          "reduce"
+        ],
+        "sharedWith": {
+          "topicId": "home-living",
+          "familyId": "waste",
+          "words": [
+            "garbage",
+            "rubbish",
+            "trash",
+            "bin",
+            "recycle"
+          ]
+        },
+        "note": "recycle (home-living) cung family voi recycling, recyclable, reuse, reduce (environment-climate)"
+      },
+      {
+        "familyId": "environment-climate-preservation",
+        "words": [
+          "preserve"
+        ],
+        "sharedWith": {
+          "topicId": "culture",
+          "familyId": "culture-institutions",
+          "words": [
+            "preservation"
+          ]
+        },
+        "note": "preservation (culture) cung goc tu voi preserve (environment-climate). Tuy nhien preservation da bi skip vi trung tu, preserve la tu khac nen giu lai."
+      },
+      {
+        "familyId": "environment-climate-sustainability",
+        "words": [
+          "sustainability",
+          "sustainable",
+          "sustain",
+          "sustainably"
+        ],
+        "sharedWith": {
+          "topicId": "travel",
+          "familyId": "sustainable-travel",
+          "words": [
+            "sustainable tourism",
+            "ecotourism",
+            "carbon footprint"
+          ]
+        },
+        "note": "sustainable tourism (travel) cung goc sustain voi sustainability/sustainable/sustain/sustainably (environment-climate). Tuy nhien day la cum tu ghep khac, khong trung."
+      }
+    ]
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "pollution",
+        "ipa": "/pəˈluː.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự ô nhiễm",
+        "example": "Air pollution affects millions of people every year.",
+        "familyId": "environment-climate-pollution",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pollute",
+        "ipa": "/pəˈluːt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm ô nhiễm",
+        "example": "Factories pollute rivers with toxic waste.",
+        "familyId": "environment-climate-pollution",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pollutant",
+        "ipa": "/pəˈluː.tənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất gây ô nhiễm",
+        "example": "Cars release harmful pollutants into the air.",
+        "familyId": "environment-climate-pollution",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "polluted",
+        "ipa": "/pəˈluː.tɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bị ô nhiễm",
+        "example": "The polluted river killed many fish.",
+        "familyId": "environment-climate-pollution",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contamination",
+        "ipa": "/kənˌtæm.ɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nhiễm bẩn",
+        "example": "Water contamination is a serious health threat in many regions.",
+        "familyId": "environment-climate-contamination",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contaminate",
+        "ipa": "/kənˈtæm.ɪ.neɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm nhiễm bẩn",
+        "example": "Pesticides can contaminate groundwater for decades.",
+        "familyId": "environment-climate-contamination",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "contaminant",
+        "ipa": "/kənˈtæm.ɪ.nənt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất gây ô nhiễm",
+        "example": "Heavy metals are dangerous contaminants found in soil.",
+        "familyId": "environment-climate-contamination",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emission",
+        "ipa": "/ɪˈmɪʃ.ən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí thải, sự phát thải",
+        "example": "The government wants to cut carbon emissions by half.",
+        "familyId": "environment-climate-emission",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "emit",
+        "ipa": "/ɪˈmɪt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phát thải, thải ra",
+        "example": "Coal-fired power plants emit large amounts of CO2.",
+        "familyId": "environment-climate-emission",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greenhouse gas",
+        "ipa": "/ˈɡriːn.haʊs ˌɡæs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí nhà kính",
+        "example": "Methane is a powerful greenhouse gas that traps heat.",
+        "familyId": "environment-climate-emission",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "climate",
+        "ipa": "/ˈklaɪ.mət/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khí hậu",
+        "example": "Vietnam has a tropical climate with two seasons.",
+        "familyId": "environment-climate-climate",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "climate change",
+        "ipa": "/ˈklaɪ.mət ˌtʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "biến đổi khí hậu",
+        "example": "Climate change is one of the greatest challenges of our time.",
+        "familyId": "environment-climate-climate",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "climatic",
+        "ipa": "/klaɪˈmæt.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc về khí hậu",
+        "example": "Sudden climatic shifts can destroy entire ecosystems.",
+        "familyId": "environment-climate-climate",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "global warming",
+        "ipa": "/ˌɡloʊ.bəl ˈwɔːr.mɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự nóng lên toàn cầu",
+        "example": "Global warming is causing sea levels to rise worldwide.",
+        "familyId": "environment-climate-climate",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "greenhouse effect",
+        "ipa": "/ˈɡriːn.haʊs ɪˌfekt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hiệu ứng nhà kính",
+        "example": "The greenhouse effect keeps the Earth warm enough for life.",
+        "familyId": "environment-climate-climate",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sustainability",
+        "ipa": "/səˌsteɪ.nəˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tính bền vững",
+        "example": "Sustainability should guide every business decision today.",
+        "familyId": "environment-climate-sustainability",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sustainable",
+        "ipa": "/səˈsteɪ.nə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "bền vững",
+        "example": "We need a sustainable approach to using resources.",
+        "familyId": "environment-climate-sustainability",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sustain",
+        "ipa": "/səˈsteɪn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "duy trì, hỗ trợ lâu dài",
+        "example": "Forests sustain countless species of plants and animals.",
+        "familyId": "environment-climate-sustainability",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sustainably",
+        "ipa": "/səˈsteɪ.nə.bli/",
+        "partOfSpeech": "adverb",
+        "difficulty": "intermediate",
+        "meaning": "một cách bền vững",
+        "example": "This coffee is grown sustainably by local farmers.",
+        "familyId": "environment-climate-sustainability",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conservation",
+        "ipa": "/ˌkɒn.səˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bảo tồn",
+        "example": "Wildlife conservation requires international cooperation.",
+        "familyId": "environment-climate-conservation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conserve",
+        "ipa": "/kənˈsɜːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bảo tồn, giữ gìn",
+        "example": "We must conserve water during the dry season.",
+        "familyId": "environment-climate-conservation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "conservationist",
+        "ipa": "/ˌkɒn.səˈveɪ.ʃən.ɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà bảo tồn",
+        "example": "Conservationists work hard to protect endangered species.",
+        "familyId": "environment-climate-conservation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "preserve",
+        "ipa": "/prɪˈzɜːv/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gìn giữ, bảo tồn",
+        "example": "National parks help preserve natural habitats.",
+        "familyId": "environment-climate-preservation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protection",
+        "ipa": "/prəˈtek.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự bảo vệ",
+        "example": "Environmental protection is a shared global responsibility.",
+        "familyId": "environment-climate-protection",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protect",
+        "ipa": "/prəˈtekt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bảo vệ",
+        "example": "New laws aim to protect the rainforest from logging.",
+        "familyId": "environment-climate-protection",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "protective",
+        "ipa": "/prəˈtek.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có tính bảo vệ",
+        "example": "The ozone layer is a protective shield around the Earth.",
+        "familyId": "environment-climate-protection",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renewable",
+        "ipa": "/rɪˈnjuː.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có thể tái tạo",
+        "example": "Wind and water are clean renewable sources of power.",
+        "familyId": "environment-climate-renewable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "renew",
+        "ipa": "/rɪˈnjuː/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tái tạo, làm mới",
+        "example": "Forests slowly renew themselves after a fire.",
+        "familyId": "environment-climate-renewable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "non-renewable",
+        "ipa": "/ˌnɒn.rɪˈnjuː.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "không thể tái tạo",
+        "example": "Coal and oil are non-renewable fossil fuels.",
+        "familyId": "environment-climate-renewable",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recycling",
+        "ipa": "/ˌriːˈsaɪ.klɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tái chế",
+        "example": "Recycling helps reduce the amount of plastic waste.",
+        "familyId": "waste",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "recyclable",
+        "ipa": "/ˌriːˈsaɪ.klə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có thể tái chế",
+        "example": "Glass bottles are fully recyclable materials.",
+        "familyId": "waste",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reuse",
+        "ipa": "/ˌriːˈjuːz/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tái sử dụng",
+        "example": "We can reuse plastic bags many times before throwing them away.",
+        "familyId": "waste",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reduce",
+        "ipa": "/rɪˈdʒuːs/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giảm thiểu",
+        "example": "Riding a bike helps reduce traffic and pollution.",
+        "familyId": "waste",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deforestation",
+        "ipa": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nạn phá rừng",
+        "example": "Deforestation in the Amazon has reached alarming levels.",
+        "familyId": "environment-climate-deforestation",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "reforestation",
+        "ipa": "/ˌriː.fɒr.ɪˈsteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trồng lại rừng",
+        "example": "Reforestation projects are helping bring back wildlife.",
+        "familyId": "environment-climate-deforestation",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "afforestation",
+        "ipa": "/əˌfɒr.ɪˈsteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự trồng rừng mới",
+        "example": "Afforestation creates new forests in areas that had none before.",
+        "familyId": "environment-climate-deforestation",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "logging",
+        "ipa": "/ˈlɒɡ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "việc khai thác gỗ",
+        "example": "Illegal logging destroys habitats for many animals.",
+        "familyId": "environment-climate-deforestation",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "habitat loss",
+        "ipa": "/ˈhæb.ɪ.tæt ˌlɒs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mất môi trường sống",
+        "example": "Habitat loss is the biggest threat to many wild animals.",
+        "familyId": "environment-climate-habitat",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "endangered",
+        "ipa": "/ɪnˈdeɪn.dʒəd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có nguy cơ tuyệt chủng",
+        "example": "Tigers are an endangered species in many parts of Asia.",
+        "familyId": "environment-climate-endangered",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "endanger",
+        "ipa": "/ɪnˈdeɪn.dʒər/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gây nguy hiểm cho, đe dọa",
+        "example": "Plastic pollution endangers marine life every day.",
+        "familyId": "environment-climate-endangered",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extinction",
+        "ipa": "/ɪkˈstɪŋk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tuyệt chủng",
+        "example": "Many animals face extinction because of human activity.",
+        "familyId": "environment-climate-endangered",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "extinct",
+        "ipa": "/ɪkˈstɪŋkt/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "tuyệt chủng",
+        "example": "The dodo bird became extinct in the seventeenth century.",
+        "familyId": "environment-climate-endangered",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "atmosphere",
+        "ipa": "/ˈæt.mə.sfɪər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bầu khí quyển",
+        "example": "The Earth's atmosphere protects us from harmful rays.",
+        "familyId": "environment-climate-atmosphere",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "atmospheric",
+        "ipa": "/ˌæt.məˈsfer.ɪk/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thuộc khí quyển",
+        "example": "Atmospheric carbon dioxide levels keep rising every year.",
+        "familyId": "environment-climate-atmosphere",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ozone layer",
+        "ipa": "/ˈəʊ.zəʊn ˌleɪ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tầng ozon",
+        "example": "The ozone layer absorbs most of the sun's UV rays.",
+        "familyId": "environment-climate-atmosphere",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "landfill",
+        "ipa": "/ˈlænd.fɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bãi chôn rác",
+        "example": "Most household waste still ends up in a landfill.",
+        "familyId": "environment-climate-waste",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sewage",
+        "ipa": "/ˈsuː.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước thải sinh hoạt",
+        "example": "Untreated sewage often flows directly into rivers and seas.",
+        "familyId": "environment-climate-waste",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "litter",
+        "ipa": "/ˈlɪt.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rác vứt bừa bãi",
+        "example": "There was litter all over the beach after the festival.",
+        "familyId": "environment-climate-waste",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "biodegradable",
+        "ipa": "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có thể phân hủy sinh học",
+        "example": "These bags are made from biodegradable materials.",
+        "familyId": "environment-climate-waste",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "compost",
+        "ipa": "/ˈkɒm.pɒst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phân hữu cơ",
+        "example": "Food scraps can be turned into compost for the garden.",
+        "familyId": "environment-climate-waste",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "natural disaster",
+        "ipa": "/ˌnætʃ.ər.əl dɪˈzɑː.stər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thiên tai",
+        "example": "Floods and droughts are natural disasters worsened by climate change.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drought",
+        "ipa": "/draʊt/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "hạn hán",
+        "example": "A long drought destroyed most of the rice fields.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flood",
+        "ipa": "/flʌd/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "lũ lụt",
+        "example": "Heavy rain caused a flood that damaged many homes.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wildfire",
+        "ipa": "/ˈwaɪld.faɪər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cháy rừng",
+        "example": "Hotter summers are making wildfires more common.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "heatwave",
+        "ipa": "/ˈhiːt.weɪv/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đợt nóng kéo dài",
+        "example": "The recent heatwave broke many temperature records.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurricane",
+        "ipa": "/ˈhʌr.ɪ.kən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "bão lớn",
+        "example": "A powerful hurricane swept across the coast last week.",
+        "familyId": "environment-climate-disaster",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sea level",
+        "ipa": "/ˈsiː ˌlev.əl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mực nước biển",
+        "example": "Rising sea levels threaten low-lying coastal cities.",
+        "familyId": "environment-climate-sea-ice",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "glacier",
+        "ipa": "/ˈɡleɪ.si.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sông băng",
+        "example": "Many glaciers are shrinking because of warmer weather.",
+        "familyId": "environment-climate-sea-ice",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "iceberg",
+        "ipa": "/ˈaɪs.bɜːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tảng băng trôi",
+        "example": "The huge iceberg slowly drifted south into warmer waters.",
+        "familyId": "environment-climate-sea-ice",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "polar ice cap",
+        "ipa": "/ˌpəʊ.lər ˈaɪs ˌkæp/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mũ băng vùng cực",
+        "example": "The polar ice caps are melting at a record speed.",
+        "familyId": "environment-climate-sea-ice",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "coral reef",
+        "ipa": "/ˈkɒr.əl ˌriːf/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rạn san hô",
+        "example": "Warm seas have damaged coral reefs around the world.",
+        "familyId": "environment-climate-sea-ice",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fossil fuel",
+        "ipa": "/ˈfɒs.əl ˌfjuːəl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhiên liệu hóa thạch",
+        "example": "We must reduce our reliance on fossil fuels to fight climate change.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind power",
+        "ipa": "/ˈwɪnd ˌpaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "điện gió",
+        "example": "Denmark generates much of its electricity from wind power.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hydropower",
+        "ipa": "/ˈhaɪ.drəʊˌpaʊ.ər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thủy điện",
+        "example": "Hydropower provides clean energy from flowing rivers.",
+        "familyId": "environment-climate-fossil-fuel",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eco-friendly",
+        "ipa": "/ˌiː.kəʊˈfrend.li/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "thân thiện với môi trường",
+        "example": "These eco-friendly products use very little plastic.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "environmentalist",
+        "ipa": "/ɪnˌvaɪ.rənˈmen.təl.ɪst/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nhà hoạt động môi trường",
+        "example": "Environmentalists are urging governments to act faster.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "environmentalism",
+        "ipa": "/ɪnˌvaɪ.rənˈmen.təl.ɪ.zəm/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chủ nghĩa môi trường",
+        "example": "Environmentalism has become a major political movement.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "green",
+        "ipa": "/ɡriːn/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "xanh, thân thiện môi trường",
+        "example": "The company has adopted green policies in every office.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "carbon neutral",
+        "ipa": "/ˌkɑː.bən ˈnjuː.trəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "trung hòa carbon",
+        "example": "The airline aims to become carbon neutral by 2040.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "net zero",
+        "ipa": "/ˌnet ˈzɪə.rəʊ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "phát thải ròng bằng không",
+        "example": "Many countries have pledged to reach net zero by 2050.",
+        "familyId": "environment-climate-awareness",
+        "familyOrder": 6,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "natural resource",
+        "ipa": "/ˌnætʃ.ər.əl rɪˈsɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "tài nguyên thiên nhiên",
+        "example": "Vietnam is rich in natural resources like coal and rice.",
+        "familyId": "environment-climate-resources",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overfishing",
+        "ipa": "/ˌəʊ.vəˈfɪʃ.ɪŋ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "đánh bắt cá quá mức",
+        "example": "Overfishing has damaged fish populations worldwide.",
+        "familyId": "environment-climate-resources",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "air quality",
+        "ipa": "/ˈeər ˌkwɒl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "chất lượng không khí",
+        "example": "Air quality in many big cities has become very poor.",
+        "familyId": "environment-climate-air-water",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "smog",
+        "ipa": "/smɒɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "khói bụi mù",
+        "example": "Thick smog covered the city for several days.",
+        "familyId": "environment-climate-air-water",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "acid rain",
+        "ipa": "/ˈæs.ɪd ˌreɪn/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "mưa axit",
+        "example": "Acid rain harms forests, lakes, and old buildings.",
+        "familyId": "environment-climate-air-water",
+        "familyOrder": 3,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "oil spill",
+        "ipa": "/ˈɔɪl ˌspɪl/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự tràn dầu",
+        "example": "The oil spill killed thousands of seabirds and fish.",
+        "familyId": "environment-climate-air-water",
+        "familyOrder": 4,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freshwater",
+        "ipa": "/ˈfreʃˌwɔː.tər/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "nước ngọt",
+        "example": "Freshwater is becoming scarce in many parts of the world.",
+        "familyId": "environment-climate-air-water",
+        "familyOrder": 5,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "moss",
+        "ipa": "/mɔːs/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "rêu",
+        "example": "Green moss covered the old stone wall.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "valley",
+        "ipa": "/ˈvæl.i/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thung lũng",
+        "example": "The river flows gently through the green valley.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "humid",
+        "ipa": "/ˈhjuː.mɪd/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "ẩm ướt (không khí)",
+        "example": "The weather is hot and humid in summer.",
+        "familyId": "humid",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "humidity",
+        "ipa": "/hjuːˈmɪd.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "độ ẩm",
+        "example": "High humidity makes the heat feel worse.",
+        "familyId": "humid",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breeze",
+        "ipa": "/briːz/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "làn gió nhẹ",
+        "example": "A cool breeze blew in from the sea.",
+        "familyId": "breeze",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breezy",
+        "ipa": "/ˈbriː.zi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "lộng gió, có gió nhẹ",
+        "example": "It was a bright and breezy spring morning.",
+        "familyId": "breeze",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "field",
+        "ipa": "/fiːld/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "cánh đồng, lĩnh vực",
+        "example": "Farmers were working in the rice field.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fog",
+        "ipa": "/fɑːɡ/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sương mù",
+        "example": "Heavy fog made it difficult to see the road.",
+        "familyId": "fog",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "foggy",
+        "ipa": "/ˈfɑː.ɡi/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "có sương mù, mù mờ",
+        "example": "It was a cold and foggy winter morning.",
+        "familyId": "fog",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vegetation",
+        "ipa": "/ˌvedʒ.əˈteɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "thảm thực vật, thực vật",
+        "example": "The hillside was covered with thick vegetation.",
+        "familyId": "",
+        "familyOrder": null,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vulnerable",
+        "ipa": "/ˈvʌl.nər.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "difficulty": "intermediate",
+        "meaning": "dễ bị tổn thương, yếu thế",
+        "example": "Children are particularly vulnerable to air pollution.",
+        "familyId": "vulnerable",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "vulnerability",
+        "ipa": "/ˌvʌl.nər.əˈbɪl.ə.ti/",
+        "partOfSpeech": "noun",
+        "difficulty": "advanced",
+        "meaning": "sự dễ bị tổn thương",
+        "example": "Scientists are studying the vulnerability of coral reefs.",
+        "familyId": "vulnerable",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destroy",
+        "ipa": "/dɪˈstrɔɪ/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phá hủy, tàn phá",
+        "example": "The earthquake destroyed many buildings in the city.",
+        "familyId": "destroy",
+        "familyOrder": 1,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destructive",
+        "ipa": "/dɪˈstrʌk.tɪv/",
+        "partOfSpeech": "adjective",
+        "difficulty": "advanced",
+        "meaning": "gây phá hủy, tàn phá",
+        "example": "The hurricane had a destructive effect on the coastline.",
+        "familyId": "destroy",
+        "familyOrder": 2,
+        "tags": []
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "destruction",
+        "ipa": "/dɪˈstrʌk.ʃən/",
+        "partOfSpeech": "noun",
+        "difficulty": "intermediate",
+        "meaning": "sự phá hủy, sự tàn phá",
+        "example": "The destruction of the rainforest affects global weather.",
+        "familyId": "destroy",
+        "familyOrder": 3,
+        "tags": []
+      }
+    }
+  ]
+}

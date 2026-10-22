@@ -1,0 +1,2538 @@
+{
+  "_meta": {
+    "schemaVersion": "v2",
+    "cardType": "vocabulary",
+    "topicId": "irregular-verb-v1",
+    "description": "Động từ bất quy tắc – dạng V1 (Nguyên mẫu). Bao gồm toàn bộ base form; các trường hợp trùng dạng sẽ được chú thích ngay trên thẻ.",
+    "locale": "en"
+  },
+  "cards": [
+    {
+      "fieldValues": {
+        "word": "be",
+        "ipa": "/be/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "là, ở, thì",
+        "example": "I be every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "was",
+        "pastParticiple": "been",
+        "baseForm": "be",
+        "baseMeaning": "là, ở, thì",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bear",
+        "ipa": "/bear/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "sinh ra, chịu đựng",
+        "example": "I bear every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bore",
+        "pastParticiple": "borne",
+        "baseForm": "bear",
+        "baseMeaning": "sinh ra, chịu đựng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "begin",
+        "ipa": "/begin/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt đầu",
+        "example": "I begin every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "began",
+        "pastParticiple": "begun",
+        "baseForm": "begin",
+        "baseMeaning": "bắt đầu",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bend",
+        "ipa": "/bend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cúi, uốn cong",
+        "example": "I bend every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bent",
+        "pastParticiple": "bent",
+        "baseForm": "bend",
+        "baseMeaning": "cúi, uốn cong",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bind",
+        "ipa": "/bind/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "buộc",
+        "example": "I bind every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bound",
+        "pastParticiple": "bound",
+        "baseForm": "bind",
+        "baseMeaning": "buộc",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bite",
+        "ipa": "/bite/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cắn",
+        "example": "I bite every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bit",
+        "pastParticiple": "bitten",
+        "baseForm": "bite",
+        "baseMeaning": "cắn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bleed",
+        "ipa": "/bleed/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chảy máu",
+        "example": "I bleed every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bled",
+        "pastParticiple": "bled",
+        "baseForm": "bleed",
+        "baseMeaning": "chảy máu",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "blow",
+        "ipa": "/blow/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thổi",
+        "example": "I blow every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "blew",
+        "pastParticiple": "blown",
+        "baseForm": "blow",
+        "baseMeaning": "thổi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "break",
+        "ipa": "/break/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm vỡ, phá vỡ",
+        "example": "I break every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "broke",
+        "pastParticiple": "broken",
+        "baseForm": "break",
+        "baseMeaning": "làm vỡ, phá vỡ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "breed",
+        "ipa": "/breed/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nuôi, sinh sản",
+        "example": "I breed every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bred",
+        "pastParticiple": "bred",
+        "baseForm": "breed",
+        "baseMeaning": "nuôi, sinh sản",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "bring",
+        "ipa": "/bring/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mang, đem",
+        "example": "I bring every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "brought",
+        "pastParticiple": "brought",
+        "baseForm": "bring",
+        "baseMeaning": "mang, đem",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "broadcast",
+        "ipa": "/broadcast/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "phát sóng",
+        "example": "I broadcast every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "broadcast",
+        "pastParticiple": "broadcast",
+        "baseForm": "broadcast",
+        "baseMeaning": "phát sóng",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "build",
+        "ipa": "/build/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xây dựng",
+        "example": "I build every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "built",
+        "pastParticiple": "built",
+        "baseForm": "build",
+        "baseMeaning": "xây dựng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burn",
+        "ipa": "/burn/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đốt cháy",
+        "example": "I burn every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "burnt",
+        "pastParticiple": "burnt",
+        "baseForm": "burn",
+        "baseMeaning": "đốt cháy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "burst",
+        "ipa": "/burst/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vỡ tung, bùng nổ",
+        "example": "I burst every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "burst",
+        "pastParticiple": "burst",
+        "baseForm": "burst",
+        "baseMeaning": "vỡ tung, bùng nổ",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "buy",
+        "ipa": "/buy/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mua",
+        "example": "I buy every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "bought",
+        "pastParticiple": "bought",
+        "baseForm": "buy",
+        "baseMeaning": "mua",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cast",
+        "ipa": "/cast/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ném, đúc",
+        "example": "I cast every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "cast",
+        "pastParticiple": "cast",
+        "baseForm": "cast",
+        "baseMeaning": "ném, đúc",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "catch",
+        "ipa": "/catch/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bắt, chụp",
+        "example": "I catch every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "caught",
+        "pastParticiple": "caught",
+        "baseForm": "catch",
+        "baseMeaning": "bắt, chụp",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "choose",
+        "ipa": "/choose/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chọn",
+        "example": "I choose every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "chose",
+        "pastParticiple": "chosen",
+        "baseForm": "choose",
+        "baseMeaning": "chọn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cling",
+        "ipa": "/cling/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bám chặt",
+        "example": "I cling every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "clung",
+        "pastParticiple": "clung",
+        "baseForm": "cling",
+        "baseMeaning": "bám chặt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "come",
+        "ipa": "/come/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đến",
+        "example": "I come every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "came",
+        "pastParticiple": "come",
+        "baseForm": "come",
+        "baseMeaning": "đến",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "creep",
+        "ipa": "/creep/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bò, rón rén đi",
+        "example": "I creep every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "crept",
+        "pastParticiple": "crept",
+        "baseForm": "creep",
+        "baseMeaning": "bò, rón rén đi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "cut",
+        "ipa": "/cut/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cắt",
+        "example": "I cut every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "cut",
+        "pastParticiple": "cut",
+        "baseForm": "cut",
+        "baseMeaning": "cắt",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "deal",
+        "ipa": "/deal/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giải quyết, chia bài",
+        "example": "I deal every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "dealt",
+        "pastParticiple": "dealt",
+        "baseForm": "deal",
+        "baseMeaning": "giải quyết, chia bài",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dig",
+        "ipa": "/dig/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đào",
+        "example": "I dig every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "dug",
+        "pastParticiple": "dug",
+        "baseForm": "dig",
+        "baseMeaning": "đào",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "dive",
+        "ipa": "/dive/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lặn",
+        "example": "I dive every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "dove",
+        "pastParticiple": "dived",
+        "baseForm": "dive",
+        "baseMeaning": "lặn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "do",
+        "ipa": "/do/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm",
+        "example": "I do every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "did",
+        "pastParticiple": "done",
+        "baseForm": "do",
+        "baseMeaning": "làm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "draw",
+        "ipa": "/draw/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vẽ, kéo",
+        "example": "I draw every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "drew",
+        "pastParticiple": "drawn",
+        "baseForm": "draw",
+        "baseMeaning": "vẽ, kéo",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drink",
+        "ipa": "/drink/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "uống",
+        "example": "I drink every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "drank",
+        "pastParticiple": "drunk",
+        "baseForm": "drink",
+        "baseMeaning": "uống",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "drive",
+        "ipa": "/drive/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lái xe",
+        "example": "I drive every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "drove",
+        "pastParticiple": "driven",
+        "baseForm": "drive",
+        "baseMeaning": "lái xe",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "eat",
+        "ipa": "/eat/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ăn",
+        "example": "I eat every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "ate",
+        "pastParticiple": "eaten",
+        "baseForm": "eat",
+        "baseMeaning": "ăn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fall",
+        "ipa": "/fall/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngã, rơi",
+        "example": "I fall every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "fell",
+        "pastParticiple": "fallen",
+        "baseForm": "fall",
+        "baseMeaning": "ngã, rơi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feed",
+        "ipa": "/feed/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cho ăn",
+        "example": "I feed every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "fed",
+        "pastParticiple": "fed",
+        "baseForm": "feed",
+        "baseMeaning": "cho ăn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "feel",
+        "ipa": "/feel/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cảm thấy",
+        "example": "I feel every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "felt",
+        "pastParticiple": "felt",
+        "baseForm": "feel",
+        "baseMeaning": "cảm thấy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fight",
+        "ipa": "/fight/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chiến đấu, đánh nhau",
+        "example": "I fight every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "fought",
+        "pastParticiple": "fought",
+        "baseForm": "fight",
+        "baseMeaning": "chiến đấu, đánh nhau",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "find",
+        "ipa": "/find/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm thấy",
+        "example": "I find every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "found",
+        "pastParticiple": "found",
+        "baseForm": "find",
+        "baseMeaning": "tìm thấy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fit",
+        "ipa": "/fit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vừa khít",
+        "example": "I fit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "fit",
+        "pastParticiple": "fit",
+        "baseForm": "fit",
+        "baseMeaning": "vừa khít",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "flee",
+        "ipa": "/flee/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chạy trốn",
+        "example": "I flee every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "fled",
+        "pastParticiple": "fled",
+        "baseForm": "flee",
+        "baseMeaning": "chạy trốn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fling",
+        "ipa": "/fling/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ném mạnh",
+        "example": "I fling every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "flung",
+        "pastParticiple": "flung",
+        "baseForm": "fling",
+        "baseMeaning": "ném mạnh",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "fly",
+        "ipa": "/fly/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bay",
+        "example": "I fly every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "flew",
+        "pastParticiple": "flown",
+        "baseForm": "fly",
+        "baseMeaning": "bay",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forbid",
+        "ipa": "/forbid/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cấm",
+        "example": "I forbid every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "forbade",
+        "pastParticiple": "forbidden",
+        "baseForm": "forbid",
+        "baseMeaning": "cấm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forecast",
+        "ipa": "/forecast/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dự báo",
+        "example": "I forecast every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "forecast",
+        "pastParticiple": "forecast",
+        "baseForm": "forecast",
+        "baseMeaning": "dự báo",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forget",
+        "ipa": "/forget/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quên",
+        "example": "I forget every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "forgot",
+        "pastParticiple": "forgotten",
+        "baseForm": "forget",
+        "baseMeaning": "quên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "forgive",
+        "ipa": "/forgive/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tha thứ",
+        "example": "I forgive every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "forgave",
+        "pastParticiple": "forgiven",
+        "baseForm": "forgive",
+        "baseMeaning": "tha thứ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "freeze",
+        "ipa": "/freeze/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đóng băng",
+        "example": "I freeze every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "froze",
+        "pastParticiple": "frozen",
+        "baseForm": "freeze",
+        "baseMeaning": "đóng băng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "get",
+        "ipa": "/get/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhận được, trở nên",
+        "example": "I get every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "got",
+        "pastParticiple": "gotten",
+        "baseForm": "get",
+        "baseMeaning": "nhận được, trở nên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "give",
+        "ipa": "/give/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cho, tặng",
+        "example": "I give every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "gave",
+        "pastParticiple": "given",
+        "baseForm": "give",
+        "baseMeaning": "cho, tặng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "go",
+        "ipa": "/go/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đi",
+        "example": "I go every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "went",
+        "pastParticiple": "gone",
+        "baseForm": "go",
+        "baseMeaning": "đi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grind",
+        "ipa": "/grind/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xay, mài",
+        "example": "I grind every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "ground",
+        "pastParticiple": "ground",
+        "baseForm": "grind",
+        "baseMeaning": "xay, mài",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "grow",
+        "ipa": "/grow/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lớn lên, trồng",
+        "example": "I grow every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "grew",
+        "pastParticiple": "grown",
+        "baseForm": "grow",
+        "baseMeaning": "lớn lên, trồng",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hang",
+        "ipa": "/hang/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "treo",
+        "example": "I hang every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "hung",
+        "pastParticiple": "hung",
+        "baseForm": "hang",
+        "baseMeaning": "treo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "have",
+        "ipa": "/have/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "có",
+        "example": "I have every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "had",
+        "pastParticiple": "had",
+        "baseForm": "have",
+        "baseMeaning": "có",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hear",
+        "ipa": "/hear/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nghe",
+        "example": "I hear every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "heard",
+        "pastParticiple": "heard",
+        "baseForm": "hear",
+        "baseMeaning": "nghe",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hide",
+        "ipa": "/hide/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giấu, trốn",
+        "example": "I hide every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "hid",
+        "pastParticiple": "hidden",
+        "baseForm": "hide",
+        "baseMeaning": "giấu, trốn",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hit",
+        "ipa": "/hit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đánh, va chạm",
+        "example": "I hit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "hit",
+        "pastParticiple": "hit",
+        "baseForm": "hit",
+        "baseMeaning": "đánh, va chạm",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hold",
+        "ipa": "/hold/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cầm, giữ, tổ chức",
+        "example": "I hold every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "held",
+        "pastParticiple": "held",
+        "baseForm": "hold",
+        "baseMeaning": "cầm, giữ, tổ chức",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "hurt",
+        "ipa": "/hurt/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm đau",
+        "example": "I hurt every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "hurt",
+        "pastParticiple": "hurt",
+        "baseForm": "hurt",
+        "baseMeaning": "làm đau",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "keep",
+        "ipa": "/keep/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "giữ",
+        "example": "I keep every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "kept",
+        "pastParticiple": "kept",
+        "baseForm": "keep",
+        "baseMeaning": "giữ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "kneel",
+        "ipa": "/kneel/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quỳ",
+        "example": "I kneel every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "knelt",
+        "pastParticiple": "knelt",
+        "baseForm": "kneel",
+        "baseMeaning": "quỳ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "knit",
+        "ipa": "/knit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đan",
+        "example": "I knit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "knit",
+        "pastParticiple": "knit",
+        "baseForm": "knit",
+        "baseMeaning": "đan",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "know",
+        "ipa": "/know/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "biết",
+        "example": "I know every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "knew",
+        "pastParticiple": "known",
+        "baseForm": "know",
+        "baseMeaning": "biết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lay",
+        "ipa": "/lay/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt, đẻ",
+        "example": "I lay every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "laid",
+        "pastParticiple": "laid",
+        "baseForm": "lay",
+        "baseMeaning": "đặt, đẻ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lead",
+        "ipa": "/lead/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dẫn dắt",
+        "example": "I lead every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "led",
+        "pastParticiple": "led",
+        "baseForm": "lead",
+        "baseMeaning": "dẫn dắt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leap",
+        "ipa": "/leap/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhảy",
+        "example": "I leap every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "leapt",
+        "pastParticiple": "leapt",
+        "baseForm": "leap",
+        "baseMeaning": "nhảy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "leave",
+        "ipa": "/leave/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rời đi, để lại",
+        "example": "I leave every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "left",
+        "pastParticiple": "left",
+        "baseForm": "leave",
+        "baseMeaning": "rời đi, để lại",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lend",
+        "ipa": "/lend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cho mượn",
+        "example": "I lend every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "lent",
+        "pastParticiple": "lent",
+        "baseForm": "lend",
+        "baseMeaning": "cho mượn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "let",
+        "ipa": "/let/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cho phép",
+        "example": "I let every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "let",
+        "pastParticiple": "let",
+        "baseForm": "let",
+        "baseMeaning": "cho phép",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lie",
+        "ipa": "/lie/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nằm",
+        "example": "I lie every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "lay",
+        "pastParticiple": "lain",
+        "baseForm": "lie",
+        "baseMeaning": "nằm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "light",
+        "ipa": "/light/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thắp, đốt",
+        "example": "I light every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "lit",
+        "pastParticiple": "lit",
+        "baseForm": "light",
+        "baseMeaning": "thắp, đốt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "lose",
+        "ipa": "/lose/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mất, thua",
+        "example": "I lose every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "lost",
+        "pastParticiple": "lost",
+        "baseForm": "lose",
+        "baseMeaning": "mất, thua",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "make",
+        "ipa": "/make/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm, chế tạo",
+        "example": "I make every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "made",
+        "pastParticiple": "made",
+        "baseForm": "make",
+        "baseMeaning": "làm, chế tạo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mean",
+        "ipa": "/mean/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "có nghĩa là, có ý",
+        "example": "I mean every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "meant",
+        "pastParticiple": "meant",
+        "baseForm": "mean",
+        "baseMeaning": "có nghĩa là, có ý",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "meet",
+        "ipa": "/meet/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gặp",
+        "example": "I meet every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "met",
+        "pastParticiple": "met",
+        "baseForm": "meet",
+        "baseMeaning": "gặp",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mow",
+        "ipa": "/mow/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cắt cỏ",
+        "example": "I mow every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "mowed",
+        "pastParticiple": "mown",
+        "baseForm": "mow",
+        "baseMeaning": "cắt cỏ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overcome",
+        "ipa": "/overcome/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "vượt qua",
+        "example": "I overcome every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "overcame",
+        "pastParticiple": "overcome",
+        "baseForm": "overcome",
+        "baseMeaning": "vượt qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "overrun",
+        "ipa": "/overrun/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tràn ngập, vượt quá",
+        "example": "I overrun every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "overran",
+        "pastParticiple": "overrun",
+        "baseForm": "overrun",
+        "baseMeaning": "tràn ngập, vượt quá",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "pay",
+        "ipa": "/pay/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trả tiền",
+        "example": "I pay every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "paid",
+        "pastParticiple": "paid",
+        "baseForm": "pay",
+        "baseMeaning": "trả tiền",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "put",
+        "ipa": "/put/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt, để",
+        "example": "I put every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "put",
+        "pastParticiple": "put",
+        "baseForm": "put",
+        "baseMeaning": "đặt, để",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "quit",
+        "ipa": "/quit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bỏ, nghỉ",
+        "example": "I quit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "quit",
+        "pastParticiple": "quit",
+        "baseForm": "quit",
+        "baseMeaning": "bỏ, nghỉ",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "read",
+        "ipa": "/read/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đọc",
+        "example": "I read every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "read",
+        "pastParticiple": "read",
+        "baseForm": "read",
+        "baseMeaning": "đọc",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ride",
+        "ipa": "/ride/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cưỡi, đi (xe)",
+        "example": "I ride every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "rode",
+        "pastParticiple": "ridden",
+        "baseForm": "ride",
+        "baseMeaning": "cưỡi, đi (xe)",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "ring",
+        "ipa": "/ring/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "reo, rung chuông",
+        "example": "I ring every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "rang",
+        "pastParticiple": "rung",
+        "baseForm": "ring",
+        "baseMeaning": "reo, rung chuông",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "rise",
+        "ipa": "/rise/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tăng lên, đứng dậy",
+        "example": "I rise every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "rose",
+        "pastParticiple": "risen",
+        "baseForm": "rise",
+        "baseMeaning": "tăng lên, đứng dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "run",
+        "ipa": "/run/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chạy",
+        "example": "I run every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "ran",
+        "pastParticiple": "run",
+        "baseForm": "run",
+        "baseMeaning": "chạy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "say",
+        "ipa": "/say/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nói",
+        "example": "I say every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "said",
+        "pastParticiple": "said",
+        "baseForm": "say",
+        "baseMeaning": "nói",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "see",
+        "ipa": "/see/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhìn, thấy",
+        "example": "I see every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "saw",
+        "pastParticiple": "seen",
+        "baseForm": "see",
+        "baseMeaning": "nhìn, thấy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "seek",
+        "ipa": "/seek/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tìm kiếm",
+        "example": "I seek every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sought",
+        "pastParticiple": "sought",
+        "baseForm": "seek",
+        "baseMeaning": "tìm kiếm",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "send",
+        "ipa": "/send/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gửi",
+        "example": "I send every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sent",
+        "pastParticiple": "sent",
+        "baseForm": "send",
+        "baseMeaning": "gửi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "set",
+        "ipa": "/set/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đặt, thiết lập",
+        "example": "I set every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "set",
+        "pastParticiple": "set",
+        "baseForm": "set",
+        "baseMeaning": "đặt, thiết lập",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sew",
+        "ipa": "/sew/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "may",
+        "example": "I sew every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sewed",
+        "pastParticiple": "sewn",
+        "baseForm": "sew",
+        "baseMeaning": "may",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shake",
+        "ipa": "/shake/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lắc, rung",
+        "example": "I shake every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "shook",
+        "pastParticiple": "shaken",
+        "baseForm": "shake",
+        "baseMeaning": "lắc, rung",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shine",
+        "ipa": "/shine/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chiếu sáng",
+        "example": "I shine every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "shone",
+        "pastParticiple": "shone",
+        "baseForm": "shine",
+        "baseMeaning": "chiếu sáng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shoot",
+        "ipa": "/shoot/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bắn, chụp ảnh",
+        "example": "I shoot every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "shot",
+        "pastParticiple": "shot",
+        "baseForm": "shoot",
+        "baseMeaning": "bắn, chụp ảnh",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "show",
+        "ipa": "/show/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "cho xem, chỉ",
+        "example": "I show every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "showed",
+        "pastParticiple": "shown",
+        "baseForm": "show",
+        "baseMeaning": "cho xem, chỉ",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shrink",
+        "ipa": "/shrink/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "co lại",
+        "example": "I shrink every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "shrank",
+        "pastParticiple": "shrunk",
+        "baseForm": "shrink",
+        "baseMeaning": "co lại",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "shut",
+        "ipa": "/shut/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đóng",
+        "example": "I shut every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "shut",
+        "pastParticiple": "shut",
+        "baseForm": "shut",
+        "baseMeaning": "đóng",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sing",
+        "ipa": "/sing/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hát",
+        "example": "I sing every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sang",
+        "pastParticiple": "sung",
+        "baseForm": "sing",
+        "baseMeaning": "hát",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sink",
+        "ipa": "/sink/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chìm",
+        "example": "I sink every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sank",
+        "pastParticiple": "sunk",
+        "baseForm": "sink",
+        "baseMeaning": "chìm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sit",
+        "ipa": "/sit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngồi",
+        "example": "I sit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sat",
+        "pastParticiple": "sat",
+        "baseForm": "sit",
+        "baseMeaning": "ngồi",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sleep",
+        "ipa": "/sleep/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ngủ",
+        "example": "I sleep every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "slept",
+        "pastParticiple": "slept",
+        "baseForm": "sleep",
+        "baseMeaning": "ngủ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slide",
+        "ipa": "/slide/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "trượt",
+        "example": "I slide every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "slid",
+        "pastParticiple": "slid",
+        "baseForm": "slide",
+        "baseMeaning": "trượt",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "slit",
+        "ipa": "/slit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rạch",
+        "example": "I slit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "slit",
+        "pastParticiple": "slit",
+        "baseForm": "slit",
+        "baseMeaning": "rạch",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sow",
+        "ipa": "/sow/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "gieo (hạt)",
+        "example": "I sow every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sowed",
+        "pastParticiple": "sown",
+        "baseForm": "sow",
+        "baseMeaning": "gieo (hạt)",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "span",
+        "ipa": "/span/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kéo dài, bắc qua",
+        "example": "I span every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "span",
+        "pastParticiple": "spanned",
+        "baseForm": "span",
+        "baseMeaning": "kéo dài, bắc qua",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "speak",
+        "ipa": "/speak/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nói",
+        "example": "I speak every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "spoke",
+        "pastParticiple": "spoken",
+        "baseForm": "speak",
+        "baseMeaning": "nói",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spend",
+        "ipa": "/spend/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "tiêu, dành",
+        "example": "I spend every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "spent",
+        "pastParticiple": "spent",
+        "baseForm": "spend",
+        "baseMeaning": "tiêu, dành",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spit",
+        "ipa": "/spit/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "khạc nhổ",
+        "example": "I spit every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "spat",
+        "pastParticiple": "spat",
+        "baseForm": "spit",
+        "baseMeaning": "khạc nhổ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "split",
+        "ipa": "/split/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "chia, tách",
+        "example": "I split every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "split",
+        "pastParticiple": "split",
+        "baseForm": "split",
+        "baseMeaning": "chia, tách",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spoil",
+        "ipa": "/spoil/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "làm hỏng",
+        "example": "I spoil every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "spoilt",
+        "pastParticiple": "spoilt",
+        "baseForm": "spoil",
+        "baseMeaning": "làm hỏng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spread",
+        "ipa": "/spread/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lan rộng, phết",
+        "example": "I spread every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "spread",
+        "pastParticiple": "spread",
+        "baseForm": "spread",
+        "baseMeaning": "lan rộng, phết",
+        "note": "V1 = V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "spring",
+        "ipa": "/spring/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhảy lên",
+        "example": "I spring every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "sprang",
+        "pastParticiple": "sprung",
+        "baseForm": "spring",
+        "baseMeaning": "nhảy lên",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "stand",
+        "ipa": "/stand/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đứng",
+        "example": "I stand every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "stood",
+        "pastParticiple": "stood",
+        "baseForm": "stand",
+        "baseMeaning": "đứng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "steal",
+        "ipa": "/steal/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ăn cắp",
+        "example": "I steal every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "stole",
+        "pastParticiple": "stolen",
+        "baseForm": "steal",
+        "baseMeaning": "ăn cắp",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "strike",
+        "ipa": "/strike/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đánh, va chạm",
+        "example": "I strike every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "struck",
+        "pastParticiple": "struck",
+        "baseForm": "strike",
+        "baseMeaning": "đánh, va chạm",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swear",
+        "ipa": "/swear/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thề, chửi thề",
+        "example": "I swear every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "swore",
+        "pastParticiple": "sworn",
+        "baseForm": "swear",
+        "baseMeaning": "thề, chửi thề",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "sweep",
+        "ipa": "/sweep/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quét",
+        "example": "I sweep every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "swept",
+        "pastParticiple": "swept",
+        "baseForm": "sweep",
+        "baseMeaning": "quét",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swim",
+        "ipa": "/swim/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "bơi",
+        "example": "I swim every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "swam",
+        "pastParticiple": "swum",
+        "baseForm": "swim",
+        "baseMeaning": "bơi",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "swing",
+        "ipa": "/swing/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "đung đưa",
+        "example": "I swing every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "swung",
+        "pastParticiple": "swung",
+        "baseForm": "swing",
+        "baseMeaning": "đung đưa",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "take",
+        "ipa": "/take/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "lấy, cầm",
+        "example": "I take every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "took",
+        "pastParticiple": "taken",
+        "baseForm": "take",
+        "baseMeaning": "lấy, cầm",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "teach",
+        "ipa": "/teach/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dạy",
+        "example": "I teach every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "taught",
+        "pastParticiple": "taught",
+        "baseForm": "teach",
+        "baseMeaning": "dạy",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tear",
+        "ipa": "/tear/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "xé, rách",
+        "example": "I tear every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "tore",
+        "pastParticiple": "torn",
+        "baseForm": "tear",
+        "baseMeaning": "xé, rách",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "tell",
+        "ipa": "/tell/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "kể, bảo",
+        "example": "I tell every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "told",
+        "pastParticiple": "told",
+        "baseForm": "tell",
+        "baseMeaning": "kể, bảo",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "think",
+        "ipa": "/think/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nghĩ",
+        "example": "I think every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "thought",
+        "pastParticiple": "thought",
+        "baseForm": "think",
+        "baseMeaning": "nghĩ",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "throw",
+        "ipa": "/throw/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "ném",
+        "example": "I throw every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "threw",
+        "pastParticiple": "thrown",
+        "baseForm": "throw",
+        "baseMeaning": "ném",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "understand",
+        "ipa": "/understand/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "hiểu",
+        "example": "I understand every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "understood",
+        "pastParticiple": "understood",
+        "baseForm": "understand",
+        "baseMeaning": "hiểu",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wake",
+        "ipa": "/wake/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thức dậy",
+        "example": "I wake every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "woke",
+        "pastParticiple": "woken",
+        "baseForm": "wake",
+        "baseMeaning": "thức dậy",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wear",
+        "ipa": "/wear/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "mặc",
+        "example": "I wear every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "wore",
+        "pastParticiple": "worn",
+        "baseForm": "wear",
+        "baseMeaning": "mặc",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "weave",
+        "ipa": "/weave/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "dệt",
+        "example": "I weave every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "wove",
+        "pastParticiple": "woven",
+        "baseForm": "weave",
+        "baseMeaning": "dệt",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "win",
+        "ipa": "/win/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "thắng",
+        "example": "I win every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "won",
+        "pastParticiple": "won",
+        "baseForm": "win",
+        "baseMeaning": "thắng",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "wind",
+        "ipa": "/wind/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "quấn, vặn",
+        "example": "I wind every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "wound",
+        "pastParticiple": "wound",
+        "baseForm": "wind",
+        "baseMeaning": "quấn, vặn",
+        "note": "V2 = V3"
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "withdraw",
+        "ipa": "/withdraw/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "rút lui, rút tiền",
+        "example": "I withdraw every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "withdrew",
+        "pastParticiple": "withdrawn",
+        "baseForm": "withdraw",
+        "baseMeaning": "rút lui, rút tiền",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "write",
+        "ipa": "/write/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "viết",
+        "example": "I write every day.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "wrote",
+        "pastParticiple": "written",
+        "baseForm": "write",
+        "baseMeaning": "viết",
+        "note": ""
+      }
+    },
+    {
+      "fieldValues": {
+        "word": "mistake",
+        "ipa": "/mɪˈsteɪk/",
+        "partOfSpeech": "verb",
+        "difficulty": "intermediate",
+        "meaning": "nhầm lẫn, hiểu sai",
+        "example": "I always mistake her for her twin sister.",
+        "tags": [
+          "irregular-verb"
+        ],
+        "irregularRole": "baseForm",
+        "pastSimple": "mistook",
+        "pastParticiple": "mistaken",
+        "baseForm": "mistake",
+        "baseMeaning": "nhầm lẫn, hiểu sai",
+        "note": ""
+      }
+    }
+  ]
+}
