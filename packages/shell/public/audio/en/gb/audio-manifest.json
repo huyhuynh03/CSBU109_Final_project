@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "lang": "english",
+    "variant": "gb",
+    "provider": "openai",
+    "generatedAt": "2026-07-03T16:13:10.817Z",
+    "total": 25
+  },
+  "files": {
+    "actual": "actual.mp3",
+    "actually": "actually.mp3",
+    "automatic": "automatic.mp3",
+    "automatically": "automatically.mp3",
+    "characteristic": "characteristic.mp3",
+    "eliminate": "eliminate.mp3",
+    "elimination": "elimination.mp3",
+    "exact": "exact.mp3",
+    "exactly": "exactly.mp3",
+    "explanation": "explanation.mp3",
+    "explanatory": "explanatory.mp3",
+    "helpless": "helpless.mp3",
+    "helplessness": "helplessness.mp3",
+    "mistake": "mistake.mp3",
+    "mistaken": "mistaken.mp3",
+    "mistakenly": "mistakenly.mp3",
+    "mistook": "mistook.mp3",
+    "oppose": "oppose.mp3",
+    "opposite": "opposite.mp3",
+    "prettily": "prettily.mp3",
+    "pretty": "pretty.mp3",
+    "psychological": "psychological.mp3",
+    "psychologist": "psychologist.mp3",
+    "psychology": "psychology.mp3",
+    "worldly": "worldly.mp3"
+  }
+}
