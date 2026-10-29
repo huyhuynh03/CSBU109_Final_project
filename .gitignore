@@ -41,3 +41,6 @@ scripts/tts/preview/
 # Service account keys (NEVER commit these)
 *-firebase-adminsdk-*.json
 service-account*.json
+
+# Vocabulary list output (sinh tự động bởi scripts/build-vocabulary-list.js — không commit)
+vocabulary-list/
