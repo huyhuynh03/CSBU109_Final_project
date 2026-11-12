@@ -7,13 +7,21 @@ const firebase = window.firebase;
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: "linguaflash-f5591.firebaseapp.com",
-    projectId: "linguaflash-f5591",
-    storageBucket: "linguaflash-f5591.firebasestorage.app",
-    messagingSenderId: "273192376743",
-    appId: "1:273192376743:web:b037c9abaaf9f270923e82",
-    measurementId: "G-ZFEY0QC9L1"
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
+
+const missingConfig = Object.entries(firebaseConfig)
+    .filter(([, value]) => !value)
+    .map(([key]) => key);
+
+if (missingConfig.length > 0) {
+    throw new Error(`[Firebase] Missing configuration: ${missingConfig.join(', ')}`);
+}
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
